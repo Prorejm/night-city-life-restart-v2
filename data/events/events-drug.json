@@ -1,0 +1,174 @@
+{
+  "events": [
+    {
+      "id": 401,
+      "title": "奥施康定处方",
+      "description": "你的背部旧伤发作，疼得整夜睡不着。在一家合法的疼痛管理诊所里，医生简单检查后，大笔一挥给你开了奥施康定——一种强效阿片类止痛药。「每天两次，一次一片，不够再翻倍。」医生头也不抬地说。你注意到诊室墙上挂着药厂赠送的挂历，角落里印着一行小字：「普渡制药，关爱您的健康。」",
+      "type": "medical",
+      "ageRange": [25, 60],
+      "weight": 16,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "按处方服药，缓解疼痛", "effects": { "HEALTH": 2, "ADDICTION_RISK": 3, "MONEY": -200 } },
+        { "id": "branch_2", "text": "拒绝阿片类药物，寻找替代疗法", "effects": { "COOL": 2, "MENTAL": 1, "MONEY": -500 } }
+      ],
+      "effects": { "HEALTH": 1, "ADDICTION_RISK": 1 },
+      "tags": ["药物", "奥施康定", "止痛", "处方"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 402,
+      "title": "街头首次接触海洛因",
+      "description": "你的一个老友看起来最近过得不错——气色红润，穿着新衣服，还有了辆像样的车。他说他找到了一条「来钱快的路子」，并神秘地掏出一个透明的小袋子。白色的粉末在路灯下闪着微光。「试一次，你就知道什么叫真正的解脱了。所有烦恼都会消失。」他的声音充满诱惑。你知道这是海洛因，也知道这条路的终点是什么。",
+      "type": "drug",
+      "ageRange": [18, 45],
+      "weight": 14,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "尝试一次，陷入成瘾的深渊", "effects": { "COOL": 1, "ADDICTION": 5, "HEALTH": -3, "MONEY": -200 } },
+        { "id": "branch_2", "text": "愤怒地拒绝，和这个朋友断绝来往", "effects": { "COOL": 2, "KARMA": 1, "MENTAL": 1 } }
+      ],
+      "effects": { "ADDICTION_RISK": 2 },
+      "tags": ["药物", "海洛因", "成瘾", "朋友"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 403,
+      "title": "芬太尼过量",
+      "description": "你在一条后巷里发现了一个蜷缩在地上的人。他的嘴唇发紫，呼吸微弱而急促，手指间还夹着一根用过的注射器。芬太尼过量——这在夜之家已经是司空见惯的场景了。他的身体在抽搐，瞳孔缩成针尖大小。你只有几分钟的时间做决定，而救护车至少要二十分钟才能穿过拥堵的街道到达这里。",
+      "type": "medical",
+      "ageRange": [16, 60],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "立即施救，注射纳洛酮（如果有的话）", "effects": { "KARMA": 3, "MONEY": -200, "HEALTH": -1 } },
+        { "id": "branch_2", "text": "搜走他身上的财物后离开", "effects": { "MONEY": 300, "KARMA": -4, "MENTAL": -1 } }
+      ],
+      "effects": { "KARMA": 1 },
+      "tags": ["药物", "芬太尼", "过量", "急救"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 404,
+      "title": "戒毒所经历",
+      "description": "你的生活已经被药物彻底控制了。家人（如果还有的话）把你送进了一家州立戒毒所——或者你是被警察抓进来强制戒毒的。这里拥挤、肮脏、充满绝望。戒断症状让你浑身发抖，冷汗浸透床单。隔壁床的人整夜嚎叫，走廊里传来护工的呵斥声。墙上的海报写着「新生活从今天开始」，但所有人都知道这里复吸率超过百分之九十。",
+      "type": "drug",
+      "ageRange": [20, 55],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 30,
+      "branches": [
+        { "id": "branch_1", "text": "积极配合治疗，争取真正戒断", "effects": { "ADDICTION": -5, "HEALTH": 2, "MENTAL": -2, "MONEY": -1000 } },
+        { "id": "branch_2", "text": "敷衍了事，熬到出所继续复吸", "effects": { "ADDICTION": -1, "COOL": -1, "MENTAL": -2 } }
+      ],
+      "effects": { "ADDICTION": -2, "MENTAL": -2, "MONEY": -500 },
+      "tags": ["药物", "戒毒", "治疗", "强制"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 405,
+      "title": "药厂销售代表",
+      "description": "一个穿着得体西装的年轻人出现在你所在的社区诊所里。他是某制药公司的销售代表，正在推广一种新型止痛药——比奥施康定更强效，据称「成瘾性更低」。他给医生们带来了免费样品和印着药品logo的小礼品。他微笑着和你握手，手掌温暖而有力。你注意到他手上的戒指——那枚戒指的价值抵得上你半年的房租。",
+      "type": "social",
+      "ageRange": [22, 60],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "接受免费样品试试效果", "effects": { "MONEY": 100, "ADDICTION_RISK": 3, "HEALTH": 1 } },
+        { "id": "branch_2", "text": "拒绝并怀疑药厂的动机", "effects": { "COOL": 2, "STREET_SMART": 1 } }
+      ],
+      "effects": { "ADDICTION_RISK": 1 },
+      "tags": ["药物", "药厂", "销售", "促销"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 406,
+      "title": "戒断反应发作",
+      "description": "在最糟糕的时机，你的戒断反应发作了。你正在参加一个重要活动——要么是佣兵任务的简报会，要么是公司的重要会议，要么是和某个重要人物的谈判——突然全身开始冒冷汗，手不受控制地颤抖，恶心感涌上喉咙。你的瞳孔在放大缩小之间切换，周围的人开始用异样的眼光看你。你必须想办法撑过去。",
+      "type": "drug",
+      "ageRange": [18, 55],
+      "weight": 14,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "硬撑过去，假装只是低血糖", "effects": { "COOL": 2, "MENTAL": -2, "STREET_REP": -1 } },
+        { "id": "branch_2", "text": "借口去洗手间偷偷来一剂缓解", "effects": { "ADDICTION": 2, "HEALTH": -1, "COOL": -1 } }
+      ],
+      "effects": { "MENTAL": -2, "COOL": -1 },
+      "tags": ["药物", "戒断", "发作", "危机"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 407,
+      "title": "黑市药品交易",
+      "description": "你通过地下渠道找到了一个药品贩子。他的药比药店便宜一半——没有处方，没有记录，现金交易。他打开破旧的运动背包，里面分门别类装着各种药瓶：止痛药、镇静剂、兴奋剂，甚至还有军用级别的神经强化剂。「都是正品，从企业物流链上'掉下来'的。」他咧嘴一笑，露出镶金的牙齿。你知道这些药可能是真的，也可能是掺杂了芬太尼的假货。",
+      "type": "drug",
+      "ageRange": [18, 60],
+      "weight": 16,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        { "id": "branch_1", "text": "购买黑市药品，省钱但有风险", "effects": { "MONEY": -300, "ADDICTION_RISK": 2, "HEALTH": -1, "STREET_SMART": 1 } },
+        { "id": "branch_2", "text": "放弃交易，不想冒买到假货的风险", "effects": { "COOL": 1, "MENTAL": 1 } }
+      ],
+      "effects": { "MONEY": -150, "STREET_SMART": 1 },
+      "tags": ["药物", "黑市", "交易", "假药"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 408,
+      "title": "朋友因药物过量去世",
+      "description": "你接到了那个改变一切的电话。和你一起长大的朋友——或者那个曾经递给你第一颗药丸的人——被发现死在廉价公寓里，身边散落着注射器和空的药瓶。芬太尼混入了海洛因里，他根本不知道那一针会要了他的命。葬礼（如果有的话）冷清得可怜，只有几个同样眼神空洞的朋友站在雨中。牧师念着千篇一律的悼词，像是在背诵产品说明书。",
+      "type": "drug",
+      "ageRange": [18, 55],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "深受触动，发誓戒断并帮助他人", "effects": { "KARMA": 3, "ADDICTION": -3, "MENTAL": -3, "COOL": 2 } },
+        { "id": "branch_2", "text": "用更多的药物麻痹悲伤", "effects": { "ADDICTION": 4, "MENTAL": -4, "HEALTH": -2 } }
+      ],
+      "effects": { "MENTAL": -3, "ADDICTION": -1 },
+      "tags": ["药物", "死亡", "朋友", "过量"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 409,
+      "title": "合成毒品派对",
+      "description": "你被朋友拉到了一个地下派对。昏暗的灯光下，人们随着工业电子乐疯狂摇摆。房间里充斥着化学甜味——那是合成毒品在酒精蒸发器中燃烧的味道。有人给你递来一杯闪着荧光的饮料，声称这是「最新型的合成致幻剂，完全合法，比酒精安全一百倍」。杯子上的全息骷髅标志闪烁了一下就消失了。",
+      "type": "drug",
+      "ageRange": [18, 40],
+      "weight": 14,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "尝试合成毒品，体验迷幻的快感", "effects": { "COOL": 1, "ADDICTION": 3, "HEALTH": -2, "MENTAL": -1 } },
+        { "id": "branch_2", "text": "拒绝，保持清醒离开派对", "effects": { "COOL": 2, "MENTAL": 1 } }
+      ],
+      "effects": { "ADDICTION_RISK": 2 },
+      "tags": ["药物", "合成", "派对", "致幻剂"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 410,
+      "title": "美沙酮诊所",
+      "description": "你排队站在美沙酮诊所门口。队伍很长，都是和你一样被阿片类药物困住的人。诊所的铁窗后面，一个疲惫的护士机械地分发着美沙酮——用一种成瘾替代另一种成瘾。你喝下那杯橙色的液体，苦味在舌尖蔓延。诊所门口的标语写着「每天一次，重获新生」，但你知道自己只是换了一种更「合法」的方式继续沉沦。",
+      "type": "medical",
+      "ageRange": [22, 55],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        { "id": "branch_1", "text": "坚持美沙酮维持治疗，逐步减量", "effects": { "ADDICTION": -2, "HEALTH": 1, "MONEY": -400 } },
+        { "id": "branch_2", "text": "放弃治疗，回到街头找更便宜的药", "effects": { "ADDICTION": 3, "HEALTH": -1, "MONEY": -100 } }
+      ],
+      "effects": { "ADDICTION": -1, "MONEY": -200 },
+      "tags": ["药物", "美沙酮", "替代", "治疗"],
+      "deathChainEntry": false
+    }
+  ]
+}

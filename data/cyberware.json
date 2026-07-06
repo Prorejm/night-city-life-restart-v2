@@ -1,0 +1,1015 @@
+{
+  "meta": {
+    "description": "义体数据 - Cyberware Database",
+    "version": "1.0",
+    "totalCount": 34
+  },
+  "categories": [
+    {
+      "id": "neural",
+      "name": "神经网络处理器",
+      "description": "植入大脑的神经接口系统，提升数据处理能力",
+      "items": [
+        {
+          "id": "neural_processor_basic",
+          "name": "基础神经处理器",
+          "type": "neural",
+          "rarity": "common",
+          "humanityCost": 3,
+          "price": 2000,
+          "slot": "brain",
+          "description": "标准型号神经处理器，提升基础信息处理速度。",
+          "effects": {
+            "intelligence": 2,
+            "reflex": 1
+          },
+          "requirements": { "level": 1 }
+        },
+        {
+          "id": "neural_processor_military",
+          "name": "军用神经处理器",
+          "type": "neural",
+          "rarity": "rare",
+          "humanityCost": 6,
+          "price": 8000,
+          "slot": "brain",
+          "description": "前军用级神经协处理器，大幅提升反应速度和战术分析能力。",
+          "effects": {
+            "intelligence": 5,
+            "reflex": 3,
+            "combat": 3
+          },
+          "requirements": { "level": 5 }
+        },
+        {
+          "id": "neural_processor_quantum",
+          "name": "量子神经协处理器",
+          "type": "neural",
+          "rarity": "legendary",
+          "humanityCost": 10,
+          "price": 25000,
+          "slot": "brain",
+          "description": "采用量子计算技术的顶级神经植入体，几乎能实时分析海量数据。黑市价格令人咋舌。",
+          "effects": {
+            "intelligence": 10,
+            "reflex": 5,
+            "combat": 5,
+            "hack": 8
+          },
+          "requirements": { "level": 12 }
+        },
+        {
+          "id": "neural_processor_blackice",
+          "name": "黑冰防火墙模块",
+          "type": "neural",
+          "rarity": "epic",
+          "humanityCost": 8,
+          "price": 15000,
+          "slot": "brain",
+          "description": "专门对抗黑客攻击的反入侵神经模块，同时提升入侵能力。",
+          "effects": {
+            "intelligence": 4,
+            "hack": 6,
+            "hackResist": 10
+          },
+          "requirements": { "level": 8, "intelligence": 6 }
+        }
+      ]
+    },
+    {
+      "id": "cybereye",
+      "name": "赛博眼",
+      "description": "义眼植入体，提供超越自然视觉的能力",
+      "items": [
+        {
+          "id": "cybereye_nightvision",
+          "name": "赛博眼·夜视型",
+          "type": "cybereye",
+          "rarity": "common",
+          "humanityCost": 3,
+          "price": 3000,
+          "slot": "eyes",
+          "description": "配备红外夜视模块，在完全黑暗的环境中也如白昼。",
+          "effects": {
+            "perception": 3,
+            "nightVision": true
+          },
+          "requirements": { "level": 2 }
+        },
+        {
+          "id": "cybereye_zoom",
+          "name": "赛博眼·变焦型",
+          "type": "cybereye",
+          "rarity": "common",
+          "humanityCost": 3,
+          "price": 3500,
+          "slot": "eyes",
+          "description": "搭载光学变焦镜头，可看清百米外的细节。",
+          "effects": {
+            "perception": 3,
+            "rangedAccuracy": 3
+          },
+          "requirements": { "level": 2 }
+        },
+        {
+          "id": "cybereye_analyzer",
+          "name": "赛博眼·分析型",
+          "type": "cybereye",
+          "rarity": "rare",
+          "humanityCost": 5,
+          "price": 7000,
+          "slot": "eyes",
+          "description": "集成数据分析模块，实时显示目标信息和弱点分析。",
+          "effects": {
+            "perception": 5,
+            "intelligence": 3,
+            "targetAnalysis": true
+          },
+          "requirements": { "level": 4, "intelligence": 4 }
+        },
+        {
+          "id": "cybereye_scanner",
+          "name": "赛博眼·扫描型",
+          "type": "cybereye",
+          "rarity": "rare",
+          "humanityCost": 5,
+          "price": 8000,
+          "slot": "eyes",
+          "description": "多光谱扫描仪，可透视墙体管线、识别伪装和电子设备。",
+          "effects": {
+            "perception": 4,
+            "scanRange": 50,
+            "detectHidden": true
+          },
+          "requirements": { "level": 5 }
+        },
+        {
+          "id": "cybereye_omni",
+          "name": "赛博眼·全能型",
+          "type": "cybereye",
+          "rarity": "epic",
+          "humanityCost": 8,
+          "price": 18000,
+          "slot": "eyes",
+          "description": "集夜视、变焦、分析、扫描于一体的顶级军用义眼，全方位强化感知能力。",
+          "effects": {
+            "perception": 8,
+            "intelligence": 3,
+            "combat": 3,
+            "nightVision": true,
+            "detectHidden": true,
+            "targetAnalysis": true
+          },
+          "requirements": { "level": 10 }
+        }
+      ]
+    },
+    {
+      "id": "cyberarm",
+      "name": "赛博臂",
+      "description": "义肢改造，将手臂替换为功能强大的机械臂",
+      "items": [
+        {
+          "id": "cyberarm_reinforced",
+          "name": "赛博臂·强化型",
+          "type": "cyberarm",
+          "rarity": "common",
+          "humanityCost": 4,
+          "price": 4000,
+          "slot": "arms",
+          "description": "高强度合金骨架义肢，大幅提升力量和近战能力。",
+          "effects": {
+            "strength": 4,
+            "melee": 3
+          },
+          "requirements": { "level": 3 }
+        },
+        {
+          "id": "cyberarm_weapon",
+          "name": "赛博臂·武器型",
+          "type": "cyberarm",
+          "rarity": "rare",
+          "humanityCost": 7,
+          "price": 12000,
+          "slot": "arms",
+          "description": "内置隐藏式单分子线刃和掌心微型冲锋枪，近远程皆可作战。",
+          "effects": {
+            "strength": 3,
+            "melee": 6,
+            "ranged": 4
+          },
+          "requirements": { "level": 6 }
+        },
+        {
+          "id": "cyberarm_tool",
+          "name": "赛博臂·工具型",
+          "type": "cyberarm",
+          "rarity": "rare",
+          "humanityCost": 5,
+          "price": 9000,
+          "slot": "arms",
+          "description": "指尖可变形为多种工具：焊枪、螺丝刀、万能钥匙、切割刀等。",
+          "effects": {
+            "strength": 2,
+            "tech": 6,
+            "lockpick": 5
+          },
+          "requirements": { "level": 4, "tech": 3 }
+        },
+        {
+          "id": "cyberarm_medical",
+          "name": "赛博臂·医疗型",
+          "type": "cyberarm",
+          "rarity": "rare",
+          "humanityCost": 5,
+          "price": 10000,
+          "slot": "arms",
+          "description": "内置急救套件和自动注射系统，可在战斗中快速治疗。",
+          "effects": {
+            "strength": 1,
+            "medical": 7,
+            "healBonus": 20
+          },
+          "requirements": { "level": 5, "medical": 3 }
+        },
+        {
+          "id": "cyberarm_gorilla",
+          "name": "赛博臂·大猩猩型",
+          "type": "cyberarm",
+          "rarity": "epic",
+          "humanityCost": 8,
+          "price": 16000,
+          "slot": "arms",
+          "description": "重型工业级义肢，力量堪比工程机械，一拳可击穿钢板。",
+          "effects": {
+            "strength": 10,
+            "melee": 7,
+            "intimidation": 5
+          },
+          "requirements": { "level": 8, "strength": 6 }
+        }
+      ]
+    },
+    {
+      "id": "skin_mod",
+      "name": "表皮改造",
+      "description": "对皮肤和皮下组织进行的强化改造",
+      "items": [
+        {
+          "id": "skin_subdermal_armor",
+          "name": "皮下装甲",
+          "type": "skin_mod",
+          "rarity": "common",
+          "humanityCost": 3,
+          "price": 5000,
+          "slot": "skin",
+          "description": "在皮下植入高分子防弹纤维层，提供被动防护。",
+          "effects": {
+            "armor": 15,
+            "bluntResist": 5
+          },
+          "requirements": { "level": 3 }
+        },
+        {
+          "id": "skin_chameleon",
+          "name": "变色龙表皮",
+          "type": "skin_mod",
+          "rarity": "rare",
+          "humanityCost": 6,
+          "price": 10000,
+          "slot": "skin",
+          "description": "纳米技术表皮，可根据环境自动改变颜色和纹理，实现光学隐形。",
+          "effects": {
+            "stealth": 8,
+            "social": 2
+          },
+          "requirements": { "level": 6 }
+        },
+        {
+          "id": "skin_thermoreg",
+          "name": "温度调节层",
+          "type": "skin_mod",
+          "rarity": "common",
+          "humanityCost": 2,
+          "price": 3000,
+          "slot": "skin",
+          "description": "皮下温控系统，可在极端温度环境中维持恒温。",
+          "effects": {
+            "heatResist": 30,
+            "coldResist": 30,
+            "survival": 3
+          },
+          "requirements": { "level": 2 }
+        },
+        {
+          "id": "skin_selfheal",
+          "name": "自修复表皮",
+          "type": "skin_mod",
+          "rarity": "epic",
+          "humanityCost": 8,
+          "price": 20000,
+          "slot": "skin",
+          "description": "纳米机器人不断修复皮肤损伤，轻微伤口肉眼可见速度愈合。",
+          "effects": {
+            "armor": 5,
+            "healPerTurn": 3,
+            "scarResist": true
+          },
+          "requirements": { "level": 9 }
+        }
+      ]
+    },
+    {
+      "id": "audio_implant",
+      "name": "音频植入",
+      "description": "听觉系统改造，增强或扩展听力能力",
+      "items": [
+        {
+          "id": "audio_hearing_aid",
+          "name": "增强助听器",
+          "type": "audio",
+          "rarity": "common",
+          "humanityCost": 2,
+          "price": 1500,
+          "slot": "ears",
+          "description": "高灵敏度拾音模块，可听到数百米外的脚步声。",
+          "effects": {
+            "perception": 3,
+            "hearingRange": 100
+          },
+          "requirements": { "level": 1 }
+        },
+        {
+          "id": "audio_sonic_scanner",
+          "name": "声波扫描仪",
+          "type": "audio",
+          "rarity": "rare",
+          "humanityCost": 5,
+          "price": 7500,
+          "slot": "ears",
+          "description": "主动声呐系统，可通过回声定位构建周围环境地图。",
+          "effects": {
+            "perception": 4,
+            "scanRange": 30,
+            "detectHidden": true
+          },
+          "requirements": { "level": 5 }
+        },
+        {
+          "id": "audio_translator",
+          "name": "通用翻译模块",
+          "type": "audio",
+          "rarity": "common",
+          "humanityCost": 2,
+          "price": 4000,
+          "slot": "ears",
+          "description": "实时翻译超过200种语言的音频处理芯片。",
+          "effects": {
+            "intelligence": 2,
+            "social": 4,
+            "universalTranslator": true
+          },
+          "requirements": { "level": 2 }
+        }
+      ]
+    },
+    {
+      "id": "internal_mod",
+      "name": "内置改造",
+      "description": "对内脏和内部生理系统的强化改造",
+      "items": [
+        {
+          "id": "internal_metabolic_booster",
+          "name": "代谢助推器",
+          "type": "internal",
+          "rarity": "rare",
+          "humanityCost": 5,
+          "price": 6000,
+          "slot": "internal",
+          "description": "植入肾脏旁的化学合成器，持续释放代谢增强激素。",
+          "effects": {
+            "stamina": 5,
+            "healRate": 15,
+            "drugResist": 3
+          },
+          "requirements": { "level": 4 }
+        },
+        {
+          "id": "internal_pain_editor",
+          "name": "疼痛编辑器",
+          "type": "internal",
+          "rarity": "rare",
+          "humanityCost": 7,
+          "price": 9000,
+          "slot": "internal",
+          "description": "脊髓神经信号拦截器，可选择性屏蔽或降低疼痛信号。",
+          "effects": {
+            "painResist": 50,
+            "combat": 3,
+            "stamina": 3
+          },
+          "requirements": { "level": 6 }
+        },
+        {
+          "id": "internal_chip_slot",
+          "name": "技能芯片插槽",
+          "type": "internal",
+          "rarity": "common",
+          "humanityCost": 3,
+          "price": 5000,
+          "slot": "internal",
+          "description": "颅骨内植入的通用芯片接口，可加载各种技能芯片。",
+          "effects": {
+            "chipSlots": 2
+          },
+          "requirements": { "level": 3 }
+        },
+        {
+          "id": "internal_heart_boost",
+          "name": "心脏增强泵",
+          "type": "internal",
+          "rarity": "epic",
+          "humanityCost": 8,
+          "price": 15000,
+          "slot": "internal",
+          "description": "微型涡轮辅助心脏，在紧急时刻可输出常人三倍的供血量。",
+          "effects": {
+            "stamina": 8,
+            "reflex": 3,
+            "survivalChance": 20
+          },
+          "requirements": { "level": 7, "strength": 4 }
+        },
+        {
+          "id": "internal_lung_filter",
+          "name": "肺过滤系统",
+          "type": "internal",
+          "rarity": "common",
+          "humanityCost": 3,
+          "price": 4000,
+          "slot": "internal",
+          "description": "纳米过滤网植入肺泡，可过滤空气中的毒素和污染物。",
+          "effects": {
+            "toxinResist": 40,
+            "stamina": 2
+          },
+          "requirements": { "level": 3 }
+        }
+      ]
+    },
+    {
+      "id": "fashion_mod",
+      "name": "时尚改造",
+      "description": "纯美观或社交导向的外表改造",
+      "items": [
+        {
+          "id": "fashion_led_tattoo",
+          "name": "LED动态纹身",
+          "type": "fashion",
+          "rarity": "common",
+          "humanityCost": 1,
+          "price": 1000,
+          "slot": "skin",
+          "description": "皮下植入微型LED阵列，可显示动态图案和文字。",
+          "effects": {
+            "social": 2,
+            "streetCred": 2
+          },
+          "requirements": { "level": 1 }
+        },
+        {
+          "id": "fashion_neon_hair",
+          "name": "霓虹染发系统",
+          "type": "fashion",
+          "rarity": "common",
+          "humanityCost": 1,
+          "price": 800,
+          "slot": "skin",
+          "description": "毛囊植入发光纤维，头发可呈现任何颜色和发光效果。",
+          "effects": {
+            "social": 2,
+            "streetCred": 1
+          },
+          "requirements": { "level": 1 }
+        },
+        {
+          "id": "fashion_holographic",
+          "name": "全息投影纹身",
+          "type": "fashion",
+          "rarity": "rare",
+          "humanityCost": 2,
+          "price": 3000,
+          "slot": "skin",
+          "description": "可在皮肤上方投射出复杂的全息动画，展示3D效果。",
+          "effects": {
+            "social": 4,
+            "intimidation": 2
+          },
+          "requirements": { "level": 3 }
+        },
+        {
+          "id": "fashion_glow_eyes",
+          "name": "发光虹膜",
+          "type": "fashion",
+          "rarity": "common",
+          "humanityCost": 2,
+          "price": 2000,
+          "slot": "eyes",
+          "description": "虹膜植入发光材料，眼睛会发出自定义颜色的光芒。",
+          "effects": {
+            "social": 3,
+            "streetCred": 2
+          },
+          "requirements": { "level": 2 }
+        }
+      ]
+    },
+    {
+      "id": "skeletal_mod",
+      "name": "骨骼改造",
+      "description": "对骨骼系统进行的强化和改造",
+      "items": [
+        {
+          "id": "skeletal_reinforcement",
+          "name": "强化骨骼涂层",
+          "type": "skeletal",
+          "rarity": "rare",
+          "humanityCost": 5,
+          "price": 8000,
+          "slot": "skeletal",
+          "description": "用碳纳米管材料包裹骨骼，大幅提升骨骼强度和抗击打能力。",
+          "effects": {
+            "armor": 10,
+            "strength": 3,
+            "fallResist": 30
+          },
+          "requirements": { "level": 5 }
+        },
+        {
+          "id": "skeletal_spring_joint",
+          "name": "弹簧义体关节",
+          "type": "skeletal",
+          "rarity": "epic",
+          "humanityCost": 7,
+          "price": 14000,
+          "slot": "skeletal",
+          "description": "腿部关节替换为液压弹簧结构，跳跃和移动能力大幅提升。",
+          "effects": {
+            "reflex": 5,
+            "moveSpeed": 30,
+            "jumpHeight": 200
+          },
+          "requirements": { "level": 7, "reflex": 4 }
+        }
+      ]
+    },
+    {
+      "id": "cyberlimb_leg",
+      "name": "赛博腿",
+      "description": "腿部义肢改造，提升移动能力",
+      "items": [
+        {
+          "id": "cyberleg_speed",
+          "name": "赛博腿·疾风型",
+          "type": "cyberlimb_leg",
+          "rarity": "rare",
+          "humanityCost": 5,
+          "price": 7500,
+          "slot": "legs",
+          "description": "轻量化高速义腿，内置碳纤维肌腱，奔跑速度惊人。",
+          "effects": {
+            "reflex": 3,
+            "moveSpeed": 40,
+            "dodge": 4
+          },
+          "requirements": { "level": 4 }
+        },
+        {
+          "id": "cyberleg_stabilizer",
+          "name": "赛博腿·稳定型",
+          "type": "cyberlimb_leg",
+          "rarity": "common",
+          "humanityCost": 3,
+          "price": 3500,
+          "slot": "legs",
+          "description": "内置陀螺仪稳定器，在任何地形都能保持平衡。",
+          "effects": {
+            "stability": 30,
+            "melee": 2
+          },
+          "requirements": { "level": 2 }
+        }
+      ]
+    }
+  ],
+  "allItems": [
+    {
+      "id": "neural_processor_basic",
+      "name": "基础神经处理器",
+      "type": "neural",
+      "rarity": "common",
+      "humanityCost": 3,
+      "price": 2000,
+      "slot": "brain",
+      "description": "标准型号神经处理器，提升基础信息处理速度。",
+      "effects": { "intelligence": 2, "reflex": 1 },
+      "requirements": { "level": 1 }
+    },
+    {
+      "id": "neural_processor_military",
+      "name": "军用神经处理器",
+      "type": "neural",
+      "rarity": "rare",
+      "humanityCost": 6,
+      "price": 8000,
+      "slot": "brain",
+      "description": "前军用级神经协处理器，大幅提升反应速度和战术分析能力。",
+      "effects": { "intelligence": 5, "reflex": 3, "combat": 3 },
+      "requirements": { "level": 5 }
+    },
+    {
+      "id": "neural_processor_quantum",
+      "name": "量子神经协处理器",
+      "type": "neural",
+      "rarity": "legendary",
+      "humanityCost": 10,
+      "price": 25000,
+      "slot": "brain",
+      "description": "采用量子计算技术的顶级神经植入体，几乎能实时分析海量数据。黑市价格令人咋舌。",
+      "effects": { "intelligence": 10, "reflex": 5, "combat": 5, "hack": 8 },
+      "requirements": { "level": 12 }
+    },
+    {
+      "id": "neural_processor_blackice",
+      "name": "黑冰防火墙模块",
+      "type": "neural",
+      "rarity": "epic",
+      "humanityCost": 8,
+      "price": 15000,
+      "slot": "brain",
+      "description": "专门对抗黑客攻击的反入侵神经模块，同时提升入侵能力。",
+      "effects": { "intelligence": 4, "hack": 6, "hackResist": 10 },
+      "requirements": { "level": 8, "intelligence": 6 }
+    },
+    {
+      "id": "cybereye_nightvision",
+      "name": "赛博眼·夜视型",
+      "type": "cybereye",
+      "rarity": "common",
+      "humanityCost": 3,
+      "price": 3000,
+      "slot": "eyes",
+      "description": "配备红外夜视模块，在完全黑暗的环境中也如白昼。",
+      "effects": { "perception": 3, "nightVision": true },
+      "requirements": { "level": 2 }
+    },
+    {
+      "id": "cybereye_zoom",
+      "name": "赛博眼·变焦型",
+      "type": "cybereye",
+      "rarity": "common",
+      "humanityCost": 3,
+      "price": 3500,
+      "slot": "eyes",
+      "description": "搭载光学变焦镜头，可看清百米外的细节。",
+      "effects": { "perception": 3, "rangedAccuracy": 3 },
+      "requirements": { "level": 2 }
+    },
+    {
+      "id": "cybereye_analyzer",
+      "name": "赛博眼·分析型",
+      "type": "cybereye",
+      "rarity": "rare",
+      "humanityCost": 5,
+      "price": 7000,
+      "slot": "eyes",
+      "description": "集成数据分析模块，实时显示目标信息和弱点分析。",
+      "effects": { "perception": 5, "intelligence": 3, "targetAnalysis": true },
+      "requirements": { "level": 4, "intelligence": 4 }
+    },
+    {
+      "id": "cybereye_scanner",
+      "name": "赛博眼·扫描型",
+      "type": "cybereye",
+      "rarity": "rare",
+      "humanityCost": 5,
+      "price": 8000,
+      "slot": "eyes",
+      "description": "多光谱扫描仪，可透视墙体管线、识别伪装和电子设备。",
+      "effects": { "perception": 4, "scanRange": 50, "detectHidden": true },
+      "requirements": { "level": 5 }
+    },
+    {
+      "id": "cybereye_omni",
+      "name": "赛博眼·全能型",
+      "type": "cybereye",
+      "rarity": "epic",
+      "humanityCost": 8,
+      "price": 18000,
+      "slot": "eyes",
+      "description": "集夜视、变焦、分析、扫描于一体的顶级军用义眼，全方位强化感知能力。",
+      "effects": { "perception": 8, "intelligence": 3, "combat": 3, "nightVision": true, "detectHidden": true, "targetAnalysis": true },
+      "requirements": { "level": 10 }
+    },
+    {
+      "id": "cyberarm_reinforced",
+      "name": "赛博臂·强化型",
+      "type": "cyberarm",
+      "rarity": "common",
+      "humanityCost": 4,
+      "price": 4000,
+      "slot": "arms",
+      "description": "高强度合金骨架义肢，大幅提升力量和近战能力。",
+      "effects": { "strength": 4, "melee": 3 },
+      "requirements": { "level": 3 }
+    },
+    {
+      "id": "cyberarm_weapon",
+      "name": "赛博臂·武器型",
+      "type": "cyberarm",
+      "rarity": "rare",
+      "humanityCost": 7,
+      "price": 12000,
+      "slot": "arms",
+      "description": "内置隐藏式单分子线刃和掌心微型冲锋枪，近远程皆可作战。",
+      "effects": { "strength": 3, "melee": 6, "ranged": 4 },
+      "requirements": { "level": 6 }
+    },
+    {
+      "id": "cyberarm_tool",
+      "name": "赛博臂·工具型",
+      "type": "cyberarm",
+      "rarity": "rare",
+      "humanityCost": 5,
+      "price": 9000,
+      "slot": "arms",
+      "description": "指尖可变形为多种工具：焊枪、螺丝刀、万能钥匙、切割刀等。",
+      "effects": { "strength": 2, "tech": 6, "lockpick": 5 },
+      "requirements": { "level": 4, "tech": 3 }
+    },
+    {
+      "id": "cyberarm_medical",
+      "name": "赛博臂·医疗型",
+      "type": "cyberarm",
+      "rarity": "rare",
+      "humanityCost": 5,
+      "price": 10000,
+      "slot": "arms",
+      "description": "内置急救套件和自动注射系统，可在战斗中快速治疗。",
+      "effects": { "strength": 1, "medical": 7, "healBonus": 20 },
+      "requirements": { "level": 5, "medical": 3 }
+    },
+    {
+      "id": "cyberarm_gorilla",
+      "name": "赛博臂·大猩猩型",
+      "type": "cyberarm",
+      "rarity": "epic",
+      "humanityCost": 8,
+      "price": 16000,
+      "slot": "arms",
+      "description": "重型工业级义肢，力量堪比工程机械，一拳可击穿钢板。",
+      "effects": { "strength": 10, "melee": 7, "intimidation": 5 },
+      "requirements": { "level": 8, "strength": 6 }
+    },
+    {
+      "id": "skin_subdermal_armor",
+      "name": "皮下装甲",
+      "type": "skin_mod",
+      "rarity": "common",
+      "humanityCost": 3,
+      "price": 5000,
+      "slot": "skin",
+      "description": "在皮下植入高分子防弹纤维层，提供被动防护。",
+      "effects": { "armor": 15, "bluntResist": 5 },
+      "requirements": { "level": 3 }
+    },
+    {
+      "id": "skin_chameleon",
+      "name": "变色龙表皮",
+      "type": "skin_mod",
+      "rarity": "rare",
+      "humanityCost": 6,
+      "price": 10000,
+      "slot": "skin",
+      "description": "纳米技术表皮，可根据环境自动改变颜色和纹理，实现光学隐形。",
+      "effects": { "stealth": 8, "social": 2 },
+      "requirements": { "level": 6 }
+    },
+    {
+      "id": "skin_thermoreg",
+      "name": "温度调节层",
+      "type": "skin_mod",
+      "rarity": "common",
+      "humanityCost": 2,
+      "price": 3000,
+      "slot": "skin",
+      "description": "皮下温控系统，可在极端温度环境中维持恒温。",
+      "effects": { "heatResist": 30, "coldResist": 30, "survival": 3 },
+      "requirements": { "level": 2 }
+    },
+    {
+      "id": "skin_selfheal",
+      "name": "自修复表皮",
+      "type": "skin_mod",
+      "rarity": "epic",
+      "humanityCost": 8,
+      "price": 20000,
+      "slot": "skin",
+      "description": "纳米机器人不断修复皮肤损伤，轻微伤口肉眼可见速度愈合。",
+      "effects": { "armor": 5, "healPerTurn": 3, "scarResist": true },
+      "requirements": { "level": 9 }
+    },
+    {
+      "id": "audio_hearing_aid",
+      "name": "增强助听器",
+      "type": "audio",
+      "rarity": "common",
+      "humanityCost": 2,
+      "price": 1500,
+      "slot": "ears",
+      "description": "高灵敏度拾音模块，可听到数百米外的脚步声。",
+      "effects": { "perception": 3, "hearingRange": 100 },
+      "requirements": { "level": 1 }
+    },
+    {
+      "id": "audio_sonic_scanner",
+      "name": "声波扫描仪",
+      "type": "audio",
+      "rarity": "rare",
+      "humanityCost": 5,
+      "price": 7500,
+      "slot": "ears",
+      "description": "主动声呐系统，可通过回声定位构建周围环境地图。",
+      "effects": { "perception": 4, "scanRange": 30, "detectHidden": true },
+      "requirements": { "level": 5 }
+    },
+    {
+      "id": "audio_translator",
+      "name": "通用翻译模块",
+      "type": "audio",
+      "rarity": "common",
+      "humanityCost": 2,
+      "price": 4000,
+      "slot": "ears",
+      "description": "实时翻译超过200种语言的音频处理芯片。",
+      "effects": { "intelligence": 2, "social": 4, "universalTranslator": true },
+      "requirements": { "level": 2 }
+    },
+    {
+      "id": "internal_metabolic_booster",
+      "name": "代谢助推器",
+      "type": "internal",
+      "rarity": "rare",
+      "humanityCost": 5,
+      "price": 6000,
+      "slot": "internal",
+      "description": "植入肾脏旁的化学合成器，持续释放代谢增强激素。",
+      "effects": { "stamina": 5, "healRate": 15, "drugResist": 3 },
+      "requirements": { "level": 4 }
+    },
+    {
+      "id": "internal_pain_editor",
+      "name": "疼痛编辑器",
+      "type": "internal",
+      "rarity": "rare",
+      "humanityCost": 7,
+      "price": 9000,
+      "slot": "internal",
+      "description": "脊髓神经信号拦截器，可选择性屏蔽或降低疼痛信号。",
+      "effects": { "painResist": 50, "combat": 3, "stamina": 3 },
+      "requirements": { "level": 6 }
+    },
+    {
+      "id": "internal_chip_slot",
+      "name": "技能芯片插槽",
+      "type": "internal",
+      "rarity": "common",
+      "humanityCost": 3,
+      "price": 5000,
+      "slot": "internal",
+      "description": "颅骨内植入的通用芯片接口，可加载各种技能芯片。",
+      "effects": { "chipSlots": 2 },
+      "requirements": { "level": 3 }
+    },
+    {
+      "id": "internal_heart_boost",
+      "name": "心脏增强泵",
+      "type": "internal",
+      "rarity": "epic",
+      "humanityCost": 8,
+      "price": 15000,
+      "slot": "internal",
+      "description": "微型涡轮辅助心脏，在紧急时刻可输出常人三倍的供血量。",
+      "effects": { "stamina": 8, "reflex": 3, "survivalChance": 20 },
+      "requirements": { "level": 7, "strength": 4 }
+    },
+    {
+      "id": "internal_lung_filter",
+      "name": "肺过滤系统",
+      "type": "internal",
+      "rarity": "common",
+      "humanityCost": 3,
+      "price": 4000,
+      "slot": "internal",
+      "description": "纳米过滤网植入肺泡，可过滤空气中的毒素和污染物。",
+      "effects": { "toxinResist": 40, "stamina": 2 },
+      "requirements": { "level": 3 }
+    },
+    {
+      "id": "fashion_led_tattoo",
+      "name": "LED动态纹身",
+      "type": "fashion",
+      "rarity": "common",
+      "humanityCost": 1,
+      "price": 1000,
+      "slot": "skin",
+      "description": "皮下植入微型LED阵列，可显示动态图案和文字。",
+      "effects": { "social": 2, "streetCred": 2 },
+      "requirements": { "level": 1 }
+    },
+    {
+      "id": "fashion_neon_hair",
+      "name": "霓虹染发系统",
+      "type": "fashion",
+      "rarity": "common",
+      "humanityCost": 1,
+      "price": 800,
+      "slot": "skin",
+      "description": "毛囊植入发光纤维，头发可呈现任何颜色和发光效果。",
+      "effects": { "social": 2, "streetCred": 1 },
+      "requirements": { "level": 1 }
+    },
+    {
+      "id": "fashion_holographic",
+      "name": "全息投影纹身",
+      "type": "fashion",
+      "rarity": "rare",
+      "humanityCost": 2,
+      "price": 3000,
+      "slot": "skin",
+      "description": "可在皮肤上方投射出复杂的全息动画，展示3D效果。",
+      "effects": { "social": 4, "intimidation": 2 },
+      "requirements": { "level": 3 }
+    },
+    {
+      "id": "fashion_glow_eyes",
+      "name": "发光虹膜",
+      "type": "fashion",
+      "rarity": "common",
+      "humanityCost": 2,
+      "price": 2000,
+      "slot": "eyes",
+      "description": "虹膜植入发光材料，眼睛会发出自定义颜色的光芒。",
+      "effects": { "social": 3, "streetCred": 2 },
+      "requirements": { "level": 2 }
+    },
+    {
+      "id": "skeletal_reinforcement",
+      "name": "强化骨骼涂层",
+      "type": "skeletal",
+      "rarity": "rare",
+      "humanityCost": 5,
+      "price": 8000,
+      "slot": "skeletal",
+      "description": "用碳纳米管材料包裹骨骼，大幅提升骨骼强度和抗击打能力。",
+      "effects": { "armor": 10, "strength": 3, "fallResist": 30 },
+      "requirements": { "level": 5 }
+    },
+    {
+      "id": "skeletal_spring_joint",
+      "name": "弹簧义体关节",
+      "type": "skeletal",
+      "rarity": "epic",
+      "humanityCost": 7,
+      "price": 14000,
+      "slot": "skeletal",
+      "description": "腿部关节替换为液压弹簧结构，跳跃和移动能力大幅提升。",
+      "effects": { "reflex": 5, "moveSpeed": 30, "jumpHeight": 200 },
+      "requirements": { "level": 7, "reflex": 4 }
+    },
+    {
+      "id": "cyberleg_speed",
+      "name": "赛博腿·疾风型",
+      "type": "cyberlimb_leg",
+      "rarity": "rare",
+      "humanityCost": 5,
+      "price": 7500,
+      "slot": "legs",
+      "description": "轻量化高速义腿，内置碳纤维肌腱，奔跑速度惊人。",
+      "effects": { "reflex": 3, "moveSpeed": 40, "dodge": 4 },
+      "requirements": { "level": 4 }
+    },
+    {
+      "id": "cyberleg_stabilizer",
+      "name": "赛博腿·稳定型",
+      "type": "cyberlimb_leg",
+      "rarity": "common",
+      "humanityCost": 3,
+      "price": 3500,
+      "slot": "legs",
+      "description": "内置陀螺仪稳定器，在任何地形都能保持平衡。",
+      "effects": { "stability": 30, "melee": 2 },
+      "requirements": { "level": 2 }
+    }
+  ]
+}

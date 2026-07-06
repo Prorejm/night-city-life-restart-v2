@@ -1,0 +1,189 @@
+{
+  "meta": {
+    "description": "天赋数据 - Talent Database",
+    "version": "1.0",
+    "totalCount": 20
+  },
+  "talents": [
+    {
+      "id": 1,
+      "name": "街头智慧",
+      "description": "从小在街头长大，熟悉城市的一切潜规则。街头声望获取速度+20%。",
+      "grade": 0,
+      "effects": { "STYLE": 3 },
+      "tags": ["街头", "生存"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 2,
+      "name": "机械天赋",
+      "description": "你对机械和电子设备有着天生的理解力。技术能力获取速度+20%。",
+      "grade": 0,
+      "effects": { "TECH": 3 },
+      "tags": ["技术", "机械"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 3,
+      "name": "强壮体魄",
+      "description": "你的身体素质远超常人。生命值上限+15，伤害抗性+10%。",
+      "grade": 0,
+      "effects": { "LIFE": 10 },
+      "tags": ["身体", "生存"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 4,
+      "name": "社交达人",
+      "description": "你能在任何人面前谈笑风生。社交场合获得额外优势。",
+      "grade": 0,
+      "effects": { "STYLE": 2, "REP": 2 },
+      "tags": ["社交", "魅力"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 5,
+      "name": "节俭生活",
+      "description": "你懂得如何花最少的钱活下去。生活开销-20%。",
+      "grade": 0,
+      "effects": { "MONEY": 100 },
+      "tags": ["生存", "经济"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 6,
+      "name": "夜猫子",
+      "description": "你在夜晚特别精神。夜间行动效果+15%。",
+      "grade": 1,
+      "effects": { "STYLE": 3, "TECH": 2 },
+      "tags": ["特殊", "夜间"],
+      "rebirthInheritable": true
+    },
+    {
+      "id": 7,
+      "name": "黑市关系",
+      "description": "你在黑市上有可靠的门路。购买物品价格-15%，黑市物品解锁。",
+      "grade": 1,
+      "effects": { "MONEY": 200 },
+      "tags": ["黑市", "经济"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 8,
+      "name": "铁石心肠",
+      "description": "你的心理承受能力极强。负面精神效果-30%，创伤累积速度-15%。",
+      "grade": 1,
+      "effects": { "HUMAN": 5 },
+      "tags": ["心理", "抗性"],
+      "rebirthInheritable": true
+    },
+    {
+      "id": 9,
+      "name": "快速学习",
+      "description": "你能快速掌握新技能。经验获取速度+25%。",
+      "grade": 1,
+      "effects": { "TECH": 3, "STYLE": 1 },
+      "tags": ["成长", "学习"],
+      "rebirthInheritable": true
+    },
+    {
+      "id": 10,
+      "name": "技术宅",
+      "description": "你对赛博技术的了解超乎常人。义体安装费用-30%，义体排斥率-20%。",
+      "grade": 1,
+      "effects": { "TECH": 5 },
+      "tags": ["技术", "义体"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 11,
+      "name": "天生领袖",
+      "description": "你身上有一种让人信服的气质。团队效果+20%，更容易获得追随者。",
+      "grade": 2,
+      "effects": { "STYLE": 5, "REP": 3 },
+      "tags": ["社交", "领导力"],
+      "rebirthInheritable": true
+    },
+    {
+      "id": 12,
+      "name": "改造适应",
+      "description": "你的身体对赛博改造有着超乎寻常的适应性。人性值损失-40%，可安装更多义体。",
+      "grade": 2,
+      "effects": { "CHROME": -5, "HUMAN": 5 },
+      "tags": ["义体", "适应"],
+      "rebirthInheritable": true
+    },
+    {
+      "id": 13,
+      "name": "幸运儿",
+      "description": "命运似乎总是站在你这边。随机事件的好结果概率+15%。",
+      "grade": 2,
+      "effects": { "STYLE": 2, "TECH": 2, "MONEY": 200 },
+      "tags": ["命运", "幸运"],
+      "rebirthInheritable": true
+    },
+    {
+      "id": 14,
+      "name": "商业头脑",
+      "description": "你对金钱的嗅觉比猎犬还灵敏。投资收益+30%，商业谈判+20%。",
+      "grade": 2,
+      "effects": { "MONEY": 500 },
+      "tags": ["经济", "商业"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 15,
+      "name": "不死小强",
+      "description": "你就像蟑螂一样难以被杀死。濒死时自动恢复20%生命（每局一次）。",
+      "grade": 3,
+      "effects": { "LIFE": 15 },
+      "tags": ["生存", "传奇"],
+      "rebirthInheritable": true
+    },
+    {
+      "id": 16,
+      "name": "传奇人物",
+      "description": "你的名字终将响彻夜之城。所有正面效果+15%，更容易触发特殊事件。",
+      "grade": 3,
+      "effects": { "STYLE": 8, "REP": 5 },
+      "tags": ["传奇", "声望"],
+      "rebirthInheritable": true
+    },
+    {
+      "id": 17,
+      "name": "纳米血液",
+      "description": "你的血液中流淌着实验性纳米机器人。每回合自动恢复1点生命，疾病免疫。",
+      "grade": 3,
+      "effects": { "LIFE": 10, "TECH": 5 },
+      "tags": ["义体", "传奇", "医疗"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 18,
+      "name": "武器精通",
+      "description": "所有武器在你手中都能发挥120%的威力。战斗选项+1，战斗伤害+20%。",
+      "grade": 1,
+      "effects": { "STYLE": 3, "TECH": 2 },
+      "tags": ["战斗", "武器"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 19,
+      "name": "骇客新手",
+      "description": "你掌握了一些基础的黑客技术。可以解开简单的电子锁和入侵低级系统。",
+      "grade": 0,
+      "effects": { "TECH": 3 },
+      "tags": ["黑客", "技术"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 20,
+      "name": "企业背景",
+      "description": "你曾在企业工作过，了解内部运作。企业相关事件触发率+20%，企业社交+15%。",
+      "grade": 1,
+      "effects": { "STYLE": 2, "MONEY": 300 },
+      "tags": ["企业", "社交"],
+      "rebirthInheritable": false
+    }
+  ]
+}

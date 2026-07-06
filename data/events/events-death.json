@@ -1,0 +1,174 @@
+{
+  "events": [
+    {
+      "id": 701,
+      "title": "漩涡帮处刑",
+      "description": "你在街头冲突中彻底惹怒了漩涡帮。他们不是来抢劫的，是来清算的。六个全副武装的漩涡帮成员堵住了你所有的退路，他们眼中的红光在黑暗中闪烁，手中的镀铬步枪已经上膛。领头的慢悠悠地点燃一支烟，说：「你以为这条街是你家的？今天让你知道知道什么叫代价。」你没有退路了，身后的墙太硬，面前是六把枪。",
+      "type": "combat",
+      "ageRange": [16, 55],
+      "weight": 5,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "拼死一搏，能拉一个垫背是一个", "effects": { "COMBAT": 2, "STREET_REP": 3, "HEALTH": -20 } },
+        { "id": "branch_2", "text": "跪地求饶，愿意付出一切代价", "effects": { "COOL": -3, "MONEY": -5000, "STREET_REP": -5 } }
+      ],
+      "effects": { "HEALTH": -15, "STREET_REP": -2 },
+      "tags": ["死亡", "漩涡帮", "处刑", "终局"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 702,
+      "title": "赛博精神病发作",
+      "description": "你的意识在崩溃的边缘徘徊了太长时间。大脑中的赛博植入物终于突破了神经系统的最后防线——你分不清什么是真实，什么是数据流。你的手开始不受控制地抽搐，视觉界面被乱码覆盖。街上的行人看到你的眼神变化后开始尖叫逃跑。你的战斗系统自动激活，武器系统锁定了周围所有移动的目标。你已经不再是你自己了。",
+      "type": "cyber",
+      "ageRange": [20, 55],
+      "weight": 4,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "用最后的意志力伤害自己来停止这一切", "effects": { "HEALTH": -20, "MENTAL": -5 } },
+        { "id": "branch_2", "text": "放弃抵抗，任由赛博精神病吞噬意识", "effects": { "HEALTH": -25, "CYBER_LEVEL": -5 } }
+      ],
+      "effects": { "MENTAL": -15, "HEALTH": -10 },
+      "tags": ["死亡", "赛博精神病", "崩溃", "终局"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 703,
+      "title": "芬太尼过量——致命剂量",
+      "description": "你从黑市买到了一批「特别纯」的海洛因。卖家说这是直接从制药厂流出的原货。你熟练地加热、吸入、注射——然后世界开始变慢。你的心脏先是猛跳了几下，然后开始不规则地痉挛。呼吸变得又浅又急，你意识到这次的量不对。太纯了。你伸手想去够手机求救，但手指已经不听使唤了。天花板上的灯光越来越暗。",
+      "type": "drug",
+      "ageRange": [20, 55],
+      "weight": 5,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "用最后的力气给自己注射纳洛酮", "effects": { "HEALTH": -10, "ADDICTION": -3, "MONEY": -200 } },
+        { "id": "branch_2", "text": "无法动弹，等待死亡降临", "effects": { "HEALTH": -25, "ADDICTION": -5 } }
+      ],
+      "effects": { "HEALTH": -20, "ADDICTION": 2 },
+      "tags": ["死亡", "芬太尼", "过量", "终局"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 704,
+      "title": "企业清算",
+      "description": "你碰了不该碰的东西。荒坂集团的内部安全系统标记了你的数据窃取行为——你盗取的那份客户名单上有几个名字不该出现在任何非授权终端上。现在两个穿着西装的人站在你的公寓门口，他们的眼神比清道夫更冰冷。其中一个亮出了荒坂内部的安保徽章：「有人花钱请我们来清理门户。你放心，我们很专业，不会疼太久的。」你知道跑不掉了。",
+      "type": "combat",
+      "ageRange": [25, 55],
+      "weight": 3,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "试图谈判，用情报换命", "effects": { "CHARISMA": 2, "MONEY": -10000, "STREET_REP": -3 } },
+        { "id": "branch_2", "text": "从窗户跳出去，赌一把", "effects": { "HEALTH": -20, "STREET_SMART": 1 } }
+      ],
+      "effects": { "HEALTH": -15, "MONEY": -5000 },
+      "tags": ["死亡", "企业", "清算", "终局"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 705,
+      "title": "寒冬驱逐",
+      "description": "夜之城迎来了百年不遇的寒潮。在你被驱逐出住所的第三周，体温已经开始不可控制地下降。你蜷缩在蒸汽管道旁边，试图借用那一点点余温。但蒸汽时有时无——市政公司也因为天气削减了供应。你的手指已经失去了知觉，嘴唇发紫，意识开始模糊。你知道一旦睡着就可能再也醒不过来。不远处，另一栋楼里的派对音乐震天响。",
+      "type": "housing",
+      "ageRange": [18, 65],
+      "weight": 4,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "强行闯入任何有暖气的建筑", "effects": { "HEALTH": -5, "NCPD_WANTED": 2, "STREET_SMART": 1 } },
+        { "id": "branch_2", "text": "用最后的体力走到最近的避难所", "effects": { "HEALTH": -15, "MENTAL": -2 } }
+      ],
+      "effects": { "HEALTH": -15, "MENTAL": -3 },
+      "tags": ["死亡", "寒冬", "驱逐", "终局"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 706,
+      "title": "战斗重伤",
+      "description": "这次的任务从一开始就是个陷阱。情报是假的，报酬是诱饵，你走进了一个精心布置的包围圈。子弹从四面八方射来，你的护甲在第六发子弹后被击穿。你倒在血泊中，听到队友——如果他们还活着的话——在通讯频道里呼喊你的名字。你的视野边缘开始变红，生命体征监测器发出刺耳的警告音。你感觉到体内的温度正在流失，伴随着每次心跳。",
+      "type": "combat",
+      "ageRange": [20, 55],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "用最后一颗手雷和敌人同归于尽", "effects": { "STREET_REP": 5, "KARMA": 1, "HEALTH": -25 } },
+        { "id": "branch_2", "text": "装死，等待救援机会", "effects": { "COOL": 3, "HEALTH": -20, "STREET_SMART": 2 } }
+      ],
+      "effects": { "HEALTH": -20, "COMBAT": 1 },
+      "tags": ["死亡", "战斗", "重伤", "终局"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 707,
+      "title": "超梦成瘾崩溃",
+      "description": "你已经连续沉浸在超梦中超过七十二小时了。现实和虚拟的边界彻底消失。你的身体躺在床上日渐消瘦，但你的意识还活在超梦片段里——那个你是企业CEO、是顶级佣兵、是万人迷的世界。超梦播放器的散热风扇发出刺耳的噪音，营养液已经耗尽。你的神经元因为过度刺激开始死亡。你最后的意识里，甚至不记得自己的真名是什么了。",
+      "type": "cyber",
+      "ageRange": [18, 50],
+      "weight": 3,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "用疼痛刺激自己回到现实", "effects": { "HEALTH": -15, "MENTAL": -5, "ADDICTION": -3 } },
+        { "id": "branch_2", "text": "继续沉浸，死在虚拟世界里", "effects": { "HEALTH": -25, "MENTAL": -10 } }
+      ],
+      "effects": { "HEALTH": -20, "MENTAL": -8 },
+      "tags": ["死亡", "超梦", "成瘾", "终局"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 708,
+      "title": "走投无路的自杀",
+      "description": "一切都没有意义了。账单、债务、成瘾、背叛——这座城市已经榨干了你所有的一切。你站在公寓楼顶的边缘，脚下是车水马龙的街道。夜色中的霓虹灯闪烁着虚假的温暖，远处的全息广告正在推销一种新的超梦体验。你想起很小的时候母亲对你说过的话——但那已经是上辈子的事了。风吹过你的脸，你闭上眼睛，往前迈了一步。",
+      "type": "special",
+      "ageRange": [18, 60],
+      "weight": 2,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "纵身一跃，结束一切", "effects": { "HEALTH": -30, "MENTAL": -20 } },
+        { "id": "branch_2", "text": "在最后一刻退缩，寻求帮助", "effects": { "COOL": 3, "MENTAL": 2, "HEALTH": 0 } }
+      ],
+      "effects": { "MENTAL": -15, "HEALTH": -5 },
+      "tags": ["死亡", "自杀", "绝望", "终局"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 709,
+      "title": "NCPD清场行动",
+      "description": "夜之城警方对沃森区发动了一次大规模的清场行动。武装直升机在空中盘旋，地面部队用镇暴步枪扫射任何被认为是「帮派成员」的人。你只是路过，或者只是在错误的时间出现在错误的地点。但你身上有武器，你的赛博植入物被扫描为「军用级」，你的名字出现在他们的名单上。一个戴着战术头盔的警察朝你举起了枪，他没有喊「不许动」。",
+      "type": "combat",
+      "ageRange": [18, 55],
+      "weight": 4,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "举手投降，希望他们不开枪", "effects": { "HEALTH": -10, "NCPD_WANTED": 3, "MONEY": -2000 } },
+        { "id": "branch_2", "text": "利用掩体逃跑，赌一把", "effects": { "HEALTH": -15, "STREET_SMART": 2, "NCPD_WANTED": 5 } }
+      ],
+      "effects": { "HEALTH": -15, "NCPD_WANTED": 3 },
+      "tags": ["死亡", "警察", "清场", "终局"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 710,
+      "title": "器官被清道夫摘取",
+      "description": "最可怕的噩梦变成了现实。清道夫没有当场杀死你——他们把你带到了一个地下手术室，那里有全套的器官摘取设备。你被绑在生锈的手术台上，头顶的无影灯刺得你睁不开眼。戴着口罩的清道夫医生正在检查你的器官清单：「肾脏——健康。肝脏——还行。赛博义眼——九成新。这单赚了。」你的嘴被封住，只能发出无助的呜咽。",
+      "type": "combat",
+      "ageRange": [18, 50],
+      "weight": 2,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "拼命挣扎，不惜一切代价逃脱", "effects": { "STRENGTH": 3, "HEALTH": -20, "STREET_SMART": 2 } },
+        { "id": "branch_2", "text": "用言语谈判，承诺给他们更多好处", "effects": { "CHARISMA": 2, "MONEY": -10000, "HEALTH": -10 } }
+      ],
+      "effects": { "HEALTH": -20, "MONEY": -3000 },
+      "tags": ["死亡", "清道夫", "器官", "终局"],
+      "deathChainEntry": true
+    }
+  ]
+}

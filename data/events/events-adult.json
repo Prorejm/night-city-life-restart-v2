@@ -1,0 +1,208 @@
+{
+  "events": [
+    {
+      "id": 201,
+      "title": "公司晋升机会",
+      "description": "你在荒坂集团的业绩考核中名列前茅，主管私下告诉你有一个晋升的机会——从基层调到项目管理部门。薪水翻倍，配发公司公寓，但代价是需要签署一份更严格的竞业禁止协议，并且要接受实验性赛博植入物的「体检」。办公室的冷气开得很足，你看着合同上的条款，发现角落里有一行极小的字。",
+      "type": "economy",
+      "ageRange": [26, 35],
+      "weight": 14,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "接受晋升，签署合同", "effects": { "CORP_REP": 5, "MONEY": 3000, "CYBER_LEVEL": 1, "FREEDOM": -2 } },
+        { "id": "branch_2", "text": "拒绝晋升，不想被企业绑定", "effects": { "COOL": 2, "FREEDOM": 2, "MONEY": -500 } }
+      ],
+      "effects": { "CORP_REP": 2, "MONEY": 1000 },
+      "tags": ["成年", "企业", "晋升", "合同"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 202,
+      "title": "被裁员",
+      "description": "荒坂集团启动了新一轮的「组织优化」。你所在的部门被整体外包，你和三十几个同事在同一天收到了解雇通知。HR面无表情地说这是「业务调整」，补偿金只有法定最低标准。你抱着装满私人物品的纸箱走出大楼，看到门口已经有新的应聘者在排队——你的岗位已经被AI和廉价劳工取代了。",
+      "type": "economy",
+      "ageRange": [28, 50],
+      "weight": 16,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "领取微薄补偿，开始找下一份工作", "effects": { "MONEY": 2000, "MENTAL": -3, "CORP_REP": -3 } },
+        { "id": "branch_2", "text": "起诉公司违法裁员，争取更多赔偿", "effects": { "MONEY": -1500, "CORP_REP": -5, "KARMA": 1 } }
+      ],
+      "effects": { "MONEY": 1000, "MENTAL": -2 },
+      "tags": ["成年", "裁员", "企业", "失业"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 203,
+      "title": "街头声望飙升",
+      "description": "你在一次街头冲突中展现了惊人的胆识和战斗力。你独自击退了来砸场子的漩涡帮成员，保护了整个街区的商贩。事情在邻里间传开了，人们开始用敬畏的眼光看你。一个小有名气的中间人主动找到你，说有几单「有分量」的生意想和你谈——你的名字终于在这座城市的底层社会里有了分量。",
+      "type": "social",
+      "ageRange": [26, 40],
+      "weight": 12,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "接受中间人的邀请，扩大自己的影响力", "effects": { "STREET_REP": 5, "MONEY": 1500, "NETWORK": 3 } },
+        { "id": "branch_2", "text": "保持低调，拒绝被名声绑架", "effects": { "COOL": 3, "KARMA": 2 } }
+      ],
+      "effects": { "STREET_REP": 3, "COOL": 1 },
+      "tags": ["成年", "声望", "街头", "中间人"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 204,
+      "title": "组建团队",
+      "description": "你意识到单打独斗在夜之城走不远。一个靠谱的团队——有黑客、有技术员、有打手——能接更大的单子，存活率也更高。你在「来生」酒吧贴了招募告示，来面试的人形形色色：一个退役军用机器人操作员、一个被企业开除的数据分析师、一个欠了赌债的前NCPD警员。",
+      "type": "social",
+      "ageRange": [28, 45],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "组建团队，承接大型佣兵任务", "effects": { "STREET_REP": 3, "MONEY": 2000, "COMBAT": 2, "NETWORK": 4 } },
+        { "id": "branch_2", "text": "觉得组队太麻烦，继续单干", "effects": { "COOL": 1, "FREEDOM": 2 } }
+      ],
+      "effects": { "NETWORK": 2 },
+      "tags": ["成年", "团队", "招募", "佣兵"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 205,
+      "title": "购置房产",
+      "description": "你攒了一笔钱，足够在夜之城购置一处属于自己的房产。房产中介的全息展示列出了几个选项：沃森区的旧公寓（便宜但治安差）、海伍德区的小平房（中规中矩）、科珀广场的单身公寓（贵但有面子），或者城外废弃的工厂厂房（需要自己改造但空间大）。在夜之城，有房产的人才算真正有了立足之地。",
+      "type": "economy",
+      "ageRange": [28, 50],
+      "weight": 12,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "购买海伍德区的平房，稳定但普通", "effects": { "MONEY": -8000, "MENTAL": 3, "STREET_REP": 1 } },
+        { "id": "branch_2", "text": "购买废弃厂房，省钱但有改造风险", "effects": { "MONEY": -3000, "TECH": 2, "CREATIVITY": 2 } }
+      ],
+      "effects": { "MONEY": -5000, "MENTAL": 2 },
+      "tags": ["成年", "房产", "投资", "安居"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 206,
+      "title": "遭遇背叛",
+      "description": "你最信任的搭档——那个和你一起出生入死三年的兄弟——出卖了你。他在一次大任务中提前带着报酬消失了，把你留在了敌人的包围圈里。你九死一生逃出来，发现他不仅洗劫了你们的共同账户，还把你的行踪卖给了你的仇家。背叛的痛楚比子弹更难愈合。",
+      "type": "combat",
+      "ageRange": [26, 45],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "追查叛徒，报仇雪恨", "effects": { "STREET_REP": 2, "COMBAT": 2, "MENTAL": -2, "MONEY": 1000 } },
+        { "id": "branch_2", "text": "算了，吃一堑长一智，不再信任任何人", "effects": { "COOL": 3, "MENTAL": -1, "TRUST": -3 } }
+      ],
+      "effects": { "MENTAL": -3, "STREET_SMART": 2 },
+      "tags": ["成年", "背叛", "信任", "复仇"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 207,
+      "title": "获得关键情报",
+      "description": "你的情报网络捕获了一条价值连城的信息：荒坂集团正在秘密开发一种新型赛博武器原型，安保系统将在下个月的维护窗口期出现十分钟的漏洞。这条情报足以让你一夜暴富，也可能让你死无葬身之地。情报贩子蜘蛛看着你，等待你的决定——有些秘密知道得太多了，就不再是秘密，而是诅咒。",
+      "type": "social",
+      "ageRange": [28, 50],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "策划盗取武器原型，高风险高回报", "effects": { "MONEY": 5000, "STREET_REP": 4, "NCPD_WANTED": 3, "DANGER": 3 } },
+        { "id": "branch_2", "text": "把情报卖给其他势力赚取信息费", "effects": { "MONEY": 3000, "NETWORK": 2, "STREET_REP": 1 } }
+      ],
+      "effects": { "NETWORK": 2, "MONEY": 1000 },
+      "tags": ["成年", "情报", "荒坂", "秘密"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 208,
+      "title": "投资黑市生意",
+      "description": "一个地下商人邀请你入股他的黑市赛博零件生意。他需要启动资金来扩大生产规模——在废弃工厂里改装盗版军用义体，然后以正品三折的价格卖给底层的佣兵和帮派分子。投资回报率很高，但这本质上是在做违法生意。而且你的合伙人看起来很精明的样子，但你总觉得他在隐瞒什么。",
+      "type": "economy",
+      "ageRange": [30, 55],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "投资黑市生意，追求高回报", "effects": { "MONEY": -5000, "STREET_REP": 2, "KARMA": -2, "PASSIVE_INCOME": 3 } },
+        { "id": "branch_2", "text": "谨慎拒绝，不想沾手违法生意", "effects": { "KARMA": 2, "COOL": 1 } }
+      ],
+      "effects": { "MONEY": -2000, "STREET_SMART": 1 },
+      "tags": ["成年", "黑市", "投资", "生意"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 209,
+      "title": "团队分裂",
+      "description": "你的团队因为分赃不均爆发了激烈争吵。黑客认为每次任务她的风险最大但分得最少，打手觉得每次都是他冲在最前面应该拿更多。成员之间的矛盾像定时炸弹。你现在必须做出裁决，而无论你怎么选，都可能有人离开。在夜之城，维持一个团队比建立一个团队难得多。",
+      "type": "social",
+      "ageRange": [30, 50],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "重新分配利益，安抚不满的成员", "effects": { "CHARISMA": 3, "MONEY": -1000, "NETWORK": 1 } },
+        { "id": "branch_2", "text": "强硬镇压反对声音，立下规矩", "effects": { "STREET_REP": 2, "COOL": 2, "NETWORK": -2 } }
+      ],
+      "effects": { "MENTAL": -1, "STREET_SMART": 1 },
+      "tags": ["成年", "团队", "分裂", "管理"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 210,
+      "title": "中年危机",
+      "description": "某个深夜，你独自坐在公寓里，看着窗外永不熄灭的霓虹灯。你突然意识到自己已经不再年轻了。身体开始出现各种小毛病，义体维护费用越来越高，年轻时的那些朋友不是死了就是进去了。你问自己：这些年到底得到了什么？这座吃人不吐骨头的城市，究竟是你的舞台还是你的坟墓？",
+      "type": "daily",
+      "ageRange": [35, 55],
+      "weight": 12,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "振作精神，重新规划人生", "effects": { "MENTAL": 3, "COOL": 2, "AMBITION": 3 } },
+        { "id": "branch_2", "text": "用酒精和超梦麻醉自己，逃避现实", "effects": { "ADDICTION_RISK": 4, "MENTAL": -2, "MONEY": -500 } }
+      ],
+      "effects": { "MENTAL": -1 },
+      "tags": ["成年", "中年", "危机", "反思"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 211,
+      "title": "旧友重逢",
+      "description": "你在街头偶然遇到了童年的好友。你们都变了——他装上了廉价的军用义肢，脸上多了几道疤，眼神里有了你读不懂的东西。他热情地拉着你去喝酒，聊起过去的岁月。但随着话题深入，你发现他似乎在试探什么——他可能已经不是当年那个单纯的朋友了，也许成了某个势力的线人。",
+      "type": "social",
+      "ageRange": [26, 50],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "重拾旧日友谊，敞开心扉", "effects": { "MENTAL": 2, "NETWORK": 1, "KARMA": 1 } },
+        { "id": "branch_2", "text": "保持警惕，小心应对", "effects": { "STREET_SMART": 2, "COOL": 1 } }
+      ],
+      "effects": { "MENTAL": 1 },
+      "tags": ["成年", "故友", "重逢", "信任"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 212,
+      "title": "患上慢性职业病",
+      "description": "多年的战斗和义体使用开始让你付出代价。你的脊柱因为旧伤和劣质义体的长期压迫开始剧烈疼痛，医生说这是「赛博退化综合征」——一种因为赛博植入物与神经系统不兼容导致的慢性病。正规医院的治疗费用是个无底洞，地下诊所能便宜些但效果存疑。最可怕的是，这种病不会好，只会越来越糟。",
+      "type": "medical",
+      "ageRange": [35, 55],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "去正规医院治疗，花光积蓄也在所不惜", "effects": { "HEALTH": 2, "MONEY": -5000, "MENTAL": -1 } },
+        { "id": "branch_2", "text": "找黑市医生凑合治，省钱但冒险", "effects": { "HEALTH": -1, "MONEY": -1000, "CYBER_LEVEL": 1 } }
+      ],
+      "effects": { "HEALTH": -2, "MONEY": -1500 },
+      "tags": ["成年", "职业病", "赛博", "健康"],
+      "deathChainEntry": false
+    }
+  ]
+}

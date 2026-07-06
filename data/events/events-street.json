@@ -1,0 +1,208 @@
+{
+  "events": [
+    {
+      "id": 301,
+      "title": "漩涡帮拦路抢劫",
+      "description": "你走在沃森区废弃的工业区里，突然从阴影中跳出三个漩涡帮成员。他们身上布满劣质的赛博植入物，眼中的红光在昏暗的街灯下闪烁。为首的晃着手中的扳手，要你把所有值钱的东西交出来。这不是你第一次被劫了，但这次他们看起来比平时更狂躁——可能又磕了什么新药。",
+      "type": "combat",
+      "ageRange": [15, 60],
+      "weight": 18,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "交出钱财保平安", "effects": { "MONEY": -500, "HEALTH": 0 } },
+        { "id": "branch_2", "text": "反抗到底，拼死一搏", "effects": { "COMBAT": 2, "STREET_REP": 2, "HEALTH": -4, "MONEY": 200 } }
+      ],
+      "effects": { "MONEY": -300, "STREET_SMART": 1 },
+      "tags": ["街头", "漩涡帮", "抢劫", "危险"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 302,
+      "title": "虎爪帮收保护费",
+      "description": "两个穿着虎爪帮标志性皮夹克的男人走进你所在的商店或摊位。他们用漫不经心的语气说着「该交钱了」，手指有意无意地敲打着腰间鼓起的部位。店主脸色发白，哆哆嗦嗦地开始数钱。周围的其他顾客迅速低下头，假装什么都没看见。虎爪帮在这一带说了算，不交钱的下场就是「意外失火」。",
+      "type": "economy",
+      "ageRange": [18, 60],
+      "weight": 20,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        { "id": "branch_1", "text": "乖乖交钱，破财消灾", "effects": { "MONEY": -300, "STREET_REP": -1 } },
+        { "id": "branch_2", "text": "拒绝交钱并威胁回去", "effects": { "STREET_REP": 2, "COOL": 2, "DANGER": 2 } }
+      ],
+      "effects": { "MONEY": -200 },
+      "tags": ["街头", "虎爪帮", "保护费", "勒索"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 303,
+      "title": "清道夫偷袭",
+      "description": "你穿过一条昏暗的后巷时，听到了身后轻微的脚步声。还没来得及回头，一个麻袋就套住了你的头。清道夫——这帮专门绑架活人摘取器官和义体的猎手——闻到了你身上值钱赛博零件的味道。你感到一双手在摸索你的后颈接口处，嘴里被塞进了破布。你必须立刻做出反应。",
+      "type": "combat",
+      "ageRange": [16, 55],
+      "weight": 14,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "拼命挣扎反抗，大声呼救", "effects": { "STRENGTH": 2, "HEALTH": -3, "STREET_REP": 1 } },
+        { "id": "branch_2", "text": "假装昏迷，伺机逃脱", "effects": { "INTELLIGENCE": 2, "STREET_SMART": 2 } }
+      ],
+      "effects": { "HEALTH": -2, "STREET_SMART": 1 },
+      "tags": ["街头", "清道夫", "偷袭", "危险"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 304,
+      "title": "莫克斯帮求助",
+      "description": "一个身上纹着莫克斯帮标志的年轻女人跑到你面前，神色慌张。她说她的姐妹被漩涡帮绑架了，关在附近的一个仓库里。莫克斯帮的人手不够，她请求你的帮助。她的声音在发抖，但眼神里有一种不顾一切的决心。在夜之城，帮助别人往往意味著给自己找麻烦，但莫克斯帮向来在底层风评不错。",
+      "type": "social",
+      "ageRange": [18, 55],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "出手相助，和莫克斯帮并肩作战", "effects": { "KARMA": 3, "COMBAT": 2, "STREET_REP": 3, "HEALTH": -3 } },
+        { "id": "branch_2", "text": "婉拒，不想惹麻烦", "effects": { "COOL": 1, "KARMA": -1 } }
+      ],
+      "effects": { "KARMA": 1 },
+      "tags": ["街头", "莫克斯帮", "求助", "营救"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 305,
+      "title": "NCPD临检",
+      "description": "一辆NCPD的巡逻车在你面前停了下来，两个穿着防弹衣的警察走下车。其中一个的手按在枪套上，另一个拿着数据板扫描你的脸。「站住别动，身份核查。」你的名字可能在他们系统里挂着轻罪记录，也可能什么都没有。但所有人都知道，在夜之城被NCPD拦下来从来不会有什么好事——尤其是你身上可能带着违禁品的时候。",
+      "type": "daily",
+      "ageRange": [16, 60],
+      "weight": 18,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        { "id": "branch_1", "text": "配合检查，出示证件", "effects": { "COOL": 1, "NCPD_WANTED": -1 } },
+        { "id": "branch_2", "text": "转身就跑，利用地形甩掉他们", "effects": { "STREET_SMART": 2, "NCPD_WANTED": 2, "COOL": -1 } }
+      ],
+      "effects": { "NCPD_WANTED": 1 },
+      "tags": ["街头", "NCPD", "临检", "警察"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 306,
+      "title": "创伤小组出动",
+      "description": "天空中传来震耳欲聋的旋翼声，一架涂着红色十字标志的AV-4重型直升机降落在街道中央。创伤小组国际的精英医疗队全副武装地跳下来，他们的装甲比NCPD还厚。一个富豪在附近的冲突中受伤了——他的生命体征监测系统自动触发了最高等级的急救响应。普通人只能在旁边看着，因为这样的服务一年保费就抵得上你一辈子的收入。",
+      "type": "medical",
+      "ageRange": [15, 60],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "趁乱靠近，看看能不能捡到点好处", "effects": { "STREET_SMART": 2, "MONEY": 200, "DANGER": 1 } },
+        { "id": "branch_2", "text": "远远避开，不想被卷入麻烦", "effects": { "COOL": 1 } }
+      ],
+      "effects": { "STREET_SMART": 1 },
+      "tags": ["街头", "创伤小组", "急救", "富豪"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 307,
+      "title": "黑市交易",
+      "description": "你通过熟人介绍来到了一个隐藏在废弃地铁站里的黑市集市。这里什么都有——从非法赛博义体到军用弹药，从伪造身份证到窃取的企业数据。摊主们戴着面具或全息投影，互相用暗语交流。你注意到角落里有几个穿西装的人，他们在和军火商谈着什么大买卖。空气中弥漫着焊接枪的焦味和紧张的气氛。",
+      "type": "economy",
+      "ageRange": [18, 60],
+      "weight": 15,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "采购需要的装备和物资", "effects": { "MONEY": -1000, "TECH": 2, "CYBER_LEVEL": 1 } },
+        { "id": "branch_2", "text": "只是逛逛，熟悉黑市的门路", "effects": { "STREET_SMART": 2, "NETWORK": 1 } }
+      ],
+      "effects": { "STREET_SMART": 1, "MONEY": -200 },
+      "tags": ["街头", "黑市", "交易", "地下"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 308,
+      "title": "街头飙车",
+      "description": "夜之城市区的高速公路上，一群改装车手正在组织非法飙车。引擎的轰鸣声震得玻璃都在颤抖，五颜六色的霓虹灯带在车轮下闪烁。有人摇下车窗朝你喊：「嘿，要不要来一局？赛道是环城高速一圈，赌注一千欧元起！」围观的人群发出兴奋的尖叫。在夜之城，速度是少数还能让人感受到活着的事。",
+      "type": "daily",
+      "ageRange": [18, 50],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        { "id": "branch_1", "text": "参加飙车，用技术和胆量赚钱", "effects": { "COOL": 2, "MONEY": 1500, "TECH": 1, "NCPD_WANTED": 1 } },
+        { "id": "branch_2", "text": "在路边当观众，小赌怡情", "effects": { "MONEY": 200, "STREET_SMART": 1 } }
+      ],
+      "effects": { "COOL": 1 },
+      "tags": ["街头", "飙车", "速度", "非法"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 309,
+      "title": "超梦体验摊",
+      "description": "在扭扭街的一个角落里，一个穿着破旧风衣的男人招呼你体验「最真实的超梦片段」。他身后的折叠桌上摆着几个二手超梦播放器和一摞芯片。封面上印着各种诱惑性的画面——富豪的奢华生活、顶级佣兵的刺激任务、名人的私密时刻。体验一次只要100欧元，但谁都不知道这些二手芯片里有没有病毒或者陷阱。",
+      "type": "cyber",
+      "ageRange": [18, 55],
+      "weight": 14,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        { "id": "branch_1", "text": "花100欧元体验超梦片段", "effects": { "COOL": 1, "ADDICTION_RISK": 2, "MENTAL": -1, "MONEY": -100 } },
+        { "id": "branch_2", "text": "拒绝，谁知道芯片里有什么陷阱", "effects": { "COOL": 2, "STREET_SMART": 1 } }
+      ],
+      "effects": { "MONEY": -50 },
+      "tags": ["街头", "超梦", "体验", "扭扭街"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 310,
+      "title": "流浪者补给站",
+      "description": "你在城郊遇到了一个流浪者营地。几辆改装房车围成一圈，中间燃着篝火。流浪者们正在交换物资和情报。一个满脸纹身的女人朝你招手，她的机械手臂在火光中反射出暗淡的光。她说他们刚从恶土带回来一批军用口粮和净水芯片，可以低价卖给你。在这座城市里，流浪者虽然被看不起，但他们的货往往比城里商店的更靠谱。",
+      "type": "social",
+      "ageRange": [16, 60],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "购买流浪者的物资", "effects": { "MONEY": -400, "SURVIVAL": 2, "NETWORK": 1 } },
+        { "id": "branch_2", "text": "和他们聊天，交换街头情报", "effects": { "STREET_SMART": 2, "NETWORK": 2 } }
+      ],
+      "effects": { "NETWORK": 1 },
+      "tags": ["街头", "流浪者", "营地", "交易"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 311,
+      "title": "酒吧斗殴",
+      "description": "你在「来生」酒吧喝酒时，一个喝醉的佣兵故意撞了你一下，酒洒了你一身。他挑衅地看着你，周围的人都安静下来等着看好戏。酒吧老板在吧台后面叹了口气——这周已经第三次了。在这种地方，服软会让你以后都抬不起头，但动手的话可能会惹上不该惹的人。",
+      "type": "combat",
+      "ageRange": [18, 55],
+      "weight": 16,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        { "id": "branch_1", "text": "一拳头砸回去，不能丢了面子", "effects": { "STREET_REP": 2, "COMBAT": 1, "HEALTH": -2, "MONEY": -300 } },
+        { "id": "branch_2", "text": "请对方喝一杯，化干戈为玉帛", "effects": { "CHARISMA": 2, "MONEY": -100, "NETWORK": 1 } }
+      ],
+      "effects": { "STREET_SMART": 1 },
+      "tags": ["街头", "酒吧", "斗殴", "来生"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 312,
+      "title": "街头艺人遇险",
+      "description": "你路过一个街头艺人的表演现场——一个年轻女孩在用全息投影设备演奏电子音乐。围观的人群中有几个混混开始骚扰她，踢翻她的设备，嘲笑她的音乐是「垃圾」。女孩缩在角落里护着她的设备，那是她全部的家当。周围的人都低着头快步走过，没人想管闲事。",
+      "type": "social",
+      "ageRange": [16, 55],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "上前制止混混，保护艺人", "effects": { "KARMA": 3, "COMBAT": 1, "HEALTH": -1, "NETWORK": 1 } },
+        { "id": "branch_2", "text": "装作没看见，继续赶路", "effects": { "COOL": 1, "KARMA": -1 } }
+      ],
+      "effects": { "KARMA": 1 },
+      "tags": ["街头", "艺人", "霸凌", "干预"],
+      "deathChainEntry": false
+    }
+  ]
+}

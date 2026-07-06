@@ -1,0 +1,382 @@
+{
+  "meta": {
+    "description": "药物数据 - Drug Database",
+    "version": "1.0",
+    "totalCount": 15
+  },
+  "allDrugs": [
+    {
+      "id": "oxycontin",
+      "name": "奥施康定",
+      "type": "prescription_opioid",
+      "addictionRate": 35,
+      "addictionThreshold": 5,
+      "effects": {
+        "painRelief": 40,
+        "stamina": 5,
+        "social": 3,
+        "reflex": -2
+      },
+      "withdrawalEffects": {
+        "stamina": -10,
+        "painAmplify": 30,
+        "social": -5,
+        "duration": 72
+      },
+      "price": 200,
+      "legal": true,
+      "description": "处方级强效阿片类止痛药，常用于术后镇痛。效果强烈但成瘾性高。长期使用会导致耐受性上升。",
+      "overdoseRisk": 15,
+      "duration": 6
+    },
+    {
+      "id": "vicodin",
+      "name": "维柯丁",
+      "type": "prescription_opioid",
+      "addictionRate": 25,
+      "addictionThreshold": 8,
+      "effects": {
+        "painRelief": 25,
+        "stamina": 3,
+        "social": 2,
+        "reflex": -1
+      },
+      "withdrawalEffects": {
+        "stamina": -6,
+        "painAmplify": 20,
+        "social": -3,
+        "duration": 48
+      },
+      "price": 120,
+      "legal": true,
+      "description": "中等强度阿片类止痛药，成瘾性较奥施康定低，但仍需谨慎使用。",
+      "overdoseRisk": 8,
+      "duration": 4
+    },
+    {
+      "id": "fentanyl_patch",
+      "name": "芬太尼贴片",
+      "type": "prescription_opioid",
+      "addictionRate": 50,
+      "addictionThreshold": 3,
+      "effects": {
+        "painRelief": 60,
+        "stamina": 8,
+        "social": 5,
+        "reflex": -4
+      },
+      "withdrawalEffects": {
+        "stamina": -15,
+        "painAmplify": 50,
+        "social": -8,
+        "duration": 96
+      },
+      "price": 500,
+      "legal": true,
+      "description": "超强效阿片类透皮贴剂，药效是海洛因的50-100倍。极低剂量即可致死，黑市流通量惊人。",
+      "overdoseRisk": 45,
+      "duration": 12
+    },
+    {
+      "id": "heroin",
+      "name": "海洛因",
+      "type": "illegal_opioid",
+      "addictionRate": 60,
+      "addictionThreshold": 3,
+      "effects": {
+        "painRelief": 55,
+        "stamina": 10,
+        "euphoria": 20,
+        "reflex": -5,
+        "intelligence": -3
+      },
+      "withdrawalEffects": {
+        "stamina": -18,
+        "painAmplify": 45,
+        "social": -10,
+        "health": -10,
+        "duration": 120
+      },
+      "price": 300,
+      "legal": false,
+      "description": "非法阿片类毒品之王，从罂粟中提取。带来极致的欣快感，但成瘾性极高，戒断反应极为痛苦。",
+      "overdoseRisk": 40,
+      "duration": 8
+    },
+    {
+      "id": "meth",
+      "name": "冰毒",
+      "type": "illegal_stimulant",
+      "addictionRate": 55,
+      "addictionThreshold": 4,
+      "effects": {
+        "reflex": 8,
+        "stamina": 15,
+        "combat": 5,
+        "intelligence": 4,
+        "social": -2,
+        "health": -5
+      },
+      "withdrawalEffects": {
+        "stamina": -20,
+        "reflex": -8,
+        "health": -15,
+        "mentalHealth": -15,
+        "duration": 168
+      },
+      "price": 250,
+      "legal": false,
+      "description": "强效合成兴奋剂，让使用者保持数日亢奋。长期使用会导致严重的牙齿腐烂、皮肤溃烂和精神错乱。",
+      "overdoseRisk": 25,
+      "duration": 12
+    },
+    {
+      "id": "cocaine",
+      "name": "可卡因",
+      "type": "illegal_stimulant",
+      "addictionRate": 40,
+      "addictionThreshold": 6,
+      "effects": {
+        "reflex": 6,
+        "social": 8,
+        "stamina": 8,
+        "intelligence": 3,
+        "health": -3
+      },
+      "withdrawalEffects": {
+        "stamina": -12,
+        "social": -10,
+        "mentalHealth": -10,
+        "duration": 72
+      },
+      "price": 350,
+      "legal": false,
+      "description": "古柯叶提取的兴奋剂，在赛博都市的上流社会极为流行。带来短暂的自信和社交能力飙升。",
+      "overdoseRisk": 20,
+      "duration": 3
+    },
+    {
+      "id": "pcp",
+      "name": "迷幻剂(PCP)",
+      "type": "illegal_hallucinogen",
+      "addictionRate": 20,
+      "addictionThreshold": 10,
+      "effects": {
+        "painRelief": 30,
+        "combat": 8,
+        "strength": 5,
+        "intelligence": -8,
+        "reflex": -3
+      },
+      "withdrawalEffects": {
+        "mentalHealth": -12,
+        "social": -6,
+        "duration": 48
+      },
+      "price": 150,
+      "legal": false,
+      "description": "解离性迷幻剂，让使用者产生与现实分离的幻觉。在帮派成员中流行，因其能让人在战斗中感觉不到疼痛。",
+      "overdoseRisk": 18,
+      "duration": 6
+    },
+    {
+      "id": "lsd",
+      "name": "LSD",
+      "type": "illegal_hallucinogen",
+      "addictionRate": 10,
+      "addictionThreshold": 15,
+      "effects": {
+        "intelligence": 5,
+        "perception": 8,
+        "creativity": 10,
+        "reflex": -2,
+        "social": -3
+      },
+      "withdrawalEffects": {
+        "mentalHealth": -5,
+        "duration": 24
+      },
+      "price": 100,
+      "legal": false,
+      "description": "强效致幻剂，微量即可引发持续数小时的深刻感官变化。物理成瘾性低，但可能导致持久的精神问题。",
+      "overdoseRisk": 5,
+      "duration": 10
+    },
+    {
+      "id": "battle_stim",
+      "name": "战斗兴奋剂",
+      "type": "cyber_drug",
+      "addictionRate": 45,
+      "addictionThreshold": 5,
+      "effects": {
+        "combat": 12,
+        "reflex": 10,
+        "strength": 8,
+        "painRelief": 30,
+        "health": -8,
+        "mentalHealth": -5
+      },
+      "withdrawalEffects": {
+        "combat": -10,
+        "reflex": -8,
+        "stamina": -15,
+        "health": -10,
+        "duration": 96
+      },
+      "price": 600,
+      "legal": false,
+      "description": "军用级战斗增强剂，由肾上腺素合成类似物和合成阿片类复合而成。战场上让士兵化身杀戮机器，但战后崩溃率极高。",
+      "overdoseRisk": 30,
+      "duration": 2
+    },
+    {
+      "id": "neuro_booster",
+      "name": "神经增强素",
+      "type": "cyber_drug",
+      "addictionRate": 30,
+      "addictionThreshold": 7,
+      "effects": {
+        "intelligence": 10,
+        "hack": 8,
+        "reflex": 3,
+        "perception": 5,
+        "mentalHealth": -6
+      },
+      "withdrawalEffects": {
+        "intelligence": -10,
+        "hack": -8,
+        "mentalHealth": -12,
+        "duration": 72
+      },
+      "price": 800,
+      "legal": false,
+      "description": "黑客专用的认知增强药物，暂时大幅提升神经处理速度。网络空间中慢动作般的世界让使用者上瘾。",
+      "overdoseRisk": 15,
+      "duration": 4
+    },
+    {
+      "id": "braindance_chip",
+      "name": "超梦芯片",
+      "type": "cyber_drug",
+      "addictionRate": 70,
+      "addictionThreshold": 2,
+      "effects": {
+        "euphoria": 30,
+        "social": 5,
+        "intelligence": -4,
+        "reflex": -6,
+        "stamina": -5
+      },
+      "withdrawalEffects": {
+        "mentalHealth": -20,
+        "euphoriaNegative": 25,
+        "social": -8,
+        "duration": 120
+      },
+      "price": 1000,
+      "legal": false,
+      "description": "数字神经接口芯片，直接录制和回放他人的记忆和感受。最顶级的体验堪比真实人生，也是最具毁灭性的成瘾物之一。",
+      "overdoseRisk": 10,
+      "duration": 1
+    },
+    {
+      "id": "synthetic_serum",
+      "name": "合成血清",
+      "type": "cyber_drug",
+      "addictionRate": 25,
+      "addictionThreshold": 8,
+      "effects": {
+        "health": 15,
+        "healRate": 30,
+        "stamina": 10,
+        "painRelief": 20,
+        "reflex": -1
+      },
+      "withdrawalEffects": {
+        "health": -10,
+        "healRate": -20,
+        "stamina": -10,
+        "duration": 48
+      },
+      "price": 1500,
+      "legal": true,
+      "description": "实验性组织再生合剂，由纳米机器人和生长因子组成。能加速伤口愈合，但长期使用会导致自体再生能力退化。",
+      "overdoseRisk": 12,
+      "duration": 24
+    },
+    {
+      "id": "alcohol",
+      "name": "酒精",
+      "type": "common_addictive",
+      "addictionRate": 15,
+      "addictionThreshold": 20,
+      "effects": {
+        "social": 5,
+        "painRelief": 8,
+        "reflex": -3,
+        "intelligence": -3,
+        "stamina": 2
+      },
+      "withdrawalEffects": {
+        "social": -5,
+        "mentalHealth": -8,
+        "health": -3,
+        "duration": 48
+      },
+      "price": 15,
+      "legal": true,
+      "description": "赛博都市中最常见也最被社会接受的成瘾物。各种度数从淡啤到工业酒精应有尽有。",
+      "overdoseRisk": 5,
+      "duration": 3
+    },
+    {
+      "id": "nicotine",
+      "name": "尼古丁",
+      "type": "common_addictive",
+      "addictionRate": 40,
+      "addictionThreshold": 10,
+      "effects": {
+        "reflex": 2,
+        "intelligence": 1,
+        "social": 2,
+        "health": -2
+      },
+      "withdrawalEffects": {
+        "reflex": -3,
+        "social": -4,
+        "mentalHealth": -5,
+        "duration": 168
+      },
+      "price": 10,
+      "legal": true,
+      "description": "电子烟和传统烟草制品遍布全城。未来科技无法改变的是，人们仍然依赖这种小小的生物碱来缓解压力。",
+      "overdoseRisk": 2,
+      "duration": 1
+    },
+    {
+      "id": "tranquilizer",
+      "name": "镇定剂",
+      "type": "common_addictive",
+      "addictionRate": 20,
+      "addictionThreshold": 12,
+      "effects": {
+        "mentalHealth": 10,
+        "painRelief": 10,
+        "reflex": -5,
+        "stamina": -3,
+        "social": -2
+      },
+      "withdrawalEffects": {
+        "mentalHealth": -15,
+        "stamina": -5,
+        "anxiety": 20,
+        "duration": 72
+      },
+      "price": 80,
+      "legal": true,
+      "description": "苯二氮卓类镇静药物，用于治疗焦虑和失眠。在赛博都市中几乎人人都在服用某种镇定剂来应对高压生活。",
+      "overdoseRisk": 10,
+      "duration": 6
+    }
+  ]
+}

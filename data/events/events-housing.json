@@ -1,0 +1,174 @@
+{
+  "events": [
+    {
+      "id": 501,
+      "title": "房东催缴房租",
+      "description": "你的房门被重重敲响。门外是房东和他雇来的两个打手。「这个月的房租已经拖了十天了！」房东的声音透过薄薄的墙壁传来。你的口袋里只剩下买方便面的钱，距离发薪日还有一个星期。在夜之城，拖欠房租的后果很直接——要么交钱，要么睡天桥。你听到邻居因为同样的原因正在被往外扔东西。",
+      "type": "economy",
+      "ageRange": [18, 60],
+      "weight": 20,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        { "id": "branch_1", "text": "东拼西凑，借钱交租", "effects": { "MONEY": -1500, "MENTAL": -1, "NETWORK": -1 } },
+        { "id": "branch_2", "text": "请求宽限一周，承诺尽快补上", "effects": { "CHARISMA": 1, "MONEY": -500, "STREET_SMART": 1 } }
+      ],
+      "effects": { "MONEY": -800, "MENTAL": -1 },
+      "tags": ["住房", "房租", "催缴", "贫困"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 502,
+      "title": "收到驱逐通知",
+      "description": "你今天在门缝里发现了一份正式文件——法院签发的驱逐通知。上面盖着红章，冰冷的法律用语宣告你必须在三十天内搬离。原因要么是欠租，要么是业主决定把楼拆了改建豪华公寓。通知背面印着法律援助的电话，但你打过去永远在忙线中。在夜之城，每年有几十万人被驱逐，你只是其中一个数字。",
+      "type": "housing",
+      "ageRange": [20, 60],
+      "weight": 16,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "寻找法律援助，试图对抗驱逐", "effects": { "MONEY": -2000, "MENTAL": -2, "KARMA": 1 } },
+        { "id": "branch_2", "text": "开始找新的住处，准备搬家", "effects": { "MONEY": -1000, "MENTAL": -1, "STREET_SMART": 1 } }
+      ],
+      "effects": { "MENTAL": -2, "MONEY": -500 },
+      "tags": ["住房", "驱逐", "法院", "通知"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 503,
+      "title": "室友突然搬走",
+      "description": "你的室友——那个和你分摊了两年房租的人——今天趁你不在时搬走了。他的房间空了，只留下一张纸条：「对不起，我找到了一份海伍德区的工作，那边的宿舍更便宜。欠你的房租下个月还。」你算了一下，他走之后你一个人要承担全部房租，而你工资的一半都要填进这个洞里。更糟的是，你发现他把厨房的电磁炉也带走了。",
+      "type": "housing",
+      "ageRange": [20, 45],
+      "weight": 14,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "紧急找新室友分摊房租", "effects": { "MONEY": -600, "NETWORK": 1, "STREET_SMART": 1 } },
+        { "id": "branch_2", "text": "独自承担房租，削减其他开支", "effects": { "MONEY": -1200, "MENTAL": -2 } }
+      ],
+      "effects": { "MONEY": -800, "MENTAL": -1 },
+      "tags": ["住房", "室友", "搬走", "经济"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 504,
+      "title": "房屋被查封",
+      "description": "今天早上你被窗外重型机械的轰鸣声吵醒。整栋公寓楼被市政府和企业的联合执法队包围了。一个官员拿着扩音器宣布：因为业主要缴纳欠税，整栋楼被查封拍卖。你们所有住户要在四十八小时内搬离。有人哭喊，有人咒骂，有人开始抢搬家具。执法机器人已经开始封锁入口，你看着自己在这个城市最后的落脚点变成了别人的资产。",
+      "type": "housing",
+      "ageRange": [22, 60],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "争取搬走更多个人物品，减少损失", "effects": { "STREET_SMART": 2, "MONEY": -500, "MENTAL": -2 } },
+        { "id": "branch_2", "text": "联合其他住户抗议查封", "effects": { "KARMA": 2, "NCPD_WANTED": 2, "MENTAL": -1 } }
+      ],
+      "effects": { "MENTAL": -3, "MONEY": -1000 },
+      "tags": ["住房", "查封", "驱逐", "没收"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 505,
+      "title": "搬到更差的住所",
+      "description": "经过一番寻找，你找到了夜之城里最便宜的住所——沃森区边缘的一个「集装箱公寓」。那是用废弃的货运集装箱改造的，一个箱子被隔成四个单间，隔音几乎为零，墙壁薄得能听到隔壁的每一次呼吸。卫生间是公用的，走廊里永远弥漫着排泄物和霉味。但这里的月租只有老房子的一半，你暂时没有别的选择。",
+      "type": "housing",
+      "ageRange": [18, 60],
+      "weight": 14,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "接受现实，先住下来再说", "effects": { "MONEY": -300, "MENTAL": -2, "HEALTH": -1 } },
+        { "id": "branch_2", "text": "拒绝住这种地方，宁愿睡天桥也要找更好的", "effects": { "COOL": 2, "MONEY": -500, "STREET_SMART": 1 } }
+      ],
+      "effects": { "MONEY": -200, "MENTAL": -1 },
+      "tags": ["住房", "降级", "集装箱", "贫困"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 506,
+      "title": "无家可归——天桥下过夜",
+      "description": "你终于还是流落到了街头。夜之城的夜晚气温骤降，你裹着捡来的纸箱和破毛毯，蜷缩在高架桥下的水泥角落里。远处霓虹灯闪烁，豪车在桥上驶过，车里的富人永远不会低头看一眼桥下的影子。其他流浪者用警惕的目光打量着你——这里也有地盘划分。你需要找到一个相对安全的角落度过这个夜晚，不被清道夫和帮派分子袭击。",
+      "type": "housing",
+      "ageRange": [16, 60],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        { "id": "branch_1", "text": "寻找流浪者聚集地，抱团取暖", "effects": { "STREET_SMART": 2, "HEALTH": -1, "MENTAL": -2, "NETWORK": 1 } },
+        { "id": "branch_2", "text": "寻找24小时营业的场所避寒", "effects": { "STREET_SMART": 1, "HEALTH": 0, "MONEY": -50 } }
+      ],
+      "effects": { "MENTAL": -2, "HEALTH": -1 },
+      "tags": ["住房", "流浪", "无家可归", "天桥"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 507,
+      "title": "避难所",
+      "description": "你来到了市政府运营的流浪者避难所。这里像是个巨大的仓库，摆满了行军床。门口有金属探测器，工作人员给你发了一个号码牌和一条薄得透明的毯子。避难所里人满为患，到处都是咳嗽声和鼾声。有人在角落里用全息投影看老电影，有人在小声争论明天的救济餐在哪里领。至少这里有个屋顶，但你的背包随时可能被偷。",
+      "type": "housing",
+      "ageRange": [16, 60],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 2,
+      "branches": [
+        { "id": "branch_1", "text": "在避难所住下，尽量适应环境", "effects": { "MENTAL": -1, "HEALTH": -1, "MONEY": -50 } },
+        { "id": "branch_2", "text": "觉得这里太危险，宁愿露宿街头", "effects": { "COOL": 1, "STREET_SMART": 1 } }
+      ],
+      "effects": { "MENTAL": -1, "HEALTH": -1 },
+      "tags": ["住房", "避难所", "流浪", "救济"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 508,
+      "title": "住房补贴申请",
+      "description": "你听说市政府有一个针对低收入居民的住房补贴计划。你花了整整一天在各个部门之间奔波——先到A部门拿表格，再到B部门盖章，然后回到A部门确认。每个窗口的工作人员都告诉你「还缺一份材料」。表格是用极小的字体印的，条款中藏着各种免责声明。排在你前面的人说他已经申请了两年，还在「审核中」。",
+      "type": "housing",
+      "ageRange": [22, 60],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 30,
+      "branches": [
+        { "id": "branch_1", "text": "耐心走完所有程序，递交完整材料", "effects": { "MONEY": -300, "MENTAL": -2, "COOL": 1 } },
+        { "id": "branch_2", "text": "找文件代办中介帮忙（需要额外费用）", "effects": { "MONEY": -1500, "MENTAL": 1, "STREET_SMART": 1 } }
+      ],
+      "effects": { "MENTAL": -1, "MONEY": -200 },
+      "tags": ["住房", "补贴", "官僚", "申请"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 509,
+      "title": "非法占屋",
+      "description": "你发现了一栋被废弃的公寓楼。窗户被打碎，墙壁上布满涂鸦，显然已经很久没人管理了。但楼的主体结构还算完整，有几个房间甚至还有水电——只要你知道怎么绕过被切断的管线。其他几个「住户」已经在里面住了下来，他们用警惕的眼神打量着你。在夜之城，占屋是违法的，但比起睡在天桥上，这至少算是个家。",
+      "type": "housing",
+      "ageRange": [18, 55],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "加入占屋社区，建立新的落脚点", "effects": { "MONEY": -200, "STREET_SMART": 2, "NCPD_WANTED": 1 } },
+        { "id": "branch_2", "text": "觉得太危险，继续寻找合法住所", "effects": { "COOL": 1, "MONEY": -300 } }
+      ],
+      "effects": { "STREET_SMART": 1, "MONEY": -100 },
+      "tags": ["住房", "占屋", "废弃", "非法"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 510,
+      "title": "水管爆裂与黑心房东",
+      "description": "你公寓的天花板开始漏水，然后是整面墙壁都湿透了。你多次联系房东，但他一直拖延，最后干脆不接电话。水渍开始发霉，空气中弥漫着腐烂的气味。你的衣物和电器开始损坏。邻居说房东在三年前就该修这栋楼的管道了，但他一直在等——等你们这些租户都受不了搬走，他好把楼拆了盖高层公寓。",
+      "type": "housing",
+      "ageRange": [20, 60],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "自掏腰包请人维修", "effects": { "MONEY": -800, "HEALTH": 1, "MENTAL": -1 } },
+        { "id": "branch_2", "text": "联合其他租户起诉房东", "effects": { "MONEY": -2000, "KARMA": 2, "MENTAL": -1 } }
+      ],
+      "effects": { "MONEY": -500, "MENTAL": -1, "HEALTH": -1 },
+      "tags": ["住房", "房东", "维修", "纠纷"],
+      "deathChainEntry": false
+    }
+  ]
+}

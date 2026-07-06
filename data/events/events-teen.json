@@ -1,0 +1,208 @@
+{
+  "events": [
+    {
+      "id": 101,
+      "title": "第一次街头斗殴",
+      "description": "你在沃森区的巷子里被几个虎爪帮的小混混堵住了。领头的小子嘲笑你的穿着，推搡你胸口。你的肾上腺素飙升，拳头捏得发白。这是你第一次面临真正的街头冲突——要么动手打回去，要么认怂绕道走。周围有几个看热闹的流浪汉在起哄。",
+      "type": "combat",
+      "ageRange": [15, 18],
+      "weight": 20,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "挥拳反击，用狠劲震慑他们", "effects": { "STRENGTH": 3, "STREET_REP": 2, "HEALTH": -2 } },
+        { "id": "branch_2", "text": "冷静谈判，用言语化解冲突", "effects": { "CHARISMA": 3, "COOL": 2, "STREET_REP": 1 } }
+      ],
+      "effects": { "STREET_SMART": 2, "COOL": 1 },
+      "tags": ["青年", "斗殴", "街头", "冲突"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 102,
+      "title": "加入小帮派",
+      "description": "一个自称「野狼」的街头帮派向你伸出了橄榄枝。他们主要在小唐人街附近活动，干些收保护费和走私的小勾当。加入意味着你有了「家人」和保护伞，但也意味着你的名字会被录入NCPD的监控名单。老大的眼神告诉你，拒绝的代价可能比接受更可怕。",
+      "type": "social",
+      "ageRange": [16, 20],
+      "weight": 18,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "加入野狼帮，获得保护但也背上帮派烙印", "effects": { "STREET_REP": 3, "MONEY": 300, "KARMA": -2, "NCPD_WANTED": 2 } },
+        { "id": "branch_2", "text": "婉拒并迅速离开这片区域", "effects": { "COOL": 2, "STREET_SMART": 1 } }
+      ],
+      "effects": { "STREET_SMART": 2 },
+      "tags": ["青年", "帮派", "招募", "街头"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 103,
+      "title": "退学打工",
+      "description": "家里的经济状况再也撑不住了。父亲在工厂事故中受伤后失业，母亲的工资连房租都不够。校长已经催缴了三次学费，你看着手里皱巴巴的通知书，做出了决定。在夜之城，穷人没有资格谈教育。你撕碎通知书，走向街头寻找任何能赚钱的工作。",
+      "type": "economy",
+      "ageRange": [15, 18],
+      "weight": 20,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "去工厂做苦力，稳定但前途渺茫", "effects": { "STRENGTH": 2, "MONEY": 500, "EDUCATION": -3, "MENTAL": -1 } },
+        { "id": "branch_2", "text": "在街头找零活，自由但充满风险", "effects": { "STREET_SMART": 3, "MONEY": 200, "EDUCATION": -2 } }
+      ],
+      "effects": { "EDUCATION": -2, "MONEY": 200 },
+      "tags": ["青年", "退学", "打工", "经济"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 104,
+      "title": "第一份正经工作",
+      "description": "经过一番周折，你在荒坂集团的物流部门找到了一份基础工作——在仓库里搬运货物、录入数据。薪水微薄，但总算是有正式收入了。你的工牌上印着你的照片和编号，同事都是和你一样被生活磨平了棱角的普通人。午休时，老员工告诉你，这家公司里没有真正的「铁饭碗」。",
+      "type": "economy",
+      "ageRange": [18, 22],
+      "weight": 15,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "勤恳工作，力争上游争取晋升机会", "effects": { "CORP_REP": 3, "MONEY": 800, "EDUCATION": 1 } },
+        { "id": "branch_2", "text": "敷衍了事，私下找更赚钱的门路", "effects": { "STREET_SMART": 2, "MONEY": 400, "CORP_REP": -1 } }
+      ],
+      "effects": { "MONEY": 500, "CORP_REP": 1 },
+      "tags": ["青年", "工作", "荒坂", "企业"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 105,
+      "title": "被佣兵招募",
+      "description": "你在「来生」酒吧外遇到了一个独臂的老佣兵。他看出你眼神里的饥饿感和无所畏惧，递给你一张名片。「小子，这个世道想活得像个人，就得学会拿枪。」他说海伍德区有个中介所专门招募新人佣兵，报酬比打工高十倍，但死亡率也高十倍。",
+      "type": "social",
+      "ageRange": [18, 25],
+      "weight": 14,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "接过名片，踏入佣兵的刀口舔血生涯", "effects": { "COMBAT": 3, "MONEY": 1000, "STREET_REP": 2, "KARMA": -1 } },
+        { "id": "branch_2", "text": "拒绝，这条路太危险了", "effects": { "COOL": 1, "MENTAL": 1 } }
+      ],
+      "effects": { "STREET_SMART": 2 },
+      "tags": ["青年", "佣兵", "招募", "来生"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 106,
+      "title": "第一次安装赛博义体",
+      "description": "你的左眼在工地事故中受伤，视力开始模糊。义体医生维克多看着你的检查报告，叹了口气。他有便宜的二手工业义眼，副作用是偶尔会出现像素噪点。而全新的军用级光学义体要8000欧元，但能让你看到热成像和追踪弹道。这笔钱对你的收入来说是个天文数字。",
+      "type": "cyber",
+      "ageRange": [17, 22],
+      "weight": 18,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "凑钱安装军用级义眼，借贷也在所不惜", "effects": { "TECH": 3, "COMBAT": 2, "MONEY": -3000, "CYBER_LEVEL": 2 } },
+        { "id": "branch_2", "text": "安装便宜的二手义眼，先凑合着用", "effects": { "TECH": 1, "MONEY": -500, "CYBER_LEVEL": 1 } }
+      ],
+      "effects": { "MONEY": -500, "CYBER_LEVEL": 1 },
+      "tags": ["青年", "义体", "赛博", "手术"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 107,
+      "title": "第一次接触药物",
+      "description": "你在派对上被朋友递过来一颗彩色药丸。「只是兴奋剂，能让你跳一整晚，第二天没宿醉。」他说这是企业白领的标配，不上瘾。周围的音乐震耳欲聋，霓虹灯闪烁。你看着药丸，想起了街头那些因为药物而毁掉人生的流浪汉——但你也太想摆脱现实的沉重了。",
+      "type": "drug",
+      "ageRange": [17, 22],
+      "weight": 16,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "尝试一次，打开潘多拉的盒子", "effects": { "COOL": 1, "ADDICTION_RISK": 3, "HEALTH": -1 } },
+        { "id": "branch_2", "text": "断然拒绝，远离这个圈子", "effects": { "COOL": 2, "MENTAL": 1 } }
+      ],
+      "effects": { "COOL": 1 },
+      "tags": ["青年", "药物", "派对", "试探"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 108,
+      "title": "遇到义体医生维克多",
+      "description": "你在宪章山的一家小诊所外躲雨时，遇到了维克多·维克拉姆——一个传奇义体医生。他注意到你手臂上粗糙的自制赛博接口正在发炎，二话不说把你拉进诊所处理。他一边清理伤口一边说，这条街上有太多年轻人因为廉价的黑市义体而送了命。他愿意教你基本的义体维护知识。",
+      "type": "social",
+      "ageRange": [16, 22],
+      "weight": 12,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "虚心学习，与维克多建立师徒关系", "effects": { "MEDICAL_KNOWLEDGE": 4, "CYBER_KNOWLEDGE": 3, "KARMA": 2 } },
+        { "id": "branch_2", "text": "只治疗伤口，保持谨慎的距离", "effects": { "HEALTH": 2, "COOL": 1 } }
+      ],
+      "effects": { "MEDICAL_KNOWLEDGE": 2, "HEALTH": 1 },
+      "tags": ["青年", "义体医生", "维克多", "诊所"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 109,
+      "title": "结识情报贩子",
+      "description": "在「扭扭街」的一家地下酒吧里，你被一个戴全息面具的神秘人叫住。他自称「蜘蛛」，是夜之城的情报贩子。他说他一直在观察你——你足够机灵，也有合适的道德底线弹性。他需要人手帮他跑腿送情报，报酬是现金或者信息，你自己选。这是他递出的橄榄枝。",
+      "type": "social",
+      "ageRange": [18, 25],
+      "weight": 12,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "接受情报贩子的工作，进入信息网络", "effects": { "INTELLIGENCE": 2, "MONEY": 600, "STREET_REP": 2, "NETWORK": 3 } },
+        { "id": "branch_2", "text": "拒绝，不想卷入情报世界的危险", "effects": { "COOL": 2 } }
+      ],
+      "effects": { "STREET_SMART": 2, "MONEY": 200 },
+      "tags": ["青年", "情报", "蜘蛛", "地下"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 110,
+      "title": "黑客导师",
+      "description": "你在公共数据端口试图破解一台自动贩卖机时，被一个老年黑客抓了个正着。他没有报警，反而被你的笨拙逗笑了。「小子，你那种破解方法是十年前的老古董了。」他把你带到他的工作室——堆满旧电脑和布线图的狭小房间。他说他可以教你真正的网络漫游技术，前提是你帮他跑腿买杂货。",
+      "type": "social",
+      "ageRange": [16, 20],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "拜师学艺，成为网络黑客学徒", "effects": { "INTELLIGENCE": 4, "NETRUNNING": 4, "TECH": 2 } },
+        { "id": "branch_2", "text": "婉拒好意，继续自学街头路子", "effects": { "STREET_SMART": 1, "TECH": 1 } }
+      ],
+      "effects": { "INTELLIGENCE": 2, "TECH": 1 },
+      "tags": ["青年", "黑客", "导师", "网络"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 111,
+      "title": "第一次替人出头",
+      "description": "你在街上看到一个移民小贩被清道夫勒索。小贩的妻子跪在地上哭求，周围没有人敢插手。清道夫的枪已经顶在了小贩的额头上。你的手不自觉地摸向腰间的武器——你知道多管闲事在夜之城是致命的，但你也知道什么都看不见的话，自己会后悔一辈子。",
+      "type": "combat",
+      "ageRange": [18, 22],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "挺身而出，驱赶清道夫", "effects": { "COMBAT": 2, "KARMA": 3, "STREET_REP": 2, "HEALTH": -2 } },
+        { "id": "branch_2", "text": "偷偷报警，让NCPD来处理", "effects": { "COOL": 2, "KARMA": 1 } }
+      ],
+      "effects": { "KARMA": 1, "COOL": 1 },
+      "tags": ["青年", "正义", "清道夫", "干预"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 112,
+      "title": "街头赛车初体验",
+      "description": "一个自称「极速罗伊」的改装车手邀请你参加地下街头赛车。他说：「小子，在夜之城只有两样东西说了算——钱和速度。」他的车是用废铁和军用零件拼凑出来的怪物。赛道是沃森区废弃的高架桥，赌注是500欧元。输了你得赔钱，赢了你能赢得尊重和一小笔奖金。",
+      "type": "daily",
+      "ageRange": [18, 25],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        { "id": "branch_1", "text": "接受挑战，体验速度与激情", "effects": { "COOL": 2, "MONEY": 500, "STREET_REP": 2, "TECH": 1 } },
+        { "id": "branch_2", "text": "拒绝，在路边看热闹就行", "effects": { "COOL": 1 } }
+      ],
+      "effects": { "STREET_SMART": 1 },
+      "tags": ["青年", "赛车", "地下", "速度"],
+      "deathChainEntry": false
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "description": "住房数据 - Housing Database",
+    "version": "1.0",
+    "totalLevels": 6
+  },
+  "levels": [
+    {
+      "id": "S",
+      "name": "企业顶层公寓",
+      "rank": 6,
+      "monthlyRent": 5000,
+      "safety": 90,
+      "comfort": 90,
+      "description": "坐落于企业CBD摩天大楼顶层，360度全景落地窗，配备AI管家、私人泳池、全息影院。住户非富即贵，安保严密到连只苍蝇都飞不进来。",
+      "features": [
+        "AI全宅智能管家",
+        "私人无边泳池",
+        "全息娱乐系统",
+        "军用级安防系统",
+        "私人电梯直达",
+        "地下车库专属车位"
+      ],
+      "maxOccupants": 4,
+      "storageCapacity": 200,
+      "effects": {
+        "healthRegen": 5,
+        "mentalHealthRegen": 8,
+        "socialBonus": 10,
+        "reputationPerDay": 2
+      },
+      "requirements": {
+        "minReputation": 80,
+        "minIncome": 10000
+      }
+    },
+    {
+      "id": "A",
+      "name": "高级公寓",
+      "rank": 5,
+      "monthlyRent": 3000,
+      "safety": 75,
+      "comfort": 80,
+      "description": "中上阶层的标准住所，位于中环区的高端住宅楼。配套设施齐全，物业管理规范，是梦想在城市立足的有志青年的目标。",
+      "features": [
+        "智能安防门禁",
+        "健身房和游泳池",
+        "24小时物业管理",
+        "快递收发服务",
+        "中央空调系统"
+      ],
+      "maxOccupants": 3,
+      "storageCapacity": 100,
+      "effects": {
+        "healthRegen": 3,
+        "mentalHealthRegen": 4,
+        "socialBonus": 5,
+        "reputationPerDay": 1
+      },
+      "requirements": {
+        "minReputation": 40,
+        "minIncome": 5000
+      }
+    },
+    {
+      "id": "B",
+      "name": "普通公寓",
+      "rank": 4,
+      "monthlyRent": 1500,
+      "safety": 60,
+      "comfort": 60,
+      "description": "普通市民的标准住所，位于中环区边缘的老式住宅楼。该有的都有，但别指望什么惊喜。大多数夜之城居民的典型住处。",
+      "features": [
+        "基础门禁系统",
+        "水电暖齐全",
+        "公共垃圾处理",
+        "楼下便利店"
+      ],
+      "maxOccupants": 2,
+      "storageCapacity": 50,
+      "effects": {
+        "healthRegen": 2,
+        "mentalHealthRegen": 2,
+        "socialBonus": 1,
+        "reputationPerDay": 0
+      },
+      "requirements": {
+        "minReputation": 15,
+        "minIncome": 2000
+      }
+    },
+    {
+      "id": "C",
+      "name": "廉价公寓",
+      "rank": 3,
+      "monthlyRent": 800,
+      "safety": 40,
+      "comfort": 40,
+      "description": "位于城市边缘老工业区，由废弃工厂和办公楼改建。墙皮剥落，管道时常漏水，隔壁邻居可能在制毒。能遮风挡雨，仅此而已。",
+      "features": [
+        "基础水电",
+        "公共洗衣房",
+        "简易厨房",
+        "窗户（少数房间）"
+      ],
+      "maxOccupants": 2,
+      "storageCapacity": 30,
+      "effects": {
+        "healthRegen": 1,
+        "mentalHealthRegen": 0,
+        "socialBonus": -1,
+        "reputationPerDay": 0
+      },
+      "requirements": {
+        "minReputation": 5,
+        "minIncome": 800
+      }
+    },
+    {
+      "id": "D",
+      "name": "集装箱/棚屋",
+      "rank": 2,
+      "monthlyRent": 300,
+      "safety": 20,
+      "comfort": 15,
+      "description": "废弃的集装箱、建筑工棚或桥洞下的简易搭建。没有暖气，没有自来水，有的只有无尽的噪音和危险。城市的最底层就住在这里。",
+      "features": [
+        "临时供电(时有时无)",
+        "公共取水点",
+        "铁皮屋顶"
+      ],
+      "maxOccupants": 1,
+      "storageCapacity": 10,
+      "effects": {
+        "healthRegen": -1,
+        "mentalHealthRegen": -2,
+        "socialBonus": -3,
+        "reputationPerDay": -1,
+        "diseaseRisk": 20
+      },
+      "requirements": {
+        "minReputation": 0,
+        "minIncome": 0
+      }
+    },
+    {
+      "id": "F",
+      "name": "无家可归",
+      "rank": 1,
+      "monthlyRent": 0,
+      "safety": 5,
+      "comfort": 0,
+      "description": "街头巷尾、地下通道、废弃地铁站。任何能躺下的角落都是床。需要时刻提防帮派、混混和城市巡逻驱逐队。夜之城最残酷的生存状态。",
+      "features": [],
+      "maxOccupants": 1,
+      "storageCapacity": 2,
+      "effects": {
+        "healthRegen": -3,
+        "mentalHealthRegen": -5,
+        "socialBonus": -5,
+        "reputationPerDay": -2,
+        "diseaseRisk": 40,
+        "theftRisk": 30,
+        "policeHarassment": true
+      },
+      "requirements": {
+        "minReputation": 0,
+        "minIncome": 0
+      }
+    }
+  ],
+  "housingMarket": {
+    "description": "住房市场波动系数，每月随机变化 ±10%",
+    "volatilityRange": [0.9, 1.1]
+  }
+}

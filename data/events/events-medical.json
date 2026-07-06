@@ -1,0 +1,174 @@
+{
+  "events": [
+    {
+      "id": 601,
+      "title": "急诊室漫长等待",
+      "description": "你受了伤，捂着流血的伤口来到夜之城公立医院急诊室。走廊里挤满了人——有咳嗽不止的老人、抱着发烧婴儿的母亲、手臂以不正常角度扭曲的建筑工人。护士瞥了一眼你的伤，递给你一张号码牌，说「等着叫号」。三个小时过去了，你的血已经凝结在衣服上，但前面还有十几个人。墙上的全息公告显示：当前急诊等待时间——六到八小时。",
+      "type": "medical",
+      "ageRange": [16, 60],
+      "weight": 18,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "继续等待，直到被叫到号", "effects": { "HEALTH": -2, "MENTAL": -2, "MONEY": -500 } },
+        { "id": "branch_2", "text": "放弃公立医院，去找地下诊所", "effects": { "HEALTH": -1, "MONEY": -800, "STREET_SMART": 1 } }
+      ],
+      "effects": { "HEALTH": -1, "MENTAL": -1, "MONEY": -300 },
+      "tags": ["医疗", "急诊", "等待", "公立"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 602,
+      "title": "巨额医疗账单",
+      "description": "你终于从医院里出来了——伤治好了，但你的手在颤抖。护士递给你一张账单，上面的数字让你以为自己在做梦。急诊费、检查费、手术费、药费……每一项都贵得离谱。你没有保险，或者保险只覆盖了极小部分。账单总数是这个城市普通人一年的收入。账单底部印着一行字：「请在三十天内支付，逾期将产生利息和法律费用。」",
+      "type": "medical",
+      "ageRange": [18, 60],
+      "weight": 20,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "分期付款，背上长期债务", "effects": { "MONEY": -3000, "MENTAL": -3, "DEBT": 3 } },
+        { "id": "branch_2", "text": "拒绝支付，让催收公司来找我吧", "effects": { "COOL": 2, "NCPD_WANTED": 1, "KARMA": -1 } }
+      ],
+      "effects": { "MONEY": -2000, "MENTAL": -2 },
+      "tags": ["医疗", "账单", "债务", "保险"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 603,
+      "title": "地下诊所就医",
+      "description": "你来到了宪章山的一家地下诊所。铁门后面是一间昏暗的房间，手术灯是用汽车前大灯改装的。医生——如果他能被称为医生的话——穿着沾满油渍的围裙，工具在消毒液里泡着。他的报价只有正规医院的三分之一，而且不需要任何证件。「放心，我在这条街上干了二十年了。」他一边说一边从柜子里拿出看起来很不靠谱的器械。",
+      "type": "medical",
+      "ageRange": [18, 60],
+      "weight": 16,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        { "id": "branch_1", "text": "接受地下诊所的治疗，省钱但冒险", "effects": { "HEALTH": 1, "MONEY": -500, "INFECTION_RISK": 2 } },
+        { "id": "branch_2", "text": "看到环境后转身离开", "effects": { "COOL": 1, "HEALTH": -1, "MONEY": -50 } }
+      ],
+      "effects": { "MONEY": -400, "HEALTH": 0 },
+      "tags": ["医疗", "地下诊所", "黑市", "冒险"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 604,
+      "title": "创伤小组响应——你有保险",
+      "description": "你的生命体征监测器检测到严重创伤，自动触发了创伤小组国际的急救协议。不到七分钟，一队全副武装的医疗突击队员就破窗而入。他们动作高效得像军事行动——止血、稳定生命体征、把你抬上担架。一个队员朝你喊：「别怕，你的白金保险覆盖了全部费用。」在升空的AV-4上，你俯瞰着下方堵在路上的普通救护车，第一次感受到有钱人的世界是什么样的。",
+      "type": "medical",
+      "ageRange": [20, 60],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "感谢创伤小组的高效救治", "effects": { "HEALTH": 4, "MONEY": -500, "MENTAL": 2 } },
+        { "id": "branch_2", "text": "对这样阶级分明的医疗系统感到愤怒", "effects": { "COOL": 2, "KARMA": 2, "MENTAL": -1 } }
+      ],
+      "effects": { "HEALTH": 3, "MONEY": -300 },
+      "tags": ["医疗", "创伤小组", "保险", "特权"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 605,
+      "title": "慢性病发作",
+      "description": "你的老毛病又犯了。可能是哮喘、糖尿病、高血压或者别的什么慢性病——在这个世界，穷人身上总有几种治不起的病。你的药物已经断了两个月，因为药价又涨了。现在症状复发了，你的胸口发紧，视线开始模糊。你知道该去医院，但上次的账单还没还清。你只能躺在破公寓的床上，希望这次能自己扛过去。",
+      "type": "medical",
+      "ageRange": [30, 60],
+      "weight": 14,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "借钱买药，缓解症状", "effects": { "HEALTH": 1, "MONEY": -1500, "MENTAL": -1 } },
+        { "id": "branch_2", "text": "硬扛过去，省钱赌一把", "effects": { "HEALTH": -3, "MONEY": 0, "COOL": 1 } }
+      ],
+      "effects": { "HEALTH": -2, "MENTAL": -1 },
+      "tags": ["医疗", "慢性病", "药物", "贫困"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 606,
+      "title": "医疗保险被拒",
+      "description": "你花了一整天填完了医疗保险公司发来的三十六页申请表。你提供了所有的病史记录、收入证明和居住证明。一个月后，你收到了回信——一封简短而冰冷的拒保信。「根据您提供的医疗记录，您申请的保险计划将因『已有病症』条款不予承保。」你患有的慢性病——哪怕只是几年前的一次轻微肺炎——都成了拒绝的理由。签字用的是最便宜的蓝色圆珠笔。",
+      "type": "medical",
+      "ageRange": [22, 55],
+      "weight": 12,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "提起申诉，与保险公司打持久战", "effects": { "MONEY": -2000, "MENTAL": -3, "COOL": 2 } },
+        { "id": "branch_2", "text": "放弃保险，把钱留着应急", "effects": { "MONEY": 500, "MENTAL": -2, "HEALTH_RISK": 2 } }
+      ],
+      "effects": { "MENTAL": -2, "MONEY": -500 },
+      "tags": ["医疗", "保险", "拒保", "已有病症"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 607,
+      "title": "医疗募捐",
+      "description": "你的医疗账单已经到了无法承受的地步。朋友建议你在网上发起医疗募捐。你花了一晚上写求助信，上传医疗证明，然后在社交媒体上发布了链接。几天过去了，只有几个朋友捐了总共二百欧元。与此同时，你刷到一条新闻——某个企业高管的女儿为了整容募捐，一天就筹到了十万欧元。这个系统连慈善都分三六九等。",
+      "type": "medical",
+      "ageRange": [20, 60],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 30,
+      "branches": [
+        { "id": "branch_1", "text": "持续推广募捐链接，尽量多筹一些", "effects": { "MONEY": 1000, "MENTAL": -2, "NETWORK": -1 } },
+        { "id": "branch_2", "text": "放弃募捐，想办法自己赚钱", "effects": { "COOL": 2, "MENTAL": 1 } }
+      ],
+      "effects": { "MONEY": 300, "MENTAL": -1 },
+      "tags": ["医疗", "募捐", "GoFundMe", "债务"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 608,
+      "title": "社区诊所",
+      "description": "你找到了一家由慈善组织运营的社区诊所。这里的医生大多是志愿者，药品来自捐赠。排队的人很多，但至少不用花钱。诊所里的器材看起来至少落后了二十年，但医生的眼神是真诚的。一位年迈的医生一边给你包扎一边叹气：「这个国家是唯一一个让人们因为生病而破产的发达国家。」你不知道他说得对不对，但你清楚自己现在就是这样。",
+      "type": "medical",
+      "ageRange": [16, 60],
+      "weight": 14,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        { "id": "branch_1", "text": "在社区诊所接受基础治疗", "effects": { "HEALTH": 2, "MONEY": -50, "MENTAL": 1 } },
+        { "id": "branch_2", "text": "留下自愿帮忙，回报社区", "effects": { "KARMA": 3, "MEDICAL_KNOWLEDGE": 1, "TIME": -1 } }
+      ],
+      "effects": { "HEALTH": 1, "MONEY": -30 },
+      "tags": ["医疗", "社区", "慈善", "诊所"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 609,
+      "title": "赛博精神病筛查",
+      "description": "你最近开始出现一些奇怪的症状——头痛、幻听、偶尔失去对时间的感知。市政府在社区中心设立了免费的赛博精神病筛查点。穿着白大褂的技术人员用便携式脑部扫描仪检查你的神经接口。结果出来了：你的赛博植入物和神经系统兼容性正在下降，如果不及时调整，可能在六个月内发展成赛博精神病。但调整手术不在医保范围内。",
+      "type": "medical",
+      "ageRange": [25, 55],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "立即进行神经调整手术", "effects": { "HEALTH": 3, "MONEY": -4000, "CYBER_LEVEL": -1, "MENTAL": 2 } },
+        { "id": "branch_2", "text": "暂时不管，等严重了再说", "effects": { "MENTAL": -2, "HEALTH": -1, "CYBERPSYCHOSIS_RISK": 3 } }
+      ],
+      "effects": { "MENTAL": -1, "CYBERPSYCHOSIS_RISK": 1 },
+      "tags": ["医疗", "赛博精神病", "筛查", "神经"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 610,
+      "title": "药店抢劫",
+      "description": "你走进街角的药店想买些止痛药。柜台后面穿着防弹背心的药剂师警惕地看着你——所有贵重药品都锁在防弹玻璃后面。你正掏钱时，两个蒙面人冲了进来，用枪指着药剂师的头。「把奥施康定和吗啡都交出来！」你的心跳骤然加速。在夜之城，连买个药都可能遇上枪战。你被困在货架之间，子弹随时可能穿过薄薄的金属架。",
+      "type": "combat",
+      "ageRange": [18, 60],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "趴下躲避，等抢劫结束", "effects": { "COOL": 1, "MENTAL": -1 } },
+        { "id": "branch_2", "text": "趁机制服劫匪，成为英雄", "effects": { "COMBAT": 2, "KARMA": 2, "STREET_REP": 2, "HEALTH": -4 } }
+      ],
+      "effects": { "MENTAL": -1 },
+      "tags": ["医疗", "药店", "抢劫", "危险"],
+      "deathChainEntry": false
+    }
+  ]
+}

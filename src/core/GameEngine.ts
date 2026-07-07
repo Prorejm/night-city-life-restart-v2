@@ -203,8 +203,8 @@ export class GameEngine {
       reduceTrauma(1, playerState);
     }
 
-    // 6. 保存当前状态（死亡检查前保存）
-    this.stores.playerStore.setState({ ...playerState });
+    // 6. 保存当前状态（克隆attributes触发Zustand重渲染）
+    this.stores.playerStore.setState({ ...playerState, attributes: { ...playerState.attributes } });
 
     // 7. 检查死亡条件
     const deathType = checkDeathConditions(playerState);
@@ -250,7 +250,7 @@ export class GameEngine {
           }
 
           // 死亡链事件处理完继续
-          this.stores.playerStore.setState({ ...playerState });
+          this.stores.playerStore.setState({ ...playerState, attributes: { ...playerState.attributes } });
           return deathChainLog;
         }
 
@@ -270,7 +270,7 @@ export class GameEngine {
         };
 
         // 事件触发后保存状态
-        this.stores.playerStore.setState({ ...playerState });
+        this.stores.playerStore.setState({ ...playerState, attributes: { ...playerState.attributes } });
 
         return logEntry;
       }
@@ -281,7 +281,7 @@ export class GameEngine {
     applyAttributeEffects(housingEffects, playerState);
 
     // 保存状态
-    this.stores.playerStore.setState({ ...playerState });
+    this.stores.playerStore.setState({ ...playerState, attributes: { ...playerState.attributes } });
 
     return null;
   }

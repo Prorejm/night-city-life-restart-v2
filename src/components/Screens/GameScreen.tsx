@@ -53,7 +53,7 @@ const HudPanel: React.FC = () => {
   const insuranceLevel = usePlayerStore((s) => s.insuranceLevel);
 
   const maxValues: Record<string, number> = {
-    STYLE: 100, TECH: 100, CHROME: 100, MONEY: 9999, HUMAN: 100,
+    STYLE: 100, TECH: 100, CHROME: 100, MONEY: 1000, HUMAN: 100,
     LIFE: 100, TRAUMA: 100,
   };
 
@@ -182,24 +182,32 @@ const EventCard: React.FC<EventCardProps> = ({ entry }) => {
   );
 };
 
-/** EventLog - 中央事件日志 */
+/** EventLog - 中央事件日志（终端式滚动：新内容始终在最底，顶部自动上推隐藏） */
+const MAX_VISIBLE_EVENTS = 100;
+
 const EventLog: React.FC = () => {
   const eventLog = useUIStore((s) => s.eventLog);
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  // 新事件到达时自动滚动到底部
+  // 用 useRef 存储上一次条目数，避免不必要的渲染干扰
+  const prevLenRef = useRef(0);
+
+  // 新事件到达时强制向下滚，让旧内容自然推上去
   useEffect(() => {
-    if (scrollRef.current && eventLog.length > 0) {
-      const el = scrollRef.current;
-      // 如果用户没有手动向上滚动超过100px，自动向下滚
-      const isNearBottom = el.scrollHeight - el.scrollTop - el.clientHeight < 100;
-      if (isNearBottom) {
-        requestAnimationFrame(() => {
-          el.scrollTop = el.scrollHeight;
-        });
-      }
+    if (scrollRef.current && eventLog.length > prevLenRef.current) {
+      requestAnimationFrame(() => {
+        if (scrollRef.current) {
+          scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
+        }
+      });
     }
+    prevLenRef.current = eventLog.length;
   }, [eventLog.length]);
+
+  // 限制DOM条目数：只保留最新 MAX_VISIBLE_EVENTS 条
+  const visibleLog = eventLog.length > MAX_VISIBLE_EVENTS
+    ? eventLog.slice(eventLog.length - MAX_VISIBLE_EVENTS)
+    : eventLog;
 
   return (
     <div className="flex flex-col bg-black/20" style={{ height: '100%', minHeight: 0 }}>
@@ -213,7 +221,7 @@ const EventLog: React.FC = () => {
         className="event-log-scroll overflow-y-auto"
         style={{ flex: 1, minHeight: 0 }}
       >
-        {eventLog.length === 0 ? (
+        {visibleLog.length === 0 ? (
           <div className="flex h-full items-center justify-center">
             <p className="font-mono text-sm text-muted-foreground/30">
               等待事件到来...
@@ -221,7 +229,7 @@ const EventLog: React.FC = () => {
           </div>
         ) : (
           <div className="space-y-1 p-2">
-            {eventLog.map((entry) => (
+            {visibleLog.map((entry) => (
               <EventCard key={entry.id} entry={entry} />
             ))}
           </div>

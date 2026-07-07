@@ -130,10 +130,19 @@ export function generateWeightedPool(
       (t) =>
         t.grade === selectedGrade &&
         !excludeIds.includes(t.id) &&
-        !pool.find((p) => p.id === p.id)
+        !pool.find((p) => p.id === t.id)
     );
 
-    if (candidates.length === 0) continue;
+    if (candidates.length === 0) {
+      // 无候选时降低稀有度重试
+      const fallback = _talents.filter(
+        (t) => !excludeIds.includes(t.id) && !pool.find((p) => p.id === t.id)
+      );
+      if (fallback.length === 0) break; // 真没候选了，直接退出
+      const picked = fallback[Math.floor(Math.random() * fallback.length)];
+      pool.push(picked);
+      continue;
+    }
 
     const picked = candidates[Math.floor(Math.random() * candidates.length)];
     pool.push(picked);

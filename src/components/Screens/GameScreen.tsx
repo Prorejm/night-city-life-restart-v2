@@ -6,6 +6,10 @@ import useUIStore from '@/stores/uiStore';
 import useGameEngine from '@/hooks/useGameEngine';
 import useAutoPlay from '@/hooks/useAutoPlay';
 import useKeyboard from '@/hooks/useKeyboard';
+import DrugPanel from '@/components/Panels/DrugPanel';
+import HousingPanel from '@/components/Panels/HousingPanel';
+import drugsData from '../../../data/drugs.json';
+import housingData from '../../../data/housing.json';
 import { STAT_NAMES } from '@/engine/GameConfig';
 import type { CoreAttribute, EventLogEntry } from '@/types';
 import './GameScreen.css';
@@ -183,9 +187,17 @@ const EventLog: React.FC = () => {
   const eventLog = useUIStore((s) => s.eventLog);
   const scrollRef = useRef<HTMLDivElement>(null);
 
+  // 新事件到达时自动滚动到底部
   useEffect(() => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
+    if (scrollRef.current && eventLog.length > 0) {
+      const el = scrollRef.current;
+      // 如果用户没有手动向上滚动超过100px，自动向下滚
+      const isNearBottom = el.scrollHeight - el.scrollTop - el.clientHeight < 100;
+      if (isNearBottom) {
+        requestAnimationFrame(() => {
+          el.scrollTop = el.scrollHeight;
+        });
+      }
     }
   }, [eventLog.length]);
 
@@ -221,33 +233,55 @@ const EventLog: React.FC = () => {
 
 /** RightPanel - 右侧面板容器 */
 const RightPanel: React.FC = () => {
-  const questPanelOpen = useUIStore((s) => s.questPanelOpen);
-  const inventoryPanelOpen = useUIStore((s) => s.inventoryPanelOpen);
+  const drugPanelOpen = useUIStore((s) => s.drugPanelOpen);
+  const housingPanelOpen = useUIStore((s) => s.housingPanelOpen);
+  const closeAllPanels = useUIStore((s) => s.closeAllPanels);
+
+  const attributes = usePlayerStore((s) => s.attributes);
+  const drugs = usePlayerStore((s) => s.currentDrugs);
+  const drugAddiction = usePlayerStore((s) => s.drugAddiction);
+  const housingLevel = usePlayerStore((s) => s.housingLevel);
+
+  const drugDb = ((drugsData as any).allDrugs ?? []) as any[];
+  const housingDb = ((housingData as any).levels ?? []) as any[];
 
   return (
-    <div className="flex h-full flex-col border-l border-neon-cyan/10 bg-black/30">
-      <div className="border-b border-white/5 px-3 py-1">
-        <h3 className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground/50">
+    <div className="flex h-full flex-col border-l border-neon-cyan/10 bg-black/30 min-h-0">
+      <div className="flex items-center justify-between border-b border-white/5 px-3 py-1 shrink-0">
+        <h3 className="font-mono text-xs uppercase tracking-widest text-muted-foreground/50">
           PANELS
         </h3>
+        {(drugPanelOpen || housingPanelOpen) && (
+          <button onClick={closeAllPanels} className="text-[10px] font-mono text-muted-foreground/40 hover:text-neon-cyan">
+            ✕
+          </button>
+        )}
       </div>
-      <div className="flex-1 p-3">
-        {questPanelOpen && (
-          <div className="panel-slide-in space-y-2">
-            <h4 className="font-display text-xs font-bold text-neon-cyan">任务</h4>
-            <p className="font-mono text-[10px] text-muted-foreground/60">暂无活跃任务</p>
+      <div className="flex-1 overflow-y-auto p-2" style={{ minHeight: 0 }}>
+        {drugPanelOpen && (
+          <div className="panel-slide-in">
+            <DrugPanel
+              addictionLevel={attributes.ADDICTION ?? 0}
+              currentDrugs={drugs}
+              drugAddiction={drugAddiction}
+              drugDatabase={drugDb}
+            />
           </div>
         )}
-        {inventoryPanelOpen && (
-          <div className="panel-slide-in space-y-2">
-            <h4 className="font-display text-xs font-bold text-neon-cyan">背包</h4>
-            <p className="font-mono text-[10px] text-muted-foreground/60">背包为空</p>
+        {housingPanelOpen && (
+          <div className="panel-slide-in">
+            <HousingPanel
+              currentLevel={housingLevel as any}
+              housingDatabase={housingDb}
+              monthlyIncome={attributes.MONEY ?? 0}
+            />
           </div>
         )}
-        {!questPanelOpen && !inventoryPanelOpen && (
+        {!drugPanelOpen && !housingPanelOpen && (
           <div className="flex h-full items-center justify-center">
-            <p className="font-mono text-xs text-muted-foreground/20">
-              按 1-5 切换面板
+            <p className="font-mono text-xs text-muted-foreground/20 text-center leading-relaxed">
+              按 1-5 切换面板<br />
+              4:药物 5:住房
             </p>
           </div>
         )}

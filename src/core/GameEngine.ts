@@ -101,7 +101,7 @@ export class GameEngine {
     this.stores.gameStore.setState({
       phase: 'TALENT_SELECT',
       turnCount: 1,
-      currentAge: 14,
+      currentAge: 18,
       currentYear: 2077,
       autoMode: false,
       autoSpeed: 1,
@@ -167,7 +167,7 @@ export class GameEngine {
     });
     playerState.totalPlayTime = newTurn;
 
-    // 2. 计算衍生属性
+    // 2. 计算衍生属性（增量叠加，不覆盖）
     const core = {
       STYLE: playerState.attributes.STYLE ?? 0,
       TECH: playerState.attributes.TECH ?? 0,
@@ -176,9 +176,14 @@ export class GameEngine {
       HUMAN: playerState.attributes.HUMAN ?? 0,
     };
     const derived = getDerivedAttributes(core);
-    // 合并到 attributes 中（保留已有的 TRAUMA/ADDICTION/DEBT）
-    playerState.attributes.LIFE = derived.LIFE;
-    playerState.attributes.REP = derived.REP;
+    // LIFE/REP只在不低于公式基础值时更新（避免事件效果被吞）
+    // 公式提供基础值，事件效果在此基础上累加
+    if ((playerState.attributes.LIFE ?? 0) < derived.LIFE) {
+      playerState.attributes.LIFE = derived.LIFE;
+    }
+    if ((playerState.attributes.REP ?? 0) < derived.REP) {
+      playerState.attributes.REP = derived.REP;
+    }
 
     // 3. 处理房租
     const rentResult = processRent(playerState, newTurn);
@@ -198,14 +203,17 @@ export class GameEngine {
       reduceTrauma(1, playerState);
     }
 
-    // 6. 检查死亡条件
+    // 6. 保存当前状态（死亡检查前保存）
+    this.stores.playerStore.setState({ ...playerState });
+
+    // 7. 检查死亡条件
     const deathType = checkDeathConditions(playerState);
     if (deathType !== null) {
       this.handleDeath(deathType);
       return null;
     }
 
-    // 7. 触发随机事件
+    // 8. 触发随机事件
     const eligibleEvents = getEligibleEvents(
       playerState,
       newTurn,
@@ -218,21 +226,38 @@ export class GameEngine {
       if (selectedEvent) {
         // 检查是否是死亡链起点（直接执行，不进入 UI 选择）
         if (checkDeathChain(selectedEvent)) {
-          resolveBranch(selectedEvent, 'branch_1', playerState, newTurn);
+          const branchEffects = resolveBranch(selectedEvent, 'branch_1', playerState, newTurn);
           this.eventHistory.push(selectedEvent.id);
+
+          // 创建包含分支效果的日志
+          const deathChainLog: EventLogEntry = {
+            id: nextLogId(),
+            eventId: selectedEvent.id,
+            age: roundedAge,
+            turn: newTurn,
+            title: selectedEvent.title,
+            description: selectedEvent.description,
+            effects: branchEffects,
+            timestamp: Date.now(),
+          };
 
           // 再次检查死亡条件
           const deathAfterEvent = checkDeathConditions(playerState);
           if (deathAfterEvent !== null) {
+            this.stores.playerStore.setState({ ...playerState });
             this.handleDeath(deathAfterEvent);
-            return null;
+            return deathChainLog;
           }
+
+          // 死亡链事件处理完继续
+          this.stores.playerStore.setState({ ...playerState });
+          return deathChainLog;
         }
 
         // 记录事件历史
         this.eventHistory.push(selectedEvent.id);
 
-        // 创建事件日志
+        // 创建事件日志（使用事件级 effects）
         const logEntry: EventLogEntry = {
           id: nextLogId(),
           eventId: selectedEvent.id,
@@ -244,11 +269,14 @@ export class GameEngine {
           timestamp: Date.now(),
         };
 
+        // 事件触发后保存状态
+        this.stores.playerStore.setState({ ...playerState });
+
         return logEntry;
       }
     }
 
-    // 8. 应用住房效果（每回合）
+    // 9. 应用住房效果（每回合）
     const housingEffects = getHousingEffects(playerState.housing);
     applyAttributeEffects(housingEffects, playerState);
 

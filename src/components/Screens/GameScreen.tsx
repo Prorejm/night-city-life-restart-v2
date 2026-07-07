@@ -107,17 +107,148 @@ interface CardData {
   isPending: boolean; // 是否等待玩家选择
 }
 
+const SWIPE_THRESHOLD = 60;
+const MAX_SWIPE_OFFSET = 120;
+
+/** 检测是否为触摸设备 */
+const isTouchDevice = typeof navigator !== 'undefined' && navigator.maxTouchPoints > 0;
+
 const EventCardReigns: React.FC<{
   card: CardData | null;
   onContinue: () => void;
   onBranchSelect: (branchId: string) => void;
 }> = ({ card, onContinue, onBranchSelect }) => {
   const cardRef = useRef<HTMLDivElement>(null);
+  const bodyRef = useRef<HTMLDivElement>(null);
 
-  // 点击卡片 = 继续（无分支时）
+  // 触摸状态用 ref（避免高频重渲染）
+  const touchRef = useRef<{
+    startX: number;
+    startY: number;
+    startTime: number;
+    isDragging: boolean;
+    directionLocked: 'none' | 'horizontal' | 'vertical';
+  }>({
+    startX: 0, startY: 0, startTime: 0, isDragging: false, directionLocked: 'none',
+  });
+
+  // 刚完成滑动，短暂阻止 click 触发
+  const justSwipedRef = useRef(false);
+
+  // 滑动视觉状态
+  const [swipe, setSwipe] = useState<{
+    offsetX: number;
+    direction: 'left' | 'right' | null;
+    progress: number;
+    active: boolean;
+  }>({ offsetX: 0, direction: null, progress: 0, active: false });
+
+  /* ---- 触摸事件 ---- */
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    const t = e.touches[0];
+    touchRef.current = {
+      startX: t.clientX,
+      startY: t.clientY,
+      startTime: Date.now(),
+      isDragging: true,
+      directionLocked: 'none',
+    };
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    const tr = touchRef.current;
+    if (!tr.isDragging || !card) return;
+
+    const t = e.touches[0];
+    const dx = t.clientX - tr.startX;
+    const dy = t.clientY - tr.startY;
+    const absDx = Math.abs(dx);
+    const absDy = Math.abs(dy);
+
+    // 首次移动时锁定方向
+    if (tr.directionLocked === 'none' && (absDx > 8 || absDy > 8)) {
+      tr.directionLocked = absDx > absDy ? 'horizontal' : 'vertical';
+    }
+
+    if (tr.directionLocked === 'horizontal') {
+      e.preventDefault(); // 阻止横向默认滚动
+      const clampedX = Math.max(-MAX_SWIPE_OFFSET, Math.min(MAX_SWIPE_OFFSET, dx));
+      const progress = Math.min(1, absDx / SWIPE_THRESHOLD);
+      setSwipe({
+        offsetX: clampedX,
+        direction: dx > 0 ? 'right' : 'left',
+        progress,
+        active: true,
+      });
+    }
+    // 垂直方向不拦截，由 card-body 自然滚动处理
+  };
+
+  const handleTouchEnd = () => {
+    const tr = touchRef.current;
+    if (!tr.isDragging || !card) {
+      resetSwipe();
+      return;
+    }
+    tr.isDragging = false;
+
+    if (tr.directionLocked === 'horizontal' && swipe.progress >= 1) {
+      justSwipedRef.current = true;
+      setTimeout(() => { justSwipedRef.current = false; }, 60);
+
+      // 有且仅有 2 个分支时，左右滑直接选择
+      if (card.isPending && card.branches.length === 2) {
+        if (swipe.direction === 'left') {
+          onBranchSelect(card.branches[0].id);
+        } else if (swipe.direction === 'right') {
+          onBranchSelect(card.branches[1].id);
+        }
+      }
+    }
+
+    resetSwipe();
+  };
+
+  const resetSwipe = () => {
+    touchRef.current.directionLocked = 'none';
+    setSwipe({ offsetX: 0, direction: null, progress: 0, active: false });
+  };
+
+  /* ---- 点击继续 ---- */
+
   const handleCardClick = () => {
+    if (justSwipedRef.current) return;
     if (!card || card.isPending) return;
     onContinue();
+  };
+
+  /* ---- 动态样式 ---- */
+
+  const dynamicStyle: React.CSSProperties = swipe.active
+    ? {
+        transform: `translateX(${swipe.offsetX}px) rotate(${swipe.offsetX * 0.04}deg)`,
+        transition: 'none',
+        opacity: 1 - swipe.progress * 0.25,
+      }
+    : {
+        transform: 'translateX(0) rotate(0)',
+        transition: 'transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease',
+      };
+
+  /* ---- 提示文字 ---- */
+
+  const getHint = () => {
+    if (!card) return '';
+    if (card.isPending) {
+      if (card.branches.length === 2) {
+        return isTouchDevice
+          ? '← 左滑选① · 右滑选② →'
+          : '按 1-2 选择分支';
+      }
+      return '点击按钮选择分支';
+    }
+    return isTouchDevice ? '点击继续' : '点击或按 Space 继续';
   };
 
   if (!card) {
@@ -129,18 +260,42 @@ const EventCardReigns: React.FC<{
     );
   }
 
+  const canSwipeBranch = card.isPending && card.branches.length === 2;
+  const leftLabel = canSwipeBranch ? card.branches[0].text : '';
+  const rightLabel = canSwipeBranch ? card.branches[1].text : '';
+
   return (
     <div
       ref={cardRef}
       className={cn('event-card-reigns', 'card-enter')}
       onClick={handleCardClick}
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
+      style={dynamicStyle}
     >
+      {/* 左滑方向指示器 */}
+      {canSwipeBranch && swipe.active && swipe.direction === 'left' && (
+        <div className="swipe-indicator swipe-indicator-left" style={{ opacity: swipe.progress }}>
+          <div className="swipe-indicator-icon">←</div>
+          <div className="swipe-indicator-text">{leftLabel}</div>
+        </div>
+      )}
+
+      {/* 右滑方向指示器 */}
+      {canSwipeBranch && swipe.active && swipe.direction === 'right' && (
+        <div className="swipe-indicator swipe-indicator-right" style={{ opacity: swipe.progress }}>
+          <div className="swipe-indicator-icon">→</div>
+          <div className="swipe-indicator-text">{rightLabel}</div>
+        </div>
+      )}
+
       <div className="card-header">
         <div className="card-title">{card.title}</div>
         <div className="card-meta">T{card.turn} · {Math.round(card.age * 10) / 10}岁</div>
       </div>
 
-      <div className="card-body">
+      <div className="card-body" ref={bodyRef}>
         <p className="card-description">{card.description}</p>
 
         {/* 效果标签 */}
@@ -170,8 +325,10 @@ const EventCardReigns: React.FC<{
               <button
                 key={b.id}
                 className="card-branch-btn"
+                style={{ pointerEvents: swipe.active ? 'none' : 'auto' }}
                 onClick={(e) => {
                   e.stopPropagation();
+                  if (justSwipedRef.current) return;
                   onBranchSelect(b.id);
                 }}
               >
@@ -183,11 +340,7 @@ const EventCardReigns: React.FC<{
         )}
       </div>
 
-      <div className="card-hint">
-        {card.isPending
-          ? `按 1-${card.branches.length} 选择分支`
-          : '点击或按 Space 继续'}
-      </div>
+      <div className="card-hint">{getHint()}</div>
     </div>
   );
 };

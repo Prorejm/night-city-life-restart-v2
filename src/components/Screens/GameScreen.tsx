@@ -384,7 +384,7 @@ const GameScreen: React.FC = () => {
         <CriticalAlertBar />
 
         {/* 中央事件卡片 */}
-        <div key={cardAnimKey} style={{ zIndex: 5 }}>
+        <div key={cardAnimKey} style={{ zIndex: 5, padding: '0 4px' }}>
           <EventCardReigns
             card={currentCard}
             onContinue={handleContinue}
@@ -393,7 +393,7 @@ const GameScreen: React.FC = () => {
         </div>
       </div>
 
-      <div className="game-footer">
+      <div className="game-footer" style={{ paddingBottom: 'env(safe-area-inset-bottom, 0px)' }}>
         <Footer processTurn={processTurn} />
       </div>
     </div>

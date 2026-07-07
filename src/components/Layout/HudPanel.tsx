@@ -87,7 +87,7 @@ export default function HudPanel({
         <div className="px-3 py-4 space-y-4">
           {/* Core attributes */}
           <div>
-            <h3 className="text-[10px] font-mono text-neon-cyan uppercase tracking-widest mb-3">
+            <h3 className="text-xs font-mono text-neon-cyan uppercase tracking-widest mb-3">
               核心属性
             </h3>
             <div className="space-y-2">
@@ -105,7 +105,7 @@ export default function HudPanel({
 
           {/* Derived attributes */}
           <div>
-            <h3 className="text-[10px] font-mono text-neon-magenta uppercase tracking-widest mb-3">
+            <h3 className="text-xs font-mono text-neon-magenta uppercase tracking-widest mb-3">
               衍生属性
             </h3>
             <div className="space-y-2">

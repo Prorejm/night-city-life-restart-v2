@@ -24,6 +24,8 @@ export default function HudHeader({
   coreAttributes,
   className,
 }: HudHeaderProps) {
+  const ageInt = Math.floor(currentAge);
+
   return (
     <header
       className={cn(
@@ -35,19 +37,22 @@ export default function HudHeader({
       )}
     >
       <div className="grid grid-cols-[auto_1fr_auto] items-center gap-4">
-        {/* Age / Year / Turn info */}
-        <div className="flex items-center gap-4 font-mono text-xs">
-          <div className="flex items-center gap-1">
-            <span className="text-muted-foreground">AGE</span>
-            <span className="text-neon-cyan font-bold">{currentAge}</span>
+        {/* Age / Year / Turn info - 三栏卡片式 */}
+        <div className="flex items-center gap-3">
+          {/* AGE 卡片 */}
+          <div className="flex flex-col items-center px-3 py-1 rounded-sm border border-neon-cyan/20 bg-black/40">
+            <span className="text-[10px] font-mono text-muted-foreground uppercase tracking-wider">年龄</span>
+            <span className="text-sm font-mono font-bold text-neon-cyan">{ageInt}岁</span>
           </div>
-          <div className="flex items-center gap-1">
-            <span className="text-muted-foreground">YEAR</span>
-            <span className="text-foreground font-bold">{currentYear}</span>
+          {/* YEAR 卡片 */}
+          <div className="flex flex-col items-center px-3 py-1 rounded-sm border border-neon-magenta/20 bg-black/40">
+            <span className="text-[10px] font-mono text-muted-foreground uppercase tracking-wider">公元</span>
+            <span className="text-sm font-mono font-bold text-neon-magenta">{currentYear}年</span>
           </div>
-          <div className="flex items-center gap-1">
-            <span className="text-muted-foreground">TURN</span>
-            <span className="text-foreground font-bold">{turnCount}</span>
+          {/* TURN 卡片 */}
+          <div className="flex flex-col items-center px-3 py-1 rounded-sm border border-neon-yellow/20 bg-black/40">
+            <span className="text-[10px] font-mono text-muted-foreground uppercase tracking-wider">回合</span>
+            <span className="text-sm font-mono font-bold text-neon-yellow">第{turnCount}回</span>
           </div>
         </div>
 

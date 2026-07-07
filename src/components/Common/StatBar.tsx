@@ -32,11 +32,11 @@ export default function StatBar({
   return (
     <div className={cn('flex flex-col gap-1', className)}>
       {showLabel && (
-        <div className="flex justify-between items-center text-xs font-mono">
+        <div className="flex justify-between items-center text-sm font-mono">
           <span className="text-muted-foreground uppercase tracking-wider">
             {name}
           </span>
-          <span className="text-foreground font-bold">{value}</span>
+          <span className="text-foreground font-bold text-base">{value}</span>
         </div>
       )}
       <div

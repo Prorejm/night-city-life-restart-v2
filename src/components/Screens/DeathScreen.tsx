@@ -2,6 +2,7 @@ import { useEffect, useState, useMemo } from 'react';
 import { cn } from '@/lib/utils';
 import useGameStore from '@/stores/gameStore';
 import usePlayerStore from '@/stores/playerStore';
+import useGameEngine from '@/hooks/useGameEngine';
 import { calculateRebirthPoints, getRebirthOptions } from '@/core/RebirthSystem';
 import { getEpitaph } from '@/core/DeathSystem';
 import type { DeathType, CoreAttribute } from '@/types';
@@ -92,9 +93,11 @@ const DeathScreen: React.FC<DeathScreenProps> = ({ onRestart, onBackToMenu }) =>
     };
   }, []);
 
+  const { startNewGame } = useGameEngine();
+
   const handleRestart = () => {
     onRestart?.();
-    setPhase('ALLOCATE');
+    startNewGame(); // 重新初始化游戏，stateMachine 从 LOADING->MENU->TALENT_SELECT 正确流转
   };
 
   const handleBackToMenu = () => {

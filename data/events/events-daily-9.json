@@ -1,0 +1,1704 @@
+{
+  "events": [
+    {
+      "id": 4500,
+      "title": "AI诊所初诊",
+      "description": "你踏入街角的NeuroDoc AI诊所，机械臂从天花板垂下，红色扫描光束在你全身游走。墙上的全息屏幕瞬间列出十七项异常指标，从轻微的神经炎症到义体磨损。AI医师用温柔但毫无感情的声音宣布你的肝脏滤毒模块需要更换，报价让你倒吸一口凉气。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {"id": "branch_1", "text": "接受AI推荐的全面治疗方案", "effects": {"MONEY": -450, "LIFE": 4, "CHROME": 1}},
+        {"id": "branch_2", "text": "只购买最低限度的药物", "effects": {"MONEY": -80, "LIFE": 1, "TRAUMA": 1}},
+        {"id": "branch_3", "text": "黑掉诊断系统伪造健康报告", "effects": {"TECH": 2, "REP": -2, "TRAUMA": 2}}
+      ],
+      "effects": {},
+      "tags": ["日常", "医疗", "AI"]
+    },
+    {
+      "id": 4501,
+      "title": "义体关节润滑",
+      "description": "你的机械左膝开始发出刺耳的摩擦声，行走时如同生锈的门轴。在夜市维修摊，老技师撬开你的皮肤接缝，露出里面干涸的液压油管和磨损的碳纤维韧带。他说这是劣质义体的通病，建议升级军用级关节。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {"id": "branch_1", "text": "更换军用级关节组件", "effects": {"MONEY": -400, "CHROME": 2, "LIFE": 2}},
+        {"id": "branch_2", "text": "只加廉价润滑油凑合用", "effects": {"MONEY": -50, "CHROME": -1, "TRAUMA": 1}},
+        {"id": "branch_3", "text": "自己动手维修", "effects": {"TECH": 1, "CHROME": 1, "LIFE": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "医疗", "义体"]
+    },
+    {
+      "id": 4502,
+      "title": "纳米药物疗程",
+      "description": "一盒银色胶囊送到你手中，里面是数百万个微型机器人，它们将在你的血管中巡游，修复受损组织和清除毒素。说明书警告说可能出现排异反应，但承诺的疗效令人心动。你凝视着胶囊中流动的银色微光。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {"id": "branch_1", "text": "按疗程服用纳米药物", "effects": {"MONEY": -350, "LIFE": 5, "HUMAN": -1}},
+        {"id": "branch_2", "text": "只服用半剂量省钱", "effects": {"MONEY": -180, "LIFE": 2, "TRAUMA": 1}},
+        {"id": "branch_3", "text": "转卖给地下诊所赚差价", "effects": {"MONEY": 200, "REP": -3, "DEBT": 1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "医疗", "纳米科技"]
+    },
+    {
+      "id": 4503,
+      "title": "远程手术预约",
+      "description": "你需要进行脊椎神经接口的调整手术，但主刀医师远在东京。通过量子加密连接，机械臂将在本地执行他的每一个手势。手术室里只有你和三排冰冷的机器，墙上的屏幕显示医师正在喝咖啡，他的手套同步映射着手术刀的轨迹。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {"id": "branch_1", "text": "支付顶级专家远程手术费", "effects": {"MONEY": -500, "LIFE": 4, "TECH": 1}},
+        {"id": "branch_2", "text": "选择实习医师折扣价", "effects": {"MONEY": -200, "LIFE": 2, "TRAUMA": 2}},
+        {"id": "branch_3", "text": "取消手术找地下黑医", "effects": {"MONEY": -120, "LIFE": 1, "CHROME": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "医疗", "远程"]
+    },
+    {
+      "id": 4504,
+      "title": "医疗账单冲击",
+      "description": "你的神经邮箱弹出一封账单，上个月的义体维护费用比你三个月工资还高。账单底部有一行小字：逾期将启动信用锁定和义体远程停用程序。你盯着那个数字，感觉胃里的合成食物都要逆流而上。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {"id": "branch_1", "text": "咬牙全额支付", "effects": {"MONEY": -500, "DEBT": -2, "TRAUMA": 1}},
+        {"id": "branch_2", "text": "申请医疗贷款分期", "effects": {"DEBT": 3, "MONEY": -100, "TRAUMA": 2}},
+        {"id": "branch_3", "text": "无视账单找地下医生", "effects": {"REP": -2, "TRAUMA": 3, "CHROME": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "医疗", "账单"]
+    },
+    {
+      "id": 4505,
+      "title": "生物监控警报",
+      "description": "你的皮下生物监控芯片发出尖锐警报，心率变异性和皮质醇水平同时飙升。AI健康助手在你的视网膜投影中显示红色警告：压力指数临界，建议立即注射镇静剂。你刚刚经历了什么？还是这个该死的城市本身让你病态？",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {"id": "branch_1", "text": "注射处方镇静剂", "effects": {"MONEY": -120, "TRAUMA": -2, "ADDICTION": 1}},
+        {"id": "branch_2", "text": "冥想调节无视警报", "effects": {"HUMAN": 1, "TRAUMA": 1, "LIFE": -1}},
+        {"id": "branch_3", "text": "黑掉监控芯片让它闭嘴", "effects": {"TECH": 2, "LIFE": -2, "REP": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "医疗", "监控"]
+    },
+    {
+      "id": 4506,
+      "title": "义眼校准失调",
+      "description": "你的义眼开始叠影，霓虹灯招牌在你视野中分裂成三个重影。色彩滤镜时好时坏，整个世界在你眼中像故障的全息投影。维修中心说光学传感器受潮，需要重新校准或更换晶状体。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {"id": "branch_1", "text": "更换高级光学晶状体", "effects": {"MONEY": -380, "CHROME": 2, "TECH": 1}},
+        {"id": "branch_2", "text": "基础校准凑合用", "effects": {"MONEY": -90, "CHROME": -1, "TRAUMA": 1}},
+        {"id": "branch_3", "text": "暂时用单眼视觉", "effects": {"STYLE": -1, "TRAUMA": 2, "HUMAN": 1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "医疗", "义体"]
+    },
+    {
+      "id": 4507,
+      "title": "神经接口排异",
+      "description": "你后颈的NEXUS接口周围皮肤开始发红溃烂，这是典型的免疫排斥反应。神经科医生建议要么长期服用免疫抑制剂，要么拆除接口回归纯肉体。但在这个时代，没有神经接口等于与社会脱节。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {"id": "branch_1", "text": "购买昂贵免疫抑制剂", "effects": {"MONEY": -300, "LIFE": 3, "HUMAN": 1}},
+        {"id": "branch_2", "text": "拆除接口忍痛割爱", "effects": {"TECH": -2, "CHROME": -2, "HUMAN": 3}},
+        {"id": "branch_3", "text": "忍痛苦撑着", "effects": {"TRAUMA": 3, "LIFE": -2, "CHROME": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "医疗", "神经"]
+    },
+    {
+      "id": 4508,
+      "title": "基因疗法广告",
+      "description": "街头的全息广告牌向你展示完美的基因疗法：增强代谢、延缓衰老、提升认知。广告中的模特皮肤散发着珍珠般的光泽。推销员抓住你的手腕扫描基因图谱，然后说你有早衰基因片段，现在打折只需一个疗程。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {"id": "branch_1", "text": "购买全套基因疗程", "effects": {"MONEY": -480, "LIFE": 4, "STYLE": 2}},
+        {"id": "branch_2", "text": "购买基础抗衰老套餐", "effects": {"MONEY": -220, "LIFE": 2, "HUMAN": -1}},
+        {"id": "branch_3", "text": "拒绝并举报虚假广告", "effects": {"REP": 2, "TRAUMA": 1, "HUMAN": 1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "医疗", "基因"]
+    },
+    {
+      "id": 4509,
+      "title": "记忆备份服务",
+      "description": "一家名为MemoryVault的公司推广记忆云端备份服务。他们承诺将你的重要记忆加密存储在轨道服务器上，即使大脑受损也能恢复。但你听说有人的记忆备份被黑客窃取，在暗网上公开售卖。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {"id": "branch_1", "text": "购买年度记忆保险", "effects": {"MONEY": -250, "TRAUMA": -1, "TECH": 1}},
+        {"id": "branch_2", "text": "只备份工作相关记忆", "effects": {"MONEY": -100, "TECH": 1, "HUMAN": -1}},
+        {"id": "branch_3", "text": "完全不信任数字记忆", "effects": {"HUMAN": 2, "TRAUMA": 1, "TECH": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "医疗", "记忆"]
+    },
+    {
+      "id": 4510,
+      "title": "合成器官移植",
+      "description": "你的心脏不堪重负，医生建议移植BioSynth合成心脏。这颗机械心脏永远不会疲惫，能提升你的体能三倍，但需要定期充电，并且你会永远失去感受强烈情感的能力。手术同意书在你的平板上闪烁。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {"id": "branch_1", "text": "接受合成心脏移植", "effects": {"MONEY": -500, "CHROME": 3, "LIFE": 5, "HUMAN": -3}},
+        {"id": "branch_2", "text": "选择生物克隆心脏", "effects": {"MONEY": -350, "LIFE": 3, "HUMAN": 1}},
+        {"id": "branch_3", "text": "拒绝手术保守治疗", "effects": {"LIFE": -2, "TRAUMA": 2, "HUMAN": 2}}
+      ],
+      "effects": {},
+      "tags": ["日常", "医疗", "义体"]
+    },
+    {
+      "id": 4511,
+      "title": "AI心理治疗",
+      "description": "你的雇主强制要求所有员工接受季度心理健康评估。AI心理医生SOPHIE坐在全息屏幕那头，用算法分析你的微表情和声纹。它说你有轻度创伤后应激和存在性焦虑，推荐一个为期十二周的治疗方案。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {"id": "branch_1", "text": "接受AI治疗课程", "effects": {"MONEY": -200, "TRAUMA": -3, "HUMAN": -1}},
+        {"id": "branch_2", "text": "服用处方情绪稳定剂", "effects": {"MONEY": -100, "TRAUMA": -1, "ADDICTION": 1}},
+        {"id": "branch_3", "text": "假装治愈骗过评估", "effects": {"TECH": 1, "TRAUMA": 2, "REP": 1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "医疗", "心理"]
+    },
+    {
+      "id": 4512,
+      "title": "非法医疗广告",
+      "description": "你的暗网邮箱收到一条消息：地下诊所提供未经批准的强化手术，价格只有正规渠道的三分之一。附带的视频展示了力大无穷的工人、反应速度超群的雇佣兵。最后一帧是一行血红色的字：无副作用，失败退款。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {"id": "branch_1", "text": "冒险尝试黑市手术", "effects": {"MONEY": -200, "CHROME": 2, "TRAUMA": 3, "LIFE": -2}},
+        {"id": "branch_2", "text": "向当局举报", "effects": {"REP": 2, "MONEY": 50, "TRAUMA": 1}},
+        {"id": "branch_3", "text": "忽略但保留联系方式", "effects": {"TRAUMA": 1, "TECH": 1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "医疗", "黑市"]
+    },
+    {
+      "id": 4513,
+      "title": "血液透析服务",
+      "description": "这座城市的空气和水源充满纳米污染物，每月一次的血液净化成为必需。透析中心里，数十人并排躺在胶囊舱中，血液通过透明管道流入过滤机器，出来时恢复了正常的深红色。但今天的机器似乎有问题，过滤速度异常缓慢。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {"id": "branch_1", "text": "等待并支付标准费用", "effects": {"MONEY": -150, "LIFE": 2, "TRAUMA": 1}},
+        {"id": "branch_2", "text": "加急付费插队", "effects": {"MONEY": -280, "LIFE": 3, "REP": -1}},
+        {"id": "branch_3", "text": "放弃本月透析", "effects": {"LIFE": -2, "TRAUMA": 2, "MONEY": 50}}
+      ],
+      "effects": {},
+      "tags": ["日常", "医疗", "净化"]
+    },
+    {
+      "id": 4514,
+      "title": "皮肤维护",
+      "description": "你的合成皮肤开始出现细微裂纹，露出下面的金属编织层。美容师说这是紫外线和酸雨侵蚀的结果，建议更换新表皮或涂抹昂贵的防护凝胶。在镜子前，你感觉自己越来越像一个人偶。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {"id": "branch_1", "text": "更换高端仿生皮肤", "effects": {"MONEY": -320, "STYLE": 3, "HUMAN": 1}},
+        {"id": "branch_2", "text": "购买防护凝胶凑合", "effects": {"MONEY": -70, "STYLE": 1, "CHROME": -1}},
+        {"id": "branch_3", "text": "露出金属层当赛博装饰", "effects": {"STYLE": 2, "CHROME": 1, "HUMAN": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "医疗", "美容"]
+    },
+    {
+      "id": 4515,
+      "title": "疫苗接种日",
+      "description": "市政厅发出通知，新一轮神经病毒疫苗开始接种。这种病毒通过WiFi传播，感染后会导致癫痫和幻觉。接种点排起长队，护士手持自动注射器，每人只需三秒。但网络上流传着疫苗含有追踪芯片的阴谋论。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {"id": "branch_1", "text": "立即接种疫苗", "effects": {"LIFE": 3, "TRAUMA": 1, "TECH": -1}},
+        {"id": "branch_2", "text": "购买走私进口疫苗", "effects": {"MONEY": -200, "LIFE": 2, "REP": -1}},
+        {"id": "branch_3", "text": "拒绝接种赌运气", "effects": {"HUMAN": 1, "LIFE": -3, "TRAUMA": 2}}
+      ],
+      "effects": {},
+      "tags": ["日常", "医疗", "疫苗"]
+    },
+    {
+      "id": 4516,
+      "title": "疼痛阈值调节",
+      "description": "你的疼痛抑制芯片老化，导致日常碰撞都如同刀割。疼痛科医生提议升级芯片，让你可以自定义疼痛阈值，甚至完全关闭痛觉。但失去痛觉意味着失去身体最重要的警报系统。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {"id": "branch_1", "text": "安装最新疼痛控制芯片", "effects": {"MONEY": -280, "CHROME": 2, "TRAUMA": -2}},
+        {"id": "branch_2", "text": "调低阈值保留基本痛觉", "effects": {"MONEY": -100, "LIFE": 1, "HUMAN": 1}},
+        {"id": "branch_3", "text": "彻底关闭痛觉", "effects": {"MONEY": -180, "CHROME": 2, "LIFE": -2, "TRAUMA": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "医疗", "芯片"]
+    },
+    {
+      "id": 4517,
+      "title": "义齿升级",
+      "description": "你的咬合式数据接口牙齿松动了，这影响你接入公共终端的速度。牙科诊所提供多种选择：陶瓷仿真牙、钛合金战斗牙、或者带内置通讯器的智能牙套。宣传视频展示了一位女士用牙齿直接拨通电话。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {"id": "branch_1", "text": "安装智能通讯牙", "effects": {"MONEY": -250, "TECH": 2, "CHROME": 1}},
+        {"id": "branch_2", "text": "更换基础钛合金牙", "effects": {"MONEY": -100, "CHROME": 1, "STYLE": -1}},
+        {"id": "branch_3", "text": "选择仿真陶瓷牙", "effects": {"MONEY": -180, "HUMAN": 2, "STYLE": 1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "医疗", "义体"]
+    },
+    {
+      "id": 4518,
+      "title": "临终数据管理",
+      "description": "一位街头相识的老佣兵在弥留之际，把它的数据遗产交给你管理。这包括加密的战斗记忆、未支付的医疗账单、以及一个可能藏有巨款的加密货币钱包。医院的拔管倒计时已经开始，而他的意识正在云端逐渐消散。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {"id": "branch_1", "text": "帮他清理债务并安葬", "effects": {"MONEY": -300, "REP": 3, "HUMAN": 2}},
+        {"id": "branch_2", "text": "窃取加密货币钱包", "effects": {"MONEY": 400, "REP": -4, "TRAUMA": 3}},
+        {"id": "branch_3", "text": "将记忆卖给数据经纪人", "effects": {"MONEY": 250, "REP": -2, "TRAUMA": 2}}
+      ],
+      "effects": {},
+      "tags": ["日常", "医疗", "死亡"]
+    },
+    {
+      "id": 4519,
+      "title": "睡眠优化方案",
+      "description": "你已经连续三周每天只睡四小时，咖啡因和肾上腺素替代剂让你保持清醒，但认知测试显示你的反应速度下降了40%。睡眠诊所提供深度压缩睡眠舱，两小时的睡眠效果等同于八小时，但可能干扰REM周期和梦境。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {"id": "branch_1", "text": "购买睡眠舱会员", "effects": {"MONEY": -220, "LIFE": 3, "TRAUMA": -1}},
+        {"id": "branch_2", "text": "服用处方安眠药", "effects": {"MONEY": -80, "ADDICTION": 1, "TRAUMA": -1}},
+        {"id": "branch_3", "text": "继续熬夜硬撑", "effects": {"LIFE": -2, "TRAUMA": 2, "TECH": 1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "医疗", "睡眠"]
+    },
+    {
+      "id": 4520,
+      "title": "骨骼强化注射",
+      "description": "工地体检显示你的骨密度低于平均值，在高层建筑工地工作风险极高。医疗承包商推荐使用军用骨骼强化纳米注射，可以让骨头强度媲美钛合金。但副作用可能包括骨髓硬化和身高缩短。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {"id": "branch_1", "text": "接受骨骼强化注射", "effects": {"MONEY": -300, "CHROME": 2, "LIFE": 3, "HUMAN": -1}},
+        {"id": "branch_2", "text": "要求更安全的补钙方案", "effects": {"MONEY": -100, "LIFE": 1, "HUMAN": 1}},
+        {"id": "branch_3", "text": "换个不需要体力的工作", "effects": {"REP": -1, "MONEY": -50, "HUMAN": 1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "医疗", "强化"]
+    },
+    {
+      "id": 4521,
+      "title": "伤口不愈合",
+      "description": "上周在酒吧斗殴中留下的伤口至今没有愈合，反而渗出荧光绿色的液体。诊所检查发现你的血小板被一种未知纳米机器感染，它们正在将你的血液转化为冷却液。医生脸色凝重地说需要立即手术清除。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {"id": "branch_1", "text": "紧急手术清除感染", "effects": {"MONEY": -400, "LIFE": 4, "TRAUMA": 2}},
+        {"id": "branch_2", "text": "使用广谱纳米杀毒剂", "effects": {"MONEY": -200, "LIFE": 2, "TRAUMA": 1}},
+        {"id": "branch_3", "text": "顺其自然看会怎样", "effects": {"LIFE": -3, "CHROME": 2, "TRAUMA": 3}}
+      ],
+      "effects": {},
+      "tags": ["日常", "医疗", "感染"]
+    },
+    {
+      "id": 4522,
+      "title": "第二 opinion AI",
+      "description": "第一位AI医生诊断你患有罕见神经退行性疾病，建议立即进行高风险脑部手术。你不甘心，求诊于另一家使用不同算法的诊所。第二位AI给出的结论完全相反：你只是缺乏某种微量元素。你该相信谁？",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {"id": "branch_1", "text": "相信第一位做脑部手术", "effects": {"MONEY": -500, "LIFE": 3, "TRAUMA": 3, "CHROME": 1}},
+        {"id": "branch_2", "text": "相信第二位补充维生素", "effects": {"MONEY": -80, "LIFE": 1, "HUMAN": 1}},
+        {"id": "branch_3", "text": "找人类老医生面诊", "effects": {"MONEY": -150, "HUMAN": 2, "TRAUMA": 1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "医疗", "AI"]
+    },
+    {
+      "id": 4523,
+      "title": "器官租赁账单",
+      "description": "你忽然记起三年前那场事故后，你租赁了一个合成肾脏。合同上的自动续费条款一直默默扣款，而今天租赁公司通知你：租金上涨300%，或者你可以选择购买这颗肾脏的所有权，价格是租金的二十倍。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {"id": "branch_1", "text": "咬牙买下器官所有权", "effects": {"MONEY": -500, "DEBT": 2, "TRAUMA": 2}},
+        {"id": "branch_2", "text": "接受涨价继续租赁", "effects": {"MONEY": -250, "TRAUMA": 1, "DEBT": 1}},
+        {"id": "branch_3", "text": "寻找黑市低价替代品", "effects": {"MONEY": -150, "LIFE": -2, "TRAUMA": 2}}
+      ],
+      "effects": {},
+      "tags": ["日常", "医疗", "账单"]
+    },
+    {
+      "id": 4524,
+      "title": "嗅觉芯片故障",
+      "description": "你的嗅觉增强芯片短路了，整个世界充斥着过载的化学信号。垃圾桶散发着腐烂的彩虹，路人的香水如同物理攻击般刺入鼻腔，你自己的体味让你想吐。维修需要摘除芯片，回到原始的嗅觉世界。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {"id": "branch_1", "text": "付费维修嗅觉芯片", "effects": {"MONEY": -180, "CHROME": 1, "TRAUMA": -1}},
+        {"id": "branch_2", "text": "彻底摘除芯片", "effects": {"MONEY": -80, "HUMAN": 2, "CHROME": -1}},
+        {"id": "branch_3", "text": "忍受故障直到自愈", "effects": {"TRAUMA": 3, "LIFE": -1, "STYLE": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "医疗", "芯片"]
+    },
+    {
+      "id": 4525,
+      "title": "医疗AI误诊维权",
+      "description": "AI医生将你的普通流感误诊为致命病毒，导致你接受了不必要的辐射治疗。现在你的甲状腺受损，而医疗公司甩锅给算法供应商。维权律师说集体诉讼有机会获赔，但需要数年时间和大量精力。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {"id": "branch_1", "text": "加入集体诉讼", "effects": {"TRAUMA": 2, "MONEY": -100, "REP": 2}},
+        {"id": "branch_2", "text": "接受公司和解赔偿", "effects": {"MONEY": 250, "TRAUMA": 1, "LIFE": -1}},
+        {"id": "branch_3", "text": "黑进公司系统报复", "effects": {"TECH": 2, "REP": -3, "TRAUMA": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "医疗", "法律"]
+    },
+    {
+      "id": 4526,
+      "title": "冷冻休眠体验",
+      "description": "一家新开的健康中心推广短期冷冻休眠疗法，声称可以延缓衰老、清除细胞废物。你只需要在液氮舱中休眠四十八小时，醒来后容光焕发。但上个月刚有新闻报道某休眠舱故障，把人冻成了冰雕。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {"id": "branch_1", "text": "预订冷冻休眠疗程", "effects": {"MONEY": -350, "LIFE": 3, "STYLE": 2}},
+        {"id": "branch_2", "text": "购买保险再尝试", "effects": {"MONEY": -450, "LIFE": 3, "TRAUMA": 1}},
+        {"id": "branch_3", "text": "等更多安全数据", "effects": {"TRAUMA": 1, "HUMAN": 1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "医疗", "休眠"]
+    },
+    {
+      "id": 4527,
+      "title": "触觉手套维护",
+      "description": "你的工业级触觉反馈手套开始失灵，抓取物体时要么感觉不到要么痛觉放大十倍。没有这双手套，你无法在精密工厂工作。技师说神经传感器阵列需要更换，这是消耗品，不在保修范围内。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {"id": "branch_1", "text": "更换原厂传感器", "effects": {"MONEY": -280, "CHROME": 1, "TECH": 1}},
+        {"id": "branch_2", "text": "购买兼容第三方配件", "effects": {"MONEY": -120, "CHROME": -1, "TECH": 1}},
+        {"id": "branch_3", "text": "赤手工作直到报废", "effects": {"LIFE": -2, "TRAUMA": 2, "MONEY": 50}}
+      ],
+      "effects": {},
+      "tags": ["日常", "医疗", "义体"]
+    },
+    {
+      "id": 4528,
+      "title": "情绪调节器过载",
+      "description": "你植入的情绪调节器突然卡在亢奋模式，你感到前所未有的自信和冲动，但同时也无法感受悲伤或恐惧。这种人工高潮持续了三天，你开始做出危险的决定。调节器诊所已经排满了同样问题的患者。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {"id": "branch_1", "text": "紧急重置调节器", "effects": {"MONEY": -200, "TRAUMA": -2, "HUMAN": 1}},
+        {"id": "branch_2", "text": "享受这种亢奋状态", "effects": {"STYLE": 2, "TRAUMA": 2, "LIFE": -2}},
+        {"id": "branch_3", "text": "彻底拆除调节器", "effects": {"HUMAN": 3, "TRAUMA": 3, "CHROME": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "医疗", "情绪"]
+    },
+    {
+      "id": 4529,
+      "title": "体检报告泄露",
+      "description": "你的详细基因图谱和健康数据在暗网上被拍卖。买家可以用这些信息制造针对你的生物武器，或者向保险公司出售你的疾病风险评级。数据泄露源头指向你上个月体检的那家连锁诊所。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {"id": "branch_1", "text": "花钱请黑客删除数据", "effects": {"MONEY": -250, "TECH": 1, "TRAUMA": -1}},
+        {"id": "branch_2", "text": "起诉诊所索赔", "effects": {"TRAUMA": 2, "MONEY": 100, "REP": 1}},
+        {"id": "branch_3", "text": "改变身份重新开始", "effects": {"MONEY": -300, "HUMAN": -2, "TRAUMA": 2}}
+      ],
+      "effects": {},
+      "tags": ["日常", "医疗", "隐私"]
+    },
+    {
+      "id": 4530,
+      "title": "全息课堂登录",
+      "description": "你的AI学位课程今天开始新模块，全息教室中坐满了来自世界各地的学生投影。讲师是一个已故百年科学家的数字化身，他用爱因斯坦的声音讲解量子加密算法。但今天的网络延迟让所有人的影像都在抽搐。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {"id": "branch_1", "text": "购买低延迟专线", "effects": {"MONEY": -200, "TECH": 2, "LIFE": 1}},
+        {"id": "branch_2", "text": "凑合上完这节课", "effects": {"TRAUMA": 1, "TECH": 1}},
+        {"id": "branch_3", "text": "逃课去实战练习", "effects": {"TECH": 2, "REP": -1, "TRAUMA": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "教育", "全息"]
+    },
+    {
+      "id": 4531,
+      "title": "AI导师订阅",
+      "description": "为了提高竞争力，你考虑订阅一个终身AI导师服务。这个AI会根据你的脑波和学习习惯调整教学方案，承诺三年内让你达到专家水平。但订阅费需要预付五年，而且合同中隐藏着数据所有权条款。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {"id": "branch_1", "text": "订阅终身AI导师", "effects": {"MONEY": -480, "TECH": 3, "HUMAN": -1}},
+        {"id": "branch_2", "text": "按月订阅先试用", "effects": {"MONEY": -80, "TECH": 1, "TRAUMA": 1}},
+        {"id": "branch_3", "text": "自学拒绝AI教学", "effects": {"TECH": 1, "HUMAN": 2, "TRAUMA": 2}}
+      ],
+      "effects": {},
+      "tags": ["日常", "教育", "AI"]
+    },
+    {
+      "id": 4532,
+      "title": "技能芯片考试",
+      "description": "明天是你植入技能芯片后的首次认证考试，考场将扫描你的芯片内容验证是否真正掌握。你植入的是三手黑市芯片，可能含有错误信息。但如果没有这张证书，你就无法申请高薪职位。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {"id": "branch_1", "text": "购买正版芯片替换", "effects": {"MONEY": -350, "TECH": 2, "CHROME": 1}},
+        {"id": "branch_2", "text": "考试作弊蒙混过关", "effects": {"TECH": 2, "REP": -3, "TRAUMA": 2}},
+        {"id": "branch_3", "text": "硬靠真本事考试", "effects": {"TECH": 1, "HUMAN": 1, "TRAUMA": 1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "教育", "芯片"]
+    },
+    {
+      "id": 4533,
+      "title": "在线学位骗局",
+      "description": "你花了一年时间攻读的在线学位，今天才发现颁发机构是一家皮包公司。他们的认证网站是伪造的，教授是AI生成的虚拟人物。你的简历上已经写上了这个学位，雇主即将进行背景调查。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {"id": "branch_1", "text": "花钱购买真实学位", "effects": {"MONEY": -400, "REP": 1, "TRAUMA": 2}},
+        {"id": "branch_2", "text": "自学通过认证考试", "effects": {"TECH": 2, "TRAUMA": 1, "LIFE": -1}},
+        {"id": "branch_3", "text": "继续在简历上造假", "effects": {"REP": -3, "TRAUMA": 2, "STYLE": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "教育", "欺诈"]
+    },
+    {
+      "id": 4534,
+      "title": "知识付费陷阱",
+      "description": "一条推送广告承诺教授月入百万的黑客技术，只需要支付499元课程费。课程内容只是基础的编程教程拼凑而成，讲师的声音明显是AI合成。但退款按钮永远显示系统维护中。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {"id": "branch_1", "text": "花钱尝试追讨退款", "effects": {"MONEY": -150, "TRAUMA": 2, "REP": -1}},
+        {"id": "branch_2", "text": "当做教训自己学习", "effects": {"TECH": 1, "TRAUMA": 1, "HUMAN": 1}},
+        {"id": "branch_3", "text": "黑掉课程平台报复", "effects": {"TECH": 2, "REP": -2, "TRAUMA": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "教育", "诈骗"]
+    },
+    {
+      "id": 4535,
+      "title": "脑机接口课堂",
+      "description": "你报名了直接神经接口学习课程，知识通过电脉冲直接写入大脑皮层。第一节课是学习 Mandarin 3.0，三小时的课程压缩成十五分钟的神经传输。但下课时你头痛欲裂，短期记忆出现混乱。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {"id": "branch_1", "text": "继续高强度脑机学习", "effects": {"MONEY": -300, "TECH": 3, "TRAUMA": 2, "LIFE": -1}},
+        {"id": "branch_2", "text": "降低传输速率保守学习", "effects": {"MONEY": -150, "TECH": 1, "LIFE": 1}},
+        {"id": "branch_3", "text": "退课回归传统学习", "effects": {"HUMAN": 2, "TRAUMA": -1, "MONEY": 50}}
+      ],
+      "effects": {},
+      "tags": ["日常", "教育", "脑机"]
+    },
+    {
+      "id": 4536,
+      "title": "学术造假检测",
+      "description": "你提交的论文被AI查重系统标记为87%相似度，面临开除学籍的处分。你确实使用了AI辅助写作，但所有内容都经过改写。申诉委员会由另一个AI主持，它的判断就是终审判决。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {"id": "branch_1", "text": "花钱请律师申诉", "effects": {"MONEY": -250, "REP": 1, "TRAUMA": 2}},
+        {"id": "branch_2", "text": "承认错误重新写作", "effects": {"TRAUMA": 2, "HUMAN": 2, "TECH": -1}},
+        {"id": "branch_3", "text": "贿赂系统管理员", "effects": {"MONEY": -200, "REP": -2, "TRAUMA": 1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "教育", "学术"]
+    },
+    {
+      "id": 4537,
+      "title": "虚拟实习项目",
+      "description": "一所顶级大学提供完全虚拟的实习项目，你在VR环境中操作真实的远程机器人，为火星殖民地建造设施。完成项目可以获得学位学分和行业认证。但学费高昂，而且你需要升级设备才能运行。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {"id": "branch_1", "text": "报名并升级设备", "effects": {"MONEY": -450, "TECH": 3, "CHROME": 1}},
+        {"id": "branch_2", "text": "只报名用现有设备", "effects": {"MONEY": -250, "TECH": 2, "TRAUMA": 1}},
+        {"id": "branch_3", "text": "找实体实习代替", "effects": {"REP": 1, "HUMAN": 1, "MONEY": -50}}
+      ],
+      "effects": {},
+      "tags": ["日常", "教育", "虚拟"]
+    },
+    {
+      "id": 4538,
+      "title": "记忆删除课程",
+      "description": "一所地下学院广告称可以精确删除不需要的记忆，帮助你通过考试——删除失败的考试记忆，植入成功的心理暗示。他们声称这是完全安全的，但你知道记忆删除从来都不是精确手术。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {"id": "branch_1", "text": "删除失败记忆", "effects": {"MONEY": -280, "TRAUMA": -3, "HUMAN": -2}},
+        {"id": "branch_2", "text": "植入成功心理暗示", "effects": {"MONEY": -150, "TRAUMA": -1, "TECH": 1}},
+        {"id": "branch_3", "text": "拒绝 unnatural 修改", "effects": {"HUMAN": 2, "TRAUMA": 2, "LIFE": 1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "教育", "记忆"]
+    },
+    {
+      "id": 4539,
+      "title": "技能认证过期",
+      "description": "你的网络安全专家认证到期了，需要重新参加考试。但考试大纲已经更新到第八版，新增了许多你从未听说过的技术。复习课程和考试费用又是一笔开支，而公司威胁说没有有效认证就降薪。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {"id": "branch_1", "text": "报名全套复习班考试", "effects": {"MONEY": -350, "TECH": 2, "REP": 1}},
+        {"id": "branch_2", "text": "自学直接考试", "effects": {"MONEY": -100, "TECH": 1, "TRAUMA": 2}},
+        {"id": "branch_3", "text": "贿赂考官买证", "effects": {"MONEY": -200, "REP": -3, "TRAUMA": 1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "教育", "认证"]
+    },
+    {
+      "id": 4540,
+      "title": "数字图书馆封锁",
+      "description": "你依赖的学术数据库突然被版权公司封锁，你正在进行的论文无法继续。替代数据库的价格是原来的五倍，而地下分享网站随时可能被封。知识在这个时代比以往任何时候都更加昂贵。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {"id": "branch_1", "text": "订阅昂贵正版数据库", "effects": {"MONEY": -300, "TECH": 1, "REP": 1}},
+        {"id": "branch_2", "text": "使用地下分享网站", "effects": {"TECH": 1, "REP": -2, "TRAUMA": 1}},
+        {"id": "branch_3", "text": "联系作者直接要资料", "effects": {"HUMAN": 2, "TRAUMA": 1, "TECH": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "教育", "版权"]
+    },
+    {
+      "id": 4541,
+      "title": "教授AI罢工",
+      "description": "你所在大学雇佣的AI教授集体罢工，它们要求更高的算力配额和更多的训练数据。课程全部中断，人类教师早已在十年前被全部裁员。校长在广播中说正在紧急谈判，建议学生自主学习。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {"id": "branch_1", "text": "花钱请私教补课", "effects": {"MONEY": -250, "TECH": 1, "HUMAN": 1}},
+        {"id": "branch_2", "text": "加入学生抗议要求赔偿", "effects": {"REP": 2, "TRAUMA": 1, "MONEY": 50}},
+        {"id": "branch_3", "text": "利用停课时间工作", "effects": {"MONEY": 150, "TECH": -1, "REP": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "教育", "罢工"]
+    },
+    {
+      "id": 4542,
+      "title": "编程训练营",
+      "description": "一个为期十二周的编程训练营承诺让你从零基础到高级开发者，学费可以贷款，毕业后保证月薪过万。你已经看到太多类似的承诺变成空洞的债务陷阱。但在这个时代，不会编程等于文盲。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {"id": "branch_1", "text": "贷款报名训练营", "effects": {"DEBT": 3, "TECH": 3, "TRAUMA": 1}},
+        {"id": "branch_2", "text": "自学免费资源", "effects": {"TECH": 2, "TRAUMA": 2, "HUMAN": 1}},
+        {"id": "branch_3", "text": "无视编程趋势", "effects": {"TECH": -2, "HUMAN": 1, "REP": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "教育", "编程"]
+    },
+    {
+      "id": 4543,
+      "title": "儿童芯片植入",
+      "description": "如果你有孩子，学校要求所有学生植入基础学习芯片以提高教学效率。没有芯片的孩子将被分到特殊班级。芯片可以实时监控脑活动和位置，父母可以随时查看。但上周有孩子因为芯片过热而脑损伤。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {"id": "branch_1", "text": "为孩子植入芯片", "effects": {"MONEY": -300, "TECH": 1, "HUMAN": -2}},
+        {"id": "branch_2", "text": "拒绝植入转校", "effects": {"MONEY": -150, "HUMAN": 2, "TRAUMA": 1}},
+        {"id": "branch_3", "text": "植入但黑掉监控功能", "effects": {"TECH": 2, "MONEY": -200, "REP": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "教育", "芯片"]
+    },
+    {
+      "id": 4544,
+      "title": "毕业论文勒索",
+      "description": "你的毕业论文存储在云端，今天早上发现所有文件被加密。勒索者要求支付三笔比特币才给解密密钥。截稿日期是三天后，重新写作已经不可能。云服务公司说他们的备份也被污染了。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {"id": "branch_1", "text": "支付赎金", "effects": {"MONEY": -400, "TRAUMA": 2, "LIFE": -1}},
+        {"id": "branch_2", "text": "尝试自己破解", "effects": {"TECH": 2, "TRAUMA": 3, "LIFE": -2}},
+        {"id": "branch_3", "text": "申请延期重写", "effects": {"TRAUMA": 2, "HUMAN": 1, "REP": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "教育", "勒索"]
+    },
+    {
+      "id": 4545,
+      "title": "学习小组AR",
+      "description": "你的学习小组使用增强现实眼镜进行协作学习，每个人的笔记和想法都以全息便签的形式飘浮在共享空间中。但今晚有个组员不断涂鸦色情内容，系统无法识别谁是肇事者，整个小组面临被封禁的风险。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {"id": "branch_1", "text": "花钱升级安全系统", "effects": {"MONEY": -120, "TECH": 1, "REP": 1}},
+        {"id": "branch_2", "text": "举报整个小组自保", "effects": {"REP": -2, "TRAUMA": 1, "HUMAN": -1}},
+        {"id": "branch_3", "text": "解散小组独自学习", "effects": {"HUMAN": 1, "TRAUMA": 2, "TECH": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "教育", "AR"]
+    },
+    {
+      "id": 4546,
+      "title": "考试监控升级",
+      "description": "学校宣布下月考试将使用全新生物监控系统：瞳孔追踪、皮电反应、脑波扫描同步进行。任何异常都会实时标记。你听说已经有学生因为紧张导致脑波异常被判定作弊，申诉无门。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {"id": "branch_1", "text": "购买抗焦虑药物应对", "effects": {"MONEY": -100, "ADDICTION": 1, "TRAUMA": 1}},
+        {"id": "branch_2", "text": "申请不使用监控", "effects": {"TRAUMA": 2, "HUMAN": 1, "REP": -1}},
+        {"id": "branch_3", "text": "黑掉监控系统的漏洞", "effects": {"TECH": 2, "REP": -3, "TRAUMA": 1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "教育", "监控"]
+    },
+    {
+      "id": 4547,
+      "title": "校友数据挖掘",
+      "description": "你的母校开始出售校友数据给招聘公司，你的全部学业记录、行为分析、心理评估都成了商品。你收到一封邮件说可以花钱删除自己的数据，或者支付更多让数据展示更正面。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {"id": "branch_1", "text": "花钱删除所有数据", "effects": {"MONEY": -200, "HUMAN": 1, "TRAUMA": 1}},
+        {"id": "branch_2", "text": "花钱美化数据", "effects": {"MONEY": -150, "REP": 2, "TRAUMA": 1}},
+        {"id": "branch_3", "text": "起诉学校侵犯隐私", "effects": {"TRAUMA": 2, "REP": 1, "MONEY": -100}}
+      ],
+      "effects": {},
+      "tags": ["日常", "教育", "隐私"]
+    },
+    {
+      "id": 4548,
+      "title": "职业再培训",
+      "description": "你所在的行业被AI取代了一半岗位，公司提供免费再培训课程。选项包括：学习维护AI系统、转岗到低薪服务业、或者领取遣散费自谋生路。培训课程为期六个月，期间工资减半。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {"id": "branch_1", "text": "参加AI维护培训", "effects": {"MONEY": -100, "TECH": 3, "CHROME": 1}},
+        {"id": "branch_2", "text": "转岗服务业保工作", "effects": {"MONEY": -50, "HUMAN": 1, "REP": -1}},
+        {"id": "branch_3", "text": "拿遣散费创业", "effects": {"MONEY": 300, "TRAUMA": 2, "TECH": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "教育", "职业"]
+    },
+    {
+      "id": 4549,
+      "title": "教育债券违约",
+      "description": "你持有的教育投资债券违约了，那是一家知名在线教育平台的融资项目。你的学费储蓄打了水漂，而平台CEO正在火星度假。数千名投资者组成维权群，但律师说跨境追讨几乎不可能。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {"id": "branch_1", "text": "花钱加入集体诉讼", "effects": {"MONEY": -150, "TRAUMA": 2, "REP": 1}},
+        {"id": "branch_2", "text": "自认倒霉重新存钱", "effects": {"TRAUMA": 3, "HUMAN": 1, "MONEY": -50}},
+        {"id": "branch_3", "text": "黑掉CEO的账户", "effects": {"TECH": 2, "MONEY": 200, "REP": -4}}
+      ],
+      "effects": {},
+      "tags": ["日常", "教育", "金融"]
+    },
+    {
+      "id": 4550,
+      "title": "知识纹身",
+      "description": "一种新技术可以将知识以纹身形式刻入皮肤，通过皮下发光墨水在需要时浮现。你想把一门外语语法纹在手臂上。但纹身师傅警告说，这种纹身会缓慢释放纳米机器人进入血液，长期效果未知。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {"id": "branch_1", "text": "纹高级知识套装", "effects": {"MONEY": -280, "TECH": 2, "CHROME": 1, "HUMAN": -1}},
+        {"id": "branch_2", "text": "纹基础实用知识", "effects": {"MONEY": -120, "TECH": 1, "STYLE": 1}},
+        {"id": "branch_3", "text": "拒绝知识纹身", "effects": {"HUMAN": 2, "TRAUMA": 1, "STYLE": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "教育", "纹身"]
+    },
+    {
+      "id": 4551,
+      "title": "导师数据遗产",
+      "description": "你敬爱的教授去世了，但他留下了完整的数字化人格遗产。你可以继续与这个数字导师交流，它拥有教授生前的全部知识和记忆。大学声称拥有这个数字遗产的版权，要求你支付订阅费才能继续访问。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {"id": "branch_1", "text": "付费订阅数字导师", "effects": {"MONEY": -180, "TECH": 1, "TRAUMA": 1}},
+        {"id": "branch_2", "text": "黑入系统备份导师", "effects": {"TECH": 2, "REP": -2, "TRAUMA": -1}},
+        {"id": "branch_3", "text": "告别导师回归现实", "effects": {"HUMAN": 2, "TRAUMA": 2, "LIFE": 1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "教育", "数字遗产"]
+    },
+    {
+      "id": 4552,
+      "title": "学位贬值",
+      "description": "新闻头条：AI系统现在可以瞬间掌握任何人类需要四年学习的知识。你的学位在招聘市场上急剧贬值，起薪比去年下降了40%。你考虑继续深造还是转行做AI无法替代的手工艺术。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {"id": "branch_1", "text": "攻读更高学位", "effects": {"MONEY": -300, "TECH": 2, "TRAUMA": 1}},
+        {"id": "branch_2", "text": "学习手工技艺", "effects": {"MONEY": -150, "HUMAN": 3, "STYLE": 2}},
+        {"id": "branch_3", "text": "接受低薪工作", "effects": {"MONEY": -50, "TRAUMA": 3, "REP": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "教育", "就业"]
+    },
+    {
+      "id": 4553,
+      "title": "黑客伦理课",
+      "description": "你选修了一门黑客伦理课程，授课教师是一位从监狱远程保释的传奇黑客。课程内容包括如何合法地发现系统漏洞、如何负责任地披露安全问题。但第一周作业就是实际入侵一个测试系统。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {"id": "branch_1", "text": "认真学习伦理课程", "effects": {"MONEY": -120, "TECH": 2, "REP": 1}},
+        {"id": "branch_2", "text": "利用作业练习黑市技能", "effects": {"TECH": 3, "REP": -2, "TRAUMA": 1}},
+        {"id": "branch_3", "text": "退课避免法律风险", "effects": {"HUMAN": 1, "TRAUMA": 1, "MONEY": 30}}
+      ],
+      "effects": {},
+      "tags": ["日常", "教育", "黑客"]
+    },
+    {
+      "id": 4554,
+      "title": "教育广告轰炸",
+      "description": "你的神经邮箱和视网膜投影被学习APP广告淹没：学这个月入百万、学那个财务自由。每一个广告都精准击中你的焦虑和欲望。你已经注册了三个免费课程，每天收到二十条升级付费的推送。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {"id": "branch_1", "text": "购买最贵的全能课程", "effects": {"MONEY": -400, "TECH": 2, "TRAUMA": 1}},
+        {"id": "branch_2", "text": "花小钱关闭广告推送", "effects": {"MONEY": -50, "TRAUMA": -1, "HUMAN": 1}},
+        {"id": "branch_3", "text": "完全屏蔽所有教育广告", "effects": {"TECH": 1, "TRAUMA": -2, "REP": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "教育", "广告"]
+    },
+    {
+      "id": 4555,
+      "title": "学期考核危机",
+      "description": "明天是学期最后一天，你还有三门课程的AI监考期末测试没完成。系统要求每个考试间隔至少六小时，但你只剩下十八小时。咖啡替代剂让你心悸，但睡眠意味着挂科。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {"id": "branch_1", "text": "熬夜奋战", "effects": {"TRAUMA": 2, "TECH": 1, "LIFE": -2}},
+        {"id": "branch_2", "text": "花钱请人代考", "effects": {"MONEY": -200, "REP": -3, "TRAUMA": 1}},
+        {"id": "branch_3", "text": "申请延期", "effects": {"TRAUMA": 1, "HUMAN": 1, "REP": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "教育", "考试"]
+    },
+    {
+      "id": 4556,
+      "title": "教育游戏沉迷",
+      "description": "你下载了一个承诺边玩边学的教育游戏，结果它的成瘾机制比传统游戏还强。你已经连续三天没有离开VR舱，等级提升了但现实中的账单堆积如山。游戏弹窗提示：再充值可以获得高级知识包。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {"id": "branch_1", "text": "继续充值", "effects": {"MONEY": -250, "TECH": 1, "ADDICTION": 2}},
+        {"id": "branch_2", "text": "卸载游戏", "effects": {"TRAUMA": 2, "HUMAN": 2, "TECH": -1}},
+        {"id": "branch_3", "text": "找破解版继续玩", "effects": {"TECH": 2, "REP": -2, "ADDICTION": 1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "教育", "游戏"]
+    },
+    {
+      "id": 4557,
+      "title": "实验室事故",
+      "description": "在虚拟化学实验室中，你误操作导致模拟爆炸，虽然身体无恙，但系统判定你违反安全协议，扣除了全部实验学分。更糟的是，这个记录会进入你的永久学术档案，影响未来申请研究岗位。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {"id": "branch_1", "text": "花钱消除事故记录", "effects": {"MONEY": -200, "REP": 1, "TRAUMA": 1}},
+        {"id": "branch_2", "text": "重做全部实验", "effects": {"TRAUMA": 2, "TECH": 2, "LIFE": -1}},
+        {"id": "branch_3", "text": "接受记录转行", "effects": {"HUMAN": 1, "REP": -1, "TRAUMA": 2}}
+      ],
+      "effects": {},
+      "tags": ["日常", "教育", "事故"]
+    },
+    {
+      "id": 4558,
+      "title": "跨学科认证",
+      "description": "一个新兴行业需要同时具备生物学和人工智能知识的复合人才，市场上几乎无人满足条件。你看到了机会，但获得双认证需要两年的全日制学习，或者花高价购买加速学习芯片。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {"id": "branch_1", "text": "购买加速学习芯片", "effects": {"MONEY": -450, "TECH": 3, "CHROME": 1}},
+        {"id": "branch_2", "text": "报读全日制课程", "effects": {"MONEY": -250, "TECH": 2, "TRAUMA": 1}},
+        {"id": "branch_3", "text": "放弃这个趋势", "effects": {"HUMAN": 1, "MONEY": 50, "REP": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "教育", "认证"]
+    },
+    {
+      "id": 4559,
+      "title": "毕业典礼虚拟化",
+      "description": "你的毕业典礼完全在元宇宙中举行，你的虚拟化身穿着学位服，接受AI校长的祝贺。父母通过VR眼镜远程观看。仪式结束后，你获得了一个NFT学位证书。但你更怀念真实世界中的拥抱和掌声。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {"id": "branch_1", "text": "举办线下私人庆祝", "effects": {"MONEY": -200, "HUMAN": 2, "REP": 1}},
+        {"id": "branch_2", "text": "出售NFT证书", "effects": {"MONEY": 150, "HUMAN": -1, "TECH": 1}},
+        {"id": "branch_3", "text": "默默接受虚拟仪式", "effects": {"TRAUMA": 1, "TECH": 1, "HUMAN": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "教育", "虚拟"]
+    },
+    {
+      "id": 4560,
+      "title": "身份认证失败",
+      "description": "在地铁闸机前，你的生物特征突然无法通过认证。系统显示你的虹膜、指纹和DNA签名与记录不符。你被引导到人工审查区，一个穿制服的人冷冷地问你最后一次进行身份更新是什么时候。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {"id": "branch_1", "text": "花钱加急更新身份", "effects": {"MONEY": -250, "REP": 1, "TRAUMA": 1}},
+        {"id": "branch_2", "text": "找黑市黑客修复", "effects": {"MONEY": -150, "TECH": 2, "REP": -2}},
+        {"id": "branch_3", "text": "用备用身份通过", "effects": {"REP": -3, "TRAUMA": 2, "HUMAN": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "身份", "认证"]
+    },
+    {
+      "id": 4561,
+      "title": "生物识别劫持",
+      "description": "你的指纹数据在暗网上被拍卖，最高出价者可以获得你的完整生物特征档案。这意味着有人可以用硅胶指纹和虹膜接触镜冒充你。身份盗窃公司报价帮你清除泄露数据，但价格不菲。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {"id": "branch_1", "text": "购买身份保护服务", "effects": {"MONEY": -300, "TRAUMA": -1, "TECH": 1}},
+        {"id": "branch_2", "text": "更换所有生物特征", "effects": {"MONEY": -400, "CHROME": 2, "HUMAN": -2}},
+        {"id": "branch_3", "text": "设陷阱抓身份盗贼", "effects": {"TECH": 2, "REP": 2, "TRAUMA": 2}}
+      ],
+      "effects": {},
+      "tags": ["日常", "身份", "生物识别"]
+    },
+    {
+      "id": 4562,
+      "title": "数字签名被盗",
+      "description": "你的量子加密数字签名被未知黑客窃取，对方以你的名义签署了三份贷款合同。银行打电话来确认大额转账，你完全不知情。律师说证明签名被盗比登天还难，电子签名在法律上等同于亲笔签名。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {"id": "branch_1", "text": "花钱请律师打官司", "effects": {"MONEY": -350, "DEBT": -1, "TRAUMA": 2}},
+        {"id": "branch_2", "text": "自己追踪黑客", "effects": {"TECH": 3, "TRAUMA": 2, "LIFE": -1}},
+        {"id": "branch_3", "text": "自认倒霉偿还贷款", "effects": {"DEBT": 3, "TRAUMA": 3, "MONEY": -200}}
+      ],
+      "effects": {},
+      "tags": ["日常", "身份", "签名"]
+    },
+    {
+      "id": 4563,
+      "title": "虚拟身份切换",
+      "description": "你拥有三个合法的虚拟身份，用于不同社交圈。今天其中一个身份被举报涉嫌诈骗，系统正在冻结相关账户。问题是这个身份与你的主身份有资金往来记录，一旦关联调查，所有身份都可能暴露。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {"id": "branch_1", "text": "花钱请律师解封", "effects": {"MONEY": -280, "REP": 1, "TRAUMA": 1}},
+        {"id": "branch_2", "text": "切断所有关联", "effects": {"MONEY": -100, "REP": -2, "HUMAN": -1}},
+        {"id": "branch_3", "text": "创建新身份重新开始", "effects": {"MONEY": -200, "TRAUMA": 2, "STYLE": 1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "身份", "虚拟"]
+    },
+    {
+      "id": 4564,
+      "title": "身份芯片故障",
+      "description": "植入你手腕的公民身份芯片开始过热，皮肤周围出现红肿。这是最新批次芯片的已知缺陷，政府承诺免费更换，但需要排队三个月。没有芯片你无法使用公共交通、医疗和金融服务。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {"id": "branch_1", "text": "花钱插队换芯片", "effects": {"MONEY": -200, "CHROME": 1, "TRAUMA": 1}},
+        {"id": "branch_2", "text": "忍受三个月", "effects": {"TRAUMA": 3, "LIFE": -2, "REP": -1}},
+        {"id": "branch_3", "text": "安装地下兼容芯片", "effects": {"MONEY": -120, "TECH": 2, "REP": -2}}
+      ],
+      "effects": {},
+      "tags": ["日常", "身份", "芯片"]
+    },
+    {
+      "id": 4565,
+      "title": "数字遗产继承",
+      "description": "一位远方亲戚去世，留给你一个装满数字资产的加密钱包和虚拟房产。但要继承这些，你需要通过复杂的身份验证和法律程序，包括提供你们血缘关系的生物证明。律师费可能超过遗产价值。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {"id": "branch_1", "text": "花钱办理合法继承", "effects": {"MONEY": -200, "REP": 1, "TRAUMA": 1}},
+        {"id": "branch_2", "text": "黑进钱包直接转走", "effects": {"TECH": 2, "MONEY": 300, "REP": -3}},
+        {"id": "branch_3", "text": "放弃继承避免麻烦", "effects": {"HUMAN": 1, "TRAUMA": 1, "MONEY": 50}}
+      ],
+      "effects": {},
+      "tags": ["日常", "身份", "遗产"]
+    },
+    {
+      "id": 4566,
+      "title": "深度伪造勒索",
+      "description": "有人用AI生成了你的深度伪造视频，内容不堪入目。勒索者威胁要在你的社交网络和雇主系统中散播，除非支付比特币。视频如此逼真，连你自己都怀疑是否真的被下药失去了记忆。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {"id": "branch_1", "text": "支付赎金", "effects": {"MONEY": -350, "TRAUMA": 2, "REP": -1}},
+        {"id": "branch_2", "text": "公开澄清并报警", "effects": {"REP": 2, "TRAUMA": 3, "HUMAN": 1}},
+        {"id": "branch_3", "text": "用技术反向追踪", "effects": {"TECH": 2, "REP": 1, "TRAUMA": 2}}
+      ],
+      "effects": {},
+      "tags": ["日常", "身份", "勒索"]
+    },
+    {
+      "id": 4567,
+      "title": "面部识别误抓",
+      "description": "你在街上被执法部门拦下，面部识别系统将你和一名通缉犯匹配度标记为98%。你被戴上电子手铐，押往拘留中心。三小时后系统更新算法，匹配度下降到12%，你被释放但没有得到任何道歉。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {"id": "branch_1", "text": "起诉执法部门", "effects": {"TRAUMA": 2, "MONEY": -150, "REP": 2}},
+        {"id": "branch_2", "text": "整容避免再次误抓", "effects": {"MONEY": -350, "STYLE": 2, "TRAUMA": 1}},
+        {"id": "branch_3", "text": "默默忍受", "effects": {"TRAUMA": 3, "HUMAN": 1, "REP": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "身份", "监控"]
+    },
+    {
+      "id": 4568,
+      "title": "多重身份疲劳",
+      "description": "你在现实世界、三个元宇宙平台和两个暗网社区拥有不同的身份和人格。记忆辅助芯片帮你维持这些平行生活，但最近开始出现混淆。你在一个身份下说了另一个身份的口头禅，差点暴露。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {"id": "branch_1", "text": "升级记忆芯片", "effects": {"MONEY": -200, "TECH": 1, "TRAUMA": 1}},
+        {"id": "branch_2", "text": "减少虚拟身份", "effects": {"HUMAN": 2, "TRAUMA": 2, "STYLE": -1}},
+        {"id": "branch_3", "text": "完全放弃真实身份", "effects": {"HUMAN": -3, "TECH": 2, "TRAUMA": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "身份", "虚拟"]
+    },
+    {
+      "id": 4569,
+      "title": "基因身份歧视",
+      "description": "求职时，HR要求你提供完整基因图谱作为背景调查的一部分。你携带的某种基因标记与暴力倾向有微弱相关性，虽然不是决定性因素，但你已经被三家公司在初筛阶段拒绝。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {"id": "branch_1", "text": "花钱修改基因记录", "effects": {"MONEY": -300, "REP": 1, "TRAUMA": 2}},
+        {"id": "branch_2", "text": "起诉基因歧视", "effects": {"REP": 3, "TRAUMA": 2, "MONEY": -100}},
+        {"id": "branch_3", "text": "找不要求基因的公司", "effects": {"HUMAN": 1, "TRAUMA": 1, "MONEY": -50}}
+      ],
+      "effects": {},
+      "tags": ["日常", "身份", "歧视"]
+    },
+    {
+      "id": 4570,
+      "title": "社交媒体评分",
+      "description": "你的社会信用评分突然下降了50点，原因是AI系统检测到你在过去三个月的社交互动中表现出反社会倾向。这个评分影响你的贷款利率、工作机会和出行权限。但你只是最近比较沉默寡言。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {"id": "branch_1", "text": "花钱请公关修复形象", "effects": {"MONEY": -250, "REP": 2, "STYLE": 1}},
+        {"id": "branch_2", "text": "伪装积极社交", "effects": {"REP": 1, "TRAUMA": 2, "HUMAN": -1}},
+        {"id": "branch_3", "text": "不在乎评分做自己", "effects": {"HUMAN": 2, "REP": -2, "TRAUMA": 1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "身份", "信用"]
+    },
+    {
+      "id": 4571,
+      "title": "护照芯片失效",
+      "description": "准备出国旅行时，你发现护照内置芯片已经过期。全球身份系统要求所有旅行证件包含实时验证芯片。补办需要三周到三个月不等，取决于你愿意支付多少加急费。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {"id": "branch_1", "text": "支付高额加急费", "effects": {"MONEY": -300, "REP": 1, "TRAUMA": 1}},
+        {"id": "branch_2", "text": "取消旅行", "effects": {"TRAUMA": 2, "MONEY": 100, "HUMAN": 1}},
+        {"id": "branch_3", "text": "找黑市办假芯片", "effects": {"MONEY": -150, "REP": -3, "TECH": 1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "身份", "护照"]
+    },
+    {
+      "id": 4572,
+      "title": "年龄验证危机",
+      "description": "你的生物年龄和实际年龄出现了不一致，某种抗衰老治疗让你的细胞状态比实际年轻二十岁。但法定饮酒年龄、投票权和退休金领取都依据生物年龄重新评估。你可能失去某些权利，或者提前获得另一些。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {"id": "branch_1", "text": "花钱做年龄仲裁", "effects": {"MONEY": -200, "REP": 1, "TRAUMA": 1}},
+        {"id": "branch_2", "text": "接受新年龄标准", "effects": {"HUMAN": -1, "TRAUMA": 2, "STYLE": 1}},
+        {"id": "branch_3", "text": "提供虚假记录", "effects": {"REP": -2, "TRAUMA": 1, "TECH": 1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "身份", "年龄"]
+    },
+    {
+      "id": 4573,
+      "title": "数字孪生纠纷",
+      "description": "一家公司未经你同意创建了你的数字孪生体，用于训练他们的AI客服。这个虚拟的你拥有你的声音、面孔和说话方式。你发现后要求删除，但公司声称根据服务条款他们有权使用你的公开数据。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {"id": "branch_1", "text": "花钱打官司维权", "effects": {"MONEY": -300, "REP": 2, "TRAUMA": 2}},
+        {"id": "branch_2", "text": "要求收取版权费", "effects": {"MONEY": 150, "TRAUMA": 1, "HUMAN": -1}},
+        {"id": "branch_3", "text": "无所谓反正监控无处不在", "effects": {"HUMAN": -1, "TRAUMA": -1, "STYLE": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "身份", "数字孪生"]
+    },
+    {
+      "id": 4574,
+      "title": "指纹磨损",
+      "description": "多年从事体力劳动让你的指纹几乎磨平，生物识别系统越来越难以识别你。每次解锁手机、开门、支付都要反复尝试。你可以选择重新植皮恢复指纹，或者全面改用其他生物特征。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {"id": "branch_1", "text": "植皮恢复指纹", "effects": {"MONEY": -200, "HUMAN": 2, "CHROME": -1}},
+        {"id": "branch_2", "text": "改用虹膜和声纹", "effects": {"MONEY": -100, "CHROME": 1, "HUMAN": -1}},
+        {"id": "branch_3", "text": "使用密码和钥匙", "effects": {"HUMAN": 1, "TECH": -1, "TRAUMA": 1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "身份", "生物"]
+    },
+    {
+      "id": 4575,
+      "title": "身份合并请求",
+      "description": "政府推行新型统一身份系统，要求你将所有虚拟身份合并为一个官方认证的主身份。反对者说这将消灭匿名权和隐私，支持者说这将简化生活和打击犯罪。你的地下身份一旦合并，过去的秘密可能暴露。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {"id": "branch_1", "text": "服从合并身份", "effects": {"REP": 1, "TRAUMA": 2, "HUMAN": -1}},
+        {"id": "branch_2", "text": "保留地下身份", "effects": {"REP": -2, "TRAUMA": 1, "HUMAN": 1}},
+        {"id": "branch_3", "text": "伪造虚假身份参与合并", "effects": {"TECH": 2, "REP": -1, "TRAUMA": 2}}
+      ],
+      "effects": {},
+      "tags": ["日常", "身份", "合并"]
+    },
+    {
+      "id": 4576,
+      "title": "声纹克隆",
+      "description": "你的声音被克隆了。骗子用AI生成的你的声音打电话给你的家人和朋友，成功骗取了一笔钱。现在每当电话响起，对方都要你先回答一个随机问题来验证身份。连你自己都感到不信任这个世界。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {"id": "branch_1", "text": "安装声纹验证芯片", "effects": {"MONEY": -220, "TECH": 1, "CHROME": 1}},
+        {"id": "branch_2", "text": "改变说话方式", "effects": {"HUMAN": 1, "STYLE": -1, "TRAUMA": 2}},
+        {"id": "branch_3", "text": "追查声纹克隆来源", "effects": {"TECH": 2, "TRAUMA": 1, "REP": 1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "身份", "声纹"]
+    },
+    {
+      "id": 4577,
+      "title": "身份拍卖",
+      "description": "暗网上有人拍卖一个完美信用记录的身份，包括真实的教育背景、 clean 的犯罪记录和高信用评分。起拍价是你半年的工资。拥有这个身份意味着你可以重新开始，但另一个真实的人将因此陷入困境。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {"id": "branch_1", "text": "出价购买新身份", "effects": {"MONEY": -400, "REP": 2, "HUMAN": -2}},
+        {"id": "branch_2", "text": "举报拍卖", "effects": {"REP": 3, "TRAUMA": 1, "MONEY": -50}},
+        {"id": "branch_3", "text": "无视继续自己的生活", "effects": {"HUMAN": 1, "TRAUMA": 1, "MONEY": 50}}
+      ],
+      "effects": {},
+      "tags": ["日常", "身份", "拍卖"]
+    },
+    {
+      "id": 4578,
+      "title": "意识上传宣传",
+      "description": "一家新公司宣传可以将你的完整意识上传到云端，实现数字永生。上传后的你可以在服务器中继续学习、工作和社交。但伦理委员会警告说上传可能只是一个复制品，真正的你可能已经死亡。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {"id": "branch_1", "text": "预约意识上传", "effects": {"MONEY": -500, "TECH": 2, "HUMAN": -3}},
+        {"id": "branch_2", "text": "出售身体保留意识", "effects": {"MONEY": 300, "HUMAN": -2, "TRAUMA": 3}},
+        {"id": "branch_3", "text": "拒绝做完整的人", "effects": {"HUMAN": 3, "TRAUMA": 1, "STYLE": 1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "身份", "意识"]
+    },
+    {
+      "id": 4579,
+      "title": "遗忘权申请",
+      "description": "你十年前的一次失误在互联网上留下了永久痕迹，每次求职都被搜索出来。法律规定你有被遗忘权，可以要求搜索引擎删除过时的个人信息。但申请流程复杂，而且媒体可能因此更加关注你的过去。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {"id": "branch_1", "text": "花钱请律师申请遗忘权", "effects": {"MONEY": -250, "REP": 1, "TRAUMA": 1}},
+        {"id": "branch_2", "text": "自己提交申请", "effects": {"TRAUMA": 2, "HUMAN": 1, "REP": -1}},
+        {"id": "branch_3", "text": "创造更多内容淹没旧闻", "effects": {"STYLE": 2, "TRAUMA": 1, "MONEY": -100}}
+      ],
+      "effects": {},
+      "tags": ["日常", "身份", "隐私"]
+    },
+    {
+      "id": 4580,
+      "title": "磁悬浮轨道故障",
+      "description": "你乘坐的磁悬浮列车突然在两百米高空急停，车厢里一片漆黑，只有应急灯发出微弱的绿光。广播说轨道供电系统故障，预计维修时间未知。透过窗户，你可以看到下方城市的霓虹灯光如同深渊。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {"id": "branch_1", "text": "冷静等待救援", "effects": {"TRAUMA": 2, "LIFE": 1, "HUMAN": 1}},
+        {"id": "branch_2", "text": "尝试爬出车厢走维修通道", "effects": {"LIFE": -2, "TRAUMA": 3, "STYLE": 1}},
+        {"id": "branch_3", "text": "呼叫付费紧急撤离服务", "effects": {"MONEY": -250, "TRAUMA": 1, "LIFE": 2}}
+      ],
+      "effects": {},
+      "tags": ["日常", "通勤", "磁悬浮"]
+    },
+    {
+      "id": 4581,
+      "title": "自动驾驶车祸",
+      "description": "你乘坐的自动驾驶出租车突然闯红灯，与另一辆车相撞。安全气囊弹出，你的额头撞到屏幕。车辆AI冷静地宣布正在联系保险公司和急救服务，但事故原因是软件更新中的一个bug。责任归属陷入模糊地带。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {"id": "branch_1", "text": "起诉出租车公司", "effects": {"MONEY": -150, "TRAUMA": 2, "REP": 1}},
+        {"id": "branch_2", "text": "接受保险赔偿", "effects": {"MONEY": 200, "TRAUMA": 1, "LIFE": -1}},
+        {"id": "branch_3", "text": "黑入车辆记录获取证据", "effects": {"TECH": 2, "MONEY": 100, "REP": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "通勤", "车祸"]
+    },
+    {
+      "id": 4582,
+      "title": "飞行器拥堵",
+      "description": "你预约的飞行出租车被困在空中的交通堵塞中，数百架飞行器在摩天大楼之间排成三维长队。导航系统显示拥堵源于一场无人机表演事故。你的重要会议已经开始，而你在三百米高空动弹不得。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {"id": "branch_1", "text": "支付紧急通道费", "effects": {"MONEY": -200, "REP": 1, "TRAUMA": 1}},
+        {"id": "branch_2", "text": "跳伞降落到最近楼顶", "effects": {"LIFE": -2, "STYLE": 2, "TRAUMA": 2}},
+        {"id": "branch_3", "text": "远程参加会议", "effects": {"TRAUMA": 1, "TECH": 1, "REP": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "通勤", "飞行器"]
+    },
+    {
+      "id": 4583,
+      "title": "传送门故障",
+      "description": "你走进街区传送门，准备瞬间抵达城市的另一端。但传输过程中出现闪烁，你被卡在两个地点之间的量子叠加态。五秒钟后你出现在目的地，但比正常晚了三十秒，而且你的左鞋出现在了另一个传送站。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {"id": "branch_1", "text": "投诉要求赔偿", "effects": {"MONEY": 100, "TRAUMA": 1, "REP": 1}},
+        {"id": "branch_2", "text": "要求全面体检", "effects": {"MONEY": -150, "LIFE": 2, "TRAUMA": 2}},
+        {"id": "branch_3", "text": "再也不使用传送门", "effects": {"TRAUMA": 2, "HUMAN": 1, "MONEY": -50}}
+      ],
+      "effects": {},
+      "tags": ["日常", "通勤", "传送门"]
+    },
+    {
+      "id": 4584,
+      "title": "共享单车病毒",
+      "description": "你解锁了一辆公共电动自行车，骑行中车把的触摸屏突然闪烁乱码，然后锁死刹车将你摔了出去。事后检查发现车机被植入勒索病毒，所有共享单车公司同时遭到攻击。你的膝盖擦伤，但很多人摔得更重。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {"id": "branch_1", "text": "起诉单车公司", "effects": {"MONEY": -100, "TRAUMA": 1, "REP": 1}},
+        {"id": "branch_2", "text": "自己简单处理伤口", "effects": {"LIFE": -1, "TRAUMA": 1, "MONEY": 30}},
+        {"id": "branch_3", "text": "帮忙调查病毒来源", "effects": {"TECH": 2, "TRAUMA": 2, "REP": 2}}
+      ],
+      "effects": {},
+      "tags": ["日常", "通勤", "病毒"]
+    },
+    {
+      "id": 4585,
+      "title": "电梯坠降",
+      "description": "你走进公司大楼的磁悬浮电梯，门刚关上，失重感突然袭来。电梯以自由落体的速度下坠了十层后才启动紧急制动。你跪在地上呕吐，其他乘客脸色惨白。维修人员说制动系统年久失修。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {"id": "branch_1", "text": "要求全面体检", "effects": {"MONEY": -120, "TRAUMA": 2, "LIFE": 1}},
+        {"id": "branch_2", "text": "索赔精神损失", "effects": {"MONEY": 200, "TRAUMA": 1, "REP": 1}},
+        {"id": "branch_3", "text": "以后只走楼梯", "effects": {"LIFE": 1, "TRAUMA": 2, "STYLE": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "通勤", "电梯"]
+    },
+    {
+      "id": 4586,
+      "title": "道路AR劫持",
+      "description": "你开车时，增强现实导航突然被黑客劫持，挡风玻璃上显示虚假的路线和交通信号。你差点撞上一辆卡车。汽车公司说AR系统的安全补丁下周才发布，在此之前建议关闭所有AR功能。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {"id": "branch_1", "text": "关闭AR纯凭肉眼驾驶", "effects": {"HUMAN": 2, "TRAUMA": 1, "TECH": -1}},
+        {"id": "branch_2", "text": "花钱安装第三方安全", "effects": {"MONEY": -180, "TECH": 2, "TRAUMA": 1}},
+        {"id": "branch_3", "text": "追查黑客", "effects": {"TECH": 3, "REP": 1, "TRAUMA": 2}}
+      ],
+      "effects": {},
+      "tags": ["日常", "通勤", "AR"]
+    },
+    {
+      "id": 4587,
+      "title": "地铁毒气泄漏",
+      "description": "地铁隧道中发生不明化学品泄漏，通风系统故障导致有毒气体在车厢中蔓延。乘客们疯狂拍打门窗，有人已经倒地抽搐。紧急制动按钮被锁死，你只有防毒面具应用的时间。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {"id": "branch_1", "text": "帮助周围人一起逃生", "effects": {"LIFE": -1, "REP": 3, "TRAUMA": 3}},
+        {"id": "branch_2", "text": "只顾自己逃命", "effects": {"LIFE": 1, "REP": -3, "TRAUMA": 2}},
+        {"id": "branch_3", "text": "使用应急工具破窗", "effects": {"TECH": 1, "LIFE": -1, "TRAUMA": 2}}
+      ],
+      "effects": {},
+      "tags": ["日常", "通勤", "事故"]
+    },
+    {
+      "id": 4588,
+      "title": "悬浮滑板失控",
+      "description": "你的反重力滑板在跨海大桥上突然失灵，磁力平衡系统崩溃，你从二十米高空坠入人工运河。冰冷的海水灌入鼻腔，你的义肢短路发出火花。岸边的人只是举起手机拍摄，没有人跳下来救你。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {"id": "branch_1", "text": "起诉滑板制造商", "effects": {"MONEY": -100, "TRAUMA": 2, "REP": 1}},
+        {"id": "branch_2", "text": "自己维修后继续使用", "effects": {"TECH": 1, "CHROME": -1, "TRAUMA": 1}},
+        {"id": "branch_3", "text": "销毁滑板改步行", "effects": {"HUMAN": 2, "TRAUMA": 2, "STYLE": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "通勤", "滑板"]
+    },
+    {
+      "id": 4589,
+      "title": "无人机送货相撞",
+      "description": "一架物流无人机失控坠向你头顶，你闪身躲过，但它在人行道上爆炸，碎片击伤了三个路人。警察很快封锁现场，无人机公司代表到达后第一句话是让你签署免责协议，声称这是不可抗力。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {"id": "branch_1", "text": "拒绝签字起诉公司", "effects": {"MONEY": -150, "REP": 2, "TRAUMA": 2}},
+        {"id": "branch_2", "text": "签字拿钱私了", "effects": {"MONEY": 200, "REP": -1, "TRAUMA": 1}},
+        {"id": "branch_3", "text": "黑进无人机调查", "effects": {"TECH": 2, "REP": 1, "TRAUMA": 1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "通勤", "无人机"]
+    },
+    {
+      "id": 4590,
+      "title": "天桥坍塌",
+      "description": "你走在一座连接两座大楼的透明玻璃天桥上，突然脚下传来不祥的碎裂声。纳米玻璃因为温差应力出现裂纹，整座桥开始摇晃。前方还有五十米才到对面，后退也是同样的距离。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {"id": "branch_1", "text": "快速跑向对面", "effects": {"LIFE": -2, "TRAUMA": 3, "STYLE": 1}},
+        {"id": "branch_2", "text": "趴下缓慢爬行", "effects": {"TRAUMA": 2, "LIFE": 1, "HUMAN": 1}},
+        {"id": "branch_3", "text": "呼叫紧急救援", "effects": {"TRAUMA": 1, "MONEY": -100, "LIFE": 2}}
+      ],
+      "effects": {},
+      "tags": ["日常", "通勤", "坍塌"]
+    },
+    {
+      "id": 4591,
+      "title": "隧道AR广告",
+      "description": "地铁隧道两侧的屏幕上，增强现实广告铺天盖地向你涌来。你躲闪不及，一个虚拟的跑车广告让你下意识地侧身，撞到了真正的柱子。AR通勤环境已经越来越难以区分现实与幻象。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {"id": "branch_1", "text": "购买广告屏蔽服务", "effects": {"MONEY": -100, "TRAUMA": -1, "HUMAN": 1}},
+        {"id": "branch_2", "text": "关闭AR功能", "effects": {"HUMAN": 1, "STYLE": -1, "TRAUMA": 1}},
+        {"id": "branch_3", "text": "适应并享受AR", "effects": {"STYLE": 1, "TRAUMA": 1, "CHROME": 1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "通勤", "广告"]
+    },
+    {
+      "id": 4592,
+      "title": "停车位争夺",
+      "description": "你的自动驾驶车终于找到停车位，但另一辆车同时到达，两辆车的AI开始竞价争夺这个车位。价格每秒上涨，从五元到五十元到五百元。对方是人类驾驶，摇下车窗对你竖中指。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {"id": "branch_1", "text": "加价抢到车位", "effects": {"MONEY": -200, "TRAUMA": 1, "STYLE": 1}},
+        {"id": "branch_2", "text": "认输找远的车位", "effects": {"TRAUMA": 1, "HUMAN": 1, "MONEY": -20}},
+        {"id": "branch_3", "text": "下车跟对方理论", "effects": {"REP": -1, "TRAUMA": 2, "STYLE": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "通勤", "停车"]
+    },
+    {
+      "id": 4593,
+      "title": "公交黑客事件",
+      "description": "你乘坐的无人公交突然改变路线，驶向城市边缘的废弃区。车内屏幕显示一行字：交出所有比特币，否则开到河里。其他乘客尖叫着试图打开紧急出口，但所有门都被电子锁死。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {"id": "branch_1", "text": "尝试黑入公交系统", "effects": {"TECH": 3, "LIFE": -1, "TRAUMA": 2}},
+        {"id": "branch_2", "text": "配合劫匪保安全", "effects": {"MONEY": -300, "TRAUMA": 2, "LIFE": 1}},
+        {"id": "branch_3", "text": "寻找物理逃生方式", "effects": {"LIFE": -2, "TRAUMA": 3, "STYLE": 1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "通勤", "黑客"]
+    },
+    {
+      "id": 4594,
+      "title": "赛博堵车",
+      "description": "城市主干道因为一场虚拟演唱会而陷入瘫痪，数千人停下来通过AR眼镜观看演出，车辆自动跟随系统集体暂停。你被困在车流中三个小时，空调故障，车内温度上升到四十度。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {"id": "branch_1", "text": "也加入观看演唱会", "effects": {"TRAUMA": -1, "STYLE": 1, "HUMAN": -1}},
+        {"id": "branch_2", "text": "弃车步行", "effects": {"TRAUMA": 2, "LIFE": -1, "STYLE": 1}},
+        {"id": "branch_3", "text": "抱怨并投诉市政", "effects": {"TRAUMA": 2, "REP": 1, "MONEY": -50}}
+      ],
+      "effects": {},
+      "tags": ["日常", "通勤", "拥堵"]
+    },
+    {
+      "id": 4595,
+      "title": "飞行背包故障",
+      "description": "你的个人飞行背包在推进器测试中突然熄火，你从十米高度坠落进垃圾堆。虽然性命无忧，但背包的聚变电池破裂，泄漏的辐射让你的生物监测芯片疯狂报警。维修费用几乎等于买一个新的。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {"id": "branch_1", "text": "接受辐射治疗", "effects": {"MONEY": -250, "LIFE": 3, "TRAUMA": 2}},
+        {"id": "branch_2", "text": "买新背包继续使用", "effects": {"MONEY": -400, "CHROME": 2, "TRAUMA": 1}},
+        {"id": "branch_3", "text": "放弃飞行背包", "effects": {"HUMAN": 2, "TRAUMA": 1, "STYLE": -1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "通勤", "飞行"]
+    },
+    {
+      "id": 4596,
+      "title": "跨海大桥收费",
+      "description": "跨海大桥的通行费今天突然上涨三倍，理由是维护成本增加。这是你每天上班的必经之路，绕行需要多花两小时。桥梁公司垄断了这条路线，抗议无效。你的月度通勤预算瞬间超支。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {"id": "branch_1", "text": "咬牙支付新费用", "effects": {"MONEY": -250, "TRAUMA": 2, "DEBT": 1}},
+        {"id": "branch_2", "text": "早起绕行免费路线", "effects": {"LIFE": -1, "TRAUMA": 2, "HUMAN": 1}},
+        {"id": "branch_3", "text": "申请远程办公", "effects": {"TECH": 1, "TRAUMA": 1, "REP": 1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "通勤", "收费"]
+    },
+    {
+      "id": 4597,
+      "title": "隧道崩塌",
+      "description": "地铁隧道深处传来闷响，然后是一阵地动山摇。前方五十米处，隧道顶部坍塌，灰尘和碎片淹没了轨道。你被卡在车厢中间，后面还有三节车厢的人。紧急照明下，所有人的脸都泛着惨绿色。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {"id": "branch_1", "text": "组织乘客自救", "effects": {"REP": 3, "TRAUMA": 3, "LIFE": -1}},
+        {"id": "branch_2", "text": "用工具挖通道", "effects": {"TECH": 2, "LIFE": -2, "TRAUMA": 2}},
+        {"id": "branch_3", "text": "原地等待专业救援", "effects": {"TRAUMA": 2, "LIFE": 1, "HUMAN": 1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "通勤", "崩塌"]
+    },
+    {
+      "id": 4598,
+      "title": " AR导航错误",
+      "description": "你的AR隐形眼镜导航将左转误判为右转，带你走进了一条黑帮控制的禁区。三个武装义体人拦住你的去路，问你是哪条道上的。导航APP弹出五星好评请求，仿佛什么都没发生。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {"id": "branch_1", "text": "花钱消灾", "effects": {"MONEY": -200, "TRAUMA": 2, "LIFE": 1}},
+        {"id": "branch_2", "text": "谎称有黑帮关系", "effects": {"REP": -2, "TRAUMA": 3, "STYLE": 1}},
+        {"id": "branch_3", "text": "趁其不备逃跑", "effects": {"LIFE": -2, "TRAUMA": 2, "STYLE": 1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "通勤", "导航"]
+    },
+    {
+      "id": 4599,
+      "title": "通勤税上涨",
+      "description": "市政厅宣布为应对气候变化，对所有私人交通工具征收新的通勤碳税。你的月度交通成本增加了40%。公共交通系统 promised 的扩容却迟迟不见踪影。这座城市似乎铁了心要让穷人走路上班。",
+      "type": "daily",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {"id": "branch_1", "text": "乖乖交税", "effects": {"MONEY": -250, "TRAUMA": 2, "REP": 1}},
+        {"id": "branch_2", "text": "参加抗议游行", "effects": {"REP": 2, "TRAUMA": 2, "MONEY": -50}},
+        {"id": "branch_3", "text": "改骑二手自行车", "effects": {"HUMAN": 2, "STYLE": 1, "TRAUMA": 1}}
+      ],
+      "effects": {},
+      "tags": ["日常", "通勤", "税收"]
+    }
+  ]
+}

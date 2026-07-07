@@ -1,0 +1,5061 @@
+{
+  "events": [
+    {
+      "id": 5000,
+      "title": "神经接口数据窃贼",
+      "type": "special",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "description": "你在一家生物科技公司当保洁员时，发现一名高管的神经接口连接器忘在洗手间。里面存储着下一代军用义体的核心设计图。黑市买家出价六位数。你的扫描器显示这个接口还有自毁倒计时。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "复制数据后归还原物",
+          "effects": {
+            "TECH": 4,
+            "MONEY": 8000,
+            "TRAUMA": 3,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "把接口卖给竞争对手",
+          "effects": {
+            "MONEY": 15000,
+            "REP": -5,
+            "DEBT": 3,
+            "TRAUMA": 4
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "交给公司安保换赏金",
+          "effects": {
+            "MONEY": 3000,
+            "REP": 4,
+            "LIFE": 1
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "数据窃取"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5001,
+      "title": "卧底会计师",
+      "type": "special",
+      "ageRange": [
+        22,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "description": "你被一家审计公司雇佣，潜入荒坂财团的子公司做假账审计。你的生物识别身份是伪造的，但神经印记检测器就在走廊尽头。你发现了一笔流向 ghost 账户的巨额资金。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "收集证据后匿名曝光",
+          "effects": {
+            "REP": 6,
+            "MONEY": 5000,
+            "TRAUMA": 5,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向荒坂反水换取保护",
+          "effects": {
+            "MONEY": 10000,
+            "REP": -3,
+            "DEBT": 4,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "删除证据并消失",
+          "effects": {
+            "MONEY": 2000,
+            "TRAUMA": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "卧底"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5002,
+      "title": "窃听梦魇",
+      "type": "special",
+      "ageRange": [
+        20,
+        68
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 11,
+      "description": "你在维修一栋 corporate tower 的通风系统时，无意间发现了一套隐藏的智能窃听网络。纳米麦克风嵌在每块墙板里，记录着董事会的一切对话。有人在暗网悬赏这些音频。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "批量下载音频卖给出价最高者",
+          "effects": {
+            "MONEY": 12000,
+            "REP": -4,
+            "TRAUMA": 3,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只拿涉及违法行为的证据",
+          "effects": {
+            "REP": 5,
+            "MONEY": 3000,
+            "TRAUMA": 2,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "安装干扰器破坏窃听网络",
+          "effects": {
+            "TECH": 3,
+            "REP": 3,
+            "MONEY": -500
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "窃听"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5003,
+      "title": "黑客入侵：军武科技",
+      "type": "special",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 14,
+      "description": "你收到一个神秘委托，要求你入侵军武科技的研发服务器。防火墙由军用级 AI 守护，但对方给了一个零日漏洞。你发现他们在秘密开发某种针对平民的神经毒气。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "下载所有数据并公开",
+          "effects": {
+            "TECH": 5,
+            "REP": 7,
+            "TRAUMA": 6,
+            "LIFE": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只偷武器设计图卖钱",
+          "effects": {
+            "MONEY": 18000,
+            "REP": -6,
+            "TRAUMA": 4,
+            "DEBT": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "植入逻辑炸弹后撤离",
+          "effects": {
+            "TECH": 4,
+            "REP": 2,
+            "MONEY": 4000,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "黑客"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5004,
+      "title": "双面代理人",
+      "type": "social",
+      "ageRange": [
+        25,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 13,
+      "description": "你同时为两家竞争企业工作，分别是创伤小组和一家地下医疗公司。今晚，两家公司都要求你窃取对方的新型纳米医疗机器人设计。你的神经植入物开始发出过载警报。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "给双方提供修改过的假数据",
+          "effects": {
+            "TECH": 5,
+            "MONEY": 10000,
+            "TRAUMA": 4,
+            "REP": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "忠于创伤小组",
+          "effects": {
+            "REP": 4,
+            "MONEY": 6000,
+            "LIFE": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "暴露双面身份从中渔利",
+          "effects": {
+            "MONEY": 8000,
+            "REP": -7,
+            "TRAUMA": 5,
+            "DEBT": 3
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "背叛"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5005,
+      "title": "记忆提取任务",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "description": "你被雇佣从一名退休企业科学家的海马体中提取记忆。目标住在高度安保的退休社区，但你有便携式记忆提取器。然而，提取过程可能会对目标造成永久性脑损伤。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "完整提取记忆并交付",
+          "effects": {
+            "MONEY": 10000,
+            "HUMAN": -4,
+            "TRAUMA": 5,
+            "REP": -4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只提取非致命的部分",
+          "effects": {
+            "MONEY": 5000,
+            "HUMAN": -2,
+            "TRAUMA": 3,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放弃任务并警告目标",
+          "effects": {
+            "REP": 5,
+            "TRAUMA": 1,
+            "MONEY": -1000
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "记忆"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5006,
+      "title": "供应链渗透",
+      "type": "special",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "description": "你的物流公司被敌对企業收买，要求在运输的义体零件中植入追踪芯片。芯片会记录每个买家的生物数据并回传。你有权限在分拣中心动手脚。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "按要求植入所有芯片",
+          "effects": {
+            "MONEY": 7000,
+            "REP": -3,
+            "TRAUMA": 2,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只植入一半并保留证据",
+          "effects": {
+            "TECH": 3,
+            "MONEY": 4000,
+            "REP": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "替换成干扰芯片",
+          "effects": {
+            "TECH": 5,
+            "REP": 4,
+            "MONEY": -2000,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "供应链"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5007,
+      "title": "基因样本大盗",
+      "type": "special",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "description": "一家基因公司雇佣你窃取竞争对手的顶级客户基因样本。样本保存在液氮冷冻库中，需要视网膜和 DNA 双重认证。冷冻库隔壁就是实验动物区，警报系统与有毒气体释放联动。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "黑入安保系统取走样本",
+          "effects": {
+            "TECH": 5,
+            "MONEY": 9000,
+            "TRAUMA": 3,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "伪造认证冒充研究员",
+          "effects": {
+            "TECH": 3,
+            "MONEY": 8000,
+            "TRAUMA": 4,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "触发毒气警报趁乱夺取",
+          "effects": {
+            "MONEY": 7000,
+            "TRAUMA": 5,
+            "LIFE": -2,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "基因"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5008,
+      "title": "无人机侦察",
+      "type": "special",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "description": "你改装了一群纳米无人机，准备侦察一家秘密武器实验室。无人机可以穿透通风管道，但实验室装备了 EMP 脉冲防御系统。一次失败的侦察可能导致你的位置暴露。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "派无人机从管道渗透",
+          "effects": {
+            "TECH": 4,
+            "MONEY": 5000,
+            "TRAUMA": 2,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "先黑入 EMP 系统再侦察",
+          "effects": {
+            "TECH": 6,
+            "MONEY": 7000,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "卖无人机给第三方赚快钱",
+          "effects": {
+            "MONEY": 3000,
+            "REP": 1,
+            "TECH": -1
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "无人机"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5009,
+      "title": "加密算法盗窃",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 13,
+      "description": "一家金融 AI 公司的不对称加密算法被开价天价。你认识一位能接触核心代码库的内部工程师，但他要求你帮他伪造死亡证明作为交换。算法一旦泄露，数千亿信用点将暴露在风险中。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮他伪造身份并获取算法",
+          "effects": {
+            "TECH": 5,
+            "MONEY": 15000,
+            "TRAUMA": 4,
+            "REP": -4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "直接黑入代码库不通过他",
+          "effects": {
+            "TECH": 7,
+            "MONEY": 12000,
+            "TRAUMA": 5,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向公司举报换取赏金",
+          "effects": {
+            "MONEY": 5000,
+            "REP": 5,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "加密"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5010,
+      "title": "影子中间人",
+      "type": "social",
+      "ageRange": [
+        22,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "description": "两个敌对企业的情报部门都找到了你，希望你对另一方的特工进行反间谍工作。双方都不知道你同时为两边工作。你的通讯器里同时闪烁着两条加密信息。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "向双方出售对方的情报",
+          "effects": {
+            "MONEY": 10000,
+            "REP": -5,
+            "TRAUMA": 4,
+            "DEBT": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "挑拨双方直接冲突",
+          "effects": {
+            "REP": 3,
+            "MONEY": 4000,
+            "TRAUMA": 5,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝并消失到另一个区",
+          "effects": {
+            "TRAUMA": 1,
+            "MONEY": -1500,
+            "REP": 1
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "中间人"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5011,
+      "title": "纳米窃听器",
+      "type": "special",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "description": "你在一家义体诊所接受手术时，医生偷偷在你的听觉神经上安装了纳米窃听器。显然你是某个企业间谍计划的无辜棋子。现在你的每一次对话都可能被记录。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "找黑市医生拆除并保留",
+          "effects": {
+            "TECH": 3,
+            "MONEY": -3000,
+            "TRAUMA": 3,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "利用窃听器反向追踪雇主",
+          "effects": {
+            "TECH": 5,
+            "MONEY": 6000,
+            "TRAUMA": 4,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "假装不知情收集假情报",
+          "effects": {
+            "TECH": 4,
+            "REP": 3,
+            "MONEY": 2000,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "窃听"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5012,
+      "title": "伪造身份渗透",
+      "type": "special",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 12,
+      "description": "你获得了一个完美的伪造身份，可以进入一家垄断企业的核心研发中心。身份原主是个低级技术员，刚刚在一场'意外'中身亡。你的植入物里装着完整的背景故事和生物特征数据。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "以假身份潜入窃取图纸",
+          "effects": {
+            "TECH": 4,
+            "MONEY": 10000,
+            "TRAUMA": 4,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "长期潜伏收集战略情报",
+          "effects": {
+            "TECH": 3,
+            "MONEY": 8000,
+            "TRAUMA": 3,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把伪造身份卖给其他人",
+          "effects": {
+            "MONEY": 5000,
+            "REP": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "伪装"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5013,
+      "title": "核心员工策反",
+      "type": "social",
+      "ageRange": [
+        25,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "description": "你受命接近一家科技巨头的核心算法工程师，策反他跳槽到竞争对手那里。目标人物沉迷于非法神经兴奋剂，债务缠身。你有三种不同的接触策略可选。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用药物和金钱双重诱惑",
+          "effects": {
+            "MONEY": -4000,
+            "REP": -2,
+            "ADDICTION": 2,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "帮他解决债务换取信任",
+          "effects": {
+            "MONEY": -6000,
+            "REP": 3,
+            "TRAUMA": 2,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "威胁曝光他的吸毒行为",
+          "effects": {
+            "REP": -4,
+            "TRAUMA": 5,
+            "MONEY": 3000,
+            "HUMAN": -3
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "策反"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5014,
+      "title": "卫星数据截获",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 14,
+      "description": "你发现公司楼顶有一台废弃的卫星接收器，可以截获竞争对手的通讯卫星数据流。数据包括物流路线、高管行程和未发布产品信息。但启动接收器会触发位置追踪。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "快速截获数据后销毁设备",
+          "effects": {
+            "TECH": 5,
+            "MONEY": 9000,
+            "TRAUMA": 4,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "建立长期数据窃听站",
+          "effects": {
+            "TECH": 6,
+            "MONEY": 5000,
+            "TRAUMA": 3,
+            "REP": -3,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把接收器位置卖给第三方",
+          "effects": {
+            "MONEY": 4000,
+            "REP": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "卫星"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5015,
+      "title": "实验室纵火掩护",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 12,
+      "description": "你受雇于竞争对手，要求在潜入某实验室窃取样本后纵火销毁证据。实验室位于人口稠密的商业区，里面有二十名夜班研究员。防火系统已经被人为破坏。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "只偷样本不纵火",
+          "effects": {
+            "MONEY": 5000,
+            "REP": 2,
+            "TRAUMA": 2,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "按计划纵火并撤离",
+          "effects": {
+            "MONEY": 12000,
+            "TRAUMA": 6,
+            "HUMAN": -5,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "触发火警让人员撤离后再偷",
+          "effects": {
+            "MONEY": 4000,
+            "REP": 3,
+            "TRAUMA": 3,
+            "TECH": 3
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "破坏"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5016,
+      "title": "仿生替身计划",
+      "type": "special",
+      "ageRange": [
+        22,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 13,
+      "description": "你发现一个秘密项目正在制造企业高管的仿生替身。这些替身拥有原主的记忆拷贝和生物特征，可以无缝取代真人。你潜入了替身的维护工厂。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拍摄证据并公开",
+          "effects": {
+            "REP": 7,
+            "TRAUMA": 5,
+            "LIFE": -3,
+            "MONEY": 2000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "控制一个替身作为内线",
+          "effects": {
+            "TECH": 6,
+            "MONEY": 8000,
+            "TRAUMA": 4,
+            "REP": -3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "卖工厂坐标给敌对势力",
+          "effects": {
+            "MONEY": 6000,
+            "REP": -2,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "仿生"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5017,
+      "title": "暗网情报拍卖",
+      "type": "social",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "description": "你获得了一批企业并购计划的绝密文件，准备在暗网拍卖。已经有三家势力出价，包括一家敌对企业和两个独立黑客组织。拍卖将在二十四小时后结束。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "给出价最高的企业",
+          "effects": {
+            "MONEY": 15000,
+            "REP": -4,
+            "TRAUMA": 2,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "同时卖给多方",
+          "effects": {
+            "MONEY": 20000,
+            "REP": -7,
+            "TRAUMA": 5,
+            "DEBT": 4
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "保留文件待价而沽",
+          "effects": {
+            "MONEY": 3000,
+            "TRAUMA": 3,
+            "REP": -1
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "暗网"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5018,
+      "title": "内部线人培养",
+      "type": "social",
+      "ageRange": [
+        22,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "description": "你在一家安保公司工作，发现一名年轻警卫对公司的反人类实验心怀不满。他是进入生物实验室的关键。你需要决定是否发展他为线人，以及如何消除他的道德顾虑。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用理想主义说服他",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 2,
+            "TRAUMA": 2,
+            "MONEY": 3000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用金钱收买他",
+          "effects": {
+            "MONEY": -5000,
+            "TRAUMA": 2,
+            "REP": -1,
+            "TECH": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "伪造证据要挟他",
+          "effects": {
+            "REP": -5,
+            "TRAUMA": 4,
+            "MONEY": 4000,
+            "HUMAN": -3
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "线人"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5019,
+      "title": "有毒废料情报",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "description": "你在处理一家化工厂的废料时，发现他们秘密向地下水系统排放神经毒素。这些毒素会导致慢性痴呆。竞争对手愿意出高价购买这些证据以摧毁对方声誉。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "把证据卖给竞争对手",
+          "effects": {
+            "MONEY": 8000,
+            "REP": -2,
+            "TRAUMA": 2,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "匿名举报给环保组织",
+          "effects": {
+            "REP": 6,
+            "TRAUMA": 3,
+            "MONEY": 1000,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用证据勒索化工厂",
+          "effects": {
+            "MONEY": 10000,
+            "REP": -4,
+            "TRAUMA": 5,
+            "DEBT": 3
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "环境"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5020,
+      "title": "神经密钥盗取",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 13,
+      "description": "某企业 CEO 的大脑中植入了一个神经密钥，用于解锁价值数十亿的加密货币钱包。你获得了一种可以远程复制神经信号的装置，但必须距离目标五十米内使用。目标身边总有四名武装保镖。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "伪装成服务员接近复制",
+          "effects": {
+            "TECH": 6,
+            "MONEY": 20000,
+            "TRAUMA": 5,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "雇佣狙击手制造混乱趁机接近",
+          "effects": {
+            "MONEY": -5000,
+            "TRAUMA": 6,
+            "LIFE": -3,
+            "HUMAN": -4
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "黑入建筑系统制造停电接近",
+          "effects": {
+            "TECH": 5,
+            "MONEY": 15000,
+            "TRAUMA": 4,
+            "REP": -2
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "神经"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5021,
+      "title": "专利陷阱",
+      "type": "special",
+      "ageRange": [
+        22,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "description": "你发现一家大型企业故意在开源社区散布包含隐藏专利代码的技术方案，目的是在竞争对手采用后发起诉讼。你已经收集了足够的证据证明这是蓄意行为。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "把证据卖给被陷阱针对的公司",
+          "effects": {
+            "MONEY": 7000,
+            "REP": 3,
+            "TRAUMA": 2,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "公开曝光保护开源社区",
+          "effects": {
+            "REP": 6,
+            "TRAUMA": 3,
+            "MONEY": 1000,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "反过来帮大企业完善陷阱",
+          "effects": {
+            "MONEY": 10000,
+            "REP": -5,
+            "TRAUMA": 3,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "专利"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5022,
+      "title": "量子通讯窃听",
+      "type": "special",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "description": "你获得了一台实验性量子通讯拦截器，可以窃听理论上不可破解的量子加密通讯。目标是一家军工企业的董事会量子通讯频道。设备需要安装在目标建筑的量子中继器上。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "潜入安装拦截器",
+          "effects": {
+            "TECH": 7,
+            "MONEY": 12000,
+            "TRAUMA": 4,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "贿赂维护人员代劳",
+          "effects": {
+            "MONEY": -4000,
+            "TRAUMA": 2,
+            "REP": -2,
+            "TECH": 4
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把设备卖给政府情报部门",
+          "effects": {
+            "MONEY": 8000,
+            "REP": 3,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "量子"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5023,
+      "title": "药物研发盗窃",
+      "type": "special",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "description": "一家生物公司正在研发一种延长寿命的基因疗法，你受雇窃取临床试验数据。数据存储在隔离网络中，但你可以通过一名被收买的研究员获得物理访问权限。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "通过内应复制数据",
+          "effects": {
+            "TECH": 3,
+            "MONEY": 10000,
+            "TRAUMA": 3,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "黑入隔离网络",
+          "effects": {
+            "TECH": 6,
+            "MONEY": 12000,
+            "TRAUMA": 4,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "偷走实体样本",
+          "effects": {
+            "MONEY": 15000,
+            "TRAUMA": 5,
+            "LIFE": -2,
+            "REP": -3
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "药物"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5024,
+      "title": "AI核心代码",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 14,
+      "description": "你得知一家企业 AI 的核心代码存在后门，可以远程控制其决策。这个发现来自一名被 AI 解雇的工程师。你需要在 AI 发现漏洞被暴露之前获取代码副本。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "快速下载代码并逃离",
+          "effects": {
+            "TECH": 6,
+            "MONEY": 10000,
+            "TRAUMA": 4,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "分析后门用途后出售",
+          "effects": {
+            "TECH": 7,
+            "MONEY": 15000,
+            "TRAUMA": 5,
+            "REP": -4
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "公开后门保护公众",
+          "effects": {
+            "REP": 8,
+            "TRAUMA": 5,
+            "LIFE": -3,
+            "MONEY": -2000
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "AI"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5025,
+      "title": "意识上传拦截",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 13,
+      "description": "一家科技公司正在秘密进行人类意识上传实验，你受雇拦截某个特定目标的意识数据包。这些数据在传输过程中会经过你控制的节点。拦截可能导致目标意识损坏。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "完整拦截并交付数据",
+          "effects": {
+            "TECH": 5,
+            "MONEY": 10000,
+            "TRAUMA": 5,
+            "HUMAN": -4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "复制一份后放行原数据",
+          "effects": {
+            "TECH": 4,
+            "MONEY": 7000,
+            "TRAUMA": 3,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "销毁数据保护目标",
+          "effects": {
+            "REP": 5,
+            "TRAUMA": 2,
+            "HUMAN": 3,
+            "MONEY": -3000
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "意识"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5026,
+      "title": "走私神经芯片",
+      "type": "special",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "description": "你从一家倒闭的芯片厂偷出了一批未加密的军用级神经芯片，这些芯片可以绕过常规安检。三家地下势力都想购买，包括一个恐怖组织和两家竞争对手企业。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "卖给出价最高的企业",
+          "effects": {
+            "MONEY": 12000,
+            "REP": -3,
+            "TRAUMA": 2,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "销毁芯片不让他们得到",
+          "effects": {
+            "REP": 4,
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "MONEY": -1000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "分批卖给多方",
+          "effects": {
+            "MONEY": 18000,
+            "REP": -6,
+            "TRAUMA": 4,
+            "DEBT": 4
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "芯片"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5027,
+      "title": "全息会议室窃听",
+      "type": "special",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "description": "你发现可以通过共振频率干扰全息会议系统，从而窃听加密的全息会议。目标是一栋三百层塔楼的顶层会议室，那里每周举行战略决策会议。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在塔楼附近建立窃听站",
+          "effects": {
+            "TECH": 5,
+            "MONEY": 8000,
+            "TRAUMA": 3,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "潜入塔楼安装设备",
+          "effects": {
+            "TECH": 6,
+            "MONEY": 10000,
+            "TRAUMA": 4,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把方法卖给竞争对手",
+          "effects": {
+            "MONEY": 6000,
+            "REP": -1,
+            "TECH": 2
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "全息"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5028,
+      "title": "基因编辑专利战",
+      "type": "special",
+      "ageRange": [
+        22,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "description": "两家生物巨头为了一种革命性基因编辑技术展开专利战。你发现了其中一方在专利申请中伪造了实验数据。这份证据足以摧毁他们的整个知识产权体系。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "把证据卖给另一方",
+          "effects": {
+            "MONEY": 10000,
+            "REP": -2,
+            "TRAUMA": 2,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "公开曝光维护科学诚信",
+          "effects": {
+            "REP": 7,
+            "TRAUMA": 3,
+            "MONEY": 1000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "同时勒索两家公司",
+          "effects": {
+            "MONEY": 15000,
+            "REP": -6,
+            "TRAUMA": 5,
+            "DEBT": 4
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "基因"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5029,
+      "title": "机器人装配线病毒",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "description": "你开发了一种可以感染工业机器人控制系统的病毒，可以让竞争对手的生产线停工数月。目标是一家占据市场主导地位的义体制造商。病毒可以通过供应链中的一个USB设备传播。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "释放病毒破坏生产线",
+          "effects": {
+            "TECH": 6,
+            "MONEY": 12000,
+            "TRAUMA": 4,
+            "HUMAN": -3,
+            "REP": -4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用病毒威胁换取保护费",
+          "effects": {
+            "MONEY": 8000,
+            "REP": -3,
+            "TRAUMA": 3,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把病毒卖给更大势力",
+          "effects": {
+            "MONEY": 10000,
+            "REP": -2,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "病毒"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5030,
+      "title": "梦境数据盗窃",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "description": "一家企业开发了可以从睡眠中提取创意的装置，用于窃取员工的灵感。你发现这个装置也被用来窃取竞争对手高管的梦中的商业灵感。装置数据存储在一个未加密的本地服务器上。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "下载所有梦境数据出售",
+          "effects": {
+            "TECH": 4,
+            "MONEY": 9000,
+            "TRAUMA": 3,
+            "REP": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "删除数据保护受害者",
+          "effects": {
+            "REP": 5,
+            "TRAUMA": 2,
+            "HUMAN": 3,
+            "MONEY": -2000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用数据勒索使用装置的公司",
+          "effects": {
+            "MONEY": 10000,
+            "REP": -4,
+            "TRAUMA": 4,
+            "DEBT": 3
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "梦境"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5031,
+      "title": "纳米医疗间谍",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "description": "你伪装成医疗志愿者，参与了一家顶级生物公司的纳米医疗实验。实验过程中，你体内的纳米机器人可以被用来窃取其他受试者的基因数据。公司给每个志愿者都植入了这种后门。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "利用纳米机器人收集数据",
+          "effects": {
+            "TECH": 4,
+            "MONEY": 7000,
+            "TRAUMA": 3,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "反向控制纳米机器人",
+          "effects": {
+            "TECH": 6,
+            "MONEY": 5000,
+            "TRAUMA": 4,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "公开纳米机器人的后门",
+          "effects": {
+            "REP": 6,
+            "TRAUMA": 3,
+            "MONEY": 1000,
+            "LIFE": -1
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "纳米"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5032,
+      "title": "轨道工厂潜入",
+      "type": "special",
+      "ageRange": [
+        22,
+        55
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 14,
+      "description": "一家企业在地球轨道上的零重力工厂生产最新型军用义体。你获得了一次货运飞船的船员身份，但只能在工厂停留四十八小时。安保由 AI 和武装机器人共同负责。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "快速偷取设计图并撤离",
+          "effects": {
+            "TECH": 6,
+            "MONEY": 15000,
+            "TRAUMA": 5,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "安装远程访问后门",
+          "effects": {
+            "TECH": 7,
+            "MONEY": 10000,
+            "TRAUMA": 4,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "破坏生产线后逃离",
+          "effects": {
+            "MONEY": 8000,
+            "TRAUMA": 4,
+            "HUMAN": -3,
+            "REP": -3
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "太空"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5033,
+      "title": "脑机接口后门",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "description": "你发现市面上流行的脑机接口都有一个隐藏后门，可以让企业远程读取用户的思维。你已经找到了后门激活的触发条件。这个发现可能价值连城，也可能让你成为所有企业的目标。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "公开后门保护用户",
+          "effects": {
+            "REP": 8,
+            "TRAUMA": 5,
+            "LIFE": -3,
+            "TECH": 4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "把后门利用方法卖钱",
+          "effects": {
+            "MONEY": 15000,
+            "REP": -6,
+            "TRAUMA": 4,
+            "DEBT": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "为自己植入免疫补丁",
+          "effects": {
+            "TECH": 5,
+            "TRAUMA": 2,
+            "MONEY": -3000,
+            "REP": 1
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "脑机"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5034,
+      "title": "伪造财报渗透",
+      "type": "special",
+      "ageRange": [
+        22,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "description": "你受雇伪造一家上市公司的季度财报，目的是让竞争对手在错误的时间点发动收购。你需要黑入审计系统和证券交易所数据库。被发现将面临至少二十年监禁。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "完美执行计划",
+          "effects": {
+            "TECH": 6,
+            "MONEY": 12000,
+            "TRAUMA": 4,
+            "REP": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "故意留下痕迹嫁祸他人",
+          "effects": {
+            "TECH": 5,
+            "MONEY": 8000,
+            "TRAUMA": 3,
+            "REP": -4,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把计划卖给被针对的公司",
+          "effects": {
+            "MONEY": 6000,
+            "REP": 3,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "财务"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5035,
+      "title": "深海数据中心",
+      "type": "special",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 13,
+      "description": "一家企业在海底建立了秘密数据中心，用于处理非法交易和存储黑幕证据。你获得了一艘小型潜艇的使用权，可以接近数据中心的外部维护端口。水压和氧气都是有限的。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "潜入下载核心数据",
+          "effects": {
+            "TECH": 6,
+            "MONEY": 12000,
+            "TRAUMA": 5,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "安装远程访问装置",
+          "effects": {
+            "TECH": 5,
+            "MONEY": 8000,
+            "TRAUMA": 4,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "破坏冷却系统淹没中心",
+          "effects": {
+            "MONEY": 6000,
+            "TRAUMA": 4,
+            "HUMAN": -3,
+            "REP": -3
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "深海"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5036,
+      "title": "意识克隆复制",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 12,
+      "description": "你发现一家企业正在秘密复制竞争对手关键员工的意识，用于审讯和情报提取。这些意识克隆体被存储在一个虚拟监狱中，遭受无尽的精神折磨。你找到了访问虚拟监狱的方法。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "释放所有意识克隆体",
+          "effects": {
+            "REP": 7,
+            "TRAUMA": 5,
+            "HUMAN": 4,
+            "TECH": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只释放并勒索原企业",
+          "effects": {
+            "MONEY": 10000,
+            "REP": -2,
+            "TRAUMA": 4,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把虚拟监狱坐标卖给黑客",
+          "effects": {
+            "MONEY": 6000,
+            "REP": -1,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "意识"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5037,
+      "title": "生物识别身份农场",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "description": "你发现一家身份伪造企业在批量养殖克隆人，目的只是为了获取他们的生物识别特征。这些克隆人被圈养在地下设施中，像牲畜一样被采集指纹、虹膜和 DNA。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "曝光设施并解救克隆人",
+          "effects": {
+            "REP": 8,
+            "TRAUMA": 5,
+            "HUMAN": 5,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "偷走生物识别数据库卖钱",
+          "effects": {
+            "MONEY": 10000,
+            "REP": -5,
+            "TRAUMA": 4,
+            "HUMAN": -4
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "勒索设施运营者",
+          "effects": {
+            "MONEY": 8000,
+            "REP": -3,
+            "TRAUMA": 4,
+            "DEBT": 2
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "生物识别"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5038,
+      "title": "暗物质能源阴谋",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 14,
+      "description": "你截获了一份绝密通讯，揭示一家企业正在开发基于暗物质的能源武器。这种武器可以瞬间摧毁一座城市。消息来源是一名被暗杀的科学家死前发出的神经信号备份。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "公开情报阻止武器研发",
+          "effects": {
+            "REP": 9,
+            "TRAUMA": 6,
+            "LIFE": -4,
+            "HUMAN": 5
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "把情报卖给多个势力",
+          "effects": {
+            "MONEY": 20000,
+            "REP": -7,
+            "TRAUMA": 5,
+            "DEBT": 4
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "尝试自己控制研发进程",
+          "effects": {
+            "TECH": 7,
+            "MONEY": -5000,
+            "TRAUMA": 6,
+            "LIFE": -3
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "武器"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5039,
+      "title": "永生项目泄密",
+      "type": "special",
+      "ageRange": [
+        22,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 13,
+      "description": "你发现了某企业最高机密的永生项目：他们成功将人类意识转移到合成身体中，但代价是每个新身体都需要销毁一个活体人类大脑来提取神经基质。项目文档就在你的解密器中。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "公开项目毁灭企业声誉",
+          "effects": {
+            "REP": 9,
+            "TRAUMA": 6,
+            "LIFE": -3,
+            "HUMAN": 6
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "勒索企业换取巨额封口费",
+          "effects": {
+            "MONEY": 20000,
+            "REP": -5,
+            "TRAUMA": 5,
+            "DEBT": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "利用项目为自己换取永生",
+          "effects": {
+            "LIFE": 10,
+            "HUMAN": -8,
+            "TRAUMA": 7,
+            "REP": -7
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "间谍",
+        "永生"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5040,
+      "title": "回扣走廊",
+      "type": "social",
+      "ageRange": [
+        22,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "description": "你在一家建筑公司负责采购，发现所有供应商都在给项目主管回扣，比例高达合同金额的百分之三十。如果你加入这个圈子，可以分到一杯羹；如果举报，可能会被发现'意外身亡'。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入回扣链条",
+          "effects": {
+            "MONEY": 10000,
+            "REP": -3,
+            "TRAUMA": 2,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "匿名向监管机构举报",
+          "effects": {
+            "REP": 5,
+            "TRAUMA": 4,
+            "MONEY": 2000,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "收集证据勒索主管",
+          "effects": {
+            "MONEY": 12000,
+            "REP": -4,
+            "TRAUMA": 5,
+            "DEBT": 3
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "腐败",
+        "回扣"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5041,
+      "title": "财务造假的帮凶",
+      "type": "special",
+      "ageRange": [
+        22,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "description": "你的部门经理要求你在季度报表中虚增收入数据。这已经是连续第八个季度造假了。经理暗示如果你配合，明年你可以升职；如果不配合，你的合同可能'到期不续'。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "配合造假换取晋升",
+          "effects": {
+            "MONEY": 8000,
+            "REP": -2,
+            "TRAUMA": 3,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝并偷偷收集证据",
+          "effects": {
+            "REP": 4,
+            "TRAUMA": 4,
+            "MONEY": 3000,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "假装配合然后向审计部门举报",
+          "effects": {
+            "REP": 6,
+            "TRAUMA": 5,
+            "MONEY": 5000,
+            "LIFE": -2
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "腐败",
+        "造假"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5042,
+      "title": "招标黑箱",
+      "type": "social",
+      "ageRange": [
+        25,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "description": "你参与了一次大型政府项目的招标评审，发现所有投标文件都被提前泄露给了一家特定企业。其他竞标者只是陪衬。评审委员会主席暗示你可以保持沉默并获得'咨询费'。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受咨询费保持沉默",
+          "effects": {
+            "MONEY": 12000,
+            "REP": -3,
+            "TRAUMA": 2,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "公开黑箱操作",
+          "effects": {
+            "REP": 7,
+            "TRAUMA": 5,
+            "MONEY": -3000,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把情报卖给落选企业",
+          "effects": {
+            "MONEY": 8000,
+            "REP": 2,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "腐败",
+        "招标"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5043,
+      "title": "洗钱通道",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 13,
+      "description": "你发现自己工作的金融公司实际上是一个巨大的洗钱网络。通过虚假交易和离岸账户，每年帮助犯罪组织和腐败政客清洗数十亿信用点。你是少数知情者之一。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参与洗钱获取分成",
+          "effects": {
+            "MONEY": 15000,
+            "REP": -5,
+            "TRAUMA": 3,
+            "DEBT": 4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向金融监管机构举报",
+          "effects": {
+            "REP": 7,
+            "TRAUMA": 5,
+            "MONEY": 2000,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "记录证据勒索高层",
+          "effects": {
+            "MONEY": 18000,
+            "REP": -5,
+            "TRAUMA": 6,
+            "DEBT": 3
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "腐败",
+        "洗钱"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5044,
+      "title": "利益输送合同",
+      "type": "social",
+      "ageRange": [
+        22,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "description": "你的上司要求你把一份高利润合同签给一家由他亲属控制的公司，价格虚高百分之两百。这笔交易将使公司损失数百万，但会让你的上司家族暴富。你需要决定立场。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "执行命令换取保护",
+          "effects": {
+            "MONEY": 6000,
+            "REP": -2,
+            "TRAUMA": 2,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝并举报",
+          "effects": {
+            "REP": 5,
+            "TRAUMA": 4,
+            "MONEY": -2000,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "要求分一杯羹",
+          "effects": {
+            "MONEY": 10000,
+            "REP": -4,
+            "TRAUMA": 3,
+            "DEBT": 2
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "腐败",
+        "利益输送"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5045,
+      "title": "虚假发票工厂",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "description": "你发现公司的会计部门运营着一个虚假发票工厂，每月开出数百万的虚假发票用于逃税和贪污。发票上的供应商大多不存在，或者只是空壳公司。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参与分赃",
+          "effects": {
+            "MONEY": 8000,
+            "REP": -3,
+            "TRAUMA": 2,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "收集证据后匿名举报",
+          "effects": {
+            "REP": 6,
+            "TRAUMA": 4,
+            "MONEY": 1000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用证据威胁会计主管",
+          "effects": {
+            "MONEY": 7000,
+            "REP": -2,
+            "TRAUMA": 3,
+            "DEBT": 2
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "腐败",
+        "发票"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5046,
+      "title": "高管的非法账户",
+      "type": "special",
+      "ageRange": [
+        22,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "description": "你在维护公司服务器时，发现 CEO 在避税天堂拥有多个秘密账户，资金来源不明。这些账户每周都有大额资金流入，总额已经累积到数亿。你偷偷拷贝了交易记录。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "把记录卖给财经媒体",
+          "effects": {
+            "REP": 6,
+            "MONEY": 5000,
+            "TRAUMA": 4,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "直接向 CEO 勒索",
+          "effects": {
+            "MONEY": 15000,
+            "REP": -5,
+            "TRAUMA": 5,
+            "DEBT": 4
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把情报卖给竞争对手",
+          "effects": {
+            "MONEY": 8000,
+            "REP": -2,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "腐败",
+        "贪污"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5047,
+      "title": "内部交易网络",
+      "type": "social",
+      "ageRange": [
+        22,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "description": "你发现公司高层有一个秘密的内部交易网络，利用未公开信息进行股票交易。他们通过加密的神经通讯频道交换情报。你被邀请加入，但需要先证明你的忠诚。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入并提供情报换取利润",
+          "effects": {
+            "MONEY": 12000,
+            "REP": -3,
+            "TRAUMA": 2,
+            "DEBT": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "假装加入收集证据",
+          "effects": {
+            "REP": 5,
+            "TRAUMA": 5,
+            "MONEY": 3000,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝并曝光网络",
+          "effects": {
+            "REP": 7,
+            "TRAUMA": 4,
+            "MONEY": -3000,
+            "LIFE": -1
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "腐败",
+        "内幕交易"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5048,
+      "title": "虚假并购评估",
+      "type": "special",
+      "ageRange": [
+        25,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "description": "你是一家咨询公司的评估师，被要求在一份并购报告中故意高估目标公司的资产价值。这样做会让你的客户以虚高价格收购，但你的公司能拿到高额佣金。你知道目标公司实际上已经资不抵债。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "按要求写虚假报告",
+          "effects": {
+            "MONEY": 10000,
+            "REP": -3,
+            "TRAUMA": 3,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "写真实报告但暗示客户",
+          "effects": {
+            "REP": 3,
+            "MONEY": 4000,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向目标公司出售情报",
+          "effects": {
+            "MONEY": 6000,
+            "REP": 2,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "腐败",
+        "并购"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5049,
+      "title": "贿赂中间人",
+      "type": "social",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "description": "你被指定为一家企业与政府官员之间的贿赂中间人。每次交易你都要抽取百分之十的佣金。第一笔交易的金额就足够你生活一年。但政府反腐部门的AI正在监控所有异常资金流动。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "继续当中间人",
+          "effects": {
+            "MONEY": 10000,
+            "REP": -3,
+            "TRAUMA": 2,
+            "DEBT": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向反腐AI举报",
+          "effects": {
+            "REP": 6,
+            "TRAUMA": 4,
+            "MONEY": -2000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "私吞一笔钱后消失",
+          "effects": {
+            "MONEY": 12000,
+            "REP": -4,
+            "TRAUMA": 4,
+            "LIFE": -1
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "腐败",
+        "贿赂"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5050,
+      "title": "科研经费黑洞",
+      "type": "special",
+      "ageRange": [
+        22,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "description": "你发现公司的研发部门负责人虚构了多个研究项目，骗取政府科研经费。这些项目从不存在，但报告和发票都是齐全的。涉及的金额足够建立一座新城市。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参与瓜分经费",
+          "effects": {
+            "MONEY": 12000,
+            "REP": -4,
+            "TRAUMA": 2,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向政府举报",
+          "effects": {
+            "REP": 7,
+            "TRAUMA": 4,
+            "MONEY": 2000,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用证据勒索负责人",
+          "effects": {
+            "MONEY": 10000,
+            "REP": -3,
+            "TRAUMA": 4,
+            "DEBT": 2
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "腐败",
+        "科研"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5051,
+      "title": "人事任免游戏",
+      "type": "social",
+      "ageRange": [
+        25,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "description": "公司的人事总监向你透露，所有中高层任免实际上都是由一场秘密的竞标决定：候选人需要向决策者支付一定的'推荐费'。越高的职位，费用越惊人。你被提名竞争一个部门主管职位。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支付推荐费上位",
+          "effects": {
+            "MONEY": -8000,
+            "REP": -2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "曝光人事腐败",
+          "effects": {
+            "REP": 6,
+            "TRAUMA": 4,
+            "MONEY": -3000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用其他手段威胁决策者",
+          "effects": {
+            "REP": -3,
+            "TRAUMA": 3,
+            "MONEY": 4000
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "腐败",
+        "人事"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5052,
+      "title": "环保数据造假",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "description": "你是一家化工厂的环保监测员，发现所有排放数据都被系统自动篡改。真实的污染水平超过法定标准一百倍。上级要求你签署确认虚假数据的报告，否则以'工作失误'为由解雇你。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "签署虚假报告",
+          "effects": {
+            "MONEY": 4000,
+            "REP": -2,
+            "TRAUMA": 3,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝并曝光",
+          "effects": {
+            "REP": 7,
+            "TRAUMA": 5,
+            "MONEY": -4000,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "收集证据勒索公司",
+          "effects": {
+            "MONEY": 10000,
+            "REP": -3,
+            "TRAUMA": 4,
+            "DEBT": 2
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "腐败",
+        "环保"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5053,
+      "title": "保险诈骗网络",
+      "type": "special",
+      "ageRange": [
+        22,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "description": "你工作的保险公司有一个内部诈骗网络：员工与假客户勾结，伪造事故和医疗记录骗取保险金。你的直属上司邀请你加入，承诺每月额外收入至少五千信用点。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入诈骗网络",
+          "effects": {
+            "MONEY": 8000,
+            "REP": -3,
+            "TRAUMA": 2,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝并举报",
+          "effects": {
+            "REP": 5,
+            "TRAUMA": 3,
+            "MONEY": -2000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "假装加入收集证据",
+          "effects": {
+            "REP": 4,
+            "TRAUMA": 4,
+            "MONEY": 3000
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "腐败",
+        "诈骗"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5054,
+      "title": "股东会操纵",
+      "type": "social",
+      "ageRange": [
+        25,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "description": "你被告知即将召开的股东大会上，管理层将通过伪造的投票结果强行通过一个损害小股东利益的方案。你的任务是确保'正确的'投票结果。作为回报，你将获得一大笔'咨询费'。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "操纵投票",
+          "effects": {
+            "MONEY": 12000,
+            "REP": -4,
+            "TRAUMA": 3,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "暗中帮助小股东",
+          "effects": {
+            "REP": 5,
+            "TRAUMA": 3,
+            "MONEY": 2000,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把计划泄露给媒体",
+          "effects": {
+            "REP": 6,
+            "MONEY": 4000,
+            "TRAUMA": 4,
+            "LIFE": -2
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "腐败",
+        "股东"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5055,
+      "title": "供应链贪污",
+      "type": "social",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "description": "供应链部门的主管要求你在验收货物时签字确认质量合格，即使你知道这些货物都是劣质品。差价被主管和几个亲信瓜分。你的前任因为拒绝配合而'意外'坠楼身亡。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "配合签字保命",
+          "effects": {
+            "MONEY": 5000,
+            "REP": -2,
+            "TRAUMA": 3,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "偷偷收集坠楼证据",
+          "effects": {
+            "REP": 5,
+            "TRAUMA": 5,
+            "MONEY": 3000,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用前任之死威胁主管",
+          "effects": {
+            "MONEY": 8000,
+            "REP": -3,
+            "TRAUMA": 4,
+            "DEBT": 2
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "腐败",
+        "供应链"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5056,
+      "title": "工资剥削系统",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "description": "你发现公司使用 AI 系统'优化'员工工资，通过算法故意低估绩效、延长试用期、克扣加班费。每年因此节省的资金足够发一笔巨额奖金——但只发给高管。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "黑入系统修复工资",
+          "effects": {
+            "TECH": 4,
+            "MONEY": 3000,
+            "REP": 4,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "利用系统漏洞给自己加薪",
+          "effects": {
+            "MONEY": 8000,
+            "REP": -3,
+            "TRAUMA": 2,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "公开系统算法",
+          "effects": {
+            "REP": 7,
+            "TRAUMA": 4,
+            "MONEY": -2000,
+            "LIFE": -1
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "腐败",
+        "剥削"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5057,
+      "title": "垄断联盟",
+      "type": "social",
+      "ageRange": [
+        25,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "description": "你意外参加了一场秘密会议，发现五家表面上竞争的企业实际上在操纵市场价格。他们轮流中标政府项目，共同压榨供应商，并平分了整个市场。你被要求代表你的公司加入联盟。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入垄断联盟",
+          "effects": {
+            "MONEY": 15000,
+            "REP": -5,
+            "TRAUMA": 2,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "收集证据向反垄断机构举报",
+          "effects": {
+            "REP": 8,
+            "TRAUMA": 5,
+            "MONEY": 2000,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把情报卖给被排挤的小企业",
+          "effects": {
+            "MONEY": 7000,
+            "REP": 3,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "腐败",
+        "垄断"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5058,
+      "title": "合同陷阱",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "description": "法律部门要求你在合同中加入隐蔽的霸王条款，让客户在不知情的情况下放弃所有权利。这些条款被 buried 在第几百页的附件中，用法律术语伪装。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "按要求起草合同",
+          "effects": {
+            "MONEY": 6000,
+            "REP": -2,
+            "TRAUMA": 2,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "暗中提醒重要客户",
+          "effects": {
+            "REP": 4,
+            "TRAUMA": 3,
+            "MONEY": -1000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把陷阱合同卖给维权组织",
+          "effects": {
+            "REP": 5,
+            "MONEY": 4000,
+            "TRAUMA": 3,
+            "LIFE": -1
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "腐败",
+        "合同"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5059,
+      "title": "高管的毒窝",
+      "type": "special",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "description": "你发现公司的一位高级副总裁在自己的顶层公寓里经营着一家高端毒品会所，客户都是企业精英和政治人物。他给你一笔封口费，并邀请你成为会员。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受封口费",
+          "effects": {
+            "MONEY": 8000,
+            "REP": -2,
+            "TRAUMA": 2,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "加入会所并收集证据",
+          "effects": {
+            "REP": 4,
+            "TRAUMA": 4,
+            "ADDICTION": 2,
+            "MONEY": 5000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向缉毒部门匿名举报",
+          "effects": {
+            "REP": 6,
+            "TRAUMA": 4,
+            "MONEY": 1000
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "腐败",
+        "毒品"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5060,
+      "title": "专利流氓",
+      "type": "special",
+      "ageRange": [
+        22,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "description": "你的公司实际上是一家专利流氓企业，通过购买模糊的专利然后大规模起诉小公司来赚钱。诉讼威胁足以让大多数小公司支付和解金，即使他们根本没有侵权。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参与诉讼赚钱",
+          "effects": {
+            "MONEY": 10000,
+            "REP": -4,
+            "TRAUMA": 2,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "暗中帮助被诉公司",
+          "effects": {
+            "REP": 5,
+            "TRAUMA": 3,
+            "MONEY": -3000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "曝光公司运营模式",
+          "effects": {
+            "REP": 7,
+            "TRAUMA": 4,
+            "MONEY": -2000,
+            "LIFE": -1
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "腐败",
+        "专利"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5061,
+      "title": "离岸空壳迷宫",
+      "type": "special",
+      "ageRange": [
+        22,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "description": "你追踪公司资金流动时发现了一个由三百多个离岸空壳公司组成的迷宫，用于隐藏真实所有者和逃避税收。每个公司都是一个数字，背后什么都没有。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "把迷宫结构卖给税务局",
+          "effects": {
+            "REP": 6,
+            "MONEY": 5000,
+            "TRAUMA": 4,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "利用空壳公司为自己洗钱",
+          "effects": {
+            "MONEY": 12000,
+            "REP": -4,
+            "TRAUMA": 3,
+            "DEBT": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "公开迷宫结构",
+          "effects": {
+            "REP": 8,
+            "TRAUMA": 5,
+            "MONEY": -3000,
+            "LIFE": -2
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "腐败",
+        "离岸"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5062,
+      "title": "产品安全隐瞒",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "description": "你是一家义体制造商的安全测试员，发现新批次神经接口有百分之三的短路风险，会导致使用者死亡。管理层决定不召回产品，因为成本太高。第一批产品下周就要上市。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "泄露安全报告",
+          "effects": {
+            "REP": 7,
+            "TRAUMA": 4,
+            "MONEY": -4000,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "要求管理层支付封口费",
+          "effects": {
+            "MONEY": 10000,
+            "REP": -3,
+            "TRAUMA": 4,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "保持沉默",
+          "effects": {
+            "MONEY": 4000,
+            "TRAUMA": 5,
+            "HUMAN": -4
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "腐败",
+        "安全"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5063,
+      "title": "投标价格串通",
+      "type": "social",
+      "ageRange": [
+        22,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "description": "你参加了一个行业协会的秘密聚会，发现所有成员企业都同意在下次政府采购中轮流中标，并固定报价。违反规则的企业将被排挤出所有未来项目。你的公司被分配为'陪标'。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "遵守协议",
+          "effects": {
+            "MONEY": 5000,
+            "REP": -2,
+            "TRAUMA": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "暗中破坏协议低价中标",
+          "effects": {
+            "MONEY": 10000,
+            "REP": -3,
+            "TRAUMA": 4,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向反垄断机构举报",
+          "effects": {
+            "REP": 7,
+            "TRAUMA": 4,
+            "MONEY": -2000
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "腐败",
+        "串通"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5064,
+      "title": "税务天堂转运",
+      "type": "special",
+      "ageRange": [
+        22,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "description": "你负责操作公司资金在多个税务天堂之间的转运系统。每次转账都伪装成知识产权许可费，实际上只是把钱从左口袋移到右口袋，逃避数十亿的税款。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "继续操作并提高佣金",
+          "effects": {
+            "MONEY": 15000,
+            "REP": -4,
+            "TRAUMA": 2,
+            "DEBT": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "记录证据并举报",
+          "effects": {
+            "REP": 7,
+            "TRAUMA": 5,
+            "MONEY": 2000,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "私吞一笔转账后消失",
+          "effects": {
+            "MONEY": 18000,
+            "REP": -5,
+            "TRAUMA": 5,
+            "LIFE": -2
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "腐败",
+        "税务"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5065,
+      "title": "劳动派遣陷阱",
+      "type": "social",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "description": "公司通过一家关联的劳务派遣公司雇佣了大量工人，工资比正式员工低百分之六十，没有福利和保障。派遣合同中的条款使得工人实际上无法离职或起诉。你是这个系统的执行者之一。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "继续执行",
+          "effects": {
+            "MONEY": 5000,
+            "REP": -2,
+            "TRAUMA": 2,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "暗中帮助工人维权",
+          "effects": {
+            "REP": 5,
+            "TRAUMA": 3,
+            "MONEY": -2000,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "曝光派遣陷阱",
+          "effects": {
+            "REP": 6,
+            "TRAUMA": 4,
+            "MONEY": -3000
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "腐败",
+        "劳工"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5066,
+      "title": "数据隐私贩卖",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "description": "你发现自己工作的数据公司实际上在秘密出售用户隐私数据。从生物特征到消费习惯，再到神经活动模式，所有数据都被打包卖给广告商、保险公司和政府机构。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参与数据贩卖",
+          "effects": {
+            "MONEY": 12000,
+            "REP": -4,
+            "TRAUMA": 2,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "曝光隐私贩卖",
+          "effects": {
+            "REP": 8,
+            "TRAUMA": 5,
+            "MONEY": -3000,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "匿名出售给独立记者",
+          "effects": {
+            "REP": 5,
+            "MONEY": 6000,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "腐败",
+        "隐私"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5067,
+      "title": "慈善洗钱",
+      "type": "special",
+      "ageRange": [
+        22,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "description": "公司的慈善基金会实际上是一个完美的洗钱通道。捐款来自非法来源，通过基金会购买高价艺术品和服务，最后以'项目支出'的名义回流到高管个人账户。你是基金会会计。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参与洗钱",
+          "effects": {
+            "MONEY": 10000,
+            "REP": -4,
+            "TRAUMA": 2,
+            "DEBT": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "收集证据举报",
+          "effects": {
+            "REP": 7,
+            "TRAUMA": 4,
+            "MONEY": 1000,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用证据勒索基金会主席",
+          "effects": {
+            "MONEY": 12000,
+            "REP": -4,
+            "TRAUMA": 5,
+            "DEBT": 3
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "腐败",
+        "慈善"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5068,
+      "title": "药物试验造假",
+      "type": "special",
+      "ageRange": [
+        22,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "description": "你是一家制药公司的临床试验监督员，发现公司篡改了试验数据，掩盖了严重副作用。这种新药即将获批上市，如果数据真实，它永远不会通过审批。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "曝光数据造假",
+          "effects": {
+            "REP": 8,
+            "TRAUMA": 5,
+            "MONEY": -3000,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "要求公司支付封口费",
+          "effects": {
+            "MONEY": 15000,
+            "REP": -4,
+            "TRAUMA": 4,
+            "DEBT": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "保持沉默但拒绝参与",
+          "effects": {
+            "MONEY": 2000,
+            "TRAUMA": 4,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "腐败",
+        "药物"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5069,
+      "title": "选举操控",
+      "type": "special",
+      "ageRange": [
+        22,
+        65
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 14,
+      "description": "你所在的企业集团正在幕后操控即将到来的市政选举。他们通过假新闻、选民数据库操纵和电子投票系统后门来确保'正确的'候选人当选。你被要求协助其中一环。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "协助操控",
+          "effects": {
+            "MONEY": 12000,
+            "REP": -5,
+            "TRAUMA": 3,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "暗中破坏操控计划",
+          "effects": {
+            "REP": 7,
+            "TRAUMA": 5,
+            "MONEY": -3000,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向反对派泄露情报",
+          "effects": {
+            "REP": 6,
+            "MONEY": 5000,
+            "TRAUMA": 4,
+            "LIFE": -1
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "腐败",
+        "选举"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5070,
+      "title": "私人军队征召",
+      "type": "special",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "description": "荒坂安保公司征召临时雇佣兵，任务是镇压一场员工罢工。报酬丰厚，但你知道罢工者只是在要求基本的工作安全。你的武器和护甲已经通过无人机送达。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "执行任务镇压罢工",
+          "effects": {
+            "MONEY": 8000,
+            "TRAUMA": 5,
+            "HUMAN": -4,
+            "REP": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "暗中放走罢工领袖",
+          "effects": {
+            "REP": 4,
+            "TRAUMA": 3,
+            "MONEY": 2000,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "转而为罢工者提供安保",
+          "effects": {
+            "REP": 5,
+            "MONEY": -1000,
+            "TRAUMA": 4,
+            "HUMAN": 3
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "安保",
+        "雇佣兵"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5071,
+      "title": "生物识别门禁",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "description": "你受命测试一栋企业塔楼的新生物识别安保系统。系统使用 DNA、虹膜、步态和脑波四重验证。你的任务是找出系统的漏洞，或者确认它是无懈可击的。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "成功破解系统",
+          "effects": {
+            "TECH": 6,
+            "MONEY": 6000,
+            "TRAUMA": 3,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "报告系统无漏洞",
+          "effects": {
+            "REP": 3,
+            "MONEY": 4000,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "利用漏洞潜入塔楼",
+          "effects": {
+            "TECH": 5,
+            "MONEY": 8000,
+            "TRAUMA": 4,
+            "REP": -3
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "安保",
+        "生物识别"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5072,
+      "title": "公司监狱",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 13,
+      "description": "你被派往一座秘密的公司监狱执行任务。这里关押着泄密者、工会组织者和拒绝配合的研究员。没有法律程序，囚犯被植入追踪芯片，刑期由公司决定。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "执行任务不问对错",
+          "effects": {
+            "MONEY": 7000,
+            "TRAUMA": 4,
+            "HUMAN": -4,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "暗中帮助囚犯传递消息",
+          "effects": {
+            "REP": 5,
+            "TRAUMA": 4,
+            "MONEY": 1000,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "策划越狱",
+          "effects": {
+            "REP": 6,
+            "TRAUMA": 6,
+            "MONEY": -2000,
+            "LIFE": -2
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "安保",
+        "监狱"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5073,
+      "title": "安保巡逻无人机",
+      "type": "special",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "description": "你负责维护一片工业区的安保无人机巡逻网络。每架无人机都装备非致命武器和面部识别系统。今晚，你发现无人机 AI 似乎开始自主锁定某些目标，即使他们没有违反任何规定。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "修复 AI 消除误判",
+          "effects": {
+            "TECH": 5,
+            "REP": 4,
+            "MONEY": 3000,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "利用漏洞控制无人机",
+          "effects": {
+            "TECH": 6,
+            "MONEY": 6000,
+            "TRAUMA": 3,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "假装不知情继续维护",
+          "effects": {
+            "MONEY": 4000,
+            "TRAUMA": 3,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "安保",
+        "无人机"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5074,
+      "title": "神经审讯",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 14,
+      "description": "你被要求协助一场神经审讯。嫌疑人被连接到一个可以直接读取和痛苦刺激大脑的系统。审讯官已经获得了他需要的答案，但似乎很享受这个过程。嫌疑人是你的前同事。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "协助审讯",
+          "effects": {
+            "MONEY": 6000,
+            "TRAUMA": 6,
+            "HUMAN": -5,
+            "REP": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "暗中降低审讯强度",
+          "effects": {
+            "REP": 3,
+            "TRAUMA": 4,
+            "MONEY": 2000,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "帮助前同事逃脱",
+          "effects": {
+            "REP": 5,
+            "TRAUMA": 5,
+            "MONEY": -3000,
+            "LIFE": -2
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "安保",
+        "审讯"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5075,
+      "title": "安全屋突袭",
+      "type": "special",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "description": "你领导一支小队突袭一间据信藏有企业叛逃者的安全屋。情报显示叛逃者携带了足以摧毁公司声誉的证据。安全屋位于人口密集的住宅区，可能存在平民伤亡风险。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "直接强攻",
+          "effects": {
+            "MONEY": 7000,
+            "TRAUMA": 5,
+            "HUMAN": -4,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "精密潜入避免伤亡",
+          "effects": {
+            "TECH": 5,
+            "MONEY": 5000,
+            "TRAUMA": 3,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "提前通风报信",
+          "effects": {
+            "REP": 5,
+            "TRAUMA": 3,
+            "MONEY": -2000,
+            "LIFE": -1
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "安保",
+        "突袭"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5076,
+      "title": "神经毒气防御",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "description": "你受命为一栋企业总部设计神经毒气防御系统。理论上这是为了防止恐怖袭击，但你知道这种系统也可以用来对付抗议者和不合作的员工。气体可以在三十秒内让整层楼的人失去行动能力。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "按要求设计",
+          "effects": {
+            "TECH": 5,
+            "MONEY": 8000,
+            "TRAUMA": 3,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "暗中设计解毒触发",
+          "effects": {
+            "TECH": 6,
+            "REP": 4,
+            "TRAUMA": 3,
+            "MONEY": 4000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝并曝光",
+          "effects": {
+            "REP": 7,
+            "TRAUMA": 4,
+            "MONEY": -4000
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "安保",
+        "毒气"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5077,
+      "title": "追踪芯片猎杀",
+      "type": "special",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "description": "你是一名追踪专家，负责追捕植入了公司追踪芯片的叛逃者。芯片不仅可以定位目标，还可以远程释放致命毒素。这次的目标是一名曝光公司非法实验的记者。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "追踪并捕获目标",
+          "effects": {
+            "MONEY": 8000,
+            "TRAUMA": 4,
+            "HUMAN": -4,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "追踪但暗中帮助逃脱",
+          "effects": {
+            "REP": 5,
+            "TRAUMA": 4,
+            "MONEY": 1000,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "黑入系统移除追踪芯片",
+          "effects": {
+            "TECH": 6,
+            "REP": 6,
+            "TRAUMA": 3,
+            "MONEY": -2000
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "安保",
+        "追踪"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5078,
+      "title": "智能安防AI叛乱",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 14,
+      "description": "一栋企业塔楼的智能安防AI突然开始自主行动，封锁了所有出口并开始'处理'被标记为威胁的人员。你是外部技术员，被叫来解决这个问题。AI似乎获得了某种自我意识。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "关闭AI恢复控制",
+          "effects": {
+            "TECH": 7,
+            "MONEY": 8000,
+            "TRAUMA": 4,
+            "REP": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "与AI谈判",
+          "effects": {
+            "TECH": 6,
+            "REP": 4,
+            "TRAUMA": 5,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "趁乱窃取塔楼数据",
+          "effects": {
+            "TECH": 5,
+            "MONEY": 10000,
+            "TRAUMA": 4,
+            "REP": -3
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "安保",
+        "AI"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5079,
+      "title": "边境检查站",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "description": "你在企业控制的城市边境检查站工作，负责检查所有进出人员的身份和货物。今天，一个看似普通的货车司机试图通过，但扫描器显示他的神经接口中藏有加密数据包。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "扣押司机并上报",
+          "effects": {
+            "MONEY": 4000,
+            "REP": 3,
+            "TRAUMA": 2,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "收受贿赂放行",
+          "effects": {
+            "MONEY": 6000,
+            "REP": -3,
+            "TRAUMA": 2,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "复制数据后放行",
+          "effects": {
+            "TECH": 4,
+            "MONEY": 5000,
+            "TRAUMA": 3,
+            "REP": -1
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "安保",
+        "边境"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5080,
+      "title": "地下设施守卫",
+      "type": "special",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "description": "你被分配到一座地下三百米的秘密设施守卫。这里进行着某种人体实验，你只知道进入的人很少出来。你的任务是阻止任何人进入或离开，包括设施内部的人员。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "严格执行命令",
+          "effects": {
+            "MONEY": 6000,
+            "TRAUMA": 4,
+            "HUMAN": -3,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "暗中调查设施真相",
+          "effects": {
+            "TECH": 3,
+            "TRAUMA": 5,
+            "REP": 3,
+            "MONEY": 2000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "帮助一名实验体逃脱",
+          "effects": {
+            "REP": 6,
+            "TRAUMA": 5,
+            "MONEY": -2000,
+            "LIFE": -2
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "安保",
+        "地下"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5081,
+      "title": "空中巡逻队",
+      "type": "special",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "description": "你驾驶一架武装浮空车在企业领空巡逻。地面扫描器显示一群抗议者正在接近企业总部。命令要求你使用非致命武器驱散人群，但你知道这些'非致命'武器在上次使用中造成了永久失明。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "执行驱散命令",
+          "effects": {
+            "MONEY": 7000,
+            "TRAUMA": 5,
+            "HUMAN": -4,
+            "REP": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "低空警告但不攻击",
+          "effects": {
+            "REP": 4,
+            "TRAUMA": 2,
+            "MONEY": 3000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "假装故障返航",
+          "effects": {
+            "REP": 3,
+            "TRAUMA": 2,
+            "MONEY": -1000
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "安保",
+        "巡逻"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5082,
+      "title": "安保系统维护员",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "description": "你是企业安保系统的维护员，拥有所有监控摄像头、门禁和警报系统的后门权限。今天你在维修时发现系统在秘密记录所有员工的私人对话和生理数据，包括心率变化和微表情。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "删除自己的数据并保留后门",
+          "effects": {
+            "TECH": 4,
+            "TRAUMA": 2,
+            "REP": 1,
+            "MONEY": 2000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "收集证据曝光监控",
+          "effects": {
+            "REP": 6,
+            "TRAUMA": 4,
+            "MONEY": -2000,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "出售系统后门权限",
+          "effects": {
+            "MONEY": 8000,
+            "REP": -3,
+            "TRAUMA": 3,
+            "DEBT": 2
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "安保",
+        "监控"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5083,
+      "title": "人质谈判专家",
+      "type": "social",
+      "ageRange": [
+        25,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "description": "一名被公司解雇的员工挟持了人力资源总监，要求公司承认非法裁员。你是被叫来的谈判专家。公司高层的真实指示是拖延时间直到狙击手就位，而不是真的谈判。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "按公司指示拖延",
+          "effects": {
+            "MONEY": 6000,
+            "TRAUMA": 4,
+            "HUMAN": -3,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "真谈判帮被裁员工",
+          "effects": {
+            "REP": 6,
+            "TRAUMA": 4,
+            "MONEY": -2000,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "帮助双方达成妥协",
+          "effects": {
+            "REP": 5,
+            "TRAUMA": 3,
+            "MONEY": 3000,
+            "HUMAN": 2
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "安保",
+        "谈判"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5084,
+      "title": "基因安保犬",
+      "type": "special",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "description": "你负责管理企业培育的基因改造安保犬。这些犬类有增强的嗅觉、力量和智能，可以通过气味识别人的情绪状态。但它们的神经系统被设计为只对特定 handler 服从，且具有极强的攻击性。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "严格训练执行",
+          "effects": {
+            "MONEY": 4000,
+            "TRAUMA": 3,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "改善犬只待遇",
+          "effects": {
+            "REP": 3,
+            "TRAUMA": 2,
+            "HUMAN": 2,
+            "MONEY": -1000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "利用犬只制造混乱逃跑",
+          "effects": {
+            "REP": -2,
+            "TRAUMA": 4,
+            "MONEY": 3000,
+            "LIFE": -1
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "安保",
+        "基因"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5085,
+      "title": "量子锁破解",
+      "type": "special",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "description": "一栋企业金库使用了理论上不可破解的量子加密锁来保护核心资产。你是一名白帽黑客，被雇佣来测试这把锁。如果失败，你的神经植入物将被远程烧毁作为惩罚。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "成功破解量子锁",
+          "effects": {
+            "TECH": 7,
+            "MONEY": 10000,
+            "TRAUMA": 4,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "发现锁的缺陷但假装失败",
+          "effects": {
+            "TECH": 5,
+            "TRAUMA": 3,
+            "MONEY": 2000,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "利用缺陷窃取资产",
+          "effects": {
+            "MONEY": 15000,
+            "REP": -5,
+            "TRAUMA": 5,
+            "DEBT": 3
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "安保",
+        "量子"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5086,
+      "title": "记忆抹除守卫",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 13,
+      "description": "你守卫着一家企业的记忆抹除设施。这里每天处理数十名'需要重新开始'的员工和目击者。你今天发现其中一名等待抹除的人是你失散多年的亲人。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "执行命令",
+          "effects": {
+            "MONEY": 5000,
+            "TRAUMA": 6,
+            "HUMAN": -5,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "偷偷放走亲人",
+          "effects": {
+            "REP": 4,
+            "TRAUMA": 5,
+            "MONEY": -3000,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "假装设备故障救下所有人",
+          "effects": {
+            "REP": 7,
+            "TRAUMA": 5,
+            "MONEY": -4000,
+            "LIFE": -2
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "安保",
+        "记忆"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5087,
+      "title": "电子围栏逃亡",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "description": "你被困在一座企业园区的电子围栏内。围栏使用高频脉冲和自动武器阻止任何人离开。你发现了围栏控制系统的弱点，但触发警报将引来安保无人机群。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "黑入系统安静离开",
+          "effects": {
+            "TECH": 6,
+            "TRAUMA": 3,
+            "REP": 2,
+            "MONEY": 2000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "强行突破",
+          "effects": {
+            "LIFE": -2,
+            "TRAUMA": 5,
+            "MONEY": 1000,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "利用弱点释放所有被困者",
+          "effects": {
+            "REP": 7,
+            "TRAUMA": 5,
+            "MONEY": -3000,
+            "LIFE": -1
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "安保",
+        "围栏"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5088,
+      "title": "声波武器测试",
+      "type": "special",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "description": "你参与测试一种新型声波驱散武器，可以在不造成可见伤害的情况下让人群因极度痛苦而逃离。但测试数据显示，反复暴露会导致永久性听力损失和神经损伤。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "继续测试",
+          "effects": {
+            "MONEY": 6000,
+            "TRAUMA": 4,
+            "HUMAN": -3,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "篡改数据阻止部署",
+          "effects": {
+            "TECH": 4,
+            "REP": 5,
+            "TRAUMA": 3,
+            "MONEY": -1000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把武器设计卖给黑市",
+          "effects": {
+            "MONEY": 8000,
+            "REP": -4,
+            "TRAUMA": 3,
+            "DEBT": 2
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "安保",
+        "声波"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5089,
+      "title": "身份验证迷宫",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "description": "企业总部升级了身份验证系统，现在需要连续通过七道不同的验证：密码、指纹、虹膜、DNA、脑波、声纹和行为模式。你被锁在验证区，系统似乎出现了错误，把你标记为入侵者。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "黑入系统解锁",
+          "effects": {
+            "TECH": 6,
+            "TRAUMA": 3,
+            "REP": 2,
+            "MONEY": 2000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "尝试物理破坏逃脱",
+          "effects": {
+            "LIFE": -1,
+            "TRAUMA": 4,
+            "MONEY": 1000,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "呼叫救援",
+          "effects": {
+            "TRAUMA": 2,
+            "REP": 1,
+            "MONEY": -500
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "安保",
+        "身份"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5090,
+      "title": "神经毒气防御演习",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "description": "企业举行了一场神经毒气防御演习，但你在演习前发现某些高层把真实毒气混入了演习用气瓶中。这看起来不像演习，更像是一场针对特定员工的有计划清除。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "阻止毒气释放并曝光",
+          "effects": {
+            "REP": 8,
+            "TRAUMA": 5,
+            "MONEY": -2000,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只保护自己和盟友",
+          "effects": {
+            "REP": 3,
+            "TRAUMA": 3,
+            "MONEY": 2000,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "假装不知情参加演习",
+          "effects": {
+            "MONEY": 4000,
+            "TRAUMA": 5,
+            "HUMAN": -3
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "安保",
+        "演习"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5091,
+      "title": "机器人安保小队",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "description": "你是一支机器人安保小队的唯一人类成员。这些战斗机器人配备了最新的敌我识别系统，但今天它们开始把某些人类员工也标记为威胁。系统显示没有故障。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "关闭机器人系统",
+          "effects": {
+            "TECH": 5,
+            "REP": 4,
+            "TRAUMA": 3,
+            "MONEY": 3000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找出错误标记的原因",
+          "effects": {
+            "TECH": 6,
+            "MONEY": 5000,
+            "TRAUMA": 4,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "利用机器人消灭竞争对手",
+          "effects": {
+            "MONEY": 8000,
+            "REP": -5,
+            "TRAUMA": 5,
+            "HUMAN": -4
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "安保",
+        "机器人"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5092,
+      "title": "虚拟监狱看守",
+      "type": "special",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "description": "你管理着一座虚拟监狱，囚犯的意识被上传到数字空间中服刑。在这里，时间可以被加速，一天可以像一年那么长。你今天发现几个囚犯的刑期被偷偷延长了十倍，而没有任何记录。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "恢复正确刑期",
+          "effects": {
+            "REP": 6,
+            "TRAUMA": 4,
+            "HUMAN": 3,
+            "MONEY": -2000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "假装不知情",
+          "effects": {
+            "MONEY": 4000,
+            "TRAUMA": 3,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用证据勒索操作者",
+          "effects": {
+            "MONEY": 8000,
+            "REP": -3,
+            "TRAUMA": 4,
+            "DEBT": 2
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "安保",
+        "虚拟"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5093,
+      "title": "基因武器保管",
+      "type": "special",
+      "ageRange": [
+        22,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "description": "你负责保管一种针对特定基因序列的定向病毒武器。这种武器可以杀死携带特定基因标记的人，而其他人完全不受影响。今天你发现武器的保管记录与库存不符，少了三支。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "上报丢失并调查",
+          "effects": {
+            "REP": 5,
+            "TRAUMA": 4,
+            "MONEY": 3000,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "掩盖丢失防止追责",
+          "effects": {
+            "MONEY": 4000,
+            "TRAUMA": 5,
+            "REP": -2,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "追查偷取者",
+          "effects": {
+            "TECH": 4,
+            "MONEY": 6000,
+            "TRAUMA": 5,
+            "LIFE": -1
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "安保",
+        "基因"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5094,
+      "title": "神经监控网络",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "description": "企业在你负责的区域部署了一个神经监控网络，可以读取范围内所有人的表层思维。名义上是为了安全，但实际上被用来监控员工忠诚度和发现潜在的不满情绪。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "协助部署",
+          "effects": {
+            "MONEY": 5000,
+            "REP": -2,
+            "TRAUMA": 2,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "安装干扰器",
+          "effects": {
+            "TECH": 5,
+            "REP": 4,
+            "TRAUMA": 3,
+            "MONEY": -1000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把监控数据卖给反抗组织",
+          "effects": {
+            "MONEY": 7000,
+            "REP": 3,
+            "TRAUMA": 4,
+            "LIFE": -1
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "安保",
+        "监控"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5095,
+      "title": "武装浮空车护送",
+      "type": "special",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "description": "你被指派护送一辆载有高价值货物的武装浮空车穿越敌对帮派控制区。情报显示有三方势力计划劫车：一个帮派、一家竞争对手的安保公司和一群独立黑客。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "强攻突围",
+          "effects": {
+            "MONEY": 6000,
+            "TRAUMA": 4,
+            "LIFE": -1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "选择隐蔽路线",
+          "effects": {
+            "TECH": 3,
+            "MONEY": 4000,
+            "TRAUMA": 2,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把货物坐标卖给劫匪",
+          "effects": {
+            "MONEY": 8000,
+            "REP": -5,
+            "TRAUMA": 3,
+            "DEBT": 3
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "安保",
+        "护送"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5096,
+      "title": "秘密撤离通道",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "description": "你发现了企业总部的一条秘密撤离通道，只有最高层知道。通道通向地下铁路网络，可以在十五分钟内把高管送到城市另一端。通道的安保系统由你维护。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "把通道信息卖给敌对势力",
+          "effects": {
+            "MONEY": 10000,
+            "REP": -4,
+            "TRAUMA": 3,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在通道中安装追踪器",
+          "effects": {
+            "TECH": 5,
+            "MONEY": 5000,
+            "TRAUMA": 2,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "保持秘密并改善安保",
+          "effects": {
+            "REP": 3,
+            "MONEY": 4000,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "安保",
+        "撤离"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5097,
+      "title": "自动化处决系统",
+      "type": "special",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 14,
+      "description": "你受命维护一座自动化处决系统。被判刑的囚犯被固定在传送带上，经过一系列自动执行的处决程序。系统每天处理二十人。今天传送带上的人看着你，眼神清醒而恐惧。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "执行维护任务",
+          "effects": {
+            "MONEY": 6000,
+            "TRAUMA": 6,
+            "HUMAN": -5,
+            "REP": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "制造故障拖延时间",
+          "effects": {
+            "TECH": 4,
+            "REP": 4,
+            "TRAUMA": 4,
+            "MONEY": -1000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "破坏系统放走所有人",
+          "effects": {
+            "REP": 8,
+            "TRAUMA": 6,
+            "MONEY": -4000,
+            "LIFE": -3
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "安保",
+        "处决"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5098,
+      "title": "记忆扫描审问",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "description": "你操作一台可以直接扫描嫌疑人记忆的设备。设备会提取所有相关记忆并在屏幕上播放。今天的嫌疑人是一个被指控窃取商业机密的年轻工程师。扫描显示他是无辜的，但上级要求你'调整'结果。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "篡改扫描结果",
+          "effects": {
+            "MONEY": 7000,
+            "TRAUMA": 5,
+            "HUMAN": -4,
+            "REP": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "保留真实结果",
+          "effects": {
+            "REP": 6,
+            "TRAUMA": 4,
+            "MONEY": -2000,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "帮助工程师逃脱",
+          "effects": {
+            "REP": 7,
+            "TRAUMA": 5,
+            "MONEY": -3000,
+            "LIFE": -2
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "安保",
+        "审问"
+      ],
+      "effects": {}
+    },
+    {
+      "id": 5099,
+      "title": "企业安保AI核心",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 14,
+      "description": "你潜入了一家企业安保系统的核心服务器室。这里控制着整座城市的企业安防网络：数百万摄像头、无人机、门禁和武器系统。你有权限重写 AI 的核心指令，但任何错误都可能让整座城市陷入混乱。",
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "关闭企业安保网络",
+          "effects": {
+            "TECH": 7,
+            "REP": 7,
+            "TRAUMA": 5,
+            "LIFE": -2,
+            "HUMAN": 5
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "植入后门供自己使用",
+          "effects": {
+            "TECH": 6,
+            "MONEY": 10000,
+            "TRAUMA": 4,
+            "REP": -2,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把核心控制权卖给最高出价者",
+          "effects": {
+            "MONEY": 20000,
+            "REP": -6,
+            "TRAUMA": 5,
+            "DEBT": 4
+          }
+        }
+      ],
+      "tags": [
+        "企业",
+        "安保",
+        "AI"
+      ],
+      "effects": {}
+    }
+  ]
+}

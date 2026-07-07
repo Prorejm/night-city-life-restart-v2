@@ -1,0 +1,3740 @@
+{
+"events": [
+{
+"id": 4600,
+"title": "凌晨的远程加班",
+"description": "你的神经接口闪烁着工作提醒，全息屏幕上堆满了未处理的代码模块。老板在另一个时区发来语音催促，AI助手自动帮你泡好了第三杯合成咖啡。窗外还是一片漆黑，只有你的公寓亮着惨白的屏幕光。",
+"type": "daily",
+"ageRange": [
+20,
+60
+],
+"weight": 10,
+"repeatable": true,
+"cooldown": 6,
+"branches": [
+{
+"id": "branch_1",
+"text": "继续加班赶进度",
+"effects": {
+"MONEY": 150,
+"TRAUMA": 1,
+"HUMAN": -1
+}
+},
+{
+"id": "branch_2",
+"text": "关掉系统假装没看见",
+"effects": {
+"REP": -1,
+"LIFE": 1
+}
+},
+{
+"id": "branch_3",
+"text": "用AI代写应付过去",
+"effects": {
+"TECH": 1,
+"REP": -1,
+"TRAUMA": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4601,
+"title": "全息会议的系统崩溃",
+"description": "你接入公司的全息会议室，虚拟化身刚坐下，整个系统就开始花屏。同事们的Avatar变成了一团扭曲的马赛克，CEO的声音像坏掉的收音机一样断断续续。IT部门说正在抢修，建议你重启神经接口。",
+"type": "daily",
+"ageRange": [
+20,
+65
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 7,
+"branches": [
+{
+"id": "branch_1",
+"text": "重启接口重新进入",
+"effects": {
+"TRAUMA": 1,
+"TECH": 1
+}
+},
+{
+"id": "branch_2",
+"text": "趁机溜去休息",
+"effects": {
+"LIFE": 1,
+"REP": -1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4602,
+"title": "AI同事抢了你的项目",
+"description": "公司新部署的AI员工在晨会上展示了一个方案，和你熬了三个通宵做的企划几乎一模一样，只是优化了百分之三十。主管表扬AI的效率，你的功劳被一笔带过。会议室里安静得可怕。",
+"type": "daily",
+"ageRange": [
+22,
+60
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 8,
+"branches": [
+{
+"id": "branch_1",
+"text": "据理力争讨说法",
+"effects": {
+"REP": -1,
+"TRAUMA": 2,
+"HUMAN": -1
+}
+},
+{
+"id": "branch_2",
+"text": "沉默接受找下家",
+"effects": {
+"TRAUMA": 1,
+"HUMAN": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4603,
+"title": "数字劳动平台的压榨",
+"description": "你是一名众包数据标注员，今天的任务是给十万张赛博义体照片打标签。平台算法根据你的速度动态降低单价，手快如你也追不上不断下滑的报酬。眼睛酸涩，颈椎僵硬，计时器还在跳动。",
+"type": "daily",
+"ageRange": [
+18,
+55
+],
+"weight": 10,
+"repeatable": true,
+"cooldown": 5,
+"branches": [
+{
+"id": "branch_1",
+"text": "硬撑着完成配额",
+"effects": {
+"MONEY": 80,
+"TRAUMA": 1,
+"LIFE": -1
+}
+},
+{
+"id": "branch_2",
+"text": "只做最低保底量",
+"effects": {
+"MONEY": 40,
+"HUMAN": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4604,
+"title": "深夜加班的幻觉",
+"description": "已经连续工作十六个小时，全息屏幕上的代码开始扭曲变形，像一群游动的鱼。你的神经接口发出低电量警告，合成咖啡在胃里翻涌。某个瞬间，你分不清屏幕上的是代码还是自己的记忆碎片。",
+"type": "daily",
+"ageRange": [
+20,
+60
+],
+"weight": 8,
+"repeatable": true,
+"cooldown": 8,
+"branches": [
+{
+"id": "branch_1",
+"text": "灌下能量饮料继续干",
+"effects": {
+"MONEY": -20,
+"ADDICTION": 2,
+"TRAUMA": 1
+}
+},
+{
+"id": "branch_2",
+"text": "强制关机睡觉",
+"effects": {
+"TRAUMA": 1,
+"LIFE": 2
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4605,
+"title": "公司监控眼发现你摸鱼",
+"description": "办公室天花板的监控眼转动了一下，红色的激光点停在你的工位上。你刚偷偷刷了两分钟社交网络，内部通讯就弹出一条警告：检测到工作效率异常。HR约你下午谈话。",
+"type": "daily",
+"ageRange": [
+20,
+60
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 6,
+"branches": [
+{
+"id": "branch_1",
+"text": "老老实实去谈话",
+"effects": {
+"TRAUMA": 1,
+"REP": -1
+}
+},
+{
+"id": "branch_2",
+"text": "花钱找黑客删记录",
+"effects": {
+"MONEY": -200,
+"TECH": 1,
+"REP": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4606,
+"title": "被算法优化的裁员名单",
+"description": "公司宣布启用AI进行人员优化，你的绩效评分被算法评为B-，刚好在裁员线边缘。AI给出的理由是技能匹配度下降，建议转岗或接受培训。你的工牌在终端上闪了闪，权限被临时冻结。",
+"type": "daily",
+"ageRange": [
+25,
+60
+],
+"weight": 8,
+"repeatable": true,
+"cooldown": 9,
+"branches": [
+{
+"id": "branch_1",
+"text": "接受降薪转岗",
+"effects": {
+"MONEY": -300,
+"TRAUMA": 2,
+"HUMAN": -1
+}
+},
+{
+"id": "branch_2",
+"text": "争取申诉机会",
+"effects": {
+"TECH": 1,
+"REP": 1,
+"TRAUMA": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4607,
+"title": "脑机接口办公的副作用",
+"description": "公司强制升级了最新版脑机办公系统，你感觉思绪总是被后台进程打断。注意力像被撕碎的纸片，飘得到处都是。 neurologist说这是新系统的兼容性问题，建议休息。公司说适应期正常。",
+"type": "daily",
+"ageRange": [
+22,
+55
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 7,
+"branches": [
+{
+"id": "branch_1",
+"text": "咬牙适应新系统",
+"effects": {
+"TECH": 2,
+"TRAUMA": 1,
+"HUMAN": -1
+}
+},
+{
+"id": "branch_2",
+"text": "申请调回旧系统",
+"effects": {
+"REP": -1,
+"HUMAN": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4608,
+"title": "全息协作空间的虚拟霸凌",
+"description": "你登录团队的虚拟协作空间，发现自己的虚拟工位被同事恶意装饰成垃圾堆，Avatar也被改成了小丑形象。私聊里塞满了匿名嘲讽，全息公告板上贴满了你的糗事截图。",
+"type": "daily",
+"ageRange": [
+18,
+50
+],
+"weight": 8,
+"repeatable": true,
+"cooldown": 8,
+"branches": [
+{
+"id": "branch_1",
+"text": "向主管举报",
+"effects": {
+"TRAUMA": 1,
+"REP": 1,
+"HUMAN": -1
+}
+},
+{
+"id": "branch_2",
+"text": "用技术手段反击",
+"effects": {
+"TECH": 2,
+"REP": -1,
+"TRAUMA": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4609,
+"title": "远程办公的孤独症",
+"description": "你已经三周没有踏出家门，所有工作都在神经接口里完成。AI助手是你唯一的对话者，外卖无人机是你唯一见过的活物。社交技能像生锈的齿轮，连视频通话都开始让你焦虑。",
+"type": "daily",
+"ageRange": [
+22,
+60
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 7,
+"branches": [
+{
+"id": "branch_1",
+"text": "强迫自己出门走走",
+"effects": {
+"HUMAN": 2,
+"LIFE": 1,
+"TRAUMA": 1
+}
+},
+{
+"id": "branch_2",
+"text": "用VR社交代替",
+"effects": {
+"ADDICTION": 1,
+"HUMAN": -1,
+"TECH": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4610,
+"title": "AI面试官的灵魂拷问",
+"description": "你正在参加一场AI主导的面试，它的算法能实时分析你的微表情和脑波。它问了一个你答不上来的问题，屏幕上的信任指数直线下降。它用合成音说：建议候选人加强情感模块训练。",
+"type": "daily",
+"ageRange": [
+20,
+50
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 8,
+"branches": [
+{
+"id": "branch_1",
+"text": "诚恳承认不足",
+"effects": {
+"HUMAN": 1,
+"TRAUMA": 1
+}
+},
+{
+"id": "branch_2",
+"text": "植入情绪稳定芯片",
+"effects": {
+"CHROME": 1,
+"MONEY": -250,
+"REP": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4611,
+"title": "数字游民的WiFi断了",
+"description": "你正在赶一个死线项目，公寓的宽带突然断开。手机热点流量用完，楼下的公共WiFi被黑客劫持。你的客户在三小时后等交付，整个城市的网络似乎都和你作对。",
+"type": "daily",
+"ageRange": [
+20,
+55
+],
+"weight": 10,
+"repeatable": true,
+"cooldown": 6,
+"branches": [
+{
+"id": "branch_1",
+"text": "去网咖高价上网",
+"effects": {
+"MONEY": -80,
+"TECH": 1,
+"TRAUMA": 1
+}
+},
+{
+"id": "branch_2",
+"text": "手机离线先写方案",
+"effects": {
+"HUMAN": 1,
+"TECH": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4612,
+"title": "公司发放绩效芯片",
+"description": "年度考核结束，公司给高绩效员工发放了神经增强芯片，植入后可提升百分之二十的工作效率。你恰好卡在及格线上，芯片名单里没有你。获奖同事的眼中闪烁着不属于人类的光。",
+"type": "daily",
+"ageRange": [
+22,
+55
+],
+"weight": 8,
+"repeatable": true,
+"cooldown": 9,
+"branches": [
+{
+"id": "branch_1",
+"text": "自己花钱买一个",
+"effects": {
+"MONEY": -500,
+"CHROME": 2,
+"ADDICTION": 1
+}
+},
+{
+"id": "branch_2",
+"text": "拒绝这种赛博内卷",
+"effects": {
+"HUMAN": 2,
+"REP": -1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4613,
+"title": "虚拟化身在会议上出糗",
+"description": "你的虚拟化身在全息会议上突然故障，身体模型开始不受控制地抽搐，面部贴图也崩成了诡异的几何图形。五十多个同事看着你扭曲的Avatar笑出声，CEO皱着眉关掉了你的麦克风。",
+"type": "daily",
+"ageRange": [
+20,
+60
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 6,
+"branches": [
+{
+"id": "branch_1",
+"text": "重启化身系统重连",
+"effects": {
+"TECH": 1,
+"TRAUMA": 1,
+"HUMAN": -1
+}
+},
+{
+"id": "branch_2",
+"text": "直接语音参会",
+"effects": {
+"HUMAN": 1,
+"REP": -1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4614,
+"title": "数据搬砖的颈椎警告",
+"description": "你连续十小时保持同一姿势盯着全息屏，颈椎植入的监测芯片发出尖锐警报：椎间盘突出风险百分之八十七。医疗AI建议立即休息并预约理疗，但项目进度条还差百分之四十。",
+"type": "daily",
+"ageRange": [
+22,
+60
+],
+"weight": 10,
+"repeatable": true,
+"cooldown": 5,
+"branches": [
+{
+"id": "branch_1",
+"text": "硬撑着做完",
+"effects": {
+"TRAUMA": 2,
+"LIFE": -1,
+"MONEY": 100
+}
+},
+{
+"id": "branch_2",
+"text": "暂停工作去理疗",
+"effects": {
+"MONEY": -150,
+"LIFE": 2,
+"HUMAN": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4615,
+"title": "AI主管的凌晨通知",
+"description": "凌晨三点，你的神经接口被强制唤醒，AI主管用冷静的声音通知你：紧急Bug需要立即修复，客户正在全球直播。你的视网膜投影上跳动着红色的错误代码，床边的咖啡机自动开始工作。",
+"type": "daily",
+"ageRange": [
+20,
+55
+],
+"weight": 8,
+"repeatable": true,
+"cooldown": 8,
+"branches": [
+{
+"id": "branch_1",
+"text": "爬起来处理",
+"effects": {
+"MONEY": 200,
+"TRAUMA": 2,
+"LIFE": -1
+}
+},
+{
+"id": "branch_2",
+"text": "装死等天亮了再说",
+"effects": {
+"REP": -2,
+"TRAUMA": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4616,
+"title": "技能证书过期被降薪",
+"description": "你的网络安全认证在昨天凌晨到期，公司系统自动触发了降薪流程。HR发了一封格式化的邮件，说补考费用自理，补考期间薪资按实习标准发放。你的账户余额瞬间缩水三分之一。",
+"type": "daily",
+"ageRange": [
+25,
+60
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 7,
+"branches": [
+{
+"id": "branch_1",
+"text": "花钱补考续证",
+"effects": {
+"MONEY": -400,
+"TECH": 1,
+"TRAUMA": 1
+}
+},
+{
+"id": "branch_2",
+"text": "找黑市买假证",
+"effects": {
+"MONEY": -150,
+"DEBT": 1,
+"TRAUMA": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4617,
+"title": "新同事是仿真机器人",
+"description": "部门来了一个新同事，外形完美、从不疲惫、工作零失误。三周后你才发现它是公司新推的仿生人HR，专门用来树立标杆。真正的同事们在茶水间抱怨：以后连摸鱼都不敢了。",
+"type": "daily",
+"ageRange": [
+20,
+55
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 6,
+"branches": [
+{
+"id": "branch_1",
+"text": "向它学习提高效率",
+"effects": {
+"TECH": 1,
+"HUMAN": -1,
+"TRAUMA": 1
+}
+},
+{
+"id": "branch_2",
+"text": "团结人类同事抗议",
+"effects": {
+"HUMAN": 2,
+"REP": 1,
+"TRAUMA": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4618,
+"title": "全息工位的隐私泄露",
+"description": "你在全息工位上处理一份私人文件，没注意到屏幕共享还开着。全组同事都看到了你的医疗报告和银行账单，私聊群里瞬间炸锅。尴尬像电流一样穿过你的脊椎。",
+"type": "daily",
+"ageRange": [
+20,
+55
+],
+"weight": 8,
+"repeatable": true,
+"cooldown": 8,
+"branches": [
+{
+"id": "branch_1",
+"text": "尴尬地解释并道歉",
+"effects": {
+"TRAUMA": 2,
+"HUMAN": -1,
+"REP": -1
+}
+},
+{
+"id": "branch_2",
+"text": "假装什么都没发生",
+"effects": {
+"TRAUMA": 1,
+"HUMAN": -1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4619,
+"title": "项目deadline前的大停电",
+"description": "距离项目交付还有四小时，整栋大楼突然断电，你的全息屏和数据全部消失。应急灯亮起惨绿的光，远处传来人群的咒骂声。你的本地备份在上周就坏了，云端同步还剩百分之三十。",
+"type": "daily",
+"ageRange": [
+20,
+55
+],
+"weight": 8,
+"repeatable": true,
+"cooldown": 9,
+"branches": [
+{
+"id": "branch_1",
+"text": "用手机热点和笔记本抢救",
+"effects": {
+"TECH": 2,
+"TRAUMA": 1,
+"MONEY": 50
+}
+},
+{
+"id": "branch_2",
+"text": "如实告知客户延期",
+"effects": {
+"REP": -1,
+"TRAUMA": 1,
+"HUMAN": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4620,
+"title": "神经接口广告轰炸",
+"description": "你正在专注写代码，神经接口突然弹出一条全屏广告：升级您的脑机芯片，提升工作效率百分之三百。广告直接绕过屏蔽器，在你的视觉皮层上循环播放促销视频。",
+"type": "daily",
+"ageRange": [
+20,
+60
+],
+"weight": 10,
+"repeatable": true,
+"cooldown": 5,
+"branches": [
+{
+"id": "branch_1",
+"text": "花钱购买去广告插件",
+"effects": {
+"MONEY": -120,
+"TECH": 1,
+"HUMAN": 1
+}
+},
+{
+"id": "branch_2",
+"text": "手动关闭继续工作",
+"effects": {
+"TRAUMA": 1,
+"HUMAN": -1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4621,
+"title": "被优化的重复劳动",
+"description": "公司宣布你负责的数据录入工作将全部由AI接手，你的岗位被重新定义为AI监督员，但薪资砍了一半。培训手册上写着：学会与AI协作是新时代职场必备技能。",
+"type": "daily",
+"ageRange": [
+25,
+60
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 7,
+"branches": [
+{
+"id": "branch_1",
+"text": "接受培训适应新角色",
+"effects": {
+"TECH": 1,
+"MONEY": -200,
+"TRAUMA": 1
+}
+},
+{
+"id": "branch_2",
+"text": "拒绝并准备跳槽",
+"effects": {
+"HUMAN": 1,
+"TRAUMA": 2,
+"REP": -1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4622,
+"title": "虚拟办公室的社交压力",
+"description": "公司要求每天在全虚拟办公室打卡满八小时，你的虚拟化身必须坐在虚拟工位上，周围同事的全息投影各忙各的。没人说话，没人对视，只有键盘敲击的合成音效在空旷的虚拟空间里回响。",
+"type": "daily",
+"ageRange": [
+20,
+55
+],
+"weight": 10,
+"repeatable": true,
+"cooldown": 6,
+"branches": [
+{
+"id": "branch_1",
+"text": "挂在后台假装在线",
+"effects": {
+"REP": -1,
+"TRAUMA": 1
+}
+},
+{
+"id": "branch_2",
+"text": "主动发起虚拟茶歇",
+"effects": {
+"HUMAN": 2,
+"TRAUMA": 1,
+"REP": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4623,
+"title": "黑客入侵公司内网",
+"description": "你正在处理客户数据，突然屏幕上弹出一条红色警告：内网遭受勒索病毒攻击，所有文件被加密。IT部门全员出动，老板的脸在全息屏上扭曲变形。你的项目文件也没逃过一劫。",
+"type": "daily",
+"ageRange": [
+20,
+55
+],
+"weight": 8,
+"repeatable": true,
+"cooldown": 9,
+"branches": [
+{
+"id": "branch_1",
+"text": "尝试自己解密文件",
+"effects": {
+"TECH": 2,
+"TRAUMA": 2,
+"MONEY": 50
+}
+},
+{
+"id": "branch_2",
+"text": "等IT部门解决",
+"effects": {
+"TRAUMA": 1,
+"LIFE": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4624,
+"title": "AI绩效考核的不公",
+"description": "AI绩效系统给你打了全场最低分，理由是代码提交频率不足。但那是因为你花了一周帮同事解决了一个关键Bug，没空提交自己的代码。AI不懂协作，只认数据。",
+"type": "daily",
+"ageRange": [
+22,
+55
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 7,
+"branches": [
+{
+"id": "branch_1",
+"text": "提交申诉材料",
+"effects": {
+"HUMAN": 1,
+"REP": 1,
+"TRAUMA": 1
+}
+},
+{
+"id": "branch_2",
+"text": "默默接受找新工作",
+"effects": {
+"TRAUMA": 2,
+"HUMAN": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4625,
+"title": "脑波同步会议",
+"description": "公司引入了脑波同步技术，会议中所有人的思维会部分共享。你能隐约感受到同事们的焦虑、厌烦和隐藏的竞争意识。CEO的想法像冰冷的刀片一样划过你的意识。",
+"type": "daily",
+"ageRange": [
+22,
+55
+],
+"weight": 8,
+"repeatable": true,
+"cooldown": 8,
+"branches": [
+{
+"id": "branch_1",
+"text": "全力隐藏自己的真实想法",
+"effects": {
+"TRAUMA": 2,
+"HUMAN": -1
+}
+},
+{
+"id": "branch_2",
+"text": "坦诚参与放开思维",
+"effects": {
+"HUMAN": 1,
+"TRAUMA": 2,
+"REP": -1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4626,
+"title": "数字遗产继承",
+"description": "一位老同事突发脑溢血去世，公司要求你接手他的数字工作遗产：几百个未归档的项目文件、加密的工作日志和一堆未回复的客户邮件。他的虚拟化身还在系统里，偶尔自动回复消息。",
+"type": "daily",
+"ageRange": [
+25,
+60
+],
+"weight": 8,
+"repeatable": true,
+"cooldown": 9,
+"branches": [
+{
+"id": "branch_1",
+"text": "认真整理交接",
+"effects": {
+"TRAUMA": 2,
+"TECH": 1,
+"HUMAN": -1
+}
+},
+{
+"id": "branch_2",
+"text": "批量归档不再看",
+"effects": {
+"TRAUMA": 1,
+"HUMAN": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4627,
+"title": "被迫培训AI替代自己",
+"description": "公司安排你参加一个特殊培训：教你如何训练一个AI来取代你现在的岗位。讲师是个笑容标准的机器人，说这叫职业技能传承。你的同事们坐在旁边，脸色一个比一个难看。",
+"type": "daily",
+"ageRange": [
+25,
+60
+],
+"weight": 8,
+"repeatable": true,
+"cooldown": 9,
+"branches": [
+{
+"id": "branch_1",
+"text": "认真学争取内部转岗",
+"effects": {
+"TECH": 2,
+"TRAUMA": 2,
+"HUMAN": -1
+}
+},
+{
+"id": "branch_2",
+"text": "故意教错让AI学歪",
+"effects": {
+"TRAUMA": 1,
+"REP": -2,
+"HUMAN": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4628,
+"title": "神经疲劳的强制休假",
+"description": "你的神经接口监测到你连续工作三十天，触发了公司强制休假协议。系统自动锁定了你的工作权限，AI医生给你开了一周的心理修复疗程。账户停止进账，但房租还在扣。",
+"type": "daily",
+"ageRange": [
+25,
+55
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 8,
+"branches": [
+{
+"id": "branch_1",
+"text": "接受休假去做修复",
+"effects": {
+"LIFE": 2,
+"HUMAN": 1,
+"MONEY": -100
+}
+},
+{
+"id": "branch_2",
+"text": "找黑市绕过限制继续干",
+"effects": {
+"TECH": 1,
+"TRAUMA": 2,
+"ADDICTION": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4629,
+"title": "全息投影仪烧坏视网膜",
+"description": "你连续八小时盯着高亮度的全息投影工作，突然眼前一黑，视网膜投影芯片过热报警。视野里残留着刺眼的色块，像有人把颜料泼进了你的眼睛。医生说这是过劳用眼的典型症状。",
+"type": "daily",
+"ageRange": [
+20,
+50
+],
+"weight": 8,
+"repeatable": true,
+"cooldown": 8,
+"branches": [
+{
+"id": "branch_1",
+"text": "花钱换新的视网膜芯片",
+"effects": {
+"MONEY": -600,
+"CHROME": 2,
+"TRAUMA": 1
+}
+},
+{
+"id": "branch_2",
+"text": "戴护目镜继续用旧芯片",
+"effects": {
+"TRAUMA": 1,
+"HUMAN": -1,
+"LIFE": -1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4630,
+"title": "客户的无理需求",
+"description": "客户在凌晨发来消息，要求把已经确认的设计全部推翻重来，理由是看了竞争对手的方案觉得不够酷。他的语气像上帝在发话，还附带一句：天亮前要看到新版本，钱不是问题。",
+"type": "daily",
+"ageRange": [
+20,
+55
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 7,
+"branches": [
+{
+"id": "branch_1",
+"text": "通宵重做",
+"effects": {
+"MONEY": 300,
+"TRAUMA": 2,
+"LIFE": -1
+}
+},
+{
+"id": "branch_2",
+"text": "礼貌拒绝维护边界",
+"effects": {
+"REP": 1,
+"HUMAN": 1,
+"MONEY": -50
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4631,
+"title": "虚拟水冷间的八卦",
+"description": "你在虚拟办公室的休息区倒水，听到几个同事的化身在角落窃窃私语。他们在讨论下一轮裁员名单，提到了你的名字。虚拟空间里没有真正的隐私，你不知道自己该不该走过去。",
+"type": "daily",
+"ageRange": [
+22,
+55
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 6,
+"branches": [
+{
+"id": "branch_1",
+"text": "装作路过偷听",
+"effects": {
+"TRAUMA": 2,
+"HUMAN": -1
+}
+},
+{
+"id": "branch_2",
+"text": "直接过去打招呼",
+"effects": {
+"HUMAN": 1,
+"REP": 1,
+"TRAUMA": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4632,
+"title": "AI写的代码出了Bug",
+"description": "你们组开始用AI辅助写代码，结果上线后系统崩溃，排查发现AI在注释里藏了一个逻辑炸弹。更讽刺的是，Bug报告上写的负责人是你的名字，因为是你点的生成按钮。",
+"type": "daily",
+"ageRange": [
+22,
+55
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 7,
+"branches": [
+{
+"id": "branch_1",
+"text": "熬夜修复并写检讨",
+"effects": {
+"TECH": 2,
+"TRAUMA": 1,
+"REP": -1
+}
+},
+{
+"id": "branch_2",
+"text": "把锅甩给AI供应商",
+"effects": {
+"REP": 1,
+"TRAUMA": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4633,
+"title": "竞业协议的陷阱",
+"description": "你想跳槽到一家更好的公司，HR提醒你签过三年的竞业协议，违约金是你年薪的五倍。协议条款藏在入职合同的第七十三页，当时你根本没想到会有今天。新公司的Offer在桌上发烫。",
+"type": "daily",
+"ageRange": [
+25,
+55
+],
+"weight": 8,
+"repeatable": true,
+"cooldown": 9,
+"branches": [
+{
+"id": "branch_1",
+"text": "花钱找律师打官司",
+"effects": {
+"MONEY": -800,
+"HUMAN": 1,
+"TRAUMA": 2
+}
+},
+{
+"id": "branch_2",
+"text": "忍痛放弃Offer",
+"effects": {
+"TRAUMA": 3,
+"HUMAN": -1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4634,
+"title": "公司的忠诚度测试",
+"description": "公司内部邮件发来一份匿名问卷，问你对公司文化和管理层的真实看法。你后来才知道这是AI设计的忠诚度测试，凡是回答负面的员工都被列入了观察名单。你的回答恰好被判定为中风险。",
+"type": "daily",
+"ageRange": [
+20,
+55
+],
+"weight": 8,
+"repeatable": true,
+"cooldown": 8,
+"branches": [
+{
+"id": "branch_1",
+"text": "找主管解释",
+"effects": {
+"TRAUMA": 1,
+"REP": -1
+}
+},
+{
+"id": "branch_2",
+"text": "准备骑驴找马",
+"effects": {
+"HUMAN": 1,
+"TECH": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4635,
+"title": "全息白板的创意被盗",
+"description": "你在全息白板上画了一个创意草图，第二天发现它被另一个同事拿去汇报，还署了他的名。白板系统有记录，但对方说那是巧合。主管表扬了他，你只是坐在角落里鼓掌。",
+"type": "daily",
+"ageRange": [
+20,
+50
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 7,
+"branches": [
+{
+"id": "branch_1",
+"text": "拿出系统记录对质",
+"effects": {
+"REP": 1,
+"TRAUMA": 2,
+"HUMAN": -1
+}
+},
+{
+"id": "branch_2",
+"text": "忍气吞声下次小心",
+"effects": {
+"TRAUMA": 1,
+"HUMAN": -1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4636,
+"title": "远程监控下的如厕",
+"description": "公司发了一个智能手环，说用来监测员工健康。但你发现它连你的如厕时间和心率都上传给了HR系统。昨天你多蹲了五分钟，今天就收到AI提醒：建议优化生理时间管理。",
+"type": "daily",
+"ageRange": [
+20,
+55
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 6,
+"branches": [
+{
+"id": "branch_1",
+"text": "找技术部黑掉手环",
+"effects": {
+"TECH": 2,
+"REP": -1,
+"TRAUMA": 1
+}
+},
+{
+"id": "branch_2",
+"text": "默默忍受假装健康",
+"effects": {
+"TRAUMA": 1,
+"HUMAN": -1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4637,
+"title": "跨时区会议的身体惩罚",
+"description": "你的团队分布在全球四个时区，为了照顾美国同事，你的会议排在了凌晨两点。连续一周后，你的生物钟彻底崩溃，白天昏沉晚上清醒，神经接口的睡眠辅助模块也失灵了。",
+"type": "daily",
+"ageRange": [
+22,
+55
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 7,
+"branches": [
+{
+"id": "branch_1",
+"text": "买强效安眠药硬调作息",
+"effects": {
+"MONEY": -100,
+"ADDICTION": 2,
+"TRAUMA": 1
+}
+},
+{
+"id": "branch_2",
+"text": "申请调到其他项目",
+"effects": {
+"REP": -1,
+"HUMAN": 1,
+"TRAUMA": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4638,
+"title": "AI情感劳动的侵蚀",
+"description": "你的工作是扮演AI客服的情感陪聊模块，每天要处理上千条用户的负面情绪。悲伤、愤怒、绝望像污水一样灌进你的神经接口，下班后你自己的情绪也变得麻木浑浊。",
+"type": "daily",
+"ageRange": [
+20,
+50
+],
+"weight": 8,
+"repeatable": true,
+"cooldown": 8,
+"branches": [
+{
+"id": "branch_1",
+"text": "定期做心理疏导",
+"effects": {
+"MONEY": -200,
+"HUMAN": 1,
+"TRAUMA": -1
+}
+},
+{
+"id": "branch_2",
+"text": "用酒精麻痹自己",
+"effects": {
+"MONEY": -60,
+"ADDICTION": 2,
+"HUMAN": -1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4639,
+"title": "最后一班地铁上的加班族",
+"description": "凌晨一点的地铁上挤满了和你一样刚下班的人，每个人的脸都被手机屏幕的蓝光映得惨白。有人靠着栏杆睡着了，有人还在用神经接口回复工作消息。车厢广播说列车即将通过维护区段。",
+"type": "daily",
+"ageRange": [
+20,
+55
+],
+"weight": 10,
+"repeatable": true,
+"cooldown": 5,
+"branches": [
+{
+"id": "branch_1",
+"text": "趁机眯一会儿",
+"effects": {
+"TRAUMA": 1,
+"LIFE": 1
+}
+},
+{
+"id": "branch_2",
+"text": "继续回消息",
+"effects": {
+"MONEY": 50,
+"TRAUMA": 1,
+"HUMAN": -1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"工作"
+]
+},
+{
+"id": 4640,
+"title": "磁悬浮飞车的急刹车",
+"description": "你乘坐的磁悬浮飞车在高架上突然急刹，惯性把你的身体狠狠甩向前方。安全带勒得肋骨生疼，前排乘客的咖啡洒了一地。广播说前方发生多车追尾，预计延误四十分钟。",
+"type": "daily",
+"ageRange": [
+16,
+70
+],
+"weight": 10,
+"repeatable": true,
+"cooldown": 6,
+"branches": [
+{
+"id": "branch_1",
+"text": "耐心等待通车",
+"effects": {
+"TRAUMA": 1,
+"HUMAN": 1
+}
+},
+{
+"id": "branch_2",
+"text": "叫无人机出租车改道",
+"effects": {
+"MONEY": -120,
+"TRAUMA": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"交通"
+]
+},
+{
+"id": 4641,
+"title": "地铁隧道里的停电",
+"description": "地铁行驶到隧道中段，灯光突然全部熄灭，车厢陷入伸手不见五指的黑暗。应急灯迟迟不亮，空调也停了，空气变得闷热浑浊。有人开始尖叫，孩子的哭声在黑暗里回荡。",
+"type": "daily",
+"ageRange": [
+16,
+70
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 8,
+"branches": [
+{
+"id": "branch_1",
+"text": "打开手机照明安抚他人",
+"effects": {
+"HUMAN": 2,
+"REP": 1,
+"TRAUMA": 1
+}
+},
+{
+"id": "branch_2",
+"text": "挤到门口准备逃生",
+"effects": {
+"TRAUMA": 2,
+"HUMAN": -1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"交通"
+]
+},
+{
+"id": 4642,
+"title": "无人机出租车的导航错乱",
+"description": "你叫的无人机出租车突然开始在城市上空兜圈子，导航AI不断重复：正在重新规划路线。下方的街道越来越陌生，贫民窟的霓虹灯和摩天楼的冷光交替闪过舷窗。",
+"type": "daily",
+"ageRange": [
+16,
+70
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 7,
+"branches": [
+{
+"id": "branch_1",
+"text": "手动接管操控",
+"effects": {
+"TECH": 2,
+"TRAUMA": 1,
+"HUMAN": 1
+}
+},
+{
+"id": "branch_2",
+"text": "强制降落步行",
+"effects": {
+"TRAUMA": 1,
+"LIFE": 1,
+"MONEY": -50
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"交通"
+]
+},
+{
+"id": 4643,
+"title": "飞车追尾事故",
+"description": "你驾驶的个人飞车在高架匝道上被后方一辆超速的跑车追尾，车身剧烈震动，警报声响成一片。对方车主是个全身义体的富家子弟，下车第一句话是：你知道我这车多少钱吗？",
+"type": "daily",
+"ageRange": [
+20,
+60
+],
+"weight": 8,
+"repeatable": true,
+"cooldown": 8,
+"branches": [
+{
+"id": "branch_1",
+"text": "报警处理走保险",
+"effects": {
+"TRAUMA": 1,
+"MONEY": -200,
+"HUMAN": 1
+}
+},
+{
+"id": "branch_2",
+"text": "对方全责但要私了",
+"effects": {
+"MONEY": 300,
+"TRAUMA": 1,
+"REP": -1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"交通"
+]
+},
+{
+"id": 4644,
+"title": "地铁安检的义体扫描",
+"description": "你过地铁安检门时，身上的非法改装芯片触发了警报。两个持枪的安保机器人围上来，要求你接受深度扫描。周围乘客纷纷侧目，有人已经掏出手机开始录像。",
+"type": "daily",
+"ageRange": [
+18,
+60
+],
+"weight": 8,
+"repeatable": true,
+"cooldown": 9,
+"branches": [
+{
+"id": "branch_1",
+"text": "配合检查解释清楚",
+"effects": {
+"TRAUMA": 2,
+"REP": -1
+}
+},
+{
+"id": "branch_2",
+"text": "趁乱转身逃走",
+"effects": {
+"REP": -3,
+"DEBT": 1,
+"TRAUMA": 2
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"交通"
+]
+},
+{
+"id": 4645,
+"title": "隧道坍塌被困",
+"description": "你开车经过一条海底隧道，前方突然传来轰隆巨响，尘土和碎石从头顶倾泻而下。塌方堵死了去路，车载信号也断了。黑暗中只有应急灯的绿光和你的心跳声。",
+"type": "daily",
+"ageRange": [
+18,
+65
+],
+"weight": 7,
+"repeatable": true,
+"cooldown": 10,
+"branches": [
+{
+"id": "branch_1",
+"text": "用工具尝试清理通道",
+"effects": {
+"TECH": 1,
+"LIFE": 1,
+"TRAUMA": 2
+}
+},
+{
+"id": "branch_2",
+"text": "留在车里等救援",
+"effects": {
+"TRAUMA": 2,
+"HUMAN": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"交通"
+]
+},
+{
+"id": 4646,
+"title": "飞车被交通AI拦截",
+"description": "你的飞车仪表盘突然变红，交通管控AI锁定了你的车辆，强制降速靠边。屏幕上显示你涉嫌违规变道，罚款三百并扣两分。但你明明记得那个变道是系统推荐的。",
+"type": "daily",
+"ageRange": [
+20,
+65
+],
+"weight": 10,
+"repeatable": true,
+"cooldown": 5,
+"branches": [
+{
+"id": "branch_1",
+"text": "乖乖交罚款",
+"effects": {
+"MONEY": -300,
+"TRAUMA": 1
+}
+},
+{
+"id": "branch_2",
+"text": "申诉是系统误导",
+"effects": {
+"TECH": 1,
+"TRAUMA": 1,
+"HUMAN": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"交通"
+]
+},
+{
+"id": 4647,
+"title": "地铁里的神经小偷",
+"description": "早高峰的地铁上，你被挤在一群陌生人中间。突然神经接口一阵刺痛，你发现自己的数字钱包被黑了一小笔。贼人早已消失在车厢的洪流中，地铁监控永远拍不到脸。",
+"type": "daily",
+"ageRange": [
+18,
+60
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 7,
+"branches": [
+{
+"id": "branch_1",
+"text": "加强防火墙并报警",
+"effects": {
+"MONEY": -50,
+"TECH": 1,
+"TRAUMA": 1
+}
+},
+{
+"id": "branch_2",
+"text": "自认倒霉升级安全芯片",
+"effects": {
+"MONEY": -250,
+"CHROME": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"交通"
+]
+},
+{
+"id": 4648,
+"title": "飞车失控冲向贫民窟",
+"description": "你的飞车自动驾驶系统突然故障，方向盘不受控制，飞车开始朝下方的贫民窟俯冲。警报声刺穿耳膜，HUD屏幕上疯狂闪烁着警告信息。贫民窟的棚户在视野里急速放大。",
+"type": "daily",
+"ageRange": [
+20,
+60
+],
+"weight": 7,
+"repeatable": true,
+"cooldown": 10,
+"branches": [
+{
+"id": "branch_1",
+"text": "紧急切换到手动模式",
+"effects": {
+"TECH": 2,
+"TRAUMA": 3,
+"LIFE": -1
+}
+},
+{
+"id": "branch_2",
+"text": "启动紧急弹射逃生",
+"effects": {
+"MONEY": -800,
+"TRAUMA": 2,
+"LIFE": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"交通"
+]
+},
+{
+"id": 4649,
+"title": "共享单车被植入病毒",
+"description": "你扫了一辆共享单车，刚骑上就发现车把的触控屏疯狂闪烁，你的手机也开始卡顿。车锁无法关闭，定位系统把你往反方向导航。路边的人看着你在原地打转，笑出声来。",
+"type": "daily",
+"ageRange": [
+16,
+55
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 6,
+"branches": [
+{
+"id": "branch_1",
+"text": "强行断电并报告",
+"effects": {
+"TECH": 1,
+"TRAUMA": 1,
+"HUMAN": 1
+}
+},
+{
+"id": "branch_2",
+"text": "弃车离开不管了",
+"effects": {
+"MONEY": -30,
+"REP": -1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"交通"
+]
+},
+{
+"id": 4650,
+"title": "地铁列车员是AI投影",
+"description": "你抬头看列车员室，发现里面空无一人，只有一个全息投影在重复播报站点。旁边的大爷跟你搭话，说他坐了二十年地铁，现在连列车员都省了。车厢在隧道里摇晃，投影微微扭曲。",
+"type": "daily",
+"ageRange": [
+16,
+70
+],
+"weight": 10,
+"repeatable": true,
+"cooldown": 5,
+"branches": [
+{
+"id": "branch_1",
+"text": "跟大爷聊几句",
+"effects": {
+"HUMAN": 2,
+"TRAUMA": 1
+}
+},
+{
+"id": "branch_2",
+"text": "感叹时代变化拍照发圈",
+"effects": {
+"STYLE": 1,
+"ADDICTION": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"交通"
+]
+},
+{
+"id": 4651,
+"title": "高架上空的飞车追逐",
+"description": "你正开车在高架上，后方突然冲来几辆飞车，警笛声和引擎轰鸣交织在一起。它们在车道间疯狂穿梭，一架警用无人机差点撞到你的车顶。你死死握住方向盘不敢乱动。",
+"type": "daily",
+"ageRange": [
+20,
+60
+],
+"weight": 8,
+"repeatable": true,
+"cooldown": 8,
+"branches": [
+{
+"id": "branch_1",
+"text": "靠边停车避险",
+"effects": {
+"TRAUMA": 2,
+"LIFE": 1
+}
+},
+{
+"id": "branch_2",
+"text": "加速离开是非之地",
+"effects": {
+"TRAUMA": 1,
+"MONEY": -50
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"交通"
+]
+},
+{
+"id": 4652,
+"title": "渡轮上的全息风景",
+"description": "你乘坐跨海渡轮去上班，船舱四周的全息屏播放着虚拟海景，取代了真正的舷窗。有人抱怨说外面的真实海比这更好看，但船务公司说全息版不受天气影响。你看着虚假的浪花发呆。",
+"type": "daily",
+"ageRange": [
+16,
+65
+],
+"weight": 10,
+"repeatable": true,
+"cooldown": 5,
+"branches": [
+{
+"id": "branch_1",
+"text": "走到甲板看真海",
+"effects": {
+"HUMAN": 2,
+"LIFE": 1,
+"TRAUMA": 1
+}
+},
+{
+"id": "branch_2",
+"text": "坐在舱内享受虚拟风景",
+"effects": {
+"ADDICTION": 1,
+"HUMAN": -1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"交通"
+]
+},
+{
+"id": 4653,
+"title": "地铁车厢里的神经广告",
+"description": "地铁车厢的广播突然停止，取而代之的是一段直接传入你神经接口的广告：某义体诊所的促销信息。你无法屏蔽，无法关闭，只能任由推销语音在脑海里循环播放直到下一站。",
+"type": "daily",
+"ageRange": [
+16,
+70
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 6,
+"branches": [
+{
+"id": "branch_1",
+"text": "安装付费去广告插件",
+"effects": {
+"MONEY": -150,
+"TECH": 1,
+"HUMAN": 1
+}
+},
+{
+"id": "branch_2",
+"text": "忍到下一站再说",
+"effects": {
+"TRAUMA": 1,
+"ADDICTION": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"交通"
+]
+},
+{
+"id": 4654,
+"title": "飞车停车位被AI拍卖",
+"description": "你开车到公司楼下，发现平时停的车位被改成了AI动态拍卖系统，价高者得。你的月薪根本竞争不过那些开豪车的管理层，只能把车停到三条街外的廉价停车场。",
+"type": "daily",
+"ageRange": [
+22,
+60
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 6,
+"branches": [
+{
+"id": "branch_1",
+"text": "高价抢个近车位",
+"effects": {
+"MONEY": -200,
+"TRAUMA": 1,
+"STYLE": 1
+}
+},
+{
+"id": "branch_2",
+"text": "停到远处走路上班",
+"effects": {
+"LIFE": 1,
+"HUMAN": 1,
+"TRAUMA": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"交通"
+]
+},
+{
+"id": 4655,
+"title": "无人机堵车的绝望",
+"description": "城市上空突然实施无人机交通管制，成百上千的飞行器悬停在半空动弹不得。你的出租车夹在飞行器洪流中，下方是数百米的虚空。空调停了，阳光直射舱顶，你开始出汗。",
+"type": "daily",
+"ageRange": [
+18,
+65
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 7,
+"branches": [
+{
+"id": "branch_1",
+"text": "启动备用电源降温",
+"effects": {
+"MONEY": -30,
+"TRAUMA": 1,
+"LIFE": 1
+}
+},
+{
+"id": "branch_2",
+"text": "尝试低空绕行",
+"effects": {
+"TRAUMA": 2,
+"MONEY": -100
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"交通"
+]
+},
+{
+"id": 4656,
+"title": "地铁站的黑市交易",
+"description": "你在换乘通道里被一个戴兜帽的人拦住，他神秘兮兮地拉开外套，里面挂满了各种非法数据芯片和改装零件。监控摄像头在这个角落恰好是个死角，他压低声音说：兄弟，来点好货？",
+"type": "daily",
+"ageRange": [
+18,
+60
+],
+"weight": 8,
+"repeatable": true,
+"cooldown": 8,
+"branches": [
+{
+"id": "branch_1",
+"text": "买一块数据芯片",
+"effects": {
+"MONEY": -150,
+"TECH": 2,
+"DEBT": 1
+}
+},
+{
+"id": "branch_2",
+"text": "摇头快步离开",
+"effects": {
+"HUMAN": 1,
+"LIFE": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"交通"
+]
+},
+{
+"id": 4657,
+"title": "磁悬浮轨道的维修延误",
+"description": "你常坐的磁悬浮线路今天大面积维修，站台上挤满了抱怨的上班族。全息告示牌上滚动着道歉声明和预计恢复时间，但那时间每小时都在往后推。你看了看手表，会议已经开始十五分钟了。",
+"type": "daily",
+"ageRange": [
+18,
+60
+],
+"weight": 10,
+"repeatable": true,
+"cooldown": 5,
+"branches": [
+{
+"id": "branch_1",
+"text": "换乘其他线路绕路",
+"effects": {
+"MONEY": -40,
+"TRAUMA": 1
+}
+},
+{
+"id": "branch_2",
+"text": "叫高价飞车",
+"effects": {
+"MONEY": -200,
+"TRAUMA": 1,
+"STYLE": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"交通"
+]
+},
+{
+"id": 4658,
+"title": "网约车司机是退役义体兵",
+"description": "你叫的网约车司机是个满脸伤疤的退役老兵，右臂是军用级别的战斗义体。他一路上跟你讲他在边境战争的故事，声音沙哑而平静。车里的空气清新剂盖不住淡淡的机油味。",
+"type": "daily",
+"ageRange": [
+18,
+65
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 7,
+"branches": [
+{
+"id": "branch_1",
+"text": "认真听他讲完",
+"effects": {
+"HUMAN": 2,
+"TRAUMA": 1,
+"MONEY": -30
+}
+},
+{
+"id": "branch_2",
+"text": "沉默地看向窗外",
+"effects": {
+"TRAUMA": 1,
+"HUMAN": -1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"交通"
+]
+},
+{
+"id": 4659,
+"title": "飞车燃料耗尽迫降",
+"description": "你的飞车燃料指示灯已经红了十分钟，终于在一座立交桥上彻底熄火。车流从你旁边呼啸而过，你手忙脚乱地联系紧急救援。桥下是深不见底的城市裂缝，风从缝隙里往上灌。",
+"type": "daily",
+"ageRange": [
+20,
+60
+],
+"weight": 8,
+"repeatable": true,
+"cooldown": 8,
+"branches": [
+{
+"id": "branch_1",
+"text": "呼叫紧急拖车服务",
+"effects": {
+"MONEY": -350,
+"TRAUMA": 2
+}
+},
+{
+"id": "branch_2",
+"text": "拦车求人拖一段",
+"effects": {
+"HUMAN": 1,
+"TRAUMA": 1,
+"REP": -1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"交通"
+]
+},
+{
+"id": 4660,
+"title": "地铁隧道里的流浪者",
+"description": "地铁穿过一段未开发的老隧道，透过车窗你看到铁轨旁蜷缩着几个流浪者，他们用破布和纸箱搭着临时住所。一个孩子抬起头，与你的目光对视了一瞬，然后又低下头去。车厢里有人窃窃私语。",
+"type": "daily",
+"ageRange": [
+16,
+70
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 7,
+"branches": [
+{
+"id": "branch_1",
+"text": "下车给他们留点钱",
+"effects": {
+"MONEY": -50,
+"HUMAN": 3,
+"TRAUMA": 1
+}
+},
+{
+"id": "branch_2",
+"text": "装作没看见",
+"effects": {
+"HUMAN": -1,
+"TRAUMA": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"交通"
+]
+},
+{
+"id": 4661,
+"title": "飞车导航被黑客篡改",
+"description": "你的飞车导航突然被黑，屏幕上显示的目的地变成了一个你不认识的地址。飞车开始自主改变方向，朝城市边缘的废弃工业区飞去。你尝试夺回控制权，但方向盘被系统锁定了。",
+"type": "daily",
+"ageRange": [
+20,
+60
+],
+"weight": 8,
+"repeatable": true,
+"cooldown": 9,
+"branches": [
+{
+"id": "branch_1",
+"text": "紧急黑入系统夺回控制",
+"effects": {
+"TECH": 3,
+"TRAUMA": 2,
+"LIFE": -1
+}
+},
+{
+"id": "branch_2",
+"text": "准备跳车逃生",
+"effects": {
+"TRAUMA": 3,
+"HUMAN": 1,
+"LIFE": -1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"交通"
+]
+},
+{
+"id": 4662,
+"title": "共享飞车里的前任",
+"description": "你打开一辆共享飞车的舱门，发现里面坐着你的前任。空气瞬间凝固，两人面面相觑。AI系统还在热情地播报今日天气和推荐路线，仿佛什么都没发生。前任移开了目光。",
+"type": "daily",
+"ageRange": [
+20,
+55
+],
+"weight": 8,
+"repeatable": true,
+"cooldown": 8,
+"branches": [
+{
+"id": "branch_1",
+"text": "尴尬地聊几句",
+"effects": {
+"HUMAN": 1,
+"TRAUMA": 2
+}
+},
+{
+"id": "branch_2",
+"text": "换个车赶紧离开",
+"effects": {
+"TRAUMA": 1,
+"HUMAN": -1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"交通"
+]
+},
+{
+"id": 4663,
+"title": "飞车过路费的暴涨",
+"description": "你收到本月的飞车过路费账单，数字比去年翻了一倍。城市交通局说是因为高峰期动态定价算法升级，还说这是对环保出行的鼓励。你的钱包在无声地哭泣。",
+"type": "daily",
+"ageRange": [
+22,
+65
+],
+"weight": 10,
+"repeatable": true,
+"cooldown": 5,
+"branches": [
+{
+"id": "branch_1",
+"text": "乖乖交钱",
+"effects": {
+"MONEY": -400,
+"TRAUMA": 1
+}
+},
+{
+"id": "branch_2",
+"text": "改乘公共交通省钱",
+"effects": {
+"HUMAN": 1,
+"LIFE": 1,
+"MONEY": -80
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"交通"
+]
+},
+{
+"id": 4664,
+"title": "地铁里的神经癫痫发作",
+"description": "车厢里一个年轻人的神经接口突然故障，他开始剧烈抽搐，口吐白沫，义眼翻白。周围乘客惊恐地退开，有人尖叫。列车正好行驶在两站之间，广播说下一站还有五分钟。",
+"type": "daily",
+"ageRange": [
+16,
+70
+],
+"weight": 8,
+"repeatable": true,
+"cooldown": 9,
+"branches": [
+{
+"id": "branch_1",
+"text": "上前救助并联系急救",
+"effects": {
+"HUMAN": 3,
+"TRAUMA": 1,
+"REP": 1
+}
+},
+{
+"id": "branch_2",
+"text": "退到远处避免麻烦",
+"effects": {
+"HUMAN": -1,
+"TRAUMA": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"交通"
+]
+},
+{
+"id": 4665,
+"title": "飞车悬停故障",
+"description": "你的飞车在城市上空突然失去悬停动力，开始急速下坠。心脏像被一只冰冷的手攥紧，视野里的摩天楼急速上升。最后一刻备用引擎启动，飞车勉强恢复平衡，你浑身冷汗。",
+"type": "daily",
+"ageRange": [
+20,
+60
+],
+"weight": 7,
+"repeatable": true,
+"cooldown": 10,
+"branches": [
+{
+"id": "branch_1",
+"text": "立即飞去维修站",
+"effects": {
+"MONEY": -500,
+"CHROME": 1,
+"TRAUMA": 2
+}
+},
+{
+"id": "branch_2",
+"text": "先降落再说",
+"effects": {
+"TRAUMA": 3,
+"LIFE": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"交通"
+]
+},
+{
+"id": 4666,
+"title": "公交站台的全息骚扰",
+"description": "你在公交站台等车，站台的全息广告系统突然故障，开始无差别播放色情和暴力内容。周围有孩子吓得捂住眼睛，家长愤怒地打电话投诉。你的神经接口也收到了推送。",
+"type": "daily",
+"ageRange": [
+16,
+70
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 6,
+"branches": [
+{
+"id": "branch_1",
+"text": "帮忙挡住孩子的视线",
+"effects": {
+"HUMAN": 2,
+"TRAUMA": 1
+}
+},
+{
+"id": "branch_2",
+"text": "走远点换个站台",
+"effects": {
+"TRAUMA": 1,
+"HUMAN": -1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"交通"
+]
+},
+{
+"id": 4667,
+"title": "渡轮遇到仿生海鸥袭击",
+"description": "你乘坐跨海渡轮，一群仿生海鸥突然俯冲下来撞击船身。这些被设计成清洁工的机械鸟不知为何发了狂，撞碎了几块舷窗玻璃。船员用高压水枪驱赶它们，尖叫的金属鸟在空中盘旋。",
+"type": "daily",
+"ageRange": [
+16,
+65
+],
+"weight": 8,
+"repeatable": true,
+"cooldown": 8,
+"branches": [
+{
+"id": "branch_1",
+"text": "帮忙关窗避险",
+"effects": {
+"HUMAN": 2,
+"TRAUMA": 1,
+"LIFE": 1
+}
+},
+{
+"id": "branch_2",
+"text": "躲进船舱最深处",
+"effects": {
+"TRAUMA": 2,
+"HUMAN": -1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"交通"
+]
+},
+{
+"id": 4668,
+"title": "隧道里的仿生巨兽涂鸦",
+"description": "地铁穿过一条老隧道，隧道壁上被涂鸦艺术家画满了巨大的仿生机械兽，在车头灯的照射下栩栩如生。有人说是地下艺术家的作品，地铁公司说要清除但一直没行动。乘客们举起手机拍照。",
+"type": "daily",
+"ageRange": [
+16,
+70
+],
+"weight": 10,
+"repeatable": true,
+"cooldown": 5,
+"branches": [
+{
+"id": "branch_1",
+"text": "拍下照片分享",
+"effects": {
+"STYLE": 1,
+"ADDICTION": 1
+}
+},
+{
+"id": "branch_2",
+"text": "静静欣赏",
+"effects": {
+"HUMAN": 1,
+"LIFE": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"交通"
+]
+},
+{
+"id": 4669,
+"title": "飞车派对干扰航道",
+"description": "周末深夜，一群富家子弟开着改装飞车在高楼之间开派对，激光和音乐把天空搅得五光十色。你的出租车被迫绕道，计价器上的数字蹭蹭上涨。下方的人群在阳台上仰头欢呼。",
+"type": "daily",
+"ageRange": [
+18,
+60
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 7,
+"branches": [
+{
+"id": "branch_1",
+"text": "绕路安静地回家",
+"effects": {
+"MONEY": -100,
+"TRAUMA": 1
+}
+},
+{
+"id": "branch_2",
+"text": "加入派对凑个热闹",
+"effects": {
+"STYLE": 2,
+"ADDICTION": 1,
+"MONEY": -200
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"交通"
+]
+},
+{
+"id": 4670,
+"title": "AR试衣间的隐私泄露",
+"description": "你在商场的AR试衣间试穿新款外套，全息镜子里你的虚拟形象旋转展示。但试衣结束后，你发现自己的试穿数据被上传到了社交网络，还配上了AI生成的穿搭点评。",
+"type": "daily",
+"ageRange": [
+16,
+60
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 7,
+"branches": [
+{
+"id": "branch_1",
+"text": "找商场索赔并删除数据",
+"effects": {
+"MONEY": 150,
+"TRAUMA": 1,
+"HUMAN": 1
+}
+},
+{
+"id": "branch_2",
+"text": "默默把衣服买了",
+"effects": {
+"MONEY": -300,
+"STYLE": 1,
+"TRAUMA": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"消费"
+]
+},
+{
+"id": 4671,
+"title": "自动售货机的欺诈",
+"description": "你在自动售货机前扫码买饮料，机器收了钱却不出货，屏幕显示交易成功。你拍打机器，它无动于衷。旁边一个小孩对你说：这台机器昨天也吞了我的钱，大家都叫它骗子机。",
+"type": "daily",
+"ageRange": [
+14,
+70
+],
+"weight": 10,
+"repeatable": true,
+"cooldown": 5,
+"branches": [
+{
+"id": "branch_1",
+"text": "打电话投诉运营方",
+"effects": {
+"MONEY": -15,
+"REP": 1,
+"TRAUMA": 1
+}
+},
+{
+"id": "branch_2",
+"text": "暴力摇晃出货口",
+"effects": {
+"TRAUMA": 1,
+"HUMAN": -1,
+"MONEY": -15
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"消费"
+]
+},
+{
+"id": 4672,
+"title": "黑市芯片交易",
+"description": "你在暗网论坛上看到一个同城卖家，出售据说是军用级别的神经加速芯片。约定在一个废弃停车场见面，对方裹得严严实实，只露出一双闪烁红光的义眼。他说货绝对真，先钱后货。",
+"type": "daily",
+"ageRange": [
+20,
+60
+],
+"weight": 8,
+"repeatable": true,
+"cooldown": 9,
+"branches": [
+{
+"id": "branch_1",
+"text": "冒险买下芯片",
+"effects": {
+"MONEY": -600,
+"CHROME": 2,
+"DEBT": 1,
+"TRAUMA": 1
+}
+},
+{
+"id": "branch_2",
+"text": "觉得太危险离开",
+"effects": {
+"HUMAN": 1,
+"LIFE": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"消费"
+]
+},
+{
+"id": 4673,
+"title": "数字支付系统崩溃",
+"description": "你正在超市结账，整个支付系统突然崩溃，所有银行卡、数字钱包和加密货币都无法交易。收银台前排起长龙，有人开始焦虑地翻找现金。你钱包里的纸币只有两张皱巴巴的十块。",
+"type": "daily",
+"ageRange": [
+18,
+70
+],
+"weight": 10,
+"repeatable": true,
+"cooldown": 6,
+"branches": [
+{
+"id": "branch_1",
+"text": "用现金支付剩下的",
+"effects": {
+"MONEY": -20,
+"HUMAN": 1
+}
+},
+{
+"id": "branch_2",
+"text": "把东西放回去不买了",
+"effects": {
+"TRAUMA": 1,
+"HUMAN": -1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"消费"
+]
+},
+{
+"id": 4674,
+"title": "全息商场的虚假促销",
+"description": "商场门口的全息广告牌疯狂闪烁：全场一折！你冲进去才发现，打折的只有三款过期的合成罐头，其他商品 prices 比外面还贵。促销员机器人热情地围上来，说今天是最后机会。",
+"type": "daily",
+"ageRange": [
+18,
+70
+],
+"weight": 10,
+"repeatable": true,
+"cooldown": 5,
+"branches": [
+{
+"id": "branch_1",
+"text": "识破了转身离开",
+"effects": {
+"HUMAN": 1,
+"MONEY": 0
+}
+},
+{
+"id": "branch_2",
+"text": "被忽悠买了点不需要的",
+"effects": {
+"MONEY": -200,
+"TRAUMA": 1,
+"ADDICTION": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"消费"
+]
+},
+{
+"id": 4675,
+"title": "AR眼镜看到隐藏价格",
+"description": "你戴上AR眼镜逛超市，突然发现货架上的商品旁边浮现出另一组隐藏价格：那是这些东西的真实成本价。你常买的那款营养膏，标价三十块，成本才两块五。你的消费观瞬间崩塌。",
+"type": "daily",
+"ageRange": [
+20,
+60
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 7,
+"branches": [
+{
+"id": "branch_1",
+"text": "只买成本价合理的商品",
+"effects": {
+"MONEY": -50,
+"HUMAN": 1,
+"TRAUMA": 1
+}
+},
+{
+"id": "branch_2",
+"text": "故意只买暴利商品杀价",
+"effects": {
+"MONEY": -100,
+"REP": -1,
+"HUMAN": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"消费"
+]
+},
+{
+"id": 4676,
+"title": "无人超市的误判",
+"description": "你在无人超市拿了东西直接出门，系统却误判你偷窃，警报大作，自动门禁把你锁在里面。AI保安用冰冷的机械音要求你配合检查，你的购物记录在手机里明明清清楚楚。",
+"type": "daily",
+"ageRange": [
+18,
+65
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 7,
+"branches": [
+{
+"id": "branch_1",
+"text": "出示记录要求道歉",
+"effects": {
+"REP": 1,
+"TRAUMA": 1,
+"HUMAN": 1
+}
+},
+{
+"id": "branch_2",
+"text": "生气砸门要求放人",
+"effects": {
+"TRAUMA": 2,
+"REP": -1,
+"HUMAN": -1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"消费"
+]
+},
+{
+"id": 4677,
+"title": "网购收到空包裹",
+"description": "你期待已久的包裹终于送到，拆开却发现里面空空如也，只有一张印着笑脸的感谢卡。查询物流显示已签收完好，客服AI说需要调查三十个工作日。你的愤怒无处发泄。",
+"type": "daily",
+"ageRange": [
+18,
+70
+],
+"weight": 10,
+"repeatable": true,
+"cooldown": 6,
+"branches": [
+{
+"id": "branch_1",
+"text": "坚持投诉到底",
+"effects": {
+"TRAUMA": 2,
+"REP": 1,
+"MONEY": -20
+}
+},
+{
+"id": "branch_2",
+"text": "自认倒霉重新下单",
+"effects": {
+"MONEY": -250,
+"TRAUMA": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"消费"
+]
+},
+{
+"id": 4678,
+"title": "街头AR地摊",
+"description": "街角有个小贩在用AR投影展示他的商品：虚拟皮肤、表情包合集、自定义滤镜。他说这些是限量版的数字资产，买了就能在社交网络上炫耀。全息图像在他手掌上跳动，五光十色。",
+"type": "daily",
+"ageRange": [
+16,
+55
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 6,
+"branches": [
+{
+"id": "branch_1",
+"text": "买一个炫酷皮肤",
+"effects": {
+"MONEY": -80,
+"STYLE": 2,
+"ADDICTION": 1
+}
+},
+{
+"id": "branch_2",
+"text": "走过看看就好",
+"effects": {
+"HUMAN": 1,
+"TRAUMA": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"消费"
+]
+},
+{
+"id": 4679,
+"title": "信用评分影响购物",
+"description": "你在商场看中一款新出的神经接口耳机，结账时系统提示你的社会信用评分不足，无法分期购买，只能全款。你的现金流刚好被房租榨干，耳机的价格标签在头顶闪闪发光。",
+"type": "daily",
+"ageRange": [
+22,
+60
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 7,
+"branches": [
+{
+"id": "branch_1",
+"text": "咬牙全款买下",
+"effects": {
+"MONEY": -600,
+"TECH": 1,
+"DEBT": 1
+}
+},
+{
+"id": "branch_2",
+"text": "放下东西离开",
+"effects": {
+"TRAUMA": 1,
+"HUMAN": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"消费"
+]
+},
+{
+"id": 4680,
+"title": "自动售货机的隐藏菜单",
+"description": "你在自动售货机上乱按，意外进入了一个隐藏菜单，里面摆着各种违禁药品和未注册的义体配件。价格贵得离谱，但标签上写着绝对正品、假一赔十。摄像头似乎看不到这个界面。",
+"type": "daily",
+"ageRange": [
+20,
+60
+],
+"weight": 8,
+"repeatable": true,
+"cooldown": 9,
+"branches": [
+{
+"id": "branch_1",
+"text": "买一瓶兴奋剂试试",
+"effects": {
+"MONEY": -300,
+"ADDICTION": 2,
+"DEBT": 1
+}
+},
+{
+"id": "branch_2",
+"text": "拍照留证举报",
+"effects": {
+"REP": 2,
+"TRAUMA": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"消费"
+]
+},
+{
+"id": 4681,
+"title": "全息广告诱导冲动消费",
+"description": "你走在商业街上，一个全息美女凭空出现在你面前，用温柔到令人发毛的声音推销一款你根本不需要的义体升级。她说完后还冲你眨了眨眼，你的手指已经悬在了支付确认键上。",
+"type": "daily",
+"ageRange": [
+18,
+60
+],
+"weight": 10,
+"repeatable": true,
+"cooldown": 5,
+"branches": [
+{
+"id": "branch_1",
+"text": "清醒过来关掉支付",
+"effects": {
+"HUMAN": 2,
+"TRAUMA": 1
+}
+},
+{
+"id": "branch_2",
+"text": "鬼使神差付了款",
+"effects": {
+"MONEY": -450,
+"CHROME": 1,
+"ADDICTION": 1,
+"TRAUMA": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"消费"
+]
+},
+{
+"id": 4682,
+"title": "二手义体市场的陷阱",
+"description": "你在二手市场看中一款便宜的义眼，卖家信誓旦旦说是九成新。装上去后才发现视野里总有雪花噪点，夜晚还会自动播放广告。找卖家理论，对方早就注销了账号跑路了。",
+"type": "daily",
+"ageRange": [
+20,
+60
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 7,
+"branches": [
+{
+"id": "branch_1",
+"text": "花钱找人拆下来重装",
+"effects": {
+"MONEY": -400,
+"TRAUMA": 2,
+"HUMAN": -1
+}
+},
+{
+"id": "branch_2",
+"text": "勉强先用着",
+"effects": {
+"TRAUMA": 1,
+"ADDICTION": 1,
+"TECH": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"消费"
+]
+},
+{
+"id": 4683,
+"title": "订阅服务的自动续费陷阱",
+"description": "你检查账单时发现三个早已不用的APP还在每月自动扣费，加起来一年被坑了一千多。取消按钮藏在七层菜单深处，每一步都有弹窗挽留你。客服永远忙线，退款申请石沉大海。",
+"type": "daily",
+"ageRange": [
+18,
+60
+],
+"weight": 10,
+"repeatable": true,
+"cooldown": 5,
+"branches": [
+{
+"id": "branch_1",
+"text": "花一下午全部取消",
+"effects": {
+"TRAUMA": 1,
+"HUMAN": 1,
+"MONEY": -50
+}
+},
+{
+"id": "branch_2",
+"text": "找消协投诉",
+"effects": {
+"REP": 1,
+"TRAUMA": 2
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"消费"
+]
+},
+{
+"id": 4684,
+"title": "商场里的神经抽奖",
+"description": "商场中庭搭了一个神经抽奖台，接入你的脑机接口就能参与，奖品从合成食品到顶级义体不等。主持人热情洋溢地说中奖率百分之百，但旁边一个老哥抽完脸色铁青地走开了。",
+"type": "daily",
+"ageRange": [
+16,
+60
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 6,
+"branches": [
+{
+"id": "branch_1",
+"text": "花五十块试试运气",
+"effects": {
+"MONEY": -50,
+"ADDICTION": 1,
+"TRAUMA": 1
+}
+},
+{
+"id": "branch_2",
+"text": "围观但不参与",
+"effects": {
+"HUMAN": 1,
+"TRAUMA": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"消费"
+]
+},
+{
+"id": 4685,
+"title": "合成食品的味道悖论",
+"description": "你走进一家新开的合成食品餐厅，菜单上全是听起来很高级的名字：分子和牛、量子沙拉。菜端上来后，你尝了一口，口感像嚼塑料，但大脑接口告诉你的味蕾这是顶级美味。",
+"type": "daily",
+"ageRange": [
+16,
+70
+],
+"weight": 10,
+"repeatable": true,
+"cooldown": 5,
+"branches": [
+{
+"id": "branch_1",
+"text": "相信大脑接口吃完",
+"effects": {
+"MONEY": -120,
+"ADDICTION": 1,
+"HUMAN": -1
+}
+},
+{
+"id": "branch_2",
+"text": "吐掉不吃了",
+"effects": {
+"MONEY": -120,
+"TRAUMA": 1,
+"HUMAN": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"餐饮"
+]
+},
+{
+"id": 4686,
+"title": "自动厨房的食物中毒",
+"description": "你在家用自动厨房做饭，它按照食谱精确投放了所有原料。吃完两小时后你开始上吐下泻，医疗AI诊断是某种合成蛋白变质。自动厨房的显示屏还在播放谢谢使用祝您用餐愉快。",
+"type": "daily",
+"ageRange": [
+18,
+65
+],
+"weight": 8,
+"repeatable": true,
+"cooldown": 8,
+"branches": [
+{
+"id": "branch_1",
+"text": "紧急呼叫医疗无人机",
+"effects": {
+"MONEY": -200,
+"LIFE": 2,
+"TRAUMA": 1
+}
+},
+{
+"id": "branch_2",
+"text": "自己吃药硬扛",
+"effects": {
+"TRAUMA": 2,
+"LIFE": -1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"餐饮"
+]
+},
+{
+"id": 4687,
+"title": "高档餐厅的真肉骗局",
+"description": "你花了半个月工资去一家号称供应真肉的高档餐厅，主厨在全息厨房现场烹饪。吃完后你在洗手间听到服务员聊天：今晚的合成牛肉客人吃得挺香，没人吃出来。你的胃一阵痉挛。",
+"type": "daily",
+"ageRange": [
+25,
+65
+],
+"weight": 8,
+"repeatable": true,
+"cooldown": 9,
+"branches": [
+{
+"id": "branch_1",
+"text": "冲回去要求退款",
+"effects": {
+"MONEY": 150,
+"TRAUMA": 2,
+"REP": -1
+}
+},
+{
+"id": "branch_2",
+"text": "默默买单离开",
+"effects": {
+"MONEY": -500,
+"TRAUMA": 3,
+"HUMAN": -1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"餐饮"
+]
+},
+{
+"id": 4688,
+"title": "营养膏的午餐",
+"description": "中午没时间吃饭，你从包里挤出一管合成营养膏，巧克力味的，甜得发腻。同事们也都各自拿着不同颜色的营养膏，像一群在补充燃料的机器。 tubes 在灯光下闪着金属光泽。",
+"type": "daily",
+"ageRange": [
+18,
+60
+],
+"weight": 11,
+"repeatable": true,
+"cooldown": 4,
+"branches": [
+{
+"id": "branch_1",
+"text": "换种口味继续吃",
+"effects": {
+"MONEY": -15,
+"LIFE": 1,
+"HUMAN": -1
+}
+},
+{
+"id": "branch_2",
+"text": "去楼下买顿真饭",
+"effects": {
+"MONEY": -80,
+"HUMAN": 2,
+"LIFE": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"餐饮"
+]
+},
+{
+"id": 4689,
+"title": "自动餐厅机器人罢工",
+"description": "你走进一家全自动无人餐厅，所有机器人都停在原地不动，显示屏上滚动着系统维护中。厨房里半成品散落在传送带上，你的订单卡在系统中。肚子饿得咕咕叫，旁边的人也在叹气。",
+"type": "daily",
+"ageRange": [
+16,
+70
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 6,
+"branches": [
+{
+"id": "branch_1",
+"text": "耐心等系统恢复",
+"effects": {
+"TRAUMA": 1,
+"HUMAN": 1
+}
+},
+{
+"id": "branch_2",
+"text": "换一家餐厅",
+"effects": {
+"TRAUMA": 1,
+"MONEY": -10
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"餐饮"
+]
+},
+{
+"id": 4690,
+"title": "黑市真肉烧烤",
+"description": "朋友带你去一条隐蔽的小巷，里面有家黑市烧烤店，据说卖的是真猪肉。老板从暗格里搬出冷藏箱，肉在炭火上滋滋冒油，香味勾魂摄魄。但这要是被食品监管发现，老板要坐牢。",
+"type": "daily",
+"ageRange": [
+22,
+60
+],
+"weight": 8,
+"repeatable": true,
+"cooldown": 8,
+"branches": [
+{
+"id": "branch_1",
+"text": "大吃一顿",
+"effects": {
+"MONEY": -300,
+"LIFE": 2,
+"HUMAN": 2,
+"TRAUMA": 1
+}
+},
+{
+"id": "branch_2",
+"text": "担心违法没吃",
+"effects": {
+"TRAUMA": 1,
+"HUMAN": -1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"餐饮"
+]
+},
+{
+"id": 4691,
+"title": "合成海鲜的过敏反应",
+"description": "你尝了一口新出的合成金枪鱼刺身，五分钟后全身开始起红疹，喉咙发紧。医疗AI说是新型合成蛋白过敏，这种成分上个月才通过审批。急诊室的灯白得刺眼，你的心跳在监测仪上乱跳。",
+"type": "daily",
+"ageRange": [
+18,
+65
+],
+"weight": 8,
+"repeatable": true,
+"cooldown": 9,
+"branches": [
+{
+"id": "branch_1",
+"text": "打针治疗并投诉厂家",
+"effects": {
+"MONEY": -250,
+"LIFE": 2,
+"REP": 1
+}
+},
+{
+"id": "branch_2",
+"text": "自认倒霉下次小心",
+"effects": {
+"TRAUMA": 2,
+"LIFE": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"餐饮"
+]
+},
+{
+"id": 4692,
+"title": "高档餐厅的约会",
+"description": "你约了心仪的对象去一家可以俯瞰城市全景的空中餐厅，服务员全是精致的仿生人。全息菜单上每道菜都配有诗意描述，价格后面跟着一串让你肉疼的数字。对方微笑着等你先点菜。",
+"type": "daily",
+"ageRange": [
+22,
+55
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 7,
+"branches": [
+{
+"id": "branch_1",
+"text": "豪爽地点招牌菜",
+"effects": {
+"MONEY": -600,
+"HUMAN": 2,
+"REP": 1,
+"STYLE": 1
+}
+},
+{
+"id": "branch_2",
+"text": "点两道家常菜意思一下",
+"effects": {
+"MONEY": -200,
+"HUMAN": 1,
+"TRAUMA": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"餐饮"
+]
+},
+{
+"id": 4693,
+"title": "自动贩卖机的过期食品",
+"description": "你从自动贩卖机买了一份合成便当，加热后吃到一半发现味道怪怪的。生产日期显示是三个月前，保质期在昨天刚过期。你嚼着发酸的营养块，胃开始不舒服地翻腾。",
+"type": "daily",
+"ageRange": [
+16,
+70
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 6,
+"branches": [
+{
+"id": "branch_1",
+"text": "找运营方投诉索赔",
+"effects": {
+"MONEY": 30,
+"TRAUMA": 1,
+"HUMAN": 1
+}
+},
+{
+"id": "branch_2",
+"text": "扔掉不吃了自认倒霉",
+"effects": {
+"TRAUMA": 1,
+"MONEY": -25
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"餐饮"
+]
+},
+{
+"id": 4694,
+"title": "VR餐厅的虚拟盛宴",
+"description": "你进了一家VR主题餐厅，戴上头显后眼前变成法式宫廷，AI侍者端来的虚拟佳肴色香味俱全。但摘下头显后，你嘴里只有一块口感像海绵的合成蛋白块。虚拟现实和现实的落差让人恍惚。",
+"type": "daily",
+"ageRange": [
+18,
+60
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 6,
+"branches": [
+{
+"id": "branch_1",
+"text": "沉浸其中享受幻觉",
+"effects": {
+"MONEY": -200,
+"ADDICTION": 2,
+"HUMAN": -1
+}
+},
+{
+"id": "branch_2",
+"text": "摘下头显不吃了",
+"effects": {
+"MONEY": -200,
+"HUMAN": 1,
+"TRAUMA": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"餐饮"
+]
+},
+{
+"id": 4695,
+"title": "街头小吃摊的惊喜",
+"description": "街角有个老奶奶在卖手工包子，这在全是合成食品的城市简直像奇迹。她的摊位没有全息广告，只有一口冒着热气的蒸笼。包子皮软肉香，你咬下去差点感动得流泪。",
+"type": "daily",
+"ageRange": [
+16,
+70
+],
+"weight": 10,
+"repeatable": true,
+"cooldown": 5,
+"branches": [
+{
+"id": "branch_1",
+"text": "多买几个囤着",
+"effects": {
+"MONEY": -50,
+"HUMAN": 3,
+"LIFE": 2
+}
+},
+{
+"id": "branch_2",
+"text": "只吃一个留点念想",
+"effects": {
+"MONEY": -15,
+"HUMAN": 2,
+"LIFE": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"餐饮"
+]
+},
+{
+"id": 4696,
+"title": "自动厨房短路起火",
+"description": "你在家做饭时自动厨房突然短路，电火花点燃了旁边的油瓶，厨房瞬间冒出浓烟。消防喷淋启动，把家里淋成水帘洞。消防无人机五分钟后到达，但你的晚餐和厨房都毁了。",
+"type": "daily",
+"ageRange": [
+18,
+65
+],
+"weight": 8,
+"repeatable": true,
+"cooldown": 9,
+"branches": [
+{
+"id": "branch_1",
+"text": "报修并重新装修厨房",
+"effects": {
+"MONEY": -500,
+"TRAUMA": 2,
+"LIFE": 1
+}
+},
+{
+"id": "branch_2",
+"text": "找商家索赔",
+"effects": {
+"MONEY": 300,
+"TRAUMA": 1,
+"HUMAN": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"餐饮"
+]
+},
+{
+"id": 4697,
+"title": "基因定制营养套餐",
+"description": "一家新开的餐厅声称可以根据你的基因定制最健康营养套餐，扫码就能获取你的基因数据。套餐价格不菲，但据说能延年益寿。你在门口犹豫，旁边出来的顾客个个脸色红润。",
+"type": "daily",
+"ageRange": [
+25,
+65
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 7,
+"branches": [
+{
+"id": "branch_1",
+"text": "扫码定制体验",
+"effects": {
+"MONEY": -350,
+"LIFE": 2,
+"TRAUMA": 1,
+"ADDICTION": 1
+}
+},
+{
+"id": "branch_2",
+"text": "担心基因隐私拒绝",
+"effects": {
+"HUMAN": 1,
+"TRAUMA": 1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"餐饮"
+]
+},
+{
+"id": 4698,
+"title": "合成咖啡机的故障",
+"description": "办公室的合成咖啡机今天出的咖啡有一股金属味，颜色也不对，像稀释的机油。几个同事喝了后都开始拉肚子。行政说已经报修，建议今天改喝白开水。你看着那台机器，它还在正常运转。",
+"type": "daily",
+"ageRange": [
+18,
+60
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 6,
+"branches": [
+{
+"id": "branch_1",
+"text": "不喝公司的自己买",
+"effects": {
+"MONEY": -30,
+"HUMAN": 1,
+"LIFE": 1
+}
+},
+{
+"id": "branch_2",
+"text": "凑活喝白开水",
+"effects": {
+"TRAUMA": 1,
+"HUMAN": -1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"餐饮"
+]
+},
+{
+"id": 4699,
+"title": "深夜食堂的陌生人",
+"description": "凌晨两点，你走进一家还亮着灯的小食堂，里面只有一个老板和角落里的一个客人。那客人戴着兜帽，面前摊着几份数据芯片，像是在等人。食堂的电视放着无声的新闻，空气中飘着合成酱油的味道。",
+"type": "daily",
+"ageRange": [
+20,
+60
+],
+"weight": 9,
+"repeatable": true,
+"cooldown": 7,
+"branches": [
+{
+"id": "branch_1",
+"text": "低头吃饭吃完就走",
+"effects": {
+"MONEY": -35,
+"HUMAN": 1,
+"TRAUMA": 1
+}
+},
+{
+"id": "branch_2",
+"text": "好奇地打量那个客人",
+"effects": {
+"TRAUMA": 2,
+"TECH": 1,
+"HUMAN": -1
+}
+}
+],
+"effects": {},
+"tags": [
+"日常",
+"餐饮"
+]
+}
+]
+}

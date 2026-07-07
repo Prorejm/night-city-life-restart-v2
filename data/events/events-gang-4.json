@@ -1,0 +1,5104 @@
+{
+  "events": [
+    {
+      "id": 5300,
+      "title": "霓虹巷血战",
+      "description": "深夜的霓虹巷被两帮人马堵得水泄不通。血红帮和铁颅帮为了争夺这条流量最大的走私通道，各自出动了三十多人。你站在巷口，空气中弥漫着臭氧和血腥味，义眼在黑暗中闪烁如狼。霓虹招牌的残片在弹雨中纷纷坠落，这是一场不死不休的较量。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "带头冲锋直取对方旗手",
+          "effects": {
+            "REP": 5,
+            "LIFE": -8,
+            "TRAUMA": 3,
+            "CHROME": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "占据制高点火力压制",
+          "effects": {
+            "REP": 3,
+            "LIFE": -5,
+            "CHROME": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "呼叫无人机群支援",
+          "effects": {
+            "TECH": 3,
+            "REP": 3,
+            "LIFE": -3,
+            "MONEY": -400
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "火拼"
+      ]
+    },
+    {
+      "id": 5301,
+      "title": "废墟工厂百人混战",
+      "description": "废弃汽车工厂内，三个帮派同时收到了同一批军火的交易情报。当你们赶到时，仓库里已经挤满了各路人马。没人知道是谁走漏了风声，但此刻唯一的语言就是子弹。锈迹斑斑的钢架结构在爆炸中摇摇欲坠，灰尘和火花遮蔽了所有人的视线。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "趁乱抢夺军火后杀出重围",
+          "effects": {
+            "REP": 4,
+            "LIFE": -7,
+            "CHROME": 3,
+            "MONEY": 800
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "坐山观虎斗最后收网",
+          "effects": {
+            "STYLE": 3,
+            "REP": 3,
+            "LIFE": -3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "引爆炸药一锅端",
+          "effects": {
+            "REP": 5,
+            "LIFE": -6,
+            "TRAUMA": 3,
+            "CHROME": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "混战"
+      ]
+    },
+    {
+      "id": 5302,
+      "title": "地铁隧道遭遇战",
+      "description": "你们小队奉命穿过废弃地铁隧道前往北区的途中，迎面撞上了血红帮的运兵队。狭窄的隧道里回声震耳欲聋，每一声枪响都像是在耳边炸开。轨道上的积水倒映着枪口火焰，无路可退，只能正面交锋。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "贴墙推进近战肉搏",
+          "effects": {
+            "REP": 3,
+            "LIFE": -6,
+            "CHROME": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "释放催泪瓦斯后突袭",
+          "effects": {
+            "REP": 3,
+            "LIFE": -4,
+            "TECH": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "炸塌隧道同归于尽",
+          "effects": {
+            "REP": 4,
+            "LIFE": -8,
+            "TRAUMA": 3,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "遭遇战"
+      ]
+    },
+    {
+      "id": 5303,
+      "title": "天台帮派决斗",
+      "description": "摩天大楼的停机坪上，两个帮派各出五名精锐进行一场古老的荣誉决斗。没有枪，只有改装过的近战武器和义体。城市在你脚下数百米处延伸，霓虹如血管般脉动。输了的人要从天台跳下去，这是帮派的规矩。夜风吹得衣角猎猎作响。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "亲自上阵搏命",
+          "effects": {
+            "REP": 5,
+            "LIFE": -7,
+            "CHROME": 3,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "派最强打手代战",
+          "effects": {
+            "REP": 3,
+            "LIFE": -3,
+            "HUMAN": -2,
+            "MONEY": -300
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "暗中给对手武器做手脚",
+          "effects": {
+            "REP": 2,
+            "TECH": 3,
+            "STYLE": -2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "决斗"
+      ]
+    },
+    {
+      "id": 5304,
+      "title": "货柜码头大乱斗",
+      "description": "月色惨白的货柜码头，四个帮派为了争夺一批走私到货的军用义体同时到场。叉车上的木箱里装着足以改变势力平衡的高端货，没人愿意空手而归。起重机在夜风中发出金属摩擦的刺耳声响，探照灯扫过的瞬间，所有人同时拔出了武器。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "抢夺货柜开车突围",
+          "effects": {
+            "REP": 4,
+            "LIFE": -6,
+            "CHROME": 3,
+            "MONEY": 600
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "联合弱帮先灭强帮",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "LIFE": -5,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "远程引爆货柜谁也别拿",
+          "effects": {
+            "REP": -2,
+            "LIFE": -4,
+            "TRAUMA": 2,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "码头"
+      ]
+    },
+    {
+      "id": 5305,
+      "title": "地下拳场帮派冲突",
+      "description": "非法义体拳场的决赛之夜，观众席里突然爆发了帮派冲突。铁颅帮和骷髅帮的成员在看台上互相开火，子弹穿过人群，血肉横飞。你本来只是来看拳赛，此刻却被卷入了这场无差别的屠杀。拳手在擂台上愣住，聚光灯下是无处可逃的观众。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拔枪加入混战自保",
+          "effects": {
+            "REP": 2,
+            "LIFE": -6,
+            "CHROME": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "掩护平民撤离",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "LIFE": -5,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "趁乱洗劫拳场金库",
+          "effects": {
+            "MONEY": 1200,
+            "REP": -2,
+            "LIFE": -4,
+            "STYLE": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "拳场"
+      ]
+    },
+    {
+      "id": 5306,
+      "title": "雨夜桥头阻击战",
+      "description": "暴雨倾盆的夜晚，你们接到情报血红帮的主力将经过跨海大桥。这是伏击的绝佳机会，但暴雨让能见度降到不足五米，桥面湿滑无比。你们在桥塔后埋伏，听着引擎声由远及近，心跳和雷声混在一起。闪电划破夜空的一瞬间，你看到了对方车队最前方的装甲车。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "炸断桥面全歼敌军",
+          "effects": {
+            "REP": 5,
+            "LIFE": -5,
+            "TRAUMA": 3,
+            "CHROME": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "精准狙击车队首领",
+          "effects": {
+            "REP": 4,
+            "LIFE": -4,
+            "CHROME": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "佯攻后放他们过桥",
+          "effects": {
+            "REP": -1,
+            "STYLE": 2,
+            "LIFE": -2,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "伏击"
+      ]
+    },
+    {
+      "id": 5307,
+      "title": "霓虹广场公开火拼",
+      "description": "市中心的霓虹广场本应是禁区，但骷髅帮公然在这里处决了你们帮派的一名成员。消息传来，整个帮派的血液都沸腾了。数十辆改装战车呼啸着冲向广场，全息广告牌在枪火中碎裂，游客尖叫着四散奔逃。这是一场赤裸裸的复仇，也是向全城展示力量的表演。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "带队正面冲击广场",
+          "effects": {
+            "REP": 5,
+            "LIFE": -8,
+            "CHROME": 3,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "侧面包抄切断退路",
+          "effects": {
+            "REP": 4,
+            "LIFE": -6,
+            "CHROME": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "狙击直播扩大影响",
+          "effects": {
+            "REP": 4,
+            "LIFE": -3,
+            "TECH": 2,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "复仇"
+      ]
+    },
+    {
+      "id": 5308,
+      "title": "街区边界推搡战",
+      "description": "你们帮派的街区与铁颅帮的地盘之间有一条模糊的边界线，今晚双方同时派人在边界线上架设路障。没有枪声，只有拳头、棍棒和改装义肢的碰撞。这是最低烈度却也最频繁的地盘争夺，输的一方要后退整整一个街区。霓虹灯在雨雾中晕染成模糊的光斑。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "亲自带队守住每一寸土地",
+          "effects": {
+            "REP": 3,
+            "LIFE": -5,
+            "CHROME": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用改装声波武器驱散人群",
+          "effects": {
+            "REP": 2,
+            "TECH": 3,
+            "LIFE": -3,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "暂时后撤夜间再偷袭夺回",
+          "effects": {
+            "REP": 2,
+            "STYLE": 3,
+            "LIFE": -4,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "地盘"
+      ]
+    },
+    {
+      "id": 5309,
+      "title": "废弃商场主权宣示",
+      "description": "市中心那座废弃的赛博商场是绝佳的据点，三家帮派同时盯上了它。商场里还残留着当年的全息广告系统，在黑暗中自动播放着过时的商品影像。你们需要在天亮前把帮派标记布满商场的每一层，同时阻止其他帮派的人进入。自动扶梯的金属踏板在脚下发出空洞的回响。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "武力清场全面占领",
+          "effects": {
+            "REP": 4,
+            "LIFE": -6,
+            "CHROME": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只占领顶层制高点",
+          "effects": {
+            "REP": 2,
+            "LIFE": -3,
+            "TECH": 2,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在其他帮派标记旁设陷阱",
+          "effects": {
+            "REP": 3,
+            "TECH": 3,
+            "LIFE": -4,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "地盘"
+      ]
+    },
+    {
+      "id": 5310,
+      "title": "地下停车场割据战",
+      "description": "这座五层地下停车场连接着三个富人区，控制了它就控制了最赚钱的勒索路线。今晚你们和血红帮同时派人来收保护费，双方在B3层不期而遇。昏暗的灯光下，排气管的轰鸣声和叫骂声混成一片，轮胎摩擦地面的焦糊味刺鼻。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "驾车冲撞对方阵型",
+          "effects": {
+            "REP": 3,
+            "LIFE": -6,
+            "CHROME": 3,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "封锁出入口瓮中捉鳖",
+          "effects": {
+            "REP": 4,
+            "LIFE": -5,
+            "CHROME": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "与血红帮谈判划分楼层",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "DEBT": 1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "地盘"
+      ]
+    },
+    {
+      "id": 5311,
+      "title": "屠宰场改建据点争夺",
+      "description": "旧城区最大的屠宰场被改造成了帮派据点，坚固的围墙和冷藏库让它易守难攻。铁颅帮已经在里面驻扎了两周，但今晚你们收到了内应的消息——他们的首领外出赴宴，据点只剩不到十人。血腥味和消毒水味混在一起，挂钩在天花板上微微摇晃。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "趁夜偷袭夺下据点",
+          "effects": {
+            "REP": 4,
+            "LIFE": -5,
+            "CHROME": 3,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "切断电源利用黑暗潜入",
+          "effects": {
+            "REP": 3,
+            "TECH": 3,
+            "LIFE": -3,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放火烧毁据点谁也别占",
+          "effects": {
+            "REP": -1,
+            "LIFE": -4,
+            "TRAUMA": 2,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "地盘"
+      ]
+    },
+    {
+      "id": 5312,
+      "title": "高层公寓楼层争夺",
+      "description": "这座四十层的高层公寓是帮派控制平民最有效的据点。每层都有你们收保护费的眼线，但骷髅帮最近开始逐层渗透。今天他们公然在二十层设立了办事处，这是对你们权威的直接挑衅。电梯井里回荡着金属扭曲的声响。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "逐层清剿夺回控制权",
+          "effects": {
+            "REP": 3,
+            "LIFE": -7,
+            "CHROME": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "直接炸毁二十层以示警告",
+          "effects": {
+            "REP": 4,
+            "LIFE": -5,
+            "TRAUMA": 3,
+            "CHROME": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "收买居民抵制骷髅帮",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 3,
+            "MONEY": -500,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "地盘"
+      ]
+    },
+    {
+      "id": 5313,
+      "title": "旧港口仓库主权战",
+      "description": "这座旧港口仓库是走私货物的中转心脏，控制了它就控制了半座城的地下物流。四个帮派同时宣布对仓库拥有主权，今晚注定要见分晓。仓库巨大的卷帘门在风中哐当作响，起重机的长臂像巨人的手臂悬在半空。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全面占领驱赶所有敌对势力",
+          "effects": {
+            "REP": 5,
+            "LIFE": -7,
+            "CHROME": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "与其他帮派签订分仓协议",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "DEBT": 1,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在仓库设伏消灭来犯之敌",
+          "effects": {
+            "REP": 4,
+            "LIFE": -6,
+            "CHROME": 2,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "地盘"
+      ]
+    },
+    {
+      "id": 5314,
+      "title": "城市下水道暗战",
+      "description": "错综复杂的下水道系统是帮派偷运人员和物资的秘密动脉。血红帮最近在你们控制的下水道段安装了监控探头，这意味着他们随时可以切断你们的退路。恶臭的污水中漂浮着不明残渣，远处传来老鼠成群窜动的窸窣声。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "带队拆除所有探头",
+          "effects": {
+            "REP": 3,
+            "LIFE": -5,
+            "CHROME": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "反向骇入利用探头监视对方",
+          "effects": {
+            "REP": 3,
+            "TECH": 4,
+            "LIFE": -3,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "炸塌水道阻断这段通路",
+          "effects": {
+            "REP": 2,
+            "LIFE": -4,
+            "TRAUMA": 2,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "地盘"
+      ]
+    },
+    {
+      "id": 5315,
+      "title": "高架桥底枪战",
+      "description": "高架桥底的阴影是你们和铁颅帮默认的交易地点，但今晚双方都带了更多的人手。当第一声枪响撕裂夜空时，所有人都知道谈判已经破裂。混凝土桥墩上迸溅着火花，废弃车辆成了临时掩体，回声让枪声听起来像是一场永无止境的暴风雨。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "依托车辆掩体反击",
+          "effects": {
+            "REP": 3,
+            "LIFE": -6,
+            "CHROME": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "爬上车顶居高临下扫射",
+          "effects": {
+            "REP": 4,
+            "LIFE": -7,
+            "CHROME": 2,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "呼叫机车党绕后夹击",
+          "effects": {
+            "REP": 3,
+            "LIFE": -4,
+            "MONEY": -300,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "枪战"
+      ]
+    },
+    {
+      "id": 5316,
+      "title": "废弃医院走廊激战",
+      "description": "废弃医院的走廊像迷宫一样曲折，骷髅帮在这里设下了埋伏。你们小队刚踏入急诊大厅，两侧的病房门同时打开，密集的火力网封死了所有出口。消毒水和霉味混合在一起，破碎的玻璃窗透进惨白的月光，地上散落着生锈的手术器械。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "破窗跳出去绕后反击",
+          "effects": {
+            "REP": 3,
+            "LIFE": -5,
+            "CHROME": 2,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "逐间病房清剿",
+          "effects": {
+            "REP": 4,
+            "LIFE": -7,
+            "CHROME": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "释放麻醉气体无差别覆盖",
+          "effects": {
+            "REP": 2,
+            "TECH": 3,
+            "LIFE": -3,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "枪战"
+      ]
+    },
+    {
+      "id": 5317,
+      "title": "垃圾处理厂伏击杀",
+      "description": "垃圾处理厂的巨大压缩机日夜轰鸣，掩盖了所有声音。血红帮选择在这里处决你们的线人，而你们早一步收到了消息。腐臭的垃圾堆成了天然掩体，酸液从破裂的管道滴落，在地面蚀出滋滋作响的坑洞。这是一场在地狱边缘进行的枪战。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在高处垃圾山架狙击位",
+          "effects": {
+            "REP": 3,
+            "LIFE": -4,
+            "CHROME": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "混入垃圾车队潜入核心",
+          "effects": {
+            "REP": 3,
+            "LIFE": -5,
+            "STYLE": 3,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "启动压缩机埋葬所有人",
+          "effects": {
+            "REP": 4,
+            "LIFE": -6,
+            "TRAUMA": 3,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "枪战"
+      ]
+    },
+    {
+      "id": 5318,
+      "title": "霓虹教堂礼拜日枪战",
+      "description": "这座被改造成帮派据点的霓虹教堂，每周日举行一种扭曲的弥撒仪式。今天你们和骷髅帮的成员同时在祭坛前拔枪，彩色玻璃窗在枪火中碎裂成漫天彩雨。管风琴还在自动播放圣乐，与枪声和惨叫形成了诡异的合唱。信徒们尖叫着趴在长椅下颤抖。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "守住大门不让增援进入",
+          "effects": {
+            "REP": 4,
+            "LIFE": -6,
+            "CHROME": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "冲上钟楼占据制高点",
+          "effects": {
+            "REP": 3,
+            "LIFE": -5,
+            "CHROME": 2,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "挟持神父逼对方停火",
+          "effects": {
+            "REP": 2,
+            "HUMAN": -3,
+            "LIFE": -3,
+            "STYLE": -2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "枪战"
+      ]
+    },
+    {
+      "id": 5319,
+      "title": "地下防空洞清剿",
+      "description": "二战时期修建的地下防空洞如今成了血红帮的秘密兵营。你们收到情报，里面至少驻扎了二十名武装人员和一个军火库。狭窄的通道让人数优势无法发挥，每一步都可能是陷阱。潮湿的墙壁上凝结着水珠，应急灯发出暗红色的光芒。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "正面强攻逐段清剿",
+          "effects": {
+            "REP": 4,
+            "LIFE": -8,
+            "CHROME": 3,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "通风管道渗透安放炸药",
+          "effects": {
+            "REP": 4,
+            "TECH": 4,
+            "LIFE": -4,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "切断通风逼他们出来谈判",
+          "effects": {
+            "REP": 3,
+            "LIFE": -3,
+            "TECH": 2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "枪战"
+      ]
+    },
+    {
+      "id": 5320,
+      "title": "废弃赌场轮盘赌枪战",
+      "description": "这座废弃赌场的轮盘赌桌还在原地，但赌注已经变成了人命。铁颅帮和你们的谈判代表在赌桌两侧对坐，双方各带了十名枪手。当轮盘开始转动时，第一声枪响划破了虚伪的和平。筹码和弹壳在绿呢绒桌面上跳跃，老虎机还在发出刺耳的电子音效。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "掀翻赌桌作为掩体反击",
+          "effects": {
+            "REP": 3,
+            "LIFE": -6,
+            "CHROME": 2,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "直接射杀对方谈判代表",
+          "effects": {
+            "REP": 4,
+            "LIFE": -7,
+            "TRAUMA": 3,
+            "CHROME": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "触发火警 sprinklers 趁乱撤离",
+          "effects": {
+            "REP": 2,
+            "TECH": 3,
+            "LIFE": -3,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "枪战"
+      ]
+    },
+    {
+      "id": 5321,
+      "title": "化工园区毒气枪战",
+      "description": "废弃化工园区的储罐区发生泄漏，神经性毒气让所有人都只能戴着防毒面具作战。你们和骷髅帮在这片死亡地带遭遇，视野受限，呼吸沉重，每一步都可能是最后的脚步。破损的管道喷出五颜六色的化学烟雾，金属表面凝结着腐蚀性的露珠。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "占据上风处火力压制",
+          "effects": {
+            "REP": 3,
+            "LIFE": -5,
+            "CHROME": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "破坏更多储罐扩大混乱",
+          "effects": {
+            "REP": 4,
+            "LIFE": -6,
+            "TRAUMA": 3,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "利用管道系统绕后偷袭",
+          "effects": {
+            "REP": 3,
+            "TECH": 3,
+            "LIFE": -4,
+            "STYLE": 3
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "枪战"
+      ]
+    },
+    {
+      "id": 5322,
+      "title": "旧发电厂涡轮机房枪战",
+      "description": "旧发电厂的涡轮机房空间巨大，机器运转的轰鸣声掩盖了脚步声。铁颅帮把这里当成了训练场，而你们闯入了他们的领地。巨大的涡轮叶片在头顶旋转，投下快速闪动的阴影，每一声枪响都被金属墙壁反射成无数回声。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "爬上检修平台居高临下",
+          "effects": {
+            "REP": 3,
+            "LIFE": -5,
+            "CHROME": 2,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "破坏涡轮制造混乱",
+          "effects": {
+            "REP": 4,
+            "LIFE": -6,
+            "TECH": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "利用噪音掩护摸近敌人",
+          "effects": {
+            "REP": 3,
+            "LIFE": -4,
+            "CHROME": 3,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "枪战"
+      ]
+    },
+    {
+      "id": 5323,
+      "title": "数据坟场电磁枪战",
+      "description": "数据坟场堆满了报废的服务器和硬盘，强大的电磁干扰让所有精密瞄准设备失效。你们和血红帮在这里进行了一场最原始的枪战——纯粹靠感觉和经验。电弧在废弃电路板之间跳跃，臭氧味刺鼻，全息残骸在电磁风暴中闪烁出最后的残影。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "关闭干扰源恢复设备",
+          "effects": {
+            "REP": 3,
+            "TECH": 4,
+            "LIFE": -5,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "适应环境凭本能射击",
+          "effects": {
+            "REP": 3,
+            "LIFE": -6,
+            "CHROME": 3,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "引燃油料制造电磁火灾",
+          "effects": {
+            "REP": 4,
+            "LIFE": -5,
+            "TRAUMA": 3,
+            "CHROME": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "枪战"
+      ]
+    },
+    {
+      "id": 5324,
+      "title": "轨道列车编组站夜战",
+      "description": "深夜的列车编组站里，数十节货运车厢等待着被重新编组。骷髅帮占据了调度塔，用探照灯扫视着整个站场。你们必须穿过这片没有任何遮蔽的开阔地带，在车厢之间移动，每一步都可能被灯光捕捉到。金属车轮摩擦的尖啸声不时划破夜空。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "趁探照灯间隙快速突进",
+          "effects": {
+            "REP": 3,
+            "LIFE": -6,
+            "CHROME": 3,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "骇入调度系统控制探照灯",
+          "effects": {
+            "REP": 3,
+            "TECH": 4,
+            "LIFE": -3,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "驾驶机车冲撞调度塔",
+          "effects": {
+            "REP": 4,
+            "LIFE": -7,
+            "CHROME": 3,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "枪战"
+      ]
+    },
+    {
+      "id": 5325,
+      "title": "跨海大桥飞车追逐",
+      "description": "三辆改装装甲吉普和五辆机车在跨海大桥上展开了生死追逐。你们的目标是截下骷髅帮的运钞车，车上装着他们从赌场搜刮来的三千万现金。海风呼啸着灌进车窗，轮胎在湿滑桥面上发出刺耳的尖叫，桥栏外的海浪在黑暗中翻涌。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "撞击运钞车逼停",
+          "effects": {
+            "REP": 3,
+            "LIFE": -7,
+            "CHROME": 3,
+            "MONEY": 1500
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "狙击手射击轮胎",
+          "effects": {
+            "REP": 3,
+            "LIFE": -4,
+            "CHROME": 3,
+            "MONEY": 1200
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "呼叫直升机绳降夺车",
+          "effects": {
+            "REP": 4,
+            "LIFE": -5,
+            "MONEY": 1800,
+            "STYLE": 3
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "追逐"
+      ]
+    },
+    {
+      "id": 5326,
+      "title": "地下隧道机车竞速",
+      "description": "废弃的铁路隧道被改造成了地下赛车场，今晚的赌注是一整条街区的控制权。你们派出最疯的机车手，对抗铁颅帮的王牌飞车手。隧道里只有车头灯照亮前方，每一次过弯都可能撞墙。排气声在封闭空间里震耳欲聋。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全程油门到底拼命",
+          "effects": {
+            "REP": 4,
+            "LIFE": -6,
+            "STYLE": 4,
+            "CHROME": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在对手车上安装追踪器",
+          "effects": {
+            "REP": 3,
+            "TECH": 3,
+            "STYLE": 2,
+            "LIFE": -3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "赛前破坏对方机车",
+          "effects": {
+            "REP": 2,
+            "TECH": 3,
+            "STYLE": -2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "追逐"
+      ]
+    },
+    {
+      "id": 5327,
+      "title": "高速公路货运劫持",
+      "description": " skull帮的改装货运卡车正沿着高速公路运送一批军用无人机，你们的改装跑车小队已经跟了四十公里。卡车司机显然受过专业训练，不断变换车道阻挡超车。公路两旁的霓虹灯牌飞速后退，仪表盘的指针已经压到了红线。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "强行超车逼停卡车",
+          "effects": {
+            "REP": 3,
+            "LIFE": -7,
+            "CHROME": 3,
+            "MONEY": 900
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用电磁炮瘫痪卡车引擎",
+          "effects": {
+            "REP": 3,
+            "TECH": 4,
+            "LIFE": -4,
+            "MONEY": 800
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "爬上车顶破窗进入",
+          "effects": {
+            "REP": 4,
+            "LIFE": -6,
+            "CHROME": 3,
+            "STYLE": 3
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "追逐"
+      ]
+    },
+    {
+      "id": 5328,
+      "title": "空中走廊悬浮车追逐",
+      "description": "连接两座摩天楼的空中走廊上，悬浮车和改装机车在狭窄的透明管道中追逐。铁颅帮的逃脱车辆在前方喷射着蓝色等离子尾焰，你们的悬浮车紧随其后。下方数百米是城市的车流，管道外壁在摩擦中发出令人牙酸的声响。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全速撞击对方尾部",
+          "effects": {
+            "REP": 3,
+            "LIFE": -6,
+            "CHROME": 3,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "骇入对方悬浮系统",
+          "effects": {
+            "REP": 3,
+            "TECH": 4,
+            "LIFE": -3,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "打破管道让双方坠落",
+          "effects": {
+            "REP": 4,
+            "LIFE": -8,
+            "TRAUMA": 3,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "追逐"
+      ]
+    },
+    {
+      "id": 5329,
+      "title": "地下商业街飞车枪战",
+      "description": "地下商业街的狭窄通道里，改装机车在店铺之间呼啸穿梭。你们追击血红帮的运毒车队，双方在移动中互相射击。霓虹招牌被流弹击中爆裂，碎片如雨般落下， shoppers尖叫着躲进店铺。排水沟里的污水被车轮溅起半人高。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "边追边射不顾 collateral damage",
+          "effects": {
+            "REP": 3,
+            "LIFE": -6,
+            "CHROME": 3,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "预判路线提前设卡",
+          "effects": {
+            "REP": 4,
+            "LIFE": -5,
+            "CHROME": 2,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放弃追击保护平民",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 2,
+            "LIFE": -2,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "追逐"
+      ]
+    },
+    {
+      "id": 5330,
+      "title": "退役军舰甲板追逐",
+      "description": "一艘退役的核动力军舰被改造成海上据点，今晚双方在甲板上展开了机车追逐。生锈的甲板在轮胎下发出不祥的吱嘎声，海浪拍打着船舷溅起咸涩的水花。铁颅帮的骑手试图通过飞行甲板跳入接应的快艇，你们必须在他们起飞前拦截。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全速冲撞把对方撞下海",
+          "effects": {
+            "REP": 3,
+            "LIFE": -6,
+            "CHROME": 3,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "提前炸毁飞行甲板",
+          "effects": {
+            "REP": 4,
+            "LIFE": -5,
+            "TRAUMA": 2,
+            "CHROME": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用绳枪钩住对方车辆",
+          "effects": {
+            "REP": 3,
+            "TECH": 3,
+            "LIFE": -4,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "追逐"
+      ]
+    },
+    {
+      "id": 5331,
+      "title": "熔炉废墟暗杀行动",
+      "description": "铁颅帮的二号人物今晚将在熔炉废墟与军火商会面。废墟里巨大的熔炉还在散发着余热，金属残渣在黑暗中泛着暗红色的微光。你潜伏在吊装横梁上，通过热成像锁定目标。这是一次精心策划的暗杀，但对方带了至少八名护卫。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "远程狙击一枪毙命",
+          "effects": {
+            "REP": 4,
+            "LIFE": -4,
+            "CHROME": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "近距离刺杀制造震慑",
+          "effects": {
+            "REP": 5,
+            "LIFE": -7,
+            "CHROME": 3,
+            "STYLE": 4
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "安放炸弹连军火商一起清除",
+          "effects": {
+            "REP": 4,
+            "LIFE": -5,
+            "TRAUMA": 3,
+            "TECH": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "暗杀"
+      ]
+    },
+    {
+      "id": 5332,
+      "title": "冰库仓库低温暗杀",
+      "description": "骷髅帮的会计掌握着所有洗钱账户的密钥，他每晚都会到冰库仓库检查货物。你穿着防寒服潜入了零下二十度的冷藏区，呼吸在面罩上结成了白霜。目标正在货架间核对清单，两名守卫在入口处跺脚取暖。这是一次需要绝对静默的行动。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "无声暗杀后伪装成意外",
+          "effects": {
+            "REP": 3,
+            "LIFE": -4,
+            "CHROME": 3,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "劫持会计逼问密钥后处决",
+          "effects": {
+            "REP": 3,
+            "TECH": 4,
+            "LIFE": -3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "破坏制冷系统冻死所有人",
+          "effects": {
+            "REP": 2,
+            "LIFE": -5,
+            "TRAUMA": 2,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "暗杀"
+      ]
+    },
+    {
+      "id": 5333,
+      "title": "虚拟现实馆废墟处决",
+      "description": "虚拟现实馆的废墟里还残留着大量的全息投影设备，在黑暗中投射出扭曲的幻象。血红帮的叛徒今晚将被处决，而你们被雇来执行。废旧的VR座椅像墓碑一样排列，幻象中的怪物和现实中的杀手让人分不清虚实。目标被绑在中央的接入椅上，等待着最后的审判。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "公开处决杀鸡儆猴",
+          "effects": {
+            "REP": 4,
+            "LIFE": -3,
+            "TRAUMA": 3,
+            "CHROME": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "给他注射过量致幻剂",
+          "effects": {
+            "REP": 3,
+            "LIFE": -2,
+            "TECH": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放他一条生路换取情报",
+          "effects": {
+            "REP": 2,
+            "TECH": 3,
+            "HUMAN": 2,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "暗杀"
+      ]
+    },
+    {
+      "id": 5334,
+      "title": "基因农场夜间刺杀",
+      "description": "基因农场的培养舱在夜间发出幽绿色的光芒，骷髅帮的生物工程师正在这里研发军用兴奋剂。你潜入了这座充满转基因植物的温室，藤蔓在培养液中缓慢蠕动，空气中弥漫着甜腻的花香。目标在核心实验室，但安保系统比你预期的更严密。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "破坏培养舱引发混乱后刺杀",
+          "effects": {
+            "REP": 3,
+            "LIFE": -5,
+            "TECH": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "伪装成研究员接近目标",
+          "effects": {
+            "REP": 3,
+            "LIFE": -4,
+            "STYLE": 3,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "释放实验性毒气灭口",
+          "effects": {
+            "REP": 4,
+            "LIFE": -6,
+            "TRAUMA": 3,
+            "HUMAN": -3
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "暗杀"
+      ]
+    },
+    {
+      "id": 5335,
+      "title": "纳米工厂废墟精准清除",
+      "description": "纳米工厂废墟里飘荡着肉眼看不见的纳米粉尘，吸入者会在七十二小时内全身器官纤维化。骷髅帮的新任军师正在这里与外部势力密谈。你穿着昂贵的全封闭防护服，透过面罩观察着三百米外的目标。任何失误都意味着纳米粉尘的洗礼。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "超远距离穿甲弹击杀",
+          "effects": {
+            "REP": 4,
+            "LIFE": -5,
+            "CHROME": 4,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "释放反制纳米机器人",
+          "effects": {
+            "REP": 3,
+            "TECH": 5,
+            "LIFE": -4,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "破坏通风系统让粉尘外泄",
+          "effects": {
+            "REP": 4,
+            "LIFE": -6,
+            "TRAUMA": 3,
+            "HUMAN": -4
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "暗杀"
+      ]
+    },
+    {
+      "id": 5336,
+      "title": "量子通讯塔高空狙杀",
+      "description": "三百米高的量子通讯塔顶端，血红帮的首领正在与境外势力进行加密通讯。你背着沉重的狙击装备攀爬了两个小时，塔身在风中微微摇晃，下方的城市缩成了发光的棋盘。高空的缺氧和低温让手指变得僵硬，而目标只有三分钟的窗口期会暴露在观景台上。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "顶住寒风完成狙杀",
+          "effects": {
+            "REP": 5,
+            "LIFE": -6,
+            "CHROME": 4,
+            "STYLE": 4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "骇入量子通讯截取情报",
+          "effects": {
+            "REP": 3,
+            "TECH": 5,
+            "LIFE": -3,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "切断安全绳让目标坠落",
+          "effects": {
+            "REP": 4,
+            "LIFE": -5,
+            "CHROME": 3,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "暗杀"
+      ]
+    },
+    {
+      "id": 5337,
+      "title": "无人机坟场诱杀行动",
+      "description": "无人机坟场里堆满了坠毁的军用无人机残骸，金属碎片在月光下像是一片死寂的机械森林。铁颅帮的无人机专家每晚都会来这里搜寻可用零件。你藏在一架坠毁的运输机腹内，等待着目标进入射程。远处偶尔有未完全损毁的无人机发出断断续续的蜂鸣。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "静默接近后扭断脖子",
+          "effects": {
+            "REP": 3,
+            "LIFE": -4,
+            "CHROME": 3,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "激活残骸无人机制造爆炸",
+          "effects": {
+            "REP": 3,
+            "TECH": 4,
+            "LIFE": -5,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "活捉逼问无人机控制密码",
+          "effects": {
+            "REP": 3,
+            "TECH": 4,
+            "LIFE": -3,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "暗杀"
+      ]
+    },
+    {
+      "id": 5338,
+      "title": "自动化农场毒杀计划",
+      "description": "自动化农场的灌溉系统连接着全城百分之二十的地下水源。骷髅帮的财政官每周三凌晨会亲自来检查农场的收成——这是他唯一的固定行程。你潜入了农场的控制室， irrigation管道在头顶发出低沉的嗡鸣，培养液池里漂浮着发光的藻类。这是一次可以改变战局的暗杀。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在培养液中注入神经毒素",
+          "effects": {
+            "REP": 4,
+            "LIFE": -4,
+            "TECH": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "伪装成农场AI语音诱杀",
+          "effects": {
+            "REP": 3,
+            "TECH": 4,
+            "LIFE": -3,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "直接射杀后嫁祸给竞争对手",
+          "effects": {
+            "REP": 3,
+            "LIFE": -5,
+            "CHROME": 3,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "暗杀"
+      ]
+    },
+    {
+      "id": 5339,
+      "title": "海底隧道入口伏击",
+      "description": "连接主岛和工业区的海底隧道入口是血红帮走私军火的必经之路。今晚他们的运输车队将通过这里，而你们在隧道壁的检修通道里埋伏了整整六小时。咸涩的海风从通风口灌入，隧道里弥漫着柴油和潮湿水泥的气味。车队的引擎声在远处隧道中回荡。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "炸塌隧道口全歼车队",
+          "effects": {
+            "REP": 5,
+            "LIFE": -6,
+            "CHROME": 3,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "前后夹击抢夺军火",
+          "effects": {
+            "REP": 4,
+            "LIFE": -7,
+            "CHROME": 3,
+            "MONEY": 1000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "只杀首领震慑其余",
+          "effects": {
+            "REP": 4,
+            "LIFE": -5,
+            "CHROME": 3,
+            "STYLE": 3
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "街头战争",
+        "伏击"
+      ]
+    },
+    {
+      "id": 5340,
+      "title": "黑市义体交易陷阱",
+      "description": "暗网上一位信誉极高的黑市义体商人约你们在地下停车场交易一批军用级神经接口。但你们的情报显示，这可能是铁颅帮设下的圈套——那位商人上周已经被确认死亡。停车场的灯光忽明忽暗，远处传来滴水声，每一根柱子后面都可能藏着枪手。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "带足人手反包围对方",
+          "effects": {
+            "REP": 3,
+            "LIFE": -5,
+            "CHROME": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "远程骇入停车场监控确认",
+          "effects": {
+            "REP": 2,
+            "TECH": 4,
+            "LIFE": -3,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放鸽子让敌人白等",
+          "effects": {
+            "REP": -1,
+            "STYLE": 3,
+            "TECH": 2,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "地下经济",
+        "黑市"
+      ]
+    },
+    {
+      "id": 5341,
+      "title": "军用芯片黑市竞价",
+      "description": "一批从军方实验室流出的量子加密芯片流入了黑市，三大帮派齐聚废弃银行金库参加秘密竞价。竞价规则只有一条——价高者得，但离场时不保证人身安全。金库的防爆门在身后缓缓关闭，墙壁上的应急灯把每个人的脸映得如同鬼魅。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "高价拍下芯片",
+          "effects": {
+            "MONEY": -2000,
+            "TECH": 5,
+            "REP": 3,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "竞价成功后黑吃黑夺回现金",
+          "effects": {
+            "MONEY": 1500,
+            "TECH": 3,
+            "REP": -2,
+            "LIFE": -5
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "破坏竞价会所有人空手而归",
+          "effects": {
+            "REP": -1,
+            "LIFE": -4,
+            "TRAUMA": 2,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "地下经济",
+        "黑市"
+      ]
+    },
+    {
+      "id": 5342,
+      "title": "神经毒品原料竞拍",
+      "description": "一艘走私船在公海被截获，船上载有足以合成十万人份神经毒品的原材料。各大帮派的代表齐聚深海渔业码头的冷藏库，气氛冷得像冰。每一方都带着武装护卫，任何一个小动作都可能引发全面火拼。冷库的压缩机发出单调的轰鸣。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全款购入控制原料供应链",
+          "effects": {
+            "MONEY": -1800,
+            "REP": 4,
+            "ADDICTION": 2,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "竞价失败后抢劫买家",
+          "effects": {
+            "MONEY": 1200,
+            "REP": -2,
+            "LIFE": -6,
+            "CHROME": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "通知警方查封让所有人都得不到",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "STYLE": 3,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "地下经济",
+        "黑市"
+      ]
+    },
+    {
+      "id": 5343,
+      "title": "生物武器残片交易",
+      "description": "战前遗留的生物武器残片在废墟中被发现，黑市出价高得离谱。你们作为中间人安排了一次交易，但买卖双方都怀疑对方会黑吃黑。交易地点选在轨道电梯基座——一个随时可以被轨道防御系统抹除的地方。基座的风力发电机组在头顶旋转。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "确保交易顺利完成抽成",
+          "effects": {
+            "MONEY": 2500,
+            "REP": 3,
+            "TRAUMA": 2,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "私吞货物转卖更高价",
+          "effects": {
+            "MONEY": 4000,
+            "REP": -3,
+            "LIFE": -6,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "销毁生物武器阻止扩散",
+          "effects": {
+            "HUMAN": 5,
+            "REP": 3,
+            "STYLE": 3,
+            "LIFE": -4
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "地下经济",
+        "黑市"
+      ]
+    },
+    {
+      "id": 5344,
+      "title": "暗网拍卖行火拼",
+      "description": "暗网最大的拍卖行今晚举办年度珍品拍卖会，压轴拍品是一枚能打开城市金库的量子密钥。各方帮派代表在虚拟空间中竞价，但竞价失败的现实武装已经包围了拍卖行的物理服务器所在地——一座废弃的数据中心。服务器的散热风扇发出震耳欲聋的轰鸣。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "武力夺取服务器和密钥",
+          "effects": {
+            "REP": 4,
+            "LIFE": -6,
+            "TECH": 4,
+            "MONEY": 2000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "远程骇入抢先转移密钥",
+          "effects": {
+            "REP": 3,
+            "TECH": 5,
+            "LIFE": -3,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "炸毁服务器让所有人心甘情愿",
+          "effects": {
+            "REP": -1,
+            "LIFE": -4,
+            "TRAUMA": 2,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "地下经济",
+        "黑市"
+      ]
+    },
+    {
+      "id": 5345,
+      "title": "走私潜艇卸货夜",
+      "description": "一艘改装的微型潜艇悄无声息地浮上海岸，艇上载着从境外运来的五百支军用步枪和二十枚电磁脉冲手雷。你们负责接应卸货，但海岸巡逻队的无人机恰好在此时掠过头顶。探照灯扫过漆黑的海面，浪涛拍打着礁石发出雷鸣般的声响。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "快速卸货后分散撤离",
+          "effects": {
+            "REP": 3,
+            "LIFE": -5,
+            "CHROME": 3,
+            "MONEY": 900
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "击落无人机继续作业",
+          "effects": {
+            "REP": 4,
+            "LIFE": -6,
+            "TECH": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把潜艇和货物一起沉海销毁",
+          "effects": {
+            "REP": -1,
+            "LIFE": -3,
+            "TRAUMA": 2,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "地下经济",
+        "走私"
+      ]
+    },
+    {
+      "id": 5346,
+      "title": "高空飞艇货物转移",
+      "description": "一艘属于跨国企业的货运飞艇被内部人员劫持，正在城市上空盘旋等待交接。你们的任务是用小型飞行器接近飞艇，在万米高空完成货物转移。稀薄的空气让引擎效率降低，强风让飞行器像落叶一样摇摆。货舱门打开时，货物在缆绳上旋转。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "绳降进入货舱控制飞艇",
+          "effects": {
+            "REP": 4,
+            "LIFE": -6,
+            "CHROME": 3,
+            "STYLE": 4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用吸盘固定后快速转移货物",
+          "effects": {
+            "REP": 3,
+            "LIFE": -5,
+            "TECH": 3,
+            "MONEY": 1200
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "威胁驾驶员改变航线",
+          "effects": {
+            "REP": 3,
+            "LIFE": -4,
+            "STYLE": 2,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "地下经济",
+        "走私"
+      ]
+    },
+    {
+      "id": 5347,
+      "title": "轨道货运列车劫掠",
+      "description": "一列无人驾驶的轨道货运列车正载着企业最新款的军用义体穿越城市上空轨道。你们用改装的磁吸装置攀附上了列车车厢，在时速三百公里的狂风中艰难移动。下方是缩小的城市街道，头顶是不断闪烁的警示灯。每一次颠簸都可能让你坠入深渊。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "逐节车厢搜索目标货物",
+          "effects": {
+            "REP": 4,
+            "LIFE": -7,
+            "CHROME": 3,
+            "MONEY": 1500
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "骇入列车系统让其在站点停靠",
+          "effects": {
+            "REP": 3,
+            "TECH": 5,
+            "LIFE": -3,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "直接炸开车顶吊走整箱",
+          "effects": {
+            "REP": 3,
+            "LIFE": -6,
+            "CHROME": 2,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "地下经济",
+        "走私"
+      ]
+    },
+    {
+      "id": 5348,
+      "title": "冷冻遗体走私通道",
+      "description": "一条利用城市遗体冷冻库作为掩护的走私通道被你们发现。铁颅帮通过伪造死亡证明，把活人冷冻后混入遗体运输车出境。冷藏车厢里的温度是零下四十度，被冷冻的人还有微弱的生命迹象。这是一条沾满冰霜的罪恶之路。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "打断这条通道解救受害者",
+          "effects": {
+            "HUMAN": 5,
+            "REP": 3,
+            "LIFE": -4,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接管通道自己运营",
+          "effects": {
+            "MONEY": 2000,
+            "REP": -3,
+            "HUMAN": -4,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "勒索铁颅帮封口费",
+          "effects": {
+            "MONEY": 1500,
+            "REP": 2,
+            "STYLE": 2,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "地下经济",
+        "走私"
+      ]
+    },
+    {
+      "id": 5349,
+      "title": "海底光缆走私通道",
+      "description": "一条废弃的海底光缆维修通道被改造成了水下走私路线。潜水器在漆黑的深海中沿着光缆缓慢前进，压力表的指针不断颤抖。你们运送的是一批军用级神经增强剂，一旦泄露在高压环境下会瞬间气化。舷窗外偶尔有深海生物的发光器官闪过。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "冒险通过完成交付",
+          "effects": {
+            "REP": 3,
+            "LIFE": -5,
+            "TECH": 3,
+            "MONEY": 1000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "发现故障后上浮维修",
+          "effects": {
+            "REP": 2,
+            "TECH": 4,
+            "LIFE": -4,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "丢弃货物保命返航",
+          "effects": {
+            "REP": -2,
+            "LIFE": -2,
+            "TRAUMA": 1,
+            "MONEY": -500
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "地下经济",
+        "走私"
+      ]
+    },
+    {
+      "id": 5350,
+      "title": "霓虹街区毒品分销权争夺",
+      "description": "一种名为'虚空'的新型合成毒品席卷了霓虹街区，控制分销权意味着每天数百万的现金流。你们和血红帮各自派出了推销员团队在街头拉客，但真正的战场在后台——谁能让更多店铺愿意藏匿货品谁就能垄断这条街。霓虹灯下是面无表情的瘾君子。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "暴力驱逐对方推销员",
+          "effects": {
+            "REP": 3,
+            "LIFE": -5,
+            "CHROME": 3,
+            "ADDICTION": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "给店铺更高分成拉拢",
+          "effects": {
+            "MONEY": -800,
+            "REP": 4,
+            "ADDICTION": 1,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "报警让对方被查封",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "STYLE": 3,
+            "TECH": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "地下经济",
+        "毒品"
+      ]
+    },
+    {
+      "id": 5351,
+      "title": "学校周边毒品渗透",
+      "description": "一所职业学院周边出现了大量廉价合成毒品，情报显示铁颅帮正在把学生发展成分销下线。校园外的巷子里，稚嫩的面孔在交易时紧张地东张西望。这是一个危险的信号——一旦学生卷入太深，整个社区的根基都会被腐蚀。放学铃声在远处回荡。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "强行清场赶走所有毒贩",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "LIFE": -4,
+            "ADDICTION": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用更低价格抢学生客户",
+          "effects": {
+            "MONEY": 1000,
+            "REP": -2,
+            "ADDICTION": 3,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向校方匿名举报",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "STYLE": 2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "地下经济",
+        "毒品"
+      ]
+    },
+    {
+      "id": 5352,
+      "title": "地下夜店毒品倾销",
+      "description": "城里最火爆的地下夜店今晚被骷髅帮包场，他们在饮料中大规模投放了一种会让人产生强烈攻击倾向的新型毒品。舞池里的人开始互相撕咬，场面失控。如果你们不介入，整个夜店的人都会变成废人，而骷髅帮将趁机控制这里的所有客源。重低音震得地板发抖。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "闯入制止并销毁毒品",
+          "effects": {
+            "HUMAN": 5,
+            "REP": 3,
+            "LIFE": -5,
+            "ADDICTION": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "抢走剩余毒品转卖",
+          "effects": {
+            "MONEY": 1800,
+            "REP": -2,
+            "ADDICTION": 2,
+            "LIFE": -4
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "录像取证后曝光骷髅帮",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 3,
+            "STYLE": 3,
+            "TECH": 3
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "地下经济",
+        "毒品"
+      ]
+    },
+    {
+      "id": 5353,
+      "title": "戒毒所内线交易",
+      "description": "城中最严格的强制戒毒所里，一名看守被你们收买，可以把毒品偷偷送进去给有钱有势的学员。但另一名看守察觉到了异常，开始暗中调查。高墙内的走廊里回荡着哀嚎和祈祷，铁窗后面是一张张扭曲的面孔。这是一次危险的平衡表演。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加大贿赂封住知情者的嘴",
+          "effects": {
+            "MONEY": -600,
+            "REP": 2,
+            "ADDICTION": 2,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "灭口知情看守",
+          "effects": {
+            "REP": 3,
+            "LIFE": -5,
+            "TRAUMA": 3,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "撤回交易保全大局",
+          "effects": {
+            "REP": -1,
+            "ADDICTION": -1,
+            "STYLE": 1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "地下经济",
+        "毒品"
+      ]
+    },
+    {
+      "id": 5354,
+      "title": "军用兴奋剂实验室突袭",
+      "description": "你们发现了一座隐藏在企业园区地下深处的军用兴奋剂实验室，里面的产品效力是街头毒品的百倍。铁颅帮已经控制了出货渠道，但实验室的科学家愿意向更高出价者效力。无菌室里培养舱发出幽蓝的光，实验动物的叫声从某处传来。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "武力占领实验室控制生产",
+          "effects": {
+            "REP": 4,
+            "LIFE": -6,
+            "CHROME": 3,
+            "ADDICTION": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "高薪挖走核心科学家",
+          "effects": {
+            "MONEY": -1500,
+            "REP": 3,
+            "TECH": 4,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向媒体曝光摧毁整个产业",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "STYLE": 3,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "地下经济",
+        "毒品"
+      ]
+    },
+    {
+      "id": 5355,
+      "title": "地下赛博格斗兽场",
+      "description": "一座废弃的化工厂地下被改造成了非法赛博格斗兽场，改造人和野兽在高压电网包围的竞技场中厮杀。观众席上坐满了嗑药的富豪和帮派成员，赌注堆到了天文数字。你们帮派负责维持秩序，但今晚血红帮的人来砸场子。血腥味和电子烟雾混合在一起。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "武力驱逐闹事者",
+          "effects": {
+            "REP": 3,
+            "LIFE": -6,
+            "CHROME": 3,
+            "MONEY": 800
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "让手下假扮选手击败对方代表",
+          "effects": {
+            "REP": 4,
+            "LIFE": -5,
+            "CHROME": 3,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "暗中操纵比赛结果收割赌注",
+          "effects": {
+            "MONEY": 2000,
+            "REP": -2,
+            "STYLE": 2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "地下经济",
+        "赌博"
+      ]
+    },
+    {
+      "id": 5356,
+      "title": "神经轮盘赌局",
+      "description": "一间隐秘的VIP室里，富豪们正在玩一种名为'神经轮盘'的致命赌局——赌的是谁能承受更高剂量的神经刺激而不脑死亡。你们帮派提供场地和'娱乐'，抽成百分之二十。但今晚一位输不起的企业继承人拔出了枪，场面瞬间失控。雪茄烟雾在昏暗的灯光中缭绕。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "制服闹事者继续营业",
+          "effects": {
+            "REP": 3,
+            "LIFE": -4,
+            "CHROME": 2,
+            "MONEY": 1000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "让闹事者永远消失",
+          "effects": {
+            "REP": 3,
+            "LIFE": -3,
+            "TRAUMA": 3,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "关闭赌局遣散所有人",
+          "effects": {
+            "REP": -1,
+            "HUMAN": 2,
+            "STYLE": 1,
+            "MONEY": -400
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "地下经济",
+        "赌博"
+      ]
+    },
+    {
+      "id": 5357,
+      "title": "全息彩票黑市",
+      "description": "城市官方彩票系统被人做了手脚，一批注定会中奖的号码在黑市上流通。你们发现了这个漏洞，可以批量伪造中奖彩票。但铁颅帮也盯上了这块肥肉，双方的技术人员在暗网论坛上互相试探。屏幕上的代码像瀑布一样滚动。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "大规模伪造彩票套现",
+          "effects": {
+            "MONEY": 2500,
+            "REP": -2,
+            "TECH": 4,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只小批量操作避免被发现",
+          "effects": {
+            "MONEY": 800,
+            "REP": 2,
+            "TECH": 3,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把漏洞卖给官方换取赏金",
+          "effects": {
+            "MONEY": 1500,
+            "HUMAN": 3,
+            "REP": 3,
+            "STYLE": 3
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "地下经济",
+        "赌博"
+      ]
+    },
+    {
+      "id": 5358,
+      "title": "义体格斗博彩",
+      "description": "非法义体格斗赛是地下经济最大的现金流之一。今晚的压轴比赛是你们帮派培养的拳手对阵骷髅帮的杀戮机器。看台上坐满了各个帮派的代表，赌注涉及地盘和军火。拳手在休息室里紧张地调试着液压关节，教练在一旁低声叮嘱。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "给拳手注射违禁增强剂",
+          "effects": {
+            "REP": 3,
+            "MONEY": 1500,
+            "ADDICTION": 2,
+            "STYLE": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "贿赂对方拳手放水",
+          "effects": {
+            "MONEY": -1000,
+            "REP": 3,
+            "STYLE": 2,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在对方拳手义体上做手脚",
+          "effects": {
+            "REP": 2,
+            "TECH": 3,
+            "MONEY": 1200,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "地下经济",
+        "赌博"
+      ]
+    },
+    {
+      "id": 5359,
+      "title": "暗网赌球帝国",
+      "description": "全球各大体育联赛在暗网上都有对应的非法赌盘，你们控制的盘口每周流水过亿。但今晚一场关键比赛的裁判突然宣布改变判罚，导致盘口剧烈波动。后台数据显示有人在巨额对冲，这是内部人员泄密的迹象。服务器机房的散热风扇发出低沉的轰鸣。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "强行修改赔率减少损失",
+          "effects": {
+            "MONEY": -500,
+            "REP": 2,
+            "TECH": 4,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "查出内鬼当众处决",
+          "effects": {
+            "REP": 3,
+            "LIFE": -4,
+            "TRAUMA": 3,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "干脆卷款跑路",
+          "effects": {
+            "MONEY": 3000,
+            "REP": -4,
+            "STYLE": -3,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "地下经济",
+        "赌博"
+      ]
+    },
+    {
+      "id": 5360,
+      "title": "港口人口转运站",
+      "description": "港口深处的废弃冷藏船里，五十多名来自战乱地区的非法移民被关押在货舱中。铁颅帮准备将他们卖给各个工厂和地下场所。货舱里弥漫着呕吐物和恐惧的气味，人们在黑暗中低声啜泣。海风从甲板的裂缝中灌入，带着咸腥和柴油的味道。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "强攻船只解救所有人",
+          "effects": {
+            "HUMAN": 5,
+            "REP": 4,
+            "LIFE": -6,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "偷偷放走妇女儿童",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "LIFE": -3,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接管船只自己贩卖",
+          "effects": {
+            "MONEY": 3000,
+            "REP": -4,
+            "HUMAN": -5,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "地下经济",
+        "人口贩卖"
+      ]
+    },
+    {
+      "id": 5361,
+      "title": "虚拟偶像奴役工厂",
+      "description": "一座外表普通的办公楼里，数百名被拐卖的年轻女性被迫进行全天候的虚拟偶像直播。她们的生物信号被直接接入虚拟形象，任何反抗都会遭到电击。你们接到线报，这座楼的幕后老板是血红帮的合伙人。电梯里的镜子映出你们愤怒的面孔。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "突袭办公楼解救受害者",
+          "effects": {
+            "HUMAN": 5,
+            "REP": 4,
+            "LIFE": -5,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "曝光直播黑幕让舆论施压",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 3,
+            "STYLE": 3,
+            "TECH": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "勒索老板分一杯羹",
+          "effects": {
+            "MONEY": 2000,
+            "REP": -2,
+            "HUMAN": -3,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "地下经济",
+        "人口贩卖"
+      ]
+    },
+    {
+      "id": 5362,
+      "title": "地下器官配对中心",
+      "description": "一座伪装成慈善诊所的地下设施里，数据库中存储着数千名'自愿'捐献者的配型信息。铁颅帮的'客户经理'正在为富豪客户寻找匹配的器官来源。无菌走廊里弥漫着消毒水味，冷冻库里整齐排列着标有血型的容器。这是一个运转高效的死亡工厂。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "摧毁数据库和库存",
+          "effects": {
+            "HUMAN": 5,
+            "REP": 4,
+            "LIFE": -5,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拷贝数据后勒索相关富豪",
+          "effects": {
+            "MONEY": 2500,
+            "REP": 3,
+            "STYLE": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接管中心成为新中介",
+          "effects": {
+            "MONEY": 3000,
+            "REP": -3,
+            "HUMAN": -4,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "地下经济",
+        "人口贩卖"
+      ]
+    },
+    {
+      "id": 5363,
+      "title": "克隆人养殖农场",
+      "description": "偏远郊区的'基因优化中心'实际上是一座克隆人养殖农场，为富豪提供器官移植和性服务。数百个培养舱在地下室整齐排列，里面的克隆人在无知中生长。你们帮派收到了来自竞争对手的情报，这是打击铁颅帮声誉的绝佳机会。培养液发出幽绿色的荧光。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "曝光农场引发社会地震",
+          "effects": {
+            "HUMAN": 5,
+            "REP": 5,
+            "STYLE": 4,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "烧毁农场毁灭证据",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 3,
+            "LIFE": -5,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "劫持克隆人勒索运营方",
+          "effects": {
+            "MONEY": 2000,
+            "REP": -2,
+            "HUMAN": -3,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "地下经济",
+        "人口贩卖"
+      ]
+    },
+    {
+      "id": 5364,
+      "title": "记忆抹除奴隶市场",
+      "description": "黑市上出现了一种新技术——可以抹除人的记忆后将其作为'空白奴隶'出售。这些受害者失去了所有过去的记忆，只剩下基本的生存本能。你们追踪到了一处秘密拍卖会的地点，买家名单上有不少熟悉的名字。拍卖台的聚光灯下，受害者眼神空洞地站着。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "捣毁拍卖会解救受害者",
+          "effects": {
+            "HUMAN": 5,
+            "REP": 4,
+            "LIFE": -6,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "记录买家名单用于勒索",
+          "effects": {
+            "REP": 3,
+            "TECH": 4,
+            "STYLE": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "购买技术自己经营",
+          "effects": {
+            "MONEY": -2000,
+            "REP": -3,
+            "HUMAN": -5,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "地下经济",
+        "人口贩卖"
+      ]
+    },
+    {
+      "id": 5365,
+      "title": "儿童兵训练营突袭",
+      "description": "城郊废弃的军事基地里，铁颅帮正在训练一批从贫民窟拐来的儿童作为廉价打手。最大不过十四岁，最小只有十岁。孩子们被迫互相格斗，失败者被送去'处理'。铁丝网在夕阳下拉出长长的影子，操场上回荡着稚嫩的惨叫和教官的咒骂。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全力突袭解救所有孩子",
+          "effects": {
+            "HUMAN": 5,
+            "REP": 5,
+            "LIFE": -6,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只带走最年幼的孩子",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 3,
+            "LIFE": -4,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "炸毁基地连同教官一起埋葬",
+          "effects": {
+            "REP": 4,
+            "LIFE": -5,
+            "TRAUMA": 3,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "地下经济",
+        "人口贩卖"
+      ]
+    },
+    {
+      "id": 5366,
+      "title": "基因奴隶黑市拍卖会",
+      "description": "一场仅限受邀者参加的高端黑市拍卖会在私人空间站上举行，拍品是经过基因改造的'定制奴隶'—— enhanced strength, 绝对服从，寿命只有五年。富豪们用加密货币竞价，拍卖师的锤子每一次落下都意味着一条人命的标价。空间站的观景窗外是地球的弧线。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "潜入破坏拍卖系统",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "TECH": 4,
+            "LIFE": -4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "记录所有买家身份后勒索",
+          "effects": {
+            "MONEY": 3000,
+            "REP": 3,
+            "STYLE": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "劫持空间站要挟释放奴隶",
+          "effects": {
+            "REP": 4,
+            "LIFE": -6,
+            "STYLE": 4,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "地下经济",
+        "人口贩卖"
+      ]
+    },
+    {
+      "id": 5367,
+      "title": "走私新娘运输线",
+      "description": "一条从贫民区到富人区的'新娘运输线'被你们发现。年轻女性被虚假的婚姻承诺骗来，然后卖给各个区域的富人和帮派成员。运输车每三天发一班，今晚正好是发车时间。车站里弥漫着廉价香水和恐惧的气味，被锁在车厢里的哭声被引擎声掩盖。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拦截车辆解救所有人",
+          "effects": {
+            "HUMAN": 5,
+            "REP": 4,
+            "LIFE": -5,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "追踪买家一网打尽",
+          "effects": {
+            "REP": 4,
+            "TECH": 3,
+            "LIFE": -4,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "收取保护费默许运输",
+          "effects": {
+            "MONEY": 1500,
+            "REP": -3,
+            "HUMAN": -4,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "地下经济",
+        "人口贩卖"
+      ]
+    },
+    {
+      "id": 5368,
+      "title": "记忆猎人抓捕行动",
+      "description": "一种新型职业'记忆猎人'在城市中出没——他们专门绑架有特定技能的人，抹除记忆后卖给需要这些技能的企业和帮派。你们帮派里已经有两名成员失踪。追踪线索指向了一座废弃的电影院，那里正在举行一场'技能拍卖'。放映厅的座椅上坐满了戴着面具的买家。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "捣毁拍卖会救回成员",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 4,
+            "LIFE": -5,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "反向追踪抓捕记忆猎人",
+          "effects": {
+            "REP": 3,
+            "TECH": 4,
+            "LIFE": -4,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "买下记忆猎人技术自己用",
+          "effects": {
+            "MONEY": -2500,
+            "REP": -2,
+            "HUMAN": -3,
+            "TECH": 5
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "地下经济",
+        "人口贩卖"
+      ]
+    },
+    {
+      "id": 5369,
+      "title": "赛博宠物奴隶工坊",
+      "description": "一家声称生产'高仿真AI伴侣'的工厂，实际上是把真人大脑接入机械躯体后抹去意识。这些'产品'被卖到世界各地作为仆从和玩物。你们潜入了工厂的核心车间，看到了一排排正在调试的人形躯体，他们的眼睛还没有被装上，空洞的眼眶对着天花板。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "摧毁工厂核心设备",
+          "effects": {
+            "HUMAN": 5,
+            "REP": 4,
+            "LIFE": -5,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "曝光丑闻让企业破产",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 4,
+            "STYLE": 4,
+            "TECH": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "劫持成品高价转卖",
+          "effects": {
+            "MONEY": 2500,
+            "REP": -3,
+            "HUMAN": -4,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "地下经济",
+        "人口贩卖"
+      ]
+    },
+    {
+      "id": 5370,
+      "title": "三方帮派停火谈判",
+      "description": "血红帮、铁颅帮和你们帮派已经被持续的战争拖得筋疲力尽。一个中立的中间人安排了一场秘密停火谈判，地点在一座废弃的 orbital elevator 基座。三方首领各自带了保镖，空气中弥漫着不信任和疲惫。任何一方的过激行为都可能让谈判变成屠杀。基座的风力发电机在头顶旋转。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "真诚谈判达成停火",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 3,
+            "STYLE": 3,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "表面合作暗中准备背叛",
+          "effects": {
+            "REP": 2,
+            "STYLE": 4,
+            "TECH": 3,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "谈判中暗杀其他两帮首领",
+          "effects": {
+            "REP": 5,
+            "LIFE": -6,
+            "TRAUMA": 3,
+            "CHROME": 3
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "帮派政治",
+        "联盟"
+      ]
+    },
+    {
+      "id": 5371,
+      "title": "资源共享协议",
+      "description": "城市水源系统的控制权被军方接管后，你们帮派和骷髅帮都面临着生存危机。有人提议双方共享一条私接的净水管道，但这意味着要让对方进入自己的核心地盘。管道检修井里弥漫着霉味和氯气的刺鼻气味，每一滴水都代表着活下去的希望。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "签订协议共享水源",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "DEBT": 1,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "独霸管道驱逐骷髅帮",
+          "effects": {
+            "REP": 3,
+            "LIFE": -5,
+            "CHROME": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "破坏管道让所有人都得不到",
+          "effects": {
+            "REP": -2,
+            "TRAUMA": 2,
+            "STYLE": 1,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "帮派政治",
+        "联盟"
+      ]
+    },
+    {
+      "id": 5372,
+      "title": "联合企业外包",
+      "description": "一家跨国安保公司开出天价，要雇佣两个帮派联合完成一次'城市清理'行动——驱逐一片贫民窟的居民为新建工厂腾地。你们的帮派和血红帮被同时雇佣，但这意味着要联手对付手无寸铁的穷人。企业代表在装甲车里等着你们的答复。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接下任务与血红帮合作",
+          "effects": {
+            "MONEY": 2500,
+            "REP": -3,
+            "HUMAN": -4,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝并保护贫民窟居民",
+          "effects": {
+            "HUMAN": 5,
+            "REP": 4,
+            "STYLE": 4,
+            "LIFE": -4
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "假装合作然后黑吃黑",
+          "effects": {
+            "MONEY": 3000,
+            "REP": -2,
+            "LIFE": -5,
+            "STYLE": 3
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "帮派政治",
+        "联盟"
+      ]
+    },
+    {
+      "id": 5373,
+      "title": "共同敌人危机",
+      "description": "一个神秘的第四势力突然崛起，他们装备精良、手段残忍，短短两周就吞并了三个小帮派的地盘。你们的帮派和铁颅帮同时受到了威胁，单独对抗几乎没有胜算。临时指挥部里，两帮的首领第一次坐在了同一张桌子前。地图上的红色标记正在不断扩张。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "与铁颅帮正式结盟对抗",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 2,
+            "LIFE": -5,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "暗中与第四势力谈判投诚",
+          "effects": {
+            "REP": -3,
+            "STYLE": 3,
+            "TECH": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "趁乱吞并小帮派壮大自己",
+          "effects": {
+            "REP": 3,
+            "LIFE": -4,
+            "CHROME": 2,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "帮派政治",
+        "联盟"
+      ]
+    },
+    {
+      "id": 5374,
+      "title": "停火线哨站冲突",
+      "description": "根据停火协议，双方在边界线上设立了联合哨站。但今晚哨站传来枪声，双方各有一名成员中枪身亡。是谁打破了停火？是意外还是蓄意挑衅？两帮的人马正在向边界聚集，一场全面战争一触即发。哨站的探照灯在夜空中划出惨白的光柱。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "冷静调查还原真相",
+          "effects": {
+            "REP": 3,
+            "TECH": 3,
+            "HUMAN": 2,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "不管真相先灭对方",
+          "effects": {
+            "REP": 4,
+            "LIFE": -7,
+            "CHROME": 3,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "双方同时撤军避免冲突",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 3,
+            "STYLE": 2,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "帮派政治",
+        "联盟"
+      ]
+    },
+    {
+      "id": 5375,
+      "title": "副手政变阴谋",
+      "description": "你帮派里的二把手最近行为异常，频繁与外部势力秘密会面。你的心腹传来消息——他计划在下周的帮派大会上发动政变，篡夺领导权。支持者名单上有三分之一的核心成员。这是你掌权以来最大的内部危机，稍有不慎帮派就会分裂。办公室的窗外是永不停歇的霓虹雨。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "提前动手清除叛徒",
+          "effects": {
+            "REP": 3,
+            "LIFE": -5,
+            "TRAUMA": 3,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "设局让叛徒自曝其短",
+          "effects": {
+            "REP": 4,
+            "STYLE": 4,
+            "TECH": 3,
+            "LIFE": -3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "主动退让保全帮派",
+          "effects": {
+            "REP": -2,
+            "HUMAN": 2,
+            "STYLE": 2,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "帮派政治",
+        "背叛"
+      ]
+    },
+    {
+      "id": 5376,
+      "title": "血誓兄弟反目",
+      "description": "和你一起创立帮派的生死兄弟，因为一次地盘分配的分歧与你公开决裂。他在帮派对立的街区自立门户，拉拢了大量不满的成员。今晚他送来一封血书，要求分割帮派一半的地盘和资产。字迹是你熟悉的，但语气却陌生得像另一个人。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拒绝并全面开战",
+          "effects": {
+            "REP": 3,
+            "LIFE": -7,
+            "CHROME": 3,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "谈判妥协分割部分利益",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "STYLE": 2,
+            "MONEY": -800
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "暗中派人暗杀旧友",
+          "effects": {
+            "REP": 3,
+            "LIFE": -4,
+            "TRAUMA": 3,
+            "HUMAN": -3
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "帮派政治",
+        "背叛"
+      ]
+    },
+    {
+      "id": 5377,
+      "title": "财务主管卷款潜逃",
+      "description": "帮派的金库一夜之间少了八百万现金和全部加密货币密钥。财务主管消失了，只留下一段嘲讽的全息留言。没有这笔钱，帮派发不出薪水，底层成员已经开始骚动。会计室的保险柜敞开着，里面的灰尘证明了这是一场蓄谋已久的盗窃。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全力追捕追杀叛徒",
+          "effects": {
+            "REP": 3,
+            "LIFE": -4,
+            "CHROME": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "紧急筹措资金稳定人心",
+          "effects": {
+            "MONEY": -1500,
+            "REP": 2,
+            "HUMAN": 2,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "以此为借口清洗财务系统",
+          "effects": {
+            "REP": 3,
+            "TECH": 4,
+            "STYLE": 3,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "帮派政治",
+        "背叛"
+      ]
+    },
+    {
+      "id": 5378,
+      "title": "外国雇佣兵渗透",
+      "description": "一支来自境外的雇佣兵小队以投靠的名义加入了帮派，但情报显示他们实际上是受雇来从内部瓦解你们的。他们在训练中刻意挑起派系矛盾，已有数名成员因冲突被送进医院。军营里的气氛紧张得像拉满的弓弦。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "揭穿身份当众处决",
+          "effects": {
+            "REP": 4,
+            "LIFE": -5,
+            "TRAUMA": 3,
+            "CHROME": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "反向收买为己所用",
+          "effects": {
+            "MONEY": -1200,
+            "REP": 3,
+            "STYLE": 3,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "将计就计让他们去送死",
+          "effects": {
+            "REP": 3,
+            "LIFE": -3,
+            "STYLE": 4,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "帮派政治",
+        "背叛"
+      ]
+    },
+    {
+      "id": 5379,
+      "title": "女继承人权力之争",
+      "description": "老首领在一次暗杀中重伤昏迷，他指定了年轻的女儿作为继承人，但帮派里的元老们拒绝服从一个二十出头的女孩。她找到你，希望你能支持她上位。作为回报，她承诺给你一个副首领的位置。病房里的心电监护仪发出规律的嘀嘀声。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全力支持她清洗元老",
+          "effects": {
+            "REP": 4,
+            "LIFE": -5,
+            "CHROME": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "保持中立观望局势",
+          "effects": {
+            "REP": 2,
+            "STYLE": 3,
+            "TECH": 2,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "联合元老推翻她自立",
+          "effects": {
+            "REP": 3,
+            "LIFE": -6,
+            "TRAUMA": 3,
+            "CHROME": 3
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "帮派政治",
+        "政变"
+      ]
+    },
+    {
+      "id": 5380,
+      "title": "新兴义体帮派崛起",
+      "description": "一群全身重度改造的年轻人组成的新兴帮派'钢铁之心'，在一个月内连续吞并了五个街区。他们不遵循任何老牌帮派的规矩，用极端暴力快速扩张。你们的地盘与他们 newly acquired territory 接壤，冲突不可避免。他们的义体在月光下反射出冷冽的金属光泽。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "主动开战消灭威胁",
+          "effects": {
+            "REP": 4,
+            "LIFE": -7,
+            "CHROME": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "尝试谈判划定边界",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "STYLE": 2,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "暗中支持他们的敌人",
+          "effects": {
+            "REP": 2,
+            "TECH": 3,
+            "STYLE": 3,
+            "MONEY": -600
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "帮派政治",
+        "崛起"
+      ]
+    },
+    {
+      "id": 5381,
+      "title": "AI控制帮派入侵",
+      "description": "一个完全由人工智能控制的帮派'零号协议'突然出现在城市边缘。他们没有人类首领，所有决策由分布式AI做出，成员全是被洗脑或自愿效忠的精英战士。他们的行动精准而冷酷，没有任何情感波动。这是人类帮派从未面对过的敌人。数据流在他们据点的屏幕上瀑布般滚动。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "网络战摧毁AI核心",
+          "effects": {
+            "REP": 4,
+            "TECH": 5,
+            "LIFE": -4,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "物理摧毁他们的服务器农场",
+          "effects": {
+            "REP": 4,
+            "LIFE": -6,
+            "CHROME": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "尝试与AI谈判共存",
+          "effects": {
+            "REP": 3,
+            "TECH": 4,
+            "HUMAN": 2,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "帮派政治",
+        "崛起"
+      ]
+    },
+    {
+      "id": 5382,
+      "title": "企业安保帮派化",
+      "description": "一家跨国企业为了节省成本，开始将旗下安保部队'帮派化'——给予他们地盘自治权，默许他们进行地下经济活动。这些'企业帮派'装备精良、训练有素，迅速成为了城市的新势力。他们的装甲车上印着企业的logo，行为却比任何街头帮派都更加肆无忌惮。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "联合其他传统帮派对抗",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 2,
+            "LIFE": -6,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "与企业帮派谈判划分地盘",
+          "effects": {
+            "REP": 3,
+            "STYLE": 2,
+            "MONEY": -500,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "暗杀企业安保主管",
+          "effects": {
+            "REP": 3,
+            "LIFE": -5,
+            "CHROME": 3,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "帮派政治",
+        "崛起"
+      ]
+    },
+    {
+      "id": 5383,
+      "title": "宗教狂热帮派蔓延",
+      "description": "一个以'净化赛博罪恶'为口号的宗教狂热帮派'神圣火焰'，正在贫民窟中快速吸收信徒。他们攻击义体诊所、焚烧毒品仓库、处决'堕落者'。虽然目标与你们部分重合，但他们的极端手段正在引发全面恐慌。信徒们高喊着经文冲向火焰。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "联手镇压这个疯狂组织",
+          "effects": {
+            "REP": 3,
+            "LIFE": -5,
+            "CHROME": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "利用他们清理竞争对手",
+          "effects": {
+            "REP": 2,
+            "STYLE": 3,
+            "TECH": 2,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "渗透内部从根瓦解",
+          "effects": {
+            "REP": 3,
+            "TECH": 4,
+            "LIFE": -4,
+            "STYLE": 3
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "帮派政治",
+        "崛起"
+      ]
+    },
+    {
+      "id": 5384,
+      "title": "流亡者归来",
+      "description": "五年前被你们驱逐的前任首领突然回来了，带着一支境外武装和大量资金。他在暗网上发布了长篇檄文，声称要夺回属于他的一切。帮派里的老人开始动摇，一些年轻成员也被他的演讲蛊惑。港口传来了货轮靠岸的汽笛声。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "正面迎战彻底消灭",
+          "effects": {
+            "REP": 4,
+            "LIFE": -7,
+            "CHROME": 3,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "发布黑料摧毁他的声誉",
+          "effects": {
+            "REP": 3,
+            "TECH": 4,
+            "STYLE": 3,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "谈判分割地盘避免内战",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "STYLE": 2,
+            "MONEY": -1000
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "帮派政治",
+        "崛起"
+      ]
+    },
+    {
+      "id": 5385,
+      "title": "特警夜袭主据点",
+      "description": "凌晨四点，城市特警部队的装甲车队包围了你们帮派的主据点。探照灯把整条街区照得如同白昼，高音喇叭要求所有人放下武器投降。据点里有三十多名成员和大量军火，但硬拼几乎没有胜算。无线电频道里传来特警指挥官冷酷的最后通牒。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "组织突围杀出一条血路",
+          "effects": {
+            "REP": 4,
+            "LIFE": -8,
+            "CHROME": 3,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "从秘密地道撤离保全主力",
+          "effects": {
+            "REP": 2,
+            "TECH": 3,
+            "LIFE": -3,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "投降换取轻判",
+          "effects": {
+            "REP": -3,
+            "HUMAN": 2,
+            "TRAUMA": 2,
+            "STYLE": -2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "帮派政治",
+        "警察"
+      ]
+    },
+    {
+      "id": 5386,
+      "title": "卧底警察暴露",
+      "description": "帮派核心圈里的一名成员被证实是警方卧底，他已经在这里潜伏了两年，掌握了大量足以摧毁整个帮派的证据。更糟糕的是，他昨天刚刚发出了最后一批情报。你们只有不到一小时在他被接应之前做出决定。审讯室的铁椅上还留着他挣扎的痕迹。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "严刑逼供后灭口",
+          "effects": {
+            "REP": 2,
+            "LIFE": -3,
+            "TRAUMA": 3,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用假情报误导警方",
+          "effects": {
+            "REP": 3,
+            "TECH": 4,
+            "STYLE": 4,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放他走换取销毁证据",
+          "effects": {
+            "REP": -1,
+            "HUMAN": 3,
+            "STYLE": 2,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "帮派政治",
+        "警察"
+      ]
+    },
+    {
+      "id": 5387,
+      "title": "电子监控全面覆盖",
+      "description": "市政府在你们的街区部署了新一代AI监控系统，每一个角落都在实时扫描。任何帮派活动都会被立即标记，执法无人机能在九十秒内抵达现场。传统的街头交易和巡逻变得几乎不可能。监控摄像头上的红色指示灯像一只只永不眨眼的眼睛。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "骇入系统制造盲区",
+          "effects": {
+            "REP": 3,
+            "TECH": 5,
+            "LIFE": -3,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "转入地下放弃街头",
+          "effects": {
+            "REP": 2,
+            "TECH": 3,
+            "STYLE": 2,
+            "MONEY": -600
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "物理摧毁监控设备",
+          "effects": {
+            "REP": 3,
+            "LIFE": -5,
+            "CHROME": 3,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "帮派政治",
+        "警察"
+      ]
+    },
+    {
+      "id": 5388,
+      "title": "缉毒专项行动",
+      "description": "警方发起了代号为'净街'的大规模缉毒行动，数百名警员同时突袭了十几个据点。你们帮派的三个毒品仓库被列入名单，大量货物和现金面临被没收的风险。更糟的是，有几名核心成员在突袭中被捕，他们知道的太多了。警笛声在整个城市同时响起。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "强行转移所有货物",
+          "effects": {
+            "REP": 3,
+            "LIFE": -6,
+            "CHROME": 2,
+            "MONEY": -800
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "弃车保帅牺牲外围据点",
+          "effects": {
+            "REP": 2,
+            "MONEY": -1500,
+            "STYLE": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "贿赂行动指挥官改名单",
+          "effects": {
+            "MONEY": -2000,
+            "REP": 2,
+            "STYLE": 3,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "帮派政治",
+        "警察"
+      ]
+    },
+    {
+      "id": 5389,
+      "title": "反腐败调查组介入",
+      "description": "一个独立的反腐败调查组突然对你们帮派展开了调查，他们的目标不是街头犯罪，而是帮派与政客、企业之间的利益输送。调查组成员都是难以收买的硬骨头，而且他们已经掌握了一些关键证据。调查组的临时办公室就在你们街区对面的大楼里。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "暗杀调查组核心成员",
+          "effects": {
+            "REP": 3,
+            "LIFE": -5,
+            "CHROME": 3,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "销毁所有关联证据",
+          "effects": {
+            "REP": 2,
+            "TECH": 5,
+            "STYLE": 3,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "让政客顶罪保全帮派",
+          "effects": {
+            "REP": 3,
+            "STYLE": 4,
+            "HUMAN": -2,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "帮派政治",
+        "警察"
+      ]
+    },
+    {
+      "id": 5390,
+      "title": "监狱帮派权力真空",
+      "description": "城市最大监狱里的帮派老大在一次狱内斗殴中被杀，他控制的监狱黑市和外部联络网陷入了权力真空。各个牢房区的代表都在蠢蠢欲动，而你们帮派在外面的人急于影响里面的局势。监狱高墙上的探照灯在夜空中划出规律的弧线。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "扶植自己人上位",
+          "effects": {
+            "REP": 4,
+            "MONEY": -1000,
+            "STYLE": 3,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "趁机扩大监狱内的势力范围",
+          "effects": {
+            "REP": 3,
+            "LIFE": -4,
+            "CHROME": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "与多个势力达成共治",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "STYLE": 2,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "帮派政治",
+        "监狱"
+      ]
+    },
+    {
+      "id": 5391,
+      "title": "狱中暗杀任务",
+      "description": "你们帮派的一名核心成员被关进了最高安全级别监狱，但他知道太多秘密，敌对帮派已经买通了狱警准备灭口。你们必须在他被转监或'意外死亡'之前，通过某种方式保护他或者让他永远闭嘴。监狱的金属门在身后发出沉重的关闭声。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "贿赂狱警调换牢房",
+          "effects": {
+            "MONEY": -1200,
+            "REP": 2,
+            "STYLE": 2,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "安排狱内杀手先下手",
+          "effects": {
+            "REP": 3,
+            "LIFE": -4,
+            "TRAUMA": 3,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "策划越狱接应他出来",
+          "effects": {
+            "REP": 4,
+            "LIFE": -6,
+            "CHROME": 3,
+            "STYLE": 4
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "帮派政治",
+        "监狱"
+      ]
+    },
+    {
+      "id": 5392,
+      "title": "监狱工厂劳工暴动",
+      "description": "监狱附属的加工厂里，犯人们被强迫每天工作十六小时生产军用装备。一场大规模的劳工暴动正在酝酿，而你们帮派在里面的眼线是暴动的主要组织者。如果暴动成功，监狱秩序将崩溃；如果失败，所有参与者都会被送进禁闭室。工厂的机器发出单调的轰鸣。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全力支持暴动扩大混乱",
+          "effects": {
+            "REP": 3,
+            "LIFE": -5,
+            "HUMAN": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "提前通知狱方换取减刑",
+          "effects": {
+            "REP": 2,
+            "HUMAN": -2,
+            "STYLE": 3,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "利用暴动掩护眼线越狱",
+          "effects": {
+            "REP": 3,
+            "LIFE": -4,
+            "STYLE": 4,
+            "CHROME": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "帮派政治",
+        "监狱"
+      ]
+    },
+    {
+      "id": 5393,
+      "title": "牢房区势力重组",
+      "description": "监狱新来了一批重型犯，其中包括几个其他城市的知名帮派成员。原有的牢房区势力平衡被打破，暴力事件频发。你们帮派在里面的代表面临着被新人取代的危险。食堂里的气氛剑拔弩张，金属餐具碰撞的声音像是战斗的前奏。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "让代表发动先发制人打击",
+          "effects": {
+            "REP": 3,
+            "LIFE": -5,
+            "CHROME": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "联合原住民帮派共同对抗",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "LIFE": -3,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "花钱让狱方把新人转走",
+          "effects": {
+            "MONEY": -1000,
+            "REP": 2,
+            "STYLE": 2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "帮派政治",
+        "监狱"
+      ]
+    },
+    {
+      "id": 5394,
+      "title": "监狱地下格斗赛",
+      "description": "监狱里流传着一项古老的传统——每月一次的地下格斗赛，胜者可以获得各种特权和黑市物资。你们帮派的代表被挑战参加这场比赛，对手是监狱里从未败过的杀人机器。看台上的囚犯们发出野兽般的嚎叫，铁栏后面的面孔在昏暗灯光下扭曲变形。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "让代表全力以赴",
+          "effects": {
+            "REP": 3,
+            "LIFE": -6,
+            "CHROME": 3,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "赛前给对手下药",
+          "effects": {
+            "REP": 2,
+            "TECH": 3,
+            "STYLE": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝比赛但保护代表安全",
+          "effects": {
+            "REP": -1,
+            "HUMAN": 2,
+            "STYLE": 1,
+            "LIFE": -2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "帮派政治",
+        "监狱"
+      ]
+    },
+    {
+      "id": 5395,
+      "title": "狱中情报网危机",
+      "description": "你们帮派在监狱里经营多年的情报网被一名新入狱的线人出卖，多名内线身份暴露。监狱管理方正在计划一次大规模的内部清洗。如果不能及时转移或保护这些人，帮派在监狱内的影响力将归零。狱警的皮靴声在走廊里回荡。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "紧急转移所有暴露人员",
+          "effects": {
+            "REP": 3,
+            "MONEY": -1500,
+            "LIFE": -4,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "让暴露人员诈死换身份",
+          "effects": {
+            "REP": 2,
+            "TECH": 4,
+            "LIFE": -3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "暴露出卖者让他承担后果",
+          "effects": {
+            "REP": 3,
+            "LIFE": -4,
+            "TRAUMA": 2,
+            "STYLE": 3
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "帮派政治",
+        "监狱"
+      ]
+    },
+    {
+      "id": 5396,
+      "title": "监狱毒品渠道争夺",
+      "description": "监狱里的毒品供应是维持秩序和影响力的关键。另一条渠道被骷髅帮控制，他们最近开始恶意提价并削减供应量。你们必须找到新的供应源，或者从骷髅帮手中夺回渠道。牢房里的瘾君子们已经开始出现戒断反应，走廊里回荡着痛苦的呻吟。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "武力抢夺骷髅帮的存货",
+          "effects": {
+            "REP": 3,
+            "LIFE": -5,
+            "CHROME": 3,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "开辟新的走私渠道",
+          "effects": {
+            "REP": 2,
+            "TECH": 4,
+            "MONEY": -800,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用合法替代品取代毒品",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "ADDICTION": -1,
+            "MONEY": -500
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "帮派政治",
+        "监狱"
+      ]
+    },
+    {
+      "id": 5397,
+      "title": "狱中婚礼与联盟",
+      "description": "监狱里举行了一场特殊的婚礼——你们帮派的一名成员与敌对帮派的女性成员在狱内结为夫妻。这在监狱文化中意味着两个帮派之间的停战与联盟。但双方都有人不满意这门婚事，婚礼现场充满了紧张和暗流。简易教堂里的蜡烛摇曳不定。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全力支持婚礼促成联盟",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 3,
+            "STYLE": 3,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "暗中破坏婚礼维持敌对",
+          "effects": {
+            "REP": 2,
+            "STYLE": 3,
+            "LIFE": -3,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "利用婚礼引出敌对帮派首领",
+          "effects": {
+            "REP": 3,
+            "LIFE": -5,
+            "CHROME": 3,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "帮派政治",
+        "监狱"
+      ]
+    },
+    {
+      "id": 5398,
+      "title": "假释听证会操纵",
+      "description": "帮派里的一名重要成员即将参加假释听证会，他的释放对帮派在外面的布局至关重要。但检方掌握了新的不利于他的证据，假释前景黯淡。你们必须在听证会之前改变局面。法院大楼的走廊里弥漫着消毒水和焦虑的气味。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "贿赂假释委员会成员",
+          "effects": {
+            "MONEY": -1500,
+            "REP": 2,
+            "STYLE": 2,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "伪造证据抹黑检方证人",
+          "effects": {
+            "REP": 2,
+            "TECH": 4,
+            "STYLE": 3,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "威胁证人撤回证词",
+          "effects": {
+            "REP": 3,
+            "LIFE": -4,
+            "CHROME": 2,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "帮派政治",
+        "监狱"
+      ]
+    },
+    {
+      "id": 5399,
+      "title": "监狱帮派终极战争",
+      "description": "长期的矛盾终于爆发了。你们帮派与敌对帮派在监狱内展开了全面战争，从食堂到操场，从洗衣房到医务室，到处都是斗殴和流血。狱警已经封锁了所有出口，任由双方厮杀直到一方彻底倒下。这是决定监狱内霸权归属的最后一战。警报声在整个监狱内回荡。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全面出击消灭敌对帮派",
+          "effects": {
+            "REP": 5,
+            "LIFE": -8,
+            "CHROME": 3,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "死守核心地盘等待外援",
+          "effects": {
+            "REP": 3,
+            "LIFE": -6,
+            "CHROME": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向狱警投降结束混战",
+          "effects": {
+            "REP": -2,
+            "HUMAN": 3,
+            "LIFE": -3,
+            "STYLE": -2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "帮派",
+        "帮派政治",
+        "监狱"
+      ]
+    }
+  ]
+}

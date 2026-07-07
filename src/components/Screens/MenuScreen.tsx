@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { cn } from '@/lib/utils';
 import useGameStore from '@/stores/gameStore';
+import useGameEngine from '@/hooks/useGameEngine';
 
 const VERSION = 'v0.1.0-alpha';
 
@@ -85,9 +86,11 @@ const MenuScreen: React.FC<MenuScreenProps> = ({ onNewGame, onLoadGame, onSettin
     };
   }, []);
 
+  const { startNewGame } = useGameEngine();
+
   const handleNewGame = () => {
     onNewGame?.();
-    setPhase('TALENT_SELECT');
+    startNewGame(); // 初始化 GameEngine stateMachine，内部会设置 phase 为 TALENT_SELECT
   };
 
   const handleLoadGame = () => {

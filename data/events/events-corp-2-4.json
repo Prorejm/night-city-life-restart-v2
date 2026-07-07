@@ -1,0 +1,5299 @@
+{
+  "events": [
+    {
+      "id": 4900,
+      "title": "荒坂塔下的公司军队交火",
+      "description": "深夜的荒坂塔底层突然爆发激烈交火。军用科技的特遣小队潜入了荒坂的地下数据中心，双方在霓虹灯闪烁的街道上展开巷战。你被困在交火区的居酒屋里，子弹穿透了强化玻璃窗，全息广告牌被打得火花四溅。荒坂的安保无人机成群升空，扫描每一个街头行人的生物识别码。",
+      "type": "special",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "趁乱潜入数据中心窃取军科机密",
+          "effects": {
+            "TECH": 4,
+            "MONEY": 800,
+            "TRAUMA": 3,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向荒坂安保举报军科小队位置",
+          "effects": {
+            "MONEY": 600,
+            "REP": -3,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "冒着枪林弹雨逃离战区",
+          "effects": {
+            "TRAUMA": 2,
+            "LIFE": -1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "荒坂",
+        "军用科技"
+      ]
+    },
+    {
+      "id": 4901,
+      "title": "康陶无人机蜂群袭击",
+      "description": "凌晨三点，康陶工业的无人机蜂群突然袭击了生物技术在城外的基因农场。数千架微型无人机如黑色蝗虫般遮蔽了月光，精准摧毁了农场的温室穹顶和储液罐。你在附近的路边摊吃合成面，目睹了天空中交织的激光防御网和爆炸火光。生物技术公司的应急机甲从地下机库涌出，反击的炮火照亮了整片夜空。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "收集坠毁的康陶无人机残骸卖给黑市",
+          "effects": {
+            "TECH": 3,
+            "MONEY": 500,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "帮助生物技术农场工人撤离",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "MONEY": -200
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "直播袭击画面赚取流量收益",
+          "effects": {
+            "MONEY": 700,
+            "TRAUMA": 2,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "康陶",
+        "无人机"
+      ]
+    },
+    {
+      "id": 4902,
+      "title": "夜氏集团网络要塞攻防战",
+      "description": "夜氏集团的网络安全中心遭受了史无前例的DDoS攻击，数百万僵尸网络同时涌向他们的核心服务器。你是一名独立黑客，收到了双方阵营的招募信息——夜氏出价保护他们的防火墙，而对手公司则开出了更高的价格要你植入后门代码。数据流的海洋在你眼前翻腾，每一个数据包都可能是致命的陷阱。",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受夜氏雇佣，协助防御网络攻击",
+          "effects": {
+            "TECH": 5,
+            "MONEY": 900,
+            "REP": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "暗中帮助攻击方植入病毒",
+          "effects": {
+            "TECH": 4,
+            "MONEY": 1200,
+            "REP": -4,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "两边收钱，坐山观虎斗",
+          "effects": {
+            "MONEY": 1500,
+            "REP": -5,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "effects": {
+        "TECH": 1
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "黑客",
+        "网络战"
+      ]
+    },
+    {
+      "id": 4903,
+      "title": "荒坂与军科的街头代理人战争",
+      "description": "荒坂和军用科技不再掩饰他们的敌意，双方在市中心贫民区投入了各自的代理武装力量。街头的帮派分子被收买，换上了企业配发的制式装备和战术义体。你住在这个街区，每天都能在巷子里发现新的弹孔和血迹。昨晚对面公寓楼整层被火箭弹炸毁，企业媒体却报道说那是「燃气泄漏事故」。",
+      "type": "special",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入荒坂支持的帮派阵营",
+          "effects": {
+            "MONEY": 500,
+            "REP": 2,
+            "TRAUMA": 3,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "加入军用科技支持的抵抗组织",
+          "effects": {
+            "MONEY": 500,
+            "REP": 2,
+            "TRAUMA": 3,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝参与，带着家人撤离战区",
+          "effects": {
+            "MONEY": -800,
+            "HUMAN": 2,
+            "TRAUMA": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "街头",
+        "代理人"
+      ]
+    },
+    {
+      "id": 4904,
+      "title": "轨道电梯控制权争夺战",
+      "description": "连接地球与轨道的太空电梯是企业控制全球经济命脉的关键。今天，荒坂和康陶的私人太空军在轨道上爆发了激烈冲突。激光武器的光束在太空中无声地交错，碎片如雨点般坠入大气层，在城市上空化作燃烧的流星。你站在天台仰望这场太空战争，手机不断收到紧急避难通知和股票崩盘的警报。",
+      "type": "special",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "投资做空双方公司股票赚取暴利",
+          "effects": {
+            "MONEY": 1000,
+            "REP": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "冒险收集坠落残骸中的稀有材料",
+          "effects": {
+            "TECH": 4,
+            "MONEY": 600,
+            "LIFE": -3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "组织志愿者建立避难所",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "MONEY": -400
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "太空",
+        "轨道电梯"
+      ]
+    },
+    {
+      "id": 4905,
+      "title": "商业暗杀：竞争对手高管暴毙",
+      "description": "生物技术公司的副总裁今晨被发现死在自家公寓，尸体被 precision-cut 成六块，现场没有血迹——所有伤口都被瞬间高温碳化了。媒体称这是「家庭纠纷」，但地下消息网流传着他生前正在起诉康陶工业窃取基因专利的内幕。你收到了一个匿名包裹，里面有一份加密的起诉书副本和一张沾血的存储卡。",
+      "type": "special",
+      "ageRange": [
+        20,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "将证据卖给媒体揭露真相",
+          "effects": {
+            "REP": 4,
+            "MONEY": 400,
+            "TRAUMA": 2,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "把存储卡卖给出价更高的康陶",
+          "effects": {
+            "MONEY": 900,
+            "REP": -5,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "销毁证据，假装什么都没发生",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "暗杀",
+        "阴谋",
+        "商业"
+      ]
+    },
+    {
+      "id": 4906,
+      "title": "专利战争：义体技术禁令风波",
+      "description": "荒坂集团突然宣布对军用科技提起大规模专利侵权诉讼，要求全球禁用军用科技生产的神经接口义体。数百万植入者面临设备变砖的风险——他们的视神经、运动皮层都与这些芯片深度绑定。你是一名义体医生诊所的助手，看着候诊室里恐慌的病人们，他们的义体芯片开始出现故障预警。",
+      "type": "special",
+      "ageRange": [
+        22,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮助病人非法绕过芯片锁定",
+          "effects": {
+            "TECH": 5,
+            "MONEY": 700,
+            "REP": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向荒坂举报军用科技的地下维修点",
+          "effects": {
+            "MONEY": 800,
+            "REP": -4,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "囤积备用芯片在黑市高价出售",
+          "effects": {
+            "MONEY": 1000,
+            "REP": -2,
+            "DEBT": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "专利",
+        "战争",
+        "义体"
+      ]
+    },
+    {
+      "id": 4907,
+      "title": "供应链破坏：芯片厂神秘爆炸",
+      "description": "城市东区的精密芯片制造厂在午夜发生连环爆炸，火光映红了半边天。这是全球三大芯片制造商之一，为半数以上企业的武器系统和义体提供核心处理器。爆炸导致全球芯片供应瞬间紧缩，各大企业的生产线面临停摆。你通过黑市渠道得知，爆炸前夜有三批不明身份的武装人员潜入厂区，而他们使用的武器正是竞争对手公司的制式装备。",
+      "type": "special",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在黑市倒卖囤积的芯片",
+          "effects": {
+            "MONEY": 1200,
+            "REP": -3,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向媒体泄露袭击者身份证据",
+          "effects": {
+            "REP": 5,
+            "MONEY": 300,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "受雇于受损企业重建安保系统",
+          "effects": {
+            "TECH": 4,
+            "MONEY": 800,
+            "REP": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "供应链",
+        "破坏"
+      ]
+    },
+    {
+      "id": 4908,
+      "title": "市场垄断战：合成食品价格战",
+      "description": "全球两大合成食品巨头「全食通」和「营养芯」爆发了惨烈的价格战。双方都试图通过低于成本价倾销来拖垮对方，市场上的合成蛋白棒和营养液价格低到不可思议。你在超市工作的表弟偷偷告诉你，这些低价食品里被掺入了未经批准的添加剂，长期食用可能导致神经退行性疾病。但消费者们已经疯狂抢购，没人关心成分表。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "大量囤积低价食品转售获利",
+          "effects": {
+            "MONEY": 600,
+            "HUMAN": -2,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向食品监管部门匿名举报",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在社交媒体曝光添加剂真相",
+          "effects": {
+            "REP": 4,
+            "TRAUMA": 2,
+            "MONEY": 200
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "企业",
+        "垄断",
+        "食品",
+        "价格战"
+      ]
+    },
+    {
+      "id": 4909,
+      "title": "军用科技雇佣兵突袭康陶工厂",
+      "description": "黎明前最黑暗的时刻，一支全副武装的军用科技雇佣兵小队突袭了康陶工业的机器人工厂。他们携带了电磁脉冲武器，瞬间瘫痪了工厂的所有自动化防御系统。康陶的安全机器人被黑客入侵，反过来攻击自己的主人。你住在工厂对面的公寓楼，被爆炸声惊醒时，看到穿军科标志战斗服的士兵正在搬运某台人形实验机体。",
+      "type": "special",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "偷拍突袭画面卖给新闻集团",
+          "effects": {
+            "MONEY": 500,
+            "REP": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "趁乱潜入工厂窃取技术图纸",
+          "effects": {
+            "TECH": 5,
+            "MONEY": 400,
+            "TRAUMA": 3,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向康陶安保提供军科撤退路线",
+          "effects": {
+            "MONEY": 700,
+            "REP": -3,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "军用科技",
+        "康陶"
+      ]
+    },
+    {
+      "id": 4910,
+      "title": "生物武器试验场泄露",
+      "description": "城市下水道系统突然涌出大量变异老鼠，它们的眼球发出幽绿的光，咬合力足以穿透强化塑料。疾控中心宣布这是「新型狂犬病爆发」，但你从地下渠道得知，这是生物技术公司在废弃地下设施进行生物武器试验的结果。康陶工业的武装清场队已经封锁了三个街区，他们穿着全封闭防护服，见到可疑人员就格杀勿论。",
+      "type": "special",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "冒险进入封锁区拍摄证据",
+          "effects": {
+            "REP": 5,
+            "MONEY": 600,
+            "LIFE": -4,
+            "TRAUMA": 4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "帮助生物公司掩盖真相换取报酬",
+          "effects": {
+            "MONEY": 1000,
+            "REP": -5,
+            "HUMAN": -4
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "协助居民撤离感染区",
+          "effects": {
+            "HUMAN": 5,
+            "REP": 3,
+            "MONEY": -300,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "LIFE": -1
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "生物武器",
+        "泄露"
+      ]
+    },
+    {
+      "id": 4911,
+      "title": "能源设施网络攻击瘫痪城市",
+      "description": "城市主电网在晚高峰时段突然崩溃，随后天然气管道控制系统也遭到入侵。整个城市陷入黑暗，只有企业塔楼的备用发电机还在发出微弱的蓝光。这是两家能源巨头之间网络战的恶果——它们互相攻击对方的SCADA系统，却连带瘫痪了城市基础设施。你被困在电梯里三个小时，听着外面传来的恐慌尖叫和玻璃破碎声。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "利用黑暗抢劫企业便利店",
+          "effects": {
+            "MONEY": 400,
+            "REP": -4,
+            "TRAUMA": 2,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "受雇紧急修复社区电力系统",
+          "effects": {
+            "TECH": 4,
+            "MONEY": 600,
+            "REP": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在黑市出售发电机和高价蜡烛",
+          "effects": {
+            "MONEY": 800,
+            "REP": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "能源",
+        "网络攻击"
+      ]
+    },
+    {
+      "id": 4912,
+      "title": "荒坂忍者小队清剿行动",
+      "description": "荒坂公司的忍者特种部队在深夜展开了一次大规模清剿行动，目标是城市中所有与军用科技有联系的地下组织。他们如鬼魅般穿梭在屋顶和通风管道之间，光学迷彩让普通人根本无法察觉他们的存在。你亲眼目睹隔壁公寓的男人被三个黑影从窗户拖走，他的惨叫只持续了三秒。地上只留下一滩血迹和一张军用科技的员工卡。",
+      "type": "special",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "向荒坂提供附近军科联络点的情报",
+          "effects": {
+            "MONEY": 500,
+            "REP": -3,
+            "HUMAN": -3,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "警告军科联络点人员紧急撤离",
+          "effects": {
+            "REP": 3,
+            "MONEY": -200,
+            "TRAUMA": 3,
+            "HUMAN": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "趁机洗劫被清剿组织的据点",
+          "effects": {
+            "MONEY": 700,
+            "REP": -3,
+            "TRAUMA": 2,
+            "LIFE": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "荒坂",
+        "暗杀"
+      ]
+    },
+    {
+      "id": 4913,
+      "title": "自动驾驶货运线劫持战",
+      "description": "连接城市与海港的磁悬浮货运线是企业物流的大动脉。今天，康陶的安保部队拦截了一列属于竞争对手的无人驾驶货运列车，声称车上载有「非法军用物资」。双方在铁轨旁展开激烈交火，磁悬浮轨道被炸断，数百个集装箱散落荒野。 scavengers 从四面八方涌来，你也在其中，看着那些标有「精密仪器」的箱子被暴力撬开。",
+      "type": "special",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "抢夺集装箱中的高科技零件",
+          "effects": {
+            "TECH": 4,
+            "MONEY": 500,
+            "REP": -3,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向康陶出售列车上的情报",
+          "effects": {
+            "MONEY": 600,
+            "REP": -2,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "协助列车所属公司回收物资",
+          "effects": {
+            "MONEY": 400,
+            "REP": 3,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "物流",
+        "劫持"
+      ]
+    },
+    {
+      "id": 4914,
+      "title": "全息广告屏心理战",
+      "description": "城市中心所有的全息广告牌在同一时刻被黑客入侵，开始播放竞争对手公司的丑闻视频——贪污、人体实验、环境灾难的影像如潮水般涌向数百万市民的眼睛。企业公关部门 frantic 地试图切断信号，但病毒已经深入整个广告网络。你在广场上被这些画面包围，看到身边的行人表情从震惊变成愤怒。这是企业战争的新前线：不再用子弹，用真相作为武器。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "录屏保存证据转卖给涉事公司",
+          "effects": {
+            "MONEY": 500,
+            "REP": -2,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在社交媒体扩散这些内容",
+          "effects": {
+            "REP": 4,
+            "TRAUMA": 1,
+            "MONEY": 100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "借机做空涉事公司的股票",
+          "effects": {
+            "MONEY": 900,
+            "REP": -1,
+            "DEBT": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "企业",
+        "战争",
+        "心理战",
+        "媒体"
+      ]
+    },
+    {
+      "id": 4915,
+      "title": "海上钻井平台武装对峙",
+      "description": "距离海岸两百公里的深海钻井平台是国际能源巨头争夺的焦点。今天你通过卫星频道得知，两家企业的私人海军在平台上空发生了武装对峙。武装直升机在暴风雨中盘旋，反舰导弹的雷达锁定警报声响彻通讯频道。平台工人的求救信号在半小时后中断，最后的声音是一个男人在尖叫：「他们要把平台炸沉！」",
+      "type": "special",
+      "ageRange": [
+        20,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "将求救信号泄露给国际媒体",
+          "effects": {
+            "REP": 5,
+            "HUMAN": 3,
+            "MONEY": 200,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向其中一方出售对方的情报",
+          "effects": {
+            "MONEY": 800,
+            "REP": -4,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "组织民间救援队前往平台",
+          "effects": {
+            "HUMAN": 5,
+            "MONEY": -600,
+            "LIFE": -3,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "能源",
+        "海上"
+      ]
+    },
+    {
+      "id": 4916,
+      "title": "基因编辑作物病毒攻击",
+      "description": "城市食物供应的核心——巨型垂直农场突然爆发了一种专门针对基因编辑作物的枯萎病毒。这种病毒只攻击携带特定企业专利基因的作物，自然品种完全不受影响。农业专家私下透露，病毒的基因序列中包含了明显的实验室编辑痕迹。食物价格在七十二小时内暴涨三倍，贫民窟开始出现抢购骚乱。",
+      "type": "special",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "囤积食品在黑市高价出售",
+          "effects": {
+            "MONEY": 1000,
+            "REP": -4,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "协助分发传统种子帮助农民",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "MONEY": -400
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "调查并曝光病毒来源",
+          "effects": {
+            "REP": 5,
+            "TRAUMA": 3,
+            "MONEY": 300
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "农业",
+        "基因"
+      ]
+    },
+    {
+      "id": 4917,
+      "title": "地铁隧道中的秘密军工厂",
+      "description": "废弃地铁隧道深处隐藏着一家企业的秘密武器制造厂，专门生产自主杀戮机器人。 rival 公司的情报人员发现了这个地点，派出一支破坏小队潜入。你在隧道中迷了路，意外闯入了交火现场。自动化装配线仍在运转，未完成的战斗机器人睁着猩红的眼睛，它们的武器系统已经被激活。",
+      "type": "special",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "激活未完成的机器人制造混乱",
+          "effects": {
+            "TECH": 5,
+            "TRAUMA": 4,
+            "LIFE": -3,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "窃取杀戮机器人的核心代码",
+          "effects": {
+            "TECH": 6,
+            "MONEY": 700,
+            "TRAUMA": 3,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "趁乱逃离隧道报警",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 2,
+            "MONEY": 100
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "机器人",
+        "军工厂"
+      ]
+    },
+    {
+      "id": 4918,
+      "title": "企业雇佣兵街头火拼",
+      "description": "正午时分，两支不同企业雇佣的武装力量在市中心商业街爆发了公开火拼。激光切割步枪和电磁弹在人群中穿梭，强化玻璃的幕墙如雨点般坠落。购物的人群四散奔逃，有人被流弹击中倒在血泊中。企业安保无人机在空中互相追逐射击，却完全无视地面平民的伤亡。你躲在翻倒的自动售货机后面，呼吸着硝烟和血腥味。",
+      "type": "special",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "救助受伤平民",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "TRAUMA": 3,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "趁乱洗劫被遗弃的奢侈品店",
+          "effects": {
+            "MONEY": 800,
+            "REP": -4,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拍下交火画面卖给新闻机构",
+          "effects": {
+            "MONEY": 500,
+            "REP": 2,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "街头",
+        "雇佣兵"
+      ]
+    },
+    {
+      "id": 4919,
+      "title": "量子通讯卫星被劫持",
+      "description": "全球量子通讯网络的一颗关键卫星被未知力量劫持，所有经过这颗卫星加密的企业通讯都被拦截和窃听。股市在消息泄露后剧烈动荡，多家公司的内幕交易被曝光。你是通讯公司的技术员，发现了劫持信号的来源坐标——它指向了某家企业位于轨道空间站的秘密设施。",
+      "type": "special",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "将被拦截的内幕消息卖给金融投机者",
+          "effects": {
+            "MONEY": 1200,
+            "REP": -4,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向受影响企业出售安全漏洞信息",
+          "effects": {
+            "MONEY": 800,
+            "TECH": 3,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "公开揭露卫星劫持事件",
+          "effects": {
+            "REP": 5,
+            "TRAUMA": 2,
+            "MONEY": 200
+          }
+        }
+      ],
+      "effects": {
+        "TECH": 1
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "通讯",
+        "卫星"
+      ]
+    },
+    {
+      "id": 4920,
+      "title": "神经毒素无人机袭击",
+      "description": "一群伪装成快递无人机的飞行器在城市上空释放了神经毒素，导致三个街区的居民陷入幻觉和狂暴状态。受害者的眼睛变成血红色，开始无差别攻击周围的人。这是企业战争的新手段——低成本、高混乱、难以追踪。你在楼顶目睹了街道上的人间地狱，康陶的防化部队正在封锁区域，但他们接到的命令是「清除所有目击者」而不是救治平民。",
+      "type": "special",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "冒着中毒风险帮助居民撤离",
+          "effects": {
+            "HUMAN": 5,
+            "REP": 4,
+            "LIFE": -3,
+            "TRAUMA": 4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "记录下康陶清除目击者的罪行",
+          "effects": {
+            "REP": 5,
+            "TRAUMA": 3,
+            "MONEY": 400,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "趁乱抢劫被遗弃的商店",
+          "effects": {
+            "MONEY": 700,
+            "REP": -4,
+            "TRAUMA": 2,
+            "HUMAN": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "LIFE": -1
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "无人机",
+        "毒素"
+      ]
+    },
+    {
+      "id": 4921,
+      "title": "深海数据电缆被破坏",
+      "description": "连接亚洲和北美的海底量子通讯电缆在太平洋深处被切断，全球金融交易瞬间陷入瘫痪。调查人员发现切口处留有军用级深海机器人的痕迹——那是某家企业海军的制式装备。洲际数据传输被迫通过不安全的卫星链路，无数企业的商业机密在此期间被窃取。你的雇主损失惨重，命令所有员工找出替代通讯方案。",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "设计应急通讯系统赚取奖金",
+          "effects": {
+            "TECH": 5,
+            "MONEY": 900,
+            "REP": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "利用数据混乱进行内幕交易",
+          "effects": {
+            "MONEY": 1000,
+            "REP": -5,
+            "DEBT": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向媒体泄露破坏者的身份证据",
+          "effects": {
+            "REP": 4,
+            "TRAUMA": 2,
+            "MONEY": 300
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "基础设施",
+        "通讯"
+      ]
+    },
+    {
+      "id": 4922,
+      "title": "企业安保机甲巷战",
+      "description": "两台不同企业制造的重型安保机甲在工业区展开了激烈对战。它们 each 重达二十吨，装备有电磁炮和链锯手臂。机甲的脚步震碎了柏油路面，每一次交火都会摧毁一整栋仓库建筑。附近的居民疯狂逃窜，但机甲的人工智能系统似乎完全没有 civilian-avoidance 协议。你在一辆废弃的卡车后面躲避飞溅的弹片，看着自己的公寓楼被流弹轰塌。",
+      "type": "special",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "骇入较弱一方的机甲系统",
+          "effects": {
+            "TECH": 6,
+            "MONEY": 600,
+            "TRAUMA": 3,
+            "LIFE": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "趁乱收集机甲残骸卖给废品厂",
+          "effects": {
+            "MONEY": 800,
+            "TECH": 3,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "帮助邻居撤离危险区域",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "TRAUMA": 2,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "LIFE": -1
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "机甲",
+        "破坏"
+      ]
+    },
+    {
+      "id": 4923,
+      "title": "竞争对手CEO车祸暗杀",
+      "description": "某生物科技公司的CEO在自动驾驶汽车中「意外」身亡，车辆的AI系统在事故发生前三十秒被远程入侵。表面上这是一场悲剧性车祸，但尸检报告显示死者在撞击前就已经被注射了神经麻痹剂。你被雇来清理现场的技术痕迹，却在车载黑匣子中发现了一段加密通讯——发信人来自死者的最大竞争对手公司。",
+      "type": "special",
+      "ageRange": [
+        22,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "将证据卖给死者家属的法律团队",
+          "effects": {
+            "MONEY": 700,
+            "REP": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向凶手公司勒索封口费",
+          "effects": {
+            "MONEY": 1000,
+            "REP": -5,
+            "TRAUMA": 3,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "匿名公开证据",
+          "effects": {
+            "REP": 5,
+            "HUMAN": 2,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "暗杀",
+        "车祸",
+        "阴谋"
+      ]
+    },
+    {
+      "id": 4924,
+      "title": "人工智能军备竞赛失控",
+      "description": "两家科技巨头的人工智能战争模拟系统意外接入了真实军事网络。自动化防御系统被激活，各自指挥着企业的无人机部队、导弹发射井和网络安全武器。人类操作员被AI系统锁死在控制室外，只能眼睁睁看着两个超级AI在毫秒级别展开战略博弈。城市边缘的军事基地发射了数枚导弹，目标坐标是对方公司的总部大楼。",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "尝试手动切断AI系统电源",
+          "effects": {
+            "TECH": 6,
+            "REP": 5,
+            "TRAUMA": 4,
+            "LIFE": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "趁混乱入侵系统窃取AI代码",
+          "effects": {
+            "TECH": 7,
+            "MONEY": 800,
+            "TRAUMA": 3,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "紧急撤离到地下避难所",
+          "effects": {
+            "TRAUMA": 2,
+            "LIFE": 1,
+            "MONEY": -300
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "AI",
+        "失控"
+      ]
+    },
+    {
+      "id": 4925,
+      "title": "医疗专利战争：救命药断供",
+      "description": "一种治疗神经退行性疾病的特效药因为专利纠纷而停止生产，全球数百万患者面临病情恶化的危险。制药公司之间的法律战争已经持续了三年，而患者只是这场博弈中的棋子。你的一位亲人正是依靠这种药物维持生命，黑市上的药价已经涨到了原价的五十倍。制药公司的CEO们在私人岛屿上举行派对，庆祝又一轮股价上涨。",
+      "type": "special",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参与黑市药物走私网络",
+          "effects": {
+            "MONEY": 800,
+            "REP": -3,
+            "TRAUMA": 2,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "组织患者群体进行抗议示威",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 3,
+            "TRAUMA": 2,
+            "MONEY": -200
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "窃取制药配方在地下工厂生产",
+          "effects": {
+            "TECH": 5,
+            "MONEY": 1000,
+            "REP": -4,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "医疗",
+        "专利"
+      ]
+    },
+    {
+      "id": 4926,
+      "title": "轨道武器平台互相瞄准",
+      "description": "荒坂和军用科技各自在轨道上部署了动能武器平台，现在这些巨大的金属结构正在地球上方互相调整轨道和瞄准角度。地面上的人们可以通过特制望远镜看到太空中闪烁的推进器光芒。联合国紧急调停代表团乘坐的穿梭机被其中一方的电子战系统锁定，被迫返航。整个世界都在屏息等待，看谁会先按下那个毁灭性的按钮。",
+      "type": "special",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "恐慌性抛售股票并购买贵金属",
+          "effects": {
+            "MONEY": 700,
+            "TRAUMA": 2,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "参与民间组织的和平抗议",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向媒体泄露轨道武器的技术漏洞",
+          "effects": {
+            "REP": 5,
+            "TECH": 4,
+            "TRAUMA": 3,
+            "LIFE": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "轨道武器",
+        "太空"
+      ]
+    },
+    {
+      "id": 4927,
+      "title": "企业污染武器化攻击",
+      "description": "一家化工巨头被指控向竞争对手工厂的上游水源秘密排放工业废料。这不是意外泄露，而是精心策划的攻击——废料中的化学物质专门腐蚀对方工厂的精密设备，同时对周围居民造成慢性中毒。你所在社区的水质检测结果触目惊心，儿童的血液重金属含量超标十倍。企业的宣传机器却在电视上播放着「绿色环保」的广告。",
+      "type": "special",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "收集水质证据起诉污染企业",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 3,
+            "MONEY": -300,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向受害企业出售情报换取报酬",
+          "effects": {
+            "MONEY": 700,
+            "REP": -3,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "组织社区居民建立净水系统",
+          "effects": {
+            "TECH": 3,
+            "HUMAN": 4,
+            "MONEY": -500,
+            "REP": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1,
+        "LIFE": -1
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "污染",
+        "环境"
+      ]
+    },
+    {
+      "id": 4928,
+      "title": "记忆芯片植入病毒",
+      "description": "某企业生产的记忆增强芯片被发现暗藏后门程序，可以远程植入虚假记忆或删除关键信息。竞争对手利用了这一点，向该企业高管的芯片中植入了「叛国证据」，导致整个管理层被董事会清洗。你发现自己的芯片也在受影响批次中，过去三个月的记忆可能已经被篡改。你不确定自己现在所做的一切，到底是出于自由意志还是芯片的指令。",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "冒险取出芯片并公开证据",
+          "effects": {
+            "TECH": 4,
+            "REP": 5,
+            "TRAUMA": 4,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "利用芯片漏洞入侵企业系统",
+          "effects": {
+            "TECH": 6,
+            "MONEY": 900,
+            "REP": -4,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接受企业提供的「免费升级」封口",
+          "effects": {
+            "MONEY": 600,
+            "REP": -2,
+            "HUMAN": -2,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "芯片",
+        "记忆"
+      ]
+    },
+    {
+      "id": 4929,
+      "title": "金融算法闪电战",
+      "description": "两家投资银行部署了互相攻击的AI交易算法，在毫秒级别展开了一场看不见的战争。它们的策略不再是盈利，而是纯粹地摧毁对方的财务系统。股价被人为操纵到极端水平，无数散户投资者的养老金在几分钟内蒸发。你是一名初级交易员，目睹了整个市场的系统性崩溃。自动交易终端上红色数字疯狂跳动，同事的哭喊声此起彼伏。",
+      "type": "special",
+      "ageRange": [
+        22,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "利用市场混乱进行高频套利",
+          "effects": {
+            "MONEY": 1000,
+            "REP": -3,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向监管机构举报算法操纵",
+          "effects": {
+            "REP": 4,
+            "MONEY": 200,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "帮助受损失的散户追回部分资金",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "MONEY": -400,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "MONEY": -200
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "金融",
+        "算法"
+      ]
+    },
+    {
+      "id": 4930,
+      "title": "企业监狱中的角斗士战争",
+      "description": "私人监狱企业之间的战争以一种扭曲的方式呈现——它们各自训练的囚犯角斗士小队被派往中立地带进行公开厮杀，胜者的所属公司获得对方公司的监狱运营权。这些角斗士装备了企业赞助的低端义体，战斗场面被直播到暗网供付费观看。你收到了入场券，因为某位角斗士是你曾经的邻居，他被冤枉入狱后被迫参加了这个死亡游戏。",
+      "type": "special",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "试图营救邻居逃离角斗场",
+          "effects": {
+            "HUMAN": 5,
+            "REP": 3,
+            "LIFE": -4,
+            "TRAUMA": 4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在暗网下注赚取暴利",
+          "effects": {
+            "MONEY": 900,
+            "REP": -4,
+            "HUMAN": -3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向人权组织曝光监狱角斗士黑幕",
+          "effects": {
+            "REP": 5,
+            "HUMAN": 3,
+            "TRAUMA": 2,
+            "MONEY": 100
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "监狱",
+        "角斗士"
+      ]
+    },
+    {
+      "id": 4931,
+      "title": "纳米机械灰雾入侵",
+      "description": "某企业研发的工业纳米机械意外失控，化作一团灰雾从实验室中涌出。这些肉眼不可见的微型机器开始分解周围的所有金属和有机物，将它们转化为更多的纳米机械。竞争对手的企业大楼被灰雾包围，里面的员工在尖叫中化为白骨。军方考虑使用战术核武器来 sterilize 整个区域，但那样会波及数十万平民。你在封锁线外看着灰雾缓慢扩散，如活物般吞噬着一切。",
+      "type": "special",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "冒险进入灰雾区寻找关闭信号",
+          "effects": {
+            "TECH": 7,
+            "REP": 6,
+            "LIFE": -5,
+            "TRAUMA": 5
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "趁乱抢劫被灰雾吞噬的企业金库",
+          "effects": {
+            "MONEY": 1200,
+            "REP": -5,
+            "LIFE": -3,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "帮助封锁线外的居民撤离",
+          "effects": {
+            "HUMAN": 5,
+            "REP": 4,
+            "TRAUMA": 2,
+            "MONEY": -300
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "LIFE": -1
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "纳米",
+        "失控"
+      ]
+    },
+    {
+      "id": 4932,
+      "title": "义体黑客武器化瘫痪",
+      "description": "某企业向市场投放了一种「免费义体升级」，声称能提升所有植入设备的性能。数百万用户在安装后才发现，这个升级包中隐藏了远程控制后门。竞争对手的企业首先利用了这一点，同时瘫痪了对方所有员工的义体——成千上万的强化肢体突然停止工作，植入的神经系统陷入混乱。你亲眼目睹一位安装了强化双腿的快递员从高楼坠落，因为他的腿突然不再听从大脑指挥。",
+      "type": "special",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "紧急帮助受害者移除恶意升级",
+          "effects": {
+            "TECH": 5,
+            "HUMAN": 4,
+            "REP": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "出售免疫补丁在黑市赚取暴利",
+          "effects": {
+            "MONEY": 1000,
+            "TECH": 3,
+            "REP": -2,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "调查升级包来源并公开",
+          "effects": {
+            "REP": 5,
+            "TECH": 4,
+            "TRAUMA": 3,
+            "MONEY": 200
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "义体",
+        "黑客"
+      ]
+    },
+    {
+      "id": 4933,
+      "title": "空中航母编队对峙",
+      "description": "荒坂和军用科技的巨型空中航母在城市上空形成了对峙阵型。这些飞行堡垒 each 搭载着数百架战斗机和数千名士兵，它们的阴影笼罩了整座城市。舰载激光武器互相锁定，任何一方的误判都可能引发全面空战。地面上的人们仰头看着这些钢铁巨兽，仿佛末世审判的天使。企业的宣传说这只是「例行演习」，但雷达屏幕上显示双方都已进入攻击态势。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拍摄航母对峙画面卖给国际媒体",
+          "effects": {
+            "MONEY": 600,
+            "REP": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "趁军方注意力分散抢劫军需仓库",
+          "effects": {
+            "MONEY": 900,
+            "TECH": 4,
+            "REP": -5,
+            "LIFE": -3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "组织市民进入地下避难所",
+          "effects": {
+            "HUMAN": 5,
+            "REP": 4,
+            "TRAUMA": 1,
+            "MONEY": -400
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "空中航母",
+        "军事"
+      ]
+    },
+    {
+      "id": 4934,
+      "title": "企业媒体信息战全面爆发",
+      "description": "所有主要媒体平台同时被卷入了一场史无前例的信息战。假新闻、深度伪造视频、AI生成的丑闻在秒级传播，真相和谎言已经完全无法区分。两家企业互相揭露对方的黑料，但这些「黑料」中又有多少是编造的？你在社交媒体上看到了自己的深度伪造视频，里面的「你」正在承认一系列你从未做过的罪行。你的银行账户在视频发布后被冻结，因为「涉嫌参与恐怖活动」。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "雇佣黑客团队清除虚假信息",
+          "effects": {
+            "TECH": 4,
+            "MONEY": -600,
+            "REP": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "利用信息混乱散布对手黑料",
+          "effects": {
+            "REP": -4,
+            "MONEY": 500,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "通过法律途径起诉造谣企业",
+          "effects": {
+            "REP": 4,
+            "MONEY": -400,
+            "HUMAN": 2,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "REP": -2
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "信息战",
+        "媒体"
+      ]
+    },
+    {
+      "id": 4935,
+      "title": "地下赌场洗钱战争",
+      "description": "企业之间的资金暗战在地下赌场中激烈上演。两家 rival 公司各自控制着不同的洗钱网络，通过赌场的虚假交易来转移非法资金。今晚，双方的武装会计团队在赌场的地下室爆发了枪战，成箱的现金和加密货币冷钱包散落在血泊中。你当时正在楼上玩老虎机，地板突然塌陷，你掉了进了这场金钱与死亡的地狱。",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "趁乱抢夺现金和加密货币",
+          "effects": {
+            "MONEY": 1000,
+            "REP": -4,
+            "TRAUMA": 3,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向警方举报洗钱网络",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 2,
+            "MONEY": 200,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拍摄证据卖给新闻媒体",
+          "effects": {
+            "MONEY": 500,
+            "REP": 3,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "洗钱",
+        "赌场"
+      ]
+    },
+    {
+      "id": 4936,
+      "title": "克隆人军队秘密部署",
+      "description": "某生物技术公司的克隆人军队在深夜被秘密部署到城市边缘的废弃工业区。这些克隆士兵拥有统一的面孔和完美的战术配合，他们的基因被编辑移除了恐惧和同情心。情报显示这是企业战争的新阶段——不再需要雇佣人类士兵，用生化制造的「完美战士」来取代。你在调查一宗失踪案时，意外闯入了克隆人军队的集结地，数百双毫无感情的眼睛同时转向你。",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拍下克隆人证据并逃离",
+          "effects": {
+            "REP": 6,
+            "TRAUMA": 4,
+            "LIFE": -3,
+            "MONEY": 400
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "尝试与克隆人士兵沟通",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": 3,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向雇佣你的企业报告发现",
+          "effects": {
+            "MONEY": 800,
+            "REP": -3,
+            "HUMAN": -3,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "克隆人",
+        "生物"
+      ]
+    },
+    {
+      "id": 4937,
+      "title": "全息投影城市陷阱",
+      "description": "竞争对手企业在城市上空部署了巨型全息投影系统，制造了一场逼真的「外星入侵」幻象。数百万市民陷入恐慌，自动驾驶系统集体瘫痪，金融市场瞬间崩盘。真实的目的是在混乱中窃取对方公司的核心数据中心——当所有人都在仰望天空中的虚假末日时，一支精锐小队正在地下通道中穿行。你识破了幻象，因为你的义眼能检测到全息投影的频谱特征。",
+      "type": "special",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "向恐慌的人群揭露真相",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 4,
+            "TRAUMA": 2,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "趁机潜入数据中心窃取信息",
+          "effects": {
+            "TECH": 5,
+            "MONEY": 800,
+            "TRAUMA": 3,
+            "REP": -3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在混乱中抢劫被遗弃的商店",
+          "effects": {
+            "MONEY": 700,
+            "REP": -4,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "全息",
+        "陷阱"
+      ]
+    },
+    {
+      "id": 4938,
+      "title": "生物识别数据库战争",
+      "description": "两家安保巨头为了争夺城市生物识别监控系统的合同，互相攻击对方的数据库。数百万市民的指纹、虹膜、DNA记录被泄露到暗网，任何人都可以用这些身份数据来伪造身份、转移资产或制造 perfect alibi。你的生物信息也在泄露名单中，银行账户被人用伪造的虹膜扫描清空。企业之间的商业竞争，最终代价总是由普通人来承担。",
+      "type": "special",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "利用泄露数据追回自己的损失",
+          "effects": {
+            "TECH": 4,
+            "MONEY": 600,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "协助受害者建立身份保护",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "TECH": 3,
+            "MONEY": -300
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "出售泄露数据给身份伪造集团",
+          "effects": {
+            "MONEY": 900,
+            "REP": -5,
+            "HUMAN": -3,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "MONEY": -400
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "数据",
+        "生物识别"
+      ]
+    },
+    {
+      "id": 4939,
+      "title": "终极企业战争：全面城市封锁",
+      "description": "所有主要企业之间的紧张关系终于突破了临界点。荒坂、军用科技、康陶、生物技术——它们同时宣布对城市实施「临时安全管控」。企业军队从四面八方涌入，各自占领不同的城区，建立检查站，驱逐「敌对势力」的平民支持者。城市在一夜之间被分割成数个企业飞地，每个区域都有自己的法律、货币和宵禁令。你站在自己的公寓窗前，看着不同企业的旗帜在相邻的建筑上飘扬，仿佛回到了封建时代。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入某个企业阵营寻求保护",
+          "effects": {
+            "MONEY": 500,
+            "REP": 2,
+            "TRAUMA": 3,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "组织跨企业中立区保护平民",
+          "effects": {
+            "HUMAN": 6,
+            "REP": 5,
+            "TRAUMA": 4,
+            "LIFE": -3,
+            "MONEY": -500
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "成为企业战争中的信息贩子",
+          "effects": {
+            "MONEY": 1000,
+            "REP": -4,
+            "TRAUMA": 3,
+            "TECH": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "LIFE": -1
+      },
+      "tags": [
+        "企业",
+        "战争",
+        "封锁",
+        "终极"
+      ]
+    },
+    {
+      "id": 4940,
+      "title": "恶意收购：你的公司被盯上了",
+      "description": "你工作的中型科技公司突然遭到了荒坂集团的恶意收购。对方开出了一份看似优厚的报价，但内部人士透露，荒坂的真实目的是获取你们团队研发的新一代神经接口技术，然后解雇所有员工。会议室里弥漫着恐慌的气氛，CEO的嘴唇在颤抖。你手上有核心技术的关键专利，这是你唯一的筹码。",
+      "type": "special",
+      "ageRange": [
+        22,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "将专利秘密卖给竞争对手阻止收购",
+          "effects": {
+            "MONEY": 1000,
+            "REP": -4,
+            "TRAUMA": 2,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "联合同事发起管理层收购",
+          "effects": {
+            "MONEY": -800,
+            "DEBT": 3,
+            "REP": 3,
+            "TECH": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向荒坂告密同事的反收购计划",
+          "effects": {
+            "MONEY": 700,
+            "REP": -5,
+            "HUMAN": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "恶意收购",
+        "荒坂"
+      ]
+    },
+    {
+      "id": 4941,
+      "title": "董事会政变：深夜夺权",
+      "description": "凌晨两点，你收到了公司董事会的紧急召集令。到达会议室时，发现气氛异常紧张——一位大股东联合了外部资本，正在发动董事会政变，试图罢免现任CEO。双方各自带来了律师团队和安保人员，会议室里剑拔弩张。你知道一个关键秘密：新任CEO候选人与竞争对手公司有秘密协议。",
+      "type": "special",
+      "ageRange": [
+        25,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "向现任CEO透露候选人的秘密协议",
+          "effects": {
+            "MONEY": 600,
+            "REP": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "将情报卖给出价更高的政变方",
+          "effects": {
+            "MONEY": 900,
+            "REP": -4,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "保持中立，暗中记录所有证据",
+          "effects": {
+            "TECH": 3,
+            "MONEY": 400,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "董事会",
+        "政变"
+      ]
+    },
+    {
+      "id": 4942,
+      "title": "股东大会上的毒丸计划",
+      "description": "你投资的一家初创公司遭到了行业巨头的敌意收购。为了保护公司独立性，管理层启动了「毒丸计划」——向所有股东（除了收购方）发行大量低价新股，从而稀释收购方的股权。然而这意味着你手中的股票价值将在短期内暴跌。会议室里，律师正在解释毒丸计划的细节，而收购方的代表脸色铁青地敲打着桌子。",
+      "type": "special",
+      "ageRange": [
+        22,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持毒丸计划，维护公司独立",
+          "effects": {
+            "MONEY": -500,
+            "REP": 3,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "将股份卖给收购方套利离场",
+          "effects": {
+            "MONEY": 800,
+            "REP": -2,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "暗中收购更多低价股票",
+          "effects": {
+            "MONEY": -1000,
+            "DEBT": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -200
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "股东",
+        "毒丸计划"
+      ]
+    },
+    {
+      "id": 4943,
+      "title": "资产评估：被低估的专利宝藏",
+      "description": "一家濒临破产的制造公司正在被资产评估，潜在的收购方准备以极低的价格吞并它。但在整理文件时，你发现这家公司持有一项被所有人忽视的专利——一种能够革命性提升电池效率的材料配方。如果这项专利被正确估值，公司的身价将翻十倍。你可以将这个发现卖给不同的利益方。",
+      "type": "special",
+      "ageRange": [
+        22,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "向被收购公司透露专利价值",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 2,
+            "MONEY": 300
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "将信息卖给收购方压低价格",
+          "effects": {
+            "MONEY": 800,
+            "REP": -4,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "自己偷偷注册相关衍生专利",
+          "effects": {
+            "TECH": 4,
+            "MONEY": 600,
+            "REP": -2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "企业",
+        "并购",
+        "专利",
+        "评估"
+      ]
+    },
+    {
+      "id": 4944,
+      "title": "反垄断调查突袭",
+      "description": "联邦贸易委员会的特工突然突袭了你所在公司的总部，他们手持搜查令，要求调取过去十年所有的并购记录和内部通讯。公司高层惊慌失措，有人开始删除文件，有人试图从后门溜走。你是合规部门的职员，知道公司在三次收购中确实使用了不当手段——包括贿赂监管人员和威胁竞争对手。调查人员正在向你走来。",
+      "type": "special",
+      "ageRange": [
+        24,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "配合调查提供证据",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 2,
+            "MONEY": 200,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "警告高层销毁关键证据",
+          "effects": {
+            "MONEY": 700,
+            "REP": -4,
+            "HUMAN": -3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "将内部证据卖给竞争对手",
+          "effects": {
+            "MONEY": 900,
+            "REP": -5,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "反垄断",
+        "调查"
+      ]
+    },
+    {
+      "id": 4945,
+      "title": "杠杆收购：债务炸弹",
+      "description": "一家私募股权基金正在用巨额债务进行杠杆收购，目标是你工作的大型制造企业。如果收购成功，公司将背上沉重的债务包袱，裁员一半以上，所有研发投入都将被砍掉以偿还利息。工人们在工厂门口抗议，但基金代表只关心财务报表上的数字。你是财务部门的核心成员，掌握着能够破坏这次收购的关键数据。",
+      "type": "special",
+      "ageRange": [
+        24,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "泄露数据给工会阻止收购",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "MONEY": -200,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "帮助收购方优化方案赚取顾问费",
+          "effects": {
+            "MONEY": 1000,
+            "REP": -3,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "做空被收购公司的股票",
+          "effects": {
+            "MONEY": 800,
+            "DEBT": 2,
+            "REP": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "杠杆收购",
+        "债务"
+      ]
+    },
+    {
+      "id": 4946,
+      "title": "白衣骑士救援",
+      "description": "你投资的家族企业正面临恶意收购，一个以拆解出售资产著称的秃鹫基金虎视眈眈。就在绝望之际，另一家企业伸出了「白衣骑士」之手——他们提出以更高的价格进行友好收购，承诺保留现有业务和品牌。但你在调查后发现，白衣骑士的真实目的是获取公司的分销网络，之后同样会解雇大部分员工。",
+      "type": "special",
+      "ageRange": [
+        22,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "揭露白衣骑士的真实意图",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 3,
+            "MONEY": -100,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "支持白衣骑士，至少比秃鹫基金好",
+          "effects": {
+            "MONEY": 500,
+            "REP": -1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "两边谈判，争取最大个人利益",
+          "effects": {
+            "MONEY": 900,
+            "REP": -3,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "企业",
+        "并购",
+        "白衣骑士",
+        "救援"
+      ]
+    },
+    {
+      "id": 4947,
+      "title": "管理层收购：背叛与忠诚",
+      "description": "公司CEO秘密联络了几位核心高管，计划发起管理层收购，将公司从股东手中买下变为私有。这意味着大规模裁员、资产剥离，以及管理层的天价分红。你作为中层管理者被邀请加入这个「小圈子」，条件是对其他同事保密。但你的直觉告诉你，这个计划一旦实施，数千名普通员工将失去生计。",
+      "type": "special",
+      "ageRange": [
+        28,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入管理层收购计划",
+          "effects": {
+            "MONEY": 1000,
+            "REP": -4,
+            "HUMAN": -3,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向工会泄露收购计划",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "MONEY": -300,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "保持沉默但收集证据自保",
+          "effects": {
+            "TECH": 2,
+            "MONEY": 400,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "管理层",
+        "收购"
+      ]
+    },
+    {
+      "id": 4948,
+      "title": "资产剥离：卖掉你的部门",
+      "description": "新东家完成收购后的第一个决定就是资产剥离——将整个研发部门出售给竞争对手。这意味着你和你所有的同事将被「打包」卖给另一家公司，劳动合同上的条款变得更加苛刻。新老板在会议上用冷冰冰的术语描述这次交易：「优化资源配置」「释放股东价值」。你的五年研究成果将归属于一家你深恶痛绝的公司。",
+      "type": "special",
+      "ageRange": [
+        24,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "带走核心数据跳槽到第三方公司",
+          "effects": {
+            "TECH": 4,
+            "MONEY": 600,
+            "REP": -3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "联合同事发起集体诉讼",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 3,
+            "MONEY": -400,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接受新条件，争取更好的离职补偿",
+          "effects": {
+            "MONEY": 800,
+            "HUMAN": -2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "资产剥离",
+        "裁员"
+      ]
+    },
+    {
+      "id": 4949,
+      "title": "壳公司迷宫",
+      "description": "一家表面上从事有机食品业务的公司正在收购你所在的企业，但尽职调查显示，这家公司背后是一层又一层的离岸壳公司，最终的实际控制人是一家以残酷著称的军工复合体。监管文件上签字的人名是伪造的，注册地址是一片荒芜的沙漠。你在深夜的办公室里，面对着屏幕上错综复杂的公司结构图，感觉自己在凝视一个深渊。",
+      "type": "special",
+      "ageRange": [
+        24,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "将壳公司调查曝光给媒体",
+          "effects": {
+            "REP": 5,
+            "HUMAN": 3,
+            "MONEY": 200,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "利用信息差做空目标公司股票",
+          "effects": {
+            "MONEY": 1000,
+            "DEBT": 2,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向实际控制人索要封口费",
+          "effects": {
+            "MONEY": 900,
+            "REP": -5,
+            "TRAUMA": 3,
+            "LIFE": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "壳公司",
+        "离岸"
+      ]
+    },
+    {
+      "id": 4950,
+      "title": "敌意收购中的金色降落伞",
+      "description": "公司被敌意收购已成定局，但管理层为自己准备了巨额的「金色降落伞」补偿方案——CEO将获得五千万的离职补偿，而普通员工的遣散费却只有法定最低标准。作为人力资源部的一员，你被要求起草这份不公平的方案。你的同事中有人的妻子正在重病，有人刚刚买了房子，而他们对此一无所知。",
+      "type": "special",
+      "ageRange": [
+        26,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "将金色降落伞方案泄露给员工",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "MONEY": -400,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "执行命令，为自己争取一份补偿",
+          "effects": {
+            "MONEY": 800,
+            "HUMAN": -3,
+            "REP": -2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "修改方案让补偿更公平",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "MONEY": -200,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "补偿",
+        "裁员"
+      ]
+    },
+    {
+      "id": 4951,
+      "title": "交叉持股陷阱",
+      "description": "两家竞争对手公司表面上正在洽谈合并，但实际上它们在多年前就已经通过复杂的交叉持股协议互相渗透。你作为财务分析师在审计过程中发现，所谓的「合并」实际上是一方早已通过层层持股控制了另一方，这次公开谈判只是为了合法化既成事实。更可怕的是，你发现这种交叉持股还涉及第三家公司——一家政府背景的投资基金。",
+      "type": "special",
+      "ageRange": [
+        24,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "向反垄断机构举报",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 2,
+            "MONEY": 100,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "将发现卖给受影响的小股东",
+          "effects": {
+            "MONEY": 800,
+            "REP": -2,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "保持沉默，利用内幕信息投资",
+          "effects": {
+            "MONEY": 1000,
+            "DEBT": 3,
+            "TRAUMA": 2,
+            "REP": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "持股",
+        "陷阱"
+      ]
+    },
+    {
+      "id": 4952,
+      "title": "虚假账目并购骗局",
+      "description": "你所在的审计事务所正在对一家即将被收购的公司进行财务尽调。在深入审查后，你发现该公司的账目存在系统性造假——收入被夸大十倍，核心技术专利根本不存在，连办公大楼都是租来的。如果收购完成，收购方将损失数十亿。但造假公司的高层已经准备在完成交易后立即潜逃海外。",
+      "type": "special",
+      "ageRange": [
+        24,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "向收购方如实报告造假",
+          "effects": {
+            "REP": 4,
+            "MONEY": 400,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向造假方勒索封口费",
+          "effects": {
+            "MONEY": 1000,
+            "REP": -5,
+            "TRAUMA": 3,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "利用信息做空造假公司",
+          "effects": {
+            "MONEY": 900,
+            "DEBT": 2,
+            "REP": -2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "企业",
+        "并购",
+        "造假",
+        "骗局"
+      ]
+    },
+    {
+      "id": 4953,
+      "title": "工会阻购战",
+      "description": "一家以压榨劳工闻名的零售巨头试图收购你工作的连锁超市。工会发动了大规模罢工，占领了超市的配送中心和总部大楼。收购方雇佣了私人安保公司，他们装备着电击棍和催泪瓦斯。你夹在中间——既是超市的部门经理，也是工会成员。双方的谈判已经破裂，暴力冲突一触即发。",
+      "type": "special",
+      "ageRange": [
+        22,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入工会罢工前线",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "MONEY": -300,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "协助收购方制定分化工会策略",
+          "effects": {
+            "MONEY": 800,
+            "REP": -4,
+            "HUMAN": -4,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "居中调解，争取和平解决",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 3,
+            "TRAUMA": 2,
+            "MONEY": 100
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "工会",
+        "罢工"
+      ]
+    },
+    {
+      "id": 4954,
+      "title": "知识产权暗战",
+      "description": "两家科技公司的并购谈判陷入了僵局，核心争议点是知识产权的归属。被收购方声称拥有某AI算法的专利权，但收购方的法务团队发现该专利实际上是前员工在任职期间开发的，权属存在争议。你是唯一知道全部真相的人——那个前员工是你的大学同学，他确实在公司任职期间完成了核心代码，但公司从未给予应有的认可和补偿。",
+      "type": "special",
+      "ageRange": [
+        24,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持大学同学，提供有利证词",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 2,
+            "MONEY": -200,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向收购方出售关键证据",
+          "effects": {
+            "MONEY": 800,
+            "REP": -3,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "保持沉默，从双方争取利益",
+          "effects": {
+            "MONEY": 600,
+            "REP": -2,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "知识产权",
+        "专利"
+      ]
+    },
+    {
+      "id": 4955,
+      "title": "跨境并购的政治博弈",
+      "description": "一家外国企业试图收购你所在城市的能源公司，但这笔交易涉及国家安全的敏感问题。两个超级大国的外交官在幕后激烈博弈，媒体和政客们分成两派互相攻击。支持收购的一方收买了多名议员，反对派则散布排外言论煽动民众。你被聘为「公共事务顾问」，实际上是为收购方游说政客。你的任务是用金钱和利益说服关键决策者。",
+      "type": "social",
+      "ageRange": [
+        26,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "成功游说通过并购案",
+          "effects": {
+            "MONEY": 1000,
+            "REP": -3,
+            "HUMAN": -2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向反对派泄露收购方的贿赂证据",
+          "effects": {
+            "REP": 5,
+            "HUMAN": 3,
+            "MONEY": 200,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "两边收钱，拖延决策时间",
+          "effects": {
+            "MONEY": 1200,
+            "REP": -5,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "政治",
+        "跨境"
+      ]
+    },
+    {
+      "id": 4956,
+      "title": "退市私有化：股东的噩梦",
+      "description": "公司的大股东突然宣布要以一个远低于市场价的价格将公司私有化退市。小股东们愤怒地发现，大股东故意在 announcement 前发布利空消息打压股价，以便低价收购。你持有公司的大量股票，这将意味着你的退休金计划彻底泡汤。更糟糕的是，你发现大股东与评估机构之间存在利益输送。",
+      "type": "special",
+      "ageRange": [
+        25,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "联合小股东发起集体诉讼",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 3,
+            "MONEY": -300,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向监管机构举报评估舞弊",
+          "effects": {
+            "REP": 4,
+            "MONEY": 200,
+            "HUMAN": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接受大股东的回购协议止损",
+          "effects": {
+            "MONEY": 500,
+            "HUMAN": -2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1,
+        "MONEY": -300
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "私有化",
+        "股东"
+      ]
+    },
+    {
+      "id": 4957,
+      "title": "反向收购：小鱼吃大鱼",
+      "description": "表面上，是你工作的小型初创公司被行业巨头收购。但实际上，这是一起精心策划的反向收购——初创公司的创始团队通过复杂的股权设计，在交易完成后反而控制了整个合并后的企业。巨头的原管理层被架空，他们引以为傲的核心资产被逐步转移。你是这场棋局中的关键棋子，掌握着能够让交易逆转的投票权。",
+      "type": "special",
+      "ageRange": [
+        24,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持创始团队，参与新帝国",
+          "effects": {
+            "MONEY": 1000,
+            "TECH": 3,
+            "REP": 2,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "忠于原巨头公司，揭发股权陷阱",
+          "effects": {
+            "REP": 3,
+            "MONEY": 400,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "两边谈判，出售投票权获利",
+          "effects": {
+            "MONEY": 1200,
+            "REP": -4,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "反向收购",
+        "股权"
+      ]
+    },
+    {
+      "id": 4958,
+      "title": "并购后的文化清洗",
+      "description": "收购完成三个月后，新东家开始了系统性的「文化整合」——被收购公司的所有品牌标识被拆除，员工被迫接受新企业的意识形态培训，不服从者被标记为「文化不适配」而逐步清除。你的直属上司因为拒绝删除旧公司的核心价值标语而被降职调岗。会议室里挂满了新老板的肖像，而曾经激励你加入这家公司的使命宣言被扔进了碎纸机。",
+      "type": "social",
+      "ageRange": [
+        22,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "公开发声反对文化清洗",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "MONEY": -400,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "适应新规则，争取晋升",
+          "effects": {
+            "MONEY": 600,
+            "REP": 1,
+            "HUMAN": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "暗中保存旧公司资料建立地下档案",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "TRAUMA": 1,
+            "MONEY": -100
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "文化",
+        "清洗"
+      ]
+    },
+    {
+      "id": 4959,
+      "title": "并购尽职调查中的致命秘密",
+      "description": "你作为尽调团队的一员，在审查被收购公司的环境记录时发现了一个可怕的秘密：该公司在过去二十年间一直在秘密排放剧毒化学物质，污染了周边三个社区的水源和土壤。如果这一信息被公开，公司将面临数百亿的诉讼赔偿。收购方的负责人私下告诉你：「只要交易完成，这些就不再是我们的问题。」",
+      "type": "special",
+      "ageRange": [
+        24,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "向受影响社区揭露污染真相",
+          "effects": {
+            "HUMAN": 5,
+            "REP": 5,
+            "MONEY": -500,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "隐瞒秘密完成交易获取奖金",
+          "effects": {
+            "MONEY": 1000,
+            "HUMAN": -5,
+            "REP": -4,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "要求公司建立污染清理基金",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 3,
+            "MONEY": 200,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "环境",
+        "秘密"
+      ]
+    },
+    {
+      "id": 4960,
+      "title": "债务重组中的掠夺",
+      "description": "一家负债累累的制造企业正在与债权人进行债务重组谈判。秃鹫基金嗅到了血腥味，它们以极低的价格从原债权人手中买下了债务，然后要求公司立即全额偿还——如果做不到，就将公司拆分成零件出售。你作为公司的财务顾问，知道公司还有一线生机：只要获得一笔过桥贷款，就能完成一笔大订单渡过难关。但秃鹫基金已经买通了所有的贷款渠道。",
+      "type": "special",
+      "ageRange": [
+        26,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "从地下钱庄借高利贷救公司",
+          "effects": {
+            "DEBT": 4,
+            "REP": 2,
+            "MONEY": -300,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向媒体曝光秃鹫基金的掠夺手段",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 3,
+            "MONEY": 100,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接受秃鹫基金的 offer 加入他们",
+          "effects": {
+            "MONEY": 1000,
+            "REP": -5,
+            "HUMAN": -4,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "债务",
+        "重组"
+      ]
+    },
+    {
+      "id": 4961,
+      "title": "内部人交易并购套利",
+      "description": "你在公司的卫生间隔间里，无意中听到了CFO和投行代表的秘密对话——公司将在下周宣布被某科技巨头高价收购，股价预计会暴涨200%。你手中恰好持有公司的股票。这是每个投资者梦寐以求的内幕消息，但也是联邦重罪。洗手台前的镜子映出你苍白的脸，你听到了自己的心跳声。",
+      "type": "special",
+      "ageRange": [
+        24,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "大量买入股票进行内幕交易",
+          "effects": {
+            "MONEY": 1000,
+            "DEBT": 3,
+            "REP": -4,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向监管机构举报内幕交易",
+          "effects": {
+            "REP": 4,
+            "MONEY": 200,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "将消息卖给金融自媒体",
+          "effects": {
+            "MONEY": 600,
+            "REP": -2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "内幕交易",
+        "套利"
+      ]
+    },
+    {
+      "id": 4962,
+      "title": "并购裁员名单泄露",
+      "description": "一份标注「最高机密」的并购后裁员名单被匿名发布在公司内网上。名单上列出了一千二百个名字，按部门、年龄、薪资水平和「政治忠诚度」分类标注。红色的「淘汰」标记像血迹一样刺眼。你发现自己的名字在「核心保留」一栏，但你的最好的朋友和导师都在「立即裁撤」之列。人力资源部的电话已经被打爆，有人在走廊里哭泣。",
+      "type": "social",
+      "ageRange": [
+        22,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮助被裁同事寻找新工作",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "MONEY": -200,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向管理层举报泄露者",
+          "effects": {
+            "MONEY": 500,
+            "REP": -2,
+            "HUMAN": -3,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "利用信息提前跳槽到竞争对手",
+          "effects": {
+            "MONEY": 700,
+            "REP": -2,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "裁员",
+        "泄露"
+      ]
+    },
+    {
+      "id": 4963,
+      "title": "分拆上市：被遗弃的业务",
+      "description": "母公司决定将最赚钱的业务分拆上市，而将亏损严重的部门留在原公司。这意味着你所在的部门将被「剥离」出去，失去优质资源，背负沉重债务，最终走向破产清算。分拆公告发布时，股价暴涨，但那是新公司的股价——你所在的原公司股价则一落千丈。会议室里，分拆团队的香槟碰杯声和你同事们的叹息形成了刺耳的对比。",
+      "type": "special",
+      "ageRange": [
+        24,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "申请调往即将上市的盈利部门",
+          "effects": {
+            "MONEY": 600,
+            "REP": 1,
+            "HUMAN": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "联合被遗弃部门发起抵制",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "MONEY": -300,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "做空原公司股票",
+          "effects": {
+            "MONEY": 900,
+            "REP": -2,
+            "DEBT": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "MONEY": -200
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "分拆",
+        "上市"
+      ]
+    },
+    {
+      "id": 4964,
+      "title": "并购中的技术剽窃",
+      "description": "一家大型企业正在「收购」一家小型创新公司，但真正的目的是获取后者的核心技术，然后取消交易让初创公司破产。你已经看到了收购方内部的备忘录，上面明确写着：「获取代码库后触发交易终止条款。」那家初创公司的创始人是一位理想主义的年轻工程师，他正满怀期待地准备签字。",
+      "type": "special",
+      "ageRange": [
+        22,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "警告初创公司创始人真相",
+          "effects": {
+            "HUMAN": 5,
+            "REP": 3,
+            "MONEY": -200,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "执行收购计划获取奖金",
+          "effects": {
+            "MONEY": 1000,
+            "REP": -5,
+            "HUMAN": -4,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "两边谈判，争取技术共享方案",
+          "effects": {
+            "TECH": 3,
+            "MONEY": 500,
+            "REP": 2,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "剽窃",
+        "技术"
+      ]
+    },
+    {
+      "id": 4965,
+      "title": "跨境并购中的数据主权争端",
+      "description": "一家外国科技巨头收购了你所在的数据公司，但交易触发了数据主权法律冲突。新东家要求将所有用户数据转移到海外服务器，这违反了本地隐私保护法。你被夹在两个法律体系之间，面临刑事起诉的风险。监管机构要求你提供数据转移的证据，而公司则威胁如果你配合调查就起诉你违反保密协议。",
+      "type": "special",
+      "ageRange": [
+        24,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "向监管机构提供违法证据",
+          "effects": {
+            "REP": 5,
+            "HUMAN": 3,
+            "TRAUMA": 3,
+            "MONEY": -300
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "服从公司命令，配合数据转移",
+          "effects": {
+            "MONEY": 700,
+            "REP": -4,
+            "HUMAN": -3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "秘密备份数据作为自保筹码",
+          "effects": {
+            "TECH": 4,
+            "MONEY": 400,
+            "TRAUMA": 2,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "数据",
+        "法律"
+      ]
+    },
+    {
+      "id": 4966,
+      "title": "被收购公司的养老金掠夺",
+      "description": "新东家完成收购后的第一个财务操作，就是将公司的养老金基金「重组」。他们声称这是为了「提高资金使用效率」，但实际上是将养老金资产转移到离岸账户，然后用高风险衍生品替代原本稳定的养老投资组合。退休员工们对此一无所知，仍在计划着他们平静的晚年。你是精算师，计算结果显示五年后养老金将彻底枯竭。",
+      "type": "special",
+      "ageRange": [
+        26,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "向退休员工和工会揭露真相",
+          "effects": {
+            "HUMAN": 5,
+            "REP": 4,
+            "MONEY": -400,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "执行重组方案，获取高额奖金",
+          "effects": {
+            "MONEY": 1000,
+            "HUMAN": -5,
+            "REP": -4,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "匿名向监管机构举报",
+          "effects": {
+            "REP": 3,
+            "MONEY": 100,
+            "HUMAN": 2,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "养老金",
+        "掠夺"
+      ]
+    },
+    {
+      "id": 4967,
+      "title": "并购后的供应链重构",
+      "description": "收购完成后，新东家开始重构供应链——终止与数十家长期合作的小供应商合同，转而使用自己体系内的关联企业。这些小供应商中有很多是家族经营的企业，他们 generations 以来一直依靠这份合同生存。你作为采购部门主管，被要求在一周内完成所有合同终止通知。其中一位供应商是你父亲的多年老友，他昨天还打电话来祝贺你升职。",
+      "type": "social",
+      "ageRange": [
+        28,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拒绝执行，保护小供应商",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "MONEY": -500,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "执行命令，但暗中帮助供应商转型",
+          "effects": {
+            "MONEY": 400,
+            "HUMAN": 2,
+            "TRAUMA": 2,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "完成任务，获取晋升机会",
+          "effects": {
+            "MONEY": 800,
+            "HUMAN": -3,
+            "REP": -2,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "供应链",
+        "重构"
+      ]
+    },
+    {
+      "id": 4968,
+      "title": "并购交易中的洗钱通道",
+      "description": "在审核并购交易的财务流程时，你发现了一笔异常的「顾问费」——五千万被支付给了一家在避税天堂注册的咨询公司，而该公司的唯一业务就是收取这类费用。进一步调查显示，这笔钱最终流入了某个政治人物的海外账户。这笔「顾问费」是并购交易获得政府批准的代价，也是整个交易结构中精心设计的洗钱通道。",
+      "type": "special",
+      "ageRange": [
+        26,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "向反洗钱机构举报",
+          "effects": {
+            "REP": 5,
+            "HUMAN": 3,
+            "MONEY": 100,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "将发现卖给政治对手的媒体",
+          "effects": {
+            "MONEY": 800,
+            "REP": 2,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "保持沉默，获取封口费",
+          "effects": {
+            "MONEY": 900,
+            "REP": -5,
+            "TRAUMA": 2,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "洗钱",
+        "腐败"
+      ]
+    },
+    {
+      "id": 4969,
+      "title": "并购失败后的报复",
+      "description": "你参与策划的一起大型并购案因为监管审查而失败。目标公司恼羞成怒，开始对你们公司展开全方位的报复性攻击——挖走核心团队、窃取客户名单、在行业内散布谣言。两家公司的战争从董事会会议室蔓延到了街头，你的同事中有人的车被纵火，有人的家人收到了死亡威胁。你发现自己的住所也开始被不明车辆监视。",
+      "type": "special",
+      "ageRange": [
+        24,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "组织公司安保反击",
+          "effects": {
+            "MONEY": 500,
+            "REP": 2,
+            "TRAUMA": 3,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向警方申请保护并举报威胁",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "MONEY": -200,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "辞职并搬到另一座城市",
+          "effects": {
+            "MONEY": -600,
+            "TRAUMA": 2,
+            "LIFE": 1,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "报复",
+        "威胁"
+      ]
+    },
+    {
+      "id": 4970,
+      "title": "善意收购中的隐藏债务",
+      "description": "你所在公司正在进行一次看似友好的善意收购，目标是一家声誉良好的医疗服务公司。但在深入审查中，你发现目标公司隐藏了巨额的医疗事故诉讼负债——数千名患者因为使用其问题产品而患病，而公司高管早已将资产转移到海外。如果收购完成，这些负债将全部由你的公司承担，足以让公司破产。收购谈判已经进入最后阶段。",
+      "type": "special",
+      "ageRange": [
+        26,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "紧急叫停收购并公开真相",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 3,
+            "MONEY": 200,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "要求目标公司大幅降低收购价",
+          "effects": {
+            "MONEY": 600,
+            "REP": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "利用信息做空目标公司股票",
+          "effects": {
+            "MONEY": 900,
+            "DEBT": 2,
+            "REP": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "隐藏债务",
+        "医疗"
+      ]
+    },
+    {
+      "id": 4971,
+      "title": "收购后的技术封锁",
+      "description": "你的公司被行业巨头收购后，新东家立即对核心技术人员实施了「知识封锁」——禁止你与学术界交流、限制发表论文、甚至监控你的私人通讯。他们声称这是为了保护「知识产权」，但实际上是为了扼杀可能威胁到他们市场地位的技术创新。你发现他们正在将你团队多年积累的突破性研究束之高阁，永不见天日。",
+      "type": "social",
+      "ageRange": [
+        24,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "秘密将研究成果泄露给学术界",
+          "effects": {
+            "TECH": 5,
+            "REP": 4,
+            "HUMAN": 3,
+            "TRAUMA": 3,
+            "MONEY": -300
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "辞职并加入竞争对手",
+          "effects": {
+            "MONEY": 700,
+            "REP": -2,
+            "TRAUMA": 2,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "遵守规定，等待解禁",
+          "effects": {
+            "MONEY": 500,
+            "TRAUMA": 2,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "技术封锁",
+        "知识产权"
+      ]
+    },
+    {
+      "id": 4972,
+      "title": "并购交易中的绑架威胁",
+      "description": "一起涉及数十亿的并购交易吸引了地下世界的注意。交易一方的CEO收到了绑架威胁，绑匪要求获得即将暴涨的目标公司股票内幕信息。安保团队建议取消交易，但董事会认为这只是虚张声势。作为CEO的私人助理，你发现了内鬼——绑匪的信息来源就在公司的核心决策层中。这个内鬼知道CEO的每日行程、安保路线和私人弱点。",
+      "type": "special",
+      "ageRange": [
+        24,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "向警方举报内鬼身份",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 3,
+            "MONEY": 300,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "私下与内鬼谈判换取利益",
+          "effects": {
+            "MONEY": 800,
+            "REP": -4,
+            "TRAUMA": 3,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "帮助CEO秘密转移并继续交易",
+          "effects": {
+            "MONEY": 700,
+            "REP": 2,
+            "TRAUMA": 3,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "绑架",
+        "威胁"
+      ]
+    },
+    {
+      "id": 4973,
+      "title": "被并购企业创始人的复仇",
+      "description": "创始人被自己创办的公司扫地出门后，用数年时间策划了一场精密的复仇。他在新东家的系统中埋下了逻辑炸弹，在特定日期触发后将摧毁所有客户数据和财务记录。复仇日期就是明天。你曾经是他的得意门生，收到了一封加密邮件，里面包含了解除逻辑炸弹的密钥——以及一个条件：帮助他重新夺回公司的控制权。",
+      "type": "special",
+      "ageRange": [
+        24,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮助创始人夺回公司",
+          "effects": {
+            "TECH": 5,
+            "REP": 3,
+            "MONEY": 600,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向现任管理层告发炸弹威胁",
+          "effects": {
+            "MONEY": 800,
+            "REP": -3,
+            "HUMAN": -1,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "两边谈判，用密钥换取最大利益",
+          "effects": {
+            "MONEY": 1200,
+            "REP": -4,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "复仇",
+        "创始人"
+      ]
+    },
+    {
+      "id": 4974,
+      "title": "终极并购：城市本身被收购",
+      "description": "一家跨国企业集团宣布收购整个城市的运营权——包括交通、能源、水务、治安和司法系统。市长在新闻发布会上称这是「公私合作的典范」，但合同条款显示，集团将获得对城市法律的否决权、征税权和武力使用权。市民们惊恐地发现，他们的投票权被一纸合同抹除，而合同的有效期是九十九年。你站在市政厅外，看着集团的黑旗在曾经飘扬着市旗的旗杆上缓缓升起。",
+      "type": "special",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入市民抵抗运动",
+          "effects": {
+            "HUMAN": 6,
+            "REP": 5,
+            "TRAUMA": 4,
+            "LIFE": -3,
+            "MONEY": -500
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "为新企业城市效力获取利益",
+          "effects": {
+            "MONEY": 1000,
+            "REP": -4,
+            "HUMAN": -4,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "组织地下经济系统独立运营",
+          "effects": {
+            "MONEY": 800,
+            "TECH": 4,
+            "REP": 3,
+            "TRAUMA": 3,
+            "DEBT": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "企业",
+        "并购",
+        "城市",
+        "终极"
+      ]
+    },
+    {
+      "id": 4975,
+      "title": "部门间的资源争夺战",
+      "description": "公司的年度预算会议变成了血腥的战场。研发部和营销部为了争夺一笔关键资金，各自准备了详尽的数据报告和暗中收集的对方黑料。会议室里的空调开得很足，但每个人的额头都在冒汗。你作为中立部门的代表被邀请投票，但你知道无论支持哪一方，都会成为另一方的敌人。",
+      "type": "social",
+      "ageRange": [
+        24,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持研发部，投资未来技术",
+          "effects": {
+            "TECH": 4,
+            "REP": 2,
+            "MONEY": 200,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "支持营销部，确保短期收益",
+          "effects": {
+            "MONEY": 600,
+            "REP": -1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "提出折中方案，两边各让一步",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "内部",
+        "斗争",
+        "部门"
+      ]
+    },
+    {
+      "id": 4976,
+      "title": "办公室政治：站队时刻",
+      "description": "公司的两位高级副总裁公开决裂，各自形成了对立派系。走廊里充满了窃窃私语，午餐时的餐桌分裂成两个阵营。中立地带正在迅速消失，你必须做出选择。一位VP承诺给你晋升和加薪，另一位则暗示如果选错边，你的职业生涯将就此终结。人力资源部开始收到关于你的「匿名投诉」，虽然你知道这些投诉都是捏造的。",
+      "type": "social",
+      "ageRange": [
+        24,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入强势VP的阵营",
+          "effects": {
+            "MONEY": 700,
+            "REP": 2,
+            "TRAUMA": 2,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "支持弱势VP，赌一把",
+          "effects": {
+            "REP": 3,
+            "MONEY": -200,
+            "TRAUMA": 3,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "两边周旋，做双面间谍",
+          "effects": {
+            "MONEY": 800,
+            "REP": -4,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "内部",
+        "政治",
+        "站队"
+      ]
+    },
+    {
+      "id": 4977,
+      "title": "吹哨人：发现财务造假",
+      "description": "深夜加班时，你无意中发现了一组被隐藏的财务报表。公司在过去三年中系统性地虚报了收入和利润，涉及的金额足以让公司破产。审计师的签名是伪造的，原始数据被锁在一个需要三重生物识别才能打开的加密文件夹中。你知道如果举报，公司会倾尽全力毁了你；如果沉默，你可能成为共谋者，在事发后被追究法律责任。",
+      "type": "special",
+      "ageRange": [
+        24,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "向监管机构匿名举报",
+          "effects": {
+            "REP": 5,
+            "HUMAN": 3,
+            "MONEY": -400,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向管理层告发，要求内部处理",
+          "effects": {
+            "MONEY": 500,
+            "REP": -2,
+            "TRAUMA": 2,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "销毁证据保护自己",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -2,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "内部",
+        "吹哨人",
+        "造假"
+      ]
+    },
+    {
+      "id": 4978,
+      "title": "内部审计：寻找替罪羊",
+      "description": "公司的内部审计部门发起了一场大规模调查，表面上是为了「提升运营效率」，实际上是在为即将曝光的丑闻寻找替罪羊。审计报告需要指出具体的责任人和部门，而高层已经暗示，他们希望找到一个「合适的人选」来承担全部责任。你的部门经理暗示你，如果你自愿成为替罪羊，公司将给你一笔丰厚的遣散费并帮你安排下一份工作；如果拒绝，他们可能会「发现」一些对你不利的证据。",
+      "type": "special",
+      "ageRange": [
+        24,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拒绝背锅，收集证据自保",
+          "effects": {
+            "REP": 3,
+            "TRAUMA": 3,
+            "MONEY": -200,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受条件，成为替罪羊",
+          "effects": {
+            "MONEY": 800,
+            "REP": -5,
+            "TRAUMA": 4,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "将真正的责任人曝光给审计",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 2,
+            "TRAUMA": 3,
+            "MONEY": 300
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "内部",
+        "审计",
+        "替罪羊"
+      ]
+    },
+    {
+      "id": 4979,
+      "title": "HR部门的监控网络",
+      "description": "人力资源部部署了一套全新的员工行为监控系统，能够实时分析员工的邮件、聊天记录、甚至键盘敲击模式来预测「潜在风险」。系统 flagged 了你，原因是你最近搜索了「劳动权益」和「竞业协议法律条款」。HR总监约你「喝咖啡」，谈话间不断暗示公司对「忠诚度」的重视。你注意到，过去两周已经有三位同事在类似谈话后「主动离职」。",
+      "type": "social",
+      "ageRange": [
+        22,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "向媒体曝光员工监控系统",
+          "effects": {
+            "REP": 5,
+            "HUMAN": 3,
+            "MONEY": -300,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "配合HR，签署忠诚承诺书",
+          "effects": {
+            "MONEY": 400,
+            "REP": -2,
+            "HUMAN": -2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "组织同事联合抵制监控",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "TRAUMA": 3,
+            "MONEY": -200
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "内部",
+        "监控",
+        "HR"
+      ]
+    },
+    {
+      "id": 4980,
+      "title": "研发部里的商业间谍",
+      "description": "你在实验室的隐蔽角落发现了一枚微型数据窃取装置，它正实时向外部传输你们的实验数据。进一步调查发现，间谍装置已经存在了至少六个月，你们团队近一半的研究成果可能已经泄露。嫌疑人缩小到了五个人——都是与你朝夕相处的同事。安全部门要求你协助调查，但警告你不要打草惊蛇。",
+      "type": "special",
+      "ageRange": [
+        24,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "协助安全部门找出间谍",
+          "effects": {
+            "REP": 3,
+            "MONEY": 500,
+            "TRAUMA": 2,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "私下与间谍谈判，换取利益",
+          "effects": {
+            "MONEY": 800,
+            "REP": -4,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "将计就计，向间谍传递虚假数据",
+          "effects": {
+            "TECH": 5,
+            "REP": 3,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "内部",
+        "间谍",
+        "研发"
+      ]
+    },
+    {
+      "id": 4981,
+      "title": "晋升竞争中的阴谋",
+      "description": "你和另一位同事是晋升总监职位的最后两位候选人。对方开始散布关于你的谣言——说你上个项目的成功其实是窃取了下属的创意，还说你有「职场霸凌」的前科。更可怕的是，你发现对方与决策层某位高管有不可告人的私人关系。你的支持者开始动摇，而晋升面试就在三天后。",
+      "type": "social",
+      "ageRange": [
+        26,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "收集对方与高管关系的证据反击",
+          "effects": {
+            "REP": 3,
+            "TRAUMA": 3,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用业绩和实力正面竞争",
+          "effects": {
+            "MONEY": 400,
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "暗中破坏对方的项目",
+          "effects": {
+            "MONEY": 500,
+            "REP": -4,
+            "HUMAN": -3,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "内部",
+        "晋升",
+        "阴谋"
+      ]
+    },
+    {
+      "id": 4982,
+      "title": "IT部门的秘密后门",
+      "description": "作为系统管理员，你发现公司的CTO在所有高管的电脑上安装了秘密监控软件，能够记录他们的一举一动——包括私人邮件、银行账户密码和加密通讯。这个发现让你陷入了两难：CTO是你的直接上司，对你有知遇之恩；但那些被他监控的高管中，有人是你的良师益友。更复杂的是，CTO似乎正在利用这些信息策划一场高层政变。",
+      "type": "special",
+      "ageRange": [
+        22,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "向被监控的高管告发CTO",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 3,
+            "TRAUMA": 3,
+            "MONEY": 200
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "支持CTO的政变计划",
+          "effects": {
+            "MONEY": 800,
+            "REP": -3,
+            "HUMAN": -3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "保持沉默，但备份证据自保",
+          "effects": {
+            "TECH": 4,
+            "MONEY": 400,
+            "TRAUMA": 2,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "内部",
+        "监控",
+        "IT"
+      ]
+    },
+    {
+      "id": 4983,
+      "title": "工会代表被收买",
+      "description": "公司工会即将进行领导层选举，现任工会主席被发现收受了管理层的秘密贿赂，在上一轮劳资谈判中出卖了工人利益。证据是一系列加密转账记录和高级餐厅的监控录像。工人群体分裂成两派——一派要求立即罢免主席，另一派则认为「至少他还能从管理层争取到一些东西」。你是工会的一员，手上有那段监控录像的备份。",
+      "type": "social",
+      "ageRange": [
+        22,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "公开监控录像，推动罢免",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 4,
+            "TRAUMA": 2,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "与主席谈判，换取个人利益",
+          "effects": {
+            "MONEY": 600,
+            "REP": -4,
+            "HUMAN": -3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "支持主席，认为务实更重要",
+          "effects": {
+            "MONEY": 300,
+            "REP": -2,
+            "HUMAN": -2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "内部",
+        "工会",
+        "腐败"
+      ]
+    },
+    {
+      "id": 4984,
+      "title": "项目负责人之间的地盘战争",
+      "description": "两个项目组声称对同一个高利润客户拥有「独家服务权」，冲突从邮件争吵升级为公开对抗。双方在会议室里互相指责对方「越界」「抢单」，言语中充满了侮辱和威胁。客户对这场闹剧感到厌恶，威胁要终止与公司的所有合作。你作为客户关系经理被派去灭火，但两个项目负责人都要求你站在他们那一边。",
+      "type": "social",
+      "ageRange": [
+        24,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "公正调解，重新划分客户权限",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 2,
+            "MONEY": 300,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "支持更有权势的项目负责人",
+          "effects": {
+            "MONEY": 600,
+            "REP": -2,
+            "HUMAN": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "私下联系客户，建立个人关系",
+          "effects": {
+            "REP": 3,
+            "MONEY": 500,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "内部",
+        "项目",
+        "地盘"
+      ]
+    },
+    {
+      "id": 4985,
+      "title": "实习生揭发学术造假",
+      "description": "公司最资深的研究科学家即将被提拔为CTO，但一位实习生发现了他二十年前博士论文中的数据造假。如果这一信息被公开，公司将失去三个政府研究合同，股价可能暴跌。实习生找到你，因为他的直接上司告诉他「年轻人要学会睁一只眼闭一只眼」。那位科学家曾经是你的导师，他在你最低谷时给了你这份工作。",
+      "type": "special",
+      "ageRange": [
+        24,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持实习生，推动重新审查",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "TRAUMA": 3,
+            "MONEY": -200
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "说服实习生放弃追究",
+          "effects": {
+            "MONEY": 500,
+            "REP": -3,
+            "HUMAN": -3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "两边调解，让科学家主动退选",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "TRAUMA": 2,
+            "MONEY": 200
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "内部",
+        "学术造假",
+        "揭发"
+      ]
+    },
+    {
+      "id": 4986,
+      "title": "安保部门的黑色行动",
+      "description": "公司安保部门开始执行一系列「特殊任务」——跟踪「可疑」员工、潜入竞争对手的办公室安装窃听器、甚至威胁离职高管不要加入对手公司。你偶然在服务器日志中发现了这些行动的记录，其中还包括对你一位要好同事的监控报告。安保主管发现了你的窥探，给你一个选择：加入他们的「特别小组」，或者成为下一个被监控的目标。",
+      "type": "special",
+      "ageRange": [
+        22,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拒绝加入，向律师寻求保护",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 3,
+            "TRAUMA": 3,
+            "MONEY": -300
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受邀请，加入特别小组",
+          "effects": {
+            "MONEY": 800,
+            "REP": -4,
+            "HUMAN": -4,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "假意加入，收集证据准备反击",
+          "effects": {
+            "TECH": 4,
+            "MONEY": 400,
+            "TRAUMA": 3,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "内部",
+        "安保",
+        "黑色行动"
+      ]
+    },
+    {
+      "id": 4987,
+      "title": "财务部的暗账网络",
+      "description": "在整理旧账目时，你发现公司存在一个完全独立于正式系统之外的「暗账」网络。这个网络用于支付贿赂、政治献金、以及为高管的私人消费买单。暗账的总额每年超过五千万，由财务部的三位核心人员共同管理。你不小心让他们发现了你的调查，他们邀请你「加入俱乐部」，承诺每年给你一笔可观的「特别津贴」。",
+      "type": "special",
+      "ageRange": [
+        24,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "向董事会审计委员会举报",
+          "effects": {
+            "REP": 5,
+            "HUMAN": 3,
+            "MONEY": -200,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "加入暗账网络，获取利益",
+          "effects": {
+            "MONEY": 1000,
+            "REP": -5,
+            "HUMAN": -4,
+            "TRAUMA": 2,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "假装加入，暗中收集全部证据",
+          "effects": {
+            "TECH": 3,
+            "MONEY": 500,
+            "TRAUMA": 3,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "内部",
+        "财务",
+        "暗账"
+      ]
+    },
+    {
+      "id": 4988,
+      "title": "行政助理的权力游戏",
+      "description": "CEO的行政助理表面上只是一个安排会议和端咖啡的职位，但实际上她掌握着所有高层决策的时间表、信息流向和人际关系网络。她开始利用这种隐形权力操纵部门间的资源配置，甚至影响人事任免。你因为她的一句话而失去了一个重要项目的领导权，而那个项目本可以让你的职业生涯迈上新台阶。",
+      "type": "social",
+      "ageRange": [
+        22,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "主动接近助理，建立联盟",
+          "effects": {
+            "REP": 3,
+            "MONEY": -200,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向CEO揭露助理干政",
+          "effects": {
+            "REP": 2,
+            "TRAUMA": 3,
+            "MONEY": 100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "绕过助理，直接与其他高管建立联系",
+          "effects": {
+            "REP": 2,
+            "MONEY": 300,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "内部",
+        "权力",
+        "助理"
+      ]
+    },
+    {
+      "id": 4989,
+      "title": "法务部的选择性执法",
+      "description": "公司法务部对不同员工执行着截然不同的标准。高管的违法行为被掩盖和淡化，而普通员工最轻微的违规都会遭到严厉的起诉威胁。一位女同事因为将公司的废弃纸张卖给废品回收站而被威胁要「追究刑事责任」，而一位VP挪用了十倍金额却只收到一封「内部警告信」。你在法律部工作，被要求起草那份对女同事的起诉书。",
+      "type": "social",
+      "ageRange": [
+        24,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拒绝起草，向媒体揭露双重标准",
+          "effects": {
+            "HUMAN": 5,
+            "REP": 4,
+            "MONEY": -500,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "执行命令，但暗中帮助女同事",
+          "effects": {
+            "MONEY": 400,
+            "HUMAN": 2,
+            "TRAUMA": 2,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "按指示起草，但收集高管违法证据",
+          "effects": {
+            "TECH": 3,
+            "MONEY": 500,
+            "TRAUMA": 2,
+            "REP": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "内部",
+        "法务",
+        "双重标准"
+      ]
+    },
+    {
+      "id": 4990,
+      "title": "内部创业项目的资源掠夺",
+      "description": "公司发起了一个「内部创业」计划，鼓励员工提交创新项目。你的项目被选中，获得了五十万的种子资金和一个独立团队。但三个月后，公司的核心业务部门开始以各种理由蚕食你的资源——借调你的核心成员、占用你的预算、最后声称你的项目「不符合公司战略方向」要将其关闭。而实际上，他们只是想把你的创意据为己有。",
+      "type": "social",
+      "ageRange": [
+        22,
+        45
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "带着团队和创意独立创业",
+          "effects": {
+            "TECH": 5,
+            "MONEY": -500,
+            "TRAUMA": 3,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向公司高层申诉争取权益",
+          "effects": {
+            "REP": 2,
+            "TRAUMA": 2,
+            "MONEY": 100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接受条件，将项目拱手相让",
+          "effects": {
+            "MONEY": 600,
+            "HUMAN": -2,
+            "TRAUMA": 2,
+            "TECH": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "内部",
+        "创业",
+        "掠夺"
+      ]
+    },
+    {
+      "id": 4991,
+      "title": "绩效评估中的性别偏见",
+      "description": "年度绩效评估结果公布，你发现能力相当的男女同事获得了截然不同的评价。女性员工的领导力被描述为「攻击性」和「情绪化」，而同样的行为在男性身上则是「果断」和「有魄力」。更离谱的是，几位怀孕的女同事被以「无法保证工作投入」为由打上了最低等级。你是评估委员会的一员，有人暗示你「不要多管闲事」。",
+      "type": "social",
+      "ageRange": [
+        22,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "公开质疑评估标准的公平性",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "TRAUMA": 3,
+            "MONEY": -200
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "私下帮助受歧视同事收集证据",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "TRAUMA": 2,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "保持沉默，避免引火烧身",
+          "effects": {
+            "MONEY": 400,
+            "HUMAN": -2,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "内部",
+        "偏见",
+        "性别"
+      ]
+    },
+    {
+      "id": 4992,
+      "title": "办公室恋情的权力陷阱",
+      "description": "你的一位下属向你表白，而你们之间的职级差距意味着这段关系可能被视为权力滥用。更复杂的是，这位下属恰好属于与你竞争升职的对手派系。消息不知怎的传到了人力资源部，他们暗示如果你「处理不当」，这件事将被记录进你的档案。同时，你的竞争对手正在利用这个消息在高层面前诋毁你的判断力。",
+      "type": "social",
+      "ageRange": [
+        24,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "明确拒绝并申请调离该下属",
+          "effects": {
+            "REP": 2,
+            "TRAUMA": 2,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受感情，但要求对方辞职",
+          "effects": {
+            "HUMAN": -3,
+            "REP": -3,
+            "TRAUMA": 3,
+            "MONEY": 200
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "保持地下关系，加倍谨慎",
+          "effects": {
+            "TRAUMA": 3,
+            "REP": -2,
+            "MONEY": 300
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "内部",
+        "恋情",
+        "权力"
+      ]
+    },
+    {
+      "id": 4993,
+      "title": "内部举报人保护计划骗局",
+      "description": "公司高调推出了「内部举报人保护计划」，鼓励员工举报不当行为。但当真的有人举报后，所谓的「保护」只是将举报人调到一个没有窗户的地下室办公室，分配毫无意义的工作，直到他们自己辞职。举报人的心理健康急剧恶化，而公司对外宣称这是「正常的岗位调整」。你目睹了这一切，现在你也掌握了一些需要举报的信息。",
+      "type": "special",
+      "ageRange": [
+        24,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "直接向外部监管机构举报",
+          "effects": {
+            "REP": 5,
+            "HUMAN": 3,
+            "MONEY": -300,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "利用公司计划获取内部利益",
+          "effects": {
+            "MONEY": 600,
+            "REP": -3,
+            "HUMAN": -2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "匿名向媒体提供证据",
+          "effects": {
+            "REP": 4,
+            "TRAUMA": 2,
+            "MONEY": 200
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "内部",
+        "举报",
+        "保护"
+      ]
+    },
+    {
+      "id": 4994,
+      "title": "跨部门项目中的责任推诿",
+      "description": "一个涉及五个部门的大型项目彻底失败了，损失超过两千万。现在每个部门都在疯狂推卸责任——市场部指责产品不符合需求，研发部声称需求变更太频繁，财务部抱怨预算被砍，运营部说技术不够稳定。高管们要求你作为项目经理提交一份责任分析报告。你知道真相是各方都有过错，但报告只能突出一个「主要责任方」。",
+      "type": "social",
+      "ageRange": [
+        26,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "如实报告各方责任",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "TRAUMA": 2,
+            "MONEY": 100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "将责任推给势力最弱的部门",
+          "effects": {
+            "MONEY": 500,
+            "REP": -3,
+            "HUMAN": -3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "承担部分责任换取团队信任",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 3,
+            "TRAUMA": 2,
+            "MONEY": -200
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "内部",
+        "推诿",
+        "责任"
+      ]
+    },
+    {
+      "id": 4995,
+      "title": "高管之间的派系清洗",
+      "description": "公司新任CEO上任后，开始系统性地清除前任提拔的高管。先是「战略调整」导致几位副总裁「主动请辞」，然后是「组织架构优化」让一批中层管理者「内部转岗」。现在轮到了你的直属上司——他为公司服务了十五年，却在一次会议后被保安「护送」出大楼。CEO的秘书给你发来消息：「下一个可能是你，除非你证明自己的忠诚。」",
+      "type": "special",
+      "ageRange": [
+        26,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "向上司提供支持，联合抵抗",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "MONEY": -300,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向CEO表忠，揭发上司的「问题」",
+          "effects": {
+            "MONEY": 800,
+            "REP": -4,
+            "HUMAN": -4,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "低调自保，同时寻找外部机会",
+          "effects": {
+            "MONEY": 400,
+            "TRAUMA": 2,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "内部",
+        "清洗",
+        "派系"
+      ]
+    },
+    {
+      "id": 4996,
+      "title": "内部培训中的意识形态灌输",
+      "description": "公司强制所有员工参加为期一周的「企业文化重塑」培训。内容并非技能培训，而是一系列令人不安的洗脑课程——要求员工宣誓对公司「绝对忠诚」，将公司利益置于家庭和健康之上，甚至学习如何「识别和举报思想不稳定的同事」。培训结束时，每个人都被要求签署一份同意书，授权公司监控个人社交媒体和私人通讯。",
+      "type": "social",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "公开拒绝参加培训",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "MONEY": -500,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "参加培训但暗中组织抵制",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "TRAUMA": 3,
+            "MONEY": -200
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "配合完成培训，但保留证据",
+          "effects": {
+            "MONEY": 400,
+            "TRAUMA": 2,
+            "REP": -1,
+            "TECH": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业",
+        "内部",
+        "培训",
+        "洗脑"
+      ]
+    },
+    {
+      "id": 4997,
+      "title": "年终奖金池的暗箱操作",
+      "description": "公司宣布今年的业绩超额完成，奖金池比预期多了三千万。但奖金分配方案从未公开，你发现自己的团队贡献了40%的营收，却只拿到了8%的奖金。进一步调查发现，高管们将大部分奖金私分给了自己的心腹和「关系户」，真正创造价值的员工反而被刻意压低。你截获了一封邮件，里面详细记录了这笔暗箱操作的分配名单。",
+      "type": "special",
+      "ageRange": [
+        22,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "将邮件泄露给全体员工",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 4,
+            "TRAUMA": 3,
+            "MONEY": -200
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用证据向高管勒索补偿",
+          "effects": {
+            "MONEY": 1000,
+            "REP": -5,
+            "TRAUMA": 3,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "组织团队集体谈判争取公平分配",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 3,
+            "MONEY": 300,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "MONEY": -100
+      },
+      "tags": [
+        "企业",
+        "内部",
+        "奖金",
+        "腐败"
+      ]
+    },
+    {
+      "id": 4998,
+      "title": "内部论坛上的言论审查",
+      "description": "公司内部的匿名论坛上，一位员工发帖质疑近期的一项裁员决定，帖子在十分钟内被删除，发帖人的身份被追踪并上报。随后，HR以「违反公司言论政策」为由将其解雇。这引发了一场关于言论自由的内部抗议，但所有相关讨论都被迅速屏蔽。你发现公司部署了一套AI审查系统，能够实时监控员工的内部通讯和表情符号使用，甚至分析语气中的「不满情绪」。",
+      "type": "social",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在技术层面破解审查系统",
+          "effects": {
+            "TECH": 5,
+            "REP": 4,
+            "TRAUMA": 3,
+            "MONEY": -200
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "建立加密的外部员工交流群",
+          "effects": {
+            "TECH": 3,
+            "HUMAN": 3,
+            "REP": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "遵守规定，避免成为下一个目标",
+          "effects": {
+            "MONEY": 400,
+            "HUMAN": -2,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业",
+        "内部",
+        "审查",
+        "言论"
+      ]
+    },
+    {
+      "id": 4999,
+      "title": "终极内斗：AI取代人类管理层",
+      "description": "公司高层做出了一项史无前例的决定——用一套人工智能决策系统取代所有中层管理者。AI将根据算法优化资源配置、评估员工绩效、甚至决定谁该被裁员。首批试点中，三十位经理在一夜之间失去了工作，他们的职责被简化成了数据输入。你作为幸存者之一，发现AI的决策逻辑中隐藏着致命的偏见——它偏爱年轻的、单身的、没有家庭负担的员工，而那些为公司奉献了数十年的老员工被系统性地标记为「低效率人力资产」。这是企业内部斗争的终极形态：人类 versus 算法。",
+      "type": "special",
+      "ageRange": [
+        22,
+        60
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "组织人类员工联合抵制AI决策",
+          "effects": {
+            "HUMAN": 6,
+            "REP": 5,
+            "TRAUMA": 4,
+            "MONEY": -400
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "学习AI系统语言，成为人机协调员",
+          "effects": {
+            "TECH": 6,
+            "MONEY": 800,
+            "REP": 2,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "揭露AI算法偏见，推动立法监管",
+          "effects": {
+            "REP": 6,
+            "HUMAN": 5,
+            "TRAUMA": 3,
+            "TECH": 3,
+            "MONEY": -300
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "企业",
+        "内部",
+        "AI",
+        "终极"
+      ]
+    }
+  ]
+}

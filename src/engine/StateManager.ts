@@ -11,7 +11,7 @@ const VALID_TRANSITIONS: Record<GamePhase, GamePhase[]> = {
   TALENT_SELECT: ['ALLOCATE'],
   ALLOCATE: ['PLAYING'],
   PLAYING: ['DEATH', 'PLAYING'],
-  DEATH: ['TALENT_SELECT'],
+  DEATH: ['TALENT_SELECT', 'ALLOCATE', 'MENU'],
 };
 
 /**

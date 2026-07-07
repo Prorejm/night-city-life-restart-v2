@@ -106,14 +106,16 @@ export default function HousingPanel({
         </div>
       )}
 
-      {/* Comfort bar */}
+      {/* Comfort gauge */}
       {data && (
-        <div className="mb-2">
-          <div className="flex justify-between items-center mb-0.5">
+        <div className="mb-3 p-2 rounded-sm border border-white/5 bg-white/[0.02]">
+          <div className="flex justify-between items-center mb-1">
             <span className="text-[10px] font-mono text-muted-foreground">舒适度</span>
-            <span className="text-[10px] font-mono text-foreground">{data.comfort}</span>
+            <span className={cn('text-xs font-mono font-bold', data.comfort >= 80 ? 'text-neon-cyan' : data.comfort >= 50 ? 'text-lime-400' : 'text-yellow-400')}>
+              {data.comfort}
+            </span>
           </div>
-          <div className="h-1.5 bg-muted rounded-sm overflow-hidden">
+          <div className="h-2 bg-muted rounded-sm overflow-hidden">
             <div
               className={cn('h-full rounded-sm transition-all duration-500', getComfortBarColor(data.comfort))}
               style={{ width: `${data.comfort}%` }}
@@ -122,14 +124,16 @@ export default function HousingPanel({
         </div>
       )}
 
-      {/* Safety bar */}
+      {/* Safety gauge */}
       {data && (
-        <div className="mb-3">
-          <div className="flex justify-between items-center mb-0.5">
+        <div className="mb-3 p-2 rounded-sm border border-white/5 bg-white/[0.02]">
+          <div className="flex justify-between items-center mb-1">
             <span className="text-[10px] font-mono text-muted-foreground">安全评分</span>
-            <span className="text-[10px] font-mono text-foreground">{data.safety}</span>
+            <span className={cn('text-xs font-mono font-bold', data.safety >= 80 ? 'text-neon-cyan' : data.safety >= 50 ? 'text-lime-400' : 'text-yellow-400')}>
+              {data.safety}
+            </span>
           </div>
-          <div className="h-1.5 bg-muted rounded-sm overflow-hidden">
+          <div className="h-2 bg-muted rounded-sm overflow-hidden">
             <div
               className={cn('h-full rounded-sm transition-all duration-500', getSafetyBarColor(data.safety))}
               style={{ width: `${data.safety}%` }}

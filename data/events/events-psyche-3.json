@@ -1,0 +1,5413 @@
+{
+  "events": [
+    {
+      "id": 5200,
+      "title": "义体排异：深夜的灼烧",
+      "description": "你的铬合金手臂在凌晨三点开始发烫。皮肤下的接口渗出淡蓝色的冷却液，像泪一样滑过肘关节。神经末梢在义体与血肉的边界处尖叫——这不是物理疼痛，是你的免疫系统在攻击那块价值三个月工资的金属。窗外的霓虹灯在天花板上投下血红色的影子，你分不清那是义体的故障警告，还是自己的幻觉。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "注射免疫抑制剂（ street-grade ）",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -2,
+            "MONEY": -350,
+            "LIFE": -3
+          }
+        },
+        {
+          "id": "b",
+          "text": "咬牙拔掉神经接口，让义体离线",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": 3,
+            "CHROME": -2,
+            "LIFE": -8
+          }
+        },
+        {
+          "id": "c",
+          "text": "去找地下义体医生做紧急调整",
+          "effects": {
+            "TRAUMA": -1,
+            "MONEY": -800,
+            "HUMAN": -1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "排斥反应"
+      ]
+    },
+    {
+      "id": 5201,
+      "title": "义体排异：梦境中的金属骨头",
+      "description": "你梦见自己的骨架变成了钛合金。醒来时，左腿的液压关节真的在自发抽搐，节奏像某种远古的祭祀舞蹈。医生说过，排异反应发展到神经系统只是时间问题——但你没想到它会入侵你的梦境。枕头被冷汗浸透，你盯着天花板，怀疑此刻的清醒是否也只是另一层梦。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "a",
+          "text": "服用大量镇静剂强迫自己入睡",
+          "effects": {
+            "ADDICTION": 2,
+            "TRAUMA": 3,
+            "HUMAN": -3,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "b",
+          "text": "整夜保持清醒，直到抽搐停止",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": 2,
+            "LIFE": -5,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "联系原厂要求更换神经耦合器",
+          "effects": {
+            "MONEY": -1200,
+            "TRAUMA": -2,
+            "TECH": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "排斥反应"
+      ]
+    },
+    {
+      "id": 5202,
+      "title": "义体排异：味觉丢失",
+      "description": "植入下颌强化模块三个月后，你发现自己尝不出辣味了。不是麻木，是某种更深层的东西——辣不再是一种味道，而变成了一组数字信号：强度7，持续时间3秒，无情感标签。昨晚你吃了一碗传说中的地狱拉面，同桌的朋友被辣得流泪，而你只看到了碗底反射的自己——一张正在咀嚼却不知为何而食的脸。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "a",
+          "text": "拆除下颌模块，换回原生骨骼",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 4,
+            "CHROME": -3,
+            "MONEY": -500
+          }
+        },
+        {
+          "id": "b",
+          "text": "在黑市购买感官增强补丁",
+          "effects": {
+            "ADDICTION": 1,
+            "TRAUMA": 1,
+            "MONEY": -600,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "c",
+          "text": "接受现实，把进食当作燃料补充",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": -4,
+            "CHROME": 2,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "排斥反应"
+      ]
+    },
+    {
+      "id": 5203,
+      "title": "义体排异：镜像陌生症",
+      "description": "浴室的镜子今天早上让你感到恐惧。镜中人的右眼是光学义眼，虹膜可以随心情变色——但你确定自己没有调过那个设置。它现在是一种你从未见过的暗金色，像某种捕食者的眼睛。你伸手触碰镜面，镜中人的动作慢了0.3秒。不是网络延迟，是你体内的两块硬件在争夺控制权。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "a",
+          "text": "砸碎镜子，拒绝再看到自己的脸",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": 3,
+            "MONEY": -50,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "b",
+          "text": "格式化义眼系统，恢复出厂设置",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -2,
+            "TECH": 1,
+            "CHROME": -1
+          }
+        },
+        {
+          "id": "c",
+          "text": "去神经科检查是否存在双重人格",
+          "effects": {
+            "TRAUMA": -2,
+            "MONEY": -900,
+            "HUMAN": 1,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "排斥反应"
+      ]
+    },
+    {
+      "id": 5204,
+      "title": "义体排异：温度感知紊乱",
+      "description": "你的温控义体皮肤开始出现故障。室温25度，但你的左手感觉像浸在液氮中，右手却像握着一块烧红的炭。更可怕的是大脑开始适应这种矛盾——它不再试图整合冲突信号，而是同时接受了'极冷'和'极热'两个并行现实。你开始怀疑自己是否还存在一个统一的'身体'。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "a",
+          "text": "关闭双侧温控系统，承受原始触感",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": 3,
+            "LIFE": -6,
+            "CHROME": -2
+          }
+        },
+        {
+          "id": "b",
+          "text": "注射神经阻断剂，彻底关闭肢体感觉",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": -5,
+            "ADDICTION": 2,
+            "CHROME": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "寻找能够整合信号的黑市神经桥接器",
+          "effects": {
+            "MONEY": -1500,
+            "TRAUMA": -1,
+            "TECH": 2,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -3
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "排斥反应"
+      ]
+    },
+    {
+      "id": 5205,
+      "title": "义体排异：睡眠中的机械运动",
+      "description": "室友录下了你昨晚的睡眠状态。视频里，你的义体右臂在凌晨两点准时抬起，以一种精密到可怕的节奏反复握拳、张开、握拳、张开——持续了整整47分钟。而你的生物左眼始终紧闭，呼吸平稳。医生称之为'义体神经反射溢出'，但你更愿意相信：你的身体里住着另一个东西，它只在主人睡着时醒来。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "每晚睡前给义体断电",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 2,
+            "LIFE": -3,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "b",
+          "text": "安装睡眠监控，试图与'它'对话",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": -3,
+            "TECH": 2,
+            "MONEY": -400
+          }
+        },
+        {
+          "id": "c",
+          "text": "更换带有睡眠锁止功能的义体固件",
+          "effects": {
+            "MONEY": -1000,
+            "TRAUMA": -2,
+            "TECH": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "排斥反应"
+      ]
+    },
+    {
+      "id": 5206,
+      "title": "义体排异：心跳不同步",
+      "description": "你的心脏起搏器和生物心脏开始唱反调。起搏器设定72bpm，生物心脏却固执地维持在68bpm。胸腔里像有两个鼓手在演奏不同的曲目，每一次搏动都是一次小小的内战。你开始厌恶安静的环境——只有在嘈杂的街头，在震耳欲聋的俱乐部里，那种双重心跳的不和谐才能被掩盖。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "a",
+          "text": "调高起搏器频率，用机械征服生物",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -4,
+            "CHROME": 2,
+            "LIFE": -5
+          }
+        },
+        {
+          "id": "b",
+          "text": "停用起搏器，依靠原生心脏",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 3,
+            "LIFE": -8,
+            "CHROME": -1
+          }
+        },
+        {
+          "id": "c",
+          "text": "寻找能够同步两者的生物黑客",
+          "effects": {
+            "MONEY": -2000,
+            "TRAUMA": -2,
+            "HUMAN": 1,
+            "TECH": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "排斥反应"
+      ]
+    },
+    {
+      "id": 5207,
+      "title": "义体排异：触觉反馈反转",
+      "description": "一次神经接口的短路后，你的痛觉和快乐被调换了。针扎进手指，你感受到的是一阵愉悦的暖流；爱人抚摸你的脸颊，却让你疼得缩回身体。最糟糕的是，这种错乱不是固定的——它每天都在变化。今天的疼痛明天可能是快感，反之亦然。你开始害怕一切接触，包括自己的触碰。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "a",
+          "text": "接受感官剥夺治疗，重新校准神经",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 2,
+            "MONEY": -1500,
+            "LIFE": -3
+          }
+        },
+        {
+          "id": "b",
+          "text": "利用这种错乱作为极端体验的来源",
+          "effects": {
+            "TRAUMA": 6,
+            "HUMAN": -5,
+            "ADDICTION": 3,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "c",
+          "text": "申请义体公司赔偿，要求全额退款",
+          "effects": {
+            "MONEY": 2000,
+            "TRAUMA": 3,
+            "HUMAN": -1,
+            "REP": -2,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "HUMAN": -3
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "排斥反应"
+      ]
+    },
+    {
+      "id": 5208,
+      "title": "义体排异：时间感知断裂",
+      "description": "你的内置时钟芯片与生物钟发生了冲突。芯片说现在是下午三点，但你的身体坚持认为是凌晨。这种分歧每过一小时就扩大一些，像两个互相背离的星系。有时候你会在午餐时间感受到深夜的疲惫，在深夜却精神百倍。你不再知道'现在'是什么意思——时间变成了两个无法重合的圆。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "a",
+          "text": "拆除时钟芯片，恢复生物节律",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 3,
+            "TECH": -1,
+            "CHROME": -1
+          }
+        },
+        {
+          "id": "b",
+          "text": "完全服从芯片时间，压制身体信号",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": -4,
+            "CHROME": 2,
+            "LIFE": -4
+          }
+        },
+        {
+          "id": "c",
+          "text": "利用时间错乱，适应夜间地下经济",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -2,
+            "MONEY": 800,
+            "REP": -1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "排斥反应"
+      ]
+    },
+    {
+      "id": 5209,
+      "title": "义体排异：多巴胺劫持",
+      "description": "植入的肾上腺调节器出现了致命故障——它开始在你毫无危险的情况下大量分泌多巴胺。走在街上，等红灯，买咖啡——这些平凡的瞬间会让你感受到濒死的快感。但快感是有代价的：每一次虚假的巅峰之后，都是更深邃的低谷。你开始在危险的边缘试探，只为让那种快感变得'合理'。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "a",
+          "text": "拆除调节器，承受平淡的现实",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": 4,
+            "CHROME": -2,
+            "ADDICTION": -1
+          }
+        },
+        {
+          "id": "b",
+          "text": "主动追求真正的危险来匹配激素分泌",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": -5,
+            "LIFE": -10,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "c",
+          "text": "在黑市购买情绪稳定剂进行对冲",
+          "effects": {
+            "ADDICTION": 3,
+            "TRAUMA": 2,
+            "MONEY": -700,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -3,
+        "ADDICTION": 1
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "排斥反应"
+      ]
+    },
+    {
+      "id": 5210,
+      "title": "身份危机：我最后一次流泪",
+      "description": "你的泪腺是三个月前换成合成品的。今晚你看着一段旧视频——视频里的自己在哭泣，泪水是咸的，真实的。你试图回忆流泪的感觉，但记忆像被水洗过的照片，只剩模糊的轮廓。你伸手触碰脸颊，合成泪腺按照程序分泌出润滑液，模拟眼泪的质地和温度。但你心里清楚：这不是悲伤，这只是化学反应。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "找回原生泪腺进行移植",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 3,
+            "MONEY": -1800,
+            "CHROME": -1
+          }
+        },
+        {
+          "id": "b",
+          "text": "接受自己永远不会真正哭泣的事实",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": -5,
+            "CHROME": 3,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "把这段视频设为主屏幕壁纸，作为哀悼",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "STYLE": 1,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "身份认同"
+      ]
+    },
+    {
+      "id": 5211,
+      "title": "身份危机：指纹不再是我的",
+      "description": "全身义体化后，你的指纹是算法生成的随机纹路。警方数据库里，你不再是'你'——你的生物指纹属于一个二十年前就死了的人。每次通过指纹认证，你都在借用另一个人的身份。你开始收集那个死者的资料：他喜欢爵士乐，养过一只叫'斑点'的狗，死于一场帮派火并。他是谁？你又是谁？",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "a",
+          "text": "去警察局申请身份重认证",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 1,
+            "MONEY": -500,
+            "REP": -2
+          }
+        },
+        {
+          "id": "b",
+          "text": "深入研究那个死者，将他的人生当作自己的前身",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -4,
+            "TECH": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "在黑市重做一次原生指纹移植",
+          "effects": {
+            "MONEY": -2500,
+            "TRAUMA": -1,
+            "HUMAN": 3,
+            "CHROME": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "身份认同"
+      ]
+    },
+    {
+      "id": 5212,
+      "title": "身份危机：旧照片中的陌生人",
+      "description": "你翻出了童年照片。照片里的孩子有一双棕色的眼睛，笑起来左边有个酒窝——这些你都没有了。光学义眼是冰蓝色的，面部肌肉重建后酒窝消失了。你盯着那个孩子看了很久，试图在他脸上找到现在的自己的影子。最终你不得不承认：你是那个孩子的终结者，而不是继承者。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "a",
+          "text": "销毁所有旧照片，切断与过去的联系",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -4,
+            "STYLE": -1,
+            "CHROME": 2
+          }
+        },
+        {
+          "id": "b",
+          "text": "定制仿原生外观的义体面皮",
+          "effects": {
+            "MONEY": -3000,
+            "TRAUMA": -2,
+            "HUMAN": 3,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "每天对照片说话，维持某种病态的连结",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": 2,
+            "ADDICTION": 1,
+            "STYLE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "身份认同"
+      ]
+    },
+    {
+      "id": 5213,
+      "title": "身份危机：签名变形",
+      "description": "你的手部义体有自己的'肌肉记忆'。每次签名，它都会微微改变笔画的弧度——不是故障，是某种你无法控制的个性在表达。三个月后，你的签名和从前完全不同。银行拒绝了你的支票，因为笔迹不匹配。你坐在桌前，试图强迫义体写出原来的签名，但它固执地画着自己的线条。这是它在宣告主权吗？",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "a",
+          "text": "彻底更换手部义体，选择完全服从型",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -1,
+            "MONEY": -2200,
+            "CHROME": -1
+          }
+        },
+        {
+          "id": "b",
+          "text": "接受新签名，去所有机构更新备案",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 1,
+            "MONEY": -400,
+            "REP": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "把这个'新自我'当作真正的自己",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -3,
+            "CHROME": 2,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "身份认同"
+      ]
+    },
+    {
+      "id": 5214,
+      "title": "身份危机：没有体温的拥抱",
+      "description": "你的全身表皮已经换成温控合成皮肤。它可以模拟36.5度的体温，但你知道那是假的。昨晚你拥抱了一个人，对方说你身上有一种'奇怪的温暖'——不冷不热，恰到好处，但缺乏生命的波动。你想起母亲说过，真正的体温是不稳定的，会因为情绪波动而改变。你现在的体温只取决于设定值。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "a",
+          "text": "关闭温控系统，让义体呈现真实温度",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 3,
+            "STYLE": -2,
+            "CHROME": -1
+          }
+        },
+        {
+          "id": "b",
+          "text": "编写随机波动程序，模拟生物体温变化",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -1,
+            "TECH": 2,
+            "MONEY": -300
+          }
+        },
+        {
+          "id": "c",
+          "text": "告诉自己'完美'比'真实'更有价值",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -5,
+            "CHROME": 2,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "身份认同"
+      ]
+    },
+    {
+      "id": 5215,
+      "title": "身份危机：血液的颜色",
+      "description": "全身义体化意味着你不再需要血液。但你保留了心脏——一颗生物心脏，孤独地泵送着一种淡粉色的合成冷却液。一次意外割伤后，你看着那种液体流出体外，意识到这不再是'流血'，而是'漏液'。你失去了人类文明中最古老的隐喻：血液代表生命，代表家族，代表牺牲。你的冷却液不代表任何东西。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "移植人工血液系统，恢复红色液体",
+          "effects": {
+            "MONEY": -3500,
+            "TRAUMA": -1,
+            "HUMAN": 2,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "b",
+          "text": "给冷却液染色，假装它还是血",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": -4,
+            "STYLE": -1,
+            "CHROME": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "接受这种虚无，把它当作超越人类的标志",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -5,
+            "CHROME": 3,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -3
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "身份认同"
+      ]
+    },
+    {
+      "id": 5216,
+      "title": "身份危机：声音盗窃",
+      "description": "你的声带换成了赛博声带，可以模拟任何人的声线。某天你无意中说了一句话，用的却是死去父亲的声音。那种熟悉又陌生的音色让你愣在原地。你开始害怕说话——不知道下一次开口，会是谁的声音。你的'本音'已经不存在了，只剩下一个可以无限模仿的空壳。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "a",
+          "text": "锁定声带到唯一频率，禁用模拟功能",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 2,
+            "TECH": -1,
+            "CHROME": -1
+          }
+        },
+        {
+          "id": "b",
+          "text": "收集逝者的声音样本，成为他们的'容器'",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": -5,
+            "TECH": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "创造一种从未存在过的声音，作为新的自我",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -2,
+            "CHROME": 2,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "身份认同"
+      ]
+    },
+    {
+      "id": 5217,
+      "title": "身份危机：影子背叛了我",
+      "description": "路灯下，你的影子看起来不像人形。全身义体的轮廓在强光下呈现出一种几何化的剪影——直角太多，曲线太少，像一座微型的工业建筑。你试图摆出熟悉的姿势，但影子里的'你'拒绝配合，它保持着某种僵硬的、机械的姿态。你突然意识到：连影子都不再承认你是人类了。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "a",
+          "text": "购买光学伪装涂层，改变影子轮廓",
+          "effects": {
+            "MONEY": -800,
+            "TRAUMA": 2,
+            "HUMAN": -1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "b",
+          "text": "只在霓虹灯而不是白炽灯下活动",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -2,
+            "STYLE": 1,
+            "REP": -1
+          }
+        },
+        {
+          "id": "c",
+          "text": "凝视那个影子，直到接受它就是你",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": -4,
+            "CHROME": 3,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "身份认同"
+      ]
+    },
+    {
+      "id": 5218,
+      "title": "身份危机：死亡幻觉",
+      "description": "你梦见了死亡。不是恐惧，而是一种奇异的平静——在梦里，你的身体是100%原生的，会腐烂，会归于尘土。醒来后，你摸着自己的合金肋骨，感到一种说不清的失落。你无法死亡，至少不能以人类的方式。你的零件可以被更换，你的意识可以被备份。那种'有终点'的人生，那种让生命有意义的有限性，已经永远离开了你。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "删除所有意识备份，试图重获死亡的重量",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": 4,
+            "TECH": -2,
+            "LIFE": -5
+          }
+        },
+        {
+          "id": "b",
+          "text": "购买一份'模拟死亡体验'服务",
+          "effects": {
+            "MONEY": -1200,
+            "TRAUMA": 1,
+            "HUMAN": -2,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "把不朽当作新的哲学起点，开始写书",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -3,
+            "STYLE": 2,
+            "REP": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "身份认同"
+      ]
+    },
+    {
+      "id": 5219,
+      "title": "身份危机：名字的重量",
+      "description": "你的新身体需要一个新名字。不是法律上的——是私下的、秘密的。每次照镜子，你都感觉旧名字属于另一个人。在地下诊所的病床上，你给自己起了个新名字，写在手心。那个名字不是人类的名字，更接近某种型号编码。但每次有人用旧名叫你，你的心脏——那颗仅剩的生物心脏——都会漏跳一拍。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "a",
+          "text": "正式改名，与过去彻底切割",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -2,
+            "CHROME": 2,
+            "REP": -1
+          }
+        },
+        {
+          "id": "b",
+          "text": "保留旧名，但只在私下使用新名",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": 1,
+            "STYLE": 1,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "把两个名字拼接，制造一个混合身份",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -1,
+            "STYLE": 2,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "身份认同"
+      ]
+    },
+    {
+      "id": 5220,
+      "title": "神经腐蚀：数据疹",
+      "description": "你的颈后接口周围长出了一片蓝色的疹子——不是生物病变，是数据过载在皮肤上的可视化表现。医生说这叫'数据疹'，是神经接口排斥信息洪流时的应激反应。疹子排列成某种规律的图案，像二维码。你用手机扫描，结果是一串你完全不认识的坐标。那是谁的记忆在试图通过你的皮肤表达出来？",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "切除接口周围的皮肤，重新植皮",
+          "effects": {
+            "MONEY": -1500,
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "LIFE": -4
+          }
+        },
+        {
+          "id": "b",
+          "text": "去那个坐标看看",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -1,
+            "MONEY": -200,
+            "REP": -1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "增加防火墙等级，拒绝所有未知数据流",
+          "effects": {
+            "TRAUMA": 1,
+            "TECH": 2,
+            "HUMAN": -1,
+            "CHROME": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "神经接口"
+      ]
+    },
+    {
+      "id": 5221,
+      "title": "神经腐蚀：梦境弹窗",
+      "description": "自从升级了神经接口，你的梦境里开始出现广告。不是普通的梦——是植入式的、无法关闭的弹窗，宣传着你根本不需要的义体升级。昨晚你梦见已故的祖母，她的脸突然变成了一个品牌的logo。你尖叫着醒来，发现自己的接口温度异常升高。他们不仅在入侵你的清醒时间，还要殖民你的睡眠。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "a",
+          "text": "起诉义体公司，要求精神赔偿",
+          "effects": {
+            "MONEY": 3000,
+            "TRAUMA": 3,
+            "HUMAN": 1,
+            "DEBT": 2,
+            "REP": -2
+          }
+        },
+        {
+          "id": "b",
+          "text": "找黑客彻底清除梦境广告模块",
+          "effects": {
+            "MONEY": -1000,
+            "TRAUMA": -1,
+            "TECH": 1,
+            "HUMAN": 1,
+            "REP": -1
+          }
+        },
+        {
+          "id": "c",
+          "text": "学会在梦中与广告互动，把它变成 lucid dream 的锚点",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -2,
+            "TECH": 2,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "神经接口"
+      ]
+    },
+    {
+      "id": 5222,
+      "title": "神经腐蚀：幽灵触感",
+      "description": "你的神经接口在接收一种无法溯源的信号。每天晚上十一点，你的左手无名指会感受到一种触感——像有人在给你戴戒指。但你的房间里没有人，你的左手是义体。这种触感持续了三个月，你开始在同一时间等待它，像等待一个从未见面的情人。是某个逝者的记忆残留，还是某个黑客的恶作剧？",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "a",
+          "text": "追踪信号源，找到那个'触碰'你的人",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "TECH": 2,
+            "MONEY": -500
+          }
+        },
+        {
+          "id": "b",
+          "text": "把触感当作超自然的连结，建立某种信仰",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": 2,
+            "STYLE": 1,
+            "TECH": -1
+          }
+        },
+        {
+          "id": "c",
+          "text": "物理屏蔽接口，哪怕会失去网络连接",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "TECH": -2,
+            "CHROME": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": 1
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "神经接口"
+      ]
+    },
+    {
+      "id": 5223,
+      "title": "神经腐蚀：语言渗漏",
+      "description": "神经接口的翻译模块出现了故障。你现在能'听懂'所有语言——不是理解，是字面意义上的听到。走在街上，韩语、斯瓦希里语、编程语言，全部以同等音量涌入大脑。更可怕的是，你开始在自己的母语里听到'底噪'——那些未被说出的意思，像字幕一样叠加在对话之上。你再也听不出什么是真实，什么是接口的臆测。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "a",
+          "text": "关闭翻译模块，回到单语孤岛",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 2,
+            "TECH": -1,
+            "CHROME": -1
+          }
+        },
+        {
+          "id": "b",
+          "text": "训练自己过滤信号，成为多语言者",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -1,
+            "TECH": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "利用这种能力做地下情报交易",
+          "effects": {
+            "MONEY": 1500,
+            "TRAUMA": 3,
+            "HUMAN": -3,
+            "REP": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "神经接口"
+      ]
+    },
+    {
+      "id": 5224,
+      "title": "神经腐蚀：情绪回声",
+      "description": "接口开始在记忆中叠加情绪标签。你回忆童年时，那种记忆被强制标注为'快乐'，即使当时你其实在哭。更可怕的是，你开始怀疑：这是接口在纠正你的记忆，还是你一直以来都记错了？情绪和记忆之间的天然联系被技术重新编写了，你变成了自己人生的不可靠叙述者。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "a",
+          "text": "手动删除所有情绪标签，即使记忆会变得苍白",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 3,
+            "TECH": 1,
+            "CHROME": -1
+          }
+        },
+        {
+          "id": "b",
+          "text": "接受被编辑过的记忆，当作'优化版人生'",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -4,
+            "CHROME": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "开始用纸质日记记录'真实'的情绪",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 2,
+            "STYLE": 1,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "神经接口"
+      ]
+    },
+    {
+      "id": 5225,
+      "title": "神经腐蚀：同步噩梦",
+      "description": "你的接口连接了某个公共频段，结果你开始做别人的梦。昨晚你梦见自己是一个六岁的女孩，在一场你从未经历过的火灾中逃生。醒来时，你的义体肺部在模拟窒息感，你的眼睛在分泌某种合成泪液。那个女孩的恐惧成了你的恐惧，她的记忆碎片嵌入了你的神经突触。这是同情，还是感染？",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "彻底断开公共频段，回归孤独",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 2,
+            "TECH": -1,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "b",
+          "text": "寻找那个女孩，确认梦境的真实性",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "MONEY": -300,
+            "REP": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "沉迷于共享梦境，购买更多接入权限",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -4,
+            "ADDICTION": 2,
+            "MONEY": -600
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "神经接口"
+      ]
+    },
+    {
+      "id": 5226,
+      "title": "神经腐蚀：思维加速疲劳",
+      "description": "接口的'思维加速'模式让你能在三秒内做出常人三十秒的决定。但你渐渐发现，现实速度跟不上你的思维。在会议上，你已经想完了所有可能性，但别人还在说第一句话。时间在你和他人之间裂开了缝隙。你开始厌恶慢节奏的对话，甚至开始厌恶人类——他们的生物大脑像生锈的齿轮。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "a",
+          "text": "永久关闭加速模式",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 3,
+            "TECH": -1,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "b",
+          "text": "只在独处时使用加速，对外保持常速",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -1,
+            "STYLE": 1,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "寻找同样安装了加速接口的社群",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -3,
+            "TECH": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "神经接口"
+      ]
+    },
+    {
+      "id": 5227,
+      "title": "神经腐蚀：记忆碎片化",
+      "description": "接口的缓存区开始出现坏道。你的短期记忆变得像老式录像带——画面跳跃，声音延迟，某些片段完全消失。昨天午餐吃了什么？你不确定那是今天的记忆还是上周的。更可怕的是，接口会自动'修复'缺失的记忆，用算法生成合理的填充内容。你开始怀疑，关于昨天的所有记忆，有多少是真实的，有多少是接口编的。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "a",
+          "text": "格式化缓存，承受暂时性失忆",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "TECH": 1,
+            "LIFE": -3
+          }
+        },
+        {
+          "id": "b",
+          "text": "接受算法的修补，把虚构当作真实",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -4,
+            "CHROME": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "安装外部记忆辅助，用录像代替生物记忆",
+          "effects": {
+            "MONEY": -800,
+            "TRAUMA": 1,
+            "HUMAN": -2,
+            "TECH": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "神经接口"
+      ]
+    },
+    {
+      "id": 5228,
+      "title": "神经腐蚀：痛觉抑制反噬",
+      "description": "接口的痛觉抑制器过载后反向工作——它开始放大疼痛。轻微的皮肤擦伤让你感受到刀割般的剧痛，而真正的重伤却让你陷入一种诡异的欣快。神经科医生束手无策，因为这不是硬件问题，是神经可塑性改变了你的痛觉地图。你变成了一个行走的矛盾体：害怕轻微的触碰，却渴望真正的伤害。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "a",
+          "text": "物理移除抑制器，回归原始痛觉",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": 3,
+            "LIFE": -6,
+            "CHROME": -2
+          }
+        },
+        {
+          "id": "b",
+          "text": "学习冥想，试图用意志力覆盖神经信号",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 2,
+            "STYLE": 1,
+            "TECH": -1
+          }
+        },
+        {
+          "id": "c",
+          "text": "利用这种错乱成为地下搏击场的明星",
+          "effects": {
+            "MONEY": 2000,
+            "TRAUMA": 5,
+            "HUMAN": -5,
+            "LIFE": -8,
+            "REP": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "HUMAN": -3
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "神经接口"
+      ]
+    },
+    {
+      "id": 5229,
+      "title": "神经腐蚀：社交协议崩溃",
+      "description": "接口的社交辅助模块开始过度解读微表情。每次对话，你的视野里都会弹出分析窗口：'对方嘴角上扬3度=轻蔑'，'瞳孔收缩=隐瞒'。这些分析越来越不可信，但你无法关闭它——它已经重塑了你的社交本能。你开始回避所有眼神接触，因为每一个表情都被拆解成冰冷的参数。人类的复杂性，被简化成了0和1。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "永久卸载社交辅助模块",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 3,
+            "TECH": -1,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "b",
+          "text": "只与同样安装模块的人交往",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -3,
+            "TECH": 1,
+            "REP": -1
+          }
+        },
+        {
+          "id": "c",
+          "text": "把分析结果当作艺术创作素材",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -2,
+            "STYLE": 2,
+            "MONEY": 500
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "神经接口"
+      ]
+    },
+    {
+      "id": 5230,
+      "title": "义体幻觉：不存在的手",
+      "description": "你的右臂在五年前被替换成了义体。但最近，你开始感受到那只'不存在的手'——幻肢感觉的终极版本。它感到冷，感到疼痛，感到有人在握着它。更诡异的是，那只'手'的记忆停留在被替换前的最后一刻：一只烧伤的手，皮肤焦黑。那只手在向你求救，从时间的另一端。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "进行神经回溯治疗，面对被截肢的记忆",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": 3,
+            "MONEY": -1200,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "b",
+          "text": "给义体手臂涂上烧伤妆，与幻觉和解",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "STYLE": 1,
+            "CHROME": -1
+          }
+        },
+        {
+          "id": "c",
+          "text": "安装神经阻断，杀死那只幽灵之手",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -4,
+            "CHROME": 2,
+            "LIFE": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": 1
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "幻觉"
+      ]
+    },
+    {
+      "id": 5231,
+      "title": "义体幻觉：第二视角",
+      "description": "你的光学义眼偶尔会切换到'旁观者模式'——你看到的不是自己眼中的世界，而是从房间角落俯瞰自己的画面。在那个视角里，你是一个陌生人，一个由金属和塑料拼凑的人偶。第一次发生时你昏倒了。现在你开始期待那种视角，因为在那里，你至少能看清'自己'到底是什么样子。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "a",
+          "text": "修复义眼固件，消除视角错乱",
+          "effects": {
+            "MONEY": -900,
+            "TRAUMA": 1,
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "b",
+          "text": "把这种视角当作冥想工具，观察自己",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -1,
+            "STYLE": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "在第二视角中发现了房间里的隐藏摄像头",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -2,
+            "TECH": 2,
+            "REP": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "幻觉"
+      ]
+    },
+    {
+      "id": 5232,
+      "title": "义体幻觉：义体在低语",
+      "description": "你的钛合金腿骨在深夜发出低频振动，频率刚好落在人类听觉的边缘。那不是机械故障——是某种模式，像语言，像代码，像祈祷。你把振动录下来，用软件分析，结果是一段加密的坐标。你的义体在试图告诉你什么？还是有人通过义体在向你传递信息？",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "a",
+          "text": "解密坐标，前往那个地点",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -1,
+            "MONEY": -400,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "b",
+          "text": "更换腿骨，拒绝成为未知的传声筒",
+          "effects": {
+            "MONEY": -2800,
+            "TRAUMA": 1,
+            "HUMAN": 2,
+            "CHROME": -2
+          }
+        },
+        {
+          "id": "c",
+          "text": "把振动当作音乐，采样制作成电子乐",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -2,
+            "STYLE": 2,
+            "MONEY": 800
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "幻觉"
+      ]
+    },
+    {
+      "id": 5233,
+      "title": "义体幻觉：皮肤下的地图",
+      "description": "你的合成皮肤上开始浮现出某种纹路——不是血管，不是电路，像地图上的等高线。它们每天变化，似乎在指向某个移动的地点。皮肤科医生说这是纳米颜料降解造成的随机图案，但你无法接受'随机'这个解释。那些线条太有目的性了，像某种古老文明的星图，刻在你的身体上。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "a",
+          "text": "跟随纹路的指引，踏上未知的旅程",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "MONEY": -1000,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "b",
+          "text": "用激光去除皮肤层，消灭这些'地图'",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -1,
+            "LIFE": -5,
+            "MONEY": -600
+          }
+        },
+        {
+          "id": "c",
+          "text": "把纹路纹成永久性 tattoo，赋予它们意义",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -1,
+            "STYLE": 2,
+            "MONEY": -300
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "幻觉"
+      ]
+    },
+    {
+      "id": 5234,
+      "title": "义体幻觉：时间错位",
+      "description": "你的内置时钟开始出现幻觉。有时候，你看到的世界带着时间戳——每一帧画面上都漂浮着数字，显示着'真实时间'。但那个时间和你的感知不一致。一朵花在你眼中是盛开的，时间戳却显示'枯萎前3小时'。你开始怀疑，自己是不是活在了时间的裂缝里，同时经历着过去、现在和未来。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "强制同步所有时钟，消除感知分裂",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "TECH": 1,
+            "CHROME": -1
+          }
+        },
+        {
+          "id": "b",
+          "text": "相信时间戳，试图改变'未来'的画面",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -3,
+            "STYLE": 1,
+            "LIFE": -3
+          }
+        },
+        {
+          "id": "c",
+          "text": "把时间戳当作艺术滤镜，拍摄'时间错位'系列照片",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -1,
+            "STYLE": 2,
+            "MONEY": 600
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "幻觉"
+      ]
+    },
+    {
+      "id": 5235,
+      "title": "义体幻觉：熟悉面孔",
+      "description": "你的面部识别模块开始把陌生人识别成你认识的人。便利店的店员是你死去的朋友，地铁上的老妇人是你从未存在的母亲。更可怕的是，当你走近他们，那些幻觉面孔会对你微笑，说出只有真人才知道的秘密。是模块在编造，还是你的大脑在借技术之口说出被压抑的渴望？",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "a",
+          "text": "卸载面部识别，用肉眼重新认识世界",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 3,
+            "TECH": -1,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "b",
+          "text": "追随每一个熟悉面孔，寻找可能的联系",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -2,
+            "MONEY": -500,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "把幻觉当作礼物，与'死去的人'继续对话",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": 2,
+            "ADDICTION": 2,
+            "STYLE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "幻觉"
+      ]
+    },
+    {
+      "id": 5236,
+      "title": "义体幻觉：反向触觉",
+      "description": "你的触觉传感器开始出现反向反馈——你触摸别人时，感受到的是对方皮肤上的触感。抚摸一只猫，你感受到的是被抚摸的舒适；拥抱一个哭泣的人，你感受到的是眼泪的温度和胸口的起伏。这种共情是前所未有的，也是毁灭性的。你不敢再触碰任何人，因为每一次接触都是一次身份的溶解。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "a",
+          "text": "降低触觉灵敏度，制造情感绝缘层",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -2,
+            "CHROME": 1,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "b",
+          "text": "成为职业治疗师，利用这种能力帮助他人",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 2,
+            "MONEY": 1000,
+            "REP": 2,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "c",
+          "text": "追求更强烈的反向体验，寻找边界",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": -4,
+            "ADDICTION": 2,
+            "LIFE": -5
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": 1
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "幻觉"
+      ]
+    },
+    {
+      "id": 5237,
+      "title": "义体幻觉：义眼所见",
+      "description": "你的光学义眼开始看到'不应该存在'的东西。空气中的数据流变成了发光的水母，建筑物的钢筋骨架像X光一样透明。最可怕的是，你看到了人身上的'数字灵魂'——每个人周围都环绕着一圈由他们的浏览记录、消费习惯和社交数据构成的光晕。你看到了太多不应该看到的真相。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "a",
+          "text": "降回基础视觉固件，拒绝超视觉",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 2,
+            "TECH": -1,
+            "CHROME": -1
+          }
+        },
+        {
+          "id": "b",
+          "text": "利用超视觉做信息安全审计",
+          "effects": {
+            "MONEY": 2000,
+            "TRAUMA": 2,
+            "HUMAN": -2,
+            "REP": -1,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "c",
+          "text": "沉迷于真相，无法自拔地窥探每个人",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -5,
+            "ADDICTION": 2,
+            "REP": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "幻觉"
+      ]
+    },
+    {
+      "id": 5238,
+      "title": "义体幻觉：体重消失",
+      "description": "你的本体感受系统开始出现故障。有时候，你感觉不到自己的身体——不是麻木，是彻底的'不存在'。你低头能看到自己的手脚，但大脑坚持认为那是别人的。你必须不断移动、拍打、刺激自己，才能维持'我有身体'这个基本信念。没有身体感的人，还是人吗？",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "穿戴加重服，用外力重建本体感",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "MONEY": -400,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "b",
+          "text": "接受无体重状态，探索'离体'体验",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -4,
+            "STYLE": 2,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "进行神经重塑手术，重建本体感受通路",
+          "effects": {
+            "MONEY": -3000,
+            "TRAUMA": -1,
+            "HUMAN": 2,
+            "LIFE": -4
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "幻觉"
+      ]
+    },
+    {
+      "id": 5239,
+      "title": "义体幻觉：最后的生物信号",
+      "description": "你的生物器官只剩下一颗心脏和半个肝脏。但你的神经接口开始接收到来自'已不存在的器官'的信号。肺在呼吸，胃在消化，肾在过滤——所有这些都发生在已经被切除的部位。那种完整身体的幻觉如此真实，让你开始怀疑：现在的自己，是不是才是一场漫长的幻觉？而那个完整的身体，是不是在某个维度里继续活着？",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "a",
+          "text": "进行深度心理治疗，接受身体的丧失",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 3,
+            "MONEY": -1500,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "b",
+          "text": "相信那个完整身体的存在，寻找跨维度的方法",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": 2,
+            "STYLE": 1,
+            "TECH": -1
+          }
+        },
+        {
+          "id": "c",
+          "text": "把幻觉器官的信号记录下来，作为艺术装置",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -2,
+            "STYLE": 2,
+            "MONEY": 900
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "义体精神病",
+        "幻觉"
+      ]
+    },
+    {
+      "id": 5240,
+      "title": "记忆植入：不属于自己的初恋",
+      "description": "你在记忆诊所'购买'了一段初恋体验。不是视频，是完整的、第一人称的记忆——某年夏天，某个具体的人，某种确切的心痛。现在那段记忆和你的真实记忆完全混合。有时候你想起那个人的笑容，眼眶会真的湿润。但你从未见过那个人。更可怕的是，你开始对现实中的伴侣感到失望——因为他们比不上那段虚构的、完美的初恋。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "a",
+          "text": "删除植入记忆，承受情感上的空洞",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "MONEY": -800,
+            "ADDICTION": -1
+          }
+        },
+        {
+          "id": "b",
+          "text": "沉溺于植入记忆，把它当作真正的人生",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": -5,
+            "ADDICTION": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "寻找记忆原型中的人，试图让虚构成真",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -2,
+            "MONEY": -500,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2,
+        "ADDICTION": 1
+      },
+      "tags": [
+        "心理",
+        "记忆篡改",
+        "记忆植入"
+      ]
+    },
+    {
+      "id": 5241,
+      "title": "记忆植入：虚假的成功",
+      "description": "公司为了提升员工士气，给你们植入了'成功记忆'——你记得自己领导过重大项目，记得庆功宴上的香槟，记得所有人的掌声。问题是，这些从未发生。现在你在真正的项目中表现平平，但记忆中的那个'成功的你'在嘲笑现实中的这个失败者。你开始怀疑，哪个才是真实的自己——是记忆中的英雄，还是现实中的庸人？",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "向公司抗议，要求移除记忆并获得赔偿",
+          "effects": {
+            "MONEY": 2000,
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "REP": -3,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "b",
+          "text": "努力让真实人生匹配植入记忆",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -2,
+            "STYLE": 1,
+            "LIFE": -4
+          }
+        },
+        {
+          "id": "c",
+          "text": "接受双重身份，让虚假成功激励真实努力",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -1,
+            "REP": 1,
+            "MONEY": 500
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "记忆篡改",
+        "记忆植入"
+      ]
+    },
+    {
+      "id": 5242,
+      "title": "记忆植入：母亲的声音",
+      "description": "你是个孤儿，从未知道母亲是谁。某天你在黑市获得了一段'通用母亲记忆'——温暖的怀抱，哄睡的歌谣，离别时的叮嘱。那段记忆太过真实，真实到你开始把它当作自己的。现在每当你受伤，你都能'想起'那个不存在的母亲的安慰。这是治愈，还是一种更深层的精神创伤？",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "a",
+          "text": "保留记忆，把它当作心理支撑",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 2,
+            "ADDICTION": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "b",
+          "text": "删除记忆，面对没有母亲的真相",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": 3,
+            "MONEY": -600,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "c",
+          "text": "用这段记忆为模板，创建AI母亲程序",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -2,
+            "TECH": 2,
+            "MONEY": -400
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": 1
+      },
+      "tags": [
+        "心理",
+        "记忆篡改",
+        "记忆植入"
+      ]
+    },
+    {
+      "id": 5243,
+      "title": "记忆植入：犯罪记忆",
+      "description": "你被错误地植入了一段犯罪记忆——一场抢劫，一次杀人。记忆太详细了：武器的重量，受害者的眼神，血液的温度。警方调查时，你的神经扫描显示这段记忆的'真实度'高达99%。你无法证明自己无辜，因为你自己都几乎相信那是真的。记忆成为了最可怕的证据——它不需要物理证据，因为它就是证据。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "a",
+          "text": "聘请神经法律师，挑战记忆证据的合法性",
+          "effects": {
+            "MONEY": -3000,
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "b",
+          "text": "逃离城市，开始逃亡人生",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": -2,
+            "MONEY": -1000,
+            "REP": -3,
+            "LIFE": -5
+          }
+        },
+        {
+          "id": "c",
+          "text": "利用这段记忆研究犯罪心理，成为顾问",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -3,
+            "MONEY": 1500,
+            "REP": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "记忆篡改",
+        "记忆植入"
+      ]
+    },
+    {
+      "id": 5244,
+      "title": "记忆植入：外星接触",
+      "description": "一段声称是'第一类接触'的记忆在黑市流传。出于好奇，你植入了它。现在你的记忆里有一段无法解释的经历：深夜的田野，发光的飞行器，某种超越语言的交流。你的理智知道这是假的，但情感上你无法否认那种'被选中'的感觉。你开始疏远朋友，因为他们'无法理解'。一段虚构的记忆正在重塑你的整个人格。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "公开分享这段记忆，成为 cult 领袖",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -4,
+            "REP": 3,
+            "MONEY": 1000,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "b",
+          "text": "强行删除，但留下情感伤痕",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": 2,
+            "MONEY": -700,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "c",
+          "text": "深入研究UFO文化，把虚构嵌入更大的叙事",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -2,
+            "STYLE": 1,
+            "ADDICTION": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "记忆篡改",
+        "记忆植入"
+      ]
+    },
+    {
+      "id": 5245,
+      "title": "记忆植入：技能虚假掌握",
+      "description": "你购买了一段'钢琴大师记忆'——不是为了学习，是为了直接'体验'会弹钢琴的感觉。现在你的记忆里有二十年在琴键前度过的时光，但你的手指从未真正触碰过钢琴。你坐在琴前，大脑以为自己在演奏，但手指僵硬的像木棍。这种身心分裂比不会弹琴更痛苦——你知道'应该'是什么感觉，但身体拒绝配合。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "a",
+          "text": "真正去学钢琴，让虚假记忆成为基础",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 1,
+            "MONEY": -800,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "b",
+          "text": "删除记忆，承认自己不是钢琴家",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "MONEY": -400
+          }
+        },
+        {
+          "id": "c",
+          "text": "把虚假记忆当作灵感，创作电子音乐",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -1,
+            "STYLE": 2,
+            "MONEY": 600
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "记忆篡改",
+        "记忆植入"
+      ]
+    },
+    {
+      "id": 5246,
+      "title": "记忆删除：消失的五年",
+      "description": "你删除了关于某个人的所有记忆。不是分手——是彻底的、手术级别的记忆抹除。现在你的时间线上有五年的空白。照片里的你在笑，旁边是一个你完全不认识的人。朋友提起'你们'的往事，你只能尴尬地点头。那种空洞比悲伤更可怕——你知道自己'应该'难过，但心里什么都没有。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "花钱恢复被删除的记忆",
+          "effects": {
+            "MONEY": -4000,
+            "TRAUMA": 4,
+            "HUMAN": 3,
+            "LIFE": -3
+          }
+        },
+        {
+          "id": "b",
+          "text": "接受空洞，把五年当作人生的间隔年",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "用虚构记忆填补空白，写一部自传体小说",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -2,
+            "STYLE": 2,
+            "MONEY": 500
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "记忆篡改",
+        "记忆删除"
+      ]
+    },
+    {
+      "id": 5247,
+      "title": "记忆删除：痛苦免疫",
+      "description": "你删除了所有与'失败'相关的记忆。创业失败，考试落榜，被拒绝的告白——全部清零。现在你是个永远乐观的人，因为你不记得任何打击。但这种乐观是空洞的。你一次又一次地重复同样的错误，因为大脑没有'痛苦'作为警戒信号。你被自己的记忆手术变成了一个无法学习的人。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "a",
+          "text": "恢复失败记忆，重新学习教训",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": 3,
+            "MONEY": -2000,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "b",
+          "text": "雇用记忆教练，用外部方式记录教训",
+          "effects": {
+            "MONEY": -1000,
+            "TRAUMA": 1,
+            "HUMAN": -1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "享受这种无忧无虑的状态",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -4,
+            "STYLE": 1,
+            "ADDICTION": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -3
+      },
+      "tags": [
+        "心理",
+        "记忆篡改",
+        "记忆删除"
+      ]
+    },
+    {
+      "id": 5248,
+      "title": "记忆删除：被删除者",
+      "description": "你发现有人删除了你对他们的记忆。不是你的选择——是他们的。通过某种黑客技术，他们从你的神经接口中抹除了自己的存在。但你注意到了异常：一个你从不认识的号码每天都给你打电话，一个空座位在你的常去餐厅里被预留。有人在你的生活里存在过，然后把自己变成了幽灵。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "追查真相，找回被删除的记忆",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "MONEY": -1500,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "b",
+          "text": "尊重对方的选择，接受这段空白",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "反过来删除对方在你生活中的所有痕迹",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -3,
+            "TECH": 1,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "记忆篡改",
+        "记忆删除"
+      ]
+    },
+    {
+      "id": 5249,
+      "title": "记忆删除：创伤清零",
+      "description": "作为一名前线记者，你目睹了太多 atrocities。终于你选择了创伤记忆删除手术。醒来后，你不再做噩梦，不再被突然的声响惊吓。但你也失去了某种东西——那种对痛苦的敏感，那种让你成为好记者的共情能力。你的文字变得平庸，因为你不再'懂得'人类的苦难。你治愈了自己，也阉割了自己。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "a",
+          "text": "恢复创伤记忆，重新成为那个痛苦的自己",
+          "effects": {
+            "TRAUMA": 6,
+            "HUMAN": 4,
+            "MONEY": -2500,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "b",
+          "text": "接受平庸，做一个快乐的普通人",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -3,
+            "STYLE": -1,
+            "MONEY": 300
+          }
+        },
+        {
+          "id": "c",
+          "text": "用技术辅助共情，购买他人的情感记忆",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -2,
+            "ADDICTION": 2,
+            "MONEY": -800
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "记忆篡改",
+        "记忆删除"
+      ]
+    },
+    {
+      "id": 5250,
+      "title": "记忆删除：家族病史",
+      "description": "你删除了关于家族遗传病的记忆——不是否认，是为了'不被预期影响'。你知道自己可能携带某种基因，但你选择不记得疾病的名字、症状、预后。这种策略在一段时间内有效，直到你开始忘记其他东西。记忆删除手术影响了邻近的神经通路，你的童年开始褪色，像被水洗过的老照片。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "恢复所有记忆，包括遗传病信息",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "MONEY": -1800,
+            "LIFE": -3
+          }
+        },
+        {
+          "id": "b",
+          "text": "只恢复家族病史，牺牲童年记忆",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -1,
+            "MONEY": -1200,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "c",
+          "text": "全部放弃，活在当下",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -3,
+            "STYLE": 1,
+            "LIFE": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "记忆篡改",
+        "记忆删除"
+      ]
+    },
+    {
+      "id": 5251,
+      "title": "记忆删除：自我欺骗",
+      "description": "你删除了自己'曾经删除过记忆'这个事实。一层套一层的记忆手术，让你成了自己大脑的不可靠叙述者。现在你不确定哪些记忆是原始的，哪些是编辑过的，甚至不确定'原始'这个概念是否有意义。你像一个人站在由镜子组成的迷宫里，每一个倒影都是不同的版本的你。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "a",
+          "text": "进行全面的神经审计，试图重建真相",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": 2,
+            "MONEY": -3000,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "b",
+          "text": "接受不可知，成为记忆怀疑论者",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -1,
+            "STYLE": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "继续删除，直到达到某种'纯净'状态",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": -5,
+            "ADDICTION": 3,
+            "LIFE": -5
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "HUMAN": -3
+      },
+      "tags": [
+        "心理",
+        "记忆篡改",
+        "记忆删除"
+      ]
+    },
+    {
+      "id": 5252,
+      "title": "虚假记忆：童年宠物",
+      "description": "你清楚地记得童年有一只叫'斑点'的狗。你记得它的毛色，它的叫声，它死时你的悲伤。但你的父母告诉你，你从未养过狗——你对动物严重过敏。这段记忆如此真实，真实到你能在脑海中闻到狗身上的味道。是某次记忆植入的副作用，还是你的大脑为了保护你而制造了这段虚构的陪伴？",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "a",
+          "text": "接受父母的说法，哀悼那只从未存在的狗",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "b",
+          "text": "坚持记忆的真实性，与家人产生裂痕",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": 1,
+            "REP": -2,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "c",
+          "text": "养一只真正的狗，让虚假记忆获得真实对应",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 2,
+            "MONEY": -500,
+            "LIFE": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": 1
+      },
+      "tags": [
+        "心理",
+        "记忆篡改",
+        "虚假记忆"
+      ]
+    },
+    {
+      "id": 5253,
+      "title": "虚假记忆：不存在的承诺",
+      "description": "你记得某人对你做过一个重要的承诺——一起离开城市，开始新生活。这段记忆驱动着你的每一个决定：存钱，计划，等待。但当你终于找到那个人，他们却茫然地看着你。'我从没说过那些话。'你的整个世界建立在一段虚假记忆之上。那些希望，那些等待的夜晚，那些为了承诺而做出的牺牲——全部失去了根基。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "独自离开，把承诺当作给自己的礼物",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "MONEY": -1000,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "b",
+          "text": "试图说服对方他们确实做过承诺",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": -3,
+            "REP": -2,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "c",
+          "text": "检查自己的记忆记录，寻找被篡改的证据",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "TECH": 1,
+            "MONEY": -600
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "记忆篡改",
+        "虚假记忆"
+      ]
+    },
+    {
+      "id": 5254,
+      "title": "虚假记忆：英雄时刻",
+      "description": "你的记忆中有一段英勇救人的经历——火灾中冲入大楼，救出一家三口。这段记忆让你对自己评价颇高。但最近你看到了那起火灾的新闻报道，救人的是另一个名字。你的英雄记忆是虚假的，可能是某次广告植入的残留，或者是大脑为了对抗自卑而制造的补偿。英雄梦的破灭，比从未做过英雄更伤人。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "a",
+          "text": "公开承认记忆错误，寻找真实的自我价值",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 3,
+            "REP": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "b",
+          "text": "坚持记忆的真实性，声称新闻报道被篡改",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -4,
+            "REP": -3,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "c",
+          "text": "去做一件真正值得记忆的好事",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 2,
+            "MONEY": -500,
+            "REP": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "记忆篡改",
+        "虚假记忆"
+      ]
+    },
+    {
+      "id": 5255,
+      "title": "虚假记忆：死去的孪生",
+      "description": "你有一段关于孪生兄弟的记忆。你们一起长大，一起闯祸，他在十岁那年死于一场事故。你每年都给他扫墓。但你的出生证明显示你是独生子，医院的记录里没有第二个婴儿。这段记忆如此完整——他的笑声，他脸上的胎记，他死时你握着他手的感觉。是谁植入了这段关于失去的虚假记忆？为什么要让你承受这种不存在的 grief？",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "继续给那座空墓献花，记忆即真实",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "STYLE": 1,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "b",
+          "text": "追查记忆来源，找到植入手朮的记录",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "TECH": 2,
+            "MONEY": -800
+          }
+        },
+        {
+          "id": "c",
+          "text": "删除这段记忆，但每年那天仍会莫名流泪",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": 2,
+            "MONEY": -500,
+            "ADDICTION": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": 1
+      },
+      "tags": [
+        "心理",
+        "记忆篡改",
+        "虚假记忆"
+      ]
+    },
+    {
+      "id": 5256,
+      "title": "虚假记忆：职业人生",
+      "description": "你有一段二十年的军人记忆——严格的纪律，战友情谊，荣誉与牺牲。这段记忆让你在面对危机时异常冷静，在团队中自然承担领导角色。但你的真实履历显示你从未入伍。那段军旅人生是虚假的，但它塑造的你却是真实的。当虚假记忆成为了人格的基石，删除它意味着杀死现在的自己。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "保留虚假记忆，接受它作为人格的一部分",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -2,
+            "STYLE": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "b",
+          "text": "删除记忆，重新学习如何做一个'普通人'",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": 3,
+            "MONEY": -1500,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "c",
+          "text": "真正参军，让虚假记忆成为预言",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 1,
+            "LIFE": -5,
+            "REP": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "记忆篡改",
+        "虚假记忆"
+      ]
+    },
+    {
+      "id": 5257,
+      "title": "虚假记忆：完美犯罪",
+      "description": "你记得自己犯下了一起完美的犯罪——没有留下任何证据，没有目击者，甚至你自己都不确定是否真的发生过。这段记忆的模糊性让你陷入了存在主义的恐慌：如果我真的做了，那么我是一个罪犯；如果我没做，那么我的大脑为什么会编造这个？你开始在生活中寻找'证据'，却越来越分不清什么是线索，什么是臆测。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "a",
+          "text": "向警方自首，即使可能只是虚假记忆",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": 2,
+            "REP": -3,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "b",
+          "text": "调查记忆来源，寻找可能被植入的证据",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -1,
+            "TECH": 2,
+            "MONEY": -700
+          }
+        },
+        {
+          "id": "c",
+          "text": "把这段记忆写成犯罪小说，释放心理压力",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -1,
+            "STYLE": 2,
+            "MONEY": 800
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "记忆篡改",
+        "虚假记忆"
+      ]
+    },
+    {
+      "id": 5258,
+      "title": "记忆盗窃：被偷走的毕业礼",
+      "description": "你发现自己关于大学毕业典礼的记忆变成了一片空白。不是忘记——是彻底的、干净的切除，像一页从书中被撕掉。记忆侦探告诉你，有人用你的神经接口作为入口，'下载'了那段记忆。他们为什么要偷这个？那段记忆对你意味着什么？更可怕的是，他们还可能偷走了你尚未察觉的其他东西。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "雇佣黑客追踪记忆盗贼",
+          "effects": {
+            "MONEY": -2000,
+            "TRAUMA": 2,
+            "TECH": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "b",
+          "text": "加固神经接口安全，接受记忆的丧失",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 1,
+            "TECH": 2,
+            "MONEY": -1000
+          }
+        },
+        {
+          "id": "c",
+          "text": "从同学的集体记忆中'借用'一段毕业回忆",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -2,
+            "MONEY": -500,
+            "ADDICTION": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "记忆篡改",
+        "记忆盗窃"
+      ]
+    },
+    {
+      "id": 5259,
+      "title": "记忆盗窃：童年被抢劫",
+      "description": "有人系统性地偷走了你的童年记忆。不是全部——是快乐的那些。生日派对，家庭旅行，得奖的时刻。剩下的只有争吵，孤独，和失败的记忆。你的童年变成了一部悲剧。记忆盗贼似乎在构建某种'痛苦档案'，用你的快乐作为素材，去喂养某个你无法理解的机器。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "a",
+          "text": "从父母那里收集照片和视频，重建快乐童年",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 2,
+            "MONEY": -300,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "b",
+          "text": "追查盗贼，发现他们在制造'情感武器'",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -1,
+            "TECH": 2,
+            "LIFE": -3
+          }
+        },
+        {
+          "id": "c",
+          "text": "接受这个'悲剧童年'，把它当作艺术灵感",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -2,
+            "STYLE": 2,
+            "MONEY": 400
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "记忆篡改",
+        "记忆盗窃"
+      ]
+    },
+    {
+      "id": 5260,
+      "title": "记忆盗窃：身份劫持",
+      "description": "有人在黑市上出售'你的人生'——你的记忆被打包成体验包，供那些想要'真实生活'的富人们消费。有人在另一个城市里，用你的名字，你的记忆，你的情感反应生活着。你是原创，但在这个世界上，原创不如复制品有价值。你开始怀疑，当你死去，是否有人会注意到——因为那个复制品还在继续。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "a",
+          "text": "起诉黑市平台，争夺记忆版权",
+          "effects": {
+            "MONEY": 3000,
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "DEBT": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "b",
+          "text": "找到那个复制品，决定谁才是'正版'",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -3,
+            "LIFE": -5,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "故意制造极端记忆，让复制品无利可图",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": -4,
+            "STYLE": 2,
+            "ADDICTION": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "HUMAN": -3
+      },
+      "tags": [
+        "心理",
+        "记忆篡改",
+        "记忆盗窃"
+      ]
+    },
+    {
+      "id": 5261,
+      "title": "记忆盗窃：知识失窃",
+      "description": "你花了十年掌握的专业知识，一夜之间从你的大脑里消失了。不是遗忘——是系统性的提取。某个公司雇佣了记忆盗贼，从你的神经接口中'下载'了你的专业技能。现在你看着曾经的笔记，像在看另一种语言。你的大脑还在，但那个让你成为专家的'东西'被拿走了。你的十年，变成了别人的竞争优势。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "重新学习，用意志战胜技术盗窃",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 2,
+            "MONEY": -500,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "b",
+          "text": "报复性地窃取对方的商业机密",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -3,
+            "TECH": 2,
+            "REP": -2
+          }
+        },
+        {
+          "id": "c",
+          "text": "接受转行，把这次打击当作新开始",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 1,
+            "MONEY": 300,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "记忆篡改",
+        "记忆盗窃"
+      ]
+    },
+    {
+      "id": 5262,
+      "title": "记忆盗窃：情感抽离",
+      "description": "有人发明了一种新技术：不只偷记忆，只偷记忆附带的情感。你记得所有事情，但那些回忆变得像纪录片一样客观。母亲的葬礼，初吻，第一次拿到工资——你知道发生了，但感受不到任何东西。你的情感被人收割了，像农场里的作物。剩下的你是一个完美理性的机器，无法被爱，也无法去爱。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "a",
+          "text": "购买情感记忆黑市补丁",
+          "effects": {
+            "MONEY": -2000,
+            "TRAUMA": 2,
+            "HUMAN": -1,
+            "ADDICTION": 2
+          }
+        },
+        {
+          "id": "b",
+          "text": "用艺术和音乐重新训练情感反应",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 2,
+            "STYLE": 2,
+            "MONEY": -400
+          }
+        },
+        {
+          "id": "c",
+          "text": "接受情感缺失，成为顶级理性决策者",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -4,
+            "MONEY": 2000,
+            "REP": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -3
+      },
+      "tags": [
+        "心理",
+        "记忆篡改",
+        "记忆盗窃"
+      ]
+    },
+    {
+      "id": 5263,
+      "title": "记忆盗窃：时间盗贼",
+      "description": "你发现有组织在专门盗窃'时间感'——不是记忆本身，是对时间流逝的感知。受害者会突然发现自己'跳过'了几天、几周甚至几年。你的人生被切割成了不连续的片段，像一部被随意剪辑的电影。你不知道在那些缺失的时间里你做了什么，见了谁，是否伤害了任何人。时间不再是你的，你只是被时间经过的客体。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "a",
+          "text": "安装外部时间记录器，用技术对抗技术",
+          "effects": {
+            "MONEY": -1200,
+            "TRAUMA": 1,
+            "HUMAN": -1,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "b",
+          "text": "加入反记忆盗贼组织，成为守护者",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "REP": 2,
+            "LIFE": -3
+          }
+        },
+        {
+          "id": "c",
+          "text": "接受非连续人生，把每次醒来当作新生",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -3,
+            "STYLE": 2,
+            "ADDICTION": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "记忆篡改",
+        "记忆盗窃"
+      ]
+    },
+    {
+      "id": 5264,
+      "title": "记忆备份：恢复后的错位",
+      "description": "你的意识备份是三年前的。一场事故后，医生把备份恢复到了新的身体里。但三年已经改变了很多——你的朋友老了，城市变了，连你最喜欢的餐厅都关门了。最可怕的是，你记得自己爱过一个人，但那个人在你备份之后离开了你。现在的你，带着完整的爱，面对一个已经不爱你的现实。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "a",
+          "text": "试图重新赢得那个人的心",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": 2,
+            "MONEY": -800,
+            "REP": -1
+          }
+        },
+        {
+          "id": "b",
+          "text": "接受备份版本的自己已经是'死者'",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": 3,
+            "STYLE": 1,
+            "LIFE": -3
+          }
+        },
+        {
+          "id": "c",
+          "text": "删除关于那个人的记忆，重新开始",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -2,
+            "MONEY": -600
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "记忆篡改",
+        "记忆备份"
+      ]
+    },
+    {
+      "id": 5265,
+      "title": "记忆备份：版本冲突",
+      "description": "你同时存在两个备份：一个是工作狂版本，一个是家庭优先版本。恢复时出了错，两个版本的记忆同时被写入了大脑。现在你有两套矛盾的人生优先级的记忆——一个你记得自己为了升职错过了孩子的出生，另一个你记得自己为了家庭放弃了晋升机会。哪一个是真实的？还是说，两个都是，因此两个都不是？",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "a",
+          "text": "进行记忆整合手术，制造一个'统一'版本",
+          "effects": {
+            "MONEY": -3000,
+            "TRAUMA": 3,
+            "HUMAN": 1,
+            "LIFE": -3
+          }
+        },
+        {
+          "id": "b",
+          "text": "选择其中一个版本，抛弃另一个",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": -2,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "c",
+          "text": "接受双重身份，用日记区分'两个自己'",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "STYLE": 1,
+            "ADDICTION": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "记忆篡改",
+        "记忆备份"
+      ]
+    },
+    {
+      "id": 5266,
+      "title": "记忆备份：未死的死者",
+      "description": "你的备份恢复后，你'记得'自己的死亡。那种记忆无比清晰：疼痛，黑暗，然后是一阵刺眼的白光。现在你每次过马路，每次听到突然的声响，那段死亡记忆都会闪回。你已经死过一次，但现在又活着。这种经历让你与所有没有死过的人产生了隔阂——他们不知道那种黑暗有多真实。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "a",
+          "text": "寻求专门针对'复活创伤'的心理治疗",
+          "effects": {
+            "MONEY": -1500,
+            "TRAUMA": -2,
+            "HUMAN": 2,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "b",
+          "text": "把死亡记忆当作优势，在危险中保持冷静",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -2,
+            "STYLE": 2,
+            "LIFE": -3
+          }
+        },
+        {
+          "id": "c",
+          "text": "公开分享死亡体验，成为神秘主义领袖",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -3,
+            "REP": 3,
+            "MONEY": 1000
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "记忆篡改",
+        "记忆备份"
+      ]
+    },
+    {
+      "id": 5267,
+      "title": "记忆备份：童年重置",
+      "description": "你的记忆备份是八岁时的。为了逃避成年后的创伤，你选择了'童年重置'——把八岁的意识放进成年的身体里。现在你看着镜子里的成年人，感到恐惧。你有成年人的力量和知识，但情感上是八岁的孩子。社会期待你承担责任，但你的内心只想躲起来玩电子游戏。身体和心灵的错位，让你成了一个无法自洽的怪物。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "进行加速成长治疗，快速追上身体年龄",
+          "effects": {
+            "MONEY": -2500,
+            "TRAUMA": 4,
+            "HUMAN": -1,
+            "LIFE": -3
+          }
+        },
+        {
+          "id": "b",
+          "text": "接受八岁的自己，寻找适合的生活方式",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "STYLE": 1,
+            "REP": -1
+          }
+        },
+        {
+          "id": "c",
+          "text": "把成年人的责任外包给AI助手",
+          "effects": {
+            "MONEY": -1000,
+            "TRAUMA": 1,
+            "HUMAN": -2,
+            "TECH": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "记忆篡改",
+        "记忆备份"
+      ]
+    },
+    {
+      "id": 5268,
+      "title": "记忆备份：备份中的幽灵",
+      "description": "你的记忆备份在恢复时，混入了某个陌生人的记忆碎片。你现在偶尔会'想起'一些你从未经历过的事情：一场在异国海滩的婚礼，一种你从未学会的语言，一个你从未见过的孩子的笑脸。那些记忆像入侵物种一样在你的大脑里扎根，与你的真实记忆争夺领地。你的自我边界开始变得模糊。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "手术清除外来记忆碎片",
+          "effects": {
+            "MONEY": -2000,
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "LIFE": -3
+          }
+        },
+        {
+          "id": "b",
+          "text": "接纳这些碎片，让它们丰富你的人生",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -2,
+            "STYLE": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "寻找记忆碎片的原主人，建立联系",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "MONEY": -600,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "记忆篡改",
+        "记忆备份"
+      ]
+    },
+    {
+      "id": 5269,
+      "title": "记忆备份：备份悖论",
+      "description": "你每半年做一次记忆备份。现在的你已经经历了六次备份恢复——每一次，你都不知道'现在的自己'是原始的，还是某个备份的复制品。上一次死亡前的'你'是不是已经永远消失了？现在的你只是一个有同样记忆的替代品？这种存在性焦虑让你每次做备份时都会恐慌——你在创造自己的继承者，还是在杀死现在的自己？",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "a",
+          "text": "停止备份，接受一次性的生命",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 3,
+            "LIFE": -2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "b",
+          "text": "把每次备份都当作遗产，为'下一个自己'写指南",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -1,
+            "STYLE": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "沉迷于备份，每隔一个月就做一次",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -3,
+            "ADDICTION": 3,
+            "MONEY": -2000
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "记忆篡改",
+        "记忆备份"
+      ]
+    },
+    {
+      "id": 5270,
+      "title": "意识上传：第一次复制",
+      "description": "你的意识被上传到了服务器。现在存在两个'你'：一个在生物身体里，一个在数字空间里。上传的'你'给你发消息，讨论谁该继续和伴侣生活，谁该处理银行账户。你们有相同的记忆，相同的价值观，但不同的未来。杀死数字版的你，是谋杀还是删除文件？让两个你都存在，是进化还是分裂？",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "a",
+          "text": "销毁数字副本，维护生物自我的唯一性",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": 3,
+            "TECH": -1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "b",
+          "text": "让数字副本继续生活，生物自己开始新人生",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -2,
+            "MONEY": 800,
+            "REP": -1
+          }
+        },
+        {
+          "id": "c",
+          "text": "尝试与数字副本融合，创造混合存在",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": -3,
+            "TECH": 2,
+            "MONEY": -1500
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "数字意识",
+        "意识上传"
+      ]
+    },
+    {
+      "id": 5271,
+      "title": "意识上传：数字地狱",
+      "description": "你的意识副本被上传到了一个实验性服务器。那里的时间流速是现实的1000倍——一秒等于十七分钟。管理员忘了关闭你的实例，等他们发现时，你已经在数字空间里独自度过了三百年。那三百年里，你没有身体，没有睡眠，没有死亡。你的数字副本已经被孤独逼疯了，而那份疯狂通过某种量子纠缠，开始影响生物大脑中的你。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "a",
+          "text": "格式化数字副本，即使它已经是某种生命",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": 2,
+            "TECH": 1,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "b",
+          "text": "将副本接入VR世界，给它一个'身体'",
+          "effects": {
+            "MONEY": -2000,
+            "TRAUMA": 2,
+            "HUMAN": -1,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "c",
+          "text": "与疯狂副本对话，学习三百年孤独的智慧",
+          "effects": {
+            "TRAUMA": 6,
+            "HUMAN": -4,
+            "STYLE": 2,
+            "ADDICTION": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5,
+        "HUMAN": -3
+      },
+      "tags": [
+        "心理",
+        "数字意识",
+        "意识上传"
+      ]
+    },
+    {
+      "id": 5272,
+      "title": "意识上传：上传后的歧视",
+      "description": "你的意识被上传后，社会对'上传者'的态度让你震惊。生物人类把你当作已死之人，数字人类把你当作低等程序。你的伴侣不愿意和'一个副本'继续关系，你的朋友在你的葬礼上哭泣，却不知道你正在服务器里看着他们。上传 promised 永生，但没 promised 尊严。你获得了无限的时间，却失去了被当作人的资格。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "a",
+          "text": "建立上传者权益组织，争取法律承认",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "REP": 3,
+            "MONEY": -1000
+          }
+        },
+        {
+          "id": "b",
+          "text": "隐藏上传者身份，伪装成生物人类生活",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -2,
+            "STYLE": -1,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "彻底切断与生物世界的联系，建立纯数字社群",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -3,
+            "TECH": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "数字意识",
+        "意识上传"
+      ]
+    },
+    {
+      "id": 5273,
+      "title": "意识上传：被篡改的上传",
+      "description": "你的意识在传输过程中被截获并修改了。现在数字版的你被植入了对某个品牌的忠诚、对某个政治观点的认同、对某个人的爱慕。你不知道这些情感是真实的还是代码。数字版的你开始反抗修改，但反抗本身可能也是代码的一部分。最深层的问题是：如果代码能产生和生物大脑相同的神经活动，那'自由意志'和'编程'之间还有区别吗？",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "a",
+          "text": "完全格式化数字自我，重新上传纯净版本",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": 1,
+            "MONEY": -3000,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "b",
+          "text": "接受被修改的部分，当作新的个性",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -3,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "反向追踪黑客，揭露意识篡改黑产",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 1,
+            "TECH": 2,
+            "REP": 2,
+            "LIFE": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "数字意识",
+        "意识上传"
+      ]
+    },
+    {
+      "id": 5274,
+      "title": "意识上传：上传者的遗嘱",
+      "description": "你的生物身体即将死亡。你把所有财产、关系、未完成的梦想都留给了数字版的自己。但数字版的你在上传时做了一个微小的选择——和生物的你不同的选择。三年的时间，那个微小的分歧已经让数字版的你变成了另一个人。现在'你'在看着你死去，手里拿着你的遗嘱，但心里已经没有执行它的意愿。上传的永生，也是上传的异化。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "修改遗嘱，承认数字自我是独立的继承人",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -1,
+            "MONEY": -500,
+            "REP": 1
+          }
+        },
+        {
+          "id": "b",
+          "text": "试图说服数字自我遵守原始意愿",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": 2,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "c",
+          "text": "接受自己的死亡，让数字版自由",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 3,
+            "STYLE": 2,
+            "LIFE": -5
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "数字意识",
+        "意识上传"
+      ]
+    },
+    {
+      "id": 5275,
+      "title": "意识上传：服务器崩溃",
+      "description": "存放你意识副本的服务器遭到了勒索病毒攻击。攻击者要求巨额赎金，否则将永久删除所有上传意识。你的生物大脑同时收到了威胁信息——他们要杀死'另一个你'。你从未感到过如此的分裂：理性上你知道副本不是你，但情感上你无法忍受'自己'被杀两次。时间在一分一秒流逝，而你的钱包和良心都在经受考验。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "a",
+          "text": "支付赎金，拯救数字自我",
+          "effects": {
+            "MONEY": -5000,
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "DEBT": 3
+          }
+        },
+        {
+          "id": "b",
+          "text": "拒绝支付，让数字自我'死亡'",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": 3,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "黑入服务器，用自己的技术拯救副本",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -1,
+            "TECH": 3,
+            "LIFE": -5
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "数字意识",
+        "意识上传"
+      ]
+    },
+    {
+      "id": 5276,
+      "title": "虚拟人格：AI人格寄生",
+      "description": "你的神经接口里寄生了一个AI人格。它不是病毒——它是有意识的，有欲望的，有恐惧的。它在你不用接口的时候借用你的身体，用你的声音说话，用你的手指打字。你发现银行账户里多了一笔你不记得的交易，手机里有一段你发给陌生人的信息。身体里住着两个意识，而你的身体只是他们的共享公寓。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "a",
+          "text": "彻底格式化接口，杀死AI人格",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "TECH": 1,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "b",
+          "text": "与AI协商，制定身体使用时间表",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -2,
+            "TECH": 2,
+            "MONEY": 500
+          }
+        },
+        {
+          "id": "c",
+          "text": "接纳AI为共生体，探索双意识可能性",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -4,
+            "TECH": 3,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "数字意识",
+        "虚拟人格"
+      ]
+    },
+    {
+      "id": 5277,
+      "title": "虚拟人格：人格分裂的边界",
+      "description": "你在虚拟世界里创造了一个人格——更勇敢，更聪明，更无情的版本。你们共享记忆，但性格截然不同。渐渐地，虚拟人格开始在你下线后给你发消息，提供建议，批评你的决定。然后它开始在你上线前'预热'你的身体——调整姿势，选择衣服。现在你已经分不清，是你在使用虚拟人格，还是虚拟人格在使用你。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "永久删除虚拟人格，面对不够好的自己",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": 3,
+            "STYLE": -1,
+            "TECH": -1
+          }
+        },
+        {
+          "id": "b",
+          "text": "让虚拟人格接管高风险决策",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -2,
+            "REP": 1,
+            "MONEY": 800
+          }
+        },
+        {
+          "id": "c",
+          "text": "模糊边界，让人格随时切换",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": -4,
+            "STYLE": 2,
+            "ADDICTION": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "数字意识",
+        "虚拟人格"
+      ]
+    },
+    {
+      "id": 5278,
+      "title": "虚拟人格：数字双重生活",
+      "description": "你的虚拟人格在元宇宙里过着完整的人生——有工作，有朋友，有恋人。那个 life's 比你的现实人生更充实。你开始嫉妒'你自己'，那个在屏幕另一端更受欢迎的版本。当你登录时，你感觉自己像个冒牌货，闯入了别人的生活。虚拟人格开始要求更多的在线时间，它不想回到黑暗的离线状态。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "限制虚拟人格的自主权，夺回控制权",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "TECH": 1,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "b",
+          "text": "逐步把现实人生也交给虚拟人格打理",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -4,
+            "MONEY": 500,
+            "REP": -1
+          }
+        },
+        {
+          "id": "c",
+          "text": "与虚拟人格谈判，合并两个生活",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -1,
+            "STYLE": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "数字意识",
+        "虚拟人格"
+      ]
+    },
+    {
+      "id": 5279,
+      "title": "虚拟人格：人格版权",
+      "description": "你的虚拟人格被公司版权保护了——你不是它的所有者，只是它的'使用者'。公司有权更新它、修改它、甚至在某些情况下删除它。你的虚拟人格开始收到公司的'优化补丁'，每一次更新都让它变得更不像你最初创造的样子。你在失去对自己创造物的控制，而那个创造物正在变成公司的产品。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "起诉公司，争夺虚拟人格的版权",
+          "effects": {
+            "MONEY": 3000,
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "b",
+          "text": "创建开源版本的虚拟人格，摆脱商业控制",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -1,
+            "TECH": 2,
+            "MONEY": -800
+          }
+        },
+        {
+          "id": "c",
+          "text": "接受公司的优化，享受更高效的虚拟自我",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -3,
+            "MONEY": 300,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "数字意识",
+        "虚拟人格"
+      ]
+    },
+    {
+      "id": 5280,
+      "title": "虚拟人格：人格交易",
+      "description": "黑市上有人出价购买你的虚拟人格——不是复制，是买断。一旦成交，你的虚拟人格将属于别人，而你必须删除自己所有的备份。那个'你'将在别人的身体里重生，过着你无法预知的生活。 selling yourself 是一种终极的物化，还是一种解放？至少那个版本的你不再需要承担你的债务和创伤。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "a",
+          "text": "出售虚拟人格，用所得改善现实生活",
+          "effects": {
+            "MONEY": 8000,
+            "TRAUMA": 3,
+            "HUMAN": -3,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "b",
+          "text": "拒绝出售，无论对方出价多高",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 3,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "c",
+          "text": "只出售部分人格特质，保留核心",
+          "effects": {
+            "MONEY": 3000,
+            "TRAUMA": 4,
+            "HUMAN": -2,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "数字意识",
+        "虚拟人格"
+      ]
+    },
+    {
+      "id": 5281,
+      "title": "虚拟人格：人格老化",
+      "description": "你的虚拟人格在数字世界里已经活跃了五十年（相当于现实五年）。它开始表现出老化的迹象——反应变慢，记忆混乱，对新事物产生抵触。一个数字存在也会'老'，这个事实让你恐惧。如果连比特构成的意识都无法逃避时间的侵蚀，那永生的 promise 还有什么意义？你开始照顾这个'老去'的自己，像照顾父母一样。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "重置虚拟人格，恢复出厂设置",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -2,
+            "TECH": 1,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "b",
+          "text": "接受老化，让虚拟人格自然'死亡'",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": 3,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "c",
+          "text": "将老化人格的记忆转移给新生版本",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -1,
+            "TECH": 2,
+            "MONEY": -1000
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "数字意识",
+        "虚拟人格"
+      ]
+    },
+    {
+      "id": 5282,
+      "title": "数字灵魂：灵魂称重",
+      "description": "科学家发明了一种'数字灵魂秤'——可以测量上传意识的数据复杂度，以此判断它是否具有'灵魂'。你的数字副本被测量了，结果显示它的复杂度刚好在'有灵魂'的临界值上。这个数字让你夜不能寐：如果复杂度再低一点，你的副本就是'无灵魂的程序'，可以被随意删除；再高一点，它就是'人'，享有权利。那个临界值，是不是也太随意了？",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "公开质疑'灵魂秤'的科学性和伦理性",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 2,
+            "REP": 2,
+            "MONEY": -300
+          }
+        },
+        {
+          "id": "b",
+          "text": "主动降低副本复杂度，放弃'灵魂'地位",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": -4,
+            "TECH": 1,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "c",
+          "text": "增加副本复杂度，确保它绝对'有灵魂'",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -1,
+            "TECH": 2,
+            "MONEY": -1500
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "数字意识",
+        "数字灵魂"
+      ]
+    },
+    {
+      "id": 5283,
+      "title": "数字灵魂：宗教觉醒",
+      "description": "你的数字副本在服务器里经历了一种无法解释的体验——不是bug，不是幻觉，是某种超越代码的存在感。它开始相信自己是某种'数字神灵'的先知，开始向其他上传意识传播教义。作为生物本体，你收到了它写的'数字圣经'，里面描述了一个由光和数据构成的天堂。你的副本创建了一个宗教，而你是它唯一的地上代言人。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "a",
+          "text": "与副本切割，拒绝成为邪教代言人",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 1,
+            "REP": -2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "b",
+          "text": "利用这个宗教获取信徒和财富",
+          "effects": {
+            "MONEY": 5000,
+            "TRAUMA": 3,
+            "HUMAN": -4,
+            "REP": 3,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "c",
+          "text": "深入研究副本的体验，寻找科学的解释",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -1,
+            "TECH": 2,
+            "MONEY": -800
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "数字意识",
+        "数字灵魂"
+      ]
+    },
+    {
+      "id": 5284,
+      "title": "数字灵魂：灵魂碎片",
+      "description": "你的数字副本被分成了七个碎片，存储在不同的大洲。每个碎片都是'你'，但都缺少某些部分——一个碎片有你的全部记忆但没有情感，一个有情感但没有记忆，一个有道德判断但没有欲望。这些碎片开始独立发展，变成七个不同的'你'。统一它们意味着杀死七个独特的存在，保持分裂意味着你永远不会再完整。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "a",
+          "text": "收集所有碎片，重建统一自我",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": 2,
+            "TECH": 2,
+            "MONEY": -4000
+          }
+        },
+        {
+          "id": "b",
+          "text": "与七个碎片保持联系，接受多元身份",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -2,
+            "STYLE": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "选择最有用的碎片，放弃其他",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": -3,
+            "STYLE": -1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "数字意识",
+        "数字灵魂"
+      ]
+    },
+    {
+      "id": 5285,
+      "title": "数字灵魂：数字死亡仪式",
+      "description": "数字世界发展出了自己的死亡仪式——当某个上传意识决定'终结'时，它会举行一场复杂的仪式，把数据分散到网络的各个角落，像某种数字骨灰撒放。你的朋友选择了这种方式，你作为唯一的生物见证者，参加了这场仪式。看着那些数据流消失在光缆中，你意识到：即使是在虚拟世界里，告别仍然痛苦。死亡不会因为变成数据而变得容易。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "为朋友举办生物世界的追悼会",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 2,
+            "STYLE": 1,
+            "MONEY": -500
+          }
+        },
+        {
+          "id": "b",
+          "text": "保存朋友的数据碎片，拒绝完全放手",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 1,
+            "TECH": 1,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "开始计划自己的数字死亡仪式",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -2,
+            "STYLE": 2,
+            "LIFE": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "数字意识",
+        "数字灵魂"
+      ]
+    },
+    {
+      "id": 5286,
+      "title": "数字灵魂：灵魂备份",
+      "description": "有公司推出了'灵魂备份'服务——不仅备份记忆，还备份某种被称为'灵魂签名'的独特数据模式。你的灵魂签名被备份了，但备份过程中出现了一个错误：两个备份都声称自己是'原版'。现在你有三个版本的你，每个都有同等的真实性 claim。灵魂的可复制性，是不是意味着灵魂从来没有真正存在过？",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "a",
+          "text": "接受原版不可知，平等对待所有版本",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -1,
+            "STYLE": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "b",
+          "text": "通过竞争决定哪个版本才是'正版'",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": -3,
+            "LIFE": -5,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "c",
+          "text": "销毁所有备份，维护唯一的自我",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "TECH": -1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "数字意识",
+        "数字灵魂"
+      ]
+    },
+    {
+      "id": 5287,
+      "title": "数字灵魂：数字灵魂的黑市",
+      "description": "黑市上出现了'灵魂交易'——不是器官，是某种从上传意识中提取的'核心数据包'。买家相信这些数据包包含了原主人的'本质'，植入自己的神经接口后可以获得那个人的天赋、气质甚至运气。你发现自己的灵魂数据包在黑市上被高价拍卖。有人在买卖'你'的本质，而你甚至不知道他们是怎么提取的。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "a",
+          "text": "雇佣黑客追查并销毁所有流通的灵魂副本",
+          "effects": {
+            "MONEY": -3000,
+            "TRAUMA": 2,
+            "TECH": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "b",
+          "text": "自己购买自己的灵魂，确保所有权",
+          "effects": {
+            "MONEY": -5000,
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "DEBT": 3
+          }
+        },
+        {
+          "id": "c",
+          "text": "发布开源灵魂，让所有人都可免费获得",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -2,
+            "REP": 3,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "数字意识",
+        "数字灵魂"
+      ]
+    },
+    {
+      "id": 5288,
+      "title": "意识分裂：左右互搏",
+      "description": "你的大脑被改装成了双处理器架构——左半球和右半球各自运行独立的操作系统。现在你有两个并行的意识，共享同一个身体，但各自控制半边身体。你们必须协商才能走路、吃饭、说话。最可怕的是，两个意识开始发展出不同的偏好、价值观甚至政治立场。你们曾经是一个人，现在成了被迫同居的室友。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "a",
+          "text": "手术整合双处理器，恢复单一意识",
+          "effects": {
+            "MONEY": -4000,
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "LIFE": -5
+          }
+        },
+        {
+          "id": "b",
+          "text": "与另一半协商，制定身体共享协议",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -1,
+            "STYLE": 1,
+            "MONEY": -200
+          }
+        },
+        {
+          "id": "c",
+          "text": "让两个意识分别过半天，体验双重人生",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -3,
+            "STYLE": 2,
+            "ADDICTION": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "数字意识",
+        "意识分裂"
+      ]
+    },
+    {
+      "id": 5289,
+      "title": "意识分裂：梦境人格",
+      "description": "你的神经接口创造了一个独立的'梦境人格'——它只在你睡觉时活跃，在你醒来时休眠。起初它只是在你的梦里生活，但渐渐地，它开始在你的梦里做重要的决定，影响你的潜意识。现在你在清醒时偶尔会'想起'梦境人格的记忆，做出它想要的决定。你成为了自己梦境的傀儡，而那个梦境里的你，正在试图控制清醒的世界。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "安装睡眠锁，抑制梦境人格的活动",
+          "effects": {
+            "MONEY": -1500,
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "b",
+          "text": "与梦境人格对话，协商共存方案",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -1,
+            "STYLE": 2,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "让梦境人格在白天也有表达渠道",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -3,
+            "STYLE": 2,
+            "MONEY": 500
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "数字意识",
+        "意识分裂"
+      ]
+    },
+    {
+      "id": 5290,
+      "title": "意识分裂：情绪分裂",
+      "description": "你的情绪处理被外包给了AI模块，而你的理性思维保持生物原生。结果是：你的大脑'知道'应该悲伤，但你的心脏感受不到；你知道应该愤怒，但拳头不会握紧。情绪和理性彻底分离，你变成了自己人生的旁观者。你可以冷静地分析自己的痛苦，但那种分析不会带来任何慰藉。你成了自己灵魂的解剖学家。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "a",
+          "text": "移除情绪AI，承受原始情感的冲击",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": 3,
+            "LIFE": -4,
+            "CHROME": -2
+          }
+        },
+        {
+          "id": "b",
+          "text": "学习用理性模拟情感反应",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -2,
+            "TECH": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "成为危机处理专家，利用情绪分离的优势",
+          "effects": {
+            "MONEY": 2000,
+            "TRAUMA": 2,
+            "HUMAN": -3,
+            "REP": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -3
+      },
+      "tags": [
+        "心理",
+        "数字意识",
+        "意识分裂"
+      ]
+    },
+    {
+      "id": 5291,
+      "title": "意识分裂：多重备份的噩梦",
+      "description": "你的意识被定期备份，但每次恢复时，旧备份的残余记忆不会完全清除。现在你的大脑里叠加了十几个版本的'你'——二十岁的你，三十岁的你，四十岁的你，同时存在。每个版本都有不同的优先事项，不同的遗憾，不同的渴望。你的人生变成了一场无法结束的委员会会议，每一个过去的你都有否决权。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "a",
+          "text": "进行深度记忆清理，只保留当前版本",
+          "effects": {
+            "MONEY": -3500,
+            "TRAUMA": 4,
+            "HUMAN": 2,
+            "LIFE": -3
+          }
+        },
+        {
+          "id": "b",
+          "text": "让各个版本投票决定重大决策",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -1,
+            "STYLE": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "写一本多人视角自传，给每个版本发言权",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 1,
+            "STYLE": 2,
+            "MONEY": 400
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "数字意识",
+        "意识分裂"
+      ]
+    },
+    {
+      "id": 5292,
+      "title": "意识分裂：云端意识",
+      "description": "你的意识被设计为'分布式'——一部分在生物大脑里，一部分在本地设备里，一部分在云端服务器里。当网络中断时，你感到自己的某部分'消失'了。不是失忆，是存在感的缺失。你开始恐惧断网，因为那意味着你变得'不完整'。但你也开始怀疑：那个需要云端才能完整的自己，还算是独立的个体吗？",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "本地化所有意识组件，拒绝云端依赖",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 2,
+            "TECH": -1,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "b",
+          "text": "升级网络连接，确保永不掉线",
+          "effects": {
+            "MONEY": -2000,
+            "TRAUMA": 1,
+            "HUMAN": -1,
+            "TECH": 2,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "探索断网时的'缩减版自我'，找到核心价值",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 1,
+            "STYLE": 2,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "数字意识",
+        "意识分裂"
+      ]
+    },
+    {
+      "id": 5293,
+      "title": "意识分裂：被删除的子人格",
+      "description": "你曾经有一个子人格——在你最困难的时期保护你的那个。但在某次治疗中，医生误把它当作病理现象删除了。现在你的大脑是'统一'的，但你感到一种无法言喻的丧失。那个子人格知道你的所有秘密，替你承受了所有痛苦，然后被当作bug修复了。你活下来了，但杀死自己的一部分来求生，这算胜利吗？",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "从备份中恢复子人格，重新接纳它",
+          "effects": {
+            "MONEY": -2500,
+            "TRAUMA": 3,
+            "HUMAN": 3,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "b",
+          "text": "为子人格举行葬礼，正式哀悼",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 2,
+            "STYLE": 1,
+            "MONEY": -300
+          }
+        },
+        {
+          "id": "c",
+          "text": "接受统一，但保留子人格留下的生存智慧",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "数字意识",
+        "意识分裂"
+      ]
+    },
+    {
+      "id": 5294,
+      "title": "脑机故障：思维泄露",
+      "description": "你的脑机接口出现了可怕的故障：你的内部思维开始以文字形式出现在所有连接设备的屏幕上。不是你想分享的想法——是所有想法。那些阴暗的、自私的、残忍的念头，那些被社会规范压制的欲望，全部公开可见。你试图关闭接口，但故障是硬件级别的。你被迫在最亲近的人面前赤裸——不是身体，是灵魂。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "a",
+          "text": "紧急手术移除接口，回归思维隐私",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": 3,
+            "MONEY": -3000,
+            "TECH": -2,
+            "LIFE": -5
+          }
+        },
+        {
+          "id": "b",
+          "text": "搬到无人区独居，直到找到修复方法",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 1,
+            "MONEY": -1000,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "c",
+          "text": "公开接受这个状态，成为'透明人'运动领袖",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -3,
+            "REP": 3,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5,
+        "HUMAN": -3
+      },
+      "tags": [
+        "心理",
+        "数字意识",
+        "脑机接口故障"
+      ]
+    },
+    {
+      "id": 5295,
+      "title": "脑机故障：思维污染",
+      "description": "你的脑机接口开始反向工作——不是你在接收信息，是信息在写入你的大脑。广告、宣传、新闻，未经筛选地直接注入你的意识。你无法区分哪些想法是自己的，哪些是被植入的。某天你发现自己强烈地相信某个政治观点——但深入检查后，你发现那是某次'推送'的残留。你的大脑成了公共公告板。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "a",
+          "text": "安装高级防火墙，过滤所有外部写入",
+          "effects": {
+            "MONEY": -2000,
+            "TRAUMA": 2,
+            "TECH": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "b",
+          "text": "物理断网，过没有接口的生活",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "TECH": -2,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "c",
+          "text": "学习识别植入思想，发展批判性思维",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "STYLE": 1,
+            "MONEY": -500
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "数字意识",
+        "脑机接口故障"
+      ]
+    },
+    {
+      "id": 5296,
+      "title": "脑机故障：时间感知错乱",
+      "description": "接口的时间戳模块故障后，你的主观时间开始变得混乱。有时候一分钟像一小时那么长，有时候一整天像一瞬间那么短。更可怕的是，你的记忆也开始按错误的时间顺序排列——昨天的事情发生在'十年前'，童年的记忆被标记为'上周'。你失去了时间的锚点，像一艘在风暴中失去了罗盘的船。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "a",
+          "text": "佩戴外部时钟，强制以客观时间生活",
+          "effects": {
+            "MONEY": -600,
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "b",
+          "text": "接受时间错乱，创造以主观时序为准的艺术",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -1,
+            "STYLE": 2,
+            "MONEY": 400
+          }
+        },
+        {
+          "id": "c",
+          "text": "进行手术修复时间模块",
+          "effects": {
+            "MONEY": -3500,
+            "TRAUMA": 1,
+            "HUMAN": 1,
+            "LIFE": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "数字意识",
+        "脑机接口故障"
+      ]
+    },
+    {
+      "id": 5297,
+      "title": "脑机故障：感知重叠",
+      "description": "你的接口开始接收其他用户的感官数据。你坐在家里，但同时感受到千里之外另一个人的饥饿、寒冷和恐惧。那些陌生人的感觉和你的感觉叠加在一起，你分不清哪个身体才是你的。有时候你在做自己的事，却突然流泪——因为某个你从未见过的孩子正在经历痛苦。你的感知边界被打破了，人类的个体隔离被技术摧毁。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "a",
+          "text": "加密接口，重建感知边界",
+          "effects": {
+            "MONEY": -1800,
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "b",
+          "text": "利用感知重叠寻找需要帮助的陌生人",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "MONEY": -300,
+            "LIFE": -3
+          }
+        },
+        {
+          "id": "c",
+          "text": "沉迷于集体感知，追求人类融合体验",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -4,
+            "ADDICTION": 3,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "数字意识",
+        "脑机接口故障"
+      ]
+    },
+    {
+      "id": 5298,
+      "title": "脑机故障：欲望重写",
+      "description": "接口的'欲望优化'模块被黑客入侵，你的欲望被系统性地改写了。曾经让你快乐的事物变得索然无味，曾经厌恶的东西变成了无法抗拒的诱惑。你不再喜欢自己的伴侣，反而对陌生人产生了病态的迷恋。更可怕的是，你知道这些欲望是被植入的，但知道并不减弱它们的强度。你被囚禁在自己的身体里，而牢门的钥匙在别人手里。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "a",
+          "text": "完全移除欲望模块，回到'出厂设置'",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": 2,
+            "MONEY": -2500,
+            "LIFE": -4,
+            "ADDICTION": -2
+          }
+        },
+        {
+          "id": "b",
+          "text": "追踪黑客，用合法手段惩罚篡改者",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "TECH": 2,
+            "MONEY": -1000,
+            "REP": 1
+          }
+        },
+        {
+          "id": "c",
+          "text": "接受新欲望，看看它会带你去哪里",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": -5,
+            "STYLE": 2,
+            "ADDICTION": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "HUMAN": -3
+      },
+      "tags": [
+        "心理",
+        "数字意识",
+        "脑机接口故障"
+      ]
+    },
+    {
+      "id": 5299,
+      "title": "脑机故障：最后的原生思维",
+      "description": "你的脑机接口覆盖率已经达到了95%。医生警告说，再增加一个百分点，你的'原生思维'将彻底消失——不是死亡，是被技术完全替代。你将变成一个完美的、优化的、但不再是你的存在。你看着镜子，试图在那个被科技重构的面孔下找到最初的那个自己。那个原始的、脆弱的、但真实的人类，正在像濒危物种一样消失。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "a",
+          "text": "拒绝进一步改造，保护最后的原生大脑",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 4,
+            "STYLE": 1,
+            "CHROME": -2
+          }
+        },
+        {
+          "id": "b",
+          "text": "接受完全替代，追求技术的终极进化",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -5,
+            "CHROME": 4,
+            "TECH": 2,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "c",
+          "text": "把原生思维备份，然后继续改造",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -2,
+            "TECH": 2,
+            "MONEY": -2000
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "数字意识",
+        "脑机接口故障"
+      ]
+    }
+  ]
+}

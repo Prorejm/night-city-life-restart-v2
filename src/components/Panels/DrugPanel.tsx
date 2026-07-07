@@ -54,14 +54,21 @@ export default function DrugPanel({
             体内药物
           </span>
           <div className="flex flex-wrap gap-1.5">
-            {currentDrugs.map((drugId) => (
-              <span
-                key={drugId}
-                className="px-2 py-0.5 text-[10px] font-mono text-neon-cyan bg-neon-cyan/5 border border-neon-cyan/20 rounded-sm"
-              >
-                {getDrugName(drugId, drugDatabase)}
-              </span>
-            ))}
+            {currentDrugs.map((drugId) => {
+              const drugInfo = drugDatabase.find((d) => d.id === drugId);
+              const typeColor = drugInfo?.type === 'stimulant' ? 'text-neon-yellow border-neon-yellow/30 bg-neon-yellow/10' :
+                drugInfo?.type === 'depressant' ? 'text-neon-magenta border-neon-magenta/30 bg-neon-magenta/10' :
+                drugInfo?.type === 'hallucinogen' ? 'text-neon-cyan border-neon-cyan/30 bg-neon-cyan/10' :
+                'text-neon-green border-neon-green/30 bg-neon-green/10';
+              return (
+                <span
+                  key={drugId}
+                  className={cn("px-2 py-0.5 text-[10px] font-mono border rounded-sm", typeColor)}
+                >
+                  {getDrugName(drugId, drugDatabase)}
+                </span>
+              );
+            })}
           </div>
         </div>
       )}

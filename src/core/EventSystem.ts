@@ -76,6 +76,19 @@ import eventsPsyche2 from '../../data/events/events-psyche-2.json';
 
 // 旅行
 import eventsTravel from '../../data/events/events-travel.json';
+import eventsTravel2 from '../../data/events/events-travel-2.json';
+
+// 新批次事件
+import eventsDaily9 from '../../data/events/events-daily-9.json';
+import eventsDaily10 from '../../data/events/events-daily-10.json';
+import eventsUsa9 from '../../data/events/events-usa-9.json';
+import eventsUsa10 from '../../data/events/events-usa-10.json';
+import eventsCorp24 from '../../data/events/events-corp-2-4.json';
+import eventsCorp25 from '../../data/events/events-corp-2-5.json';
+import eventsNet3 from '../../data/events/events-net-3.json';
+import eventsPsyche3 from '../../data/events/events-psyche-3.json';
+import eventsGang4 from '../../data/events/events-gang-4.json';
+import eventsLove3 from '../../data/events/events-love-3.json';
 
 // 物品
 import itemsData from '../../data/items.json';
@@ -133,7 +146,15 @@ function ensureLoaded(): void {
     // 心理健康
     eventsPsyche1, eventsPsyche2,
     // 旅行
-    eventsTravel,
+    eventsTravel, eventsTravel2,
+    // 新批次事件
+    eventsDaily9, eventsDaily10,
+    eventsUsa9, eventsUsa10,
+    eventsCorp24, eventsCorp25,
+    eventsNet3,
+    eventsPsyche3,
+    eventsGang4,
+    eventsLove3,
   ];
 
   const loadedIds = new Set<number>();

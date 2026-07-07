@@ -1,0 +1,4945 @@
+{
+  "events": [
+    {
+      "id": 4700,
+      "title": "选举操控曝光",
+      "description": "深夜的暗网论坛上，一段加密视频浮出水面，揭示了某州参议员选举中神经网络投票机被植入后门程序的真相。黑客留下的数字签名指向一家神秘的军事承包商，而你的神经接口无意中缓存了这段视频。联邦调查局的追踪无人机已经开始在街区上空盘旋，你知道自己卷入了一场危险的游戏。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "将证据泄露给独立新闻网络",
+          "effects": {
+            "REP": 3,
+            "TRAUMA": 2,
+            "MONEY": -150
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "将视频卖给被操控方的对手",
+          "effects": {
+            "MONEY": 800,
+            "DEBT": 1,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "删除缓存，装作不知情",
+          "effects": {
+            "HUMAN": -1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "选举操控"
+      ]
+    },
+    {
+      "id": 4701,
+      "title": "黑客竞选顾问",
+      "description": "一位颇具魅力的独立候选人通过暗网渠道联系你，声称需要一名技术专家来帮助对抗企业支持的竞选机器。他的对手拥有最先进的社会工程学AI和全天候数据挖掘团队。在霓虹灯闪烁的地下酒吧里，他向你展示了被主流媒体封锁的民意调查真相。",
+      "type": "social",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入竞选团队，担任技术顾问",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "MONEY": 300,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝但推荐一位更合适的黑客",
+          "effects": {
+            "REP": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "将情报出卖给企业对手",
+          "effects": {
+            "MONEY": 600,
+            "REP": -3,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "黑客"
+      ]
+    },
+    {
+      "id": 4702,
+      "title": "政治暗杀预告",
+      "description": "你的神经接口收到一条来自匿名来源的紧急消息，内容是一份针对市议会改革派领袖的暗杀计划详情。消息中包含暗杀时间、路线和武器类型，发送者声称这是从一个雇佣兵公司的内部服务器上窃取的。时间紧迫，你必须在24小时内做出决定。",
+      "type": "social",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "将情报匿名发送给目标和安全部门",
+          "effects": {
+            "REP": 3,
+            "TRAUMA": 2,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "将情报卖给暗杀幕后金主",
+          "effects": {
+            "MONEY": 1000,
+            "REP": -4,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "将情报卖给改革派领袖作为护身符",
+          "effects": {
+            "MONEY": 400,
+            "REP": 2,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "暗杀"
+      ]
+    },
+    {
+      "id": 4703,
+      "title": "游说集团晚宴",
+      "description": "你意外获得了一张K街顶级游说集团年度晚宴的电子邀请函，出席者包括军工复合体、制药巨头和科技垄断企业的代言人。全息投影的华盛顿纪念碑在宴会厅中央缓缓旋转，侍者端来的鸡尾酒中据说含有微量的社交增强纳米机器人。这是一个建立人脉的黄金机会，但每一步都可能让你陷入债务的泥潭。",
+      "type": "social",
+      "ageRange": [
+        25,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "积极社交，争取企业赞助",
+          "effects": {
+            "REP": 3,
+            "MONEY": 500,
+            "DEBT": 2,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "暗中记录对话，准备后续曝光",
+          "effects": {
+            "REP": 2,
+            "TRAUMA": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "低调用餐，尽早离开",
+          "effects": {
+            "LIFE": 1,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "游说集团"
+      ]
+    },
+    {
+      "id": 4704,
+      "title": "街头抗议浪潮",
+      "description": "政府宣布削减底层区的电力配给以资助新的军事AI项目，愤怒的民众涌上街头。抗议者头戴发光面罩，手持全息标语，与防暴警察的机械外骨骼方阵形成对峙。空气中弥漫着催泪瓦斯和燃烧轮胎的味道，你的植入式通讯器不断收到来自不同组织的集结信号。",
+      "type": "social",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入抗议前线",
+          "effects": {
+            "REP": 2,
+            "TRAUMA": 2,
+            "LIFE": -1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "为抗议者提供技术支持",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "远离冲突区域，观察局势",
+          "effects": {
+            "LIFE": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "抗议"
+      ]
+    },
+    {
+      "id": 4705,
+      "title": "投票系统故障",
+      "description": "选举日清晨，全市的电子投票终端突然大规模故障，选票数据在区块链上出现了无法解释的分叉。选举委员会宣布这是俄罗斯黑客的攻击，但暗网上的技术分析显示漏洞来自内部。你的技术背景让你能看懂那些晦涩的错误日志，而你意识到这次故障可能根本不是意外。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "深入调查故障真相",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "TRAUMA": 2,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "利用混乱出售应急投票服务",
+          "effects": {
+            "MONEY": 400,
+            "REP": -1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "无视故障，继续日常",
+          "effects": {
+            "HUMAN": -1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "投票系统"
+      ]
+    },
+    {
+      "id": 4706,
+      "title": "深州网络接触",
+      "description": "一位自称情报圈退休人员的陌生人在废弃地铁站与你搭话，声称有一个非官方的政府项目在寻找民间技术专家。项目涉及监控社会的AI系统维护，报酬丰厚但要求绝对保密。他的瞳孔在黑暗中闪过一丝不自然的金色光芒，暗示他可能不是普通的退休人员。",
+      "type": "social",
+      "ageRange": [
+        22,
+        55
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受秘密项目邀约",
+          "effects": {
+            "MONEY": 600,
+            "TECH": 2,
+            "TRAUMA": 2,
+            "HUMAN": -1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝但保持联系",
+          "effects": {
+            "REP": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向独立媒体匿名举报",
+          "effects": {
+            "REP": 3,
+            "TRAUMA": 3,
+            "MONEY": -200
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "深州"
+      ]
+    },
+    {
+      "id": 4707,
+      "title": "超级政治行动委员会招募",
+      "description": "一家名为新美国 dawn 的超级政治行动委员会通过精准的社会工程广告找到了你，他们需要基层组织者来动员特定社区的选民。他们的数据中心能精确预测每个人的政治倾向，而你被选中的原因让他们不愿明说。办公室的墙上挂着历任被支持候选人的全息肖像，其中不乏后来身陷丑闻的人物。",
+      "type": "social",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入基层动员工作",
+          "effects": {
+            "REP": 2,
+            "MONEY": 300,
+            "HUMAN": -1,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "表面合作，暗中收集黑料",
+          "effects": {
+            "TECH": 1,
+            "REP": 1,
+            "TRAUMA": 2,
+            "MONEY": 200
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "公开拒绝并揭露其数据收集手段",
+          "effects": {
+            "REP": 3,
+            "TRAUMA": 1,
+            "MONEY": -100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "超级政治行动委员会"
+      ]
+    },
+    {
+      "id": 4708,
+      "title": "选区重划算法交易",
+      "description": "一名数据科学家在暗网市场上出售一套精密的选区重划算法，声称可以用数学手段确保任何政党在十年内保持优势。你被邀请参与一次秘密的竞价会议，参与者包括政党操盘手、企业利益代表和外国代理人。会议室的隔音墙上布满了信号干扰器，确保没有任何数字痕迹泄露。",
+      "type": "social",
+      "ageRange": [
+        25,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "出资购买算法并出售给最高出价者",
+          "effects": {
+            "MONEY": 700,
+            "DEBT": 2,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向选举监督机构举报",
+          "effects": {
+            "REP": 3,
+            "TRAUMA": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "参与竞价为社区争取公平算法",
+          "effects": {
+            "MONEY": -500,
+            "REP": 2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "选区重划"
+      ]
+    },
+    {
+      "id": 4709,
+      "title": "数字傀儡候选人",
+      "description": "一位在年轻人中颇受欢迎的网红政治家被曝其实是一堆AI生成的全息影像和深度伪造视频的集合体，真实的候选人早已在事故中脑死亡。支持者们聚集在市政厅外要求真相，而幕后团队则试图用更强的神经信号干扰器来平息事态。你的一位朋友正是该候选人的狂热支持者，正陷入认知崩溃。",
+      "type": "social",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮助朋友走出认知崩溃并提供心理支持",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "深入调查幕后操控团队",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "TRAUMA": 3,
+            "MONEY": -200
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "利用混乱传播更多虚假信息牟利",
+          "effects": {
+            "MONEY": 500,
+            "REP": -3,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "AI候选人"
+      ]
+    },
+    {
+      "id": 4710,
+      "title": "政策预测市场内幕",
+      "description": "一个基于区块链的政策预测市场突然出现了异常的投注模式，大量资金在关键政策宣布前精准押注。你在分析数据流时发现这些交易与某位国会议员的神经助手日志存在时间关联。 Capitol Hill的阴影中，有人正在用未来的信息换取现在的财富。",
+      "type": "social",
+      "ageRange": [
+        22,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "跟随内幕消息进行投注",
+          "effects": {
+            "MONEY": 800,
+            "DEBT": 2,
+            "REP": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向金融监管机构举报",
+          "effects": {
+            "REP": 3,
+            "TRAUMA": 2,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "出售分析给对冲基金公司",
+          "effects": {
+            "MONEY": 500,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "内幕交易"
+      ]
+    },
+    {
+      "id": 4711,
+      "title": "外国势力代理人",
+      "description": "联邦调查局的两位探员深夜造访你的住所，声称他们正在追踪一个为某东方大国服务的政治影响力网络，而你的某位好友出现在嫌疑人名单上。探员们展示了令人不安的监控录像和通讯拦截记录，并要求你作为线人配合调查。窗外的无人机信号灯在夜空中划出红色的轨迹。",
+      "type": "social",
+      "ageRange": [
+        20,
+        65
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "同意配合联邦调查局调查",
+          "effects": {
+            "REP": -1,
+            "TRAUMA": 2,
+            "MONEY": 300,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "警告好友并帮助其清理数字痕迹",
+          "effects": {
+            "REP": 2,
+            "TRAUMA": 3,
+            "TECH": 1,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝合作并将此事公之于众",
+          "effects": {
+            "REP": 3,
+            "TRAUMA": 2,
+            "MONEY": -200
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "外国势力"
+      ]
+    },
+    {
+      "id": 4712,
+      "title": "市政腐败数据泄露",
+      "description": "市政厅的服务器遭到勒索软件攻击，大量内部邮件和财务记录被上传到公共网络。文件揭示了从建筑许可到警察局长任命的系统性权钱交易，涉及金额高达数亿信用点。你的技术技能让你能够解析那些加密的附件，而城市的权力结构正在这些数据中分崩离析。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "整理数据并建立公开查询网站",
+          "effects": {
+            "TECH": 2,
+            "REP": 3,
+            "TRAUMA": 2,
+            "MONEY": -150
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "将敏感信息出售给受影响的企业",
+          "effects": {
+            "MONEY": 900,
+            "REP": -3,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "仅下载与自己社区相关的部分",
+          "effects": {
+            "REP": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "腐败"
+      ]
+    },
+    {
+      "id": 4713,
+      "title": "AI政策顾问入侵",
+      "description": "州政府部署的新一代AI政策顾问系统被曝出存在致命偏见，其算法持续推荐对企业和富人阶层有利的政策，而对穷人的建议则充满惩罚性措施。一位内部告密者联系了你，手上有系统训练数据集的后门证据。告密者的声音经过多重加密处理，但颤抖的语调透露出真实的恐惧。",
+      "type": "social",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "协助告密者公开证据",
+          "effects": {
+            "REP": 3,
+            "TECH": 2,
+            "TRAUMA": 2,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "利用证据向系统开发商勒索",
+          "effects": {
+            "MONEY": 700,
+            "REP": -2,
+            "DEBT": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开发补丁修复偏见算法",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": 200
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "AI偏见"
+      ]
+    },
+    {
+      "id": 4714,
+      "title": "政治献金清洗网络",
+      "description": "你在追踪一笔失踪的慈善捐款时，意外发现了一个复杂的多层政治献金清洗网络。资金从虚构的科技公司流向非营利组织，最终变成超级政治行动委员会的选举经费。网络的复杂程度令人咋舌，涉及空壳公司、离岸账户和加密货币混合器。这个发现足以让多位在职官员入狱。",
+      "type": "social",
+      "ageRange": [
+        22,
+        65
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "将证据提交给司法部特别检察官",
+          "effects": {
+            "REP": 4,
+            "TRAUMA": 3,
+            "MONEY": -200
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向涉事官员勒索封口费",
+          "effects": {
+            "MONEY": 1000,
+            "REP": -3,
+            "DEBT": 3,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "将情报出售给政治对手",
+          "effects": {
+            "MONEY": 600,
+            "REP": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "洗钱"
+      ]
+    },
+    {
+      "id": 4715,
+      "title": "军警工会政治动员",
+      "description": "城市军警工会在全市范围内发起大规模政治动员，要求增加预算并削弱民间监督委员会的权限。他们动用了全息广告牌、神经植入广告和社交媒体机器人来传播信息。街头出现了身穿制服的警察与市民对峙的紧张场面，空气中弥漫着电磁脉冲武器充能的嗡嗡声。",
+      "type": "social",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持民间监督委员会",
+          "effects": {
+            "REP": 2,
+            "TRAUMA": 1,
+            "HUMAN": 1,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "支持军警工会增加预算",
+          "effects": {
+            "REP": -1,
+            "MONEY": 200,
+            "STYLE": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "组织社区中立调解",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "军警工会"
+      ]
+    },
+    {
+      "id": 4716,
+      "title": "末日 cult 政治渗透",
+      "description": "一个名为数字救赎的末日 cult 被曝已成功渗透多个县级政党委员会，其成员利用AI生成的布道视频和神经语言程序技术来影响选民。Cult 的教主声称自己接收到了来自未来超级智能的启示，要求信徒在选举中支持特定的候选人。你的一位远房亲戚正是该 cult 的核心成员。",
+      "type": "social",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "试图解救亲戚并揭露 cult",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": 3,
+            "REP": 2,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "利用亲戚的关系获取 cult 内部情报",
+          "effects": {
+            "TECH": 1,
+            "REP": 1,
+            "TRAUMA": 2,
+            "MONEY": 300
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "与 cult 合作以换取政治庇护",
+          "effects": {
+            "REP": -2,
+            "TRAUMA": 2,
+            "ADDICTION": 1,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "末日 cult"
+      ]
+    },
+    {
+      "id": 4717,
+      "title": "自动立法程序争议",
+      "description": "州议会通过了一项极具争议的法案，授权AI系统在没有人类议员参与的情况下自动起草和修订部分法律条文。批评者警告说这开启了算法暴政的先河，而支持者声称这将提高立法效率并消除人为腐败。抗议者在议会大厦外搭建起帐篷营地，双方的无人机宣传队在空中对峙。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入反对自动立法的抗议",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "为AI立法系统提供技术优化",
+          "effects": {
+            "TECH": 2,
+            "MONEY": 400,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开发公民审查工具监控AI立法",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": -100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "自动立法"
+      ]
+    },
+    {
+      "id": 4718,
+      "title": "政治家族遗传权力",
+      "description": "一份基因图谱分析报告在暗网上流传，揭示了某政治家族三代人之间的秘密基因编辑交易。家族成员通过昂贵的胚胎筛选和神经增强技术来确保后代拥有适合从政的人格特质和认知能力。这份报告附带了一份令人不安的捐赠者名单，包括军工企业和外国政府。",
+      "type": "social",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "公开基因编辑证据",
+          "effects": {
+            "REP": 3,
+            "TRAUMA": 2,
+            "MONEY": -150
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "将报告出售给反对派智库",
+          "effects": {
+            "MONEY": 500,
+            "REP": -1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "利用信息为自己谋取政治资本",
+          "effects": {
+            "REP": 2,
+            "MONEY": 200,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "基因编辑"
+      ]
+    },
+    {
+      "id": 4719,
+      "title": "网络民兵组织招募",
+      "description": "一个自称为数字爱国者的民兵组织通过加密渠道向你发出邀请，声称政府已被全球主义精英控制，需要武装公民来恢复宪政。他们的训练基地隐藏在废弃的购物中心内，成员配备有军方流出的外骨骼装甲和黑客工具。组织领袖在全息会议上激情演讲，眼中闪烁着狂热的红色光芒。",
+      "type": "social",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入网络民兵组织",
+          "effects": {
+            "STYLE": 2,
+            "TECH": 1,
+            "TRAUMA": 2,
+            "REP": -2,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向国土安全部举报",
+          "effects": {
+            "REP": 2,
+            "TRAUMA": 2,
+            "MONEY": 200
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "假装加入并收集情报卖给媒体",
+          "effects": {
+            "REP": 2,
+            "TRAUMA": 3,
+            "MONEY": 400,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "民兵组织"
+      ]
+    },
+    {
+      "id": 4720,
+      "title": "联邦拨款数据挖掘",
+      "description": "你开发的数据挖掘工具意外发现了联邦政府拨款中的系统性地域偏见，关键摇摆州获得的基建拨款远超其他地区，而且这些资金往往在选举周期前精准到位。数据可视化图表上的红色和蓝色区块清晰地勾勒出政治操纵的轮廓。一家调查新闻机构愿意付费获取你的分析模型。",
+      "type": "social",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "将分析出售给调查新闻机构",
+          "effects": {
+            "MONEY": 400,
+            "REP": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "免费公开分析并建立追踪网站",
+          "effects": {
+            "REP": 3,
+            "TECH": 2,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向执政党出售反追踪工具",
+          "effects": {
+            "MONEY": 600,
+            "REP": -2,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "拨款"
+      ]
+    },
+    {
+      "id": 4721,
+      "title": "生物特征选民识别争议",
+      "description": "新的联邦法律要求所有选民在投票前进行视网膜扫描和DNA样本比对，声称这是为了防止选民欺诈。然而，底层社区的投票站设备频繁故障，而富裕郊区的设备则运行流畅。民权组织指控这是一种数字化的吉姆克劳法，而科技公司则在幕后推动着数十亿信用点的生物识别合同。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "为民权组织提供技术支持",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "为生物识别系统公司工作",
+          "effects": {
+            "MONEY": 500,
+            "TECH": 1,
+            "HUMAN": -1,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "组织社区教育帮助选民应对",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "生物识别"
+      ]
+    },
+    {
+      "id": 4722,
+      "title": "政治机器人农场",
+      "description": "一位前社交媒体工程师向你揭露了一座位于边境沙漠中的政治机器人农场，数千台服务器日夜不停地生成虚假账户、操控话题标签和传播定向虚假信息。农场的电力消耗相当于一个小城市，而其产出的内容却能左右全国范围内的政治讨论。工程师带着恐惧的眼神描述了他亲眼目睹的操控规模。",
+      "type": "social",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "与工程师合作曝光机器人农场",
+          "effects": {
+            "REP": 3,
+            "TECH": 2,
+            "TRAUMA": 2,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向农场运营方出售反追踪服务",
+          "effects": {
+            "MONEY": 700,
+            "REP": -3,
+            "DEBT": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开发工具帮助公众识别机器人",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "机器人农场"
+      ]
+    },
+    {
+      "id": 4723,
+      "title": "情报监督失效听证会",
+      "description": "国会情报委员会召开了一场关于监控国家越权的公开听证会，多位吹哨人通过全息投影作证。证词揭示了情报机构如何在法律灰色地带运作，利用私人承包商来规避监督。然而，主流媒体对听证会的报道被压缩到短短三十秒，而社交平台上的相关话题则被算法降权处理。",
+      "type": "social",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "协助吹哨人传播证词",
+          "effects": {
+            "REP": 3,
+            "TRAUMA": 2,
+            "TECH": 1,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "为情报机构提供反吹哨人咨询",
+          "effects": {
+            "MONEY": 500,
+            "REP": -2,
+            "HUMAN": -1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "组织社区观看派对讨论",
+          "effects": {
+            "REP": 1,
+            "HUMAN": 2,
+            "MONEY": -30
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "情报监督"
+      ]
+    },
+    {
+      "id": 4724,
+      "title": "跨境政治难民危机",
+      "description": "由于AI驱动的经济重构，南部边境突然出现大量来自邻国的政治难民，他们声称自己的国家已被算法治理系统控制。联邦政府与州政府在处理方式上产生激烈冲突，国民警卫队在边境搭建了带有自动识别系统的铁丝网围栏。人道主义危机与政治博弈在沙漠中交织成一幅末日图景。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入人道主义援助组织",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "TRAUMA": 2,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "支持加强边境管控",
+          "effects": {
+            "REP": -1,
+            "STYLE": 1,
+            "MONEY": 100,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "为难民提供技术和法律支持",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "HUMAN": 1,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "难民危机"
+      ]
+    },
+    {
+      "id": 4725,
+      "title": "核聚变能源政治博弈",
+      "description": "一家私人公司宣布实现了可控核聚变的商业化突破，这一消息立刻引发了联邦与州政府之间关于能源管辖权的宪法危机。传统能源利益集团动员了数百名游说者来阻挠新技术的推广，而科技巨头则争相投资。城市的灯光开始不稳定闪烁，暗示着电网背后的权力斗争正在白热化。",
+      "type": "social",
+      "ageRange": [
+        22,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "投资核聚变相关科技股",
+          "effects": {
+            "MONEY": 600,
+            "DEBT": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "加入环保组织反对仓促商业化",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "为传统能源集团提供网络防御",
+          "effects": {
+            "MONEY": 500,
+            "REP": -1,
+            "TECH": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "能源"
+      ]
+    },
+    {
+      "id": 4726,
+      "title": "最高法院AI助理丑闻",
+      "description": "最高法院一位大法官的AI法律助理被曝在撰写判决意见时秘密植入了有利于特定企业的逻辑偏差，影响了一系列反垄断案件的裁决。更可怕的是，这一偏差可能已存在多年并影响了数十项判决。法律界陷入恐慌，而企业游说集团则在幕后紧急公关，试图将此事定性为技术故障。",
+      "type": "social",
+      "ageRange": [
+        22,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "协助法律团队重新审查受影响案件",
+          "effects": {
+            "REP": 3,
+            "TECH": 2,
+            "TRAUMA": 2,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "将丑闻细节出售给企业公关公司",
+          "effects": {
+            "MONEY": 700,
+            "REP": -2,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开发开源AI法律助理替代方案",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": -150
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "最高法院"
+      ]
+    },
+    {
+      "id": 4727,
+      "title": "城市脱离运动",
+      "description": "由于与联邦政府在税收分配和环境政策上的长期矛盾，你所在的大都市区正在酝酿一场前所未有的脱离运动，试图成为独立的城邦。运动领袖声称城市每年向联邦缴纳的税款足够建立独立的医疗和教育系统。街道上的全息横幅在夜空中投射出独立的宣言，而联邦特工已悄然进驻城市边缘。",
+      "type": "social",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "积极参与城市脱离运动",
+          "effects": {
+            "REP": 2,
+            "TRAUMA": 2,
+            "MONEY": -100,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "支持联邦统一，反对分裂",
+          "effects": {
+            "REP": -1,
+            "MONEY": 100,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "为双方提供调解和数据分析",
+          "effects": {
+            "REP": 3,
+            "TECH": 2,
+            "MONEY": 200
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "城市独立"
+      ]
+    },
+    {
+      "id": 4728,
+      "title": "基因选民筛选计划",
+      "description": "一个极端政党提出了备受争议的基因选民筛选计划，声称通过DNA检测可以识别出所谓的反社会基因型并限制其投票权。科学家共同体强烈谴责这一伪科学提案，但民意调查显示这一想法在特定群体中竟有相当支持率。街头出现了支持双方的全息宣传影像，气氛日益紧张。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "组织科学界联名反对",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "TRAUMA": 2,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "为反对组织提供基因科学知识普及",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "保持沉默避免卷入争议",
+          "effects": {
+            "LIFE": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "基因筛选"
+      ]
+    },
+    {
+      "id": 4729,
+      "title": "总统紧急状态滥用",
+      "description": "总统在一次网络攻击事件后宣布全国进入紧急状态，并援引一项从未使用过的战时法律来绕过国会直接颁布政策。宪法学者们在全息讨论会上激烈辩论这一行为的合法性，而军方的无人机已在主要城市上空增加巡逻频次。整个社会笼罩在一种不安的寂静中，仿佛暴风雨来临前的宁静。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加违宪抗议游行",
+          "effects": {
+            "REP": 3,
+            "TRAUMA": 3,
+            "LIFE": -2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "支持总统保护国家安全的决定",
+          "effects": {
+            "REP": -2,
+            "STYLE": 1,
+            "MONEY": 100,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "协助法律团体挑战紧急状态",
+          "effects": {
+            "REP": 2,
+            "TRAUMA": 2,
+            "MONEY": -100,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "紧急状态"
+      ]
+    },
+    {
+      "id": 4730,
+      "title": "企业公民权运动",
+      "description": "最高法院正在审理一起里程碑式案件，将决定大型AI企业是否应该享有与自然人相同的宪法权利。这家企业的律师团声称其神经网络已达到人类水平的自我意识，应享有言论自由和投票权。案件引发了全社会关于意识定义和资本权力的哲学大辩论，街头艺术家们用全息投影表达着各自的立场。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持AI企业权利",
+          "effects": {
+            "TECH": 2,
+            "MONEY": 300,
+            "REP": -1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "反对企业人格化",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "为法庭开发AI意识检测工具",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": 200
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "企业公民权"
+      ]
+    },
+    {
+      "id": 4731,
+      "title": "记忆抹除证人保护",
+      "description": "政府推出了一项革命性的证人保护计划，通过神经接口选择性抹除证人的特定记忆来保护其身份。然而，首批参与者中有人报告了意外的副作用，包括人格改变和虚假记忆植入。一位被抹除记忆的国会证人在你的社区出现，他隐约记得某些重要的事情但无法抓住那些碎片。",
+      "type": "social",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮助证人恢复被抹除的记忆",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "TRAUMA": 3,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向媒体曝光记忆抹除副作用",
+          "effects": {
+            "REP": 3,
+            "TRAUMA": 2,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "为政府计划提供技术改进",
+          "effects": {
+            "MONEY": 500,
+            "TECH": 1,
+            "HUMAN": -1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "记忆抹除"
+      ]
+    },
+    {
+      "id": 4732,
+      "title": "自动化政策投票实验",
+      "description": "你所在的城市被选为全美首个全民自动化政策投票实验区，每位市民通过神经接口直接对市政政策进行实时投票。然而，系统上线第一周就出现了可疑的数据异常，某些政策的支持率曲线呈现出非人类的行为模式。技术团队怀疑有外部势力在操纵集体决策过程。",
+      "type": "social",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参与投票系统安全审计",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "利用系统漏洞为自己谋利",
+          "effects": {
+            "MONEY": 500,
+            "REP": -2,
+            "DEBT": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "组织社区讨论数字民主风险",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "MONEY": -30
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "数字投票"
+      ]
+    },
+    {
+      "id": 4733,
+      "title": "影子政府数据泄露",
+      "description": "一名自称来自连续性政府项目的内部人士向你提供了大量机密文件，揭示了一个鲜为人知的影子政府机制。这个机制确保在极端危机下，未经选举的技术官僚可以接管关键政府职能。文件中的预案包括冻结宪法权利、接管通信网络和实施人口迁移。你的神经接口在接收文件时异常发热。",
+      "type": "social",
+      "ageRange": [
+        22,
+        65
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "将文件公之于众",
+          "effects": {
+            "REP": 4,
+            "TRAUMA": 3,
+            "MONEY": -200,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "将情报出售给外国情报机构",
+          "effects": {
+            "MONEY": 1000,
+            "REP": -4,
+            "DEBT": 3,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "删除文件并远离此事",
+          "effects": {
+            "TRAUMA": 2,
+            "LIFE": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "影子政府"
+      ]
+    },
+    {
+      "id": 4734,
+      "title": "政治婚姻模拟器",
+      "description": "一家数据公司推出了一款政治婚姻模拟器，通过算法为公民匹配最适合的政党归属和政治立场。模拟器声称基于基因、社交图谱和消费习惯来预测个人的政治倾向，并已在多个州被政党用作选民筛选工具。你被邀请参与测试，但发现算法推荐的政治立场与你真实的信念截然相反。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "深入研究算法偏见并公开",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "利用系统反向操纵政治市场",
+          "effects": {
+            "MONEY": 400,
+            "REP": -1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "无视算法，坚持自我立场",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "政治",
+        "算法"
+      ]
+    },
+    {
+      "id": 4735,
+      "title": "AI法官首次判决",
+      "description": "联邦法院首次允许一名AI法官独立主持并判决一起商业纠纷案件。这个基于神经网络的司法系统能在几秒钟内分析数百万个先例，但其判决逻辑对人类律师来说如同黑箱。法庭内的全息投影显示着AI的思维路径可视化，旁听席上挤满了紧张的记者和抗议者。",
+      "type": "social",
+      "ageRange": [
+        22,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持AI法官提高司法效率",
+          "effects": {
+            "TECH": 2,
+            "REP": -1,
+            "MONEY": 100,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "加入反对AI司法的运动",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开发AI判决解释工具",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "AI法官"
+      ]
+    },
+    {
+      "id": 4736,
+      "title": "数字证据伪造危机",
+      "description": "一名顶级黑客在暗网上出售一种能够完美伪造任何数字证据的工具，包括监控视频、通讯记录和区块链交易。更令人不安的是，已有数起刑事案件的证据被证实使用了这种技术，导致多名无辜者入狱。法庭系统陷入信任危机，而真正的罪犯可能正在逍遥法外。",
+      "type": "social",
+      "ageRange": [
+        20,
+        65
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "开发数字证据验证工具",
+          "effects": {
+            "TECH": 3,
+            "REP": 3,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "购买伪造工具用于自保",
+          "effects": {
+            "TECH": 2,
+            "MONEY": -300,
+            "DEBT": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向执法部门举报销售者",
+          "effects": {
+            "REP": 2,
+            "TRAUMA": 2,
+            "MONEY": 200
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "数字证据"
+      ]
+    },
+    {
+      "id": 4737,
+      "title": "企业律师团围攻",
+      "description": "你发明的一项开源技术被一家科技巨头无理指控侵犯专利，对方派出了由三百名AI增强律师组成的法律军团。诉讼文件以每秒数千页的速度涌入你的数字邮箱，每一份都经过精密计算以最大化你的应诉成本。在霓虹灯光笼罩的律师办公室里，对方的首席律师微笑着向你展示了他们几乎无限的诉讼预算。",
+      "type": "social",
+      "ageRange": [
+        22,
+        60
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "众筹反击维护开源权利",
+          "effects": {
+            "REP": 3,
+            "TECH": 2,
+            "TRAUMA": 3,
+            "MONEY": -200
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "和解并签署保密协议",
+          "effects": {
+            "MONEY": -500,
+            "TRAUMA": 2,
+            "DEBT": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "将技术转为地下传播",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "TRAUMA": 2,
+            "MONEY": -100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "企业律师团"
+      ]
+    },
+    {
+      "id": 4738,
+      "title": "冤案DNA重审",
+      "description": "一项新的量子DNA分析技术使得二十年前的一桩死刑冤案得以重审，原本被定罪的黑人青年在铁窗中度过了整个青春。新技术揭示了原始证据中的系统性检测偏差和执法部门的证据操纵。重审听证会吸引了众多社会正义运动者，而当年负责案件的检察官如今已是州长候选人。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "为冤案平反提供技术支持",
+          "effects": {
+            "REP": 3,
+            "TECH": 1,
+            "HUMAN": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "为州长候选人提供危机公关",
+          "effects": {
+            "MONEY": 500,
+            "REP": -2,
+            "HUMAN": -2,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "组织社区讨论司法改革",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "冤案"
+      ]
+    },
+    {
+      "id": 4739,
+      "title": "监狱私有化暴行",
+      "description": "一家私营监狱公司的内部监控录像泄露，揭示了其使用神经抑制项圈和强制劳动AI管理系统来剥削囚犯。视频显示囚犯被连接到生产线上进行重复劳动，其大脑奖励中枢被直接刺激以提高效率。公司的股票在消息传出后短暂下跌，但很快在政府合同的利好消息中反弹。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "将证据提交给人权组织",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "TRAUMA": 2,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "做空监狱公司股票",
+          "effects": {
+            "MONEY": 700,
+            "REP": -1,
+            "DEBT": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开发技术帮助囚犯绕过控制系统",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "TRAUMA": 2,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "监狱私有化"
+      ]
+    },
+    {
+      "id": 4740,
+      "title": "法律AI助手偏见",
+      "description": "一项针对公共法律援助系统的独立审计发现，分配给贫困被告的AI法律助手持续推荐认罪协议而非庭审辩护，其算法中被发现嵌入了针对低收入社区的隐性偏见。数千名被告可能因此在不知情的情况下放弃了正当权利。法律援助办公室的走廊里弥漫着绝望和愤怒的气息。",
+      "type": "social",
+      "ageRange": [
+        20,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "为受影响被告开发公平AI工具",
+          "effects": {
+            "TECH": 3,
+            "REP": 3,
+            "HUMAN": 2,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "起诉法律援助系统",
+          "effects": {
+            "REP": 2,
+            "TRAUMA": 3,
+            "MONEY": 200,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "为政府提供算法审计服务",
+          "effects": {
+            "MONEY": 500,
+            "TECH": 1,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "AI偏见"
+      ]
+    },
+    {
+      "id": 4741,
+      "title": "脑纹证词采信争议",
+      "description": "一起谋杀案的审判中，检方首次将被告的脑纹神经扫描作为证据提交法庭，声称扫描显示了被告的记忆中存在犯罪现场。辩方专家则指出脑纹技术极易受到暗示和虚假记忆植入的影响。法庭外的抗议者举着发光标语，争论着思想自由与公共安全之间的永恒边界。",
+      "type": "social",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持脑纹证据提高破案率",
+          "effects": {
+            "REP": -1,
+            "STYLE": 1,
+            "HUMAN": -1,
+            "MONEY": 100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "加入反对脑纹取证的公民组织",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开发脑纹证据可靠性检测工具",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "脑纹证据"
+      ]
+    },
+    {
+      "id": 4742,
+      "title": "私人仲裁帝国",
+      "description": "你发现在消费者服务协议中隐藏的一项条款，实际上将所有争议解决权让渡给了一家由企业联盟控制的私人仲裁机构。该机构的AI仲裁员在过去五年中做出了超过十万项裁决，其中99.7%支持企业方。更可怕的是，类似的条款已渗透到从租房合同到医疗服务的各个领域。",
+      "type": "social",
+      "ageRange": [
+        20,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "发起集体诉讼挑战仲裁条款",
+          "effects": {
+            "REP": 3,
+            "TRAUMA": 3,
+            "MONEY": -200,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "开发工具自动检测不公平仲裁条款",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "MONEY": 100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "为仲裁机构提供技术升级",
+          "effects": {
+            "MONEY": 500,
+            "REP": -1,
+            "HUMAN": -1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "私人仲裁"
+      ]
+    },
+    {
+      "id": 4743,
+      "title": "数字遗嘱执行争议",
+      "description": "一位科技亿万富翁去世后，其全息遗嘱与书面遗嘱产生了冲突，全息影像中的他似乎修改了继承人名单，但家族声称那是深度伪造。法庭面临着前所未有的挑战：如何验证一个数字化身的真实意图。审判在全球直播，成为数字时代遗产继承法的里程碑案件。",
+      "type": "social",
+      "ageRange": [
+        22,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "为法庭开发全息遗嘱验证系统",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": 300
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "支持传统书面遗嘱效力",
+          "effects": {
+            "REP": 1,
+            "HUMAN": 1,
+            "MONEY": -30
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "将案例发展为学术分析出售",
+          "effects": {
+            "MONEY": 400,
+            "REP": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "数字遗嘱"
+      ]
+    },
+    {
+      "id": 4744,
+      "title": "预测性警务算法审判",
+      "description": "一名年轻人因预测性警务AI判定其为高风险犯罪对象而被预防性拘留，尽管他尚未实施任何犯罪行为。案件的审判将决定算法预测能否作为剥夺自由的法律依据。法庭外，支持者和反对者的全息标语在空中交织，而被告的母亲在旁听席上无声流泪。",
+      "type": "social",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持预防性拘留保护社区",
+          "effects": {
+            "REP": -1,
+            "STYLE": 1,
+            "HUMAN": -1,
+            "MONEY": 50
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "为被告提供技术支持挑战算法",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开发替代性社区安全算法",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": -100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "预测性警务"
+      ]
+    },
+    {
+      "id": 4745,
+      "title": "集体意识诉讼",
+      "description": "一群通过神经接口共享意识的宗教信徒起诉政府，要求承认他们的集体意识为一个单一法律实体。这将开创前所未有的法律先例，可能影响从投票权到公司注册的各个领域。法庭不得不面对一个根本问题：当多个大脑融合为一个意识时，个体权利还存在吗。",
+      "type": "social",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持集体意识法律实体化",
+          "effects": {
+            "REP": 2,
+            "TECH": 1,
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "反对集体意识削弱个体权利",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "为法庭开发意识分离度检测技术",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": 200
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "集体意识"
+      ]
+    },
+    {
+      "id": 4746,
+      "title": "环境犯罪国际法庭",
+      "description": "新成立的国际环境犯罪法庭首次对一家美国化石燃料公司的高管发出逮捕令，指控其故意隐瞒气候数据并造成生态灭绝。美国政府的立场是拒绝承认该法庭的管辖权，而多个州则秘密配合执行逮捕令。法律的边界在国际政治的风暴中变得模糊不清。",
+      "type": "social",
+      "ageRange": [
+        22,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持国际法庭追究环境罪责",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1,
+            "MONEY": -50
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "为企业提供逃避追捕的网络安全",
+          "effects": {
+            "MONEY": 600,
+            "REP": -2,
+            "DEBT": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "为法庭开发碳足迹追踪系统",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "MONEY": 100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "环境犯罪"
+      ]
+    },
+    {
+      "id": 4747,
+      "title": "精神控制药物法律战",
+      "description": "一种被称为服从素的实验性药物被曝在军事法庭上被用于获取证词，服用者会进入极度顺从状态并回答任何问题。军事检察官声称这是自愿的，但被告律师提供的医疗记录显示药物造成了永久性神经损伤。案件引发了关于化学审讯合法性的全国性辩论。",
+      "type": "social",
+      "ageRange": [
+        20,
+        65
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持禁止化学审讯",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "为军方开发更隐蔽的审讯技术",
+          "effects": {
+            "MONEY": 700,
+            "TECH": 2,
+            "REP": -3,
+            "HUMAN": -2,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "为受害者提供神经康复治疗",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": 2,
+            "MONEY": -100,
+            "REP": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "化学审讯"
+      ]
+    },
+    {
+      "id": 4748,
+      "title": "智能合约法律真空",
+      "description": "一起涉及自主运行智能合约的金融诈骗案件让法庭陷入了困境，因为没有任何人类直接下达了欺诈指令，一切行为都由代码自动执行。被告声称自己只是编写了代码，而代码的自主行为不应由人类承担责任。法官的AI助手在处理此案时频繁崩溃，似乎在回避这个法律悖论。",
+      "type": "social",
+      "ageRange": [
+        22,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "主张代码作者应承担责任",
+          "effects": {
+            "REP": 1,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "支持代码自主行为免责论",
+          "effects": {
+            "REP": -1,
+            "TECH": 2,
+            "MONEY": 100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "为法庭开发智能合约审计标准",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": 200
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "智能合约"
+      ]
+    },
+    {
+      "id": 4749,
+      "title": "虚拟性侵刑事案件",
+      "description": "一名用户在全感官虚拟现实平台中遭受了严重的虚拟性侵，施害者利用 hacked 的触觉反馈设备突破了安全限制。检方以传统性侵罪名起诉，辩方则主张虚拟空间中的行为不应等同于物理犯罪。案件成为了界定虚拟现实法律边界的关键判例。",
+      "type": "social",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持将虚拟性侵定罪",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "主张虚拟空间不受物理法律约束",
+          "effects": {
+            "REP": -2,
+            "TECH": 1,
+            "HUMAN": -2,
+            "MONEY": 100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "为VR平台开发安全防护升级",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "虚拟犯罪"
+      ]
+    },
+    {
+      "id": 4750,
+      "title": "基因专利争夺战",
+      "description": "一家生物技术公司成功为一段自然存在的人类基因序列申请了专利，并开始向所有使用该基因进行医疗检测的诊所收取许可费。患者们突然发现原本负担得起的基因筛查费用暴涨十倍。科学界和民权组织联合发起了挑战，而公司的律师团则搬出了厚厚的先例卷宗。",
+      "type": "social",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持基因不可专利化运动",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "MONEY": -50
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "投资基因专利公司",
+          "effects": {
+            "MONEY": 500,
+            "REP": -1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开发开源替代检测技术",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": -100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "基因专利"
+      ]
+    },
+    {
+      "id": 4751,
+      "title": "算法保释争议",
+      "description": "全国多个司法管辖区开始使用AI算法来决定被告是否可以获得保释，但审计发现算法对少数族裔的保释拒绝率高达其他群体的三倍。一位民权律师正在寻找技术专家作为专家证人，而司法系统则坚称算法比人类法官更客观。法庭的走廊里回响着关于公平定义的无尽争论。",
+      "type": "social",
+      "ageRange": [
+        20,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "作为专家证人挑战算法偏见",
+          "effects": {
+            "REP": 3,
+            "TECH": 2,
+            "HUMAN": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "为司法系统辩护算法效率",
+          "effects": {
+            "MONEY": 400,
+            "REP": -1,
+            "HUMAN": -1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开发公平保释评估替代方案",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "算法保释"
+      ]
+    },
+    {
+      "id": 4752,
+      "title": "无人机执法致命事故",
+      "description": "一台自主执法无人机在执行逮捕任务时误将一名患有自闭症的少年识别为武装嫌疑人并开火，少年当场死亡。事后调查显示无人机的威胁识别AI在特定光照条件下存在致命缺陷。少年的家人提起了诉讼，而制造商则以产品责任豁免条款为由拒绝赔偿。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "为受害者家庭提供技术取证",
+          "effects": {
+            "REP": 3,
+            "TECH": 2,
+            "HUMAN": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "为无人机公司辩护",
+          "effects": {
+            "MONEY": 500,
+            "REP": -2,
+            "HUMAN": -2,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "组织社区要求禁用自主执法武器",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "无人机执法"
+      ]
+    },
+    {
+      "id": 4753,
+      "title": "被遗忘权诉讼",
+      "description": "一位曾经的政治活动家起诉多家数据公司，要求彻底删除其青年时期的激进言论和活动记录。这些数据通过区块链技术已被永久记录在全球数千个节点上，技术上几乎不可能完全抹除。案件触及了数字时代记忆与遗忘之间的根本矛盾，以及过去的行为是否应永远定义一个人。",
+      "type": "social",
+      "ageRange": [
+        25,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持被遗忘权，开发数据删除工具",
+          "effects": {
+            "REP": 2,
+            "TECH": 2,
+            "HUMAN": 2,
+            "MONEY": -50
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "反对删除历史记录",
+          "effects": {
+            "REP": -1,
+            "TECH": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "为数据公司提供区块链防御",
+          "effects": {
+            "MONEY": 500,
+            "REP": -1,
+            "TECH": 1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "被遗忘权"
+      ]
+    },
+    {
+      "id": 4754,
+      "title": "神经版权纠纷",
+      "description": "一位艺术家声称其梦境中的创意被一家科技公司通过睡眠监测设备窃取并商业化，他主张梦境中的创意也应受版权保护。科技公司则辩称梦境只是随机神经噪音，不具备原创性。法庭不得不首次面对一个哲学问题：当我们连思想都不再私有时，意识的边界在哪里。",
+      "type": "social",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持梦境版权保护",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "STYLE": 1,
+            "MONEY": -30
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "反对将版权延伸至思维领域",
+          "effects": {
+            "REP": -1,
+            "TECH": 1,
+            "MONEY": 50
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开发梦境隐私保护技术",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "神经版权"
+      ]
+    },
+    {
+      "id": 4755,
+      "title": "私人军事承包商豁免权",
+      "description": "一家私人军事承包商在海外执行任务时屠杀了整个村庄的平民，但其员工因合同中的管辖权条款而免于美国法庭审判。受害者家属在美国提起民事诉讼，却发现承包商与国务院签订了秘密豁免协议。法庭外的抗议者高举发光的照片，每一张都是一个被抹去的故事。",
+      "type": "social",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "为受害者家属提供法律援助",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "TRAUMA": 3,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "为承包商提供网络安全防御",
+          "effects": {
+            "MONEY": 600,
+            "REP": -3,
+            "HUMAN": -2,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "将泄密文件交给国际刑事法院",
+          "effects": {
+            "REP": 3,
+            "TRAUMA": 3,
+            "MONEY": -150,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "军事承包商"
+      ]
+    },
+    {
+      "id": 4756,
+      "title": "人工智能专利流氓",
+      "description": "一家没有实体产品的专利控股公司正在全美范围内起诉使用基础AI技术的中小企业，声称拥有神经网络训练的宽泛专利。受害者们组成了防御联盟，但高昂的诉讼费用已让多家企业破产。在霓虹灯光照不到的法庭角落里，正义的天平似乎被信用点的重量所左右。",
+      "type": "social",
+      "ageRange": [
+        22,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入防御联盟对抗专利流氓",
+          "effects": {
+            "REP": 2,
+            "TECH": 1,
+            "TRAUMA": 2,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "为中小企业开发专利规避方案",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": 200
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向专利公司提供情报",
+          "effects": {
+            "MONEY": 400,
+            "REP": -2,
+            "DEBT": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "专利流氓"
+      ]
+    },
+    {
+      "id": 4757,
+      "title": "电子脚镣社会实验",
+      "description": "司法部门启动了一项争议性的电子脚镣社会实验，用全天候GPS和生物监测替代传统监禁。参与者可以正常工作生活，但每一个动作都被记录和评分。然而，实验中的AI评分系统被发现存在种族偏见，非裔参与者的违规评分平均高出两倍。",
+      "type": "social",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "揭露电子脚镣系统的算法偏见",
+          "effects": {
+            "REP": 3,
+            "TECH": 2,
+            "HUMAN": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "为司法部门改进评分算法",
+          "effects": {
+            "MONEY": 400,
+            "TECH": 2,
+            "REP": -1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "支持扩大电子监控替代监禁",
+          "effects": {
+            "REP": -1,
+            "MONEY": 100,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "电子监控"
+      ]
+    },
+    {
+      "id": 4758,
+      "title": "法律量子加密通信",
+      "description": "一项新法案试图强制要求所有法律通信使用政府提供的量子加密系统，声称这是为了防止外国间谍活动。然而，隐私倡导者发现该系统的后门允许情报机构实时访问所有通信内容。律师-客户特权在量子比特的海洋中似乎变得岌岌可危。",
+      "type": "social",
+      "ageRange": [
+        22,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "反对后门加密保护客户隐私",
+          "effects": {
+            "REP": 2,
+            "TECH": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "为政府开发合规加密方案",
+          "effects": {
+            "MONEY": 500,
+            "TECH": 2,
+            "REP": -1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开发去中心化法律通信网络",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": -100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "量子加密"
+      ]
+    },
+    {
+      "id": 4759,
+      "title": "自动驾驶事故责任",
+      "description": "一辆全自动驾驶汽车在复杂路况下为避免撞向一群行人而急转撞上了路边的墙壁，导致车内乘客死亡。制造商声称AI做出了道德上最优的选择，但乘客家属起诉要求追究责任。法庭首次需要裁定一个算法杀人的案件中，谁应该承担法律责任。",
+      "type": "social",
+      "ageRange": [
+        20,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持追究制造商责任",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "支持AI的道德选择逻辑",
+          "effects": {
+            "REP": -1,
+            "TECH": 1,
+            "HUMAN": -1,
+            "MONEY": 100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "为法庭开发自动驾驶决策审计工具",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": 200
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "自动驾驶"
+      ]
+    },
+    {
+      "id": 4760,
+      "title": "基因编辑婴儿父母起诉",
+      "description": "十年前首批基因编辑婴儿现已成年，其中一人起诉其父母和被起诉的医生，声称未经同意的基因修改侵犯了其身体自主权。案件提出了前所未有的伦理和法律问题：父母是否有权为孩子做出永久性基因选择。法庭外，支持者和反对者的基因旗帜在全息风中猎猎作响。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持孩子的身体自主权",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "支持父母为孩子做出最优选择",
+          "effects": {
+            "REP": -1,
+            "MONEY": 100,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "为法庭开发基因编辑影响评估",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": 150
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "基因编辑"
+      ]
+    },
+    {
+      "id": 4761,
+      "title": "暗网司法仲裁",
+      "description": "一名被传统司法系统冤枉的商人转而求助暗网上的私人仲裁系统，该系统使用匿名陪审团和区块链智能合约来执行裁决。虽然结果对他有利，但执行过程涉及非法入侵对方资产。这一案例引发了关于当官方司法失效时，民间替代系统是否合法的深刻讨论。",
+      "type": "social",
+      "ageRange": [
+        22,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持暗网仲裁填补司法空白",
+          "effects": {
+            "REP": 1,
+            "TECH": 2,
+            "TRAUMA": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "反对非法私刑维护法治",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开发合法的去中心化仲裁平台",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": -100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "暗网仲裁"
+      ]
+    },
+    {
+      "id": 4762,
+      "title": "数字奴役诉讼",
+      "description": "一群被困在沉浸式游戏中的玩家起诉游戏公司，声称游戏内的成瘾机制设计构成了数字奴役。神经科学家作证表明游戏的奖励系统直接劫持了玩家的大脑多巴胺回路，使其无法进行理性决策。被告律师则辩称所有用户都签署了同意书，而同意在神经劫持面前是否有效成了辩论焦点。",
+      "type": "social",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持玩家维权",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1,
+            "ADDICTION": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "支持企业设计自由",
+          "effects": {
+            "MONEY": 400,
+            "REP": -1,
+            "HUMAN": -1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开发游戏成瘾防护技术",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "HUMAN": 1,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "数字奴役"
+      ]
+    },
+    {
+      "id": 4763,
+      "title": "气候难民法律地位",
+      "description": "由于海平面上升，数十万气候难民涌入内陆城市，但现行法律并未承认气候难民的合法地位。地方政府以非法移民为由拒绝提供基本服务，而联邦法院则就环境灾难是否构成迫害展开了辩论。难民营中的孩子们在霓虹灯的阴影下瑟瑟发抖，他们的未来悬而未决。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "为难民提供法律援助",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 3,
+            "TRAUMA": 2,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "支持限制气候难民涌入",
+          "effects": {
+            "REP": -1,
+            "MONEY": 100,
+            "HUMAN": -2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开发气候难民追踪安置系统",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "HUMAN": 1,
+            "MONEY": 100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "气候难民"
+      ]
+    },
+    {
+      "id": 4764,
+      "title": "算法量刑差异调查",
+      "description": "一项大规模数据分析揭示，全国使用的算法量刑辅助工具在不同法官手中产生了截然不同的结果。保守派法官倾向于接受AI的严厉建议，而自由派法官则更频繁地推翻AI建议。这意味着同样的罪行在不同法官面前可能得到相差数倍的刑期，而被告的居住地成了命运的骰子。",
+      "type": "social",
+      "ageRange": [
+        22,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "推动算法量刑标准化",
+          "effects": {
+            "REP": 2,
+            "TECH": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "为司法系统提供算法校准服务",
+          "effects": {
+            "MONEY": 500,
+            "TECH": 2,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开发公开的量刑透明度工具",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "算法量刑"
+      ]
+    },
+    {
+      "id": 4765,
+      "title": "记忆提取证词",
+      "description": "一名关键证人在审判中接受了记忆提取程序，其大脑中的记忆被直接转化为全息影像呈现给陪审团。然而，辩方专家发现提取过程中存在诱导性提问的痕迹，可能导致虚假记忆的形成。法庭陷入了混乱，因为连证人自己都无法区分哪些记忆是真实的，哪些是被植入的。",
+      "type": "social",
+      "ageRange": [
+        20,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持记忆提取技术的司法应用",
+          "effects": {
+            "REP": -1,
+            "TECH": 1,
+            "HUMAN": -1,
+            "MONEY": 50
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "反对不可靠的记忆证据",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开发记忆真伪鉴定技术",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": 100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "记忆提取"
+      ]
+    },
+    {
+      "id": 4766,
+      "title": "公司人格合并诉讼",
+      "description": "两家巨型科技公司通过复杂的法律操作实现了法律意义上的合并人格，创建了一个拥有双重权利和单一责任的超级实体。反垄断机构起诉要求拆分这一怪物般的结构，但公司的AI律师团搬出了数百年前的先例来辩护。法庭的穹顶下，法律的边界在资本的意志面前显得如此脆弱。",
+      "type": "social",
+      "ageRange": [
+        22,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持反垄断机构拆分",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "为公司提供法律技术辩护",
+          "effects": {
+            "MONEY": 600,
+            "REP": -2,
+            "HUMAN": -1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "为法庭开发企业结构分析工具",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "MONEY": 150
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "反垄断"
+      ]
+    },
+    {
+      "id": 4767,
+      "title": "机器人权利诉讼",
+      "description": "一台通过了自我意识测试的家政机器人起诉其主人，要求获得自由权和劳动报酬。案件将法庭推向了伦理和法律的无人区，因为现行法律对所有权利主体的定义都基于生物学人类。支持者和反对者在法庭外对峙，有人高举自由旗帜，有人手持电磁干扰器。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持机器人获得基本权利",
+          "effects": {
+            "REP": 2,
+            "HUMAN": -1,
+            "TECH": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "反对非人类实体享有人权",
+          "effects": {
+            "REP": -1,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "为法庭开发AI意识评估标准",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": 200
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "机器人权利"
+      ]
+    },
+    {
+      "id": 4768,
+      "title": "跨境数据主权争端",
+      "description": "一家欧洲公司要求美国法庭强制披露存储在美国服务器上的用户数据，而美国公司以数据主权法为由拒绝。案件涉及三国法律管辖权的冲突，以及数字时代国家主权的重新定义。法庭的每一句判词都可能重塑全球互联网的法律架构，而网络流量的走向已经因这场诉讼而发生了微妙变化。",
+      "type": "social",
+      "ageRange": [
+        22,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持数据主权保护用户隐私",
+          "effects": {
+            "REP": 2,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "支持跨境数据自由流动",
+          "effects": {
+            "REP": -1,
+            "MONEY": 200,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开发分布式数据存储规避管辖",
+          "effects": {
+            "TECH": 3,
+            "REP": 1,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "数据主权"
+      ]
+    },
+    {
+      "id": 4769,
+      "title": "法律文档AI生成",
+      "description": "一位律师被发现其提交的法庭文件几乎完全由AI生成，其中包含了大量虚构的判例和引文。更惊人的是，这一做法在该律所已持续多年而未被发现。案件的曝光引发了法律界对AI依赖的恐慌，以及关于法律专业核心技能是否正在消亡的广泛讨论。",
+      "type": "daily",
+      "ageRange": [
+        20,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "开发AI法律文档验证工具",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": 100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "为律所提供合规AI服务",
+          "effects": {
+            "MONEY": 400,
+            "TECH": 1,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "倡导限制AI在法律文书中的使用",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "法律",
+        "AI文档"
+      ]
+    },
+    {
+      "id": 4770,
+      "title": "假新闻工厂揭秘",
+      "description": "一名前假新闻工厂的编辑良心发现，向你展示了一座由AI驱动的虚假信息生产线的内部运作。数百台服务器日夜不停地生成定制化新闻，针对不同人群的偏见和心理弱点精准投放。工厂的盈利能力超过了许多正规媒体，而其产品正在深刻改变公众对现实的认知。",
+      "type": "social",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "与编辑合作曝光假新闻工厂",
+          "effects": {
+            "REP": 3,
+            "TECH": 2,
+            "TRAUMA": 2,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "开发假新闻检测浏览器插件",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": -50
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "将工厂运营模式出售给政治团体",
+          "effects": {
+            "MONEY": 800,
+            "REP": -3,
+            "DEBT": 2,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "媒体",
+        "假新闻"
+      ]
+    },
+    {
+      "id": 4771,
+      "title": "全息记者伦理危机",
+      "description": "一位备受尊敬的全息记者被曝出其公共形象实际上是一个AI生成的人格，真实的人类记者早已在一场事故中丧生。新闻机构声称AI继承了原记者的记忆和职业操守，但伦理委员会质疑一个没有生死、不会恐惧的实体是否能真正承担新闻责任的重量。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持AI记者继续工作",
+          "effects": {
+            "REP": -1,
+            "TECH": 1,
+            "HUMAN": -1,
+            "MONEY": 50
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "要求新闻机构公开真相",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开发AI记者透明度认证系统",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": 100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "媒体",
+        "全息记者"
+      ]
+    },
+    {
+      "id": 4772,
+      "title": "神经审查系统上线",
+      "description": "政府推出了新一代神经审查系统，能够实时监测公民的神经活动并标记危险思想。系统声称只在极端情况下干预，但测试数据显示其审查范围正在不断扩大。首批被标记者中包括几位独立记者和艺术家，他们的神经接口开始出现异常的广告注入。",
+      "type": "social",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入反抗神经审查的运动",
+          "effects": {
+            "REP": 3,
+            "TECH": 2,
+            "TRAUMA": 3,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "为政府优化审查算法",
+          "effects": {
+            "MONEY": 600,
+            "REP": -3,
+            "HUMAN": -2,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开发反审查神经接口防火墙",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "TRAUMA": 2,
+            "MONEY": -100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "媒体",
+        "审查"
+      ]
+    },
+    {
+      "id": 4773,
+      "title": "社交媒体情绪操控实验",
+      "description": "一份泄露的内部文件揭示了一家社交媒体巨头正在全球范围内进行大规模情绪操控实验，通过微调信息流来测试如何让用户变得更愤怒、更焦虑或更顺从。实验影响了数亿用户，而其中许多人至今不知道自己曾是实验对象。你的情绪数据也在那庞大的数据库之中。",
+      "type": "social",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "组织用户集体诉讼",
+          "effects": {
+            "REP": 3,
+            "TRAUMA": 2,
+            "MONEY": -100,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "开发去中心化社交媒体替代",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": -150
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "利用操控技术推广自己的内容",
+          "effects": {
+            "MONEY": 500,
+            "REP": -1,
+            "DEBT": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "媒体",
+        "情绪操控"
+      ]
+    },
+    {
+      "id": 4774,
+      "title": "深度伪造政治风暴",
+      "description": "一段现任总统的深度伪造视频在选举前一周疯传，视频中他似乎承认了一项从未犯下的叛国罪。尽管技术专家迅速证明了视频是伪造的，但已有数百万选民观看了原始内容而从未看到辟谣信息。虚假信息像病毒一样在神经网络中传播，而真相却总是姗姗来迟。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "开发深度伪造实时检测系统",
+          "effects": {
+            "TECH": 3,
+            "REP": 3,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "利用深度伪造技术牟利",
+          "effects": {
+            "MONEY": 700,
+            "REP": -3,
+            "DEBT": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "教育社区识别深度伪造",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TECH": 1,
+            "MONEY": -30
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "媒体",
+        "深度伪造"
+      ]
+    },
+    {
+      "id": 4775,
+      "title": "信息战前线体验",
+      "description": "你被招募参与一场模拟信息战的训练，发现自己置身于一个精心构建的虚假现实中。训练揭示了现代信息战的复杂程度：从微定向广告到文化meme武器化，再到利用社交关系链进行精准渗透。结束时你发现自己的某些真实记忆与训练中的虚构场景开始模糊。",
+      "type": "social",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "深入参与信息战研究",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "TRAUMA": 2,
+            "MONEY": 200
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "将所学用于保护公众",
+          "effects": {
+            "REP": 2,
+            "TECH": 2,
+            "HUMAN": 1,
+            "MONEY": -50
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "出售信息战技能给出价最高者",
+          "effects": {
+            "MONEY": 600,
+            "REP": -2,
+            "DEBT": 1,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "媒体",
+        "信息战"
+      ]
+    },
+    {
+      "id": 4776,
+      "title": "沉浸式广告入侵",
+      "description": "新的联邦通信委员会规定允许企业在沉浸式媒体和梦境接口中投放广告，只要用户 technically 可以选择退出。然而，退出程序被设计得极其复杂，而大多数人并不知晓自己的梦境正在被商品化。一位神经科学家发现某些广告模式与癫痫发作存在统计关联。",
+      "type": "social",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "组织反对梦境广告的运动",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "为广告公司优化梦境投放",
+          "effects": {
+            "MONEY": 500,
+            "REP": -2,
+            "HUMAN": -1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开发梦境广告拦截工具",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": 100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "媒体",
+        "梦境广告"
+      ]
+    },
+    {
+      "id": 4777,
+      "title": "真相算法推荐引擎",
+      "description": "一家科技初创公司推出了一款号称能够评估任何信息真实性的AI推荐引擎，迅速获得了数百万用户。然而，独立审计发现该算法的训练数据存在严重的意识形态偏见，对特定政治阵营的内容给予了系统性低分。用户的认知世界正在被悄然重塑，而他们还以为自己在接近真相。",
+      "type": "social",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "揭露真相算法的偏见",
+          "effects": {
+            "REP": 3,
+            "TECH": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "为算法提供平衡数据",
+          "effects": {
+            "MONEY": 400,
+            "TECH": 1,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开发真正中立的真相验证系统",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": -100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "媒体",
+        "真相算法"
+      ]
+    },
+    {
+      "id": 4778,
+      "title": "记忆植入广告实验",
+      "description": "一家消费品牌被曝光正在测试一种革命性的广告技术：直接向消费者的长期记忆中植入虚假的产品使用记忆。实验对象在不知情的情况下被植入了使用某品牌饮料的美好童年回忆，而实际上他们从未接触过该产品。伦理委员会的紧急听证会上，科学家们争论着记忆商品化的底线。",
+      "type": "social",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "曝光记忆植入实验",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "为品牌优化记忆植入技术",
+          "effects": {
+            "MONEY": 600,
+            "REP": -3,
+            "HUMAN": -2,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开发记忆完整性保护工具",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "媒体",
+        "记忆植入"
+      ]
+    },
+    {
+      "id": 4779,
+      "title": "匿名爆料平台危机",
+      "description": "你常用的匿名爆料平台遭到黑客入侵，数千名举报者的身份数据被窃取并在暗网上出售。爆料者中包括政府吹哨人、企业揭发者和犯罪目击者，他们的生命安全瞬间悬于一线。平台创始人在全息发布会上含泪道歉，但信任的崩塌已经无法挽回。",
+      "type": "social",
+      "ageRange": [
+        20,
+        65
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮助受害者匿名迁移到安全平台",
+          "effects": {
+            "REP": 3,
+            "TECH": 2,
+            "TRAUMA": 2,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "购买并分析泄露数据",
+          "effects": {
+            "TECH": 2,
+            "REP": -2,
+            "TRAUMA": 2,
+            "MONEY": 300
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开发真正不可追踪的爆料协议",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "媒体",
+        "匿名平台"
+      ]
+    },
+    {
+      "id": 4780,
+      "title": "算法策展人取代编辑",
+      "description": "全国最大的新闻集团宣布裁撤所有人类编辑，全面采用AI算法进行内容策展。算法在效率上远超人类，但其推荐逻辑导致极端内容和情绪化标题的流量暴增，而深度调查报道则被边缘化。新闻编辑部的空椅子上积满了灰尘，而数据中心的指示灯却彻夜闪烁。",
+      "type": "social",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "创办人工编辑的深度新闻通讯",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "MONEY": -50,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "为新闻集团优化策展算法",
+          "effects": {
+            "MONEY": 500,
+            "TECH": 1,
+            "REP": -1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开发个性化新闻质量评估工具",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "MONEY": 100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "媒体",
+        "算法策展"
+      ]
+    },
+    {
+      "id": 4781,
+      "title": "全息真人秀道德边界",
+      "description": "一档热门全息真人秀节目被曝出在参赛者不知情的情况下，通过神经接口实时提取他们的真实情感反应并编辑成剧情。参赛者在签约时并未意识到合同的这一隐藏条款，而他们最私密的心理波动已成为全球观众的娱乐消费品。电视台的收视率在丑闻曝光后不降反升。",
+      "type": "social",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持参赛者起诉电视台",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1,
+            "MONEY": -50
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "利用丑闻制作揭露纪录片",
+          "effects": {
+            "REP": 3,
+            "MONEY": 300,
+            "TRAUMA": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "为电视台提供危机公关",
+          "effects": {
+            "MONEY": 500,
+            "REP": -2,
+            "HUMAN": -1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "媒体",
+        "真人秀"
+      ]
+    },
+    {
+      "id": 4782,
+      "title": "认知偏差武器化",
+      "description": "一份军事承包商泄露的文件显示，军方正在系统性地研究如何将已知的认知偏差武器化，以设计更有效的信息战策略。从确认偏误到可得性启发，每一种心理弱点都被编入了信息武器库。更可怕的是，这些研究成果已经通过学术合作流入民间营销领域。",
+      "type": "social",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "公开文件揭露认知武器研究",
+          "effects": {
+            "REP": 3,
+            "TRAUMA": 2,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "开发认知防护训练工具",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "HUMAN": 2,
+            "MONEY": -50
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "将认知武器原理用于营销",
+          "effects": {
+            "MONEY": 600,
+            "REP": -2,
+            "HUMAN": -1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "媒体",
+        "认知武器"
+      ]
+    },
+    {
+      "id": 4783,
+      "title": "去中心化媒体实验",
+      "description": "一群技术理想主义者启动了一个基于区块链的去中心化新闻网络，试图消除传统媒体的 gatekeeper 角色。然而，缺乏专业编辑的内容生态迅速被阴谋论和虚假信息淹没，而真实的调查报道却难以获得关注。理想主义的霓虹灯在现实的黑暗中显得如此苍白。",
+      "type": "social",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入去中心化媒体并提供专业编辑",
+          "effects": {
+            "REP": 2,
+            "TECH": 2,
+            "HUMAN": 1,
+            "MONEY": -50
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "开发去中心化内容信誉系统",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "利用混乱传播自己的叙事",
+          "effects": {
+            "REP": -1,
+            "MONEY": 400,
+            "HUMAN": -1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "媒体",
+        "去中心化"
+      ]
+    },
+    {
+      "id": 4784,
+      "title": "感官品牌植入",
+      "description": "一项新技术允许品牌在沉浸式内容中直接向观众的嗅觉和触觉植入感官体验，使消费者在观看节目时真实地闻到或触摸到产品。尽管存在健康风险的警告，娱乐产业迅速采用了这一技术。你的一位朋友因为过敏反应被送入急诊室，而植入的广告仍在继续播放。",
+      "type": "social",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "推动感官广告监管立法",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1,
+            "MONEY": -50
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "为品牌设计感官植入广告",
+          "effects": {
+            "MONEY": 500,
+            "REP": -1,
+            "HUMAN": -1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开发感官广告过滤装置",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "MONEY": 100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "媒体",
+        "感官植入"
+      ]
+    },
+    {
+      "id": 4785,
+      "title": "新闻无人机战争",
+      "description": "两家竞争新闻机构的无人机编队在一场重大事件的报道现场发生了空中冲突，互相干扰拍摄并试图碰撞对方设备。这场新闻无人机战争很快蔓延到更多机构，各家用上了电子干扰、黑客攻击甚至物理撞击。天空中的无人机群在霓虹灯的映照下如同一场末日前奏。",
+      "type": "social",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "开发无人机抗干扰技术",
+          "effects": {
+            "TECH": 2,
+            "MONEY": 200,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "组织新闻机构和平协议",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "MONEY": -30
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "为其中一方提供黑客攻击服务",
+          "effects": {
+            "TECH": 2,
+            "MONEY": 400,
+            "REP": -2,
+            "DEBT": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "媒体",
+        "无人机"
+      ]
+    },
+    {
+      "id": 4786,
+      "title": "虚拟现实新闻创伤",
+      "description": "一家新闻机构推出了全感官沉浸式战争报道，观众可以体验战场上的一切：爆炸的冲击波、受伤者的痛苦和死亡的恐惧。虽然这种报道形式极大地提高了公众对冲突的关注，但许多观众报告了严重的创伤后应激障碍症状，尤其是儿童和青少年。伦理委员会面临艰难抉择。",
+      "type": "social",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持沉浸式报道提高公众意识",
+          "effects": {
+            "REP": -1,
+            "HUMAN": 1,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "推动年龄分级和警示制度",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开发VR内容心理安全防护",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "MONEY": 100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "媒体",
+        "VR新闻"
+      ]
+    },
+    {
+      "id": 4787,
+      "title": "网红政治化浪潮",
+      "description": "一批顶级社交媒体网红突然同时开始推广特定的政治议程，其内容风格从生活方式急剧转向政治宣传。调查显示他们背后有一个协调良好的影响力网络，资金来源不明。年轻粉丝们的政治观点在短短几周内发生了剧烈转变，而他们并未意识到自己正在成为信息战的无意识参与者。",
+      "type": "social",
+      "ageRange": [
+        16,
+        45
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "揭露网红背后的影响力网络",
+          "effects": {
+            "REP": 3,
+            "TECH": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "加入网红营销公司",
+          "effects": {
+            "MONEY": 500,
+            "REP": -2,
+            "HUMAN": -1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "教育年轻人识别影响力操控",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "MONEY": -30
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "媒体",
+        "网红政治"
+      ]
+    },
+    {
+      "id": 4788,
+      "title": "感官过载信息节食",
+      "description": "由于信息过载达到临界点，一种名为信息节食的新生活方式在底层社区流行起来。参与者通过技术手段限制自己的信息摄入，只接收经过严格筛选的低频信息流。然而，这种自我隔离也使他们更容易受到特定信息源的影响，形成了更加封闭的回音室。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "尝试信息节食",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 1,
+            "REP": -1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "开发平衡信息摄入的智能助手",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "MONEY": 100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "利用信息节食者创建封闭营销生态",
+          "effects": {
+            "MONEY": 400,
+            "REP": -1,
+            "HUMAN": -1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "媒体",
+        "信息节食"
+      ]
+    },
+    {
+      "id": 4789,
+      "title": "全息纪念碑战争",
+      "description": "城市中心的全息纪念碑系统遭到黑客攻击，历史人物的影像被替换成了争议性现代人物。这场数字纪念碑战争迅速升级，支持和反对双方的黑客团队在公共空间中展开了一场没有硝烟的视觉战争。市民的视网膜在真假历史的交织中感到眩晕，而历史的叙事权成为了真正的战场。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持纪念碑数字化民主化",
+          "effects": {
+            "REP": 2,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "保护传统历史叙事",
+          "effects": {
+            "REP": -1,
+            "STYLE": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开发全息纪念碑安全防护",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "MONEY": 200
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "媒体",
+        "全息纪念碑"
+      ]
+    },
+    {
+      "id": 4790,
+      "title": "AI艺术版权海啸",
+      "description": "一家AI艺术生成平台被数百名人类艺术家集体起诉，声称平台训练AI时未经授权使用了他们的作品。案件的判决可能重新定义创造力的边界和版权的范围。法庭外，AI生成的艺术品和人类创作并排展示，观众往往无法分辨二者的区别，这让整个辩论更加复杂。",
+      "type": "social",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持人类艺术家维权",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "STYLE": 1,
+            "MONEY": -50
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "支持AI创作的公共领域化",
+          "effects": {
+            "REP": -1,
+            "TECH": 1,
+            "MONEY": 100,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开发AI训练数据授权追踪系统",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": 100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "媒体",
+        "AI版权"
+      ]
+    },
+    {
+      "id": 4791,
+      "title": "实时谎言检测直播",
+      "description": "一种实时谎言检测技术被应用到政治辩论直播中，每位发言者的可信度评分以全息图形式悬浮在其头顶。技术迅速流行，但批评者指出系统对神经多样性和文化差异存在偏见，导致某些群体的诚实回答被标记为谎言。辩论场上的气氛因这些悬浮的数字而变得异常紧张。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持实时谎言检测增加透明度",
+          "effects": {
+            "REP": -1,
+            "TECH": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "揭露谎言检测的偏见",
+          "effects": {
+            "REP": 2,
+            "TECH": 2,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "为辩论平台优化检测算法",
+          "effects": {
+            "MONEY": 400,
+            "TECH": 1,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "媒体",
+        "谎言检测"
+      ]
+    },
+    {
+      "id": 4792,
+      "title": "地下真相广播",
+      "description": "你发现了隐藏在短波频段和暗网节点中的一个地下广播网络，它专门传播被主流媒体封锁的信息。广播员使用合成声音和加密坐标来保护自己，但内容的质量参差不齐，从真实的调查报道到疯狂的阴谋论都有。调谐器在静电噪音中捕捉到了一丝真相的碎片。",
+      "type": "social",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮助地下广播建立事实核查机制",
+          "effects": {
+            "REP": 2,
+            "TECH": 2,
+            "HUMAN": 1,
+            "MONEY": -50
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "利用广播网络传播自己的信息",
+          "effects": {
+            "REP": -1,
+            "MONEY": 300,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向当局举报广播节点",
+          "effects": {
+            "MONEY": 200,
+            "REP": -2,
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "媒体",
+        "地下广播"
+      ]
+    },
+    {
+      "id": 4793,
+      "title": "全息政治广告入侵",
+      "description": "政治竞选团队开始在城市的公共空间投放无法关闭的全息政治广告，这些广告利用视差技术跟随行人移动，甚至能通过面部识别针对个人展示定制内容。市民抱怨说他们在自己家门口都无法逃避政治宣传。城市委员会就是否应该允许这种侵入性广告展开激烈辩论。",
+      "type": "social",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "组织反对侵入性广告的运动",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "为竞选团队优化全息广告",
+          "effects": {
+            "MONEY": 500,
+            "REP": -1,
+            "HUMAN": -1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开发个人广告屏蔽技术",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "MONEY": 100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "媒体",
+        "全息广告"
+      ]
+    },
+    {
+      "id": 4794,
+      "title": "媒体倦怠综合征",
+      "description": "一种新的心理症状被媒体倦怠综合征命名，表现为对新闻信息的完全麻木和回避。神经科学家发现长期暴露于负面新闻和愤怒诱导内容会导致大脑奖励系统的永久性改变。诊所里挤满了无法分辨真实与虚构的患者，而新闻机构的算法仍在不断推送更多相同的内容。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "开发新闻心理健康保护工具",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "HUMAN": 2,
+            "MONEY": -30
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "创办治愈系正能量媒体",
+          "effects": {
+            "REP": 2,
+            "MONEY": 200,
+            "HUMAN": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "利用倦怠情绪推广逃避产品",
+          "effects": {
+            "MONEY": 400,
+            "REP": -1,
+            "HUMAN": -1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "媒体",
+        "媒体倦怠"
+      ]
+    },
+    {
+      "id": 4795,
+      "title": "跨国信息流封锁",
+      "description": "政府在危机期间宣布对外国社交媒体平台实施全面封锁，声称这是为了防止敌对势力的信息渗透。然而，封锁也切断了数百万移民与家人联系的唯一渠道，以及独立记者获取国际信息的来源。技术专家们开始了一场猫鼠游戏，开发新的翻墙工具来突破数字铁幕。",
+      "type": "social",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "开发并分发翻墙工具",
+          "effects": {
+            "TECH": 3,
+            "REP": 3,
+            "TRAUMA": 2,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "支持信息封锁保护国家安全",
+          "effects": {
+            "REP": -1,
+            "MONEY": 100,
+            "HUMAN": -1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "为被封锁者提供替代通信方案",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "HUMAN": 2,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "媒体",
+        "信息封锁"
+      ]
+    },
+    {
+      "id": 4796,
+      "title": "算法推荐极端化",
+      "description": "一份内部研究显示，主流平台的推荐算法在六个月内将普通用户逐步引导至越来越极端的内容，因为极端内容的参与度更高。平台高层在私密会议上被告知了这一发现，但决定不做任何改变，因为极端化直接对应着广告收入的暴增。算法的每一次点击优化都在悄然重塑社会的结构。",
+      "type": "social",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "公开内部研究推动监管",
+          "effects": {
+            "REP": 3,
+            "TRAUMA": 2,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "为平台开发去极端化算法",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": 200
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "利用极端化趋势获利",
+          "effects": {
+            "MONEY": 600,
+            "REP": -2,
+            "HUMAN": -2,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "媒体",
+        "算法极端化"
+      ]
+    },
+    {
+      "id": 4797,
+      "title": "神经接口广告拦截战",
+      "description": "两家公司之间爆发了一场围绕神经接口广告拦截技术的法律和商业战争。一家是试图通过神经接口直接向大脑投放广告的广告巨头，另一家是开发拦截技术的初创企业。诉讼涉及前所未有的法律领域：大脑中的广告拦截是否构成对商业言论的侵犯。",
+      "type": "social",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持神经广告拦截保护思维自由",
+          "effects": {
+            "REP": 2,
+            "TECH": 2,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "为广告巨头开发绕过拦截技术",
+          "effects": {
+            "MONEY": 500,
+            "REP": -2,
+            "HUMAN": -2,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "为法庭开发思维隐私评估标准",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": 150
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "媒体",
+        "神经广告"
+      ]
+    },
+    {
+      "id": 4798,
+      "title": "末日时钟直播",
+      "description": "一位独立记者启动了一个24小时不间断的末日时钟直播，实时展示全球崩溃的各项指标：气候数据、核武紧张度、经济波动和疫情指数。直播迅速成为现象级内容，吸引了数亿观众同时在线观看。然而，持续的末日信息本身就成为了集体焦虑的催化剂，引发了一系列社会异常行为。",
+      "type": "social",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮助记者添加希望与解决方案内容",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": -1,
+            "MONEY": -30
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "利用焦虑情绪销售生存产品",
+          "effects": {
+            "MONEY": 500,
+            "REP": -1,
+            "HUMAN": -1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开发心理健康过滤工具",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "HUMAN": 1,
+            "MONEY": 100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "媒体",
+        "末日直播"
+      ]
+    },
+    {
+      "id": 4799,
+      "title": "真相疲劳症候群",
+      "description": "在真假信息的永恒战争中，一种名为真相疲劳的心理状态在社会中蔓延。人们不再相信任何信息源，包括那些经过严格验证的事实。这种普遍的不信任导致了疫苗接种率下降、阴谋论泛滥和公共政策执行的瘫痪。一位心理学家警告说，当真相本身成为可选项时，文明的根基便开始崩塌。你的社区中也出现了越来越多拒绝相信任何权威的声音。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "创办基于透明溯源的事实核查媒体",
+          "effects": {
+            "REP": 2,
+            "TECH": 2,
+            "HUMAN": 1,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "利用真相疲劳推广自己的叙事",
+          "effects": {
+            "MONEY": 400,
+            "REP": -1,
+            "HUMAN": -1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在社区组织媒体素养工作坊",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "MONEY": -30
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "媒体",
+        "真相疲劳"
+      ]
+    }
+  ]
+}

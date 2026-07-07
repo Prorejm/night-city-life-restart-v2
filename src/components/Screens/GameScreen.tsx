@@ -178,7 +178,7 @@ const EventCard: React.FC<EventCardProps> = ({ entry }) => {
   );
 };
 
-/** EventLog - 中央事件日志（带增强滚动） */
+/** EventLog - 中央事件日志 */
 const EventLog: React.FC = () => {
   const eventLog = useUIStore((s) => s.eventLog);
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -190,7 +190,7 @@ const EventLog: React.FC = () => {
   }, [eventLog.length]);
 
   return (
-    <div className="flex h-full flex-col bg-black/20 min-h-0">
+    <div className="flex flex-col bg-black/20" style={{ height: '100%', minHeight: 0 }}>
       <div className="border-b border-white/5 px-3 py-1 shrink-0">
         <h3 className="font-mono text-xs uppercase tracking-widest text-muted-foreground/50">
           EVENT LOG
@@ -198,8 +198,8 @@ const EventLog: React.FC = () => {
       </div>
       <div
         ref={scrollRef}
-        className="event-log-scroll flex-1 overflow-y-auto min-h-0"
-        style={{ maxHeight: '100%' }}
+        className="event-log-scroll overflow-y-auto"
+        style={{ flex: 1, minHeight: 0 }}
       >
         {eventLog.length === 0 ? (
           <div className="flex h-full items-center justify-center">

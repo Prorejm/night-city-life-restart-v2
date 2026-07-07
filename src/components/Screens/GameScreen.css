@@ -19,14 +19,20 @@
 
 .game-left {
   grid-area: left;
+  min-height: 0;
+  overflow: hidden;
 }
 
 .game-center {
   grid-area: center;
+  min-height: 0;
+  overflow: hidden;
 }
 
 .game-right {
   grid-area: right;
+  min-height: 0;
+  overflow: hidden;
 }
 
 .game-footer {

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useMemo } from 'react';
+import { useEffect, useRef } from 'react';
 import { cn } from '@/lib/utils';
 import useGameStore from '@/stores/gameStore';
 import usePlayerStore from '@/stores/playerStore';
@@ -182,32 +182,9 @@ const EventCard: React.FC<EventCardProps> = ({ entry }) => {
   );
 };
 
-/** EventLog - 中央事件日志（终端式滚动：新内容始终在最底，顶部自动上推隐藏） */
-const MAX_VISIBLE_EVENTS = 100;
-
+/** EventLog - 终端式事件日志：column-reverse实现自然底部对齐 */
 const EventLog: React.FC = () => {
   const eventLog = useUIStore((s) => s.eventLog);
-  const scrollRef = useRef<HTMLDivElement>(null);
-
-  // 用 useRef 存储上一次条目数，避免不必要的渲染干扰
-  const prevLenRef = useRef(0);
-
-  // 新事件到达时强制向下滚，让旧内容自然推上去
-  useEffect(() => {
-    if (scrollRef.current && eventLog.length > prevLenRef.current) {
-      requestAnimationFrame(() => {
-        if (scrollRef.current) {
-          scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
-        }
-      });
-    }
-    prevLenRef.current = eventLog.length;
-  }, [eventLog.length]);
-
-  // 限制DOM条目数：只保留最新 MAX_VISIBLE_EVENTS 条
-  const visibleLog = eventLog.length > MAX_VISIBLE_EVENTS
-    ? eventLog.slice(eventLog.length - MAX_VISIBLE_EVENTS)
-    : eventLog;
 
   return (
     <div className="flex flex-col bg-black/20" style={{ height: '100%', minHeight: 0 }}>
@@ -217,23 +194,29 @@ const EventLog: React.FC = () => {
         </h3>
       </div>
       <div
-        ref={scrollRef}
         className="event-log-scroll overflow-y-auto"
-        style={{ flex: 1, minHeight: 0 }}
+        style={{
+          flex: 1,
+          minHeight: 0,
+          display: 'flex',
+          flexDirection: 'column-reverse',
+        }}
       >
-        {visibleLog.length === 0 ? (
-          <div className="flex h-full items-center justify-center">
-            <p className="font-mono text-sm text-muted-foreground/30">
-              等待事件到来...
-            </p>
-          </div>
-        ) : (
-          <div className="space-y-1 p-2">
-            {visibleLog.map((entry) => (
-              <EventCard key={entry.id} entry={entry} />
-            ))}
-          </div>
-        )}
+        <div className="p-2">
+          {eventLog.length === 0 ? (
+            <div className="flex items-center justify-center py-8">
+              <p className="font-mono text-sm text-muted-foreground/30">
+                等待事件到来...
+              </p>
+            </div>
+          ) : (
+            <div className="space-y-1">
+              {eventLog.map((entry) => (
+                <EventCard key={entry.id} entry={entry} />
+              ))}
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

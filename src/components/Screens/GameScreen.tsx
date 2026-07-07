@@ -42,27 +42,22 @@ const HudHeader: React.FC = () => {
   );
 };
 
-/** HudPanel - 左侧状态面板 */
+/** HudPanel - 左侧状态面板（加大字体版） */
 const HudPanel: React.FC = () => {
   const attributes = usePlayerStore((s) => s.attributes);
   const housingLevel = usePlayerStore((s) => s.housingLevel);
   const insuranceLevel = usePlayerStore((s) => s.insuranceLevel);
 
   const maxValues: Record<string, number> = {
-    STYLE: 100,
-    TECH: 100,
-    CHROME: 100,
-    MONEY: 9999,
-    HUMAN: 100,
-    LIFE: 100,
-    TRAUMA: 100,
+    STYLE: 100, TECH: 100, CHROME: 100, MONEY: 9999, HUMAN: 100,
+    LIFE: 100, TRAUMA: 100,
   };
 
   return (
     <div className="flex h-full flex-col gap-2 border-r border-neon-cyan/10 bg-black/30 p-3">
       {/* 核心属性 */}
       <div className="mb-1">
-        <h4 className="mb-2 font-mono text-[10px] uppercase tracking-widest text-muted-foreground/60">
+        <h4 className="mb-2 font-mono text-sm uppercase tracking-widest text-muted-foreground/60">
           CORE STATS
         </h4>
         <div className="space-y-2">
@@ -72,9 +67,9 @@ const HudPanel: React.FC = () => {
             const pct = Math.min(100, (val / max) * 100);
             return (
               <div key={key}>
-                <div className="mb-0.5 flex items-center justify-between font-mono text-[10px]">
+                <div className="mb-0.5 flex items-center justify-between font-mono text-xs">
                   <span className="text-muted-foreground">{STAT_NAMES[key]}</span>
-                  <span className="text-white/80">{Math.round(val)}</span>
+                  <span className="text-white/90 font-bold text-sm">{Math.round(val)}</span>
                 </div>
                 <div className="hud-stat-bar">
                   <div
@@ -90,10 +85,10 @@ const HudPanel: React.FC = () => {
 
       {/* 衍生属性 */}
       <div>
-        <h4 className="mb-2 font-mono text-[10px] uppercase tracking-widest text-muted-foreground/60">
+        <h4 className="mb-2 font-mono text-sm uppercase tracking-widest text-muted-foreground/60">
           DERIVED
         </h4>
-        <div className="space-y-1 font-mono text-[10px]">
+        <div className="space-y-1 font-mono text-xs">
           {(['LIFE', 'TRAUMA', 'ADDICTION', 'DEBT', 'REP'] as const).map((key) => {
             const val = attributes[key] ?? 0;
             const max = maxValues[key] ?? 100;
@@ -108,7 +103,7 @@ const HudPanel: React.FC = () => {
               <div key={key}>
                 <div className="flex items-center justify-between">
                   <span className="text-muted-foreground">{STAT_NAMES[key]}</span>
-                  <span className={color}>{Math.round(val)}</span>
+                  <span className={cn('font-bold text-sm', color)}>{Math.round(val)}</span>
                 </div>
                 <div className="hud-stat-bar">
                   <div
@@ -124,14 +119,14 @@ const HudPanel: React.FC = () => {
 
       {/* 状态信息 */}
       <div className="mt-auto border-t border-white/5 pt-2">
-        <div className="space-y-1 font-mono text-[10px] text-muted-foreground">
+        <div className="space-y-1 font-mono text-xs text-muted-foreground">
           <div className="flex justify-between">
             <span>居住等级</span>
-            <span className="text-neon-cyan">{housingLevel}</span>
+            <span className="text-neon-cyan font-bold">{housingLevel}</span>
           </div>
           <div className="flex justify-between">
             <span>保险</span>
-            <span className="text-neon-magenta">{insuranceLevel}</span>
+            <span className="text-neon-magenta font-bold">{insuranceLevel}</span>
           </div>
         </div>
       </div>
@@ -148,10 +143,10 @@ const EventCard: React.FC<EventCardProps> = ({ entry }) => {
   return (
     <div className="event-card-enter border-l-2 border-neon-cyan/30 bg-white/[0.02] px-4 py-3">
       <div className="mb-1 flex items-center justify-between">
-        <span className="font-display text-sm font-bold text-neon-cyan">
+        <span className="font-display text-base font-bold text-neon-cyan">
           {entry.title}
         </span>
-        <span className="font-mono text-[11px] text-muted-foreground/60">
+        <span className="font-mono text-xs text-muted-foreground/60">
           T{entry.turn} Age {Math.round(entry.age * 10) / 10}
         </span>
       </div>
@@ -160,24 +155,30 @@ const EventCard: React.FC<EventCardProps> = ({ entry }) => {
       </p>
       {entry.effects && Object.keys(entry.effects).length > 0 && (
         <div className="mt-2 flex flex-wrap gap-2">
-          {Object.entries(entry.effects).map(([k, v]) => (
-            <span
-              key={k}
-              className={cn(
-                'font-mono text-[11px]',
-                (v ?? 0) > 0 ? 'text-green-400/70' : 'text-red-400/70'
-              )}
-            >
-              {k} {(v ?? 0) > 0 ? '+' : ''}{v}
-            </span>
-          ))}
+          {Object.entries(entry.effects).map(([k, v]) => {
+            const val = v ?? 0;
+            const isPositive = val > 0;
+            return (
+              <span
+                key={k}
+                className={cn(
+                  'font-mono text-xs px-1.5 py-0.5 rounded-sm border',
+                  isPositive
+                    ? 'text-neon-cyan bg-neon-cyan/10 border-neon-cyan/20'
+                    : 'text-neon-red bg-neon-red/10 border-neon-red/20'
+                )}
+              >
+                {k} {isPositive ? '+' : ''}{val}
+              </span>
+            );
+          })}
         </div>
       )}
     </div>
   );
 };
 
-/** EventLog - 中央事件日志 */
+/** EventLog - 中央事件日志（带增强滚动） */
 const EventLog: React.FC = () => {
   const eventLog = useUIStore((s) => s.eventLog);
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -189,19 +190,20 @@ const EventLog: React.FC = () => {
   }, [eventLog.length]);
 
   return (
-    <div className="flex h-full flex-col bg-black/20">
-      <div className="border-b border-white/5 px-3 py-1">
-        <h3 className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground/50">
+    <div className="flex h-full flex-col bg-black/20 min-h-0">
+      <div className="border-b border-white/5 px-3 py-1 shrink-0">
+        <h3 className="font-mono text-xs uppercase tracking-widest text-muted-foreground/50">
           EVENT LOG
         </h3>
       </div>
       <div
         ref={scrollRef}
-        className="event-log-scroll flex-1 overflow-y-auto"
+        className="event-log-scroll flex-1 overflow-y-auto min-h-0"
+        style={{ maxHeight: '100%' }}
       >
         {eventLog.length === 0 ? (
           <div className="flex h-full items-center justify-center">
-            <p className="font-mono text-xs text-muted-foreground/30">
+            <p className="font-mono text-sm text-muted-foreground/30">
               等待事件到来...
             </p>
           </div>
@@ -255,13 +257,15 @@ const RightPanel: React.FC = () => {
 };
 
 /** Footer - 底部控制栏 */
-const Footer: React.FC = () => {
+interface FooterProps {
+  processTurn: () => void;
+}
+
+const Footer: React.FC<FooterProps> = ({ processTurn }) => {
   const autoMode = useGameStore((s) => s.autoMode);
   const autoSpeed = useGameStore((s) => s.autoSpeed);
   const toggleAuto = useGameStore((s) => s.toggleAuto);
   const setAutoSpeed = useGameStore((s) => s.setAutoSpeed);
-
-  const { processTurn } = useGameEngine();
 
   const handleContinue = () => {
     processTurn();
@@ -372,7 +376,7 @@ const GameScreen: React.FC = () => {
 
       {/* 底部控制栏 */}
       <div className="game-footer">
-        <Footer />
+        <Footer processTurn={processTurn} />
       </div>
     </div>
   );

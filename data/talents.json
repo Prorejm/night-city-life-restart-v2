@@ -1,8 +1,8 @@
 {
   "meta": {
     "description": "天赋数据 - Talent Database",
-    "version": "1.0",
-    "totalCount": 20
+    "version": "2.0",
+    "totalCount": 82
   },
   "talents": [
     {
@@ -183,6 +183,546 @@
       "grade": 1,
       "effects": { "STYLE": 2, "MONEY": 300 },
       "tags": ["企业", "社交"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 21,
+      "name": "阿片耐受",
+      "description": "长期与阿片类药物打交道让你的身体产生了耐药性。成瘾风险大幅降低，但人性感知变得迟钝。",
+      "grade": 0,
+      "effects": { "HUMAN": -2, "ADDICTION": -2 },
+      "tags": ["健康", "负面", "药物"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 22,
+      "name": "贫困烙印",
+      "description": "贫困的童年刻进了你的骨子里。你对金钱格外珍惜，但在上流社会面前总有一种挥之不去的自卑感。",
+      "grade": 0,
+      "effects": { "MONEY": 200, "REP": -1 },
+      "tags": ["社会", "经济", "负面"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 23,
+      "name": "逆境求生",
+      "description": "你在最恶劣的环境中长大，早就学会了如何活下去。生命值提升，精神创伤恢复更快。",
+      "grade": 1,
+      "effects": { "LIFE": 5, "TRAUMA": -2 },
+      "tags": ["生存", "抗性", "成长"],
+      "rebirthInheritable": true
+    },
+    {
+      "id": 24,
+      "name": "无家可归记忆",
+      "description": "曾经露宿街头的经历让你对危险有着野兽般的直觉。虽然穿衣品位不敢恭维，但没人能在暗处偷袭你。",
+      "grade": 0,
+      "effects": { "STYLE": -1, "LIFE": 3 },
+      "tags": ["生存", "负面", "感知"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 25,
+      "name": "医疗债务",
+      "description": "巨额的医疗账单让你对医疗体系了如指掌。你清楚每种药物的真实成本和疗效，但也背负着沉重的债务。",
+      "grade": 0,
+      "effects": { "DEBT": 2, "HUMAN": 1 },
+      "tags": ["医疗", "经济", "负面"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 26,
+      "name": "底层之友",
+      "description": "你在底层社区有着深厚的人脉关系。街头巷尾的每一个角落都有你的朋友，消息灵通。",
+      "grade": 1,
+      "effects": { "REP": 3 },
+      "tags": ["社交", "街头", "人脉"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 27,
+      "name": "流浪者血脉",
+      "description": "流浪者的血液在你血管中流淌。无论走到哪里，你都能迅速适应环境，找到生存之道。",
+      "grade": 1,
+      "effects": { "STYLE": 1, "TECH": 1, "LIFE": 1 },
+      "tags": ["生存", "适应", "流浪"],
+      "rebirthInheritable": true
+    },
+    {
+      "id": 28,
+      "name": "急诊室常客",
+      "description": "你进出急诊室的次数比去便利店还多。久病成医，你对各种外伤处理和医疗知识了如指掌。",
+      "grade": 0,
+      "effects": { "TRAUMA": -3, "HUMAN": 2 },
+      "tags": ["医疗", "生存", "经验"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 29,
+      "name": "移民之子",
+      "description": "作为移民后代，你在两种文化间游刃有余。能够理解不同群体的思维方式，社交圈远比常人广阔。",
+      "grade": 1,
+      "effects": { "REP": 2, "STYLE": 1 },
+      "tags": ["社交", "文化", "适应"],
+      "rebirthInheritable": true
+    },
+    {
+      "id": 30,
+      "name": "工业区后代",
+      "description": "在工业区长大的你满手机油味。对机械和电路有着本能的理解，但时尚感嘛……算了吧。",
+      "grade": 0,
+      "effects": { "TECH": 3, "STYLE": -1 },
+      "tags": ["技术", "机械", "负面"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 31,
+      "name": "SOLO独狼",
+      "description": "你是为战斗而生的独行侠。单兵作战能力极强，不需要队友也能搞定一切敌人。",
+      "grade": 1,
+      "effects": { "STYLE": 3, "LIFE": 2 },
+      "tags": ["战斗", "独行", "职业"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 32,
+      "name": "NETRUNNER网络漫游者",
+      "description": "赛博空间就是你的第二故乡。你可以在数据海洋中自由遨游，入侵任何联网系统如入无人之境。",
+      "grade": 2,
+      "effects": { "TECH": 5 },
+      "tags": ["黑客", "网络", "职业"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 33,
+      "name": "TECHNIE技师",
+      "description": "扳手和焊枪就是你的画笔。没有你修不好的设备，没有你改不出的花样。技术就是你的超能力。",
+      "grade": 1,
+      "effects": { "TECH": 4 },
+      "tags": ["技术", "机械", "职业"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 34,
+      "name": "MEDTECH医疗技师",
+      "description": "你掌握了从战场急救到高端手术的全套医疗技术。在夜之城，一个好医生比一把好武器更稀缺。",
+      "grade": 1,
+      "effects": { "HUMAN": 2, "TECH": 2 },
+      "tags": ["医疗", "技术", "职业"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 35,
+      "name": "MEDIA媒体人",
+      "description": "你是真相的掘墓人。一支笔、一个镜头就能撼动整个夜之城的权力格局。笔杆子比枪杆子更致命。",
+      "grade": 1,
+      "effects": { "STYLE": 3, "REP": 2 },
+      "tags": ["媒体", "社交", "职业"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 36,
+      "name": "EXEC公司高管",
+      "description": "你在企业帝国的玻璃塔中打拼多年。西装革履之下，是比战场更残酷的办公室政治和商业博弈。",
+      "grade": 2,
+      "effects": { "STYLE": 3, "MONEY": 300 },
+      "tags": ["企业", "经济", "职业"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 37,
+      "name": "LAWMAN执法者",
+      "description": "你曾经是法律的化身。在黑白两道都有你的人脉，徽章既是权力也是枷锁。正义？那得看是谁的正义。",
+      "grade": 1,
+      "effects": { "REP": 3 },
+      "tags": ["执法", "社交", "职业"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 38,
+      "name": "FIXER中介者",
+      "description": "夜之城的每一笔生意背后都有你的影子。没有你牵不了的头，没有你谈不拢的价。你只赚差价。",
+      "grade": 2,
+      "effects": { "REP": 3, "MONEY": 200 },
+      "tags": ["交易", "社交", "职业"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 39,
+      "name": "ROCKERBOY摇滚小子",
+      "description": "你的音乐可以点燃整个夜之城。站在舞台上你就是万千人心的主宰，一把吉他比一颗炸弹更有威力。",
+      "grade": 1,
+      "effects": { "STYLE": 4, "REP": 2 },
+      "tags": ["艺术", "社交", "职业"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 40,
+      "name": "NOMAD流浪者",
+      "description": "你属于荒野和公路。离开城市的水泥森林你反而更加如鱼得水。引擎的轰鸣就是你最好的背景音乐。",
+      "grade": 1,
+      "effects": { "TECH": 2, "LIFE": 3 },
+      "tags": ["流浪", "生存", "职业"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 41,
+      "name": "铁血战士",
+      "description": "你天生就是战士的料。在战斗中你总能占据上风，敌人见到你都要抖三抖。战斗是你的本能。",
+      "grade": 1,
+      "effects": { "STYLE": 1, "LIFE": 3 },
+      "tags": ["战斗", "身体", "进攻"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 42,
+      "name": "暗影行者",
+      "description": "你像影子一样融入黑暗。没有人能察觉到你的存在，直到为时已晚。潜行是你最强大的武器。",
+      "grade": 0,
+      "effects": { "STYLE": 2 },
+      "tags": ["潜行", "敏捷", "战斗"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 43,
+      "name": "重火力爱好者",
+      "description": "口径即是正义！你精通各种重型武器，火力压制是你的拿手好戏。炸就完事了。",
+      "grade": 0,
+      "effects": { "STYLE": 1, "TECH": 2 },
+      "tags": ["武器", "火力", "战斗"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 44,
+      "name": "护甲专精",
+      "description": "你知道如何把防具的效果发挥到极致。同样的护甲在你身上能多挡好几发子弹，多扛好几刀。",
+      "grade": 0,
+      "effects": { "LIFE": 5 },
+      "tags": ["防御", "护甲", "生存"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 45,
+      "name": "快速反应",
+      "description": "你的反射神经快如闪电。子弹从你耳边擦过你却连眼皮都不眨一下。速度就是你的护甲。",
+      "grade": 1,
+      "effects": { "STYLE": 2, "LIFE": 2 },
+      "tags": ["敏捷", "反应", "战斗"],
+      "rebirthInheritable": true
+    },
+    {
+      "id": 46,
+      "name": "危机感知",
+      "description": "你拥有超越常人的危机预感能力。危险来临之前，你的后颈就会感到一阵寒意。从不被偷袭。",
+      "grade": 1,
+      "effects": { "STYLE": 1, "TRAUMA": -2 },
+      "tags": ["感知", "生存", "直觉"],
+      "rebirthInheritable": true
+    },
+    {
+      "id": 47,
+      "name": "忍痛能力",
+      "description": "疼痛对你来说不过是另一种感觉。你能在重伤情况下依然保持清醒和战斗能力，意志坚如钢铁。",
+      "grade": 1,
+      "effects": { "TRAUMA": -3 },
+      "tags": ["抗性", "意志", "生存"],
+      "rebirthInheritable": true
+    },
+    {
+      "id": 48,
+      "name": "野外生存",
+      "description": "你可以在最恶劣的自然环境中生存。没有食物和水？那都不是问题。荒野就是你的家。",
+      "grade": 0,
+      "effects": { "LIFE": 5 },
+      "tags": ["生存", "野外", "适应"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 49,
+      "name": "城市求生",
+      "description": "钢筋水泥的丛林就是你的猎场。你知道每一处安全的角落、每一条逃跑路线和每一个能过夜的地方。",
+      "grade": 0,
+      "effects": { "STYLE": 3 },
+      "tags": ["生存", "街头", "城市"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 50,
+      "name": "资源回收",
+      "description": "垃圾在别人眼里是废品，在你眼里是宝藏。你总能找到别人忽略的值钱东西，变废为宝。",
+      "grade": 0,
+      "effects": { "MONEY": 100 },
+      "tags": ["经济", "生存", "回收"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 51,
+      "name": "说服专家",
+      "description": "你的话语有着难以抗拒的说服力。再顽固的人也会被你的逻辑和魅力打动，心甘情愿地点头。",
+      "grade": 1,
+      "effects": { "STYLE": 2, "REP": 2 },
+      "tags": ["社交", "说服", "魅力"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 52,
+      "name": "谎言艺术",
+      "description": "说谎对你来说就像呼吸一样自然。你的表情、语气和肢体语言都天衣无缝，测谎仪也拿你没办法。",
+      "grade": 0,
+      "effects": { "STYLE": 3 },
+      "tags": ["社交", "欺骗", "表演"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 53,
+      "name": "察言观色",
+      "description": "你能从微表情和细微动作中读出他人的真实想法。没人能在你面前撒谎，你总能看穿伪装。",
+      "grade": 1,
+      "effects": { "HUMAN": 2 },
+      "tags": ["社交", "洞察", "心理"],
+      "rebirthInheritable": true
+    },
+    {
+      "id": 54,
+      "name": "魅力光环",
+      "description": "你有一种让人无法忽视的魅力磁场。走进任何房间所有人都会不自觉地看向你，你是全场的焦点。",
+      "grade": 1,
+      "effects": { "STYLE": 5 },
+      "tags": ["魅力", "社交", "气场"],
+      "rebirthInheritable": true
+    },
+    {
+      "id": 55,
+      "name": "谈判专家",
+      "description": "你深谙谈判的艺术。每一次交易你都能让对方觉得占了便宜，实际上赢家永远是你。空手套白狼是基本功。",
+      "grade": 1,
+      "effects": { "STYLE": 2, "MONEY": 200 },
+      "tags": ["交易", "社交", "经济"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 56,
+      "name": "社交变色龙",
+      "description": "你可以在任何社交圈子里如鱼得水。从底层酒吧到企业晚宴，你都知道该说什么、做什么，绝不冷场。",
+      "grade": 2,
+      "effects": { "STYLE": 2, "REP": 2 },
+      "tags": ["社交", "适应", "魅力"],
+      "rebirthInheritable": true
+    },
+    {
+      "id": 57,
+      "name": "机械直觉",
+      "description": "你对机械装置有着天生的直觉。看一眼就知道怎么拆，摸一下就知道怎么修。机械在你手中会说话。",
+      "grade": 1,
+      "effects": { "TECH": 4 },
+      "tags": ["机械", "技术", "直觉"],
+      "rebirthInheritable": true
+    },
+    {
+      "id": 58,
+      "name": "编程天才",
+      "description": "代码就是你用来改变世界的咒语。你可以用键盘做别人用枪都做不了的事。算法是你的魔法。",
+      "grade": 2,
+      "effects": { "TECH": 5 },
+      "tags": ["编程", "黑客", "技术"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 59,
+      "name": "数据挖掘",
+      "description": "你擅长从海量数据中找出有价值的信息。在信息时代，数据就是最硬的通货，而你拥有最锋利的锄头。",
+      "grade": 1,
+      "effects": { "TECH": 3 },
+      "tags": ["数据", "情报", "技术"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 60,
+      "name": "逻辑推理",
+      "description": "你的头脑像计算机一样精确。再复杂的局面在你面前都不过是清晰的逻辑链，你总能找到最优解。",
+      "grade": 0,
+      "effects": { "TECH": 2, "STYLE": 1 },
+      "tags": ["逻辑", "分析", "智力"],
+      "rebirthInheritable": true
+    },
+    {
+      "id": 61,
+      "name": "快速学习",
+      "description": "你的大脑像海绵一样吸收知识。学习新技能的速度是常人的数倍，看一眼就能模仿个七八分。",
+      "grade": 1,
+      "effects": { "TECH": 3 },
+      "tags": ["学习", "成长", "智力"],
+      "rebirthInheritable": true
+    },
+    {
+      "id": 62,
+      "name": "系统分析",
+      "description": "你总能一眼看出系统、建筑或计划中的薄弱环节。找到弱点就等于找到了突破口。没有完美的防御。",
+      "grade": 1,
+      "effects": { "TECH": 3, "STYLE": 1 },
+      "tags": ["分析", "战术", "技术"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 63,
+      "name": "玻璃下巴",
+      "description": "你的身体素质堪忧，经不起任何打击。一次普通的碰撞可能就会让你躺上好几天，这就是命。",
+      "grade": 0,
+      "effects": { "LIFE": -10, "TRAUMA": 2 },
+      "tags": ["负面", "身体", "脆弱"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 64,
+      "name": "药物敏感",
+      "description": "你的身体对任何化学物质都异常敏感。医生开的普通止痛药都可能让你陷入成瘾的深渊。",
+      "grade": 0,
+      "effects": { "ADDICTION": 2 },
+      "tags": ["负面", "药物", "健康"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 65,
+      "name": "孤星",
+      "description": "你习惯了独来独往，与人打交道的技能严重退化。团队合作对你来说是一种折磨，社交是一种负担。",
+      "grade": 0,
+      "effects": { "REP": -2, "STYLE": -2 },
+      "tags": ["负面", "独行", "社交"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 66,
+      "name": "信任危机",
+      "description": "过去的经历让你极度不信任他人。向你伸出援手的人往往会被你的冷漠和猜疑拒之门外。",
+      "grade": 0,
+      "effects": { "HUMAN": -2, "REP": -1 },
+      "tags": ["负面", "心理", "社交"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 67,
+      "name": "不死之身",
+      "description": "死亡对你来说只是一个概念。每次生命垂危时你的身体都会爆发出惊人的再生能力，每局可濒死恢复两次。",
+      "grade": 3,
+      "effects": { "LIFE": 10, "TRAUMA": -5 },
+      "tags": ["传奇", "生存", "恢复"],
+      "rebirthInheritable": true
+    },
+    {
+      "id": 68,
+      "name": "传奇黑客",
+      "description": "赛博空间在你面前没有秘密。黑墙、ICE、AI防火墙在你面前都形同虚设，没有你入侵不了的系统。",
+      "grade": 3,
+      "effects": { "TECH": 10 },
+      "tags": ["传奇", "黑客", "网络"],
+      "rebirthInheritable": true
+    },
+    {
+      "id": 69,
+      "name": "企业杀手",
+      "description": "你对企业有着刻骨的仇恨并且知道如何精准打击它们的要害。每一个企业高管都是你的猎物。",
+      "grade": 3,
+      "effects": { "STYLE": 3, "REP": 3, "TECH": 3 },
+      "tags": ["传奇", "战斗", "企业"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 70,
+      "name": "群众领袖",
+      "description": "你有着超凡的号召力，一言一行都能点燃群众的情绪。站在你身后的人足以撼动夜之城的根基。",
+      "grade": 3,
+      "effects": { "STYLE": 5, "REP": 5 },
+      "tags": ["传奇", "领导", "群众"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 71,
+      "name": "数据先知",
+      "description": "你从数据的潮汐中看到了未来的碎片。虽然只是概率，但在夜之城，知道即将发生什么就是最大的力量。",
+      "grade": 3,
+      "effects": { "TECH": 5, "STYLE": 3 },
+      "tags": ["传奇", "数据", "预知"],
+      "rebirthInheritable": true
+    },
+    {
+      "id": 72,
+      "name": "义体化身",
+      "description": "你的身体对赛博改造有着完美的兼容性。别人的身体极限对你来说只是起点，你可以无限接近纯粹机械。",
+      "grade": 3,
+      "effects": { "CHROME": -10, "TECH": 5 },
+      "tags": ["传奇", "义体", "改造"],
+      "rebirthInheritable": true
+    },
+    {
+      "id": 73,
+      "name": "纳米共生",
+      "description": "纳米机器人在你的体内与细胞共生。它们会持续修复你的身体损伤，清除毒素，让你缓慢但持续地恢复。",
+      "grade": 3,
+      "effects": { "LIFE": 10, "HUMAN": 3 },
+      "tags": ["传奇", "纳米", "医疗"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 74,
+      "name": "命运编织者",
+      "description": "你似乎能感知到命运线的脉络。当你对命运的安排不满时，可以尝试重新编织它——获得一次重抽天赋的机会。",
+      "grade": 3,
+      "effects": { "STYLE": 5, "TECH": 5 },
+      "tags": ["传奇", "命运", "特殊"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 75,
+      "name": "天选之人",
+      "description": "冥冥之中有某种力量在眷顾着你。你的每一次努力都会获得超额回报，所有的天赋效果额外增强。",
+      "grade": 3,
+      "effects": { "STYLE": 5, "TECH": 5, "REP": 5 },
+      "tags": ["传奇", "命运", "全能"],
+      "rebirthInheritable": true
+    },
+    {
+      "id": 78,
+      "name": "黑色钱包",
+      "description": "你的账户里有一笔来历不明的巨款。不管来源是什么，有了钱才能在夜之城活下去，而且活得很好。",
+      "grade": 2,
+      "effects": { "MONEY": 1000 },
+      "tags": ["经济", "史诗", "财富"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 79,
+      "name": "夜城活地图",
+      "description": "你对夜之城的每一条街道、每一个角落都了如指掌。迷路这种事不会发生在你身上，抄近道是你的日常。",
+      "grade": 1,
+      "effects": { "STYLE": 2, "TECH": 1 },
+      "tags": ["城市", "导航", "生存"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 80,
+      "name": "街头艺术家",
+      "description": "涂鸦、音乐、行为艺术——你用整个城市作为你的画布。艺术是你反抗这个世界的方式，也是你的声音。",
+      "grade": 0,
+      "effects": { "STYLE": 3 },
+      "tags": ["艺术", "街头", "表达"],
+      "rebirthInheritable": false
+    },
+    {
+      "id": 81,
+      "name": "药品知识",
+      "description": "你是行走的药典。你知道每一种药物的成分、效果和副作用，能用最安全的方式用药，效果加倍风险减半。",
+      "grade": 1,
+      "effects": { "HUMAN": 1, "ADDICTION": -1, "TECH": 1 },
+      "tags": ["药物", "医疗", "知识"],
+      "rebirthInheritable": true
+    },
+    {
+      "id": 82,
+      "name": "义体收藏家",
+      "description": "你是义体改装的行家，知道去哪里淘到最好的二手货。每一件义体你都能以最低价拿下，改装成本大降。",
+      "grade": 1,
+      "effects": { "CHROME": -3, "MONEY": 200 },
+      "tags": ["义体", "经济", "收藏"],
       "rebirthInheritable": false
     }
   ]

@@ -1,0 +1,5191 @@
+{
+  "events": [
+    {
+      "id": 4200,
+      "title": "数字心理治疗首次体验",
+      "description": "你预约了一位AI心理治疗师，它通过神经接口直接读取你的情绪波动。冷蓝色的光在你视网膜上投射出安抚图案，它用平静的合成音引导你回顾最近的创伤。治疗结束时，你的神经芯片释放了微量的镇静剂。你感到一种陌生的平静，但不确定这是真实的治愈还是数字麻醉。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "继续预约完整的数字心理治疗疗程",
+          "effects": {
+            "TRAUMA": -5,
+            "HUMAN": 3,
+            "MONEY": -800,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只做这一次，以后靠自己调节",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝AI治疗，觉得它不懂人类",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": -1
+      },
+      "tags": [
+        "心理",
+        "治疗"
+      ]
+    },
+    {
+      "id": 4201,
+      "title": "AI心理医生的诊断",
+      "description": "AI心理医生花了三十分钟扫描你的神经图谱，给出了一个让你不安的诊断结果。它说你患有'赛博适应性情感障碍'，需要长期神经调节。诊断报告显示你的多巴胺受体已经因长期数字刺激而钝化。你盯着报告上那些冰冷的数字，不知道该信还是该怕。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受诊断并开始神经调节治疗",
+          "effects": {
+            "TRAUMA": -3,
+            "HUMAN": 2,
+            "MONEY": -600,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "寻求第二个人类心理医生的意见",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 3,
+            "MONEY": -400
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "无视诊断，认为自己没问题",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -2,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "心理",
+        "治疗"
+      ]
+    },
+    {
+      "id": 4202,
+      "title": "虚拟现实暴露疗法",
+      "description": "治疗师让你戴上VR头显，进入一个模拟你创伤场景的虚拟世界。逼真的画面让你的心跳加速，汗水浸湿了手心。系统引导你一步步直面恐惧，每次你感到不堪重负时都会暂停。几个小时的疗程后，你摘下头显，感到精疲力竭但有些释然。虚拟世界的边界开始与现实模糊。",
+      "type": "medical",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "完成全部暴露疗法课程",
+          "effects": {
+            "TRAUMA": -6,
+            "HUMAN": 4,
+            "MONEY": -1000,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "中途退出，实在太痛苦了",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -2,
+            "ADDICTION": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "心理",
+        "治疗"
+      ]
+    },
+    {
+      "id": 4203,
+      "title": "神经反馈训练",
+      "description": "你坐在一间安静的房间里，头上贴满了电极，看着屏幕上自己的脑波图像。治疗师让你通过冥想来控制波形，每当你成功让波形平稳时，屏幕就会显示奖励动画。这需要极大的专注力和耐心。训练结束后你感到头脑清醒了许多，但也有人因此产生了新的焦虑。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "坚持每天进行神经反馈训练",
+          "effects": {
+            "TRAUMA": -4,
+            "HUMAN": 3,
+            "TECH": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "偶尔练练，不当回事",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "训练让你更焦虑，放弃了",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": -1,
+        "HUMAN": 1
+      },
+      "tags": [
+        "心理",
+        "治疗"
+      ]
+    },
+    {
+      "id": 4204,
+      "title": "数字心理治疗的副作用",
+      "description": "经过几周的数字心理治疗后，你开始注意到一些奇怪的变化。你的梦境变得异常 vivid，有时分不清记忆是真实的还是治疗中植入的。治疗师说这是神经重组的正常反应，但你越来越不安。你的情绪波动变得剧烈，有时会突然大哭或大笑。你开始怀疑治疗是否在改变真正的你。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "向治疗师报告副作用并调整方案",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": 2,
+            "MONEY": -300
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "立即停止所有数字心理治疗",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -3,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "继续治疗，接受这些变化",
+          "effects": {
+            "TRAUMA": -3,
+            "HUMAN": -2,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "治疗"
+      ]
+    },
+    {
+      "id": 4205,
+      "title": "心理治疗费用危机",
+      "description": "你的数字心理治疗账单堆积如山，保险公司以'神经调节属于增强项目'为由拒绝赔付。每月的治疗费用几乎花光了你的全部收入。你面临一个艰难的选择：是继续治疗保住精神健康，还是停药来维持生计。治疗师建议你参加临床试验来减免费用，但那意味着成为实验对象。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加临床试验换取免费治疗",
+          "effects": {
+            "TRAUMA": -3,
+            "HUMAN": 1,
+            "MONEY": 0,
+            "TECH": 1,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "停止治疗，省钱过日子",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": -2,
+            "MONEY": 500
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "借钱继续治疗",
+          "effects": {
+            "TRAUMA": -3,
+            "HUMAN": 2,
+            "DEBT": 800,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "DEBT": 300
+      },
+      "tags": [
+        "心理",
+        "治疗"
+      ]
+    },
+    {
+      "id": 4206,
+      "title": "线上团体心理治疗",
+      "description": "你加入了一个虚拟空间里的团体心理治疗小组，六个全息投影围坐成一圈。每个人都有各自的赛博心理创伤，你们轮流分享自己的故事。有人哭着讲述被黑客入侵记忆的经历，有人描述芯片故障带来的恐慌发作。你感到一种奇怪的归属感，原来不止你一个人在挣扎。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "敞开心扉分享自己的经历",
+          "effects": {
+            "TRAUMA": -4,
+            "HUMAN": 4,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只听别人说，自己保持沉默",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "帮助其他成员，给予支持",
+          "effects": {
+            "TRAUMA": -3,
+            "HUMAN": 5,
+            "REP": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": -1,
+        "HUMAN": 1
+      },
+      "tags": [
+        "心理",
+        "治疗"
+      ]
+    },
+    {
+      "id": 4207,
+      "title": "情绪芯片失控",
+      "description": "你的情绪调节芯片突然开始故障，在人群中你无法控制地大笑起来。路人投来异样的目光，你拼命想停下来但芯片持续释放快乐信号。技术支持说需要物理重启芯片，但最近的维修店在三个街区之外。你的情绪像过山车一样在极端之间切换。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "强忍着冲到维修店重启芯片",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -1,
+            "MONEY": -300,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用手机远程重启，冒着数据丢失风险",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -2,
+            "TECH": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "找个角落等故障自行结束",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -3,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "芯片"
+      ]
+    },
+    {
+      "id": 4208,
+      "title": "神经调节器短路",
+      "description": "深夜你被一阵剧烈的情绪风暴惊醒，神经调节器短路导致你的恐惧中枢被过度激活。黑暗中每个影子都像是威胁，你的心跳快到几乎要跳出胸腔。你摸索着找到备用电池，但手抖得无法更换。这一夜比你经历过的任何战斗都漫长。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "强撑着更换备用电池",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "呼叫急救服务",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "MONEY": -500
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "扛过去，什么也不做",
+          "effects": {
+            "TRAUMA": 6,
+            "HUMAN": -3,
+            "LIFE": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "芯片"
+      ]
+    },
+    {
+      "id": 4209,
+      "title": "情绪波动风暴",
+      "description": "你的神经调节器开始随机释放矛盾的情绪信号，上一秒你还感到无比幸福，下一秒就陷入深深的绝望。这种情绪过山车让你精疲力竭，你不确定哪个情绪才是真实的自己。朋友们开始注意到你的异常，有人建议你拔掉芯片。但你害怕没有芯片后会变成什么样。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "暂时拔掉神经调节器",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找黑市技术人员维修",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -1,
+            "MONEY": -400,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "学着与情绪风暴共处",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 3,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "芯片"
+      ]
+    },
+    {
+      "id": 4210,
+      "title": "芯片固件回滚",
+      "description": "神经调节器的最新固件更新让你的情绪变得更加不稳定，你决定回滚到旧版本。但回滚过程需要完全关闭芯片两个小时，期间你将经历所有被压抑的情绪。技术员警告你这可能引发创伤记忆的洪流。你必须做出选择：是忍受两小时的情绪地狱，还是继续忍受不稳定的新固件。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "关闭芯片进行固件回滚",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": 3,
+            "TECH": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "保持现状，适应新固件",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "心理",
+        "芯片"
+      ]
+    },
+    {
+      "id": 4211,
+      "title": "黑市情绪芯片",
+      "description": "正规的情绪芯片太贵了，你在黑市找到了一个廉价的替代品。卖家保证它的功能和正版一样，只是没有经过认证。你犹豫着是否要把它植入自己的神经系统。便宜的价格很诱人，但万一是劣质产品，后果不堪设想。黑市的霓虹灯在你脸上投下忽明忽暗的光。",
+      "type": "special",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "冒险购买并植入黑市芯片",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": -2,
+            "MONEY": -200,
+            "LIFE": -2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝，继续攒钱买正版",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 2,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "买下来转手倒卖赚差价",
+          "effects": {
+            "MONEY": 300,
+            "REP": -1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "心理",
+        "芯片"
+      ]
+    },
+    {
+      "id": 4212,
+      "title": "神经调节器过热",
+      "description": "你的神经调节器在重要会议中突然过热，灼烧的疼痛从后颈蔓延到整个头部。你强忍着没有叫出声，但汗水顺着脸颊滴落。同事们都注意到了你的异常，但没人敢问。过热可能导致永久性神经损伤，你必须立即处理。但离开会议意味着失去这个重要客户。",
+      "type": "special",
+      "ageRange": [
+        20,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "立即离开会议去冷却芯片",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "MONEY": -300,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "强忍到会议结束",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -2,
+            "LIFE": -2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "芯片"
+      ]
+    },
+    {
+      "id": 4213,
+      "title": "情绪芯片被黑客劫持",
+      "description": "你突然感到一阵莫名的狂喜，然后是恐惧，然后是愤怒——这些情绪完全不受你控制。你的神经接口闪烁着红色警告：你的情绪芯片被黑客劫持了。黑客通过远程操控你的情绪，你成了一个提线木偶。你必须在自己的情绪把你逼疯之前找到解决办法。恐慌在你被操控的恐惧之下暗暗涌动。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "物理断开神经连接",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": 2,
+            "TECH": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "付赎金给黑客",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -3,
+            "MONEY": -1000,
+            "DEBT": 200
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "找网络安全专家反击",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 1,
+            "MONEY": -500,
+            "TECH": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5,
+        "HUMAN": -2,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "芯片"
+      ]
+    },
+    {
+      "id": 4214,
+      "title": "记忆碎片闪回",
+      "description": "你在街上走着，突然一段不属于此刻的记忆碎片闯入脑海。画面模糊但情绪鲜明——恐惧、疼痛、某个人模糊的轮廓。这段记忆像闪电一样击中你，让你蹲在路边喘不过气。路过的行人绕开你走，没有人停下来。你不确定这是真实记忆还是神经芯片的故障。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "去记忆诊所检查这段闪回",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": 1,
+            "MONEY": -400,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "试图忽略它，继续生活",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -2,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "记录下来，自己研究来源",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 2,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "记忆"
+      ]
+    },
+    {
+      "id": 4215,
+      "title": "创伤记忆删除手术",
+      "description": "你站在记忆编辑诊所的门口，准备删除一段折磨你多年的创伤记忆。医生说手术很简单，只需定位相关神经通路然后精确切断。但警告你删除记忆可能改变你的性格和判断力。你回想起那段痛苦的经历，又看看诊所冰冷的白色走廊。删除记忆是解脱还是逃避？",
+      "type": "medical",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "进行记忆删除手术",
+          "effects": {
+            "TRAUMA": -6,
+            "HUMAN": -3,
+            "MONEY": -1500,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "取消手术，选择面对创伤",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 4,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "只删除最痛苦的部分",
+          "effects": {
+            "TRAUMA": -3,
+            "HUMAN": -1,
+            "MONEY": -800
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "心理",
+        "记忆"
+      ]
+    },
+    {
+      "id": 4216,
+      "title": "记忆回放创伤",
+      "description": "你的记忆回放系统出了故障，开始不断循环播放你最痛苦的记忆。每次闭上眼都能看到那个场景，听到那些声音，感受到那种痛。睡眠变得不可能，你只能在疲惫到极点时昏过去。你开始害怕闭上眼睛，因为那意味着又要经历一次。咖啡和兴奋剂成了你唯一的依靠。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "找神经技师修理回放系统",
+          "effects": {
+            "TRAUMA": -3,
+            "HUMAN": 2,
+            "MONEY": -600,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用药物强制睡眠",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -1,
+            "ADDICTION": 4,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "冥想尝试自己控制回放",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 3,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "HUMAN": -2,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "记忆"
+      ]
+    },
+    {
+      "id": 4217,
+      "title": "虚假记忆植入",
+      "description": "你发现自己最近的一段记忆其实是被植入的——有人篡改了你的神经芯片。那段'记忆'中你做了可怕的事情，但证据显示它从未发生过。你不知道是谁做的，也不知道为什么。更可怕的是，这段虚假记忆带来的愧疚感是真实的。你开始怀疑自己还有哪些记忆是假的。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "雇佣记忆审计师鉴定所有记忆",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": 2,
+            "MONEY": -800,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受现实，学会与不确定性共处",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "追查植入虚假记忆的人",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "REP": 2,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "记忆"
+      ]
+    },
+    {
+      "id": 4218,
+      "title": "记忆银行泄露",
+      "description": "你收到一封匿名邮件，里面是你存储在云端记忆银行中最私密的记忆片段。发件人威胁说如果不付钱，就把这些记忆公之于众。你的心跳骤然加速——那些记忆包含你最脆弱的时刻和最深的秘密。记忆安全本来是这家公司最大的卖点，现在却成了勒索你的武器。",
+      "type": "special",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "付钱给勒索者",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -2,
+            "MONEY": -1200,
+            "DEBT": 300
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝并报警",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": 1,
+            "REP": 1,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "找黑客朋友反追踪勒索者",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 2,
+            "TECH": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "记忆"
+      ]
+    },
+    {
+      "id": 4219,
+      "title": "童年记忆修复",
+      "description": "神经治疗师提议帮你修复因赛博改造而损坏的童年记忆。通过神经再生技术，那些模糊的温暖画面可能会重新变得清晰。但你也会重新体验童年创伤中最痛苦的部分。治疗师说修复后你会更完整，但也有可能你根本不想记起那些被遗忘的事。你坐在治疗椅上，回忆像潮水般涌来。",
+      "type": "medical",
+      "ageRange": [
+        20,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "进行完整的记忆修复",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 4,
+            "MONEY": -700,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只修复美好的记忆",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": 3,
+            "MONEY": -500
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放弃修复，保持现状",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1,
+        "HUMAN": 1
+      },
+      "tags": [
+        "心理",
+        "记忆"
+      ]
+    },
+    {
+      "id": 4220,
+      "title": "记忆删除后遗症",
+      "description": "几个月前你删除了一段创伤记忆，但最近开始出现奇怪的后遗症。你会在熟悉的地方迷路，认不出本该认识的人，对某些事物产生无法解释的恐惧。医生说这是记忆删除的连锁反应——相关联的记忆也在逐渐瓦解。你开始后悔当初的决定，但已经删除的记忆无法恢复。",
+      "type": "medical",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "尝试神经重建恢复记忆",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": 2,
+            "MONEY": -1000,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "学习适应记忆缺失的生活",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 3,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "再次删除受影响的相关记忆",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": -4,
+            "MONEY": -600,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "记忆"
+      ]
+    },
+    {
+      "id": 4221,
+      "title": "虚拟社交恐惧",
+      "description": "每次有人邀请你进入全息社交空间，你就感到一阵窒息般的焦虑。你的社交芯片检测到你的压力激素飙升，自动释放微量镇定剂。你知道在虚拟空间里没人能看到你真实的脸，但恐惧依然如影随形。你已经连续拒绝了十几个社交邀请。屏幕上又有新的邀请弹出，你的手悬在接听键上方颤抖。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "鼓起勇气接受邀请",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 4,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "继续拒绝，待在安全区",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -3,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "只接受文字聊天，不开全息",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "社交"
+      ]
+    },
+    {
+      "id": 4222,
+      "title": "全息社交焦虑",
+      "description": "在全息派对上，你的虚拟化身比现实中更自信、更光鲜。但每当有人靠近你的化身，你的心率就会飙升到危险水平。你不停检查自己的化身是否得体，害怕在虚拟世界中出丑。讽刺的是，你在数字世界里的焦虑比现实世界更严重。化身的微笑是程序设定的，但你内心的紧张是真实的。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "关掉焦虑监测芯片，放飞自我",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 3,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "提前离场，回到安全空间",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "找一个人少角落慢慢适应",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 2,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "社交"
+      ]
+    },
+    {
+      "id": 4223,
+      "title": "网络社交成瘾",
+      "description": "你已经连续在线48小时，不停地刷新社交动态。每一个点赞和评论都让多巴胺涌向你被改造过的大脑。你的真实社交能力在退化，但在线上你有无穷的'朋友'。你的眼睛干涩、身体僵硬，但手指停不下来。你的赛博植入体警告你长时间连接的风险。",
+      "type": "special",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "强制断网，去做线下活动",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 3,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "设置限时使用，逐步减少",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "继续刷，停不下来",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -3,
+            "ADDICTION": 4,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "ADDICTION": 2,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "社交"
+      ]
+    },
+    {
+      "id": 4224,
+      "title": "数字社交回避",
+      "description": "你已经三个月没有回复任何消息了，社交账号上堆满了未读通知。你的社交芯片已经进入休眠模式，因为你一直拒绝激活它。朋友们从关心变成了愤怒，最后变成了沉默。你在数字世界中变成了一个幽灵。但你不确定自己是在休息还是在慢慢消失。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "挑几个重要的人回复",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 3,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "继续回避所有人",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -4,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "发一条动态告诉大家你还好",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "社交"
+      ]
+    },
+    {
+      "id": 4225,
+      "title": "社交芯片故障",
+      "description": "你的社交辅助芯片在一场重要面试中突然故障，它不再帮你解读社交信号。你读不懂面试官的微表情，不知道自己说的笑话有没有冒犯到人。没有芯片的辅助，你像是在一个全是陌生语言的外星世界。汗水顺着你的后背流下。你意识到自己已经过度依赖这块芯片了。",
+      "type": "special",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "坦诚告诉面试官芯片故障",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 3,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "硬着头皮继续面试",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -2,
+            "MONEY": -200
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "请求暂停去重启芯片",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "社交"
+      ]
+    },
+    {
+      "id": 4226,
+      "title": "虚拟人格分裂",
+      "description": "你在不同社交平台上维护着截然不同的人格——在一个是温柔知心好友，在另一个是暴躁的网络斗士。这些人格开始渗透到你的现实生活中，你不确定哪个才是真正的你。有时你会用错误的人格应对现实中的人，造成尴尬和误解。你的神经芯片无法处理这么多人格切换，开始出现延迟和错乱。",
+      "type": "special",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "整合所有人格，做回真实的自己",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 4,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "关闭其他社交账号，只留一个",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 2,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "继续维持多个人格",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -3,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "社交"
+      ]
+    },
+    {
+      "id": 4227,
+      "title": "数字形象焦虑",
+      "description": "你的全息社交形象比真实外表完美得多——更瘦、更年轻、没有疤痕。每次在镜中看到真实的自己，你都感到一阵恶心。你开始花越来越多的钱维护数字形象，而忽视真实身体。朋友说你最近的全息形象越来越不像你了。你不知道哪个自己才是真实的，或者说哪个自己更重要。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "让数字形象更接近真实样貌",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 4,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "花钱做赛博整容匹配数字形象",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 1,
+            "MONEY": -2000,
+            "CHROME": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "继续维护完美数字形象",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -2,
+            "MONEY": -500
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "身份"
+      ]
+    },
+    {
+      "id": 4228,
+      "title": "赛博身体障碍",
+      "description": "你的左臂是赛博义肢，比肉体更强壮更灵活，但你总觉得自己不完整。每次看到镜中金属与肉体的交界处，你都感到一种深刻的异化感。有人叫你'半机械怪物'，你装作不在意但内心在流血。你开始质疑自己到底算不算人类。义肢的冰冷触感提醒你，你已经不再是原来的自己了。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加赛博改造者互助小组",
+          "effects": {
+            "TRAUMA": -3,
+            "HUMAN": 4,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "做仿真皮肤覆盖义肢",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 1,
+            "MONEY": -800,
+            "CHROME": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接受自己的赛博身体",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": 3,
+            "CHROME": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "身份"
+      ]
+    },
+    {
+      "id": 4229,
+      "title": "增强器自卑",
+      "description": "你的神经增强器是入门级的，而身边的朋友都有最新款。他们的反应速度、记忆力和情绪稳定性都远超你。在团队合作中你总是最慢的那个，尽管你付出了双倍的努力。你开始怀疑自己的价值是否取决于芯片的型号。每次看到他们毫不费力地完成你挣扎着才能做到的事，自尊心就碎掉一点。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用其他优势证明自己的价值",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 4,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "贷款升级到最新款增强器",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": 1,
+            "DEBT": 1500,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "远离那些让你自卑的朋友",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "身份"
+      ]
+    },
+    {
+      "id": 4230,
+      "title": "虚拟美貌执念",
+      "description": "你在虚拟世界中拥有完美的外表，这让你对现实中任何不完美都无法容忍。你花了大量时间和金钱在赛博美容上，追求一种不存在的完美。每发现一条新皱纹或一个不对称的特征，你都会陷入焦虑。你的脸已经动过太多次手术，开始显得不自然。但停下来比继续更让你害怕。",
+      "type": "medical",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "去看心理医生处理容貌焦虑",
+          "effects": {
+            "TRAUMA": -3,
+            "HUMAN": 3,
+            "MONEY": -500,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "再做一次美容手术",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": -1,
+            "MONEY": -1200,
+            "CHROME": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "停掉所有美容，面对真实",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": 2,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1,
+        "CHROME": 1
+      },
+      "tags": [
+        "心理",
+        "身份"
+      ]
+    },
+    {
+      "id": 4231,
+      "title": "身份认同危机",
+      "description": "你的记忆被编辑过太多次，你不确定自己到底是谁。你喜欢的东西是真实的喜好还是被植入的？你的性格是原生的人格还是赛博改造的副产品？你坐在黑暗中反复质问自己这些问题。神经芯片显示你的身份相关脑区活动异常，但它给不了你答案。",
+      "type": "medical",
+      "ageRange": [
+        20,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "通过心理治疗重建身份认知",
+          "effects": {
+            "TRAUMA": -3,
+            "HUMAN": 4,
+            "MONEY": -800,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受不确定性，活在当下",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 3,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "追踪原始记忆寻找真实的自己",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "TECH": 1,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2
+      },
+      "tags": [
+        "心理",
+        "身份"
+      ]
+    },
+    {
+      "id": 4232,
+      "title": "数字分身冲突",
+      "description": "你的AI数字分身开始发展出自己的个性，与你的价值观产生了冲突。它在网上说的观点你并不认同，但那是用你的脸和名字说的。朋友们开始质疑你真正的立场。你试图关闭分身但它已经获得了某种程度的自主权。看着屏幕上那个长得像你但想法不同的人，你感到一种诡异的恐惧。",
+      "type": "special",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "强制关闭并删除数字分身",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "与分身对话，尝试达成共识",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 4,
+            "TECH": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "让它继续，不承认那是你",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -3,
+            "REP": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1,
+        "REP": -1
+      },
+      "tags": [
+        "心理",
+        "身份"
+      ]
+    },
+    {
+      "id": 4233,
+      "title": "赛博完美主义",
+      "description": "你的神经增强器让你能够追求极致的完美，但也让你无法接受任何瑕疵。一个微小的错误就能让你崩溃，你会反复检查工作直到筋疲力尽。你的效率在下降，焦虑在上升，但你停不下来。完美已经不是一个目标，而是一个牢笼。你的身体在抗议——头痛、失眠、手抖——但你的芯片不让你休息。",
+      "type": "medical",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "降低增强器的完美标准设定",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": 3,
+            "TECH": -1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "继续追求完美，牺牲健康",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -2,
+            "LIFE": -2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "学习接纳不完美的冥想课程",
+          "effects": {
+            "TRAUMA": -3,
+            "HUMAN": 3,
+            "MONEY": -300,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "身份"
+      ]
+    },
+    {
+      "id": 4234,
+      "title": "神经抑制剂上瘾",
+      "description": "你最初服用神经抑制剂是为了控制赛博改造后的焦虑，但现在你离不开它了。没有药片的日子，你的手会发抖，思维会混乱，整个世界都变得不可忍受。剂量在不断增加，效果却越来越弱。你的药盒总是空的太快。你开始偷同事的药，从黑市买替代品。你知道这样下去不行，但停药比继续更可怕。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "去戒毒中心接受治疗",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 3,
+            "MONEY": -1000,
+            "ADDICTION": -4,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自己慢慢减量",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "ADDICTION": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "继续服用，以后再说",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -2,
+            "ADDICTION": 3,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "ADDICTION": 2,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "药物"
+      ]
+    },
+    {
+      "id": 4235,
+      "title": "戒断反应发作",
+      "description": "你已经三天没吃神经抑制剂了，戒断反应如地狱般折磨着你。恶心、幻觉、心跳过速轮番袭击你的身体。你蜷缩在浴室地板上，冷汗和泪水混在一起。你的神经芯片不断发出警报，但你已经没有力气去看了。每一秒都像一个世纪那么漫长。你知道只要吃一片药就能结束这一切。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "咬牙挺过去，不碰药片",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": 4,
+            "ADDICTION": -3,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "吃半片缓解最严重的症状",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放弃戒断，恢复正常剂量",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": -2,
+            "ADDICTION": 3,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "HUMAN": -2,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "药物"
+      ]
+    },
+    {
+      "id": 4236,
+      "title": "黑市药物过量",
+      "description": "黑市的神经抑制剂比处方药便宜得多，但纯度无法保证。你服下两片后，世界开始旋转，你的视觉变成了万花筒。你的呼吸变得又浅又慢，神经芯片发出刺耳的警报。你试图呼救但发不出声音。黑暗从视野边缘慢慢吞噬过来。你用最后的力气摸索着手机。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用最后的力气拨打急救电话",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 1,
+            "MONEY": -800,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用神经芯片注射解毒剂",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "TECH": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "试图自己催吐",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -1,
+            "LIFE": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5,
+        "LIFE": -2,
+        "ADDICTION": 2
+      },
+      "tags": [
+        "心理",
+        "药物"
+      ]
+    },
+    {
+      "id": 4237,
+      "title": "处方药滥用",
+      "description": "你的医生开的神经抑制剂本来是短期使用的，但你已经吃了两年。你学会了伪造症状来获取更多处方，换了三个医生来同时开药。你的药量已经是推荐剂量的三倍。药效让你变得麻木但至少不痛苦。你害怕如果被发现，就没有药可吃了。每次走进诊室你都在演一场精心排练的戏。",
+      "type": "medical",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "向医生坦白并寻求帮助",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 3,
+            "ADDICTION": -2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "继续隐瞒，维持现状",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -2,
+            "ADDICTION": 2,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "尝试用自然方式替代药物",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 2,
+            "ADDICTION": -1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1,
+        "ADDICTION": 2,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "药物"
+      ]
+    },
+    {
+      "id": 4238,
+      "title": "药物耐受性",
+      "description": "你的神经抑制剂已经不起作用了，即使在最高剂量下你依然焦虑得无法正常生活。医生说你的神经受体已经因为长期用药而钝化。增加剂量有中毒风险，换药又意味着重新经历副作用。你困在一个进退两难的困境中。没有药物你无法运作，但药物也不再帮助你。",
+      "type": "medical",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "停药并尝试神经反馈疗法",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "ADDICTION": -2,
+            "MONEY": -600,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "换用更强效的新型药物",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": -1,
+            "ADDICTION": 2,
+            "MONEY": -400
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "药物假期，暂时停药恢复敏感性",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": 1,
+            "ADDICTION": -1,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "ADDICTION": 1,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "药物"
+      ]
+    },
+    {
+      "id": 4239,
+      "title": "神经抑制剂断供",
+      "description": "制药公司的供应链遭到网络攻击，神经抑制剂在全国范围内断供。你的最后一片药是昨天吃的， Withdrawal 的阴影正在逼近。黑市价格已经飙升到平时的十倍，而且供不应求。你看着空荡荡的药盒，恐惧像冰水一样灌入胃里。还有成千上万的人和你一样面临着断药的困境。",
+      "type": "special",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "花高价从黑市购买应急",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -1,
+            "MONEY": -1500,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "寻找替代品或自然疗法",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "ADDICTION": -1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "加入病患维权团体施压",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 3,
+            "REP": 2,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "ADDICTION": 1,
+        "HUMAN": -1,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "药物"
+      ]
+    },
+    {
+      "id": 4240,
+      "title": "替代疗法尝试",
+      "description": "你决定用赛博针灸和神经冥想来替代神经抑制剂。治疗师将细如发丝的电极插入你的穴位，同时引导你进入深度冥想。第一次治疗后你感到一种从未有过的平静，不是药物带来的麻木，而是真正的宁静。但替代疗法的效果不稳定，好日子和坏日子交替出现。你不确定这条路能不能走通，但你想试试。",
+      "type": "medical",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全力投入替代疗法",
+          "effects": {
+            "TRAUMA": -3,
+            "HUMAN": 3,
+            "ADDICTION": -2,
+            "MONEY": -500,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "替代疗法和药物结合使用",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 2,
+            "ADDICTION": -1,
+            "MONEY": -300
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "效果不稳定，放弃替代疗法",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -1,
+            "ADDICTION": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": -1,
+        "HUMAN": 1,
+        "ADDICTION": -1
+      },
+      "tags": [
+        "心理",
+        "药物"
+      ]
+    },
+    {
+      "id": 4241,
+      "title": "数字幽灵来访",
+      "description": "你收到了一条来自已故朋友的全息消息——他在死前录制了自己的意识备份。全息投影中的他微笑着和你说话，仿佛从未离开。你既感动又心碎，因为你知道这不是真正的他。数字幽灵说它还有一些未完成的话想对你说。你站在闪烁的蓝光中，泪流满面。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "与数字幽灵好好告别",
+          "effects": {
+            "TRAUMA": -4,
+            "HUMAN": 4,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "关掉投影，太痛苦了",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "保存备份，反复观看",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -1,
+            "ADDICTION": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": 1
+      },
+      "tags": [
+        "心理",
+        "丧亲"
+      ]
+    },
+    {
+      "id": 4242,
+      "title": "意识备份丧亲",
+      "description": "你的伴侣在事故中身体死亡，但意识备份完好地保存在云端。理论上她可以'复活'在一个新的身体里，但费用高昂且法律灰色。你每天都能和她通过数字接口通话，她的声音和记忆都是真实的。但她没有身体，没有触觉，被困在数据的世界里。你们之间隔着一道生与死的屏幕。",
+      "type": "special",
+      "ageRange": [
+        20,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "倾尽所有为她购买新身体",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": 5,
+            "MONEY": -5000,
+            "DEBT": 2000,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "维持数字通话，等待时机",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 2,
+            "MONEY": -200
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "痛苦地决定删除意识备份",
+          "effects": {
+            "TRAUMA": 6,
+            "HUMAN": -3,
+            "LIFE": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "HUMAN": 1,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "丧亲"
+      ]
+    },
+    {
+      "id": 4243,
+      "title": "虚拟葬礼",
+      "description": "你参加了一场在元宇宙中举行的葬礼，逝者的全息形象站在中央。来自全球各地的人以虚拟化身出席，献上数字花圈。仪式庄重但缺少真实感，你无法拥抱哭泣的亲友。但当逝者的全息形象说出最后遗言时，你还是哭了。悲伤是真实的，即使一切都在虚拟世界中发生。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在虚拟葬礼上致悼词",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": 4,
+            "REP": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只是安静地参加",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝参加虚拟葬礼",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": 1
+      },
+      "tags": [
+        "心理",
+        "丧亲"
+      ]
+    },
+    {
+      "id": 4244,
+      "title": "数字遗产处理",
+      "description": "你正在整理已故父亲的数字遗产——几十年的记忆、通讯记录和个人数据。每打开一个文件都像打开一扇通往过去的门。你发现了一些他从未告诉你的秘密，有些温暖，有些心碎。他的数字日记里写满了对你的爱和遗憾。你坐在数据海洋中，重新认识一个你已经失去的人。",
+      "type": "special",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "仔细整理并保存所有数字遗产",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 4,
+            "TECH": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只保存最重要的记忆",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "全部删除，太痛苦了",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -3,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": 1
+      },
+      "tags": [
+        "心理",
+        "丧亲"
+      ]
+    },
+    {
+      "id": 4245,
+      "title": "逝者全息重现",
+      "description": "你用AI技术重建了已故母亲的全息形象，她能根据所有数据模拟她的言行。全息妈妈会在你回家时问候你，会记得你的生日和喜好。有时你几乎忘了她已经不在了。但当你试图拥抱她时，手穿过了光粒子。这种甜蜜又残忍的错觉正在慢慢侵蚀你对现实的感知。",
+      "type": "special",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "设定时限，慢慢告别全息母亲",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": 4,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "永久关闭全息重现",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -2,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "继续每天与全息母亲相处",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -1,
+            "ADDICTION": 2,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1,
+        "ADDICTION": 1
+      },
+      "tags": [
+        "心理",
+        "丧亲"
+      ]
+    },
+    {
+      "id": 4246,
+      "title": "永别数字灵魂",
+      "description": "你必须做出最终决定：是永久删除已故伴侣保存在云端的意识备份，还是继续支付高昂的存储费用。备份中的她知道自己只是数据，但她依然恐惧被删除。她通过文字接口求你给她一个机会。你盯着屏幕上的光标闪烁，仿佛那是她最后的心跳。这个决定无论怎么选都是错的。",
+      "type": "special",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "继续支付存储费用，保留备份",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 2,
+            "MONEY": -300,
+            "DEBT": 200
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在删除前好好告别",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": 3,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "将备份转移到免费的开源平台",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 2,
+            "TECH": 2,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "HUMAN": 1,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "丧亲"
+      ]
+    },
+    {
+      "id": 4247,
+      "title": "多重在线身份",
+      "description": "你维护着五个不同的在线身份，每个都有独立的人设、社交圈和历史。白天你是严肃的技术工程师，晚上是虚拟世界的冒险者。你还有一个匿名的艺术家账号和两个用于不同论坛的假身份。这些身份之间的界限正在模糊，你差点在工作中用了游戏角色的语气。管理这些身份的密码本越来越厚。",
+      "type": "special",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "整合身份，只保留一个",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 4,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用密码管理器更好地隔离身份",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "继续维持多个身份",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -2,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "身份"
+      ]
+    },
+    {
+      "id": 4248,
+      "title": "账号身份混淆",
+      "description": "你在错误的账号上发了私人内容，现在你的同事看到了你作为地下DJ的另一面。你慌忙删除但已经有人截图了。你的两个世界碰撞在一起，而你还没准备好面对。你的手指在键盘上颤抖，不知道该怎么解释。有些同事觉得你很酷，有些则投来异样的目光。",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "坦诚面对，承认那是自己",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 4,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "声称账号被盗了",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -2,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "辞职换个工作环境",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "MONEY": -500,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1,
+        "REP": -1
+      },
+      "tags": [
+        "心理",
+        "身份"
+      ]
+    },
+    {
+      "id": 4249,
+      "title": "虚拟人格融合",
+      "description": "你的游戏角色人格开始影响现实中的你——你变得更冒险、更直接、更不在乎后果。这有时是好事，让你更勇敢；有时是坏事，让你在现实中做出鲁莽的决定。你的神经芯片检测到你的人格模式在发生变化。你不确定这是成长还是精神分裂。游戏角色的记忆和现实记忆开始交织在一起。",
+      "type": "special",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "暂停游戏，让现实人格恢复",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 3,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "利用虚拟人格的勇气改善生活",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 3,
+            "REP": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "去看精神科医生",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": 2,
+            "MONEY": -400,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "身份"
+      ]
+    },
+    {
+      "id": 4250,
+      "title": "数字身份盗窃",
+      "description": "有人盗用了你的完整数字身份——你的面部模型、声音采样和行为模式都被复制了。你的'数字双胞胎'正在网上以你的名义借贷和诈骗。你的信用评分在崩塌，朋友们收到'你'发来的奇怪消息。你感到自己的存在正在被稀释。证明你是真正的你比证明双胞胎是假的更难。",
+      "type": "special",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "雇佣数字身份侦探追查",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "MONEY": -800,
+            "TECH": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向赛博警方报案",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 1,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "重建全新的数字身份",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 2,
+            "MONEY": -500,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "HUMAN": -2,
+        "REP": -2,
+        "DEBT": 500
+      },
+      "tags": [
+        "心理",
+        "身份"
+      ]
+    },
+    {
+      "id": 4251,
+      "title": "在线人格解体",
+      "description": "你在网上的时间太长了，以至于感觉自己的身体只是数字意识的载体。你的虚拟化身比身体更真实，每次下线都有一种灵魂被拽回肉体的不适感。你开始忽视身体的需求——吃饭、睡觉、运动。你的赛博健康监测器发出红色警告。你不确定自己是在逃避现实还是在寻找更真实的自我。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "强制限制在线时间",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 3,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "进行感觉统合治疗",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": 3,
+            "MONEY": -600,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "继续沉浸在虚拟世界",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -3,
+            "LIFE": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "身份"
+      ]
+    },
+    {
+      "id": 4252,
+      "title": "虚拟现实人格",
+      "description": "你在VR世界里生活的时间比现实世界长，你在那里有了新的名字、新的朋友、新的人生。你的VR人格更自信更快乐，你开始想永远留在那个世界。你的身体在现实中一天天消瘦，但你的虚拟形象光彩照人。你的家人不知道你已经在精神上离开了他们。每次被拉回现实都像一次死亡。",
+      "type": "special",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "逐步减少VR时间，回归现实",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 4,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "把VR中的积极体验带到现实",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 3,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "选择永远留在VR世界",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -4,
+            "LIFE": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "身份"
+      ]
+    },
+    {
+      "id": 4253,
+      "title": "身份验证危机",
+      "description": "全新的生物识别系统无法确认你的身份——你的赛博改造改变了太多生理特征。系统说你与档案中的'你'匹配度只有47%，拒绝了你所有的交易和访问请求。你突然变成了一个没有身份的人，无法工作、无法购物、无法回家。你的存在在系统中被否定了。你站在雨中，看着自动门一次次在你面前关闭。",
+      "type": "special",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "去身份管理局重新登记",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "MONEY": -300,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找黑客伪造身份验证",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -1,
+            "MONEY": -500,
+            "REP": -1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向媒体曝光系统缺陷",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "REP": 2,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -1,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "身份"
+      ]
+    },
+    {
+      "id": 4254,
+      "title": "数据录入倦怠",
+      "description": "你已经连续三个月每天花十二小时盯着数据流，把信息从旧系统迁移到新系统。你的视神经植入体开始出现延迟，手指的微操芯片也不如以前精准。每个数字看起来都一样，但你不能出错——一次错误就意味着整天的返工。你的眼睛干涩到几乎睁不开，但完成期限就在明天。",
+      "type": "medical",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "申请休假恢复状态",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": 3,
+            "MONEY": -300,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "咬牙完成最后的工作",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -2,
+            "LIFE": -1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用兴奋剂撑过最后几天",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -1,
+            "ADDICTION": 3,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "倦怠"
+      ]
+    },
+    {
+      "id": 4255,
+      "title": "任务过载崩溃",
+      "description": "你的神经任务管理器同时运行着十七个任务，每个都标记为'紧急'。你的大脑在任务之间快速切换，但每次切换都丢失一些专注力。你开始犯低级错误，忘记了重要的会议。你的效率在下降但工作时间在增加。终于在一个深夜，你坐在办公桌前哭了——不是因为悲伤，而是因为大脑彻底罢工了。",
+      "type": "medical",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "放下一切，给自己一周休息",
+          "effects": {
+            "TRAUMA": -3,
+            "HUMAN": 3,
+            "MONEY": -500,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "重新排列任务优先级",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "继续硬撑，不可能放弃",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -3,
+            "LIFE": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "倦怠"
+      ]
+    },
+    {
+      "id": 4256,
+      "title": "AI替代焦虑",
+      "description": "公司新部署的AI系统已经能完成你80%的工作，你的岗位岌岌可危。每次看到AI用你十分之一的时间完成任务，你的心就沉一下。你开始过度工作来证明自己的价值，但身体和精神都在透支。同事们都在偷偷更新简历，但你的赛博技能太单一了。你害怕自己会变成被淘汰的旧型号。",
+      "type": "medical",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "学习新技能转型为AI管理岗",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 2,
+            "TECH": 3,
+            "MONEY": -400,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找心理咨询师处理焦虑",
+          "effects": {
+            "TRAUMA": -3,
+            "HUMAN": 3,
+            "MONEY": -500,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "辞职提前离开这艘沉船",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "MONEY": -800,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -1,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "倦怠"
+      ]
+    },
+    {
+      "id": 4257,
+      "title": "赛博通勤疲劳",
+      "description": "你每天通过全息通勤系统在三个城市之间远程办公，时区切换让你的生物钟彻底混乱。你的赛博睡眠调节器已经无法分辨白天和黑夜。你的身体在一个时区，意识在另一个时区，情感在第三个时区。你已经不记得上次在自然光下醒来是什么时候了。咖啡和调节药物成了你的日常饮食。",
+      "type": "medical",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "申请固定时区的工作安排",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": 3,
+            "MONEY": -300,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用药物强制调整生物钟",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -1,
+            "ADDICTION": 2,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "辞职找一份本地工作",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 2,
+            "MONEY": -600,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "倦怠"
+      ]
+    },
+    {
+      "id": 4258,
+      "title": "远程工作隔离",
+      "description": "你已经在家远程工作了两年，除了快递员和AI助手，你没有和任何人面对面说过话。你的社交芯片几乎萎缩了，连简单的对话都让你紧张。你的公寓成了你的整个世界，墙壁上的全息窗户显示着永远不变的虚拟风景。你开始自言自语，有时候甚至分不清是自己在想还是在说出口。",
+      "type": "medical",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入共享办公空间恢复社交",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": 4,
+            "MONEY": -200,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "每周强制出门两次",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 3,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "继续隔离，这样更舒服",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -3,
+            "LIFE": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -2,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "倦怠"
+      ]
+    },
+    {
+      "id": 4259,
+      "title": "职业芯片过载",
+      "description": "你的职业增强芯片储存着你所有工作技能和经验，但它突然开始过载。芯片的温度在升高，你的后颈感到灼热。每次调用专业技能都会引发短暂的头痛和视觉模糊。技术员说芯片存储快满了，需要删除一些旧的技能数据。但每项技能都代表着你的努力和身份。你不能简单地删除自己的一部分。",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "升级到更大容量的芯片",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 1,
+            "MONEY": -1500,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "删除过时的旧技能数据",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "迁移部分数据到云端",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 1,
+            "MONEY": -200,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1,
+        "TECH": -1
+      },
+      "tags": [
+        "心理",
+        "倦怠"
+      ]
+    },
+    {
+      "id": 4260,
+      "title": "辞职冲动抉择",
+      "description": "你在又一次被无理指责后，手指悬在辞职信的发送键上。你的职业芯片正在计算利弊，但你的心早就做出了决定。你已经太久没有感到快乐了，每天醒来都不想去上班。但辞职意味着失去医疗保险、赛博维护合约和稳定的收入。你的理性说留下，你的灵魂说离开。光标在发送键上闪烁，等你做决定。",
+      "type": "special",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "发出辞职信，重新开始",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": 4,
+            "MONEY": -1000,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "先请假调整心态",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 3,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "忍下来，经济更重要",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -3,
+            "LIFE": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -1,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "倦怠"
+      ]
+    },
+    {
+      "id": 4261,
+      "title": "认知增强崩溃",
+      "description": "你的认知增强器让你能同时处理多线思维，但今天它突然过载了。你的思维分裂成十几条并行的线程，每条都在尖叫着不同的想法。你无法整合这些思维，世界变成了碎片化的混乱。你的鼻子开始流血，视线变得模糊。你的大脑不是在思考，而是在尖叫。",
+      "type": "medical",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "紧急关闭认知增强器",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "TECH": -1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "去急诊室处理",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "MONEY": -600,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "试图自己控制思维线程",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -1,
+            "LIFE": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "HUMAN": -2,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "增强"
+      ]
+    },
+    {
+      "id": 4262,
+      "title": "记忆增强反噬",
+      "description": "你的记忆增强器让你拥有了完美记忆，但这成了诅咒。你记得每一次侮辱、每一次失败、每一次痛苦的细节，清晰得仿佛刚刚发生。负面的记忆不断涌现，让你无法释怀过去。你发现自己越来越沉浸在回忆中，无法专注于当下。完美记忆不是天赋，而是无止境的折磨。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "调低记忆增强的清晰度",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": 2,
+            "TECH": -1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "学习记忆管理的冥想技巧",
+          "effects": {
+            "TRAUMA": -3,
+            "HUMAN": 3,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "关闭记忆增强器",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "TECH": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -1,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "增强"
+      ]
+    },
+    {
+      "id": 4263,
+      "title": "反应增强失调",
+      "description": "你的反应增强器让你的反应速度快于正常人类，但这让你与现实产生了脱节。周围的一切都像慢动作，人们说话慢得让你抓狂。你变得急躁、易怒，因为世界永远跟不上你的节奏。你的身体也在承受代价——肌肉因为过度反应而频繁抽筋。你活在一个太慢的世界里，越来越孤独。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "调低反应增强的倍率",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 3,
+            "TECH": -1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "参加慢节奏的冥想课程",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": 3,
+            "MONEY": -300,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "关掉增强器，适应正常速度",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "TECH": -2,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "增强"
+      ]
+    },
+    {
+      "id": 4264,
+      "title": "情绪增强失控",
+      "description": "你安装了情绪增强器来放大快乐，但它也放大了所有情绪。一个微小的挫折就能让你崩溃，一个善意的玩笑可能引发暴怒。你的情绪像没有刹车的跑车，在极端之间飞驰。你的朋友们开始小心翼翼地与你相处。你享受被放大的快乐，但恐惧被放大的痛苦。你不确定这个交易是否值得。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "重新校准情绪增强参数",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": 2,
+            "MONEY": -400,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "完全移除情绪增强器",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "TECH": -1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用药物控制增强后的情绪",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -1,
+            "ADDICTION": 3,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -1,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "增强"
+      ]
+    },
+    {
+      "id": 4265,
+      "title": "感官增强过载",
+      "description": "你的感官增强器让你能看到更多颜色、听到更远的声音、感受更细微的触感。但城市的信息量太大了，你的感官每天都在过载。霓虹灯刺得你眼睛流泪，交通噪音震得你头痛。你不得不整天戴着感官过滤头盔。世界太亮、太吵、太强烈了。你怀念那个安静的、模糊的旧世界。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "调低感官增强强度",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": 2,
+            "TECH": -1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "搬去安静的偏远地区",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 2,
+            "MONEY": -800,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "升级更好的感官过滤器",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 1,
+            "MONEY": -600,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "增强"
+      ]
+    },
+    {
+      "id": 4266,
+      "title": "增强器排异",
+      "description": "你的身体开始对神经增强器产生排异反应，免疫系统攻击着嵌入的芯片。你的后颈红肿发炎，神经信号时断时续。医生说必须取出增强器，否则可能面临永久性神经损伤。但增强器已经成为你能力的一部分，没有它你将变得平凡。你抚摸着发烫的植入部位，面临一个不可能的选择。",
+      "type": "medical",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "取出增强器，保住神经",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "TECH": -3,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用免疫抑制剂维持增强器",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -1,
+            "MONEY": -500,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "换用生物兼容型号",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 1,
+            "MONEY": -2000,
+            "TECH": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -1,
+        "LIFE": -1,
+        "TECH": -1
+      },
+      "tags": [
+        "心理",
+        "增强"
+      ]
+    },
+    {
+      "id": 4267,
+      "title": "赛博邪教招募",
+      "description": "一个赛博灵修团体邀请你参加他们的'意识升级'仪式。他们声称通过集体神经同步可以达到更高的存在层次。仪式中几十人通过神经接口连接在一起，你感受到了前所未有的归属感。那种连接的温暖让你几乎忘记了思考。但领导者要求你上传所有个人记忆作为'奉献'。你的理性在说危险，但集体的温暖在说留下。",
+      "type": "special",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拒绝并离开这个团体",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "参加仪式但不上传记忆",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 1,
+            "ADDICTION": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "完全加入，上传所有记忆",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": -3,
+            "ADDICTION": 4,
+            "LIFE": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": 1,
+        "ADDICTION": 1
+      },
+      "tags": [
+        "心理",
+        "群体"
+      ]
+    },
+    {
+      "id": 4268,
+      "title": "网络暴民事件",
+      "description": "你在网上发表了一个观点，被一群赛博暴民盯上了。他们的攻击如潮水般涌来——人肉搜索、全息骚扰、甚至对你的网络身份进行DDoS攻击。你的社交芯片每秒接收上百条威胁信息。有人找到了你的住址并公开了。你蜷缩在黑暗的房间里，手机屏幕的光映照着你恐惧的脸。",
+      "type": "special",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "断网等待风暴过去",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 1,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "报警并寻求法律保护",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "反击，以暴制暴",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -2,
+            "REP": -2,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "HUMAN": -2,
+        "REP": -2,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "群体"
+      ]
+    },
+    {
+      "id": 4269,
+      "title": "数字从众消费",
+      "description": "你的信息流里所有人都在购买最新款的神经增强器，你不买就落伍了。算法精准地推送着你的朋友们使用新产品的照片和好评。你其实不需要它，但害怕被社交圈抛弃。你的旧款增强器还能用，但'还能用'在这个时代等于'失败'。你的手指在购买键上犹豫不决。社交压力比任何广告都有效。",
+      "type": "special",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "跟风购买，融入群体",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 1,
+            "MONEY": -2000,
+            "DEBT": 500,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "坚持不买，用现有的",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 2,
+            "MONEY": 0,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "买二手的折中方案",
+          "effects": {
+            "TRAUMA": 0,
+            "HUMAN": 1,
+            "MONEY": -800,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "群体"
+      ]
+    },
+    {
+      "id": 4270,
+      "title": "虚拟群体极化",
+      "description": "你加入的线上讨论组越来越极端，温和的声音被淹没。群体算法不断推送让你们更愤怒的内容，每次讨论都变成声讨。你发现自己也开始用更极端的方式思考。你的神经芯片检测到你的攻击性指标在持续上升。你曾经是个温和的人，但群体的力量在悄悄改变你。",
+      "type": "special",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "退出讨论组，远离极端",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 3,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在组内发表温和观点",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 2,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "继续参与，被群体裹挟",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -2,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "群体"
+      ]
+    },
+    {
+      "id": 4271,
+      "title": "算法信息茧房",
+      "description": "你的个性化推荐算法只给你看你同意的内容，你已经很久没见过不同观点了。你的世界观越来越狭窄，越来越偏激。一次偶然的机会你看到了完全不同视角的新闻，震惊得说不出话。你一直以为自己了解真相，但可能只是被困在一个精心打造的泡泡里。算法比你更了解你的偏见，并不断喂养它。",
+      "type": "special",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "主动打破信息茧房",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 4,
+            "TECH": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "调整算法偏好设置",
+          "effects": {
+            "TRAUMA": 0,
+            "HUMAN": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "继续待在舒适的茧房里",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -2,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "群体"
+      ]
+    },
+    {
+      "id": 4272,
+      "title": "赛博集体歇斯底里",
+      "description": "社交媒体上突然流传一种说法：某种赛博信号会导致精神崩溃。尽管没有任何科学依据，但恐慌像病毒一样传播。你的朋友们纷纷报告出现了症状——头痛、失眠、幻觉。你开始也感到不适，但不确定是真的还是心理作用。集体恐惧正在通过神经网络感染每一个人。你的芯片也在扫描那个不存在的信号。",
+      "type": "special",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "查证信息，不信谣不传谣",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 3,
+            "TECH": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "购买防护设备以防万一",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -1,
+            "MONEY": -400
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "跟随大众一起恐慌",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -2,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -1,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "群体"
+      ]
+    },
+    {
+      "id": 4273,
+      "title": "群体思维绑架",
+      "description": "你的工作团队通过神经同步进行集体决策，但同步让异见变得不可能。每次有人提出不同意见，群体的神经压力就会让那个人放弃。你看着一个又一个糟糕的决定被全票通过。你的直觉告诉你这不对，但同步的力量让你无法开口。群体的智慧被群体的从众扼杀了。你在同步状态下感到自己正在消失。",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "退出同步，独立思考后发言",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 4,
+            "REP": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "私下向领导反映问题",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "保持沉默，跟随群体",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -2,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "群体"
+      ]
+    },
+    {
+      "id": 4274,
+      "title": "被监控妄想",
+      "description": "你确信有人在通过你的赛博义眼监控你的一举一动。你用胶带贴住了所有摄像头，但感觉还是有人在看着你。你的神经芯片显示你的偏执指标在飙升，但你坚信这不是妄想。你开始注意到街上的每个人都像便衣特工。你无法分辨哪个是真实的威胁，哪个是你破碎心灵的投射。",
+      "type": "medical",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "去看精神科医生",
+          "effects": {
+            "TRAUMA": -3,
+            "HUMAN": 2,
+            "MONEY": -500,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "购买反监控设备自查",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 1,
+            "MONEY": -400,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "切断所有网络连接隐居",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -3,
+            "LIFE": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "HUMAN": -2,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "偏执"
+      ]
+    },
+    {
+      "id": 4275,
+      "title": "芯片追踪恐惧",
+      "description": "你发现自己的神经芯片确实有未公开的定位功能，你的行踪数据正在被传送到某个服务器。你的恐惧不是妄想——你真的被追踪了。但你不知道是谁在追踪你，以及为什么。你开始绕路行走，避免摄像头，但这只是让你更焦虑。你的芯片是你的大脑的一部分，你无法简单地把它取出来。真相比妄想更可怕。",
+      "type": "special",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "找黑客破解芯片的追踪功能",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "MONEY": -600,
+            "TECH": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向隐私保护组织举报",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 2,
+            "REP": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接受被追踪的现实",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -2,
+            "LIFE": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "HUMAN": -1,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "偏执"
+      ]
+    },
+    {
+      "id": 4276,
+      "title": "全息广告迫害",
+      "description": "全息广告似乎在专门针对你——它们显示的内容总是与你的私密想法有关。你刚想到某个品牌，广告就弹出来了。你怀疑广告系统在读取你的神经信号。虽然科技公司说这只是精准推送算法，但巧合太多了。你开始戴上神经屏蔽头盔出门。城市的声音和图像都成了针对你的密语。",
+      "type": "special",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "关闭个性化广告推送",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用神经噪声发生器干扰",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 1,
+            "MONEY": -300,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向数据保护部门投诉",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "偏执"
+      ]
+    },
+    {
+      "id": 4277,
+      "title": "AI监控妄想",
+      "description": "你确信家里的AI助手在记录你说过的每一句话并发送给某个组织。你开始压低声音说话，用手写代替语音指令。AI的每一次回应你都怀疑是在试探你。你拆开了智能音箱，但没有发现异常，但你确信监控芯片太小了肉眼看不到。你的家变成了一个全景监狱，而你是唯一的囚犯。",
+      "type": "medical",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "去心理诊所治疗偏执",
+          "effects": {
+            "TRAUMA": -3,
+            "HUMAN": 3,
+            "MONEY": -500,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "移除家中所有智能设备",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 1,
+            "MONEY": -200,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "继续生活在恐惧中",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -3,
+            "LIFE": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "偏执"
+      ]
+    },
+    {
+      "id": 4278,
+      "title": "数据泄露偏执",
+      "description": "又一起大规模数据泄露事件发生了，这次泄露的是神经芯片用户的思维模式数据。你的偏执达到了顶峰——你确信你的每一个想法都暴露在陌生人的面前。你开始用密码思维，在脑中加密自己的想法。你的神经芯片因为异常的思维模式而频繁报警。你活在一个玻璃脑袋里，全世界都能看到里面。",
+      "type": "medical",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "安装神经防火墙",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 1,
+            "MONEY": -400,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "去看心理医生处理偏执",
+          "effects": {
+            "TRAUMA": -3,
+            "HUMAN": 3,
+            "MONEY": -500,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用思维加密技术保护自己",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -1,
+            "TECH": 1,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "HUMAN": -2,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "偏执"
+      ]
+    },
+    {
+      "id": 4279,
+      "title": "数字政府阴谋",
+      "description": "你深信政府正在通过赛博改造计划控制公民的思想。你花了大量时间在暗网收集'证据'，与志同道合的人讨论阴谋论。你的工作和人际关系都在恶化，但你觉得这些都无所谓——揭露真相更重要。你的家人说你变了，但你觉得是他们被洗脑了。真相和妄想之间的界限越来越模糊。",
+      "type": "special",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "去看心理医生评估精神状态",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": 3,
+            "MONEY": -400,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "适度调查但保持理性",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "完全沉浸阴谋论调查",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -3,
+            "LIFE": -2,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -1,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "偏执"
+      ]
+    },
+    {
+      "id": 4280,
+      "title": "偏执发作治疗",
+      "description": "你的偏执已经严重影响了正常生活，你终于同意接受治疗。心理医生用神经调节技术慢慢降低你的偏执思维模式。治疗过程中你时而清醒时而混乱，有时你能意识到那些恐惧是不合理的。你重新学习信任这个世界，每一步都艰难但珍贵。痊愈不是回到从前，而是学会带着伤痕前行。",
+      "type": "medical",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全力配合治疗",
+          "effects": {
+            "TRAUMA": -4,
+            "HUMAN": 4,
+            "MONEY": -800,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "治疗结合药物治疗",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": 2,
+            "MONEY": -500,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "中途放弃治疗",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -2,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1
+      },
+      "tags": [
+        "心理",
+        "偏执"
+      ]
+    },
+    {
+      "id": 4281,
+      "title": "情感芯片休眠",
+      "description": "你的情感调节芯片进入了休眠模式，你突然什么都感觉不到了。不是悲伤，不是快乐，而是彻底的空白。朋友的笑话不能让你笑，坏消息也不能让你哭。你像是在看一部关于自己生活的纪录片，毫无感情地旁观。你的内心世界变成了一片灰色的荒原。你不痛了，但你也不活了。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "重启情感芯片",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 3,
+            "TECH": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "享受暂时的麻木",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": -3,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "趁机处理平时逃避的情绪",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": 2,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": -1,
+        "HUMAN": -3,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "麻木"
+      ]
+    },
+    {
+      "id": 4282,
+      "title": "赛博情感剥夺",
+      "description": "长期使用情感调节芯片让你的自然情感能力退化了。芯片关闭时，你无法感受到任何情绪——不是选择麻木，而是真的感觉不到了。医生说你的情感神经通路因为长期不使用而萎缩。你面临一个悖论：需要芯片来感受情绪，但越用芯片自然情感越弱。你不确定自己还有没有灵魂。",
+      "type": "medical",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "进行神经康复训练",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 4,
+            "MONEY": -700,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "永久依赖情感芯片",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": -2,
+            "MONEY": -200,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用极端刺激唤醒情感",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": 1,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -2,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "麻木"
+      ]
+    },
+    {
+      "id": 4283,
+      "title": "数字共情缺失",
+      "description": "你的共情芯片故障了，你突然无法理解别人的情绪。朋友哭了你不知道为什么，同事生气了你感受不到。你的社交变成了纯粹的逻辑运算，每个反应都需要计算而不是感受。人们说你变得冷漠无情，但你是真的感受不到了。没有共情的人际关系像没有颜色的画。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "修理共情芯片",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 3,
+            "MONEY": -400,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "学习认知共情替代",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 3,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接受共情缺失的现实",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -3,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -2,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "麻木"
+      ]
+    },
+    {
+      "id": 4284,
+      "title": "情感麻木治疗",
+      "description": "你决定治疗自己的情感麻木，通过神经刺激来重新激活情感通路。治疗师用微电流刺激你的情感中枢，每次刺激都带来一阵强烈的情绪浪潮。有时是快乐，有时是悲伤，有时是恐惧——所有被压抑的情感同时涌出。你在治疗椅上哭得浑身颤抖。麻木的冰层在裂开，下面是沸腾的情感岩浆。",
+      "type": "medical",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "完成全部情感激活治疗",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 5,
+            "MONEY": -800,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "放慢治疗节奏",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 3,
+            "MONEY": -400,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "无法承受，放弃治疗",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -2,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": 1
+      },
+      "tags": [
+        "心理",
+        "麻木"
+      ]
+    },
+    {
+      "id": 4285,
+      "title": "神经感受器钝化",
+      "description": "你的神经感受器因为长期赛博刺激而钝化，普通的美味食物变得索然无味，普通的音乐听起来像噪音。你需要越来越强的刺激才能感受到任何东西。你的生活在失去色彩，一切都在变成灰色。你开始追求极端的感官体验，但每次都需要更多。你像是一个在沙漠中渴望海水的人。",
+      "type": "medical",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "进行感受器重启治疗",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 3,
+            "MONEY": -600,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "进行数字排毒，减少刺激",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "追求更强刺激",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -2,
+            "ADDICTION": 3,
+            "LIFE": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "麻木"
+      ]
+    },
+    {
+      "id": 4286,
+      "title": "情感重启尝试",
+      "description": "你决定进行彻底的情感系统重启——关闭所有情感芯片，让自然情感重新接管。重启过程像是情绪的暴风雨，所有被芯片调节了几十年的情感同时爆发。你在快乐和绝望之间疯狂摆荡，不知道哪个是真实的自己。你的身体在发抖，眼泪和笑声交替涌出。重生从来都不是温柔的。",
+      "type": "medical",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "坚持完成情感重启",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": 5,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "半途重新开启芯片",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -1,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在专业监督下重启",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 4,
+            "MONEY": -800,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -1,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "麻木"
+      ]
+    },
+    {
+      "id": 4287,
+      "title": "早期赛博痴呆",
+      "description": "你开始忘记一些小事——密码、约会、刚刚说过的话。起初你以为是工作压力大，但记忆测试显示你的神经通路正在退化。医生说这是赛博改造的长期副作用——'赛博痴呆'的早期症状。你才四十岁，但你的大脑在加速老化。你看着诊断报告上的数字，感到一种前所未有的恐惧。",
+      "type": "medical",
+      "ageRange": [
+        35,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "立即开始神经保护治疗",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 2,
+            "MONEY": -1000,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "寻求第二诊疗意见",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 2,
+            "MONEY": -400
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "否认症状，拒绝治疗",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -2,
+            "LIFE": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "HUMAN": -2,
+        "LIFE": -2
+      },
+      "tags": [
+        "心理",
+        "退行"
+      ]
+    },
+    {
+      "id": 4288,
+      "title": "记忆退化加速",
+      "description": "你的记忆退化速度比预期快得多。你开始忘记人的名字，迷路在熟悉的街道上。你的赛博日记成了你唯一的记忆，没有它你不知道昨天做了什么。你的神经芯片试图补偿，但它的容量也快到极限了。你害怕有一天你会忘记自己是谁。每一次遗忘都是一小部分的死亡。",
+      "type": "medical",
+      "ageRange": [
+        35,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "升级到记忆辅助系统",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 1,
+            "MONEY": -1500,
+            "TECH": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "参加记忆康复训练",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 3,
+            "MONEY": -500,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "录制日常记忆备份",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "MONEY": -300,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2,
+        "LIFE": -2
+      },
+      "tags": [
+        "心理",
+        "退行"
+      ]
+    },
+    {
+      "id": 4289,
+      "title": "神经通路腐蚀",
+      "description": "扫描显示你的赛博神经通路正在被身体缓慢腐蚀——免疫系统把芯片当成异物在攻击。神经信号的传输越来越不稳定，你的左手开始不听使唤。医生说需要更换所有受影响的通路，手术风险很高。不做手术，腐蚀会继续扩散。你看着自己颤抖的左手，感受着它正在离你而去。",
+      "type": "medical",
+      "ageRange": [
+        30,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "进行高风险通路更换手术",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "MONEY": -3000,
+            "DEBT": 1000,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用药物减缓腐蚀速度",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "MONEY": -500,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接受逐渐失去身体功能",
+          "effects": {
+            "TRAUMA": 5,
+            "HUMAN": -3,
+            "LIFE": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "HUMAN": -2,
+        "LIFE": -2
+      },
+      "tags": [
+        "心理",
+        "退行"
+      ]
+    },
+    {
+      "id": 4290,
+      "title": "赛博阿尔茨海默",
+      "description": "你被确诊为赛博阿尔茨海默症——一种由神经芯片长期使用引起的退行性疾病。你的记忆将不可逆地消失，从最近的开始，逐渐到最久远的。你的性格也可能改变，因为调节情感的芯片也在退化。你还有大概五年的清醒时间。你坐在诊室里，试图记住医生的脸。时间突然变得无比珍贵。",
+      "type": "medical",
+      "ageRange": [
+        40,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用剩余时间记录一切",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 4,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "尝试实验性治疗",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "MONEY": -2000,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "完成遗愿清单上的事",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 4,
+            "LIFE": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5,
+        "HUMAN": -2,
+        "LIFE": -3
+      },
+      "tags": [
+        "心理",
+        "退行"
+      ]
+    },
+    {
+      "id": 4291,
+      "title": "认知功能衰退",
+      "description": "你的认知测试分数在持续下降，你处理信息的速度变慢了，逻辑推理变得困难。曾经简单的工作现在需要双倍的时间。你的同事们开始注意到，有人用同情的目光看你，有人用不耐烦的语气和你说话。你的自信在每一次犯错中瓦解。你的大脑曾经是你最大的武器，现在它成了你的软肋。",
+      "type": "medical",
+      "ageRange": [
+        35,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "申请转岗到压力小的职位",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 2,
+            "MONEY": -400,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用认知增强器补偿",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -1,
+            "MONEY": -600,
+            "TECH": 1,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "参加认知康复项目",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 3,
+            "MONEY": -700,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": -2,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "退行"
+      ]
+    },
+    {
+      "id": 4292,
+      "title": "神经退行治疗",
+      "description": "一种新的神经再生疗法声称可以逆转赛博痴呆的早期症状。治疗使用纳米机器人修复受损的神经通路，但还在临床试验阶段。成功率60%，失败可能导致更快的退化。你看着治疗同意书上密密麻麻的风险条款，手在发抖。这是你唯一的希望，也可能是加速毁灭的催化剂。希望和恐惧在你胸中交战。",
+      "type": "medical",
+      "ageRange": [
+        35,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受实验性治疗",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "MONEY": -1500,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "等待治疗更成熟",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用自然方式减缓退化",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 3,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2,
+        "HUMAN": -1,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "退行"
+      ]
+    },
+    {
+      "id": 4293,
+      "title": "晚期赛博痴呆",
+      "description": "你已经不太记得今天发生了什么，但童年的记忆却异常清晰。你的赛博系统大部分时间都在离线状态，只有最基本的维生功能还在运行。家人来探望你，你有时认得出来有时认不出来。你活在时间的碎片中，过去和现在交错。但在清醒的片刻，你知道自己正在消失。那些短暂的清醒比永恒的糊涂更残忍。",
+      "type": "medical",
+      "ageRange": [
+        45,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在清醒时刻与家人好好相处",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 5,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "记录清醒时的想法",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 3,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "平静接受正在发生的一切",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 3,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5,
+        "HUMAN": -3,
+        "LIFE": -3
+      },
+      "tags": [
+        "心理",
+        "退行"
+      ]
+    },
+    {
+      "id": 4294,
+      "title": "精神崩溃前兆",
+      "description": "你已经一周没有合眼了，神经芯片的警告越来越频繁。你的思维变得碎片化，现实和幻觉的界限在模糊。你听到不存在的声音，看到不存在的人影。你的手在抖，心跳不规律，但你的大脑拒绝停下来。你站在悬崖边上，风在耳边呼啸。你知道再走一步就是深渊，但你不确定自己还能不能停下来。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "立即寻求紧急心理援助",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": 3,
+            "MONEY": -600,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用药物强制入睡",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 1,
+            "ADDICTION": 3,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "忽视警告继续硬撑",
+          "effects": {
+            "TRAUMA": 6,
+            "HUMAN": -3,
+            "LIFE": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "HUMAN": -2,
+        "LIFE": -2
+      },
+      "tags": [
+        "心理",
+        "崩溃"
+      ]
+    },
+    {
+      "id": 4295,
+      "title": "全面心理崩溃",
+      "description": "一切都崩塌了。你蹲在公寓的角落里，无法控制地哭泣和发抖。你的神经芯片过载了，屏幕上全是错误代码。你无法区分记忆和现实，无法分辨过去和现在。你的身体在抽搐，但你甚至感觉不到疼痛。你曾经引以为傲的意志力在这一刻化为齑粉。你觉得自己的灵魂碎成了千万片，散落在地板上。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拨打心理危机热线",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 4,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "让朋友来陪你",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 4,
+            "REP": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "独自扛过去",
+          "effects": {
+            "TRAUMA": 6,
+            "HUMAN": -4,
+            "LIFE": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5,
+        "HUMAN": -3,
+        "LIFE": -2
+      },
+      "tags": [
+        "心理",
+        "崩溃"
+      ]
+    },
+    {
+      "id": 4296,
+      "title": "赛博精神病发作",
+      "description": "你的赛博精神稳定性终于崩溃了，你分不清虚拟和现实。你在街上对着全息广告牌大喊，以为里面的人在和你说话。路人惊恐地绕开你，有人报了警。你的神经芯片在疯狂地闪烁红灯，但你已经读不懂那些警告了。你的内心世界和外部世界完全混淆了。你的恐惧和愤怒被赛博信号放大了一百倍。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "让路人帮你叫救护车",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 2,
+            "MONEY": -800,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自己挣扎着去精神科急诊",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": 3,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "任由发作，放弃控制",
+          "effects": {
+            "TRAUMA": 7,
+            "HUMAN": -4,
+            "LIFE": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 6,
+        "HUMAN": -3,
+        "LIFE": -3
+      },
+      "tags": [
+        "心理",
+        "崩溃"
+      ]
+    },
+    {
+      "id": 4297,
+      "title": "现实解体发作",
+      "description": "你突然感觉世界不是真实的——周围的建筑像是纸糊的，行人的脸像面具。你自己的身体也变得陌生，仿佛你在操作一个提线木偶。你伸手触摸墙壁，但感觉不到质感。你听到自己的声音从很远的地方传来。这种解体感让你恐慌到了极点。你拼命想抓住什么真实的东西，但一切都在你的指尖溶解。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用感官锚定技术回到现实",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 3,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "去急诊室处理",
+          "effects": {
+            "TRAUMA": 0,
+            "HUMAN": 2,
+            "MONEY": -500,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放任解体感",
+          "effects": {
+            "TRAUMA": 4,
+            "HUMAN": -3,
+            "LIFE": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4,
+        "HUMAN": -2,
+        "LIFE": -2
+      },
+      "tags": [
+        "心理",
+        "崩溃"
+      ]
+    },
+    {
+      "id": 4298,
+      "title": "紧急心理干预",
+      "description": "你被送进了赛博精神病房，身上连满了神经监测设备。医疗团队通过你的神经接口直接注入稳定信号，强行让你的大脑平静下来。药物和电信号让你的意识变得朦胧，但至少恐惧停止了。你在白色的病房里醒来，不确定自己在这里待了多久。护士说你是被好心人送来的。你第一次在很久以来感到了安全。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "积极配合治疗和康复",
+          "effects": {
+            "TRAUMA": -3,
+            "HUMAN": 4,
+            "MONEY": -1000,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "出院后加入互助小组",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": 4,
+            "REP": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "尽早出院，不想待在这里",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -1,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3,
+        "HUMAN": 1,
+        "LIFE": -1
+      },
+      "tags": [
+        "心理",
+        "崩溃"
+      ]
+    },
+    {
+      "id": 4299,
+      "title": "精神重建之路",
+      "description": "经历了心理崩溃后，你开始了漫长的重建之路。每天都是小小的胜利——能出门了，能和人说话了，能笑了。你的治疗师说恢复不是线性的，会有反复，但重要的是不要放弃。你学会了识别崩溃的前兆，学会了在需要时求助。你的伤疤不会消失，但它们让你更懂得珍惜每一个正常的日子。破碎的碗用金漆修补后，比原来更美。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全身心投入康复",
+          "effects": {
+            "TRAUMA": -4,
+            "HUMAN": 5,
+            "MONEY": -600,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用经历帮助其他崩溃者",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": 5,
+            "REP": 3,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "慢慢来，一天一天恢复",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": 4,
+            "LIFE": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": -1,
+        "HUMAN": 2,
+        "LIFE": 1
+      },
+      "tags": [
+        "心理",
+        "崩溃"
+      ]
+    }
+  ]
+}

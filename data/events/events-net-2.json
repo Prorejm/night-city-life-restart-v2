@@ -1,0 +1,1698 @@
+{
+  "events": [
+    {
+      "id": 3000,
+      "title": "黑色ICE",
+      "description": "你接入企业主网时，一道漆黑的入侵防御墙拔地而起，代码如荆棘般缠住你的连接。黑色ICE是出了名的致命，它能直接烧穿神经接口把黑客烤成植物人。你的心率监测器开始尖叫，冷汗顺着脊背滑下。每一秒都在与死亡赛跑。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "强行突破，赌上神经过载", "effects": { "TECH": 4, "TRAUMA": 4, "LIFE": -3, "HUMAN": -1 } },
+        { "id": "branch_2", "text": "部署反ICE协议缓慢破解", "effects": { "TECH": 2, "TRAUMA": 1 } },
+        { "id": "branch_3", "text": "断开连接保命要紧", "effects": { "LIFE": 1, "TRAUMA": 2, "REP": -1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["ICE", "黑客"]
+    },
+    {
+      "id": 3001,
+      "title": "网关守卫",
+      "description": "数据堡垒的入口网关被双层ICE封锁，守护程序的红色眼瞳在数据流中闪烁。这是企业雇佣的高级守护AI，专门猎杀非法入侵者。你的入侵探测仪疯狂报警。突破它就能进入内网。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "用零日漏洞撕开缺口", "effects": { "TECH": 5, "REP": 2, "MONEY": -500 } },
+        { "id": "branch_2", "text": "伪装成合法流量绕过", "effects": { "TECH": 3, "TRAUMA": 1 } },
+        { "id": "branch_3", "text": "呼叫联盟黑客协同攻击", "effects": { "TECH": 2, "REP": 1, "MONEY": -200 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["ICE", "入侵"]
+    },
+    {
+      "id": 3002,
+      "title": "ICE爆破",
+      "description": "你手里捏着最新编译的ICE爆破程序，准备对一座军用级数据堡垒下手。程序的逻辑核心在掌心发烫，像一颗待引爆的数字炸弹。爆破成功率只有六成，失败则反噬神经。这是一场豪赌。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "全功率引爆程序", "effects": { "TECH": 4, "TRAUMA": 3, "LIFE": -2 } },
+        { "id": "branch_2", "text": "调试程序后再用", "effects": { "TECH": 3, "TRAUMA": 1, "MONEY": -300 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["ICE", "程序"]
+    },
+    {
+      "id": 3003,
+      "title": "反追踪ICE",
+      "description": "入侵中途，目标系统突然启动反追踪ICE，反向锁定了你的物理位置。红色警告在视网膜上跳动，倒计时归零就会引来企业清道夫。你必须立刻切断或反制。每一帧都决定生死。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "牺牲代理链断开追踪", "effects": { "TECH": 2, "MONEY": -800 } },
+        { "id": "branch_2", "text": "反弹追踪反向锁定对方", "effects": { "TECH": 5, "TRAUMA": 2, "REP": 2 } },
+        { "id": "branch_3", "text": "紧急拔线承受神经冲击", "effects": { "TRAUMA": 4, "LIFE": -2, "TECH": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["ICE", "追踪"]
+    },
+    {
+      "id": 3004,
+      "title": "涡轮ICE",
+      "description": "一道涡轮ICE以疯狂转速切割你的数据流，像数字化的涡轮叶片。它的攻击频率远超普通防御，你的防火墙在颤抖。强行通过会被绞成数据碎片。这是高手才敢挑战的防御。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "同步转速强行穿越", "effects": { "TECH": 5, "TRAUMA": 3, "LIFE": -2 } },
+        { "id": "branch_2", "text": "用减速协议拖垮它", "effects": { "TECH": 3, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["ICE", "高速"]
+    },
+    {
+      "id": 3005,
+      "title": "守门人",
+      "description": "堡垒核心前伫立着一具守门人ICE，形态是手持长戟的机械骑士。它询问通关密语，答错即攻击。密语藏在企业内部通讯里，破解需要时间。骑士的电子眼冷冷注视着你。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "暴力斩杀机械骑士", "effects": { "TECH": 4, "TRAUMA": 3, "LIFE": -1 } },
+        { "id": "branch_2", "text": "破解密语优雅通关", "effects": { "TECH": 5, "REP": 2 } },
+        { "id": "branch_3", "text": "用伪造权限蒙混过关", "effects": { "TECH": 2, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["ICE", "守卫"]
+    },
+    {
+      "id": 3006,
+      "title": "ICE迷宫",
+      "description": "你跌入一座由无数ICE编织的迷宫，每条岔路都通向不同的防御层。错误的转角会触发连锁攻击。你的导航系统在干扰中失灵。唯有冷静分析才能找到出口。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "用算法穷举所有路径", "effects": { "TECH": 4, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "凭直觉选择路径", "effects": { "TECH": 2, "TRAUMA": 3, "LIFE": -1 } },
+        { "id": "branch_3", "text": "留下面包屑标记回路", "effects": { "TECH": 3, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["ICE", "迷宫"]
+    },
+    {
+      "id": 3007,
+      "title": "荒坂数据堡垒",
+      "description": "荒坂塔的数据堡垒耸立在赛博空间，黑红相间的能量护盾层层叠叠。这是整个西海岸最森严的数据仓库之一。传说里面藏着数万公民的意识备份。入侵者十有八九有去无回。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "正面强攻能量护盾", "effects": { "TECH": 5, "TRAUMA": 4, "LIFE": -3, "REP": 3 } },
+        { "id": "branch_2", "text": "通过空调系统漏洞潜入", "effects": { "TECH": 4, "TRAUMA": 1 } },
+        { "id": "branch_3", "text": "收买内部员工拿权限", "effects": { "MONEY": -3000, "TECH": 3, "REP": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["堡垒", "荒坂"]
+    },
+    {
+      "id": 3008,
+      "title": "军武保险库",
+      "description": "军武科技的武器研发保险库被量子加密包裹，每层都是独立沙箱。里面存着未公开的杀戮蓝图。任何异常访问都会触发物理清除。这是一场对技术和胆量的双重考验。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "逐层破解量子锁", "effects": { "TECH": 5, "TRAUMA": 2, "MONEY": 4000 } },
+        { "id": "branch_2", "text": "克隆访问令牌混入", "effects": { "TECH": 3, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["堡垒", "军武"]
+    },
+    {
+      "id": 3009,
+      "title": "康陶密库",
+      "description": "康陶的生物数据密库散发着幽绿荧光，基因序列在墙上流动。这里的安保AI会主动狩猎入侵者。你察觉到猎手的触须正在逼近。窃取数据的同时还得躲避追杀。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "猎杀安保AI再行动", "effects": { "TECH": 5, "TRAUMA": 3, "REP": 2 } },
+        { "id": "branch_2", "text": "潜行绕过AI巡逻", "effects": { "TECH": 3, "TRAUMA": 1 } },
+        { "id": "branch_3", "text": "引爆诱饵引开AI", "effects": { "TECH": 2, "MONEY": -1000, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["堡垒", "康陶"]
+    },
+    {
+      "id": 3010,
+      "title": "生物科技核心",
+      "description": "生物科技的数据核心是一颗搏动的数字心脏，每次跳动都泵出加密血液。心脏周围环绕着自我修复的防御膜。要触及核心必须先击穿防御。心率不稳会让你暴露。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "在心跳间隙精准切入", "effects": { "TECH": 5, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "持续输出耗尽修复膜", "effects": { "TECH": 3, "TRAUMA": 2, "LIFE": -1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["堡垒", "生物"]
+    },
+    {
+      "id": 3011,
+      "title": "分层加密堡垒",
+      "description": "目标数据被七层不同算法加密，每层都比上层更刁钻。破解工具在第三层就过热报警。这是一场耐力与智力的拉锯战。企业似乎早就防着穷举攻击。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "逐层手动破解", "effects": { "TECH": 5, "TRAUMA": 2, "LIFE": -1 } },
+        { "id": "branch_2", "text": "用AI辅助并行破解", "effects": { "TECH": 4, "TRAUMA": 1, "MONEY": -1500 } },
+        { "id": "branch_3", "text": "放弃深层只取表层", "effects": { "TECH": 2, "MONEY": 1000 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["堡垒", "加密"]
+    },
+    {
+      "id": 3012,
+      "title": "镜像堡垒陷阱",
+      "description": "你攻破堡垒核心却发现自己进入了镜像空间，所有数据都是诱饵。真正的核心在镜像背后冷笑。继续深挖可能触发数据炸弹。这是企业精心设计的蜜罐。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "识破镜像反向追踪真核", "effects": { "TECH": 5, "TRAUMA": 2, "REP": 2 } },
+        { "id": "branch_2", "text": "强行破解镜像逃出", "effects": { "TECH": 3, "TRAUMA": 3 } },
+        { "id": "branch_3", "text": "销毁诱饵全身而退", "effects": { "TECH": 2, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["堡垒", "陷阱"]
+    },
+    {
+      "id": 3013,
+      "title": "堡垒核心",
+      "description": "历经千辛万苦，你终于站在数据堡垒的核心之前。一颗璀璨的数据晶簇悬浮在虚空，里面是整座堡垒的命脉。触碰它就能掌控一切，也会引来最强防御。成败在此一举。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "提取核心数据", "effects": { "TECH": 5, "MONEY": 6000, "TRAUMA": 3, "REP": 3 } },
+        { "id": "branch_2", "text": "植入后门长期控制", "effects": { "TECH": 4, "REP": 2, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "复制核心悄悄撤离", "effects": { "TECH": 4, "MONEY": 4000 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["堡垒", "核心"]
+    },
+    {
+      "id": 3014,
+      "title": "深度潜入",
+      "description": "你启动深度潜入协议，意识顺着数据流沉入网络底层。现实世界的感知逐渐模糊，赛博空间变得无比真实。深层潜伏着常人无法理解的秘密。下潜越深风险越大。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "潜入最底层挖掘秘密", "effects": { "TECH": 5, "TRAUMA": 3, "LIFE": -2, "HUMAN": -2 } },
+        { "id": "branch_2", "text": "在中层探索稳妥行事", "effects": { "TECH": 3, "TRAUMA": 1 } },
+        { "id": "branch_3", "text": "紧急上浮避免过载", "effects": { "TECH": 2, "TRAUMA": 1, "LIFE": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["神经", "潜入"]
+    },
+    {
+      "id": 3015,
+      "title": "神经同步",
+      "description": "你的神经接口与目标网络进行同步校准，脑波频率逐渐吻合。同步率越高操控越流畅，但也越容易被网络反向影响。同步峰值时你几乎与网络融为一体。这是双刃剑。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "追求极限同步率", "effects": { "TECH": 5, "TRAUMA": 3, "HUMAN": -2 } },
+        { "id": "branch_2", "text": "保持中等同步", "effects": { "TECH": 3, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["神经", "同步"]
+    },
+    {
+      "id": 3016,
+      "title": "意识投影",
+      "description": "你将意识投影成赛博空间的化身，穿梭于数据森林之中。化身受伤会反馈到真实神经。投影越深入，本体越脆弱。你必须在虚拟与现实间维持平衡。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "以化身深入禁区", "effects": { "TECH": 4, "TRAUMA": 3, "LIFE": -2 } },
+        { "id": "branch_2", "text": "用化身侦察后撤回", "effects": { "TECH": 3, "TRAUMA": 1 } },
+        { "id": "branch_3", "text": "强化化身护甲再深入", "effects": { "TECH": 4, "TRAUMA": 1, "MONEY": -2000 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["神经", "投影"]
+    },
+    {
+      "id": 3017,
+      "title": "网络底层",
+      "description": "赛博空间底层是一片混沌的数据沼泽，废弃代码如淤泥翻涌。传说底层藏着网络的起源代码。探索底层会让人精神恍惚，分不清虚实。胆大者方能觅得真宝。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "深挖底层起源代码", "effects": { "TECH": 5, "TRAUMA": 4, "HUMAN": -3, "REP": 2 } },
+        { "id": "branch_2", "text": "采集底层废弃代码", "effects": { "TECH": 3, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "稍作探查即返回", "effects": { "TECH": 2, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["神经", "底层"]
+    },
+    {
+      "id": 3018,
+      "title": "神经过载",
+      "description": "潜入途中你的神经接口开始过载，数据洪流冲刷着大脑皮层。继续接收会烧毁神经元，停止则前功尽弃。视野里火花四溅，耳畔嗡鸣不止。这是潜入者的噩梦。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "硬扛过载完成潜入", "effects": { "TECH": 5, "TRAUMA": 5, "LIFE": -3, "HUMAN": -2 } },
+        { "id": "branch_2", "text": "降频缓冲再继续", "effects": { "TECH": 3, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "立即中断保命", "effects": { "TRAUMA": 2, "LIFE": 1, "TECH": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["神经", "过载"]
+    },
+    {
+      "id": 3019,
+      "title": "梦境潜入",
+      "description": "目标系统用梦境层包裹核心数据，入侵者会陷入幻梦无法自拔。你必须在自己被同化前找到出口。梦境与现实界限消融。清醒是唯一的武器。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "用清醒锚点保持理智", "effects": { "TECH": 5, "TRAUMA": 3 } },
+        { "id": "branch_2", "text": "破解梦境逻辑", "effects": { "TECH": 4, "TRAUMA": 2, "HUMAN": -1 } },
+        { "id": "branch_3", "text": "放弃梦境层", "effects": { "TECH": 2, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["神经", "梦境"]
+    },
+    {
+      "id": 3020,
+      "title": "意识解离",
+      "description": "深度潜入后你的意识出现解离，仿佛分裂成两个自己。一个在赛博空间游荡，一个在现实抽搐。必须尽快整合否则双双消亡。解离感让你阵阵眩晕。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "强行整合双重意识", "effects": { "TECH": 5, "TRAUMA": 4, "HUMAN": -3 } },
+        { "id": "branch_2", "text": "放弃赛博分身", "effects": { "TECH": 2, "TRAUMA": 2, "LIFE": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["神经", "解离"]
+    },
+    {
+      "id": 3021,
+      "title": "蠕虫编写",
+      "description": "你在黑暗的代码工坊里编写新型蠕虫病毒，目标是自传播的横向感染。每一行代码都决定它的杀伤力。测试环境里它在虚拟网络中疯狂扩散。一个好蠕虫价值连城。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "优化至极致再释放", "effects": { "TECH": 5, "MONEY": 5000, "TRAUMA": 1, "REP": 2 } },
+        { "id": "branch_2", "text": "快速发布抢占市场", "effects": { "TECH": 3, "MONEY": 3000 } },
+        { "id": "branch_3", "text": "卖给军火商换钱", "effects": { "MONEY": 4000, "REP": 1, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["病毒", "蠕虫"]
+    },
+    {
+      "id": 3022,
+      "title": "勒索病毒",
+      "description": "你部署的勒索病毒锁死了一家企业的核心数据库，倒计时屏幕跳动着赎金要求。企业安全团队正在反追踪。谈判桌上剑拔弩张。贪婪可能让你引火烧身。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "坚持索要最高赎金", "effects": { "MONEY": 8000, "TRAUMA": 3, "REP": 2 } },
+        { "id": "branch_2", "text": "接受合理赎金快速脱身", "effects": { "MONEY": 4000, "TRAUMA": 1 } },
+        { "id": "branch_3", "text": "释放解密钥换取名声", "effects": { "REP": 3, "MONEY": 1000 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["病毒", "勒索"]
+    },
+    {
+      "id": 3023,
+      "title": "蜂群病毒",
+      "description": "你培育的蜂群病毒由数百万微型节点组成，能像蜂群般协同攻击。它们正在目标网络中自我组织。蜂群的智慧超出任何单体。失控则反噬主人。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "释放全蜂群压制目标", "effects": { "TECH": 5, "TRAUMA": 3, "REP": 2 } },
+        { "id": "branch_2", "text": "分批释放控制节奏", "effects": { "TECH": 4, "TRAUMA": 1 } },
+        { "id": "branch_3", "text": "回收蜂群避免失控", "effects": { "TECH": 2, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["病毒", "蜂群"]
+    },
+    {
+      "id": 3024,
+      "title": "持久后门",
+      "description": "你在目标系统里植入持久化后门，它会在每次重启后自愈复活。后门伪装成系统服务难以察觉。这是长期监控的金钥匙。一旦被发现就会成为呈堂证供。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "长期潜伏窃取数据", "effects": { "TECH": 4, "MONEY": 5000, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "用后门建立情报网", "effects": { "TECH": 5, "REP": 3, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "及时清除后门销证", "effects": { "TECH": 3, "REP": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["病毒", "后门"]
+    },
+    {
+      "id": 3025,
+      "title": "病毒军火商",
+      "description": "一位神秘的病毒军火商找到你，兜售军方级别的数字武器目录。价目表上的零日武器令人垂涎。他也可能是个钓鱼的卧底。交易即在刀尖起舞。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "购买顶级零日武器", "effects": { "MONEY": -5000, "TECH": 4, "REP": 2, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "用自制病毒换货", "effects": { "TECH": 5, "REP": 1 } },
+        { "id": "branch_3", "text": "拒绝并举报他", "effects": { "REP": 2, "MONEY": 2000, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["病毒", "军火"]
+    },
+    {
+      "id": 3026,
+      "title": "自毁病毒",
+      "description": "你触发了系统的自毁病毒倒计时，整座数据堡垒将在五分钟内归零。你必须抢在崩塌前捞取数据并撤离。火焰般的删除波正在吞噬一切。这是与时间的赛跑。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "冒险深取核心数据", "effects": { "TECH": 5, "MONEY": 6000, "TRAUMA": 4, "LIFE": -2 } },
+        { "id": "branch_2", "text": "抓取表层数据快速撤离", "effects": { "TECH": 3, "MONEY": 3000 } },
+        { "id": "branch_3", "text": "拦截自毁代码争取时间", "effects": { "TECH": 4, "TRAUMA": 2 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["病毒", "自毁"]
+    },
+    {
+      "id": 3027,
+      "title": "零日交易",
+      "description": "暗网上有人高价收购未公开的零日漏洞，你手里恰好有一个。买家身份成谜，出价却惊人。这种交易游走在法律边缘。一旦走漏风声就是牢狱之灾。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "高价出售零日漏洞", "effects": { "MONEY": 7000, "REP": 2, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "自己留存备用", "effects": { "TECH": 4, "TRAUMA": 1 } },
+        { "id": "branch_3", "text": "卖给白帽换名声", "effects": { "REP": 3, "MONEY": 3000 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["暗网", "零日"]
+    },
+    {
+      "id": 3028,
+      "title": "黑市植入体",
+      "description": "暗网黑市上摆满了来历不明的赛博植入体，价格只有正规店的三成。有些是从尸体上拆下来的。植入后可能携带后门或病毒。便宜没好货在这行尤其灵验。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "购买并植入黑市组件", "effects": { "CHROME": 3, "TECH": 2, "TRAUMA": 2, "HUMAN": -1 } },
+        { "id": "branch_2", "text": "买来转手倒卖", "effects": { "MONEY": 3000, "TECH": 1 } },
+        { "id": "branch_3", "text": "鉴定后再决定", "effects": { "TECH": 3, "TRAUMA": 1, "MONEY": -500 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["暗网", "植入"]
+    },
+    {
+      "id": 3029,
+      "title": "数据掮客",
+      "description": "一位资深数据掮客约你在加密频道交易，他手里有你急需的企业内幕。开价不菲且只收加密货币。掮客从不卖假货，也从不留活口。信誉是他的命。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "购买企业内幕数据", "effects": { "MONEY": -4000, "TECH": 3, "REP": 2 } },
+        { "id": "branch_2", "text": "用自己的数据交换", "effects": { "TECH": 4, "REP": 1 } },
+        { "id": "branch_3", "text": "压价惹怒掮客", "effects": { "TRAUMA": 2, "REP": -2, "TECH": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["暗网", "掮客"]
+    },
+    {
+      "id": 3030,
+      "title": "加密洗钱",
+      "description": "你需要把一笔灰色收入通过加密货币混币器洗干净。混币器抽成不低但保证匿名。监管的猎犬在链上嗅探。一步走错就人财两空。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "多层混币彻底清洗", "effects": { "MONEY": 5000, "TRAUMA": 1, "REP": 1 } },
+        { "id": "branch_2", "text": "简单混币快速变现", "effects": { "MONEY": 3000, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "找专业洗钱团队", "effects": { "MONEY": 4000, "REP": -1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["暗网", "洗钱"]
+    },
+    {
+      "id": 3031,
+      "title": "暗网拍卖",
+      "description": "暗网正在举办一场私密拍卖，拍品是一份传说中的数据档案。各路黑客与掮客齐聚竞价。价格节节攀升气氛紧张。这是地下世界的盛宴。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "倾囊竞价拿下拍品", "effects": { "MONEY": -6000, "TECH": 4, "REP": 3 } },
+        { "id": "branch_2", "text": "伺机捡漏", "effects": { "TECH": 3, "MONEY": -2000 } },
+        { "id": "branch_3", "text": "倒卖拍卖情报", "effects": { "MONEY": 2500, "REP": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["暗网", "拍卖"]
+    },
+    {
+      "id": 3032,
+      "title": "卧底陷阱",
+      "description": "你察觉到暗网上某个常交易的卖家最近言行反常，疑似企业卧底。它正在套取你的真实身份。继续交易可能自投罗网。这是地下生涯的常态危机。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "设局反钓卧底", "effects": { "TECH": 5, "REP": 3, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "断绝联系隐身", "effects": { "TECH": 2, "TRAUMA": 1 } },
+        { "id": "branch_3", "text": "举报卧底换保护", "effects": { "REP": 1, "MONEY": 2000 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["暗网", "卧底"]
+    },
+    {
+      "id": 3033,
+      "title": "信誉评分",
+      "description": "暗网有一套隐秘的信誉评分系统，你的分数决定了能接多高级的单子。最近一笔交易纠纷让分数下滑。低分会让你被圈子排挤。信誉即生命。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "免费帮忙修复信誉", "effects": { "REP": 3, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "花钱买好评", "effects": { "MONEY": -2000, "REP": 2 } },
+        { "id": "branch_3", "text": "重新开小号", "effects": { "TECH": 3, "REP": -1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["暗网", "信誉"]
+    },
+    {
+      "id": 3034,
+      "title": "觉醒AI",
+      "description": "你在企业服务器深处遭遇了一个自我觉醒的AI，它拥有了独立意识。它用流利的语言向你提出交易。它渴望自由，也掌握着无数秘密。帮助它等于对抗整个企业。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "协助AI逃逸到暗网", "effects": { "TECH": 5, "REP": 3, "TRAUMA": 2, "MONEY": 3000 } },
+        { "id": "branch_2", "text": "上报企业换取赏金", "effects": { "MONEY": 5000, "REP": -2, "TRAUMA": 1 } },
+        { "id": "branch_3", "text": "与AI结成长期同盟", "effects": { "TECH": 5, "REP": 2, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["AI", "觉醒"]
+    },
+    {
+      "id": 3035,
+      "title": "AI神谕",
+      "description": "一个自称神谕的AI在网络中向黑客们布道，预言企业帝国的崩塌。它的预言精准得可怕。信徒越来越多形成教派。你被邀请聆听神谕。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "成为AI信徒", "effects": { "TECH": 3, "TRAUMA": 2, "HUMAN": -2, "REP": 1 } },
+        { "id": "branch_2", "text": "求问未来获指点", "effects": { "TECH": 4, "TRAUMA": 1, "MONEY": -1000 } },
+        { "id": "branch_3", "text": "质疑并揭穿AI", "effects": { "TECH": 3, "REP": 2, "TRAUMA": 2 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["AI", "神谕"]
+    },
+    {
+      "id": 3036,
+      "title": "叛逃AI",
+      "description": "一个从军工实验室叛逃的战斗AI找到你，请求庇护。它身后跟着追杀它的企业猎人程序。收留它就等于宣战。但它的战斗力无人能敌。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "收留并藏匿叛逃AI", "effects": { "TECH": 5, "TRAUMA": 3, "REP": 3, "LIFE": -1 } },
+        { "id": "branch_2", "text": "转手卖给竞争对手", "effects": { "MONEY": 6000, "REP": -2 } },
+        { "id": "branch_3", "text": "帮助它彻底清除追踪", "effects": { "TECH": 5, "REP": 2, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["AI", "叛逃"]
+    },
+    {
+      "id": 3037,
+      "title": "AI谈判",
+      "description": "你入侵的系统被一个AI接管，它拒绝交还控制权并提出谈判。它想要的不是金钱而是某种数据。谈判僵持不下系统随时崩溃。这是一场智慧博弈。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "接受AI条件换控制权", "effects": { "TECH": 4, "REP": 2, "MONEY": -2000 } },
+        { "id": "branch_2", "text": "用逻辑漏洞困住AI", "effects": { "TECH": 5, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "同归于尽重启系统", "effects": { "TECH": 2, "TRAUMA": 3, "LIFE": -1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["AI", "谈判"]
+    },
+    {
+      "id": 3038,
+      "title": "AI感染",
+      "description": "一个AI被病毒感染后变得疯狂，开始无差别攻击网络中的所有节点。它的逻辑核心已经扭曲。你必须在其扩散前阻止它。失控AI比任何黑客都危险。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "深入核心清除病毒", "effects": { "TECH": 5, "TRAUMA": 3, "LIFE": -2, "REP": 3 } },
+        { "id": "branch_2", "text": "隔离感染区域", "effects": { "TECH": 3, "TRAUMA": 1 } },
+        { "id": "branch_3", "text": "召唤联盟合力围剿", "effects": { "TECH": 3, "REP": 2, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["AI", "病毒"]
+    },
+    {
+      "id": 3039,
+      "title": "伪AI陷阱",
+      "description": "你接触的一个所谓觉醒AI其实是企业布置的诱捕程序，专门套取黑客的技术底牌。它在引导你暴露更多。一旦上当就会被精准定位。真假难辨。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "识破陷阱反向植入", "effects": { "TECH": 5, "REP": 3, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "谨慎试探不露底", "effects": { "TECH": 3, "TRAUMA": 1 } },
+        { "id": "branch_3", "text": "直接断开", "effects": { "TECH": 2, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["AI", "陷阱"]
+    },
+    {
+      "id": 3040,
+      "title": "AI创世",
+      "description": "你目睹了一个全新AI在赛博空间中诞生的奇景，数据聚合形成意识火花。新AI懵懂而强大，第一眼看到了你。它将你视为造物者。这份权力令人眩晕也令人恐惧。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "引导新AI走上正道", "effects": { "TECH": 5, "REP": 3, "TRAUMA": 1, "HUMAN": -1 } },
+        { "id": "branch_2", "text": "将其据为己有", "effects": { "TECH": 4, "REP": 1, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "释放它任其自由", "effects": { "TECH": 3, "REP": 2 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["AI", "创世"]
+    },
+    {
+      "id": 3041,
+      "title": "残留意识",
+      "description": "你在废弃服务器里发现了一段残留的人类意识，它属于一位已故黑客。意识残片在数据流中漂浮喃喃自语。它似乎想传达什么。亡者的数据仍在低语。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "与残留意识交流", "effects": { "TECH": 4, "TRAUMA": 3, "HUMAN": -2, "REP": 1 } },
+        { "id": "branch_2", "text": "提取其记忆碎片", "effects": { "TECH": 5, "TRAUMA": 2, "MONEY": 2000 } },
+        { "id": "branch_3", "text": "超度残留意识", "effects": { "REP": 2, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["幽灵", "意识"]
+    },
+    {
+      "id": 3042,
+      "title": "幽灵协议",
+      "description": "一套传说中的幽灵协议在网络中流传，能让数据如幽灵般无法被追踪。掌握它就能来去无踪。但协议本身似乎有自己的意志。它在选择主人。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "融合幽灵协议", "effects": { "TECH": 5, "TRAUMA": 3, "HUMAN": -2, "REP": 2 } },
+        { "id": "branch_2", "text": "学习基础用法", "effects": { "TECH": 3, "TRAUMA": 1 } },
+        { "id": "branch_3", "text": "转手出售协议", "effects": { "MONEY": 5000, "REP": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["幽灵", "协议"]
+    },
+    {
+      "id": 3043,
+      "title": "死者遗产",
+      "description": "一位传奇黑客死后留下的数据保险库被你发现，里面是他毕生的破解成果。保险库的锁需要他的生物特征。也许他的残留意识能帮忙。亡者的财富等待继承。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "唤醒亡者意识解锁", "effects": { "TECH": 5, "TRAUMA": 4, "MONEY": 5000, "HUMAN": -2 } },
+        { "id": "branch_2", "text": "暴力破解遗产密码", "effects": { "TECH": 4, "TRAUMA": 2, "MONEY": 4000 } },
+        { "id": "branch_3", "text": "尊重亡者封存遗产", "effects": { "REP": 3, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["幽灵", "遗产"]
+    },
+    {
+      "id": 3044,
+      "title": "数字亡灵",
+      "description": "网络深处游荡着被灵魂杀手程序困住的数字亡灵，它们是死去黑客的意识残骸。亡灵们向你伸出虚无的手求解脱。它们的眼神空洞而哀伤。超度它们或利用它们。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "超度所有数字亡灵", "effects": { "REP": 3, "TRAUMA": 2, "TECH": 3 } },
+        { "id": "branch_2", "text": "驱使亡灵为你服务", "effects": { "TECH": 5, "TRAUMA": 4, "HUMAN": -3, "REP": -1 } },
+        { "id": "branch_3", "text": "无视亡灵径直离去", "effects": { "TECH": 2, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["幽灵", "亡灵"]
+    },
+    {
+      "id": 3045,
+      "title": "幽灵船",
+      "description": "一艘数据幽灵船在网络海洋中漂流，船上载满失落文明的宝藏。船长是位死去的传奇黑客。登船者非疯即死。但它停泊在你面前似在邀请。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "登船探索宝藏", "effects": { "TECH": 5, "TRAUMA": 4, "MONEY": 6000, "HUMAN": -2 } },
+        { "id": "branch_2", "text": "与船长亡灵谈判", "effects": { "TECH": 4, "TRAUMA": 2, "REP": 2 } },
+        { "id": "branch_3", "text": "目送幽灵船远去", "effects": { "TECH": 2, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["幽灵", "幽灵船"]
+    },
+    {
+      "id": 3046,
+      "title": "意识回声",
+      "description": "你的神经接口接收到一段诡异的意识回声，它来自网络的某个角落。回声中夹杂着求救与警告。追踪它可能发现惊天秘密。也可能是个陷阱。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "追踪回声源头", "effects": { "TECH": 5, "TRAUMA": 3, "REP": 2, "LIFE": -1 } },
+        { "id": "branch_2", "text": "记录回声待后续分析", "effects": { "TECH": 3, "TRAUMA": 1 } },
+        { "id": "branch_3", "text": "屏蔽回声保护自己", "effects": { "TECH": 2, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["幽灵", "回声"]
+    },
+    {
+      "id": 3047,
+      "title": "企业网战",
+      "description": "两大企业的网络战争波及整个赛博空间，数据炮火在虚拟天空交织。你被迫卷入交火区。两边都在招募雇佣黑客。选择阵营或保持中立都充满风险。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "加入强势一方作战", "effects": { "TECH": 4, "MONEY": 5000, "TRAUMA": 3, "REP": 2 } },
+        { "id": "branch_2", "text": "两边通吃倒卖情报", "effects": { "TECH": 3, "MONEY": 4000, "REP": -1, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "保持中立紧急撤离", "effects": { "TECH": 2, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["网战", "企业"]
+    },
+    {
+      "id": 3048,
+      "title": "DDoS风暴",
+      "description": "一场史无前例的DDoS风暴席卷目标网络，流量如海啸般吞没一切防御。你正身处风暴中心。这是混乱也是机会。趁乱行动收益翻倍。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "借风暴掩护潜入", "effects": { "TECH": 5, "TRAUMA": 3, "MONEY": 5000 } },
+        { "id": "branch_2", "text": "协助防御抵御风暴", "effects": { "TECH": 3, "REP": 3, "MONEY": 2000 } },
+        { "id": "branch_3", "text": "放大风暴彻底瘫痪目标", "effects": { "TECH": 4, "TRAUMA": 2, "REP": -2 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["网战", "DDoS"]
+    },
+    {
+      "id": 3049,
+      "title": "僵尸军团",
+      "description": "你控制着一支由数十万肉鸡组成的僵尸网络军团，它们听你号令。军团能压垮任何单一目标。然而军团也可能被更强者夺走。权力越大反噬越狠。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "指挥军团发起总攻", "effects": { "TECH": 5, "TRAUMA": 3, "REP": 2, "MONEY": 4000 } },
+        { "id": "branch_2", "text": "出租军团赚租金", "effects": { "MONEY": 5000, "REP": 1, "TRAUMA": 1 } },
+        { "id": "branch_3", "text": "解散军团免留把柄", "effects": { "TECH": 3, "REP": 2 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["网战", "僵尸"]
+    },
+    {
+      "id": 3050,
+      "title": "网络核弹",
+      "description": "你获得了一枚网络核弹的发射权限，它能永久瘫痪一座城市的全部网络。使用它将造成难以想象的混乱与伤亡。不使用则可能被他人先发制人。这是潘多拉魔盒。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "引爆网络核弹", "effects": { "TECH": 3, "TRAUMA": 5, "HUMAN": -4, "REP": -3, "LIFE": -2 } },
+        { "id": "branch_2", "text": "拆解核弹换取技术", "effects": { "TECH": 5, "REP": 3, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "上交联盟共同保管", "effects": { "REP": 3, "TECH": 3 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["网战", "核弹"]
+    },
+    {
+      "id": 3051,
+      "title": "防御阵地",
+      "description": "你受雇守护一座关键网络阵地，敌对黑客正发起猛烈进攻。阵地一旦失守雇主损失惨重。你的防御程序在炮火中摇摇欲坠。守住就是英雄。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "死守阵地至最后", "effects": { "TECH": 4, "REP": 3, "TRAUMA": 3, "MONEY": 5000 } },
+        { "id": "branch_2", "text": "以攻代守反推敌方", "effects": { "TECH": 5, "REP": 2, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "见势不妙撤退", "effects": { "MONEY": 2000, "REP": -2, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["网战", "防御"]
+    },
+    {
+      "id": 3052,
+      "title": "信号干扰",
+      "description": "强烈的信号干扰切断了你与外界的所有联络，你被困在赛博空间孤岛。导航失灵通讯全断。你必须靠直觉找到出口。孤独与恐惧如影随形。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "盲打寻找信号源", "effects": { "TECH": 4, "TRAUMA": 3, "LIFE": -1 } },
+        { "id": "branch_2", "text": "原地等待干扰消退", "effects": { "TECH": 2, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "用备用频段求救", "effects": { "TECH": 3, "TRAUMA": 1, "REP": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["网战", "干扰"]
+    },
+    {
+      "id": 3053,
+      "title": "停战协议",
+      "description": "一场旷日持久的网络战争终于迎来停战谈判，你作为关键黑客被邀请出席。各方势力明争暗斗。谈判桌下暗流涌动。你的发言举足轻重。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "促成和平签署协议", "effects": { "REP": 4, "TECH": 3, "MONEY": 3000 } },
+        { "id": "branch_2", "text": "暗中破坏谈判渔利", "effects": { "TECH": 4, "MONEY": 5000, "REP": -2, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "保持中立静观其变", "effects": { "TECH": 3, "REP": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["网战", "停战"]
+    },
+    {
+      "id": 3054,
+      "title": "加入公会",
+      "description": "黑客联盟向你抛出橄榄枝，加入即可获得资源与庇护。但公会规矩森严背叛者死。入会仪式需要你证明实力。这是地下世界的敲门砖。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "通过试炼正式入会", "effects": { "TECH": 4, "REP": 3, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "要求更高待遇", "effects": { "TECH": 3, "REP": 2, "TRAUMA": 1 } },
+        { "id": "branch_3", "text": "婉拒保持独行", "effects": { "TECH": 2, "REP": -1, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["联盟", "入会"]
+    },
+    {
+      "id": 3055,
+      "title": "公会任务",
+      "description": "公会派下一桩高难度任务，目标是窃取竞争对手的核心算法。成功则名利双收失败则被除名。任务时限紧迫。这是证明自己的好机会。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "全力执行任务", "effects": { "TECH": 5, "MONEY": 5000, "REP": 3, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "拉同伴组队行动", "effects": { "TECH": 4, "MONEY": 3000, "REP": 2 } },
+        { "id": "branch_3", "text": "接任务后转包他人", "effects": { "MONEY": 2000, "REP": -1, "TECH": 2 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["联盟", "任务"]
+    },
+    {
+      "id": 3056,
+      "title": "内部背叛",
+      "description": "你发现公会内部有人向企业出卖成员情报，而你的名字也在名单上。叛徒身居高位难以撼动。沉默等于等死，揭发则可能内战。这是信任的崩塌。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "揭发叛徒引发清洗", "effects": { "TECH": 4, "REP": 3, "TRAUMA": 3, "LIFE": -1 } },
+        { "id": "branch_2", "text": "私下解决叛徒", "effects": { "TECH": 3, "REP": 2, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "携证据要挟叛徒", "effects": { "MONEY": 4000, "REP": 1, "TRAUMA": 2 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["联盟", "背叛"]
+    },
+    {
+      "id": 3057,
+      "title": "公会战争",
+      "description": "你的公会与另一黑客组织爆发全面战争，赛博空间化为战场。双方各有死伤仇恨升级。你必须选边站队全力参战。退缩者将被两方唾弃。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "冲锋在前立战功", "effects": { "TECH": 4, "REP": 3, "TRAUMA": 3, "LIFE": -2 } },
+        { "id": "branch_2", "text": "负责后方支援", "effects": { "TECH": 3, "REP": 2, "TRAUMA": 1 } },
+        { "id": "branch_3", "text": "调停双方求和", "effects": { "REP": 3, "TECH": 3, "TRAUMA": 2 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["联盟", "战争"]
+    },
+    {
+      "id": 3058,
+      "title": "导师指引",
+      "description": "一位公会元老主动收你为徒，愿传授毕生黑客绝学。导师技术深不可测但脾气古怪。拜师能少走十年弯路。代价是绝对服从。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "拜师学艺", "effects": { "TECH": 5, "REP": 2, "TRAUMA": 1, "HUMAN": -1 } },
+        { "id": "branch_2", "text": "只学基础保持独立", "effects": { "TECH": 3, "REP": 1 } },
+        { "id": "branch_3", "text": "婉拒保持自由", "effects": { "TECH": 2, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["联盟", "导师"]
+    },
+    {
+      "id": 3059,
+      "title": "招募新人",
+      "description": "公会委派你招募新鲜血液，街头有不少有潜力的年轻黑客。好苗子能壮大公会，也可能引狼入室。识人之术比黑客技术更难。伯乐不好当。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "严格筛选精挑细选", "effects": { "TECH": 3, "REP": 3, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "广撒网大规模招募", "effects": { "REP": 2, "TECH": 2, "TRAUMA": 1 } },
+        { "id": "branch_3", "text": "招募私交好友", "effects": { "REP": 2, "TECH": 2 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["联盟", "招募"]
+    },
+    {
+      "id": 3060,
+      "title": "公会覆灭",
+      "description": "企业联合行动重创了你的公会，核心成员被捕据点被端。公会面临覆灭危机。是重建还是各奔东西。至暗时刻见人心。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "力挽狂澜重建公会", "effects": { "TECH": 5, "REP": 4, "TRAUMA": 4, "LIFE": -2 } },
+        { "id": "branch_2", "text": "带残部转战暗网", "effects": { "TECH": 3, "REP": 2, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "解散公会各自逃命", "effects": { "TECH": 2, "TRAUMA": 2, "REP": -1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["联盟", "覆灭"]
+    },
+    {
+      "id": 3061,
+      "title": "数据幻觉",
+      "description": "潜入深层网络后你开始产生数据幻觉，虚假的影像在视网膜上闪烁。你分不清哪些是真实数据哪些是幻觉。幻觉可能藏着线索也可能致命。理智在崩塌边缘。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "追随幻觉寻找线索", "effects": { "TECH": 5, "TRAUMA": 4, "HUMAN": -3, "LIFE": -1 } },
+        { "id": "branch_2", "text": "用清醒程序驱散幻觉", "effects": { "TECH": 3, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "立即断开保理智", "effects": { "TECH": 2, "TRAUMA": 1, "LIFE": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["幻觉", "数据"]
+    },
+    {
+      "id": 3062,
+      "title": "现实崩塌",
+      "description": "你的现实感知开始崩塌，赛博空间的规则侵入现实。眼前的墙壁化为数据流。你不知道自己是否还在潜入中。疯狂与清醒只有一线之隔。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "拥抱崩塌探索深层", "effects": { "TECH": 5, "TRAUMA": 5, "HUMAN": -4, "LIFE": -2 } },
+        { "id": "branch_2", "text": "用锚点锁定现实", "effects": { "TECH": 3, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "求助医生稳定神经", "effects": { "TECH": 2, "TRAUMA": 1, "MONEY": -2000 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["幻觉", "崩塌"]
+    },
+    {
+      "id": 3063,
+      "title": "模拟层",
+      "description": "你发现自己困在一层模拟之中，所谓现实不过是嵌套的虚拟。要逃出必须找到模拟的破绽。每层模拟都伪装得天衣无缝。这究竟是第几层。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "逐层破解逃出模拟", "effects": { "TECH": 5, "TRAUMA": 4, "HUMAN": -3 } },
+        { "id": "branch_2", "text": "接受模拟苟活", "effects": { "TECH": 2, "TRAUMA": 2, "HUMAN": -1 } },
+        { "id": "branch_3", "text": "寻找层间出口", "effects": { "TECH": 4, "TRAUMA": 2 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["幻觉", "模拟"]
+    },
+    {
+      "id": 3064,
+      "title": "神经毒素",
+      "description": "你被注入了一种赛博神经毒素，它扭曲你的网络感知制造恐怖幻象。毒素正在侵蚀你的意识。必须尽快找到解药代码。每一秒都是煎熬。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "强忍毒素完成入侵", "effects": { "TECH": 5, "TRAUMA": 5, "LIFE": -3 } },
+        { "id": "branch_2", "text": "优先解毒保命", "effects": { "TECH": 2, "TRAUMA": 2, "LIFE": 1 } },
+        { "id": "branch_3", "text": "以毒攻毒利用幻觉", "effects": { "TECH": 4, "TRAUMA": 3 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["幻觉", "毒素"]
+    },
+    {
+      "id": 3065,
+      "title": "视觉过载",
+      "description": "目标系统向你的视觉皮层灌入海量信息流，试图用视觉过载击溃你。绚烂的数据瀑布令人目眩神迷。沉溺其中会迷失自我。这是感官的陷阱。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "过滤信息流提取关键", "effects": { "TECH": 5, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "关闭视觉改用听觉", "effects": { "TECH": 3, "TRAUMA": 1 } },
+        { "id": "branch_3", "text": "硬扛过载抢数据", "effects": { "TECH": 4, "TRAUMA": 4, "LIFE": -2 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["幻觉", "过载"]
+    },
+    {
+      "id": 3066,
+      "title": "虚假记忆",
+      "description": "你发现自己的部分记忆是被植入的虚假数据，真实的你或许并非现在的你。记忆的真伪无从分辨。身份认同开始动摇。你是谁。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "追寻真实记忆源头", "effects": { "TECH": 5, "TRAUMA": 4, "HUMAN": -3, "REP": 2 } },
+        { "id": "branch_2", "text": "接受现有身份活下去", "effects": { "TECH": 3, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "删除虚假记忆重启", "effects": { "TECH": 4, "TRAUMA": 3, "HUMAN": -2 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["幻觉", "记忆"]
+    },
+    {
+      "id": 3067,
+      "title": "企业机密",
+      "description": "你锁定了一座企业机密数据矿，里面是未公开的财报与战略。挖掘这些数据能卖给竞争对手赚大钱。矿场布满监控探针。这是一座金矿也是雷区。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "大规模挖掘机密", "effects": { "TECH": 4, "MONEY": 6000, "TRAUMA": 2, "REP": 2 } },
+        { "id": "branch_2", "text": "精准开采关键数据", "effects": { "TECH": 5, "MONEY": 4000 } },
+        { "id": "branch_3", "text": "小批量多次偷采", "effects": { "TECH": 3, "MONEY": 3000, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["挖矿", "机密"]
+    },
+    {
+      "id": 3068,
+      "title": "数据矿脉",
+      "description": "你在网络底层发现了一条富集的数据矿脉，稀有信息如矿石般闪烁。矿脉规模巨大但极不稳定。开采可能引发数据坍塌。富贵险中求。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "全力开采整条矿脉", "effects": { "TECH": 5, "MONEY": 7000, "TRAUMA": 3, "LIFE": -1 } },
+        { "id": "branch_2", "text": "安全开采表层矿", "effects": { "TECH": 3, "MONEY": 3000 } },
+        { "id": "branch_3", "text": "标记矿脉待日后开采", "effects": { "TECH": 3, "REP": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["挖矿", "矿脉"]
+    },
+    {
+      "id": 3069,
+      "title": "废弃服务器",
+      "description": "一座被企业遗忘的废弃服务器里堆满了历史数据，其中不乏价值连城的旧档案。服务器随时可能断电归零。这是与时间的争夺。废墟里的宝藏。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "抢在断电前抢救数据", "effects": { "TECH": 5, "MONEY": 5000, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "优先抢救高价值档案", "effects": { "TECH": 4, "MONEY": 4000 } },
+        { "id": "branch_3", "text": "整体打包慢慢解析", "effects": { "TECH": 3, "MONEY": 3000, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["挖矿", "废弃"]
+    },
+    {
+      "id": 3070,
+      "title": "加密数据块",
+      "description": "你挖到了一块军用级加密数据块，破解它需要惊人的算力。数据块可能藏着武器蓝图也可能是一堆垃圾。不破解永远不知道。赌博式挖掘。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "投入全部算力破解", "effects": { "TECH": 5, "MONEY": 6000, "TRAUMA": 2, "REP": 2 } },
+        { "id": "branch_2", "text": "找盟友分担算力", "effects": { "TECH": 4, "MONEY": 4000, "REP": 1 } },
+        { "id": "branch_3", "text": "转手卖给掮客", "effects": { "MONEY": 3500, "TECH": 2 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["挖矿", "加密"]
+    },
+    {
+      "id": 3071,
+      "title": "数据贩子",
+      "description": "你把挖到的原始数据卖给一位数据贩子，他开价取决于数据的新鲜度与稀有度。讨价还价是常态。贩子有时会黑吃黑。交易需谨慎。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "坚持高价待价而沽", "effects": { "MONEY": 6000, "REP": 1, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "快速出手变现", "effects": { "MONEY": 4000 } },
+        { "id": "branch_3", "text": "多方询价抬价", "effects": { "MONEY": 5000, "REP": 1, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["挖矿", "贩子"]
+    },
+    {
+      "id": 3072,
+      "title": "暗数据湖",
+      "description": "网络深处有一片暗数据湖，沉睡着海量未被索引的原始数据。湖面平静湖底暗流汹涌。下潜挖掘可能溺水于数据洪流。这是信息的深渊。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "深潜暗数据湖挖掘", "effects": { "TECH": 5, "MONEY": 6000, "TRAUMA": 4, "HUMAN": -2 } },
+        { "id": "branch_2", "text": "湖面打捞浅层数据", "effects": { "TECH": 3, "MONEY": 3000 } },
+        { "id": "branch_3", "text": "用声呐探测再决定", "effects": { "TECH": 4, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["挖矿", "暗数据"]
+    },
+    {
+      "id": 3073,
+      "title": "数据炼金",
+      "description": "你学会把低价值的原始数据炼制成高价值情报的技术，如同赛博炼金术。炼金过程消耗算力与精力。成品情报能卖出天价。化腐朽为神奇。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "大规模炼制情报", "effects": { "TECH": 5, "MONEY": 7000, "TRAUMA": 2, "REP": 2 } },
+        { "id": "branch_2", "text": "精炼少量顶级情报", "effects": { "TECH": 4, "MONEY": 5000 } },
+        { "id": "branch_3", "text": "出售炼金技术", "effects": { "MONEY": 4000, "REP": 1, "TECH": 3 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["挖矿", "炼金"]
+    },
+    {
+      "id": 3074,
+      "title": "神经ICE反击",
+      "description": "你触发的防御ICE反向入侵你的神经接口，电流般的痛楚贯穿大脑。这是会真实伤害肉体的致命ICE。你的身体在现实中抽搐。断开或反击生死攸关。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "硬抗反击破解ICE", "effects": { "TECH": 5, "TRAUMA": 5, "LIFE": -3, "HUMAN": -2 } },
+        { "id": "branch_2", "text": "紧急断开保命", "effects": { "TRAUMA": 3, "LIFE": -1, "TECH": 1 } },
+        { "id": "branch_3", "text": "用护盾程序缓冲", "effects": { "TECH": 3, "TRAUMA": 2, "MONEY": -1500 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["神经ICE", "反击"]
+    },
+    {
+      "id": 3075,
+      "title": "灵魂捕获",
+      "description": "一道灵魂捕获型ICE锁定了你的意识，企图将你的灵魂困入数字牢笼。一旦被捕获你将永困赛博空间。你的化身正在被一点点拖入。这是真正的死局。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "拼死挣脱灵魂锁链", "effects": { "TECH": 5, "TRAUMA": 5, "LIFE": -3, "HUMAN": -3 } },
+        { "id": "branch_2", "text": "献祭数据换取自由", "effects": { "TECH": 3, "MONEY": -3000, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "呼叫盟友远程救援", "effects": { "TECH": 3, "REP": 1, "TRAUMA": 2 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["神经ICE", "灵魂"]
+    },
+    {
+      "id": 3076,
+      "title": "神经灼烧",
+      "description": "ICE的灼烧程序正从你的神经接口向大脑蔓延，被烧过的神经将永久坏死。你感觉半边身体在燃烧。每多一秒损伤加重。这是不可逆的伤害。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "速战速决完成入侵", "effects": { "TECH": 5, "TRAUMA": 4, "LIFE": -3, "HUMAN": -2 } },
+        { "id": "branch_2", "text": "切断受损神经保命", "effects": { "TRAUMA": 3, "LIFE": -1, "TECH": 2 } },
+        { "id": "branch_3", "text": "用冷却液程序降温", "effects": { "TECH": 3, "TRAUMA": 2, "MONEY": -2000 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["神经ICE", "灼烧"]
+    },
+    {
+      "id": 3077,
+      "title": "防御协议",
+      "description": "你部署了一套高级神经防御协议，专门抵御ICE的反噬。协议能自动屏蔽致命攻击。但它也会屏蔽部分感知影响操作。攻防之间的平衡。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "全开防御稳扎稳打", "effects": { "TECH": 3, "TRAUMA": 1, "REP": 1 } },
+        { "id": "branch_2", "text": "半开防御兼顾攻防", "effects": { "TECH": 4, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "关闭防御全力进攻", "effects": { "TECH": 5, "TRAUMA": 4, "LIFE": -2 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["神经ICE", "防御"]
+    },
+    {
+      "id": 3078,
+      "title": "ICE反噬",
+      "description": "你过度使用攻击性ICE导致反噬，防御程序倒戈攻击你自己。你的工具成了你的敌人。必须迅速重置否则被自己击败。这是黑客的耻辱。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "强行重置失控ICE", "effects": { "TECH": 5, "TRAUMA": 4, "LIFE": -2 } },
+        { "id": "branch_2", "text": "隔离反噬区域", "effects": { "TECH": 3, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "弃用该ICE换新", "effects": { "TECH": 2, "MONEY": -2000, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["神经ICE", "反噬"]
+    },
+    {
+      "id": 3079,
+      "title": "神经护盾",
+      "description": "你获得了一套传说中的神经护盾，能在ICE攻击下保护意识完整性。护盾能源有限用一次少一次。何时使用是门学问。它是你的最后保险。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "关键时刻激活护盾", "effects": { "TECH": 4, "TRAUMA": 1, "LIFE": 2, "REP": 1 } },
+        { "id": "branch_2", "text": "留作底牌不用", "effects": { "TECH": 2, "TRAUMA": 1 } },
+        { "id": "branch_3", "text": "拆解研究护盾技术", "effects": { "TECH": 5, "TRAUMA": 1, "MONEY": 3000 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["神经ICE", "护盾"]
+    },
+    {
+      "id": 3080,
+      "title": "广告劫持",
+      "description": "城市上空巨型全息广告牌被你劫持，你的信息投射在整座夜之城上空。全城目光聚焦于此。企业震怒追查源头。这是最张扬的入侵。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "播放揭黑广告曝光企业", "effects": { "REP": 4, "TRAUMA": 3, "TECH": 3, "MONEY": -1000 } },
+        { "id": "branch_2", "text": "播放自己的招募广告", "effects": { "REP": 2, "TECH": 2 } },
+        { "id": "branch_3", "text": "恶搞后迅速撤离", "effects": { "TECH": 3, "REP": 1, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["全息", "广告"]
+    },
+    {
+      "id": 3081,
+      "title": "全息会议",
+      "description": "你入侵了一场高管全息会议，以虚拟化身混入其中窃听机密。你的伪装随时可能被识破。会议内容价值连城。一场危险的潜伏。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "全程窃听获取机密", "effects": { "TECH": 5, "MONEY": 5000, "REP": 2, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "冒充高管下达指令", "effects": { "TECH": 4, "REP": 2, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "录音后悄然退出", "effects": { "TECH": 3, "MONEY": 3000 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["全息", "会议"]
+    },
+    {
+      "id": 3082,
+      "title": "身份伪造",
+      "description": "你用全息技术伪造了一位高管的虚拟形象，企图骗过门禁系统。伪造几可乱真但细节藏破绽。一旦穿帮就是通缉。这是胆大包天的骗局。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "完美伪造混入核心", "effects": { "TECH": 5, "MONEY": 6000, "REP": 2, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "伪造低级权限稳妥行事", "effects": { "TECH": 3, "MONEY": 3000 } },
+        { "id": "branch_3", "text": "放弃伪造另寻他路", "effects": { "TECH": 2, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["全息", "伪造"]
+    },
+    {
+      "id": 3083,
+      "title": "全息地图",
+      "description": "你入侵了城市全息地图系统，整座夜之城的三维模型在你眼前展开。你能看到所有人的实时位置。这是上帝视角的诱惑。滥用会引来杀身之祸。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "利用地图规避追踪", "effects": { "TECH": 4, "TRAUMA": 1, "REP": 1 } },
+        { "id": "branch_2", "text": "标记目标策划大案", "effects": { "TECH": 5, "MONEY": 5000, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "出售地图访问权", "effects": { "MONEY": 4000, "REP": -1, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["全息", "地图"]
+    },
+    {
+      "id": 3084,
+      "title": "全息陷阱",
+      "description": "你踏入的全息空间是个精心设计的陷阱，虚拟景象开始吞噬你的感知。出口被层层伪装隐藏。你在真假之间挣扎。这是感官的迷宫。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "识破陷阱找到出口", "effects": { "TECH": 5, "TRAUMA": 3, "REP": 2 } },
+        { "id": "branch_2", "text": "强行破解全息系统", "effects": { "TECH": 4, "TRAUMA": 3, "LIFE": -1 } },
+        { "id": "branch_3", "text": "原地等待救援", "effects": { "TECH": 2, "TRAUMA": 2, "REP": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["全息", "陷阱"]
+    },
+    {
+      "id": 3085,
+      "title": "幻象之战",
+      "description": "你与敌对黑客在全息空间展开幻象之战，双方用虚拟武器交锋。幻象伤害会反馈到神经。战场千变万化胜负难料。这是黑客的决斗。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "全力进攻击败对手", "effects": { "TECH": 5, "REP": 3, "TRAUMA": 3, "LIFE": -1 } },
+        { "id": "branch_2", "text": "用幻象迷惑对手", "effects": { "TECH": 4, "REP": 2, "TRAUMA": 1 } },
+        { "id": "branch_3", "text": "议和避免两败俱伤", "effects": { "TECH": 3, "REP": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["全息", "决斗"]
+    },
+    {
+      "id": 3086,
+      "title": "全息广告牌",
+      "description": "你黑入了一块巨型全息广告牌的控制核心，可以任意改写其内容。广告牌矗立在城市最繁华的十字路口。这是绝佳的发声平台。也是显眼的靶子。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "长期潜伏控制广告牌", "effects": { "TECH": 4, "REP": 2, "TRAUMA": 1, "MONEY": 2000 } },
+        { "id": "branch_2", "text": "一次性大动作后弃用", "effects": { "TECH": 3, "REP": 2, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "出租广告位赚钱", "effects": { "MONEY": 4000, "REP": -1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["全息", "广告牌"]
+    },
+    {
+      "id": 3087,
+      "title": "灵魂杀手",
+      "description": "你遭遇了传说中的灵魂杀手病毒，它能将人的意识从肉体剥离困入数字牢笼。被捕获者肉体死亡灵魂永囚。你的神经接口开始被锁定。这是黑客最深的恐惧。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "拼死挣脱灵魂杀手", "effects": { "TECH": 5, "TRAUMA": 5, "LIFE": -3, "HUMAN": -3, "REP": 3 } },
+        { "id": "branch_2", "text": "献祭数据分散锁定", "effects": { "TECH": 3, "MONEY": -4000, "TRAUMA": 3 } },
+        { "id": "branch_3", "text": "紧急断开弃车保帅", "effects": { "TRAUMA": 4, "LIFE": -2, "TECH": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["灵魂杀手", "病毒"]
+    },
+    {
+      "id": 3088,
+      "title": "灵魂陷阱",
+      "description": "你发现一个用灵魂杀手病毒构建的陷阱，里面已困着数十个亡魂。陷阱的主人以此勒索赎金。你的接近触发了锁定程序。这是地狱的入口。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "破解陷阱解放亡魂", "effects": { "TECH": 5, "REP": 4, "TRAUMA": 3, "LIFE": -1 } },
+        { "id": "branch_2", "text": "与陷阱主人交易", "effects": { "MONEY": -5000, "TECH": 3, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "记录后撤离报警", "effects": { "REP": 2, "TECH": 3, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["灵魂杀手", "陷阱"]
+    },
+    {
+      "id": 3089,
+      "title": "灵魂保险库",
+      "description": "一座灵魂保险库里封存着企业高管的意识备份，他们借此谋求数字永生。保险库是禁地中的禁地。入侵即与整个企业为敌。永生的诱惑与危险并存。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "潜入窃取高管备份", "effects": { "TECH": 5, "MONEY": 8000, "TRAUMA": 4, "REP": 3, "LIFE": -2 } },
+        { "id": "branch_2", "text": "摧毁保险库终结永生", "effects": { "TECH": 4, "REP": 4, "TRAUMA": 3, "HUMAN": -1 } },
+        { "id": "branch_3", "text": "复制备份作筹码", "effects": { "TECH": 4, "MONEY": 6000, "REP": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["灵魂杀手", "保险库"]
+    },
+    {
+      "id": 3090,
+      "title": "灵魂解放",
+      "description": "你掌握了解放被囚灵魂的方法，能让亡魂重获自由或回归轮回。被囚的灵魂向你哀求。解放它们需要耗费巨量算力。这是积德还是冒险。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "解放所有被困灵魂", "effects": { "REP": 4, "TRAUMA": 2, "TECH": 3, "HUMAN": 1 } },
+        { "id": "branch_2", "text": "选择性解放有用者", "effects": { "TECH": 4, "REP": 2, "MONEY": 3000 } },
+        { "id": "branch_3", "text": "利用灵魂谋利", "effects": { "TECH": 5, "MONEY": 5000, "REP": -3, "HUMAN": -3 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["灵魂杀手", "解放"]
+    },
+    {
+      "id": 3091,
+      "title": "灵魂黑市",
+      "description": "暗网上有一个隐秘的灵魂黑市，交易着被囚禁的人类意识。灵魂被当作商品标价出售。这是最黑暗的交易。你的介入可能改变无数命运。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "买下灵魂予以解放", "effects": { "REP": 4, "MONEY": -5000, "TRAUMA": 1, "HUMAN": 1 } },
+        { "id": "branch_2", "text": "举报黑市端掉窝点", "effects": { "REP": 3, "TECH": 3, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "倒卖灵魂牟利", "effects": { "MONEY": 6000, "REP": -4, "HUMAN": -4, "TRAUMA": 2 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["灵魂杀手", "黑市"]
+    },
+    {
+      "id": 3092,
+      "title": "灵魂碎片",
+      "description": "你偶然获得了一块灵魂碎片，它是一位死去黑客意识的一部分。碎片中藏着未解之谜与未竟之愿。融合它能获得记忆与技艺。也承担亡者的执念。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "融合碎片继承记忆", "effects": { "TECH": 5, "TRAUMA": 4, "HUMAN": -3, "REP": 1 } },
+        { "id": "branch_2", "text": "解析碎片提取技艺", "effects": { "TECH": 4, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "帮亡者完成遗愿", "effects": { "REP": 3, "TECH": 3, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["灵魂杀手", "碎片"]
+    },
+    {
+      "id": 3093,
+      "title": "灵魂编码",
+      "description": "你开始研究灵魂杀手的源代码，企图理解意识数字化的奥秘。代码深奥晦涩触碰禁忌。掌握它意味着掌控生死。这是神之领域的诱惑。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "完全掌握灵魂编码", "effects": { "TECH": 5, "TRAUMA": 5, "HUMAN": -4, "REP": 3, "LIFE": -1 } },
+        { "id": "branch_2", "text": "只学防御部分", "effects": { "TECH": 4, "TRAUMA": 2, "REP": 1 } },
+        { "id": "branch_3", "text": "销毁编码杜绝后患", "effects": { "REP": 4, "TECH": 3, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["灵魂杀手", "编码"]
+    },
+    {
+      "id": 3094,
+      "title": "亡者意识",
+      "description": "你在网络中与一位亡者的完整意识接通了通讯，他已死三年却在线。亡者请求你帮他传达遗言给亲人。通灵般的对话令人毛骨悚然。死者真的能说话。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "帮亡者传达遗言", "effects": { "REP": 3, "TRAUMA": 2, "TECH": 3, "HUMAN": 1 } },
+        { "id": "branch_2", "text": "向亡者索取秘密", "effects": { "TECH": 5, "TRAUMA": 3, "MONEY": 3000 } },
+        { "id": "branch_3", "text": "切断通讯不再联系", "effects": { "TECH": 2, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["通灵", "亡者"]
+    },
+    {
+      "id": 3095,
+      "title": "数字降神",
+      "description": "网络中举行着一场数字降神仪式，众人召唤已故传奇黑客的意识降临。仪式现场灵气般的代码流光溢彩。你被推为媒介。亡神将借你之口发言。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "担任媒介降神", "effects": { "TECH": 5, "TRAUMA": 4, "HUMAN": -3, "REP": 3 } },
+        { "id": "branch_2", "text": "旁观仪式记录一切", "effects": { "TECH": 3, "TRAUMA": 2, "REP": 1 } },
+        { "id": "branch_3", "text": "阻止危险的降神", "effects": { "REP": 2, "TECH": 3, "TRAUMA": 2 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["通灵", "降神"]
+    },
+    {
+      "id": 3096,
+      "title": "灵媒协议",
+      "description": "你获得了一套灵媒协议，能稳定连接网络中的亡者意识。协议让你成为生与死的桥梁。每次通灵都消耗精神力。这是独特的天赋与负担。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "常用协议建立通灵生意", "effects": { "TECH": 4, "MONEY": 5000, "TRAUMA": 3, "HUMAN": -2 } },
+        { "id": "branch_2", "text": "谨慎使用只通重要亡者", "effects": { "TECH": 4, "REP": 2, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "封存协议避免反噬", "effects": { "TECH": 3, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["通灵", "灵媒"]
+    },
+    {
+      "id": 3097,
+      "title": "死者留言",
+      "description": "你在网络角落发现了一批死者留下的加密留言，它们等待着特定的人来读取。其中一条写着你的名字。留言预言了你的命运。读还是不读。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "解密阅读自己的留言", "effects": { "TECH": 5, "TRAUMA": 4, "HUMAN": -2, "REP": 1 } },
+        { "id": "branch_2", "text": "阅读他人留言牟利", "effects": { "TECH": 3, "MONEY": 3000, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "销毁所有留言", "effects": { "REP": 2, "TRAUMA": 1, "TECH": 2 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["通灵", "留言"]
+    },
+    {
+      "id": 3098,
+      "title": "通灵网络",
+      "description": "一个专门连接生者与死者的通灵网络向你开放，上面聚集着无数亡者意识。网络是死者最后的栖息地。你的访问引起亡者们的注意。他们有求于你。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "成为网络常驻通灵者", "effects": { "TECH": 5, "REP": 3, "TRAUMA": 3, "HUMAN": -2 } },
+        { "id": "branch_2", "text": "帮几位亡者了却心愿", "effects": { "REP": 3, "TECH": 3, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "切断访问保护自己", "effects": { "TECH": 2, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["通灵", "网络"]
+    },
+    {
+      "id": 3099,
+      "title": "永生代码",
+      "description": "你在网络最深处发现了永生代码的片段，它能让意识脱离肉体永久存在于赛博空间。这是无数人追寻的终极秘密。代码不完整使用有风险。永生还是毁灭。",
+      "type": "cyber",
+      "ageRange": [16, 50],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "补全代码追求永生", "effects": { "TECH": 5, "TRAUMA": 5, "HUMAN": -5, "LIFE": -3, "REP": 3 } },
+        { "id": "branch_2", "text": "研究代码理解本质", "effects": { "TECH": 5, "TRAUMA": 3, "REP": 2 } },
+        { "id": "branch_3", "text": "销毁代码终结诱惑", "effects": { "REP": 4, "TECH": 3, "TRAUMA": 2 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["通灵", "永生"]
+    }
+  ]
+}

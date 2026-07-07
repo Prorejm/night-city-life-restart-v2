@@ -1,0 +1,684 @@
+{
+  "events": [
+    {
+      "id": 1100,
+      "title": "多处求医开处方",
+      "description": "你的止痛药用完了，但医生拒绝再开。一个街头朋友教你一个办法——去不同的诊所找不同的医生，每次都说自己的疼痛在别处。你跑遍了沃森区的三家公立诊所和两家私立医院，编了膝盖疼、背疼、牙疼三种说辞。最后你手里攒了五张处方，够用两个月。但取药时药剂师多看了你一眼，那眼神让你心里发毛。",
+      "type": "drug",
+      "ageRange": [18, 60],
+      "weight": 14,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "拿着所有处方去不同的药店取药", "effects": { "ADDICTION": 2, "MONEY": -500 } },
+        { "id": "branch_2", "text": "只取一张处方，把其他处方销毁", "effects": { "HUMAN": 1, "MONEY": -100 } }
+      ],
+      "effects": { "ADDICTION": 1, "MONEY": -200 },
+      "tags": ["药物", "处方", "多重求医", "滥用"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1101,
+      "title": "药房不核实处方",
+      "description": "你走进街角那家招牌歪斜的药房，递上一张明显复印过的处方单。柜台后的药剂师戴着老花镜扫了一眼，连日期都没看，就从柜台下面摸出一个棕色药瓶扔给你。「六十欧元。」他说。你注意到墙上有块政府颁发的电子告示牌，上面写着「凭处方售药，违规处罚金十万欧」，但那牌子已经两年没亮过了。",
+      "type": "drug",
+      "ageRange": [18, 60],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        { "id": "branch_1", "text": "顺利买到药，但知道这家店有问题", "effects": { "MONEY": -200, "ADDICTION": 1 } },
+        { "id": "branch_2", "text": "举报这家药房违规售药", "effects": { "REP": 1, "HUMAN": 2, "MONEY": -50 } }
+      ],
+      "effects": { "MONEY": -100, "REP": 1 },
+      "tags": ["药物", "药房", "违规", "处方"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1102,
+      "title": "止痛药耐受性上升",
+      "description": "你发现以前一片就能压住的疼痛，现在两片都效果微弱。你的身体已经习惯了药物，剂量需要不断增加才能达到同样的效果。你开始在网上查找资料——上面说这叫「耐受性上升」，是阿片类药物成瘾的前兆。但说明书上写着「遵医嘱服用」，你的医嘱却是三年前从一个辞职了的医生那里得到的。",
+      "type": "medical",
+      "ageRange": [20, 55],
+      "weight": 16,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "自行加大剂量以维持效果", "effects": { "LIFE": -1, "ADDICTION": 4, "MONEY": -400, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "立即就医寻求减药方案", "effects": { "HUMAN": 2, "MONEY": -800, "ADDICTION": -1 } }
+      ],
+      "effects": { "ADDICTION": 2, "TRAUMA": 1 },
+      "tags": ["药物", "耐受性", "止痛药", "成瘾"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1103,
+      "title": "朋友分享处方药",
+      "description": "你抱怨最近睡眠不好，朋友立刻从口袋里掏出一个药瓶。「试试这个，安眠药，效果特别好。我医生给我开了好多，吃不完。」他倒出几颗白色的药片递给你，瓶子上的标签已经被磨掉了。他的表情很真诚，你觉得他只是想帮忙。但你心里清楚，分享处方药是违法的，而且你不知道这药和你的其他药物会不会有冲突。",
+      "type": "social",
+      "ageRange": [18, 50],
+      "weight": 15,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "接受朋友的好意，试试这个安眠药", "effects": { "LIFE": 1, "ADDICTION": 2, "REP": 1 } },
+        { "id": "branch_2", "text": "婉拒并提醒朋友不要随便分享处方药", "effects": { "HUMAN": 2, "ADDICTION": -1 } }
+      ],
+      "effects": { "ADDICTION": 1 },
+      "tags": ["药物", "朋友", "分享", "处方"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1104,
+      "title": "医生暗示多开药",
+      "description": "你坐在疼痛科诊室里，医生一边在平板上写病历一边漫不经心地说：「你这种慢性疼痛，奥施康定长期用效果其实一般。要不给你换成芬太尼贴片？剂量可以从25微克起步，后面按需增加。」他抬头看了你一眼，眼神里有一种你读不懂的东西。「有些人反映，剂量大一点效果更好——不过这话不是我说的。」他的语气像是给了你一个暗示。",
+      "type": "medical",
+      "ageRange": [25, 60],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "接受医生的「建议」，拿大剂量处方", "effects": { "LIFE": 1, "ADDICTION": 3, "MONEY": -600, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "明确拒绝，要求最低有效剂量", "effects": { "HUMAN": 2, "LIFE": 1, "MONEY": -200 } }
+      ],
+      "effects": { "ADDICTION": 1, "MONEY": -300 },
+      "tags": ["药物", "医生", "暗示", "加大剂量"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1105,
+      "title": "家庭药箱里的过期药物",
+      "description": "你翻找家中的药箱找创可贴，却发现了一个被遗忘的角落——几瓶落满灰尘的处方药瓶。标签已经褪色，但你依稀能辨认出「奥施康定」「安定」和「可待因」等字样。最早的一瓶过期三年了。你不知道这些药是谁留下的——可能是前任房客，也可能是某个已经离开你生活的人。药片看起来完好无损。",
+      "type": "daily",
+      "ageRange": [16, 60],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 30,
+      "branches": [
+        { "id": "branch_1", "text": "留下来自己可能用得着", "effects": { "HUMAN": -1, "LIFE": -1 } },
+        { "id": "branch_2", "text": "全部冲进马桶，不留隐患", "effects": { "HUMAN": 2, "LIFE": 1 } }
+      ],
+      "effects": { "HUMAN": 0 },
+      "tags": ["药物", "过期", "药箱", "清理"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1106,
+      "title": "同一药物多重来源",
+      "description": "你发现自己同时在用三个不同来源的同一类止痛药——公立医院的处方、地下诊所买的便宜货、以及网上从暗网订购的进口版本。三种药的剂量和纯度都不一样，但你混在一起吃，因为疼痛不分来源。今天你感觉心跳不规律，胸口闷得慌。你的手在发抖，额头上冒着冷汗。你不知道这是哪种药引起的，还是三种药相互作用的结果。",
+      "type": "medical",
+      "ageRange": [22, 55],
+      "weight": 14,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "立即就医检查药物相互作用", "effects": { "LIFE": 2, "MONEY": -1000, "ADDICTION": -1, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "减少剂量观察，自己调整用药方案", "effects": { "LIFE": 0, "ADDICTION": 1, "MONEY": -200 } }
+      ],
+      "effects": { "LIFE": -1, "ADDICTION": 2, "TRAUMA": 1 },
+      "tags": ["药物", "多重来源", "混合用药", "危险"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1107,
+      "title": "派对饮料被下药",
+      "description": "夜店的音乐震耳欲聋，激光灯在烟雾中闪烁。你去了趟洗手间回来，发现刚才喝了一半的饮料味道变了——有点苦，带金属味。一个陌生人坐在你座位旁边，冲你微笑。你的心跳开始加速，视线开始模糊。在这个城市，「迷奸水」和「约会强暴药」是每个来派对的人都知道的风险。你必须在意识完全消失之前做点什么。",
+      "type": "drug",
+      "ageRange": [18, 45],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "大声呼救并向保安求助", "effects": { "LIFE": -2, "TRAUMA": 1, "REP": 1 } },
+        { "id": "branch_2", "text": "冲进洗手间催吐并打电话给信任的人", "effects": { "LIFE": 1, "TRAUMA": 1 } }
+      ],
+      "effects": { "LIFE": -1, "TRAUMA": 2 },
+      "tags": ["药物", "派对", "下药", "危险"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1108,
+      "title": "音乐节被塞不明药丸",
+      "description": "你在音乐节的人群中随着节奏摇摆。一个满脸笑容的陌生人拍了拍你的肩膀，往你手里塞了一颗彩色的药丸。「尝尝这个，保证让你飞起来！」他的眼睛发亮，看起来非常友好。彩色的药丸在阳光下闪着诱人的光泽，上面印着一个可爱的笑脸图案。周围的几个人也在吃同样的东西，看起来很开心。但你知道，很多药丸里掺了芬太尼——一颗就能要了你的命。",
+      "type": "social",
+      "ageRange": [16, 45],
+      "weight": 13,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "拒绝并远离这个陌生人", "effects": { "HUMAN": 1, "LIFE": 2 } },
+        { "id": "branch_2", "text": "假装收下，然后悄悄交给现场保安", "effects": { "REP": 2, "HUMAN": 2 } }
+      ],
+      "effects": { "LIFE": 1, "REP": 1 },
+      "tags": ["药物", "音乐节", "不明药丸", "危险"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1109,
+      "title": "同事在洗手间吸毒",
+      "description": "你去公司的洗手间，推开隔间门时发现一个同事正蹲在马桶上，手里拿着一个烧焦的锡纸和一根吸管。他抬头看到你，眼神里充满恐慌和乞求。你们对视了三秒钟。他平时在办公室是个老实本分的人，从不迟到早退，午饭永远吃最便宜的盒饭。你从未想过他会和毒品有任何关系。他的嘴唇翕动着，无声地说：「求你别告诉别人。」",
+      "type": "social",
+      "ageRange": [20, 55],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "假装没看见，关上门走开", "effects": { "HUMAN": -1, "REP": 1 } },
+        { "id": "branch_2", "text": "私下找他谈话，劝他寻求帮助", "effects": { "HUMAN": 3, "REP": 2 } }
+      ],
+      "effects": { "HUMAN": 1, "TRAUMA": -1 },
+      "tags": ["药物", "同事", "洗手间", "发现"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1110,
+      "title": "黑市掺假可卡因",
+      "description": "你在黑市上花了五百欧买了一克所谓的「高纯度」可卡因。卖家信誓旦旦地说这是直接从哥伦比亚走私的顶级货。你回到住处打开塑料包装，白色的粉末看起来没问题。但你用测试剂一测——颜色变了。这玩意只有不到百分之二十是可卡因，剩下的全是洗甲水、硼砂和止痛药粉末。你气疯了，但你不能报警，因为买卖毒品本身就是犯罪。",
+      "type": "drug",
+      "ageRange": [20, 50],
+      "weight": 14,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "回去找卖家理论（可能有危险）", "effects": { "MONEY": -300, "TRAUMA": 2, "REP": -1 } },
+        { "id": "branch_2", "text": "自认倒霉，下次找更靠谱的渠道", "effects": { "MONEY": -500, "REP": 1 } }
+      ],
+      "effects": { "MONEY": -400, "TRAUMA": 1 },
+      "tags": ["药物", "黑市", "可卡因", "假货"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1111,
+      "title": "第一次尝试冰毒",
+      "description": "一个在酒吧认识的朋友说他有办法让你「三天三夜不睡觉还精力充沛」。他递给你的是一小包透明的晶体——冰毒。你犹豫了一下，但最近你太累了，工作堆积如山，债主天天催债。你吸了第一口。瞬间，一股强烈的清醒感冲进大脑，所有的疲惫都消失了，你觉得自己无所不能。但你知道，三天后你会跌入比以往更深的深渊。",
+      "type": "drug",
+      "ageRange": [20, 45],
+      "weight": 12,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "享受冰毒带来的高效能，先应对眼前的问题", "effects": { "LIFE": -3, "ADDICTION": 5, "MONEY": 500, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "吸了一口后立即后悔，决定不再碰", "effects": { "HUMAN": 2, "LIFE": -1, "ADDICTION": 1 } }
+      ],
+      "effects": { "LIFE": -2, "ADDICTION": 3, "TRAUMA": 1 },
+      "tags": ["药物", "冰毒", "第一次", "兴奋剂"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1112,
+      "title": "用毒品提高工作效率",
+      "description": "你的工作压力太大了——截止日期就在明天，而你连一半都没完成。你听说过一些「聪明药」——利他林、莫达非尼，甚至是安非他命——可以让人连续工作几个小时而不分心。你的一个同事在用，业绩翻了一倍。他递给你一颗蓝色药丸：「试试看，不会上瘾的，就是提高专注力。」药丸在掌心里显得那么无害。",
+      "type": "economy",
+      "ageRange": [22, 50],
+      "weight": 15,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "服用聪明药完成工作", "effects": { "MONEY": 1000, "LIFE": -1, "ADDICTION": 2, "TECH": 1 } },
+        { "id": "branch_2", "text": "拒绝药物，熬夜自己完成", "effects": { "HUMAN": 1, "LIFE": -1, "MONEY": 300 } }
+      ],
+      "effects": { "MONEY": 500, "ADDICTION": 2 },
+      "tags": ["药物", "工作效率", "聪明药", "压力"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1113,
+      "title": "海洛因戒断后复吸",
+      "description": "你已经戒断海洛因整整三个月了。戒断的日子像在地狱里走了一遭——呕吐、腹泻、全身骨骼仿佛被碾碎、整夜整夜睡不着。但你都挺过来了。今天你在街上偶遇了曾经一起吸的朋友。他看起来比以前还糟，但他说的话像刀子一样钻进你的耳朵：「就一次，不会怎么样的。你都戒了三个月了，偶尔用一次又不会上瘾。」你听到自己说「好」的时候，心里有什么东西碎掉了。",
+      "type": "drug",
+      "ageRange": [22, 55],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "branch_1", "text": "拒绝朋友，转身离开这个环境", "effects": { "HUMAN": 3, "ADDICTION": -2 } },
+        { "id": "branch_2", "text": "就这一次——但你知道这一针意味着什么", "effects": { "ADDICTION": 6, "LIFE": -3, "MONEY": -200, "TRAUMA": 2 } }
+      ],
+      "effects": { "ADDICTION": 0, "TRAUMA": 1 },
+      "tags": ["药物", "海洛因", "复吸", "戒断"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1114,
+      "title": "给重病亲人买黑市止痛药",
+      "description": "你的亲人——可能是父母、配偶或兄弟姐妹——躺在医院的病床上，癌症晚期疼痛让他生不如死。医生开的止痛药远远不够，而且医院说更高剂量的药需要「特殊审批」，至少要等两周。你看着亲人痛苦的样子，做了一个艰难的决定。你联系了黑市上的药品贩子，他有医用级吗啡，价格是医院的十倍，但你管不了那么多了。",
+      "type": "drug",
+      "ageRange": [25, 60],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "花大价钱购买黑市吗啡缓解亲人的痛苦", "effects": { "HUMAN": 2, "MONEY": -3000, "DEBT": 2 } },
+        { "id": "branch_2", "text": "找医院领导和医生据理力争", "effects": { "HUMAN": 2, "MONEY": -500, "REP": 1 } }
+      ],
+      "effects": { "HUMAN": 1, "MONEY": -500, "TRAUMA": -2 },
+      "tags": ["药物", "亲人", "癌症", "黑市", "吗啡"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1115,
+      "title": "误食大麻糖果",
+      "description": "你在便利店买了一袋看起来很普通的软糖。包装很专业，和正规品牌一模一样。你吃了三四颗，觉得味道有点怪——有种说不出的植物味。半小时后，你开始觉得天旋地转，时间变得缓慢，你的笑声控制不住地涌出来。你发现包装袋底部有一行几乎看不见的小字：「THC 含量：100mg/颗」。这是大麻糖果，而且剂量高得离谱。",
+      "type": "daily",
+      "ageRange": [16, 60],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "躺下来等待药效过去，别慌", "effects": { "LIFE": 0, "TRAUMA": -1, "ADDICTION": 1 } },
+        { "id": "branch_2", "text": "去急诊室求助，说明误食情况", "effects": { "LIFE": 1, "MONEY": -500, "HUMAN": 1 } }
+      ],
+      "effects": { "LIFE": -1, "TRAUMA": 1 },
+      "tags": ["药物", "大麻", "糖果", "误食"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1116,
+      "title": "合成大麻素中毒",
+      "description": "你在街头小贩那里买了一包「草本熏香」——包装上写着「不含任何违禁成分，仅用于芳香疗法」。但你吸了几口之后，身体开始出现可怕的反应。你的心跳飙升到每分钟一百五十次，胸口像被重物压住，视线开始扭曲，强烈的恶心感和濒死感同时袭来。这不是普通的大麻——这是合成大麻素，毒性比天然大麻强几十倍。",
+      "type": "medical",
+      "ageRange": [18, 50],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "立即求救去急诊", "effects": { "LIFE": 1, "MONEY": -800, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "大量喝水，硬扛过去", "effects": { "LIFE": -2, "TRAUMA": 1 } }
+      ],
+      "effects": { "LIFE": -2, "TRAUMA": 2 },
+      "tags": ["药物", "合成大麻素", "中毒", "危险"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1117,
+      "title": "参加匿名药物互助会",
+      "description": "你第一次走进药物匿名互助会的大门。房间里有十几个人围坐成一圈——有穿着破旧工装的中年人，有看起来像大学生的年轻人，还有一个穿着高级西装但眼神疲惫的男人。每个人轮流站起来说：「我叫XX，我是一个成瘾者。」轮到你的时候，所有人都安静地看着你。墙角有一个牌子写着：「这里没有评判，只有理解。」",
+      "type": "social",
+      "ageRange": [18, 60],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "坦诚分享自己的成瘾经历", "effects": { "HUMAN": 3, "ADDICTION": -2, "REP": 2 } },
+        { "id": "branch_2", "text": "只是旁听，暂时不想开口", "effects": { "HUMAN": 1, "ADDICTION": -1 } }
+      ],
+      "effects": { "HUMAN": 1, "ADDICTION": -1 },
+      "tags": ["药物", "互助会", "匿名", "戒断"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1118,
+      "title": "社区反药物滥用宣传",
+      "description": "你所在的社区组织了一场反药物滥用宣传活动。几个志愿者在街角搭了个棚子，放着展板和宣传册。展板上印着吸毒者前后的对比照片——腐烂的牙齿、溃烂的皮肤、空洞的眼神。一个曾经的成瘾者正在演讲，讲述自己如何从每天注射海洛因到如今已经戒断八年。他的声音很平静，但他的手在微微颤抖。",
+      "type": "social",
+      "ageRange": [16, 60],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "branch_1", "text": "认真听演讲，领取宣传资料", "effects": { "HUMAN": 2, "ADDICTION": -2 } },
+        { "id": "branch_2", "text": "觉得没用，走自己的路", "effects": { "HUMAN": -1, "ADDICTION": 0 } }
+      ],
+      "effects": { "HUMAN": 1, "ADDICTION": -1 },
+      "tags": ["药物", "社区", "宣传", "预防"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1119,
+      "title": "青少年药物使用普遍化",
+      "description": "你路过一所中学门口，看到几个穿着校服的学生正围在后巷里。你以为他们在抽烟，走近了才发现他们在吸一种电子烟——但气味不对。那是大麻电子烟，甚至可能是更烈的东西。他们看到你经过，毫不慌张地把烟藏进口袋，其中一个人还冲你笑了笑：「要不要来一口，大叔？」他们的眼神里没有恐惧，没有负罪感——药物对他们来说就像糖果一样平常。",
+      "type": "social",
+      "ageRange": [16, 60],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "上前劝阻，告诉他们药物的危害", "effects": { "HUMAN": 2, "REP": 1 } },
+        { "id": "branch_2", "text": "事不关己，转身离开", "effects": { "HUMAN": -1 } }
+      ],
+      "effects": { "HUMAN": -1, "TRAUMA": 1 },
+      "tags": ["药物", "青少年", "电子烟", "大麻"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1120,
+      "title": "药厂铺天盖地的广告",
+      "description": "你打开全息电视，每个频道都在播放同一家制药公司的广告。一个笑容灿烂的女人在海滩上奔跑，画外音说：「你有慢性疼痛吗？你有失眠吗？你有焦虑吗？别忍着——X药业的XX新药能解决你所有问题。副作用包括恶心、头晕、嗜睡、肝损伤和药物依赖。详情请咨询你的医生。」广告的最后三秒才用极快的语速念出副作用。",
+      "type": "daily",
+      "ageRange": [18, 60],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "被广告说服，预约医生咨询新药", "effects": { "MONEY": -300, "ADDICTION": 2, "LIFE": 1 } },
+        { "id": "branch_2", "text": "关掉电视，对这些广告嗤之以鼻", "effects": { "HUMAN": 1 } }
+      ],
+      "effects": { "MONEY": -100, "ADDICTION": 1 },
+      "tags": ["药物", "广告", "药厂", "营销"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1121,
+      "title": "社交媒体上的药物挑战",
+      "description": "你在刷社交媒体时看到一个正在病毒式传播的挑战视频——一个年轻人直播自己同时服用十种不同的非处方药物，挑战「混合药物体验」。视频已经有几百万次观看，评论区里有人骂他傻，但更多人在问他「是什么感觉」。算法又给你推荐了更多类似的内容——「苯海拉明挑战」「DXM挑战」「处方药轮盘」。一些挑战的发起者已经不在人世了，但挑战还在。",
+      "type": "daily",
+      "ageRange": [16, 40],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "举报这些危险内容", "effects": { "HUMAN": 2, "TECH": 1, "REP": 1 } },
+        { "id": "branch_2", "text": "刷走不看，不关我的事", "effects": { "HUMAN": -1 } }
+      ],
+      "effects": { "HUMAN": -1, "TRAUMA": 1 },
+      "tags": ["药物", "社交媒体", "病毒视频", "挑战"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1122,
+      "title": "名人因药物过量去世",
+      "description": "全息新闻突然插播一条消息：著名歌手——你年轻时听过他所有歌的那个天才——被发现死在自己的豪华公寓里，年仅三十二岁。死因是药物过量。他的经纪人发表声明说「他一直在与成瘾作斗争」。社交媒体上一片哀悼，人们点起虚拟蜡烛。但你知道，就在几个月前，同一批媒体还在嘲笑他发胖、状态差、演出取消。",
+      "type": "daily",
+      "ageRange": [16, 60],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 30,
+      "branches": [
+        { "id": "branch_1", "text": "被新闻触动，反思自己的药物使用", "effects": { "HUMAN": 2, "ADDICTION": -2, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "觉得名人也好普通人也好都一样", "effects": { "HUMAN": 0, "TRAUMA": -1 } }
+      ],
+      "effects": { "TRAUMA": -1, "HUMAN": 1 },
+      "tags": ["药物", "名人", "过量", "死亡"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1123,
+      "title": "社交媒体药物信息泛滥",
+      "description": "你在搜索「如何缓解焦虑」时，发现社交媒体的搜索结果里充斥着各种药物推荐帖。有人推荐一种「完全合法的草药镇静剂」，点进去发现是合成大麻素。有人分享「医生不会告诉你的高效止痛药」，其实是在引导你去黑市购买。广告和真实信息的边界完全模糊了。一个帖子写着「我靠这个药戒掉了那个药」——你又如何分辨？",
+      "type": "daily",
+      "ageRange": [18, 55],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "仔细甄别信息，只参考权威来源", "effects": { "TECH": 2, "HUMAN": 1, "LIFE": 1 } },
+        { "id": "branch_2", "text": "管他呢，先试试再说", "effects": { "LIFE": -1, "ADDICTION": 2, "MONEY": -200 } }
+      ],
+      "effects": { "TECH": 1, "REP": 1 },
+      "tags": ["药物", "社交媒体", "信息", "虚假广告"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1124,
+      "title": "医生收受药厂回扣的证据",
+      "description": "你在清理公司服务器时发现了一份惊人的文件——一份详细的「医生激励计划」表格。上面列出了几十名医生的名字，以及他们每月开出某制药公司药品的数量和对应的「奖励金额」。开出最多药的医生每月能拿到两万欧元的「咨询费」。你认识其中几个名字——他们正是你所在社区最受欢迎的医生。",
+      "type": "cyber",
+      "ageRange": [22, 50],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "匿名举报给新闻媒体", "effects": { "REP": 3, "HUMAN": 3 } },
+        { "id": "branch_2", "text": "用这份证据勒索涉事医生", "effects": { "MONEY": 5000, "HUMAN": -3, "DEBT": -2 } }
+      ],
+      "effects": { "MONEY": 500, "HUMAN": 1, "TECH": 1 },
+      "tags": ["药物", "回扣", "医生", "药厂", "腐败"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1125,
+      "title": "诊所开不必要的药物",
+      "description": "你因为轻微感冒去了一家挂着「健康快车」招牌的连锁诊所。医生连听诊器都没用，只是在平板电脑上点了几下，就给你开了一份长长的药单——抗生素、止咳药、抗病毒药、维生素补充剂和一种你没听说过的「免疫增强剂」。你觉得不对劲——普通感冒根本不需要抗生素。但医生已经开始朝门口喊：「下一位！」身后的病人已经挤了进来。",
+      "type": "medical",
+      "ageRange": [18, 60],
+      "weight": 13,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "拒绝不必要的药物，只买需要的", "effects": { "HUMAN": 1, "MONEY": -100 } },
+        { "id": "branch_2", "text": "既然开了就买，万一有用呢", "effects": { "MONEY": -500, "LIFE": 0, "ADDICTION": 1 } }
+      ],
+      "effects": { "MONEY": -200, "REP": 1 },
+      "tags": ["药物", "诊所", "过度开药", "医疗腐败"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1126,
+      "title": "药厂隐瞒副作用内幕",
+      "description": "你在暗网上看到了一份泄漏的制药公司内部文件。文件显示，该公司的一款畅销止痛药在临床试验阶段就发现了严重的肝损伤风险，但公司高层决定「重新分析数据」以降低统计显著性。这款药已经在市场上卖了五年，每年销售额超过十亿欧元。而你——和你认识的几乎所有人——都吃过这款药。",
+      "type": "cyber",
+      "ageRange": [22, 55],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "将内幕公之于众", "effects": { "REP": 4, "HUMAN": 3, "TECH": 2 } },
+        { "id": "branch_2", "text": "悄悄让自己和亲友停止使用该药", "effects": { "HUMAN": 1, "LIFE": 1 } }
+      ],
+      "effects": { "HUMAN": 1, "TECH": 1, "TRAUMA": 1 },
+      "tags": ["药物", "药厂", "副作用", "内幕", "隐瞒"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1127,
+      "title": "药剂师稀释药物出售",
+      "description": "你发现最近从药房买的药效果越来越差。止痛药要加倍剂量才能达到以前的效果。你开始怀疑，于是花了钱找人做药物成分分析。结果让你震惊——你买的药里只有百分之六十的有效成分，剩下的全是葡萄糖和淀粉。药剂师长期稀释药物出售，从中牟取暴利。你拿着的这瓶药，标签上写着「30片」，但实际药量可能只有18片。",
+      "type": "economy",
+      "ageRange": [20, 60],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "向医疗监管部门举报", "effects": { "HUMAN": 2, "REP": 2, "MONEY": -200 } },
+        { "id": "branch_2", "text": "直接找药剂师对质并勒索", "effects": { "MONEY": 3000, "HUMAN": -2, "DEBT": -1 } }
+      ],
+      "effects": { "MONEY": -500, "LIFE": -1, "TRAUMA": 1 },
+      "tags": ["药物", "药剂师", "稀释", "欺诈"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1128,
+      "title": "康复中心实为骗保机构",
+      "description": "你的一个熟人被送进了一家高档康复中心，据说环境优美、医生专业、成功率高达百分之九十。但你偶然发现了一些不对劲的地方——这家康复中心不停地延长患者的住院时间，而且所有费用都通过医疗保险报销。你在网上搜索后发现了大量投诉：有人在里面被强制住了六个月，保险额度用光后才被放出来。它根本不是康复中心，而是一个骗保的囚笼。",
+      "type": "social",
+      "ageRange": [22, 55],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "帮助熟人离开这家骗保机构", "effects": { "HUMAN": 3, "MONEY": -1000, "REP": 1 } },
+        { "id": "branch_2", "text": "不直接介入，匿名向媒体举报", "effects": { "HUMAN": 2, "TECH": 1, "REP": 1 } }
+      ],
+      "effects": { "HUMAN": 1, "MONEY": -200, "TRAUMA": -1 },
+      "tags": ["药物", "康复中心", "骗保", "欺诈"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1129,
+      "title": "安慰剂效应还是真效果",
+      "description": "你今天读到一篇触目惊心的研究报告——你长期服用的那种止痛药，在双盲试验中的效果和安慰剂没有显著差异。也就是说，你每个月花六百欧元买的药，可能只是一堆糖丸。但你确实感觉它有效——或者你感觉自己感觉它有效？疼痛是一种主观体验，如果你的大脑相信它有效，它是不是就真的有效？这个问题让你陷入了深深的困惑。",
+      "type": "medical",
+      "ageRange": [25, 60],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "停止服药，测试自己是否真的需要它", "effects": { "MONEY": 600, "ADDICTION": -2, "LIFE": -1, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "继续服药，反正心理作用也是作用", "effects": { "MONEY": -600, "ADDICTION": 1, "LIFE": 1 } }
+      ],
+      "effects": { "TRAUMA": 1, "MONEY": -300, "ADDICTION": -1 },
+      "tags": ["药物", "安慰剂", "研究", "真相"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1130,
+      "title": "药厂操纵药品定价",
+      "description": "你关注的一种救命药——胰岛素——价格在过去十年里涨了五倍。你看到新闻上说，三家主要制药公司被指控合谋操纵价格。内部邮件显示，一家公司提价后，另外两家「随即跟进」，保持价格同步上涨。一个CEO在邮件里写道：「人们不会因为胰岛素涨价就停止需要它。这是刚需，不是消费品。」这条新闻下没有广告，因为制药公司不需要向病人打广告——病人别无选择。",
+      "type": "economy",
+      "ageRange": [18, 60],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 30,
+      "branches": [
+        { "id": "branch_1", "text": "参与抗议药品定价的游行", "effects": { "HUMAN": 2, "REP": 2, "DEBT": 1 } },
+        { "id": "branch_2", "text": "寻找替代药品或灰色市场渠道", "effects": { "MONEY": -500, "REP": 2, "ADDICTION": 1 } }
+      ],
+      "effects": { "MONEY": -300, "HUMAN": 1 },
+      "tags": ["药物", "定价", "药厂", "垄断"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1131,
+      "title": "医生与药厂的旋转门",
+      "description": "你偶然看到一条新闻：你以前常去看的医生——那个总给你开同一种药、总说「这个药是最新的研究成果」的医生——辞去了医院的职务，加入了那家制药公司担任「医学顾问」，年薪是你之前挂号费的不知道多少倍。你突然理解了为什么他当年那么执着地推荐那款药。这不仅是回扣的问题——整个医疗系统就是药厂的人才培养池。",
+      "type": "daily",
+      "ageRange": [22, 60],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "感到被背叛，换一个更独立的医生", "effects": { "HUMAN": 1, "TRAUMA": -1, "MONEY": -200 } },
+        { "id": "branch_2", "text": "这就是现实，接受并寻找自保之道", "effects": { "REP": 2, "HUMAN": 1 } }
+      ],
+      "effects": { "TRAUMA": -1, "HUMAN": 1 },
+      "tags": ["药物", "旋转门", "医生", "药厂", "利益冲突"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1132,
+      "title": "朋友成功戒毒的经验分享",
+      "description": "你在街上遇到了一个好久不见的老朋友。你几乎认不出他了——他以前骨瘦如柴、眼神涣散，而现在虽然仍然瘦，但眼睛里有了光。他告诉你他已经成功戒毒一年了。「不是靠意志力，」他说，「我是靠把生活里所有让我想吸毒的东西都换掉了——换了住的地方，换了手机号，换了朋友圈。最难的是第一周，但熬过去之后，每一天都比前一天轻松一点。」他的笑容是真心的。",
+      "type": "social",
+      "ageRange": [20, 55],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "向他请教戒毒的经验和方法", "effects": { "HUMAN": 2, "ADDICTION": -3, "REP": 1 } },
+        { "id": "branch_2", "text": "为他高兴，但觉得自己做不到", "effects": { "HUMAN": 1, "ADDICTION": 0 } }
+      ],
+      "effects": { "HUMAN": 1, "ADDICTION": -2 },
+      "tags": ["药物", "戒毒", "朋友", "成功", "希望"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1133,
+      "title": "戒毒者的日记",
+      "description": "你在二手书店发现了一本泛黄的日记本。翻开后发现这是一个戒毒者留下的记录。第一页写着：「今天是我决定戒断的第一天。我不知道自己能撑多久。」你一页页翻下去，看到了他每一天的挣扎——戒断反应的痛苦、对家人的愧疚、深夜的崩溃、偶尔的进步和更多的倒退。最后一页停在某一天：「今天是我戒断的第300天。我仍然活着。」日记到此结束。你不知道他后来怎么样了。",
+      "type": "daily",
+      "ageRange": [16, 60],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "被日记深深打动，反思自己的生活", "effects": { "HUMAN": 3, "ADDICTION": -2, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "快速翻完，然后放回原处", "effects": { "HUMAN": 0 } }
+      ],
+      "effects": { "HUMAN": 2, "ADDICTION": -1 },
+      "tags": ["药物", "日记", "戒毒", "触动"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1134,
+      "title": "法院强制戒毒项目",
+      "description": "你因药物相关违法行为被法院判处参加强制戒毒项目。每天早上八点你必须到社区中心的戒毒点报到，接受尿液检测，参加小组治疗，写戒毒日记。监督官是个退役军医，眼神能穿透人的灵魂。「我不是来惩罚你的，」他对你说，「但如果你不认真，我会让你知道什么叫难受。」你在签到表上看到了很多熟悉的面孔——都是这条街上的常客。",
+      "type": "drug",
+      "ageRange": [20, 55],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "认真参加戒毒项目，抓住戒断的机会", "effects": { "ADDICTION": -5, "LIFE": 2, "HUMAN": 2, "REP": 1 } },
+        { "id": "branch_2", "text": "敷衍应付，找办法绕过尿检", "effects": { "ADDICTION": 0, "REP": 1, "DEBT": 1 } }
+      ],
+      "effects": { "ADDICTION": -2, "HUMAN": 1 },
+      "tags": ["药物", "强制戒毒", "法院", "监督"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1135,
+      "title": "改变你人生的戒毒所医生",
+      "description": "你在戒毒所遇到了一个与众不同的医生。他没有像其他人那样用居高临下的态度对待你，而是坐下来和你平等地聊天。他说：「成瘾不是道德缺陷，也不是意志力薄弱。它是一种疾病，和糖尿病一样需要治疗。但你现在来这里，说明你已经准备好了。你不是来受惩罚的——你是来学习的。」他的话像一把钥匙，打开了你心里一道从未被打开的门。",
+      "type": "medical",
+      "ageRange": [20, 55],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "接受医生的方法，认真参与治疗", "effects": { "ADDICTION": -4, "HUMAN": 3, "LIFE": 2 } },
+        { "id": "branch_2", "text": "虽然感动，但不相信自己能戒掉", "effects": { "HUMAN": 1, "ADDICTION": -1 } }
+      ],
+      "effects": { "HUMAN": 2, "ADDICTION": -2 },
+      "tags": ["药物", "戒毒所", "医生", "改变", "希望"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1136,
+      "title": "为戒毒卖掉所有值钱的东西",
+      "description": "你做出了一个艰难的决定——为了彻底戒断，你要卖掉所有值钱的东西。你卖了多余的义体部件、珍藏的全息唱片收藏、那把你几乎没用过的好枪、甚至老妈留下的金项链。换来的钱全部用于支付一家靠谱的戒毒机构。你的房间空了，但你感到一种前所未有的轻松。你在一无所有中感受到了自由——或者只是远离了那种被药物控制的窒息感。",
+      "type": "economy",
+      "ageRange": [22, 55],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "卖掉一切，用所有资源换取新生", "effects": { "MONEY": 2000, "ADDICTION": -5, "HUMAN": 3 } },
+        { "id": "branch_2", "text": "留下最珍贵的几样，其他卖掉", "effects": { "MONEY": 1000, "ADDICTION": -2, "HUMAN": 1 } }
+      ],
+      "effects": { "MONEY": 1500, "ADDICTION": -3, "HUMAN": 2 },
+      "tags": ["药物", "戒毒", "变卖", "重生"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1137,
+      "title": "移植抗成瘾基因疗法",
+      "description": "你听说城里最高端的医疗机构推出了一种革命性的抗成瘾治疗——基因疗法。通过修改大脑中的多巴胺受体基因，从生理上消除对药物的渴求。价格高昂——相当于一辆豪华车的费用——且不在任何保险的覆盖范围内。但你亲眼见过太多复吸的人。如果能从根上解决问题，这或许是唯一的答案。只是——这真的是答案吗？还是另一家公司的又一个「奇迹」？",
+      "type": "medical",
+      "ageRange": [25, 50],
+      "weight": 4,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "不惜一切代价接受基因治疗", "effects": { "MONEY": -15000, "ADDICTION": -8, "LIFE": 2, "DEBT": 5, "HUMAN": 1 } },
+        { "id": "branch_2", "text": "太贵而且太新了，观望一下", "effects": { "HUMAN": 1, "TECH": 1 } }
+      ],
+      "effects": { "MONEY": -2000, "ADDICTION": -3, "TECH": 1 },
+      "tags": ["药物", "基因疗法", "抗成瘾", "高科技"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1138,
+      "title": "戒毒后重建生活",
+      "description": "你已经戒断了一段时间。身体在慢慢恢复，但最难的挑战来了——如何在不使用药物的情况下面对现实生活。以前的你靠药物逃避痛苦，而现在你必须学会用清醒的方式处理压力、孤独和失望。你在社区中心找了一份给其他成瘾者做辅导的工作，薪水不多，但你第一次感到自己的生活有意义。一个新人问你：「戒断后的生活是什么样的？」你想了想说：「很痛，但至少是真的。」",
+      "type": "social",
+      "ageRange": [22, 55],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "全身心投入帮助他人戒断", "effects": { "HUMAN": 4, "REP": 2, "MONEY": -500, "ADDICTION": -2 } },
+        { "id": "branch_2", "text": "低调生活，专注自己的康复", "effects": { "HUMAN": 2, "ADDICTION": -1, "LIFE": 2 } }
+      ],
+      "effects": { "HUMAN": 2, "ADDICTION": -1 },
+      "tags": ["药物", "康复", "重建", "新生活"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1139,
+      "title": "药物成瘾的根源",
+      "description": "在戒断过程中，心理医生让你做了一个练习——写下你第一次使用药物的原因。你拿起笔，发现答案远比你想的复杂。不是因为疼痛，不是因为朋友，不是因为好奇。你写：「因为这个世界让人太痛苦了。因为公司不把你当人看。因为账单永远还不完。因为这座城市让你觉得自己是一只活在巨人脚下的蚂蚁。」你写完后，医生沉默了一会儿，说：「你没有问题。有问题的是这个世界。」",
+      "type": "special",
+      "ageRange": [20, 60],
+      "weight": 5,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "接受这个视角，寻找改变世界的方式", "effects": { "HUMAN": 3, "REP": 2, "ADDICTION": -3 } },
+        { "id": "branch_2", "text": "接受这个视角，但先改变自己能改变的", "effects": { "HUMAN": 2, "LIFE": 2, "ADDICTION": -2 } }
+      ],
+      "effects": { "HUMAN": 2, "ADDICTION": -2 },
+      "tags": ["药物", "根源", "心理", "觉醒"],
+      "deathChainEntry": false
+    }
+  ]
+}

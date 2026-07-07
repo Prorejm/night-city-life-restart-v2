@@ -1,0 +1,899 @@
+{
+  "meta": {
+    "description": "物品数据库 - Item Database",
+    "version": "1.0",
+    "totalCount": 52
+  },
+  "items": [
+    {
+      "id": "weapon_colt_pistol",
+      "name": "廉价科尔特手枪",
+      "description": "一把旧时代出产的科尔特M1911，表面镀铬早已剥落，握把缠着黑色胶带。精度一般，但胜在便宜且永远能打响。夜之城半数街头混混的第一把枪。",
+      "type": "weapon",
+      "price": 500,
+      "effects": {
+        "tech": 1,
+        "rep": 1
+      },
+      "grade": 0,
+      "tags": [
+        "手枪",
+        "廉价",
+        "动能武器"
+      ]
+    },
+    {
+      "id": "weapon_militech_m10",
+      "name": "军用科技突击步枪M-10",
+      "description": "军用科技公司的标准制式突击步枪，采用无壳弹技术和电磁助力击发。射速高、后座可控，是夜间城区最常见的步枪型号。退役后大量流入黑市。",
+      "type": "weapon",
+      "price": 2800,
+      "effects": {
+        "tech": 3,
+        "rep": 2
+      },
+      "grade": 1,
+      "tags": [
+        "步枪",
+        "军用",
+        "动能武器"
+      ]
+    },
+    {
+      "id": "weapon_arasaka_tactical_knife",
+      "name": "荒坂战术匕首",
+      "description": "采用单分子锻造技术打造的战术匕首，刀刃锋利到可以切开低等级防弹纤维。纤维握柄内置指纹识别锁，只有主人才能使用。荒坂安保部队标准配发品。",
+      "type": "weapon",
+      "price": 1500,
+      "effects": {
+        "tech": 2,
+        "style": 2
+      },
+      "grade": 1,
+      "tags": [
+        "冷兵器",
+        "战术",
+        "近战"
+      ]
+    },
+    {
+      "id": "weapon_stun_baton",
+      "name": "电击警棍",
+      "description": "NCPD标准警用装备，内置高能电容电池。接触目标时释放5万伏特高压电击，能让目标瞬间失去行动能力但通常不致命。在黑市流通的版本往往被调高了功率。",
+      "type": "weapon",
+      "price": 800,
+      "effects": {
+        "tech": 1,
+        "rep": 1
+      },
+      "grade": 0,
+      "tags": [
+        "近战",
+        "电击",
+        "非致命"
+      ]
+    },
+    {
+      "id": "weapon_monofilament",
+      "name": "纳米纤维线",
+      "description": "一束肉眼几乎看不见的单分子纤维丝，锋利到可以切断骨骼。使用时需要极其精细的手部控制，但在熟练的刺客手中是一件无声且致命的工具。通常缠绕在戒指或手套上。",
+      "type": "weapon",
+      "price": 5000,
+      "effects": {
+        "tech": 4,
+        "style": 3
+      },
+      "grade": 2,
+      "tags": [
+        "冷兵器",
+        "刺客",
+        "隐秘"
+      ]
+    },
+    {
+      "id": "weapon_pump_shotgun",
+      "name": "泵动式霰弹枪",
+      "description": "一把经典的泵动霰弹枪，没有什么精密的电子组件，全靠机械结构运作。对付EMP干扰下的赛博疯子特别好用。一枪下去不管是血肉还是金属都一样千疮百孔。",
+      "type": "weapon",
+      "price": 2000,
+      "effects": {
+        "tech": 2,
+        "rep": 2
+      },
+      "grade": 1,
+      "tags": [
+        "霰弹枪",
+        "动能武器",
+        "近战"
+      ]
+    },
+    {
+      "id": "weapon_silenced_pistol",
+      "name": "消音手枪（黑市货）",
+      "description": "黑市作坊改造的紧凑型手枪，加装了自制消音器。精准度一般，但胜在声音小。消音器寿命大概只能撑三十发——不过这三十发足够你干很多事情了。",
+      "type": "weapon",
+      "price": 1800,
+      "effects": {
+        "tech": 2,
+        "rep": 1
+      },
+      "grade": 1,
+      "tags": [
+        "手枪",
+        "消音",
+        "隐秘"
+      ]
+    },
+    {
+      "id": "weapon_3d_printed_gun",
+      "name": "地下作坊3D打印枪",
+      "description": "用地下3D打印机连夜赶制的聚合物手枪。打不了几发就会炸膛，握把的纹路还带着打印层纹。但它的最大优点是——没有序列号，没有登记记录，用完即弃。",
+      "type": "weapon",
+      "price": 300,
+      "effects": {
+        "tech": 0,
+        "rep": 0
+      },
+      "grade": 0,
+      "tags": [
+        "手枪",
+        "廉价",
+        "一次性"
+      ]
+    },
+    {
+      "id": "weapon_flashbang",
+      "name": "震撼弹",
+      "description": "标准军用震撼弹，爆炸时产生300万分贝的噪音和数百万坎德拉的闪光。不会致命但能让方圆十米内的所有人暂时失明失聪。室内作战的利器。",
+      "type": "weapon",
+      "price": 350,
+      "effects": {
+        "tech": 1,
+        "rep": 1
+      },
+      "grade": 0,
+      "tags": [
+        "投掷",
+        "非致命",
+        "战术"
+      ]
+    },
+    {
+      "id": "weapon_molotov",
+      "name": "燃烧瓶",
+      "description": "装在玻璃瓶里的自制燃烧弹，填充着工业酒精和增稠剂。配方来自一位已经在监狱里蹲了十年的老混混。简单、粗暴、好用。对付集群目标特别有效。",
+      "type": "weapon",
+      "price": 150,
+      "effects": {
+        "tech": 0,
+        "rep": 1
+      },
+      "grade": 0,
+      "tags": [
+        "投掷",
+        "火焰",
+        "廉价"
+      ]
+    },
+    {
+      "id": "weapon_katana",
+      "name": "武士刀（传统工艺）",
+      "description": "真正的传统工艺打造的武士刀——不是流水线的仿制品。刀匠用古法折叠锻打，每一把都是独一无二的艺术品。在这个赛博时代，还坚持用血肉之躯和冷兵器作战的人，本身就值得敬佩。",
+      "type": "weapon",
+      "price": 6000,
+      "effects": {
+        "style": 4,
+        "tech": 3,
+        "rep": 3
+      },
+      "grade": 2,
+      "tags": [
+        "冷兵器",
+        "近战",
+        "收藏"
+      ]
+    },
+    {
+      "id": "weapon_monowire_legendary",
+      "name": "赛博单分子线（传奇）",
+      "description": "传说级别的赛博植入武器，纳米级单分子丝线从手腕植入槽中射出，可以切割任何已知材料。内置AI辅助瞄准系统能以毫秒级精度计算切割轨迹。在真正的高手手中，这是一件艺术与死亡完美结合的作品。",
+      "type": "weapon",
+      "price": 25000,
+      "effects": {
+        "tech": 6,
+        "chrome": 3,
+        "rep": 5
+      },
+      "grade": 3,
+      "tags": [
+        "赛博武器",
+        "近战",
+        "传奇"
+      ]
+    },
+    {
+      "id": "armor_kevlar_vest",
+      "name": "防弹背心（普通）",
+      "description": "标准III级防弹背心，凯夫拉材质能挡住大多数手枪弹和霰弹。穿起来不太舒服，但总比被子弹打个对穿好。夜之城街头的生存必需品。",
+      "type": "armor",
+      "price": 1200,
+      "effects": {
+        "life": 3,
+        "tech": 1
+      },
+      "grade": 0,
+      "tags": [
+        "防弹",
+        "基础",
+        "穿戴"
+      ]
+    },
+    {
+      "id": "armor_militech_tactical",
+      "name": "军用科技战术甲（稀有）",
+      "description": "军用科技公司退役的战术背心，采用钛合金复合陶瓷插板和液态减震层。能抵挡步枪弹的正面射击。虽然是淘汰型号，但比市面上大多数民用品强了不止一个档次。",
+      "type": "armor",
+      "price": 5000,
+      "effects": {
+        "life": 5,
+        "tech": 3,
+        "rep": 2
+      },
+      "grade": 2,
+      "tags": [
+        "战术",
+        "军用",
+        "防弹"
+      ]
+    },
+    {
+      "id": "armor_arasaka_uniform",
+      "name": "荒坂公司制服（伪装）",
+      "description": "一套完整的荒坂集团安保人员制服，包括徽章、证件套和通讯耳机。虽然证件是伪造的，但在远处蒙混过关足够了。穿着它你能进入大多数荒坂旗下的建筑。",
+      "type": "armor",
+      "price": 3500,
+      "effects": {
+        "style": 3,
+        "rep": 2
+      },
+      "grade": 1,
+      "tags": [
+        "伪装",
+        "企业",
+        "社交"
+      ]
+    },
+    {
+      "id": "armor_subdermal",
+      "name": "皮下装甲（已植入）",
+      "description": "在皮下植入高分子防弹纤维层和蜂窝状减震结构的组合体。不影响外表但提供持续防护。这是黑市医生能合法植入的最高等级皮下装甲。日常穿着毫无负担。",
+      "type": "armor",
+      "price": 8000,
+      "effects": {
+        "life": 4,
+        "chrome": 2,
+        "tech": 2
+      },
+      "grade": 2,
+      "tags": [
+        "植入",
+        "被动防护",
+        "赛博"
+      ]
+    },
+    {
+      "id": "armor_kevlar_trenchcoat",
+      "name": "凯夫拉风衣",
+      "description": "表面看是一件复古风格的皮质长风衣，内衬却织入了凯夫拉防弹纤维。穿在身上既有型又能挡子弹，是夜之城佣兵最经典的外套选择。据说某位传奇佣兵同款风衣在黑市上炒到了五位数。",
+      "type": "armor",
+      "price": 2500,
+      "effects": {
+        "style": 3,
+        "life": 2,
+        "rep": 2
+      },
+      "grade": 1,
+      "tags": [
+        "防弹",
+        "时尚",
+        "外套"
+      ]
+    },
+    {
+      "id": "armor_riot_helmet",
+      "name": "防暴头盔",
+      "description": "NCPD防暴部队制式头盔，面罩采用聚碳酸酯防弹材料。内置HUD接口和通讯模块。能挡住大多数手枪弹和破片。缺点是视野受限而且看起来很唬人。",
+      "type": "armor",
+      "price": 1800,
+      "effects": {
+        "life": 3,
+        "tech": 1
+      },
+      "grade": 1,
+      "tags": [
+        "防弹",
+        "头部",
+        "战术"
+      ]
+    },
+    {
+      "id": "armor_ceramic_plate",
+      "name": "陶瓷插板背心",
+      "description": "在普通防弹背心的前后口袋中插入高硬度陶瓷防弹板。重量感人但防御力极强，可以承受多发步枪弹的连续射击。唯一的缺点是——摔倒了可能很难自己爬起来。",
+      "type": "armor",
+      "price": 4000,
+      "effects": {
+        "life": 6,
+        "tech": 2
+      },
+      "grade": 2,
+      "tags": [
+        "防弹",
+        "重型",
+        "战术"
+      ]
+    },
+    {
+      "id": "armor_nomad_jacket",
+      "name": "流浪者改装皮夹克",
+      "description": "出自夜之城外流浪者部落之手的老式皮夹克，表面布满了部落徽记和战场修复的痕迹。夹克内部缝入了多层防弹织物和保温层。每一处磨损都是一段故事。",
+      "type": "armor",
+      "price": 3000,
+      "effects": {
+        "style": 3,
+        "life": 2,
+        "rep": 3
+      },
+      "grade": 1,
+      "tags": [
+        "防弹",
+        "流浪者",
+        "外套"
+      ]
+    },
+    {
+      "id": "consumable_medspray_small",
+      "name": "医疗喷雾（小）",
+      "description": "便携式纳米止血喷雾，内含有凝血因子和速效止痛剂的混合药剂。对小伤口有奇效，喷一喷就能止血愈合。包里常备一罐，夜之城的基本生存技能。",
+      "type": "consumable",
+      "price": 150,
+      "effects": {
+        "life": 2
+      },
+      "grade": 0,
+      "tags": [
+        "医疗",
+        "急救",
+        "一次性"
+      ]
+    },
+    {
+      "id": "consumable_trauma_pack",
+      "name": "创伤包（中）",
+      "description": "包含止血带、消毒剂、无菌敷料和紧急缝合器的标准急救包。能处理大部分中度创伤。如果你是Trauma Team的客户，这个包还带有一个GPS求救信标。",
+      "type": "consumable",
+      "price": 500,
+      "effects": {
+        "life": 5
+      },
+      "grade": 1,
+      "tags": [
+        "医疗",
+        "急救",
+        "一次性"
+      ]
+    },
+    {
+      "id": "consumable_nano_medkit",
+      "name": "纳米医疗包（大）",
+      "description": "装有纳米机器人悬浮液的高端医疗包。注入体内后纳米机器人会自动定位损伤部位并进行细胞级修复。对内出血和器官损伤特别有效。价格高昂但关键时刻能救命。",
+      "type": "consumable",
+      "price": 2000,
+      "effects": {
+        "life": 10,
+        "tech": 3
+      },
+      "grade": 2,
+      "tags": [
+        "医疗",
+        "纳米",
+        "一次性"
+      ]
+    },
+    {
+      "id": "consumable_stimulant",
+      "name": "兴奋剂",
+      "description": "含有合成肾上腺素的速效注射剂。能在短时间内大幅提升反应速度和体力。副作用是药效退去后会极度疲劳。黑市上流出的版本往往掺了不明添加剂。",
+      "type": "consumable",
+      "price": 200,
+      "effects": {
+        "tech": 2,
+        "addiction": 1
+      },
+      "grade": 0,
+      "tags": [
+        "药物",
+        "增强",
+        "一次性"
+      ]
+    },
+    {
+      "id": "consumable_clearpill",
+      "name": "清醒药丸",
+      "description": "一种白色的小药片，含有人工合成的中枢神经兴奋剂。能让人在酒醉或药物影响下快速恢复清醒——至少在药效持续的四小时内是这样。街头派对必备品。",
+      "type": "consumable",
+      "price": 100,
+      "effects": {
+        "addiction": -2,
+        "life": 1
+      },
+      "grade": 0,
+      "tags": [
+        "药物",
+        "恢复",
+        "一次性"
+      ]
+    },
+    {
+      "id": "consumable_nutrition_supply",
+      "name": "营养补充剂（一周份）",
+      "description": "一盒七袋装的合成营养粉，含有人体所需的全部维生素、矿物质和氨基酸。用水冲开后味道像稀释的纸板——但至少饿不死。夜之城的底层居民把它当主食。",
+      "type": "consumable",
+      "price": 80,
+      "effects": {
+        "life": 1,
+        "human": -1
+      },
+      "grade": 0,
+      "tags": [
+        "食物",
+        "生存",
+        "消耗品"
+      ]
+    },
+    {
+      "id": "consumable_antidote",
+      "name": "解毒剂",
+      "description": "通用型广谱解毒剂，能中和大多数常见的生物毒素和化学毒剂。需要静脉注射。在夜之城这个充满工业污染和生化武器的城市里，带一支总没错。",
+      "type": "consumable",
+      "price": 600,
+      "effects": {
+        "life": 4,
+        "tech": 1
+      },
+      "grade": 1,
+      "tags": [
+        "医疗",
+        "解毒",
+        "一次性"
+      ]
+    },
+    {
+      "id": "consumable_military_rations",
+      "name": "军用口粮（三天量）",
+      "description": "军用科技标准的MRE口粮包，包含三天的热量供应。每一袋都有主菜、配菜、能量棒和自热装置。味道出奇地不错——因为军用科技的食品部据说是从高端餐厅挖来的厨师。",
+      "type": "consumable",
+      "price": 250,
+      "effects": {
+        "life": 2,
+        "rep": 1
+      },
+      "grade": 0,
+      "tags": [
+        "食物",
+        "军用",
+        "生存"
+      ]
+    },
+    {
+      "id": "consumable_water_purifier",
+      "name": "净化水片（100片）",
+      "description": "一瓶小小的碘基净化药片，一片能净化一升脏水。在工业废水横流的夜之城，干净的水源比子弹还珍贵。这瓶药片可能比你未来一个月的伙食费还值钱。",
+      "type": "consumable",
+      "price": 120,
+      "effects": {
+        "life": 1,
+        "human": 1
+      },
+      "grade": 0,
+      "tags": [
+        "生存",
+        "消耗品",
+        "基础"
+      ]
+    },
+    {
+      "id": "consumable_antibiotics",
+      "name": "通用抗生素",
+      "description": "广谱抗生素胶囊，一板十二粒。在黑市手术和肮脏环境中生存的必备药品。能预防和治疗大多数常见的细菌感染。在夜之城，一个小小的伤口感染就可能要了你的命。",
+      "type": "consumable",
+      "price": 300,
+      "effects": {
+        "life": 3
+      },
+      "grade": 0,
+      "tags": [
+        "医疗",
+        "药品",
+        "消耗品"
+      ]
+    },
+    {
+      "id": "consumable_painkiller",
+      "name": "止痛药（非处方）",
+      "description": "布洛芬加可待因的复方制剂，药店里就能买到。能缓解大部分疼痛但无法压制重伤。一颗下去能不能止痛取决于你对自己说「不疼」的功力有多强。",
+      "type": "consumable",
+      "price": 60,
+      "effects": {
+        "life": 1,
+        "addiction": 1
+      },
+      "grade": 0,
+      "tags": [
+        "药品",
+        "止痛",
+        "消耗品"
+      ]
+    },
+    {
+      "id": "consumable_stabilizer",
+      "name": "稳定剂（濒死用）",
+      "description": "一套包含强心剂、升压药和纳米止血剂的急救组合包。设计用于在濒死状态下稳定生命体征至少一小时——足够等人来救你，或者足够你写完遗书。",
+      "type": "consumable",
+      "price": 1500,
+      "effects": {
+        "life": 8,
+        "tech": 2
+      },
+      "grade": 2,
+      "tags": [
+        "医疗",
+        "急救",
+        "濒死"
+      ]
+    },
+    {
+      "id": "cyberpart_used_eye",
+      "name": "二手赛博眼（工业级）",
+      "description": "从报废的工业机器人上拆下来的光学传感器，经过黑市技术员的改装后可以植入人体。只能显示灰度图像，分辨率不高——但比完全看不见强。穷人的第一只赛博眼。",
+      "type": "cyberpart",
+      "price": 2500,
+      "effects": {
+        "chrome": 1,
+        "tech": 1
+      },
+      "grade": 0,
+      "tags": [
+        "义体",
+        "眼部",
+        "二手"
+      ]
+    },
+    {
+      "id": "cyberpart_nerve_cable",
+      "name": "神经接口线缆",
+      "description": "一根高带宽的赛博神经线缆，用于连接植入体和中枢神经系统。材料采用超导碳纤维，信号传输几乎没有延迟。安装时需要部分替换脊髓神经束。",
+      "type": "cyberpart",
+      "price": 4000,
+      "effects": {
+        "chrome": 2,
+        "tech": 3
+      },
+      "grade": 1,
+      "tags": [
+        "义体",
+        "神经",
+        "部件"
+      ]
+    },
+    {
+      "id": "cyberpart_chip_slot",
+      "name": "通用芯片插槽",
+      "description": "颅骨植入式通用芯片接口，可以加载各种技能芯片、存储芯片或武器控制芯片。最多同时加载两块芯片。标准件的接口协议是开放的，所以兼容市面上大多数芯片。",
+      "type": "cyberpart",
+      "price": 5000,
+      "effects": {
+        "chrome": 2,
+        "tech": 4
+      },
+      "grade": 1,
+      "tags": [
+        "义体",
+        "大脑",
+        "插槽"
+      ]
+    },
+    {
+      "id": "cyberpart_spare_battery",
+      "name": "备用电池（义体专用）",
+      "description": "高能量密度的固态电池组，专为赛博义体设计。充满电后能为大多数植入体提供72小时的额外续航。贴在皮下就像多了一块手机的充电宝——只不过在你自己身体里。",
+      "type": "cyberpart",
+      "price": 3000,
+      "effects": {
+        "chrome": 1,
+        "tech": 2
+      },
+      "grade": 1,
+      "tags": [
+        "义体",
+        "电源",
+        "植入"
+      ]
+    },
+    {
+      "id": "cyberpart_cooling_gel",
+      "name": "冷却凝胶（防止义体过热）",
+      "description": "特殊的导热凝胶，注射入植入体周围的皮下组织后能有效传导热量。在战斗或高负载使用时防止义体过热损坏。每管凝胶有效时间约六个月。",
+      "type": "cyberpart",
+      "price": 800,
+      "effects": {
+        "chrome": 1,
+        "tech": 1
+      },
+      "grade": 0,
+      "tags": [
+        "义体",
+        "维护",
+        "消耗品"
+      ]
+    },
+    {
+      "id": "quest_data_chip",
+      "name": "机密数据芯片",
+      "description": "一块加密的军用级数据存储芯片，容量为10TB。里面的内容可能是一份客户名单、一段监视录像或者一些见不得光的交易记录。无论是谁掉了它，都一定很想找回来。",
+      "type": "quest",
+      "price": 5000,
+      "effects": {
+        "tech": 2,
+        "money": 2
+      },
+      "grade": 2,
+      "tags": [
+        "情报",
+        "数据",
+        "任务"
+      ]
+    },
+    {
+      "id": "quest_keycard",
+      "name": "加密密钥卡",
+      "description": "一张黑色的矩形卡片，内置动态加密芯片。每三十秒刷新一次访问代码。可以用来打开特定企业的安全门禁系统。没有它，你就是最强的黑客也要花上十分钟破解。",
+      "type": "quest",
+      "price": 8000,
+      "effects": {
+        "tech": 3,
+        "rep": 1
+      },
+      "grade": 2,
+      "tags": [
+        "门禁",
+        "企业",
+        "任务"
+      ]
+    },
+    {
+      "id": "quest_holo_disguiser",
+      "name": "全息伪装修饰器",
+      "description": "一个挂在衣领下的小型全息投影装置，能在面部周围投射一层动态全息影像，改变佩戴者的容貌。不是完美的伪装——眼神犀利的人能看出全息层的边缘——但应付监控摄像头足够了。",
+      "type": "quest",
+      "price": 6000,
+      "effects": {
+        "tech": 3,
+        "style": 2
+      },
+      "grade": 2,
+      "tags": [
+        "伪装",
+        "潜入",
+        "任务"
+      ]
+    },
+    {
+      "id": "quest_bug_device",
+      "name": "监听设备",
+      "description": "一枚硬币大小的微型监听器，采用激光拾音技术，可以通过窗户玻璃的振动来拾取室内的谈话。内置加密发射器，信号有效范围五百米。粘在目标办公室的窗户外就齐活了。",
+      "type": "quest",
+      "price": 3500,
+      "effects": {
+        "tech": 3,
+        "rep": 2
+      },
+      "grade": 1,
+      "tags": [
+        "监听",
+        "潜入",
+        "情报"
+      ]
+    },
+    {
+      "id": "quest_universal_cracker",
+      "name": "万能破解工具",
+      "description": "一个手掌大小的电子破解器，集成了暴力破解、信号干扰和协议欺骗功能。针对市面上80%的民用电子锁可以在一分钟内破解。专业黑客眼中的玩具，普通人手里的神器。",
+      "type": "quest",
+      "price": 4000,
+      "effects": {
+        "tech": 4,
+        "rep": 1
+      },
+      "grade": 2,
+      "tags": [
+        "破解",
+        "工具",
+        "电子"
+      ]
+    },
+    {
+      "id": "quest_fake_id_premium",
+      "name": "伪造身份证件（高端）",
+      "description": "一套以假乱真的身份证明文件，包括生物芯片ID卡、驾驶证和信用档案。由前荒坂身份认证部离职员工亲手制作，可以通过大多数企业的二级安全验证。有了它你可以成为任何人。",
+      "type": "quest",
+      "price": 12000,
+      "effects": {
+        "style": 3,
+        "money": 2,
+        "rep": 2
+      },
+      "grade": 3,
+      "tags": [
+        "身份",
+        "伪造",
+        "高端"
+      ]
+    },
+    {
+      "id": "quest_bio_bypass",
+      "name": "生物识别绕过器",
+      "description": "一支装有合成DNA凝胶的注射器，内含各种常见基因序列的混合物。当生物识别扫描仪需要DNA样本时，注入这款凝胶能让它匹配到已登记的系统管理员——前提是你得先拿到管理员的一根头发或一滴血。",
+      "type": "quest",
+      "price": 7000,
+      "effects": {
+        "tech": 4,
+        "rep": 2
+      },
+      "grade": 2,
+      "tags": [
+        "潜入",
+        "生物识别",
+        "破解"
+      ]
+    },
+    {
+      "id": "quest_signal_jammer",
+      "name": "信号干扰器",
+      "description": "一台便携式多频段信号干扰器，能同时阻断Wi-Fi、蜂窝网络、蓝牙和军用通讯频段。有效半径五十米。打开它后你就是一座信息孤岛——但别人也联系不到救援。",
+      "type": "quest",
+      "price": 3000,
+      "effects": {
+        "tech": 3,
+        "rep": 1
+      },
+      "grade": 1,
+      "tags": [
+        "干扰",
+        "电子战",
+        "潜入"
+      ]
+    },
+    {
+      "id": "valuable_antique_lighter",
+      "name": "战前古董打火机",
+      "description": "一枚真正的黄铜Zippo打火机，生产于21世纪初——那是赛博时代之前的世界。表面有岁月的铜绿和轻微的使用痕迹。点燃时跳动的橙色火焰在夜之城蓝色的霓虹灯下格外温暖。收藏家愿意出高价买下这段历史。",
+      "type": "valuable",
+      "price": 4000,
+      "effects": {
+        "style": 2,
+        "money": 1
+      },
+      "grade": 2,
+      "tags": [
+        "收藏",
+        "古董",
+        "战前"
+      ]
+    },
+    {
+      "id": "valuable_celebrity_holo",
+      "name": "名人签名全息照",
+      "description": "一张由著名超梦演员——莉莉·夜莺——亲笔签名的全息纪念照。照片中的她穿着标志性的霓虹长裙，微笑在三维空间中微微浮动。全球限量发行五十张，每一张都有数字防伪证书。",
+      "type": "valuable",
+      "price": 6000,
+      "effects": {
+        "style": 3,
+        "rep": 1
+      },
+      "grade": 2,
+      "tags": [
+        "收藏",
+        "娱乐",
+        "限定"
+      ]
+    },
+    {
+      "id": "valuable_cyber_pet",
+      "name": "限量版赛博宠物",
+      "description": "一只由荒坂旗下子公司出品的限量版赛博宠物——仿生机器猫，皮毛由高仿真合成纤维制成，眼睛是两枚蓝色LED。内置简单的AI程序，会对抚摸和声音做出反应。是夜之城上流社会最热门的话题单品。",
+      "type": "valuable",
+      "price": 8000,
+      "effects": {
+        "style": 4,
+        "human": 2
+      },
+      "grade": 2,
+      "tags": [
+        "收藏",
+        "电子宠物",
+        "奢侈品"
+      ]
+    },
+    {
+      "id": "valuable_braindance_card",
+      "name": "地下超梦体验卡（尊享版）",
+      "description": "一张录制了顶级超梦内容的芯片卡，据说体验内容是某位退役传奇佣兵在荒坂大厦最高层的一场战斗——未被剪辑、完全真实。在地下黑市中流通极少，每一张都有编号。内容真实到让人怀疑这不是超梦，是被人偷偷录下来的实际任务。",
+      "type": "valuable",
+      "price": 15000,
+      "effects": {
+        "tech": 2,
+        "rep": 3,
+        "addiction": 2
+      },
+      "grade": 3,
+      "tags": [
+        "收藏",
+        "超梦",
+        "传奇"
+      ]
+    },
+    {
+      "id": "valuable_golden_bullet",
+      "name": "黄金子弹（传说能带来好运）",
+      "description": "一枚纯金打造的.45口径手枪弹，弹壳上刻着一行小字：「最后一发留给自己」。据说它的第一任主人是一位在二十场决斗中从未失手的传奇枪手。信的人把它当护身符，不信的人说它只是一块贵重金属。但它的黑市价格不会说谎。",
+      "type": "valuable",
+      "price": 10000,
+      "effects": {
+        "style": 3,
+        "rep": 3
+      },
+      "grade": 3,
+      "tags": [
+        "收藏",
+        "传说",
+        "武器"
+      ]
+    },
+    {
+      "id": "valuable_ancient_book",
+      "name": "古早实体书（稀有）",
+      "description": "一本真正的纸质书，印刷于2070年之前。在这个一切都数字化、信息像流水一样蒸发又重组的年代，一本有油墨味、能触摸到纸张纹理的实体书本身就是一件奢侈品。这本书的书名是《夜之城往事》——也许是这座城市最后一部纸上编年史。",
+      "type": "valuable",
+      "price": 7000,
+      "effects": {
+        "style": 2,
+        "human": 3
+      },
+      "grade": 2,
+      "tags": [
+        "收藏",
+        "纸媒",
+        "历史"
+      ]
+    },
+    {
+      "id": "valuable_ceo_terminal",
+      "name": "企业CEO的废弃个人终端",
+      "description": "一台经过专业数据恢复的废弃手持终端，原主人是一家中型生物技术公司的前CEO。终端里残存的部分数据包含了该公司的内部交易记录、未公开的实验数据和几位高管的私人通讯。这些情报在黑市上的价值不可估量。",
+      "type": "valuable",
+      "price": 20000,
+      "effects": {
+        "tech": 4,
+        "money": 4,
+        "rep": 3
+      },
+      "grade": 3,
+      "tags": [
+        "情报",
+        "企业",
+        "机密"
+      ]
+    }
+  ]
+}

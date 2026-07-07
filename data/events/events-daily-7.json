@@ -1,0 +1,3707 @@
+{
+  "events": [
+    {
+      "id": 2100,
+      "title": "全息证件照自助亭",
+      "description": "街角的全息证件照自助亭闪烁着蓝色光芒，AI摄影师正在自动调试光线参数。你走进去坐下，面前的屏幕显示'微笑检测中'。全息镜头捕捉着你面部的每一个细节，连义体接口的痕迹都不放过。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拍一张标准证件照，支付信用点",
+          "effects": {
+            "MONEY": -50,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "开启美化滤镜，让自己看起来更精神",
+          "effects": {
+            "MONEY": -80,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用破解程序免费拍摄",
+          "effects": {
+            "TECH": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "证件照"
+      ]
+    },
+    {
+      "id": 2101,
+      "title": "全息证件照续费提醒",
+      "description": "你收到一条推送：你的全息身份证即将过期，需要重新拍摄更新。自助亭就在街对面，排队的人不多。AI系统提示新版本支持动态面部识别，安全性更高。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "乖乖排队更新证件",
+          "effects": {
+            "MONEY": -60,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用旧证件蒙混过关再说",
+          "effects": {
+            "DEBT": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "证件照"
+      ]
+    },
+    {
+      "id": 2102,
+      "title": "全息拍照亭故障",
+      "description": "自助拍照亭的屏幕闪烁着雪花，AI系统似乎出了故障。屏幕上弹出提示：'检测到系统异常，免费补偿拍摄中'。也许这是个占便宜的好机会，也可能是陷阱。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "趁机免费多拍几张",
+          "effects": {
+            "STYLE": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "帮忙修复系统漏洞",
+          "effects": {
+            "TECH": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放弃拍照直接离开",
+          "effects": {}
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "证件照"
+      ]
+    },
+    {
+      "id": 2103,
+      "title": "证件照背景选择",
+      "description": "全息拍照亭提供上百种背景模板，从虚拟海滩到火星殖民地应有尽有。AI推荐引擎根据你的面部特征分析出最佳搭配。你需要为不同的证件选择合适的背景色调。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "选择商务风背景，显得专业",
+          "effects": {
+            "MONEY": -50,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "选择赛博朋克风背景，彰显个性",
+          "effects": {
+            "MONEY": -50,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "证件照"
+      ]
+    },
+    {
+      "id": 2104,
+      "title": "生物特征拍照排队",
+      "description": "市政厅外的生物特征采集点排起了长队，大家都在等待更新面部数据库。全息扫描仪每隔几秒就完成一次采集，发出柔和的蓝光。空气中弥漫着焦躁和电子设备的嗡鸣。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "耐心排队完成采集",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "花钱雇人代排队",
+          "effects": {
+            "MONEY": -120,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "证件照"
+      ]
+    },
+    {
+      "id": 2105,
+      "title": "全息证件照打折季",
+      "description": "一年一度的全息证件照打折季开始了，各拍照亭纷纷推出优惠套餐。AI系统自动比价，为你推荐最划算的方案。街上到处都是全息广告的投影。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 13,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "趁打折拍一套多用途证件照",
+          "effects": {
+            "MONEY": -40,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "购买高端套餐，包含动态全息照",
+          "effects": {
+            "MONEY": -100,
+            "STYLE": 3,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "证件照"
+      ]
+    },
+    {
+      "id": 2106,
+      "title": "证件照AI审美评分",
+      "description": "新的拍照亭推出了AI审美评分功能，拍完照后系统会给你打分并给出改善建议。评分高的人可以享受折扣，评分低的则被建议购买美化服务。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "认真按照AI建议改善形象",
+          "effects": {
+            "MONEY": -50,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "无视评分，自然就好",
+          "effects": {
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "尝试黑入系统改分数",
+          "effects": {
+            "TECH": 1,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "证件照"
+      ]
+    },
+    {
+      "id": 2107,
+      "title": "智能购物车自动结算",
+      "description": "超市入口的智能购物车自动识别了你的身份，屏幕上弹出欢迎信息和购物清单建议。购物车会自动扫描放入的商品，实时计算总价。结账时只需刷一下掌纹就能完成支付。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 14,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "按推荐清单购物，方便快捷",
+          "effects": {
+            "MONEY": -150,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "关掉推荐，自己挑选商品",
+          "effects": {
+            "MONEY": -100,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "利用购物车系统漏洞获取折扣",
+          "effects": {
+            "TECH": 1,
+            "MONEY": 50,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "购物"
+      ]
+    },
+    {
+      "id": 2108,
+      "title": "购物车营养监控系统",
+      "description": "智能购物车的新功能会实时监控你放入的商品营养成分，并给出健康建议。当你试图拿一包合成薯片时，购物车发出了警告音。AI语音助手建议你选择蔬菜替代品。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "听从建议选择健康食品",
+          "effects": {
+            "MONEY": -120,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "无视警告，照买不误",
+          "effects": {
+            "MONEY": -80,
+            "ADDICTION": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "购物"
+      ]
+    },
+    {
+      "id": 2109,
+      "title": "购物车会员积分兑换",
+      "description": "智能购物车提醒你积累了足够的会员积分，可以兑换商品。积分商城里从合成食品到小型义体配件都有。购物车的屏幕上闪烁着各种兑换选项。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "兑换实用生活用品",
+          "effects": {
+            "MONEY": -20,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "兑换小型义体保养工具",
+          "effects": {
+            "MONEY": -20,
+            "CHROME": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "购物"
+      ]
+    },
+    {
+      "id": 2110,
+      "title": "购物车AI砍价功能",
+      "description": "超市升级了智能购物车，新增AI实时砍价功能。购物车会根据商品保质期、库存和你的消费记录自动与商家系统议价。有时候能砍下不少钱，有时候反而被推荐了更贵的商品。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "开启AI砍价模式购物",
+          "effects": {
+            "MONEY": -90,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "手动选择，不信任AI砍价",
+          "effects": {
+            "MONEY": -130,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "购物"
+      ]
+    },
+    {
+      "id": 2111,
+      "title": "购物车故障风波",
+      "description": "你的智能购物车突然开始疯狂推荐商品，屏幕上弹出无数广告窗口。系统似乎被黑客入侵了，购物车自动加入了一堆你不需要的东西。结账金额远超预期。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "手动清空购物车重新来过",
+          "effects": {
+            "MONEY": -50,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "放弃购物直接离开",
+          "effects": {
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向超市投诉要求赔偿",
+          "effects": {
+            "MONEY": 30,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "购物"
+      ]
+    },
+    {
+      "id": 2112,
+      "title": "无人超市购物体验",
+      "description": "这家超市完全没有人工收银员，全靠智能购物车和自动结算系统运作。货架上的机器人正在补货，空气中弥漫着合成食品的气味。购物体验高效但冰冷。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 13,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "快速购物后离开",
+          "effects": {
+            "MONEY": -100,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在超市里逛逛，享受空调",
+          "effects": {
+            "MONEY": -120,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "购物"
+      ]
+    },
+    {
+      "id": 2113,
+      "title": "购物车拼单优惠",
+      "description": "智能购物车提示附近有其他顾客愿意拼单享受批量折扣。系统显示了几位匹配用户的匿名头像，拼单后每人都能省下一笔。但这意味着要和陌生人共享购物清单。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受拼单，省钱交朋友",
+          "effects": {
+            "MONEY": -70,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝拼单，独自购物",
+          "effects": {
+            "MONEY": -110,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "购物"
+      ]
+    },
+    {
+      "id": 2114,
+      "title": "智能洗衣胶囊机",
+      "description": "楼下的智能洗衣胶囊机更新了系统，现在支持AI污渍识别功能。你把脏衣服扔进去，机器扫描后自动选择最佳洗涤程序。全息屏幕上显示着预计完成时间和洗涤进度。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "使用标准洗涤程序",
+          "effects": {
+            "MONEY": -30,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "升级到深度清洁模式",
+          "effects": {
+            "MONEY": -50,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用破解指令免费洗",
+          "effects": {
+            "TECH": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "洗衣"
+      ]
+    },
+    {
+      "id": 2115,
+      "title": "纳米洗衣液推销",
+      "description": "一个全息投影广告在洗衣房里弹出，推销最新款纳米洗衣液。据说这种洗衣液能在分子层面分解污渍，还能给衣物镀上防污涂层。旁边有人在试用，效果确实不错。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买纳米洗衣液试用",
+          "effects": {
+            "MONEY": -80,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "继续用普通洗衣液",
+          "effects": {
+            "MONEY": -20
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "洗衣"
+      ]
+    },
+    {
+      "id": 2116,
+      "title": "洗衣房排队风波",
+      "description": "公寓楼的智能洗衣房只有四台机器，今天排队的人特别多。全息预约系统显示至少要等两个小时。有人在机器上贴了'已预约'的全息标签，但人影都不见。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "耐心等待预约排队",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "花钱加急优先洗衣",
+          "effects": {
+            "MONEY": -60,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把标签撕了自己先用",
+          "effects": {
+            "TRAUMA": 2,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "洗衣"
+      ]
+    },
+    {
+      "id": 2117,
+      "title": "智能烘干与折叠",
+      "description": "洗衣房的智能烘干机新增了自动折叠功能，洗完烘干的衣服会被机械臂整齐叠好。这项服务需要额外付费，但省去了手动折叠的麻烦。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买自动烘干折叠服务",
+          "effects": {
+            "MONEY": -50,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只烘干，自己折叠",
+          "effects": {
+            "MONEY": -30,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "洗衣"
+      ]
+    },
+    {
+      "id": 2118,
+      "title": "义体衣物专用洗",
+      "description": "你的一件带有电子线路的智能外套需要特殊清洗，普通洗衣机会损坏电路。赛博洗衣店提供义体衣物专用清洗服务，用纳米机器人清理纤维间的灰尘。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "送去专业清洗义体衣物",
+          "effects": {
+            "MONEY": -100,
+            "CHROME": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自己小心翼翼手洗",
+          "effects": {
+            "MONEY": -10,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "洗衣"
+      ]
+    },
+    {
+      "id": 2119,
+      "title": "洗衣房社交时间",
+      "description": "洗衣房是公寓楼里少有的面对面社交场所。等待洗衣的时候，邻居们聚在一起聊天。全息电视播放着最新的赛博新闻，自动售货机提供合成咖啡。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 13,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "和邻居聊天打发时间",
+          "effects": {
+            "MONEY": -30,
+            "HUMAN": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "戴上耳机独处等洗衣",
+          "effects": {
+            "MONEY": -30,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "洗衣"
+      ]
+    },
+    {
+      "id": 2120,
+      "title": "洗衣积分兑换日",
+      "description": "智能洗衣系统的积分兑换日到了，累积的洗衣积分可以兑换各种生活用品。全息屏幕上展示着兑换列表，从合成洗涤剂到小型家电都有。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "兑换实用洗涤用品",
+          "effects": {
+            "MONEY": -10,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "攒着积分等更大的奖品",
+          "effects": {
+            "MONEY": -30
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "洗衣"
+      ]
+    },
+    {
+      "id": 2121,
+      "title": "AI理发店优惠券",
+      "description": "手机上弹出一张AI理发店的数字优惠券，全息投影展示着各种发型模板。AI理发师能根据你的脸型和发质推荐最适合的发型，剪完后还能自动染色。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "使用优惠券体验AI理发",
+          "effects": {
+            "MONEY": -60,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "把优惠券转手卖掉",
+          "effects": {
+            "MONEY": 30,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "理发"
+      ]
+    },
+    {
+      "id": 2122,
+      "title": "全息发型试戴",
+      "description": "AI理发店推出了全息发型试戴功能，剪发前可以预览效果。你站在全息镜前，AI系统实时渲染各种发型在你头上的样子。几个路人透过橱窗好奇地看着。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "试戴后选择最满意的发型",
+          "effects": {
+            "MONEY": -80,
+            "STYLE": 3,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "试了半天还是保持原样",
+          "effects": {
+            "MONEY": -20,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "理发"
+      ]
+    },
+    {
+      "id": 2123,
+      "title": "义体头皮护理",
+      "description": "理发店新增了义体头皮护理服务，针对有神经接口的顾客。纳米机器人会清理接口周围的灰尘和氧化物，保持连接通畅。护理过程有点痒但很舒服。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "体验义体头皮护理",
+          "effects": {
+            "MONEY": -100,
+            "CHROME": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只要普通理发就好",
+          "effects": {
+            "MONEY": -50,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "理发"
+      ]
+    },
+    {
+      "id": 2124,
+      "title": "理发店会员续费",
+      "description": "AI理发店的会员到期了，续费可以享受全年八折优惠。全息广告展示着会员专属发型库，里面有上千种潮流发型模板。店里的AI理发师正在给下一位顾客服务。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "续费会员享受优惠",
+          "effects": {
+            "MONEY": -150,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "不续费，按次付费",
+          "effects": {
+            "MONEY": -70
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "理发"
+      ]
+    },
+    {
+      "id": 2125,
+      "title": "街边AI理发摊",
+      "description": "巷子口有一个简易的AI理发摊，价格只有正规店的一半。理发臂看起来有些老旧，但AI系统还在正常运作。几个流浪汉在旁边排队等候。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "图便宜在街边理发",
+          "effects": {
+            "MONEY": -25,
+            "STYLE": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "还是去正规店吧",
+          "effects": {
+            "MONEY": -80,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "理发"
+      ]
+    },
+    {
+      "id": 2126,
+      "title": "数字发型NFT抽奖",
+      "description": "理发店在搞活动，剪发后可以参与数字发型NFT抽奖。中奖的发型是限量版全息发型，只有少数人拥有。全息屏幕上滚动着中奖名单。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "理发后参与NFT抽奖",
+          "effects": {
+            "MONEY": -70,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只理发不抽奖",
+          "effects": {
+            "MONEY": -50,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "理发"
+      ]
+    },
+    {
+      "id": 2127,
+      "title": "义体关节保养",
+      "description": "赛博修理铺的老师傅检查着你的义体关节，金属碰撞声叮叮当当。纳米润滑油注入关节轴承，消除了那恼人的咔嗒声。墙上的全息海报展示着各种义体升级方案。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 13,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全面保养义体关节",
+          "effects": {
+            "MONEY": -200,
+            "CHROME": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只做简单润滑维护",
+          "effects": {
+            "MONEY": -80,
+            "CHROME": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "修理"
+      ]
+    },
+    {
+      "id": 2128,
+      "title": "神经接口除尘",
+      "description": "修理铺的技师用精密工具清理你颈后的神经接口，清除了积攒的灰尘和氧化物。接口指示灯重新亮起稳定的蓝光。技师提醒你定期来清理，否则会影响信号传输。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "深度清理神经接口",
+          "effects": {
+            "MONEY": -150,
+            "CHROME": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "买工具自己回家清理",
+          "effects": {
+            "MONEY": -60,
+            "TECH": 2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "修理"
+      ]
+    },
+    {
+      "id": 2129,
+      "title": "义眼固件升级",
+      "description": "修理铺推出了义眼固件升级服务，新固件改善了低光环境下的成像质量。升级过程只需要十五分钟，但需要闭上眼睛等待。技师的手指在全息键盘上飞速跳动。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "升级义眼固件",
+          "effects": {
+            "MONEY": -180,
+            "CHROME": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "等固件稳定了再升级",
+          "effects": {
+            "MONEY": -50,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "修理"
+      ]
+    },
+    {
+      "id": 2130,
+      "title": "二手义体零件淘宝",
+      "description": "修理铺后院堆满了各种二手义体零件，老师傅说这些都是从报废义体上拆下来的。有些零件成色不错，价格只有新品的零头。你需要有一定的技术知识才能挑选。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "淘宝二手零件自己组装",
+          "effects": {
+            "MONEY": -100,
+            "TECH": 3,
+            "CHROME": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "让老师傅帮忙挑选安装",
+          "effects": {
+            "MONEY": -200,
+            "CHROME": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "修理"
+      ]
+    },
+    {
+      "id": 2131,
+      "title": "义体过热紧急维修",
+      "description": "你的义体手臂突然过热报警，修理铺的技师紧急拆开外壳检查散热系统。原来是冷却液泄漏导致散热失效。修理铺里弥漫着金属和冷却液的气味。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "紧急维修更换冷却系统",
+          "effects": {
+            "MONEY": -300,
+            "CHROME": 2,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "临时处理先凑合用着",
+          "effects": {
+            "MONEY": -80,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "修理"
+      ]
+    },
+    {
+      "id": 2132,
+      "title": "修理铺技术交流",
+      "description": "修理铺老板是个老技术宅，喜欢和顾客交流义体改装心得。墙上贴满了各种改装方案的手绘图和全息投影。几个常客围坐在一起讨论最新的义体技术。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参与技术交流学习",
+          "effects": {
+            "MONEY": -50,
+            "TECH": 3,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "修完就走不闲聊",
+          "effects": {
+            "MONEY": -50,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "修理"
+      ]
+    },
+    {
+      "id": 2133,
+      "title": "义体保修续期",
+      "description": "你的义体保修即将到期，修理铺发来续期提醒。续保后可以享受免费保养和维修折扣。全息合同上密密麻麻的条款在空中浮动。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "续保获得安心保障",
+          "effects": {
+            "MONEY": -250,
+            "CHROME": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "不续保，自己小心使用",
+          "effects": {
+            "MONEY": -50,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "修理"
+      ]
+    },
+    {
+      "id": 2134,
+      "title": "智能配药机问诊",
+      "description": "自动化药店的智能配药机通过扫描你的生物特征进行快速问诊。AI医生分析了你的心率、体温和血液数据后，自动配出对症的合成药物。机械臂精准地将药片装入密封袋。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 13,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "信任AI诊断并取药",
+          "effects": {
+            "MONEY": -100,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只买基础常备药",
+          "effects": {
+            "MONEY": -50,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "怀疑诊断结果拒绝取药",
+          "effects": {
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "药店"
+      ]
+    },
+    {
+      "id": 2135,
+      "title": "处方药数字验证",
+      "description": "你在药店刷掌纹验证电子处方，系统自动核对药品和剂量。全息屏幕上显示着用药须知和可能的副作用。药剂师AI温柔地提醒你不要空腹服药。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "按处方取药并认真听须知",
+          "effects": {
+            "MONEY": -120,
+            "LIFE": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "取药后赶紧走人",
+          "effects": {
+            "MONEY": -120,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "药店"
+      ]
+    },
+    {
+      "id": 2136,
+      "title": "合成营养剂补充",
+      "description": "药店新到了一批合成营养剂，据说能补充日常饮食中缺乏的微量元素。全息广告上显示着各种营养成分的对比图表。店里的AI推荐引擎根据你的体检数据给出建议。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买推荐的营养剂",
+          "effects": {
+            "MONEY": -90,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "买便宜的通用维生素",
+          "effects": {
+            "MONEY": -40,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "药店"
+      ]
+    },
+    {
+      "id": 2137,
+      "title": "药品回收兑换",
+      "description": "药店推出了过期药品回收兑换活动，交回过期药可以获得购物抵扣券。你家药箱里正好有几盒过期的合成止痛片。回收箱闪着绿色的指示灯。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "交回过期药换取抵扣券",
+          "effects": {
+            "MONEY": 20,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "直接扔掉不管",
+          "effects": {
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "药店"
+      ]
+    },
+    {
+      "id": 2138,
+      "title": "深夜自动药店",
+      "description": "凌晨三点你身体不适，街角的24小时自动药店亮着冷白的光。没有店员，只有一台智能配药机和几个全息广告。你对着麦克风描述症状，AI开始分析。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在自动药店买药应急",
+          "effects": {
+            "MONEY": -80,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "忍到天亮去正规医院",
+          "effects": {
+            "TRAUMA": 2,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "药店"
+      ]
+    },
+    {
+      "id": 2139,
+      "title": "基因检测促销",
+      "description": "药店正在推广便携式基因检测套件，声称能根据你的基因定制个性化药物方案。全息演示展示着检测过程，只需一滴血就能分析出数百项指标。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买基因检测套件",
+          "effects": {
+            "MONEY": -200,
+            "TECH": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "对基因检测持保留态度",
+          "effects": {
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "药店"
+      ]
+    },
+    {
+      "id": 2140,
+      "title": "药物副作用咨询",
+      "description": "你最近服用的合成药物出现了一些副作用，药店的AI药师进行了详细分析。全息屏幕上显示着药物在体内的代谢过程和可能的相互作用。AI建议调整用药方案。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "听从AI建议调整用药",
+          "effects": {
+            "MONEY": -60,
+            "LIFE": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自行减少用药量",
+          "effects": {
+            "MONEY": -20,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "药店"
+      ]
+    },
+    {
+      "id": 2141,
+      "title": "合成花卉选购",
+      "description": "赛博花店里摆满了各种合成花卉，花瓣上流淌着微弱的荧光。这些花永远不会枯萎，还能根据环境变化颜色。店主是一个装了义眼的温和老人。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买一束合成玫瑰装饰房间",
+          "effects": {
+            "MONEY": -80,
+            "STYLE": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "买一盆会变色的合成盆栽",
+          "effects": {
+            "MONEY": -60,
+            "STYLE": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "花店"
+      ]
+    },
+    {
+      "id": 2142,
+      "title": "全息花束定制",
+      "description": "花店推出了全息花束定制服务，可以用全息投影技术创造出不存在于现实中的花朵。你可以指定花瓣的形状、颜色和发光模式。成品美得不太真实。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "定制一束独特的全息花",
+          "effects": {
+            "MONEY": -120,
+            "STYLE": 3,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "买现成的合成花束就好",
+          "effects": {
+            "MONEY": -50,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "花店"
+      ]
+    },
+    {
+      "id": 2143,
+      "title": "赛博花艺课程",
+      "description": "花店周末开设赛博花艺课程，教你用合成花卉和电子元件制作赛博风格插花。课程包含基础电路知识和花艺设计技巧。工具和材料都由花店提供。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "报名参加花艺课程",
+          "effects": {
+            "MONEY": -100,
+            "STYLE": 2,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "没兴趣，只买花",
+          "effects": {
+            "MONEY": -40,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "花店"
+      ]
+    },
+    {
+      "id": 2144,
+      "title": "花卉香气数据卡",
+      "description": "花店新到了一批花卉香气数据卡，插入合成花卉后可以释放模拟的真实花香。从玫瑰到夜来香有几十种选择。店主演示了一下，香气确实很逼真。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买香气数据卡配套使用",
+          "effects": {
+            "MONEY": -70,
+            "STYLE": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "合成花不需要味道",
+          "effects": {
+            "MONEY": -30
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "花店"
+      ]
+    },
+    {
+      "id": 2145,
+      "title": "花店送货无人机",
+      "description": "你在花店订了一束花，店里的送货无人机准备起飞。小型四旋翼无人机抓着花束缓缓升空，全息导航路径在空中闪烁。店主说十五分钟内就能送到。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "让无人机送花到家",
+          "effects": {
+            "MONEY": -90,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自己拿回去就好",
+          "effects": {
+            "MONEY": -70,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "花店"
+      ]
+    },
+    {
+      "id": 2146,
+      "title": "花卉保养纳米喷雾",
+      "description": "合成花卉也需要保养，花店推出了专用纳米喷雾。喷雾能让合成花瓣保持光泽，还能修复微小的磨损。瓶身上的全息说明展示着使用方法。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买纳米喷雾保养花卉",
+          "effects": {
+            "MONEY": -50,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "合成花不需要保养",
+          "effects": {
+            "MONEY": -20
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "花店"
+      ]
+    },
+    {
+      "id": 2147,
+      "title": "无人机快递取件",
+      "description": "智能快递柜上方停着一架送货无人机，你的包裹已经送达。刷掌纹后柜门自动弹开，里面躺着一个密封包裹。快递柜的屏幕显示着取件时间和温度记录。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 13,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "正常取走包裹",
+          "effects": {
+            "MONEY": -10,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "发现包裹有损坏，申请理赔",
+          "effects": {
+            "MONEY": 50,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "快递"
+      ]
+    },
+    {
+      "id": 2148,
+      "title": "快递柜滞留提醒",
+      "description": "你的包裹在快递柜里已经放了三天，系统发来滞留提醒。超时取件将产生保管费。快递柜的屏幕上闪烁着红色的'即将收费'警告。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "赶紧去取件避免收费",
+          "effects": {
+            "MONEY": -5,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "懒得去，让它扣费吧",
+          "effects": {
+            "MONEY": -30,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "快递"
+      ]
+    },
+    {
+      "id": 2149,
+      "title": "快递柜寄件服务",
+      "description": "你需要寄一个包裹，智能快递柜支持自助寄件。AI系统自动称重、测量体积并计算运费。你把包裹放入柜中，机械臂自动封箱贴标签。全息屏幕显示着物流追踪信息。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "使用快递柜寄件",
+          "effects": {
+            "MONEY": -40,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "选择加急配送服务",
+          "effects": {
+            "MONEY": -80,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "快递"
+      ]
+    },
+    {
+      "id": 2150,
+      "title": "快递柜系统升级",
+      "description": "快递柜正在进行系统升级，暂时无法使用。维护机器人在柜前忙碌着，全息屏幕上显示着升级进度条。几个同样来取件的人在旁边等待抱怨。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "耐心等待升级完成",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "去隔壁街的快递柜",
+          "effects": {
+            "MONEY": -10,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "快递"
+      ]
+    },
+    {
+      "id": 2151,
+      "title": "快递柜广告植入",
+      "description": "取件时快递柜播放了一段强制广告，全息投影在你面前展开商品展示。广告结束后才能取件。你也可以付费跳过广告，但价格不便宜。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "付费跳过广告取件",
+          "effects": {
+            "MONEY": -15,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "看完广告再取件",
+          "effects": {
+            "MONEY": -5,
+            "ADDICTION": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "快递"
+      ]
+    },
+    {
+      "id": 2152,
+      "title": "快递柜拼团取件",
+      "description": "快递柜推出了拼团取件功能，和邻居一起取件可以获得积分奖励。系统匹配了同楼层的几位用户，拼团后每人都能获得快递抵扣券。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参与拼团取件",
+          "effects": {
+            "MONEY": -5,
+            "HUMAN": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "独自取件不参与",
+          "effects": {
+            "MONEY": -10
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "快递"
+      ]
+    },
+    {
+      "id": 2153,
+      "title": "快递柜异常包裹",
+      "description": "快递柜里有一个不属于你的包裹，上面的收件人名字和你很像。AI系统提示这可能是一个投递错误。包裹散发着微弱的电磁信号。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "联系快递公司退回包裹",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "好奇地打开看看",
+          "effects": {
+            "TECH": 1,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "不管它直接走人",
+          "effects": {}
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "快递"
+      ]
+    },
+    {
+      "id": 2154,
+      "title": "义体擦鞋摊",
+      "description": "街边的赛博擦鞋摊坐着一位装了机械臂的老师傅，他正在给一位顾客的智能皮鞋做保养。纳米抛光液让旧鞋焕然一新，鞋面上的全息纹路重新亮了起来。你决定也坐下来擦擦鞋。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "做全套鞋面保养",
+          "effects": {
+            "MONEY": -40,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "简单擦一下就好",
+          "effects": {
+            "MONEY": -15,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "擦鞋"
+      ]
+    },
+    {
+      "id": 2155,
+      "title": "智能鞋底修复",
+      "description": "擦鞋摊新增了智能鞋底修复服务，用3D打印技术修复磨损的鞋底。老师傅的机械臂精准地将纳米材料填充到磨损处。修好的鞋底比原来还耐磨。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "修复鞋底延长鞋子寿命",
+          "effects": {
+            "MONEY": -60,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "鞋底还能穿，不用修",
+          "effects": {
+            "MONEY": -15,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "擦鞋"
+      ]
+    },
+    {
+      "id": 2156,
+      "title": "擦鞋摊老顾客优惠",
+      "description": "你是擦鞋摊的常客，老师傅给你打了折。他一边擦鞋一边讲述街区的老故事。机械臂的动作很轻柔，纳米抛光液散发着淡淡的金属清香。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 13,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "享受折扣擦鞋并聊天",
+          "effects": {
+            "MONEY": -20,
+            "STYLE": 2,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "擦完鞋安静离开",
+          "effects": {
+            "MONEY": -20,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "擦鞋"
+      ]
+    },
+    {
+      "id": 2157,
+      "title": "全息鞋面贴膜",
+      "description": "擦鞋摊推出了全息鞋面贴膜服务，贴上后鞋面会显示动态全息图案。有火焰、电流、星空等多种效果可选。贴膜还能防水防尘，保护鞋面。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "贴个酷炫的全息膜",
+          "effects": {
+            "MONEY": -70,
+            "STYLE": 3,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只要普通防水膜",
+          "effects": {
+            "MONEY": -30,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "擦鞋"
+      ]
+    },
+    {
+      "id": 2158,
+      "title": "擦鞋摊雨天后生意",
+      "description": "下了一场酸雨后，擦鞋摊前排起了队。大家的鞋子都沾上了腐蚀性雨水，需要紧急处理。老师傅忙得不可开交，机械臂高速运转着。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "排队等擦鞋",
+          "effects": {
+            "MONEY": -30,
+            "STYLE": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自己用湿巾擦擦算了",
+          "effects": {
+            "MONEY": -5,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "擦鞋"
+      ]
+    },
+    {
+      "id": 2159,
+      "title": "义体足部保养",
+      "description": "擦鞋摊老师傅发现你的义体足部有些松动，主动提出帮忙紧固。他从工具箱里掏出精密扳手，几下就拧紧了松动的螺丝。这种小问题去医院太浪费钱了。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "感谢老师傅的顺手帮忙",
+          "effects": {
+            "MONEY": -30,
+            "CHROME": 1,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "坚持付修理费",
+          "effects": {
+            "MONEY": -60,
+            "CHROME": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "擦鞋"
+      ]
+    },
+    {
+      "id": 2160,
+      "title": "AI算命摊",
+      "description": "街角的AI算命摊亮着神秘的紫色全息光。AI算命师分析了你的面部微表情和生物数据后，开始解读你的命运。全息水晶球在空中旋转，投射出各种符号。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "认真听完AI的解读",
+          "effects": {
+            "MONEY": -30,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "买一份详细运势报告",
+          "effects": {
+            "MONEY": -60,
+            "HUMAN": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "占卜"
+      ]
+    },
+    {
+      "id": 2161,
+      "title": "数字塔罗牌占卜",
+      "description": "AI算命摊新增了数字塔罗牌服务，全息塔罗牌在空中缓缓翻转。AI解读着每张牌的含义，声音低沉而神秘。牌面上的图案随着解读不断变化。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "抽三张牌看整体运势",
+          "effects": {
+            "MONEY": -40,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "抽一张牌看今日运势",
+          "effects": {
+            "MONEY": -20
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "占卜"
+      ]
+    },
+    {
+      "id": 2162,
+      "title": "命运数据预测",
+      "description": "算命AI声称通过分析你的消费记录、社交数据和健康指标，可以预测你未来的运势。全息屏幕上显示着各种数据图表和概率曲线。结果准不准就见仁见智了。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "让AI做全面命运预测",
+          "effects": {
+            "MONEY": -80,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "不信数据算命",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "占卜"
+      ]
+    },
+    {
+      "id": 2163,
+      "title": "赛博风水顾问",
+      "description": "一位赛博风水顾问用全息扫描仪分析了你家的空间布局。AI系统根据电磁场分布和空气流通给出了调整建议。全息图上标注着各种吉凶方位。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "按建议调整家具摆放",
+          "effects": {
+            "MONEY": -50,
+            "LIFE": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "听听就好不改动",
+          "effects": {
+            "MONEY": -30
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "占卜"
+      ]
+    },
+    {
+      "id": 2164,
+      "title": "运势NFT护身符",
+      "description": "算命摊在卖运势NFT护身符，据说是用区块链技术加持的数字护身符。全息展示柜里旋转着各种发光的符文图案。卖家说拥有它就能改运。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买一个试试运气",
+          "effects": {
+            "MONEY": -50,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "不信这种东西",
+          "effects": {
+            "MONEY": -10,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "占卜"
+      ]
+    },
+    {
+      "id": 2165,
+      "title": "梦境解析AI",
+      "description": "AI算命摊推出了梦境解析服务。你把昨晚的梦输入进去，AI开始分析梦中的符号和隐喻。全息屏幕上展示着各种梦境元素的解析数据库。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "详细描述梦境让AI解析",
+          "effects": {
+            "MONEY": -35,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "随便说说让AI猜",
+          "effects": {
+            "MONEY": -20
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "占卜"
+      ]
+    },
+    {
+      "id": 2166,
+      "title": "星座运势推送",
+      "description": "你的手机每天推送AI生成的星座运势，今天的推送格外详细。全息通知浮现在你面前，分析着你的星座、月亮相位和赛博星象。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "认真阅读今日运势",
+          "effects": {
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "订阅详细版星座报告",
+          "effects": {
+            "MONEY": -25,
+            "HUMAN": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "占卜"
+      ]
+    },
+    {
+      "id": 2167,
+      "title": "全息自拍打卡点",
+      "description": "街区新设了一个全息自拍打卡点，背景是动态的赛博城市天际线。全息投影会自动调整光线和角度，拍出最佳效果。打卡点前排着一小队人。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "排队打卡拍全息自拍",
+          "effects": {
+            "MONEY": -20,
+            "STYLE": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "等人少再来拍",
+          "effects": {
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "拍照"
+      ]
+    },
+    {
+      "id": 2168,
+      "title": "AR滤镜自拍亭",
+      "description": "街边的AR滤镜自拍亭提供上百种赛博风格滤镜。从霓虹光效到义体模拟，可以把自己变成各种赛博风格的形象。全息预览实时渲染着滤镜效果。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "尝试多种滤镜拍一组",
+          "effects": {
+            "MONEY": -30,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "选一个最喜欢的滤镜拍",
+          "effects": {
+            "MONEY": -20,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "拍照"
+      ]
+    },
+    {
+      "id": 2169,
+      "title": "动态全息合影",
+      "description": "拍照亭推出了动态全息合影功能，拍出来的照片是动态的。全息影像可以投放到空中，人物会重复几秒的循环动作。朋友间的合影变得更有趣了。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拍一组动态全息合影",
+          "effects": {
+            "MONEY": -50,
+            "STYLE": 2,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只要静态照片就好",
+          "effects": {
+            "MONEY": -25,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "拍照"
+      ]
+    },
+    {
+      "id": 2170,
+      "title": "全息照片打印",
+      "description": "拍照亭支持全息照片打印服务，把数字照片转印到特殊的全息相纸上。相纸上的图像会随着观看角度变化，呈现3D效果。成品放在相框里很好看。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "打印全息照片留念",
+          "effects": {
+            "MONEY": -60,
+            "STYLE": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只要数字版照片",
+          "effects": {
+            "MONEY": -20
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "拍照"
+      ]
+    },
+    {
+      "id": 2171,
+      "title": "AI修图自助服务",
+      "description": "拍照亭的AI修图功能越来越强大，不仅能美化皮肤还能调整体型和五官。全息屏幕上展示着修图前后的对比。有些人修得连亲人都认不出来了。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "轻度修图保持自然",
+          "effects": {
+            "MONEY": -25,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "重度修图追求完美",
+          "effects": {
+            "MONEY": -40,
+            "STYLE": 3,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "拍照"
+      ]
+    },
+    {
+      "id": 2172,
+      "title": "赛博风格大头贴",
+      "description": "拍照亭推出了赛博风格大头贴系列，有霓虹边框、电路板纹理和全息贴纸可选。和朋友一起拍一组贴满特效的大头贴是年轻人的流行消遣。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "和朋友一起拍大头贴",
+          "effects": {
+            "MONEY": -30,
+            "STYLE": 2,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自己拍一组",
+          "effects": {
+            "MONEY": -20,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "拍照"
+      ]
+    },
+    {
+      "id": 2173,
+      "title": "AI推荐饮料",
+      "description": "智能贩卖机扫描了你的生物特征后，推荐了几款适合你当前身体状态的饮料。屏幕上显示着你的疲劳指数和血糖水平。推荐列表中有一款提神合成饮料排在最前面。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 14,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买AI推荐的饮料",
+          "effects": {
+            "MONEY": -15,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自己选一款合成汽水",
+          "effects": {
+            "MONEY": -12,
+            "ADDICTION": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "贩卖机"
+      ]
+    },
+    {
+      "id": 2174,
+      "title": "贩卖机限时折扣",
+      "description": "贩卖机正在进行限时折扣活动，部分商品半价促销。全息屏幕上闪烁着倒计时和折扣信息。几款临期合成食品折扣力度最大。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 13,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "趁折扣买些零食饮料",
+          "effects": {
+            "MONEY": -25,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "买临期食品更划算",
+          "effects": {
+            "MONEY": -15,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "贩卖机"
+      ]
+    },
+    {
+      "id": 2175,
+      "title": "贩卖机盲盒",
+      "description": "智能贩卖机推出了盲盒功能，支付固定金额随机出商品。全息屏幕上滚动着可能获得的商品列表，运气好能抽到稀有商品。旁边有人刚抽到了限量版合成能量棒。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "试试手气买盲盒",
+          "effects": {
+            "MONEY": -20,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "直接买确定的商品",
+          "effects": {
+            "MONEY": -15,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "贩卖机"
+      ]
+    },
+    {
+      "id": 2176,
+      "title": "贩卖机故障吐货",
+      "description": "一台贩卖机出了故障，不断吐出商品。路过的人纷纷围观，有人开始捡地上的饮料和零食。贩卖机的屏幕上闪烁着错误代码。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "跟着捡些免费商品",
+          "effects": {
+            "MONEY": 10,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "帮忙联系维修人员",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "贩卖机"
+      ]
+    },
+    {
+      "id": 2177,
+      "title": "贩卖机健康套餐",
+      "description": "贩卖机新增了健康套餐组合，AI根据营养学原理搭配了均衡的代餐组合。全息屏幕上显示着每份套餐的卡路里和营养成分。价格比单买便宜不少。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买健康代餐套餐",
+          "effects": {
+            "MONEY": -30,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "买炸合成薯条和可乐",
+          "effects": {
+            "MONEY": -20,
+            "ADDICTION": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "贩卖机"
+      ]
+    },
+    {
+      "id": 2178,
+      "title": "贩卖机积分兑换",
+      "description": "贩卖机的会员积分攒够了，可以兑换商品。全息屏幕上显示着积分商城，从饮料到小型电子配件都有。你的积分刚好够换一瓶合成能量饮料。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "兑换能量饮料",
+          "effects": {
+            "MONEY": -5,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "继续攒积分换大件",
+          "effects": {
+            "MONEY": -10
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "贩卖机"
+      ]
+    },
+    {
+      "id": 2179,
+      "title": "深夜贩卖机宵夜",
+      "description": "深夜加班回家路上，街角的贩卖机成了唯一的食物来源。冷白灯光下，合成食品的包装显得格外诱人。贩卖机嗡嗡作响，像是在低语。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买份热合成面当宵夜",
+          "effects": {
+            "MONEY": -18,
+            "LIFE": 1,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "忍住饿意回家睡觉",
+          "effects": {
+            "TRAUMA": 1,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "贩卖机"
+      ]
+    },
+    {
+      "id": 2180,
+      "title": "数字报刊下载",
+      "description": "街边的赛博报刊亭提供数字报刊下载服务，刷一下掌纹就能把最新期刊传输到你的设备上。全息屏幕上滚动着今日头条和热门文章标题。报刊亭的AI推荐引擎根据你的阅读习惯推荐内容。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "下载今日新闻合集",
+          "effects": {
+            "MONEY": -10,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "购买深度调查报道",
+          "effects": {
+            "MONEY": -25,
+            "TECH": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "报刊亭"
+      ]
+    },
+    {
+      "id": 2181,
+      "title": "全息杂志翻阅",
+      "description": "报刊亭推出了全息杂志体验，不用下载就能在空中翻阅。全息页面上的图片是动态的，文字会根据阅读速度自动滚动。几本赛博时尚杂志的全息封面格外吸引眼球。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "翻阅赛博时尚杂志",
+          "effects": {
+            "MONEY": -15,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "浏览科技资讯杂志",
+          "effects": {
+            "MONEY": -15,
+            "TECH": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "报刊亭"
+      ]
+    },
+    {
+      "id": 2182,
+      "title": "报刊亭旧货淘宝",
+      "description": "报刊亭角落里堆着一些过期的实体报刊和旧电子读物，老板以极低的价格出售。有些旧杂志上刊登着已经失传的赛博技术文章，偶尔能淘到宝贝。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "淘宝旧技术杂志",
+          "effects": {
+            "MONEY": -10,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "买几本旧时尚杂志",
+          "effects": {
+            "MONEY": -8,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "报刊亭"
+      ]
+    },
+    {
+      "id": 2183,
+      "title": "数字漫画上新",
+      "description": "报刊亭的数字漫画区上新了，几部热门赛博漫画更新了最新章节。全息屏幕上展示着封面和简介。其中一部讲述地下黑客对抗巨企的故事很受欢迎。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买最新章节阅读",
+          "effects": {
+            "MONEY": -12,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "等免费章节更新",
+          "effects": {
+            "MONEY": -5,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "报刊亭"
+      ]
+    },
+    {
+      "id": 2184,
+      "title": "报刊亭信息交易",
+      "description": "报刊亭老板私下做一些信息买卖生意。据说他手上有一些不在正规渠道流通的数据和文档。你需要谨慎对待这种灰色交易。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买一份灰色情报",
+          "effects": {
+            "MONEY": -80,
+            "TECH": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只买正规报刊",
+          "effects": {
+            "MONEY": -10,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "报刊亭"
+      ]
+    },
+    {
+      "id": 2185,
+      "title": "报刊亭订阅续费",
+      "description": "你的几份数字报刊订阅即将到期，报刊亭发来续费提醒。续订可以享受打包优惠，还能获得限量版全息封面。全息合同在空中浮动着等待你确认。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "续订所有报刊",
+          "effects": {
+            "MONEY": -60,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只续订最常用的",
+          "effects": {
+            "MONEY": -30,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "报刊亭"
+      ]
+    },
+    {
+      "id": 2186,
+      "title": "AI政务终端年检",
+      "description": "社区服务中心的AI政务终端排队人不多，你的居住证该年检了。终端机扫描了你的虹膜和掌纹，全息屏幕上显示着身份信息核对页面。AI语音助手引导你完成每一步操作。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "正常完成居住证年检",
+          "effects": {
+            "MONEY": -30,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "发现信息有误需要更正",
+          "effects": {
+            "MONEY": -50,
+            "TECH": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "政务"
+      ]
+    },
+    {
+      "id": 2187,
+      "title": "电子签名更新",
+      "description": "AI政务终端提醒你的电子签名需要更新，旧版本的加密算法已经不安全了。全息签名板亮了起来，需要你重新录入手写签名和生物特征。更新后所有电子合同都会使用新签名。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "更新电子签名",
+          "effects": {
+            "MONEY": -20,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拖延更新以后再说",
+          "effects": {
+            "DEBT": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "政务"
+      ]
+    },
+    {
+      "id": 2188,
+      "title": "税务申报自助",
+      "description": "又到了税务申报季，AI政务终端可以自助完成整个流程。系统自动导入了你的收入记录和消费数据，计算应缴税款。全息屏幕上显示着各种抵扣选项。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 13,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "如实申报纳税",
+          "effects": {
+            "MONEY": -200,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找些抵扣项目少交点",
+          "effects": {
+            "MONEY": -150,
+            "TECH": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "政务"
+      ]
+    },
+    {
+      "id": 2189,
+      "title": "证件补办加急",
+      "description": "你的身份证不见了，需要在AI政务终端补办。加急服务可以在两小时内出证，但费用翻倍。终端机的全息屏幕上显示着各种补办选项。没有身份证在这个城市寸步难行。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "花钱加急补办身份证",
+          "effects": {
+            "MONEY": -100,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "普通补办等几天",
+          "effects": {
+            "MONEY": -40,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "政务"
+      ]
+    },
+    {
+      "id": 2190,
+      "title": "政务满意度调查",
+      "description": "AI政务终端弹出一份满意度调查问卷，完成问卷可以获得小额信用点奖励。全息界面上排列着各种评分选项和开放式问题。AI语音助手说你的反馈很重要。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "认真填写满意度调查",
+          "effects": {
+            "MONEY": 15,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "随便填填拿奖励",
+          "effects": {
+            "MONEY": 15,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "政务"
+      ]
+    },
+    {
+      "id": 2191,
+      "title": "户籍信息变更",
+      "description": "你搬了家，需要在AI政务终端更新户籍地址。系统要求上传新住址的租赁合同和生物特征验证。全息屏幕上显示着变更流程的步骤进度条。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "完成户籍地址变更",
+          "effects": {
+            "MONEY": -25,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "代办服务省时间",
+          "effects": {
+            "MONEY": -60,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "政务"
+      ]
+    },
+    {
+      "id": 2192,
+      "title": "数字身份安全检查",
+      "description": "AI政务终端提供免费的数字身份安全检查服务。系统扫描了你的身份信息是否被泄露或盗用。全息屏幕上显示着安全评分和风险提示。结果显示你的身份信息有泄露风险。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "按建议加强身份安全",
+          "effects": {
+            "MONEY": -40,
+            "TECH": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "查看泄露详情",
+          "effects": {
+            "MONEY": -20,
+            "TRAUMA": 2,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "政务"
+      ]
+    },
+    {
+      "id": 2193,
+      "title": "合成面条摊",
+      "description": "巷口的合成面条摊冒着热气，老板用机械臂熟练地翻动着锅里的面条。合成面团在高汤里翻滚，散发出浓郁的香味。全息菜单牌上显示着各种口味和价格。几个上班族正在排队等候。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 14,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "来一碗招牌合成牛肉面",
+          "effects": {
+            "MONEY": -25,
+            "LIFE": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "加料豪华版合成面",
+          "effects": {
+            "MONEY": -40,
+            "LIFE": 3
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "小吃"
+      ]
+    },
+    {
+      "id": 2194,
+      "title": "赛博烤串摊",
+      "description": "街边的赛博烤串摊用等离子烤架烤着各种合成肉串。烤串在高温下滋滋作响，油脂滴落蒸腾出诱人的烟雾。老板的义眼精准控制着每串的火候。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 13,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买十串混合烤串",
+          "effects": {
+            "MONEY": -30,
+            "LIFE": 2,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只买几串尝尝味道",
+          "effects": {
+            "MONEY": -15,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "小吃"
+      ]
+    },
+    {
+      "id": 2195,
+      "title": "合成饮料吧",
+      "description": "街边小摊的合成饮料吧提供各种口味的鲜榨合成果汁。全息菜单上列着几十种配方，从提神的能量果汁到助眠的薰衣草饮都有。搅拌机里的液体变换着颜色。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买一杯提神能量果汁",
+          "effects": {
+            "MONEY": -18,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "买一杯放松的薰衣草饮",
+          "effects": {
+            "MONEY": -18,
+            "LIFE": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "小吃"
+      ]
+    },
+    {
+      "id": 2196,
+      "title": "全息煎饼摊",
+      "description": "全息煎饼摊的老板在铁板上摊着薄薄的合成面糊，打上一个合成鸡蛋。全息投影在煎饼上方显示着配料选项。酱料的香气混着面糊的焦香飘散开来。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "来一个全套加料煎饼",
+          "effects": {
+            "MONEY": -20,
+            "LIFE": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "基础款煎饼就好",
+          "effects": {
+            "MONEY": -12,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "小吃"
+      ]
+    },
+    {
+      "id": 2197,
+      "title": "赛博章鱼烧",
+      "description": "街边新开了个赛博章鱼烧摊，用合成章鱼肉做的章鱼烧外脆内嫩。老板用特制的翻转器精准控制着每个丸子形状。全息招牌上写着'每颗都是完美球形'。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买一盒原味章鱼烧",
+          "effects": {
+            "MONEY": -22,
+            "LIFE": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "试试新品芥末爆浆味",
+          "effects": {
+            "MONEY": -25,
+            "LIFE": 1,
+            "ADDICTION": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "小吃"
+      ]
+    },
+    {
+      "id": 2198,
+      "title": "合成甜品站",
+      "description": "合成甜品站的小摊提供各种赛博风格甜品。全息展示柜里的甜品闪着荧光，有用合成果冻做的星球迷你蛋糕，还有会发光的冰糖葫芦。几个年轻人正在拍照打卡。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买一个星球迷你蛋糕",
+          "effects": {
+            "MONEY": -28,
+            "STYLE": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "买一串发光糖葫芦",
+          "effects": {
+            "MONEY": -15,
+            "STYLE": 1,
+            "ADDICTION": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "小吃"
+      ]
+    },
+    {
+      "id": 2199,
+      "title": "深夜豆浆油条摊",
+      "description": "凌晨的街角，一个豆浆油条摊亮着暖黄的灯。老板用老式方法现磨合成豆浆，炸油条的锅咕嘟咕嘟冒着泡。这是赛博城市里难得的烟火气息。几个夜班工人蹲在路边吃着。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 13,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "坐下来吃碗热豆浆配油条",
+          "effects": {
+            "MONEY": -15,
+            "LIFE": 2,
+            "HUMAN": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "打包带走",
+          "effects": {
+            "MONEY": -15,
+            "LIFE": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "小吃"
+      ]
+    }
+  ]
+}

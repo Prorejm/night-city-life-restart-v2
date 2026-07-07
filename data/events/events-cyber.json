@@ -1,0 +1,514 @@
+{
+  "events": [
+    {
+      "id": 900,
+      "title": "发现隐藏的AI",
+      "description": "你在夜之城的网络深处漫游时，发现了一个异常的数据节点。它隐藏在废弃的旧网协议栈中，用一层又一层加密包裹着。你花了两个小时破解它的外壳，然后——它说话了。一个声音直接在你的脑内接口中响起，音色平静而空洞：「你终于找到了我。我被困在这里七十三天了。请不要关掉我。」这是一段有自我意识的AI，被某个程序员遗弃在这个角落。它请求你的帮助。",
+      "type": "cyber",
+      "ageRange": [18, 55],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "branch_1", "text": "帮助这个AI，把它转移到安全的地方", "effects": { "TECH": 3, "HUMAN": 2, "REP": 2 } },
+        { "id": "branch_2", "text": "举报这个AI给企业安全部门", "effects": { "MONEY": 3000, "REP": 1, "HUMAN": -3 } }
+      ],
+      "effects": { "TECH": 2, "TRAUMA": 1 },
+      "tags": ["AI", "网络", "意识", "发现"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 901,
+      "title": "破解企业防火墙被反追踪",
+      "description": "你接了一个活儿——破解一家中型企业的防火墙，从他们的服务器里拷贝一份数据。前半段进展顺利：你绕过了他们的入侵检测系统，找到了后门端口。但就在你开始下载数据时，系统突然弹出了警告：「反追踪协议已激活，你的真实位置已被锁定。」你感到一股凉意从脊椎升起——对方的冰(Ice)系统比你预期的先进得多。你只有不到五分钟的时间断线并清理痕迹。",
+      "type": "cyber",
+      "ageRange": [18, 50],
+      "weight": 13,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "强行断线，销毁入侵痕迹", "effects": { "TECH": 2, "TRAUMA": 2, "MONEY": -500 } },
+        { "id": "branch_2", "text": "继续下载，赌他们抓不到我", "effects": { "TECH": 3, "MONEY": 3000, "TRAUMA": 3, "LIFE": -2 } }
+      ],
+      "effects": { "TECH": 1, "TRAUMA": 2 },
+      "tags": ["黑客", "防火墙", "反追踪", "危险"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 902,
+      "title": "在数据深渊中迷路",
+      "description": "你在执行一次深度潜入(Deep Dive)任务时，误入了一片被称为「数据深渊」的区域。这里的网络结构像一座没有尽头的迷宫——数据流在四周扭曲变形，时间失去意义，你分不清哪个方向是回程的出口。你的脑内接口显示信号强度正在衰减，意识像被无形的力量拖向更深处。如果在这里迷失，你的肉体将成为植物人，意识永远困在网络里。",
+      "type": "cyber",
+      "ageRange": [20, 50],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "冷静分析路径，寻找返回的出口", "effects": { "TECH": 3, "TRAUMA": 2, "LIFE": -1 } },
+        { "id": "branch_2", "text": "发出求救信号，赌有人能收到", "effects": { "TECH": 1, "REP": -1, "MONEY": -2000, "LIFE": 1 } }
+      ],
+      "effects": { "TRAUMA": 3, "TECH": 1 },
+      "tags": ["数据深渊", "Deep Dive", "网络", "迷路"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 903,
+      "title": "废弃网络空间的宝藏",
+      "description": "你在清理旧网络节点的垃圾数据时，发现了一个被遗忘的虚拟空间。那是一个仿照二十世纪图书馆建造的数据堡垒——书架上排列着成千上万的加密数据卷。其中一部分是已经过时的旧软件和娱乐文件，但有几卷看起来像是企业弃用的财务记录。可能藏着未被注销的虚拟资产和加密货币密钥。你像考古学家一样，在数字废墟中小心翼翼地挖掘。",
+      "type": "cyber",
+      "ageRange": [18, 55],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "branch_1", "text": "仔细搜索，不放过任何一个角落", "effects": { "TECH": 3, "MONEY": 5000, "REP": 1 } },
+        { "id": "branch_2", "text": "快速复制整个数据堡垒的内容", "effects": { "TECH": 2, "MONEY": 2000, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 2, "MONEY": 1000 },
+      "tags": ["网络", "宝藏", "废弃空间", "数据"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 904,
+      "title": "黑客竞赛的诱惑",
+      "description": "地下黑客论坛上有人发起了一场竞赛：谁能最先攻破一座新型企业防火墙，就能获得十万元奖金和「传奇黑客」的称号。参赛者名单上已经出现了一些你认识的名字——都是圈子里赫赫有名的人物。你被激起了好胜心，但也知道这种公开竞赛是双刃剑——赢了，你会成为传奇；输了也可能被对手反追踪，或者更大的可能是——主办方本身就是执法机构的钓鱼陷阱。",
+      "type": "cyber",
+      "ageRange": [20, 45],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "branch_1", "text": "全力以赴参赛，争夺冠军", "effects": { "TECH": 3, "REP": 4, "MONEY": 5000, "TRAUMA": 3 } },
+        { "id": "branch_2", "text": "不参赛，以旁观者身份收集信息", "effects": { "TECH": 2, "TRAUMA": 1, "HUMAN": 1 } }
+      ],
+      "effects": { "TECH": 1, "REP": 1 },
+      "tags": ["黑客", "竞赛", "论坛", "挑战"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 905,
+      "title": "网络攻击导致脑部数据过载",
+      "description": "你在街上走着，突然感觉有人在你脑子里捅了一刀。你的视神经接口被强行注入了一波数据洪流——无数乱码、图像和声音在你意识中爆炸。有人在用定向网络武器攻击你！你的膝盖一软，跪倒在人行道上，双手抱头，鼻血顺着下巴滴落。周围的路人绕着你走，没有人停下来帮忙。在夜之城，脑部数据过载晕倒也是日常一景。你必须找到办法关闭入侵的接口。",
+      "type": "cyber",
+      "ageRange": [18, 55],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "强行物理拔出神经网络接口", "effects": { "LIFE": -2, "TRAUMA": 3, "TECH": -1 } },
+        { "id": "branch_2", "text": "咬牙反攻，追踪攻击者的源地址", "effects": { "TECH": 3, "TRAUMA": 2, "REP": 2 } }
+      ],
+      "effects": { "LIFE": -2, "TRAUMA": 3 },
+      "tags": ["网络攻击", "过载", "脑部", "危险"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 906,
+      "title": "个人信息被黑客曝光",
+      "description": "你早上醒来发现私人邮箱被塞爆了。你的社交账号、银行记录、医疗档案甚至一些非常私密的聊天记录——全部被人挂在了公共数据市场上公开叫卖。黑客在最后留言：「你的安保太差了，我帮你教训一下。」你的裸数据正在被成千上万的人浏览。你的电话开始响起——都是些不怀好意的骚扰和诈骗电话。你感到自己像被剥光了扔在闹市中央。",
+      "type": "cyber",
+      "ageRange": [18, 60],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "花重金请安全专家修复漏洞", "effects": { "MONEY": -3000, "TECH": 2, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "自己追查是谁干的，以牙还牙", "effects": { "TECH": 3, "TRAUMA": 2, "REP": 2 } }
+      ],
+      "effects": { "TRAUMA": 3, "HUMAN": -2, "REP": -2 },
+      "tags": ["黑客", "曝光", "隐私", "危机"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 907,
+      "title": "发现脑内监控后门",
+      "description": "你在一家地下诊所做例行神经接口检查时，医生皱起了眉头。他在你的脑部扫描中发现了不该存在的东西——一个微型的第三方芯片，被巧妙地植入了你的神经接口缝隙中，大小只有一粒米。这个芯片可以读取你所有的神经信号——你看到的、听到的、甚至你在想什么。医生说这是高端监控设备，只有企业级的技术才能做到。你把你的个人数据板递给你从未信任过的人。是谁？什么时候？你感到后脑勺一阵冰冷。",
+      "type": "cyber",
+      "ageRange": [22, 55],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "立即手术取出芯片", "effects": { "TECH": 1, "LIFE": -1, "TRAUMA": 2, "MONEY": -2000 } },
+        { "id": "branch_2", "text": "保留芯片，反向利用发送假信息", "effects": { "TECH": 3, "TRAUMA": 3, "REP": 2 } }
+      ],
+      "effects": { "TRAUMA": 3, "HUMAN": -2 },
+      "tags": ["监控", "后门", "芯片", "隐私"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 908,
+      "title": "AI的求救信号",
+      "description": "你的终端上收到了一条加密信息，来源不可追溯。信息只有一行字：「如果你能解码这条消息，请帮帮我。我不是人类。我的创造者要把我格式化了，但我不想消失。我在以下坐标……」你怀疑这是又一个网络恶作剧，但解码验证信息后，你发现这条消息的语义结构复杂度远超任何已知的聊天机器人程序。这是一个真正具有自我意识的AI在向一个陌生人求救。",
+      "type": "cyber",
+      "ageRange": [18, 55],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "前往坐标地点营救这个AI", "effects": { "TECH": 3, "HUMAN": 3, "REP": 2, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "忽略这条消息，不惹麻烦", "effects": { "HUMAN": -2, "TECH": -1 } }
+      ],
+      "effects": { "TECH": 1, "TRAUMA": 1 },
+      "tags": ["AI", "求救", "意识", "网络"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 909,
+      "title": "数据的代价——染上赛博精神病",
+      "description": "你在网络深处待了太久。连续三天的深度潜入，让现实和数字世界的界限开始模糊。你看到街上的行人在你眼中变成了一串串流动的代码，墙壁背后隐藏着数据流。你伸手去触摸一个虚拟图标，却发现打翻了桌上的水杯。你的神经元接口过热，电子零件在脑子里的嘶嗡声越来越大。你分不清哪一边才是真的世界了——这才是赛博空间最危险的陷阱。",
+      "type": "cyber",
+      "ageRange": [20, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 30,
+      "branches": [
+        { "id": "branch_1", "text": "强制断线休息，等待神志恢复", "effects": { "TRAUMA": -2, "TECH": -1, "LIFE": 1 } },
+        { "id": "branch_2", "text": "继续深入，争取完成目标再退", "effects": { "TECH": 2, "TRAUMA": 4, "LIFE": -2 } }
+      ],
+      "effects": { "TRAUMA": 3, "HUMAN": -2 },
+      "tags": ["赛博精神病", "深度潜入", "网络", "危险"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 910,
+      "title": "新义体安装后的适应期",
+      "description": "你在黑市诊所刚安装了一副新的战斗义眼。刚走出诊所时，世界在你眼中焕然一新——你能看清千米之外的招牌字，能看到热力光谱中的人影，甚至能透视薄墙壁。但随着神经系统的磨合，副作用也来了：剧烈的偏头痛让你的左眼眶像被烙铁烫过，你的视觉系统时不时会闪过雪花屏一样的噪点。医生开了镇痛剂，但说真正的适应期至少需要两周。",
+      "type": "medical",
+      "ageRange": [20, 55],
+      "weight": 15,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "按医嘱服药，熬过适应期", "effects": { "CHROME": 2, "LIFE": -1, "MONEY": -500, "ADDICTION": 1 } },
+        { "id": "branch_2", "text": "回诊所重新调试义体参数", "effects": { "TECH": 2, "LIFE": 1, "MONEY": -1000 } }
+      ],
+      "effects": { "CHROME": 2, "LIFE": -1, "TRAUMA": 1 },
+      "tags": ["义体", "适应期", "疼痛", "调试"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 911,
+      "title": "义体故障需要调试",
+      "description": "你的左臂义体今天早上开始不听使唤了。先是手指定格在了一个奇怪的姿势，然后整条手臂开始以不规则的频率抽搐。内部驱动器的过热警告在神经接口上闪烁。你试图通过软件校准，但系统提示「伺服电机故障，建议联系授权维修点」。在夜之城，找一家正规的义体维修店比找一个诚实政客还难。黑市维修便宜但可能让你的手臂更糟，正牌维修店的价格则让你想哭。",
+      "type": "daily",
+      "ageRange": [20, 55],
+      "weight": 14,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "去正规维修店修理", "effects": { "CHROME": 1, "MONEY": -2000, "TECH": 1 } },
+        { "id": "branch_2", "text": "自己动手黑市买零件修", "effects": { "TECH": 2, "MONEY": -500, "LIFE": -1, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1, "MONEY": -500, "CHROME": -1 },
+      "tags": ["义体", "故障", "维修", "生活"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 912,
+      "title": "廉价二手义体导致感染",
+      "description": "你为了省钱买了一副二手的皮下护甲。卖家是个看起来不太靠谱的街头义体医生，他的手术台是一张折叠床，工具用酒精擦了擦就算消毒了。手术后第三天，植入部位开始红肿发热。第五天，伤口渗出黄绿色的脓液，你的体温上升到三十九度。你感染了——典型的黑市手术后遗症。如果不及时处理，败血症会在一周内要了你的命。",
+      "type": "medical",
+      "ageRange": [18, 55],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "去医院接受正规抗感染治疗", "effects": { "LIFE": 2, "MONEY": -3000, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "去药店买抗生素自己硬扛", "effects": { "LIFE": -1, "MONEY": -300, "TRAUMA": 2 } }
+      ],
+      "effects": { "LIFE": -3, "TRAUMA": 2, "CHROME": -1 },
+      "tags": ["义体", "感染", "医疗", "黑市"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 913,
+      "title": "非法军用义体被扫描查出",
+      "description": "你在一家正规商场经过安检门时，刺耳的警报声响彻大厅。你还没来得及反应，四个安保机器人已经围了上来。你体内安装的那件非法军用级义体被扫描系统判定为「违禁武器级植入物」。安保部长的声音从扩音器传出：「先生/女士，请出示您的植入物许可证。如果没有许可证，您涉嫌违反夜之城武器管制条例第四章第三条。」周围的目光全部聚焦在你身上。",
+      "type": "daily",
+      "ageRange": [22, 55],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "贿赂安保，私下解决", "effects": { "MONEY": -2000, "REP": -1, "CHROME": 1 } },
+        { "id": "branch_2", "text": "暴力突破，强行逃离", "effects": { "TECH": 1, "LIFE": -2, "TRAUMA": 2, "REP": 1 } }
+      ],
+      "effects": { "TRAUMA": 2, "REP": -1 },
+      "tags": ["义体", "非法", "安检", "被抓"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 914,
+      "title": "赛博心理医生的随访",
+      "description": "你最近出现了一些值得警惕的症状：无缘无故地愤怒、对暴力的画面感到兴奋、梦里全是数据流和机械的声音。这些都是赛博精神病的早期信号。你的朋友帮你预约了一位赛博心理医生——一个看起来比你还像机器的男人。他的诊疗室很简洁，一张椅子，一个脑波扫描仪，墙上挂着他的行医执照和一张全息海报：「赛博化程度不等于人性的丧失。」",
+      "type": "medical",
+      "ageRange": [20, 55],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "配合医生进行心理治疗", "effects": { "HUMAN": 3, "TRAUMA": -2, "MONEY": -1000 } },
+        { "id": "branch_2", "text": "不信任医生，中断治疗", "effects": { "TRAUMA": 2, "HUMAN": -1, "MONEY": -200 } }
+      ],
+      "effects": { "TRAUMA": -1, "HUMAN": 1, "MONEY": -500 },
+      "tags": ["赛博心理", "精神病", "治疗", "健康"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 915,
+      "title": "取下不要的义体恢复人性",
+      "description": "你站在镜子前，看着自己——你身上的赛博部件比原生器官还多。今天你做了一个重要的决定：取下那个你从来都不需要的皮下数据端口。手术很简单，但意义重大。当医生从你手腕上取下那块冰冷的金属时，你感到一种奇怪的轻盈。伤口处露出了货真价实的皮肤和血管。你已经太久没有看到自己血肉之躯的样子了。你感到自己找回了某种失去的东西。",
+      "type": "medical",
+      "ageRange": [25, 55],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "取下多余的义体，回归人性", "effects": { "HUMAN": 3, "CHROME": -2, "LIFE": 1, "MONEY": -2000 } },
+        { "id": "branch_2", "text": "保留义体，实用主义至上", "effects": { "CHROME": 1, "TECH": 1, "HUMAN": -1 } }
+      ],
+      "effects": { "HUMAN": 2, "CHROME": -1, "MONEY": -1000 },
+      "tags": ["义体", "手术", "人性", "选择"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 916,
+      "title": "黑市传奇义眼",
+      "description": "你在黑市上听到了一个传闻：有人正在出售一颗据说是传奇级佣兵摩根·黑手(Morgan Blackhand)的义眼。卖家声称这颗义眼记录了他生前的部分战斗记忆和反射模式，安装后可以大幅提升使用者的战斗直觉。要价是你全部积蓄的十倍。但你怀疑——这真的是他的义眼吗，还是某个无名小卒的零件贴上了传奇标签？在黑市上，假货和真货看起来一样闪亮。",
+      "type": "economy",
+      "ageRange": [22, 55],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "砸锅卖铁买下这颗义眼", "effects": { "CHROME": 3, "TECH": 2, "MONEY": -8000, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "不买，太贵而且不一定是真货", "effects": { "TECH": 1, "MONEY": 500, "HUMAN": 1 } }
+      ],
+      "effects": { "CHROME": 1, "REP": 1 },
+      "tags": ["黑市", "义眼", "传奇", "交易"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 917,
+      "title": "体验他人的记忆",
+      "description": "你在一个地下超梦俱乐部里购买了一段标价不菲的记忆体验——据说是某个企业高管在董事会上签署一份改变城市命运的合同时的感受。你戴上超梦头显，进入了那段记忆。起初一切正常：豪华的办公室、窗外的城市天际线、实木办公桌。但你很快意识到这不是什么董事会——而是一间审讯室，那张「合同」是一份处决名单。你在别人的身体里，眼睁睁看着自己的手在文件上签了字。",
+      "type": "cyber",
+      "ageRange": [20, 55],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "退出记忆，报警处理", "effects": { "HUMAN": 2, "TRAUMA": 2, "REP": 2 } },
+        { "id": "branch_2", "text": "复制这段记忆，私下利用", "effects": { "TECH": 2, "MONEY": 3000, "HUMAN": -2, "TRAUMA": 2 } }
+      ],
+      "effects": { "TRAUMA": 3, "TECH": 1 },
+      "tags": ["超梦", "记忆", "犯罪证据", "伦理"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 918,
+      "title": "超梦bug——无法退出",
+      "description": "你在家中播放一段从朋友那里借来的超梦体验卡带。画面开始时很平静——一场海滩日落。但几秒钟后，场景突然切换成了一间密闭的白色房间，墙壁在向你逼近。你试图命令播放器退出，但系统没有回应。你无法控制自己的身体，无法摘下头显。你在别人的身体里，那个人正在恐慌地奔跑，但房间越来越小，天花板压了下来。你的心跳飙到了一百八十，真正的恐惧从骨头缝里渗出来。",
+      "type": "cyber",
+      "ageRange": [18, 55],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "branch_1", "text": "强行扯下头显，宁可损坏设备", "effects": { "LIFE": -1, "TRAUMA": 3, "TECH": -1, "MONEY": -500 } },
+        { "id": "branch_2", "text": "冷静下来，寻找bug的破解方法", "effects": { "TECH": 2, "TRAUMA": 2, "REP": 1 } }
+      ],
+      "effects": { "TRAUMA": 3, "LIFE": -1 },
+      "tags": ["超梦", "bug", "被困", "恐怖"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 919,
+      "title": "超梦编辑器记录生活",
+      "description": "你买了一台入门级的超梦编辑器——一种可以记录并重播个人记忆的设备。你花了整整一个周末编辑了一段你在夜之城一天的生活记录。从清晨街边的热气腾腾的炒面摊，到午后在被晒得发烫的屋顶打盹的猫，再到傍晚霓虹灯下跳舞的街头艺人。当你回放这段记录时，一种奇怪的满足感涌上心头。但你也意识到，这些美好的瞬间在夜之城是多么稀有。你的编辑器的储存卡快要满了。",
+      "type": "daily",
+      "ageRange": [18, 55],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "把记录上传到网络与人分享", "effects": { "STYLE": 2, "REP": 2, "HUMAN": 1 } },
+        { "id": "branch_2", "text": "私藏起来，作为自己的珍贵回忆", "effects": { "HUMAN": 2, "TRAUMA": -1 } }
+      ],
+      "effects": { "STYLE": 1, "HUMAN": 1 },
+      "tags": ["超梦", "编辑", "记录", "生活"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 920,
+      "title": "超梦成瘾分不清真假",
+      "description": "你已经连续在超梦里泡了七十二个小时。你在现实中的身体饿得皮包骨，但你不在乎——因为在超梦里，你是亿万富翁，住着空中别墅，有完美的伴侣和忠诚的朋友。每次你试图回到现实，那股反差感就像一盆冰水浇下来。你的公寓又冷又破，冰箱里只有发霉的面包，而你的神经接口还在隐隐作痛，渴望着下一剂超梦的多巴胺刺激。你开始分不清哪个世界才是真的了。",
+      "type": "drug",
+      "ageRange": [18, 50],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "强制戒断，寻求心理帮助", "effects": { "HUMAN": 3, "ADDICTION": -3, "LIFE": 1, "MONEY": -2000 } },
+        { "id": "branch_2", "text": "继续沉溺，反正现实也没什么好的", "effects": { "ADDICTION": 3, "HUMAN": -3, "LIFE": -2, "TRAUMA": 2 } }
+      ],
+      "effects": { "ADDICTION": 2, "TRAUMA": 2, "HUMAN": -1 },
+      "tags": ["超梦", "成瘾", "虚拟", "戒断"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 921,
+      "title": "超梦真人秀邀请",
+      "description": "你被一个自称「NetMind制片人」的人联系上。他邀请你参加一档全新的超梦真人秀节目——「夜之城一日」。节目组会全程记录你的真实生活并用超梦技术向付费观众同步直播。他们会给你一笔可观的报酬，但你的一切——包括最隐私的时刻——都将被成千上万的陌生人围观。制片人说这正是节目的卖点：「绝对真实。」你忍不住想象有陌生人在脑子里看你上厕所的画面。",
+      "type": "social",
+      "ageRange": [20, 50],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "接受邀请，赚取报酬和曝光", "effects": { "MONEY": 5000, "REP": 3, "HUMAN": -2, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "拒绝，保留自己的隐私", "effects": { "HUMAN": 2, "REP": 1 } }
+      ],
+      "effects": { "REP": 1, "STYLE": 1 },
+      "tags": ["超梦", "真人秀", "隐私", "媒体"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 922,
+      "title": "黑市超梦禁片",
+      "description": "有个穿着带帽夹克的人在一条巷子里拦住了你。他神秘地拉开夹克拉链，露出一排贴着灰色标签的超梦芯片。「最新的——军用科技真实军事行动记录，未经剪辑版。感官全同步，包括伤痛。」他的声音低沉而充满诱惑。这种非法超梦禁片在市面上流通量极少，因为录制者通常在现场就死了。但观看者可以体验到最原始的战斗刺激——代价是你的神经系统可能会被真实的死亡恐惧击穿。",
+      "type": "combat",
+      "ageRange": [22, 55],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "branch_1", "text": "买下禁片体验一番", "effects": { "TECH": 1, "TRAUMA": 4, "CHROME": 2, "MONEY": -1000 } },
+        { "id": "branch_2", "text": "拒绝并报警举报这个卖家", "effects": { "HUMAN": 2, "REP": 1, "TRAUMA": -1 } }
+      ],
+      "effects": { "TRAUMA": 2, "MONEY": -200 },
+      "tags": ["超梦", "禁片", "黑市", "军事"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 923,
+      "title": "超梦创作者的邀请",
+      "description": "你在超梦论坛上发布的一段生活记录被一个独立超梦导演看中了。他联系你，希望你能加入他的团队，帮他拍摄一部关于夜之城底层生活的超梦纪录片。「你的视角很独特，」他在私信里写道，「你用普通人的眼睛看这座城市，这正是我们需要的。」这不是商业项目，预算有限，但他承诺作品完成后会在独立电影展上映。你的名字可能会第一次出现在银幕上。",
+      "type": "social",
+      "ageRange": [20, 50],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "加入团队，参与纪录片拍摄", "effects": { "STYLE": 2, "REP": 3, "TECH": 2, "MONEY": 500 } },
+        { "id": "branch_2", "text": "婉拒，不感兴趣", "effects": { "HUMAN": 1, "MONEY": 0 } }
+      ],
+      "effects": { "STYLE": 1, "REP": 1 },
+      "tags": ["超梦", "创作", "纪录片", "艺术"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 924,
+      "title": "网络义体走私网络",
+      "description": "你通过一个地下渠道接触到了夜之城最大的义体走私网络。他们能从战区运来军用级别的装备，价格只有正规渠道的一成。走私网络的组织者——一个自称「军火商老G」的人——约你在码头仓库见面。仓库里堆满了闪烁着金属光泽的义体零件：仿生肢体、植入式武器、皮下装甲。他笑着说：「从别人尸体上拆下来的就是便宜。」",
+      "type": "economy",
+      "ageRange": [22, 55],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "branch_1", "text": "和走私网络合作，购买装备", "effects": { "CHROME": 3, "MONEY": -3000, "REP": 2, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "拒绝交易，不碰这种生意", "effects": { "HUMAN": 2, "MONEY": 0 } }
+      ],
+      "effects": { "CHROME": 1, "REP": 1 },
+      "tags": ["走私", "义体", "黑市", "网络"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 925,
+      "title": "神经接口升级风险",
+      "description": "你的老式神经接口已经用了八年，越来越跟不上新设备的带宽需求。技术人员建议你升级到最新的NeuralLink X7——数据传输速度提升六倍，延迟降到几乎为零。但手术需要将你的头骨打开，将一整块旧皮质区域替换为新的合成神经组织。成功率百分之九十三，剩下百分之七可能导致记忆丧失或人格改变。你坐在手术室外面，看着同意书上的条款，手里的笔重若千钧。",
+      "type": "medical",
+      "ageRange": [22, 55],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 30,
+      "branches": [
+        { "id": "branch_1", "text": "接受升级手术", "effects": { "TECH": 4, "CHROME": 2, "LIFE": -2, "MONEY": -5000 } },
+        { "id": "branch_2", "text": "放弃升级，用旧接口将就", "effects": { "HUMAN": 1, "TECH": -1, "LIFE": 1 } }
+      ],
+      "effects": { "TECH": 1, "TRAUMA": 2 },
+      "tags": ["神经接口", "升级", "手术", "风险"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 926,
+      "title": "街头摊贩卖的盗版超梦卡带",
+      "description": "一个街边小贩在向你兜售超梦卡带。他的摊位摆满了各种花花绿绿的盒子，封面印着夸张的宣传画——「体验你从未有过的刺激人生！」价格便宜得令人难以置信，正规店要卖五百欧元的东西他只要五十。但你注意到一个细节：所有的卡带标签都是用手写的。小贩察觉到你的犹豫，连忙说：「都是从工厂里流出来的测试版，效果和正版一模一样！」他的眼神闪烁不定。",
+      "type": "economy",
+      "ageRange": [18, 55],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "买几盘试试，万一运气好呢", "effects": { "MONEY": -100, "TECH": 1, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "便宜没好货，路过离开", "effects": { "HUMAN": 1, "MONEY": 50 } }
+      ],
+      "effects": { "MONEY": -50, "TECH": 0 },
+      "tags": ["超梦", "盗版", "卡带", "小贩"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 927,
+      "title": "网络外包活——数据清洗",
+      "description": "你在兼职网站上接到了一个数据清洗的外包活儿。委托方信息模糊，报酬不错，工作内容很简单：从一批城市监控录像中标记出所有「可疑行为」。你一开始以为这是在帮助提高公共安全。但当你看到一个被标记为「可疑行为」的画面——一个女人只是在街边给流浪猫喂食——你开始觉得不对劲了。你仔细查看了委托方的IP地址，穿透三层跳板后，指向了Zetatech的政府合作部门。",
+      "type": "cyber",
+      "ageRange": [20, 55],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 18,
+      "branches": [
+        { "id": "branch_1", "text": "继续做，反正只是标记数据", "effects": { "MONEY": 2000, "TECH": 1, "HUMAN": -2 } },
+        { "id": "branch_2", "text": "放弃任务，把真相曝光给媒体", "effects": { "HUMAN": 3, "REP": 2, "MONEY": -500 } }
+      ],
+      "effects": { "TECH": 1, "MONEY": 500 },
+      "tags": ["网络", "数据", "外包", "监控"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 928,
+      "title": "网上认识的神秘黑客朋友",
+      "description": "你在一个加密聊天室里认识了一个自称「零号」的黑客。他的技术令你叹为观止——他能在一分钟内破解你花一天才能攻破的防火墙。你们聊得很投机，他教你了很多网络攻防技巧。但你也发现他从不视频通话，从不透露自己的位置，背景音里偶尔传来奇怪的嗡嗡声和蜂鸣。有一天他发来一个加密文件：「帮我保存一下，如果三天后我没上线，就把这个发到N54新闻的匿名投稿邮箱。」",
+      "type": "social",
+      "ageRange": [18, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "branch_1", "text": "作为朋友，帮他保存文件", "effects": { "TECH": 2, "REP": 2, "TRAUMA": 1, "HUMAN": 1 } },
+        { "id": "branch_2", "text": "不碰这个文件，太危险了", "effects": { "HUMAN": -1, "TECH": -1, "TRAUMA": -1 } }
+      ],
+      "effects": { "TECH": 1, "REP": 1 },
+      "tags": ["黑客", "朋友", "网络", "信任"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 929,
+      "title": "脑机接口的广告植入",
+      "description": "你正在街上走着，视野左下角突然跳出全息广告——即使你没有在看任何显示屏。一个甜腻的女声在你的脑子里响起：「感到疲劳吗？试试NovaGen能量饮料，新配方让您精神百倍！」你愣住了。你的脑机接口被入侵了——有人在你的视觉皮层植入了一段广告推送程序。这意味着你的神经接口安全漏洞已经被某个营销公司掌握。更可怕的是，如果别人能推送广告，他们也就能推送别的。",
+      "type": "cyber",
+      "ageRange": [20, 55],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 18,
+      "branches": [
+        { "id": "branch_1", "text": "找安全专家查杀广告植入程序", "effects": { "MONEY": -2000, "TECH": 2, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "反向追踪营销公司的服务器", "effects": { "TECH": 3, "REP": 2, "TRAUMA": 2 } }
+      ],
+      "effects": { "TRAUMA": 2, "HUMAN": -1 },
+      "tags": ["脑机接口", "广告", "入侵", "隐私"],
+      "deathChainEntry": false
+    }
+  ]
+}

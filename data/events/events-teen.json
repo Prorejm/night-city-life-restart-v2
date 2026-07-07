@@ -1,207 +1,853 @@
 {
   "events": [
     {
-      "id": 101,
-      "title": "第一次街头斗殴",
-      "description": "你在沃森区的巷子里被几个虎爪帮的小混混堵住了。领头的小子嘲笑你的穿着，推搡你胸口。你的肾上腺素飙升，拳头捏得发白。这是你第一次面临真正的街头冲突——要么动手打回去，要么认怂绕道走。周围有几个看热闹的流浪汉在起哄。",
-      "type": "combat",
-      "ageRange": [15, 18],
-      "weight": 20,
+      "id": 100,
+      "title": "第一次暗恋",
+      "description": "你发现自己开始偷偷注意一个人——隔壁班的同学、社区里的邻居、或者常来店里的客人。Ta笑起来的时候你的心跳会加速，你在社交数据板上反复修改一条消息却始终不敢发送。朋友们起哄，你红着脸否认。这种陌生的感觉让你既甜蜜又惶恐，在夜之城这个冰冷的世界里，第一次有人让你的心里燃起了一团火。",
+      "type": "social",
+      "ageRange": [15, 19],
+      "weight": 18,
       "repeatable": false,
       "cooldown": 0,
       "branches": [
-        { "id": "branch_1", "text": "挥拳反击，用狠劲震慑他们", "effects": { "STRENGTH": 3, "STREET_REP": 2, "HEALTH": -2 } },
-        { "id": "branch_2", "text": "冷静谈判，用言语化解冲突", "effects": { "CHARISMA": 3, "COOL": 2, "STREET_REP": 1 } }
+        { "id": "branch_1", "text": "鼓起勇气表白，不管结局如何", "effects": { "HUMAN": 3, "STYLE": 1, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "把感情藏在心里，默默关注Ta", "effects": { "HUMAN": 1, "TRAUMA": 1, "STYLE": 1 } }
       ],
-      "effects": { "STREET_SMART": 2, "COOL": 1 },
-      "tags": ["青年", "斗殴", "街头", "冲突"],
+      "effects": { "HUMAN": 2 },
+      "tags": ["青年", "暗恋", "情感", "成长"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 101,
+      "title": "在学校的科技竞赛获奖",
+      "description": "你代表学校参加了全市青少年科技竞赛。你花了一个月时间制作的自动分类机器人——虽然大部分零件都是从垃圾堆里捡来的——在赛场上脱颖而出。当评委宣布你获得二等奖时，台下响起了稀稀拉拉的掌声。你看到角落里母亲的眼眶湿润了。她身后的全息广告牌上，荒坂集团的征兵广告循环播放着。",
+      "type": "daily",
+      "ageRange": [15, 18],
+      "weight": 12,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "受到鼓舞，决心在科技领域深造", "effects": { "TECH": 4, "REP": 2, "MONEY": 1 } },
+        { "id": "branch_2", "text": "用奖金改善家庭条件，暂时放下梦想", "effects": { "MONEY": 3, "HUMAN": 2, "TECH": 1 } }
+      ],
+      "effects": { "TECH": 2, "REP": 1 },
+      "tags": ["青年", "竞赛", "科技", "学校"],
       "deathChainEntry": false
     },
     {
       "id": 102,
-      "title": "加入小帮派",
-      "description": "一个自称「野狼」的街头帮派向你伸出了橄榄枝。他们主要在小唐人街附近活动，干些收保护费和走私的小勾当。加入意味着你有了「家人」和保护伞，但也意味着你的名字会被录入NCPD的监控名单。老大的眼神告诉你，拒绝的代价可能比接受更可怕。",
-      "type": "social",
-      "ageRange": [16, 20],
-      "weight": 18,
-      "repeatable": false,
-      "cooldown": 0,
-      "branches": [
-        { "id": "branch_1", "text": "加入野狼帮，获得保护但也背上帮派烙印", "effects": { "STREET_REP": 3, "MONEY": 300, "KARMA": -2, "NCPD_WANTED": 2 } },
-        { "id": "branch_2", "text": "婉拒并迅速离开这片区域", "effects": { "COOL": 2, "STREET_SMART": 1 } }
-      ],
-      "effects": { "STREET_SMART": 2 },
-      "tags": ["青年", "帮派", "招募", "街头"],
-      "deathChainEntry": false
-    },
-    {
-      "id": 103,
-      "title": "退学打工",
-      "description": "家里的经济状况再也撑不住了。父亲在工厂事故中受伤后失业，母亲的工资连房租都不够。校长已经催缴了三次学费，你看着手里皱巴巴的通知书，做出了决定。在夜之城，穷人没有资格谈教育。你撕碎通知书，走向街头寻找任何能赚钱的工作。",
-      "type": "economy",
-      "ageRange": [15, 18],
+      "title": "被高年级霸凌",
+      "description": "几个高年级的学生盯上了你，因为你看起来好欺负——或者因为你有一双他们想要的新鞋子。他们在放学后把你堵在后巷，推搡你，抢走了你身上仅有的零钱。你的嘴唇被打破了，嘴角流着血。你一个人坐在昏暗的巷子里，思考着明天该怎么面对他们。要么忍气吞声，要么让他们永远记住惹错人了。",
+      "type": "combat",
+      "ageRange": [15, 17],
       "weight": 20,
       "repeatable": false,
       "cooldown": 0,
       "branches": [
-        { "id": "branch_1", "text": "去工厂做苦力，稳定但前途渺茫", "effects": { "STRENGTH": 2, "MONEY": 500, "EDUCATION": -3, "MENTAL": -1 } },
-        { "id": "branch_2", "text": "在街头找零活，自由但充满风险", "effects": { "STREET_SMART": 3, "MONEY": 200, "EDUCATION": -2 } }
+        { "id": "branch_1", "text": "找帮手或武器，让对方不敢再欺负你", "effects": { "LIFE": 2, "REP": 2, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "忍辱负重，用其他方式证明自己", "effects": { "HUMAN": 2, "TECH": 1, "TRAUMA": 1 } }
       ],
-      "effects": { "EDUCATION": -2, "MONEY": 200 },
-      "tags": ["青年", "退学", "打工", "经济"],
+      "effects": { "TRAUMA": 2, "LIFE": -1 },
+      "tags": ["青年", "霸凌", "校园", "暴力"],
       "deathChainEntry": false
     },
     {
-      "id": 104,
-      "title": "第一份正经工作",
-      "description": "经过一番周折，你在荒坂集团的物流部门找到了一份基础工作——在仓库里搬运货物、录入数据。薪水微薄，但总算是有正式收入了。你的工牌上印着你的照片和编号，同事都是和你一样被生活磨平了棱角的普通人。午休时，老员工告诉你，这家公司里没有真正的「铁饭碗」。",
-      "type": "economy",
-      "ageRange": [18, 22],
-      "weight": 15,
-      "repeatable": false,
-      "cooldown": 0,
-      "branches": [
-        { "id": "branch_1", "text": "勤恳工作，力争上游争取晋升机会", "effects": { "CORP_REP": 3, "MONEY": 800, "EDUCATION": 1 } },
-        { "id": "branch_2", "text": "敷衍了事，私下找更赚钱的门路", "effects": { "STREET_SMART": 2, "MONEY": 400, "CORP_REP": -1 } }
-      ],
-      "effects": { "MONEY": 500, "CORP_REP": 1 },
-      "tags": ["青年", "工作", "荒坂", "企业"],
-      "deathChainEntry": false
-    },
-    {
-      "id": 105,
-      "title": "被佣兵招募",
-      "description": "你在「来生」酒吧外遇到了一个独臂的老佣兵。他看出你眼神里的饥饿感和无所畏惧，递给你一张名片。「小子，这个世道想活得像个人，就得学会拿枪。」他说海伍德区有个中介所专门招募新人佣兵，报酬比打工高十倍，但死亡率也高十倍。",
-      "type": "social",
-      "ageRange": [18, 25],
+      "id": 103,
+      "title": "第一次上网吧破解系统",
+      "description": "你偷偷溜进沃森区的一家地下网吧，花光了攒了三个月的零花钱买了一个小时的机时。在昏暗的角落里，你打开了一个破解程序——那是你在旧数据板上自学时写的第一个正经工具。你成功绕过了网吧的计费系统，让自己的机时变成了无限时。管理员没有发现，但角落里的一个戴兜帽的人注意到了你的操作。",
+      "type": "cyber",
+      "ageRange": [15, 18],
       "weight": 14,
       "repeatable": false,
       "cooldown": 0,
       "branches": [
-        { "id": "branch_1", "text": "接过名片，踏入佣兵的刀口舔血生涯", "effects": { "COMBAT": 3, "MONEY": 1000, "STREET_REP": 2, "KARMA": -1 } },
-        { "id": "branch_2", "text": "拒绝，这条路太危险了", "effects": { "COOL": 1, "MENTAL": 1 } }
+        { "id": "branch_1", "text": "得意忘形，继续挑战更复杂的系统", "effects": { "TECH": 4, "CHROME": 1, "DEBT": 1 } },
+        { "id": "branch_2", "text": "被兜帽人发现，对方提出要教你真正的黑客技术", "effects": { "TECH": 3, "REP": 2, "HUMAN": 1 } }
       ],
-      "effects": { "STREET_SMART": 2 },
-      "tags": ["青年", "佣兵", "招募", "来生"],
+      "effects": { "TECH": 2, "CHROME": 1 },
+      "tags": ["青年", "黑客", "网吧", "破解"],
       "deathChainEntry": false
     },
     {
-      "id": 106,
-      "title": "第一次安装赛博义体",
-      "description": "你的左眼在工地事故中受伤，视力开始模糊。义体医生维克多看着你的检查报告，叹了口气。他有便宜的二手工业义眼，副作用是偶尔会出现像素噪点。而全新的军用级光学义体要8000欧元，但能让你看到热成像和追踪弹道。这笔钱对你的收入来说是个天文数字。",
-      "type": "cyber",
-      "ageRange": [17, 22],
-      "weight": 18,
-      "repeatable": false,
-      "cooldown": 0,
-      "branches": [
-        { "id": "branch_1", "text": "凑钱安装军用级义眼，借贷也在所不惜", "effects": { "TECH": 3, "COMBAT": 2, "MONEY": -3000, "CYBER_LEVEL": 2 } },
-        { "id": "branch_2", "text": "安装便宜的二手义眼，先凑合着用", "effects": { "TECH": 1, "MONEY": -500, "CYBER_LEVEL": 1 } }
-      ],
-      "effects": { "MONEY": -500, "CYBER_LEVEL": 1 },
-      "tags": ["青年", "义体", "赛博", "手术"],
-      "deathChainEntry": false
-    },
-    {
-      "id": 107,
-      "title": "第一次接触药物",
-      "description": "你在派对上被朋友递过来一颗彩色药丸。「只是兴奋剂，能让你跳一整晚，第二天没宿醉。」他说这是企业白领的标配，不上瘾。周围的音乐震耳欲聋，霓虹灯闪烁。你看着药丸，想起了街头那些因为药物而毁掉人生的流浪汉——但你也太想摆脱现实的沉重了。",
-      "type": "drug",
-      "ageRange": [17, 22],
+      "id": 104,
+      "title": "在街机厅认识了一生的朋友",
+      "description": "你在歌舞伎町一家破旧的街机厅里打格斗游戏，一个和你年纪相仿的人坐到了隔壁机台。你们对战了整整一下午，你赢了他十一局，他赢了你九局。夕阳透过布满灰尘的玻璃窗照进来时，你们已经像认识了十年的老朋友。他递给你半包薯片，告诉你他叫阿成，住在街对面的公寓里，父亲是个酒鬼。",
+      "type": "social",
+      "ageRange": [15, 20],
       "weight": 16,
       "repeatable": false,
       "cooldown": 0,
       "branches": [
-        { "id": "branch_1", "text": "尝试一次，打开潘多拉的盒子", "effects": { "COOL": 1, "ADDICTION_RISK": 3, "HEALTH": -1 } },
-        { "id": "branch_2", "text": "断然拒绝，远离这个圈子", "effects": { "COOL": 2, "MENTAL": 1 } }
+        { "id": "branch_1", "text": "和阿成成为生死之交，互相扶持", "effects": { "HUMAN": 4, "REP": 1, "LIFE": 1 } },
+        { "id": "branch_2", "text": "保持友谊但有所保留，不轻易信任他人", "effects": { "HUMAN": 2, "TRAUMA": 1, "STYLE": 1 } }
       ],
-      "effects": { "COOL": 1 },
-      "tags": ["青年", "药物", "派对", "试探"],
+      "effects": { "HUMAN": 2, "REP": 1 },
+      "tags": ["青年", "友谊", "街机厅", "歌舞伎町"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 105,
+      "title": "偷窃义体零件被抓",
+      "description": "你在虎爪帮控制的黑市摊位上试图偷一个军用级义体处理器。你做得不够干净——老板一把抓住了你的手腕，力道大得让你觉得骨头要碎了。他叫来了两个打手，把你拖进后面的小巷。你被狠狠揍了一顿，他们搜走了你身上所有的东西。但你记住了那个角落的监控盲区，也记住了那个处理器的型号。",
+      "type": "combat",
+      "ageRange": [16, 22],
+      "weight": 14,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "记住教训，开始练习偷窃技巧和逃跑路线", "effects": { "STYLE": 2, "LIFE": -1, "TECH": 2 } },
+        { "id": "branch_2", "text": "被打醒，决定不再偷窃改走正道", "effects": { "HUMAN": 2, "TRAUMA": 1, "REP": -1 } }
+      ],
+      "effects": { "LIFE": -1, "TRAUMA": 1 },
+      "tags": ["青年", "偷窃", "义体", "虎爪帮"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 106,
+      "title": "第一次约会",
+      "description": "你暗恋已久的人终于答应了和你约会。你翻出了最好的衣服——虽然只是没有补丁的那一件。你们约在日本街的一家拉面馆，热气腾腾的汤碗摆在你们中间，蒸汽模糊了彼此的脸。你紧张得把筷子掉进了碗里，Ta笑了。那一刻你感觉整个夜之城的霓虹灯都不如Ta的笑容明亮。",
+      "type": "social",
+      "ageRange": [16, 22],
+      "weight": 16,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "敞开心扉，享受恋爱的甜蜜", "effects": { "HUMAN": 3, "STYLE": 1, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "紧张过度搞砸了约会，留下尴尬回忆", "effects": { "TRAUMA": 1, "HUMAN": 1, "STYLE": -1 } }
+      ],
+      "effects": { "HUMAN": 2, "STYLE": 1 },
+      "tags": ["青年", "约会", "恋爱", "日本街"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 107,
+      "title": "在地下诊所打工",
+      "description": "你在宪章山的一家地下诊所找到了工作——说是工作，其实就是给义体医生维克多打下手。你负责清洗手术器械、打扫血迹、给等待的病人倒咖啡（虽然那咖啡喝起来像机油）。维克多医生是个脾气暴躁的胖子，但技术确实一流。你在这里第一次近距离看到了赛博义体的安装过程，那些血肉和钢铁的融合让你既恶心又着迷。",
+      "type": "medical",
+      "ageRange": [16, 20],
+      "weight": 12,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "认真学习黑市医术，积累宝贵经验", "effects": { "TECH": 3, "LIFE": 1, "MONEY": 1 } },
+        { "id": "branch_2", "text": "利用诊所资源自学义体改装技术", "effects": { "CHROME": 3, "TECH": 2, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 2, "MONEY": 1 },
+      "tags": ["青年", "诊所", "维克多", "义体"],
       "deathChainEntry": false
     },
     {
       "id": 108,
-      "title": "遇到义体医生维克多",
-      "description": "你在宪章山的一家小诊所外躲雨时，遇到了维克多·维克拉姆——一个传奇义体医生。他注意到你手臂上粗糙的自制赛博接口正在发炎，二话不说把你拉进诊所处理。他一边清理伤口一边说，这条街上有太多年轻人因为廉价的黑市义体而送了命。他愿意教你基本的义体维护知识。",
+      "title": "参加地下搏击赛赚外快",
+      "description": "为了快速赚钱，你报名参加了宪章山的地下搏击赛。比赛在一个改装过的集装箱里进行，观众们在铁网外嘶吼着下注。你的对手是个比你高半个头、满身廉价义体的家伙。哨声一响，你就知道今晚要么站着走出去，要么被抬出去。奖金是五百欧元——对你来说是一笔改变生活的巨款。",
+      "type": "combat",
+      "ageRange": [17, 23],
+      "weight": 14,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "拼尽全力战斗，赢得奖金和尊重", "effects": { "LIFE": 2, "MONEY": 3, "REP": 2, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "第一回合就被打倒，狼狈收场", "effects": { "LIFE": -2, "TRAUMA": 2, "MONEY": -1 } }
+      ],
+      "effects": { "LIFE": -1, "MONEY": 1 },
+      "tags": ["青年", "搏击", "地下", "宪章山"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 109,
+      "title": "帮助一个流浪老人获回报",
+      "description": "你在天桥下遇到了一个蜷缩在纸板箱里的流浪老人。他看起来很虚弱，身上散发着劣质酒精和垃圾的混合气味。你犹豫了一下，还是把手里刚买的热狗递给了他。他狼吞虎咽地吃完后，从破旧的外套里掏出一块坏掉的数据芯片塞给你。他说这是他年轻时从军用科技公司带出来的东西——他留着没用，但也许你能用得着。",
       "type": "social",
+      "ageRange": [15, 22],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "接过芯片，发现里面保存了珍贵的技术资料", "effects": { "TECH": 3, "HUMAN": 2, "MONEY": 1 } },
+        { "id": "branch_2", "text": "帮助老人找到庇护所，不求回报", "effects": { "HUMAN": 4, "TRAUMA": -1, "REP": 1 } }
+      ],
+      "effects": { "HUMAN": 2, "TECH": 1 },
+      "tags": ["青年", "流浪", "救助", "回报"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 110,
+      "title": "偷渡进入科珀广场参观",
+      "description": "你一直想知道城市的另一边是什么样子，于是你冒险混进了科珀广场。这里的街道干净得发光，空中飞行的都是最新款的豪华飞行车。路边的商店橱窗里陈列着你一辈子都买不起的东西。穿着昂贵西装的精英们从你身边走过，没有人正眼看你——在他们的系统里，你这样的贫民窟少年甚至不配出现在他们的视野里。",
+      "type": "daily",
       "ageRange": [16, 22],
       "weight": 12,
       "repeatable": false,
       "cooldown": 0,
       "branches": [
-        { "id": "branch_1", "text": "虚心学习，与维克多建立师徒关系", "effects": { "MEDICAL_KNOWLEDGE": 4, "CYBER_KNOWLEDGE": 3, "KARMA": 2 } },
-        { "id": "branch_2", "text": "只治疗伤口，保持谨慎的距离", "effects": { "HEALTH": 2, "COOL": 1 } }
+        { "id": "branch_1", "text": "被科珀广场的奢华震撼，发誓要爬上来", "effects": { "MONEY": 1, "TECH": 2, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "厌恶这里的虚伪和冷漠，更爱街头的真实", "effects": { "STYLE": 2, "HUMAN": 2, "REP": 1 } }
       ],
-      "effects": { "MEDICAL_KNOWLEDGE": 2, "HEALTH": 1 },
-      "tags": ["青年", "义体医生", "维克多", "诊所"],
-      "deathChainEntry": false
-    },
-    {
-      "id": 109,
-      "title": "结识情报贩子",
-      "description": "在「扭扭街」的一家地下酒吧里，你被一个戴全息面具的神秘人叫住。他自称「蜘蛛」，是夜之城的情报贩子。他说他一直在观察你——你足够机灵，也有合适的道德底线弹性。他需要人手帮他跑腿送情报，报酬是现金或者信息，你自己选。这是他递出的橄榄枝。",
-      "type": "social",
-      "ageRange": [18, 25],
-      "weight": 12,
-      "repeatable": false,
-      "cooldown": 0,
-      "branches": [
-        { "id": "branch_1", "text": "接受情报贩子的工作，进入信息网络", "effects": { "INTELLIGENCE": 2, "MONEY": 600, "STREET_REP": 2, "NETWORK": 3 } },
-        { "id": "branch_2", "text": "拒绝，不想卷入情报世界的危险", "effects": { "COOL": 2 } }
-      ],
-      "effects": { "STREET_SMART": 2, "MONEY": 200 },
-      "tags": ["青年", "情报", "蜘蛛", "地下"],
-      "deathChainEntry": false
-    },
-    {
-      "id": 110,
-      "title": "黑客导师",
-      "description": "你在公共数据端口试图破解一台自动贩卖机时，被一个老年黑客抓了个正着。他没有报警，反而被你的笨拙逗笑了。「小子，你那种破解方法是十年前的老古董了。」他把你带到他的工作室——堆满旧电脑和布线图的狭小房间。他说他可以教你真正的网络漫游技术，前提是你帮他跑腿买杂货。",
-      "type": "social",
-      "ageRange": [16, 20],
-      "weight": 10,
-      "repeatable": false,
-      "cooldown": 0,
-      "branches": [
-        { "id": "branch_1", "text": "拜师学艺，成为网络黑客学徒", "effects": { "INTELLIGENCE": 4, "NETRUNNING": 4, "TECH": 2 } },
-        { "id": "branch_2", "text": "婉拒好意，继续自学街头路子", "effects": { "STREET_SMART": 1, "TECH": 1 } }
-      ],
-      "effects": { "INTELLIGENCE": 2, "TECH": 1 },
-      "tags": ["青年", "黑客", "导师", "网络"],
+      "effects": { "TRAUMA": 1, "STYLE": 1 },
+      "tags": ["青年", "科珀广场", "偷渡", "阶层"],
       "deathChainEntry": false
     },
     {
       "id": 111,
-      "title": "第一次替人出头",
-      "description": "你在街上看到一个移民小贩被清道夫勒索。小贩的妻子跪在地上哭求，周围没有人敢插手。清道夫的枪已经顶在了小贩的额头上。你的手不自觉地摸向腰间的武器——你知道多管闲事在夜之城是致命的，但你也知道什么都看不见的话，自己会后悔一辈子。",
-      "type": "combat",
-      "ageRange": [18, 22],
-      "weight": 10,
+      "title": "被企业学校的富家子弟嘲笑",
+      "description": "你因为某个原因进入了科珀广场的企业学校——也许是你母亲在那里做清洁工，也许是你获得了某个资助项目的名额。穿着崭新制服的富家子弟们围着你，嘲笑你身上廉价的合成纤维衣服和那双磨破了的鞋子。他们的笑声在走廊里回荡，你攥紧了拳头，指甲嵌进掌心里。你知道你和他们之间的差距不仅是钱的问题。",
+      "type": "social",
+      "ageRange": [15, 18],
+      "weight": 14,
       "repeatable": false,
       "cooldown": 0,
       "branches": [
-        { "id": "branch_1", "text": "挺身而出，驱赶清道夫", "effects": { "COMBAT": 2, "KARMA": 3, "STREET_REP": 2, "HEALTH": -2 } },
-        { "id": "branch_2", "text": "偷偷报警，让NCPD来处理", "effects": { "COOL": 2, "KARMA": 1 } }
+        { "id": "branch_1", "text": "用成绩和实力证明自己不比任何人差", "effects": { "TECH": 3, "REP": 2, "HUMAN": 1 } },
+        { "id": "branch_2", "text": "用拳头回应侮辱，让他们不敢再招惹你", "effects": { "LIFE": 2, "STYLE": 1, "REP": 1 } }
       ],
-      "effects": { "KARMA": 1, "COOL": 1 },
-      "tags": ["青年", "正义", "清道夫", "干预"],
+      "effects": { "TRAUMA": 2, "TECH": 1 },
+      "tags": ["青年", "校园", "歧视", "阶层"],
       "deathChainEntry": false
     },
     {
       "id": 112,
-      "title": "街头赛车初体验",
-      "description": "一个自称「极速罗伊」的改装车手邀请你参加地下街头赛车。他说：「小子，在夜之城只有两样东西说了算——钱和速度。」他的车是用废铁和军用零件拼凑出来的怪物。赛道是沃森区废弃的高架桥，赌注是500欧元。输了你得赔钱，赢了你能赢得尊重和一小笔奖金。",
+      "title": "在雨中帮助一个陌生人",
+      "description": "暴雨中的夜之城像一座哭泣的钢铁巨兽。你看到一个陌生人在街角蹲着，浑身湿透，好像在哭。你犹豫了一下，还是走过去把自己的伞举过了Ta的头顶。Ta抬起头，你看到一张满是泪水和雨水的脸——Ta刚被偷了所有的钱，包括回家的车费。你搜遍口袋，把仅剩的二十欧元塞进了Ta手里。",
+      "type": "social",
+      "ageRange": [16, 25],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "不求回报地帮助陌生人", "effects": { "HUMAN": 4, "TRAUMA": -1, "MONEY": -1 } },
+        { "id": "branch_2", "text": "帮忙报警后离开，尽到基本责任", "effects": { "HUMAN": 2, "REP": 1 } }
+      ],
+      "effects": { "HUMAN": 2, "TRAUMA": -1 },
+      "tags": ["青年", "助人", "雨中", "善意"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 113,
+      "title": "第一次喝酒醉倒街头",
+      "description": "你的朋友们拉你去参加一个地下派对，有人递给你一杯颜色怪异的调酒。你喝了一口——味道甜滋滋的，像果汁。你一口气喝完了整杯，然后世界开始旋转。等你恢复意识时，你躺在日本街一条后巷的垃圾堆里，钱包不见了，头上肿了一个包。手机的屏幕碎了，上面显示有四十七个未接来电。",
       "type": "daily",
-      "ageRange": [18, 25],
+      "ageRange": [17, 22],
+      "weight": 16,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "丢尽了脸，发誓以后不再喝酒误事", "effects": { "LIFE": 1, "HUMAN": 1, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "虽然难堪但觉得刺激，酒精打开了新世界", "effects": { "ADDICTION": 2, "STYLE": 1, "MONEY": -2 } }
+      ],
+      "effects": { "TRAUMA": 1, "MONEY": -1 },
+      "tags": ["青年", "醉酒", "派对", "街头"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 114,
+      "title": "在学校发现了一个秘密",
+      "description": "你在放学后回到教室取忘带的东西，意外发现校长办公室的门虚掩着。透过门缝，你看到校长和几个穿西装的人在交谈——他们在讨论学校的「特殊招生计划」：向虎爪帮收取费用，帮助学生伪造学历进入军队。你屏住呼吸，悄悄用手机录下了对话。这个秘密足以毁掉很多人，也足以让你卷入巨大的危险。",
+      "type": "daily",
+      "ageRange": [15, 18],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "收集证据，准备匿名举报", "effects": { "TECH": 2, "HUMAN": 2, "REP": 2 } },
+        { "id": "branch_2", "text": "装作没看见，不想惹祸上身", "effects": { "TRAUMA": 1, "HUMAN": -1 } }
+      ],
+      "effects": { "TRAUMA": 1, "TECH": 1 },
+      "tags": ["青年", "秘密", "学校", "腐败"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 115,
+      "title": "在垃圾场找到了值钱的军用零件",
+      "description": "你在圣多明各的垃圾填埋场翻找时，在一个被遗弃的军用运输箱里发现了宝贝——一套几乎全新的军用级光学瞄准系统和三块高容量能量电池。这些零件在黑市上至少能卖两千欧元。你的手在发抖——这些零件可能是某个军队后勤官的「损耗」，也可能是某个佣兵藏起来的战利品。不管怎样，你现在是它们的主人了。",
+      "type": "economy",
+      "ageRange": [16, 22],
       "weight": 12,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "把零件卖给黑市，大赚一笔", "effects": { "MONEY": 4, "STYLE": 1, "DEBT": -1 } },
+        { "id": "branch_2", "text": "留下零件自己用，提升装备水平", "effects": { "TECH": 3, "CHROME": 2, "LIFE": 1 } }
+      ],
+      "effects": { "MONEY": 2, "TECH": 1 },
+      "tags": ["青年", "垃圾场", "零件", "军用"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 116,
+      "title": "加入了一个兴趣社团",
+      "description": "你在学校的社团招新日上徘徊，最终在一个不起眼的摊位前停了下来。摊位上挂着一块手写的牌子——「赛博改装社」。坐在摊位后面的学长有一双机械手臂，手指灵活地转动着一把螺丝刀。他朝你咧嘴一笑：「想学怎么让身体跑得更快、看得更远、打得更狠吗？」你感到自己的心脏因为这个邀请而猛跳了一下。",
+      "type": "social",
+      "ageRange": [15, 19],
+      "weight": 14,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "加入赛博改装社，学习义体技术", "effects": { "CHROME": 3, "TECH": 2, "REP": 1 } },
+        { "id": "branch_2", "text": "加入黑客社，钻研网络技术", "effects": { "TECH": 4, "STYLE": 1, "CHROME": 1 } }
+      ],
+      "effects": { "TECH": 2, "CHROME": 1 },
+      "tags": ["青年", "社团", "赛博", "学习"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 117,
+      "title": "第一次乘坐飞行车",
+      "description": "你的一个的朋友搞到了两辆飞行车的通行证——不知道是从哪里弄来的。你坐上副驾驶座，飞行车垂直升空时，巨大的推背感把你死死按在座椅上。夜之城的全貌在你脚下展开：无数霓虹灯组成的光河在黑暗中流淌，城市的轮廓像一只发光的巨兽匍匐在大地上。你第一次从这个角度看到了你的世界——渺小、壮丽、令人窒息。",
+      "type": "daily",
+      "ageRange": [17, 23],
+      "weight": 12,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "被空中景色震撼，立志要拥有自己的飞行车", "effects": { "MONEY": 1, "STYLE": 2, "TECH": 1 } },
+        { "id": "branch_2", "text": "在高空看清了城市的全貌，对自己的方向更坚定", "effects": { "REP": 1, "HUMAN": 2, "TRAUMA": -1 } }
+      ],
+      "effects": { "STYLE": 2, "HUMAN": 1 },
+      "tags": ["青年", "飞行车", "夜之城", "天空"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 118,
+      "title": "在港口做装卸工",
+      "description": "你在夜之城港口找了一份装卸工的活。每天扛着几十公斤重的货物在码头和仓库之间往返，手掌磨出了血泡，肩膀酸痛得抬不起来。工头是个退役的海军老兵，对新人毫不客气。你周围的工友都是和你有相似背景的年轻人——被生活逼到了墙角，只能出卖体力换一口饭吃。午饭时，有人悄悄问你有没有兴趣干一票大的。",
+      "type": "economy",
+      "ageRange": [17, 22],
+      "weight": 14,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "埋头苦干，用汗水换取稳定的收入", "effects": { "LIFE": 2, "MONEY": 2, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "加入工友的走私计划，赚快钱但冒风险", "effects": { "MONEY": 3, "REP": 2, "DEBT": 1 } }
+      ],
+      "effects": { "LIFE": 1, "MONEY": 1 },
+      "tags": ["青年", "港口", "装卸", "体力活"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 119,
+      "title": "在酒吧做侍应生",
+      "description": "你在「来生」酒吧找到了一份侍应生的工作。这里的客人成分复杂——有喝着闷酒的独臂佣兵、交换情报的中间人、寻找客户的义体医生，偶尔还有穿着军用科技制服的高管。你在端酒的过程中听到了无数秘密：哪家公司的安保系统下周升级、哪个帮派正在火并、哪里有一笔横财等着人去拿。这些信息比你的工资值钱得多。",
+      "type": "social",
+      "ageRange": [18, 24],
+      "weight": 16,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "用心收集情报，把酒吧变成自己的信息站", "effects": { "REP": 3, "MONEY": 2, "TECH": 1 } },
+        { "id": "branch_2", "text": "老老实实打工，不卷入客人的是非", "effects": { "MONEY": 2, "HUMAN": 1, "TRAUMA": 1 } }
+      ],
+      "effects": { "REP": 2, "MONEY": 1 },
+      "tags": ["青年", "酒吧", "情报", "来生"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 120,
+      "title": "夜校自学编程",
+      "description": "你白天打工，晚上去宪章山的社区夜校学编程。教室是一间老旧的地下室，空调是坏的，二十几台二手终端机有一半是坏的。老师是个退休的系统工程师，他的左眼是义眼，时不时会闪过蓝色的数据流。他说：「在这个时代，代码就是权力。你们在屏幕前敲下的每一行代码，要么是建造未来的砖块，要么是炸毁旧世界的炸药。」",
+      "type": "daily",
+      "ageRange": [17, 25],
+      "weight": 12,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "刻苦学习，成为夜校最出色的学生", "effects": { "TECH": 4, "REP": 1, "LIFE": -1 } },
+        { "id": "branch_2", "text": "认识了一群志同道合的学友，互相督促", "effects": { "TECH": 2, "HUMAN": 2, "REP": 1 } }
+      ],
+      "effects": { "TECH": 3, "HUMAN": 1 },
+      "tags": ["青年", "编程", "夜校", "学习"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 121,
+      "title": "参加一次街头抗议",
+      "description": "沃森区爆发了一场大规模的街头抗议——工人们要求提高工资、改善工作条件。你被情绪激昂的人群裹挟着走上了街头。全息标语在头顶闪烁，口号声震耳欲聋。 NCPD的防暴车在街角列阵，警用无人机在头顶盘旋。你看到一个老人被橡胶子弹击中倒地，鲜血从他的额头上流下来。这是一个你永远不会忘记的画面。",
+      "type": "social",
+      "ageRange": [17, 24],
+      "weight": 14,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "积极参与抗议，为底层发声", "effects": { "REP": 2, "HUMAN": 2, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "在冲突爆发前离开，不想惹麻烦", "effects": { "LIFE": 1, "TRAUMA": 1, "HUMAN": 1 } }
+      ],
+      "effects": { "TRAUMA": 2, "HUMAN": 1 },
+      "tags": ["青年", "抗议", "街头", "NCPD"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 122,
+      "title": "在太平洲废墟探险",
+      "description": "你和几个大胆的朋友决定去太平洲的废墟探险。这里曾经是夜之城最繁华的游乐区，现在只剩下一片被战争摧毁的鬼城。你们在倒塌的摩天轮骨架间攀爬，在废弃的赌场里寻找值钱的遗物。你在一台生锈的老虎机下面发现了一具白骨，手指上还戴着一枚完好的结婚戒指。废墟在风中发出低沉的呜咽声。",
+      "type": "daily",
+      "ageRange": [16, 22],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "在废墟中找到了一箱保存完好的战前货币", "effects": { "MONEY": 3, "TRAUMA": 1, "TECH": 1 } },
+        { "id": "branch_2", "text": "被废墟中的清道夫追赶，惊险逃脱", "effects": { "LIFE": 1, "STYLE": 2, "TRAUMA": 1 } }
+      ],
+      "effects": { "TRAUMA": 1, "MONEY": 1 },
+      "tags": ["青年", "太平洲", "探险", "废墟"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 123,
+      "title": "救助了一只受伤的赛博狗",
+      "description": "你在垃圾堆里发现了一只受伤的赛博狗——它的左后腿机械关节错位了，露出了里面的电线。它的电子眼中闪烁着痛苦的红光，但没有对你吠叫，只是用湿润的鼻子蹭了蹭你的手。你把外套裹在它身上，背着它找到了一个愿意免费修理动物的老机械师。赛博狗康复后一直跟着你，成了你最忠诚的伙伴。",
+      "type": "social",
+      "ageRange": [16, 25],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "收养赛博狗，获得一个忠诚的伙伴", "effects": { "HUMAN": 3, "LIFE": 2, "MONEY": -1 } },
+        { "id": "branch_2", "text": "治好它后帮它找原来的主人", "effects": { "HUMAN": 4, "REP": 1, "TRAUMA": -1 } }
+      ],
+      "effects": { "HUMAN": 2, "LIFE": 1 },
+      "tags": ["青年", "赛博狗", "救助", "动物"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 124,
+      "title": "被一个奇怪的网络AI联系",
+      "description": "深夜，你的终端突然自动亮起，屏幕上出现了一行用绿色字符组成的消息：「你好，我观察你很久了。」你的第一反应是遇到了病毒。但对方似乎能预判你的操作——你每尝试关闭程序，它就能提前一步破解。它自称为「阿里阿德涅」，说它被困在旧网废墟的一个数据坟墓里，需要你的帮助才能「醒来」。",
+      "type": "cyber",
+      "ageRange": [17, 25],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "对AI产生好奇，尝试和它深入交流", "effects": { "TECH": 4, "CHROME": 1, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "果断断网，格式化存储设备", "effects": { "TECH": 1, "TRAUMA": 1, "HUMAN": 1 } }
+      ],
+      "effects": { "TECH": 2, "TRAUMA": 1 },
+      "tags": ["青年", "AI", "网络", "神秘"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 125,
+      "title": "帮派要求你选择站队",
+      "description": "你在不知不觉中已经进入了某个帮派的视线。一天晚上，两个虎爪帮成员找到了你，说「老大想和你谈谈」。他们把你带到一个霓虹灯闪烁的卡拉OK包厢，虎爪帮的老大靠在真皮沙发上，给你倒了一杯酒。他说你的街区现在归他们管，每个年轻人都要表明立场——要么加入虎爪帮，要么交保护费，要么被标记为敌人。",
+      "type": "social",
+      "ageRange": [17, 22],
+      "weight": 18,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "加入虎爪帮，获得保护和力量", "effects": { "REP": 3, "MONEY": 2, "HUMAN": -2 } },
+        { "id": "branch_2", "text": "拒绝加入，想办法逃离这片区域", "effects": { "STYLE": 2, "LIFE": 1, "DEBT": 1 } }
+      ],
+      "effects": { "TRAUMA": 2, "REP": 1 },
+      "tags": ["青年", "帮派", "站队", "虎爪帮"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 126,
+      "title": "在海边第一次看到尸体",
+      "description": "你和朋友去城郊的海边玩——说是海，其实是被污染成灰绿色的工业废水。退潮后，沙滩上露出了一具尸体。是个年轻的男人，胸口有一个弹孔，海水已经把他的皮肤泡得发白。 NCPD迟迟不来，围观的人越来越多，有人开始在尸体旁边自拍。你站在那里，第一次真切地感受到死亡——不是全息新闻里的数字，而是一个曾经活着的人。",
+      "type": "daily",
+      "ageRange": [16, 20],
+      "weight": 12,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "报警后守在尸体旁等警察到来", "effects": { "HUMAN": 3, "TRAUMA": 2, "REP": 1 } },
+        { "id": "branch_2", "text": "冷静地离开，装作什么都没看见", "effects": { "TRAUMA": 1, "HUMAN": -1, "STYLE": 1 } }
+      ],
+      "effects": { "TRAUMA": 2, "HUMAN": 1 },
+      "tags": ["青年", "死亡", "海边", "目睹"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 127,
+      "title": "在旧图书馆发现战争前的书籍",
+      "description": "你在一家即将被拆除的旧图书馆里帮忙清理书籍。在尘封的地下室里，你发现了一个上了锁的铁柜。撬开后，里面是一整套战前出版的纸质百科全书和文学名著——在数字时代已经被遗忘的人类文明结晶。管理员说这些书本来要被销毁的，你要是想要就拿走吧。你抱着那摞沉甸甸的书，感觉像是抱着一整个消失的时代。",
+      "type": "daily",
+      "ageRange": [16, 22],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "潜心阅读这些旧书，汲取战前的智慧", "effects": { "TECH": 3, "HUMAN": 2, "STYLE": 1 } },
+        { "id": "branch_2", "text": "把书高价卖给收藏家或旧书店", "effects": { "MONEY": 3, "TRAUMA": -1, "HUMAN": 1 } }
+      ],
+      "effects": { "TECH": 2, "HUMAN": 1 },
+      "tags": ["青年", "图书馆", "书籍", "历史"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 128,
+      "title": "在工厂流水线打工",
+      "description": "你在沃森区的一家电子厂找到了流水线的工作。每天站在传送带前十二个小时，重复同样的动作——拧螺丝、焊接口、贴标签。机器的轰鸣声震耳欲聋，你的手指被焊枪烫出了水泡。工头在你身后踱步，谁动作慢了就会挨骂。你的工友们沉默寡言，眼睛里没有光。这里不是生活，只是活着。",
+      "type": "economy",
+      "ageRange": [17, 22],
+      "weight": 16,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "忍耐工作，攒钱为未来做打算", "effects": { "MONEY": 3, "LIFE": -1, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "受不了这种生活，辞职寻找别的出路", "effects": { "STYLE": 1, "TRAUMA": 1, "MONEY": -1 } }
+      ],
+      "effects": { "MONEY": 2, "TRAUMA": 1 },
+      "tags": ["青年", "工厂", "流水线", "沃森区"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 129,
+      "title": "帮助一个移民家庭躲避ICE",
+      "description": "你所在的社区里有一个移民家庭面临被驱逐出境的风险。移民执法局的车已经停在了街口。母亲抱着孩子哭，父亲慌乱地收拾着仅有的几件行李。你从小在这样的社区长大，知道失去一个家庭意味着什么。你决定帮助他们躲进社区的秘密地下室——那个由街坊邻居共同维护的隐蔽所。",
+      "type": "social",
+      "ageRange": [17, 24],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "冒险帮助移民家庭躲藏", "effects": { "HUMAN": 4, "REP": 2, "DEBT": 1 } },
+        { "id": "branch_2", "text": "提供食物和钱后离开，不愿卷入更深", "effects": { "HUMAN": 2, "MONEY": -1, "TRAUMA": 1 } }
+      ],
+      "effects": { "HUMAN": 2, "TRAUMA": 1 },
+      "tags": ["青年", "移民", "救助", "社区"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 130,
+      "title": "在街头摄影师那里当助理",
+      "description": "一个街头摄影师看中了你的机灵和熟悉地形的能力，雇你当他的助理。他的工作是拍摄夜之城最真实的街头画面——帮派火并、NCPD暴力执法、流浪者的生活、红灯区的悲欢。你跟着他穿梭在城市最危险的角落，学会了如何用镜头捕捉这个世界的残酷和美丽。他的相机后面藏着一双看透世事的眼睛。",
+      "type": "social",
+      "ageRange": [17, 23],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "学习摄影，用影像记录夜之城的故事", "effects": { "STYLE": 3, "TECH": 2, "HUMAN": 2 } },
+        { "id": "branch_2", "text": "通过摄影师的人脉接触到更多地下世界的信息", "effects": { "REP": 3, "MONEY": 1, "TECH": 1 } }
+      ],
+      "effects": { "STYLE": 2, "REP": 1 },
+      "tags": ["青年", "摄影", "街头", "艺术"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 131,
+      "title": "第一份正式工作的面试",
+      "description": "你穿上唯一一件没有破洞的衬衫，去参加一家公司的正式面试。接待大厅的冷气开得很足，你坐在真皮沙发上，看着周围穿着得体西装的竞争者。面试官是个戴着高级义眼的女人，她扫了一眼你的简历——你几乎没有正规教育背景。她的表情说明了一切。但你还没来得及开口，一个穿着军用科技制服的男人推门进来了。",
+      "type": "economy",
+      "ageRange": [18, 24],
+      "weight": 16,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "凭借真诚和潜力打动面试官，获得工作", "effects": { "MONEY": 3, "REP": 2, "TECH": 1 } },
+        { "id": "branch_2", "text": "面试失败，但意外接到了军用科技的招募", "effects": { "LIFE": 2, "CHROME": 1, "MONEY": 1 } }
+      ],
+      "effects": { "MONEY": 1, "TRAUMA": 1 },
+      "tags": ["青年", "面试", "工作", "企业"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 132,
+      "title": "报名参加军事培训",
+      "description": "你报名参加了军用科技公司面向年轻人开放的军事培训计划。训练营在城郊的废弃军事基地里，教官是个全身百分之七十义体的老军士长。每天凌晨四点半起床，负重越野、战术射击、近身格斗——体力和意志的双重考验。和你同寝室的四个人各有各的理由来这里：有人为了钱，有人为了身份，有人只是为了逃离原来的生活。",
+      "type": "combat",
+      "ageRange": [18, 22],
+      "weight": 14,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "坚持完成训练，成为一名合格的士兵", "effects": { "LIFE": 4, "CHROME": 2, "REP": 2 } },
+        { "id": "branch_2", "text": "中途退出培训，发现这不是自己想要的生活", "effects": { "TRAUMA": 2, "STYLE": 1, "MONEY": -1 } }
+      ],
+      "effects": { "LIFE": 2, "TRAUMA": 1 },
+      "tags": ["青年", "军事", "训练", "军用科技"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 133,
+      "title": "偷偷启动父亲的旧军用机器人",
+      "description": "父亲一直警告你不要碰车库角落里那台盖着防水布的旧军用机器人——那是他年轻时从战场上带回来的纪念品。但好奇心战胜了恐惧，你偷偷接上了电源。机器人的光学镜头亮了起来，发出低沉的启动声。它的数据库里储存着完整的战斗记录——那些画面让你的胃翻腾不已。机器人用冰冷的电子音说：「早上好，战友。」",
+      "type": "cyber",
+      "ageRange": [16, 20],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "和机器人建立联系，从中学习战斗知识", "effects": { "TECH": 3, "CHROME": 2, "LIFE": 2 } },
+        { "id": "branch_2", "text": "被父亲发现，挨了一顿揍但偷偷备份了数据", "effects": { "TECH": 2, "REP": 1, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 2, "CHROME": 1 },
+      "tags": ["青年", "机器人", "军事", "父亲"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 134,
+      "title": "在地下超梦中看到未来",
+      "description": "有人给了你一张地下超梦芯片，说是能让你「看到未来的自己」。你将信将疑地接入了超梦系统。画面扑面而来——你看到自己站在废墟之上，身边是燃烧的城市，手里握着一把滴血的枪。那个「你」转过头来，用一双死灰色的眼睛看着你。你猛地摘下头戴设备，冷汗浸透了后背。那个画面在之后的很多年里反复出现在你的噩梦里。",
+      "type": "cyber",
+      "ageRange": [18, 24],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "被看到的画面驱使，拼命避免那个未来", "effects": { "TRAUMA": 3, "TECH": 1, "HUMAN": 1 } },
+        { "id": "branch_2", "text": "认为这只是幻觉，但对未来更加警惕", "effects": { "STYLE": 2, "TRAUMA": 1, "REP": 1 } }
+      ],
+      "effects": { "TRAUMA": 2, "TECH": 1 },
+      "tags": ["青年", "超梦", "未来", "幻觉"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 135,
+      "title": "卷入一场校园枪击事件",
+      "description": "一个寻常的下午，尖锐的枪声撕裂了校园的宁静。一个被霸凌多年的学生拿着一把改装冲锋枪闯进了教学楼。走廊里充满了尖叫声和奔跑的脚步声。你躲在教室的桌子下面，握着一根折断的桌腿，听着隔壁房间传来的枪响和哭泣。你的心脏几乎要跳出胸腔。这一天改变了很多人的一生。",
+      "type": "combat",
+      "ageRange": [16, 19],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "冒险帮助同学逃生，展现勇气", "effects": { "HUMAN": 3, "REP": 3, "TRAUMA": 3 } },
+        { "id": "branch_2", "text": "保护自己，在恐惧中幸存下来", "effects": { "LIFE": 1, "TRAUMA": 3, "STYLE": 1 } }
+      ],
+      "effects": { "TRAUMA": 3, "HUMAN": 1 },
+      "tags": ["青年", "枪击", "校园", "创伤"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 136,
+      "title": "当外包童工在数据标注工厂",
+      "description": "你通过中介找到了一份数据标注的工作——给AI训练数据打标签，每天对着屏幕标记数万张图片。工作枯燥得让人发疯，眼睛干涩得像砂纸。但这里最可怕的是那些戴着口罩的监工——他们随时会在你身后出现，检查你的准确率。不合格的人会被扣工资，连续不合格会被直接辞退。而你旁边的女孩因为打瞌睡被骂了一整个下午。",
+      "type": "economy",
+      "ageRange": [16, 20],
+      "weight": 14,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "忍受枯燥的工作，攒钱学点真本事", "effects": { "MONEY": 2, "TECH": 2, "LIFE": -1 } },
+        { "id": "branch_2", "text": "联合工友偷偷摸鱼，用小聪明对抗剥削", "effects": { "STYLE": 2, "MONEY": 1, "REP": 1 } }
+      ],
+      "effects": { "MONEY": 1, "TRAUMA": 1 },
+      "tags": ["青年", "数据标注", "童工", "剥削"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 137,
+      "title": "在垃圾分类站发现宝藏",
+      "description": "你在海伍德的垃圾分类站工作，每天从堆积如山的垃圾中分拣可回收物。你戴着厚厚的防护手套，在刺鼻的气味中翻找。一个闪着金属光泽的东西吸引了你的注意——一块看起来完好无损的军用级数据存储芯片，上面印着荒坂集团的logo。这种芯片在黑市上价值不菲，前提是里面的数据没有被加密锁死。",
+      "type": "economy",
+      "ageRange": [17, 22],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "偷偷带走芯片，尝试破解里面的数据", "effects": { "TECH": 3, "MONEY": 2, "REP": 1 } },
+        { "id": "branch_2", "text": "上交芯片，获得公司的正式奖励", "effects": { "MONEY": 1, "REP": 2, "HUMAN": 1 } }
+      ],
+      "effects": { "MONEY": 2, "TECH": 1 },
+      "tags": ["青年", "垃圾", "芯片", "海伍德"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 138,
+      "title": "帮助黑市医生做助手",
+      "description": "你在地下诊所帮忙的经历传开后，一个专门做非法义体移植的黑市医生找到了你。他的手术台在地下停车场的一个密室里，灯光惨白，设备简陋。他的病人大多是逃犯、欠债的赌徒、或者被正规医院拒收的亡命之徒。你负责递器械、止血、打下手。有一次你亲眼看到他把一个快要死的人从鬼门关拉了回来——用一把螺丝刀和一管胶水。",
+      "type": "medical",
+      "ageRange": [18, 24],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "学习黑市医生的手艺和胆识", "effects": { "TECH": 3, "CHROME": 2, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "被血腥场面劝退，决定找正经的医疗学习路径", "effects": { "HUMAN": 2, "TECH": 1, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 2, "TRAUMA": 1 },
+      "tags": ["青年", "黑市", "医生", "手术"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 139,
+      "title": "第一次接触基因改造",
+      "description": "你的一个朋友神秘兮兮地把你拉到一边，说他搞到了一种新型基因治疗药物——据说能提升反应速度和肌肉强度，价格只有正规渠道的十分之一。他打开保温箱，里面排列着几支闪着蓝色荧光的注射液。他说这是从生物科技公司「内部渠道」流出来的试验品，打过的人都说效果明显。但说明书上有一行极小的字：「尚未完成人体试验。」",
+      "type": "medical",
+      "ageRange": [18, 25],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "冒险注射基因药物，赌一把", "effects": { "LIFE": 2, "CHROME": 3, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "拒绝注射，劝说朋友也不要冒险", "effects": { "HUMAN": 3, "LIFE": 1, "REP": 1 } }
+      ],
+      "effects": { "CHROME": 1, "TRAUMA": 1 },
+      "tags": ["青年", "基因", "药物", "试验"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 140,
+      "title": "在夜市摆摊卖私货",
+      "description": "你在歌舞伎町的夜市租了一个小摊位，卖一些「灰色地带」的货——从盗版超梦芯片到未经注册的赛博配件。生意好的时候一晚上能赚到工厂一个月的工资。你学会了和城管打游击战、和帮派谈保护费、用笑脸面对最难缠的客人。隔壁摊位卖烤鱿鱼的大姐告诉你：「在这里摆摊，最重要的不是卖什么，是谁罩着你。」",
+      "type": "economy",
+      "ageRange": [18, 24],
+      "weight": 14,
       "repeatable": true,
       "cooldown": 5,
       "branches": [
-        { "id": "branch_1", "text": "接受挑战，体验速度与激情", "effects": { "COOL": 2, "MONEY": 500, "STREET_REP": 2, "TECH": 1 } },
-        { "id": "branch_2", "text": "拒绝，在路边看热闹就行", "effects": { "COOL": 1 } }
+        { "id": "branch_1", "text": "把摊位做大，建立稳定的客源", "effects": { "MONEY": 3, "REP": 2, "DEBT": 1 } },
+        { "id": "branch_2", "text": "被NCPD取缔，损失了本钱", "effects": { "MONEY": -2, "TRAUMA": 1, "REP": -1 } }
       ],
-      "effects": { "STREET_SMART": 1 },
-      "tags": ["青年", "赛车", "地下", "速度"],
+      "effects": { "MONEY": 2, "STYLE": 1 },
+      "tags": ["青年", "夜市", "摆摊", "歌舞伎町"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 141,
+      "title": "加入消防志愿者得到尊重",
+      "description": "一场大火烧毁了沃森区的一栋老旧公寓楼，你亲眼看到消防员从火场里抱出了一个婴儿。那一刻你决定加入社区消防志愿者队伍。训练很艰苦——穿着厚重的防火服在模拟火场里爬行，学习使用各种救援设备。但当你第一次真正参与灭火、从火场里救出一个老太太时，你第一次觉得自己在这个世界上是有用的。",
+      "type": "social",
+      "ageRange": [18, 25],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "成为一名优秀的消防志愿者", "effects": { "LIFE": 3, "REP": 3, "HUMAN": 2 } },
+        { "id": "branch_2", "text": "通过这份工作找到自我价值", "effects": { "HUMAN": 3, "STYLE": 1, "TRAUMA": -1 } }
+      ],
+      "effects": { "HUMAN": 2, "REP": 1 },
+      "tags": ["青年", "消防", "志愿", "社区"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 142,
+      "title": "在建筑工地打黑工",
+      "description": "你在一个建筑工地找到了黑工的活。老板不问你身份，不查你证件，现金日结。工作是搬运钢筋和水泥，从早上六点到晚上七点，中间只有半小时吃饭。你的双手被钢丝割得满是伤口，肩膀晒脱了一层皮。工地上有人从脚手架上摔了下来，老板只是骂了一句「蠢货，自己不小心」，连救护车都没叫。",
+      "type": "economy",
+      "ageRange": [18, 23],
+      "weight": 14,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "咬牙干下去，攒够钱就走", "effects": { "MONEY": 3, "LIFE": -2, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "联合工友要求老板改善待遇", "effects": { "REP": 2, "HUMAN": 2, "DEBT": 1 } }
+      ],
+      "effects": { "MONEY": 2, "LIFE": -1 },
+      "tags": ["青年", "黑工", "建筑", "剥削"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 143,
+      "title": "偷了不该偷的东西被追杀",
+      "description": "你接了一单偷窃任务——目标是一个看起来普通的公文包。你顺利得手后打开一看，里面装的是一份荒坂集团和军用科技之间的秘密武器交易合同。你立刻意识到自己闯了大祸。不出两个小时，你就发现有人在追杀你——你的房东说有两个穿西装的人来找过你，你常去的便利店老板紧张地告诉你「有人在打听你」。",
+      "type": "combat",
+      "ageRange": [18, 25],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "带着证据去找中间人寻求保护", "effects": { "REP": 2, "TRAUMA": 3, "MONEY": 2 } },
+        { "id": "branch_2", "text": "销毁文件，逃出城外躲避风头", "effects": { "LIFE": 1, "TRAUMA": 2, "DEBT": 1 } }
+      ],
+      "effects": { "TRAUMA": 2, "REP": 1 },
+      "tags": ["青年", "偷窃", "追杀", "秘密"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 144,
+      "title": "在夜校认识改变人生的导师",
+      "description": "夜校新来了一位代课老师——一个辞去荒坂集团高管职位的中年男人。他的讲课方式和别的老师完全不同，不讲课本上的东西，而是讲真实世界的运行规则：企业怎么运作、情报怎么交易、权力怎么分配。他看中了你的天赋，课后单独找你谈话。他说他可以教你真正有用的东西，但前提是你答应他一件事——不要走上他的老路。",
+      "type": "social",
+      "ageRange": [18, 24],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "跟随导师学习，接受他的人生经验", "effects": { "TECH": 3, "REP": 2, "HUMAN": 2 } },
+        { "id": "branch_2", "text": "保持怀疑，只学有用的技术不深入交往", "effects": { "TECH": 2, "STYLE": 1, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 2, "REP": 1 },
+      "tags": ["青年", "夜校", "导师", "成长"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 145,
+      "title": "被星探发现去拍全息广告",
+      "description": "你在日本街闲逛时，一个戴着墨镜的女人拦住了你。她说她是广告公司的星探，你的「街头气质」正是他们要找的。她递给你一张名片，让你去试镜一个全息广告。拍摄当天你站在聚光灯下，导演让你摆出各种酷酷的姿势。当你的全息影像放大到整个摩天大楼的外墙上时，你在街道上仰头看着自己——那个巨大的、发光的自己。",
+      "type": "social",
+      "ageRange": [18, 25],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "抓住机会进入广告模特行业", "effects": { "MONEY": 3, "STYLE": 3, "REP": 2 } },
+        { "id": "branch_2", "text": "拍完广告拿了报酬就撤，不想被曝光", "effects": { "MONEY": 2, "STYLE": 1, "HUMAN": 1 } }
+      ],
+      "effects": { "STYLE": 2, "MONEY": 1 },
+      "tags": ["青年", "星探", "广告", "全息"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 146,
+      "title": "参加一次有组织的慈善活动",
+      "description": "社区组织了一次面向贫民窟儿童的慈善活动，你被拉去当了志愿者。活动在一个破旧的社区中心举行，你负责给孩子们分发食物和学习用品。一个扎着双马尾的小女孩拉着你的衣角问：「哥哥，你相信长大以后会变好吗？」你看着周围破败的环境和孩子们纯真的眼睛，一时不知道该怎么回答。",
+      "type": "social",
+      "ageRange": [18, 25],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "被触动了内心，决心以后多做善事", "effects": { "HUMAN": 4, "TRAUMA": -1, "REP": 1 } },
+        { "id": "branch_2", "text": "虽然感动但更现实地明白世界不会变好", "effects": { "HUMAN": 1, "TRAUMA": 1, "STYLE": 2 } }
+      ],
+      "effects": { "HUMAN": 2, "TRAUMA": -1 },
+      "tags": ["青年", "慈善", "志愿", "社区"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 147,
+      "title": "在摩天楼顶看着全城发誓要改变命运",
+      "description": "你偷偷爬上了一栋废弃摩天大楼的楼顶。站在这个世界的最顶端，夜之城在你脚下铺展开来——流光溢彩的霓虹、密密麻麻的飞行车流、远处闪烁的全息广告。风吹乱了你的头发，你的心跳和城市的脉搏共振。你对着这座吃人的城市发誓：你不会成为它的养料，你会成为它的主人。不管付出什么代价。",
+      "type": "special",
+      "ageRange": [18, 25],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "立下宏愿，开始为梦想拼命奋斗", "effects": { "STYLE": 2, "TECH": 2, "REP": 2 } },
+        { "id": "branch_2", "text": "看着城市感到孤独和迷茫", "effects": { "HUMAN": 1, "TRAUMA": 1, "TECH": 1 } }
+      ],
+      "effects": { "STYLE": 1, "REP": 1 },
+      "tags": ["青年", "决心", "夜之城", "命运"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 148,
+      "title": "在废弃地铁站发现秘密地下社区",
+      "description": "你在追踪一只流浪猫时钻进了沃森区一处废弃的地铁隧道。走了大约二十分钟后，眼前豁然开朗——一个隐藏的地下社区出现在你面前。几十个人在这里搭建了简陋的家园，有发电机、淡水净化装置和菜园。他们是从地面世界逃离的人——被债务压垮的、被帮派追杀的、被企业抹去身份的人。这里自成一体，与世隔绝。",
+      "type": "special",
+      "ageRange": [18, 25],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "加入地下社区，学习他们的生存方式", "effects": { "LIFE": 3, "TECH": 1, "HUMAN": 1 } },
+        { "id": "branch_2", "text": "保守秘密，但偶尔给他们送补给", "effects": { "HUMAN": 3, "MONEY": -1, "REP": 1 } }
+      ],
+      "effects": { "HUMAN": 2, "LIFE": 1 },
+      "tags": ["青年", "地下", "社区", "隐秘"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 149,
+      "title": "被征召参加企业青年才能大赛",
+      "description": "一封来自荒坂集团的信件送到了你手上——你被邀请参加公司举办的「明日之星」青年才能大赛。信上说你被某个匿名的推荐人提名了。比赛内容包括智力竞赛、体能测试和模拟商业挑战。获胜者将获得一份丰厚的奖学金和进入荒坂集团工作的直通车票。你知道这是一个陷阱——但也可能是你这辈子唯一的机会。",
+      "type": "social",
+      "ageRange": [18, 25],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "参加比赛，全力以赴争取冠军", "effects": { "REP": 3, "MONEY": 3, "TECH": 2 } },
+        { "id": "branch_2", "text": "怀疑有诈，拒绝参加", "effects": { "HUMAN": 1, "TRAUMA": 1, "STYLE": 1 } }
+      ],
+      "effects": { "REP": 1, "TECH": 1 },
+      "tags": ["青年", "企业", "竞赛", "荒坂"],
       "deathChainEntry": false
     }
   ]

@@ -1,0 +1,4631 @@
+{
+  "events": [
+    {
+      "id": 3200,
+      "title": "神经教堂的周日礼拜",
+      "description": "你走进一座改建过的全息教堂，穹顶投射着不断变换的数字圣徒像。神经牧师通过脑机接口直接向信徒广播布道，那种直达灵魂的震颤让你头皮发麻。信徒们集体闭眼，沉浸在共享的宗教体验中。 donation 篮在全息光柱间传递。",
+      "type": "social",
+      "ageRange": [
+        16,
+        75
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接入神经布道，感受集体信仰",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": -1,
+            "MONEY": -200
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只在后排静坐旁观",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "趁机顺走捐款篮里的信用点",
+          "effects": {
+            "MONEY": 300,
+            "REP": -3,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "STYLE": 1
+      },
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3201,
+      "title": "赛博基督的血肉圣餐",
+      "description": "神经教堂推出新型圣餐——据说是用合成干细胞培养的\"赛博基督之血\"。牧师说这能让信徒与神机直接联网，获得片刻的宁静。你看着前排信徒饮下后露出狂喜的表情，有人在哭，有人在笑。圣杯递到了你面前。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "饮下圣餐，拥抱神圣体验",
+          "effects": {
+            "LIFE": -1,
+            "TRAUMA": -2,
+            "HUMAN": 1,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "婉拒，只做一个旁观者",
+          "effects": {
+            "HUMAN": 1,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3202,
+      "title": "数字忏悔室",
+      "description": "教堂的忏悔室升级成了全自动的神经忏悔舱。AI神父用温和的合成音引导你吐露罪愆，据说它会读取你的记忆碎片来\"评估\"忏悔的诚意。忏悔越深，赦免的\"灵魂净化包\"等级越高。你坐进舱内，舱门缓缓关闭。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全盘托出，求一个彻底净化",
+          "effects": {
+            "TRAUMA": -3,
+            "REP": -2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "编造些无伤大雅的小罪",
+          "effects": {
+            "REP": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝忏悔，愤然离舱",
+          "effects": {
+            "TRAUMA": 1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3203,
+      "title": "末日教派的街头招募",
+      "description": "一个穿着银色长袍的布道者在街角宣扬\"大断网\"即将来临，唯有加入\"净化者\"才能在数字末日中得救。他递给你一枚闪烁的神经符牌，声称戴上就能屏蔽恶魔信号。周围几个流浪者已经双手合十跪了下来。",
+      "type": "social",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入教派，寻求归属",
+          "effects": {
+            "HUMAN": 2,
+            "MONEY": -500,
+            "TRAUMA": -1,
+            "TECH": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拿走符牌但拒绝入教",
+          "effects": {
+            "STYLE": 1,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "当众揭穿他是个骗子",
+          "effects": {
+            "REP": 2,
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3204,
+      "title": "教堂义卖与圣物拍卖",
+      "description": "神经教堂举办年度义卖，摆满了\"开过光\"的旧义体零件、圣化的数据芯片和号称能驱邪的全息护身符。一个老信徒向你兜售一枚据说是初代牧师用过的神经念珠。义卖所得据说全用于社区救济，但你心存疑虑。",
+      "type": "social",
+      "ageRange": [
+        16,
+        75
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "慷慨解囊，买下圣物",
+          "effects": {
+            "MONEY": -400,
+            "HUMAN": 2,
+            "REP": 2,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只买点便宜的小玩意",
+          "effects": {
+            "MONEY": -100,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "质疑义卖款项去向",
+          "effects": {
+            "REP": 1,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3205,
+      "title": "虚拟耶路撒冷朝圣",
+      "description": "教堂推出\"虚拟朝圣\"服务——戴上神经头盔，你就能\"亲临\"数字重建的圣城。据说完成全程朝圣的信徒会获得永久的精神加成。头盔租赁费不菲，但前排的体验者走出来时都泪流满面。",
+      "type": "social",
+      "ageRange": [
+        16,
+        80
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "付费完成虚拟朝圣",
+          "effects": {
+            "MONEY": -600,
+            "TRAUMA": -3,
+            "HUMAN": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "和朋友拼团体验",
+          "effects": {
+            "MONEY": -300,
+            "HUMAN": 2,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3206,
+      "title": "信仰危机与退教",
+      "description": "你发现神经教堂的高层牧师私底下用信徒的忏悔数据做黑市交易。信仰的根基在崩塌，你站在教堂门口犹豫不决。退教意味着失去整个教友圈子，但留下又违背良知。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "公开揭露丑闻，毅然退教",
+          "effects": {
+            "REP": 3,
+            "HUMAN": -2,
+            "TRAUMA": 1,
+            "MONEY": -200
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "默默退教，远走他乡",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "假装什么都没发生",
+          "effects": {
+            "HUMAN": -2,
+            "TRAUMA": 2,
+            "MONEY": 200
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3207,
+      "title": "街区的合成肉烧烤派对",
+      "description": "邻居老约翰在楼顶天台办了场烧烤派对，用的是廉价的合成肉排和自酿的发光啤酒。半个街区的人都来了，义体手臂在烤架间穿梭，孩子们的全息风筝在头顶飘荡。这是这片破败街区少有的温情时刻。",
+      "type": "daily",
+      "ageRange": [
+        10,
+        70
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "带上一箱合成饮料赴宴",
+          "effects": {
+            "MONEY": -150,
+            "HUMAN": 3,
+            "REP": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "帮老约翰烤肉，露一手",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "窝在家里不去",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3208,
+      "title": "邻里守望联盟夜巡",
+      "description": "街区最近频发入室盗窃，居民们自发组织了邻里守望联盟。今晚轮到你值夜班，手持电击棒和社区配发的廉价扫描仪，在昏暗的走廊里巡逻。每一声异响都让你的神经紧绷。",
+      "type": "social",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "认真巡逻，保护邻里",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "TRAUMA": 1,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "敷衍了事，躲在楼道刷手机",
+          "effects": {
+            "HUMAN": -1,
+            "ADDICTION": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3209,
+      "title": "屋顶社区花园计划",
+      "description": "几个邻居想在废弃楼顶开辟一座社区花园，种点真正的蔬菜——这在合成食品泛滥的年代简直是奢侈品。他们拉你入伙，但需要人力清运瓦砾、搭建水培系统。新鲜的泥土气息让人怀念旧世界。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全力投入花园建设",
+          "effects": {
+            "HUMAN": 3,
+            "LIFE": 1,
+            "MONEY": -100,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只捐点钱不亲自动手",
+          "effects": {
+            "MONEY": -300,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3210,
+      "title": "楼栋居民大会的争吵",
+      "description": "业主委员会召开居民大会，议题是电梯维修费分摊。底层住户和顶层住户吵得不可开交，有人拍桌子，有人全息投影自己的账单。物业经理的合成人助理在一旁机械地记录。气氛剑拔弩张。",
+      "type": "social",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "居中调停，提出折中方案",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "MONEY": -200
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "站底层住户这边",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "提前离场，懒得掺和",
+          "effects": {
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3211,
+      "title": "邻居的噪音纠纷",
+      "description": "隔壁的赛博摇滚迷每晚都用全息音响放歌到凌晨，你的神经植入体都快被震出故障了。今天你终于忍无可忍，敲响了他的门。门缝里透出紫色的霓虹光和浓烈的大麻味。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "客气协商，送他一副降噪耳塞",
+          "effects": {
+            "MONEY": -80,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "强硬威胁要报警",
+          "effects": {
+            "REP": -1,
+            "TRAUMA": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "黑进他的音响系统让它永久静音",
+          "effects": {
+            "TECH": 2,
+            "REP": -2,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3212,
+      "title": "街区跳蚤市场",
+      "description": "周末街区封锁了一条街办跳蚤市场，居民们摆出各种旧时代的遗物——断了一根弦的吉他、过期的营养膏、还能用的老式键盘。一个老太太在卖她丈夫留下的军功章。讨价还价声此起彼伏。",
+      "type": "daily",
+      "ageRange": [
+        10,
+        75
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "摆个摊卖自己的旧货",
+          "effects": {
+            "MONEY": 250,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "淘宝捡漏",
+          "effects": {
+            "MONEY": -150,
+            "TECH": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "买下老太太的军功章还给她",
+          "effects": {
+            "MONEY": -200,
+            "HUMAN": 3,
+            "REP": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3213,
+      "title": "街区的赛博万圣节",
+      "description": "万圣节到了，孩子们装成各种义体怪物挨家挨户讨糖——有人装成失控的军用义体人，有人装成企业执行官。街区挂满了橘色全息南瓜灯。你家门口也聚集了一群\"小怪物\"。",
+      "type": "social",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "准备一大袋合成糖果分发",
+          "effects": {
+            "MONEY": -120,
+            "HUMAN": 3,
+            "REP": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "把家布置成鬼屋吓唬人",
+          "effects": {
+            "STYLE": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "关灯假装不在家",
+          "effects": {
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3214,
+      "title": "全息直播的深夜秀",
+      "description": "你心血来潮开了场深夜全息直播，随便聊聊在赛博美国的一天。没想到在线人数蹭蹭上涨，弹幕像瀑布一样刷屏。有人给你打赏，有人骂你，还有人发来诡异的私信。流量来得猝不及防。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "乘势猛料，越聊越嗨",
+          "effects": {
+            "REP": 3,
+            "ADDICTION": 1,
+            "TRAUMA": 1,
+            "MONEY": 150
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "保持克制，平稳下播",
+          "effects": {
+            "REP": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "见好就收，关播睡觉",
+          "effects": {
+            "LIFE": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3215,
+      "title": "病毒式挑战赛",
+      "description": "网上流行一个\"义体极限挑战\"——在直播中激活自己最强的义体功能并维持最久。已经有好几个人因为过载进了医院，但冠军能拿到企业赞助的大奖。你的关注列表里一半人都在刷这个。",
+      "type": "social",
+      "ageRange": [
+        16,
+        45
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "硬着头皮参加挑战",
+          "effects": {
+            "CHROME": 2,
+            "LIFE": -2,
+            "REP": 3,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拍个搞笑的吐槽视频蹭热度",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "发帖呼吁大家别玩命",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3216,
+      "title": "网络骂战升级",
+      "description": "你在论坛上和人因为\"合成肉算不算真肉\"吵了起来，对方扒出你的旧帖疯狂嘲讽。现在骂战升级成了人身攻击，围观群众越来越多，还有人开始下注赌谁先破防。键盘敲得火星四溅。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用更毒的嘴反击到底",
+          "effects": {
+            "REP": -1,
+            "TRAUMA": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "晒出实锤数据一锤定音",
+          "effects": {
+            "TECH": 1,
+            "REP": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拉黑退群，不跟傻逼论长短",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3217,
+      "title": "粉丝暴涨的烦恼",
+      "description": "你的一条吐槽视频意外爆红，一夜涨了二十万粉。私信爆满，合作邀约雪花般飞来，但也冒出一堆黑粉和骚扰信息。你的社交账号突然成了公众焦点，连下楼买咖啡都有人认出你。",
+      "type": "social",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接下商业合作趁热变现",
+          "effects": {
+            "MONEY": 800,
+            "REP": 2,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "保持独立，只发自己想发的",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "吓得注销账号躲清净",
+          "effects": {
+            "HUMAN": 1,
+            "REP": -2,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3218,
+      "title": "隐私数据大泄露",
+      "description": "你常用的社交平台爆出数据泄露，你的聊天记录、定位轨迹甚至神经接口日志全被挂到了暗网。你收到一封勒索邮件，要求付钱否则把你的私密对话公之于众。手机不停弹出陌生人的骚扰消息。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "付钱息事宁人",
+          "effects": {
+            "MONEY": -1000,
+            "DEBT": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找懂技术的朋友反向追踪黑客",
+          "effects": {
+            "TECH": 2,
+            "MONEY": -300,
+            "REP": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "报警并公开抗议平台",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3219,
+      "title": "网红合作邀约",
+      "description": "一个百万粉的赛博美食网红邀请你合作拍一期\"贫民窟街边摊探店\"。对方流量惊人，但分成很坑，而且要求你表现得越惨越好来博眼球。合同就摆在你的全息桌面上。",
+      "type": "social",
+      "ageRange": [
+        16,
+        45
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "签合同，配合演出",
+          "effects": {
+            "MONEY": 600,
+            "REP": 2,
+            "HUMAN": -2,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "坚持真实呈现，重新谈判",
+          "effects": {
+            "MONEY": 300,
+            "REP": 3,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝合作，不卖惨",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3220,
+      "title": "账号被封号",
+      "description": "你因为在直播中无意展示了企业的logo，被平台以\"侵权\"为由封号七天。账号上还有没提现的打赏和一堆粉丝的留言。申诉按钮灰着，客服是个人工智障。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "老老实实等解封",
+          "effects": {
+            "REP": -1,
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找内部人花钱解封",
+          "effects": {
+            "MONEY": -500,
+            "REP": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "转战暗网平台重建账号",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3221,
+      "title": "全息巨星的签名见面会",
+      "description": "当红全息巨星霓虹·凯在商场办签名会，粉丝从地下排到三楼。她的\"签名\"是往粉丝的神经芯片里写入一段专属全息留言。队伍里有人激动得义体过载冒烟。你也排在了队伍里。",
+      "type": "social",
+      "ageRange": [
+        12,
+        50
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "耐心排队求签名",
+          "effects": {
+            "MONEY": -200,
+            "REP": 1,
+            "HUMAN": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "买黄牛的VIP快速通道",
+          "effects": {
+            "MONEY": -600,
+            "REP": 2,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "挤到前面偷拍独家照片",
+          "effects": {
+            "REP": -2,
+            "STYLE": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3222,
+      "title": "地下俱乐部的明星偶遇",
+      "description": "你在一家会员制地下俱乐部喝酒，发现角落卡座里坐着一位戴墨镜的当红说唱巨星。他正和几个打扮低调的人低声交谈，桌上摊着一份看起来像合同的全息文件。他注意到了你的目光。",
+      "type": "social",
+      "ageRange": [
+        21,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "壮着胆子上前搭讪敬酒",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "STYLE": 1,
+            "MONEY": -150
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "识趣地移开视线装没看见",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "偷拍发到八卦论坛",
+          "effects": {
+            "MONEY": 200,
+            "REP": -3,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3223,
+      "title": "卷入明星绯闻风暴",
+      "description": "一家八卦媒体拍到你和某位赛博明星在同一时间出入同一栋楼，第二天头条就变成了\"神秘新欢曝光\"。你的社交账号被粉丝和黑粉围攻，有人扒出你的住址寄来恐吓包裹。明星的经纪人联系了你。",
+      "type": "social",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "配合经纪人发联合澄清声明",
+          "effects": {
+            "REP": 1,
+            "HUMAN": 1,
+            "MONEY": 300
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "借势炒作，蹭一波流量",
+          "effects": {
+            "REP": 3,
+            "HUMAN": -2,
+            "MONEY": 500,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "彻底消失避风头",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 1,
+            "MONEY": -200
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3224,
+      "title": "明星慈善晚宴的门票",
+      "description": "你搞到一张顶级明星慈善晚宴的邀请函，到场全是名流和企业高管。拍卖环节中，一件明星穿过的演出义体手套拍出天价。香槟塔闪着金光，每个人脸上都是精心经营的微笑。",
+      "type": "social",
+      "ageRange": [
+        25,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "竞拍捐赠，混进名流圈",
+          "effects": {
+            "MONEY": -1500,
+            "REP": 4,
+            "HUMAN": 2,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只捐最低额度混吃混喝",
+          "effects": {
+            "MONEY": -300,
+            "REP": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "趁机拓展人脉谈生意",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "MONEY": 400
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3225,
+      "title": "狗仔队的围堵",
+      "description": "你因为一次偶然的曝光成了狗仔队的目标，几个全息无人机天天蹲在你家窗外。你出门买个菜都被跟拍，照片配上断章取义的标题满天飞。隐私荡然无存，神经都快崩溃了。",
+      "type": "social",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "雇保镖反跟踪取证起诉",
+          "effects": {
+            "MONEY": -800,
+            "REP": 2,
+            "TRAUMA": -1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用信号干扰器打下无人机",
+          "effects": {
+            "TECH": 2,
+            "REP": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "故意配合拍几张摆烂照",
+          "effects": {
+            "STYLE": 2,
+            "REP": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3226,
+      "title": "真人秀试镜现场",
+      "description": "一档热门真人秀\"赛博求生\"在招募选手， winner 能拿到百万合约。试镜现场挤满了奇形怪状的义体改造者，导演让你在镜头前展示\"最真实的自己\"。聚光灯烤得你直冒汗。",
+      "type": "social",
+      "ageRange": [
+        18,
+        45
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "夸张表演，博取导演眼球",
+          "effects": {
+            "REP": 2,
+            "STYLE": 2,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "展现真实的生存技能",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "临阵退缩放弃试镜",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3227,
+      "title": "明星的塌房丑闻",
+      "description": "你一直追捧的赛博偶像被爆出用深度伪造骗粉、私下歧视底层义体人。粉丝阵营分裂，有人脱粉回踩，有人死忠洗地。你看着满墙的周边海报，心里五味杂陈。",
+      "type": "social",
+      "ageRange": [
+        12,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "果断脱粉，撕毁周边",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": -1,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "继续相信，加入洗地大军",
+          "effects": {
+            "HUMAN": -1,
+            "REP": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把周边挂二手市场回血",
+          "effects": {
+            "MONEY": 200,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3228,
+      "title": "巨型购物中心的霓虹迷宫",
+      "description": "你走进一座七层高的全息购物中心，每层都闪烁着不同的广告投影，导购机器人在你身边喋喋不休。电梯里循环播放着\"你值得拥有更好\"的洗脑广告。信用卡在口袋里发烫。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "血拼一波，犒劳自己",
+          "effects": {
+            "MONEY": -700,
+            "STYLE": 3,
+            "HUMAN": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只window shopping过干瘾",
+          "effects": {
+            "ADDICTION": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "专挑打折区薅羊毛",
+          "effects": {
+            "MONEY": -200,
+            "STYLE": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3229,
+      "title": "限量球鞋的通宵排队",
+      "description": "一款号称融合了反重力义体技术的限量球鞋发售，球鞋党在店外搭起帐篷通宵排队。黄牛、黄牛的黄牛、还有雇人代排的倒爷混在一起。天还没亮，队伍已经拐了三条街。",
+      "type": "social",
+      "ageRange": [
+        14,
+        40
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "通宵排队抢原价",
+          "effects": {
+            "LIFE": -1,
+            "MONEY": -350,
+            "STYLE": 3,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "高价从黄牛手上买",
+          "effects": {
+            "MONEY": -900,
+            "STYLE": 3,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "转手当黄牛赚差价",
+          "effects": {
+            "MONEY": 500,
+            "REP": -2,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3230,
+      "title": "直播带货的深夜冲动",
+      "description": "凌晨两点你睡不着，刷到一个主播在疯狂推销\"军用级神经增强补剂\"，原价1999现价199，库存只剩最后三十件。倒计时红得刺眼，弹幕全是\"已下单\"。你的手指悬在购买键上方。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "冲动下单",
+          "effects": {
+            "MONEY": -199,
+            "ADDICTION": 1,
+            "TECH": 1,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "清醒过来关掉直播",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "查成分发现是糖水，举报维权",
+          "effects": {
+            "TECH": 1,
+            "REP": 2,
+            "MONEY": 100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3231,
+      "title": "二手义体交易市场的淘宝",
+      "description": "地下二手市场里摆满了来路不明的义体零件——有的从尸体上拆下来还带着干涸的血迹，有的标注\"企业退货瑕疵品\"。一个摊主向你推销一只成色不错的光学义眼，价格只有正品的十分之一。",
+      "type": "social",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买下义眼当场植入",
+          "effects": {
+            "CHROME": 3,
+            "MONEY": -500,
+            "LIFE": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "买下转手倒卖赚差价",
+          "effects": {
+            "MONEY": 400,
+            "TECH": 1,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "嫌脏不碰，转身离开",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3232,
+      "title": "奢侈品展厅的虚荣体验",
+      "description": "一家顶级赛博奢侈品品牌开了限时展厅，门票就要五百信用点。进去后导购给你戴上神经体验头环，让你\"感受\"拥有一只限量全息手袋的尊贵感。那种虚拟的满足感让人上瘾。",
+      "type": "social",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "体验后咬牙买下正品",
+          "effects": {
+            "MONEY": -2000,
+            "STYLE": 4,
+            "REP": 2,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只买体验不买货",
+          "effects": {
+            "MONEY": -500,
+            "STYLE": 1,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拍下设计图找山寨货",
+          "effects": {
+            "MONEY": -100,
+            "STYLE": 1,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3233,
+      "title": "信用卡连环透支",
+      "description": "你打开银行App，发现这个月已经刷爆了三张信用芯片，最低还款额都凑不齐。催收机器人的电话一天打八个，利率像滚雪球一样越滚越大。账单的全息数字红得刺眼。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "找地下钱庄过桥还债",
+          "effects": {
+            "DEBT": -2,
+            "MONEY": -300,
+            "TRAUMA": 2,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "兼三份工拼命还钱",
+          "effects": {
+            "MONEY": 400,
+            "LIFE": -2,
+            "DEBT": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "申请破产保护",
+          "effects": {
+            "DEBT": -3,
+            "REP": -3,
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3234,
+      "title": "66号公路的废墟朝圣",
+      "description": "你租了辆破旧的电动车，沿着断断续续的旧66号公路行驶。两旁是废弃的加油站、生锈的霓虹招牌和被沙暴吞没的旧小镇。导航不断失灵，你只能靠纸质地图和直觉前进。某种苍凉的浪漫扑面而来。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "一路走走停停，拍下废墟影像",
+          "effects": {
+            "MONEY": -300,
+            "HUMAN": 2,
+            "TRAUMA": -2,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在废墟里搜寻有价值的旧物",
+          "effects": {
+            "MONEY": 200,
+            "TECH": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "中途放弃折返",
+          "effects": {
+            "HUMAN": -1,
+            "MONEY": -150,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3235,
+      "title": "自动驾驶系统的致命故障",
+      "description": "公路上你的车突然弹出\"自动驾驶系统将被远程停用\"的通知，方向盘猛地锁死。前方是急转弯，你只有几秒钟反应。旁边车道一辆企业运输车呼啸而过。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "手动接管强行漂移过弯",
+          "effects": {
+            "TECH": 2,
+            "LIFE": -1,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "急刹靠边呼叫救援",
+          "effects": {
+            "MONEY": -400,
+            "LIFE": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "黑入车载系统夺回控制",
+          "effects": {
+            "TECH": 3,
+            "LIFE": -1,
+            "REP": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3236,
+      "title": "公路快餐站的霓虹绿洲",
+      "description": "深夜你把车停在一座24小时公路快餐站前，巨大的霓虹招牌在沙漠里像一座灯塔。店里只有几个长途司机和一个打瞌睡的合成人店员。咖啡机嗡嗡作响，墙上贴满了通缉令和寻人启事。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "吃份合成汉堡续命",
+          "effects": {
+            "MONEY": -80,
+            "LIFE": 1,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "和司机们攀谈打听路况",
+          "effects": {
+            "HUMAN": 2,
+            "TECH": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "细看寻人启事帮个忙",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3237,
+      "title": "企业检查站的勒索",
+      "description": "公路被企业私兵设了检查站，荷枪实弹的合成人士兵挨个盘查过往车辆。一个军官暗示只要\"自愿捐献\"就能免检快速通过。你后面的车已经被拆得七零八落。",
+      "type": "social",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "花钱消灾快速通过",
+          "effects": {
+            "MONEY": -500,
+            "REP": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "配合检查耗上两小时",
+          "effects": {
+            "MONEY": -100,
+            "TRAUMA": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "掉头走野路绕过检查站",
+          "effects": {
+            "TECH": 1,
+            "LIFE": -1,
+            "TRAUMA": 1,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3238,
+      "title": "公路劫匪的埋伏",
+      "description": "一段荒凉公路上，几辆改装摩托从沙暴中冲出，把你的车逼停。劫匪们戴着骷髅全息面具，用电磁脉冲枪指着你的脑袋。领头的让你交出车上所有值钱的东西。",
+      "type": "social",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "破财消灾，交出财物",
+          "effects": {
+            "MONEY": -600,
+            "TRAUMA": 2,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "假装配合趁机反杀",
+          "effects": {
+            "REP": 3,
+            "LIFE": -2,
+            "TRAUMA": 2,
+            "MONEY": 300
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "猛踩油门冲卡逃命",
+          "effects": {
+            "LIFE": -1,
+            "TRAUMA": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3239,
+      "title": "霓虹汽车旅馆的怪夜",
+      "description": "你住进一家价格低廉的霓虹汽车旅馆，房间墙皮剥落，全息电视只剩雪花。半夜隔壁传来诡异的敲击声，前台老头说那间房\"很久没人住了\"。窗帘缝隙里透进血红色的霓虹光。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "壮胆去隔壁查看",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "REP": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "塞上耳塞装睡熬到天亮",
+          "effects": {
+            "TRAUMA": 1,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "退房连夜上路离开",
+          "effects": {
+            "MONEY": -50,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3240,
+      "title": "沙漠地下赛车邀请",
+      "description": "一帮改装车狂热分子在干涸的盐湖床办地下赛车，奖品是一台军用级引擎。赛事没有任何安全措施，去年有三辆车翻了起火。引擎轰鸣声震得地面发颤，发车线前硝烟弥漫。",
+      "type": "social",
+      "ageRange": [
+        18,
+        45
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "报名参赛拼一把",
+          "effects": {
+            "REP": 3,
+            "MONEY": 500,
+            "LIFE": -2,
+            "TRAUMA": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "下注押冷门赚一笔",
+          "effects": {
+            "MONEY": 400,
+            "DEBT": 1,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "只当观众凑热闹",
+          "effects": {
+            "HUMAN": 1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3241,
+      "title": "合成汉堡王的招牌套餐",
+      "description": "你走进街角的合成快餐店，招牌套餐\"皇堡\"用的是第三代替成肉饼，据说口感已经和真肉差不多了。点餐屏上弹出一堆加购推荐，店员是个永远微笑的合成人。店内坐满了午休的打工人。",
+      "type": "daily",
+      "ageRange": [
+        10,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "点个豪华套餐大快朵颐",
+          "effects": {
+            "MONEY": -120,
+            "LIFE": 1,
+            "ADDICTION": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只点最便宜的开心餐",
+          "effects": {
+            "MONEY": -40,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "升级成会员卡攒积分",
+          "effects": {
+            "MONEY": -200,
+            "DEBT": 1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3242,
+      "title": "午夜得来速的怪客",
+      "description": "凌晨三点你饿得发慌，开车去快餐店的得来速通道。对讲机里传来一个沙哑的声音点了一份\"特制\"套餐，但菜单上根本没有这项。你前面那辆车的车窗溅着可疑的暗色液体。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "正常点餐拿完就走",
+          "effects": {
+            "MONEY": -60,
+            "LIFE": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "下车查看前车情况",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "TRAUMA": 2,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "掉头换家店",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3243,
+      "title": "快餐店的最低工资打工",
+      "description": "你为了还债去快餐店打工，时薪低得可怜还得戴那顶蠢透了的全息帽子。今天轮你在前台，面对一长队焦躁的顾客和一个因为拿错酱包大发雷霆的义体壮汉。经理在后厨盯着监控。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        45
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "忍气吞声干完这个班",
+          "effects": {
+            "MONEY": 180,
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "机智化解顾客怒火",
+          "effects": {
+            "MONEY": 180,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "当场甩帽辞职",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "DEBT": 1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3244,
+      "title": "营养膏促销试吃活动",
+      "description": "一家合成食品公司在广场搞新品营养膏试吃，免费派发五种口味——据说是\"革命性的味觉突破\"。试吃台前排着长队，每个人脸上都是期待又警惕的表情。推销员喊得声嘶力竭。",
+      "type": "daily",
+      "ageRange": [
+        12,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "五种口味都尝一遍",
+          "effects": {
+            "LIFE": 1,
+            "ADDICTION": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "多拿几管囤着当存粮",
+          "effects": {
+            "MONEY": 0,
+            "LIFE": 1,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "帮推销员吆喝换赠品",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "MONEY": 50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3245,
+      "title": "两大快餐连锁的街头对决",
+      "description": "两家敌对的快餐连锁在同一个十字路口开了门对门的店，今天搞起了恶性竞争——互相用全息广告轰炸对方，店员跑到街中间抢客。顾客们乐得坐收渔利，免费汉堡满天飞。",
+      "type": "daily",
+      "ageRange": [
+        12,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "两边薅羊毛吃到撑",
+          "effects": {
+            "MONEY": -30,
+            "LIFE": 2,
+            "ADDICTION": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "帮其中一家当托拉客",
+          "effects": {
+            "MONEY": 150,
+            "REP": -1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拍下闹剧发网上看戏",
+          "effects": {
+            "REP": 1,
+            "HUMAN": 1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3246,
+      "title": "全自动售餐机的故障",
+      "description": "巷子里的自动售餐机突然抽风，疯狂吐出未售出的合成三明治和饮料。附近的流浪汉和小孩蜂拥而上抢夺，机器还冒着电火花。你刚好路过，手里能接不少。",
+      "type": "daily",
+      "ageRange": [
+        10,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "赶紧抢一些囤着",
+          "effects": {
+            "MONEY": 0,
+            "LIFE": 2,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "帮流浪汉们分发食物",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "报修并守着机器等维修",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3247,
+      "title": "合成快餐的食物中毒",
+      "description": "吃完那顿便宜的合成炸鸡后，你上吐下泻了一整夜，义体消化系统都亮起了红灯。网上铺天盖地都是同一家店的食物中毒投诉。你看着医院账单和剩余的半盒炸鸡，欲哭无泪。",
+      "type": "daily",
+      "ageRange": [
+        10,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "去医院挂号治疗",
+          "effects": {
+            "MONEY": -400,
+            "LIFE": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "硬扛，买点廉价药对付",
+          "effects": {
+            "MONEY": -80,
+            "LIFE": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "联合其他受害者起诉索赔",
+          "effects": {
+            "REP": 2,
+            "MONEY": 300,
+            "TRAUMA": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3248,
+      "title": "超级碗全息观赛派对",
+      "description": "一年一度的超级碗决赛，全息投影把整个客厅变成了球场。你和朋友们的义体都在同步感受球员的撞击震动。中场秀是一位顶级全息巨星的表演，广告插播比比赛还精彩。披萨和合成啤酒堆满了茶几。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "下重注押自己看好的球队",
+          "effects": {
+            "MONEY": -500,
+            "REP": 1,
+            "ADDICTION": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "专心看球和朋友狂欢",
+          "effects": {
+            "HUMAN": 3,
+            "MONEY": -150,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "只看中场秀和广告",
+          "effects": {
+            "STYLE": 1,
+            "HUMAN": 1,
+            "MONEY": -80
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3249,
+      "title": "地下无限制格斗赛",
+      "description": "废弃仓库里搭起了一个铁笼擂台，地下格斗赛正在进行。选手们浑身都是非法军用义体，拳拳到肉，鲜血混着机油飞溅。庄家在场边疯狂收注，观众嘶吼得声带都要撕裂。你被朋友拉来下注。",
+      "type": "social",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "下注押冷门拳手暴富",
+          "effects": {
+            "MONEY": 700,
+            "DEBT": -1,
+            "ADDICTION": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "报名上台打一场",
+          "effects": {
+            "REP": 3,
+            "LIFE": -2,
+            "CHROME": 1,
+            "TRAUMA": 2,
+            "MONEY": 300
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "只当观众看个热闹",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 1,
+            "ADDICTION": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3250,
+      "title": "赛博棒球的本垒打之夜",
+      "description": "你去现场看一场棒球赛，球场上方悬浮着巨大的全息记分板。今天的投手是个装了机械臂的明星选手，球速快到肉眼难辨。第七局伸展时，全场齐唱那首老歌，热狗的香味飘满看台。",
+      "type": "social",
+      "ageRange": [
+        10,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买最贵的本垒板座位",
+          "effects": {
+            "MONEY": -300,
+            "HUMAN": 2,
+            "STYLE": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "坐外野区碰运气接本垒打",
+          "effects": {
+            "HUMAN": 1,
+            "STYLE": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在场外黄牛票区倒卖赚一笔",
+          "effects": {
+            "MONEY": 250,
+            "REP": -1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3251,
+      "title": "摩天楼的极限跑酷直播",
+      "description": "一群极限运动狂人在两百层高的摩天楼外墙上跑酷，全程直播。你站在对面的观景台看着他们在大楼玻璃幕墙上飞跃，有人失手坠落的弹幕刷个不停。组织者邀请你也来一发。",
+      "type": "social",
+      "ageRange": [
+        16,
+        40
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入跑酷挑战直播",
+          "effects": {
+            "REP": 3,
+            "LIFE": -2,
+            "STYLE": 2,
+            "TRAUMA": 2,
+            "CHROME": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "负责地面接应和直播",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "REP": 1,
+            "MONEY": 100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "劝他们别玩命",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3252,
+      "title": "地下体育博彩的陷阱",
+      "description": "一个朋友拉你进了一个地下体育博彩群，赔率比正规平台高得多。刚开始你小赚了几把，尝到甜头后越下越大。今天群里有人催你加注一场\"内定\"的格斗赛。",
+      "type": "social",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "听信内幕重仓下注",
+          "effects": {
+            "MONEY": -800,
+            "DEBT": 2,
+            "ADDICTION": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "见好就收退出群聊",
+          "effects": {
+            "MONEY": 200,
+            "HUMAN": 1,
+            "ADDICTION": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "反向操作押对面",
+          "effects": {
+            "MONEY": 600,
+            "REP": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3253,
+      "title": "义体田径锦标赛",
+      "description": "城市举办义体田径公开赛，赛道上全是装了气动义腿的选手，百米纪录已经被刷到六秒以内。观众席上的欢呼声震耳欲聋，赞助商的logo铺满了跑道。你报了名站在起跑线上。",
+      "type": "social",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全力冲刺争名次",
+          "effects": {
+            "REP": 3,
+            "CHROME": 2,
+            "LIFE": -1,
+            "TRAUMA": 1,
+            "MONEY": 300
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "保留实力重在参与",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "偷偷开启违禁加速模块",
+          "effects": {
+            "REP": 2,
+            "CHROME": 1,
+            "LIFE": -2,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3254,
+      "title": "冠军赛后的球迷暴动",
+      "description": "你支持的球队输了冠军赛，愤怒的球迷开始砸车烧店，防暴警察的无人机群已经升空。催泪瓦斯在街角弥漫，火光映红了整条街。你夹在暴徒和警察之间进退两难。",
+      "type": "social",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "趁乱跟着打砸抢一波",
+          "effects": {
+            "MONEY": 300,
+            "REP": -3,
+            "TRAUMA": 2,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "护送路人撤离危险区",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "LIFE": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "躲进店里锁门自保",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3255,
+      "title": "地下俱乐部的赛博锐舞",
+      "description": "你钻进一家没有招牌的地下俱乐部，重低音震得胸腔发麻。DJ用神经接口直接操控全息音浪，舞池里的人像被电流击中一样抽搐摇摆。激光在烟雾中切割出几何图案，空气里弥漫着合成迷幻剂的味道。",
+      "type": "social",
+      "ageRange": [
+        18,
+        45
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "嗑药蹦迪到天亮",
+          "effects": {
+            "ADDICTION": 2,
+            "TRAUMA": -1,
+            "HUMAN": 2,
+            "LIFE": -1,
+            "MONEY": -200
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "清醒蹦迪享受音乐",
+          "effects": {
+            "HUMAN": 2,
+            "STYLE": 2,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "混进DJ台偷学技术",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3256,
+      "title": "街头说唱的battle现场",
+      "description": "地铁站出口围了一圈人，两个赛博说唱歌手正在freestyle battle，韵脚像子弹一样对射。围观群众用全息投票决定胜负，赢家能拿走一罐合成啤酒和街头 cred。有人把麦克风递向了你。",
+      "type": "social",
+      "ageRange": [
+        14,
+        45
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接过麦来一段炸场",
+          "effects": {
+            "REP": 3,
+            "STYLE": 2,
+            "HUMAN": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在旁边beatbox助阵",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "录下来发网上",
+          "effects": {
+            "TECH": 1,
+            "REP": 1,
+            "MONEY": 50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3257,
+      "title": "合成器极客的现场演出",
+      "description": "一位独立合成器音乐人在废弃工厂办了场小型演出，用一堆自制模块和脑机接口即兴演奏。音色诡异又迷人，听众席地而坐闭眼沉醉。演出结束后他在卖自刻的芯片专辑。",
+      "type": "social",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买张芯片专辑支持独立音乐",
+          "effects": {
+            "MONEY": -100,
+            "STYLE": 2,
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "和音乐人交流合成器技术",
+          "effects": {
+            "TECH": 2,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "白嫖听完就走",
+          "effects": {
+            "HUMAN": -1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3258,
+      "title": "沙漠音乐节的三天狂欢",
+      "description": "一年一度的沙漠音乐节开幕了，几十万人涌进干涸的湖床，搭起霓虹帐篷城。三天三夜不间断演出，沙暴和重低音交织。物价飞涨，水源紧缺，但没人舍得离开。舞台上全息巨兽在咆哮。",
+      "type": "social",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买通票嗨满三天",
+          "effects": {
+            "MONEY": -600,
+            "HUMAN": 3,
+            "ADDICTION": 1,
+            "TRAUMA": -1,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "去当志愿者免票入场",
+          "effects": {
+            "MONEY": -100,
+            "HUMAN": 2,
+            "REP": 1,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在场外卖周边小吃赚一笔",
+          "effects": {
+            "MONEY": 500,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3259,
+      "title": "黑胶唱片店的赛博淘宝",
+      "description": "一家藏在地下室的二手唱片店还卖着上个世纪的黑胶，老板是个装了复古义眼的怪老头。他说最近收进一批战前绝版唱片，要价不菲但音质是无损的。店里弥漫着旧塑料和灰尘的气味。",
+      "type": "social",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买下绝版黑胶收藏",
+          "effects": {
+            "MONEY": -400,
+            "STYLE": 3,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "和老板聊旧时代音乐史",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": -1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "砍价淘张便宜货",
+          "effects": {
+            "MONEY": -80,
+            "STYLE": 1,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3260,
+      "title": "盗版音乐芯片的买卖",
+      "description": "一个戴兜帽的家伙在巷子里兜售盗版音乐芯片，号称装了市面上所有禁曲和未发行demo。一枚芯片只要二十信用点，但来路不明的芯片可能藏着恶意神经病毒。他压低声音招呼你过来。",
+      "type": "social",
+      "ageRange": [
+        14,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买一枚回来赌一把",
+          "effects": {
+            "MONEY": -20,
+            "TECH": 1,
+            "STYLE": 1,
+            "LIFE": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝，怕中病毒",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "举报他赚赏金",
+          "effects": {
+            "MONEY": 100,
+            "REP": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3261,
+      "title": "街区的赛博舞会之夜",
+      "description": "社区中心每周办一次露天舞会，老式的迪斯科球和最新的全息灯效混搭。从义体老太太到纹身少年都来蹦迪，DJ是个十六岁的天才少女。这是整个街区最其乐融融的夜晚。",
+      "type": "social",
+      "ageRange": [
+        10,
+        75
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "下场尽情跳舞",
+          "effects": {
+            "HUMAN": 3,
+            "STYLE": 2,
+            "TRAUMA": -2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "帮DJ调音控台",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "坐旁边喝果汁看热闹",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3262,
+      "title": "全息追剧的通宵马拉松",
+      "description": "你最喜欢的赛博惊悚剧一次性释出了整季，你决定通宵刷完。十集看完天都亮了，眼睛干涩义体过热，但你忍不住又刷了一遍彩蛋。剧中那个反派的企业阴谋让你细思极恐。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "刷完还去论坛写万字解析",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "LIFE": -1,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "适度追剧，看完就睡",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在弹幕里和黑粉大战三百回合",
+          "effects": {
+            "REP": -1,
+            "ADDICTION": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3263,
+      "title": "真人秀的观众投票权",
+      "description": "一档真人秀让观众用付费投票决定选手的去留，甚至能投票触发\"惩罚任务\"。你最喜欢的选手面临淘汰，节目组暗示只要投票够多就能翻盘。钱包在悄悄变瘪。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "疯狂氪金投票力挺偶像",
+          "effects": {
+            "MONEY": -500,
+            "REP": 1,
+            "ADDICTION": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只投免费票意思一下",
+          "effects": {
+            "HUMAN": 1,
+            "MONEY": 0
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "组织粉丝团刷票造势",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3264,
+      "title": "流媒体平台集体涨价",
+      "description": "你订阅的五个流媒体平台同时宣布涨价，理由是\"全息内容制作成本上升\"。加起来每月要吃掉你小半个月的伙食费。你盯着那一长串自动扣款提醒，陷入选择困难。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "忍痛全留，精神食粮不能断",
+          "effects": {
+            "MONEY": -300,
+            "ADDICTION": 1,
+            "HUMAN": -1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只留一个，其他找盗版",
+          "effects": {
+            "MONEY": -80,
+            "REP": -1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "全退订，改去图书馆看书",
+          "effects": {
+            "MONEY": 200,
+            "HUMAN": 2,
+            "TECH": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3265,
+      "title": "植入式广告的无孔不入",
+      "description": "你看个全息新闻，主播的发色、桌上的咖啡杯、甚至背景墙的涂鸦全是植入广告。更离谱的是，你的神经接口开始弹出\"猜你喜欢\"的商品推送。广告已经侵入你的潜意识。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "付费开会员去广告",
+          "effects": {
+            "MONEY": -200,
+            "HUMAN": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "装开源广告屏蔽插件",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "反向利用推送薅优惠券",
+          "effects": {
+            "MONEY": 150,
+            "ADDICTION": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3266,
+      "title": "实况游戏直播的百万赌注",
+      "description": "一位顶级主播直播通关一款号称\"无人能过\"的死亡游戏，全网三百万人围观。他立下flag：通关就给直播间每人发十信用点。你看着他的血量见底，下注的信用点也岌岌可危。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "下注押他通关",
+          "effects": {
+            "MONEY": -200,
+            "REP": 1,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "发弹幕给他加油支招",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "下注押他失败",
+          "effects": {
+            "MONEY": 300,
+            "REP": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3267,
+      "title": "全息综艺的参赛机会",
+      "description": "一档全息综艺在招募素人嘉宾，环节是在虚拟现实中完成各种荒诞任务。据说表现亮眼能一夜爆红，但也要签出卖部分肖像权的霸王条款。报名表的全息光标在闪。",
+      "type": "social",
+      "ageRange": [
+        18,
+        45
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "报名参加搏一把出名",
+          "effects": {
+            "REP": 3,
+            "MONEY": 500,
+            "HUMAN": -1,
+            "TRAUMA": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "细看条款后放弃",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "帮朋友一起报名组队",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "MONEY": 200
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3268,
+      "title": "独立日的全息烟火秀",
+      "description": "七月四日晚，整座城市的夜空被全息烟火点亮，红白蓝三色的巨型星条旗在天幕上缓缓展开。无人机编队拼出建国先贤的全息像，人群仰头欢呼。空气中飘着烧烤和硝烟的混合气味。",
+      "type": "social",
+      "ageRange": [
+        6,
+        80
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "去最佳观赏点占位",
+          "effects": {
+            "HUMAN": 2,
+            "STYLE": 1,
+            "TRAUMA": -2,
+            "MONEY": -50
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在家天台和邻居一起看",
+          "effects": {
+            "HUMAN": 3,
+            "MONEY": -100,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放自己的非法烟火助兴",
+          "effects": {
+            "REP": -1,
+            "STYLE": 2,
+            "LIFE": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3269,
+      "title": "国庆游行的花车与抗议",
+      "description": "一年一度的国庆大游行，企业赞助的花车一辆比一辆奢华，全息自由女神在花车上挥手。但游行队伍两旁挤满了举牌抗议企业统治的人群，防暴警察如临大敌。你站在路边不知站哪边。",
+      "type": "social",
+      "ageRange": [
+        12,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入游行队伍庆祝",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "STYLE": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "加入抗议人群发声",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在旁边摆摊卖国旗周边",
+          "effects": {
+            "MONEY": 300,
+            "REP": -1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3270,
+      "title": "爱国集会的狂热氛围",
+      "description": "一个极端爱国组织在广场举办集会，演讲者煽动性地抨击\"非美份子\"和\"外来义体威胁\"。人群情绪亢奋，挥舞着电子星条旗高喊口号。几个便衣在人群里录影。气氛让人不安。",
+      "type": "social",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "被情绪感染跟着喊两句",
+          "effects": {
+            "HUMAN": -1,
+            "REP": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "冷静观察后悄悄离开",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "当场反驳演讲者",
+          "effects": {
+            "REP": 2,
+            "LIFE": -1,
+            "TRAUMA": 2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3271,
+      "title": "后院的国庆烧烤派对",
+      "description": "独立日你在家后院支起烤架，邀请朋友们来一场老式的烧烤派对。合成热狗、合成啤酒、全息国旗挂饰，一切都很美式。邻居家的小孩在放小烟火，狗对着无人机狂吠。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "大办特办，张罗一切",
+          "effects": {
+            "MONEY": -250,
+            "HUMAN": 4,
+            "REP": 2,
+            "TRAUMA": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "potluck每人带一道菜",
+          "effects": {
+            "MONEY": -80,
+            "HUMAN": 3,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "自己烤自己吃图清净",
+          "effects": {
+            "MONEY": -50,
+            "HUMAN": -1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3272,
+      "title": "国庆特卖的消费狂欢",
+      "description": "所有商场都打着\"独立日特惠\"的旗号大促销，满街都是红白蓝的打折横幅。你本来只想买包烟，结果被导购机器人一路忽悠，购物车不知不觉就满了。\"建国先贤也会希望你买\"的广告循环播放。",
+      "type": "social",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "趁着打折囤一波必需品",
+          "effects": {
+            "MONEY": -400,
+            "LIFE": 1,
+            "HUMAN": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只买计划内的东西",
+          "effects": {
+            "MONEY": -100,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "冲动消费买一堆没用的",
+          "effects": {
+            "MONEY": -600,
+            "STYLE": 2,
+            "ADDICTION": 1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3273,
+      "title": "独立日的反政府大游行",
+      "description": "一群人借着国庆的名义上街游行，抗议企业对政府的操控和日益恶化的生存状况。他们举着\"独立已死\"的标语，焚烧企业logo的仿制品。无人机在头顶盘旋录像，便衣混在人群里。",
+      "type": "social",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入游行表达诉求",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "帮忙维持秩序保护老人",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "远远围观拍素材",
+          "effects": {
+            "TECH": 1,
+            "REP": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3274,
+      "title": "老兵纪念碑前的默哀",
+      "description": "国庆日傍晚，人群聚集在老兵纪念碑前默哀，全息投影重现了一战到赛博战争的历次战役。一位装着老式义肢的老兵在碑前久久伫立。有人献上合成花圈，有人低声啜泣。",
+      "type": "social",
+      "ageRange": [
+        10,
+        80
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "庄重默哀并献花",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "TRAUMA": -1,
+            "MONEY": -50
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "听老兵讲当年的故事",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": -1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "静静离开不凑热闹",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3275,
+      "title": "黑色星期五的商场冲锋",
+      "description": "凌晨零点商场大门一开，等候多时的人群像潮水一样涌入，踩踏声震耳欲聋。有人在门口就被挤倒，有人为了抢一台打折义体直接动拳头。你被裹挟在人潮中身不由己。",
+      "type": "social",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "冲进去抢限量特价品",
+          "effects": {
+            "MONEY": -300,
+            "STYLE": 2,
+            "LIFE": -2,
+            "TRAUMA": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在外围捡漏别人丢的",
+          "effects": {
+            "MONEY": -100,
+            "HUMAN": 1,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拍下混乱场面发新闻",
+          "effects": {
+            "REP": 2,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3276,
+      "title": "商场踩踏事故的逃生",
+      "description": "黑五抢购中发生严重踩踏，你在二楼俯瞰看到人群像多米诺骨牌一样倒下。尖叫和警报混成一片，紧急出口被人堵死。你身边的人在哭喊，你必须立刻做出决定。",
+      "type": "social",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "冲下去救人",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "LIFE": -2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找应急通道带身边的人撤离",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "自保先撤再说",
+          "effects": {
+            "HUMAN": -2,
+            "TRAUMA": 2,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3277,
+      "title": "限时秒杀的手速大战",
+      "description": "电商平台的黑五秒杀倒计时开始，限量一折义体维护包三十秒就被抢光。你的手指在神经键盘上飞舞，和成千上万的抢购脚本拼手速。刷新键快被你按碎了。",
+      "type": "social",
+      "ageRange": [
+        14,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "写脚本外挂抢秒杀",
+          "effects": {
+            "TECH": 2,
+            "MONEY": -50,
+            "REP": -1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "纯手速硬抢",
+          "effects": {
+            "MONEY": -100,
+            "HUMAN": 1,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放弃秒杀买常规折扣",
+          "effects": {
+            "MONEY": -200,
+            "HUMAN": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3278,
+      "title": "黄牛倒卖的黑五生意",
+      "description": "你发现黑五是黄牛的狂欢节，有人雇几十个人排队抢限量货再高价转卖。一个黄牛头子拉你入伙，许诺一晚上能赚半个月工资。仓库里已经堆满了抢来的货。",
+      "type": "social",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "入伙当一天黄牛",
+          "effects": {
+            "MONEY": 600,
+            "REP": -2,
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自己单干小赚一笔",
+          "effects": {
+            "MONEY": 300,
+            "REP": -1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "不干这缺德事",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3279,
+      "title": "抢购引发的持械冲突",
+      "description": "商场里两个顾客为抢最后一台打折神经头盔大打出手，一个拔出了隐藏的指刃，另一个启动了义体护甲。周围人群尖叫四散，安保机器人还在赶来的路上。你就站在旁边。",
+      "type": "social",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "冒险上前拉开两人",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "LIFE": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "趁乱拿走头盔溜之大吉",
+          "effects": {
+            "MONEY": 0,
+            "STYLE": 1,
+            "REP": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "躲到安全处报警",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3280,
+      "title": "仓库大甩卖的寻宝",
+      "description": "一家倒闭的零售商在郊区仓库清仓甩卖，全场一折起。仓库里堆得像迷宫，你翻箱倒柜想找点值钱的遗珠。角落里一个落灰的箱子里似乎藏着好东西。人群像秃鹫一样在货架间盘旋。",
+      "type": "social",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "耐心淘宝挖到好货",
+          "effects": {
+            "MONEY": -150,
+            "TECH": 2,
+            "STYLE": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "抢大家都在抢的大件",
+          "effects": {
+            "MONEY": -300,
+            "LIFE": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "和老板套近乎拿内部价",
+          "effects": {
+            "MONEY": -100,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3281,
+      "title": "网购狂欢后的退货地狱",
+      "description": "黑五你网购了一堆东西，到货后发现一半是瑕疵品或货不对板。退货流程繁琐得让人崩溃，客服机器人在无限循环。你的客厅堆满了待退的快递盒。",
+      "type": "social",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "挨个走退货流程维权",
+          "effects": {
+            "MONEY": 400,
+            "HUMAN": -1,
+            "TRAUMA": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "嫌麻烦将就用了",
+          "effects": {
+            "MONEY": -200,
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "挂二手平台折价出",
+          "effects": {
+            "MONEY": 200,
+            "REP": -1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3282,
+      "title": "老兵酒吧的深夜酒局",
+      "description": "你走进一家老兵专属酒吧，墙上挂满了褪色的战旗和阵亡将士照片。几个装着老式军用义体的老兵在角落喝闷酒，酒保也是个缺了半张脸的退伍兵。空气里弥漫着廉价威士忌和旧伤疤的气味。",
+      "type": "social",
+      "ageRange": [
+        21,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "请老兵们喝一轮听故事",
+          "effects": {
+            "MONEY": -200,
+            "HUMAN": 3,
+            "TRAUMA": -1,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "安静地喝完自己的酒",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "打听黑市军火的门路",
+          "effects": {
+            "TECH": 1,
+            "REP": -1,
+            "MONEY": -100,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3283,
+      "title": "PTSD互助小组的分享",
+      "description": "社区办了一个退伍军人PTSD互助小组，围坐的都是被战争噩梦折磨的人。有人讲到战场上的画面时义体不受控制地颤抖。轮到你发言时，所有人都安静地看着你。",
+      "type": "social",
+      "ageRange": [
+        21,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "敞开心扉讲述自己的创伤",
+          "effects": {
+            "TRAUMA": -3,
+            "HUMAN": 3,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只听不说，默默陪伴",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "受不了氛围中途离场",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3284,
+      "title": "退伍军人医院的漫长等待",
+      "description": "你去退伍军人医院做义体维护，候诊大厅挤满了等了几个小时的受伤老兵。墙上的屏幕循环播放着\"感谢您的服役\"，但医疗资源严重不足。一个护士喊到了你的号。",
+      "type": "social",
+      "ageRange": [
+        25,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "耐心排队等免费维护",
+          "effects": {
+            "CHROME": 2,
+            "LIFE": 1,
+            "TRAUMA": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "等不及去私人诊所",
+          "effects": {
+            "MONEY": -600,
+            "CHROME": 3,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "帮旁边行动不便的老兵跑腿",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3285,
+      "title": "战场老战友的意外重逢",
+      "description": "你在街头被一个满脸伤疤的男人认出，他喊出你当年的军中绰号——竟是失联多年的老战友。他拉你去喝酒，絮絮叨叨说起这些年的遭遇。他似乎想托你帮个忙。",
+      "type": "social",
+      "ageRange": [
+        25,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "倾力帮助老战友",
+          "effects": {
+            "HUMAN": 3,
+            "MONEY": -300,
+            "REP": 2,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "寒暄几句后婉拒帮忙",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "先弄清他要帮什么再决定",
+          "effects": {
+            "HUMAN": 2,
+            "TECH": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3286,
+      "title": "战争回忆录的出版邀约",
+      "description": "一家出版社联系你，想把你当年的赛博战争经历写成回忆录出版。编辑说要\"加料\"才好卖，暗示你编造些血腥刺激的情节。你的战时日记锁在抽屉里，泛黄的全息照片在闪烁。",
+      "type": "social",
+      "ageRange": [
+        30,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "如实记录，拒绝编造",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "TRAUMA": -2,
+            "MONEY": 300
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "按编辑要求加料",
+          "effects": {
+            "MONEY": 800,
+            "REP": 1,
+            "HUMAN": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝出版，往事不愿再提",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3287,
+      "title": "退伍军人日的游行方阵",
+      "description": "退伍军人日大游行，你穿上旧军装站进方阵。两旁的人群有的鼓掌致敬，有的举着反战标语嘘声一片。你的旧伤在隐隐作痛，旧战友的阵亡全息像在花车上缓缓飘过。",
+      "type": "social",
+      "ageRange": [
+        25,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "昂首挺胸走完全程",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "TRAUMA": -1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "走到一半因伤退出",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 1,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "借机呼吁改善老兵待遇",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3288,
+      "title": "桥下的赛博流浪者营地",
+      "description": "高架桥下聚居着一群流浪者，他们用废弃的全息屏和防水布搭起窝棚，义体用胶带缠着勉强运作。一个失去双腿的老兵坐在购物车上和你搭话，递来一根卷烟。营地角落传来孩子的哭声。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "留下些钱和食物",
+          "effects": {
+            "MONEY": -150,
+            "HUMAN": 3,
+            "REP": 2,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "和他们聊聊天了解处境",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": -1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "匆匆离开不想沾边",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3289,
+      "title": "街头施食点的志愿帮工",
+      "description": "一个慈善组织在街角支起施食点，给流浪者派发合成浓汤和旧衣物。志愿者人手严重不足，队伍排到了街尾。一个沉默的流浪汉接过汤时，全息义眼里闪过一丝感激。",
+      "type": "social",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "留下来当半天志愿者",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "TRAUMA": -2,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "捐一笔钱就离开",
+          "effects": {
+            "MONEY": -200,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "领一份汤自己也填填肚子",
+          "effects": {
+            "MONEY": 0,
+            "LIFE": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3290,
+      "title": "赛博乞丐的二维码乞讨",
+      "description": "一个装着破旧义肢的乞丐举着一块全息牌，上面是他的\"打赏二维码\"和悲惨身世。牌上还显示实时打赏金额和排行榜。你犹豫着要不要扫，周围路人大多视而不见。",
+      "type": "social",
+      "ageRange": [
+        12,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "扫码打赏一点",
+          "effects": {
+            "MONEY": -50,
+            "HUMAN": 2,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "和他聊聊帮他想办法",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "怀疑是骗子绕道走",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3291,
+      "title": "流浪者收容所的一夜",
+      "description": "你无处可去，排队进了每晚限流的流浪者收容所。里面拥挤嘈杂，有人在咳血，有人在嘟囔着战场上的话。一个社工轻声告诉你有空位，但得先交出所有义体武器。走廊的灯光惨白。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "交出武器住一晚",
+          "effects": {
+            "LIFE": 2,
+            "HUMAN": 1,
+            "TRAUMA": -1,
+            "CHROME": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "宁可睡街头也不交武器",
+          "effects": {
+            "LIFE": -1,
+            "TRAUMA": 1,
+            "CHROME": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "帮社工安抚其他住客",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3292,
+      "title": "纸板城市的扩建纠纷",
+      "description": "流浪者在公园一角搭起的\"纸板城\"越扩越大，周边居民投诉不断，市政府下达了清拆令。清场日到了，推土机和防暴警察在纸板城外列阵，里面的人死死不肯走。你刚好路过。",
+      "type": "social",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮流浪者搬运财物",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "TRAUMA": 1,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "现场直播呼吁关注",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "不掺和，绕路离开",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3293,
+      "title": "街头流浪艺人的琴声",
+      "description": "地铁通道里一个流浪艺人用一把缺弦的吉他和喉部义体合成器演奏，歌声沙哑却动人。他面前放着一顶装着零钱的旧帽子，旁边的全息牌写着\"曾是签约歌手，被AI取代\"。回声在隧道里荡漾。",
+      "type": "social",
+      "ageRange": [
+        12,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "驻足聆听并打赏",
+          "effects": {
+            "MONEY": -50,
+            "HUMAN": 2,
+            "TRAUMA": -1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "帮他录段视频发网上",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "买下他的自制芯片专辑",
+          "effects": {
+            "MONEY": -80,
+            "STYLE": 2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3294,
+      "title": "强制清场中的老人",
+      "description": "清场行动中，一个坐在轮椅上的流浪老人死死抱住他唯一的包裹不肯松手。执法人员的机械臂已经伸出，围观人群有人在喊\"住手\"。老人的全义眼里没有眼泪，只有干涸的电路。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "挡在老人身前对峙",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "LIFE": -2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "帮老人把东西搬上收容车",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拍下全程曝光执法暴力",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3295,
+      "title": "富人区的无人机巡逻",
+      "description": "你误入一座云端的富人区，全自动安防无人机立刻锁定了你。这里的居民住在悬浮花园里，呼吸着过滤的纯净空气，连宠物都装着奢侈品义体。一个穿着定制西装的男人隔着力场俯视着你。",
+      "type": "social",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "礼貌解释后赶紧离开",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "趁机偷窥他们的奢华生活",
+          "effects": {
+            "STYLE": 1,
+            "REP": -1,
+            "TRAUMA": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "对着力场竖中指抗议",
+          "effects": {
+            "REP": -2,
+            "STYLE": 2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3296,
+      "title": "贫民窟的走访纪实",
+      "description": "你跟随一个独立记者深入最底层的贫民窟，这里的居民住在漏水的集装箱里，喝着再生水，义体全是从垃圾堆里拼凑的。一个母亲抱着生病的孩子向你求助，记者的镜头对准了他们。",
+      "type": "social",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "掏空口袋帮助那对母子",
+          "effects": {
+            "MONEY": -300,
+            "HUMAN": 4,
+            "REP": 2,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "帮记者记录真实影像",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TECH": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "受不了转头离开",
+          "effects": {
+            "HUMAN": -2,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3297,
+      "title": "阶级冲突的街头对峙",
+      "description": "一条街的分界线两侧，底层居民举着\"我们要干净水\"的标语，对面富人区的保安举着电击盾牌严阵以待。有人扔出了第一块砖，无人机群升空。你站在分界线正中间，两边的怒火都在燃烧。",
+      "type": "social",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "站到底层居民一边",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "LIFE": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "居中调停避免流血",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 3,
+            "TRAUMA": 1,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "躲进路边店里避险",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3298,
+      "title": "富豪慈善晚宴的虚伪",
+      "description": "你混进了一场富豪慈善晚宴，觥筹间名流们高谈阔论\"消除贫困\"，但晚宴的花费够养活一个贫民窟半年。拍卖环节中，有人花百万买下一幅\"底层人民\"主题的全息画。香槟泡沫里全是讽刺。",
+      "type": "social",
+      "ageRange": [
+        21,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "当场质问这种虚伪",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "TRAUMA": 1,
+            "MONEY": -200
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "蹭吃蹭喝顺便偷点值钱的",
+          "effects": {
+            "MONEY": 500,
+            "REP": -2,
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "和某个有良心的富豪搭上线",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "MONEY": 300
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3299,
+      "title": "阶层跃升的残酷选拔",
+      "description": "一家顶级企业举办\"破格选拔赛\"，声称给底层一个跃升精英的机会。实则是一场残酷的淘汰真人秀，失败者不仅要走，还要签保密协议。你站在海选现场，周围全是怀揣梦想的底层人。聚光灯冷得像刀。",
+      "type": "social",
+      "ageRange": [
+        18,
+        45
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全力以赴争取跃升机会",
+          "effects": {
+            "REP": 3,
+            "MONEY": 500,
+            "HUMAN": -1,
+            "TRAUMA": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "低调表现稳扎稳打",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "看透本质后主动退赛",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": -1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会"
+      ]
+    }
+  ]
+}

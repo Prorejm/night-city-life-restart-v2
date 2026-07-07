@@ -10,10 +10,10 @@
       "repeatable": true,
       "cooldown": 5,
       "branches": [
-        { "id": "branch_1", "text": "东拼西凑，借钱交租", "effects": { "MONEY": -1500, "MENTAL": -1, "NETWORK": -1 } },
-        { "id": "branch_2", "text": "请求宽限一周，承诺尽快补上", "effects": { "CHARISMA": 1, "MONEY": -500, "STREET_SMART": 1 } }
+        { "id": "branch_1", "text": "东拼西凑，借钱交租", "effects": { "MONEY": -1500, "TRAUMA": -1, "REP": -1 } },
+        { "id": "branch_2", "text": "请求宽限一周，承诺尽快补上", "effects": { "HUMAN": 1, "MONEY": -500 } }
       ],
-      "effects": { "MONEY": -800, "MENTAL": -1 },
+      "effects": { "MONEY": -800, "TRAUMA": -1 },
       "tags": ["住房", "房租", "催缴", "贫困"],
       "deathChainEntry": false
     },
@@ -27,10 +27,10 @@
       "repeatable": true,
       "cooldown": 20,
       "branches": [
-        { "id": "branch_1", "text": "寻找法律援助，试图对抗驱逐", "effects": { "MONEY": -2000, "MENTAL": -2, "KARMA": 1 } },
-        { "id": "branch_2", "text": "开始找新的住处，准备搬家", "effects": { "MONEY": -1000, "MENTAL": -1, "STREET_SMART": 1 } }
+        { "id": "branch_1", "text": "寻找法律援助，试图对抗驱逐", "effects": { "MONEY": -2000, "TRAUMA": -2, "HUMAN": 1 } },
+        { "id": "branch_2", "text": "开始找新的住处，准备搬家", "effects": { "MONEY": -1000, "TRAUMA": -1 } }
       ],
-      "effects": { "MENTAL": -2, "MONEY": -500 },
+      "effects": { "TRAUMA": -2, "MONEY": -500 },
       "tags": ["住房", "驱逐", "法院", "通知"],
       "deathChainEntry": false
     },
@@ -44,10 +44,10 @@
       "repeatable": true,
       "cooldown": 12,
       "branches": [
-        { "id": "branch_1", "text": "紧急找新室友分摊房租", "effects": { "MONEY": -600, "NETWORK": 1, "STREET_SMART": 1 } },
-        { "id": "branch_2", "text": "独自承担房租，削减其他开支", "effects": { "MONEY": -1200, "MENTAL": -2 } }
+        { "id": "branch_1", "text": "紧急找新室友分摊房租", "effects": { "MONEY": -600, "REP": 1 } },
+        { "id": "branch_2", "text": "独自承担房租，削减其他开支", "effects": { "MONEY": -1200, "TRAUMA": -2 } }
       ],
-      "effects": { "MONEY": -800, "MENTAL": -1 },
+      "effects": { "MONEY": -800, "TRAUMA": -1 },
       "tags": ["住房", "室友", "搬走", "经济"],
       "deathChainEntry": false
     },
@@ -61,10 +61,10 @@
       "repeatable": false,
       "cooldown": 0,
       "branches": [
-        { "id": "branch_1", "text": "争取搬走更多个人物品，减少损失", "effects": { "STREET_SMART": 2, "MONEY": -500, "MENTAL": -2 } },
-        { "id": "branch_2", "text": "联合其他住户抗议查封", "effects": { "KARMA": 2, "NCPD_WANTED": 2, "MENTAL": -1 } }
+        { "id": "branch_1", "text": "争取搬走更多个人物品，减少损失", "effects": { "MONEY": -500, "TRAUMA": -2 } },
+        { "id": "branch_2", "text": "联合其他住户抗议查封", "effects": { "HUMAN": 2, "DEBT": 2, "TRAUMA": -1 } }
       ],
-      "effects": { "MENTAL": -3, "MONEY": -1000 },
+      "effects": { "TRAUMA": -3, "MONEY": -1000 },
       "tags": ["住房", "查封", "驱逐", "没收"],
       "deathChainEntry": false
     },
@@ -78,10 +78,10 @@
       "repeatable": false,
       "cooldown": 0,
       "branches": [
-        { "id": "branch_1", "text": "接受现实，先住下来再说", "effects": { "MONEY": -300, "MENTAL": -2, "HEALTH": -1 } },
-        { "id": "branch_2", "text": "拒绝住这种地方，宁愿睡天桥也要找更好的", "effects": { "COOL": 2, "MONEY": -500, "STREET_SMART": 1 } }
+        { "id": "branch_1", "text": "接受现实，先住下来再说", "effects": { "MONEY": -300, "TRAUMA": -2, "LIFE": -1 } },
+        { "id": "branch_2", "text": "拒绝住这种地方，宁愿睡天桥也要找更好的", "effects": { "STYLE": 2, "MONEY": -500 } }
       ],
-      "effects": { "MONEY": -200, "MENTAL": -1 },
+      "effects": { "MONEY": -200, "TRAUMA": -1 },
       "tags": ["住房", "降级", "集装箱", "贫困"],
       "deathChainEntry": false
     },
@@ -95,10 +95,10 @@
       "repeatable": true,
       "cooldown": 3,
       "branches": [
-        { "id": "branch_1", "text": "寻找流浪者聚集地，抱团取暖", "effects": { "STREET_SMART": 2, "HEALTH": -1, "MENTAL": -2, "NETWORK": 1 } },
-        { "id": "branch_2", "text": "寻找24小时营业的场所避寒", "effects": { "STREET_SMART": 1, "HEALTH": 0, "MONEY": -50 } }
+        { "id": "branch_1", "text": "寻找流浪者聚集地，抱团取暖", "effects": { "LIFE": -1, "TRAUMA": -2, "REP": 1 } },
+        { "id": "branch_2", "text": "寻找24小时营业的场所避寒", "effects": { "LIFE": 0, "MONEY": -50 } }
       ],
-      "effects": { "MENTAL": -2, "HEALTH": -1 },
+      "effects": { "TRAUMA": -2, "LIFE": -1 },
       "tags": ["住房", "流浪", "无家可归", "天桥"],
       "deathChainEntry": false
     },
@@ -112,10 +112,10 @@
       "repeatable": true,
       "cooldown": 2,
       "branches": [
-        { "id": "branch_1", "text": "在避难所住下，尽量适应环境", "effects": { "MENTAL": -1, "HEALTH": -1, "MONEY": -50 } },
-        { "id": "branch_2", "text": "觉得这里太危险，宁愿露宿街头", "effects": { "COOL": 1, "STREET_SMART": 1 } }
+        { "id": "branch_1", "text": "在避难所住下，尽量适应环境", "effects": { "TRAUMA": -1, "LIFE": -1, "MONEY": -50 } },
+        { "id": "branch_2", "text": "觉得这里太危险，宁愿露宿街头", "effects": { "STYLE": 1 } }
       ],
-      "effects": { "MENTAL": -1, "HEALTH": -1 },
+      "effects": { "TRAUMA": -1, "LIFE": -1 },
       "tags": ["住房", "避难所", "流浪", "救济"],
       "deathChainEntry": false
     },
@@ -129,10 +129,10 @@
       "repeatable": true,
       "cooldown": 30,
       "branches": [
-        { "id": "branch_1", "text": "耐心走完所有程序，递交完整材料", "effects": { "MONEY": -300, "MENTAL": -2, "COOL": 1 } },
-        { "id": "branch_2", "text": "找文件代办中介帮忙（需要额外费用）", "effects": { "MONEY": -1500, "MENTAL": 1, "STREET_SMART": 1 } }
+        { "id": "branch_1", "text": "耐心走完所有程序，递交完整材料", "effects": { "MONEY": -300, "TRAUMA": -2, "STYLE": 1 } },
+        { "id": "branch_2", "text": "找文件代办中介帮忙（需要额外费用）", "effects": { "MONEY": -1500, "TRAUMA": 1 } }
       ],
-      "effects": { "MENTAL": -1, "MONEY": -200 },
+      "effects": { "TRAUMA": -1, "MONEY": -200 },
       "tags": ["住房", "补贴", "官僚", "申请"],
       "deathChainEntry": false
     },
@@ -146,10 +146,10 @@
       "repeatable": false,
       "cooldown": 0,
       "branches": [
-        { "id": "branch_1", "text": "加入占屋社区，建立新的落脚点", "effects": { "MONEY": -200, "STREET_SMART": 2, "NCPD_WANTED": 1 } },
-        { "id": "branch_2", "text": "觉得太危险，继续寻找合法住所", "effects": { "COOL": 1, "MONEY": -300 } }
+        { "id": "branch_1", "text": "加入占屋社区，建立新的落脚点", "effects": { "MONEY": -200, "DEBT": 1 } },
+        { "id": "branch_2", "text": "觉得太危险，继续寻找合法住所", "effects": { "STYLE": 1, "MONEY": -300 } }
       ],
-      "effects": { "STREET_SMART": 1, "MONEY": -100 },
+      "effects": { "MONEY": -100 },
       "tags": ["住房", "占屋", "废弃", "非法"],
       "deathChainEntry": false
     },
@@ -163,11 +163,436 @@
       "repeatable": true,
       "cooldown": 15,
       "branches": [
-        { "id": "branch_1", "text": "自掏腰包请人维修", "effects": { "MONEY": -800, "HEALTH": 1, "MENTAL": -1 } },
-        { "id": "branch_2", "text": "联合其他租户起诉房东", "effects": { "MONEY": -2000, "KARMA": 2, "MENTAL": -1 } }
+        { "id": "branch_1", "text": "自掏腰包请人维修", "effects": { "MONEY": -800, "LIFE": 1, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "联合其他租户起诉房东", "effects": { "MONEY": -2000, "HUMAN": 2, "TRAUMA": -1 } }
       ],
-      "effects": { "MONEY": -500, "MENTAL": -1, "HEALTH": -1 },
+      "effects": { "MONEY": -500, "TRAUMA": -1, "LIFE": -1 },
       "tags": ["住房", "房东", "维修", "纠纷"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 511,
+      "title": "发现超便宜的地下室",
+      "description": "你在街头公告栏上看到一张手写的招租广告——「沃森区地下室出租，月租仅需正常房价三分之一，独立入口，水电全包。」你按地址找到地方，推开锈迹斑斑的铁门，走下陡峭的水泥楼梯。地下室层高很低，你得弯着腰走路，墙壁常年渗水，空气中弥漫着霉味。角落里有一个简易床垫和一张塑料桌子。但——这个价格，你没权利挑剔太多。",
+      "type": "housing",
+      "ageRange": [18, 50],
+      "weight": 12,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "租下地下室，省下的钱做别的用", "effects": { "MONEY": -200, "LIFE": -1, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "环境太差了，继续找更好的地方", "effects": { "STYLE": 1, "MONEY": -100, "LIFE": 1 } }
+      ],
+      "effects": { "MONEY": -150, "LIFE": -1 },
+      "tags": ["住房", "地下室", "便宜", "沃森区"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 512,
+      "title": "搬到船上住",
+      "description": "你听说港口区有人出租旧船屋——其实就是废弃的渔船改造成的浮动住所。价格便宜得令人难以置信，而且还有个小甲板可以晒太阳。你去看了一下——船体锈蚀严重，每次有船经过整个房间就会摇晃，卫生间是一个挂在船尾的铁桶。但夜晚躺在船里，听着水声和远处港口的汽笛，竟然有种奇异的平静。当你看到海平线上城市的天际线时，你觉得这地方或许还不错。",
+      "type": "housing",
+      "ageRange": [20, 55],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "租下船屋，体验水上生活", "effects": { "MONEY": -250, "LIFE": 1, "STYLE": 1 } },
+        { "id": "branch_2", "text": "觉得太潮湿了，对关节不好", "effects": { "LIFE": 1, "MONEY": -100 } }
+      ],
+      "effects": { "MONEY": -200, "STYLE": 1 },
+      "tags": ["住房", "船屋", "水上", "港口"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 513,
+      "title": "集装箱社区",
+      "description": "你来到了城郊的一个「可持续住房示范项目」——实际上就是用废弃集装箱堆叠而成的社区。每个集装箱被改造成一个微型公寓，大约六平方米，配备折叠床、微型厨房和移动马桶。社区里有公用的淋浴间和洗衣房，四周拉着铁网围栏。管理方是一家中介公司，他们声称这里是「过渡性住房解决方案」。两百多个人住在集装箱里，像货物一样被整齐码放着。",
+      "type": "housing",
+      "ageRange": [18, 55],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "接受集装箱住宅，至少有个屋顶", "effects": { "MONEY": -300, "LIFE": -1, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "无法接受这种居住条件，转身离开", "effects": { "STYLE": 1, "MONEY": -200 } }
+      ],
+      "effects": { "MONEY": -200, "LIFE": -1 },
+      "tags": ["住房", "集装箱", "社区", "过渡性"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 514,
+      "title": "企业员工宿舍",
+      "description": "你所在的公司提供员工宿舍——条件是签一份两年的合同。宿舍楼在公司园区内，是一栋整洁的二十层大楼，每间房大约十五平方米，配齐了基本家具。楼下有食堂、健身房和洗衣房。房租非常便宜，只有市价的三分之一。但每个房间都有公司的监控摄像头，访客需要登记，晚上十一点后有宵禁，走廊里贴着「禁止喧哗、禁止访客过夜、禁止破坏公司财产」的告示。",
+      "type": "housing",
+      "ageRange": [22, 45],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "签合同入住公司宿舍", "effects": { "MONEY": -200, "LIFE": 1, "DEBT": -2 } },
+        { "id": "branch_2", "text": "不接受监控和限制，自己租房更自由", "effects": { "STYLE": 1, "HUMAN": 1, "MONEY": -800 } }
+      ],
+      "effects": { "MONEY": -400, "LIFE": 1 },
+      "tags": ["住房", "公司", "宿舍", "企业"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 515,
+      "title": "在教堂地下室暂住",
+      "description": "一个社区教堂开放了他们的地下室作为临时收容所。你跟着几个流浪者走了进去——地下室被改造成了简易宿舍，摆着几十张行军床，墙上挂着十字架和宗教画。一位修女给大家分发热汤和面包，她看到你时笑着说：「每个人都需要一个避风港。」这里免费，但每天早上你要参加十五分钟的祈祷才能留下。你不在乎——在这个城市，免费的住所本身就是一种神迹。",
+      "type": "housing",
+      "ageRange": [16, 60],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        { "id": "branch_1", "text": "接受教堂的帮助，暂住下来", "effects": { "MONEY": -50, "HUMAN": 1, "LIFE": 1 } },
+        { "id": "branch_2", "text": "不想被宗教束缚，还是自己想办法", "effects": { "STYLE": 1, "HUMAN": 0 } }
+      ],
+      "effects": { "MONEY": -30, "HUMAN": 1, "LIFE": 1 },
+      "tags": ["住房", "教堂", "收容", "救济"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 516,
+      "title": "废弃地铁站建立营地",
+      "description": "你发现了一个被废弃的地铁站入口。通往站台的楼梯被铁栅栏封住了，但有人在一侧剪开了一个洞。你钻进去后发现——一个地下社区已经在这里扎根了。废弃的候车区被改造成了居所，用防水布和木板隔出一个个小空间。人们在旧售票亭里生火做饭，隧道壁上的涂鸦讲述着这里的历史。温度比地面高了五度，而且夜晚风吹不进来。唯一的缺点是没有卫生间。",
+      "type": "housing",
+      "ageRange": [18, 55],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "在地铁站营地安家", "effects": { "MONEY": -100, "LIFE": -1, "DEBT": -1 } },
+        { "id": "branch_2", "text": "这里太压抑了，不适合长期居住", "effects": { "STYLE": 1, "HUMAN": 1 } }
+      ],
+      "effects": { "MONEY": -50, "LIFE": -1 },
+      "tags": ["住房", "地铁站", "废弃", "地下"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 517,
+      "title": "被遗忘的阁楼",
+      "description": "在一个老旧的商业区，你发现一栋被遗忘的建筑——一家已经倒闭的商场，顶楼有一个废弃的阁楼办公室。你需要爬一道生锈的消防梯才能上去，但上面的空间出乎意料地大：大约四十平方米，有窗户能看到城市天际线，甚至还有一台废弃的空调。前任「住户」留下了一些家具和一堆旧杂志。这里没有水电，但你可以从楼下商场的公共区域「借」电。",
+      "type": "housing",
+      "ageRange": [20, 50],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "占领阁楼，改装成自己的秘密住所", "effects": { "MONEY": -200, "STYLE": 2, "TECH": 1 } },
+        { "id": "branch_2", "text": "格局不错但不适合常住", "effects": { "STYLE": 1, "MONEY": -50 } }
+      ],
+      "effects": { "MONEY": -100, "STYLE": 1, "TECH": 1 },
+      "tags": ["住房", "阁楼", "废弃", "秘密"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 518,
+      "title": "合租厂房被艺术家占满",
+      "description": "你搬进了一个由旧厂房改造的合租空间——月租便宜，空间巨大，但没有任何隔断。十几个室友用书架和帘子划分各自的区域。这些人大多是穷困的艺术家、地下音乐人和自由黑客。墙壁上画满了壁画，角落里堆着半成品的雕塑，深夜永远有人在弹吉他或调试合成器。这里的氛围自由而混乱，但问题是——太吵了，而且东西经常被「借用」后找不到。",
+      "type": "housing",
+      "ageRange": [20, 40],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "融入这个艺术社区，拥抱混乱", "effects": { "MONEY": -300, "STYLE": 2, "HUMAN": 2, "TECH": 1 } },
+        { "id": "branch_2", "text": "受不了吵闹，还是找个安静的地方", "effects": { "STYLE": 1, "MONEY": -100 } }
+      ],
+      "effects": { "MONEY": -250, "STYLE": 1, "HUMAN": 1 },
+      "tags": ["住房", "合租", "厂房", "艺术家"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 519,
+      "title": "新邻居是帮派成员",
+      "description": "你的新邻居搬进来了——几个纹身遍布、带着明显赛博植入体的壮汉。他们总是在深夜出入，搬进搬出一些长条形的包裹。你透过门缝看到过他们腰间别着枪。其他邻居都绕着他们走。但奇怪的是，他们对楼道里的老人和孩子反而很客气。有天晚上你的门锁坏了，其中一个邻居二话不说帮你修好了，然后一言不发地转身离开。在夜之城，帮派成员也可以是好邻居——或者更糟。",
+      "type": "social",
+      "ageRange": [18, 60],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "和邻居保持友好但保持距离", "effects": { "HUMAN": 1, "LIFE": 0, "REP": 1 } },
+        { "id": "branch_2", "text": "想办法尽快搬走，远离潜在危险", "effects": { "MONEY": -800, "LIFE": 1, "TRAUMA": -1 } }
+      ],
+      "effects": { "TRAUMA": 1, "REP": 1 },
+      "tags": ["住房", "邻居", "帮派", "危险"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 520,
+      "title": "社区组织自卫巡逻",
+      "description": "最近你们小区连续发生了三起入室抢劫案，警方完全不管。几个住户在社区公告栏上贴了通知——组织夜间自卫巡逻队。你在报名表上看到了各式各样的签名：有退休老兵、有害怕独居的年轻女孩、还有那个看起来不好惹的机械师。队长——一个参加过统一战争的老兵——每人发了一根警棍和一个哨子。「记住，我们的任务是观察和报警，不是当英雄。」",
+      "type": "social",
+      "ageRange": [20, 60],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "加入巡逻队，保护社区安全", "effects": { "HUMAN": 2, "REP": 2, "LIFE": -1 } },
+        { "id": "branch_2", "text": "不参与但捐一些钱买装备", "effects": { "HUMAN": 1, "MONEY": -200, "REP": 1 } }
+      ],
+      "effects": { "HUMAN": 1, "REP": 1 },
+      "tags": ["住房", "社区", "巡逻", "自卫"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 521,
+      "title": "邻里守望相助网络",
+      "description": "你所在楼栋的住户们建立了一个简易的通讯网络——一个加密的聊天群。有人在群里发消息说家里老人需要某种药，十分钟后就有人回复说自己有；有人报修说电梯坏了，立刻有人转发给房东；深夜有人发「楼上怎么回事——」，马上就有人私聊你「别管，那是三楼家暴」。这个网络成了这栋楼最坚实的依靠。在这里，邻居不是陌生人——他们是你的安全网。",
+      "type": "social",
+      "ageRange": [18, 60],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "积极参与邻里互助网络", "effects": { "HUMAN": 2, "REP": 2, "TECH": 1 } },
+        { "id": "branch_2", "text": "保持安静旁观，不主动也不拒绝", "effects": { "HUMAN": 0, "REP": 0 } }
+      ],
+      "effects": { "HUMAN": 1, "REP": 1 },
+      "tags": ["住房", "邻里", "互助", "网络"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 522,
+      "title": "社区菜园种植食物",
+      "description": "有人发现了社区后面一小块废弃的空地，经过简单的清理和松土，建立了一个小型社区菜园。几个爱好种植的邻居在里面种了番茄、辣椒、生菜和一些香料植物。你也分到了一小块地。每天傍晚浇水、除草、看着植物生长，竟然成了你在夜之城少有的平静时刻。收获的时候，大家用蔬菜交换其他生活用品。在城市里吃上自己种的番茄，味道好得不像真的。",
+      "type": "daily",
+      "ageRange": [18, 60],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "积极投入社区菜园建设", "effects": { "HUMAN": 2, "LIFE": 2, "MONEY": -50 } },
+        { "id": "branch_2", "text": "偶尔帮忙但不过多投入", "effects": { "HUMAN": 1, "MONEY": -20 } }
+      ],
+      "effects": { "HUMAN": 1, "LIFE": 1 },
+      "tags": ["住房", "菜园", "社区", "种植"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 523,
+      "title": "奇怪的隐居者",
+      "description": "你注意到楼里新搬来一个极其古怪的邻居。他总是在凌晨三点出门，穿一件遮住全身的黑色长袍，从不和任何人说话。他的房间永远拉着厚厚的窗帘，但偶尔会传出奇怪的机械声和低沉的说话声。快递员送来的包裹上印着各种生物危害标志。其他邻居开始流传各种猜测——有人说是黑市器官贩子，有人说是逃避追杀的科学家，还有人说他的房间里藏了一台活体量子计算机。",
+      "type": "daily",
+      "ageRange": [20, 60],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "branch_1", "text": "尝试接触，搞清楚这个人到底是什么来路", "effects": { "HUMAN": 1, "TECH": 2, "LIFE": -1 } },
+        { "id": "branch_2", "text": "远离他，不要多管闲事", "effects": { "LIFE": 1, "TRAUMA": -1 } }
+      ],
+      "effects": { "TECH": 1, "TRAUMA": 1 },
+      "tags": ["住房", "邻居", "神秘", "隐居"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 524,
+      "title": "住户委员会选举",
+      "description": "楼里贴出了公告——住户委员会要改选了。现任的委员会被指责和房东勾结，几年来不断上调各种「管理费」而公共服务却在恶化。几个年轻住户决定参选，他们提出了重新审核账目、建立维修基金、安装监控摄像头的竞选纲领。选举日在楼道里摆了一个投票箱。你手里的这张选票可能是改变这栋楼未来的机会——前提是选举不被操纵。",
+      "type": "social",
+      "ageRange": [20, 60],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "积极参与选举并投给改革派", "effects": { "HUMAN": 2, "REP": 2, "MONEY": -100 } },
+        { "id": "branch_2", "text": "觉得选谁都一样，随便投了", "effects": { "HUMAN": 0, "MONEY": -50 } }
+      ],
+      "effects": { "HUMAN": 1, "REP": 1 },
+      "tags": ["住房", "委员会", "选举", "社区"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 525,
+      "title": "发现楼里有非法活动",
+      "description": "你深夜晚归时在楼道里闻到了一股刺鼻的化学气味。气味从楼下的一间锁着的储藏室传出。你悄悄靠近——门缝里透出微弱的灯光，里面传来液体的晃动声和压抑的对话。你听清了几个词：「甲胺」「压力阀」「明晚交货」。这是一个冰毒实验室，就在你住的这栋楼里。你感觉后背发凉——这种实验室随时可能爆炸，或者被警方突袭。",
+      "type": "drug",
+      "ageRange": [22, 55],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "匿名报警，让警方处理", "effects": { "HUMAN": 2, "LIFE": 2, "REP": 1 } },
+        { "id": "branch_2", "text": "假装不知道，尽快找房子搬走", "effects": { "MONEY": -1000, "LIFE": 1 } }
+      ],
+      "effects": { "TRAUMA": 2, "LIFE": -1 },
+      "tags": ["住房", "非法", "制毒", "危险"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 526,
+      "title": "大楼被收购后集体涨租",
+      "description": "你收到了一封打印精美的通知函——你现在这栋楼的产权已经被一家大型房地产集团收购了。新业主宣布将进行「楼宇升级改造工程」，同时所有单元的租金将上涨百分之五十。「升级改造」包括在大堂装一台自动售货机和在楼顶竖一块全息广告牌。租户们聚在楼道里激烈讨论，有人说要组织集体谈判，有人说认命吧。你的房租占了收入的一半——涨租意味着你肯定住不下去了。",
+      "type": "economy",
+      "ageRange": [22, 60],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "branch_1", "text": "参与租户集体谈判，对抗涨租", "effects": { "HUMAN": 2, "REP": 2, "DEBT": 1 } },
+        { "id": "branch_2", "text": "开始找新的住处准备搬家", "effects": { "MONEY": -800, "TRAUMA": -1 } }
+      ],
+      "effects": { "MONEY": -500, "TRAUMA": -2 },
+      "tags": ["住房", "收购", "涨租", "资本"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 527,
+      "title": "楼上漏水不肯修",
+      "description": "你天花板上的一块水渍越来越大，从最初的巴掌大扩展到了餐桌大小。水滴顺着裂缝滴下来，在你吃饭时滴进汤里。你上楼找邻居——门开了，一个烦躁的男人说你已经是他今天第五个找上门的住户了。「我找过房东了，他说这是你楼下的事，让我自己解决！」他一挥手把门关上了。一周后，你的天花板开始发霉，空气里全是腐烂的味道。法律上说房东有义务修，但法律在夜之城执行得很慢。",
+      "type": "housing",
+      "ageRange": [20, 60],
+      "weight": 13,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "自己花钱找水管工来修", "effects": { "MONEY": -600, "LIFE": 1, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "收集证据把房东告上法庭", "effects": { "MONEY": -1500, "HUMAN": 2, "REP": 1 } }
+      ],
+      "effects": { "MONEY": -300, "LIFE": -1, "TRAUMA": -1 },
+      "tags": ["住房", "漏水", "维修", "纠纷"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 528,
+      "title": "邻居噪音问题调解",
+      "description": "你的楼上邻居每晚都开派对到凌晨三四点。重低音穿过楼板震动你的内脏，酒杯碎裂声、狂笑声、尖叫声混合成一首噪音交响曲。你已经投诉过三次了，房东只会说「我跟他谈谈」。你今天在楼道里碰上了那个邻居——他是个染着霓虹色头发的年轻人，看你的眼神带着歉意。「对不起，兄弟，我在做地下DJ，白天场子不租给我。我尽量小声点？」他的表情带着真诚。",
+      "type": "social",
+      "ageRange": [20, 50],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "和他协商固定的安静时间段", "effects": { "HUMAN": 2, "REP": 1, "LIFE": 1 } },
+        { "id": "branch_2", "text": "直接报警投诉噪音扰民", "effects": { "DEBT": 1, "REP": -1, "TRAUMA": -1 } }
+      ],
+      "effects": { "TRAUMA": -1, "HUMAN": 0 },
+      "tags": ["住房", "噪音", "邻居", "调解"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 529,
+      "title": "与房东打官司",
+      "description": "你终于决定和房东打官司了。你的公寓有严重的霉菌问题，导致你患上了慢性呼吸道疾病，但房东一直拒绝维修。你在社区法律援助中心找到了一位年轻律师——她刚毕业，眼神里还燃烧着理想主义。「这种案子我有把握，」她说，「建筑法规写得很清楚，房东有义务提供适宜居住的环境。」但她提醒你，即使赢了，执行也是个问题。而且房东可能会用「装修」的名义来逼你搬走。",
+      "type": "social",
+      "ageRange": [22, 60],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "坚持打官司维护自己的权利", "effects": { "MONEY": -3000, "HUMAN": 3, "REP": 2, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "觉得打官司太麻烦，还是搬家吧", "effects": { "MONEY": -1000, "TRAUMA": -1 } }
+      ],
+      "effects": { "MONEY": -1000, "HUMAN": 1, "REP": 1 },
+      "tags": ["住房", "官司", "房东", "维权"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 530,
+      "title": "房屋出现结构性裂缝",
+      "description": "你注意到卧室的墙角出现了一道细长的裂缝。一周之内，裂缝扩展到了整个墙面，宽度可以塞进一根手指。你透过裂缝能看到外面的光线——墙的结构已经出了问题。你报告给房东，他派了一个「工程师」来看了一眼。那人用水平仪量了量，耸耸肩说：「老房子都这样，没问题。」但你每晚躺在床上时，总觉得自己能听到建筑结构在深处发出的呻吟声。",
+      "type": "housing",
+      "ageRange": [20, 60],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "branch_1", "text": "自己找专业机构做建筑安全检测", "effects": { "MONEY": -1000, "LIFE": 2, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "觉得应该还能撑一段时间", "effects": { "LIFE": -2, "TRAUMA": 1 } }
+      ],
+      "effects": { "TRAUMA": 1, "LIFE": -1 },
+      "tags": ["住房", "裂缝", "结构", "安全"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 531,
+      "title": "蟑螂老鼠泛滥",
+      "description": "你半夜起来上厕所时踩到了一只蟑螂——好吧，不止一只。打开灯，你看到厨房的地面上爬满了密密麻麻的蟑螂，它们在你的锅碗瓢盆上肆意横行。水槽边还有老鼠粪便的痕迹。你翻遍了所有的柜子，发现蟑螂已经在你家里建立了殖民地——连冰箱后面都成了它们的巢穴。你买了杀蟑药，但第二天早上看到的是满地更多的蟑螂尸体——以及活着的那一群。",
+      "type": "daily",
+      "ageRange": [16, 60],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "花钱请专业灭虫公司来处理", "effects": { "MONEY": -500, "LIFE": 2, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "自己买药坚持灭虫，省钱但效果有限", "effects": { "MONEY": -100, "LIFE": 0, "TRAUMA": -1 } }
+      ],
+      "effects": { "TRAUMA": -1, "LIFE": -1 },
+      "tags": ["住房", "蟑螂", "老鼠", "卫生"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 532,
+      "title": "冬天暖气被切断",
+      "description": "夜之城的冬天来了。寒风透过窗缝灌进来，你裹着所有能找到的毯子还是冷得发抖。你发现暖气片冰凉——房东因为拖欠燃气费，供暖公司切断了整栋楼的燃气供应。你打电话给房东，他冷冰冰地说：「下个月的房租交了暖气就恢复。」气温已经降到了零度以下，你呼出的气在空中凝结成白雾。你只能烧热水装进瓶子里抱着取暖，像一只快要冬眠的动物。",
+      "type": "housing",
+      "ageRange": [18, 60],
+      "weight": 13,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "联合住户凑钱交燃气费恢复供暖", "effects": { "MONEY": -400, "HUMAN": 2, "LIFE": 2 } },
+        { "id": "branch_2", "text": "买电暖器并多加几床被子", "effects": { "MONEY": -300, "LIFE": 1, "DEBT": 1 } }
+      ],
+      "effects": { "LIFE": -2, "TRAUMA": -1 },
+      "tags": ["住房", "冬天", "暖气", "断供"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 533,
+      "title": "电路老化起小火",
+      "description": "你在睡觉时被一股焦糊味惊醒。客厅角落里的一排插座正在冒烟，墙纸已经被烤得发黄卷曲。你看到火星在墙缝里闪烁——电路老化了，随时可能引发火灾。你赶紧拉下了电闸，但问题在于，这栋楼的所有电路都已经超过三十年没有更换过了。你今天关掉了电闸，但明天你还需要用电——而你不知道该不该再打开它。",
+      "type": "daily",
+      "ageRange": [18, 60],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "立即找电工全面检修电路", "effects": { "MONEY": -800, "LIFE": 3, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "暂时不用那一边的插座，凑合用", "effects": { "MONEY": 0, "LIFE": -2, "TRAUMA": 1 } }
+      ],
+      "effects": { "LIFE": -1, "TRAUMA": 1 },
+      "tags": ["住房", "电路", "火灾", "安全"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 534,
+      "title": "邻居的赛博植入体干扰你的电器",
+      "description": "你的全息电视最近总是莫名其妙地跳台，无线电里偶尔传出不属于频段的对话声。你以为是电器坏了，直到有一天你在楼道里遇到那个全身赛博化的邻居——他的眼睛散发着淡蓝色的光，手臂是明显的军用级义体。每次他经过你的门口，你的全息台灯就会闪烁。他的赛博植入体产生的电磁场在干扰整层楼的电器。他看到你抱怨的样子，尴尬地挠了挠头：「抱歉，我去调一下屏蔽。」",
+      "type": "daily",
+      "ageRange": [20, 55],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "友好地协商解决方案", "effects": { "HUMAN": 2, "TECH": 1, "REP": 1 } },
+        { "id": "branch_2", "text": "要求房东出面解决这个干扰问题", "effects": { "DEBT": 1, "TECH": 0, "TRAUMA": -1 } }
+      ],
+      "effects": { "TECH": 1, "TRAUMA": -1 },
+      "tags": ["住房", "赛博", "干扰", "邻居"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 535,
+      "title": "大楼停车场发生枪战",
+      "description": "你正在回家的路上，刚走到大楼停车场入口，突然被一声尖锐的枪响钉在原地。你扑倒在地，爬到一个水泥柱子后面。前方两帮人在停车场中央枪战——子弹打在车身上溅出火花，玻璃碎片四处飞溅，至少有三个人已经倒在地上。你闻到了火药味和血腥味。你的手机在口袋里震动——社区群里已经炸了锅，有人在问「有人被困在停车场了吗？！」你的心跳快得像要炸开胸膛。",
+      "type": "combat",
+      "ageRange": [18, 60],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 30,
+      "branches": [
+        { "id": "branch_1", "text": "趴着不动等枪战结束", "effects": { "LIFE": -1, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "从侧面绕进大楼的安全通道", "effects": { "LIFE": -2, "TRAUMA": 1 } }
+      ],
+      "effects": { "TRAUMA": 2, "LIFE": -1 },
+      "tags": ["住房", "枪战", "停车场", "危险"],
       "deathChainEntry": false
     }
   ]

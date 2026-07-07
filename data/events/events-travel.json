@@ -1,0 +1,6507 @@
+{
+  "events": [
+    {
+      "id": 4300,
+      "title": "沃森区夜市漫游",
+      "description": "霓虹灯在沃森区的夜市上空交织成一片光的海洋，摊贩们叫卖着从非法义体到合成面条的各种商品。空气中弥漫着电线烧焦和烤肉的气味，混合着雨水与机油的味道。你穿行在拥挤的人群中，全息广告牌在头顶投射出绚丽的色彩，偶尔有无人机掠过头顶。远处传来地下俱乐部的低音节拍，一名街头艺人用改造过的声带唱着赛博蓝调。这个夜晚充满了危险与机遇，每一步都可能带来意想不到的发现。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "与街头小贩讨价还价买些义体配件",
+          "effects": {
+            "MONEY": -800,
+            "HUMAN": 2,
+            "STYLE": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "帮助一名被帮派勒索的老摊贩",
+          "effects": {
+            "MONEY": -300,
+            "HUMAN": 4,
+            "REP": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "趁乱偷走一件稀有义体后溜走",
+          "effects": {
+            "MONEY": 600,
+            "REP": -3,
+            "TRAUMA": 2,
+            "CHROME": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1000,
+        "HUMAN": 2,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4301,
+      "title": "威斯布鲁克霓虹大街",
+      "description": "威斯布鲁克的霓虹大街是夜城最繁华的商业街之一，数十层高的全息广告牌将夜空染成了永不落幕的黄昏。街道两旁是挤满了精品义体店、高级餐厅和娱乐场所的摩天大楼，空气中飘荡着合成香水和电子烟的味道。你走在宽阔的人行道上，身旁掠过穿着最新潮流时装的富人和全身镀铬的赛博朋克。一名街头舞者在全息投影中表演着令人目眩的动作，围观的人群不时发出惊叹。这里的每一秒都在燃烧着金钱和欲望。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在高级义体精品店选购时尚配件",
+          "effects": {
+            "MONEY": -1500,
+            "STYLE": 4,
+            "CHROME": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在街头美食摊品尝合成寿司",
+          "effects": {
+            "MONEY": -600,
+            "HUMAN": 3,
+            "STYLE": 2,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1200,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4302,
+      "title": "太平洋区高架桥漫步",
+      "description": "太平洋区的高架桥横跨在废弃的旧城区上方，脚下是坍塌的建筑和疯长的合成植物。你站在桥上俯瞰，远处的海面反射着城市的霓虹光芒，偶尔有飞行车从头顶呼啸而过。桥面上散落着旧世界的残骸和流浪者搭建的临时帐篷，风吹过时发出呜咽般的声响。一名老流浪汉坐在桥边弹着破旧的吉他，哼唱着大崩溃之前的民谣。这里的孤独感有一种奇特的诗意。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "与老流浪汉聊天听他讲述旧世界的故事",
+          "effects": {
+            "MONEY": -200,
+            "HUMAN": 3,
+            "STYLE": 2,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在高架桥上拍照发到社交媒体",
+          "effects": {
+            "MONEY": -500,
+            "STYLE": 3,
+            "REP": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "探索桥下的废弃建筑寻找物资",
+          "effects": {
+            "MONEY": -100,
+            "TRAUMA": 2,
+            "TECH": 2,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -800,
+        "HUMAN": 1,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4303,
+      "title": "圣多明戈工业区探险",
+      "description": "圣多明戈的工业区是夜城最危险的区域之一，废弃的工厂和运转中的加工厂交错林立。生锈的管道中喷出有毒的蒸汽，地面上到处是工业废料和碎玻璃。你小心翼翼地穿过一条被废弃的传送带走廊，墙壁上涂满了帮派的标记和政治标语。远处传来金属碰撞的声音，不知道是机器运转还是有人在暗处活动。这片区域是拾荒者的天堂，也是冒险者的坟墓。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在废墟中搜寻可回收的电子零件",
+          "effects": {
+            "MONEY": -300,
+            "TECH": 3,
+            "TRAUMA": 2,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找到一名拾荒者向其购买情报",
+          "effects": {
+            "MONEY": -700,
+            "HUMAN": 2,
+            "TECH": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -600,
+        "HUMAN": 1,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4304,
+      "title": "市政中心全息广场",
+      "description": "市政中心的广场上矗立着一座巨大的全息雕像，不断播放着市长竞选和公司广告。广场中央的喷泉喷射着经过净化的循环水，这在水资源紧缺的夜城是一种奢侈的展示。你坐在长椅上观察着来来往往的人群，有穿西装的公司职员，也有装备齐全的佣兵。一架警用无人机在头顶盘旋，红色指示灯不断闪烁。这里是权力的中心，也是阴谋的温床。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加一场公司举办的公开产品发布会",
+          "effects": {
+            "MONEY": -1000,
+            "TECH": 2,
+            "HUMAN": 3,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在广场上与政治活动人士交谈",
+          "effects": {
+            "MONEY": -400,
+            "HUMAN": 4,
+            "REP": 1,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "悄悄观察市政中心的安保系统",
+          "effects": {
+            "MONEY": -500,
+            "TECH": 3,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -800,
+        "HUMAN": 2,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4305,
+      "title": "海伍德暗巷探险",
+      "description": "海伍德的暗巷是夜城最迷宫般的区域之一，狭窄的巷道像蛛网一样连接着居民区和商业区。墙壁上爬满了发光的苔藓和非法的数据线缆，头顶是杂乱交错的空调外机和太阳能板。你跟随一名当地向导穿行在巷道中，他指给你看墙壁上隐藏的暗号和帮派领地的分界线。一只改造过的野猫从垃圾桶后窜出，红色的电子眼在黑暗中闪烁。这里每一个转角都藏着秘密。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "跟随向导参观地下艺术家的工作室",
+          "effects": {
+            "MONEY": -900,
+            "STYLE": 4,
+            "HUMAN": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在暗巷中的隐秘酒吧喝一杯",
+          "effects": {
+            "MONEY": -700,
+            "HUMAN": 3,
+            "ADDICTION": 1,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -600,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4306,
+      "title": "日本街樱花数码道",
+      "description": "日本街的樱花数码道两旁种满了全息樱花树，花瓣是由纳米投影构成的，终年不谢。粉色的光芒洒在石板路上，与传统日式建筑和霓虹招牌形成了赛博与古典的完美融合。你漫步在花雨中，两旁的店铺售卖着从古董刀剑到最新神经接口的各种商品。一名艺伎模样的AI全息投影在路边为游客指路，她的笑容完美得令人不安。街道尽头是一座古老的鸟居，全息樱花在它周围盘旋飞舞。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在传统拉面店品尝合成拉面",
+          "effects": {
+            "MONEY": -500,
+            "HUMAN": 3,
+            "STYLE": 3,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "参观一家古董武士刀收藏店",
+          "effects": {
+            "MONEY": -1200,
+            "STYLE": 3,
+            "TECH": 1,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在樱花树下冥想放松身心",
+          "effects": {
+            "MONEY": -300,
+            "TRAUMA": -2,
+            "LIFE": 2,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -900,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4307,
+      "title": "西区富人区观光",
+      "description": "西区是夜城富人阶层的聚居地，悬浮花园和玻璃幕墙的公寓楼在阳光下闪闪发光。私人安保无人机在空中巡逻，地面上看不到任何垃圾或流浪者。你乘坐一辆观光飞行车缓缓掠过这片区域，导游用甜美的合成语音介绍着每栋建筑的价值和历史。一栋别墅的屋顶上，有人正在举办泳池派对，香槟塔在阳光下折射出彩虹般的光芒。这里的奢华与夜城其他区域的贫困形成了刺目的对比。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 5,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加一场富人区的私人派对",
+          "effects": {
+            "MONEY": -2000,
+            "HUMAN": 4,
+            "STYLE": 5,
+            "REP": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在观光车上拍摄富人区的建筑",
+          "effects": {
+            "MONEY": -800,
+            "STYLE": 3,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1500,
+        "HUMAN": 1,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4308,
+      "title": "夜城中央交通枢纽",
+      "description": "夜城中央交通枢纽是一座巨大的多层建筑，连接着磁悬浮列车、飞行车停机坪和地下隧道网络。成千上万的人在你的身边流动，全息指示牌在头顶显示着各个目的地的实时信息。空气中混合着咖啡、合成食品和消毒水的气味，广播系统不断播报着列车晚点和安全提醒。你在一家枢纽内的咖啡馆坐下，看着形形色色的旅客从面前经过。这里是夜城的动脉，每分钟都有无数故事在此开始和结束。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在枢纽内的免税店购物",
+          "effects": {
+            "MONEY": -1000,
+            "STYLE": 2,
+            "HUMAN": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "与候车区的旅客交流旅行见闻",
+          "effects": {
+            "MONEY": -500,
+            "HUMAN": 4,
+            "STYLE": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -700,
+        "HUMAN": 2,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4309,
+      "title": "老城区屋顶跳跃",
+      "description": "老城区的屋顶是跑酷爱好者的天堂，高低错落的建筑形成了一条天然的空中赛道。你跟随一群本地跑酷者爬上了一栋废弃公寓楼的楼顶，脚下是灯火通明的夜城全景。他们教你如何在不触发安保系统的情况下在屋顶间跳跃，风在耳边呼啸。远处一栋大楼的全息广告突然切换，将整个街区染成了深紫色。从高处俯瞰，夜城像一个巨大的电路板，每一条街道都是一条发光的线路。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "跟着跑酷团队完成一次屋顶穿越",
+          "effects": {
+            "MONEY": -600,
+            "STYLE": 3,
+            "TRAUMA": 2,
+            "LIFE": -1,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在屋顶上安静地欣赏城市夜景",
+          "effects": {
+            "MONEY": -400,
+            "STYLE": 3,
+            "TRAUMA": -1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -500,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4310,
+      "title": "66号公路废墟段",
+      "description": "古老的66号公路在新墨西哥州境内有一段几乎被遗弃的废墟路段，柏油路面龟裂出蛛网般的纹路。你驾驶着一辆改装过的越野车在这条路上行驶，两旁是生锈的路牌和废弃的加油站。路边的 diner 餐厅招牌在风中摇晃，里面早已没有了食客，只有几台坏掉的自动售货机。一只机械秃鹫停在电线杆上，用红色的电子眼盯着你的车。这条路承载着旧美国公路旅行的记忆，如今只剩下钢铁与尘土。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在废弃加油站搜寻可用的燃料和零件",
+          "effects": {
+            "MONEY": -400,
+            "TECH": 2,
+            "TRAUMA": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在路边的旧diner餐厅过夜",
+          "effects": {
+            "MONEY": -600,
+            "HUMAN": 2,
+            "STYLE": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "加速冲过这段破败路段",
+          "effects": {
+            "MONEY": -300,
+            "TRAUMA": 2,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1200,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4311,
+      "title": "加州海岸线自驾",
+      "description": "加州海岸公路在大崩溃后部分路段已经沉入海中，但残存的路段仍是西海岸最美的自驾路线之一。你的车沿着悬崖边行驶，一侧是波涛汹涌的太平洋，另一侧是布满全息广告牌的峭壁。远处可以看到几座半淹没的旧城市建筑从海面伸出，像幽灵般的剪影。一群飞行摩托从头顶掠过，排气管喷出蓝色的等离子尾焰。海风带着咸味和化学污染的气息吹进车窗，提醒你这片海洋早已不再纯净。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在海滩边停车观看日落",
+          "effects": {
+            "MONEY": -800,
+            "STYLE": 4,
+            "HUMAN": 2,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "探访半淹没的旧城市废墟",
+          "effects": {
+            "MONEY": -500,
+            "TECH": 2,
+            "TRAUMA": 2,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1000,
+        "HUMAN": 2,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4312,
+      "title": "内华达荒漠公路",
+      "description": "内华达的荒漠公路笔直地延伸到地平线，两旁是无尽的沙石和偶尔出现的废弃小镇。你的车在滚烫的柏油路上飞驰，温度计显示车外温度高达52摄氏度。路边一个生锈的水塔上喷着'世界末日来了'的涂鸦，讽刺的是那已经是三十年前的事了。远处一座太阳能发电站的镜面阵列反射着刺眼的光芒，像沙漠中的一片银色海洋。偶尔有自动驾驶的货运卡车从对面驶过，扬起一阵沙尘。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在废弃小镇的汽车旅馆休息",
+          "effects": {
+            "MONEY": -700,
+            "HUMAN": 2,
+            "LIFE": 1,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在太阳能发电站旁给车辆充电",
+          "effects": {
+            "MONEY": -400,
+            "TECH": 2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -900,
+        "HUMAN": 1,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4313,
+      "title": "德州赛博卡车护航",
+      "description": "在德州的 interstate 公路上，你加入了一支由自动驾驶赛博卡车组成的车队。这些巨型卡车有三层楼高，每一辆都载着数十吨货物在公路上以精确的间距行驶。你的小车夹在两辆卡车之间，感觉像是被钢铁巨兽包围。车队领航的AI通过无线电与你对话，声音低沉而礼貌。路边的德州小镇上，几个机械牛仔在用激光左轮进行决斗表演。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "跟随车队前往下一个大型物流枢纽",
+          "effects": {
+            "MONEY": -600,
+            "TECH": 2,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在路边小镇观看机械牛仔决斗",
+          "effects": {
+            "MONEY": -800,
+            "STYLE": 3,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1100,
+        "HUMAN": 2,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4314,
+      "title": "芝加哥废城穿越",
+      "description": "芝加哥在数据瘟疫后被封锁了十年，如今部分区域重新开放但仍然荒凉。你驾车穿过城市的主干道，两旁是被火烧黑的摩天大楼和坍塌的高架公路。街道上长满了变异的藤蔓植物，它们发出微弱的荧光在黑暗中摇曳。一群拾荒者在一家废弃的百货商店中搜寻物资，看到你的车后警惕地举起了武器。远处密歇根湖的湖面上漂浮着一层油污和塑料碎片。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "停车与拾荒者进行交易",
+          "effects": {
+            "MONEY": -700,
+            "HUMAN": 3,
+            "TECH": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "加速离开避免冲突",
+          "effects": {
+            "MONEY": -400,
+            "TRAUMA": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "探索废弃百货商店寻找物资",
+          "effects": {
+            "MONEY": -200,
+            "TECH": 3,
+            "TRAUMA": 3,
+            "LIFE": -2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1300,
+        "HUMAN": 1,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4315,
+      "title": "新墨西哥辐射区边缘",
+      "description": "新墨西哥的核试验场遗址周围仍然残留着辐射，路边的警示牌上画着骷髅标志和'危险区域'的字样。你的车沿着辐射区边缘的公路行驶，盖革计数器发出轻微的咔嗒声。路面上偶尔能看到变异的蜥蜴横穿而过，它们的皮肤在阳光下发出异常的光泽。一座废弃的导弹发射井矗立在荒原上，混凝土外壳已经开裂。空气中弥漫着一种金属的味道，你知道那意味着什么。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "穿戴防护装备近距离观察发射井",
+          "effects": {
+            "MONEY": -1000,
+            "TECH": 3,
+            "TRAUMA": 3,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在安全距离外拍照记录",
+          "effects": {
+            "MONEY": -600,
+            "STYLE": 2,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1500,
+        "HUMAN": 1,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4316,
+      "title": "大峡谷全息观光",
+      "description": "大峡谷在赛博时代被改造成了一个巨大的全息观光景点，峡谷壁上投射着亿万年地质变迁的动态影像。你站在玻璃观景台上俯瞰峡谷底部，全息投影将科罗拉多河的历史洪水场景重现眼前。一架观光飞行器从峡谷底部升起，机翼上的灯在岩壁上投下移动的光影。峡谷对面的岩壁上，一名全息印第安酋长讲述着这片土地的古老传说。自然与科技在这里达成了奇妙的和谐。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "乘坐观光飞行器深入峡谷底部",
+          "effects": {
+            "MONEY": -1800,
+            "STYLE": 4,
+            "HUMAN": 3,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在观景台聆听全息原住民传说",
+          "effects": {
+            "MONEY": -800,
+            "HUMAN": 3,
+            "STYLE": 3,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1200,
+        "HUMAN": 2,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4317,
+      "title": "黄石地热公路",
+      "description": "黄石的超级火山在数据瘟疫期间变得更加活跃，地热公路两旁到处是喷涌的间歇泉和冒泡的泥浆池。你的车在硫磺味弥漫的空气中行驶，路面上的温度警告灯不断闪烁。一座新建的地热发电站矗立在老忠实泉旁边，将火山的热能转化为电力供应给整个西北地区。路边一群野牛——不，是机械野牛——在草地上吃草，它们的金属皮毛在阳光下泛着光。大地的怒吼从脚下传来，提醒你正站在一颗定时炸弹上。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参观地热发电站了解清洁能源技术",
+          "effects": {
+            "MONEY": -900,
+            "TECH": 3,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在安全区观察间歇泉喷发",
+          "effects": {
+            "MONEY": -700,
+            "STYLE": 3,
+            "HUMAN": 2,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1100,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4318,
+      "title": "落基山盘山赛博道",
+      "description": "落基山脉的盘山公路被改造成了赛博赛道，路面嵌入了动态摩擦力调节系统。你的车在发夹弯中漂移，轮胎下的路面根据车速实时调整摩擦系数。山间的空气清冷稀薄，偶尔有全息路标从路边的岩石中浮现。海拔三千米处，你停在一个观景台俯瞰山谷，云海在脚下翻滚如沸水。远处一座悬浮的研究站漂浮在云层之上，像一个银色的气球。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "挑战山路漂移计时赛",
+          "effects": {
+            "MONEY": -1000,
+            "STYLE": 4,
+            "TRAUMA": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在观景台享受山间宁静",
+          "effects": {
+            "MONEY": -500,
+            "TRAUMA": -2,
+            "STYLE": 3,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -900,
+        "HUMAN": 1,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4319,
+      "title": "太平洋海岸日落公路",
+      "description": "太平洋海岸公路在黄昏时分格外美丽，橘红色的阳光在海面上铺开一条金色的道路。你的车敞着车窗，海风把头发吹得乱七八糟，车载音响放着复古的合成器音乐。路边的悬崖上有一家露天酒吧，几个游客正举着荧光鸡尾酒看日落。一头鲸鱼——或者说一头机械仿生鲸——从海面跃起，巨大的身躯在夕阳中划出一道弧线。这一刻，世界看起来几乎还是美好的。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在悬崖酒吧点一杯荧光鸡尾酒",
+          "effects": {
+            "MONEY": -900,
+            "STYLE": 4,
+            "HUMAN": 3,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在路边停车拍摄机械鲸鱼跳跃",
+          "effects": {
+            "MONEY": -500,
+            "STYLE": 3,
+            "TECH": 1,
+            "HUMAN": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -800,
+        "HUMAN": 2,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4320,
+      "title": "夜城到洛杉矶超级高铁",
+      "description": "超级高铁的管道在夜城和洛杉矶之间穿梭，你坐在流线型车厢里以1200公里每小时的速度飞驰。车窗是全息显示屏，实时显示着管道外的地形和经过的城市。车厢内部安静得令人不安，磁悬浮技术让一切震动都消失了。一名AI列车员推着餐车走过，用完美到令人毛骨悚然的微笑询问你是否需要饮品。管道穿越内华达沙漠时，全息窗外显示着星空投影。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买头等舱升级享受豪华服务",
+          "effects": {
+            "MONEY": -2000,
+            "STYLE": 4,
+            "HUMAN": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在普通车厢与其他旅客聊天",
+          "effects": {
+            "MONEY": -800,
+            "HUMAN": 4,
+            "STYLE": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1500,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4321,
+      "title": "跨大陆磁悬浮特快",
+      "description": "跨大陆磁悬浮特快从纽约到旧金山只需四小时，管道穿越了大半个北美大陆。你靠在座椅上看着全息窗外的风景飞速掠过，大平原的麦田和落基山的雪峰在几分钟内交替出现。车厢内有一名音乐家在用神经接口演奏即兴钢琴曲，音符直接传入乘客的听觉神经。餐车提供来自世界各地的合成美食，味道几乎可以以假乱真。这是赛博时代最快的陆地旅行方式，也是最昂贵的之一。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在餐车品尝全球合成美食套餐",
+          "effects": {
+            "MONEY": -1800,
+            "STYLE": 3,
+            "HUMAN": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在观景区聆听神经接口音乐表演",
+          "effects": {
+            "MONEY": -1200,
+            "STYLE": 4,
+            "HUMAN": 2,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -2000,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4322,
+      "title": "芝加哥磁悬浮枢纽换乘",
+      "description": "芝加哥磁悬浮枢纽是北美最大的换乘站，十二条磁悬浮线在这里交汇。巨大的穹顶下是数十个站台和数万名旅客，全息指示牌在空中组成了一片信息海洋。你在换乘大厅中穿行，两旁是各种商店、餐厅和休息室。一个流浪乐人在角落里弹着老式吉他，与周围的高科技环境格格不入。广播系统用六种语言播报着列车信息，声波在穹顶下回荡。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 5,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在换乘站的大型购物区逛街",
+          "effects": {
+            "MONEY": -1000,
+            "STYLE": 3,
+            "HUMAN": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "给流浪乐人一些钱并听他弹琴",
+          "effects": {
+            "MONEY": -600,
+            "HUMAN": 4,
+            "STYLE": 2,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -700,
+        "HUMAN": 2,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4323,
+      "title": "磁悬浮商务车厢",
+      "description": "商务车厢的座位比普通车厢宽大三倍，每个座位都配备了个人全息屏幕和神经接口端口。你坐在真皮座椅上，旁边的商务人士正在用神经接口进行虚拟会议。车厢服务员送来一杯现磨咖啡和一盘有机水果——在合成食品泛滥的时代，这是真正的奢侈品。列车平稳地穿过一片工业区，全息窗外偶尔闪过废弃工厂的轮廓。这种舒适让人几乎忘记了车厢外那个混乱的世界。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "与邻座的商务人士交换名片",
+          "effects": {
+            "MONEY": -1500,
+            "HUMAN": 3,
+            "REP": 3,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "使用神经接口处理一些个人事务",
+          "effects": {
+            "MONEY": -1200,
+            "TECH": 2,
+            "HUMAN": 1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1800,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4324,
+      "title": "地下磁悬浮黑车",
+      "description": "地下磁悬浮黑车是没有登记在册的非法线路，运行在废弃的地铁隧道中。车厢破旧但速度极快，在黑暗的隧道中呼啸而过，偶尔的灯光在车窗上划出一道道光带。车上坐满了不想被追踪的人——逃犯、走私客和不想留下记录的旅客。司机是个沉默寡言的中年人，他的左眼是一颗廉价的红外义眼。列车在地下穿行三十分钟后到达一个没有站牌的地下站台。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "与车上的走私客搭讪寻找商机",
+          "effects": {
+            "MONEY": -800,
+            "HUMAN": 2,
+            "REP": 2,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "全程保持沉默不引人注意",
+          "effects": {
+            "MONEY": -1000,
+            "TRAUMA": 1,
+            "HUMAN": 1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1200,
+        "HUMAN": 1,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4325,
+      "title": "西海岸磁悬浮观光线",
+      "description": "西海岸磁悬浮观光线的管道沿着海岸线修建，全息车窗可以切换成透明模式欣赏真实海景。列车在悬崖边的管道中滑行，太平洋的波涛就在脚下几十米处翻涌。车厢顶部有一节观光平台，乘客可以站在上面感受海风——当然是通过安全力场过滤后的。一群海鸥——或者是它们的机械替代品——跟着列车飞行了很长一段距离。海岸线上可以看到几座被海水侵蚀的旧灯塔。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在观光平台上海风观景",
+          "effects": {
+            "MONEY": -1400,
+            "STYLE": 4,
+            "HUMAN": 3,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在车厢内参加品酒活动",
+          "effects": {
+            "MONEY": -1600,
+            "STYLE": 3,
+            "HUMAN": 2,
+            "ADDICTION": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1500,
+        "HUMAN": 2,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4326,
+      "title": "磁悬浮列车故障困顿",
+      "description": "磁悬浮列车在半路突然减速停了下来，车厢灯光闪烁后变成应急照明。广播系统用平静的声音宣布列车遇到了技术故障，预计需要两小时修复。车厢内开始有人不安地走动，一名乘客的神经接口出现了故障导致他不断尖叫。你看着全息窗外黑暗的隧道壁，偶尔有火花从管道壁上飞溅。乘务员分发着应急食品和水，表情比平时多了一丝紧张。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮助乘务员安抚惊慌的乘客",
+          "effects": {
+            "MONEY": -500,
+            "HUMAN": 5,
+            "REP": 3,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "尝试用个人技术帮助修复故障",
+          "effects": {
+            "MONEY": -300,
+            "TECH": 4,
+            "HUMAN": 2,
+            "REP": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -800,
+        "HUMAN": 2,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4327,
+      "title": "超级高铁头等舱体验",
+      "description": "超级高铁头等舱的每个座位都是一个独立的私人舱室，配备了床、淋浴和全息娱乐系统。你躺在柔软的床上，全息天花板投射着夜城的星空。私人管家AI通过舱内扬声器询问你是否需要按摩服务。列车以超音速穿过地下的真空管道，外界的一切声音都被隔绝。舱内温度、湿度和光线都可以根据个人偏好精确调节。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 5,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "享受全程AI管家服务",
+          "effects": {
+            "MONEY": -2500,
+            "STYLE": 5,
+            "LIFE": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "使用全息娱乐系统体验虚拟旅行",
+          "effects": {
+            "MONEY": -2000,
+            "STYLE": 3,
+            "TECH": 2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -2200,
+        "HUMAN": 1,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4328,
+      "title": "磁悬浮隧道穿越大陆",
+      "description": "磁悬浮隧道的内壁闪烁着淡蓝色的引导灯光，在黑暗中形成一条无尽的光之隧道。列车在隧道中以惊人的速度行驶，全息窗外的灯光融合成一条连续的光线。偶尔有维修机器人在隧道壁上工作，它们的焊枪在黑暗中闪烁。隧道穿过一座山脉时，你能感受到微微的压力变化。这条隧道花了十五年才建成，是赛博时代最伟大的工程之一。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "通过车窗观察隧道工程技术",
+          "effects": {
+            "MONEY": -1000,
+            "TECH": 3,
+            "STYLE": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在车厢休息区与其他旅客社交",
+          "effects": {
+            "MONEY": -900,
+            "HUMAN": 4,
+            "STYLE": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1200,
+        "HUMAN": 2,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4329,
+      "title": "东海岸磁悬浮快线",
+      "description": "东海岸磁悬浮快线连接着波士顿、纽约和华盛顿，管道沿着95号州际公路修建。你坐在车窗旁看着全息窗外飞速掠过的城市天际线和郊区废墟。列车穿过费城时，全息屏幕上弹出了城市的历史信息——独立宫、自由钟，如今都成了全息重建的旅游景点。一名老人坐在你对面，他告诉你自己年轻时这条路上跑的还是烧汽油的汽车。车窗外偶尔能看到废弃的加油站，像是上一个文明的遗迹。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "与老人聊天听他讲述旧时代的故事",
+          "effects": {
+            "MONEY": -600,
+            "HUMAN": 4,
+            "STYLE": 2,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "通过全息导游了解沿途城市历史",
+          "effects": {
+            "MONEY": -1000,
+            "STYLE": 3,
+            "TECH": 2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1100,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4330,
+      "title": "夜城空中出租车",
+      "description": "夜城的空中出租车在摩天大楼之间穿梭，你坐在后座上看着脚下的城市像一张发光的电路板。飞行车穿过一栋大楼的全息广告，广告中的模特似乎在向你眨眼。驾驶员是一名退役飞行员，他的右臂是一条全镀铬的机械臂。飞行车在空中交通管制系统的引导下自动飞行，偶尔避让其他飞行器。从空中看，夜城的灯光像是无数萤火虫在黑暗中飞舞。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "让司机带你绕城观光一圈",
+          "effects": {
+            "MONEY": -1200,
+            "STYLE": 4,
+            "HUMAN": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "与退役飞行员聊天听他的故事",
+          "effects": {
+            "MONEY": -800,
+            "HUMAN": 4,
+            "STYLE": 2,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1000,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4331,
+      "title": "AV-4飞行车巡航",
+      "description": "AV-4是赛博时代最受欢迎的飞行车型号之一，流线型的车身在空中划出优雅的弧线。你坐在副驾驶位置，透过全景玻璃看着下方的城市缓缓后退。飞行车掠过一座空中餐厅的露台，里面的人影在玻璃后举杯。驾驶员调低了高度，让你能看清街道上的人群和霓虹招牌。突然一架警用飞行器从右侧超车，红蓝警灯在暮色中闪烁。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "要求驾驶员飞到城市最高点俯瞰",
+          "effects": {
+            "MONEY": -1500,
+            "STYLE": 4,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用飞行车的摄像头拍摄城市全景",
+          "effects": {
+            "MONEY": -1000,
+            "STYLE": 3,
+            "TECH": 2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1300,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4332,
+      "title": "空中交通管制区",
+      "description": "在夜城的空中交通管制区，数百架飞行器在三维空间中按精确的航线飞行，像一群有序的蜜蜂。你的飞行车被编入了一条前往东区的航线，两侧是其他飞行器的灯光。交通管制AI的声音从扬声器中传来，指挥着每架飞行器的速度和高度。一架货运飞行器从上方掠过，巨大的阴影短暂遮住了你的视线。从这个高度看，空中的交通流像是一条条发光的河流。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 5,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "通过飞行车系统了解交通管制技术",
+          "effects": {
+            "MONEY": -700,
+            "TECH": 3,
+            "HUMAN": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "享受空中交通的壮观景象",
+          "effects": {
+            "MONEY": -900,
+            "STYLE": 3,
+            "HUMAN": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -800,
+        "HUMAN": 1,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4333,
+      "title": "飞行车追逐体验",
+      "description": "一家娱乐公司提供模拟飞行车追逐体验，在封闭的空中赛道中重现经典的赛博朋克追逐场景。你坐在改装过的飞行车中，前方是一架模拟的敌方飞行器。全息投影在赛道周围制造出爆炸和枪战的特效，肾上腺素飙升。你的飞行车在两栋大楼间做了一个90度侧翻，模拟导弹从翼尖掠过。体验结束时你的手在颤抖，但嘴角挂着止不住的笑容。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "挑战最高难度的追逐场景",
+          "effects": {
+            "MONEY": -1800,
+            "STYLE": 4,
+            "TRAUMA": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "选择中等难度享受刺激",
+          "effects": {
+            "MONEY": -1200,
+            "STYLE": 3,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1500,
+        "HUMAN": 1,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4334,
+      "title": "高空观光飞行",
+      "description": "高空观光飞行带你飞到三千米以上，从这个高度可以看到整座城市和周围的地形。你穿着加压飞行服坐在敞篷飞行车的后座，风在耳边呼啸。地面上的一切都变成了微缩模型——道路是细线，建筑是积木，人是看不见的点。太阳在地平线上缓缓落下，将天空染成橙红到深紫的渐变色。一架商业飞行器从远处飞过，在空中留下一道白色的尾迹。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在空中拍摄日落全景",
+          "effects": {
+            "MONEY": -1400,
+            "STYLE": 4,
+            "TECH": 1,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在空中享受安静的冥想时刻",
+          "effects": {
+            "MONEY": -1200,
+            "TRAUMA": -3,
+            "STYLE": 3,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1600,
+        "HUMAN": 2,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4335,
+      "title": "私人飞行车租赁",
+      "description": "你租了一架私人飞行车，AI自动驾驶系统让你可以自由设定路线。飞行车的内饰是奶油色的真皮和抛光木材，与外面的钢铁城市形成对比。你设定了一个环城路线，飞行车平稳地从停机坪升起，汇入了空中的交通流。车载音响播放着轻柔的爵士乐，窗户自动调暗了外部光线。这是赛博时代少有的能让人感到完全掌控的时刻。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 5,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "设定路线飞往海边看海",
+          "effects": {
+            "MONEY": -2000,
+            "STYLE": 4,
+            "HUMAN": 2,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在城市上空随意飞行探索",
+          "effects": {
+            "MONEY": -1800,
+            "STYLE": 3,
+            "HUMAN": 2,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -2200,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4336,
+      "title": "空中走私航线",
+      "description": "你的朋友是一名飞行车走私客，他带你体验了一次真实的走私飞行。飞行车在低空贴着建筑物飞行，避开雷达和空中巡逻。你紧紧抓着扶手，看着大楼的墙壁在车窗外飞速掠过。他在一栋废弃大楼的屋顶停下，迅速卸下了几个没有标记的箱子。月光下你能看到他紧张但兴奋的表情，这是在生死边缘行走的快感。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮忙卸货并获取一份报酬",
+          "effects": {
+            "MONEY": 800,
+            "REP": 3,
+            "TRAUMA": 3,
+            "DEBT": -1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "全程旁观不参与任何操作",
+          "effects": {
+            "MONEY": -500,
+            "TRAUMA": 2,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -600,
+        "HUMAN": 1,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4337,
+      "title": "飞行车维修站参观",
+      "description": "一家飞行车维修站坐落在城市边缘的工业区，巨大的机库内停满了各种型号的飞行车。你跟随一名技师参观维修流程，看着她用纳米工具修复一台损坏的反重力引擎。机库的墙壁上挂着各种飞行车零件和历史型号的海报。一架老式AV-1飞行车正在被改装，技师说它的主人想把它改成赛车。空气中弥漫着金属和润滑油的气味。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "向技师学习飞行车维修基础知识",
+          "effects": {
+            "MONEY": -800,
+            "TECH": 4,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在机库中拍照记录各种飞行车",
+          "effects": {
+            "MONEY": -500,
+            "STYLE": 3,
+            "TECH": 2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -700,
+        "HUMAN": 2,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4338,
+      "title": "跨州飞行车旅行",
+      "description": "你租了一架长途飞行车从夜城飞往新芝加哥，全程需要六小时。飞行车在自动驾驶模式下沿着空中走廊飞行，你可以在车内自由活动。车载厨房提供热食，全息窗可以切换成各种风景模式。飞行车飞越大平原时，下方是无尽的合成农田和风力发电机组。偶尔有其他飞行车的灯光在远处的夜空中闪烁，像是移动的星星。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在飞行车后座享受一顿空中大餐",
+          "effects": {
+            "MONEY": -2000,
+            "STYLE": 3,
+            "HUMAN": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "通过全息窗观察沿途地貌变化",
+          "effects": {
+            "MONEY": -1500,
+            "STYLE": 3,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1800,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4339,
+      "title": "低空飞行禁区",
+      "description": "城市中心有一些标记为禁飞区的低空区域，通常是公司总部或政府建筑周围。你的飞行车在禁区边缘的合法高度飞行，可以看到禁区内的安保无人机在巡逻。一栋黑色的玻璃幕墙大楼顶部有一个私人停机坪，一架豪华飞行车正在降落。禁区的边界由全息力场标记，任何闯入者都会被自动防御系统锁定。你远远地看着这一切，感受到权力的冰冷。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在合法距离外观察安保系统",
+          "effects": {
+            "MONEY": -600,
+            "TECH": 3,
+            "HUMAN": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "快速掠过禁区边缘感受刺激",
+          "effects": {
+            "MONEY": -800,
+            "TRAUMA": 2,
+            "STYLE": 3,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -900,
+        "HUMAN": 1,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4340,
+      "title": "内华达沙漠越野",
+      "description": "内华达沙漠的越野赛道吸引了全美各地的赛博越野爱好者，你租了一辆改装过的沙漠越野车加入了他们。沙丘在烈日下泛着金光，越野车的宽胎在沙地上留下深深的辙痕。远处一群改装车正在沙丘上竞速，引擎的轰鸣声在空旷的沙漠中回荡。你在一个临时营地停下，车手们围坐在一起分享着改装经验。夜幕降临后，营地点起了篝火，远处的沙漠漆黑一片。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加沙丘竞速赛",
+          "effects": {
+            "MONEY": -1000,
+            "STYLE": 4,
+            "TRAUMA": 2,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在营地与其他车手交流改装经验",
+          "effects": {
+            "MONEY": -600,
+            "TECH": 3,
+            "HUMAN": 3,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1200,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4341,
+      "title": "51区外围探索",
+      "description": "51区在赛博时代仍然是高度机密的军事设施，外围布满了传感器和巡逻无人机。你跟随一名自称前雇用的向导来到了设施的外围围栏，围栏上挂着'致命武力区'的警告牌。向导指着远处一栋没有窗户的巨大建筑说他曾在里面见过'不属于这个世界的东西'。一架黑色无人机从头顶掠过，红色的扫描光束扫过地面。你感到一阵寒意，不确定是因为风还是因为被监视。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "听向导讲述他在里面工作时的故事",
+          "effects": {
+            "MONEY": -800,
+            "HUMAN": 2,
+            "TECH": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "尝试用便携扫描器探测外围信号",
+          "effects": {
+            "MONEY": -1000,
+            "TECH": 3,
+            "TRAUMA": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1300,
+        "HUMAN": 1,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4342,
+      "title": "沙漠太阳能农场",
+      "description": "内华达沙漠中有一片巨大的太阳能农场，数百万面镜子排列成阵将阳光反射到中央的聚热塔上。你站在参观平台上，热浪扑面而来，塔顶发出刺眼的白光。农场的管理员告诉你这里可以为三个城市提供电力，是人类最大的太阳能设施之一。偶尔有清洁机器人在镜子阵列中穿行，用高压水枪清除沙尘。远处一排风力发电机在热风中缓缓转动，像一群沉默的巨人。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加导览了解太阳能发电技术",
+          "effects": {
+            "MONEY": -700,
+            "TECH": 3,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在参观平台拍摄镜面阵列",
+          "effects": {
+            "MONEY": -500,
+            "STYLE": 3,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -900,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4343,
+      "title": "废弃采矿小镇",
+      "description": "沙漠深处有一座被废弃的锂矿小镇，矿脉枯竭后居民全部搬走。你走在空荡荡的主街上，两旁是沙尘覆盖的商店和民居。一家杂货店的招牌还在摇晃，橱窗里陈列着褪色的商品。镇中心的纪念碑上刻着矿工的名字，有些名字被沙子磨得已经看不清了。一只机械蝎子从废弃的矿洞口爬过，尾针上的红灯一闪一闪。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "进入废弃矿洞探索",
+          "effects": {
+            "MONEY": -400,
+            "TECH": 2,
+            "TRAUMA": 3,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在镇中搜寻旧时代的遗物",
+          "effects": {
+            "MONEY": -300,
+            "STYLE": 3,
+            "HUMAN": 2,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -800,
+        "HUMAN": 1,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4344,
+      "title": "沙尘暴中求生",
+      "description": "一场巨型沙尘暴突然袭来，遮天蔽日的黄沙在几分钟内吞没了整个沙漠。你的越野车在能见度几乎为零的条件下艰难行驶，挡风玻璃被沙石打得啪啪作响。车外温度骤降，沙尘中夹杂着静电，让所有电子设备都出现了故障。你看到远处有一个废弃的建筑，可能是唯一的避难所。风声像一群嚎叫的野兽，整个世界都在震动。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "冒险冲向废弃建筑避难",
+          "effects": {
+            "MONEY": -500,
+            "TRAUMA": 3,
+            "LIFE": -1,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "留在车内等待风暴过去",
+          "effects": {
+            "MONEY": -300,
+            "TRAUMA": 2,
+            "LIFE": 1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -700,
+        "HUMAN": 1,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4345,
+      "title": "沙漠游牧民部落",
+      "description": "在沙漠深处你遇到了一支赛博游牧民部落，他们住在由旧集装箱和太阳能板搭建的移动营地中。部落的首领是一位全身义体化的老人，他用电 子眼打量着你然后微笑着邀请你做客。营地里孩子们在全息沙盘上玩耍，女人们用便携3D打印机制造日用品。首领告诉你他们选择游牧生活是为了远离城市的监视和控制。篝火旁他们用合成烟草招待你，讲述着沙漠中的传说。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "与首领深入交谈了解游牧生活",
+          "effects": {
+            "MONEY": -600,
+            "HUMAN": 4,
+            "STYLE": 3,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用物资交换他们制造的手工艺品",
+          "effects": {
+            "MONEY": -1000,
+            "STYLE": 3,
+            "HUMAN": 2,
+            "TECH": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -800,
+        "HUMAN": 3,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4346,
+      "title": "干涸湖床飙车",
+      "description": "内华达的干涸湖床是天然的高速赛道，平坦如镜的盐碱地延伸到地平线。你驾驶一辆改装跑车在湖床上加速到400公里每小时，盐粒在车底飞溅如雪。远处其他车手也在测试他们的车辆，引擎声在空旷的湖床上回荡。一辆流线型的电动赛车以惊人的速度从你身边掠过，只留下一阵盐尘。湖床上的白色盐壳在阳光下闪闪发光，像一片冰冻的海洋。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全力加速挑战最高速度",
+          "effects": {
+            "MONEY": -1000,
+            "STYLE": 4,
+            "TRAUMA": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在湖床上拍照记录",
+          "effects": {
+            "MONEY": -600,
+            "STYLE": 3,
+            "HUMAN": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -900,
+        "HUMAN": 1,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4347,
+      "title": "地下掩体发现",
+      "description": "在沙漠中你偶然发现了一个被沙子半掩埋的金属舱门，打开后发现是一个旧时代的地下掩体。沿着生锈的梯子下去，里面是一个约五十平方米的空间，堆满了罐头、水和旧武器。墙上的日历停在三十年前的某一天，角落里有一台还能启动的旧终端。终端里记录着掩体主人对末日到来的恐惧和等待。空气中有一种陈旧的味道，时间在这里似乎停止了。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "启动旧终端查看记录",
+          "effects": {
+            "MONEY": -400,
+            "TECH": 3,
+            "TRAUMA": 2,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "搜寻掩体中的物资",
+          "effects": {
+            "MONEY": -200,
+            "TECH": 2,
+            "STYLE": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -600,
+        "HUMAN": 2,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4348,
+      "title": "沙漠黑市交易点",
+      "description": "沙漠中的黑市交易点每月只开一次，交易地点通过加密频道临时通知。你跟着一群商人来到了一个由帐篷和飞行车围成的临时市场。摊位上摆满了非法义体、未注册武器、违禁药物和盗版数据芯片。一个戴全面罩的商人在兜售据说是从公司实验室偷出来的实验性神经接口。远处有武装无人机在巡逻，确保交易不被打断。空气中弥漫着紧张和贪婪的气味。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买一个实验性神经接口",
+          "effects": {
+            "MONEY": -2500,
+            "TECH": 4,
+            "CHROME": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在市场中寻找便宜的黑市情报",
+          "effects": {
+            "MONEY": -800,
+            "HUMAN": 2,
+            "REP": 2,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1000,
+        "HUMAN": 1,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4349,
+      "title": "沙漠绿洲数据站",
+      "description": "在沙漠中央有一座孤零零的数据中继站，被当地人称为'绿洲'因为它的冷却系统在周围形成了一小片湿润区域。你走进中继站，几株变异的植物在冷却水雾中茂盛生长。站内的AI管理员用柔和的声音欢迎你，并提供了饮用水和数据接入服务。你坐在冷却塔旁的阴影中，感受着水雾带来的凉意。在这个被热浪和沙尘统治的世界里，这片绿色简直像是一个奇迹。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "使用数据接入服务下载最新资讯",
+          "effects": {
+            "MONEY": -800,
+            "TECH": 3,
+            "HUMAN": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在绿洲旁休息恢复体力",
+          "effects": {
+            "MONEY": -500,
+            "LIFE": 2,
+            "TRAUMA": -1,
+            "HUMAN": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -700,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4350,
+      "title": "大西洋海底殖民地",
+      "description": "大西洋海底殖民地位于海面下五百米处，巨大的穹顶结构内维持着一个自给自足的社区。你乘坐深海电梯下到殖民地，沿途看到各种深海生物在窗外的黑暗中游过。穹顶内部有人造阳光系统，街道两旁种满了经过基因改造的水生植物。居民们穿着轻便的潜水服在穹顶外的海床上工作，采集矿物和培育深海作物。这里的空气带着一种微咸的湿润感，像一个永远在呼吸的巨大肺。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加穹顶外的海床漫步",
+          "effects": {
+            "MONEY": -2000,
+            "STYLE": 4,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在殖民地内的水族餐厅用餐",
+          "effects": {
+            "MONEY": -1500,
+            "STYLE": 3,
+            "HUMAN": 3,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -2500,
+        "HUMAN": 2,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4351,
+      "title": "太平洋深海观光",
+      "description": "太平洋深海观光潜艇带你下潜到三千米深的海域，这里是阳光永远无法到达的黑暗世界。潜艇的前照灯在黑暗中切开两道光柱，照亮了漂浮的深海生物和漂浮的塑料碎片。一只巨大的深海水母从潜艇旁游过，它的身体在探照灯下发出生物荧光。海底的火山口旁有一群管虫在热泉中摇曳，这是地球上最古老的生命形式之一。舱内的压力计不断攀升，提醒你头顶有数千吨的海水。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在观景舱拍摄深海生物",
+          "effects": {
+            "MONEY": -1800,
+            "STYLE": 4,
+            "TECH": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "听海洋生物学家讲解深海生态",
+          "effects": {
+            "MONEY": -1500,
+            "TECH": 3,
+            "HUMAN": 2,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -2200,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4352,
+      "title": "海底穹顶城市",
+      "description": "海底穹顶城市'亚特兰蒂斯'是赛博时代最宏伟的工程之一，能容纳五万人的穹顶在海面下一千米处。你通过一条透明隧道进入城市，两旁是缓缓游过的鱼群和水流。穹顶内有一座小型的中央公园，人造阳光透过穹顶的透明材料照在草坪上。城市的建筑风格融合了海洋元素和赛博美学，许多建筑外形像贝壳或珊瑚。居民们大多从事深海采矿和海洋养殖，他们有着独特的水下文化。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在城市中央公园散步",
+          "effects": {
+            "MONEY": -1600,
+            "STYLE": 4,
+            "HUMAN": 3,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "参观深海采矿设施",
+          "effects": {
+            "MONEY": -1400,
+            "TECH": 3,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -2000,
+        "HUMAN": 2,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4353,
+      "title": "深海生物观赏",
+      "description": "深海生物观赏站建在一处热泉附近，吸引了各种奇特的深海生物前来觅食。你坐在观测室的强化玻璃后，看着一只巨大的等足虫从岩石缝隙中爬出。全息信息板显示着每种生物的名称和习性，有些物种是在赛博时代才被发现的。一群发光的深海鱼形成螺旋形的队列在热泉上方游动，像一个活的光环。偶尔有一只深海章鱼用触手拍打观察窗，似乎在好奇地打量你。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用全息记录仪拍摄深海生物",
+          "effects": {
+            "MONEY": -1200,
+            "STYLE": 3,
+            "TECH": 2,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "通过交互系统学习深海生物学",
+          "effects": {
+            "MONEY": -1000,
+            "TECH": 3,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1500,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4354,
+      "title": "海底隧道穿越",
+      "description": "海底隧道连接着两座海底城市，全长两百公里，内部运行着磁悬浮列车。你坐在列车中看着隧道外的深海世界，强化玻璃隧道壁外偶尔有大型海洋生物游过。隧道穿过一处海底峡谷时，你看到了峡谷底部散落的沉船残骸。一名同车的海洋考古学家告诉你那些沉船来自不同的时代，最古老的已有三百年历史。列车在隧道中平稳行驶，深海的压力和黑暗被隔绝在玻璃之外。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "与海洋考古学家交流沉船知识",
+          "effects": {
+            "MONEY": -1000,
+            "HUMAN": 4,
+            "TECH": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "通过车窗观察海底峡谷",
+          "effects": {
+            "MONEY": -800,
+            "STYLE": 3,
+            "HUMAN": 2,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1400,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4355,
+      "title": "海底矿区参观",
+      "description": "海底矿区的工人穿着重型潜水服在海床上开采稀土元素和锂矿，这些矿物是赛博工业的基础原料。你乘坐观察舱下到矿区，看到巨大的机械臂从海床中抓取矿石。矿区的AI主管通过舱内扬声器向你介绍开采流程和安全措施。一群机械螃蟹在矿区边缘清理废料，它们的金属外壳在探照灯下闪光。远处一座海底冶炼厂的烟囱排出经过处理的废水，在深海中形成浑浊的羽流。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加矿区安全培训课程",
+          "effects": {
+            "MONEY": -900,
+            "TECH": 3,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在观察舱中拍摄采矿作业",
+          "effects": {
+            "MONEY": -700,
+            "STYLE": 3,
+            "TECH": 2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1200,
+        "HUMAN": 1,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4356,
+      "title": "深海潜水器体验",
+      "description": "你租了一艘个人深海潜水器，在AI指导下自行操作下潜到深海。潜水器的球形舱内刚好容纳一人，全方位的透明窗让你感觉自己漂浮在水中。你操控潜水器靠近一群深海管水母，它们透明的身体在潜水器的灯光下闪烁着彩虹般的光芒。一只好奇的深海鳗鱼绕着潜水器游了几圈，然后用尾巴拍了一下观察窗。下潜到最深处时你关掉了灯光，在完全的黑暗中感受深海的沉默。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "尝试深海摄影记录生物",
+          "effects": {
+            "MONEY": -1800,
+            "STYLE": 4,
+            "TECH": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在深海中冥想感受宁静",
+          "effects": {
+            "MONEY": -1500,
+            "TRAUMA": -3,
+            "STYLE": 3,
+            "HUMAN": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -2000,
+        "HUMAN": 2,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4357,
+      "title": "海底酒店住宿",
+      "description": "海底酒店建在一处珊瑚礁旁，每个房间都是独立的球形舱，拥有三百六十度海景。你躺在房间的大床上，看着窗外五颜六色的珊瑚和游动的鱼群。酒店的AI管家通过全息投影询问你是否需要晚餐，菜单上有合成海鲜和深海植物沙拉。夜间珊瑚礁上的生物发出荧光，将整个房间映照成梦幻的蓝绿色。这是一晚价格不菲的体验，但看着窗外的深海世界，你觉得值得。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 5,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "享受全包式深海晚餐和SPA",
+          "effects": {
+            "MONEY": -2800,
+            "STYLE": 5,
+            "LIFE": 2,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在房间里安静观赏夜间珊瑚",
+          "effects": {
+            "MONEY": -2200,
+            "STYLE": 4,
+            "TRAUMA": -2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -2500,
+        "HUMAN": 2,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4358,
+      "title": "海洋研究站访问",
+      "description": "太平洋深海研究站是一间国际合作的科学设施，专注于深海生态和气候变化研究。你跟随一名科学家参观了实验室，里面摆满了各种深海样本和分析设备。一名研究员正在用基因编辑技术培育能分解塑料的深海细菌。实验室的观察窗外面，一株巨大的深海珊瑚已经被用作长期监测的标记物。科学家告诉你深海正在以比预想更快的速度酸化，许多物种面临灭绝。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加科学讲座了解深海研究",
+          "effects": {
+            "MONEY": -800,
+            "TECH": 3,
+            "HUMAN": 3,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在实验室帮忙分类深海样本",
+          "effects": {
+            "MONEY": -600,
+            "TECH": 2,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1000,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4359,
+      "title": "海底废墟探索",
+      "description": "在海面下两百米处有一座被海水淹没的旧城市废墟，据说是大崩溃前的一个海滨城市。你穿着潜水服在废墟中游动，看到被珊瑚覆盖的建筑和生锈的汽车残骸。一条全息导览线引导你穿过曾经的主街，两旁是现在成了鱼群栖息地的商店。你在一个被海水浸泡的图书馆废墟中找到了几本还能辨认封面的书。阳光从废墟的缝隙中射入，在水中形成一道道金色的光柱。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在废墟中搜寻旧时代遗物",
+          "effects": {
+            "MONEY": -1200,
+            "STYLE": 3,
+            "TECH": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在废墟中拍摄水下摄影",
+          "effects": {
+            "MONEY": -1000,
+            "STYLE": 4,
+            "HUMAN": 2,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1600,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4360,
+      "title": "近地轨道空间站",
+      "description": "太空电梯以惊人的速度将你送到了四百公里高的近地轨道空间站。失重感突然袭来，你的胃翻了个个儿，但很快适应了这种漂浮的感觉。空间站的观察窗外面，地球像一个巨大的蓝色弹珠悬浮在黑色太空中。远处大气层的边缘发出淡淡的荧光，那是太阳光在大气中散射的结果。一名穿着磁力靴的工作人员飘过来帮助你固定安全绳，提醒你在失重环境中注意安全。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在观景舱欣赏地球全景",
+          "effects": {
+            "MONEY": -2500,
+            "STYLE": 5,
+            "HUMAN": 2,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "参加空间站导览了解太空生活",
+          "effects": {
+            "MONEY": -2000,
+            "TECH": 3,
+            "HUMAN": 2,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -3000,
+        "HUMAN": 2,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4361,
+      "title": "零重力体验舱",
+      "description": "空间站的零重力体验舱是一个球形的空间，游客可以在其中自由漂浮和翻转。你脱掉磁力靴推了一下舱壁，整个人像气球一样飘了出去。其他游客在你的周围做着各种杂技般的动作，有人在尝试空中翻滚，有人在玩水球。一名教练飘在中央指导大家如何控制身体方向。从舱顶的透明窗看出去，可以看到地球的弧线和大气层的薄边。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "尝试高难度零重力杂技",
+          "effects": {
+            "MONEY": -1800,
+            "STYLE": 4,
+            "TRAUMA": 2,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在零重力中放松漂浮",
+          "effects": {
+            "MONEY": -1500,
+            "TRAUMA": -2,
+            "STYLE": 3,
+            "HUMAN": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -2000,
+        "HUMAN": 2,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4362,
+      "title": "太空电梯乘坐",
+      "description": "太空电梯的轿厢沿着一条由碳纳米管制成的缆绳以每秒一百公里的速度上升。你坐在轿厢内，看着窗外的天空从蓝色变成深紫色再到漆黑。轿厢内的重力逐渐减小，你的身体感觉越来越轻。远处可以看到其他轿厢在缆绳上移动，像串在丝线上的珠子。当轿厢穿过大气层时，外面燃起了一层薄薄的等离子光辉。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在轿厢观景窗拍摄升空过程",
+          "effects": {
+            "MONEY": -2000,
+            "STYLE": 4,
+            "TECH": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "与同乘的太空游客交流",
+          "effects": {
+            "MONEY": -1800,
+            "HUMAN": 4,
+            "STYLE": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -2500,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4363,
+      "title": "轨道酒店住宿",
+      "description": "轨道酒店环绕地球运行，每九十分钟经历一次日出和日落。你的房间有一扇巨大的窗户，窗外是不断变化的地球景观。酒店的服务全部由AI完成，一名机器人管家为你送来了真空包装的太空美食。你看着窗外，非洲大陆正在下方缓缓移动，撒哈拉沙漠的沙丘在阳光下闪闪发光。夜间你看到了城市的灯光链沿着海岸线延伸，像是地球的神经系统在发光。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 5,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在酒店全景观景厅用餐",
+          "effects": {
+            "MONEY": -3000,
+            "STYLE": 5,
+            "HUMAN": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在房间中安静观赏地球自转",
+          "effects": {
+            "MONEY": -2500,
+            "STYLE": 4,
+            "TRAUMA": -2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -2800,
+        "HUMAN": 2,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4364,
+      "title": "太空行走体验",
+      "description": "在专业教练的陪同下，你穿着太空服走出了空间站的气闸舱。安全绳将你连接在空间站上，你悬浮在太空中，脚下是蓝色的地球。没有任何参照物，你感觉自己在无限的空间中静止不动。教练通过头盔通讯告诉你慢慢转身看背面，你看到了漆黑的深空和无数比地面更明亮的星星。你的心跳加速，但同时感受到了一种超越恐惧的平静。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "尝试无安全绳的短距太空跳",
+          "effects": {
+            "MONEY": -3000,
+            "STYLE": 5,
+            "TRAUMA": 3,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "安全地享受太空行走的壮景",
+          "effects": {
+            "MONEY": -2500,
+            "STYLE": 4,
+            "TRAUMA": -1,
+            "HUMAN": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -3000,
+        "HUMAN": 2,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4365,
+      "title": "月球中转站",
+      "description": "月球中转站建在月球轨道上，是前往月球表面的中转点。你透过观察窗看到月球表面的灰色荒原和密密麻麻的陨石坑。一艘月球着陆器正在对接，它银色的外壳在阳光下反射出刺眼的光芒。中转站内有一家纪念品商店，出售月球岩石碎片和零重力制造的晶体。一名刚从月球回来的旅客兴奋地描述着在月球低重力下跳跃的感觉。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买月球岩石纪念品",
+          "effects": {
+            "MONEY": -2500,
+            "STYLE": 4,
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "与从月球返回的旅客交谈",
+          "effects": {
+            "MONEY": -1800,
+            "HUMAN": 4,
+            "STYLE": 2,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -2200,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4366,
+      "title": "轨道工厂参观",
+      "description": "轨道工厂利用零重力环境制造在地球上无法生产的高精度产品。你穿上了无尘服跟随工厂工程师参观了生产线，看到了零重力下完美的球体轴承和超纯晶体的制造过程。工厂的AI系统管理着每一道工序，机器臂在零重力中精确地组装微型组件。工程师告诉你这里生产的光纤纯度是地球工厂的一百倍，用于连接全球的数据网络。参观结束后你收到了一份工厂制造的微型晶体纪念品。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "深入了解零重力制造技术",
+          "effects": {
+            "MONEY": -1500,
+            "TECH": 4,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在工厂观景台拍照",
+          "effects": {
+            "MONEY": -1200,
+            "STYLE": 3,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1800,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4367,
+      "title": "太空垃圾观光",
+      "description": "轨道上有数百万块太空垃圾，一家公司专门提供太空垃圾观光服务。你坐在一艘加固的观光飞船中，穿行在废弃卫星和火箭残骸之间。导游指给你看一颗二十年前的通信卫星，它的太阳能板已经脱落，像一具太空中的尸体。远处一块火箭外壳在阳光下闪烁，它的轨道正在缓慢衰减。飞船的雷达不断发出警报声，提醒前方有碎片接近。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "听导游讲述太空垃圾的历史",
+          "effects": {
+            "MONEY": -1600,
+            "HUMAN": 3,
+            "TECH": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用高倍望远镜观察碎片细节",
+          "effects": {
+            "MONEY": -1400,
+            "TECH": 2,
+            "STYLE": 2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -2000,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4368,
+      "title": "轨道军事区旁观",
+      "description": "轨道军事区是禁止平民进入的区域，你的观光飞船在边界外远远地观察。远处可以看到一座全副武装的轨道平台，它的表面布满了导弹发射管和激光炮。一队军用飞行器从平台旁飞过，编队整齐得像一群候鸟。导游小声说那个平台可以同时攻击地面和轨道上的目标。你看着那座沉默的武器平台在太空中缓缓旋转，感到一种说不出的不安。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用长焦镜头拍摄军事平台",
+          "effects": {
+            "MONEY": -1500,
+            "TECH": 2,
+            "STYLE": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "保持距离安静观察",
+          "effects": {
+            "MONEY": -1300,
+            "HUMAN": 1,
+            "STYLE": 2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1800,
+        "HUMAN": 1,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4369,
+      "title": "返回舱着陆体验",
+      "description": "返回舱是空间站旅客返回地球的方式，你被绑在减震座椅上等待分离。舱体与空间站分离时传来一阵震动，然后你开始以自由落体向地球坠落。舱外温度急剧升高，隔热罩发出的红光透过小窗映入舱内。当减速伞打开时，你的身体被重重地压进座椅，重力突然回来了。着陆时舱体在地面上弹了几下，然后一切归于寂静——你回到了地球。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在返回过程中通过舷窗拍摄",
+          "effects": {
+            "MONEY": -1800,
+            "STYLE": 4,
+            "TRAUMA": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "闭眼享受重返地球的体验",
+          "effects": {
+            "MONEY": -1500,
+            "TRAUMA": 1,
+            "STYLE": 3,
+            "HUMAN": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -2000,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4370,
+      "title": "数字黄石公园",
+      "description": "数字黄石公园是一个完全由全息投影和力场构成的虚拟自然公园，建在旧黄石公园的遗址上。你走进公园大门，全息投影立刻在你的周围构建出了喷涌的间歇泉和茂密的针叶林。力场模拟了水雾的触感和硫磺的气味，让虚拟体验几乎以假乱真。一头全息灰熊从林中走出，它的毛发在风中飘动，每一根都清晰可见。公园的设计者甚至在空气中加入了鸟鸣声和风声，创造出一个完美的自然幻象。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加全息野生动物观赏之旅",
+          "effects": {
+            "MONEY": -1200,
+            "STYLE": 4,
+            "HUMAN": 3,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在全息间歇泉旁野餐",
+          "effects": {
+            "MONEY": -1000,
+            "STYLE": 3,
+            "HUMAN": 2,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1500,
+        "HUMAN": 2,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4371,
+      "title": "虚拟大峡谷",
+      "description": "虚拟大峡谷的规模比真实的大峡谷更大，全息投影将峡谷壁延伸到了万米深处。你站在全息玻璃桥上俯瞰，力场模拟的风从峡谷底部吹上来，带着泥土和岩石的气息。全息投影重现了科罗拉多河数百万年的冲刷过程，你看着峡谷在你眼前逐步形成。一只全息秃鹫从峡谷底部飞起，翅膀几乎擦过你的头顶。日落时分，全息投影将整个峡谷染成了金色和紫色的交响乐。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "乘坐全息直升机游览峡谷",
+          "effects": {
+            "MONEY": -1800,
+            "STYLE": 4,
+            "HUMAN": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在峡谷边缘观看全息日落",
+          "effects": {
+            "MONEY": -1200,
+            "STYLE": 4,
+            "HUMAN": 2,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1600,
+        "HUMAN": 2,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4372,
+      "title": "全息红杉森林",
+      "description": "全息红杉森林重现了加州红杉国家公园被山火烧毁前的原始森林。你走在全息红杉之间，每棵树都高达百米，树干粗到十人才能合抱。力场模拟了树皮的纹理和森林中凉爽湿润的空气。阳光透过全息树冠洒下斑驳的光影，全息松鼠在树干上追逐嬉戏。一名全息护林员向你介绍红杉的生态和它们在大崩溃中被毁灭的历史。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "跟随全息护林员学习森林生态",
+          "effects": {
+            "MONEY": -1000,
+            "TECH": 2,
+            "HUMAN": 3,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在全息巨树下冥想",
+          "effects": {
+            "MONEY": -800,
+            "TRAUMA": -2,
+            "STYLE": 3,
+            "HUMAN": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1200,
+        "HUMAN": 2,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4373,
+      "title": "赛博优胜美地",
+      "description": "赛博优胜美地国家公园将真实地貌与全息增强结合，你走在真实的岩石上但看到的是增强后的风景。半穹顶岩壁上投射着攀岩者的全息影像，他们在垂直的岩壁上做着惊险的动作。优赛美地瀑布的全息水流比真实瀑布更加壮观，水雾中还能看到彩虹。力场模拟了瀑布的轰鸣声和水雾的触感。一只全息鹿在草地上吃草，抬起头用大大的眼睛看着你。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "观看全息攀岩表演",
+          "effects": {
+            "MONEY": -1100,
+            "STYLE": 4,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在草地上与全息动物互动",
+          "effects": {
+            "MONEY": -900,
+            "HUMAN": 3,
+            "STYLE": 3,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1300,
+        "HUMAN": 2,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4374,
+      "title": "数字沼泽探险",
+      "description": "数字沼泽公园重现了路易斯安那湿地在大崩溃前的生态，全息鳄鱼在水中潜伏。你乘坐全息气垫船在沼泽中穿行，力场模拟的水花溅在身上。全息西班牙苔藓从树上垂下，在气垫船的风中飘荡。导游AI通过耳机向你介绍沼泽生态系统的复杂性和它被破坏的历史。一只全息鳄鱼突然从水中跃起，全息水花四溅，周围游客发出惊叫。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加夜间沼泽全息探险",
+          "effects": {
+            "MONEY": -1400,
+            "STYLE": 4,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在沼泽观鸟台观察全息鸟类",
+          "effects": {
+            "MONEY": -1000,
+            "HUMAN": 3,
+            "STYLE": 2,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1200,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4375,
+      "title": "全息野生动物园",
+      "description": "全息野生动物园重现了非洲大草原的生态系统，你坐在全息越野车中穿梭于全息草原。一群全息狮子在金合欢树下休息，雄狮的鬃毛在微风中飘动。全息角马群在远处形成一条迁徙的长龙，扬起全息尘土。力场模拟了草原的热风和干草的气味。一头全息大象从车旁走过，它的鼻子几乎触到了车顶。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在全息草原上体验日落",
+          "effects": {
+            "MONEY": -1500,
+            "STYLE": 4,
+            "HUMAN": 3,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "参加全息动物行为讲解",
+          "effects": {
+            "MONEY": -1100,
+            "TECH": 2,
+            "HUMAN": 3,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1400,
+        "HUMAN": 2,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4376,
+      "title": "赛博冰川公园",
+      "description": "赛博冰川公园通过全息和力场技术重现了蒙大拿冰川国家公园的冰川景观。你站在全息冰川前，力场模拟了冰面的寒冷和空气中冰晶的触感。全息投影显示了冰川在过去一百年中的退缩过程，从壮观的冰墙变成了稀疏的冰碛。公园的AI解说员告诉你如果气候继续变暖，所有真实冰川将在二十年内消失。你在全息冰洞中穿行，蓝色的冰壁在头顶形成拱形。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在全息冰洞中探索",
+          "effects": {
+            "MONEY": -1200,
+            "STYLE": 4,
+            "HUMAN": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "参加冰川退缩科普展览",
+          "effects": {
+            "MONEY": -900,
+            "TECH": 3,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1300,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4377,
+      "title": "虚拟沙漠保护区",
+      "description": "虚拟沙漠保护区重现了莫哈韦沙漠的生态系统，你走在全息仙人掌和约书亚树之间。力场模拟了沙漠的干燥热风，脚下的沙地发出真实的嘎吱声。一只全息响尾蛇在岩石上晒太阳，它的尾巴发出全息版本的警告声。远处全息沙尘暴在地平线上形成一堵黄色的墙壁。日落时分全息投影将沙漠染成了血红色，仙人掌的剪影像黑色的雕像。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在全息沙漠中观星",
+          "effects": {
+            "MONEY": -1100,
+            "STYLE": 4,
+            "HUMAN": 2,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "学习沙漠生物适应性知识",
+          "effects": {
+            "MONEY": -800,
+            "TECH": 2,
+            "HUMAN": 2,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1200,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4378,
+      "title": "数字珊瑚礁",
+      "description": "数字珊瑚礁公园建在一个巨大的水族馆中，全息投影叠加在真实的珊瑚上。你走在海底隧道中，看着全息和真实鱼群在你头顶游过。全息投影补全了被白化死亡的真实珊瑚，让 reef 恢复了昔日的色彩。力场模拟了海水的温度和流动感，让你仿佛真的在海底漫步。一名海洋生物学家告诉你全球超过百分之七十的珊瑚礁已经死亡，这个公园是最后的记忆之一。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加珊瑚保护知识讲座",
+          "effects": {
+            "MONEY": -900,
+            "TECH": 3,
+            "HUMAN": 3,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在海底隧道拍照",
+          "effects": {
+            "MONEY": -1100,
+            "STYLE": 4,
+            "HUMAN": 2,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1300,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4379,
+      "title": "全息极光公园",
+      "description": "全息极光公园在室内重现了北极极光的壮观景象，穹顶上流动着绿色和紫色的光芒。你躺在草地上仰望穹顶，全息极光像巨大的丝绸在天空中舞动。力场模拟了极地的冷空气，你裹着毯子喝着热巧克力。全息星空作为极光的背景，星星在极光的缝隙中闪烁。公园的AI解说员讲述着极光的科学原理和古代人类对它的神话传说。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 5,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在极光下举办一场野餐",
+          "effects": {
+            "MONEY": -1200,
+            "STYLE": 4,
+            "HUMAN": 3,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "安静地躺着欣赏极光",
+          "effects": {
+            "MONEY": -900,
+            "TRAUMA": -3,
+            "STYLE": 3,
+            "HUMAN": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1100,
+        "HUMAN": 2,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4380,
+      "title": "VR历史重现体验",
+      "description": "VR历史重现让你回到大崩溃前的美国，体验21世纪初的日常生活。你戴上神经接口头盔，意识被传送到一个精心重建的虚拟世界中。你走在一条真实的柏油马路上，两旁是燃烧汽油的汽车和砖砌的房屋。空气中没有合成食品的味道，只有真实食物的香气和汽油的气味。虚拟世界中的NPC有着完整的人格和对话，让你几乎忘记这不是真实的。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在虚拟世界中体验旧时代的生活",
+          "effects": {
+            "MONEY": -1200,
+            "STYLE": 4,
+            "HUMAN": 3,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "与虚拟NPC深入交流历史",
+          "effects": {
+            "MONEY": -1000,
+            "TECH": 2,
+            "HUMAN": 3,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1500,
+        "HUMAN": 2,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4381,
+      "title": "虚拟巴黎漫游",
+      "description": "VR巴黎重现了这座光之城在大火和洪水之前的样子，埃菲尔铁塔在全息天空中矗立。你走在塞纳河畔的石板路上，VR手套让你能感受到石墙的粗糙和咖啡杯的温度。虚拟的街头画家在为你画像，他的画笔在虚拟画布上留下真实的笔触。你爬上埃菲尔铁塔的顶层，俯瞰着虚拟巴黎的全景——每一栋建筑都是根据历史数据一比一重建的。街头的虚拟法国人说着流利的法语，你可以通过翻译系统与他们交谈。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在虚拟塞纳河上乘船游览",
+          "effects": {
+            "MONEY": -1400,
+            "STYLE": 4,
+            "HUMAN": 3,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在虚拟咖啡馆品尝法式咖啡",
+          "effects": {
+            "MONEY": -1100,
+            "STYLE": 3,
+            "HUMAN": 3,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1500,
+        "HUMAN": 2,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4382,
+      "title": "数字东京旅行",
+      "description": "VR东京重现了涉谷十字路口在数据瘟疫前的繁华景象，数千名虚拟行人在你身边穿过。霓虹灯和全息广告牌与真实世界中的几乎一样，但这里的空气中没有污染。你走进一家虚拟拉面店，VR味觉系统让你尝到了合成拉面模拟的传统酱油拉面的味道。涉谷上方的天空是完美的蓝天白云，这是真实东京在赛博时代很少看到的景色。虚拟世界中你甚至能感受到微风的触感，技术已经完美到了令人恐惧的程度。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在虚拟涉谷十字路口拍照",
+          "effects": {
+            "MONEY": -1100,
+            "STYLE": 4,
+            "HUMAN": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在虚拟秋叶原逛动漫商店",
+          "effects": {
+            "MONEY": -1300,
+            "STYLE": 3,
+            "HUMAN": 3,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1400,
+        "HUMAN": 2,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4383,
+      "title": "VR古代世界探索",
+      "description": "VR古罗马体验让你穿越到公元一世纪的罗马帝国，你站在斗兽场的看台上。虚拟世界中五万名观众在欢呼，角斗士在沙地上搏斗。你穿着虚拟的长袍走在罗马广场上，元老院的议员们在你身边讨论政治。VR系统完美重现了古罗马的气味——香料、汗水和烤面包的混合。远处维苏威火山在天际线上冒着烟，你知道它即将毁灭庞贝。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加虚拟角斗士训练",
+          "effects": {
+            "MONEY": -1300,
+            "STYLE": 4,
+            "TRAUMA": 2,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在虚拟罗马广场听历史解说",
+          "effects": {
+            "MONEY": -1000,
+            "TECH": 2,
+            "HUMAN": 3,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1500,
+        "HUMAN": 2,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4384,
+      "title": "虚拟音乐节",
+      "description": "虚拟音乐节聚集了来自全球的数百万虚拟参与者，你以自定义的虚拟形象参加。主舞台漂浮在虚拟天空中，DJ是一个AI混合了所有传奇音乐家风格的程序。虚拟音效系统让你感受到低音在胸腔中的震动，与真实音乐节几乎无异。你的虚拟形象可以飞行，你飞到舞台上空俯瞰整个人海。虚拟烟花在空中绽放，每一朵都绽出不同的颜色和图案。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在虚拟舞池中尽情跳舞",
+          "effects": {
+            "MONEY": -800,
+            "STYLE": 4,
+            "HUMAN": 3,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "飞到舞台上方观看全景",
+          "effects": {
+            "MONEY": -600,
+            "STYLE": 3,
+            "TECH": 1,
+            "HUMAN": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1000,
+        "HUMAN": 3,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4385,
+      "title": "数字深海潜水",
+      "description": "VR深海潜水让你无需任何设备就能探索马里亚纳海沟的最深处。你以虚拟形象漂浮在一万一千米深的海水中，周围是完全的黑暗和惊人的压力模拟。VR系统用生物荧光照亮了周围，你看到了真实世界中从未被人类目睹的深海生物。一只巨大的管虫从你身边飘过，它的触手在你的虚拟身体上留下光迹。海底的淤泥中偶尔有气泡冒出，来自地壳深处的热泉。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "探索海底热泉生态",
+          "effects": {
+            "MONEY": -1200,
+            "TECH": 3,
+            "STYLE": 3,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在虚拟深海中冥想",
+          "effects": {
+            "MONEY": -1000,
+            "TRAUMA": -2,
+            "STYLE": 3,
+            "HUMAN": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1400,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4386,
+      "title": "VR太空冒险",
+      "description": "VR太空冒险让你体验一次虚拟的星际旅行，你的虚拟飞船穿越了太阳系。你站在飞船的观景舱中，看着木星的大红斑在视野中缓缓变大。飞船穿越小行星带时，虚拟岩石在窗外飞过，VR系统模拟了微弱震动。你驾驶虚拟登陆器降落在木卫二的冰面上，透过冰层看到了下方海洋中游动的虚拟生物。这是一段纯想象和科学推测结合的旅程。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "驾驶飞船穿越小行星带",
+          "effects": {
+            "MONEY": -1300,
+            "STYLE": 4,
+            "TRAUMA": 1,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在木卫二上探索虚拟外星生物",
+          "effects": {
+            "MONEY": -1100,
+            "STYLE": 3,
+            "TECH": 2,
+            "HUMAN": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1500,
+        "HUMAN": 2,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4387,
+      "title": "虚拟末日世界",
+      "description": "VR末日世界是一种受欢迎的冒险体验，你被传送到一个虚拟的后启示录世界中。废弃的城市中长满了变异植物，天空中飘着灰色的灰烬。你穿着虚拟防护服在废墟中搜索物资，偶尔遇到虚拟的变异生物。VR系统完美模拟了恐惧感，当一只虚拟变异犬向你扑来时你的心跳真实地加速了。体验结束后你摘下头盔回到现实，突然觉得现实世界也没那么糟糕。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在末日世界中完成生存任务",
+          "effects": {
+            "MONEY": -1200,
+            "STYLE": 4,
+            "TRAUMA": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在末日世界中探索废墟",
+          "effects": {
+            "MONEY": -1000,
+            "STYLE": 3,
+            "TECH": 1,
+            "HUMAN": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1300,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4388,
+      "title": "数字艺术博物馆",
+      "description": "VR艺术博物馆收藏了从史前壁画到赛博数字艺术的全人类艺术作品。你以虚拟形象走进一座无限大的博物馆，每个展厅都有不同的艺术风格和时代。文艺复兴展厅中，你可以走近蒙娜丽莎的虚拟版本，甚至看到画布上的裂纹。一个展厅展示了由AI生成的赛博艺术，全息色彩在你周围流动如液体。博物馆的AI策展人根据你的反应实时调整展览内容，为你创造独一无二的艺术之旅。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加AI策展人的个性化艺术之旅",
+          "effects": {
+            "MONEY": -1100,
+            "STYLE": 5,
+            "HUMAN": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在虚拟创作室尝试数字绘画",
+          "effects": {
+            "MONEY": -900,
+            "STYLE": 4,
+            "TECH": 2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1200,
+        "HUMAN": 2,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4389,
+      "title": "VR记忆宫殿",
+      "description": "VR记忆宫殿是一项心理疗愈服务，AI根据你的记忆构建一座虚拟宫殿。你走进自己的记忆宫殿，每个房间对应一段过去的记忆。走廊两侧的画框中播放着你童年的片段，有些是你已经遗忘的画面。AI治疗师的声音在耳边响起，引导你面对那些痛苦的记忆。在一个房间里你看到了过去的自己，那个更年轻更天真的自己对你微笑。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在AI引导下面对一段痛苦记忆",
+          "effects": {
+            "MONEY": -1500,
+            "TRAUMA": -3,
+            "HUMAN": 3,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在记忆宫殿中自由探索",
+          "effects": {
+            "MONEY": -1200,
+            "HUMAN": 3,
+            "STYLE": 3,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1800,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4390,
+      "title": "墨西哥边境偷渡",
+      "description": "美墨边境墙在赛博时代被加高到了三十米，顶部布满了激光传感器和自动炮塔。你跟随一名经验丰富的蛇头穿越边境，他告诉你只有他知道墙下的一条废弃排水管道。管道里漆黑潮湿，你的膝盖在污水中趟水前行。远处传来无人机的嗡嗡声，蛇头示意你停下不要动。管道的出口在墨西哥一侧的一片灌木丛中，你终于松了一口气。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "付更多钱给蛇头走更安全的路线",
+          "effects": {
+            "MONEY": -2500,
+            "TRAUMA": 1,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "走危险的排水管道",
+          "effects": {
+            "MONEY": -1000,
+            "TRAUMA": 4,
+            "LIFE": -2,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -800,
+        "HUMAN": 1,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4391,
+      "title": "加拿大边境穿越",
+      "description": "美加边境在赛博时代也变得森严，但你听说在蒙大拿州有一段森林中的传感器盲区。你背着行囊在密林中穿行，脚下的松针发出沙沙声。边境巡逻无人机的声音在远处时隐时现，你每次听到都蹲下躲藏。一只机械驼鹿从灌木丛中走出来，它的身体上印着'边境监控'的标志——这是一个伪装的监控设备。你屏住呼吸直到它走开，然后加速穿过最后一段距离。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在森林中小心绕过监控设备",
+          "effects": {
+            "MONEY": -600,
+            "TECH": 2,
+            "TRAUMA": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用干扰器暂时瘫痪边境传感器",
+          "effects": {
+            "MONEY": -1500,
+            "TECH": 4,
+            "TRAUMA": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1000,
+        "HUMAN": 1,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4392,
+      "title": "数据墙旁的暗道",
+      "description": "边境数据墙是赛博时代的新防御系统，它追踪每一个接近边境的人的数字身份。你跟随一名黑客来到了边境附近的一间地下室，他打开了一个隐藏的地板门。地下通道是旧时代的走私隧道，墙壁上还挂着几十年前的电灯。黑客用便携设备不断干扰头顶的传感器，确保你们的数字签名不被记录。隧道在五百米外分叉，黑客说左边通向安全屋，右边通向一个黑市。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "走左边前往安全屋",
+          "effects": {
+            "MONEY": -1200,
+            "HUMAN": 2,
+            "TRAUMA": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "走右边前往黑市",
+          "effects": {
+            "MONEY": -800,
+            "REP": 2,
+            "HUMAN": 1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1000,
+        "HUMAN": 1,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4393,
+      "title": "走私客的地下隧道",
+      "description": "一名资深走私客带你穿越他维护的私人隧道，这条隧道据说是大崩溃前毒枭建造的。隧道宽约两米，高度刚好够人弯腰通过，墙壁上装着简陋的照明灯。走私客推着一辆电动手推车，上面装着要运过边境的货物。隧道中途有一个通风口，透过它你能看到头顶的星空和远处的边境墙灯光。走私客说他已经在这条隧道里走了二十年，从来没有被抓到过。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮走私客推车换取免费通行",
+          "effects": {
+            "MONEY": -300,
+            "HUMAN": 2,
+            "REP": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "付费通行不参与走私",
+          "effects": {
+            "MONEY": -2000,
+            "HUMAN": 1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1200,
+        "HUMAN": 1,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4394,
+      "title": "海上边境突破",
+      "description": "你选择从海上穿越边境，乘坐一艘改装过的快艇在夜间出发。海面漆黑，只有快艇的仪表盘发出微弱的蓝光。船长是一名前海军陆战队员，他用夜视仪扫视着海面寻找巡逻艇。远处边境巡逻船的探照灯在海面上扫过，船长立刻关闭了引擎。快艇在海浪中漂流，你屏住呼吸听着越来越近的引擎声。当巡逻船远去后，船长重新启动引擎，快艇如离弦之箭冲向对岸。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮助船长瞭望确保安全",
+          "effects": {
+            "MONEY": -800,
+            "HUMAN": 2,
+            "TRAUMA": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "全程保持安静不添乱",
+          "effects": {
+            "MONEY": -1500,
+            "TRAUMA": 3,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -2000,
+        "HUMAN": 1,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4395,
+      "title": "无人机巡逻区",
+      "description": "边境的无人机巡逻区覆盖了五十公里的纵深，你需要在无人机换班的间隙穿越。你趴在一处高地上观察，三架无人机以网格模式搜索着地面。一名经验丰富的向导计算着无人机的飞行轨迹，告诉你什么时候可以移动。你在灌木丛中匍匐前进，泥巴和树叶沾满了全身。突然一架无人机的摄像头转向了你的方向，你一动不动地等着它继续旋转。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "使用光学迷彩斗篷隐藏",
+          "effects": {
+            "MONEY": -1800,
+            "TECH": 3,
+            "TRAUMA": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "凭经验和时机穿越",
+          "effects": {
+            "MONEY": -600,
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1000,
+        "HUMAN": 1,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4396,
+      "title": "伪造证件穿越",
+      "description": "你获得了一套高质量的伪造证件和数字身份，准备从正规口岸穿越边境。边境检查站的通道排着长队，你紧张地攥着伪造证件。检查站的生物扫描器对你的面部和虹膜进行了扫描，几秒钟的等待感觉像几个小时。边检官员看着屏幕上的信息皱了皱眉，然后又看了你一眼。你的心跳几乎停止了，但他最终挥了挥手示意你可以通过。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买最高级别的伪造证件",
+          "effects": {
+            "MONEY": -3000,
+            "HUMAN": 1,
+            "STYLE": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "使用中等证件碰运气",
+          "effects": {
+            "MONEY": -1500,
+            "TRAUMA": 2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1000,
+        "HUMAN": 1,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4397,
+      "title": "边境检查站贿赂",
+      "description": "在边境检查站，一名腐败的边检官员暗示你可以用钱解决问题。他穿着整洁的制服，但眼神中透着贪婪。你把一叠信用芯片塞进护照里递给他，他不动声色地接过去翻看。他花了比正常更久的时间检查你的护照，然后在某个角落盖了章。他把护照还给你时嘴角微微上翘，低声说'欢迎入境'。你知道这扇门以后还可以用，但价格只会越来越高。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "贿赂官员安全通过",
+          "effects": {
+            "MONEY": -2500,
+            "HUMAN": 1,
+            "REP": -1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝贿赂走正规渠道",
+          "effects": {
+            "MONEY": -800,
+            "TRAUMA": 1,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1200,
+        "HUMAN": 1,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4398,
+      "title": "荒野边境跋涉",
+      "description": "你选择了一条最艰难的路线——穿越边境的荒野地带，这里没有路也没有人。你背着沉重的背包在崎岖的山路上行走，脚下的碎石不断滑动。白天烈日暴晒，夜晚寒风刺骨，温差超过三十度。第三天你的水快喝完了，你在一个干涸的河床下挖到了一点浑浊的地下水。第五天清晨你终于看到了远处的公路，那是自由的方向。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "坚持走完全程",
+          "effects": {
+            "MONEY": -500,
+            "TRAUMA": 4,
+            "LIFE": -2,
+            "STYLE": 3,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在途中寻求牧羊人帮助",
+          "effects": {
+            "MONEY": -1200,
+            "HUMAN": 3,
+            "TRAUMA": 2,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -700,
+        "HUMAN": 2,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4399,
+      "title": "赛博墙黑客突破",
+      "description": "赛博墙不仅是一道物理屏障，还是一个巨大的数字防御系统。你跟随一名顶级黑客来到了墙附近的一辆改装面包车中，车内满是服务器和显示屏。黑客开始攻击赛博墙的传感器网络，在防御系统中制造一个短暂的盲区。屏幕上显示着攻击进度条，你紧张地看着巡逻无人机的位置。当盲区出现时，你和另一名同伴迅速冲过墙下的一个排水口。黑客的声音从耳机中传来，说他只有六十秒的窗口。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在黑客创造的窗口中冲刺",
+          "effects": {
+            "MONEY": -2000,
+            "TRAUMA": 3,
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "留在面包车中协助黑客",
+          "effects": {
+            "MONEY": -1500,
+            "TECH": 4,
+            "HUMAN": 2,
+            "REP": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1800,
+        "HUMAN": 1,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4400,
+      "title": "地铁废弃隧道",
+      "description": "夜城的地铁系统在大崩溃后部分坍塌，废弃的隧道成了流浪者和走私客的领地。你跟随一名地下向导进入了一条被封闭的隧道，空气潮湿阴冷。墙壁上长满了发光的真菌和缠绕的旧电线，偶尔有老鼠——或者是它们的赛博替代品——从脚边窜过。隧道深处有一群流浪者搭起了简易住所，用旧地铁车厢做墙壁。远处传来不明来源的低频嗡鸣声，在隧道中回荡不绝。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "与隧道中的流浪者社区交流",
+          "effects": {
+            "MONEY": -500,
+            "HUMAN": 4,
+            "REP": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "深入隧道探索未知区域",
+          "effects": {
+            "MONEY": -300,
+            "TECH": 2,
+            "TRAUMA": 3,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -700,
+        "HUMAN": 1,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4401,
+      "title": "地下避难所社区",
+      "description": "地下避难所社区是大崩溃时建造的，原本设计为临时避难所，如今却成了永久居所。你通过一个隐蔽的入口进入避难所，厚重的气密门在身后关闭。社区内部有着自己的生态系统——水培农场、空气循环系统和地热发电机。居民们在走廊上晾衣服，孩子们在全息黑板上学习。社区的长老告诉你他们已经在这里住了三十年，地面上的一切对他们来说已经是另一个世界。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加社区的公共晚餐",
+          "effects": {
+            "MONEY": -600,
+            "HUMAN": 4,
+            "STYLE": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "参观水培农场学习地下农业",
+          "effects": {
+            "MONEY": -500,
+            "TECH": 3,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -800,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4402,
+      "title": "下水道黑市",
+      "description": "夜城的下水道系统中有一个巨大的黑市，只有知道暗号的人才能进入。你跟着一名常客穿过几个检查站，最终来到了一个由旧排水管改建的市场。摊位上摆满了各种非法商品——盗版数据芯片、未注册武器、违禁药物和假证件。空气中弥漫着潮湿和化学品的混合气味，头顶的管道不断滴水。一名戴着防毒面具的商人在兜售据说能增强神经接口性能的实验性药物。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买实验性神经增强药物",
+          "effects": {
+            "MONEY": -1800,
+            "TECH": 2,
+            "ADDICTION": 2,
+            "CHROME": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在黑市中收集情报",
+          "effects": {
+            "MONEY": -700,
+            "HUMAN": 2,
+            "REP": 2,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1000,
+        "HUMAN": 1,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4403,
+      "title": "地下农场参观",
+      "description": "地下农场利用LED生长灯和水培技术在地下空间种植作物，为城市提供新鲜食物。你走进一个由旧停车场改建的农场，紫色的LED灯将一切染成了紫色。一排排水培架上种着生菜、番茄和草莓，机械臂在自动采摘成熟的果实。农场主告诉你这里的产量是同等面积露天农场的五十倍，而且不受气候和污染影响。空气中有着泥土和新鲜植物的清香，在地下世界中格外珍贵。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "学习水培种植技术",
+          "effects": {
+            "MONEY": -600,
+            "TECH": 3,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "品尝刚采摘的新鲜蔬果",
+          "effects": {
+            "MONEY": -500,
+            "LIFE": 2,
+            "HUMAN": 2,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -800,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4404,
+      "title": "地热能源站",
+      "description": "地下地热能源站利用深层地热为城市提供清洁能源，你乘坐升降机下到了地下两千米处。能源站的核心是一个巨大的蒸汽涡轮，地热蒸汽从更深的钻孔中喷涌而出。站内的温度高达四十度，空气中充满了硫磺的味道。工程师告诉你这个站已经运行了二十年，为夜城百分之十五的区域供电。控制室的屏幕上显示着地壳深处的温度和压力数据，数字大得令人难以置信。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "深入了解地热发电技术",
+          "effects": {
+            "MONEY": -700,
+            "TECH": 4,
+            "HUMAN": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在控制室观察能源站运行",
+          "effects": {
+            "MONEY": -600,
+            "TECH": 2,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -900,
+        "HUMAN": 1,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4405,
+      "title": "地下数据服务器",
+      "description": "地下数据中心是赛博时代最重要的基础设施之一，储存着海量的数据。你穿过层层安保进入了一个巨大的服务器大厅，蓝色的LED灯在机架上闪烁。空调的嗡嗡声震耳欲聋，温度被严格控制在十八度。一名运维工程师告诉你这里储存着一个主要社交网络的所有用户数据，足够填满一千万个旧时代硬盘。偶尔有机械臂在过道中滑过，更换故障的服务器组件。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "学习数据中心运维知识",
+          "effects": {
+            "MONEY": -800,
+            "TECH": 4,
+            "HUMAN": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在数据中心安静感受信息的力量",
+          "effects": {
+            "MONEY": -700,
+            "STYLE": 2,
+            "TECH": 1,
+            "HUMAN": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1000,
+        "HUMAN": 1,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4406,
+      "title": "深层地堡探索",
+      "description": "在地下三千米处有一个旧时代建造的深层地堡，据说是为大末日准备的最终避难所。你跟着一名探险者沿着竖井下到地堡，每下降一百米温度就上升几度。地堡的大门厚达两米，上面印着褪色的鹰徽和'最终手段'的字样。地堡内部是一个自给自足的小型城市，有发电站、水处理厂和足够的食物储备供养一千人五年。但这里从未被使用过——大崩溃来得太突然，没有人来得及到达这里。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "搜索地堡中的旧时代档案",
+          "effects": {
+            "MONEY": -500,
+            "TECH": 3,
+            "TRAUMA": 2,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在地堡中拍摄纪录片素材",
+          "effects": {
+            "MONEY": -700,
+            "STYLE": 3,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1000,
+        "HUMAN": 2,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4407,
+      "title": "地下铁路网",
+      "description": "地下铁路网是夜城废弃的地铁系统改造的运输网络，连接着城市的各个地下社区。你坐在一列由旧地铁车厢改装的列车上，在黑暗的隧道中颠簸前行。车厢内坐满了地下居民，他们用一种地面上听不到的方言交谈。列车在一个没有站牌的地下站台停下，几名乘客下车消失在黑暗中。司机是个独眼的老头，他说这条线路已经跑了四十年，比任何地面交通都准时。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "与地下居民交流了解地下文化",
+          "effects": {
+            "MONEY": -400,
+            "HUMAN": 4,
+            "STYLE": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "安静观察车厢内的众生相",
+          "effects": {
+            "MONEY": -300,
+            "HUMAN": 2,
+            "STYLE": 2,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -600,
+        "HUMAN": 2,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4408,
+      "title": "地下赌场",
+      "description": "地下赌场藏在一个废弃地铁站中，只有通过一名引路人的带领才能找到入口。你走进赌场，被五光十色的全息赌桌和嘈杂的人声包围。赌场用加密货币结算，不接受任何可追踪的支付方式。一名穿着红色晚礼服的AI荷官在百家乐桌上发牌，她的动作完美到不像人类。角落里有人在玩神经接口赌博——直接用脑波下注，赢了释放多巴胺，输了释放痛觉信号。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在全息赌桌上试试运气",
+          "effects": {
+            "MONEY": -1500,
+            "HUMAN": 2,
+            "STYLE": 3,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "观看神经接口赌博",
+          "effects": {
+            "MONEY": -500,
+            "TRAUMA": 1,
+            "HUMAN": 1,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -800,
+        "HUMAN": 1,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4409,
+      "title": "地底蠕虫隧道",
+      "description": "在地壳深处有一种机械蠕虫被用来挖掘隧道，它们的隧道形成了庞大的地下网络。你跟着一名隧道探险者进入了一条被废弃的蠕虫隧道，直径三米的圆形隧道光滑如镜。隧道壁上有蠕虫留下的螺旋纹路，像一条巨大的螺丝钉的螺纹。隧道在地下蜿蜒数公里，偶尔分出支洞通向更深的地方。你的手电筒在光滑的隧道壁上反射出奇异的图案，像是地底的星空。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "沿蠕虫隧道深入探索",
+          "effects": {
+            "MONEY": -600,
+            "TECH": 3,
+            "TRAUMA": 2,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在隧道壁上拍摄独特的纹路",
+          "effects": {
+            "MONEY": -500,
+            "STYLE": 4,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -800,
+        "HUMAN": 1,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4410,
+      "title": "加勒比赛博游轮",
+      "description": "加勒比赛博游轮是赛博时代最豪华的海上度假方式，船身长达五百米可容纳五千名旅客。你登上游轮，被巨大的全息欢迎仪式和机器人管家迎接。甲板上的泳池在阳光下泛着蓝光，远处是加勒比海的碧绿海水。游轮的顶层有一个全息海滩，模拟着世界各地最著名的海滩景观。夜晚甲板上的全息派对将整艘船变成了一个漂浮的霓虹世界。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 5,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加顶层全息海滩派对",
+          "effects": {
+            "MONEY": -2800,
+            "STYLE": 5,
+            "HUMAN": 3,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在甲板泳池边放松",
+          "effects": {
+            "MONEY": -2200,
+            "STYLE": 4,
+            "HUMAN": 2,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -2500,
+        "HUMAN": 2,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4411,
+      "title": "太平洋豪华邮轮",
+      "description": "太平洋豪华邮轮从夜城出发前往夏威夷，全程七天的航程。你的舱房有一面全景落地窗，太平洋的景色日夜变化。邮轮上有十二家餐厅、三个泳池、一座剧场和一个赌场。你站在船尾看着夜城的灯火渐渐远去，海面上的日落将天空染成了橙红色。一头机械鲸鱼从船旁跃出水面，它的金属皮肤在夕阳中反射出彩虹般的光芒。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在邮轮剧场观看全息歌舞秀",
+          "effects": {
+            "MONEY": -2000,
+            "STYLE": 4,
+            "HUMAN": 2,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在甲板上观看海上日落",
+          "effects": {
+            "MONEY": -1800,
+            "STYLE": 4,
+            "HUMAN": 2,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -2200,
+        "HUMAN": 2,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4412,
+      "title": "海上赌场船",
+      "description": "海上赌场船在国际水域运营，不受任何国家的法律约束。你登上这艘十二层的赌场船，大厅里挤满了各种赌桌和老虎机。一名穿着燕尾服的机器人酒保为你调了一杯赛博曼哈顿，味道出奇地好。高限额区有一张神经接口扑克桌，玩家们通过脑波读取彼此的微表情。船窗外是无尽的黑色海洋，偶尔有远处船只的灯光在地平线上闪烁。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在高限额区玩神经接口扑克",
+          "effects": {
+            "MONEY": -2500,
+            "STYLE": 3,
+            "TECH": 2,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在普通区玩传统老虎机",
+          "effects": {
+            "MONEY": -1200,
+            "HUMAN": 2,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1500,
+        "HUMAN": 1,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4413,
+      "title": "游轮黑市拍卖",
+      "description": "游轮上的黑市拍卖会是赛博时代最隐秘的地下活动之一，只有收到邀请的旅客才能参加。你走进船底的货舱，它被临时改造成了一个拍卖厅。拍卖品包括失窃的公司机密、罕见的旧时代文物和实验性的非法义体。拍卖师戴着全面罩，声音经过变声处理。一件据说是旧时代名画真迹的作品以天价成交，买家通过加密货币匿名支付。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "竞拍一件罕见的旧时代文物",
+          "effects": {
+            "MONEY": -3000,
+            "STYLE": 4,
+            "HUMAN": 1,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "旁观拍卖收集情报",
+          "effects": {
+            "MONEY": -800,
+            "HUMAN": 2,
+            "REP": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1200,
+        "HUMAN": 1,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4414,
+      "title": "北极圈游轮",
+      "description": "北极圈游轮在夏季运营，带你穿越北冰洋观看正在消融的冰盖和北极野生动物。你站在甲板上裹着厚外套，看着巨大的冰山从船旁缓缓漂过。游轮的AI导游通过广播解释着气候变化对北极生态的影响。一群海象——其中一半是机械替代品——在一块浮冰上晒太阳。远处的冰盖在阳光下发出蓝白色的光芒，壮丽而脆弱。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加北极生态讲座",
+          "effects": {
+            "MONEY": -1800,
+            "TECH": 3,
+            "HUMAN": 2,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在甲板上拍摄冰山和野生动物",
+          "effects": {
+            "MONEY": -1500,
+            "STYLE": 4,
+            "HUMAN": 2,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -2000,
+        "HUMAN": 2,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4415,
+      "title": "海上派对船",
+      "description": "海上派对船是年轻人的最爱，通宵的电子音乐和全息灯光秀让整艘船变成一个漂浮的夜店。你走上舞池，全息灯光在头顶编织出变幻的图案。DJ在一个悬浮平台上打碟，低音炮的震动让甲板都在颤抖。舞池中的人大多穿着荧光服装和发光义体配件，在紫外线下格外耀眼。当DJdrop到高潮时，全息烟花从船的两侧同时喷出，照亮了整片海面。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在舞池中尽情跳舞",
+          "effects": {
+            "MONEY": -1200,
+            "STYLE": 4,
+            "HUMAN": 3,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在VIP区社交认识新朋友",
+          "effects": {
+            "MONEY": -2000,
+            "HUMAN": 4,
+            "REP": 2,
+            "STYLE": 3
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1500,
+        "HUMAN": 3,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4416,
+      "title": "游轮义体诊所",
+      "description": "游轮上的义体诊所提供免税的义体安装和升级服务，价格比陆地上的便宜百分之三十。你走进诊所，消毒水的气味扑面而来，几台自动手术椅排列在洁净的白色房间中。一名义体外科医生——她的右眼是一颗高精度手术义眼——向你介绍各种升级方案。展示柜中摆着从军用级光学义眼到豪华镀铬皮肤的各种产品。诊所的AI系统会根据你的体质自动推荐最适合的方案。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "安装一套高端光学义眼",
+          "effects": {
+            "MONEY": -2800,
+            "TECH": 3,
+            "CHROME": 3,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "进行义体保养和调校",
+          "effects": {
+            "MONEY": -1200,
+            "CHROME": 1,
+            "TECH": 2,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1000,
+        "HUMAN": 1,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4417,
+      "title": "海上数据中心船",
+      "description": "一艘改装过的货船在国际水域运营着一个巨大的数据中心，为全球客户提供不受监管的云服务。你受邀参观这艘船，甲板上布满了卫星天线和冷却塔。船舱内是一排排服务器机架，海水的冷却系统让数据中心运行效率极高。管理员告诉你这里储存着许多公司和政府不想留在本土的敏感数据。发电机房中柴油机的轰鸣声震耳欲聋，这是整个数据中心的动力心脏。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "学习海上数据中心的运作",
+          "effects": {
+            "MONEY": -1000,
+            "TECH": 4,
+            "HUMAN": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "与管理员交流数据安全话题",
+          "effects": {
+            "MONEY": -800,
+            "TECH": 2,
+            "HUMAN": 3,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1200,
+        "HUMAN": 1,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4418,
+      "title": "废弃游轮探索",
+      "description": "一艘在大崩溃中被遗弃的豪华游轮漂浮在太平洋上，成了一座漂浮的废墟。你跟随一支探险队登上了这艘船，甲板上锈迹斑斑，救生艇早已不见踪影。船内的餐厅中还保留着最后一顿餐的残骸，银餐具上布满了锈迹。一个舞厅的全息系统竟然还能启动，断断续续地播放着三十年前的舞曲。探险队长说这艘船上曾经发生过一些不好的事情，但具体是什么没人愿意说。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在废墟中搜寻有价值的物品",
+          "effects": {
+            "MONEY": -500,
+            "TECH": 2,
+            "TRAUMA": 3,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在废弃舞厅中感受时间的重量",
+          "effects": {
+            "MONEY": -400,
+            "TRAUMA": 1,
+            "STYLE": 3,
+            "HUMAN": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -800,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4419,
+      "title": "海上游牧舰队",
+      "description": "一支由数十艘船只组成的海上游牧舰队漂浮在国际水域，自称是一个独立的国家。你乘坐小艇登上了旗舰，一艘改装过的航空母舰。舰队上有五千名居民，他们有自己的法律、货币和教育系统。甲板上种着水培蔬菜，孩子们在飞行甲板上踢球。舰队的长老告诉你他们选择了海洋上的自由，远离任何政府的管辖。夕阳下这支舰队在海面上投下长长的影子，像一个漂浮的乌托邦。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "与长老讨论海上自治的理念",
+          "effects": {
+            "MONEY": -1000,
+            "HUMAN": 4,
+            "STYLE": 3,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在舰队上体验一天的游牧生活",
+          "effects": {
+            "MONEY": -1200,
+            "HUMAN": 3,
+            "STYLE": 3,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1500,
+        "HUMAN": 3,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4420,
+      "title": "旧洛杉矶废墟",
+      "description": "旧洛杉矶在大地震和海平面上升中被部分摧毁，如今的废墟区成了探险者的乐园。你穿过一道破裂的高速公路护栏，进入了曾经的比弗利山庄。豪宅的残骸被藤蔓和沙子覆盖，偶尔能看到一件锈蚀的奢侈品从废墟中露出。远处好莱坞的标志只剩下一个歪斜的'H'，在全息投影中勉强维持着原貌。一只变异的郊狼从一辆锈蚀的跑车旁跑过，消失在坍塌的建筑中。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在豪宅废墟中搜寻旧时代奢侈品",
+          "effects": {
+            "MONEY": -500,
+            "STYLE": 3,
+            "TECH": 1,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在好莱坞标志前拍照",
+          "effects": {
+            "MONEY": -700,
+            "STYLE": 4,
+            "HUMAN": 2,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1000,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4421,
+      "title": "底特律汽车城遗址",
+      "description": "底特律在汽车工业崩溃后变成了一个巨大的废墟，但如今有人在废墟中重建了社区。你走在空旷的街道上，两旁是长满植物的工厂和办公楼。一家旧汽车工厂被改造成了一个巨大的 makerspace，人们在里面用3D打印机制造各种东西。一面墙上画着巨大的壁画，描绘着底特律从辉煌到衰落到重生的历史。一名老工人坐在工厂门口，他告诉你他曾经在这条线上组装过汽车。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在makerspace学习3D打印技术",
+          "effects": {
+            "MONEY": -800,
+            "TECH": 4,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "听老工人讲述汽车城的辉煌岁月",
+          "effects": {
+            "MONEY": -500,
+            "HUMAN": 4,
+            "STYLE": 2,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -900,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4422,
+      "title": "核爆坑探索",
+      "description": "在内华达沙漠中有一个旧时代的核试验场，地下核爆留下了一个直径数百米的坑洞。你站在坑洞边缘俯瞰，坑壁上还能看到被高温熔化的岩石形成的玻璃层。盖革计数器在安全的范围内咔嗒作响，但偶尔会有异常的峰值出现。坑洞底部积着一层绿色的水，据说里面生活着被辐射变异的微生物。远处一个旧时代的观测碉堡歪斜地矗立在沙地上，像一颗蛀牙。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在安全距离外拍摄坑洞",
+          "effects": {
+            "MONEY": -800,
+            "STYLE": 3,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "采集坑洞边缘的玻璃化岩石",
+          "effects": {
+            "MONEY": -600,
+            "TECH": 2,
+            "TRAUMA": 2,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1200,
+        "HUMAN": 1,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4423,
+      "title": "废弃军事基地",
+      "description": "一座废弃的军事基地坐落在亚利桑那的沙漠中，巨大的机库和跑道已经荒废了三十年。你走进一个机库，里面还停着几架锈蚀的战斗机，座舱盖早已破碎。基地的指挥中心被洗劫一空，但墙壁上还贴着褪色的作战计划和值班表。一个地下保险库的大门半开着，里面空空如也——值钱的东西早就被拾荒者拿走了。你在跑道上行走，脚步声在空旷的基地中回荡。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在机库中探索旧战机",
+          "effects": {
+            "MONEY": -600,
+            "TECH": 3,
+            "TRAUMA": 1,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在指挥中心搜寻遗留的档案",
+          "effects": {
+            "MONEY": -400,
+            "TECH": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -900,
+        "HUMAN": 1,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4424,
+      "title": "沉没的旧金山市",
+      "description": "旧金山在大地震和海平面上升中部分沉入海中，如今只剩金门大桥的塔尖露出水面。你乘坐一艘玻璃底船在沉没的城市上方航行，透过玻璃看到了水下的街道和建筑。一座摩天大楼倾斜着矗立在海底，窗户早已破碎，鱼群在里面穿梭。渔人码头的残骸上长满了珊瑚和海葵，成了一座人工礁石。阳光穿透海水照射在水下的城市上，创造出一幅诡异的末日景象。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "乘坐潜水器深入水下城市",
+          "effects": {
+            "MONEY": -2000,
+            "STYLE": 4,
+            "TECH": 1,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在玻璃底船上拍照",
+          "effects": {
+            "MONEY": -1500,
+            "STYLE": 4,
+            "HUMAN": 2,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1800,
+        "HUMAN": 2,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4425,
+      "title": "旧华盛顿特区废墟",
+      "description": "华盛顿特区在政变和后续的混乱中受到严重破坏，国会大厦的穹顶已经坍塌。你站在国家广场上，两旁的博物馆大多成了空壳，只有史密森尼博物馆的部分展品被抢救了出来。林肯纪念堂的林肯雕像头部缺失，据说是被炮弹炸掉的。白宫的残骸被围栏围着，有传言说地下还有未探明的掩体。一名历史学者在废墟中做导览，讲述着这个城市从权力中心到废墟的历程。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "跟随历史学者参观废墟",
+          "effects": {
+            "MONEY": -1000,
+            "HUMAN": 4,
+            "STYLE": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "独自探索白宫残骸",
+          "effects": {
+            "MONEY": -600,
+            "TRAUMA": 2,
+            "TECH": 2,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1200,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4426,
+      "title": "荒废的购物中心",
+      "description": "一座巨大的旧时代购物中心在消费崩溃后被遗弃，如今成了城市探险者的热门目的地。你走进商场，自动扶梯早已停运，上面长满了苔藓。商铺的橱窗大多破碎，人体模型东倒西歪地躺在里面，表情诡异。中庭的喷泉干涸了，底部积满了落叶和碎玻璃。天花板上的一块全息广告牌偶尔还会闪烁，播放着三十年前的促销信息。在美食广场，一台坏掉的自动售货机还在嗡嗡作响。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在商铺中搜寻旧时代商品",
+          "effects": {
+            "MONEY": -400,
+            "TECH": 2,
+            "STYLE": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在商场中拍摄废墟美学照片",
+          "effects": {
+            "MONEY": -600,
+            "STYLE": 4,
+            "HUMAN": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -800,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4427,
+      "title": "旧世界数据中心",
+      "description": "一座旧时代的数据中心在沙漠中被发现，服务器的硬盘上储存着大崩溃前的海量数据。你跟随一支考古队进入了这座被沙子半掩埋的建筑，空调系统早已报废。服务器机架上的指示灯全部熄灭，但硬盘据说还能读取。一名数据考古学家正在用特制设备读取一块旧硬盘，屏幕上显示出三十年前的新闻网站。这些数据对于理解旧世界至关重要，但也可能包含危险的病毒。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "协助数据考古学家读取旧硬盘",
+          "effects": {
+            "MONEY": -700,
+            "TECH": 4,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "浏览旧时代的新闻和网站",
+          "effects": {
+            "MONEY": -600,
+            "HUMAN": 3,
+            "STYLE": 2,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1000,
+        "HUMAN": 2,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4428,
+      "title": "废弃太空发射场",
+      "description": "卡纳维拉尔角的发射场在太空电梯建成后就被废弃了，生锈的发射塔像巨大的骨架矗立在海边。你走在曾经的发射台上，脚下是耐高温涂层的残片。发射控制中心的仪器上布满灰尘，显示屏上还保留着最后一次发射的倒计时。一个废弃的航天飞机机库中停着一架从未使用过的航天飞机，它的外壳在透过机库缝隙的阳光中闪着银光。海风穿过空旷的发射场，发出呜咽般的声音。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在控制中心研究旧时代航天技术",
+          "effects": {
+            "MONEY": -800,
+            "TECH": 4,
+            "HUMAN": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在发射台上拍照留念",
+          "effects": {
+            "MONEY": -600,
+            "STYLE": 4,
+            "HUMAN": 2,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1000,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4429,
+      "title": "古老核电站遗址",
+      "description": "一座1970年代建造的核电站在大崩溃中被紧急关闭，反应堆至今仍在缓慢衰变。你穿着防护服进入了电站的外围区域，盖革计数器发出持续的咔嗒声。冷却塔内壁上长满了耐辐射的真菌，它们发出微弱的蓝色荧光。控制室的仪表盘上指针全部归零，只有一盏应急灯还在闪烁。一名核物理学家在旁边解释着反应堆关闭的过程和残留辐射的危险性。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "听核物理学家讲解核电站历史",
+          "effects": {
+            "MONEY": -800,
+            "TECH": 3,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在安全区域拍摄冷却塔荧光真菌",
+          "effects": {
+            "MONEY": -600,
+            "STYLE": 4,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1200,
+        "HUMAN": 1,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4430,
+      "title": "北极冰盖穿越",
+      "description": "一支赛博探险队带你穿越格陵兰冰盖，全程使用改装过的极地越野车。冰面上一望无际的白色在阳光下刺眼得令人流泪，温度计显示零下四十度。越野车的暖气全功率运转，但你仍然能感到寒冷从每一个缝隙渗透进来。远处一座冰山在阳光中发出蓝色的光芒，像一座水晶宫殿。GPS显示你们已经深入冰盖一百公里，最近的救援站在二百公里外。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在冰盖上搭建营地过夜",
+          "effects": {
+            "MONEY": -1500,
+            "TRAUMA": 2,
+            "STYLE": 4,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "继续前进争取在白天完成穿越",
+          "effects": {
+            "MONEY": -1200,
+            "TRAUMA": 1,
+            "STYLE": 3,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -2000,
+        "HUMAN": 1,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4431,
+      "title": "南极科考站",
+      "description": "南极科考站是赛博时代最南端的人类定居点，你乘坐专机到达了这座建在冰架上的科研基地。基地的穹顶在白色的冰原中格外醒目，内部温度维持在舒适的二十度。科学家们在这里研究冰芯样本、臭氧层和极地生态。你参观了一间冰芯储存室，里面保存着数十万年的气候记录。透过基地的观察窗，你看到了远处一群帝企鹅——一半是机械替代品——在冰面上列队行进。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加冰芯气候研究项目",
+          "effects": {
+            "MONEY": -1500,
+            "TECH": 4,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在基地外观察企鹅群体",
+          "effects": {
+            "MONEY": -1200,
+            "STYLE": 4,
+            "HUMAN": 3,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1800,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4432,
+      "title": "冰下湖泊探索",
+      "description": "南极冰盖下方有数百个冰下湖泊，你跟随一支科考队钻穿了三千米厚的冰层到达了一个。钻头穿透冰层的那一刻，一股古老的水柱从钻孔中喷出。你通过一个特制的潜水器进入了湖泊，这是人类首次到达这片被冰封了数百万年的水域。潜水器的灯光照亮了湖底，你看到了一些从未被人类发现的微生物在水中漂浮。水质分析显示这些水已经有百万年的历史，比人类文明还要古老。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "采集冰下湖水的微生物样本",
+          "effects": {
+            "MONEY": -2000,
+            "TECH": 4,
+            "TRAUMA": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在潜水器中记录湖泊环境",
+          "effects": {
+            "MONEY": -1800,
+            "TECH": 3,
+            "STYLE": 3,
+            "HUMAN": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -2500,
+        "HUMAN": 1,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4433,
+      "title": "极地数据中继站",
+      "description": "北极圈内的数据中继站是全球通信网络的关键节点，负责中转跨北极的数据传输。你乘坐雪地摩托到达了这个孤零零的站，它被设计成能抵御零下六十度的极端低温。站内的服务器嗡嗡作响，处理着来自全球的数据流。一名运维工程师告诉你如果这个站停止运行，全球通信延迟会增加百分之三十。透过站的窗户，你看到极光在天空中舞动，绿色的光芒映在雪地上。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "学习极地数据中继技术",
+          "effects": {
+            "MONEY": -1000,
+            "TECH": 4,
+            "HUMAN": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在极光下安静地观赏",
+          "effects": {
+            "MONEY": -800,
+            "TRAUMA": -2,
+            "STYLE": 4,
+            "HUMAN": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1200,
+        "HUMAN": 1,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4434,
+      "title": "冰川下的秘密基地",
+      "description": "你听到了一个传言——在北极某处的冰川下有一座旧时代的秘密军事基地。你跟随一名自称前特工的向导找到了一个被冰封的入口，用热熔钻打开了冰层。基地内部保存完好，走廊上的灯竟然还能亮——备用电源是核电池。一间作战室的大屏幕上还显示着三十年前的卫星图像，上面标注着已经不存在的目标。档案室里堆满了纸质文件，内容涉及一些令人不安的秘密行动。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在档案室中翻阅秘密文件",
+          "effects": {
+            "MONEY": -800,
+            "TECH": 3,
+            "TRAUMA": 3,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在作战室研究旧时代军事技术",
+          "effects": {
+            "MONEY": -600,
+            "TECH": 3,
+            "HUMAN": 1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1500,
+        "HUMAN": 1,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4435,
+      "title": "极光下的营地",
+      "description": "你在北极圈内的一个营地过夜，天空被极光染成了绿色和紫色的交响乐。营地的穹顶帐篷在雪地上像一个半透明的气泡，极光的光芒透过帐篷洒在内部。你裹着极地睡袋躺在帐篷里，看着头顶舞动的光带。营地的AI管家为你端来一杯热可可，温度刚好不烫嘴。远处的冰原在极光下发出幽幽的蓝光，像是另一个星球的表面。这一刻的宁静让你忘记了世界上所有的喧嚣。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在极光下拍照记录",
+          "effects": {
+            "MONEY": -1200,
+            "STYLE": 4,
+            "HUMAN": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "安静地躺着享受极光",
+          "effects": {
+            "MONEY": -1000,
+            "TRAUMA": -3,
+            "STYLE": 3,
+            "HUMAN": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1500,
+        "HUMAN": 2,
+        "STYLE": 3
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4436,
+      "title": "北极航道航行",
+      "description": "随着北极冰盖消融，西北航道成为了一条新的商业航线。你乘坐一艘破冰船穿越北极群岛，船首的破冰刀将冰面切开，发出持续的嘎吱声。船桥上的雷达显示着周围的冰山和过往船只，航道比十年前宽了一倍。一群海鸟跟随着船只飞行，它们在冰面的裂缝中寻找食物。船长说再过二十年这条航道可能冬天也能通航，北极将不再是航运的障碍。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在船桥学习破冰航行技术",
+          "effects": {
+            "MONEY": -1200,
+            "TECH": 3,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在甲板上观察北极冰景",
+          "effects": {
+            "MONEY": -1000,
+            "STYLE": 4,
+            "HUMAN": 2,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1800,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4437,
+      "title": "极地生物观察",
+      "description": "一支极地生物观察队带你追踪北极熊——或者说它们残存的真实个体和机械替代品。你坐在一辆伪装的观察车中，用热成像仪扫描着冰面。一只真实的北极熊从冰面下钻出，它的毛发在寒风中飘动，眼中带着警惕。观察队的生物学家说全球只剩下不到五百只真实北极熊，其余的都被机械替代品取代了。北极熊在冰面上走了几步，然后跳入水中游泳消失在冰块之间。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "跟随生物学家学习极地生态",
+          "effects": {
+            "MONEY": -1300,
+            "TECH": 3,
+            "HUMAN": 3,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用长焦镜头拍摄北极熊",
+          "effects": {
+            "MONEY": -1100,
+            "STYLE": 4,
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1500,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4438,
+      "title": "冰核采样",
+      "description": "你参加了一项冰核采样项目，在格陵兰冰盖上用特制钻头提取数百米长的冰芯。钻机在冰面上轰鸣，冰芯一段段被提取出来，每一段都代表着数千年的气候历史。你帮忙将冰芯段标记和包装，它们将被送往全球各地的研究机构。一名气候学家指着冰芯中的气泡说那些是数千年前的空气，记录着当时的温室气体浓度。冰芯中还有一些火山灰层，标记着远古时期的火山喷发事件。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "向气候学家学习冰芯分析",
+          "effects": {
+            "MONEY": -1000,
+            "TECH": 4,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "协助采样和包装冰芯",
+          "effects": {
+            "MONEY": -700,
+            "TECH": 2,
+            "HUMAN": 3,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1200,
+        "HUMAN": 2,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4439,
+      "title": "极地风暴求生",
+      "description": "一场极地暴风雪突然袭来，风速达到每小时两百公里，能见度降到零。你的探险队紧急搭建了一个充气避难所，在暴风雪中勉强固定住。避难所在狂风中剧烈摇晃，外面的温度降到了零下六十度。通讯设备被风暴干扰，无法联系外界。你和其他队员挤在避难所中，靠着体温和化学暖包维持温度。风暴持续了十二个小时，当它终于停下来时，外面的世界变成了一片全新的白色地貌。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在避难所中安抚恐慌的队友",
+          "effects": {
+            "MONEY": -500,
+            "HUMAN": 5,
+            "REP": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用技术手段修复通讯设备",
+          "effects": {
+            "MONEY": -700,
+            "TECH": 4,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1000,
+        "HUMAN": 2,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4440,
+      "title": "硅谷服务器大教堂",
+      "description": "硅谷的一座旧时代教堂被改造成了一座数据中心，被称为'服务器大教堂'。你走进这座建筑，彩色玻璃窗的后面是闪烁着蓝色LED灯的服务器机架。牧师——一名AI——站在讲台上用合成语音布道，讲述着数据主义的精神理念。信徒们跪在服务器前祈祷，他们将数据视为新时代的神圣存在。彩色玻璃将阳光分解成七彩的光谱，洒在黑色的服务器机架上，创造了赛博与宗教的完美融合。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "聆听AI牧师的布道",
+          "effects": {
+            "MONEY": -800,
+            "HUMAN": 3,
+            "STYLE": 3,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在服务器前静默祈祷",
+          "effects": {
+            "MONEY": -600,
+            "TRAUMA": -2,
+            "STYLE": 3,
+            "HUMAN": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1000,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4441,
+      "title": "量子计算圣殿",
+      "description": "量子计算圣殿是赛博时代最重要的科研设施之一，拥有全球最强大的量子计算机。你穿上无尘服进入了量子计算大厅，巨大的制冷系统将量子芯片保持在接近绝对零度。一台量子计算机的核心被罩在一个吊灯形状的制冷器中，金色和银色的管道像血管一样从它身上延伸出去。首席科学家告诉你这台计算机可以在一秒内解决传统计算机需要一百万年才能解决的问题。你看着制冷器上跳动的量子比特数量，感受到人类智慧的极限。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加量子计算科普讲座",
+          "effects": {
+            "MONEY": -1000,
+            "TECH": 4,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在量子计算机旁感受科技的力量",
+          "effects": {
+            "MONEY": -800,
+            "TECH": 2,
+            "STYLE": 3,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1500,
+        "HUMAN": 1,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4442,
+      "title": "数据中心冷却湖",
+      "description": "一座超大型数据中心建在一个人工湖旁，利用湖水进行自然冷却。你走在湖边的步道上，看到巨大的进水管从湖中抽取冷水，热水则通过喷泉系统散热。湖面上雾气缭绕，在阳光下形成了持续的彩虹。数据中心的管理员告诉你这个中心的能效比是业界最好的，因为自然冷却省去了大量的电力。湖中养着一些经过基因改造的鱼类，它们负责清理管道中的藻类。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参观数据中心冷却系统",
+          "effects": {
+            "MONEY": -800,
+            "TECH": 3,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在湖边步道散步",
+          "effects": {
+            "MONEY": -600,
+            "STYLE": 3,
+            "HUMAN": 2,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1000,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4443,
+      "title": "AI核心服务器群",
+      "description": "全球最先进的通用AI的核心服务器群被保存在一座深山中的设施里，你受邀参观。设施入口隐藏在一个废弃矿井中，乘坐电梯下到五百米深才到达服务器大厅。数千台服务器排列在恒温恒湿的大厅中，蓝色LED灯如星海般闪烁。工程师告诉你这里运行着AGI的核心模型，它的算力相当于全球所有人类大脑的总和。偶尔服务器会发出一阵密集的闪烁，工程师说那是AGI在进行深度思考。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "与工程师讨论AGI的伦理问题",
+          "effects": {
+            "MONEY": -1000,
+            "TECH": 3,
+            "HUMAN": 3,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "安静地观察服务器运行",
+          "effects": {
+            "MONEY": -800,
+            "TECH": 2,
+            "STYLE": 2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1500,
+        "HUMAN": 1,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4444,
+      "title": "云计算枢纽",
+      "description": "北美最大的云计算枢纽坐落在一座山上，为半个大陆提供云服务。你参观了一个服务器大厅，面积相当于十个足球场，里面排列着数万台服务器。大厅内恒温十八度，空调的噪音像持续的瀑布声。一名运维工程师通过全息界面展示了实时流量数据，高峰时每秒处理数十亿次请求。你看到了一面数据可视化墙，上面的流动光点代表着全球的数据流动，美得令人窒息。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "学习云计算架构知识",
+          "effects": {
+            "MONEY": -900,
+            "TECH": 4,
+            "HUMAN": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在数据可视化墙前拍照",
+          "effects": {
+            "MONEY": -700,
+            "STYLE": 4,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1100,
+        "HUMAN": 1,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4445,
+      "title": "数据存档地下室",
+      "description": "一座深埋在地下的数据存档设施保存着人类文明的数字备份，被称为'数字诺亚方舟'。你乘坐电梯下到地下五百米，走进了温度严格控制的存档大厅。一排排光介质存储盘整齐排列，每张盘可以储存一太字节的数据，保存期限为一万年。存档管理员告诉你这里有所有已知语言的所有文本、所有音乐和所有电影的备份。如果地面世界发生灾难，这些数据将成为人类文明重建的种子。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "浏览存档中的旧时代文化作品",
+          "effects": {
+            "MONEY": -800,
+            "HUMAN": 3,
+            "STYLE": 3,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "了解光介质存储技术",
+          "effects": {
+            "MONEY": -700,
+            "TECH": 4,
+            "HUMAN": 1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1200,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4446,
+      "title": "神经网络训练中心",
+      "description": "一座专门用于训练大型神经网络的计算中心建在冰岛的火山旁，利用地热和水电提供廉价电力。你走进训练大厅，数千台GPU服务器组成的服务器墙发出持续的嗡嗡声。一名AI研究员告诉你他们正在训练一个比以往任何模型都大的语言模型。大厅中的温度比外面高出二十度，冷却风扇的声音像持续的暴风。你看着监控屏幕上的训练曲线缓缓上升，感受到AI正在以人类无法理解的速度学习。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "向AI研究员学习神经网络训练",
+          "effects": {
+            "MONEY": -1000,
+            "TECH": 4,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "观察训练过程的实时监控",
+          "effects": {
+            "MONEY": -800,
+            "TECH": 2,
+            "HUMAN": 1,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1300,
+        "HUMAN": 1,
+        "STYLE": 1
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4447,
+      "title": "区块链矿场朝圣",
+      "description": "一座大型区块链矿场建在蒙古草原上，利用丰富的太阳能进行加密货币挖矿。你走进矿场，数万台矿机的风扇声震耳欲聋，像一万只蜜蜂同时振翅。矿场的屋顶是太阳能板，白天免费供电，夜晚切换到风力发电。一名矿工告诉你虽然加密货币的黄金时代已过，但区块链技术仍然支撑着全球金融系统。矿场旁边有一个小型的全息博物馆，展示着从比特币到现代赛博货币的演变史。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参观全息博物馆了解区块链历史",
+          "effects": {
+            "MONEY": -700,
+            "TECH": 3,
+            "HUMAN": 2,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "学习挖矿技术和能源管理",
+          "effects": {
+            "MONEY": -900,
+            "TECH": 3,
+            "HUMAN": 1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1000,
+        "HUMAN": 1,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4448,
+      "title": "数据湖观光",
+      "description": "一座超大规模的数据湖设施建在科罗拉多高原上，储存着数十 EB 的非结构化数据。你走在数据湖上方的玻璃栈道上，脚下是层层叠叠的存储服务器，延伸到视线尽头。数据湖的AI管理员通过全息投影为你展示数据湖的结构——视频、音频、文本和传感器数据像不同颜色的河流汇入同一个湖。你看到了一个实时数据流的可视化，数据像发光的鱼群在湖中游动。管理员说这里的每一比特数据都可能藏着改变世界的洞察。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "学习大数据分析技术",
+          "effects": {
+            "MONEY": -900,
+            "TECH": 4,
+            "HUMAN": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在玻璃栈道上欣赏数据湖全景",
+          "effects": {
+            "MONEY": -800,
+            "STYLE": 4,
+            "TECH": 1,
+            "HUMAN": 2
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1100,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    },
+    {
+      "id": 4449,
+      "title": "旧互联网档案馆",
+      "description": "旧互联网档案馆保存着大崩溃前的互联网快照，是人类数字记忆的宝库。你走进档案馆的阅览室，一排排全息终端显示着旧时代的网站。你打开一个搜索引擎的快照，输入了一个词，搜索结果展示着三十年前的网页——有些已经永远消失了，只有在这里才能看到。一名数字档案管理员告诉你他们每天还在发现新的旧数据，像是考古学家在数字废墟中挖掘。你在一个旧社交媒体的快照中看到了一段被遗忘的视频，里面的人笑得很开心——那是大崩溃前的最后一个夏天。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在档案馆中搜索旧时代的资料",
+          "effects": {
+            "MONEY": -800,
+            "TECH": 2,
+            "HUMAN": 3,
+            "STYLE": 2,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "与数字档案管理员交流保存技术",
+          "effects": {
+            "MONEY": -700,
+            "TECH": 3,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": -1000,
+        "HUMAN": 2,
+        "STYLE": 2
+      },
+      "tags": [
+        "旅行"
+      ]
+    }
+  ]
+}

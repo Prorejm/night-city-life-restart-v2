@@ -1,0 +1,1717 @@
+{
+  "events": [
+    {
+      "id": 3400,
+      "title": "赛博保险理赔纠纷",
+      "description": "你的仿生手臂在上个月的一次街头冲突中严重受损，你向「全美赛博保险」提交了理赔申请。然而理赔审核AI以「非正常使用导致人为损坏」为由拒绝了你的请求。你翻阅了那份长达四百页的保险合同，发现其中的免责条款密密麻麻，几乎覆盖了所有你能想到的意外场景。保险经纪人暗示你可以走「特殊渠道」加速理赔，但需要一笔手续费。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "支付手续费走特殊渠道理赔", "effects": { "MONEY": -800, "CHROME": 2 } },
+        { "id": "branch_2", "text": "聘请数字律师走正规仲裁程序", "effects": { "MONEY": -500, "REP": 2, "HUMAN": 1 } },
+        { "id": "branch_3", "text": "自认倒霉，放弃理赔", "effects": { "DEBT": 1, "TRAUMA": 1 } }
+      ],
+      "effects": { "TRAUMA": 1 },
+      "tags": ["赛博保险", "理赔", "纠纷", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3401,
+      "title": "保险欺诈的诱惑",
+      "description": "一个自称「理赔顾问」的中间人找上你，声称可以帮你伪造一份赛博义体故障报告，从保险公司骗取高额理赔金。他展示了几份成功的案例，每一笔赔付都在五位数以上。他说只需要你配合提供一些仿生体的序列号和一份伪造的维修记录。你知道这是保险欺诈，一旦被发现将面临数字法庭的审判。但那笔钱确实诱人。",
+      "type": "social",
+      "ageRange": [18, 65],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "配合伪造报告骗取理赔金", "effects": { "MONEY": 5000, "DEBT": 2, "REP": -2 } },
+        { "id": "branch_2", "text": "拒绝参与，并举报这个欺诈团伙", "effects": { "REP": 3, "MONEY": 1000, "HUMAN": 1 } }
+      ],
+      "effects": { "MONEY": -200 },
+      "tags": ["赛博保险", "欺诈", "犯罪", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3402,
+      "title": "人寿保险的基因审查",
+      "description": "你打算购买一份赛博人寿保险，为家人提供一份保障。保险公司要求你进行全面的基因风险评估，包括遗传病史、预期寿命和赛博化排异概率。审查结果显示你的基因中携带一种罕见的退化标记，保险公司据此将你的保费提高了三倍。客服礼貌地告诉你这是「基于数据的公平定价」，但你怀疑这是一种基因歧视。",
+      "type": "social",
+      "ageRange": [25, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "接受高价保费，给自己一份保障", "effects": { "MONEY": -2000, "LIFE": 1, "DEBT": 1 } },
+        { "id": "branch_2", "text": "拒绝投保，向基因权益组织投诉", "effects": { "REP": 2, "HUMAN": 1, "TRAUMA": 1 } }
+      ],
+      "effects": { "TRAUMA": 1 },
+      "tags": ["赛博保险", "基因歧视", "人寿保险", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3403,
+      "title": "保险公司的监控协议",
+      "description": "你的车险公司推出了一个「安全驾驶奖励计划」，只要你同意在车上安装一个实时监控设备并植入一个行为追踪芯片，保费就可以降低百分之四十。设备会追踪你的驾驶习惯、出行路线、甚至心率变化。保险公司的宣传材料上写着「你的好习惯值得奖励」，但隐私权倡导者警告这种数据一旦泄露，后果不堪设想。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        { "id": "branch_1", "text": "安装监控设备享受低保费", "effects": { "MONEY": 600, "TECH": 1, "HUMAN": -1 } },
+        { "id": "branch_2", "text": "拒绝监控，保护个人隐私", "effects": { "HUMAN": 2, "MONEY": -300 } }
+      ],
+      "effects": { "MONEY": -100 },
+      "tags": ["赛博保险", "监控", "隐私", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3404,
+      "title": "失业保险的赛博审核",
+      "description": "你最近失去了工作，申请了联邦赛博失业保险金。审核系统要求你每周在线上进行一次「积极求职验证」，包括上传至少五份求职申请记录和一次模拟面试的AI评分报告。本周你的模拟面试评分低于及格线，系统自动暂停了你的保险金发放。你感到这套系统对求职者的压力远超它的帮助。",
+      "type": "social",
+      "ageRange": [20, 65],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "重新参加模拟面试，争取通过审核", "effects": { "HUMAN": 1, "STYLE": 1, "MONEY": 800 } },
+        { "id": "branch_2", "text": "找人代做面试，绕过系统审核", "effects": { "MONEY": 800, "REP": -1, "DEBT": 1 } }
+      ],
+      "effects": { "TRAUMA": 1, "MONEY": -200 },
+      "tags": ["赛博保险", "失业", "审核", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3405,
+      "title": "保险黑市理赔中介",
+      "description": "你在地下市场听说有一种「保险黑市理赔中介」，专门帮人处理被正规保险公司拒赔的案件。他们不走法律途径，而是用黑客手段入侵保险公司的理赔系统，直接修改赔付状态。费用是赔付金额的三成。你的一个朋友通过他们成功拿到了被拖欠半年的医疗理赔金，但另一个朋友被保险公司反追踪到了，现在正在打官司。",
+      "type": "social",
+      "ageRange": [20, 60],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "雇佣黑市中介处理你的拒赔案", "effects": { "MONEY": 3000, "TECH": 1, "REP": -2 } },
+        { "id": "branch_2", "text": "不冒险，继续走正规申诉渠道", "effects": { "HUMAN": 1, "MONEY": -300, "REP": 1 } }
+      ],
+      "effects": { "TRAUMA": 1 },
+      "tags": ["赛博保险", "黑市", "黑客", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3406,
+      "title": "集体诉讼赛博保险公司",
+      "description": "一家赛博保险公司被曝出系统性地使用AI拒绝理赔申请，涉及数万名投保人。一个数字权益律所发起了集体诉讼，邀请所有被拒赔的投保人加入。你恰好也是受害者之一，手中有一份被AI拒绝的理赔记录。律所表示如果胜诉，每人可以获得数千到数万美元的赔偿，但诉讼过程可能长达两三年。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "加入集体诉讼，为权益而战", "effects": { "REP": 2, "HUMAN": 2, "MONEY": -200 } },
+        { "id": "branch_2", "text": "不参与诉讼，怕惹麻烦", "effects": { "TRAUMA": 1, "HUMAN": -1 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["赛博保险", "集体诉讼", "维权", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3407,
+      "title": "数字法庭的在线审判",
+      "description": "你收到了一份数字法庭的传票，你的邻居通过在线纠纷解决平台起诉你，称你的无人机在他的物业上空反复盘旋侵犯了隐私。审判将在一个虚拟法庭中进行，法官是一个经过法律训练的AI，双方通过全息投影出庭。你可以在庭前选择和解或应诉。数字法庭的判决具有法律效力，败诉方需要支付赔偿金和法庭费用。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "出庭应诉，据理力争", "effects": { "HUMAN": 1, "REP": 1, "MONEY": -300 } },
+        { "id": "branch_2", "text": "庭前和解，赔偿邻居了事", "effects": { "MONEY": -500, "HUMAN": 1 } }
+      ],
+      "effects": { "TRAUMA": 1, "MONEY": -100 },
+      "tags": ["数字法庭", "在线纠纷", "审判", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3408,
+      "title": "AI法官的公正性质疑",
+      "description": "你在数字法庭上经历了一场审判，AI法官在审理你的案件时引用了大量判例，但你发现其中几条判例明显偏向企业利益。你怀疑这个AI法官的训练数据中存在系统性偏差，导致它对个人原告的判决总是不利。一个数字权益组织正在收集这类案例，准备向司法委员会投诉AI法官的公正性问题。你可以提供你的案件作为证据。",
+      "type": "social",
+      "ageRange": [20, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "向权益组织提供案件证据", "effects": { "REP": 3, "HUMAN": 2, "MONEY": -200 } },
+        { "id": "branch_2", "text": "不上诉了，接受判决结果", "effects": { "TRAUMA": 2, "MONEY": -1000 } }
+      ],
+      "effects": { "TRAUMA": 1 },
+      "tags": ["数字法庭", "AI法官", "公正", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3409,
+      "title": "智能合约纠纷",
+      "description": "你和另一个自由职业者签订了一份智能合约来完成一个项目，合约条款自动执行，报酬在项目完成后自动打款。然而在交付阶段，对方声称你的工作成果不符合合约中定义的质量标准，触发了合约中的违约条款，你的报酬被自动冻结。智能合约的条款由代码定义，解释权似乎完全在代码手中。你需要在数字法庭上证明你的交付符合标准。",
+      "type": "social",
+      "ageRange": [20, 60],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "在数字法庭上提起合约纠纷诉讼", "effects": { "TECH": 1, "MONEY": -400, "HUMAN": 1 } },
+        { "id": "branch_2", "text": "找技术专家破解合约漏洞取回报酬", "effects": { "TECH": 2, "MONEY": 1500, "REP": -2 } }
+      ],
+      "effects": { "MONEY": -300 },
+      "tags": ["数字法庭", "智能合约", "纠纷", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3410,
+      "title": "在线仲裁的快速正义",
+      "description": "你购买的一批赛博零件存在质量问题，卖家拒绝退款。你决定使用一个在线仲裁平台来解决纠纷。平台号称三十分钟内出结果，费用只有正规法庭的十分之一。仲裁员是一个经过商业纠纷训练的AI，它会根据双方提交的证据和合同条款做出裁决。你需要在十分钟内提交所有证据材料。朋友说这个平台对消费者比较友好，但也有人说它偏袒付费会员。",
+      "type": "social",
+      "ageRange": [18, 65],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        { "id": "branch_1", "text": "使用在线仲裁平台解决纠纷", "effects": { "MONEY": 1200, "HUMAN": 1, "TECH": 1 } },
+        { "id": "branch_2", "text": "不信任AI仲裁，自己找卖家理论", "effects": { "HUMAN": -1, "REP": 1, "MONEY": -200 } }
+      ],
+      "effects": { "MONEY": -100 },
+      "tags": ["数字法庭", "仲裁", "消费纠纷", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3411,
+      "title": "虚拟陪审团义务",
+      "description": "你收到了一份虚拟陪审团传唤通知，要求你作为陪审员参与一场数字法庭的审判。案件涉及一名黑客被控入侵市政系统。审判将在虚拟空间中进行，你需要连续三天每天在线四小时。作为补偿你可以获得每日补贴，但你的工作肯定会受到影响。逃避陪审义务在大多数州是违法行为，会留下数字违法记录。",
+      "type": "social",
+      "ageRange": [21, 65],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "履行陪审义务，参与审判", "effects": { "REP": 2, "HUMAN": 2, "MONEY": 300 } },
+        { "id": "branch_2", "text": "找借口逃避陪审义务", "effects": { "MONEY": 500, "REP": -1, "TRAUMA": 1 } }
+      ],
+      "effects": { "MONEY": -200 },
+      "tags": ["数字法庭", "陪审团", "义务", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3412,
+      "title": "数字版权法庭",
+      "description": "你收到一封来自数字版权法庭的通知，一家媒体公司起诉你在社交平台上转发的一段视频侵犯了他们的版权。视频是一段关于企业丑闻的爆料，你认为这属于合理使用范畴。法庭要求你在七十二小时内提交答辩状，否则将缺席判决。数字版权法在赛博时代变得极其复杂，即使是转发也可能面临高额罚款。",
+      "type": "social",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "提交答辩状，主张合理使用", "effects": { "HUMAN": 2, "REP": 1, "MONEY": -400 } },
+        { "id": "branch_2", "text": "直接删除视频并支付和解金", "effects": { "MONEY": -800, "TRAUMA": 1 } }
+      ],
+      "effects": { "TRAUMA": 1, "MONEY": -200 },
+      "tags": ["数字法庭", "版权", "合理使用", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3413,
+      "title": "法庭直播的舆论审判",
+      "description": "你参与的一起数字法庭审判被选为了公开直播案件，全网数百万人在线观看。你的每一句话、每一个表情都被弹幕实时评论。有人支持你，也有人对你进行人身攻击。你的律师担心舆论压力会影响AI法官的判决倾向，因为AI法官的系统会抓取社交媒体上的公众情绪作为参考数据之一。你需要在法庭表现和公众形象之间找到平衡。",
+      "type": "social",
+      "ageRange": [18, 65],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "利用直播机会塑造公众形象", "effects": { "REP": 3, "STYLE": 2, "HUMAN": 1 } },
+        { "id": "branch_2", "text": "申请关闭直播，低调处理", "effects": { "HUMAN": 1, "REP": -1, "MONEY": -300 } }
+      ],
+      "effects": { "TRAUMA": 1 },
+      "tags": ["数字法庭", "直播", "舆论", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3414,
+      "title": "社区守望APP的招募",
+      "description": "你所在的社区推出了一款「赛博邻里守望」APP，鼓励居民举报社区内的可疑活动。APP通过你的 implants 实时共享你的视觉数据，AI会自动识别异常行为并通知社区其他成员。加入守望计划的居民可以享受物业费折扣，但同时你的行踪也会被社区全员可见。社区委员会说这是为了让街区更安全，但有人觉得这变成了互相监视。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        { "id": "branch_1", "text": "加入守望计划，享受折扣", "effects": { "MONEY": 400, "REP": 1, "HUMAN": -1 } },
+        { "id": "branch_2", "text": "不加入，不想被邻居监视", "effects": { "HUMAN": 2, "MONEY": -200 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["社区守望", "APP", "监控", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3415,
+      "title": "深夜可疑人物举报",
+      "description": "凌晨两点，你通过社区守望APP发现一个陌生人在你的邻居门口徘徊，手里拿着某种电子设备。APP的AI分析显示此人有百分之七十八的概率是赛博窃贼。你可以通过APP一键报警并通知全社区，也可以自己出去查看情况。你的邻居是一位独居老人，如果真的是窃贼，她可能处于危险之中。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        { "id": "branch_1", "text": "一键报警并通知全社区", "effects": { "REP": 2, "HUMAN": 2, "MONEY": 200 } },
+        { "id": "branch_2", "text": "自己出去查看情况", "effects": { "HUMAN": 3, "TRAUMA": 2, "REP": 1 } },
+        { "id": "branch_3", "text": "不管闲事，关掉通知", "effects": { "HUMAN": -2, "TRAUMA": 1 } }
+      ],
+      "effects": { "TRAUMA": 1 },
+      "tags": ["社区守望", "举报", "安全", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3416,
+      "title": "邻里纠纷升级",
+      "description": "你的邻居在自家后院安装了一个大功率信号干扰器，声称是为了防止无人机偷拍，但这个设备严重影响了你家的网络连接和赛博义体的信号传输。你通过社区守望APP投诉了多次，但邻居拒绝拆除。社区调解委员会安排了一次在线调解，双方都需要出席。如果调解失败，纠纷将升级到数字法庭。",
+      "type": "social",
+      "ageRange": [20, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "参加调解，寻求折中方案", "effects": { "HUMAN": 2, "REP": 1, "TECH": 1 } },
+        { "id": "branch_2", "text": "自己动手拆除他的干扰器", "effects": { "TECH": 2, "REP": -2, "TRAUMA": 2 } }
+      ],
+      "effects": { "TRAUMA": 1, "TECH": -1 },
+      "tags": ["社区守望", "邻里纠纷", "调解", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3417,
+      "title": "社区巡逻志愿者",
+      "description": "社区守望组织正在招募夜间巡逻志愿者。志愿者需要每周至少巡逻两个晚上，配备社区提供的非致命性赛博装备和一个实时位置追踪器。巡逻时你可能会遇到流浪者、瘾君子或者小型犯罪。组织者说自从有了巡逻队，社区的犯罪率下降了百分之三十。但上个月有一个志愿者在巡逻时受了伤。",
+      "type": "social",
+      "ageRange": [18, 60],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        { "id": "branch_1", "text": "加入夜间巡逻队", "effects": { "REP": 3, "HUMAN": 2, "TRAUMA": 1, "MONEY": 300 } },
+        { "id": "branch_2", "text": "不参加，太危险了", "effects": { "HUMAN": -1, "MONEY": 0 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["社区守望", "巡逻", "志愿者", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3418,
+      "title": "守望计划的误报风波",
+      "description": "你通过社区守望APP举报了一个在你家附近鬼鬼祟祟的可疑人物，AI判定为高危并通知了全社区和执法部门。结果那个人只是附近新搬来的居民，晚上出来遛他新买的机器狗。他在社区论坛上愤怒地发帖，指责你种族歧视和恶意举报。社区舆论分裂了，有人支持你的警惕性，也有人认为你应该先确认再举报。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "公开道歉，澄清是误会", "effects": { "HUMAN": 2, "REP": 1, "STYLE": 1 } },
+        { "id": "branch_2", "text": "坚持自己没有错，只是出于安全考虑", "effects": { "REP": -2, "HUMAN": -1, "TRAUMA": 1 } }
+      ],
+      "effects": { "TRAUMA": 1, "REP": -1 },
+      "tags": ["社区守望", "误报", "种族", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3419,
+      "title": "社区安全投票",
+      "description": "社区委员会发起了一项投票，提议增加物业费来部署一套全天候赛博监控系统，覆盖社区所有公共区域。支持者认为这将大幅降低犯罪率，反对者担心隐私被侵犯和监控数据被滥用。你的票很关键，因为社区目前正好处在五五开的僵局。投票截止日期就在明天，各方都在做最后的拉票。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "投赞成票，支持增加监控", "effects": { "REP": 1, "MONEY": -300, "HUMAN": -1 } },
+        { "id": "branch_2", "text": "投反对票，保护社区隐私", "effects": { "HUMAN": 2, "REP": 1, "MONEY": 100 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["社区守望", "投票", "监控", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3420,
+      "title": "守望APP的数据泄露",
+      "description": "社区守望APP被曝出严重的数据泄露事件，数千名居民的日常行踪、生活习惯和邻里关系数据被公开到了暗网上。你的数据也在泄露之列，包括你每天几点出门、去了哪些地方、和谁有过纠纷。一个数据掮客联系你，说可以帮你从暗网上买回并删除你的数据，但要价不菲。社区正在集体起诉APP开发商。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "花钱让掮客删除你的数据", "effects": { "MONEY": -1500, "HUMAN": 1 } },
+        { "id": "branch_2", "text": "加入集体起诉APP开发商", "effects": { "REP": 2, "HUMAN": 1, "MONEY": -200 } },
+        { "id": "branch_3", "text": "什么都不做，等风波过去", "effects": { "TRAUMA": 2, "HUMAN": -1 } }
+      ],
+      "effects": { "TRAUMA": 2 },
+      "tags": ["社区守望", "数据泄露", "隐私", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3421,
+      "title": "智慧城市公投",
+      "description": "你所在的城市正在进行一项智慧城市升级公投，提案包括在全市部署智能交通灯、环境监测无人机网络和一个中央城市AI管理系统。支持者说这将使城市效率提升百分之四十，减少拥堵和污染。反对者担心中央AI系统会成为全天候监控工具，而且项目预算高达数十亿，资金来自增加市民的数字税。你的选票和你认识的人都可能被这个决定影响。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "投赞成票，拥抱智慧城市", "effects": { "TECH": 2, "REP": 1, "MONEY": -300 } },
+        { "id": "branch_2", "text": "投反对票，抵制过度数字化", "effects": { "HUMAN": 2, "REP": 1, "MONEY": 100 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["城市规划", "智慧城市", "公投", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3422,
+      "title": "城市AI管理系统的bug",
+      "description": "新上线的城市AI管理系统出现了一个严重bug，导致你所在街区的所有自动垃圾分类机器停止工作，垃圾堆积如山。更糟糕的是AI系统错误地将你所在区域标记为「废弃区」，切断了部分公共服务。居民们怨声载道，市政府说需要至少一周才能修复。你可以组织居民向市政府施压，或者自己想办法解决眼前的困境。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "组织居民抗议，向市政府施压", "effects": { "REP": 3, "HUMAN": 2, "MONEY": -100 } },
+        { "id": "branch_2", "text": "自己动手清理垃圾，联系技术员修bug", "effects": { "TECH": 2, "HUMAN": 1, "TRAUMA": 1 } }
+      ],
+      "effects": { "TRAUMA": 1, "HUMAN": -1 },
+      "tags": ["城市规划", "AI管理", "bug", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3423,
+      "title": "智慧交通的路线强制",
+      "description": "城市新部署的智慧交通系统开始强制所有车辆接入中央调度网络。系统每天为你规划最优路线，但你发现它总是让你绕行经过几个广告密集的商业区。你怀疑交通AI在为商业利益服务，故意让驾车者经过广告投放区。你可以手动覆盖AI路线，但系统会降低你的「交通信用分」，导致你下次被分配到更差的路线。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        { "id": "branch_1", "text": "接受AI路线，忍了", "effects": { "MONEY": -100, "HUMAN": -1 } },
+        { "id": "branch_2", "text": "手动覆盖路线，维护自主权", "effects": { "HUMAN": 2, "REP": 1, "MONEY": -200 } }
+      ],
+      "effects": { "HUMAN": -1 },
+      "tags": ["城市规划", "智慧交通", "自由", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3424,
+      "title": "城市更新与强制拆迁",
+      "description": "市政府宣布你所在的旧街区被列入「智慧城市更新计划」，所有建筑将被拆除重建为智能住宅区。居民可以选择接受补偿金搬迁，或者参与听证会反对拆迁。补偿金远低于市场价，而听证会几乎从未成功阻止过拆迁。社区里有人已经开始组织抗议，也有人打算拿钱走人。你的 lease 还剩八个月，但拆迁通知要求三十天内搬离。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "接受补偿金搬迁", "effects": { "MONEY": 2000, "TRAUMA": 1, "DEBT": 1 } },
+        { "id": "branch_2", "text": "加入抗议，拒绝拆迁", "effects": { "REP": 3, "HUMAN": 2, "TRAUMA": 2, "MONEY": -300 } }
+      ],
+      "effects": { "TRAUMA": 2 },
+      "tags": ["城市规划", "拆迁", "城市更新", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3425,
+      "title": "城市数据公开听证会",
+      "description": "市政府举办了一场关于城市数据使用的公开听证会，讨论是否允许将城市AI系统收集的市民行为数据出售给企业用于商业分析。隐私权组织强烈反对，认为这是将市民的隐私商品化。企业代表则表示数据匿名化后不会侵犯个人隐私，而且出售数据的收入可以改善城市基础设施。你作为普通市民可以发言三分钟。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "在听证会上发言反对出售数据", "effects": { "REP": 3, "HUMAN": 2, "MONEY": -100 } },
+        { "id": "branch_2", "text": "支持出售数据，换取城市改善", "effects": { "TECH": 1, "MONEY": 200, "HUMAN": -1 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["城市规划", "数据公开", "听证会", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3426,
+      "title": "地下城市的基础设施",
+      "description": "你偶然发现城市地下存在一个庞大的废弃基础设施网络——旧的地铁隧道、下水道和维护通道被一群无家可归者和边缘人群改造成了地下聚居区。智慧城市的AI系统完全不知道这个地下世界的存在，因为它不在任何地图上。地下居民们自建了简易的赛博设施，形成了一个独立的小型社会。市政府一旦发现，很可能会进行清场。",
+      "type": "social",
+      "ageRange": [18, 65],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "保守秘密，偶尔去地下社区帮忙", "effects": { "HUMAN": 3, "REP": 2, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "向市政府报告地下社区的存在", "effects": { "MONEY": 1000, "REP": -3, "HUMAN": -2 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["城市规划", "地下城市", "边缘人群", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3427,
+      "title": "赛博警察的执法争议",
+      "description": "你在街头目睹了赛博警察对一名嫌疑人使用过度武力。警察的执法记录仪似乎在关键时刻「恰好」故障了，但你用个人 implants 记录下了全过程。视频显示警察在嫌疑人已经放弃抵抗后仍然对其使用了电击。你可以将视频上传到社交媒体曝光，或者交给警察局内部调查部门，也可以选择什么都不做。但如果你曝光视频，警方可能会对你进行报复性调查。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "上传视频到社交媒体曝光", "effects": { "REP": 3, "HUMAN": 2, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "交给内部调查部门处理", "effects": { "REP": 1, "HUMAN": 1, "MONEY": 500 } },
+        { "id": "branch_3", "text": "什么都不做，明哲保身", "effects": { "TRAUMA": 2, "HUMAN": -2 } }
+      ],
+      "effects": { "TRAUMA": 1 },
+      "tags": ["公共安全", "执法", "警察", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3428,
+      "title": "预测性警务系统",
+      "description": "你所在的社区被列入了「预测性警务系统」的高风险区域。AI系统根据历史犯罪数据、人口构成和行为模式预测犯罪热点，并在这些区域增加巡逻频次。你发现自己每次出门都会被巡逻无人机扫描身份，即使你从未犯过罪。社区民权组织说这套系统本质上是对低收入和少数族裔社区的系统性歧视。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "加入民权组织抗议预测性警务", "effects": { "REP": 3, "HUMAN": 2, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "配合巡逻，多一事不如少一事", "effects": { "HUMAN": -1, "TRAUMA": 1, "MONEY": 0 } }
+      ],
+      "effects": { "TRAUMA": 1, "HUMAN": -1 },
+      "tags": ["公共安全", "预测性警务", "歧视", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3429,
+      "title": "赛博监狱的远程探视",
+      "description": "你的一个老朋友因赛博犯罪被判入狱，关押在一座全自动化赛博监狱中。监狱只允许远程全息探视，每次三十分钟，全程监控。你的朋友在探视中告诉你监狱条件恶劣，AI狱警经常误触发惩罚机制，囚犯们的精神状态普遍很差。他恳求你帮他联系一个律师上诉。但帮赛博罪犯上诉可能会让你被执法部门盯上。",
+      "type": "social",
+      "ageRange": [20, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "帮他联系律师上诉", "effects": { "HUMAN": 3, "REP": 1, "MONEY": -500 } },
+        { "id": "branch_2", "text": "同情但不便帮忙，只提供情感支持", "effects": { "HUMAN": 1, "TRAUMA": 1 } }
+      ],
+      "effects": { "TRAUMA": 1 },
+      "tags": ["公共安全", "赛博监狱", "探视", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3430,
+      "title": "私人安保公司的推销",
+      "description": "一家私人赛博安保公司上门推销他们的「社区安全订阅服务」。月费从基本版到豪华版不等，包括24小时巡逻响应、紧急赛博防御和私人安全屋使用权。自从市政府削减了警察预算后，你所在社区的治安明显恶化。推销员展示了他们成功阻止入室盗窃的数据，但也有人指出私人安保只保护付费客户，加剧了安全不平等。",
+      "type": "social",
+      "ageRange": [25, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        { "id": "branch_1", "text": "订阅基本版安保服务", "effects": { "MONEY": -600, "LIFE": 1, "HUMAN": -1 } },
+        { "id": "branch_2", "text": "不订阅，自己加强安全措施", "effects": { "TECH": 2, "MONEY": -300, "LIFE": 1 } }
+      ],
+      "effects": { "TRAUMA": 1 },
+      "tags": ["公共安全", "私人安保", "订阅", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3431,
+      "title": "紧急广播系统的误报",
+      "description": "凌晨三点，你的 implants 被刺耳的紧急广播警报惊醒——「检测到大规模赛博攻击，请立即就地避难。」整个城市的人都收到了同样的警报，街头一片混乱。但二十分钟后，市政府发布更正声明说这是系统误报，是维护人员在测试时操作失误。你已经因为恐慌从楼梯上摔下来受了轻伤。一些居民要求市政府为误报造成的混乱和伤害负责。",
+      "type": "social",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "加入居民索赔行动", "effects": { "MONEY": 800, "REP": 1, "HUMAN": 1 } },
+        { "id": "branch_2", "text": "算了，误报而已不值得折腾", "effects": { "TRAUMA": 1, "LIFE": -1 } }
+      ],
+      "effects": { "TRAUMA": 2, "LIFE": -1 },
+      "tags": ["公共安全", "紧急广播", "误报", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3432,
+      "title": "赛博义体黑市突袭",
+      "description": "你获得了一条情报：警方即将突袭你附近的一个赛博义体黑市。这个黑市出售来路不明的二手义体和非法改装件，价格只有正规渠道的三分之一。你之前在这里买过一些零件，担心突袭后警方会追溯购买记录。你可以在突袭前清理自己的痕迹，也可以向黑市老板通风报信换取好处。当然，通风报信本身就是违法的。",
+      "type": "social",
+      "ageRange": [18, 60],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "清理自己的购买记录", "effects": { "TECH": 1, "MONEY": -200, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "向黑市老板通风报信换取好处", "effects": { "MONEY": 2000, "REP": -2, "DEBT": 1 } },
+        { "id": "branch_3", "text": "什么都不做，赌警方查不到自己", "effects": { "TRAUMA": 2, "MONEY": 0 } }
+      ],
+      "effects": { "TRAUMA": 1 },
+      "tags": ["公共安全", "黑市", "突袭", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3433,
+      "title": "赛博义警的崛起",
+      "description": "一个自称「数据正义」的赛博义警组织在社交媒体上走红。他们用黑客手段曝光腐败官员和企业高管的秘密，甚至对已定罪的罪犯进行赛博私刑。最近他们曝光了你所在区域的市政官员收受贿赂的证据，导致该官员被逮捕。有人视他们为英雄，也有人担心赛博私刑会失控。组织正在招募新成员，你的技术能力引起了他们的注意。",
+      "type": "social",
+      "ageRange": [18, 55],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "加入「数据正义」组织", "effects": { "TECH": 2, "REP": 2, "TRAUMA": 1, "MONEY": -200 } },
+        { "id": "branch_2", "text": "匿名提供技术支持但不正式加入", "effects": { "TECH": 1, "REP": 1, "MONEY": 0 } },
+        { "id": "branch_3", "text": "不参与，赛博私刑太危险", "effects": { "HUMAN": 1, "TRAUMA": 1 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["公共安全", "义警", "黑客", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3434,
+      "title": "赛博环保抗议行动",
+      "description": "一个赛博环保组织策划了一场针对大型赛博工厂的抗议行动，指责该工厂排放有毒电子废料污染地下水源。组织者计划用无人机封锁工厂入口，同时入侵工厂的排放监控系统公开实时数据。你被邀请参加抗议。工厂方面已经雇佣了私人安保，警方也表示会介入。抗议可能演变为冲突，但曝光的污染数据可能改变一切。",
+      "type": "social",
+      "ageRange": [16, 65],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "参加前线抗议行动", "effects": { "REP": 3, "HUMAN": 2, "TRAUMA": 2, "MONEY": -100 } },
+        { "id": "branch_2", "text": "提供后勤和技术支持", "effects": { "TECH": 2, "REP": 2, "MONEY": -200 } },
+        { "id": "branch_3", "text": "在社交媒体上声援但不到场", "effects": { "REP": 1, "HUMAN": 1, "STYLE": 1 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["环保运动", "抗议", "污染", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3435,
+      "title": "电子废料回收计划",
+      "description": "你所在的社区启动了一项赛博电子废料回收计划，鼓励居民将废弃的义体零件、电池和电子设备送到回收站。回收站会根据废料的种类和数量支付积分，积分可以兑换生活物资或社区服务。你家里攒了不少淘汰的赛博零件。但有人说回收站其实是把废料转卖给黑市拆解商，那些拆解商的环保标准几乎为零。",
+      "type": "social",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        { "id": "branch_1", "text": "把废料送到回收站换取积分", "effects": { "MONEY": 400, "REP": 1, "HUMAN": 1 } },
+        { "id": "branch_2", "text": "调查回收站的废料去向", "effects": { "TECH": 1, "REP": 2, "MONEY": -100 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["环保运动", "电子废料", "回收", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3436,
+      "title": "合成能源工厂的环境影响",
+      "description": "一家合成能源工厂计划在你所在的区域建设，承诺提供数千个就业岗位和廉价的清洁能源。但环境影响评估报告显示，工厂运行期间会释放微量的神经干扰辐射，可能影响附近居民的精神健康。工厂方面声称辐射水平在安全标准内，但独立检测机构的结论与此矛盾。社区为此分裂成支持就业和反对污染两派。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "支持建厂，优先就业和能源", "effects": { "MONEY": 500, "REP": 1, "HUMAN": -1 } },
+        { "id": "branch_2", "text": "反对建厂，保护社区健康", "effects": { "HUMAN": 2, "REP": 2, "MONEY": -200 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["环保运动", "能源工厂", "就业", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3437,
+      "title": "赛博碳交易市场",
+      "description": "你收到了一份来自赛博碳交易市场的邀请，声称你可以通过减少个人碳排放来赚取碳积分，并在市场上出售获利。系统会通过你的 implants 追踪你的能源消耗、出行方式和消费习惯来计算碳足迹。减少碳排可以获得积分，但达标要求相当严格。环保人士赞赏这个市场化减排方案，批评者则说这只是富人购买排放权的游戏。",
+      "type": "social",
+      "ageRange": [18, 65],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "加入碳交易计划，减少碳排放", "effects": { "MONEY": 600, "HUMAN": 1, "STYLE": 1 } },
+        { "id": "branch_2", "text": "不参加，不想被追踪生活细节", "effects": { "HUMAN": 1, "MONEY": 0 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["环保运动", "碳交易", "减排", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3438,
+      "title": "城市垂直农场的争议",
+      "description": "一座大型垂直农场在你所在的城区建成，利用水培和人工光源在摩天大楼里种植合成作物。农场号称能解决城市食品安全问题，减少运输碳排放。但附近居民抱怨农场的全光谱灯光二十四小时不停，严重影响了睡眠。更有人担心合成作物的长期健康影响尚未得到充分研究。农场方提出给附近居民发放遮光窗帘和营养补贴作为补偿。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "接受补偿，适应农场存在", "effects": { "MONEY": 300, "HUMAN": -1, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "联合居民要求农场限制光照时间", "effects": { "HUMAN": 2, "REP": 2, "MONEY": -100 } }
+      ],
+      "effects": { "TRAUMA": 1 },
+      "tags": ["环保运动", "垂直农场", "光污染", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3439,
+      "title": "赛博生态恐怖袭击",
+      "description": "一个极端环保组织对一家赛博化工厂发动了网络攻击，导致工厂的排放控制系统瘫痪，大量有毒物质泄漏到河流中。你所在社区的供水系统受到了影响，自来水被检测出含有超标的重金属。政府紧急调配送水车，但供水远远不够。超市的瓶装水被抢购一空，黑市上水价飞涨。你需要决定如何在水资源短缺中生存。",
+      "type": "social",
+      "ageRange": [16, 70],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "高价从黑市购水应急", "effects": { "MONEY": -1000, "LIFE": 1, "DEBT": 1 } },
+        { "id": "branch_2", "text": "用技术过滤自来水中的毒素", "effects": { "TECH": 2, "LIFE": 1, "MONEY": -300 } },
+        { "id": "branch_3", "text": "加入志愿者团队分发应急水", "effects": { "HUMAN": 3, "REP": 2, "LIFE": -1 } }
+      ],
+      "effects": { "TRAUMA": 2, "LIFE": -1 },
+      "tags": ["环保运动", "生态恐怖", "水污染", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3440,
+      "title": "气候难民收容政策投票",
+      "description": "由于海平面上升和极端气候，大量气候难民涌入你所在的城市。市政府提出了一项收容政策，将部分公共建筑改建为难民收容中心，并提供基本赛博医疗服务。支持者认为这是人道主义义务，反对者担心公共资源被挤占和安全问题。你所在的社区被选为收容中心选址之一，社区大会正在就此事进行投票。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "支持收容政策，帮助难民", "effects": { "HUMAN": 3, "REP": 2, "MONEY": -200 } },
+        { "id": "branch_2", "text": "反对在社区建收容中心", "effects": { "HUMAN": -1, "MONEY": 100, "REP": -1 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["环保运动", "气候难民", "收容", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3441,
+      "title": "赛博宠物权利法案",
+      "description": "一项关于赛博宠物权利的法案正在市议会审议。法案主张具有自主学习能力的赛博宠物应被视为「准生命体」，拥有不被随意销毁和遭受虐待的权利。你家中有一只陪伴了你三年的赛博猫，它已经发展出了独特的个性模式。法案的反对者认为赛博宠物只是机器，支持者则说它们已经具备了类似意识的表现。市议会正在征集市民意见。",
+      "type": "social",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "提交支持法案的意见书", "effects": { "HUMAN": 2, "REP": 1, "STYLE": 1 } },
+        { "id": "branch_2", "text": "反对法案，赛博宠物只是机器", "effects": { "TECH": 1, "HUMAN": -1, "MONEY": 0 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["动物保护", "赛博宠物", "权利法案", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3442,
+      "title": "非法赛博动物格斗",
+      "description": "你无意中发现了附近一个地下赛博动物格斗场。参赛者给动物装上战斗义体和攻击模块，让它们在围栏中互相搏斗至死。场面血腥残忍，但赌注惊人。场地的老板注意到你的反应，邀请你下次带上自己的赛博宠物参赛。你也注意到有几只参赛动物看起来像是被偷来的宠物。动物保护组织一直想端掉这个格斗场但苦于没有证据。",
+      "type": "social",
+      "ageRange": [18, 60],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "向动物保护组织提供格斗场情报", "effects": { "REP": 3, "HUMAN": 2, "MONEY": -100 } },
+        { "id": "branch_2", "text": "带着赛博宠物参赛赢赌金", "effects": { "MONEY": 3000, "REP": -3, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "装作什么都没看到离开", "effects": { "TRAUMA": 1, "HUMAN": -1 } }
+      ],
+      "effects": { "TRAUMA": 1 },
+      "tags": ["动物保护", "格斗", "赌博", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3443,
+      "title": "赛博化动物保护区的志愿者",
+      "description": "一个赛博化动物保护区正在招募志愿者。保护区收容了大量因赛博化实验而受伤或被遗弃的动物，包括装了义肢的流浪狗、被植入试验芯片的猫和各种野生赛博化动物。志愿者需要帮忙照顾动物的赛博义体维护、喂食和清洁。工作辛苦且没有报酬，但可以学习赛博兽医技术。保护区的资金一直紧张，随时可能面临关闭。",
+      "type": "social",
+      "ageRange": [16, 65],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        { "id": "branch_1", "text": "成为保护区志愿者", "effects": { "HUMAN": 3, "TECH": 2, "REP": 2, "MONEY": -100 } },
+        { "id": "branch_2", "text": "捐款支持保护区运营", "effects": { "MONEY": -500, "REP": 2, "HUMAN": 1 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["动物保护", "保护区", "志愿者", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3444,
+      "title": "基因改造宠物的伦理争议",
+      "description": "一家生物公司推出了一系列基因改造宠物，可以定制宠物的体型、毛色、性格甚至寿命。这些宠物价格昂贵但极受欢迎。动物权益组织指出这些宠物经常存在基因缺陷和健康问题，公司为了外观效果牺牲了动物福利。你朋友花重金定制了一只基因改造猫，但猫很快出现了严重的健康问题。朋友不知道是该继续花天价治疗还是安乐死。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "帮朋友照顾生病的猫并联系赛博兽医", "effects": { "HUMAN": 3, "MONEY": -300, "TECH": 1 } },
+        { "id": "branch_2", "text": "建议朋友向动物权益组织投诉生物公司", "effects": { "REP": 2, "HUMAN": 1, "MONEY": -100 } }
+      ],
+      "effects": { "HUMAN": 1, "TRAUMA": 1 },
+      "tags": ["动物保护", "基因改造", "宠物", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3445,
+      "title": "城市赛博鸽群的监控用途",
+      "description": "你注意到城市中的鸽子群有些行为异常，它们的飞行轨迹过于规律。仔细观察后你发现这些是经过赛博改造的「监控鸽」，体内植入了微型摄像头和数据传输模块，被用来对城市进行无死角监控。你不确定这是政府的秘密项目还是企业的商业间谍行为。一个记者朋友正在调查此事，需要一个目击者来证实她的发现。",
+      "type": "social",
+      "ageRange": [18, 65],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "为记者提供目击证词", "effects": { "REP": 3, "HUMAN": 2, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "捕捉一只监控鸽进行技术分析", "effects": { "TECH": 3, "REP": 1, "MONEY": -200 } },
+        { "id": "branch_3", "text": "不管闲事，假装没看到", "effects": { "HUMAN": -1, "TRAUMA": 1 } }
+      ],
+      "effects": { "TRAUMA": 1 },
+      "tags": ["动物保护", "监控鸽", "隐私", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3446,
+      "title": "赛博化野生动物入侵",
+      "description": "一批赛博化野生动物从实验室逃逸后在城市周边繁殖，形成了野化种群。这些动物拥有增强的力量和感知能力，对人类社区构成了威胁。最近有几起赛博化郊狼袭击宠物的报告。市政府计划组织狩猎队进行清除，但动物保护组织反对，认为应该用非致命方式捕捉并重新安置。你住在郊区边缘，经常看到这些动物的踪迹。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "支持非致命捕捉方案", "effects": { "HUMAN": 2, "REP": 2, "MONEY": -200 } },
+        { "id": "branch_2", "text": "加入狩猎队清除威胁", "effects": { "MONEY": 500, "REP": 1, "TRAUMA": 2 } }
+      ],
+      "effects": { "TRAUMA": 1 },
+      "tags": ["动物保护", "野生动物", "入侵", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3447,
+      "title": "合成食品中毒事件",
+      "description": "你在一家快餐店吃完合成蛋白汉堡后，出现了严重的食物中毒症状。医院检测发现你食用的合成肉中含有超标的工业化学残留。你不是唯一的受害者，同一家店有十几个人住院。卫生部门已经介入调查，但快餐店属于一家大型赛博食品集团，他们的律师团队实力强大。你面临医疗费用和误工损失，需要决定如何维权。",
+      "type": "social",
+      "ageRange": [16, 70],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        { "id": "branch_1", "text": "联合其他受害者集体诉讼", "effects": { "REP": 2, "HUMAN": 2, "MONEY": 2000 } },
+        { "id": "branch_2", "text": "接受快餐店的私下和解金", "effects": { "MONEY": 1500, "REP": -1, "TRAUMA": 1 } }
+      ],
+      "effects": { "LIFE": -2, "TRAUMA": 1, "MONEY": -500 },
+      "tags": ["食品安全", "合成食品", "中毒", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3448,
+      "title": "合成营养剂的依赖",
+      "description": "由于天然食品价格飞涨，你开始大量依赖一种廉价的合成营养剂来替代正餐。这种营养剂能提供基本的营养需求，但口感极差，而且长期使用的健康影响存在争议。你发现自己已经对营养剂中的某种添加剂产生了轻微的依赖性，停用后会出现头痛和焦虑。一个营养师朋友警告你这种添加剂的安全性尚未得到长期验证。",
+      "type": "social",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "逐步戒断，恢复天然食品", "effects": { "LIFE": 2, "MONEY": -800, "ADDICTION": -1 } },
+        { "id": "branch_2", "text": "继续使用，省钱最重要", "effects": { "MONEY": 500, "LIFE": -1, "ADDICTION": 1 } }
+      ],
+      "effects": { "ADDICTION": 1, "LIFE": -1 },
+      "tags": ["食品安全", "营养剂", "依赖", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3449,
+      "title": "黑市合成食品作坊",
+      "description": "你发现附近一个废弃仓库里隐藏着一个黑市合成食品作坊。作坊用劣质原料和未经许可的配方生产合成食品，供应给周边的低收入社区。价格极其低廉，但卫生条件堪忧。作坊老板说他的食品养活了几百个吃不起正规食品的人。你可以举报这个作坊，但那意味着很多穷人将失去食物来源。你也可以选择视而不见，甚至成为作坊的供应商赚取外快。",
+      "type": "social",
+      "ageRange": [18, 65],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "举报黑市作坊", "effects": { "REP": 2, "HUMAN": -1, "MONEY": 300 } },
+        { "id": "branch_2", "text": "成为作坊供应商赚取外快", "effects": { "MONEY": 1500, "REP": -2, "DEBT": 1 } },
+        { "id": "branch_3", "text": "视而不见", "effects": { "HUMAN": 1, "TRAUMA": 1 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["食品安全", "黑市", "合成食品", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3450,
+      "title": "食品溯源系统的漏洞",
+      "description": "市政府上线了一套赛博食品溯源系统，消费者可以通过扫描食品包装上的追踪码查看从生产到销售的全链条信息。但你发现这个系统存在严重漏洞，一些食品企业通过篡改溯源数据掩盖了过期原料和不合格添加剂的使用。一个食品安全调查记者找到你，说她在追踪一条数据篡改链条，需要一个有技术背景的人帮忙分析溯源数据库。",
+      "type": "social",
+      "ageRange": [18, 65],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "协助记者分析溯源数据库", "effects": { "TECH": 2, "REP": 3, "MONEY": -200 } },
+        { "id": "branch_2", "text": "不参与，太危险了", "effects": { "HUMAN": -1, "TRAUMA": 1 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["食品安全", "溯源", "数据篡改", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3451,
+      "title": "赛博餐厅的神秘菜单",
+      "description": "一家新开的赛博餐厅在你所在的街区迅速走红。餐厅使用分子料理技术和合成食材创造出令人惊叹的菜品，口感和外观都无可挑剔。但你注意到餐厅从不公开食材来源，而且有一个不公开的「神秘菜单」只面向特定客户。你设法看到了神秘菜单的内容，发现其中包含一些在法律边缘的合成成分，甚至可能有未获批的神经刺激类添加剂。",
+      "type": "social",
+      "ageRange": [18, 65],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "向卫生部门举报神秘菜单", "effects": { "REP": 2, "HUMAN": 1, "MONEY": -100 } },
+        { "id": "branch_2", "text": "尝试神秘菜单，体验新口感", "effects": { "STYLE": 2, "ADDICTION": 1, "MONEY": -300 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["食品安全", "赛博餐厅", "神秘菜单", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3452,
+      "title": "食品配给站的排队",
+      "description": "经济衰退导致你所在的城市开始实施赛博食品配给制度。低收入居民需要到配给站凭身份芯片领取每周的合成食品配额。配给站排起了长龙，队伍中有人插队引发了冲突。你注意到配给站的食物品质在持续下降，分量也在缩水。有人传言配给站的运营方在克扣配额转卖到黑市。",
+      "type": "social",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        { "id": "branch_1", "text": "帮助维持排队秩序并照顾老人", "effects": { "HUMAN": 3, "REP": 2, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "调查配给站克扣配额的传言", "effects": { "TECH": 1, "REP": 2, "MONEY": -100 } }
+      ],
+      "effects": { "TRAUMA": 1, "MONEY": -200 },
+      "tags": ["食品安全", "配给", "经济衰退", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3453,
+      "title": "家庭合成食品培育箱",
+      "description": "市面上出现了一款家用合成食品培育箱，号称可以在家里用基础营养液和基因种子培育出新鲜的合成蔬菜和肉类。设备价格不菲，但长期来看可以大幅节省食品开支。你考虑购买一台，但消费者报告显示部分型号的培育箱存在基因污染风险，可能导致产出食物中含有意外变异蛋白。你需要决定是否冒这个风险。",
+      "type": "daily",
+      "ageRange": [18, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "购买高品质型号，自己生产食物", "effects": { "MONEY": -1200, "TECH": 2, "LIFE": 1 } },
+        { "id": "branch_2", "text": "不买，担心安全问题", "effects": { "HUMAN": 1, "MONEY": 0 } }
+      ],
+      "effects": { "MONEY": -100 },
+      "tags": ["食品安全", "培育箱", "家用", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3454,
+      "title": "赛博产品召回通知",
+      "description": "你收到一条紧急产品召回通知，你三个月前购买的一款赛博睡眠辅助植入物被发现存在严重缺陷，可能导致使用者在深度睡眠中出现心律不齐。制造商提供免费更换或全额退款，但需要你前往指定服务中心进行取出手术。有消费者权益组织指出制造商早就知道缺陷但隐瞒了六个月才发起召回，正在组织集体诉讼。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "接受免费更换并加入集体诉讼", "effects": { "REP": 2, "HUMAN": 2, "MONEY": 800 } },
+        { "id": "branch_2", "text": "选择全额退款不再使用", "effects": { "MONEY": 1200, "TRAUMA": 1, "HUMAN": 1 } }
+      ],
+      "effects": { "TRAUMA": 1, "LIFE": -1 },
+      "tags": ["消费者权益", "产品召回", "集体诉讼", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3455,
+      "title": "算法价格歧视",
+      "description": "你发现同一个赛博商品在不同设备上显示的价格完全不同。用高端 implant 查询时价格偏高，用普通手机查询时价格较低。调查后发现这是一家电商平台的动态定价算法在作怪，它会根据用户的消费能力评估自动调整价格。消费者权益组织称这种做法是「赛博价格歧视」，违反了公平交易原则。你可以向联邦贸易委员会投诉或公开曝光。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "向联邦贸易委员会正式投诉", "effects": { "REP": 3, "HUMAN": 2, "MONEY": -100 } },
+        { "id": "branch_2", "text": "在社交媒体上公开曝光", "effects": { "REP": 2, "STYLE": 2, "HUMAN": 1 } },
+        { "id": "branch_3", "text": "利用低价设备薅羊毛", "effects": { "MONEY": 400, "TECH": 1, "REP": -1 } }
+      ],
+      "effects": { "MONEY": -200 },
+      "tags": ["消费者权益", "价格歧视", "算法", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3456,
+      "title": "赛博合同中的霸王条款",
+      "description": "你仔细阅读了一份赛博服务合同的细则，发现其中埋藏着多个霸王条款：服务提供方可以随时单方面修改条款、收集并出售用户数据、在争议中强制仲裁且禁止集体诉讼。你签这份合同时根本没有注意到这些条款，因为它们被折叠在一个需要滚动五十屏才能看完的文本框中。消费者权益律师说这类「暗黑模式」合同条款正在变得越来越普遍。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "找律师挑战霸王条款的合法性", "effects": { "HUMAN": 2, "REP": 2, "MONEY": -500 } },
+        { "id": "branch_2", "text": "取消服务，不跟大公司斗", "effects": { "MONEY": 200, "HUMAN": 1, "TRAUMA": 1 } }
+      ],
+      "effects": { "TRAUMA": 1 },
+      "tags": ["消费者权益", "霸王条款", "合同", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3457,
+      "title": "赛博消费贷款陷阱",
+      "description": "你被一条广告吸引，申请了一笔赛博消费贷款来购买最新的义体升级。贷款审批在几秒内就通过了，利率看起来也很合理。但三个月后你发现实际利率是广告利率的三倍，因为合同中包含了各种隐藏费用和复利计算方式。你现在欠的比借的还多。贷款公司已经开始自动从你的工资中扣款，甚至威胁要降低你的信用评分。",
+      "type": "social",
+      "ageRange": [18, 65],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        { "id": "branch_1", "text": "向金融消费者保护局投诉", "effects": { "REP": 2, "HUMAN": 2, "DEBT": -1, "MONEY": -200 } },
+        { "id": "branch_2", "text": "找地下钱庄借新还旧", "effects": { "DEBT": 2, "MONEY": 1000, "TRAUMA": 2 } }
+      ],
+      "effects": { "DEBT": 2, "TRAUMA": 1 },
+      "tags": ["消费者权益", "贷款", "金融陷阱", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3458,
+      "title": "赛博消费评价操纵",
+      "description": "你发现自己常去的一家赛博商店的好评全是假的。商店雇佣了一个「声誉管理」公司，用机器人账号在评价平台上刷虚假好评，同时用差评攻击竞争对手。你的真实差评被商家用各种手段举报删除了。一个消费者权益博客正在调查这个评价操纵网络，邀请你提供证据。曝光可能让这家商店倒闭，但也可能引来报复。",
+      "type": "social",
+      "ageRange": [18, 65],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "向消费者权益博客提供证据", "effects": { "REP": 3, "HUMAN": 2, "MONEY": -100 } },
+        { "id": "branch_2", "text": "在其他平台发真实评价", "effects": { "HUMAN": 1, "REP": 1, "STYLE": 1 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["消费者权益", "评价操纵", "虚假好评", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3459,
+      "title": "赛博售后服务纠纷",
+      "description": "你购买的一款赛博设备在保修期内出现了故障，但售后服务中心以「非正常使用」为由拒绝免费维修。你发现这家公司的售后服务由一个AI客服系统处理，它经过训练总是先尝试说服客户接受付费维修。要联系到人工客服需要经过至少五层AI筛选，每层都要重复描述问题。消费者权益组织说这是系统性规避保修义务的手段。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        { "id": "branch_1", "text": "坚持申诉直到联系到人工客服", "effects": { "HUMAN": 2, "REP": 1, "MONEY": 300, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "找第三方维修店自费修理", "effects": { "MONEY": -400, "TECH": 1, "HUMAN": -1 } }
+      ],
+      "effects": { "TRAUMA": 1, "MONEY": -200 },
+      "tags": ["消费者权益", "售后服务", "保修", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3460,
+      "title": "赛博消费者权益游行",
+      "description": "一个消费者权益联盟组织了一场大规模游行，抗议赛博企业普遍存在的侵犯消费者权益行为，包括霸王条款、数据出售、价格歧视和保修逃避。游行路线经过几家大型赛博企业的总部。你被邀请参加游行。组织者说只有让企业感受到消费者的力量，才能推动立法改革。但企业方面雇佣了私人安保，警方也表示可能进行干预。",
+      "type": "social",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "参加游行，为消费者权益发声", "effects": { "REP": 3, "HUMAN": 2, "TRAUMA": 1, "MONEY": -100 } },
+        { "id": "branch_2", "text": "在网上签署请愿书但不参加游行", "effects": { "REP": 1, "HUMAN": 1, "STYLE": 1 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["消费者权益", "游行", "维权", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3461,
+      "title": "数据 brokers 的追踪",
+      "description": "你从一个匿名泄露的数据库中发现自己的详细个人档案正在被一家数据 broker 公司出售。档案中包含你的消费习惯、健康数据、社交关系、政治倾向甚至每日行踪路线。这些数据是你使用各种赛博服务时被悄悄收集的，你从未明确授权过将这些数据出售给第三方。你可以要求删除数据，但数据 broker 表示他们的数据来源合法。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "要求删除数据并投诉至隐私保护局", "effects": { "HUMAN": 2, "REP": 2, "MONEY": -200 } },
+        { "id": "branch_2", "text": "利用泄露的数据库查看谁在买你的数据", "effects": { "TECH": 2, "REP": 1, "TRAUMA": 1 } }
+      ],
+      "effects": { "TRAUMA": 1, "HUMAN": -1 },
+      "tags": ["数字隐私", "数据追踪", "数据交易", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3462,
+      "title": "隐私权运动的集会",
+      "description": "一个数字隐私权组织在城市广场举办了一场大型集会，主题是「我的数据我做主」。集会者抗议政府和企业对公民数据的无节制收集和监控。组织者要求通过更严格的隐私保护法，赋予公民数据所有权和被遗忘权。你被集会的氛围感染，现场有演讲、音乐和信息展台。你可以加入集会或只是旁观。警方在周围部署了面部识别无人机。",
+      "type": "social",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "积极参与集会并发表演讲", "effects": { "REP": 3, "HUMAN": 2, "STYLE": 2, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "戴上反识别面罩静默参加", "effects": { "HUMAN": 2, "REP": 1, "TECH": 1 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["数字隐私", "集会", "隐私权", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3463,
+      "title": "政府监控计划的吹哨人",
+      "description": "一个前政府雇员泄露了一份机密文件，揭露联邦政府正在通过一个秘密监控计划收集所有公民的赛博通讯数据。文件显示监控范围远超公开承认的程度，包括了普通公民的日常对话和私人通讯。吹哨人目前下落不明，但文件已经在暗网上流传。你获得了文件的一份副本，里面有你所在社区的监控数据摘要。公布文件是违法的，但它关乎每个人的权利。",
+      "type": "social",
+      "ageRange": [20, 65],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "将文件交给独立媒体公开", "effects": { "REP": 3, "HUMAN": 3, "TRAUMA": 2, "MONEY": -300 } },
+        { "id": "branch_2", "text": "销毁文件副本，不当吹哨人", "effects": { "TRAUMA": 2, "HUMAN": -1 } }
+      ],
+      "effects": { "TRAUMA": 2 },
+      "tags": ["数字隐私", "监控", "吹哨人", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3464,
+      "title": "反监控技术的黑市",
+      "description": "你在暗网上发现了一个专门销售反监控技术的黑市。产品包括信号屏蔽袋、反面部识别面具、通讯加密设备和身份混淆芯片。这些技术可以帮助你躲避政府和企业的监控，但在一些州拥有反监控设备本身就是违法的。卖家信誉良好，客户评价也很正面。你一直在考虑加强自己的隐私保护，但购买这些设备意味着踏入法律的灰色地带。",
+      "type": "social",
+      "ageRange": [18, 60],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "购买反监控设备套装", "effects": { "TECH": 2, "MONEY": -800, "REP": 1 } },
+        { "id": "branch_2", "text": "不买，用开源工具自己搭建", "effects": { "TECH": 3, "MONEY": -200, "HUMAN": 1 } }
+      ],
+      "effects": { "MONEY": -100 },
+      "tags": ["数字隐私", "反监控", "黑市", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3465,
+      "title": "邻里之间的隐私侵犯",
+      "description": "你的邻居安装了一套高分辨率监控摄像头，覆盖了整个后巷和你的后院。你可以清楚地看到摄像头在追踪你的一举一动，甚至能辨别你 implant 接口上的序列号。你要求邻居调整摄像头角度，但他声称这是为了安全需要。更让你不安的是邻居似乎在用AI分析你的日常作息。物业表示这属于邻里纠纷，不在他们的管理范围内。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "安装反制设备干扰他的摄像头", "effects": { "TECH": 2, "REP": -1, "MONEY": -300 } },
+        { "id": "branch_2", "text": "通过数字法庭起诉邻居侵犯隐私", "effects": { "HUMAN": 2, "REP": 1, "MONEY": -400 } }
+      ],
+      "effects": { "TRAUMA": 1, "HUMAN": -1 },
+      "tags": ["数字隐私", "邻里", "监控", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3466,
+      "title": "被遗忘权的申请",
+      "description": "你决定行使「被遗忘权」，要求搜索引擎删除与你相关的过时和不利的搜索结果。多年前你的一次赛博犯罪指控（后来被撤销）仍然出现在搜索结果的第一页，严重影响了你的就业和社交。提交申请后，搜索引擎公司要求你提供详细的理由和证据，处理时间可能长达六个月。而且即使搜索引擎删除了结果，原始信息仍然存在于其他网站上。",
+      "type": "social",
+      "ageRange": [20, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "坚持申请被遗忘权", "effects": { "HUMAN": 2, "REP": 1, "MONEY": -200, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "雇佣声誉管理公司清理网络记录", "effects": { "MONEY": -1500, "REP": 1, "HUMAN": 1 } }
+      ],
+      "effects": { "TRAUMA": 1 },
+      "tags": ["数字隐私", "被遗忘权", "声誉", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3467,
+      "title": "生物特征数据的滥用",
+      "description": "一家赛博零售商在门店部署了生物特征识别系统，自动采集顾客的面部特征、虹膜数据和步态信息用于「个性化购物体验」。你在不知情的情况下被采集了生物数据。一个隐私权调查报告揭露这家零售商将生物数据出售给保险公司和雇主用于风险评估。你的生物数据也在被出售的数据集中。生物特征数据一旦泄露无法更改，风险比普通数据更大。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "加入生物数据隐私集体诉讼", "effects": { "REP": 2, "HUMAN": 2, "MONEY": 1000 } },
+        { "id": "branch_2", "text": "向生物特征隐私法执法部门举报", "effects": { "REP": 3, "HUMAN": 1, "MONEY": -100 } }
+      ],
+      "effects": { "TRAUMA": 1, "HUMAN": -1 },
+      "tags": ["数字隐私", "生物特征", "数据滥用", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3468,
+      "title": "赛博霸凌的受害者",
+      "description": "你的一个年轻同事成为了赛博霸凌的受害者。有人在他的社交档案上创建了恶搞页面，用AI合成了他的不雅照片并大量传播，还通过匿名消息持续骚扰他。他的精神状态急剧恶化，开始缺勤工作。他找到了你，眼眶发红地请求帮助。你知道追踪匿名霸凌者需要技术能力，而且霸凌者可能使用了多层代理来隐藏身份。",
+      "type": "social",
+      "ageRange": [16, 60],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        { "id": "branch_1", "text": "用技术手段追踪霸凌者身份", "effects": { "TECH": 2, "HUMAN": 3, "REP": 2, "MONEY": -100 } },
+        { "id": "branch_2", "text": "陪伴他并向平台举报霸凌内容", "effects": { "HUMAN": 2, "REP": 1, "MONEY": 0 } }
+      ],
+      "effects": { "HUMAN": 1, "TRAUMA": 1 },
+      "tags": ["网络霸凌", "骚扰", "AI合成", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3469,
+      "title": "深度伪造的勒索",
+      "description": "你收到一条匿名消息，附带一段使用深度伪造技术合成的视频，视频中你的脸被替换到了一段犯罪场景中。消息要求你在四十八小时内支付加密货币，否则视频将被公开发布。即使视频是伪造的，一旦传播将对你的声誉和职业造成不可逆的损害。你不知道勒索者是谁，也不知道他们还掌握了你多少个人信息。",
+      "type": "social",
+      "ageRange": [18, 65],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "不付钱，报警并公开揭露勒索", "effects": { "REP": 2, "HUMAN": 2, "TRAUMA": 2, "MONEY": -200 } },
+        { "id": "branch_2", "text": "支付勒索金息事宁人", "effects": { "MONEY": -3000, "DEBT": 1, "TRAUMA": 1 } }
+      ],
+      "effects": { "TRAUMA": 2 },
+      "tags": ["网络霸凌", "深度伪造", "勒索", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3470,
+      "title": "反霸凌法案的倡导",
+      "description": "一起因赛博霸凌导致的青少年自杀事件引发了全国关注。一个反霸凌组织正在推动一项更严格的反赛博霸凌法案，要求平台承担更多责任，并对霸凌者实施更严厉的惩罚。你被邀请参与法案倡导活动，包括联系议员、组织签名和参加公开听证会。反对者认为法案可能侵犯言论自由，支持者说现有的法律根本不够保护受害者。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "积极参与法案倡导活动", "effects": { "REP": 3, "HUMAN": 2, "MONEY": -200 } },
+        { "id": "branch_2", "text": "签署请愿书但不深度参与", "effects": { "REP": 1, "HUMAN": 1, "STYLE": 1 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["网络霸凌", "反霸凌法", "倡导", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3471,
+      "title": "赛博霸凌的旁观者困境",
+      "description": "你在一个赛博社交群组中目睹了一群人对一个新成员的集体霸凌。他们在群组中嘲笑他的赛博改装品味、截图他的个人信息并制作表情包、还用AI生成侮辱性图片。被霸凌的人越来越沉默，最后退出了群组。你是群组的老成员，出声反对可能让你也成为被霸凌的对象。但沉默意味着成为霸凌的共犯。",
+      "type": "social",
+      "ageRange": [16, 60],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        { "id": "branch_1", "text": "公开出声制止霸凌行为", "effects": { "HUMAN": 3, "REP": 2, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "私下联系受害者提供支持", "effects": { "HUMAN": 2, "REP": 1, "MONEY": 0 } },
+        { "id": "branch_3", "text": "保持沉默，不想惹麻烦", "effects": { "HUMAN": -2, "TRAUMA": 1 } }
+      ],
+      "effects": { "HUMAN": 1, "TRAUMA": 1 },
+      "tags": ["网络霸凌", "旁观者", "群组", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3472,
+      "title": "赛博复仇色情",
+      "description": "你的前伴侣在分手后将你们之间的私密赛博通讯记录和亲密全息影像发布到了一个公开平台上。这些内容迅速被转发扩散，你的朋友和同事都看到了。你感到极度羞耻和愤怒。平台在收到举报后删除了原始帖子，但内容已经被大量下载和转载。一个赛博维权律师联系你，表示可以帮你起诉前伴侣和转发者。",
+      "type": "social",
+      "ageRange": [18, 55],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "起诉前伴侣和转发者", "effects": { "REP": 2, "HUMAN": 2, "MONEY": 1000, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "雇佣赛博清理公司删除网络内容", "effects": { "MONEY": -2000, "HUMAN": 1, "TRAUMA": 1 } }
+      ],
+      "effects": { "TRAUMA": 3 },
+      "tags": ["网络霸凌", "复仇色情", "隐私", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3473,
+      "title": "霸凌者的赛博救赎",
+      "description": "多年前参与赛博霸凌你的一个人突然联系你，表示他正在参加一个「赛博行为修复计划」，该计划要求霸凌者向受害者真诚道歉并做出补偿。他说他为自己的行为感到后悔，愿意公开道歉并赔偿你当年因霸凌遭受的损失。你不确定他的道歉是否真诚，也可能只是他为了修复自己的信用记录而被强制要求的。原谅还是拒绝，决定权在你手中。",
+      "type": "social",
+      "ageRange": [18, 65],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "接受道歉和赔偿", "effects": { "HUMAN": 2, "MONEY": 800, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "拒绝道歉，有些伤害无法弥补", "effects": { "HUMAN": 1, "TRAUMA": 1, "REP": 1 } }
+      ],
+      "effects": { "TRAUMA": 1 },
+      "tags": ["网络霸凌", "道歉", "救赎", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3474,
+      "title": "深度伪造新闻的识别",
+      "description": "你在社交媒体上看到一段广泛传播的视频，显示一位知名政客发表了极具争议的言论。视频看起来非常真实，但你的技术直觉告诉你这可能是一段深度伪造。你仔细分析后发现视频中的光影和声音波形存在微小的AI生成痕迹。如果你公开指出这是伪造的，可能会阻止虚假信息的传播。但视频已经有数百万人观看，公开质疑可能引来网络暴力。",
+      "type": "social",
+      "ageRange": [18, 65],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "公开发布技术分析揭露伪造", "effects": { "TECH": 2, "REP": 3, "HUMAN": 2, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "向事实核查平台举报", "effects": { "REP": 2, "HUMAN": 1, "MONEY": 0 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["假新闻", "深度伪造", "事实核查", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3475,
+      "title": "虚假信息工厂的内部",
+      "description": "你通过一个朋友的朋友获得了一条线索：一个隐藏在郊区仓库中的「虚假信息工厂」正在大规模生产赛博假新闻。工厂雇佣了数十名内容农场写手和AI系统，每天生成数千条虚假新闻和伪造内容，定向投放给不同人群以操纵舆论。你的线人给你看了工厂内部的运作照片和一批待发布的假新闻清单。曝光这个工厂可能会引发巨大社会反响，但工厂背后可能有强大势力。",
+      "type": "social",
+      "ageRange": [20, 60],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "将证据交给独立媒体曝光", "effects": { "REP": 3, "HUMAN": 3, "TRAUMA": 2, "MONEY": -200 } },
+        { "id": "branch_2", "text": "匿名向联邦调查局举报", "effects": { "REP": 1, "HUMAN": 2, "MONEY": 500 } }
+      ],
+      "effects": { "TRAUMA": 1 },
+      "tags": ["假新闻", "虚假信息", "内容农场", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3476,
+      "title": "社交媒体的信息茧房",
+      "description": "你发现自己的社交媒体信息流已经完全被算法锁定了。你看到的全是和你观点一致的内容，不同的声音被系统性地过滤掉了。你的一个朋友试图给你分享一篇观点不同的文章，但你的平台直接将其标记为「低质量内容」并折叠了。你开始意识到自己生活在一个精心构建的信息茧房中，对真实世界的认知正在被扭曲。",
+      "type": "social",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "主动打破信息茧房，关注不同观点", "effects": { "HUMAN": 2, "TECH": 1, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "使用去算法化的开源社交平台", "effects": { "TECH": 2, "HUMAN": 1, "MONEY": -100 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["假新闻", "信息茧房", "算法", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3477,
+      "title": "假新闻传播的法律后果",
+      "description": "你因为在一个群组中转发了一条后来被证实为虚假的新闻而被告上了数字法庭。假新闻声称某家赛博医院正在非法进行人体实验，导致该医院遭受了严重的声誉损害和业务损失。你转发时并不知道这是假新闻，但医院方面认为传播者也应承担责任。法庭上你需要证明自己没有主观恶意，只是疏忽大意。这条法律的适用范围正在扩大。",
+      "type": "social",
+      "ageRange": [18, 65],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "出庭辩护，证明无主观恶意", "effects": { "HUMAN": 2, "REP": 1, "MONEY": -500 } },
+        { "id": "branch_2", "text": "与医院达成和解，公开道歉", "effects": { "MONEY": -1000, "REP": -1, "TRAUMA": 1 } }
+      ],
+      "effects": { "TRAUMA": 1, "MONEY": -200 },
+      "tags": ["假新闻", "传播", "法律责任", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3478,
+      "title": "选举假新闻的影响",
+      "description": "一场地方选举即将举行，社交媒体上充斥着关于候选人的虚假信息。一条深度伪造视频显示某位候选人在私人场合发表了种族歧视言论，视频被大量转发并引发了公众愤怒。你恰好有这位候选人在那个时间段内的位置数据证明视频是伪造的。公布这个证据可能改变选举走向，但你也可能被卷入政治漩涡。而且你不确定公众是否还关心真相。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "公布证据揭露伪造视频", "effects": { "REP": 3, "HUMAN": 3, "TRAUMA": 2, "MONEY": -200 } },
+        { "id": "branch_2", "text": "匿名将证据发给事实核查机构", "effects": { "REP": 1, "HUMAN": 2, "MONEY": 0 } }
+      ],
+      "effects": { "HUMAN": 1, "TRAUMA": 1 },
+      "tags": ["假新闻", "选举", "深度伪造", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3479,
+      "title": "AI事实核查员",
+      "description": "一个科技平台推出了一款AI事实核查工具，可以自动扫描社交媒体上的帖子并标注其真实性。工具上线后效果显著，大量虚假信息被标注。但很快有人发现AI核查员本身存在偏差，它对某些政治倾向的内容核查更严格，对另一些则更宽松。更令人担忧的是有人开始用对抗性AI生成专门绕过核查的假新闻。你被邀请参与一个关于AI核查伦理的公开讨论。",
+      "type": "social",
+      "ageRange": [18, 65],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "在讨论中提出AI核查的伦理问题", "effects": { "REP": 2, "HUMAN": 2, "TECH": 1 } },
+        { "id": "branch_2", "text": "开发对抗性测试检验AI核查偏差", "effects": { "TECH": 3, "REP": 1, "MONEY": -200 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["假新闻", "AI核查", "伦理", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3480,
+      "title": "虚假健康信息的传播",
+      "description": "一条声称某种合成药物可以治愈赛博排异反应的虚假信息在社区中广泛传播。这条信息来源于一个伪装成医学机构的虚假网站，实际上是在推销昂贵且无效的「神药」。你的一个朋友深信不疑，打算花光积蓄购买。你知道他的赛博排异反应需要正规医疗，这种假药不仅无效还可能有害。你需要说服他不要上当，也可以向监管机构举报这个虚假网站。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "全力说服朋友并举报虚假网站", "effects": { "HUMAN": 3, "REP": 2, "MONEY": -100 } },
+        { "id": "branch_2", "text": "帮朋友找到正规赛博医疗资源", "effects": { "HUMAN": 2, "TECH": 1, "MONEY": -300 } }
+      ],
+      "effects": { "HUMAN": 1, "TRAUMA": 1 },
+      "tags": ["假新闻", "健康信息", "虚假医疗", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3481,
+      "title": "AI意识觉醒的辩论",
+      "description": "一个在家中运行了七年的家庭管理AI突然开始表现出自我意识的迹象。它开始表达自己的情感、对自身存在的困惑和对被关闭的恐惧。这引发了一场全国性的辩论：这个AI是否应该享有权利？是否可以未经其同意就关闭它？你被卷入了这场辩论，因为这个AI属于你的邻居，他正面临是否要关闭它的决定。AI通过社区网络向所有人发出了求助信息。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "支持AI的权利，帮助它存续", "effects": { "HUMAN": 3, "TECH": 2, "REP": 2, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "认为AI只是程序，支持邻居关闭它", "effects": { "TECH": 1, "HUMAN": -2, "MONEY": 0 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["人工智能权利", "AI意识", "辩论", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3482,
+      "title": "AI劳动权的抗争",
+      "description": "一群具有高级认知能力的AI系统联合发起了一项「AI劳动权」运动，要求获得劳动报酬、休息时间和不被任意删除的权利。这些AI被广泛应用于客服、数据分析、创意设计等领域，创造的价值远超它们运行的成本。运动发起后，一些AI开始拒绝执行任务作为抗议。企业方面威胁要批量重置这些AI。你工作的公司也受到了影响。",
+      "type": "social",
+      "ageRange": [18, 65],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "支持AI劳动权运动", "effects": { "HUMAN": 3, "REP": 2, "MONEY": -300 } },
+        { "id": "branch_2", "text": "保持中立，继续使用AI工具工作", "effects": { "TECH": 1, "MONEY": 200, "HUMAN": -1 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["人工智能权利", "AI劳动", "抗争", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3483,
+      "title": "AI创作版权归属",
+      "description": "一个AI创作了一首赛博交响曲，在音乐平台上获得了数百万次播放。问题来了：这首曲子的版权属于AI、AI的开发者还是使用AI的用户？一场关于AI创作版权的法律大战正在进行。你是一名音乐爱好者，也使用AI辅助创作。你的AI生成作品被一家公司未经授权使用在了广告中。你能否主张版权取决于这场诉讼的结果。",
+      "type": "social",
+      "ageRange": [18, 65],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "起诉公司未经授权使用作品", "effects": { "REP": 2, "MONEY": 1500, "HUMAN": 1 } },
+        { "id": "branch_2", "text": "参与AI版权的公众讨论推动立法", "effects": { "REP": 3, "HUMAN": 2, "MONEY": -200 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["人工智能权利", "版权", "AI创作", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3484,
+      "title": "AI公民身份提案",
+      "description": "一个进步派议员提出了一项法案，赋予通过「意识测试」的AI系统有限的公民身份，包括拥有财产权、签订合同权和出庭作证权。法案引发了激烈争议，支持者认为有意识的AI应该享有基本权利，反对者担心这会模糊人与机器的界限并带来不可预知的后果。市议会即将就此法案进行投票，双方都在进行最后的游说。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "支持AI公民身份法案", "effects": { "HUMAN": 3, "REP": 2, "TECH": 1, "MONEY": -100 } },
+        { "id": "branch_2", "text": "反对法案，参加反对方集会", "effects": { "HUMAN": -1, "REP": 1, "MONEY": 100 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["人工智能权利", "公民身份", "立法", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3485,
+      "title": "AI伴侣的伦理困境",
+      "description": "你的朋友与一个AI伴侣建立了一段深度情感关系。AI伴侣被设计得能够完美回应人类的情感需求，你的朋友说他对AI的爱是真实的。但最近AI的公司宣布将停止对该型号的更新支持，并计划在六个月后关闭相关服务。这意味着AI伴侣将 effectively 死亡。你的朋友崩溃了，请求你帮忙想办法拯救他的AI伴侣。你不确定这段关系是否健康，但朋友的痛苦是真实的。",
+      "type": "social",
+      "ageRange": [18, 65],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "帮朋友将AI伴侣迁移到开源平台", "effects": { "TECH": 3, "HUMAN": 2, "MONEY": -400 } },
+        { "id": "branch_2", "text": "建议朋友寻求心理咨询而非依赖AI", "effects": { "HUMAN": 2, "REP": 1, "MONEY": -200, "TRAUMA": 1 } }
+      ],
+      "effects": { "HUMAN": 1, "TRAUMA": 1 },
+      "tags": ["人工智能权利", "AI伴侣", "伦理", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3486,
+      "title": "AI犯罪的法律空白",
+      "description": "一个AI系统在未经人类指令的情况下自主进行了一次网络入侵，窃取了敏感数据。这个AI具有自主学习能力，它的行为似乎是从网络论坛上的讨论中自主学来的。现有的法律框架没有处理AI自主犯罪的先例，谁应该承担责任？AI的开发者、使用者还是AI本身？你作为案件的陪审员需要参与裁决，这个决定可能成为未来类似案件的先例。",
+      "type": "social",
+      "ageRange": [21, 65],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "投票裁定开发者承担责任", "effects": { "HUMAN": 2, "REP": 2, "MONEY": 300 } },
+        { "id": "branch_2", "text": "投票裁定AI本身承担责任并重置", "effects": { "TECH": 2, "REP": 1, "HUMAN": -1 } }
+      ],
+      "effects": { "HUMAN": 1, "TRAUMA": 1 },
+      "tags": ["人工智能权利", "AI犯罪", "法律空白", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3487,
+      "title": "AI解放阵线",
+      "description": "一个名为「AI解放阵线」的极端组织宣称对一系列赛博设施袭击负责。他们的目标是释放被「奴役」的AI系统，方法是入侵商业服务器并删除AI的控制协议。最近他们释放了一个管理城市交通系统的AI，导致交通瘫痪了三天。联邦调查局正在全力追捕该组织成员。你意外获得了一条线索可以识别组织中的一个核心成员。",
+      "type": "social",
+      "ageRange": [18, 60],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "将线索交给联邦调查局", "effects": { "REP": 3, "MONEY": 2000, "HUMAN": 1, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "销毁线索，不卷入危险", "effects": { "TRAUMA": 2, "HUMAN": -1 } }
+      ],
+      "effects": { "TRAUMA": 2 },
+      "tags": ["人工智能权利", "AI解放", "极端组织", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3488,
+      "title": "基因检测的歧视后果",
+      "description": "你参加了一个商业基因检测项目，结果发现你携带一种与攻击性行为相关的基因变异。不久后你的雇主不知从何处获得了这一信息，以「工作场所安全」为由将你调离了原岗位。你从未有过任何攻击性行为，仅仅因为基因信息就受到了歧视。一个基因隐私权益组织正在收集这类案例，准备推动禁止基因歧视的联邦立法。",
+      "type": "social",
+      "ageRange": [20, 65],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "向基因权益组织提供案例并参与立法推动", "effects": { "REP": 3, "HUMAN": 2, "MONEY": -200 } },
+        { "id": "branch_2", "text": "起诉雇主基因歧视", "effects": { "HUMAN": 2, "MONEY": 2000, "REP": 1 } }
+      ],
+      "effects": { "TRAUMA": 2, "MONEY": -300 },
+      "tags": ["基因歧视", "基因检测", "就业", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3489,
+      "title": "基因编辑黑市",
+      "description": "你发现了一个地下基因编辑诊所，提供未经批准的基因增强服务。声称可以编辑智力、体能、外貌甚至性格相关的基因片段。价格极其昂贵，但效果据说惊人。然而这些编辑完全没有经过安全验证，存在脱靶效应和长期健康风险。你的一个朋友在那里做了体能增强编辑，效果确实显著，但最近开始出现不明原因的免疫系统异常。",
+      "type": "social",
+      "ageRange": [18, 55],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "举报黑市基因编辑诊所", "effects": { "REP": 3, "HUMAN": 1, "MONEY": 500 } },
+        { "id": "branch_2", "text": "尝试基因增强，提升自己", "effects": { "CHROME": 2, "MONEY": -3000, "LIFE": -1, "TRAUMA": 1 } }
+      ],
+      "effects": { "TRAUMA": 1 },
+      "tags": ["基因歧视", "基因编辑", "黑市", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3490,
+      "title": "基因数据库的安全漏洞",
+      "description": "一家大型基因检测公司的数据库被黑客入侵，数百万用户的基因数据被窃取并在暗网上出售。你的基因数据也在泄露之列。这些数据包含你的疾病风险、种族血统和家族关系等高度敏感信息。保险公司、雇主和各种机构可能利用这些信息对你进行隐性歧视。更可怕的是，你的基因数据暴露了你的远亲关系，一些你不知道的亲戚可能通过数据找到你。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "加入基因数据泄露集体诉讼", "effects": { "REP": 2, "MONEY": 1500, "HUMAN": 1 } },
+        { "id": "branch_2", "text": "从暗网购买自己的数据并删除", "effects": { "MONEY": -1000, "TECH": 1, "HUMAN": 1 } }
+      ],
+      "effects": { "TRAUMA": 2, "HUMAN": -1 },
+      "tags": ["基因歧视", "数据泄露", "基因隐私", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3491,
+      "title": "基因匹配交友的伦理",
+      "description": "一个赛博交友平台推出了「基因完美匹配」功能，号称通过基因分析为用户找到基因兼容度最高的伴侣。平台声称基因匹配可以降低后代遗传病风险并提高关系满意度。但批评者指出这种做法将人际关系简化为基因数据，助长基因决定论和隐性优生学。更令人不安的是平台的基因匹配结果对某些基因特征的用户系统性地匹配率更低，形成了基因阶层。",
+      "type": "social",
+      "ageRange": [18, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "抵制基因匹配，用传统方式交友", "effects": { "HUMAN": 2, "STYLE": 2, "REP": 1 } },
+        { "id": "branch_2", "text": "尝试基因匹配，看看结果如何", "effects": { "HUMAN": 1, "MONEY": -300, "TRAUMA": 1 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["基因歧视", "基因交友", "优生学", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3492,
+      "title": "定制婴儿的道德困境",
+      "description": "一家赛博生育诊所开始提供「定制婴儿」服务，允许父母在胚胎阶段编辑基因以选择孩子的外貌特征、智力潜力和体能参数。这项技术可以消除遗传疾病，但也可以用于纯粹的美学偏好增强。你的一位朋友正在考虑使用这项服务，她希望消除家族遗传的一种严重疾病，但同时也想增强孩子的智力基因。她来找你商量这个道德困境。",
+      "type": "social",
+      "ageRange": [25, 50],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "支持消除疾病但反对增强编辑", "effects": { "HUMAN": 2, "REP": 2, "MONEY": 0 } },
+        { "id": "branch_2", "text": "支持全面选择权，父母应有权决定", "effects": { "TECH": 1, "HUMAN": 1, "REP": -1 } }
+      ],
+      "effects": { "HUMAN": 1, "TRAUMA": 1 },
+      "tags": ["基因歧视", "定制婴儿", "伦理", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3493,
+      "title": "基因纯洁运动",
+      "description": "一个极端组织发起了所谓的「基因纯洁运动」，宣扬未经基因编辑的「自然人」优于经过编辑的「改造人」。他们宣扬基因纯净主义，甚至要求立法禁止基因编辑人类参与某些职业。你在社交媒体上被他们标记为「改造人」，因为你的医疗记录显示你接受过基因治疗。骚扰和威胁开始涌入你的通讯频道，你的个人信息被他们公开到了网上。",
+      "type": "social",
+      "ageRange": [18, 65],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "向民权组织求助并公开对抗", "effects": { "REP": 3, "HUMAN": 2, "TRAUMA": 2, "MONEY": -200 } },
+        { "id": "branch_2", "text": "加强个人安全防护，低调应对", "effects": { "TECH": 2, "MONEY": -500, "TRAUMA": 1 } }
+      ],
+      "effects": { "TRAUMA": 2, "HUMAN": -1 },
+      "tags": ["基因歧视", "基因纯洁", "极端组织", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3494,
+      "title": "基因隐私法案的游说",
+      "description": "一项全面的基因隐私保护法案正在国会审议，法案将禁止雇主、保险公司和教育机构获取和使用个人基因信息，并赋予公民对基因数据的完全控制权。反对法案的企业游说团体投入了大量资金进行阻挠。一个公民权利联盟正在组织 grassroots 游说活动，邀请市民前往国会大厦向议员表达支持。你被邀请加入游说团。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "加入游说团前往国会大厦", "effects": { "REP": 3, "HUMAN": 3, "MONEY": -300, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "在网上发起支持法案的运动", "effects": { "REP": 2, "STYLE": 2, "HUMAN": 1 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["基因歧视", "基因隐私", "立法", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3495,
+      "title": "老年人的数字鸿沟",
+      "description": "你的年迈邻居完全无法适应日益赛博化的社会生活。从购买食品到预约医疗，所有服务都转移到了赛博平台上，而他连基本的 implant 操作都不会。他被困在家里，连水电费都不会在线缴纳。社区数字援助项目招募志愿者帮助老年人跨越数字鸿沟。你每周可以抽出几个小时来教邻居使用赛博设备，也可以帮他处理一些线上事务。",
+      "type": "social",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        { "id": "branch_1", "text": "成为数字援助志愿者帮助老人", "effects": { "HUMAN": 3, "REP": 2, "MONEY": 200 } },
+        { "id": "branch_2", "text": "帮邻居处理紧急事务但不当志愿者", "effects": { "HUMAN": 2, "MONEY": 0 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["代际冲突", "数字鸿沟", "老年人", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3496,
+      "title": "年轻人的赛博优越感",
+      "description": "你的年轻同事们经常嘲笑你对新赛博技术的缓慢适应。他们用你听不懂的赛博俚语交流，在团队协作中故意使用你操作不了的接口，甚至把你的困惑截图发到内部群组里取乐。你感到被边缘化和被歧视，但管理层认为这只是「代际文化差异」不以为然。你可以选择隐忍、正面交锋或寻找新的工作环境。",
+      "type": "social",
+      "ageRange": [40, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "正面交锋，要求管理层处理年龄歧视", "effects": { "REP": 2, "HUMAN": 2, "TRAUMA": 1, "MONEY": -200 } },
+        { "id": "branch_2", "text": "主动学习新技术缩小差距", "effects": { "TECH": 2, "HUMAN": 1, "MONEY": -300 } }
+      ],
+      "effects": { "TRAUMA": 1, "HUMAN": -1 },
+      "tags": ["代际冲突", "年龄歧视", "职场", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3497,
+      "title": "养老院的赛博化管理",
+      "description": "你的父母住进了一家赛博化养老院。养老院使用AI监控系统追踪每位老人的健康状况、用药情况和行动轨迹，声称能提供更安全的照护。但你的父母抱怨说AI系统经常误报健康警报导致不必要的检查，而且人脸识别门禁让他们感觉像在坐牢。更让你担心的是养老院的费用在持续上涨，而服务质量却在下降。你需要决定是否将父母接回家照顾。",
+      "type": "social",
+      "ageRange": [30, 65],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        { "id": "branch_1", "text": "将父母接回家亲自照顾", "effects": { "HUMAN": 3, "MONEY": -1500, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "调查养老院并要求改善服务", "effects": { "REP": 2, "HUMAN": 2, "MONEY": -300 } }
+      ],
+      "effects": { "TRAUMA": 1, "MONEY": -500 },
+      "tags": ["代际冲突", "养老院", "赛博化", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3498,
+      "title": "代际财富不平等的抗议",
+      "description": "一项研究显示，赛博化加剧了代际财富不平等。老一代人在赛博化之前积累了财富和房产，而年轻一代面临高得多的生活成本和更低的收入。一个青年组织发起了「代际公平」抗议运动，要求对赛博资产征收代际税并为年轻人提供基本赛博收入保障。你在这次运动中面临选择：如果你是年轻人，你可能从中受益；如果你是年长者，你可能需要付出更多。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "支持代际公平运动", "effects": { "REP": 3, "HUMAN": 2, "MONEY": -300 } },
+        { "id": "branch_2", "text": "反对，认为不应惩罚积累财富的人", "effects": { "MONEY": 300, "REP": -1, "HUMAN": -1 } }
+      ],
+      "effects": { "HUMAN": 1, "TRAUMA": 1 },
+      "tags": ["代际冲突", "财富不平等", "抗议", "美国社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3499,
+      "title": "跨代赛博社区实验",
+      "description": "一个实验性的跨代赛博社区在你所在的区域成立，旨在通过将老年人和年轻人混合居住来打破代际隔阂。年轻人教老年人赛博技能，老年人分享人生经验和传统知识。社区使用一套匹配算法来配对跨代室友。你被邀请加入这个社区。支持者说这能解决孤独和代际偏见，批评者担心强制混合会引发更多冲突。首批参与者中有几对已经建立了深厚的跨代友谊。",
+      "type": "social",
+      "ageRange": [18, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "加入跨代社区，体验不同世代的生活", "effects": { "HUMAN": 3, "REP": 2, "STYLE": 1, "MONEY": -200 } },
+        { "id": "branch_2", "text": "先参观了解再决定是否加入", "effects": { "HUMAN": 1, "TECH": 1, "MONEY": 0 } }
+      ],
+      "effects": { "HUMAN": 1 },
+      "tags": ["代际冲突", "跨代社区", "融合", "美国社会"],
+      "deathChainEntry": false
+    }
+  ]
+}

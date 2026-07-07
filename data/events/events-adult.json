@@ -1,207 +1,853 @@
 {
   "events": [
     {
-      "id": 201,
+      "id": 200,
       "title": "公司晋升机会",
-      "description": "你在荒坂集团的业绩考核中名列前茅，主管私下告诉你有一个晋升的机会——从基层调到项目管理部门。薪水翻倍，配发公司公寓，但代价是需要签署一份更严格的竞业禁止协议，并且要接受实验性赛博植入物的「体检」。办公室的冷气开得很足，你看着合同上的条款，发现角落里有一行极小的字。",
+      "description": "你的业绩考核名列前茅，主管私下透露有一个晋升到项目管理部的机会。薪水翻倍，配发公司公寓，但代价是需要签署一份更严格的竞业禁止协议，并接受实验性赛博植入物的「体检」。你看着合同上的条款，发现角落里有一行极小的字——那行字可能改变你的一生。",
       "type": "economy",
-      "ageRange": [26, 35],
+      "ageRange": [26, 40],
       "weight": 14,
       "repeatable": true,
-      "cooldown": 10,
+      "cooldown": 12,
       "branches": [
-        { "id": "branch_1", "text": "接受晋升，签署合同", "effects": { "CORP_REP": 5, "MONEY": 3000, "CYBER_LEVEL": 1, "FREEDOM": -2 } },
-        { "id": "branch_2", "text": "拒绝晋升，不想被企业绑定", "effects": { "COOL": 2, "FREEDOM": 2, "MONEY": -500 } }
+        { "id": "accept_promotion", "text": "接受晋升，签署合同", "effects": { "MONEY": 3000, "REP": 3, "CHROME": 1, "DEBT": 2 } },
+        { "id": "refuse_promotion", "text": "拒绝晋升，不想被企业绑定", "effects": { "HUMAN": 2, "STYLE": 1 } }
       ],
-      "effects": { "CORP_REP": 2, "MONEY": 1000 },
-      "tags": ["成年", "企业", "晋升", "合同"],
+      "effects": { "MONEY": 1000, "REP": 1 },
+      "tags": ["成年", "职场", "晋升", "企业"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 201,
+      "title": "被裁员",
+      "description": "公司启动了新一轮的「组织优化」。你和三十几个同事在同一天收到解雇通知，HR面无表情地说这是业务调整，补偿金只有法定最低标准。你抱着装满私人物品的纸箱走出大楼，看到门口已经有新的应聘者在排队——你的岗位已经被AI和廉价外包劳工取代了。",
+      "type": "economy",
+      "ageRange": [28, 55],
+      "weight": 16,
+      "repeatable": true,
+      "cooldown": 18,
+      "branches": [
+        { "id": "take_severance", "text": "领取微薄补偿，开始找下一份工作", "effects": { "MONEY": 2000, "TRAUMA": 2, "REP": -2 } },
+        { "id": "sue_company", "text": "起诉公司违法裁员，争取更多赔偿", "effects": { "MONEY": -1500, "DEBT": 3, "REP": -1, "HUMAN": 1 } }
+      ],
+      "effects": { "MONEY": 1000, "TRAUMA": 1 },
+      "tags": ["成年", "裁员", "失业", "企业"],
       "deathChainEntry": false
     },
     {
       "id": 202,
-      "title": "被裁员",
-      "description": "荒坂集团启动了新一轮的「组织优化」。你所在的部门被整体外包，你和三十几个同事在同一天收到了解雇通知。HR面无表情地说这是「业务调整」，补偿金只有法定最低标准。你抱着装满私人物品的纸箱走出大楼，看到门口已经有新的应聘者在排队——你的岗位已经被AI和廉价劳工取代了。",
+      "title": "跳槽到竞争对手",
+      "description": "猎头在午休时间找到你，开出了无法拒绝的条件。竞争对手公司愿意以双倍薪资挖你过去，还承诺提供更好的义体维护补贴和住房津贴。但你手上掌握着现任雇主的商业机密——他们看中的不只是你的能力，还有你脑子里的数据。离职面谈时，法务意味深长地提醒你保密协议的分量。",
       "type": "economy",
-      "ageRange": [28, 50],
-      "weight": 16,
+      "ageRange": [28, 45],
+      "weight": 12,
       "repeatable": true,
       "cooldown": 15,
       "branches": [
-        { "id": "branch_1", "text": "领取微薄补偿，开始找下一份工作", "effects": { "MONEY": 2000, "MENTAL": -3, "CORP_REP": -3 } },
-        { "id": "branch_2", "text": "起诉公司违法裁员，争取更多赔偿", "effects": { "MONEY": -1500, "CORP_REP": -5, "KARMA": 1 } }
+        { "id": "jump_ship", "text": "接受挖角，跳槽到竞争对手", "effects": { "MONEY": 4000, "REP": 2, "TECH": 1, "DEBT": -2 } },
+        { "id": "stay_loyal", "text": "拒绝诱惑，向现任老板报告此事", "effects": { "REP": 3, "HUMAN": 2, "MONEY": 500 } }
       ],
-      "effects": { "MONEY": 1000, "MENTAL": -2 },
-      "tags": ["成年", "裁员", "企业", "失业"],
+      "effects": { "MONEY": 2000, "REP": 1 },
+      "tags": ["成年", "跳槽", "职场", "猎头"],
       "deathChainEntry": false
     },
     {
       "id": 203,
-      "title": "街头声望飙升",
-      "description": "你在一次街头冲突中展现了惊人的胆识和战斗力。你独自击退了来砸场子的漩涡帮成员，保护了整个街区的商贩。事情在邻里间传开了，人们开始用敬畏的眼光看你。一个小有名气的中间人主动找到你，说有几单「有分量」的生意想和你谈——你的名字终于在这座城市的底层社会里有了分量。",
-      "type": "social",
-      "ageRange": [26, 40],
+      "title": "自己创业",
+      "description": "你厌倦了替别人打工的日子，决定自己当老板。你手里有一笔积蓄和一个看似靠谱的商业计划——在夜之城，机会永远属于敢冒险的人。你租下了一间破旧的小铺面，开始办理各种许可证。工商窗口的职员头也不抬地说：「填表、交钱、等审批。下一个。」创业的第一步比你想象的沉重。",
+      "type": "economy",
+      "ageRange": [28, 50],
       "weight": 12,
       "repeatable": false,
       "cooldown": 0,
       "branches": [
-        { "id": "branch_1", "text": "接受中间人的邀请，扩大自己的影响力", "effects": { "STREET_REP": 5, "MONEY": 1500, "NETWORK": 3 } },
-        { "id": "branch_2", "text": "保持低调，拒绝被名声绑架", "effects": { "COOL": 3, "KARMA": 2 } }
+        { "id": "start_business", "text": "全力以赴创办自己的生意", "effects": { "MONEY": -5000, "DEBT": 4, "REP": 2, "TECH": 1 } },
+        { "id": "test_waters", "text": "先做小规模试水，兼职创业", "effects": { "MONEY": -1500, "DEBT": 1, "STYLE": 1 } }
       ],
-      "effects": { "STREET_REP": 3, "COOL": 1 },
-      "tags": ["成年", "声望", "街头", "中间人"],
+      "effects": { "MONEY": -2000, "DEBT": 2 },
+      "tags": ["成年", "创业", "生意", "冒险"],
       "deathChainEntry": false
     },
     {
       "id": 204,
-      "title": "组建团队",
-      "description": "你意识到单打独斗在夜之城走不远。一个靠谱的团队——有黑客、有技术员、有打手——能接更大的单子，存活率也更高。你在「来生」酒吧贴了招募告示，来面试的人形形色色：一个退役军用机器人操作员、一个被企业开除的数据分析师、一个欠了赌债的前NCPD警员。",
+      "title": "遇到职场霸凌",
+      "description": "你的直属上司似乎看你不顺眼。他在会议上公开贬低你的工作成果，把本该属于你的功劳分配给自己的亲信，还经常在临近下班时给你布置不可能完成的任务。其他同事看在眼里，但没有一个人敢为你说话——因为上一个站出来的人已经被逼走了。你的心理健康在一天天被侵蚀。",
       "type": "social",
-      "ageRange": [28, 45],
-      "weight": 10,
-      "repeatable": false,
-      "cooldown": 0,
+      "ageRange": [26, 50],
+      "weight": 14,
+      "repeatable": true,
+      "cooldown": 10,
       "branches": [
-        { "id": "branch_1", "text": "组建团队，承接大型佣兵任务", "effects": { "STREET_REP": 3, "MONEY": 2000, "COMBAT": 2, "NETWORK": 4 } },
-        { "id": "branch_2", "text": "觉得组队太麻烦，继续单干", "effects": { "COOL": 1, "FREEDOM": 2 } }
+        { "id": "fight_back", "text": "收集证据向HR举报上司", "effects": { "REP": 2, "HUMAN": 1, "MONEY": -500, "TRAUMA": -1 } },
+        { "id": "endure_silently", "text": "忍气吞声，默默忍受等待机会", "effects": { "TRAUMA": 3, "REP": -1, "MONEY": 500 } }
       ],
-      "effects": { "NETWORK": 2 },
-      "tags": ["成年", "团队", "招募", "佣兵"],
+      "effects": { "TRAUMA": 2, "REP": -1 },
+      "tags": ["成年", "职场", "霸凌", "压迫"],
       "deathChainEntry": false
     },
     {
       "id": 205,
-      "title": "购置房产",
-      "description": "你攒了一笔钱，足够在夜之城购置一处属于自己的房产。房产中介的全息展示列出了几个选项：沃森区的旧公寓（便宜但治安差）、海伍德区的小平房（中规中矩）、科珀广场的单身公寓（贵但有面子），或者城外废弃的工厂厂房（需要自己改造但空间大）。在夜之城，有房产的人才算真正有了立足之地。",
-      "type": "economy",
-      "ageRange": [28, 50],
+      "title": "被同事出卖抢功",
+      "description": "你花了一个月时间精心准备的项目方案，在高层汇报会上被你的同事当作他自己的成果呈报了上去。老板对他大加赞赏，宣布给他升职加薪。你坐在会议室后排，看着那个满脸得意的背影，拳头在桌下捏得发白。他走出会议室时甚至没有看你一眼——你只是他往上爬的又一块垫脚石。",
+      "type": "social",
+      "ageRange": [26, 45],
       "weight": 12,
-      "repeatable": false,
-      "cooldown": 0,
+      "repeatable": true,
+      "cooldown": 15,
       "branches": [
-        { "id": "branch_1", "text": "购买海伍德区的平房，稳定但普通", "effects": { "MONEY": -8000, "MENTAL": 3, "STREET_REP": 1 } },
-        { "id": "branch_2", "text": "购买废弃厂房，省钱但有改造风险", "effects": { "MONEY": -3000, "TECH": 2, "CREATIVITY": 2 } }
+        { "id": "confront_publicly", "text": "当场揭穿他的谎言，公开对质", "effects": { "REP": 3, "HUMAN": 1, "MONEY": 1000, "TRAUMA": -1 } },
+        { "id": "bide_time", "text": "隐忍不发，等待时机报复", "effects": { "TRAUMA": 2, "REP": -1, "STYLE": 1 } }
       ],
-      "effects": { "MONEY": -5000, "MENTAL": 2 },
-      "tags": ["成年", "房产", "投资", "安居"],
+      "effects": { "TRAUMA": 2, "MONEY": -500 },
+      "tags": ["成年", "职场", "背叛", "抢功"],
       "deathChainEntry": false
     },
     {
       "id": 206,
-      "title": "遭遇背叛",
-      "description": "你最信任的搭档——那个和你一起出生入死三年的兄弟——出卖了你。他在一次大任务中提前带着报酬消失了，把你留在了敌人的包围圈里。你九死一生逃出来，发现他不仅洗劫了你们的共同账户，还把你的行踪卖给了你的仇家。背叛的痛楚比子弹更难愈合。",
-      "type": "combat",
+      "title": "遇到伯乐导师",
+      "description": "公司来了一位新的高级副总裁，他在巡视部门时注意到了你做的项目报告。他没有像其他高管那样敷衍地点头，而是坐下来仔细问了你的想法和思路。临走时他递给你一张名片，说他的门永远对有能力的人敞开。在这个充斥着办公室政治的企业森林里，一个真正赏识你的导师可能比一笔钱更珍贵。",
+      "type": "social",
       "ageRange": [26, 45],
-      "weight": 8,
+      "weight": 10,
       "repeatable": false,
       "cooldown": 0,
       "branches": [
-        { "id": "branch_1", "text": "追查叛徒，报仇雪恨", "effects": { "STREET_REP": 2, "COMBAT": 2, "MENTAL": -2, "MONEY": 1000 } },
-        { "id": "branch_2", "text": "算了，吃一堑长一智，不再信任任何人", "effects": { "COOL": 3, "MENTAL": -1, "TRUST": -3 } }
+        { "id": "seek_mentorship", "text": "主动接近导师，寻求指导和提携", "effects": { "REP": 3, "TECH": 2, "MONEY": 1500, "HUMAN": 1 } },
+        { "id": "stay_independent", "text": "保持距离，靠自己的本事打拼", "effects": { "STYLE": 2, "HUMAN": 1 } }
       ],
-      "effects": { "MENTAL": -3, "STREET_SMART": 2 },
-      "tags": ["成年", "背叛", "信任", "复仇"],
+      "effects": { "REP": 2, "MONEY": 500 },
+      "tags": ["成年", "导师", "伯乐", "机遇"],
       "deathChainEntry": false
     },
     {
       "id": 207,
-      "title": "获得关键情报",
-      "description": "你的情报网络捕获了一条价值连城的信息：荒坂集团正在秘密开发一种新型赛博武器原型，安保系统将在下个月的维护窗口期出现十分钟的漏洞。这条情报足以让你一夜暴富，也可能让你死无葬身之地。情报贩子蜘蛛看着你，等待你的决定——有些秘密知道得太多了，就不再是秘密，而是诅咒。",
+      "title": "企业内部政治斗争站队",
+      "description": "两大副总裁之间的权力斗争进入了白热化阶段。你被夹在中间——你的项目需要A副总裁的资源支持，但你的直属上司是B副总裁的人。两边都在暗示你「站好队」，而站错的代价可能是职业生涯的终结。茶水间的窃窃私语和走廊里的眼神交锋比任何战斗都更消耗心力。",
       "type": "social",
-      "ageRange": [28, 50],
-      "weight": 6,
-      "repeatable": false,
-      "cooldown": 0,
+      "ageRange": [30, 50],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 20,
       "branches": [
-        { "id": "branch_1", "text": "策划盗取武器原型，高风险高回报", "effects": { "MONEY": 5000, "STREET_REP": 4, "NCPD_WANTED": 3, "DANGER": 3 } },
-        { "id": "branch_2", "text": "把情报卖给其他势力赚取信息费", "effects": { "MONEY": 3000, "NETWORK": 2, "STREET_REP": 1 } }
+        { "id": "side_with_a", "text": "投靠A副总裁，赌他的派系最终胜利", "effects": { "REP": 3, "MONEY": 2000, "TRAUMA": 1, "DEBT": 1 } },
+        { "id": "stay_neutral", "text": "保持中立，专注做好自己的事", "effects": { "HUMAN": 2, "STYLE": 1, "MONEY": -500 } }
       ],
-      "effects": { "NETWORK": 2, "MONEY": 1000 },
-      "tags": ["成年", "情报", "荒坂", "秘密"],
+      "effects": { "TRAUMA": 1, "REP": -1 },
+      "tags": ["成年", "职场", "政治", "站队"],
       "deathChainEntry": false
     },
     {
       "id": 208,
-      "title": "投资黑市生意",
-      "description": "一个地下商人邀请你入股他的黑市赛博零件生意。他需要启动资金来扩大生产规模——在废弃工厂里改装盗版军用义体，然后以正品三折的价格卖给底层的佣兵和帮派分子。投资回报率很高，但这本质上是在做违法生意。而且你的合伙人看起来很精明的样子，但你总觉得他在隐瞒什么。",
+      "title": "项目组被整体裁撤",
+      "description": "总部的一封邮件粉碎了整个团队的努力——你所在的部门因为战略调整被整体裁撤。没有过渡期，没有转岗机会，所有人立即离职。并肩作战多年的同事们站在走廊里面面相觑，有人当场哭了出来，有人沉默地收拾着工位。这个月你们刚交付了年度最重要的项目，但企业的冷血不会看在这些功劳的份上。",
       "type": "economy",
-      "ageRange": [30, 55],
+      "ageRange": [28, 50],
       "weight": 10,
-      "repeatable": true,
-      "cooldown": 20,
+      "repeatable": false,
+      "cooldown": 0,
       "branches": [
-        { "id": "branch_1", "text": "投资黑市生意，追求高回报", "effects": { "MONEY": -5000, "STREET_REP": 2, "KARMA": -2, "PASSIVE_INCOME": 3 } },
-        { "id": "branch_2", "text": "谨慎拒绝，不想沾手违法生意", "effects": { "KARMA": 2, "COOL": 1 } }
+        { "id": "rally_team", "text": "组织前同事一起创业或集体跳槽", "effects": { "REP": 4, "MONEY": 1000, "DEBT": 2, "HUMAN": 2 } },
+        { "id": "go_alone", "text": "独自寻找新出路，各奔东西", "effects": { "MONEY": 1500, "TRAUMA": 1, "STYLE": 1 } }
       ],
-      "effects": { "MONEY": -2000, "STREET_SMART": 1 },
-      "tags": ["成年", "黑市", "投资", "生意"],
+      "effects": { "MONEY": 1000, "TRAUMA": 2 },
+      "tags": ["成年", "裁员", "团队", "企业"],
       "deathChainEntry": false
     },
     {
       "id": 209,
-      "title": "团队分裂",
-      "description": "你的团队因为分赃不均爆发了激烈争吵。黑客认为每次任务她的风险最大但分得最少，打手觉得每次都是他冲在最前面应该拿更多。成员之间的矛盾像定时炸弹。你现在必须做出裁决，而无论你怎么选，都可能有人离开。在夜之城，维持一个团队比建立一个团队难得多。",
-      "type": "social",
-      "ageRange": [30, 50],
+      "title": "被派到危险的项目现场",
+      "description": "公司接了一个在恶土边缘的工程项目——那里是漩涡帮和流浪者交界的缓冲区，治安基本靠运气。项目经理点名要你去现场监督，理由是「你年轻、没家庭负担」。那个区域的信号很差，创伤小组的响应时间超过四十分钟。出发前，同事拍了拍你的肩膀，递给你一把防身用的手枪。",
+      "type": "combat",
+      "ageRange": [26, 45],
       "weight": 10,
       "repeatable": true,
       "cooldown": 15,
       "branches": [
-        { "id": "branch_1", "text": "重新分配利益，安抚不满的成员", "effects": { "CHARISMA": 3, "MONEY": -1000, "NETWORK": 1 } },
-        { "id": "branch_2", "text": "强硬镇压反对声音，立下规矩", "effects": { "STREET_REP": 2, "COOL": 2, "NETWORK": -2 } }
+        { "id": "take_assignment", "text": "接受指派，带上装备前往危险现场", "effects": { "MONEY": 3000, "REP": 2, "TECH": 1, "LIFE": -2 } },
+        { "id": "refuse_mission", "text": "拒绝指派，哪怕得罪管理层", "effects": { "HUMAN": 1, "REP": -2, "MONEY": -1000 } }
       ],
-      "effects": { "MENTAL": -1, "STREET_SMART": 1 },
-      "tags": ["成年", "团队", "分裂", "管理"],
+      "effects": { "MONEY": 1500, "LIFE": -1 },
+      "tags": ["成年", "职场", "危险", "恶土"],
       "deathChainEntry": false
     },
     {
       "id": 210,
-      "title": "中年危机",
-      "description": "某个深夜，你独自坐在公寓里，看着窗外永不熄灭的霓虹灯。你突然意识到自己已经不再年轻了。身体开始出现各种小毛病，义体维护费用越来越高，年轻时的那些朋友不是死了就是进去了。你问自己：这些年到底得到了什么？这座吃人不吐骨头的城市，究竟是你的舞台还是你的坟墓？",
-      "type": "daily",
-      "ageRange": [35, 55],
-      "weight": 12,
+      "title": "争取到海外项目",
+      "description": "公司有一个去东京分部交流学习的机会。这是难得一见的机遇——不仅能避开内部斗争的漩涡，还能接触全球最前沿的赛博技术。但竞争异常激烈，好几个同事都在暗中活动。你需要在上司面前证明自己是最好的选择，而这意味着要接下别人都不愿意做的脏活累活来攒表现分。",
+      "type": "economy",
+      "ageRange": [28, 45],
+      "weight": 8,
       "repeatable": false,
       "cooldown": 0,
       "branches": [
-        { "id": "branch_1", "text": "振作精神，重新规划人生", "effects": { "MENTAL": 3, "COOL": 2, "AMBITION": 3 } },
-        { "id": "branch_2", "text": "用酒精和超梦麻醉自己，逃避现实", "effects": { "ADDICTION_RISK": 4, "MENTAL": -2, "MONEY": -500 } }
+        { "id": "compete_hard", "text": "全力竞争，接下脏活累活攒表现", "effects": { "REP": 3, "TECH": 3, "MONEY": 2000, "TRAUMA": 1 } },
+        { "id": "let_it_go", "text": "放弃竞争，求稳留在本地", "effects": { "STYLE": 1, "HUMAN": 1, "MONEY": -500 } }
       ],
-      "effects": { "MENTAL": -1 },
-      "tags": ["成年", "中年", "危机", "反思"],
+      "effects": { "REP": 1, "MONEY": 1000 },
+      "tags": ["成年", "海外", "项目", "机遇"],
       "deathChainEntry": false
     },
     {
       "id": 211,
-      "title": "旧友重逢",
-      "description": "你在街头偶然遇到了童年的好友。你们都变了——他装上了廉价的军用义肢，脸上多了几道疤，眼神里有了你读不懂的东西。他热情地拉着你去喝酒，聊起过去的岁月。但随着话题深入，你发现他似乎在试探什么——他可能已经不是当年那个单纯的朋友了，也许成了某个势力的线人。",
+      "title": "成为高管助理看到太多秘密",
+      "description": "你被选为高级副总裁的行政助理，这本是一个令人羡慕的晋升机会。但你很快发现，你的日常工作包括销毁敏感文件、安排秘密会面、以及处理一些「不能留下记录」的财务转账。你知道得太多，多到如果有一天你「意外消失」，公司里不会有人感到奇怪的程度。",
       "type": "social",
-      "ageRange": [26, 50],
-      "weight": 10,
-      "repeatable": true,
-      "cooldown": 10,
+      "ageRange": [28, 45],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
       "branches": [
-        { "id": "branch_1", "text": "重拾旧日友谊，敞开心扉", "effects": { "MENTAL": 2, "NETWORK": 1, "KARMA": 1 } },
-        { "id": "branch_2", "text": "保持警惕，小心应对", "effects": { "STREET_SMART": 2, "COOL": 1 } }
+        { "id": "play_along", "text": "继续工作，积累证据以备不时之需", "effects": { "MONEY": 3000, "REP": 2, "TRAUMA": 3, "TECH": 1 } },
+        { "id": "quit_quickly", "text": "尽快辞职，远离这个是非之地", "effects": { "HUMAN": 2, "MONEY": -2000, "TRAUMA": -1 } }
       ],
-      "effects": { "MENTAL": 1 },
-      "tags": ["成年", "故友", "重逢", "信任"],
+      "effects": { "MONEY": 1500, "TRAUMA": 2 },
+      "tags": ["成年", "高管", "秘密", "风险"],
       "deathChainEntry": false
     },
     {
       "id": 212,
-      "title": "患上慢性职业病",
-      "description": "多年的战斗和义体使用开始让你付出代价。你的脊柱因为旧伤和劣质义体的长期压迫开始剧烈疼痛，医生说这是「赛博退化综合征」——一种因为赛博植入物与神经系统不兼容导致的慢性病。正规医院的治疗费用是个无底洞，地下诊所能便宜些但效果存疑。最可怕的是，这种病不会好，只会越来越糟。",
+      "title": "参与公司秘密项目",
+      "description": "你被选中加入一个代号「黑箱」的秘密研发团队。项目内容对外严格保密，团队成员之间也互不知道真实身份。你签署了比普通保密协议严苛十倍的合同——泄露机密的惩罚是「永久神经重置」，这在行业内是一个公开的秘密。你走进地下实验室的那一刻，厚重的防爆门在身后缓缓关闭。",
+      "type": "cyber",
+      "ageRange": [30, 50],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "join_project", "text": "加入秘密项目，追求技术巅峰", "effects": { "TECH": 4, "MONEY": 5000, "CHROME": 2, "TRAUMA": 2 } },
+        { "id": "decline_danger", "text": "找借口退出，安全第一", "effects": { "HUMAN": 1, "REP": -2, "MONEY": -1000 } }
+      ],
+      "effects": { "TECH": 2, "MONEY": 2000 },
+      "tags": ["成年", "秘密", "项目", "企业"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 213,
+      "title": "举报内部腐败",
+      "description": "你发现部门经理在和供应商勾结——虚报采购价格、收受回扣，金额之大足以让整个部门被调查。你手里有确凿的证据。但经理在公司根基深厚，和好几个高层都称兄道弟。举报他可能会让你自己也惹上麻烦，而沉默则意味着你成了同谋。午夜时分，你独自坐在办公室里，盯着那些证据文件发呆。",
+      "type": "social",
+      "ageRange": [28, 50],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "report_honestly", "text": "向合规部门举报腐败行为", "effects": { "HUMAN": 4, "REP": 2, "MONEY": -1000, "TRAUMA": 1 } },
+        { "id": "stay_silent", "text": "假装不知道，保护好自己", "effects": { "MONEY": 500, "HUMAN": -2, "TRAUMA": 1 } }
+      ],
+      "effects": { "HUMAN": 1, "TRAUMA": 1 },
+      "tags": ["成年", "腐败", "举报", "道德"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 214,
+      "title": "办公室恋情",
+      "description": "你和隔壁部门的一个同事在多次加班合作中产生了超越工作的感情。深夜的茶水间里，你们的眼神开始变得不一样。但公司手册明确规定了「禁止员工间发生恋爱关系」，一旦被发现至少一人会被调岗。在夜之城，真心是奢侈品，而企业规则从来不会为感情让路。",
+      "type": "social",
+      "ageRange": [26, 45],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "pursue_romance", "text": "顺其自然发展关系，走一步看一步", "effects": { "HUMAN": 3, "MONEY": -500, "TRAUMA": 1, "STYLE": 1 } },
+        { "id": "keep_professional", "text": "保持距离，工作归工作", "effects": { "REP": 1, "HUMAN": -1, "STYLE": 1 } }
+      ],
+      "effects": { "HUMAN": 1, "TRAUMA": 1 },
+      "tags": ["成年", "恋情", "办公室", "感情"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 215,
+      "title": "同事自杀后的心理阴影",
+      "description": "和你同组的同事在周末跳楼了。没有人知道原因——他平时看起来很正常，甚至还请大家喝了咖啡。周一早上，警察封锁了办公楼前的区域，HR群发了一封措辞冰冷的邮件，对「个人原因导致的意外」表示遗憾，并在最下方附上了心理咨询服务的预约电话。你坐在他空荡荡的工位旁边，再也无法集中注意力工作。",
       "type": "medical",
-      "ageRange": [35, 55],
+      "ageRange": [26, 55],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "seek_counseling", "text": "预约心理咨询，正视自己的心理创伤", "effects": { "HUMAN": 2, "TRAUMA": -2, "MONEY": -500, "LIFE": 1 } },
+        { "id": "bury_emotion", "text": "用工作麻痹自己，不去想这件事", "effects": { "TRAUMA": 3, "REP": 1, "LIFE": -1 } }
+      ],
+      "effects": { "TRAUMA": 2, "HUMAN": -1 },
+      "tags": ["成年", "自杀", "创伤", "心理"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 216,
+      "title": "签署生死状的涉密项目",
+      "description": "你被召集到一个政府承包的涉密项目。项目内容涉及新一代军用AI接口的开发，测试环境在三不管地带的军事区。你需要签署一份法律文件，明确了在项目过程中发生伤残或死亡的情况下，公司和政府均不承担责任。笔尖悬在签名栏上方，你听到会议室里其他人在低声交头接耳。",
+      "type": "combat",
+      "ageRange": [30, 50],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "sign_waiver", "text": "签署生死状，搏一个改变命运的机会", "effects": { "MONEY": 8000, "REP": 4, "TECH": 3, "LIFE": -3 } },
+        { "id": "walk_away", "text": "拒绝签字，转身离开", "effects": { "HUMAN": 1, "REP": -2, "MONEY": -2000 } }
+      ],
+      "effects": { "MONEY": 3000, "TECH": 1 },
+      "tags": ["成年", "涉密", "生死状", "军用"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 217,
+      "title": "结婚",
+      "description": "你和相恋多年的伴侣决定在夜之城登记结婚。这在赛博时代是一个充满象征意义的举动——在这个人人都把身体改造成机器的世界里，选择用传统的方式把两个人的命运绑定在一起。登记处的窗口排着长队，前面的新人穿着廉价的合成纤维婚纱，后面的老头在抱怨二代身份证芯片的读取故障。",
+      "type": "social",
+      "ageRange": [28, 50],
       "weight": 10,
       "repeatable": false,
       "cooldown": 0,
       "branches": [
-        { "id": "branch_1", "text": "去正规医院治疗，花光积蓄也在所不惜", "effects": { "HEALTH": 2, "MONEY": -5000, "MENTAL": -1 } },
-        { "id": "branch_2", "text": "找黑市医生凑合治，省钱但冒险", "effects": { "HEALTH": -1, "MONEY": -1000, "CYBER_LEVEL": 1 } }
+        { "id": "simple_wedding", "text": "举办简朴但温馨的婚礼", "effects": { "HUMAN": 4, "MONEY": -2000, "REP": 1, "TRAUMA": -2 } },
+        { "id": "lavish_wedding", "text": "大操大办，展示自己的人脉和财力", "effects": { "REP": 2, "STYLE": 2, "MONEY": -8000, "DEBT": 3 } }
       ],
-      "effects": { "HEALTH": -2, "MONEY": -1500 },
-      "tags": ["成年", "职业病", "赛博", "健康"],
+      "effects": { "HUMAN": 2, "MONEY": -1000 },
+      "tags": ["成年", "结婚", "家庭", "感情"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 218,
+      "title": "离婚",
+      "description": "婚姻终于走到了尽头。不是因为不爱了，而是因为这座城市的生存压力磨碎了所有温柔。你们在律师事务所见面，律师面无表情地划分着为数不多的共同财产——一台全息电视、两套义体充电器、还有你们一起买的那辆二手飞行车的首付。签字的那一刻，你感到一阵轻松，随即是更深的空虚。",
+      "type": "social",
+      "ageRange": [30, 55],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "amicable_split", "text": "和平分手，公平分割财产", "effects": { "HUMAN": 2, "MONEY": -2000, "TRAUMA": 1, "REP": -1 } },
+        { "id": "bitter_divorce", "text": "撕破脸皮，争取更多利益", "effects": { "MONEY": 3000, "HUMAN": -3, "TRAUMA": 3, "REP": -2 } }
+      ],
+      "effects": { "MONEY": -1000, "TRAUMA": 2 },
+      "tags": ["成年", "离婚", "家庭", "感情"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 219,
+      "title": "生孩子（在赛博时代）",
+      "description": "你的伴侣怀孕了。在赛博时代的夜之城，生孩子是一件极其复杂的事情——你需要决定是否在胎儿阶段进行基因优化，是否预订VIP子宫舱，还是选择最便宜的自然分娩。医院的宣传册上列满了各种增值服务：「智力增强套餐」「外貌定制方案」「疾病基因敲除——限时优惠」。每个选项后面都跟着令人窒息的价格标签。",
+      "type": "medical",
+      "ageRange": [28, 50],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "premium_birth", "text": "选择最好的基因优化和医疗服务", "effects": { "MONEY": -10000, "DEBT": 5, "HUMAN": 3, "LIFE": 1 } },
+        { "id": "natural_birth", "text": "选择自然分娩，相信人类的本能", "effects": { "HUMAN": 4, "MONEY": -2000, "STYLE": 1, "LIFE": -1 } }
+      ],
+      "effects": { "MONEY": -4000, "HUMAN": 2 },
+      "tags": ["成年", "生育", "家庭", "赛博"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 220,
+      "title": "父母去世",
+      "description": "你接到了来自故乡的全息电话——母亲的病情突然恶化，可能撑不过今晚。你赶回那个已经多年没有回去的家，看到母亲躺在医院的病床上，身上插满了管子和监测线。她瘦得脱了相，但你进门的那一刻，她的眼睛亮了起来。你握住她的手，发现她的皮肤冷得像夜之城冬天的铁栏杆。",
+      "type": "daily",
+      "ageRange": [35, 60],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "stay_until_end", "text": "陪伴父母走完最后一程", "effects": { "HUMAN": 4, "TRAUMA": 2, "MONEY": -3000, "LIFE": 1 } },
+        { "id": "handle_practical", "text": "冷静处理后事，用工作转移悲伤", "effects": { "REP": 1, "MONEY": -1000, "TRAUMA": 3, "HUMAN": -1 } }
+      ],
+      "effects": { "TRAUMA": 2, "HUMAN": 1 },
+      "tags": ["成年", "父母", "去世", "家庭"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 221,
+      "title": "兄弟姐妹求助",
+      "description": "多年未见的弟弟突然出现在你家门口。他看起来狼狈不堪——衣服破旧，一只义眼闪着不正常的红光，身上还有打架留下的淤青。他说他欠了虎爪帮一大笔赌债，如果不还钱就会被抓走卖掉器官。他跪在地上求你帮忙，声音发抖。你知道他可能在说谎，也知道帮了他可能永无宁日，但他是你弟弟。",
+      "type": "social",
+      "ageRange": [30, 55],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "help_fully", "text": "帮他还清债务，送他离开夜之城", "effects": { "HUMAN": 3, "MONEY": -5000, "DEBT": 2, "TRAUMA": 1 } },
+        { "id": "refuse_help", "text": "拒绝帮助，让他自己承担后果", "effects": { "MONEY": 0, "HUMAN": -3, "TRAUMA": 2 } }
+      ],
+      "effects": { "MONEY": -2000, "HUMAN": 1 },
+      "tags": ["成年", "家庭", "求助", "债务"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 222,
+      "title": "还乡（发现故乡已面目全非）",
+      "description": "你终于攒够了钱和时间，回到了阔别多年的故乡小镇。但你看到的不是记忆中的样子——老家的房子被推平了，取而代之的是一座荒坂集团的物流中心。儿时玩耍的街道变成了全封闭的货运通道。你找到当年邻居家的位置，那里现在是一家连锁义体商店。店员热情地招呼你进来看看最新的植入物优惠活动。",
+      "type": "daily",
+      "ageRange": [30, 60],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "reminisce", "text": "在废墟中寻找回忆，和仅存的老人聊聊", "effects": { "HUMAN": 3, "TRAUMA": 1, "STYLE": 1, "LIFE": 1 } },
+        { "id": "leave_coldly", "text": "失望地离开，再也不回来", "effects": { "TRAUMA": 2, "HUMAN": -1, "STYLE": -1 } }
+      ],
+      "effects": { "TRAUMA": 1, "HUMAN": 1 },
+      "tags": ["成年", "故乡", "回乡", "变迁"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 223,
+      "title": "孩子的教育选择",
+      "description": "你的孩子到了入学年龄，但夜之城的教育体系让你无所适从。公立学校免费但教学质量堪忧——那里的孩子更多学到的是如何在街头生存。企业附属学校学费昂贵但能保证未来的就业通道。还有一种选择——送到城外相对安全的教会学校，但你和孩子将聚少离多。每个选择都在塑造孩子的未来。",
+      "type": "economy",
+      "ageRange": [32, 50],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "corporate_school", "text": "送孩子进企业学校，投资未来", "effects": { "MONEY": -6000, "DEBT": 2, "HUMAN": 1, "REP": 1 } },
+        { "id": "public_school", "text": "读公立学校，教孩子街头智慧", "effects": { "MONEY": -500, "STYLE": 2, "HUMAN": 1, "TECH": 1 } }
+      ],
+      "effects": { "MONEY": -2000, "HUMAN": 1 },
+      "tags": ["成年", "教育", "孩子", "家庭"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 224,
+      "title": "家人卷入法律纠纷",
+      "description": "你的家人被卷入了一场复杂的法律纠纷——邻居指控你家人在义体改造时产生的电磁干扰损坏了他们的赛博神经接口，索赔金额高得离谱。对方的律师穿着价值你一年薪水的西装，在法庭上滔滔不绝地引用各种晦涩的技术条款。你的家人坐在被告席上，脸色苍白，把所有希望都寄托在你身上。",
+      "type": "social",
+      "ageRange": [30, 55],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "hire_lawyer", "text": "请最好的律师打官司", "effects": { "MONEY": -5000, "DEBT": 3, "HUMAN": 2, "TRAUMA": 1 } },
+        { "id": "settle_out", "text": "庭外和解，赔偿对方一部分钱", "effects": { "MONEY": -3000, "HUMAN": -1, "TRAUMA": 1, "REP": -1 } }
+      ],
+      "effects": { "MONEY": -2000, "TRAUMA": 1 },
+      "tags": ["成年", "法律", "纠纷", "家庭"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 225,
+      "title": "家族遗产纠纷",
+      "description": "一位远房亲戚去世了，留下了一笔可观的遗产——包括一处房产和一些古董。但你并不是唯一的继承人，另外几个从未见过的亲戚突然冒了出来，每个人都声称自己更有资格继承。家族律师把你们叫到一起宣读遗嘱，会议室里的气氛剑拔弩张。有人开始翻旧账，有人拍桌子骂人。",
+      "type": "social",
+      "ageRange": [35, 60],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "fight_inheritance", "text": "据理力争，维护自己的继承权", "effects": { "MONEY": 5000, "REP": 1, "HUMAN": -2, "TRAUMA": 2 } },
+        { "id": "waive_rights", "text": "放弃遗产，不想卷入家族争斗", "effects": { "HUMAN": 2, "MONEY": -2000, "STYLE": 1 } }
+      ],
+      "effects": { "MONEY": 2000, "TRAUMA": 1 },
+      "tags": ["成年", "遗产", "纠纷", "家族"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 226,
+      "title": "投资黑市军火",
+      "description": "一个地下军火商找到了你，邀请你入股他的走私网络。货源是从军用仓库里「流出来」的制式武器，买家遍及夜之城的大小帮派。投资回报率高得惊人——百分之三百的利润。当然，如果被NCPD或者企业保安查到，你面临的将是至少十年的铁窗生涯。军火商微笑着打开装满现金的手提箱。",
+      "type": "economy",
+      "ageRange": [30, 55],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "invest_weapons", "text": "投资军火走私，追求暴利", "effects": { "MONEY": 6000, "DEBT": -3, "REP": 2, "HUMAN": -2 } },
+        { "id": "decline_offer", "text": "拒绝，不想碰违法生意", "effects": { "HUMAN": 2, "STYLE": 1, "MONEY": -500 } }
+      ],
+      "effects": { "MONEY": 2000, "DEBT": -1 },
+      "tags": ["成年", "投资", "军火", "黑市"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 227,
+      "title": "炒房地产（发现房产被企业操控）",
+      "description": "你攒钱在太平洋区买了一套小公寓，希望能通过房价上涨赚一笔。但入住后你发现——整栋楼的产权实际上属于一家空壳公司，而这家公司背后是荒坂集团的地产部门。房租在三个月内翻了倍，物业费也在暴涨。其他业主组织起来想维权，却发现所有的购房合同里都有隐蔽的「价格调整条款」。",
+      "type": "economy",
+      "ageRange": [30, 55],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "join_lawsuit", "text": "联合其他业主起诉开发商", "effects": { "HUMAN": 3, "MONEY": -3000, "DEBT": 2, "REP": 1 } },
+        { "id": "cut_losses", "text": "低价抛售房产，及时止损", "effects": { "MONEY": -4000, "DEBT": 1, "TRAUMA": 2, "STYLE": -1 } }
+      ],
+      "effects": { "MONEY": -2000, "TRAUMA": 1 },
+      "tags": ["成年", "房地产", "投资", "企业操控"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 228,
+      "title": "投资义体黑诊所",
+      "description": "你认识一个技术不错但缺钱的义体医生，他想开一家地下诊所——收费比正规医院低百分之六十，不需要任何身份登记。他邀请你作为投资人，利润五五分账。这种诊所在夜之城遍地开花，需求量巨大，但一旦出医疗事故或者被NCPD查封，投资人同样要承担法律责任。",
+      "type": "economy",
+      "ageRange": [30, 55],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 30,
+      "branches": [
+        { "id": "fund_clinic", "text": "投资黑诊所，赚取高额回报", "effects": { "MONEY": 4000, "REP": 1, "HUMAN": -1, "DEBT": -2 } },
+        { "id": "refuse_invest", "text": "拒绝投资，风险太大", "effects": { "HUMAN": 1, "MONEY": -500, "STYLE": 1 } }
+      ],
+      "effects": { "MONEY": 1500, "CHROME": 1 },
+      "tags": ["成年", "投资", "义体", "黑诊所"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 229,
+      "title": "入股地下赌场",
+      "description": "一个在扭扭街经营地下赌场的老熟人邀请你入股。他的赌场客源稳定，每个月的流水十分可观。但你知道这行的规矩——赢钱的人要能安全走出去，欠债的人要能被「催收」，偶尔还要给NCPD塞红包来维持运营。你看着账本上的数字，那确实是真金白银，但每一块钱都沾着别人的血和泪。",
+      "type": "economy",
+      "ageRange": [30, 55],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "buy_into_casino", "text": "入股赌场，分享灰色利润", "effects": { "MONEY": 5000, "REP": 2, "HUMAN": -2, "ADDICTION": 1 } },
+        { "id": "walk_away", "text": "拒绝，不想和赌博扯上关系", "effects": { "HUMAN": 2, "STYLE": 1, "MONEY": -500 } }
+      ],
+      "effects": { "MONEY": 2000, "REP": 1 },
+      "tags": ["成年", "赌场", "投资", "地下"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 230,
+      "title": "投资超梦工作室",
+      "description": "一个地下超梦制作团队需要资金来拍摄下一部作品。他们制作的是非法的「真实超梦」——不是基于剧本的表演，而是录制的真实犯罪、暴力或色情内容。这类作品在黑市上价格昂贵，需求量惊人。制作人向你保证绝对匿名，所有参与者都会签署严格的保密协议。你清楚这种投资的法律风险有多高。",
+      "type": "cyber",
+      "ageRange": [28, 50],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 30,
+      "branches": [
+        { "id": "fund_braindance", "text": "投资超梦工作室，获取暴利", "effects": { "MONEY": 5000, "TECH": 2, "HUMAN": -3, "ADDICTION": 2 } },
+        { "id": "refuse_morally", "text": "拒绝，这种生意太缺德", "effects": { "HUMAN": 3, "MONEY": -500, "STYLE": 1 } }
+      ],
+      "effects": { "MONEY": 2000, "TECH": 1 },
+      "tags": ["成年", "超梦", "投资", "地下"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 231,
+      "title": "投资街头食品车",
+      "description": "你发现了一个被低估的商机——夜之城的街头食品车。只要位置选得好，一台食品车一个晚上就能赚到普通白领一周的工资。你相中了市政中心附近的一个黄金位置，但那个位置的「占位费」被当地一个小帮派控制着。你需要在投资食品车和搞定地头蛇之间做好平衡。",
+      "type": "economy",
+      "ageRange": [26, 50],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "start_food_truck", "text": "买下食品车，和帮派谈好分成", "effects": { "MONEY": 2000, "DEBT": -1, "REP": 1, "HUMAN": 1 } },
+        { "id": "too_much_risk", "text": "觉得投入和麻烦太多，放弃", "effects": { "MONEY": -500, "STYLE": 1 } }
+      ],
+      "effects": { "MONEY": 1000, "REP": 1 },
+      "tags": ["成年", "投资", "食品车", "街头"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 232,
+      "title": "玩加密货币",
+      "description": "你的一位精通网络的朋友极力推荐你投资一种新发行的加密货币——「赛博币」。他说这是新一代的去中心化货币，背后有军用级区块链技术支撑，未来升值空间百倍。你看着手机屏幕上不断跳动的数字，确实有人在短时间内赚得盆满钵满。但你也听说过那些因为加密货币崩盘而跳楼的人。",
+      "type": "economy",
+      "ageRange": [26, 55],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "invest_crypto", "text": "投入积蓄购买加密货币", "effects": { "MONEY": 3000, "DEBT": -1, "TECH": 1, "TRAUMA": 1 } },
+        { "id": "stay_away", "text": "保持怀疑，不碰虚拟货币", "effects": { "STYLE": 1, "HUMAN": 1, "MONEY": 0 } }
+      ],
+      "effects": { "MONEY": 1000, "TECH": 1 },
+      "tags": ["成年", "加密货币", "投资", "风险"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 233,
+      "title": "被投资骗局卷款跑路",
+      "description": "你投资的那个看起来很靠谱的项目——创始人信誉良好，办公室气派，还有政府的背书——突然在一夜之间消失了。办公室人去楼空，网站关闭，创始人带着所有投资人的钱消失得无影无踪。你和几十个受害者站在空荡荡的办公室里，有人大哭，有人愤怒地砸墙，有人呆若木鸡。你的全部积蓄就这么没了。",
+      "type": "economy",
+      "ageRange": [30, 60],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "chase_fraudster", "text": "联合其他受害者追查骗子下落", "effects": { "MONEY": -1000, "HUMAN": 2, "REP": 1, "TRAUMA": 1 } },
+        { "id": "accept_loss", "text": "认栽，重新开始积累", "effects": { "TRAUMA": 3, "DEBT": 3, "MONEY": -5000, "STYLE": -1 } }
+      ],
+      "effects": { "MONEY": -5000, "DEBT": 2, "TRAUMA": 2 },
+      "tags": ["成年", "骗局", "投资", "损失"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 234,
+      "title": "贷款购买赛博设备",
+      "description": "你看上了一款最新的军用级赛博义体——自带弹道计算、热成像和敌我识别功能。价格是你三年工资的总和，但可以分期贷款。义体商店的销售经理满面笑容地为你办理了金融方案，利率高达百分之十八。你签字的时候，手有些发抖——这意味着未来五年，每个月都有固定的一笔钱从你的账户被划走。",
+      "type": "economy",
+      "ageRange": [28, 50],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "take_loan", "text": "贷款购买高级义体，提升战力", "effects": { "CHROME": 3, "TECH": 2, "DEBT": 5, "MONEY": -2000 } },
+        { "id": "save_first", "text": "先攒钱，等技术降价再买", "effects": { "HUMAN": 1, "MONEY": 500, "STYLE": 1 } }
+      ],
+      "effects": { "CHROME": 1, "DEBT": 2 },
+      "tags": ["成年", "贷款", "义体", "赛博"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 235,
+      "title": "中年危机（后悔选择）",
+      "description": "凌晨三点，你又一次失眠了。你躺在床上回想自己走过的路——如果能回到二十五岁，你还会做同样的选择吗？窗外的霓虹灯光透过廉价的百叶窗在墙上投下条纹状的阴影。你的身体开始出现各种小毛病，老朋友越来越少，对未来的迷茫越来越深。你坐起来，打开全息日记，不知道该在上面写些什么。",
+      "type": "daily",
+      "ageRange": [35, 55],
+      "weight": 14,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "make_changes", "text": "痛下决心改变生活，追求真正想要的", "effects": { "HUMAN": 3, "STYLE": 2, "MONEY": -2000, "TRAUMA": -1 } },
+        { "id": "numb_pain", "text": "用酒精和新异体植入物麻痹自己", "effects": { "ADDICTION": 3, "TRAUMA": 2, "MONEY": -1000, "CHROME": 1 } }
+      ],
+      "effects": { "TRAUMA": 2, "HUMAN": -1 },
+      "tags": ["成年", "中年", "危机", "后悔"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 236,
+      "title": "出轨被发现",
+      "description": "你在一段长期的稳定关系之外发展了一段秘密的感情。纸终究包不住火——你的伴侣发现了聊天记录、转账记录或者某个深夜不归的证据。暴风雨般的争吵之后，家里一片狼藉，碎玻璃和翻倒的家具散布在房间里。你的伴侣坐在沙发上，眼泪流干了，用冷静得可怕的声音问你：「你到底想要什么？」",
+      "type": "social",
+      "ageRange": [30, 55],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "confess_and_repair", "text": "坦诚承认错误，尝试挽回关系", "effects": { "HUMAN": 2, "MONEY": -3000, "TRAUMA": 2, "REP": -1 } },
+        { "id": "end_relationship", "text": "结束当前关系，选择新的伴侣", "effects": { "TRAUMA": 3, "MONEY": -2000, "HUMAN": -2, "STYLE": 1 } }
+      ],
+      "effects": { "TRAUMA": 2, "HUMAN": -1 },
+      "tags": ["成年", "出轨", "感情", "家庭"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 237,
+      "title": "被最信任的人背叛",
+      "description": "那个和你一起出生入死多年的人——你的合伙人、搭档、或者最好的朋友——在关键的时刻背叛了你。他窃取了你们共同的项目成果，卷走了合作账户里所有的钱，还把你的弱点出卖给了你的敌人。你发现真相的那一刻，整个世界仿佛都在旋转。比经济损失更痛的是，你再也无法相信任何人了。",
+      "type": "social",
+      "ageRange": [30, 55],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "seek_revenge", "text": "追查背叛者，让他付出代价", "effects": { "REP": 2, "MONEY": 2000, "HUMAN": -2, "TRAUMA": 1 } },
+        { "id": "move_on", "text": "放下仇恨，吃一堑长一智", "effects": { "HUMAN": 2, "TRAUMA": 2, "STYLE": 2, "MONEY": -2000 } }
+      ],
+      "effects": { "TRAUMA": 3, "MONEY": -3000 },
+      "tags": ["成年", "背叛", "信任", "伤害"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 238,
+      "title": "孩子叛逆加入帮派",
+      "description": "你发现你的孩子最近行为异常——经常深夜不归，身上出现了你从没见过的纹身，口袋里多出来来路不明的钱。直到有一天，你在他的房间里发现了一件带血的虎爪帮皮夹克。你的孩子加入了帮派，而你对此一无所知。你想起了自己年轻时的选择，命运的轮回以一种讽刺的方式回到了你身上。",
+      "type": "social",
+      "ageRange": [35, 55],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "rescue_child", "text": "用尽一切办法让孩子脱离帮派", "effects": { "HUMAN": 3, "MONEY": -4000, "REP": -1, "TRAUMA": 1 } },
+        { "id": "let_them_learn", "text": "让孩子自己经历，暗中保护", "effects": { "TRAUMA": 2, "MONEY": -1000, "HUMAN": -1, "STYLE": 1 } }
+      ],
+      "effects": { "TRAUMA": 2, "HUMAN": 1 },
+      "tags": ["成年", "孩子", "帮派", "家庭"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 239,
+      "title": "精神崩溃寻求心理咨询",
+      "description": "长期的压力终于击垮了你。你在工作中突然无法控制地大哭，或者在深夜出现严重的惊恐发作。朋友建议你去看心理咨询师，但你发现夜之城合格的心理咨询师少得可怜——大多数人更愿意花钱升级义体而不是修复心灵。你终于找到了一家看起来还算正规的心理诊所，前台递给你一张长长的问卷。",
+      "type": "medical",
+      "ageRange": [28, 60],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "commit_therapy", "text": "坚持长期心理咨询，治愈心理创伤", "effects": { "HUMAN": 3, "TRAUMA": -3, "MONEY": -3000, "LIFE": 2 } },
+        { "id": "quit_therapy", "text": "去一次就放弃，觉得没用", "effects": { "TRAUMA": 1, "MONEY": -500, "HUMAN": -1 } }
+      ],
+      "effects": { "TRAUMA": -1, "HUMAN": 1 },
+      "tags": ["成年", "心理", "咨询", "创伤"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 240,
+      "title": "参加匿名戒酒会",
+      "description": "你已经意识到自己的饮酒问题正在失控。宿醉的频率越来越高，工作开始受到影响，早上醒来时经常不记得昨晚发生了什么。在朋友的劝说下，你第一次走进了一个地下室的匿名戒酒会会场。十几个陌生人围坐成一圈，每个人轮流说着自己的故事。轮到你了，所有人的目光都投向你。",
+      "type": "drug",
+      "ageRange": [30, 60],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "share_honestly", "text": "坦诚分享自己的经历，认真戒酒", "effects": { "HUMAN": 3, "ADDICTION": -3, "TRAUMA": -1, "MONEY": -500 } },
+        { "id": "just_sit_in", "text": "只是坐着听，不参与分享", "effects": { "STYLE": 1, "ADDICTION": -1, "HUMAN": 1 } }
+      ],
+      "effects": { "ADDICTION": -1, "HUMAN": 1 },
+      "tags": ["成年", "戒酒", "匿名", "康复"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 241,
+      "title": "在寺庙/教堂寻找信仰",
+      "description": "在经历了太多之后，你开始思考一些终极问题。你走进了一座在夜之城幸存下来的老教堂——霓虹灯下的十字架散发着蓝白色的光芒，长椅上坐着几个和你一样迷茫的人。神父走过来和你聊天，他没有传教，只是安静地听你倾诉。在这座被资本和技术统治的城市里，信仰似乎成了最后的精神避难所。",
+      "type": "daily",
+      "ageRange": [30, 60],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "embrace_faith", "text": "接受信仰，从中获得精神力量", "effects": { "HUMAN": 4, "TRAUMA": -2, "MONEY": -1000, "LIFE": 1 } },
+        { "id": "stay_skeptical", "text": "听听就好，继续保持自己的世界观", "effects": { "STYLE": 1, "HUMAN": 1 } }
+      ],
+      "effects": { "HUMAN": 2, "TRAUMA": -1 },
+      "tags": ["成年", "信仰", "教堂", "精神"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 242,
+      "title": "重拾年轻时的梦想",
+      "description": "你在整理旧物时翻出了年轻时写的日记。里面写满了你曾经想做的事情——开一家自己的店、写一本书、组建一支乐队、或者攒钱去月球旅行。你坐在满是灰尘的杂物堆里，看着这些褪色的字迹，突然意识到自己还没有完全老去。也许现在开始还不算太晚，也许梦想不需要被带进坟墓。",
+      "type": "daily",
+      "ageRange": [35, 60],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "chase_dream", "text": "辞去工作，全力追逐年轻时的梦想", "effects": { "HUMAN": 4, "STYLE": 2, "MONEY": -3000, "TRAUMA": -2 } },
+        { "id": "start_small", "text": "业余时间慢慢实现梦想，不耽误正业", "effects": { "HUMAN": 2, "STYLE": 1, "MONEY": -500, "TRAUMA": -1 } }
+      ],
+      "effects": { "HUMAN": 2, "STYLE": 1 },
+      "tags": ["成年", "梦想", "重拾", "人生"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 243,
+      "title": "在街头偶遇改变命运的人",
+      "description": "你在一个普通得不能再普通的傍晚，在街角的面摊前遇到了一个改变你命运的人。他穿着一件旧风衣，点了最便宜的清汤面，但言谈举止中透露着不同寻常的气场。他看了你一眼，说了一句莫名其妙的话：「你身上有某种东西，和这座城市里其他行尸走肉不一样。」说完他留下一个联系方式就消失在人群中了。",
+      "type": "social",
+      "ageRange": [28, 55],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "follow_the_thread", "text": "联系这个神秘人，看看命运通向何方", "effects": { "REP": 3, "TECH": 2, "MONEY": 2000, "TRAUMA": 1 } },
+        { "id": "ignore_it", "text": "当作一场偶遇，继续过自己的生活", "effects": { "HUMAN": 1, "STYLE": 1, "MONEY": 500 } }
+      ],
+      "effects": { "REP": 1, "MONEY": 500 },
+      "tags": ["成年", "偶遇", "命运", "奇遇"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 244,
+      "title": "发现了一个价值连城的古董",
+      "description": "在清理废弃的旧公寓时，你在墙体的夹层中发现了一个密封的金属盒子。打开后，里面是一块二战时期的机械手表、几张泛黄的实体照片，还有一本手写的日记。这是一个赛博时代之前的物品，保存完好。你拿给古董商鉴定，他瞪大了眼睛——这些东西在国际黑市上的价值可能超过六位数欧元。",
+      "type": "economy",
+      "ageRange": [26, 60],
+      "weight": 4,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "sell_antique", "text": "把古董卖给最高出价者", "effects": { "MONEY": 8000, "DEBT": -4, "REP": 1, "HUMAN": -1 } },
+        { "id": "preserve_it", "text": "捐给博物馆或自己保留这份历史", "effects": { "HUMAN": 3, "STYLE": 2, "MONEY": -500, "REP": 1 } }
+      ],
+      "effects": { "MONEY": 3000, "HUMAN": 1 },
+      "tags": ["成年", "古董", "发现", "财富"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 245,
+      "title": "参与一起悬案调查",
+      "description": "你偶然接触到了一起多年未破的悬案——一个曾经著名的夜之城记者在调查企业黑幕时离奇失踪，她的所有数据都被彻底清除。一个退休的老警探私下告诉你，她是被灭口的，但上面压着不让查。他递给你一个加密的数据芯片，说这是当年案件的唯一副本。他的眼睛里有一团没有熄灭的火。",
+      "type": "social",
+      "ageRange": [30, 55],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "investigate_case", "text": "接手调查，揭开陈年真相", "effects": { "REP": 3, "TECH": 2, "HUMAN": 2, "TRAUMA": 2 } },
+        { "id": "decline_case", "text": "拒绝，不想惹麻烦", "effects": { "HUMAN": -1, "MONEY": 500, "STYLE": 1 } }
+      ],
+      "effects": { "REP": 1, "TECH": 1 },
+      "tags": ["成年", "悬案", "调查", "真相"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 246,
+      "title": "捡到一块军用级数据芯片",
+      "description": "你在一条后巷的垃圾堆里捡到了一块军用级加密数据芯片。这种芯片通常只有高级军官或者企业特工才会使用。你用简陋的设备尝试读取，发现它被多层军用加密保护着。强行破解可能会触发自毁程序或定位信号。但里面的数据——如果能读出来的话——可能价值连城，也可能让你成为军队追杀的目标。",
+      "type": "cyber",
+      "ageRange": [26, 55],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "crack_the_chip", "text": "找顶级黑客破解芯片数据", "effects": { "TECH": 3, "MONEY": 5000, "REP": 2, "TRAUMA": 1 } },
+        { "id": "destroy_it", "text": "销毁芯片，远离这个麻烦", "effects": { "HUMAN": 1, "STYLE": 1, "MONEY": -500 } }
+      ],
+      "effects": { "TECH": 1, "MONEY": 1000 },
+      "tags": ["成年", "芯片", "军用", "数据"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 247,
+      "title": "被陌生人莫名其妙地感谢",
+      "description": "你在街头被人拉住了胳膊。一个你完全没印象的陌生人激动地握着你的手，眼眶泛红，连声说着谢谢。他说你几年前在某条街上救过他——当时他被人抢劫，是你出手相助。但你完全不记得这件事了，在夜之城你帮过的人太多了。他坚持要请你吃饭，说欠你一条命。你仔细看他，终于在他脸上的疤痕中找到了模糊的记忆。",
+      "type": "social",
+      "ageRange": [26, 60],
+      "weight": 5,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "accept_gratitude", "text": "接受邀请，和故人叙旧", "effects": { "HUMAN": 3, "REP": 1, "MONEY": 500, "TRAUMA": -1 } },
+        { "id": "brush_it_off", "text": "客气地婉拒，继续赶路", "effects": { "STYLE": 1, "HUMAN": 1 } }
+      ],
+      "effects": { "HUMAN": 2 },
+      "tags": ["成年", "感恩", "偶遇", "奇遇"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 248,
+      "title": "在午夜电台听到自己的故事",
+      "description": "深夜一个人开车或加班时，你习惯性地打开了收音机。午夜电台的主持人用沙哑的嗓音讲述着一个「夜之城传说」——那故事里的主角居然是你！虽然用了化名，但细节完全吻合。主持人把你的经历描绘成了一个充满传奇色彩的都市传说，还号召听众提供更多关于「夜之幽灵」的信息。你在车里听得哭笑不得。",
+      "type": "daily",
+      "ageRange": [26, 60],
+      "weight": 4,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "call_the_show", "text": "打电话给电台，亲自讲述完整故事", "effects": { "REP": 3, "STYLE": 2, "HUMAN": 1, "MONEY": 500 } },
+        { "id": "stay_anonymous", "text": "默默听着，享受这份神秘的满足感", "effects": { "STYLE": 1, "HUMAN": 1, "TRAUMA": -1 } }
+      ],
+      "effects": { "REP": 1, "STYLE": 1 },
+      "tags": ["成年", "电台", "故事", "奇遇"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 249,
+      "title": "遇到曾经被你伤害过的人",
+      "description": "你在酒吧喝酒时，一个人坐到了你对面的位置上。你花了几秒钟才认出他来——他是很多年前被你背叛或伤害过的人。他看起来过得还可以，甚至比当年更好了。他没有找你麻烦，只是静静地看着你，然后说了一句：「我原谅你了。」这句话比你挨过的任何一拳都更沉重，你握酒杯的手微微颤抖。",
+      "type": "social",
+      "ageRange": [30, 60],
+      "weight": 5,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "apologize_sincerely", "text": "真诚道歉，尝试和解", "effects": { "HUMAN": 4, "TRAUMA": -2, "REP": 1, "MONEY": -500 } },
+        { "id": "avoid_confrontation", "text": "尴尬地离开，不想面对过去", "effects": { "TRAUMA": 2, "HUMAN": -1, "STYLE": -1 } }
+      ],
+      "effects": { "HUMAN": 1, "TRAUMA": 1 },
+      "tags": ["成年", "和解", "过去", "恩怨"],
       "deathChainEntry": false
     }
   ]

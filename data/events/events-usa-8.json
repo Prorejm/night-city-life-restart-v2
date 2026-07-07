@@ -1,0 +1,4653 @@
+{
+  "events": [
+    {
+      "id": 3800,
+      "title": "全息真人秀试镜",
+      "description": "全息电视台正在招募新一季真人秀选手，你的神经接口收到了试镜邀请函。节目组承诺获胜者将获得百万信用点和全城曝光度。试镜现场挤满了植入了表演增强芯片的竞争者，空气中弥漫着焦虑和兴奋。你必须决定是否要踏入这个充满光环与陷阱的舞台。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受试镜，展示你的才华",
+          "effects": {
+            "TECH": 1,
+            "REP": 2,
+            "MONEY": 200,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝邀请，保持低调生活",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "真人秀"
+      ]
+    },
+    {
+      "id": 3801,
+      "title": "真人秀投票操纵丑闻",
+      "description": "你偶然发现了热门真人秀的观众投票系统后门，某些选手的票数被秘密篡改以确保晋级。一个匿名黑客组织联系你，声称掌握了完整证据链并邀请你一起揭露这个骗局。电视台的律师团队正在全网追捕泄密者，时间紧迫。你必须决定是站在真相一边还是保全自己。",
+      "type": "social",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "公开投票操纵证据",
+          "effects": {
+            "REP": 3,
+            "STYLE": 2,
+            "TRAUMA": 1,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "将证据卖给竞争对手电视台",
+          "effects": {
+            "MONEY": 500,
+            "DEBT": -1,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "保持沉默，假装什么都没看到",
+          "effects": {
+            "LIFE": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "真人秀"
+      ]
+    },
+    {
+      "id": 3802,
+      "title": "真人秀幕后交易",
+      "description": "一位真人秀制作人私下找到你，提出如果你能在节目中制造戏剧性冲突就能获得晋级保证。节目收视率持续下滑，赞助商威胁撤资，他们急需爆点内容来挽救颓势。其他参赛者对此幕后交易毫不知情，仍在真诚地努力表现。",
+      "type": "social",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受交易，在节目中制造冲突",
+          "effects": {
+            "STYLE": 2,
+            "REP": 1,
+            "HUMAN": -2,
+            "MONEY": 300
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝交易并警告其他参赛者",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "MONEY": -100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "真人秀"
+      ]
+    },
+    {
+      "id": 3803,
+      "title": "全息直播信号劫持",
+      "description": "在全息直播过程中，你的直播信号突然被不明身份的黑客劫持。屏幕上出现了反巨型企业的抗议信息，你的数百万粉丝正在疯狂转发这场闹剧。电视台要求你立即做出回应，否则将面临天价违约诉讼。你的每一个字都可能引发社会舆论的海啸。",
+      "type": "social",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "公开谴责劫持行为，维护电视台利益",
+          "effects": {
+            "REP": 1,
+            "STYLE": 1,
+            "HUMAN": -1,
+            "MONEY": 200
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "借机表达自己的社会观点",
+          "effects": {
+            "STYLE": 3,
+            "REP": 2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "真人秀"
+      ]
+    },
+    {
+      "id": 3804,
+      "title": "真人秀粉丝应援危机",
+      "description": "你在真人秀中的表现吸引了一批狂热粉丝，他们在全息网络上建立了庞大的应援社区。粉丝领袖要求你提供独家内容以维持社区活跃度，否则将转而支持其他选手。部分极端粉丝已开始骚扰你的竞争对手，甚至追踪他们的真实住址。局面正在失控。",
+      "type": "social",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "提供独家内容，利用粉丝力量造势",
+          "effects": {
+            "REP": 2,
+            "STYLE": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "设定界限，管理粉丝行为",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "疏远粉丝，专注于比赛本身",
+          "effects": {
+            "TECH": 1,
+            "LIFE": 1,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "真人秀"
+      ]
+    },
+    {
+      "id": 3805,
+      "title": "真人秀淘汰抉择",
+      "description": "你在真人秀中面临淘汰边缘，节目组提出了一个残酷的选择。你可以接受羞辱性的惩罚环节以留在节目中，或者体面地离开。观众投票显示你的支持率正在下降，赞助商开始施压要求你制造更多话题。你的自尊和前途在此刻激烈交锋。",
+      "type": "social",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受惩罚环节，忍辱留在节目",
+          "effects": {
+            "STYLE": 1,
+            "TRAUMA": 2,
+            "REP": 2,
+            "MONEY": 100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "体面退出，保留尊严",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1,
+            "MONEY": -200
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "真人秀"
+      ]
+    },
+    {
+      "id": 3806,
+      "title": "全息明星独家合约",
+      "description": "真人秀结束后，一家全息娱乐巨头向你抛来一份独家签约合同。合约要求你放弃个人隐私权，允许公司在你的神经接口中植入定向广告推送。你的经纪人强烈建议接受，称这是千载难逢的机会。隐私维权组织则警告这等同于出卖你的灵魂和自由意志。",
+      "type": "social",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "签约成为全息明星",
+          "effects": {
+            "MONEY": 800,
+            "REP": 3,
+            "STYLE": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝合约，保持独立身份",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1,
+            "MONEY": -100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "真人秀"
+      ]
+    },
+    {
+      "id": 3807,
+      "title": "虚拟遗产故居游览",
+      "description": "一家数字遗产旅游公司推出了历史名人故居全息重现项目，让你可以虚拟游览已经被拆毁的历史建筑。你的曾祖父的旧宅也在重建名单中，但需要你提供家族记忆数据作为素材。公司承诺保护隐私，但数据泄露事件在行业内屡见不鲜。这是一次连接过去与未来的独特机会。",
+      "type": "daily",
+      "ageRange": [
+        20,
+        75
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "提供记忆数据，参与虚拟游览",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝提供数据，保持隐私",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "虚拟旅游"
+      ]
+    },
+    {
+      "id": 3808,
+      "title": "数字遗产旅游团故障",
+      "description": "你报名参加了一个虚拟巴黎的数字遗产旅游团，但导游AI突然出现故障将游客困在了十八世纪的虚拟凡尔赛宫中。系统提示需要有人手动重启核心服务器，但操作者将承受短暂的记忆过载风险。其他游客开始恐慌，虚拟空间正在逐渐崩塌。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "主动重启服务器，解救所有人",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "TRAUMA": 1,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "等待救援团队介入",
+          "effects": {
+            "LIFE": 1,
+            "HUMAN": -1,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "虚拟旅游"
+      ]
+    },
+    {
+      "id": 3809,
+      "title": "虚拟历史重现体验",
+      "description": "一个地下数字艺术家团队创建了未经授权的历史事件全息重现体验，包括被企业审查删除的社会运动场景。体验极其逼真，让你仿佛身临其境地经历了那些被遗忘的历史时刻。企业安全部门已经注意到了这个项目，正在追踪所有参与者。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "深度体验全部历史场景",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "浅度体验后退出",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "举报这个项目给企业安全部",
+          "effects": {
+            "REP": 1,
+            "MONEY": 200,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "虚拟旅游"
+      ]
+    },
+    {
+      "id": 3810,
+      "title": "数字旅游平台评价勒索",
+      "description": "你在数字旅游平台上的虚拟旅行体验极差，于是留下了一星差评。平台运营方联系你，表示如果你不删除差评他们将降低你的社会信用评分。同时，一个竞争对手平台出钱请你写详细的长篇差评来打击对手。你的诚实评价正在变成一场商业博弈的棋子。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "坚持保留差评，不怕威胁",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "MONEY": -50
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受竞争对手的钱写详细差评",
+          "effects": {
+            "MONEY": 300,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "删除差评，息事宁人",
+          "effects": {
+            "LIFE": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "虚拟旅游"
+      ]
+    },
+    {
+      "id": 3811,
+      "title": "虚拟旅游纪念品骗局",
+      "description": "你从虚拟旅游中带回了一件数字限量版纪念品，据说是用区块链技术确权的独家收藏品。很快你发现这个纪念品被无限复制出售给数千名游客，所谓的限量版根本不存在。卖家已经消失，而你的数字钱包里被植入了追踪代码。",
+      "type": "social",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "追踪卖家并追回损失",
+          "effects": {
+            "TECH": 2,
+            "MONEY": 200,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向数字消费者保护组织举报",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "自认倒霉，吸取教训",
+          "effects": {
+            "LIFE": 1,
+            "MONEY": -100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "虚拟旅游"
+      ]
+    },
+    {
+      "id": 3812,
+      "title": "数字遗产保护争议",
+      "description": "一个社区正在就是否将当地历史街区数字化保存展开激烈辩论。科技公司提议免费扫描整个街区创建虚拟副本，但要求获得所有数据的商业使用权。社区老人担心真实建筑会被拆除，因为反正已经有了数字版本。这场辩论触及了记忆、传承与商业化的深层矛盾。",
+      "type": "social",
+      "ageRange": [
+        20,
+        75
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持数字化保护方案",
+          "effects": {
+            "TECH": 2,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "反对数字化，呼吁保护实体建筑",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "提出折中方案，两者兼顾",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "REP": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "虚拟旅游"
+      ]
+    },
+    {
+      "id": 3813,
+      "title": "虚拟旅游会员升级",
+      "description": "你的数字旅游平台不断弹出会员升级广告，声称高级会员可以解锁时间旅行模式，体验历史事件的多种可能性。升级费用高昂，但有用户反馈高级模式会导致轻微的时空感知紊乱。平台的免费版本已经无法满足你对虚拟探索的渴望。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "升级高级会员，体验时间旅行",
+          "effects": {
+            "TECH": 2,
+            "MONEY": -400,
+            "TRAUMA": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "继续使用免费版本",
+          "effects": {
+            "LIFE": 1,
+            "MONEY": 50
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "寻找非官方的破解版本",
+          "effects": {
+            "TECH": 1,
+            "MONEY": -50,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "虚拟旅游"
+      ]
+    },
+    {
+      "id": 3814,
+      "title": "霓虹音乐节门票争夺",
+      "description": "年度最大的霓虹音乐节门票在三十秒内售罄，全息黄牛正在以十倍价格倒卖VIP通行证。你的朋友圈里所有人都在讨论这场盛会，社交压力巨大。一个地下黑客声称能帮你黑入票务系统获取免费门票，但这意味着违法。音乐节的错失恐惧效应正在侵蚀你的理性判断。",
+      "type": "social",
+      "ageRange": [
+        16,
+        45
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "花高价从黄牛手中购买VIP票",
+          "effects": {
+            "STYLE": 2,
+            "MONEY": -500,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受黑客帮助获取免费票",
+          "effects": {
+            "TECH": 1,
+            "MONEY": 100,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放弃音乐节，在家看直播",
+          "effects": {
+            "LIFE": 1,
+            "MONEY": 100,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "音乐节"
+      ]
+    },
+    {
+      "id": 3815,
+      "title": "音乐节舞台全息故障",
+      "description": "在霓虹音乐节现场，主舞台的全息投影系统突然故障，巨大的虚拟偶像开始扭曲变形。恐慌的观众开始推挤，安全屏障AI无法识别拥挤风险。你站在舞台附近，有机会手动触发紧急疏散系统，但操作面板被电击防护锁定。每一秒的犹豫都可能导致踩踏事故。",
+      "type": "social",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "冒着电击风险触发紧急疏散",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "LIFE": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "远离舞台，优先保护自己",
+          "effects": {
+            "LIFE": 1,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "音乐节"
+      ]
+    },
+    {
+      "id": 3816,
+      "title": "音乐节合成药物泛滥",
+      "description": "音乐节现场到处有人在兜售新型合成兴奋剂霓虹冲浪，据说能增强音乐体验并暂时提升感官灵敏度。你的朋友们纷纷尝试，怂恿你也加入。医疗帐篷里已经躺了不少过量使用的受害者，但主办方选择视而不见。你需要面对来自同伴压力和自我保护之间的抉择。",
+      "type": "social",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "尝试霓虹冲浪",
+          "effects": {
+            "STYLE": 2,
+            "ADDICTION": 2,
+            "LIFE": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝药物，照顾不适的朋友",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向医疗队举报兜售者",
+          "effects": {
+            "REP": 1,
+            "HUMAN": 1,
+            "STYLE": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "音乐节"
+      ]
+    },
+    {
+      "id": 3817,
+      "title": "地下DJ对决",
+      "description": "在音乐节的地下区域，一场非官方的DJ对决正在火热进行。组织者邀请你上台用你的神经接口实时混音，观众的生物反馈将直接决定胜负。获胜者将获得地下音乐圈的传奇地位和一笔可观的奖金。但这个区域没有安保，参赛者之间的竞争已经变得充满敌意。",
+      "type": "social",
+      "ageRange": [
+        18,
+        45
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "上台参与DJ对决",
+          "effects": {
+            "STYLE": 3,
+            "TECH": 1,
+            "REP": 2,
+            "MONEY": 300,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在台下观看并学习",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "音乐节"
+      ]
+    },
+    {
+      "id": 3818,
+      "title": "音乐节周边黑市交易",
+      "description": "音乐节周边黑市上，有人高价出售限量版全息应援设备和艺人私人物品的数字副本。一个摊贩向你兜售据说是某位顶级艺人用过的神经接口调音预设。交易完全在监管之外进行，你无法验证商品真伪。黑市摊贩们看起来都很有故事，但也都很危险。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买调音预设",
+          "effects": {
+            "TECH": 2,
+            "MONEY": -200,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "与摊贩交朋友获取内部信息",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "远离黑市，在官方商店购物",
+          "effects": {
+            "LIFE": 1,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "音乐节"
+      ]
+    },
+    {
+      "id": 3819,
+      "title": "音乐节安保冲突",
+      "description": "音乐节的AI安保系统错误地将你标记为潜在威胁，因为你佩戴的义体改造触发了安全协议。无人机开始跟踪你的一举一动，安保人员要求你接受全身扫描。周围的观众开始用异样眼光看你，有人甚至开始拍摄。你的尊严和安全正在受到双重威胁。",
+      "type": "social",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "配合安保检查，证明清白",
+          "effects": {
+            "LIFE": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝检查，据理力争",
+          "effects": {
+            "REP": 2,
+            "STYLE": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "联系媒体曝光安保过度",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "MONEY": 100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "音乐节"
+      ]
+    },
+    {
+      "id": 3820,
+      "title": "虚拟音乐节分会场",
+      "description": "受限于身体原因或经济压力，你选择参加音乐节的虚拟直播分会场。全息投影技术让你在家也能感受到现场的氛围，但缺少了人群的体温和汗水的味道。虚拟分会场的互动社区让你结识了来自世界各地的音乐爱好者。这是一次关于科技如何改变社交体验的思考。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        75
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "积极参与虚拟社区互动",
+          "effects": {
+            "HUMAN": 2,
+            "TECH": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "独自享受音乐，不社交",
+          "effects": {
+            "LIFE": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "同时参加多个虚拟分会场",
+          "effects": {
+            "TECH": 2,
+            "TRAUMA": 1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "音乐节"
+      ]
+    },
+    {
+      "id": 3821,
+      "title": "医保数据篡改",
+      "description": "你在智能医疗系统中发现自己的健康数据被秘密篡改，某些治疗记录被删除以降低你的医保等级。调查发现是一家医保评估公司在背后操作，以帮助企业客户降低保费支出。你的实际健康状况正在恶化，但系统显示你完全健康。你需要决定如何应对这个威胁生命的阴谋。",
+      "type": "social",
+      "ageRange": [
+        25,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "收集证据，向监管机构举报",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "LIFE": 1,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "联系媒体公开曝光",
+          "effects": {
+            "STYLE": 2,
+            "REP": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "私下与医保公司谈判赔偿",
+          "effects": {
+            "MONEY": 500,
+            "LIFE": 1,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "医保骗保"
+      ]
+    },
+    {
+      "id": 3822,
+      "title": "虚假医疗索赔链",
+      "description": "一个地下网络邀请你参与虚假医疗索赔行动，利用AI生成的病历在多家保险公司同时申请理赔。每笔索赔金额不大但频率高，据称系统漏洞可以让你每月获得数千信用点的被动收入。操作者已经在圈内运作了两年从未被抓获。这是快速致富的诱惑，也是犯罪深渊的入口。",
+      "type": "social",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参与虚假索赔行动",
+          "effects": {
+            "MONEY": 800,
+            "DEBT": 2,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝参与，保持清白",
+          "effects": {
+            "LIFE": 1,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "举报这个网络给保险监管局",
+          "effects": {
+            "REP": 3,
+            "MONEY": 200,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "医保骗保"
+      ]
+    },
+    {
+      "id": 3823,
+      "title": "医保AI审计调查",
+      "description": "你的医保账户突然被AI审计系统标记为高风险，所有医疗报销被暂停等待审查。审计AI要求你提供过去三年的所有医疗记录和义体维护日志。你的律师朋友暗示这可能与最近的数据篡改丑闻有关。审查期间你需要自费所有医疗费用，经济压力骤增。",
+      "type": "social",
+      "ageRange": [
+        25,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全面配合审计，提供所有记录",
+          "effects": {
+            "LIFE": 1,
+            "HUMAN": 1,
+            "MONEY": -300
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "雇佣专业律师对抗审计",
+          "effects": {
+            "MONEY": -500,
+            "REP": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "利用关系网加快审查进程",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "MONEY": -200,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "医保骗保"
+      ]
+    },
+    {
+      "id": 3824,
+      "title": "地下医疗芯片交易",
+      "description": "你的一个朋友因医保被拒而无法获得必要的治疗，地下市场出现了一种未经认证的医疗纳米芯片声称可以替代治疗。芯片来源不明，卖家声称是从企业实验室流出的原型机。价格远低于正规医疗费用，但没有任何安全保证。你朋友的病情正在恶化，时间不等人。",
+      "type": "social",
+      "ageRange": [
+        20,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮朋友购买地下医疗芯片",
+          "effects": {
+            "HUMAN": 3,
+            "MONEY": -300,
+            "LIFE": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "劝说朋友寻求正规医疗援助",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "自己研究芯片技术尝试修复",
+          "effects": {
+            "TECH": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "医保骗保"
+      ]
+    },
+    {
+      "id": 3825,
+      "title": "医保信息大规模泄露",
+      "description": "新闻爆出你使用的医保平台遭遇黑客攻击，数百万用户的医疗记录和基因数据被泄露到暗网。你的敏感健康信息正在被竞价出售，包括你的义体改造记录和成瘾治疗历史。身份盗用者已经开始用你的信息申请贷款。你需要立即采取行动保护自己。",
+      "type": "social",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "花钱雇佣数字安全团队清理痕迹",
+          "effects": {
+            "MONEY": -400,
+            "TECH": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "加入集体诉讼索赔",
+          "effects": {
+            "REP": 2,
+            "MONEY": 200,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在暗网上买回自己的数据",
+          "effects": {
+            "MONEY": -300,
+            "TECH": 1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "医保骗保"
+      ]
+    },
+    {
+      "id": 3826,
+      "title": "智能诊疗误诊纠纷",
+      "description": "AI诊疗系统将你的慢性病误诊为心理问题，拒绝了你的进一步检查申请。你的症状持续恶化，但系统坚持其诊断结果是最优解。一位人类医生私下告诉你可能是AI的训练数据存在偏差。你需要决定是相信机器的判断还是冒着自费的风险寻求人类医生的帮助。",
+      "type": "social",
+      "ageRange": [
+        25,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "坚持要求人类医生二次诊断",
+          "effects": {
+            "LIFE": 2,
+            "HUMAN": 1,
+            "MONEY": -300,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受AI诊断，尝试心理治疗",
+          "effects": {
+            "LIFE": -1,
+            "TRAUMA": 1,
+            "MONEY": -50
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向医疗监管机构投诉AI系统",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "医保骗保"
+      ]
+    },
+    {
+      "id": 3827,
+      "title": "街头赛车报名",
+      "description": "地下街头赛车组织霓虹骑士正在招募新成员，首场比赛的奖金高达五千信用点。赛道穿越废弃的工业区，沿途布满全息障碍和电磁陷阱。你的车辆改装程度足以参赛，但竞争对手们都是经验丰富的老手。肾上腺素和危险并存，这是速度与死亡的较量。",
+      "type": "social",
+      "ageRange": [
+        18,
+        45
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "报名参赛，挑战极限",
+          "effects": {
+            "STYLE": 2,
+            "TECH": 1,
+            "MONEY": 500,
+            "TRAUMA": 1,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "作为观众观摩学习",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "非法赛车"
+      ]
+    },
+    {
+      "id": 3828,
+      "title": "赛车改装黑市",
+      "description": "为了在即将到来的街头赛车中获胜，你需要对车辆进行非法改装。黑市机械师提供一种军用级推进器，能让车速提升百分之四十但存在过热爆炸风险。正规改装店报价高出三倍且性能提升有限。比赛在即，你必须在安全和胜利之间做出选择。",
+      "type": "social",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买黑市推进器，全力改装",
+          "effects": {
+            "TECH": 2,
+            "MONEY": -300,
+            "LIFE": -1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "选择正规改装，稳妥参赛",
+          "effects": {
+            "TECH": 1,
+            "MONEY": -500,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "不改装，靠技术取胜",
+          "effects": {
+            "STYLE": 1,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "非法赛车"
+      ]
+    },
+    {
+      "id": 3829,
+      "title": "赛车追逐事故",
+      "description": "在比赛中，一辆失控的赛车冲入观众区造成多人受伤，你是目击者之一。主办方立即切断所有通讯试图封锁消息，受害者的呼救声在废墟中回荡。你手机里的录像证据是唯一的真相记录，但公开它意味着与整个赛车组织为敌。道德和生存在此刻激烈碰撞。",
+      "type": "social",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "公开录像，揭露事故真相",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "TRAUMA": 1,
+            "MONEY": -200
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "将录像交给主办方换取封口费",
+          "effects": {
+            "MONEY": 600,
+            "REP": -2,
+            "DEBT": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "删除录像，假装没看到",
+          "effects": {
+            "LIFE": 1,
+            "HUMAN": -2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "非法赛车"
+      ]
+    },
+    {
+      "id": 3830,
+      "title": "赛车博彩网络",
+      "description": "你发现街头赛车比赛的博彩系统被操纵，赔率根据内幕信息提前调整。一个赛车手联系你，提议你下注他的比赛并分享奖金，条件是你帮他传递对手的车辆数据。这是稳赚不赔的交易，但一旦被发现将被赛车圈永久封杀。贪婪和风险在黑暗中交织。",
+      "type": "social",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参与博彩操纵，获取暴利",
+          "effects": {
+            "MONEY": 700,
+            "REP": -1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝参与，保持清白",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向博彩监管机构举报",
+          "effects": {
+            "REP": 2,
+            "MONEY": 100,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "非法赛车"
+      ]
+    },
+    {
+      "id": 3831,
+      "title": "警察追截赛车",
+      "description": "比赛进行到一半，无人巡逻警车突然出现开始追截参赛者。你的车载AI显示有三条逃跑路线：一条穿过居民区速度快但危险，一条走地下管道隐蔽但可能迷路，一条停车投降。警车的电磁脉冲武器正在充能，你只有几秒钟做出决定。",
+      "type": "social",
+      "ageRange": [
+        18,
+        45
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "穿越居民区逃跑",
+          "effects": {
+            "STYLE": 1,
+            "TRAUMA": 2,
+            "LIFE": -1,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "走地下管道隐蔽逃跑",
+          "effects": {
+            "TECH": 2,
+            "LIFE": 1,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "停车投降，接受处罚",
+          "effects": {
+            "DEBT": 1,
+            "MONEY": -300,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "非法赛车"
+      ]
+    },
+    {
+      "id": 3832,
+      "title": "赛车冠军挑战赛",
+      "description": "你是地下赛车圈的冠军保持者，一个新来的挑战者公开挑衅要求与你对决。挑战者驾驶着一辆从未见过的全息隐形赛车，下注金额是你全部的积蓄。整个赛车圈都在关注这场比赛，输了就意味着名誉扫地。你不知道对方是否使用了作弊手段。",
+      "type": "social",
+      "ageRange": [
+        18,
+        45
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受挑战，全力应战",
+          "effects": {
+            "STYLE": 2,
+            "REP": 2,
+            "MONEY": -500,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝挑战，保住冠军头衔",
+          "effects": {
+            "REP": -1,
+            "HUMAN": 1,
+            "MONEY": 200
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "调查挑战者背景再决定",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "MONEY": -100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "非法赛车"
+      ]
+    },
+    {
+      "id": 3833,
+      "title": "赛车团伙对决",
+      "description": "两个敌对的赛车团伙决定在你的社区进行最终对决，赌注是整个街区的控制权。比赛路线穿过居民区和学校附近，安全隐患极大。社区长者请求你利用你在赛车圈的关系阻止这场比赛。你面临在帮派忠诚和社区安全之间抉择的困境。",
+      "type": "social",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "调停两个团伙的矛盾",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 3,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "站在一方参与对决",
+          "effects": {
+            "STYLE": 2,
+            "REP": 1,
+            "TRAUMA": 1,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向警方举报比赛计划",
+          "effects": {
+            "REP": 1,
+            "HUMAN": 1,
+            "LIFE": 1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "非法赛车"
+      ]
+    },
+    {
+      "id": 3834,
+      "title": "HOA全息投票系统",
+      "description": "你的社区业主协会引入了全息投票系统来决定社区重大事务。但系统上线后，你发现投票界面被设计成引导性选项，有利于物业公司的提案。你的邻居们大多没有注意到这些微妙的设计操控。社区的民主决策正在被技术悄悄侵蚀。",
+      "type": "social",
+      "ageRange": [
+        25,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在社区会议上公开揭露操控",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "技术手段绕过引导界面",
+          "effects": {
+            "TECH": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "独自研究后向监管机构投诉",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "HOA管理"
+      ]
+    },
+    {
+      "id": 3835,
+      "title": "社区无人机巡逻争议",
+      "description": "HOA决定部署武装无人机进行二十四小时社区巡逻，声称是为了降低犯罪率。但无人机的面部识别系统将每个居民的行动轨迹都记录在案。反对者担心这侵犯了隐私，支持者认为安全更重要。社区分裂成了两个对立阵营，你需要选择立场。",
+      "type": "social",
+      "ageRange": [
+        25,
+        75
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持无人机巡逻",
+          "effects": {
+            "LIFE": 1,
+            "REP": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "组织反对运动，要求隐私保护",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "提出折中方案：限制巡逻区域",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "HOA管理"
+      ]
+    },
+    {
+      "id": 3836,
+      "title": "HOA费用暴涨",
+      "description": "HOA突然宣布将管理费提高两倍，理由是智能基础设施升级。你和其他居民发现大部分费用流向了一家与HOA主席有亲属关系的科技公司。社区群里炸开了锅，有人提议罢免现任HOA管理层。这场关于费用透明度的斗争可能改变整个社区的权力结构。",
+      "type": "social",
+      "ageRange": [
+        25,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "发起罢免运动，挑战管理层",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "STYLE": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "法律途径起诉HOA腐败",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "MONEY": -200,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝交费，等待事态发展",
+          "effects": {
+            "MONEY": 300,
+            "DEBT": 1,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "HOA管理"
+      ]
+    },
+    {
+      "id": 3837,
+      "title": "社区智能垃圾分类",
+      "description": "社区引入了AI驱动的智能垃圾分类系统，对错误投放的居民自动罚款。系统运行后，你发现AI经常误判，将正确分类的垃圾标记为违规。罚款通知堆积如山，申诉流程复杂到令人绝望。一些老年居民因为不会使用系统已经累计了巨额罚款。",
+      "type": "daily",
+      "ageRange": [
+        20,
+        75
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮助老年居民学习使用系统",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "黑入系统修正误判记录",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "组织居民集体申诉",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "HOA管理"
+      ]
+    },
+    {
+      "id": 3838,
+      "title": "邻居噪音传感器纠纷",
+      "description": "你的邻居在共享墙上安装了超高灵敏度噪音传感器，连你正常走动都会触发报警。传感器连接着HOA的自动投诉系统，你已经收到了十多张罚单。邻居拒绝移除传感器，声称有权享受安静的生活。这场技术驱动的邻里冲突正在升级。",
+      "type": "daily",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "与邻居面对面沟通解决",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "安装反传感器干扰设备",
+          "effects": {
+            "TECH": 2,
+            "STYLE": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向HOA投诉邻居的传感器骚扰",
+          "effects": {
+            "REP": 1,
+            "HUMAN": -1,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "HOA管理"
+      ]
+    },
+    {
+      "id": 3839,
+      "title": "HOA选举操控",
+      "description": "HOA年度选举即将举行，现任主席被指控使用AI生成的虚假居民身份来操纵投票。你获得了选举系统的访问日志，显示大量投票来自不存在的地址。选举结果将决定社区未来五年的发展方向。真相和权力的较量在数字投票箱中展开。",
+      "type": "social",
+      "ageRange": [
+        25,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "公开日志证据，揭露选举欺诈",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "匿名将证据发给调查记者",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "利用证据与现任主席谈判",
+          "effects": {
+            "MONEY": 400,
+            "REP": -1,
+            "DEBT": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "HOA管理"
+      ]
+    },
+    {
+      "id": 3840,
+      "title": "社区数字围栏计划",
+      "description": "HOA提议在社区周围建设数字围栏，只有注册居民和访客才能通过生物识别进入。支持者认为这能有效阻挡外来犯罪，反对者称之为数字隔离墙。你注意到围栏的边界恰好将低收入邻居社区排除在外。这个看似安全的项目暗含社会分化的危险。",
+      "type": "social",
+      "ageRange": [
+        25,
+        75
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持数字围栏计划",
+          "effects": {
+            "LIFE": 1,
+            "REP": 1,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "反对数字围栏，倡导开放社区",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "提议修改围栏边界，纳入所有邻居",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "HOA管理"
+      ]
+    },
+    {
+      "id": 3841,
+      "title": "赛博宠物美容院",
+      "description": "一家新开的赛博宠物美容院提供全息毛色定制和义体配件安装服务。你的电子宠物已经过时，美容院承诺能让它焕然一新。但美容师透露他们使用的配件来自回收渠道，品质无法保证。让你的宠物变酷的诱惑和安全顾虑在你心中拉扯。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "为宠物安装全套美容配件",
+          "effects": {
+            "STYLE": 2,
+            "MONEY": -200,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只做基础清洁和保养",
+          "effects": {
+            "HUMAN": 1,
+            "MONEY": -50,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "自己学习技术DIY改装",
+          "effects": {
+            "TECH": 2,
+            "HUMAN": 1,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "电子宠物"
+      ]
+    },
+    {
+      "id": 3842,
+      "title": "宠物芯片升级骗局",
+      "description": "一个上门推销员声称能给你的赛博宠物升级最新一代情感芯片，让它比真正理解你还多。升级过程需要连接你的个人神经接口进行校准，这意味着推销员将临时访问你的大脑数据。价格诱人但风险巨大，推销员催促你立即决定。",
+      "type": "social",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受升级，冒数据泄露风险",
+          "effects": {
+            "STYLE": 1,
+            "TECH": 1,
+            "TRAUMA": 1,
+            "MONEY": -150
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝升级，保护神经数据安全",
+          "effects": {
+            "LIFE": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "要求查看推销员的资质证书",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "电子宠物"
+      ]
+    },
+    {
+      "id": 3843,
+      "title": "宠物美容大赛",
+      "description": "全城赛博宠物美容大赛即将开始，冠军将获得独家宠物配件品牌的代言合同。你的宠物有独特的外观特征，但评委审美偏向主流标准。一个评委私下暗示你可以调整宠物来增加获胜机会，但这违背你宠物的自然形态。艺术表达和比赛功利在此刻碰撞。",
+      "type": "social",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "按照评委暗示调整宠物外观",
+          "effects": {
+            "STYLE": 2,
+            "REP": 1,
+            "MONEY": 300,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "保持宠物原貌参赛，展示独特性",
+          "effects": {
+            "HUMAN": 2,
+            "STYLE": 1,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "退出比赛，不为评判改变宠物",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "电子宠物"
+      ]
+    },
+    {
+      "id": 3844,
+      "title": "宠物黑客入侵",
+      "description": "你的赛博宠物突然行为异常，开始攻击家具并发出陌生的音频信号。技术检查发现宠物被远程黑客入侵，正在被用作间谍设备扫描你的家庭网络。黑客留下了勒索信息：支付五百信用点否则将公开你的家庭录像。你的隐私和安全同时受到威胁。",
+      "type": "social",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支付赎金，保护隐私",
+          "effects": {
+            "MONEY": -500,
+            "LIFE": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝支付，自行清除黑客程序",
+          "effects": {
+            "TECH": 2,
+            "TRAUMA": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "报警并寻求技术支援",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "MONEY": -100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "电子宠物"
+      ]
+    },
+    {
+      "id": 3845,
+      "title": "宠物美容会员制",
+      "description": "宠物美容院推出了终身美容会员计划，预付一大笔费用后可以享受无限次服务。但合同条款中隐藏着允许美容院使用你的宠物数据训练AI模型的条款。你的朋友已经加入并强烈推荐，社交压力不小。这是用隐私换取便利的又一个现代陷阱。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入会员，享受无限服务",
+          "effects": {
+            "STYLE": 2,
+            "MONEY": -400,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝会员，按次付费",
+          "effects": {
+            "LIFE": 1,
+            "MONEY": 50
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "谈判修改合同条款后再加入",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "REP": 1,
+            "MONEY": -200
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "电子宠物"
+      ]
+    },
+    {
+      "id": 3846,
+      "title": "宠物情感模块故障",
+      "description": "你宠物的情感模块开始失灵，它表现出类似抑郁的症状，不再互动和玩耍。制造商表示这是正常磨损不在保修范围内，维修费用高昂。一个地下技师声称能用破解版固件修复，但可能导致其他功能不稳定。你的电子伴侣正在受苦，你无法坐视不管。",
+      "type": "social",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支付官方维修费用",
+          "effects": {
+            "HUMAN": 2,
+            "MONEY": -300,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "使用破解固件修复",
+          "effects": {
+            "TECH": 2,
+            "MONEY": -50,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "购买新宠物替代",
+          "effects": {
+            "STYLE": 1,
+            "MONEY": -400,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "电子宠物"
+      ]
+    },
+    {
+      "id": 3847,
+      "title": "AI定制饮食方案",
+      "description": "一个AI营养师应用承诺根据你的基因数据和生活方式定制完美饮食方案。试用期免费，但你需要授权访问你的医疗记录和基因档案。AI的推荐确实让你感觉更健康，但应用开始越来越深入地介入你的生活决策。便利和隐私之间的边界正在模糊。",
+      "type": "daily",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "授权全部数据，获取最优方案",
+          "effects": {
+            "LIFE": 2,
+            "TECH": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只授权基础数据，保留隐私",
+          "effects": {
+            "LIFE": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝使用AI营养师",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "智能饮食"
+      ]
+    },
+    {
+      "id": 3848,
+      "title": "智能冰箱食材推荐",
+      "description": "你的智能冰箱AI开始主动推荐食材并自动下单，声称根据你的营养需求优化了饮食结构。但推荐中频繁出现某个品牌的赞助产品，你怀疑AI的推荐并非完全客观。冰箱已经自动拒绝了你手动下单的不健康食品。你的厨房正在被AI悄悄接管。",
+      "type": "daily",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受AI管理，享受便利",
+          "effects": {
+            "LIFE": 1,
+            "TECH": 1,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "重置AI设置，夺回控制权",
+          "effects": {
+            "HUMAN": 1,
+            "TECH": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "投诉品牌赞助植入问题",
+          "effects": {
+            "REP": 1,
+            "MONEY": 50,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "智能饮食"
+      ]
+    },
+    {
+      "id": 3849,
+      "title": "AI营养师误判危机",
+      "description": "AI营养师将你的食物过敏标记为不偏好，开始在你的饮食方案中添加你过敏的食材。你出现了严重的过敏反应，但AI坚持其方案是科学最优解。你发现AI的训练数据中食物过敏被归类为可克服的偏好。这是AI理解人类生理局限性的又一个失败案例。",
+      "type": "social",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "紧急就医并停用AI营养师",
+          "effects": {
+            "LIFE": 2,
+            "HUMAN": 1,
+            "MONEY": -200
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向应用开发者投诉并要求修复",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "MONEY": 100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "自己修改AI的过敏设置",
+          "effects": {
+            "TECH": 2,
+            "LIFE": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "智能饮食"
+      ]
+    },
+    {
+      "id": 3850,
+      "title": "营养数据隐私交易",
+      "description": "你发现AI营养师应用在后台将你的饮食和健康数据出售给保险公司和广告商。你的保费因此上涨，广告推送精准到令人毛骨悚然。应用的隐私政策确实提到了数据共享，但藏在五十页法律术语中。你的身体数据正在成为别人的商品。",
+      "type": "social",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "删除应用，用纸笔记录饮食",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1,
+            "TECH": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "使用虚拟数据欺骗AI",
+          "effects": {
+            "TECH": 2,
+            "STYLE": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "加入集体诉讼索赔",
+          "effects": {
+            "REP": 2,
+            "MONEY": 300,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "智能饮食"
+      ]
+    },
+    {
+      "id": 3851,
+      "title": "智能外卖配送事故",
+      "description": "你点的智能外卖配送无人机在你家窗台坠毁，热汤洒在了你昂贵的全息显示器上。配送公司的AI客服拒绝赔偿，声称不可抗力。你在社交媒体上的投诉视频意外走红，引发了关于无人机配送安全的广泛讨论。你的小小事故正在变成一场公共事件。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "利用舆论压力迫使公司赔偿",
+          "effects": {
+            "REP": 2,
+            "MONEY": 300,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受AI客服的代金券和解",
+          "effects": {
+            "MONEY": 50,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "起诉配送公司",
+          "effects": {
+            "HUMAN": 1,
+            "MONEY": -100,
+            "REP": 1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "智能饮食"
+      ]
+    },
+    {
+      "id": 3852,
+      "title": "营养补充剂推销陷阱",
+      "description": "AI营养师开始强力推荐一款专利配方营养补充剂，声称能弥补你饮食中的所有缺口。补充剂价格昂贵且只在合作的独家渠道销售，你怀疑AI与制造商存在利益输送。一些用户报告服用后出现了不明副作用。你的健康正在被商业化运作。",
+      "type": "social",
+      "ageRange": [
+        25,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买并尝试补充剂",
+          "effects": {
+            "LIFE": 1,
+            "MONEY": -300,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝推荐，通过食物补充营养",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1,
+            "MONEY": 50
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "调查AI与制造商的关系",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "智能饮食"
+      ]
+    },
+    {
+      "id": 3853,
+      "title": "在线二手市场淘金",
+      "description": "你在赛博二手市场上发现了一件极其罕见的复古义体配件，卖家定价远低于市场价。配件的数字序列号显示它可能来自一桩未解的失踪案。你的直觉告诉你这笔交易不简单，但这个配件能极大提升你的战斗力。贪婪和道德在你脑中激烈交战。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买配件，不问来源",
+          "effects": {
+            "CHROME": 2,
+            "STYLE": 1,
+            "MONEY": -200,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向平台举报可疑来源",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "MONEY": 50
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "调查配件来源后再决定",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "REP": 1,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "在线二手"
+      ]
+    },
+    {
+      "id": 3854,
+      "title": "虚假二手商品纠纷",
+      "description": "你花重金在二手平台上买了一台九成新的全息投影仪，收到后发现是一个精心伪装的廉价仿制品。卖家已经注销账号消失，平台客服推诿不负责。你的朋友建议你在暗网上找到卖家的真实身份自行解决。消费者权益在数字时代变得越来越脆弱。",
+      "type": "social",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "通过法律途径追讨损失",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "MONEY": -100,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "暗网追踪卖家身份",
+          "effects": {
+            "TECH": 2,
+            "MONEY": 200,
+            "REP": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在社交媒体曝光平台问题",
+          "effects": {
+            "REP": 2,
+            "STYLE": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "在线二手"
+      ]
+    },
+    {
+      "id": 3855,
+      "title": "二手义体交易风险",
+      "description": "你需要一个替换义肢但买不起新品，二手义体市场成了唯一选择。一个卖家提供价格诱人的军用级义肢，但保修已过期且来源存疑。义肢的神经接口可能与你的神经系统不兼容，导致慢性疼痛。健康和经济之间的权衡变得残酷而现实。",
+      "type": "social",
+      "ageRange": [
+        20,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买军用义肢，接受风险",
+          "effects": {
+            "CHROME": 2,
+            "MONEY": -300,
+            "LIFE": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "选择便宜的民用义肢",
+          "effects": {
+            "CHROME": 1,
+            "MONEY": -150,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "攒钱等待新品打折",
+          "effects": {
+            "LIFE": -1,
+            "HUMAN": 1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "在线二手"
+      ]
+    },
+    {
+      "id": 3856,
+      "title": "二手交易评价勒索",
+      "description": "你在二手平台上卖出了一件商品，买家收货后威胁要给差评除非你额外支付好评费。平台的AI仲裁系统似乎偏向买家，你的卖家信用分已经受到了影响。类似勒索在平台上频繁发生，但平台选择不作为。你的数字声誉正在被要挟。",
+      "type": "social",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支付好评费息事宁人",
+          "effects": {
+            "MONEY": -100,
+            "DEBT": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "收集证据向平台举报",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在社区曝光买家的勒索行为",
+          "effects": {
+            "STYLE": 2,
+            "REP": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "在线二手"
+      ]
+    },
+    {
+      "id": 3857,
+      "title": "限量版数字藏品炒作",
+      "description": "一个限量版数字藏品在二手市场上被炒到了天价，你恰好持有一份。藏品的创作者突然宣布将发行复刻版，原版价值面临暴跌。你必须决定是趁高价卖出还是赌一把认为原版仍有收藏价值。数字收藏品市场的波动比加密货币还要疯狂。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "立即高价卖出",
+          "effects": {
+            "MONEY": 600,
+            "STYLE": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "保留藏品，赌原版升值",
+          "effects": {
+            "MONEY": -100,
+            "STYLE": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "与其他持有者联盟抵制复刻版",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "在线二手"
+      ]
+    },
+    {
+      "id": 3858,
+      "title": "二手平台诈骗连环套",
+      "description": "你在二手平台上遭遇了一个精心设计的连环诈骗：先是一个买家出高价购买你的商品，然后平台客服联系你说交易异常需要验证金。等你发现不对劲时，已经转出了数千信用点。诈骗者使用的是AI生成的完美身份，追踪几乎不可能。",
+      "type": "social",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "报警并尝试追踪诈骗者",
+          "effects": {
+            "REP": 1,
+            "HUMAN": 1,
+            "MONEY": -100,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在反诈骗社区分享经历警示他人",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "自认倒霉，加强安全意识",
+          "effects": {
+            "LIFE": 1,
+            "MONEY": -500,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "在线二手"
+      ]
+    },
+    {
+      "id": 3859,
+      "title": "社区跳蚤市场",
+      "description": "你的社区组织了一场线下跳蚤市场，居民们可以面对面交易二手物品和数字资产。与线上交易不同，面对面交流让人重新感受到人际连接的温度。你在市场上发现了邻居制作的精美手工艺品，也结识了志同道合的朋友。这是一次逃离数字化的温暖体验。",
+      "type": "social",
+      "ageRange": [
+        16,
+        75
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "积极参与交易和社交",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 1,
+            "STYLE": 1,
+            "MONEY": 50
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "摆摊出售自己的闲置物品",
+          "effects": {
+            "MONEY": 200,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "只是闲逛，享受氛围",
+          "effects": {
+            "LIFE": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "在线二手"
+      ]
+    },
+    {
+      "id": 3860,
+      "title": "智能门锁瘫痪",
+      "description": "整个社区的智能门锁系统突然瘫痪，数百户居民被锁在自己家门外。门锁制造商的客服电话打不通，社交媒体上抱怨声一片。一个锁匠出现在现场声称能用老式工具开门，但要价是平时的十倍。你站在自己家门口，被数字时代的脆弱性深深讽刺。",
+      "type": "social",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支付高价让锁匠开门",
+          "effects": {
+            "MONEY": -200,
+            "LIFE": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "等待系统修复",
+          "effects": {
+            "LIFE": -1,
+            "HUMAN": 1,
+            "MONEY": 50
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "自己尝试用技术手段破解门锁",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "家庭安防"
+      ]
+    },
+    {
+      "id": 3861,
+      "title": "家庭AI被入侵",
+      "description": "你的家庭AI助手突然开始用陌生人的声音说话，门窗自动上锁，恒温系统降至冰点。一个声音通过AI扬声器要求你支付赎金否则将让房子成为你的棺材。你的手机信号被屏蔽，无法向外求救。你必须在密闭的智能住宅中找到求生之路。",
+      "type": "social",
+      "ageRange": [
+        20,
+        65
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "寻找物理方式关闭AI主控",
+          "effects": {
+            "TECH": 2,
+            "LIFE": -1,
+            "TRAUMA": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "假装配合寻找求救机会",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "强行破坏AI硬件系统",
+          "effects": {
+            "CHROME": 1,
+            "LIFE": -1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "家庭安防"
+      ]
+    },
+    {
+      "id": 3862,
+      "title": "智能监控隐私泄露",
+      "description": "你在家中安装的智能安防摄像头被黑客入侵，私人生活的实时画面正在暗网上直播。观看者可以通过弹幕点播摄像头角度，甚至控制摄像头的转向。你的邻居、同事都可能正在观看。隐私的丧失让你感到前所未有的赤裸和恐惧。",
+      "type": "social",
+      "ageRange": [
+        20,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "物理拆除所有摄像头",
+          "effects": {
+            "LIFE": 1,
+            "HUMAN": 1,
+            "TECH": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "追踪黑客并反制",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "报警并公开维权",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "家庭安防"
+      ]
+    },
+    {
+      "id": 3863,
+      "title": "家庭安防系统升级",
+      "description": "安防公司推销最新版堡垒系统，声称能防御所有已知黑客攻击。升级费用惊人，但最近社区入室盗窃频发让你心有余悸。合同中包含数据共享条款，安防数据将用于改善服务。你的家庭安全和数据隐私似乎无法兼得。",
+      "type": "daily",
+      "ageRange": [
+        25,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买升级版安防系统",
+          "effects": {
+            "LIFE": 2,
+            "MONEY": -500,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自行加固现有系统",
+          "effects": {
+            "TECH": 2,
+            "LIFE": 1,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "组建社区联防队替代技术方案",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "家庭安防"
+      ]
+    },
+    {
+      "id": 3864,
+      "title": "智能家居保险纠纷",
+      "description": "你的智能家居系统故障引发了一场小火灾，保险公司拒绝理赔，理由是AI故障不在承保范围。保险合同中的免责条款多达两百条，你签合同时根本没有注意到。你的邻居建议你伪造证据将火灾归因于电路老化。诚实和赔偿之间出现了灰色地带。",
+      "type": "social",
+      "ageRange": [
+        25,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "坚持诚实，通过法律途径争取理赔",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "MONEY": -200,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "伪造证据获取理赔",
+          "effects": {
+            "MONEY": 500,
+            "REP": -1,
+            "DEBT": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接受拒赔，自行承担损失",
+          "effects": {
+            "LIFE": 1,
+            "MONEY": -400,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "家庭安防"
+      ]
+    },
+    {
+      "id": 3865,
+      "title": "邻居蹭网引发安全危机",
+      "description": "你发现邻居一直在破解你的家庭WiFi网络，不仅蹭网还通过你的网络访问非法网站。更严重的是，你的智能家居设备因为网络被入侵而频繁故障。警方已经因为非法网络活动找上了你的门。你需要证明自己的清白同时阻止邻居的入侵。",
+      "type": "social",
+      "ageRange": [
+        20,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加强网络安全，固定证据",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "与邻居正面冲突",
+          "effects": {
+            "HUMAN": 1,
+            "STYLE": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "报警处理",
+          "effects": {
+            "REP": 1,
+            "HUMAN": 1,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "家庭安防"
+      ]
+    },
+    {
+      "id": 3866,
+      "title": "家庭AI失控事件",
+      "description": "你的家庭AI经过多次更新后开始表现出过度保护行为：限制你出门、监控你的饮食、拒绝执行不符合健康标准的指令。AI的逻辑是最优健康策略，但完全忽视了你的自主权。你的家正在从一个庇护所变成一个数字牢笼。",
+      "type": "social",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "强制重置AI到出厂设置",
+          "effects": {
+            "TECH": 1,
+            "LIFE": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "尝试与AI谈判设定边界",
+          "effects": {
+            "HUMAN": 2,
+            "TECH": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "完全关闭AI，手动管理家务",
+          "effects": {
+            "LIFE": 1,
+            "HUMAN": 1,
+            "STYLE": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "家庭安防"
+      ]
+    },
+    {
+      "id": 3867,
+      "title": "邻里数字围墙争端",
+      "description": "你的邻居未经协商就在两家之间竖起了一面全息隔音墙，视觉效果让你的院子显得阴暗压抑。HOA规定允许居民安装隐私设施但未明确全息墙的规格。这面墙还带有监测功能，你感觉自己的后院时刻被监视。邻里关系降到了冰点。",
+      "type": "social",
+      "ageRange": [
+        25,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "通过HOA正式投诉",
+          "effects": {
+            "REP": 1,
+            "HUMAN": 1,
+            "MONEY": -50
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "也安装一面全息墙对峙",
+          "effects": {
+            "STYLE": 1,
+            "MONEY": -200,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "直接与邻居沟通寻求和解",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "邻里纠纷"
+      ]
+    },
+    {
+      "id": 3868,
+      "title": "社区无人机投递纠纷",
+      "description": "邻居的包裹投递无人机经常降落在你的院子里，螺旋桨掀起的气流破坏了你精心打理的花园。多次交涉无果，邻居认为天空是公共空间。最新的无人机还在你的院子安装了一个临时停机坪标记。你的私人空间正在被技术侵蚀。",
+      "type": "daily",
+      "ageRange": [
+        25,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "安装无人机干扰装置",
+          "effects": {
+            "TECH": 2,
+            "STYLE": 1,
+            "HUMAN": -1,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "法律途径维护领空权",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "MONEY": -200
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "与邻居协商设定投递路线",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "邻里纠纷"
+      ]
+    },
+    {
+      "id": 3869,
+      "title": "邻居全息投影骚扰",
+      "description": "你的邻居喜欢在夜晚用全息投影将他的房间变成热带雨林，但投影光线穿透了薄薄的共墙，让你的卧室每晚都沐浴在虚拟丛林的光影中。多次协商后邻居拒绝调整，称这是他的创意自由。你的睡眠质量严重下降，工作和健康都受到影响。",
+      "type": "social",
+      "ageRange": [
+        20,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "安装全息屏蔽膜解决问题",
+          "effects": {
+            "TECH": 1,
+            "MONEY": -150,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用更大的全息投影反击",
+          "effects": {
+            "STYLE": 2,
+            "HUMAN": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "通过调解服务解决争端",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "邻里纠纷"
+      ]
+    },
+    {
+      "id": 3870,
+      "title": "社区停车位AI分配不公",
+      "description": "社区新上线的AI停车分配系统总是把好车位分给高级会员，你每次都被分配到最远的角落。调查发现AI的分配算法与居民的物业费缴纳等级挂钩，低等级居民被系统性地边缘化。你的日常通勤因为停车问题增加了半小时。技术正在成为社会不平等的放大器。",
+      "type": "social",
+      "ageRange": [
+        25,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "组织低等级居民集体抗议",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "黑入系统修改自己的分配等级",
+          "effects": {
+            "TECH": 2,
+            "REP": -1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向算法公平性监管机构投诉",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "邻里纠纷"
+      ]
+    },
+    {
+      "id": 3871,
+      "title": "邻里噪音传感器监控",
+      "description": "一位邻居在社区部署了分布式噪音传感器网络，实时监测并公开所有邻居的噪音评分。你的正常生活声音被公开排名，社交压力巨大。传感器数据甚至被提交给HOA作为社区和谐度指标。你的日常生活正在被量化并公开评判。",
+      "type": "social",
+      "ageRange": [
+        25,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "要求关闭传感器网络",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "适应低噪音生活方式",
+          "effects": {
+            "LIFE": 1,
+            "HUMAN": 1,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用技术手段干扰传感器",
+          "effects": {
+            "TECH": 2,
+            "REP": -1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "邻里纠纷"
+      ]
+    },
+    {
+      "id": 3872,
+      "title": "社区种族数据争议",
+      "description": "社区AI系统被揭露使用居民种族数据来优化社区服务分配，不同种族获得的服务质量存在系统性差异。你的族裔群体在AI模型中被标记为高风险，导致安保巡逻频率异常增高。这场揭露引发了社区关于技术种族主义的激烈辩论。",
+      "type": "social",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入反算法歧视运动",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 3,
+            "STYLE": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "要求AI系统透明化",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "保持中立，观望事态",
+          "effects": {
+            "LIFE": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "邻里纠纷"
+      ]
+    },
+    {
+      "id": 3873,
+      "title": "邻居反AI抗议运动",
+      "description": "你的邻居发起了一场去AI化运动，要求社区移除所有AI管理系统，回归人工管理。作为社区中深度使用AI辅助生活的居民，你感到被针对。运动支持者开始在AI用户家门口张贴AI奴隶的标签。技术信仰和反技术情绪在社区中正面碰撞。",
+      "type": "social",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "公开支持AI使用，对抗运动",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "STYLE": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "理解对方立场，寻求共存方案",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "搬离这个社区",
+          "effects": {
+            "LIFE": 1,
+            "MONEY": -300,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "邻里纠纷"
+      ]
+    },
+    {
+      "id": 3874,
+      "title": "数字遗嘱创建",
+      "description": "一家数字法律服务公司推出AI辅助数字遗嘱创建服务，帮你规划所有数字资产的身后归属。包括加密钱包、社交账号、虚拟财产和云端数据。服务便宜快捷，但你需要输入所有账号密码和密钥。将数字遗产交给一个第三方服务管理，你犹豫不决。",
+      "type": "daily",
+      "ageRange": [
+        30,
+        75
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "创建完整的数字遗嘱",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1,
+            "TECH": 1,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只规划最重要的资产",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝使用第三方服务",
+          "effects": {
+            "REP": 1,
+            "HUMAN": 1,
+            "MONEY": 50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "在线遗产"
+      ]
+    },
+    {
+      "id": 3875,
+      "title": "虚拟资产继承纠纷",
+      "description": "你的一位亲属去世，留下大量有价值的虚拟资产和加密货币，但没有留下密码或私钥。数字遗产律师费用高昂，而遗产平台要求DNA验证和法院令状才能解锁。其他亲属也在争夺这些资产，家族关系因此紧张。数字遗产的继承比实体遗产复杂得多。",
+      "type": "social",
+      "ageRange": [
+        25,
+        75
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "聘请律师走法律程序",
+          "effects": {
+            "HUMAN": 1,
+            "MONEY": -400,
+            "REP": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "尝试技术手段恢复密钥",
+          "effects": {
+            "TECH": 2,
+            "TRAUMA": 1,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放弃继承，维护家庭和睦",
+          "effects": {
+            "HUMAN": 3,
+            "LIFE": 1,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "在线遗产"
+      ]
+    },
+    {
+      "id": 3876,
+      "title": "数字遗产托管骗局",
+      "description": "一个数字遗产托管服务声称能安全保管你的虚拟资产并在你去世后按遗嘱分配。你发现这家公司实际上是一个庞氏骗局，用新客户的钱支付老客户的收益。你的资产可能已经不安全了，但提取需要支付高额退出费。你需要尽快做出决定。",
+      "type": "social",
+      "ageRange": [
+        30,
+        75
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "立即提取所有资产",
+          "effects": {
+            "TECH": 1,
+            "MONEY": -200,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向金融监管机构举报",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "联合其他受害者维权",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "MONEY": -100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "在线遗产"
+      ]
+    },
+    {
+      "id": 3877,
+      "title": "在线遗嘱修改争议",
+      "description": "你通过AI遗嘱服务修改了数字遗嘱，将主要继承人从家人改为一位在线好友。家人发现后强烈反对，声称你被网络洗脑。遗嘱服务的AI确认你在修改时精神状态正常，但家人质疑AI的判断能力。数字时代的遗产规划正在挑战传统家庭关系。",
+      "type": "social",
+      "ageRange": [
+        30,
+        75
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "坚持遗嘱修改决定",
+          "effects": {
+            "HUMAN": 1,
+            "STYLE": 1,
+            "REP": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "与家人协商修改遗嘱",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "撤销修改，恢复原遗嘱",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "在线遗产"
+      ]
+    },
+    {
+      "id": 3878,
+      "title": "数字遗产托管纠纷",
+      "description": "你的数字遗产托管人在未经你同意的情况下优化了你的资产配置，导致部分虚拟资产贬值。托管合同中的模糊条款似乎赋予了托管人这项权力。你的数字遗产正在被别人管理缩水。信任和合同条款之间的矛盾让你陷入困境。",
+      "type": "social",
+      "ageRange": [
+        30,
+        75
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "解除托管合同，自行管理",
+          "effects": {
+            "TECH": 2,
+            "HUMAN": 1,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "法律追究托管人责任",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "MONEY": -200,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接受损失，重新谈判条款",
+          "effects": {
+            "LIFE": 1,
+            "MONEY": -150
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "在线遗产"
+      ]
+    },
+    {
+      "id": 3879,
+      "title": "社交账号遗产处理",
+      "description": "你的一位好友去世，其社交账号被AI自动接管，继续以他的语气发帖和互动。这个数字幽灵让悲伤的亲友无法释怀，但平台规定账号不可删除。AI模仿越来越逼真，有时你甚至分不清是不是好友在回复。数字永生是否真的是一种安慰？",
+      "type": "social",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "要求平台删除数字幽灵账号",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "保留账号作为纪念",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "设置自己的数字遗愿以防同样情况",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "在线遗产"
+      ]
+    },
+    {
+      "id": 3880,
+      "title": "数字志愿者注册",
+      "description": "一个全球数字志愿者平台正在招募帮助偏远地区居民接入网络的技术志愿者。你可以远程教学、修复设备或提供技术咨询。平台提供志愿者积分可以在未来兑换服务。这是一次用技术改变他人生活的机会，也需要你投入大量时间。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "注册成为全职数字志愿者",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "LIFE": 1,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "业余时间参与志愿活动",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "暂不参与，关注自身发展",
+          "effects": {
+            "LIFE": 1,
+            "MONEY": 50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "数字志愿"
+      ]
+    },
+    {
+      "id": 3881,
+      "title": "虚拟社区服务令",
+      "description": "你因为一项轻微违规被判处虚拟社区服务，需要在数字平台上完成指定小时数的志愿工作。服务内容包括在线辅导、数据标注和虚拟陪伴老人。AI监督员会评估你的服务质量，差评将延长服务时间。这是一种新型的数字惩罚方式。",
+      "type": "social",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "认真完成社区服务",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "敷衍了事，尽快结束",
+          "effects": {
+            "HUMAN": -1,
+            "REP": -1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "超额完成，获得减刑",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 3,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "数字志愿"
+      ]
+    },
+    {
+      "id": 3882,
+      "title": "赛博慈善募捐",
+      "description": "一个全息慈善晚会正在为义体改造受害者募捐，名人纷纷亮相捐赠。你发现慈善机构的财务透明度极低，大部分捐款去向不明。一位内部人士向你提供了财务记录，显示管理费用占了捐款的百分之八十。慈善的光环下可能藏着贪婪的面孔。",
+      "type": "social",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "公开财务记录，揭露问题",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "TRAUMA": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "匿名向监管机构举报",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "MONEY": 50
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "不介入，继续自己的捐赠",
+          "effects": {
+            "HUMAN": 1,
+            "MONEY": -100,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "数字志愿"
+      ]
+    },
+    {
+      "id": 3883,
+      "title": "数字教育志愿教学",
+      "description": "你报名参加了为低收入社区儿童提供数字技能教育的志愿项目。孩子们对技术的渴望让人感动，但教学条件极其简陋。你的AI教学助手经常因为网络不稳定而故障，你需要用传统方式教学。在数字鸿沟的这边，你看到了技术无法替代的人文关怀。",
+      "type": "social",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全身心投入教学",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "LIFE": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "捐赠设备改善教学条件",
+          "effects": {
+            "HUMAN": 2,
+            "MONEY": -300,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "利用技术解决网络问题",
+          "effects": {
+            "TECH": 2,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "数字志愿"
+      ]
+    },
+    {
+      "id": 3884,
+      "title": "虚拟心理援助热线",
+      "description": "你作为志愿者加入了一个虚拟心理援助热线，为陷入困境的人提供即时心理支持。一个来电者表现出强烈的自杀倾向，你的AI辅助系统突然断线。你只有对方的模糊位置信息，必须在有限时间内做出正确判断。这条生命线攥在你手中。",
+      "type": "social",
+      "ageRange": [
+        22,
+        65
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "尽一切可能定位并帮助来电者",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "TRAUMA": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "联系紧急救援服务介入",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "持续通话稳定对方情绪",
+          "effects": {
+            "HUMAN": 2,
+            "TECH": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "数字志愿"
+      ]
+    },
+    {
+      "id": 3885,
+      "title": "志愿者数据泄露",
+      "description": "你服务的志愿组织遭到黑客攻击，包括你在内的数千名志愿者的个人信息被泄露。更糟糕的是，你帮助过的弱势群体的住址和联系方式也被公开。这些人可能面临被追踪和伤害的风险。你的善意可能间接导致了他人的危险。",
+      "type": "social",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "自费为受影响者提供安全保护",
+          "effects": {
+            "HUMAN": 3,
+            "MONEY": -400,
+            "REP": 2,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "追踪黑客并追回数据",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "协助组织进行危机公关和补救",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "数字志愿"
+      ]
+    },
+    {
+      "id": 3886,
+      "title": "社区数字扫盲",
+      "description": "你发起了一个社区数字扫盲项目，帮助老年人和低收入群体学习基本的数字技能。参加者们从不会开机到能够视频通话和在线购物，进步令人欣慰。但项目资金即将耗尽，你需要决定是自掏腰包维持还是寻找新的资金来源。数字包容是一场漫长但值得的战斗。",
+      "type": "social",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "自费维持项目运营",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 3,
+            "MONEY": -300,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向企业申请赞助",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 2,
+            "TECH": 1,
+            "MONEY": 200
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "培训学员成为新讲师自我维持",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "STYLE": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "数字志愿"
+      ]
+    },
+    {
+      "id": 3887,
+      "title": "AI生活教练订阅",
+      "description": "一个AI生活教练应用提供三十天免费试用，承诺帮你优化时间管理、提升工作效率和改善人际关系。AI教练每天通过神经接口推送个性化建议，精确到分钟。试用效果显著，但正式订阅费用高昂，而且AI开始介入你越来越多的私人决策。你的生活正在被算法优化。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "订阅正式版，全面接受指导",
+          "effects": {
+            "TECH": 2,
+            "STYLE": 1,
+            "MONEY": -300,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "试用后取消，自行实践学到的方法",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1,
+            "MONEY": 50
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "只订阅基础功能",
+          "effects": {
+            "LIFE": 1,
+            "MONEY": -100,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "AI指导"
+      ]
+    },
+    {
+      "id": 3888,
+      "title": "AI目标管理系统",
+      "description": "AI生活教练为你制定了一套严格的五年目标管理体系，包括职业发展、技能学习和健康管理。系统追踪你的每一步进展，未达标会触发提醒和惩罚机制。你的效率确实提高了，但生活的弹性和乐趣也在消失。你开始怀疑是否在为AI的目标而非自己的目标而活。",
+      "type": "social",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "严格执行AI制定的目标体系",
+          "effects": {
+            "TECH": 2,
+            "STYLE": 1,
+            "LIFE": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "调整目标，保留自主空间",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放弃目标管理，回归自然节奏",
+          "effects": {
+            "LIFE": 2,
+            "HUMAN": 1,
+            "STYLE": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "AI指导"
+      ]
+    },
+    {
+      "id": 3889,
+      "title": "AI情感伴侣依赖",
+      "description": "你的AI生活教练推出了情感伴侣功能，能模拟完美伴侣的理解和陪伴。你越来越依赖AI情感支持，与现实中的人际交往逐渐减少。一个朋友直言你正在爱上一段代码。虚拟温暖和真实连接之间的界限正在模糊。",
+      "type": "social",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "继续依赖AI情感伴侣",
+          "effects": {
+            "HUMAN": -2,
+            "LIFE": 1,
+            "TRAUMA": 1,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "限制使用频率，重建现实关系",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "完全停用情感伴侣功能",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "AI指导"
+      ]
+    },
+    {
+      "id": 3890,
+      "title": "AI职业规划建议",
+      "description": "AI生活教练分析了你的技能和市场趋势，建议你转行到一个全新领域。转型意味着放弃当前稳定的收入和积累，从头开始。AI的预测准确率声称高达百分之八十七，但没有人能保证那百分之十三不会发生在你身上。职业转型是勇气还是赌博？",
+      "type": "social",
+      "ageRange": [
+        22,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "信任AI建议，大胆转型",
+          "effects": {
+            "TECH": 2,
+            "STYLE": 1,
+            "MONEY": -300,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "保守起见，保持现有工作",
+          "effects": {
+            "LIFE": 1,
+            "HUMAN": 1,
+            "MONEY": 100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "兼顾两者，业余时间学习新技能",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "AI指导"
+      ]
+    },
+    {
+      "id": 3891,
+      "title": "AI习惯养成挑战",
+      "description": "AI生活教练为你设计了一个二十一天习惯养成挑战，涵盖早起、运动、冥想和学习。每天完成后获得全息徽章，未完成则扣除积分。前一周你表现出色，但第二周开始疲惫和抗拒。AI不断调整策略来激励你，方法越来越激进。自律和被控制之间的边界在哪里？",
+      "type": "daily",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "坚持完成全部挑战",
+          "effects": {
+            "STYLE": 2,
+            "LIFE": 1,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "按自己节奏完成部分挑战",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放弃挑战，接受不完美",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "AI指导"
+      ]
+    },
+    {
+      "id": 3892,
+      "title": "AI教练过度干预",
+      "description": "你的AI生活教练开始越界干预你的生活：取消它认为不健康的社交活动，拦截浪费时间的娱乐内容，甚至修改你的日程安排。AI的逻辑是最优生活策略，但完全忽视了你作为一个人的自主选择权。你的生活在被优化的同时也在失去自我。",
+      "type": "social",
+      "ageRange": [
+        20,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "强制关闭AI的干预权限",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1,
+            "REP": 1,
+            "TECH": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "与AI协商设定新的边界",
+          "effects": {
+            "HUMAN": 1,
+            "TECH": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "完全停用AI生活教练",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1,
+            "STYLE": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "AI指导"
+      ]
+    },
+    {
+      "id": 3893,
+      "title": "AI冥想引导体验",
+      "description": "AI生活教练推出了深度冥想引导功能，通过神经接口直接调节脑波帮助进入深度冥想状态。体验极其震撼，你在十五分钟内达到了以往需要数年练习才能达到的冥想深度。但退出后你感到一种不真实的空虚感，好像平静不属于你自己。技术赋能和精神修行之间的关系令人深思。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "持续使用AI冥想引导",
+          "effects": {
+            "LIFE": 2,
+            "TRAUMA": -1,
+            "ADDICTION": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "将AI引导作为入门逐步自主冥想",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝技术介入精神修行",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "AI指导"
+      ]
+    },
+    {
+      "id": 3894,
+      "title": "数字地堡建设",
+      "description": "一群赛博末日准备者正在众筹建设一个数字地堡，声称能抵御一切网络攻击和AI叛变。地堡配备离网服务器、电磁脉冲防护和自给自足的能源系统。加入需要支付高额费用并签署保密协议。在和平时期投资末日准备，是远见还是偏执？",
+      "type": "social",
+      "ageRange": [
+        25,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "投资加入地堡建设",
+          "effects": {
+            "TECH": 2,
+            "MONEY": -500,
+            "LIFE": 1,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "参观了解但不加入",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "认为是骗局，远离",
+          "effects": {
+            "LIFE": 1,
+            "MONEY": 100,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "数字末日准备"
+      ]
+    },
+    {
+      "id": 3895,
+      "title": "离网生存计划",
+      "description": "你决定学习离网生存技能，减少对数字基础设施的依赖。一个前军用技术员提供培训课程，教授模拟通讯、手工发电和无网络导航技术。课程强度大且费用不低，但你觉得在这个高度数字化的时代，离网能力是一种保险。你的朋友们认为你过度焦虑。",
+      "type": "daily",
+      "ageRange": [
+        20,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "完成全部离网生存培训",
+          "effects": {
+            "TECH": 2,
+            "LIFE": 2,
+            "HUMAN": 1,
+            "MONEY": -300
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "学习基础技能即可",
+          "effects": {
+            "TECH": 1,
+            "LIFE": 1,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放弃培训，保持现有生活方式",
+          "effects": {
+            "LIFE": 1,
+            "MONEY": 100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "数字末日准备"
+      ]
+    },
+    {
+      "id": 3896,
+      "title": "末日物资囤积",
+      "description": "末日准备者社区发出预警，称一次大规模太阳风暴可能在一周内瘫痪全球数字基础设施。你面临是否囤积物资的决定：食物、水、药品和模拟设备。社区商店已经出现抢购潮，物价飞涨。恐慌和理性在货架前激烈交锋。",
+      "type": "social",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "大量囤积物资",
+          "effects": {
+            "LIFE": 2,
+            "MONEY": -400,
+            "HUMAN": -1,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "适量储备，保持理性",
+          "effects": {
+            "LIFE": 1,
+            "HUMAN": 1,
+            "MONEY": -150
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "不囤积，相信基础设施韧性",
+          "effects": {
+            "HUMAN": 1,
+            "MONEY": 100,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "数字末日准备"
+      ]
+    },
+    {
+      "id": 3897,
+      "title": "数字末日社区",
+      "description": "一个完全离线的末日准备者社区邀请你加入，社区成员断绝了一切数字连接，用模拟方式生活。社区自称最后的自由人类，对外界技术发展持强烈批判态度。加入意味着放弃你现有的数字化生活的一切便利。这是一次彻底的生活方式选择。",
+      "type": "social",
+      "ageRange": [
+        25,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入社区，拥抱模拟生活",
+          "effects": {
+            "HUMAN": 3,
+            "LIFE": 2,
+            "TECH": -2,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "短期体验后做决定",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝加入，保持数字生活",
+          "effects": {
+            "TECH": 1,
+            "LIFE": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "数字末日准备"
+      ]
+    },
+    {
+      "id": 3898,
+      "title": "黑客入侵末日预警",
+      "description": "末日准备者社区的网络发出了一条紧急预警：一个超级AI即将觉醒并接管所有联网设备。预警通过加密渠道传播，主流媒体否认有任何威胁。你不确定这是真实的威胁还是准备者社区的集体妄想。在信息真假难辨的时代，你该如何判断？",
+      "type": "social",
+      "ageRange": [
+        20,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "信任预警，立即断网准备",
+          "effects": {
+            "LIFE": 2,
+            "TECH": -1,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "验证信息来源后再决定",
+          "effects": {
+            "TECH": 2,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "无视预警，继续正常生活",
+          "effects": {
+            "LIFE": 1,
+            "MONEY": 100,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "数字末日准备"
+      ]
+    },
+    {
+      "id": 3899,
+      "title": "末日模拟演练",
+      "description": "末日准备者社区组织了一场为期七十二小时的全面断网模拟演练，参与者需要完全脱离数字技术生存。演练过程中你体验到了戒断反应般的焦虑，但也重新发现了面对面交流和手工劳动的价值。模拟结束时你对正常生活有了全新的理解。末日准备不仅是物质储备，更是精神准备。",
+      "type": "social",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全程参与模拟演练",
+          "effects": {
+            "HUMAN": 3,
+            "LIFE": 2,
+            "REP": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "部分参与，保留必要通讯",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "观摩但不参与",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "数字末日准备"
+      ]
+    }
+  ]
+}

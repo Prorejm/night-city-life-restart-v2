@@ -1,0 +1,514 @@
+{
+  "events": [
+    {
+      "id": 1000,
+      "title": "酒吧里的神秘人",
+      "description": "你在一家烟雾缭绕的地下酒吧独饮。调酒师刚把第二杯酒放在你面前，一个陌生人就坐到了你旁边的位置上。他/她穿着剪裁考究的合成纤维大衣，面容在昏暗的灯光下半明半暗。「请我喝一杯，我就告诉你一个有意思的故事。」声音低沉而有磁性。你注意到他/她手腕上的神经接口是军用级的改装型号——这个人不简单。一夜情的诱惑还是长期关系的开端？",
+      "type": "social",
+      "ageRange": [20, 55],
+      "weight": 15,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "请喝酒，看看是什么故事", "effects": { "REP": 2, "MONEY": -300, "HUMAN": 1 } },
+        { "id": "branch_2", "text": "礼貌拒绝，不想和陌生人深交", "effects": { "HUMAN": 1, "MONEY": 100 } }
+      ],
+      "effects": { "STYLE": 1, "MONEY": -100 },
+      "tags": ["酒吧", "神秘人", "社交", "邂逅"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1001,
+      "title": "办公室恋情的萌芽",
+      "description": "你和同一个项目的同事最近走得很近。加班时的咖啡、深夜的顺路同行、偶尔搭在你肩上停留了半秒的手——你们之间的气氛越来越暧昧。今天下班后，他/她约你到公司天台的员工休息区，说「有重要的事想谈谈」。你知道这意味着什么。但在夜之城的大公司里，办公室恋情一旦曝光，至少有一方会被调离团队——甚至直接解雇。",
+      "type": "social",
+      "ageRange": [22, 45],
+      "weight": 13,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "赴约，接受这份感情", "effects": { "HUMAN": 2, "REP": -1, "STYLE": 1 } },
+        { "id": "branch_2", "text": "婉拒，保持纯粹的同事关系", "effects": { "HUMAN": -1, "REP": 1, "MONEY": 200 } }
+      ],
+      "effects": { "HUMAN": 1, "TRAUMA": 1 },
+      "tags": ["办公室", "恋情", "同事", "暧昧"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1002,
+      "title": "夜之城网上交友匹配",
+      "description": "你闲着无聊注册了一个夜之城本地的交友匹配软件——「夜伴」。算法号称能根据你的神经信号特征和社交数据找到「完美契合的灵魂伴侣」。你填写了详细的资料，上传了一张自认为不错的全息头像，然后启动了匹配算法。系统很快弹出了一个匹配度百分之九十七的人——个人信息里写着「喜欢赛博朋克美学、深夜漫游和工业废墟摄影」。但你的朋友警告过你：这种软件上的信息多半是假的。",
+      "type": "social",
+      "ageRange": [18, 55],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "约出来见面，反正也没什么损失", "effects": { "STYLE": 1, "REP": 1, "HUMAN": 1, "MONEY": -300 } },
+        { "id": "branch_2", "text": "取消匹配，网上交友太不靠谱", "effects": { "HUMAN": 1, "MONEY": 0 } }
+      ],
+      "effects": { "STYLE": 1, "HUMAN": 1 },
+      "tags": ["交友", "软件", "匹配", "约会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1003,
+      "title": "前女友/前男友找上门复合",
+      "description": "你公寓的门铃响了。打开门，一个你意想不到的人站在门口——你的前女友/前男友。他/她看起来比分手时憔悴了不少，眼神里带着熟悉的愧疚和怀念。「我知道我不该来……但我真的很想你。这段时间我一直在想，我们当初分手太冲动了。」声音有些沙哑。门外下着夜之城常见的那种酸雨，他/她的外套湿透了，看起来可怜又狼狈。但你知道，这个人当初离开你的时候，没有丝毫犹豫。",
+      "type": "social",
+      "ageRange": [22, 50],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 30,
+      "branches": [
+        { "id": "branch_1", "text": "给彼此一个重新开始的机会", "effects": { "HUMAN": 2, "REP": -1, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "关门拒绝，过去的就是过去了", "effects": { "HUMAN": -1, "TRAUMA": -1, "REP": 1 } }
+      ],
+      "effects": { "TRAUMA": 1, "HUMAN": 1 },
+      "tags": ["前女友", "复合", "感情", "过去"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1004,
+      "title": "赛博相亲的奇特体验",
+      "description": "你的朋友瞒着你帮你报名了一个赛博相亲活动。「基因婚配所」声称利用DNA分析和神经网络匹配技术帮你找到「天生一对」的灵魂伴侣。你被带进一间充满粉色灯光的房间，对面坐着一个看起来和你一样尴尬的人。一个AI媒人通过全息投影介绍你们：「根据你们的神经图谱分析，冲突概率低于百分之十二，长期兼容度高达百分之八十九。」然后AI消失了，留下你们俩大眼瞪小眼。",
+      "type": "social",
+      "ageRange": [22, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "branch_1", "text": "好好交流，享受这次相亲", "effects": { "HUMAN": 2, "STYLE": 1, "MONEY": -500 } },
+        { "id": "branch_2", "text": "对这种安排嗤之以鼻，提前离开", "effects": { "HUMAN": 1, "REP": -1, "MONEY": -200 } }
+      ],
+      "effects": { "HUMAN": 1, "MONEY": -300 },
+      "tags": ["相亲", "赛博", "媒人", "基因"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1005,
+      "title": "街头英雄救美",
+      "description": "你在一条后巷里听到女人的尖叫声。三个混混正围着一个年轻女人——他们在抢她的包，手上的铁棍在墙上划出刺耳的声响。女人看到了你，眼中充满了绝望的求助。混混们也看到了你，其中一个人转过头来，露出别在腰带上的手枪柄。「别多管闲事，傻逼。滚远点。」他的声音冷冷的。你有三秒钟的时间决定是冲上去帮忙还是转身离开。",
+      "type": "combat",
+      "ageRange": [20, 55],
+      "weight": 13,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "冲上去帮忙，击退混混", "effects": { "REP": 3, "HUMAN": 2, "LIFE": -2, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "不想惹麻烦，悄悄报警", "effects": { "HUMAN": 1, "MONEY": -100, "REP": -1 } }
+      ],
+      "effects": { "HUMAN": 1, "REP": 1 },
+      "tags": ["英雄救美", "街头", "见义勇为", "危险"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1006,
+      "title": "老朋友突然发达了",
+      "description": "你多年不见的老朋友张伟突然出现在你的生活中——他开着一辆崭新的银翼跑车，穿着定制的西装，手腕上是最新款的Zetatech智能表。他说他「做了一点小生意」，最近赚了不少。他慷慨地请你在高级餐厅吃了顿饭，然后提出了一个请求：「兄弟，我有个项目需要信得过的人。你愿不愿意跟着我干？」但你知道，在夜之城，过快致富的人不是在卖毒品就是在卖灵魂。",
+      "type": "social",
+      "ageRange": [22, 55],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "branch_1", "text": "接受邀请，跟着老朋友发财", "effects": { "MONEY": 3000, "REP": 2, "HUMAN": -1, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "婉拒，不想卷入非法勾当", "effects": { "HUMAN": 2, "REP": 1, "MONEY": -200 } }
+      ],
+      "effects": { "MONEY": 500, "REP": 1 },
+      "tags": ["老朋友", "发达", "邀请", "怀疑"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1007,
+      "title": "朋友在背后说你坏话",
+      "description": "你在酒吧的卫生间里无意中听到了两个熟悉的声音——是你信任的两位朋友。他们以为你不在，正在肆无忌惮地讨论你。「他/她最近太飘了，真以为自己了不起。」「就是，要不是我们帮他/她，他/她能有今天？」「其实我一直觉得他/她能力一般……」那些话像刀子一样扎进你的心脏。你站在卫生间的隔间里，手按在门把手上，不知道该不该推门出去面对他们。",
+      "type": "social",
+      "ageRange": [18, 55],
+      "weight": 13,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "推门出去当面对质", "effects": { "REP": 2, "TRAUMA": 2, "HUMAN": 1 } },
+        { "id": "branch_2", "text": "不动声色，暗中疏远这些朋友", "effects": { "TRAUMA": 1, "HUMAN": -1, "REP": -1 } }
+      ],
+      "effects": { "TRAUMA": 2, "HUMAN": -1 },
+      "tags": ["朋友", "背叛", "背后", "信任"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1008,
+      "title": "帮朋友担保贷款朋友跑了",
+      "description": "三个月前，你的好兄弟/好姐妹李浩找你帮忙做贷款担保人。他当时声泪俱下地保证「就周转一个月，下个月一定还上」。你心一软，在合同上签了字。今天，两个穿黑色西装的男人出现在你门口——他们是催收公司的。李浩已经跑路三天了，电话打不通，家里搬空了。作为担保人，债务现在落在了你头上。本金加利息，一共八万欧元。催收员把合同拍在你面前：要么你替他还，要么他们「换一种方式」让你还。",
+      "type": "economy",
+      "ageRange": [22, 55],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 30,
+      "branches": [
+        { "id": "branch_1", "text": "砸锅卖铁替朋友还债", "effects": { "MONEY": -8000, "DEBT": 3, "HUMAN": 1, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "和催收公司谈判分期", "effects": { "MONEY": -3000, "DEBT": 2, "TRAUMA": 3, "HUMAN": -1 } }
+      ],
+      "effects": { "MONEY": -2000, "DEBT": 2, "TRAUMA": 3 },
+      "tags": ["朋友", "担保", "贷款", "跑路"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1009,
+      "title": "老朋友的婚礼邀请",
+      "description": "你收到了老朋友陈婷的婚礼请柬。全息卡片上，她和未婚夫的笑脸在夜之城的夕阳背景下闪闪发光。婚礼在一家中档酒店举行，请柬上写着「不收礼金，只收祝福」。但你了解夜之城的社交规则——份子钱给少了会被人在背后嘀咕，给多了你自己下个月吃土。而且你和陈婷已经两年没见了。要不要去？随多少份子钱？你盯着全息卡片上的笑脸，陷入了沉思。",
+      "type": "social",
+      "ageRange": [24, 50],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "参加婚礼，随一份体面的份子钱", "effects": { "MONEY": -1000, "HUMAN": 2, "REP": 1 } },
+        { "id": "branch_2", "text": "人不去，钱也不随", "effects": { "MONEY": 0, "HUMAN": -1, "REP": -1 } }
+      ],
+      "effects": { "MONEY": -500, "HUMAN": 1 },
+      "tags": ["婚礼", "份子钱", "朋友", "社交"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1010,
+      "title": "多年不见的发小突然借钱",
+      "description": "你小时候在夜之城贫民区一起长大的发小王磊突然出现了。二十年过去了，他看起来落魄了很多——眼眶深陷，衣服破旧，手上还有做苦力留下的老茧。他说他母亲病了，需要做紧急神经外科手术，还差三千欧元。他保证「一定还」，但你也知道，在这座城市里，三千欧元对于他这样的人来说可能一辈子都还不上。你看着他童年时那双现在布满血丝的眼睛，想起了你们曾经一起在天台上看星空的日子。",
+      "type": "social",
+      "ageRange": [22, 55],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "branch_1", "text": "借给他钱，不求回报", "effects": { "HUMAN": 3, "MONEY": -3000, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "委婉拒绝，生活都不容易", "effects": { "MONEY": 500, "HUMAN": -2, "TRAUMA": 1 } }
+      ],
+      "effects": { "HUMAN": 1, "MONEY": -500, "TRAUMA": 1 },
+      "tags": ["发小", "借钱", "童年", "人情"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1011,
+      "title": "朋友的秘密让我进退两难",
+      "description": "你最好的朋友最近变得很奇怪——他开始拒绝所有社交邀请，眼睛下面有深深的黑眼圈，体重急剧下降。有一天他喝醉了，哭着告诉你一个秘密：他在网上被一个神秘组织勒索了。对方有他在某个脆弱时刻的不雅视频，威胁如果不配合「一些小任务」就把视频发给他所有的联系人。他想报警，但对方说连NCPD里都有他们的人。你现在是他唯一信任的人。",
+      "type": "social",
+      "ageRange": [20, 50],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "陪朋友一起想对策", "effects": { "HUMAN": 3, "TECH": 2, "REP": 1, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "劝他自首，寻求警方保护", "effects": { "HUMAN": 1, "REP": -1, "TRAUMA": 1 } }
+      ],
+      "effects": { "HUMAN": 2, "TRAUMA": 2 },
+      "tags": ["朋友", "秘密", "勒索", "信任"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1012,
+      "title": "帮迷路的老人找到家",
+      "description": "你在回家的路上看到一个老人站在街角，神情迷茫。他的衣服虽然干净但明显过时了——那种二十年前的款式。你走近问他是否需要帮助，他说他找不到回家的路了。他报了一个地址，你说那是四个街区外的一栋旧公寓楼。但你发现他的神经接口还在滋滋作响，那是老年痴呆症患者常见的神经退行性病变的征兆。他可能什么都不记得了，但手里紧紧攥着一张泛黄的照片，上面是一个小女孩。",
+      "type": "social",
+      "ageRange": [18, 60],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "花时间送老人回家", "effects": { "HUMAN": 3, "REP": 1, "MONEY": -100 } },
+        { "id": "branch_2", "text": "帮他打NCPD电话让警察处理", "effects": { "HUMAN": 1, "MONEY": 0 } }
+      ],
+      "effects": { "HUMAN": 2, "REP": 1 },
+      "tags": ["老人", "帮助", "社区", "善良"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1013,
+      "title": "在街上救了被袭击的人",
+      "description": "你听到一条小巷里传来闷响和痛苦的呻吟。一个穿着连帽衫的人正蹲在地上用拳头殴打蜷缩在墙角的人。被打的人已经满脸是血，意识模糊。打人者嘴里骂着「欠债还钱天经地义」。你没有时间多想——你要么冲上去制止，要么快速绕过这条巷子假装没听到。被打者的眼睛在黑暗中看了你一眼，那是一种被世界抛弃的绝望。",
+      "type": "combat",
+      "ageRange": [18, 55],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "出手制止，救人一命", "effects": { "REP": 3, "HUMAN": 3, "LIFE": -2, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "绕道离开，不惹麻烦", "effects": { "HUMAN": -2, "TRAUMA": 1, "REP": -1 } }
+      ],
+      "effects": { "HUMAN": 1, "TRAUMA": 1 },
+      "tags": ["救人", "袭击", "街头", "见义勇为"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1014,
+      "title": "陌生人伸出了援手",
+      "description": "你今天遭遇了糟糕的一天——被公司解雇、钱包被偷、手机摔碎了屏幕。你坐在公园的长椅上，看着夕阳下这座城市依旧冷漠地运转着。这时，一个陌生人坐到了你旁边。他/她看起来也不富裕，但递给了你一杯热咖啡和一袋面包。「我看你的样子，今天不太好吧。吃点东西，明天会好的。」这个简单的善意让你眼眶发热。在这个充满背叛和算计的城市里，陌生人的善举显得如此珍贵。",
+      "type": "social",
+      "ageRange": [18, 60],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "branch_1", "text": "感激地接受这份善意", "effects": { "HUMAN": 2, "LIFE": 1, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "怀疑对方的动机，婉拒", "effects": { "HUMAN": -1, "TRAUMA": 1 } }
+      ],
+      "effects": { "HUMAN": 1, "TRAUMA": -1 },
+      "tags": ["陌生人", "善意", "帮助", "温暖"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1015,
+      "title": "成为社区里的关键人物",
+      "description": "不知不觉中，你成了你所在的社区里大家信赖的人。邻居们有矛盾会来找你调解，小贩们被流氓欺负会来请你撑腰，就连街角那个总是不苟言笑的老太太也会在你路过时点点头。今天，社区代表来找你，希望你能成为「居民自治委员会」的成员。这意味着你将正式承担起这个社区的协调工作，有时需要出头和开发商或帮派打交道。没有薪水，但你会拥有真正的人心。",
+      "type": "social",
+      "ageRange": [25, 60],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "接受邀请，成为社区领袖", "effects": { "REP": 3, "HUMAN": 2, "MONEY": -300, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "婉拒，不想背负太多责任", "effects": { "HUMAN": -1, "REP": -1 } }
+      ],
+      "effects": { "REP": 1, "HUMAN": 1 },
+      "tags": ["社区", "领袖", "责任", "信任"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1016,
+      "title": "街头巷尾流传着你的传说",
+      "description": "你在一家街边摊买炒面的时候，听到旁边桌上的人在谈论你——他们不知道你就在旁边。「你听说那个XXX了吗？就是那个在荒坂大厦搞事的人。」「听说了！据说他/她单枪匹马干翻了五个安保。」「啧啧啧，现在道上都在传他/她的名字。」你低头吃着炒面，假装什么都没听到。面摊老板多给你加了一个蛋，咧嘴一笑，露出一口黄牙：「请你的，英雄。」",
+      "type": "social",
+      "ageRange": [20, 55],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 30,
+      "branches": [
+        { "id": "branch_1", "text": "低调微笑，继续过自己的日子", "effects": { "REP": 2, "HUMAN": 2, "STYLE": 1 } },
+        { "id": "branch_2", "text": "享受名声，开始自称传奇", "effects": { "REP": 3, "STYLE": 2, "HUMAN": -1, "TRAUMA": 1 } }
+      ],
+      "effects": { "REP": 2, "STYLE": 1 },
+      "tags": ["传说", "名声", "街头", "面子"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1017,
+      "title": "社区中心的志愿活动",
+      "description": "你所在的社区中心正在招募志愿者，帮助给贫困家庭的孩子发放免费午餐和旧课本。负责招募的大姐看起来疲惫但热情，她已经在这里干了十几年。「孩子们需要看到有人在乎他们，」她说，「哪怕只是给他们递一碗热汤，都能让他们觉得这个世界还有希望。」你看着社区中心破旧的墙壁上贴满了孩子们画的画——五颜六色，充满了对未来的憧憬。",
+      "type": "social",
+      "ageRange": [18, 60],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "参加志愿者活动", "effects": { "HUMAN": 3, "REP": 2, "MONEY": -200 } },
+        { "id": "branch_2", "text": "没空，自己的生活都顾不过来", "effects": { "HUMAN": -1, "MONEY": 100 } }
+      ],
+      "effects": { "HUMAN": 2, "REP": 1 },
+      "tags": ["志愿者", "社区", "孩子", "希望"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1018,
+      "title": "参与和平抗议活动",
+      "description": "市中心广场上聚集了上千人——他们正在抗议一项新的城市法案，该法案将进一步削减公共服务，将资金转向企业补贴。抗议活动组织有序，人们举着全息标语牌，喊着口号。你站在人群中，感受到了一种久违的集体力量。但你也注意到，在广场周围的制高点上，出现了NCPD的狙击手和武装无人机。领头的组织者通过扩音器喊道：「保持和平！不要给他们武力镇压的借口！」",
+      "type": "social",
+      "ageRange": [18, 60],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "加入抗议队伍，发出声音", "effects": { "HUMAN": 3, "REP": 2, "TRAUMA": 2, "LIFE": -1 } },
+        { "id": "branch_2", "text": "快速离开，不想被波及", "effects": { "LIFE": 1, "HUMAN": -1, "REP": -1 } }
+      ],
+      "effects": { "HUMAN": 1, "REP": 1 },
+      "tags": ["抗议", "法案", "公民", "社会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1019,
+      "title": "为无家可归者发放食物",
+      "description": "你加入了一个社区组织，参与了今晚为无家可归者发放食物的行动。你们在废弃的高架桥下架起了临时的摊位，煮了一大锅热汤和几百份三明治。来领食物的人排起了长队——有带着孩子的母亲、失去肢体的退伍军人、眼神空洞的年轻人和抱着破旧行李袋的老人。你递出一碗碗热汤时，有人轻声说了句「谢谢」。那一刻，你感到自己在做的是一件真正有意义的事。",
+      "type": "social",
+      "ageRange": [18, 60],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "坚持把发放做完", "effects": { "HUMAN": 3, "REP": 2, "MONEY": -200 } },
+        { "id": "branch_2", "text": "帮忙发完食物后离开", "effects": { "HUMAN": 1, "REP": 1 } }
+      ],
+      "effects": { "HUMAN": 2, "REP": 1 },
+      "tags": ["无家可归", "食物", "志愿", "公益"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1020,
+      "title": "市政厅听证会",
+      "description": "市政府就「旧城区改造计划」召开了一场公开听证会。这个计划将拆除你居住的那片老城区，取而代之的是一座全新的商业综合体。开发商承诺提供「安置补偿」，但金额少得可笑。居民们推举你作为代表在听证会上发言。你站在市政厅的大厅里，面对一排西装革履的官员和企业代表，背后是几十双满怀期待的眼睛。你的发言可能会改变很多人的命运。",
+      "type": "social",
+      "ageRange": [22, 60],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "branch_1", "text": "尽力发言，为居民争取权益", "effects": { "REP": 3, "HUMAN": 3, "TRAUMA": 2, "MONEY": -500 } },
+        { "id": "branch_2", "text": "找个借口不去，不想当出头鸟", "effects": { "HUMAN": -2, "REP": -1, "MONEY": 200 } }
+      ],
+      "effects": { "REP": 1, "HUMAN": 1 },
+      "tags": ["市政厅", "听证会", "拆迁", "权益"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1021,
+      "title": "文章在网上火了",
+      "description": "你花了几个晚上写了一篇关于夜之城底层生活的文章——没有粉饰，没有夸张，只是忠实地记录了你和周围人的日常。你把它发到了网上，然后就睡觉了。第二天早上醒来，你的通知栏炸了。文章被转发了上万次，评论成千上万。有人骂你「抹黑夜之城」，有人说你「说出了我们的心声」，还有N54新闻的记者留言想采访你。你的数据板不停地嗡嗡作响，你的名字第一次成了网络搜索的热词。",
+      "type": "social",
+      "ageRange": [18, 55],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "branch_1", "text": "接受媒体采访，扩大影响力", "effects": { "REP": 4, "STYLE": 2, "MONEY": 2000, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "低调处理，不想成为公众人物", "effects": { "HUMAN": 2, "REP": 1 } }
+      ],
+      "effects": { "REP": 2, "STYLE": 1 },
+      "tags": ["文章", "走红", "网络", "舆论"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1022,
+      "title": "在社交媒体上揭露企业丑闻",
+      "description": "你手上掌握了一份确实的证据——某家大型企业向市政官员行贿的记录。数据来自一个匿名的线人，经过你多次核实，真实可信。如果你把这些资料发到社交媒体上，将会引发一场地震般的舆论风波。但你也清楚，这家企业有能力让任何「制造麻烦」的人消失。你的线人在发完资料后就再也没有联系过你。你的手指悬在「发布」按钮上方，感受着那份沉甸甸的重量。",
+      "type": "cyber",
+      "ageRange": [24, 55],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "曝光丑闻，不顾个人安危", "effects": { "REP": 4, "HUMAN": 3, "TRAUMA": 3, "LIFE": -2 } },
+        { "id": "branch_2", "text": "暂时按下不表，寻找更安全的方式", "effects": { "TECH": 2, "HUMAN": 1, "TRAUMA": 1 } }
+      ],
+      "effects": { "REP": 1, "HUMAN": 1, "TRAUMA": 2 },
+      "tags": ["揭露", "丑闻", "企业", "勇气"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1023,
+      "title": "街头艺术家的梦想",
+      "description": "你路过一面巨大的空白墙面时，遇到了一位正在创作的街头艺术家。他/她正在用全息喷枪在墙上绘制一幅巨型的赛博朋克壁画——一个女孩的眼睛里倒映着燃烧的城市。艺术家停下来抽了根烟，和你聊了起来。「这座城市很脏，很乱，也很美。我想把它的灵魂画下来。」他/她说想筹钱办一个街头艺术展，让更多人看到夜之城真实的一面。他/她需要赞助，但承诺展览的收入会分你一份。",
+      "type": "social",
+      "ageRange": [18, 50],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "资助这位艺术家", "effects": { "STYLE": 2, "REP": 2, "HUMAN": 2, "MONEY": -2000 } },
+        { "id": "branch_2", "text": "欣赏但无法资助", "effects": { "STYLE": 1, "HUMAN": 1 } }
+      ],
+      "effects": { "STYLE": 1, "HUMAN": 1 },
+      "tags": ["艺术", "街头", "壁画", "梦想"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1024,
+      "title": "邻居的噪音投诉",
+      "description": "你楼上搬来了一个新邻居。每到深夜一两点，他/她就开始放音乐——那种震得你天花板掉灰的低音。你上楼敲过三次门，对方每次都道歉说会注意，但第二天一切照旧。今晚你的忍耐到了极限。你已经连续一周失眠了，上班时在工位上打瞌睡被主管警告。你拿着数据板准备录音取证，但你的手在半空中停住了——你听到了楼上传来哭声，那是一种被压抑的、绝望的哭泣。",
+      "type": "daily",
+      "ageRange": [20, 55],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "再次上楼，这次试着了解情况", "effects": { "HUMAN": 2, "REP": 1, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "直接向物业投诉", "effects": { "HUMAN": -1, "MONEY": -200, "LIFE": 1 } }
+      ],
+      "effects": { "TRAUMA": 1, "LIFE": -1 },
+      "tags": ["邻居", "噪音", "投诉", "生活"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1025,
+      "title": "老同学聚会",
+      "description": "你的高中同学组织了一场同学聚会，地点在市中心一家翻新的音乐酒吧。你二十年前的同学从各方赶来——有人成了企业高管，有人还在街头挣扎，有人已经变成了满身义体的赛博佣兵。大家坐在一起，努力寻找着共同的话题。全息投影播放着当年的毕业照，那些青涩的面孔和现在形成了强烈的对比。当年的校花现在脸上布满了合成皮肤的接缝。当年最调皮的男生，现在是NCPD的副局长。",
+      "type": "social",
+      "ageRange": [30, 55],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 30,
+      "branches": [
+        { "id": "branch_1", "text": "开心参加，和老同学叙旧", "effects": { "HUMAN": 2, "REP": 1, "STYLE": 1, "MONEY": -300 } },
+        { "id": "branch_2", "text": "不参加，往事不堪回首", "effects": { "HUMAN": -1, "TRAUMA": -1 } }
+      ],
+      "effects": { "HUMAN": 1, "REP": 1 },
+      "tags": ["同学", "聚会", "回忆", "变化"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1026,
+      "title": "陌生人分享的超梦回忆",
+      "description": "在某个地下酒吧里，一个陌生人主动邀请你共享一段超梦体验——这是他/她最珍贵的记忆片段。你犹豫了一下，然后决定接受。戴上头显后，你看到了一段画面：一个年轻的女孩在一片金黄色的麦田里奔跑，阳光洒在她的脸上，远处的风车在缓缓转动。这段回忆如此纯净、温暖，和你身处的这座钢铁与霓虹的城市形成了天堂与地狱般的反差。退出超梦后，陌生人微微一笑：「那是我还住在乡下的日子。现在那里已经变成荒坂的工厂了。」",
+      "type": "cyber",
+      "ageRange": [20, 55],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "和陌生人分享自己的回忆作为交换", "effects": { "HUMAN": 3, "STYLE": 1, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "感谢分享，但不做交换", "effects": { "HUMAN": 1, "TRAUMA": -1 } }
+      ],
+      "effects": { "HUMAN": 2, "TRAUMA": -1 },
+      "tags": ["超梦", "陌生人", "回忆", "温暖"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1027,
+      "title": "街头帮派拉你入伙",
+      "description": "你在街角抽烟时，两个穿着统一颜色夹克的人走过来。他们打量了你一番，然后直接开口：「嘿，我们观察你有一阵子了。你够硬，有胆识，我们老大想和你谈谈。」他们代表着一个规模中等的街头帮派，正在扩张地盘。「加入我们，有吃有喝有人罩。不加入？那以后在这条街上做生意可得小心点。」其中一个拍了拍你的肩膀，力道有点大，带着威胁的意味。",
+      "type": "social",
+      "ageRange": [18, 45],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "branch_1", "text": "加入帮派找靠山", "effects": { "REP": 2, "MONEY": 1500, "CHROME": 1, "HUMAN": -2 } },
+        { "id": "branch_2", "text": "拒绝，表明自己不想掺和", "effects": { "HUMAN": 1, "REP": -1, "TRAUMA": 1 } }
+      ],
+      "effects": { "REP": 1, "HUMAN": -1 },
+      "tags": ["帮派", "招募", "街头", "选择"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1028,
+      "title": "被遗弃的宠物",
+      "description": "你回家时发现公寓门口放着一个纸箱。打开一看，里面是一只瘦骨嶙峋的赛博改造猫——它的左眼是一个发着蓝光的摄像头，脊柱上嵌着一排太阳能充电板。箱子里有一张纸条：「养不起了，求好心人收留。」小猫用那只机械眼和那只正常的眼睛一起注视着你，发出了微弱的叫声。它身上的零件看起来需要维护，而维护费用不便宜。但你看着它蜷缩成一团的样子，心软了。",
+      "type": "social",
+      "ageRange": [18, 60],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "branch_1", "text": "收养这只赛博猫", "effects": { "HUMAN": 3, "MONEY": -1000, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "送到动物收容所", "effects": { "HUMAN": 1, "MONEY": -200 } }
+      ],
+      "effects": { "HUMAN": 2, "MONEY": -300 },
+      "tags": ["宠物", "赛博猫", "收养", "善良"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1029,
+      "title": "城市灯光下的一场对话",
+      "description": "你一个人坐在公寓楼顶的天台边缘，俯瞰着夜之城璀璨的霓虹夜景。这时，你发现隔壁天台也有一个人——同样坐在边缘，同样望着这座不夜城。你们隔着四五米的距离，在呼啸的风中开始了对话。对方是一个你从未见过的陌生人，但在这个特定的夜晚，在这个特定的时刻，你们聊起了人生、梦想、失去和希望。城市的光污染遮蔽了星光，但你们的谈话让彼此感到不那么孤独了。",
+      "type": "social",
+      "ageRange": [18, 60],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "认真交谈，分享彼此的故事", "effects": { "HUMAN": 3, "TRAUMA": -2, "STYLE": 1 } },
+        { "id": "branch_2", "text": "简单聊几句就各自散去", "effects": { "HUMAN": 1, "TRAUMA": -1 } }
+      ],
+      "effects": { "HUMAN": 2, "TRAUMA": -1 },
+      "tags": ["天台", "对话", "夜景", "治愈"],
+      "deathChainEntry": false
+    }
+  ]
+}

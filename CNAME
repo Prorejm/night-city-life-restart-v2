@@ -1,2 +1,2 @@
-# 在此填写自定义域名（例如：nightcity.example.com）
-# 如果不需要自定义域名，请留空此文件
+# 如果使用自定义域名，请填写在此处（例如：nightcity.example.com）
+# 留空则使用默认 GitHub Pages 域名

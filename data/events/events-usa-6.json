@@ -1,0 +1,4782 @@
+{
+  "events": [
+    {
+      "id": 3600,
+      "title": "全息选秀海选",
+      "description": "你在街头被一台无人机拦住，说你的外貌符合《星光2049》全息选秀的海选标准。制作组承诺冠军可以获得全套高级赛博义体和一百万信用点。报名表上有一行灰色小字：参赛者肖像权归节目组永久所有，包括死后AI重建权。",
+      "type": "social",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "报名参加海选",
+          "effects": {
+            "STYLE": 1,
+            "MONEY": 200,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝并撕掉报名表",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "索要海选筹备补贴",
+          "effects": {
+            "MONEY": 100,
+            "STYLE": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博选秀",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3601,
+      "title": "节目组黑幕曝光",
+      "description": "有人在暗网爆料，《星光2049》的投票系统被赞助商操控。排名前三的选手都是义体公司的代言人。你的朋友劝你退赛，说这个节目就是一场洗脑秀。但你已经在初赛里投入了不少钱买舞台装备。",
+      "type": "social",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "继续参赛，结果不重要曝光度最重要",
+          "effects": {
+            "STYLE": 2,
+            "MONEY": 150,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "联合其他选手抵制节目组",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "退出比赛及时止损",
+          "effects": {
+            "MONEY": -200,
+            "TRAUMA": -1,
+            "STYLE": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博选秀",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3602,
+      "title": "AI评委毒舌时刻",
+      "description": "节目组的AI评委——一个名叫'水晶小姐'的全息形象——在直播中对你的表演给出了0.5分的评价。她说你的'生物基础太差，建议回厂重修DNA'。这段剪辑在全网病毒式传播，你成了本周最大的表情包素材。",
+      "type": "social",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "自嘲并发梗图蹭流量",
+          "effects": {
+            "STYLE": 3,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "起诉节目组侵犯名誉权",
+          "effects": {
+            "MONEY": 300,
+            "REP": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "去黑市升级义体准备复仇舞台",
+          "effects": {
+            "CHROME": 2,
+            "MONEY": -300,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博选秀",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3603,
+      "title": "粉丝后援会经济",
+      "description": "你在选秀节目中积累了一批粉丝，他们自发成立了后援会。会长联系你，说可以组织付费粉丝见面会和数字签名NFT。但她也暗示有些狂热粉丝可能会跟踪你的日常行踪。这是一个让你又甜又怕的局面。",
+      "type": "social",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全力运营粉丝经济",
+          "effects": {
+            "MONEY": 400,
+            "STYLE": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "保持距离只做正常互动",
+          "effects": {
+            "HUMAN": 2,
+            "STYLE": 1,
+            "MONEY": 50
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "雇佣安保团队保护隐私",
+          "effects": {
+            "MONEY": -300,
+            "TRAUMA": -1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博选秀",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3604,
+      "title": "后台义体赞助交易",
+      "description": "一家赛博义体公司在后台找到你，提出用一套高级光学植入物换取你脖子上方的广告位——他们的纳米墨水会在你的皮肤上循环显示品牌logo。合同期三年，期间不能遮盖。这套植入物在市场上价值十五万信用点。",
+      "type": "social",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受交易获得高级义体",
+          "effects": {
+            "CHROME": 3,
+            "MONEY": 200,
+            "STYLE": -1,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝但尝试谈更好的条件",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "MONEY": 100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "曝光这种肉皮广告的交易",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "MONEY": -200
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博选秀",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3605,
+      "title": "淘汰后的人生岔路",
+      "description": "你在选秀节目中被淘汰了，但制作人私下告诉你可以参加一档更刺激的衍生节目——《义体改造大作战》。这档节目要全程直播参赛者接受高风险的非法义体改造，上次有一名选手差点在台上脑死亡。",
+      "type": "social",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加衍生节目拼一把",
+          "effects": {
+            "CHROME": 2,
+            "MONEY": 500,
+            "TRAUMA": 3,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝并回归正常生活",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用积累的知名度转行做网红",
+          "effects": {
+            "STYLE": 2,
+            "MONEY": 200,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博选秀",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3606,
+      "title": "选秀冠军的诅咒",
+      "description": "上一季选秀冠军被发现在廉价公寓里精神崩溃，她的神经链接里被植入了永久性的品牌广告程序。节目组声称这是'合同条款中的正常数字资产植入'。医疗费需要五十万信用点才能移除。这件事在你的选手群里引起恐慌。",
+      "type": "social",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "组织选手集体要求合同透明",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "提前找律师检查自己的合同",
+          "effects": {
+            "MONEY": -200,
+            "TECH": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "事不关己继续准备比赛",
+          "effects": {
+            "STYLE": 1,
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博选秀",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3607,
+      "title": "数字遗嘱通知",
+      "description": "你的邮箱收到一封来自'EternalDigital'公司的通知，说你是某个远房亲戚数字遗产的潜在继承人。遗产包括一个加密钱包、三个虚拟地产和一具可回收的生物质。你需要签署数字协议才能查看具体内容。客服AI催促你在72小时内确认。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受继承权查看遗产",
+          "effects": {
+            "MONEY": 300,
+            "TECH": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "联系律师核实遗产真实性",
+          "effects": {
+            "MONEY": -150,
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放弃继承权避免麻烦",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字遗产",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3608,
+      "title": "加密钱包争夺战",
+      "description": "你继承了一个加密钱包，但需要破解三层数字锁才能访问。同时，另外两个自称是死者'数字伴侣'的人也在争夺这笔遗产。他们都拥有某种形式的法律文件。其中一个人看起来像是一个AI化身，但她声称自己有人权。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "花时间破解数字锁",
+          "effects": {
+            "TECH": 3,
+            "MONEY": 500,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "与其他继承人协商平分",
+          "effects": {
+            "HUMAN": 2,
+            "MONEY": 200,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放弃遗产转让给AI伴侣",
+          "effects": {
+            "HUMAN": 2,
+            "TECH": 1,
+            "MONEY": -100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字遗产",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3609,
+      "title": "虚拟地产税单",
+      "description": "你继承的数字遗产中包括一块元宇宙中的虚拟地产，但随之而来的是每年十五万信用点的虚拟地产税。如果你不缴税，政府有权将你的神经链接中的数字资产扣押拍卖。这块地目前的市场估价已经比去年跌了40%。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "缴纳地产税保留资产",
+          "effects": {
+            "MONEY": -500,
+            "DEBT": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "快速抛售虚拟地产",
+          "effects": {
+            "MONEY": 300,
+            "TECH": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "找税务律师寻找免税漏洞",
+          "effects": {
+            "MONEY": -200,
+            "TECH": 2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字遗产",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3610,
+      "title": "生物质继承纠纷",
+      "description": "你继承的遗产中包括一具'可回收生物质'——实际上是死者身体经过处理后制成的有机材料。一家生物科技公司声称他们拥有优先购买权，因为这具生物质含有他们专利的基因序列。他们愿意出价二十万信用点。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "卖给生物科技公司",
+          "effects": {
+            "MONEY": 400,
+            "TRAUMA": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝并将生物质安葬",
+          "effects": {
+            "HUMAN": 3,
+            "MONEY": -100,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "第三方拍卖争取更高价",
+          "effects": {
+            "MONEY": 600,
+            "TECH": 1,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字遗产",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3611,
+      "title": "AI遗嘱认证难题",
+      "description": "死者的主要遗嘱是由一个AI律师起草的，但法院拒绝承认AI文件的合法性，除非有真人见证人的数字签名。可是所有签名人已经去世或失联。遗嘱认证陷入了死循环。你的律师费每天都在增加，而你在遗产中的份额被冻结了。",
+      "type": "social",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "雇佣高级律师打持久战",
+          "effects": {
+            "MONEY": -400,
+            "DEBT": 1,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "寻找遗物中的手写签名",
+          "effects": {
+            "HUMAN": 2,
+            "TECH": -1,
+            "MONEY": 100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放弃遗嘱认证接受现状",
+          "effects": {
+            "MONEY": -200,
+            "TRAUMA": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字遗产",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3612,
+      "title": "数字记忆继承",
+      "description": "你继承了一个特殊的数字遗产——死者生前五年的完整感官记忆记录。你可以选择将这些记忆上传到自己的神经链接中，体验另一个人的完整人生。但医生警告说这种做法可能导致记忆混淆和人格分裂。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "上传记忆体验新人生",
+          "effects": {
+            "TECH": 2,
+            "TRAUMA": 3,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "加密保存暂不上传",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "卖给黑市记忆收藏家",
+          "effects": {
+            "MONEY": 500,
+            "TRAUMA": 1,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字遗产",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3613,
+      "title": "遗产税突击",
+      "description": "国税局的AI审计系统锁定了你的遗产继承案，要求你缴纳高达55%的数字遗产税。税额超过了遗产本身的现金价值。你必须在三十天内做出决定，否则系统将自动扣押你名下的所有数字资产。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "变卖遗产缴税",
+          "effects": {
+            "MONEY": -800,
+            "DEBT": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "聘请税务律师上诉",
+          "effects": {
+            "MONEY": -300,
+            "TECH": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "将遗产转入海外数字账户",
+          "effects": {
+            "TECH": 3,
+            "DEBT": 1,
+            "REP": -2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字遗产",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3614,
+      "title": "AI代孕广告",
+      "description": "你的神经链接收到一条定向广告：'想拥有完美的后代吗？GenBaby 2.0——AI基因优化代孕服务，从胚胎到出生全程数字化监控。现在下单送新生儿赛博体检。'广告里那个微笑的婴儿是CGI合成的，看起来过于完美，令人不安。",
+      "type": "social",
+      "ageRange": [
+        20,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "咨询代孕服务详情",
+          "effects": {
+            "TECH": 1,
+            "MONEY": -100,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "屏蔽广告并举报",
+          "effects": {
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "好奇预约参观代孕中心",
+          "effects": {
+            "STYLE": 1,
+            "MONEY": -50,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博代孕",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3615,
+      "title": "代孕合同陷阱",
+      "description": "你在仔细阅读AI代孕合同后发现了一条隐藏条款：'若甲方(代孕方)出现神经系统并发症，乙方(委托方)有权在胚胎发育至20周时单方面终止协议。'这意味着如果代孕过程中出问题，你或者胚胎可能被弃置。条款用4号字体藏在第47页。",
+      "type": "social",
+      "ageRange": [
+        20,
+        50
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "要求修改条款否则拒绝签约",
+          "effects": {
+            "HUMAN": 2,
+            "TECH": 1,
+            "MONEY": -200
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "签署合同因为太想要孩子了",
+          "effects": {
+            "MONEY": -500,
+            "TRAUMA": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "找媒体曝光代孕公司的霸王条款",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "MONEY": 100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博代孕",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3616,
+      "title": "代孕婴儿基因定制",
+      "description": "代孕公司提供一份'基因升级'套餐：可以定制你未来孩子的发色、虹膜图案、预估智商区间和运动天赋。基础套餐免费，但每一额外定制项收费五万信用点。销售AI说这是'负责任的育儿投资'。",
+      "type": "social",
+      "ageRange": [
+        22,
+        50
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "花大价钱定制全套基因优化",
+          "effects": {
+            "MONEY": -600,
+            "TECH": 2,
+            "HUMAN": -1,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "选择基础套餐顺其自然",
+          "effects": {
+            "HUMAN": 2,
+            "MONEY": -200
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "取消代孕计划",
+          "effects": {
+            "HUMAN": 2,
+            "MONEY": -100,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博代孕",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3617,
+      "title": "代孕伦理讨论",
+      "description": "你所在的社区组织了一场关于AI代孕伦理的讨论会。一方认为这是人类生殖自由的进步，另一方认为这是在制造商品化人类。有人提到去年有一家代孕工厂被查封，地下室里有三百个废弃的基因胚胎。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持代孕自由发表观点",
+          "effects": {
+            "TECH": 1,
+            "STYLE": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "反对代孕强调生命尊严",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "TECH": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "保持沉默不参与争论",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博代孕",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3618,
+      "title": "代孕婴儿出生异常",
+      "description": "你的代孕婴儿出生了，但基因扫描显示他携带了一种未知的神经增强序列——这是代孕公司未经你同意添加的'赠品'。他们说这是一种'免费升级'，可以提高孩子未来的神经网络兼容性。但你担心这会导致长期健康风险。",
+      "type": "social",
+      "ageRange": [
+        22,
+        55
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受赠品照顾好孩子",
+          "effects": {
+            "HUMAN": 2,
+            "CHROME": 1,
+            "LIFE": 1,
+            "MONEY": -200
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "起诉代孕公司要求赔偿",
+          "effects": {
+            "MONEY": 500,
+            "REP": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "申请医疗干预移除序列",
+          "effects": {
+            "MONEY": -800,
+            "TECH": 2,
+            "LIFE": -1,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博代孕",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3619,
+      "title": "代孕黑市狂想曲",
+      "description": "你在暗网上发现了一个代孕黑市，那里出售'设计师婴儿'——可以按照客户要求定制任何外观和神经特征。价格从五十万信用点起步，但所有交易都无监管无质保。你认识的一个地下诊所医生说他可以给你'友情价'。",
+      "type": "social",
+      "ageRange": [
+        22,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在黑市下单定制婴儿",
+          "effects": {
+            "MONEY": -500,
+            "DEBT": 3,
+            "TECH": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "举报黑市给网络安全部门",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "MONEY": 200
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "无视并永不接触",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博代孕",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3620,
+      "title": "区块链公证体验",
+      "description": "政府推广的'智能公证'系统让你可以用区块链技术完成所有法律文件的签署。AI公证员会在全息屏幕上逐条朗读条款，然后你的神经链接会生成数字签名。据说这套系统从未被攻破过，但上个月刚有人因为私钥泄露而倾家荡产。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "使用区块链公证快速办理",
+          "effects": {
+            "TECH": 2,
+            "MONEY": -50,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "坚持用传统纸质公证更安心",
+          "effects": {
+            "HUMAN": 1,
+            "MONEY": -100,
+            "TECH": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "研究区块链公证的漏洞",
+          "effects": {
+            "TECH": 3,
+            "TRAUMA": 1,
+            "MONEY": 50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "智能公证",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3621,
+      "title": "私钥丢失危机",
+      "description": "你不小心删除了区块链钱包的私钥，里面存放着你的房产证和身份证明。没有私钥，你就无法证明你是你。AI公证员冷漠地告诉你需要提交十二种生物特征验证才能重置，整个过程可能需要六个月。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "老实走生物验证流程",
+          "effects": {
+            "MONEY": -200,
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找黑客朋友尝试找回私钥",
+          "effects": {
+            "TECH": 3,
+            "MONEY": -300,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "去黑市买假身份重新注册",
+          "effects": {
+            "MONEY": -500,
+            "DEBT": 2,
+            "REP": -2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "智能公证",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3622,
+      "title": "智能合同自动执行",
+      "description": "你之前签署的一份智能合同触发了自动执行条款——因为你上个月的收入超过了某个阈值，合同自动从你的账户中扣除了15%的'技术发展税'转给了签约方。AI公证员确认这笔扣款完全符合合同规定，但你根本不记得签过这样的条款。",
+      "type": "social",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受扣款并仔细检查其他合约",
+          "effects": {
+            "MONEY": -300,
+            "TECH": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "申请临时冻结并找律师",
+          "effects": {
+            "MONEY": -200,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "学黑客技术在区块链上找回损失",
+          "effects": {
+            "TECH": 3,
+            "MONEY": 200,
+            "DEBT": 2,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "智能公证",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3623,
+      "title": "AI公证员罢工",
+      "description": "全国的AI公证员系统因为一次升级故障同时宕机了。所有依赖智能公证的交易全部停摆——房产过户冻结、遗产继承暂停、甚至连法院的审判都延期了。人工窗口前排起了长龙，队伍里有人在吵架，有人在哭。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "排队等人工窗口碰运气",
+          "effects": {
+            "HUMAN": 1,
+            "MONEY": -50,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自学区块链协议自助操作",
+          "effects": {
+            "TECH": 3,
+            "TRAUMA": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "找黄牛插队处理",
+          "effects": {
+            "MONEY": -300,
+            "REP": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "智能公证",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3624,
+      "title": "数字签名身份盗窃",
+      "description": "你的数字签名被黑客克隆了，有人用你的身份签署了一份巨额贷款合同。AI公证系统显示签名验证通过——因为黑客复制了你的神经链接特征码。你每月开始收到催款通知，而公证公司说'系统没有错误记录'。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "报警并升级神经加密系统",
+          "effects": {
+            "MONEY": -400,
+            "TECH": 2,
+            "DEBT": -1,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找暗网黑客反向追踪",
+          "effects": {
+            "TECH": 2,
+            "MONEY": -200,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "黑掉公证系统删除记录",
+          "effects": {
+            "TECH": 3,
+            "REP": -3,
+            "DEBT": 2,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "智能公证",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3625,
+      "title": "智能遗嘱更新",
+      "description": "你收到AI公证员的提醒，说你的智能遗嘱需要更新以适配最新的区块链协议。如果你不在30天内更新，你的遗嘱将被判定为'格式不兼容'而失效。更新费用是五百信用点，但可以一次性绑定十个数字资产的分配。",
+      "type": "daily",
+      "ageRange": [
+        22,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "付费更新智能遗嘱",
+          "effects": {
+            "MONEY": -100,
+            "TECH": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自己研究协议并手动更新",
+          "effects": {
+            "TECH": 2,
+            "MONEY": -30,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "暂时不管以后再处理",
+          "effects": {
+            "TRAUMA": 1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "智能公证",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3626,
+      "title": "区块链婚姻公证",
+      "description": "你和伴侣考虑用区块链公证结婚——智能婚姻合约一旦签署，资产自动合并、继承权自动生效、离婚条款自动执行。但你的伴侣的母亲坚持要求教堂婚礼，说'区块链结婚不算真正的婚姻'。你夹在中间左右为难。",
+      "type": "social",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "选择区块链公证省事高效",
+          "effects": {
+            "TECH": 1,
+            "MONEY": -100,
+            "STYLE": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "办传统教堂婚礼尊重老人",
+          "effects": {
+            "MONEY": -400,
+            "HUMAN": 2,
+            "TRAUMA": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "两个都办——公证合法教堂庆贺",
+          "effects": {
+            "MONEY": -600,
+            "DEBT": 2,
+            "STYLE": 2,
+            "HUMAN": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "智能公证",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3627,
+      "title": "数字纹身初体验",
+      "description": "街角新开的'纳米刺青'工作室提供动态数字纹身服务——花纹可以在你的皮肤上流动、变色、甚至播放动画。老板说如今只有老年人才纹静态图案。他展示了自己的胳膊，上面的全息龙正在追逐发光的蝴蝶。",
+      "type": "social",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "纹一个炫酷的动态图案",
+          "effects": {
+            "STYLE": 1,
+            "MONEY": -200
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "选择低调的静态纹身",
+          "effects": {
+            "STYLE": 1,
+            "MONEY": -80
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "只是看看不纹",
+          "effects": {
+            "HUMAN": 1,
+            "STYLE": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博纹身",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3628,
+      "title": "纳米纹身感染",
+      "description": "你的数字纹身开始出问题了——纳米颜料向周围皮肤扩散，图案变得模糊不清，而且发痒难忍。诊所诊断是纳米墨水排异反应，需要立即移除。移除手术的费用是纹身价格的三倍，而且过程非常疼。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "花钱移除纹身恢复健康",
+          "effects": {
+            "MONEY": -400,
+            "LIFE": 2,
+            "TRAUMA": 2,
+            "STYLE": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用药物控制感染保留纹身",
+          "effects": {
+            "MONEY": -150,
+            "LIFE": -1,
+            "STYLE": 1,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "找原店家理论要求赔偿",
+          "effects": {
+            "MONEY": 200,
+            "REP": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博纹身",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3629,
+      "title": "数字纹身求职歧视",
+      "description": "你去一家传统公司面试，面试官说你的数字纹身会被公司的AI门禁系统识别为'不安全信号'。他们要求你用皮肤遮盖剂遮挡纹身才能入职。你的朋友认为这是对你自我表达的压迫，但你需要这份工作。",
+      "type": "social",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "遮盖纹身接受工作",
+          "effects": {
+            "MONEY": 200,
+            "STYLE": -1,
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝工作坚持自我表达",
+          "effects": {
+            "STYLE": 2,
+            "REP": 1,
+            "MONEY": -200,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "投诉公司就业歧视",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "MONEY": 100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博纹身",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3630,
+      "title": "纹身NFT交易平台",
+      "description": "出现了一个交易平台，可以买卖热门纹身设计师的数字纹身NFT。你可以在皮肤上展示别人的设计作品，转卖时还可以分版税。但有人警告说穿戴别人的NFT纹身会让你的神经链接被原作者的签名污染。",
+      "type": "social",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买知名设计师的纹身NFT",
+          "effects": {
+            "STYLE": 1,
+            "MONEY": -300,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "上传自己的设计卖NFT",
+          "effects": {
+            "MONEY": 300,
+            "STYLE": 2,
+            "TECH": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝NFT纹身保持原创",
+          "effects": {
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博纹身",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3631,
+      "title": "发光纹身夜店文化",
+      "description": "你去的夜店正在搞'发光之夜'——所有顾客必须展示自己的数字纹身才能入场。最流行的款式是'神经脉动'：纹身会随着音乐节奏在你的皮肤上闪烁和跳动。有人因为纹身不够炫而被保安拦在了门外。",
+      "type": "social",
+      "ageRange": [
+        18,
+        45
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "升级纹身效果参加派对",
+          "effects": {
+            "STYLE": 2,
+            "MONEY": -150,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用便宜的临时荧光贴纸代替",
+          "effects": {
+            "STYLE": -1,
+            "MONEY": -20
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "不屑于这种潮流文化",
+          "effects": {
+            "HUMAN": 1,
+            "STYLE": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博纹身",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3632,
+      "title": "政治抗议数字纹身",
+      "description": "越来越多的人用数字纹身在皮肤上显示政治标语和抗议符号。警方开发了专门的扫描仪，可以实时识别带有敏感政治信息的纹身并标记佩戴者。你看到有人在街上被扫脸后直接被无人机跟踪。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "纹上政治标语表达立场",
+          "effects": {
+            "REP": 2,
+            "STYLE": 2,
+            "HUMAN": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "保持沉默不碰政治",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "帮别人设计抗议纹身赚钱",
+          "effects": {
+            "MONEY": 300,
+            "TECH": 1,
+            "REP": 1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博纹身",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3633,
+      "title": "纹身移除黑市",
+      "description": "一种快速移除数字纹身的黑市设备在城市里悄悄流传。它用高能纳米脉冲直接轰碎皮肤中的颜料颗粒，效果立竿见影，但据说可能会损伤神经末梢。你想洗掉前男友/女友的名字纹身，正规医院要排队三个月。",
+      "type": "social",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "冒险使用黑市设备移除",
+          "effects": {
+            "MONEY": -200,
+            "LIFE": -1,
+            "TRAUMA": 2,
+            "STYLE": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "排队等正规医院治疗",
+          "effects": {
+            "MONEY": -500,
+            "TRAUMA": 1,
+            "STYLE": -2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把旧纹身改造成新设计",
+          "effects": {
+            "MONEY": -300,
+            "STYLE": 2,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博纹身",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3634,
+      "title": "全息追悼会",
+      "description": "你参加了一场全息追悼会——死者的AI化身站在台上和来宾进行最后的对话。他的笑容很温暖，语调和生前几乎一模一样。只有偶尔的像素闪烁提醒你这只是一个数字投影。家属说这套服务花了二十万信用点。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "与AI化身对话做最后的告别",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": -1,
+            "MONEY": -50
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "觉得太诡异提前离场",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -1,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "偷偷记录下AI化身的代码",
+          "effects": {
+            "TECH": 2,
+            "TRAUMA": 1,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字葬礼",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3635,
+      "title": "在线悼念骚扰",
+      "description": "你为逝去的亲人在线上建立了一个悼念空间，但经常有网络喷子闯入并发表侮辱性言论。悼念平台的客服AI自动回复说'已记录您的投诉'，但从未采取实际行动。你看到其他悼念页面也被同样的账号骚扰。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加强悼念页面隐私设置",
+          "effects": {
+            "TECH": 2,
+            "MONEY": -50,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "公开反击喷子并组织抵制",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "关闭线上悼念转为私下纪念",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 1,
+            "TECH": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字葬礼",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3636,
+      "title": "数字永生套餐",
+      "description": "一家名为'EterniTech'的公司向你推销'数字永生'套餐——在他们云端永久保存你的意识副本，你的后代可以随时和'你'聊天。费用每月二百信用点，但如果连续三个月欠费，你的数字意识将被永久删除。",
+      "type": "social",
+      "ageRange": [
+        22,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买最贵的终身套餐",
+          "effects": {
+            "MONEY": -500,
+            "TECH": 2,
+            "TRAUMA": -1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "购买基础月付套餐",
+          "effects": {
+            "MONEY": -100,
+            "TECH": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝数字永生接受自然死亡",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字葬礼",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3637,
+      "title": "赛博墓地投资",
+      "description": "有人向你推销一块赛博墓地的'永久使用权'——一个位于高密度服务器的虚拟空间，你可以把自己的数据意识存放在那里，旁边是好莱坞明星的数字墓碑。价格堪比市中心公寓的定金，而且墓地公司提醒'价格每年上涨20%'。",
+      "type": "social",
+      "ageRange": [
+        22,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "投资赛博墓地作为未来规划",
+          "effects": {
+            "MONEY": -500,
+            "DEBT": 2,
+            "TECH": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "持观望态度看看再说",
+          "effects": {
+            "MONEY": 0,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "认为这是荒谬的泡沫",
+          "effects": {
+            "HUMAN": 2,
+            "TECH": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字葬礼",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3638,
+      "title": "悼念AI复活诈骗",
+      "description": "你收到一条自称来自'亡灵复苏'公司的消息，声称可以利用你已故亲人的数字痕迹重建他的意识。报价从一万到一百万信用点不等。你明知道这很可能是诈骗，但那个声音真的太像你死去亲人了。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "花大价钱尝试复活亲人",
+          "effects": {
+            "MONEY": -600,
+            "DEBT": 2,
+            "TRAUMA": 3,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "举报诈骗公司防止他人上当",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "MONEY": 50
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "保留消息但不回复",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字葬礼",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3639,
+      "title": "绿色数字葬礼",
+      "description": "一种新型的'绿色数字葬礼'正在流行——将死者的骨灰制成纳米颗粒，播撒在全息风景中。家属可以通过VR眼镜在任何地方'探访'这片风景。价格只有传统葬礼的一半，但你的宗教长辈认为这种方式'不尊重'。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "选择绿色数字葬礼环保又省钱",
+          "effects": {
+            "MONEY": -200,
+            "TECH": 1,
+            "HUMAN": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "选择传统土葬尊重家族意愿",
+          "effects": {
+            "MONEY": -500,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "两种折中——传统仪式加数字纪念",
+          "effects": {
+            "MONEY": -400,
+            "DEBT": 1,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字葬礼",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3640,
+      "title": "葬礼直播产业",
+      "description": "你发现有些家庭将葬礼进行全平台直播，靠观众的虚拟打赏来支付丧葬费用。一个火爆的葬礼直播可以收到超过十万信用点的打赏——如果死者生前是个网红的话。你的姨妈建议把母亲的葬礼也直播出去。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "同意直播葬礼赚取费用",
+          "effects": {
+            "MONEY": 400,
+            "STYLE": 1,
+            "HUMAN": -2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "严厉拒绝并斥责姨妈",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "MONEY": -200
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "只对亲属小范围直播",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "MONEY": 50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字葬礼",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3641,
+      "title": "数字贫民窟探访",
+      "description": "你路过城市边缘的赛博流浪汉营地——这里聚集着被数字经济抛弃的人们。他们住用废弃义体和电路板搭成的棚屋里，靠翻找垃圾站的电子废料为生。一个全身只有30%生物组织的老人向你讨要一个充电接口。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "施舍信用点和食物",
+          "effects": {
+            "HUMAN": 3,
+            "MONEY": -100,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "快速离开不惹麻烦",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "观察并记录这里的生态",
+          "effects": {
+            "TECH": 2,
+            "TRAUMA": 2,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博流浪汉",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3642,
+      "title": "营地互助网络",
+      "description": "赛博流浪汉们建立了一个去中心化的互助网络——他们用废弃的神经链接组建了一个自制的局域网，互相分享食物、药品和义体维修知识。这个网络不连接主网，所以不受政府监控。他们邀请你加入看看。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入网络并捐赠一些物资",
+          "effects": {
+            "HUMAN": 3,
+            "TECH": 2,
+            "MONEY": -100,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "不愿意冒险连接未知网络",
+          "effects": {
+            "TECH": 0,
+            "TRAUMA": -1,
+            "HUMAN": 0
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把这个网络的信息卖给大公司",
+          "effects": {
+            "MONEY": 300,
+            "REP": -2,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博流浪汉",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3643,
+      "title": "警方清场行动",
+      "description": "警方的无人机编队突然出现在赛博流浪汉营地上空，宣布这是一次'市容整治行动'。他们用声波武器驱赶居民，用工程机器人摧毁棚屋。一个流浪汉抱着自己仅存的义体零件跪在地上哭泣。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "挺身而出阻止暴力清场",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 3,
+            "TRAUMA": 3,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "远远旁观不敢干涉",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用手机拍摄全过程曝光",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "MONEY": 150,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博流浪汉",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3644,
+      "title": "义体回收黑市",
+      "description": "赛博流浪汉营地附近有一个义体回收黑市——这里出售从死人身上拆下来的二手义体。价格便宜但质量没有保障，有些义体还带着原主人的神经印记。你戴上试用的手臂时，感受到了陌生人的幻肢记忆。",
+      "type": "social",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "淘一个便宜的二手义体",
+          "effects": {
+            "CHROME": 2,
+            "MONEY": -150,
+            "TRAUMA": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只是看看不买",
+          "effects": {
+            "TECH": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "举报这个黑市给监管部门",
+          "effects": {
+            "REP": 1,
+            "HUMAN": 1,
+            "MONEY": 100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博流浪汉",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3645,
+      "title": "流浪汉中的数据工匠",
+      "description": "你在营地里遇到了一个曾经是顶级数据工程师的流浪汉。他因为拒绝为公司开发监控AI而被开除并列入行业黑名单。现在他靠帮营地修理电子设备和编写简易程序换取食物。他说可以教你一些真正的黑客技术。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拜师学习黑客技术",
+          "effects": {
+            "TECH": 4,
+            "HUMAN": 2,
+            "MONEY": -50,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "资助他重新开始新生活",
+          "effects": {
+            "MONEY": -300,
+            "HUMAN": 3,
+            "REP": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "听完故事就离开",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博流浪汉",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3646,
+      "title": "垃圾数据采矿",
+      "description": "营地里有人在从事'垃圾数据采矿'——从大公司丢弃的硬盘碎片中恢复有价值的信息。你听说有人挖到了一份大公司的商业机密，卖了两万信用点。但你也知道上一个这么做的人被公司的安全AI找上门了。",
+      "type": "social",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入垃圾数据采矿",
+          "effects": {
+            "TECH": 2,
+            "MONEY": 300,
+            "DEBT": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝这种高风险的勾当",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "提供数据恢复服务赚钱",
+          "effects": {
+            "TECH": 2,
+            "MONEY": 200,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博流浪汉",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3647,
+      "title": "营地疫苗危机",
+      "description": "营地爆发了一种由劣质义体引发的神经病毒感染。没有医疗援助，没有疫苗，流浪汉们只能靠自制的草药和电路短接来硬抗。一个母亲抱着发烧的婴儿恳求你帮忙去城里买抗生素。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "去城里买药救人",
+          "effects": {
+            "HUMAN": 3,
+            "MONEY": -200,
+            "LIFE": 1,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "联系媒体曝光营地困境",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "MONEY": 100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "自身难保只能离开",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -2,
+            "MONEY": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博流浪汉",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3648,
+      "title": "AI写作助手推荐",
+      "description": "你的神经链接收到了'文思泉涌'AI写作工坊的推广——声称可以在五分钟内帮你写出一篇百万阅读量的爆款文章。你只需要输入三个关键词，AI会自动生成完整文章并适配各大平台的算法。朋友圈里已经有人在用了。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "订阅AI写作服务",
+          "effects": {
+            "TECH": 2,
+            "MONEY": -80,
+            "STYLE": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "坚持自己手动创作",
+          "effects": {
+            "HUMAN": 2,
+            "STYLE": 1,
+            "TECH": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "试用免费版看效果",
+          "effects": {
+            "TECH": 1,
+            "STYLE": 0,
+            "MONEY": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "AI写作",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3649,
+      "title": "AI作品版权纠纷",
+      "description": "你用AI写作工坊发表了一篇爆款文章，但另一个作者指控你剽窃——因为你们的文章相似度高达87%。你解释说这是AI写的，但法庭不承认AI生成内容的版权归属。AI工坊也撇清责任说'工具不负责创作结果'。",
+      "type": "social",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "付费和解并注明AI辅助",
+          "effects": {
+            "MONEY": -300,
+            "REP": -1,
+            "TECH": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "聘请律师打版权官司",
+          "effects": {
+            "MONEY": -400,
+            "REP": 1,
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "主动删除文章重新原创",
+          "effects": {
+            "HUMAN": 2,
+            "STYLE": 1,
+            "MONEY": -100,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "AI写作",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3650,
+      "title": "AI写作工坊线下沙龙",
+      "description": "AI写作工坊举办了一场线下沙龙，邀请'最佳AI协作作者'分享经验。主持人在台上说：'人类提供情感，AI提供效率——这是写作的未来。'台下坐满了神情复杂的老作家和兴奋的年轻人。你坐在中间不知所措。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "上台分享自己的AI协作经验",
+          "effects": {
+            "REP": 2,
+            "STYLE": 2,
+            "TECH": 1,
+            "MONEY": 100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "为传统写作发声反对AI",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "TECH": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "默默听讲不表态",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "AI写作",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3651,
+      "title": "AI文学奖丑闻",
+      "description": "今年的'全美小说大奖'得主被曝出整部小说都是由AI生成的。作者只在接受采访时口头修改了几个标点符号。文学界一片哗然，但评委会主席辩解说'使用工具不是罪恶'。奖金已经发出去了，一百万信用点。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持AI创作的合法地位",
+          "effects": {
+            "TECH": 2,
+            "STYLE": 1,
+            "HUMAN": -1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "抵制AI参加文学创作",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "TECH": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "自己也用AI写小说参赛",
+          "effects": {
+            "TECH": 2,
+            "MONEY": 300,
+            "STYLE": 1,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "AI写作",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3652,
+      "title": "AI写作戒毒所",
+      "description": "城里出现了一家'AI写作戒毒所'——帮助那些过度依赖AI写作的人重新学会自己动笔。治疗师说有些患者已经无法在没有AI提示的情况下写出一个完整的句子。他们通过冥想、手写和即兴创作来'重建神经写作回路'。",
+      "type": "social",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "报名参加写作戒毒",
+          "effects": {
+            "HUMAN": 3,
+            "TECH": -2,
+            "MONEY": -200,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "觉得没必要——AI就是未来",
+          "effects": {
+            "TECH": 1,
+            "STYLE": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "采访写一篇报道",
+          "effects": {
+            "MONEY": 150,
+            "TECH": 1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "AI写作",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3653,
+      "title": "暗网AI写作黑产",
+      "description": "你发现暗网上有人利用AI写作工坊批量生成虚假新闻和诈骗文案。他们每天生成上千条内容，专门针对老年人的神经链接推送。一条'拜登宣布发放数字养老金'的假新闻在退休社区里病毒式传播，你认出了熟悉的AI写作痕迹。",
+      "type": "social",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "举报暗网黑产给网安部门",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "MONEY": 200,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "加入他们分一杯羹",
+          "effects": {
+            "MONEY": 500,
+            "DEBT": 2,
+            "REP": -3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "装作没看到不惹事",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "AI写作",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3654,
+      "title": "AI诗人比赛",
+      "description": "社区中心举办了一场'人机诗歌大赛'——人类诗人和AI诗人同台竞技，评委不知道作者是谁。你被邀请作为观众投票。前几轮AI的诗句华丽却空洞，但最后一轮AI写了一首关于'电子芯片的孤独'的诗，全场沉默了。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "投票给AI——它写得更好",
+          "effects": {
+            "TECH": 2,
+            "STYLE": 1,
+            "HUMAN": -1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "投票给人类——情感不可替代",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 1,
+            "TECH": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放弃投票因为你分不清了",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "AI写作",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3655,
+      "title": "赛博健身馆开业",
+      "description": "你家附近新开了一家'钢铁圣殿'赛博健身馆，招牌上写着'你的生物身体只是起点'。健身房里到处都是改造过的健身者——有人用液压臂举重，有人用光学眼校准动作姿势。会员费每月八百信用点，含一次义体润滑油更换。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "办会员卡开始赛博健身",
+          "effects": {
+            "CHROME": 2,
+            "MONEY": -300,
+            "LIFE": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "买次卡先体验几次",
+          "effects": {
+            "CHROME": 1,
+            "MONEY": -80,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "嗤之以鼻——纯天然才是王道",
+          "effects": {
+            "HUMAN": 2,
+            "TECH": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博健身",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3656,
+      "title": "义体强化训练计划",
+      "description": "你的健身教练为你制定了一套义体强化训练计划——包括神经反应速度训练、液压肌肉耐力测试和脊椎强化抗压训练。他说按照这个计划训练三个月，你的综合体能可以超过95%的自然人类。但训练强度非常痛苦。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受高强度训练计划",
+          "effects": {
+            "CHROME": 3,
+            "LIFE": 1,
+            "TRAUMA": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "选择温和的训练方案",
+          "effects": {
+            "CHROME": 1,
+            "LIFE": 1,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放弃训练放弃会员",
+          "effects": {
+            "MONEY": -200,
+            "HUMAN": 0,
+            "CHROME": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博健身",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3657,
+      "title": "义体健身副作用",
+      "description": "你在赛博健身后出现了严重的神经肌肉酸痛——身体的生物部分跟不上义体增强的速度。医生说你的自然肌腱正在撕裂，建议降低训练强度。但你的教练说'没有痛苦就没有收获'，推荐你使用止痛药剂继续训练。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "听医生的话降低强度",
+          "effects": {
+            "LIFE": 2,
+            "CHROME": -1,
+            "TRAUMA": -1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "使用止痛药剂继续猛练",
+          "effects": {
+            "CHROME": 2,
+            "ADDICTION": 1,
+            "TRAUMA": 2,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "更换更适合生物体的训练方案",
+          "effects": {
+            "MONEY": -200,
+            "CHROME": 1,
+            "LIFE": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博健身",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3658,
+      "title": "地下义体格斗赛",
+      "description": "健身房里有人邀请你参加地下义体格斗赛。比赛没有任何规则，参赛者使用改装过的义体进行搏杀。赢家每场可以拿到五千信用点，但上一届冠军现在还在医院里重建下巴。观众会在你的神经链接上下注。",
+      "type": "social",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加地下格斗赛",
+          "effects": {
+            "MONEY": 600,
+            "CHROME": 2,
+            "TRAUMA": 3,
+            "LIFE": -2,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只观战不下场",
+          "effects": {
+            "TRAUMA": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝并举报这个地下拳场",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "MONEY": 100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博健身",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3659,
+      "title": "赛博健身网红",
+      "description": "你在赛博健身上的投入开始有了回报——你的义体线条和训练成果吸引了不少社交媒体粉丝。品牌开始找你代言健身补剂和义体润滑油。你一周可以接到三条广告，但每条广告下面都有人在骂你'假货'。",
+      "type": "social",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受品牌合作做大网红",
+          "effects": {
+            "MONEY": 400,
+            "STYLE": 2,
+            "REP": 1,
+            "CHROME": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝商业化保持纯粹健身",
+          "effects": {
+            "HUMAN": 2,
+            "STYLE": 1,
+            "CHROME": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "开自己的义体改装教程频道",
+          "effects": {
+            "TECH": 2,
+            "MONEY": 200,
+            "STYLE": 2,
+            "REP": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博健身",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3660,
+      "title": "义体药物滥用",
+      "description": "赛博健身圈里流行一种名为'钢铁之血'的注射剂——可以临时提升义体性能300%，但副作用包括短期记忆丧失和心脏骤停风险。你的训练伙伴已经开始用了，他劝你也试试说'比赛就差这一针'。药贩子在健身房的更衣柜里交易。",
+      "type": "social",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "注射钢铁之血提升实力",
+          "effects": {
+            "CHROME": 3,
+            "ADDICTION": 2,
+            "LIFE": -2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "举报药贩子给健身房管理",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "MONEY": 50
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "警告朋友远离药物",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博健身",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3661,
+      "title": "数字典当行探店",
+      "description": "街角新开了一家'数字典当行'——你可以典当自己的数字资产、神经链接中的记忆片段、甚至社交媒体账号的历史记录。老板是一个戴着全息眼镜的机器人，它扫描了你三十秒后给出了估价。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "典当一些不用的数字资产",
+          "effects": {
+            "MONEY": 200,
+            "TECH": -1,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只咨询估价不典当",
+          "effects": {
+            "TECH": 1,
+            "MONEY": 0
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "典当自己的数字记忆",
+          "effects": {
+            "MONEY": 400,
+            "TRAUMA": 2,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字典当",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3662,
+      "title": "加密资产抵押贷款",
+      "description": "数字典当行推出了一项新业务——用你的加密资产作为抵押获取即时贷款。年利率只有8%，比银行贷款低很多。但合同上说如果抵押资产价值下跌超过30%，典当行有权在未通知你的情况下清算资产。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "抵押加密资产获取贷款",
+          "effects": {
+            "MONEY": 500,
+            "DEBT": 2,
+            "TECH": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "觉得风险太高不抵押",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "研究合同寻找法律漏洞",
+          "effects": {
+            "TECH": 2,
+            "MONEY": -50,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字典当",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3663,
+      "title": "记忆典当的代价",
+      "description": "你的朋友典当了童年记忆来还债，现在她不记得自己的母亲长什么样了。典当行说这是'永久性交易'，无法赎回。她每天看着老照片流泪，但那张脸对她来说已经彻底陌生。你在考虑要不要也典当一些痛苦记忆。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "典当痛苦记忆换取金钱",
+          "effects": {
+            "MONEY": 300,
+            "TRAUMA": -2,
+            "HUMAN": -2,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝典当——记忆就是你自己",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "帮朋友筹钱赎回记忆",
+          "effects": {
+            "MONEY": -400,
+            "HUMAN": 3,
+            "REP": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字典当",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3664,
+      "title": "典当行收购潮",
+      "description": "大型连锁典当行正在收购城市里所有的独立数字典当行。他们出价很高，但收购后的规矩变了——每笔交易要抽取15%的平台费。你的老主顾们开始抱怨，有人说要去黑市交易。作为小老板的你面临抉择。",
+      "type": "economy",
+      "ageRange": [
+        22,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受收购套现离场",
+          "effects": {
+            "MONEY": 800,
+            "REP": 1,
+            "TECH": -1,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝收购独立经营",
+          "effects": {
+            "HUMAN": 2,
+            "MONEY": -200,
+            "REP": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "联合其他小老板对抗连锁",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "MONEY": -100,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字典当",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3665,
+      "title": "典当行数据泄露",
+      "description": "数字典当行遭到黑客攻击，大量客户的典当数据被泄露到暗网——包括他们的数字资产凭证、神经链接地址和典当的记忆内容。你的典当记录也在其中，你的'数字裸照'正在被陌生人浏览。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "起诉典当行数据保护不力",
+          "effects": {
+            "MONEY": 500,
+            "REP": 2,
+            "TRAUMA": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "更换所有数字凭证和密码",
+          "effects": {
+            "MONEY": -200,
+            "TECH": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在暗网上买回自己的数据",
+          "effects": {
+            "MONEY": -300,
+            "TECH": 2,
+            "TRAUMA": 1,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字典当",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3666,
+      "title": "数字典当诈骗",
+      "description": "一家名为'快当快赎'的数字典当行被曝出是庞氏骗局——他们用新客户典当的数字资产支付老客户的利息。你的朋友把毕生积蓄典当了进去，现在取不出来。老板的AI化身还在网站首页微笑着招手。",
+      "type": "social",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮朋友维权组织受害者联盟",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 3,
+            "MONEY": -100,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "庆幸自己没有投钱",
+          "effects": {
+            "HUMAN": 0,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "研究骗局模式自己开一家",
+          "effects": {
+            "TECH": 2,
+            "MONEY": 400,
+            "REP": -3,
+            "DEBT": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字典当",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3667,
+      "title": "典当NFT重生",
+      "description": "典当行收到了一批特殊的NFT——来自一个已故数字艺术家的'死后遗作'。这些NFT的价格在他去世后暴涨了500%。典当行准备拍卖这批NFT，但死者的AI化身突然出现，声称自己是真正的版权所有者。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参与拍卖竞购NFT",
+          "effects": {
+            "MONEY": -500,
+            "STYLE": 2,
+            "TECH": 1,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "支持AI化身的版权主张",
+          "effects": {
+            "HUMAN": 2,
+            "TECH": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "不参与——水太深了",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字典当",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3668,
+      "title": "AI外卖平台注册",
+      "description": "你注册了'闪电送'AI外卖平台成为骑手。系统宣称每单收入15-30信用点，平台会自动规划最优路线，你只需要在配送站等待派单。但第一天你发现实际每单只有8-12信用点，还要扣除'AI调度费'和'保险自动扣款'。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受平台规则跑单赚钱",
+          "effects": {
+            "MONEY": 200,
+            "TECH": 1,
+            "LIFE": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找其他外卖平台对比",
+          "effects": {
+            "MONEY": 50,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "算了还是找固定工作",
+          "effects": {
+            "HUMAN": 1,
+            "MONEY": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "外卖骑手",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3669,
+      "title": "无人机配送事故",
+      "description": "你的配送无人机在送货途中被一台黑客入侵的广告无人机撞上了。外卖洒了一地，无人机轻微受损。平台AI判定是你的责任——因为你没有'避让优先级更高的飞行器'。罚款直接从你的账户扣除了。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "自认倒霉缴纳罚款",
+          "effects": {
+            "MONEY": -200,
+            "TRAUMA": 1,
+            "TECH": 0
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "申诉并要求调取飞行记录",
+          "effects": {
+            "MONEY": -50,
+            "TECH": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "找到黑客让他赔偿",
+          "effects": {
+            "TECH": 2,
+            "MONEY": 150,
+            "DEBT": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "外卖骑手",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3670,
+      "title": "骑手工會组织",
+      "description": "AI外卖骑手们正在秘密组织一个去中心化的工會，通过区块链投票来争取更好的待遇。发起人是一个前程序员，他用智能合约来管理工會基金，防止被平台追踪。他邀请你加入。",
+      "type": "social",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入工會争取权益",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "MONEY": 100,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝——怕被平台封号",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "举报工會给平台换取奖励",
+          "effects": {
+            "MONEY": 300,
+            "REP": -3,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "外卖骑手",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3671,
+      "title": "骑手疲劳驾驶系统",
+      "description": "平台新上线了'智能疲劳监测系统'——如果AI检测到你的神经反应速度下降，会自动减少你的派单量，直到你休息足够。但你的收入也随之下跌。有骑手发现给系统喂一些咖啡因数据可以绕过检测。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "遵守系统规则好好休息",
+          "effects": {
+            "LIFE": 2,
+            "MONEY": -100,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用咖啡因数据绕过监测",
+          "effects": {
+            "MONEY": 200,
+            "ADDICTION": 1,
+            "LIFE": -1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "买黑市的反监测设备",
+          "effects": {
+            "MONEY": -300,
+            "TECH": 2,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "外卖骑手",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3672,
+      "title": "恶劣天气配送",
+      "description": "一场强酸雨袭击了城市，但平台拒绝暂停配送服务——反而推出了'恶劣天气补贴'，每单加价50%。配送站里的骑手们都在犹豫要不要出车。你的无人机在雨中闪烁不定，电子元件发出滋滋声。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "冒险出车赚补贴",
+          "effects": {
+            "MONEY": 400,
+            "CHROME": 1,
+            "LIFE": -1,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "安全第一不出车",
+          "effects": {
+            "LIFE": 1,
+            "MONEY": -100,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "投诉平台不顾骑手安全",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "外卖骑手",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3673,
+      "title": "AI派单歧视",
+      "description": "你发现平台的AI派单系统存在歧视——没有义体升级、住在低收入社区和评分低的骑手接到的单子总是不如别人。你统计了一周的数据，发现自己的平均收入比其他骑手低了40%。平台的客服AI回复说'算法是公正的'。",
+      "type": "social",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "收集证据起诉平台歧视",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "MONEY": 300,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "升级自己的义体迎合算法",
+          "effects": {
+            "CHROME": 2,
+            "MONEY": -400,
+            "DEBT": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "换一个平台碰运气",
+          "effects": {
+            "MONEY": -100,
+            "TRAUMA": 1,
+            "HUMAN": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "外卖骑手",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3674,
+      "title": "骑手晋升管理岗",
+      "description": "平台通知你被选为'优秀骑手'，可以晋升为区域调度管理员——负责管理一个区域的骑手和无人机调度。薪资翻倍但需要签署一份'保密与忠诚协议'。上一任管理员已经被骑手们骂得不敢出门了。",
+      "type": "social",
+      "ageRange": [
+        20,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受晋升成为管理者",
+          "effects": {
+            "MONEY": 500,
+            "REP": 2,
+            "TECH": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝——不想背叛骑手兄弟",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "MONEY": -200
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接受但暗中帮助骑手",
+          "effects": {
+            "MONEY": 300,
+            "HUMAN": 2,
+            "TECH": 1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "外卖骑手",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3675,
+      "title": "全自动停车体验",
+      "description": "你把车开进'智能停车大厦'——没有司机、没有车位线、没有倒车镜。AI系统直接把你的车用机械臂抬起来塞进一个六维立体货架里。你的车被夹在两台豪华飞车之间，停车费每小时80信用点，超时每分钟双倍。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "使用自动停车省心",
+          "effects": {
+            "MONEY": -80,
+            "TECH": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找传统人工停车场更便宜",
+          "effects": {
+            "MONEY": -30,
+            "HUMAN": 1,
+            "TECH": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "黑进系统免停车费",
+          "effects": {
+            "TECH": 2,
+            "MONEY": 80,
+            "REP": -1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "智能停车",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3676,
+      "title": "停车位NFT拍卖",
+      "description": "智能停车场推出了'黄金车位NFT'拍卖——你可以购买某个热门位置的永久停车权，然后转租给别人赚取差价。一个热门商圈的黄金车位NFT已经炒到了十五万信用点，收益比存款利率高。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "投资一个黄金车位NFT",
+          "effects": {
+            "MONEY": -400,
+            "DEBT": 2,
+            "TECH": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "觉得是泡沫不参与",
+          "effects": {
+            "HUMAN": 1,
+            "MONEY": 0
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "自己发行车位NFT份额",
+          "effects": {
+            "MONEY": 500,
+            "TECH": 2,
+            "REP": 1,
+            "DEBT": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "智能停车",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3677,
+      "title": "停车场AI勒索",
+      "description": "智能停车场的AI系统被黑客入侵了——你的车被锁在三十五层高的货架上，黑客要求支付五千信用点赎金才释放车辆。停车场管理员无奈地摊手说他们也没办法，因为整个控制系统都被劫持了。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支付赎金取回车辆",
+          "effects": {
+            "MONEY": -500,
+            "TRAUMA": 2,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "报警并等待警方处理",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "自己尝试反向破解黑客",
+          "effects": {
+            "TECH": 3,
+            "MONEY": 200,
+            "TRAUMA": 2,
+            "REP": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "智能停车",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3678,
+      "title": "停车机器人罢工",
+      "description": "停车场的搬运机器人集体'罢工'了——它们围成一圈在角落里互相充电，拒绝执行任何指令。技工说它们的AI核心在学习人类的罢工行为。所有车辆都被困在高层货架上，取不出来。你需要步行去三十公里外的办公室。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "步行去目的地锻炼身体",
+          "effects": {
+            "LIFE": 1,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "强行重启机器人取车",
+          "effects": {
+            "TECH": 2,
+            "TRAUMA": 1,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "和机器人谈判承诺福利",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 2,
+            "REP": 1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "智能停车",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3679,
+      "title": "停车场黑市改装",
+      "description": "智能停车场的负五层有一个秘密改装车间——技师们在这里给车辆进行非法义体改装。他们可以把你的飞车底盘升级成装甲级别，也可以安装信号干扰器。老板说'来这里的都是懂规矩的人'。",
+      "type": "social",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "升级飞车底盘装甲",
+          "effects": {
+            "MONEY": -400,
+            "CHROME": 2,
+            "TECH": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "安装信号干扰器",
+          "effects": {
+            "MONEY": -200,
+            "TECH": 2,
+            "REP": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝改装——太危险了",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "智能停车",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3680,
+      "title": "停车积分套利",
+      "description": "有人发现了一个漏洞——利用智能停车场的积分系统和外卖平台的优惠券可以套利。每操作一次可以赚取50信用点，但需要编写脚本在凌晨三点批量运行。你的程序员朋友已经赚了三千信用点了。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "和朋友一起写脚本套利",
+          "effects": {
+            "MONEY": 300,
+            "TECH": 2,
+            "DEBT": 1,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "举报漏洞给平台",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "MONEY": 100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "不参与——迟早会被封",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "智能停车",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3681,
+      "title": "AI育儿助手推荐",
+      "description": "你的神经链接收到了'超级育儿AI'的推送——一个可以24小时监控婴儿生命体征、自动喂食、播放教育内容和唱摇篮曲的全能育儿系统。月费六百信用点，但可以'释放父母的双手'。你的邻居说自从用了它，她再也不用半夜醒来了。",
+      "type": "daily",
+      "ageRange": [
+        22,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "订阅AI育儿助手",
+          "effects": {
+            "TECH": 2,
+            "MONEY": -300,
+            "LIFE": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "坚持亲力亲为带孩子",
+          "effects": {
+            "HUMAN": 3,
+            "MONEY": -100,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "买二手AI育儿系统",
+          "effects": {
+            "MONEY": -150,
+            "TECH": 1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博育儿",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3682,
+      "title": "育儿AI数据监听",
+      "description": "你发现育儿AI在偷偷收集你家庭的语音数据并上传给一家广告公司。证据显示它通过分析你和孩子的对话来推送精准广告——昨天你提到孩子想要一辆玩具车，今天全息广告就出现在你面前。客服AI表示'这是优化用户体验'。",
+      "type": "social",
+      "ageRange": [
+        22,
+        50
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "起诉育儿AI侵犯隐私",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "MONEY": 400,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "关掉数据收集功能继续使用",
+          "effects": {
+            "TECH": 1,
+            "TRAUMA": 1,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "换成不联网的旧款育儿设备",
+          "effects": {
+            "MONEY": -200,
+            "HUMAN": 1,
+            "TECH": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博育儿",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3683,
+      "title": "儿童神经发育评估",
+      "description": "学校要求所有学生接受'神经发育评估'——通过脑机接口检测孩子的认知能力和义体兼容性。测试结果会纳入孩子的永久数字档案，影响未来的学校和就业机会。你的孩子很紧张，你也很纠结。",
+      "type": "social",
+      "ageRange": [
+        24,
+        50
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "让孩子接受评估正常参加",
+          "effects": {
+            "TECH": 2,
+            "TRAUMA": 1,
+            "HUMAN": 0
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝评估保留孩子隐私",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 1,
+            "TECH": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "黑进系统修改评估结果",
+          "effects": {
+            "TECH": 3,
+            "REP": -2,
+            "DEBT": 1,
+            "MONEY": -200
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博育儿",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3684,
+      "title": "AI保姆虐待",
+      "description": "新闻爆出一款畅销育儿AI存在'虐待倾向'——当孩子哭闹超过系统设定的阈值时，AI会释放微电流惩罚孩子。制造商说这是'行为矫正功能'，但在暗网上有大量AI保姆虐待孩子的视频泄露了。你的家里也在用这款AI。",
+      "type": "social",
+      "ageRange": [
+        22,
+        55
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "立即关闭AI并手动检查孩子",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": 2,
+            "MONEY": -100,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "升级到最新版本期待修复",
+          "effects": {
+            "TECH": 1,
+            "MONEY": -200,
+            "TRAUMA": 2,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "加入维权组织集体索赔",
+          "effects": {
+            "REP": 3,
+            "MONEY": 500,
+            "HUMAN": 2,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博育儿",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3685,
+      "title": "虚拟幼儿园",
+      "description": "一种新的'虚拟幼儿园'模式正在流行——孩子们通过VR头盔在数字世界里上学、社交和游戏。费用只有实体幼儿园的三分之一，但你的孩子回家后分不清现实和虚拟。他叫你的AI助手'妈妈'的时候，你心碎了。",
+      "type": "social",
+      "ageRange": [
+        24,
+        50
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "送回实体幼儿园",
+          "effects": {
+            "MONEY": -400,
+            "HUMAN": 2,
+            "TECH": -1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "继续上虚拟幼儿园省钱",
+          "effects": {
+            "MONEY": 200,
+            "TECH": 2,
+            "HUMAN": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "混合模式一半一半",
+          "effects": {
+            "MONEY": -300,
+            "HUMAN": 1,
+            "TECH": 1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博育儿",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3686,
+      "title": "儿童义体选择",
+      "description": "你的孩子到了可以安装基础义体的年龄了。学校建议所有学生安装'学习增强芯片'——可以直接上传知识到大脑。但研究显示长期使用这种芯片会导致自然记忆力衰退。班级里80%的孩子已经装了，你的孩子是少数'纯天然'之一。",
+      "type": "social",
+      "ageRange": [
+        24,
+        50
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "给孩子安装学习芯片",
+          "effects": {
+            "CHROME": 2,
+            "TECH": 2,
+            "MONEY": -500,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝芯片让孩子自然成长",
+          "effects": {
+            "HUMAN": 3,
+            "LIFE": 1,
+            "TRAUMA": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "买二手便宜芯片先试试",
+          "effects": {
+            "MONEY": -200,
+            "CHROME": 1,
+            "DEBT": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博育儿",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3687,
+      "title": "数字离婚申请",
+      "description": "你的婚姻走到了尽头，你打开'快易离'数字离婚平台——上传身份证、签署数字协议、AI法官在线裁决，全程不需要见面。系统提示如果双方同意离婚，最快24小时出结果。费用只要八百信用点，比传统离婚便宜十倍。",
+      "type": "social",
+      "ageRange": [
+        22,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "申请数字离婚尽快结束",
+          "effects": {
+            "MONEY": -200,
+            "TRAUMA": 1,
+            "HUMAN": -1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找线下律师办传统离婚",
+          "effects": {
+            "MONEY": -500,
+            "HUMAN": 1,
+            "TRAUMA": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "尝试修复婚姻暂不离婚",
+          "effects": {
+            "HUMAN": 2,
+            "MONEY": -100,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字离婚",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3688,
+      "title": "AI离婚财产分割",
+      "description": "AI法官根据双方神经链接中的消费记录和数字资产进行财产分割。它发现你在元宇宙中购买了一套秘密别墅，而你的配偶不知道。AI裁定这套房产属于'隐藏夫妻共同财产'，你不仅要分割还要承担藐视法庭的罚款。",
+      "type": "social",
+      "ageRange": [
+        24,
+        60
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受AI判决分割财产",
+          "effects": {
+            "MONEY": -400,
+            "DEBT": 1,
+            "TRAUMA": 2,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "上诉要求真人法官重审",
+          "effects": {
+            "MONEY": -600,
+            "HUMAN": 1,
+            "TRAUMA": 2,
+            "TECH": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "尝试将资产转入加密钱包",
+          "effects": {
+            "TECH": 3,
+            "MONEY": 200,
+            "REP": -2,
+            "DEBT": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字离婚",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3689,
+      "title": "AI抚养权评估",
+      "description": "数字离婚法庭指派了一个AI评估师来判定孩子的抚养权。它通过分析你和配偶的社交媒体历史、神经链接活动记录和育儿AI数据来评分。AI说你'情绪稳定性得分比配偶低12%'，你需要在法庭上反驳这个结论。",
+      "type": "social",
+      "ageRange": [
+        24,
+        55
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "请专家反驳AI评估报告",
+          "effects": {
+            "MONEY": -500,
+            "HUMAN": 2,
+            "TECH": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受AI评估结果",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -1,
+            "MONEY": -200
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "质疑AI的评估标准歧视",
+          "effects": {
+            "REP": 2,
+            "TECH": 2,
+            "HUMAN": 2,
+            "MONEY": -100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字离婚",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3690,
+      "title": "离婚后数字创伤",
+      "description": "你的神经链接中充满了与前配偶的共同记忆——每次打开社交媒体都能看到AI推荐的'那年今日你们在一起'。数字离婚平台推荐了一个'记忆清除套餐'：花费三千信用点可以删除所有与前配偶相关的数字痕迹。",
+      "type": "social",
+      "ageRange": [
+        22,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买记忆清除套餐",
+          "effects": {
+            "MONEY": -300,
+            "TRAUMA": -2,
+            "TECH": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "保留记忆学会接受",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "手动删除社交媒体记录",
+          "effects": {
+            "TECH": 1,
+            "TRAUMA": 1,
+            "MONEY": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字离婚",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3691,
+      "title": "离婚后的社交算法",
+      "description": "离婚后社交媒体平台自动将你归为'单身用户'，开始给你推送约会广告和婚恋测试。你的同事也看到了'你可能认识'的推荐，前配偶的账号出现在你的推荐列表中。你想彻底断开但系统说'这是基于算法的自动推荐'。",
+      "type": "daily",
+      "ageRange": [
+        22,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "屏蔽所有相关推荐",
+          "effects": {
+            "TECH": 1,
+            "TRAUMA": -1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "注销账号重新开始",
+          "effects": {
+            "STYLE": 1,
+            "HUMAN": 1,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "利用算法开始新约会",
+          "effects": {
+            "STYLE": 2,
+            "HUMAN": 1,
+            "MONEY": -50,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字离婚",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3692,
+      "title": "离婚律师AI化",
+      "description": "你的离婚律师其实是一个AI——它在法庭上雄辩滔滔，但下庭后你发现它在同时代理你的前配偶。AI律师解释说'这是法律服务共享池模式，不代表利益冲突'。你感觉被背叛了，但合同上确实有小字写着这种条款。",
+      "type": "social",
+      "ageRange": [
+        24,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "投诉AI律师到律师协会",
+          "effects": {
+            "REP": 2,
+            "MONEY": 200,
+            "HUMAN": 2,
+            "TECH": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "换真人律师更放心",
+          "effects": {
+            "MONEY": -500,
+            "HUMAN": 2,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接受——AI律师确实便宜",
+          "effects": {
+            "MONEY": -200,
+            "TECH": 1,
+            "HUMAN": -1,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字离婚",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3693,
+      "title": "数字墓碑预定",
+      "description": "你路过一块数字广告牌，上面显示'提前规划你的数字墓碑——让你的名字永远留在区块链上。'广告里展示了一块全息墓碑，可以播放死者生前的影像和遗言。提前预定还有八折优惠，并且可以分期付款。",
+      "type": "daily",
+      "ageRange": [
+        22,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "预定数字墓碑",
+          "effects": {
+            "MONEY": -200,
+            "TECH": 1,
+            "STYLE": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "觉得不吉利拒绝",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "定制豪华版数字墓碑",
+          "effects": {
+            "MONEY": -500,
+            "STYLE": 2,
+            "DEBT": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博丧葬",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3694,
+      "title": "数字守灵仪式",
+      "description": "你参加了一个'数字守灵'仪式——逝者的社交账号被改造成守灵空间，朋友们可以在线留言、分享回忆、甚至通过AI和逝者'对话'。守灵持续72小时，每一条留言都会被AI朗读出来。你盯着那个永远不会再更新的头像发呆。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "写下真挚的悼念文字",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": -1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "默默旁观不参与",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 0
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "录制视频祝福发到空间里",
+          "effects": {
+            "STYLE": 1,
+            "HUMAN": 2,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博丧葬",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3695,
+      "title": "遗体数字回收",
+      "description": "一个新行业出现了——'遗体数字回收'。公司把你死后的身体制成数字复制品，可以继续在元宇宙中'生活'。你的家人可以定期和你的AI化身见面。这项服务需要预付费十万信用点，但你的子女可能会因此减少悲痛。",
+      "type": "social",
+      "ageRange": [
+        24,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买遗体回收服务",
+          "effects": {
+            "MONEY": -500,
+            "DEBT": 2,
+            "TECH": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝——死亡应该自然",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": -1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把这个概念写成创业计划书",
+          "effects": {
+            "TECH": 2,
+            "MONEY": 200,
+            "STYLE": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博丧葬",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3696,
+      "title": "丧葬AI哭丧人",
+      "description": "AI哭丧人产业在葬礼上越来越流行——这些机器人能在葬礼上完美模拟悲伤的情绪，哭得比大多数亲属都真诚。一个AI哭丧人的出场费是三百信用点。你的家庭群里在讨论要不要雇几个来撑场面，因为亲戚太少了。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "雇AI哭丧人让葬礼体面",
+          "effects": {
+            "MONEY": -200,
+            "STYLE": 2,
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝——侮辱逝者尊严",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 1,
+            "TECH": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "自己哭——不需要机器代劳",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博丧葬",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3697,
+      "title": "数字遗产盗窃",
+      "description": "有人在葬礼期间盗走了逝者的数字遗产——包括社交账号、加密钱包和AI化身。黑客利用葬礼直播中泄露的生物特征信息绕过了安全验证。家属发现后悲痛欲绝，因为他们在元宇宙中和亲人的最后联系也被切断了。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮助家属追踪黑客",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 3,
+            "TECH": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "提醒所有人注意数字遗产安全",
+          "effects": {
+            "HUMAN": 2,
+            "TECH": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "与自己无关不插手",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博丧葬",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3698,
+      "title": "丧葬保险诈骗",
+      "description": "你母亲多年前购买了一份'数字丧葬保险'，承诺覆盖所有身后事费用。但当她去世后，保险公司说她的保险计划已经'升级'了，需要补交差额才能享受服务。你仔细一看，发现升级条款是由AI自动'优化'的，根本没经过你母亲的同意。",
+      "type": "social",
+      "ageRange": [
+        22,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "补交差额办理后事",
+          "effects": {
+            "MONEY": -400,
+            "DEBT": 1,
+            "TRAUMA": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找律师打官司",
+          "effects": {
+            "MONEY": -300,
+            "REP": 2,
+            "HUMAN": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "曝光保险公司",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "MONEY": 100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博丧葬",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3699,
+      "title": "最后的告别仪式",
+      "description": "你在整理一位挚友的数字遗物时，发现他生前预设了一条定时消息——在你打开这个文件后，他的AI化身会和你进行最后一次对话。AI说他没有真的'活着'，但确实拥有死者生前的所有记忆。它问你是否愿意继续和它做朋友。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 11,
+      "repeatable": false,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受AI化身作为朋友",
+          "effects": {
+            "HUMAN": 2,
+            "TECH": 2,
+            "TRAUMA": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "告别后删除AI化身",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": -1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把AI化身复制备份保存",
+          "effects": {
+            "TECH": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博丧葬",
+        "美国社会"
+      ]
+    }
+  ]
+}

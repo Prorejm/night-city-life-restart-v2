@@ -1,0 +1,5100 @@
+{
+  "events": [
+    {
+      "id": 2300,
+      "title": "漩涡帮突袭数据终端",
+      "description": "漩涡帮的改造疯子闯入了你正在使用的数据终端，红色光学眼在黑暗中疯狂闪烁。他们脸上烙着错乱的电路纹身，手中挥舞着改装过的动能武器。终端里存着你急需的加密档案，绝不能落入他们手中。领头的改造人发出电子扭曲的嘶吼，命令手下把你撕成碎片。空气中弥漫着烧焦电路和肾上腺素的气味。",
+      "type": "combat",
+      "ageRange": [
+        15,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拔出动能手枪硬刚到底",
+          "effects": {
+            "LIFE": -8,
+            "STYLE": 5,
+            "TRAUMA": 4,
+            "REP": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "黑入终端引爆数据后撤离",
+          "effects": {
+            "TECH": 4,
+            "REP": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "假装投降趁隙反杀头目",
+          "effects": {
+            "CHROME": 2,
+            "HUMAN": -2,
+            "REP": 4,
+            "LIFE": -4
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "漩涡帮",
+        "战斗"
+      ]
+    },
+    {
+      "id": 2301,
+      "title": "红眼面具的包围圈",
+      "description": "你走进一条死胡同，身后突然亮起十几只猩红的义眼。漩涡帮的伏击者从垃圾箱和防火梯上跃下，面具下传来齿轮咬合的声响。他们要你交出身上所有的改造件，否则就当场拆解。你数了数至少有八个改造人，每人至少替换了百分之四十的肉体。雨水顺着霓虹招牌滴落，映出他们扭曲的金属微笑。",
+      "type": "combat",
+      "ageRange": [
+        15,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "引爆随身榴弹开路突围",
+          "effects": {
+            "LIFE": -6,
+            "STYLE": 4,
+            "TRAUMA": 3,
+            "CHROME": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "乖乖交出一件次要改造件",
+          "effects": {
+            "CHROME": -2,
+            "MONEY": -300,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "启动光学迷彩消失在雨幕中",
+          "effects": {
+            "TECH": 3,
+            "STYLE": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "漩涡帮",
+        "伏击"
+      ]
+    },
+    {
+      "id": 2302,
+      "title": "漩涡帮改装车间混战",
+      "description": "你追踪一批被盗的军用级义体到了漩涡帮的地下改装车间。车间里火花四溅，几个技师正在活人身上焊接非法神经接口。被绑在手术台上的受害者发出微弱的呻吟，四肢已被替换成粗糙的工业级机械臂。漩涡帮的守卫发现了你的踪迹，警报声撕裂了地下空间的轰鸣。你必须在援军赶到前做出决断。",
+      "type": "combat",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "强攻车间消灭所有守卫",
+          "effects": {
+            "LIFE": -7,
+            "REP": 5,
+            "HUMAN": 3,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "解救受害者后悄然撤退",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "LIFE": -3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "炸毁车间销毁一切证据",
+          "effects": {
+            "STYLE": 3,
+            "TRAUMA": 2,
+            "REP": 2,
+            "LIFE": -4
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "漩涡帮",
+        "救援"
+      ]
+    },
+    {
+      "id": 2303,
+      "title": "漩涡帮的网络狂热者",
+      "description": "一个漩涡帮的黑客在你的神经接口里植入了勒索病毒，你的义眼开始闪烁勒索信息。他要求你支付五千欧金，否则就永久烧毁你的视觉神经。这家伙显然精神已经不太正常，脑机接口过载让他的笑声带着电流杂音。你的视野开始出现雪花和乱码，时间不多了。漩涡帮从不接受谈判，但这次也许有别的办法。",
+      "type": "combat",
+      "ageRange": [
+        15,
+        50
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "反向追踪黑入他的脑机",
+          "effects": {
+            "TECH": 6,
+            "REP": 2,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "付钱消灾保住视觉神经",
+          "effects": {
+            "MONEY": -2000,
+            "DEBT": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "断开所有连接物理追杀",
+          "effects": {
+            "LIFE": -5,
+            "CHROME": -2,
+            "STYLE": 4,
+            "REP": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "漩涡帮",
+        "黑客"
+      ]
+    },
+    {
+      "id": 2304,
+      "title": "漩涡帮的合成迷幻剂",
+      "description": "漩涡帮正在街头倾销一种新型合成迷幻剂，能让人在幻觉中体验赛博空间的神游。这种毒品会腐蚀神经接口，长期使用导致不可逆的脑损伤。你的一个朋友已经上瘾，跪在巷子里求你搞到下一剂。漩涡帮的毒贩就蹲在街角，用改装过的机械手指夹着霓虹色的小瓶子。帮派用这种毒品控制着整片贫民窟的人口。",
+      "type": "combat",
+      "ageRange": [
+        15,
+        45
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "砸了毒贩的摊位斩断货源",
+          "effects": {
+            "STYLE": 4,
+            "REP": 4,
+            "LIFE": -4,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "帮朋友买到一剂缓解戒断",
+          "effects": {
+            "MONEY": -500,
+            "ADDICTION": 1,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "黑入毒贩账本举报给公司",
+          "effects": {
+            "TECH": 3,
+            "MONEY": 800,
+            "REP": 2,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {
+        "ADDICTION": 1
+      },
+      "tags": [
+        "漩涡帮",
+        "毒品"
+      ]
+    },
+    {
+      "id": 2305,
+      "title": "漩涡帮的人质劫持",
+      "description": "漩涡帮冲进了一家街边面馆，劫持了十几个平民当人质。他们要求公司释放被关押的帮派头目，否则每小时杀一个人。面馆老板的孙女也在里面，老人跪在封锁线外哭得撕心裂肺。警察和公司安保都不愿冒险介入，局势完全僵住。你恰好认识后厨的通风管道，也许能悄悄摸进去。",
+      "type": "combat",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "从通风管潜入逐个清除",
+          "effects": {
+            "LIFE": -5,
+            "HUMAN": 5,
+            "REP": 5,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "谈判分散注意力让警察突入",
+          "effects": {
+            "STYLE": 3,
+            "REP": 3,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "假装投诚混进去里应外合",
+          "effects": {
+            "CHROME": 2,
+            "HUMAN": 3,
+            "REP": 4,
+            "LIFE": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "漩涡帮",
+        "人质"
+      ]
+    },
+    {
+      "id": 2306,
+      "title": "漩涡帮据点夜袭",
+      "description": "你花了三天侦察漩涡帮的老巢，一座废弃的地下停车场改建的堡垒。入口被重型激光网封锁，里面至少有二十个全副武装的改造人。情报显示他们的军火库就在最底层，装满了从军方偷来的实验武器。今夜他们大部分骨干外出行动，是突袭的最佳时机。你站在入口的阴影中，呼吸凝结成白雾。",
+      "type": "combat",
+      "ageRange": [
+        17,
+        50
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "正面强攻杀出一条血路",
+          "effects": {
+            "LIFE": -9,
+            "STYLE": 6,
+            "REP": 6,
+            "TRAUMA": 4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "黑入安保系统让激光网反噬",
+          "effects": {
+            "TECH": 5,
+            "REP": 4,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "引爆天然气管道炸平入口",
+          "effects": {
+            "STYLE": 5,
+            "TRAUMA": 3,
+            "REP": 3,
+            "LIFE": -6
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "漩涡帮",
+        "突袭"
+      ]
+    },
+    {
+      "id": 2307,
+      "title": "瓦伦蒂诺帮的霓虹仪式",
+      "description": "瓦伦蒂诺帮在一座废弃教堂里举行入会仪式，彩色玻璃窗被换成了全息投影的圣母像。候选者跪在祭坛前，长老用镀金手术刀在他的脸颊上刻下圣徒纹身。仪式要求候选者完成一项危险的考验才能正式加入。你被邀请作为见证人，但长老暗示你也可以参与考验。教堂的管风琴奏出低沉的电子圣歌。",
+      "type": "social",
+      "ageRange": [
+        16,
+        45
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受考验加入瓦伦蒂诺帮",
+          "effects": {
+            "STYLE": 5,
+            "REP": 4,
+            "HUMAN": -2,
+            "LIFE": -4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "仅作见证人旁观仪式",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "窃取祭坛上的黄金义体",
+          "effects": {
+            "MONEY": 1500,
+            "STYLE": -3,
+            "DEBT": 2
+          }
+        }
+      ],
+      "effects": {
+        "STYLE": 1
+      },
+      "tags": [
+        "瓦伦蒂诺帮",
+        "仪式"
+      ]
+    },
+    {
+      "id": 2308,
+      "title": "美学义体对决",
+      "description": "瓦伦蒂诺帮崇尚义体的美学，两名帮众因为改造风格之争要当街决斗。他们邀请你做裁判，赌注是一批珍贵的定制义体外壳。决斗者A全身镶嵌鎏金花纹，决斗者B则用全息变色涂层覆盖机械骨骼。街坊邻居围成一圈，有人开始下注。你的裁决将决定谁带走那批战利品。",
+      "type": "social",
+      "ageRange": [
+        15,
+        50
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "判给鎏金花纹的古典派",
+          "effects": {
+            "STYLE": 3,
+            "MONEY": 600,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "判给全息变色的前卫派",
+          "effects": {
+            "STYLE": 4,
+            "CHROME": 2,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "宣布平局自己吞掉赌注",
+          "effects": {
+            "MONEY": 1200,
+            "REP": -3,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {
+        "STYLE": 1
+      },
+      "tags": [
+        "瓦伦蒂诺帮",
+        "决斗"
+      ]
+    },
+    {
+      "id": 2309,
+      "title": "瓦伦蒂诺帮的血誓追猎",
+      "description": "有人背叛了瓦伦蒂诺帮盗走圣物，帮派长老发出血誓追猎令。你被雇佣去追踪这个叛徒，赏金丰厚得让人心动。情报显示叛徒藏身在城市东区的赛博妓院里，用假身份伪装成普通客人。瓦伦蒂诺帮要求活捉，但暗示死活不论也行。叛徒曾是帮里的顶尖杀手，绝不会束手就擒。",
+      "type": "combat",
+      "ageRange": [
+        17,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "闯入妓院活捉叛徒交差",
+          "effects": {
+            "LIFE": -5,
+            "MONEY": 2500,
+            "REP": 5,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "远距离狙杀省去麻烦",
+          "effects": {
+            "STYLE": 3,
+            "MONEY": 2000,
+            "REP": 3,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "暗中放走叛徒换取情报",
+          "effects": {
+            "TECH": 4,
+            "HUMAN": 3,
+            "REP": -2,
+            "MONEY": 1000
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "瓦伦蒂诺帮",
+        "追猎"
+      ]
+    },
+    {
+      "id": 2310,
+      "title": "瓦伦蒂诺帮的教堂密会",
+      "description": "瓦伦蒂诺帮的二当家约你在教堂地下室秘密会面。他想推翻现任老大，需要一个外援在关键时刻动手。教堂的忏悔室被改造成了隔音密室，烛光映着他义体手臂上的圣徒纹身。他许诺事成之后给你整个西区的保护费收缴权。但你清楚背叛瓦伦蒂诺帮的人从没有好下场。",
+      "type": "social",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "答应合作参与政变",
+          "effects": {
+            "MONEY": 1500,
+            "REP": -2,
+            "DEBT": 2,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝并向老大告密",
+          "effects": {
+            "REP": 5,
+            "MONEY": 1000,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "两边通吃等待时机",
+          "effects": {
+            "TECH": 2,
+            "MONEY": 800,
+            "DEBT": 3
+          }
+        }
+      ],
+      "effects": {
+        "DEBT": 1
+      },
+      "tags": [
+        "瓦伦蒂诺帮",
+        "阴谋"
+      ]
+    },
+    {
+      "id": 2311,
+      "title": "瓦伦蒂诺帮的霓虹飙车",
+      "description": "瓦伦蒂诺帮在午夜的高速公路上举办非法飙车赛，赌注是输家的爱车。你的改装跑车被安排在第三道，对手是帮里的头号车手。她的车全身涂满全息玫瑰图案，引擎是偷来的军用涡轮。起跑线的霓虹灯倒数到零，轮胎摩擦沥青发出尖啸。这场飙车没有规则，撞翻对手也算赢。",
+      "type": "combat",
+      "ageRange": [
+        16,
+        45
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全速冲刺用技术碾压对手",
+          "effects": {
+            "STYLE": 5,
+            "MONEY": 2000,
+            "REP": 3,
+            "LIFE": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "侧撞对手逼她退赛",
+          "effects": {
+            "CHROME": 2,
+            "STYLE": 3,
+            "LIFE": -5,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "黑入她的引擎控制系统",
+          "effects": {
+            "TECH": 4,
+            "STYLE": 2,
+            "REP": 2
+          }
+        }
+      ],
+      "effects": {
+        "STYLE": 1
+      },
+      "tags": [
+        "瓦伦蒂诺帮",
+        "飙车"
+      ]
+    },
+    {
+      "id": 2312,
+      "title": "瓦伦蒂诺帮的联姻邀约",
+      "description": "瓦伦蒂诺帮的少主看上了你，派出媒人带着价值不菲的聘礼登门。这桩联姻能让你跻身帮派核心层，但也意味着终身绑定。少主的义体定制是全城最顶级的，容貌确实出众。但帮内人都知道上一任配偶死于非命。聘礼堆满了你的客厅，金光闪闪。",
+      "type": "social",
+      "ageRange": [
+        18,
+        40
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受联姻进入帮派核心",
+          "effects": {
+            "STYLE": 4,
+            "MONEY": 3000,
+            "REP": 4,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "婉拒但保持友好关系",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "收下聘礼后消失",
+          "effects": {
+            "MONEY": 2000,
+            "REP": -5,
+            "DEBT": 3
+          }
+        }
+      ],
+      "effects": {
+        "STYLE": 1
+      },
+      "tags": [
+        "瓦伦蒂诺帮",
+        "联姻"
+      ]
+    },
+    {
+      "id": 2313,
+      "title": "瓦伦蒂诺帮的复仇天使",
+      "description": "瓦伦蒂诺帮的一对情侣被敌对帮派杀害，幸存的伴侣发誓复仇。她找到你，请求帮忙追踪凶手的下落。她的眼中燃烧着纯粹的怒火，义体手臂上刻着亡妻的名字。情报显示凶手藏在港口的集装箱迷宫里。她不在乎自己的命，只想要血债血偿。",
+      "type": "combat",
+      "ageRange": [
+        17,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "陪她杀入港口血洗仇敌",
+          "effects": {
+            "LIFE": -6,
+            "STYLE": 4,
+            "REP": 4,
+            "HUMAN": 2,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "劝她放下仇恨选择原谅",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 1,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "独自去暗杀凶手替她了结",
+          "effects": {
+            "MONEY": 1500,
+            "REP": 5,
+            "LIFE": -4,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "瓦伦蒂诺帮",
+        "复仇"
+      ]
+    },
+    {
+      "id": 2314,
+      "title": "动物帮的健身房对峙",
+      "description": "你误入了动物帮的地盘健身房，满屋子的肌肉巨兽停下杠铃盯着你。他们的身体被激素和义体改造得像坦克，青筋暴起的手臂比你的大腿还粗。守门人一把抓住你的衣领把你拎起来，问你凭什么闯进来。健身房角落传来搏击沙袋被砸碎的闷响。空气中弥漫着汗水和合成睾酮的刺鼻气味。",
+      "type": "combat",
+      "ageRange": [
+        15,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "挑战守门人来一场肉搏",
+          "effects": {
+            "LIFE": -7,
+            "STYLE": 5,
+            "CHROME": 2,
+            "REP": 4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "交过路费换取安全离开",
+          "effects": {
+            "MONEY": -800,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "展示你的力量赢得尊重",
+          "effects": {
+            "CHROME": 3,
+            "STYLE": 3,
+            "REP": 2,
+            "LIFE": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "动物帮",
+        "对峙"
+      ]
+    },
+    {
+      "id": 2315,
+      "title": "动物帮的地下角斗场",
+      "description": "动物帮运营着城市最大的地下角斗场，每周举行无规则死斗。今晚的主角赛奖金高达三千欧金，你被推上了角斗台。对面的角斗士身高两米二，双臂换成了液压粉碎钳。看台上挤满了嘶吼的赌徒，动物帮老大坐在包厢里狞笑。铁笼缓缓落下，退出已不可能。",
+      "type": "combat",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "正面硬碰硬打倒巨人",
+          "effects": {
+            "LIFE": -9,
+            "STYLE": 6,
+            "MONEY": 3000,
+            "REP": 5,
+            "TRAUMA": 4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "利用速度绕后攻击弱点",
+          "effects": {
+            "STYLE": 4,
+            "MONEY": 3000,
+            "REP": 4,
+            "LIFE": -4
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "认输投降保住性命",
+          "effects": {
+            "LIFE": -3,
+            "REP": -4,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "动物帮",
+        "角斗"
+      ]
+    },
+    {
+      "id": 2316,
+      "title": "动物帮的激素交易",
+      "description": "动物帮的秘密实验室生产一种超效合成激素，能让使用者在短时间内爆发惊人力量。但这种激素会严重损伤心脏和肝脏，黑市上却供不应求。你截获了一批货，价值连城也危机四伏。动物帮的人正在满城搜捕偷货的人。你的心率已经开始因为接触激素残留而异常升高。",
+      "type": "economy",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "高价卖给黑市中间商",
+          "effects": {
+            "MONEY": 2800,
+            "REP": -2,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "销毁激素并举报实验室",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "MONEY": -200
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "留着自己用提升战斗力",
+          "effects": {
+            "CHROME": 3,
+            "LIFE": -5,
+            "ADDICTION": 2,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {
+        "ADDICTION": 1
+      },
+      "tags": [
+        "动物帮",
+        "交易"
+      ]
+    },
+    {
+      "id": 2317,
+      "title": "动物帮的保镖工作",
+      "description": "动物帮招募临时保镖护送一批贵重货物穿过敌对帮派的地盘。报酬优厚但你清楚这趟差事九死一生。货物的内容被密封在铅箱里，沉重得需要两个人抬。领队的动物帮壮士拍着你的肩说只要送到就有额外奖金。车队在凌晨三点出发，夜色是最好的掩护。",
+      "type": "combat",
+      "ageRange": [
+        17,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全程护送击退所有伏击",
+          "effects": {
+            "LIFE": -6,
+            "MONEY": 2000,
+            "REP": 4,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "半路携货私逃",
+          "effects": {
+            "MONEY": 2500,
+            "REP": -5,
+            "DEBT": 3,
+            "LIFE": -3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "提前侦察路线避开交火",
+          "effects": {
+            "TECH": 3,
+            "MONEY": 1500,
+            "REP": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "动物帮",
+        "护送"
+      ]
+    },
+    {
+      "id": 2318,
+      "title": "动物帮地盘闯入者",
+      "description": "你喝醉后误闯了动物帮的私人领地，一条被铁丝网围起来的废弃街区。巡逻的改造巨犬最先发现了你，金属獠牙在月光下闪光。动物帮的巡逻队很快赶到，用电击矛把你逼到墙角。他们决定给你一个教训，让你知道什么叫领地的代价。你的酒已经醒了大半，但身体还摇摇晃晃。",
+      "type": "combat",
+      "ageRange": [
+        15,
+        50
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "赤手空拳和改造犬搏斗",
+          "effects": {
+            "LIFE": -8,
+            "CHROME": 2,
+            "STYLE": 3,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "跪地求饶接受惩罚",
+          "effects": {
+            "LIFE": -4,
+            "REP": -3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "翻墙逃跑能跑多快跑多快",
+          "effects": {
+            "LIFE": -2,
+            "STYLE": -1,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "动物帮",
+        "闯入"
+      ]
+    },
+    {
+      "id": 2319,
+      "title": "动物帮首领的挑战",
+      "description": "动物帮现任首领年迈力衰，帮内有人公开挑战他的地位。挑战仪式在废弃停车场举行，双方赤膊上阵用拳头说话。你被卷入其中，因为新首领许诺支持者都能升职。老首领虽然年迈但经验丰富，一拳就能打碎肋骨。赌盘开出了悬殊的赔率，几乎没人看好老首领。",
+      "type": "combat",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "押注新首领并为他助拳",
+          "effects": {
+            "MONEY": 1800,
+            "REP": 4,
+            "HUMAN": -2,
+            "LIFE": -4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "押注老首领博取高赔率",
+          "effects": {
+            "MONEY": 2500,
+            "REP": 2,
+            "LIFE": -3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "置身事外只做旁观者",
+          "effects": {
+            "REP": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "动物帮",
+        "权力"
+      ]
+    },
+    {
+      "id": 2320,
+      "title": "莫克斯帮的紧急求助",
+      "description": "一个莫克斯帮的女孩深夜敲响你的门，浑身是伤身后有追兵。她说自己从一个皮条客手里逃出来，那人是六街帮的线人。莫克斯帮专门保护被欺压的女性，但这次对手有军方背景。她跪在地上恳求你收留她一夜。远处传来引擎轰鸣声，追兵已经逼近了。",
+      "type": "social",
+      "ageRange": [
+        15,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "收留她并准备迎战追兵",
+          "effects": {
+            "LIFE": -5,
+            "HUMAN": 5,
+            "REP": 4,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "把她送到莫克斯帮据点",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝收留让她自求多福",
+          "effects": {
+            "HUMAN": -4,
+            "REP": -3,
+            "MONEY": 0
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": 1
+      },
+      "tags": [
+        "莫克斯帮",
+        "救援"
+      ]
+    },
+    {
+      "id": 2321,
+      "title": "莫克斯帮酒吧冲突",
+      "description": "你在莫克斯帮经营的酒吧喝酒，几个醉醺醺的公司男开始骚扰女酒保。女酒保是莫克斯帮的成员，酒吧里暗藏了好几个帮中姐妹。公司男仗着有钱有势越来越放肆，甚至动手拉扯。莫克斯帮的人已经握紧了藏在吧台下的电击棍。气氛一触即发，所有人的目光投向你。",
+      "type": "combat",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "替女酒保出头揍飞公司男",
+          "effects": {
+            "STYLE": 4,
+            "REP": 4,
+            "HUMAN": 3,
+            "LIFE": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "巧妙周旋化解冲突",
+          "effects": {
+            "STYLE": 3,
+            "HUMAN": 3,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "袖手旁观当没看见",
+          "effects": {
+            "HUMAN": -3,
+            "REP": -2,
+            "STYLE": -1
+          }
+        }
+      ],
+      "effects": {
+        "STYLE": 1
+      },
+      "tags": [
+        "莫克斯帮",
+        "冲突"
+      ]
+    },
+    {
+      "id": 2322,
+      "title": "莫克斯帮的保护网",
+      "description": "莫克斯帮建立了一个地下庇护网络，专门保护被拐卖和胁迫的女性。最近一个人口贩子团伙盯上了庇护所，试图抢走里面的受害者。莫克斯帮人手不足，向你发出紧急求助。贩子团伙武装精良，背后有公司撑腰。庇护所里的女孩们惊恐地缩在角落里发抖。",
+      "type": "combat",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "守卫庇护所击退贩子",
+          "effects": {
+            "LIFE": -6,
+            "HUMAN": 6,
+            "REP": 5,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "提前转移庇护所里的人",
+          "effects": {
+            "TECH": 3,
+            "HUMAN": 5,
+            "REP": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "设伏反杀贩子头目",
+          "effects": {
+            "STYLE": 4,
+            "REP": 4,
+            "LIFE": -5,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": 2
+      },
+      "tags": [
+        "莫克斯帮",
+        "保护"
+      ]
+    },
+    {
+      "id": 2323,
+      "title": "莫克斯帮的复仇计划",
+      "description": "莫克斯帮的一个姐妹被清道夫活捉拆解了义体，帮派发誓要让凶手血债血偿。她们策划了一场针对清道夫据点的突袭，需要一个有战斗经验的人带队。清道夫的据点在一座废弃屠宰场，里面堆满了被拆解的尸骸。莫克斯帮的人眼都红了，恨不得生吞了仇人。这次行动没有退路。",
+      "type": "combat",
+      "ageRange": [
+        17,
+        50
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "带队强攻屠宰场",
+          "effects": {
+            "LIFE": -8,
+            "HUMAN": 4,
+            "REP": 6,
+            "TRAUMA": 4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用纵火封锁出口逐个清除",
+          "effects": {
+            "STYLE": 4,
+            "REP": 5,
+            "LIFE": -4,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "黑入清道夫系统引爆仓库",
+          "effects": {
+            "TECH": 5,
+            "REP": 4,
+            "HUMAN": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "莫克斯帮",
+        "复仇"
+      ]
+    },
+    {
+      "id": 2324,
+      "title": "莫克斯帮的街头诊所",
+      "description": "莫克斯帮运营着一家免费街头诊所，为无力支付公司医院的穷人提供治疗。诊所资金紧张，药品和义体零件即将耗尽。你恰好有一批偷来的医疗用品可以捐赠。但最近有帮派盯上了诊所的药物库存想抢劫。诊所门口排着长队，都是走投无路的穷人。",
+      "type": "social",
+      "ageRange": [
+        15,
+        50
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "捐赠医疗用品并留守保卫",
+          "effects": {
+            "HUMAN": 5,
+            "REP": 4,
+            "MONEY": -500
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "高价卖掉医疗用品",
+          "effects": {
+            "MONEY": 2000,
+            "HUMAN": -4,
+            "REP": -3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "帮诊所黑入保险公司骗取赔付",
+          "effects": {
+            "TECH": 4,
+            "HUMAN": 3,
+            "DEBT": 2
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": 1
+      },
+      "tags": [
+        "莫克斯帮",
+        "诊所"
+      ]
+    },
+    {
+      "id": 2325,
+      "title": "莫克斯帮的招募邀请",
+      "description": "莫克斯帮的创始人亲自邀请你加入，她看中了你的能力和正义感。加入意味着你要宣誓保护弱者，也要接受帮派的规矩和敌人。入会仪式在一家老式美容院的后屋举行，墙上贴满了失踪姐妹的照片。创始人递给你一把刻着玫瑰花纹的匕首，这是入会的信物。但帮派的仇敌很多，日子不会太平。",
+      "type": "social",
+      "ageRange": [
+        16,
+        45
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "宣誓加入莫克斯帮",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 4,
+            "STYLE": 3,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "婉拒但承诺作为外援",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝并保持距离",
+          "effects": {
+            "HUMAN": -1,
+            "REP": 0
+          }
+        }
+      ],
+      "effects": {
+        "STYLE": 1
+      },
+      "tags": [
+        "莫克斯帮",
+        "招募"
+      ]
+    },
+    {
+      "id": 2326,
+      "title": "莫克斯帮的情报交易",
+      "description": "莫克斯帮截获了一份清道夫的器官买家名单，名单上有好几个公司高管的名字。这份名单在黑市上价值连城，也能成为要挟公司的筹码。莫克斯帮不想直接卷入公司政治，打算把名单卖给你。但一旦交易曝光，你就会成为所有买家的目标。名单芯片在创始人手中闪闪发光。",
+      "type": "economy",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买下名单要挟公司高管",
+          "effects": {
+            "MONEY": 1500,
+            "DEBT": 1,
+            "REP": 3,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "买下名单交给媒体曝光",
+          "effects": {
+            "MONEY": -1500,
+            "HUMAN": 5,
+            "REP": 5,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放弃交易明哲保身",
+          "effects": {
+            "REP": 0,
+            "HUMAN": 0
+          }
+        }
+      ],
+      "effects": {
+        "DEBT": 1
+      },
+      "tags": [
+        "莫克斯帮",
+        "情报"
+      ]
+    },
+    {
+      "id": 2327,
+      "title": "六街帮的街头巡逻",
+      "description": "六街帮的老兵们在街区巡逻，自称是保护平民免受公司和罪犯侵害的民兵。你走在街上被他们拦下检查身份，怀疑你是公司的间谍。为首的老兵少了一条腿，义肢上刻着服役番号。他手里的改装步枪指着你的胸口，要求你证明自己的身份。街坊邻居在窗户后偷偷张望，没人敢出来替你说话。",
+      "type": "social",
+      "ageRange": [
+        15,
+        50
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "亮出退伍证件赢得信任",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "强硬回怼拒绝检查",
+          "effects": {
+            "STYLE": 3,
+            "REP": -2,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "贿赂老兵放你过去",
+          "effects": {
+            "MONEY": -500,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "六街帮",
+        "巡逻"
+      ]
+    },
+    {
+      "id": 2328,
+      "title": "六街帮的非法检查站",
+      "description": "六街帮在主干道上私设检查站，向过往车辆征收过路费。他们用沙袋和铁丝网封了半条路，武装民兵端着步枪检查每辆车。你的车被拦下了，为首的壮汉敲着车窗要你交两百欧金。后面已经排起了长龙，有人敢怒不敢言。检查站顶上飘着一面褪色的星条旗。",
+      "type": "social",
+      "ageRange": [
+        15,
+        50
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "交钱通过息事宁人",
+          "effects": {
+            "MONEY": -400,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "硬闯检查站",
+          "effects": {
+            "LIFE": -5,
+            "STYLE": 4,
+            "REP": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "和老兵套近乎攀关系",
+          "effects": {
+            "REP": 2,
+            "STYLE": 2,
+            "MONEY": -100
+          }
+        }
+      ],
+      "effects": {
+        "REP": -1
+      },
+      "tags": [
+        "六街帮",
+        "勒索"
+      ]
+    },
+    {
+      "id": 2329,
+      "title": "六街帮老兵聚会",
+      "description": "六街帮在废弃军营里举办老兵聚会，纪念阵亡的战友。气氛庄重而肃穆，老兵们轮流上前讲述自己的战争故事。你被一位老军士长拉住喝酒，他喝多了开始透露一些军方的秘密。他说附近的军火库防范松懈，里面的东西够武装一个连。聚会上的酒越喝越烈，秘密也越说越多。",
+      "type": "social",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "记下情报事后偷袭军火库",
+          "effects": {
+            "TECH": 3,
+            "MONEY": 2000,
+            "REP": -2,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "陪老军士长喝酒交朋友",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 3,
+            "STYLE": 2,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "悄悄离开不打扰聚会",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "ADDICTION": 1
+      },
+      "tags": [
+        "六街帮",
+        "聚会"
+      ]
+    },
+    {
+      "id": 2330,
+      "title": "六街帮反公司突袭",
+      "description": "六街帮策划突袭一家公司的物流中心，抢夺被他们囤积的医疗物资分发给穷人。行动规模很大需要大量人手，六街帮向你发出了邀请。物流中心有公司的私人安保驻守，配备了自动炮塔和无人机。六街帮的老兵虽然装备简陋但战术过硬。这次行动既是抢劫也是政治宣言。",
+      "type": "combat",
+      "ageRange": [
+        17,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入突袭冲锋在前",
+          "effects": {
+            "LIFE": -7,
+            "REP": 5,
+            "HUMAN": 3,
+            "MONEY": 1000,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "负责黑入安保系统",
+          "effects": {
+            "TECH": 5,
+            "REP": 4,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "负责后方接应运输物资",
+          "effects": {
+            "MONEY": 800,
+            "REP": 3,
+            "HUMAN": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "六街帮",
+        "反公司"
+      ]
+    },
+    {
+      "id": 2331,
+      "title": "六街帮的走私通道",
+      "description": "六街帮控制着一条穿过下水道的走私通道，是城里最安全的地下运输线。你想借用这条通道运送一批敏感货物，但六街帮的要价很高。通道里最近出现了不明生物的痕迹，几个走私客失踪了。六街帮怀疑有敌对帮派在通道里设了陷阱。通道入口的铁门上挂着骷髅警告标志。",
+      "type": "economy",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "付高价使用通道并清障",
+          "effects": {
+            "MONEY": -1200,
+            "LIFE": -4,
+            "REP": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "帮六街帮清除通道威胁换取免费",
+          "effects": {
+            "LIFE": -6,
+            "REP": 4,
+            "MONEY": 500,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放弃走私另寻路线",
+          "effects": {
+            "MONEY": -300,
+            "REP": 0
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "六街帮",
+        "走私"
+      ]
+    },
+    {
+      "id": 2332,
+      "title": "六街帮的伏击圈",
+      "description": "你穿越六街帮地盘时触发了一个精心设计的伏击圈。三个方向的火力点同时开火，子弹在你脚边炸出土花。六街帮把你当成了公司特工，显然最近有间谍渗透让他们草木皆兵。你需要迅速证明身份或者杀出重围。老兵们的枪法精准，压制火力让你几乎抬不起头。",
+      "type": "combat",
+      "ageRange": [
+        15,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "高举双手大喊退伍番号",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "扔烟雾弹强行突围",
+          "effects": {
+            "LIFE": -5,
+            "STYLE": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "反击压制火力点逐个击破",
+          "effects": {
+            "LIFE": -7,
+            "CHROME": 2,
+            "REP": 3,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "六街帮",
+        "伏击"
+      ]
+    },
+    {
+      "id": 2333,
+      "title": "六街帮的街头演讲",
+      "description": "六街帮的头目在街头发表反公司演讲，围观群众越来越多。他揭露了公司用饮用水投毒控制贫民区的阴谋，证据确凿。公司派了打手来搅局，混在人群中准备暗杀演讲者。你注意到了人群中几个可疑的身影正在摸枪。演讲者的声音通过扩音器回荡在整条街上。",
+      "type": "social",
+      "ageRange": [
+        15,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "冲上去制服暗杀者保护头目",
+          "effects": {
+            "LIFE": -4,
+            "REP": 5,
+            "HUMAN": 4,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "暗中警告头目让他撤离",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 3,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "混水摸鱼趁乱偷观众钱包",
+          "effects": {
+            "MONEY": 400,
+            "HUMAN": -3,
+            "REP": -2
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": 1
+      },
+      "tags": [
+        "六街帮",
+        "政治"
+      ]
+    },
+    {
+      "id": 2334,
+      "title": "虎爪帮的武士决斗",
+      "description": "虎爪帮的一名武士当街向你发起决斗挑战，他抽出热能武士刀刀刃泛着橘红色光芒。这是虎爪帮的规矩，拒绝挑战等于承认懦弱。围观的人群自动让出一个圆圈，有人开始录像直播。武士的义眼锁定你的要害，身体摆出居合拔刀的架势。刀锋的热浪已经灼烤到了你的脸。",
+      "type": "combat",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拔刀应战以武道对决",
+          "effects": {
+            "LIFE": -7,
+            "STYLE": 6,
+            "REP": 5,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "掏枪射击不讲武德",
+          "effects": {
+            "LIFE": -3,
+            "REP": -3,
+            "STYLE": -2,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "认输跪拜保全性命",
+          "effects": {
+            "LIFE": -2,
+            "REP": -4,
+            "STYLE": -3,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "虎爪帮",
+        "决斗"
+      ]
+    },
+    {
+      "id": 2335,
+      "title": "虎爪帮的夜店包场",
+      "description": "虎爪帮包下了全城最豪华的赛博夜店举办私人派对。全息艺伎在天花板上翩翩起舞，VIP包厢里坐满了帮派高层。你通过关系混了进来，发现他们在暗中拍卖一批偷来的军用神经接口。虎爪帮的老大坐在主位上品着清酒，义体手指间夹着雪茄。夜店的安保密不透风，被发现就完了。",
+      "type": "social",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "竞拍买下神经接口",
+          "effects": {
+            "MONEY": -2500,
+            "TECH": 4,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "偷拍证据要挟虎爪帮",
+          "effects": {
+            "TECH": 3,
+            "DEBT": 2,
+            "REP": -2,
+            "MONEY": 2000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "尽情享乐结交帮中人脉",
+          "effects": {
+            "STYLE": 4,
+            "REP": 3,
+            "ADDICTION": 1,
+            "MONEY": -800
+          }
+        }
+      ],
+      "effects": {
+        "STYLE": 1
+      },
+      "tags": [
+        "虎爪帮",
+        "夜店"
+      ]
+    },
+    {
+      "id": 2336,
+      "title": "虎爪帮的追债行动",
+      "description": "你欠了虎爪帮一大笔赌债，利滚利已经翻到了你还不起的数字。虎爪帮派了两个武士来收债，给了你最后二十四小时。他们暗示如果还不上钱可以用义体器官抵债。你的左臂是高级军用义体，黑市上值不少钱。武士的刀就挂在腰间，提醒你这不是开玩笑。",
+      "type": "economy",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "割让义体手臂抵债",
+          "effects": {
+            "CHROME": -3,
+            "DEBT": -3,
+            "TRAUMA": 3,
+            "LIFE": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "孤注一掷去赌场翻本",
+          "effects": {
+            "MONEY": 3000,
+            "ADDICTION": 2,
+            "DEBT": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接一单虎爪帮的脏活抵债",
+          "effects": {
+            "LIFE": -5,
+            "DEBT": -3,
+            "REP": -2,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "DEBT": 1
+      },
+      "tags": [
+        "虎爪帮",
+        "追债"
+      ]
+    },
+    {
+      "id": 2337,
+      "title": "虎爪帮的纹身仪式",
+      "description": "虎爪帮的纹身师邀请你体验一种新型纳米纹身，能用纳米墨水在皮肤上呈现动态图案。纹身是虎爪帮的身份象征，每个图案都代表一段血史。纹身过程会注入微量神经刺激剂，让人在痛苦中产生快感。纹身完成后图案会随心跳变色，是帮中最时尚的身份标识。纹身师的手指被改成了精密的纳米针头。",
+      "type": "social",
+      "ageRange": [
+        16,
+        45
+      ],
+      "weight": 5,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "纹上虎爪帮的标记融入帮派",
+          "effects": {
+            "STYLE": 5,
+            "REP": 3,
+            "ADDICTION": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "纹一个无帮派含义的个人图案",
+          "effects": {
+            "STYLE": 4,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "STYLE": 1
+      },
+      "tags": [
+        "虎爪帮",
+        "纹身"
+      ]
+    },
+    {
+      "id": 2338,
+      "title": "虎爪帮的暗杀合同",
+      "description": "虎爪帮接到了一单暗杀合同，目标是一个准备出庭指证帮派的公司高管。虎爪帮把任务外包给你，报酬极其丰厚。目标住在公司大楼顶层的豪华公寓，安保等级最高。虎爪帮提供了一个内线的通行码和一份安保轮班表。时间窗口只有今晚，明天目标就会进入证人保护计划。",
+      "type": "combat",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "潜入公寓近距离执行",
+          "effects": {
+            "LIFE": -6,
+            "MONEY": 3000,
+            "REP": 3,
+            "TRAUMA": 4,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "远距离狙击一枪了结",
+          "effects": {
+            "STYLE": 4,
+            "MONEY": 3000,
+            "REP": 2,
+            "TRAUMA": 3,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "警告目标让他连夜逃走",
+          "effects": {
+            "HUMAN": 5,
+            "REP": -4,
+            "DEBT": 2,
+            "MONEY": 0
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "虎爪帮",
+        "暗杀"
+      ]
+    },
+    {
+      "id": 2339,
+      "title": "虎爪帮据点渗透",
+      "description": "你需要从虎爪帮的据点里取回一份被盗的个人数据芯片。据点是一座日式庭园改建的堡垒，到处是全息樱花和隐藏的激光陷阱。虎爪帮的武士在庭院中练刀，刀光在月色下闪烁如银。你必须在不惊动任何人的情况下潜入内殿。芯片被供奉在神龛里，上面刻着虎爪帮的家纹。",
+      "type": "combat",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "启动光学迷彩全潜行渗透",
+          "effects": {
+            "TECH": 5,
+            "STYLE": 3,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "释放烟雾弹强取芯片",
+          "effects": {
+            "LIFE": -5,
+            "CHROME": 2,
+            "REP": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "伪装成送货员混入据点",
+          "effects": {
+            "STYLE": 3,
+            "TECH": 3,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "虎爪帮",
+        "渗透"
+      ]
+    },
+    {
+      "id": 2340,
+      "title": "巫毒帮的网络入侵",
+      "description": "你的个人网络突然被巫毒帮的黑客入侵，所有义体开始不受控制地抽搐。黑客的虚拟化身在你的视野中浮现，是一个由代码编织的洛阿神灵形象。他要求你交出神经接口中的加密数据，否则就格式化你的整个大脑。你的记忆开始一段段被删除，你能感觉到知识在流失。巫毒帮的网络技术是全城最顶尖的，几乎没有破解的可能。",
+      "type": "combat",
+      "ageRange": [
+        15,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "物理切断神经接口断开连接",
+          "effects": {
+            "LIFE": -4,
+            "CHROME": -2,
+            "TRAUMA": 3,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "反向入侵拼死一搏",
+          "effects": {
+            "TECH": 6,
+            "REP": 4,
+            "LIFE": -3,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "交出数据保住大脑",
+          "effects": {
+            "DEBT": 2,
+            "REP": -2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "巫毒帮",
+        "黑客"
+      ]
+    },
+    {
+      "id": 2341,
+      "title": "巫毒帮的数据交易",
+      "description": "巫毒帮掌握着一批从公司核心数据库偷来的机密文件，正在黑市上寻找买家。这些文件涉及公司的非法人体实验记录，价值极高也极其危险。巫毒帮的中间人约你在一家海地餐厅的后厨交易，满屋飘着烤肉和朗姆酒的香味。她用全息投影展示了文件样本，内容触目惊心。交易一旦曝光，公司会追杀所有经手人。",
+      "type": "economy",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "高价买下文件转卖媒体",
+          "effects": {
+            "MONEY": 1000,
+            "HUMAN": 4,
+            "REP": 4,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "买下文件要挟公司",
+          "effects": {
+            "MONEY": 1000,
+            "REP": 3,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放弃交易保命要紧",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 0
+          }
+        }
+      ],
+      "effects": {
+        "DEBT": 1
+      },
+      "tags": [
+        "巫毒帮",
+        "交易"
+      ]
+    },
+    {
+      "id": 2342,
+      "title": "巫毒帮的黑冰陷阱",
+      "description": "你在赛博空间漫游时误入了巫毒帮布设的黑冰陷阱，防护程序被瞬间冻结。黑冰是致命的防护程序，能在几秒内烧毁入侵者的神经系统。你的意识被困在数据牢笼里，身体在现实中抽搐倒地。巫毒帮的操作者通过虚拟化身和你对话，提出一个交换条件。你的心跳在加速，每过一秒神经损伤都在加重。",
+      "type": "combat",
+      "ageRange": [
+        15,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用顶级破解程序强行突破",
+          "effects": {
+            "TECH": 6,
+            "LIFE": -5,
+            "TRAUMA": 3,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "答应巫毒帮的条件换取释放",
+          "effects": {
+            "DEBT": 3,
+            "REP": -1,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "让义体自动断连承受反噬",
+          "effects": {
+            "LIFE": -7,
+            "CHROME": -2,
+            "TRAUMA": 4,
+            "TECH": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "巫毒帮",
+        "黑冰"
+      ]
+    },
+    {
+      "id": 2343,
+      "title": "巫毒帮的求助请求",
+      "description": "巫毒帮的一个年轻黑客被公司的追踪程序锁定，脑机接口即将被远程烧毁。他跪在你面前求助，说自己只是执行任务时出了差错。巫毒帮的技术太强平时不屑于求人，这次是真的走投无路。公司的猎犬程序正在逼近，倒计时只有十五分钟。年轻人的义眼不停地闪烁红色警告。",
+      "type": "combat",
+      "ageRange": [
+        15,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮他黑掉公司追踪程序",
+          "effects": {
+            "TECH": 5,
+            "REP": 5,
+            "HUMAN": 3,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "物理拔除他的脑机接口",
+          "effects": {
+            "LIFE": -3,
+            "HUMAN": 3,
+            "CHROME": -1,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝帮助以免引火烧身",
+          "effects": {
+            "HUMAN": -3,
+            "REP": -2
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": 1
+      },
+      "tags": [
+        "巫毒帮",
+        "求助"
+      ]
+    },
+    {
+      "id": 2344,
+      "title": "巫毒帮的电子祭坛",
+      "description": "巫毒帮在一座废弃数据中心里搭建了电子祭坛，供奉着他们信仰的数字洛阿神灵。祭坛由数百块屏幕组成，上面跳动着神秘的代码符文。长老正在进行一场数字降神仪式，召唤AI神灵的虚拟化身。你被邀请见证仪式，但必须献上一份数字祭品。祭坛的光芒映在每个人的脸上，如同鬼火。",
+      "type": "social",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "献上一份珍贵数据参与仪式",
+          "effects": {
+            "TECH": 4,
+            "REP": 3,
+            "DEBT": 1,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "仅旁观不参与祭献",
+          "effects": {
+            "REP": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {
+        "STYLE": 1
+      },
+      "tags": [
+        "巫毒帮",
+        "仪式"
+      ]
+    },
+    {
+      "id": 2345,
+      "title": "巫毒帮的情报战争",
+      "description": "巫毒帮正在和另一个黑客组织进行一场无声的情报战争，双方在网络空间里互相绞杀。巫毒帮处于下风，需要一个在物理世界的特工去摧毁对方的实体服务器。目标服务器藏在一栋伪装成洗衣房的地下室里，有武装守卫。巫毒帮提供了详细的安保蓝图和入侵路线。这次行动需要物理和网络双重配合。",
+      "type": "combat",
+      "ageRange": [
+        17,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "按蓝图潜入摧毁服务器",
+          "effects": {
+            "LIFE": -5,
+            "TECH": 4,
+            "REP": 5,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "强攻洗衣房速战速决",
+          "effects": {
+            "LIFE": -7,
+            "CHROME": 2,
+            "REP": 4,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "双线操作同时物理和网络进攻",
+          "effects": {
+            "TECH": 5,
+            "LIFE": -6,
+            "REP": 6,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "巫毒帮",
+        "情报战"
+      ]
+    },
+    {
+      "id": 2346,
+      "title": "巫毒帮的围剿",
+      "description": "公司联合警方对巫毒帮发起大规模围剿，全城搜捕帮派成员。巫毒帮的据点被逐一端掉，幸存者四散逃亡。一个巫毒帮长老带着核心数据找到你，请求你护送他离开围剿区。公司悬赏百万欧金捉拿他，满城都是赏金猎人。长老的义体已经受损，行动迟缓。",
+      "type": "combat",
+      "ageRange": [
+        17,
+        50
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "护送长老穿越封锁线",
+          "effects": {
+            "LIFE": -6,
+            "REP": 6,
+            "HUMAN": 3,
+            "MONEY": 1500,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "把长老交给公司领赏",
+          "effects": {
+            "MONEY": 3000,
+            "REP": -5,
+            "HUMAN": -4,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "帮长老假死后隐姓埋名",
+          "effects": {
+            "TECH": 4,
+            "REP": 4,
+            "HUMAN": 4,
+            "DEBT": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "巫毒帮",
+        "围剿"
+      ]
+    },
+    {
+      "id": 2347,
+      "title": "清道夫的深夜伏击",
+      "description": "深夜你独自走在回家的路上，一辆没有牌照的面包车突然急刹在你身旁。车门滑开，几个戴着手术面具的人冲出来用电击器打你。清道夫专门猎杀落单者拆卖义体器官，你是他们今晚的目标。电击让你的义体短路瘫倒在地，他们开始检查你身上值钱的改造件。冰冷的手术刀已经贴上了你的皮肤。",
+      "type": "combat",
+      "ageRange": [
+        15,
+        50
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拼死挣扎反抗搏斗",
+          "effects": {
+            "LIFE": -8,
+            "CHROME": -1,
+            "STYLE": 4,
+            "REP": 3,
+            "TRAUMA": 4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "装昏暗中偷袭司机夺车",
+          "effects": {
+            "LIFE": -4,
+            "STYLE": 5,
+            "REP": 4,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "启动义体应急求救信号",
+          "effects": {
+            "LIFE": -5,
+            "REP": 1,
+            "TRAUMA": 3,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "清道夫",
+        "伏击"
+      ]
+    },
+    {
+      "id": 2348,
+      "title": "清道夫的屠宰场",
+      "description": "你追踪清道夫到了一座废弃屠宰场，空气中弥漫着福尔马林和腐肉的恶臭。冰柜里整齐排列着被拆解的义体部件和人体器官，像商品一样贴着标签。几个受害者还活着被绑在手术台上，等待被拆解。清道夫的屠夫正用电锯切割一个人的脊椎取出神经芯片。你必须立刻行动否则更多人会死。",
+      "type": "combat",
+      "ageRange": [
+        17,
+        50
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "强攻屠宰场解救所有人",
+          "effects": {
+            "LIFE": -7,
+            "HUMAN": 6,
+            "REP": 6,
+            "TRAUMA": 4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "纵火焚烧屠宰场",
+          "effects": {
+            "STYLE": 4,
+            "HUMAN": 3,
+            "REP": 4,
+            "LIFE": -3,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "只救走一个关键人质",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 3,
+            "LIFE": -3,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "清道夫",
+        "屠宰"
+      ]
+    },
+    {
+      "id": 2349,
+      "title": "清道夫的器官拍卖",
+      "description": "清道夫在地下举办了一场器官拍卖会，被拆解的义体和鲜活器官摆上了拍卖台。买家是各路帮派和黑市商人，出价踊跃。你发现拍卖品中有一套与你失窃义体完全匹配的部件。拍卖师是个没有脸的改造人，声音通过合成器发出。你的义体编号赫然出现在拍卖清单上。",
+      "type": "economy",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "竞拍买回自己的义体部件",
+          "effects": {
+            "MONEY": -1800,
+            "CHROME": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "当场翻脸抢回义体",
+          "effects": {
+            "LIFE": -6,
+            "CHROME": 3,
+            "REP": 4,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "举报拍卖会让警方来抄",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "MONEY": 500,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "清道夫",
+        "拍卖"
+      ]
+    },
+    {
+      "id": 2350,
+      "title": "清道夫的猎物名单",
+      "description": "你从黑市买到了一份清道夫的猎物名单，上面有你的名字和详细信息。名单上每个名字后面都标注了义体价值和预估售价。清道夫把你标价八千欧金，你的军用级神经接口是主要目标。名单上还有十几个人的信息，其中几个已经被拆解了。你必须决定如何处理这份死亡清单。",
+      "type": "social",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "逐一警告名单上的人",
+          "effects": {
+            "HUMAN": 5,
+            "REP": 4,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "把名单交给警方换取保护",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "反向追踪清道夫巢穴端掉他们",
+          "effects": {
+            "LIFE": -6,
+            "REP": 5,
+            "HUMAN": 3,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "清道夫",
+        "名单"
+      ]
+    },
+    {
+      "id": 2351,
+      "title": "逃离清道夫的冰柜",
+      "description": "你被清道夫打晕后醒来发现自己被塞进了一个工业冰柜里。身边堆满了冻僵的义体部件和人体器官，温度低到让你呼吸困难。你的手腕被磁力镣铐锁住但双脚还能动。冰柜外传来清道夫讨价还价的声音，买家很快就要来取货了。你必须在被卖掉之前逃出去。",
+      "type": "combat",
+      "ageRange": [
+        15,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用脚踢破冰柜门逃生",
+          "effects": {
+            "LIFE": -5,
+            "STYLE": 3,
+            "REP": 2,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "黑开磁力镣铐锁悄悄潜出",
+          "effects": {
+            "TECH": 4,
+            "STYLE": 4,
+            "REP": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "装死等买家来时突袭",
+          "effects": {
+            "LIFE": -4,
+            "CHROME": 2,
+            "REP": 4,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "清道夫",
+        "逃脱"
+      ]
+    },
+    {
+      "id": 2352,
+      "title": "清道夫的地下窝点",
+      "description": "线人举报了清道夫的一处地下窝点位置，里面囤积了大量偷来的义体。你决定带人去端了这个窝点，既为民除害也能发一笔横财。窝点入口伪装成一家义体维修店，后面连通着巨大的地下仓库。仓库里冰柜嗡嗡作响，保存着价值百万的赃物。但清道夫在里面设了连环陷阱。",
+      "type": "combat",
+      "ageRange": [
+        17,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "正面突破陷阱硬闯仓库",
+          "effects": {
+            "LIFE": -7,
+            "MONEY": 2000,
+            "REP": 5,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "黑入安保系统关闭陷阱",
+          "effects": {
+            "TECH": 5,
+            "MONEY": 2000,
+            "REP": 4
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "只取最值钱的货就撤",
+          "effects": {
+            "MONEY": 1500,
+            "REP": 2,
+            "LIFE": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "清道夫",
+        "突袭"
+      ]
+    },
+    {
+      "id": 2353,
+      "title": "清道夫的活体拍卖",
+      "description": "清道夫竟然在拍卖活人，受害者被当作义体供体标价出售。你混进拍卖场发现受害者中有一个你认识的人。拍卖场戒备森严，清道夫的头目亲自坐镇。每举一次牌就意味着一个人的命运被决定。你的朋友即将被推上拍卖台，时间不多了。",
+      "type": "combat",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "当场暴动救出所有人质",
+          "effects": {
+            "LIFE": -8,
+            "HUMAN": 6,
+            "REP": 6,
+            "TRAUMA": 4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "高价买下朋友再暗中报警",
+          "effects": {
+            "MONEY": -2500,
+            "HUMAN": 4,
+            "REP": 3,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "制造混乱趁乱劫人",
+          "effects": {
+            "LIFE": -5,
+            "HUMAN": 3,
+            "REP": 4,
+            "STYLE": 4,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "清道夫",
+        "拍卖"
+      ]
+    },
+    {
+      "id": 2354,
+      "title": "街角争夺战",
+      "description": "两个帮派在一个繁华街角对峙，这里是毒品和情报的交易枢纽。你恰好住在街角楼上，夹在交火区中间。双方都要求你站队提供情报或掩体。子弹已经开始横飞，你的窗户被打碎了。街角的霓虹招牌在枪火中忽明忽暗。",
+      "type": "combat",
+      "ageRange": [
+        15,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮其中一方打赢争夺战",
+          "effects": {
+            "LIFE": -5,
+            "REP": 4,
+            "MONEY": 1000,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "两边卖情报两头获利",
+          "effects": {
+            "MONEY": 1500,
+            "DEBT": 2,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "组织居民撤离交火区",
+          "effects": {
+            "HUMAN": 5,
+            "REP": 3,
+            "LIFE": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "地盘争夺",
+        "巷战"
+      ]
+    },
+    {
+      "id": 2355,
+      "title": "地下通道控制权",
+      "description": "一条废弃地铁隧道成了帮派争夺的战略要道，控制它就控制了整片区域的地下运输。两个帮派都在隧道两端设了据点准备争夺控制权。你常走这条隧道通勤，现在被封了。隧道里回荡着双方对骂的回声和金属碰撞声。黑暗中不知埋了多少地雷和陷阱。",
+      "type": "combat",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮一方打通隧道控制权",
+          "effects": {
+            "LIFE": -6,
+            "REP": 4,
+            "MONEY": 800,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "独自清障打通安全通道",
+          "effects": {
+            "LIFE": -5,
+            "TECH": 3,
+            "REP": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "煽动双方火并坐收渔利",
+          "effects": {
+            "STYLE": 4,
+            "REP": 2,
+            "DEBT": 1,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "地盘争夺",
+        "隧道"
+      ]
+    },
+    {
+      "id": 2356,
+      "title": "屋顶狙击战",
+      "description": "帮派战争升级到了屋顶，狙击手在城市天际线上互相猎杀。你被困在一栋楼的天台上，对面楼顶有两个敌方狙击手正在瞄准你。风很大，全息广告牌在头顶闪烁投下变幻的光影。你的掩体是一个废弃的水箱，子弹打在上面叮当作响。撤离通道被火力封锁，必须想办法反击。",
+      "type": "combat",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用反器材步枪对狙",
+          "effects": {
+            "LIFE": -6,
+            "STYLE": 5,
+            "REP": 4,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "黑入对面楼的安保无人机反击",
+          "effects": {
+            "TECH": 5,
+            "REP": 3,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "沿外墙攀爬撤离",
+          "effects": {
+            "LIFE": -4,
+            "CHROME": 2,
+            "STYLE": 3,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "地盘争夺",
+        "狙击"
+      ]
+    },
+    {
+      "id": 2357,
+      "title": "霓虹街区巷战",
+      "description": "整条霓虹街区变成了战场，两个帮派在密集的巷道里逐屋争夺。全息广告牌在枪火中扭曲变形，玻璃碎片如雨般落下。你被困在一家便利店后面，货架上的商品被子弹打得稀烂。街面上到处是弹壳和血迹，偶尔有伤员的惨叫穿透枪声。你必须穿过三个街区才能到安全区。",
+      "type": "combat",
+      "ageRange": [
+        15,
+        50
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "端起掉落的武器加入巷战",
+          "effects": {
+            "LIFE": -8,
+            "STYLE": 5,
+            "REP": 5,
+            "TRAUMA": 4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "从下水道绕行到安全区",
+          "effects": {
+            "LIFE": -3,
+            "TECH": 2,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "帮平民躲进地下室避险",
+          "effects": {
+            "HUMAN": 5,
+            "REP": 4,
+            "LIFE": -4,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "地盘争夺",
+        "巷战"
+      ]
+    },
+    {
+      "id": 2358,
+      "title": "废弃工厂争夺战",
+      "description": "一座废弃的芯片工厂成了帮派争夺焦点，里面残留的设备价值不菲。三个帮派同时盯上了这个地方，三方势力在工厂里混战。工厂内部结构复杂，到处是锈蚀的管道和坍塌的楼板。你被卷入其中无法脱身。每一层楼都有不同的帮派占据，你必须层层突围。",
+      "type": "combat",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "利用地形逐层清除敌人",
+          "effects": {
+            "LIFE": -7,
+            "STYLE": 4,
+            "REP": 4,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "炸毁楼梯阻断追兵撤离",
+          "effects": {
+            "LIFE": -3,
+            "TECH": 3,
+            "REP": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "抢夺设备趁乱运走变现",
+          "effects": {
+            "MONEY": 2000,
+            "LIFE": -5,
+            "REP": 2,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "地盘争夺",
+        "工厂"
+      ]
+    },
+    {
+      "id": 2359,
+      "title": "交通枢纽争夺",
+      "description": "一个高架桥交汇处是毒品运输的关键节点，谁控制了它谁就控制了物流。两个帮派在匝道上设了路障对峙，车辆被迫绕行。你的一批货被困在封锁线后面，客户催得紧。帮派要求你交过路费才放行，价格高得离谱。高架桥上寒风凛冽，双方剑拔弩张。",
+      "type": "economy",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "付过路费保住货物",
+          "effects": {
+            "MONEY": -1500,
+            "REP": -1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "帮一方打赢争夺免过路费",
+          "effects": {
+            "LIFE": -6,
+            "REP": 4,
+            "MONEY": 500,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "绕行贫民窟小路省下过路费",
+          "effects": {
+            "LIFE": -3,
+            "STYLE": 2,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "地盘争夺",
+        "交通"
+      ]
+    },
+    {
+      "id": 2360,
+      "title": "漩涡帮入会试炼",
+      "description": "你想加入漩涡帮，帮派给了你一个入会试炼：潜入公司安保站偷一台军用义体控制器。安保站有二十四小时值班和自动炮塔系统。漩涡帮的人在外围接应但不会帮你动手。成功你就是兄弟，失败你自己承担后果。你的手心全是汗，义眼已经切换到了夜视模式。",
+      "type": "combat",
+      "ageRange": [
+        16,
+        40
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "潜入安保站偷走控制器",
+          "effects": {
+            "LIFE": -5,
+            "TECH": 4,
+            "REP": 5,
+            "STYLE": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "黑入炮塔系统制造混乱",
+          "effects": {
+            "TECH": 5,
+            "REP": 4,
+            "LIFE": -3,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "临阵脱逃放弃入会",
+          "effects": {
+            "REP": -3,
+            "STYLE": -2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "入会试炼",
+        "漩涡帮"
+      ]
+    },
+    {
+      "id": 2361,
+      "title": "瓦伦蒂诺帮入会考验",
+      "description": "瓦伦蒂诺帮的入会考验是完成一次完美的义体改装展示。你必须在一小时内用有限零件把自己的义体改造成一件艺术品。帮派纹身师会评判你的改装美学和工艺水平。车间里堆满了各种零件和工具，有的还能用有的是废铁。时钟在滴答作响，其他候选者也在紧张改装。",
+      "type": "social",
+      "ageRange": [
+        16,
+        40
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全力以赴打造惊艳作品",
+          "effects": {
+            "STYLE": 6,
+            "CHROME": 3,
+            "REP": 4,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "偷用别人的高级零件",
+          "effects": {
+            "STYLE": 4,
+            "REP": 2,
+            "DEBT": 2,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "保守改装求稳通过",
+          "effects": {
+            "STYLE": 3,
+            "REP": 2,
+            "CHROME": 1
+          }
+        }
+      ],
+      "effects": {
+        "STYLE": 1
+      },
+      "tags": [
+        "入会试炼",
+        "瓦伦蒂诺帮"
+      ]
+    },
+    {
+      "id": 2362,
+      "title": "动物帮入会角斗",
+      "description": "动物帮的入会方式最直接：在角斗场里打赢一个正式成员。你的对手身高两米体重一百五十公斤，全身肌肉注入了合成激素。角斗没有规则，认输或昏迷即结束。看台上的动物帮成员在狂吼下注，气氛狂热到极点。你的体格远不如对手，必须用脑子。",
+      "type": "combat",
+      "ageRange": [
+        16,
+        45
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "硬碰硬正面对抗",
+          "effects": {
+            "LIFE": -9,
+            "CHROME": 2,
+            "REP": 5,
+            "STYLE": 4,
+            "TRAUMA": 4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "利用敏捷攻击关节弱点",
+          "effects": {
+            "LIFE": -5,
+            "STYLE": 5,
+            "REP": 4,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "赛前偷下药削弱对手",
+          "effects": {
+            "REP": 3,
+            "HUMAN": -3,
+            "DEBT": 1,
+            "LIFE": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "入会试炼",
+        "动物帮"
+      ]
+    },
+    {
+      "id": 2363,
+      "title": "六街帮入会宣誓",
+      "description": "六街帮的入会仪式要求你当众烧掉一件与公司有关的物品表示决裂。你身上唯一值钱的东西就是公司生产的义体手臂。老兵们围成一圈等着你表态，篝火映着他们饱经风霜的脸。烧掉义体手臂意味着失去一只手，至少在找到替代品之前。火焰噼啪作响，所有人的目光都聚焦在你身上。",
+      "type": "social",
+      "ageRange": [
+        16,
+        45
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "烧掉义体手臂表忠心",
+          "effects": {
+            "CHROME": -3,
+            "REP": 5,
+            "HUMAN": 2,
+            "LIFE": -3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "烧掉公司身份芯片保留义体",
+          "effects": {
+            "REP": 4,
+            "DEBT": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝入会转身离开",
+          "effects": {
+            "REP": -2,
+            "STYLE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "入会试炼",
+        "六街帮"
+      ]
+    },
+    {
+      "id": 2364,
+      "title": "虎爪帮入会血誓",
+      "description": "虎爪帮的入会仪式要求你用自己的血在武士刀上写下誓言。长老递给你一把未开刃的刀，要你用自己的血开刃。这意味着你要割开手掌让血浸透刀身。仪式后你的手掌会被缝上金属缝线留下永久疤痕。周围的帮众沉默注视，气氛庄重得让人窒息。",
+      "type": "social",
+      "ageRange": [
+        16,
+        45
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "割掌血誓加入虎爪帮",
+          "effects": {
+            "LIFE": -4,
+            "STYLE": 5,
+            "REP": 4,
+            "TRAUMA": 2,
+            "CHROME": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用假血蒙混过关",
+          "effects": {
+            "STYLE": 3,
+            "REP": 2,
+            "DEBT": 2,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "不敢下刀放弃入会",
+          "effects": {
+            "REP": -3,
+            "STYLE": -2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "入会试炼",
+        "虎爪帮"
+      ]
+    },
+    {
+      "id": 2365,
+      "title": "莫克斯帮入会任务",
+      "description": "莫克斯帮的入会任务是去解救一个被家暴的女性。目标被丈夫关在家里，丈夫是个有暴力倾向的改造人。莫克斯帮给你一把电击棍和一个地址，其余你自己搞定。这是考验你的勇气和正义感。地址是一栋破旧公寓楼，窗户都用铁板封死了。",
+      "type": "combat",
+      "ageRange": [
+        16,
+        45
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "踹门而入制服施暴者",
+          "effects": {
+            "LIFE": -4,
+            "HUMAN": 5,
+            "REP": 5,
+            "STYLE": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "伪装成物业骗开门",
+          "effects": {
+            "STYLE": 4,
+            "HUMAN": 4,
+            "REP": 4,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "报警让警察处理",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": 1
+      },
+      "tags": [
+        "入会试炼",
+        "莫克斯帮"
+      ]
+    },
+    {
+      "id": 2366,
+      "title": "血誓帮派的生死试炼",
+      "description": "一个神秘帮派的入会试炼是让你在十层楼顶走过一根独木梁。梁下是百米深渊，失足就是粉身碎骨。风很大，你的义体平衡系统在疯狂报警。据说之前有三人试过两人摔死。帮派头目在对面端着酒杯等着你走过来。",
+      "type": "social",
+      "ageRange": [
+        16,
+        40
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "关掉报警硬走过独木梁",
+          "effects": {
+            "LIFE": -3,
+            "STYLE": 6,
+            "REP": 5,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用磁力吸附装置辅助通过",
+          "effects": {
+            "TECH": 3,
+            "STYLE": 4,
+            "REP": 3,
+            "CHROME": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝冒险转身离开",
+          "effects": {
+            "REP": -3,
+            "STYLE": -2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "入会试炼",
+        "生死"
+      ]
+    },
+    {
+      "id": 2367,
+      "title": "卧底身份暴露",
+      "description": "你在帮派里卧底三个月，身份突然被一个识破你的线人威胁要揭发。线人要求你付十万欧金封口费，否则就告诉帮派老大。帮派对叛徒的惩罚是把人活活拆解挂在电线杆上示众。你的联络人联系不上，孤立无援。线人给了你二十四小时筹钱。",
+      "type": "social",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买凶杀掉线人灭口",
+          "effects": {
+            "MONEY": -1500,
+            "LIFE": -3,
+            "REP": -3,
+            "HUMAN": -3,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "提前撤离放弃卧底任务",
+          "effects": {
+            "REP": -2,
+            "DEBT": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "反向要挟线人争取时间",
+          "effects": {
+            "STYLE": 4,
+            "TECH": 3,
+            "DEBT": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "帮派背叛",
+        "卧底"
+      ]
+    },
+    {
+      "id": 2368,
+      "title": "帮派内鬼泄密",
+      "description": "帮派最近连续三次行动都遭到伏击，明显有内鬼在泄密。老大怀疑到你头上，因为你是最近才加入的新人。你必须找出真正的内鬼洗清嫌疑，否则小命难保。线索指向帮派的一个老成员，他最近消费远超收入。你有四十八小时找到铁证。",
+      "type": "social",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "跟踪调查揪出真正内鬼",
+          "effects": {
+            "TECH": 4,
+            "REP": 5,
+            "STYLE": 3,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "栽赃嫁祸给另一个新人",
+          "effects": {
+            "REP": 2,
+            "HUMAN": -4,
+            "DEBT": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "自己逃出帮派保命",
+          "effects": {
+            "REP": -4,
+            "DEBT": 2,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "帮派背叛",
+        "内鬼"
+      ]
+    },
+    {
+      "id": 2369,
+      "title": "二当家的叛变",
+      "description": "帮派二当家密谋推翻老大，拉你入伙许诺事成后分你一片地盘。他手下已经控制了帮内三成的武装力量。行动定在今晚的老大生日宴上，安保最松懈的时候。二当家的计划周密，但老大也不是吃素的。你必须决定站在哪一边。",
+      "type": "social",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入政变帮忙动手",
+          "effects": {
+            "LIFE": -5,
+            "REP": -2,
+            "MONEY": 2000,
+            "DEBT": 2,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向老大告密粉碎政变",
+          "effects": {
+            "REP": 6,
+            "MONEY": 1500,
+            "HUMAN": -3,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "两边都不沾连夜出城",
+          "effects": {
+            "REP": -2,
+            "MONEY": -500,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "DEBT": 1
+      },
+      "tags": [
+        "帮派背叛",
+        "政变"
+      ]
+    },
+    {
+      "id": 2370,
+      "title": "兄弟反目成仇",
+      "description": "你和帮派里的拜把兄弟因为一笔赃款的分赃问题翻了脸。他坚持自己该拿大头因为是他冒的险。你不同意，两人从口角升级到拔刀相向。其他帮众围在旁边不敢插手，这场决斗在所难免。多年的兄弟情在利益面前碎了一地。",
+      "type": "combat",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拔刀决斗赢回属于你的份",
+          "effects": {
+            "LIFE": -6,
+            "STYLE": 4,
+            "REP": 3,
+            "MONEY": 1500,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "让步息事宁人保住兄弟情",
+          "effects": {
+            "MONEY": -800,
+            "HUMAN": 2,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "设局让他背上黑锅被帮派清理",
+          "effects": {
+            "MONEY": 2000,
+            "HUMAN": -4,
+            "REP": -2,
+            "DEBT": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "帮派背叛",
+        "反目"
+      ]
+    },
+    {
+      "id": 2371,
+      "title": "情报出卖者",
+      "description": "你发现帮派的情报官一直在把行动情报卖给敌对帮派。每次出卖都能让他赚一大笔，代价是帮派兄弟的命。你手里有他最后一次交易的录音证据。情报官发现你知道了，派杀手来灭口。你必须抢在杀手动手前把证据交到老大手里。",
+      "type": "social",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "突围把证据交给老大",
+          "effects": {
+            "LIFE": -5,
+            "REP": 6,
+            "HUMAN": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用证据要挟情报官分一杯羹",
+          "effects": {
+            "MONEY": 2500,
+            "DEBT": 3,
+            "HUMAN": -3,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "自己解决杀手后远走高飞",
+          "effects": {
+            "LIFE": -4,
+            "REP": -2,
+            "DEBT": 2,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "帮派背叛",
+        "情报"
+      ]
+    },
+    {
+      "id": 2372,
+      "title": "投敌叛变者",
+      "description": "帮派的一个核心成员带着全部客户名单投奔了敌对帮派。老大暴怒下令追杀叛徒，指名要你执行。叛徒曾经救过你的命，你欠他人情。但拒绝命令意味着你自己也会被当成叛徒追杀。叛徒已经逃到了敌对帮派的保护下，下手的机会只有一次。",
+      "type": "combat",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "执行命令杀掉叛徒",
+          "effects": {
+            "LIFE": -4,
+            "REP": 5,
+            "HUMAN": -4,
+            "TRAUMA": 4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "暗中放走叛徒伪造死讯",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "DEBT": 3,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "跟着叛徒一起投敌",
+          "effects": {
+            "REP": -5,
+            "MONEY": 1500,
+            "DEBT": 2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "帮派背叛",
+        "投敌"
+      ]
+    },
+    {
+      "id": 2373,
+      "title": "证人交易",
+      "description": "你被警方逮捕面临重罪指控，检察官提出认罪协商。只要你出庭指证帮派老大，就能获得豁免和证人保护。但帮派对叛徒的追杀从不手软，证人保护计划也未必靠得住。你的律师建议你接受，但你的直觉告诉你不妙。审讯室的灯光刺得你睁不开眼。",
+      "type": "social",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受认罪协商出卖老大",
+          "effects": {
+            "DEBT": -2,
+            "HUMAN": -4,
+            "REP": -5,
+            "TRAUMA": 2,
+            "LIFE": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝协商扛下所有指控",
+          "effects": {
+            "LIFE": -4,
+            "REP": 5,
+            "DEBT": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "越狱逃跑自己解决",
+          "effects": {
+            "LIFE": -6,
+            "STYLE": 4,
+            "REP": 3,
+            "TRAUMA": 3,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "帮派背叛",
+        "证人"
+      ]
+    },
+    {
+      "id": 2374,
+      "title": "临时停火谈判",
+      "description": "两个长期敌对的帮派因为第三方威胁决定临时停火。你被选为中间人主持谈判，双方头目在一家中立餐厅会面。谈判桌上摆着手枪和咖啡，气氛紧张到极点。任何一句话说错都可能引爆全面战争。餐厅老板躲在吧台后面瑟瑟发抖。",
+      "type": "social",
+      "ageRange": [
+        20,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "成功斡旋达成停火协议",
+          "effects": {
+            "STYLE": 5,
+            "REP": 6,
+            "HUMAN": 2,
+            "MONEY": 1000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "偏袒一方从中牟利",
+          "effects": {
+            "MONEY": 2000,
+            "REP": -2,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "谈判破裂双方开战",
+          "effects": {
+            "LIFE": -5,
+            "REP": -3,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "effects": {
+        "REP": 1
+      },
+      "tags": [
+        "跨帮派联盟",
+        "停火"
+      ]
+    },
+    {
+      "id": 2375,
+      "title": "联合行动协议",
+      "description": "两个帮派决定联手突袭一个公司武装押运车队，赃物五五分。你被指派为联合行动的协调人，负责两帮人马的配合。问题是两帮的人互相不信任都怕对方黑吃黑。行动前的协调会上双方已经吵了三轮。车队明天就到，计划还没定下来。",
+      "type": "combat",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "力促合作成功劫车",
+          "effects": {
+            "LIFE": -5,
+            "MONEY": 2500,
+            "REP": 5,
+            "STYLE": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "暗中独吞赃物让联盟破裂",
+          "effects": {
+            "MONEY": 3000,
+            "REP": -5,
+            "DEBT": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "协调失败行动取消",
+          "effects": {
+            "REP": -2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "跨帮派联盟",
+        "联合行动"
+      ]
+    },
+    {
+      "id": 2376,
+      "title": "共同的敌人",
+      "description": "一个新崛起的帮派正在蚕食所有老帮派的地盘，各方被迫结盟对抗。联盟推举你为前线指挥官统帅各帮派武装。问题是每个帮派都想保全自己的实力不愿冲锋。你需要找到一个让各方都能接受的作战方案。联盟的信任脆弱如纸，一次失败就会瓦解。",
+      "type": "combat",
+      "ageRange": [
+        20,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "身先士卒率联军决战",
+          "effects": {
+            "LIFE": -8,
+            "REP": 7,
+            "STYLE": 5,
+            "TRAUMA": 4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用计策分化瓦解敌方",
+          "effects": {
+            "TECH": 4,
+            "STYLE": 5,
+            "REP": 6,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "联盟内讧你夹在中间",
+          "effects": {
+            "LIFE": -5,
+            "REP": -2,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "跨帮派联盟",
+        "共同敌人"
+      ]
+    },
+    {
+      "id": 2377,
+      "title": "分赃协议谈判",
+      "description": "联合行动成功后，分赃成了最大的问题。各方都觉得自己功劳最大应该多分。你作为中间人负责制定分赃方案，每一方都在给你施压。有人暗中贿赂你多分他一点，有人威胁你少分他就翻脸。谈判桌上摆着抢来的战利品，价值百万。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        50
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "公平分配维持联盟",
+          "effects": {
+            "REP": 5,
+            "HUMAN": 2,
+            "MONEY": 800,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "收受贿赂偏袒一方",
+          "effects": {
+            "MONEY": 2000,
+            "REP": -3,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "自己多拿一份趁乱消失",
+          "effects": {
+            "MONEY": 2500,
+            "REP": -5,
+            "DEBT": 3,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "REP": 1
+      },
+      "tags": [
+        "跨帮派联盟",
+        "分赃"
+      ]
+    },
+    {
+      "id": 2378,
+      "title": "联盟的破裂",
+      "description": "脆弱的联盟在一次误会中彻底破裂，曾经的盟友反目成仇。你作为联盟的维系者成了众矢之的，所有帮派都怪你。你需要在天亮前离开这座城市，否则必死无疑。各帮派都派了人在各出口堵截你。你的义体导航系统显示所有主干道都被标记为红色。",
+      "type": "combat",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "杀出一条血路逃离城市",
+          "effects": {
+            "LIFE": -8,
+            "STYLE": 4,
+            "REP": 3,
+            "TRAUMA": 4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "藏进下水道等风头过去",
+          "effects": {
+            "LIFE": -3,
+            "REP": -1,
+            "TRAUMA": 2,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "找到一个帮派寻求庇护",
+          "effects": {
+            "DEBT": 3,
+            "REP": -2,
+            "LIFE": -2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "跨帮派联盟",
+        "破裂"
+      ]
+    },
+    {
+      "id": 2379,
+      "title": "黑市合作联盟",
+      "description": "几个帮派决定在黑市上建立合作联盟共享渠道和客户。你被推举为联盟的商务代表负责日常运营。联盟的利润丰厚但管理复杂，各方都在暗中偷货私卖。你需要建立一套让各方都信服的监管系统。黑市仓库里堆满了价值连城的走私货。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "建立严格监管系统运营联盟",
+          "effects": {
+            "TECH": 4,
+            "MONEY": 2000,
+            "REP": 5,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自己也偷货两头赚钱",
+          "effects": {
+            "MONEY": 2800,
+            "REP": -3,
+            "DEBT": 2,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "卷走联盟资金跑路",
+          "effects": {
+            "MONEY": 3000,
+            "REP": -5,
+            "DEBT": 3,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "MONEY": 500
+      },
+      "tags": [
+        "跨帮派联盟",
+        "黑市"
+      ]
+    },
+    {
+      "id": 2380,
+      "title": "军火交易现场",
+      "description": "你赴约一笔大额军火交易，卖家是一群退役特种兵改装的军火商。货物包括军用级外骨骼和智能弹药系统。交易地点在码头集装箱区，双方都带了重火力。验货时你发现部分武器被动了手脚有追踪器。卖家已经注意到你的表情变化手按上了枪套。",
+      "type": "economy",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "当场翻脸要求降价或开打",
+          "effects": {
+            "LIFE": -6,
+            "MONEY": -1000,
+            "STYLE": 4,
+            "REP": 3,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "假装没发现照常完成交易",
+          "effects": {
+            "MONEY": -2500,
+            "TECH": 2,
+            "DEBT": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "黑入追踪器反向定位卖家老巢",
+          "effects": {
+            "TECH": 5,
+            "MONEY": -2500,
+            "REP": 3,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "武器交易",
+        "军火"
+      ]
+    },
+    {
+      "id": 2381,
+      "title": "走私武器被截",
+      "description": "你的一批走私武器在运输途中被另一个帮派截走。货值两万欧金，客户已经付了定金。截货的帮派提出要么花钱赎回要么拿等价情报交换。你的信誉和钱包都经不起这笔损失。截货帮派的老大在电话里冷笑，给你的时间不多。",
+      "type": "economy",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "付钱赎回货物",
+          "effects": {
+            "MONEY": -2000,
+            "DEBT": 2,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用情报交换赎回货物",
+          "effects": {
+            "TECH": 3,
+            "DEBT": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "带人去抢回货物",
+          "effects": {
+            "LIFE": -7,
+            "MONEY": 0,
+            "REP": 4,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "effects": {
+        "DEBT": 1
+      },
+      "tags": [
+        "武器交易",
+        "走私"
+      ]
+    },
+    {
+      "id": 2382,
+      "title": "军火仓库抢劫",
+      "description": "你发现了一个帮派的军火仓库位置，里面堆满了从军方偷来的重型武器。仓库守卫森严但换班时有一个十五分钟的空窗。你召集了几个可靠的人准备动手。仓库的铁门需要C4爆破或黑入电子锁。这次行动成功你就是城里最大的军火贩子。",
+      "type": "combat",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "趁换班空窗强攻仓库",
+          "effects": {
+            "LIFE": -6,
+            "MONEY": 3000,
+            "REP": 5,
+            "STYLE": 4,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "黑入电子锁全队潜入搬货",
+          "effects": {
+            "TECH": 5,
+            "MONEY": 2800,
+            "REP": 4,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "只偷最值钱的几件就撤",
+          "effects": {
+            "MONEY": 1500,
+            "REP": 2,
+            "LIFE": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "武器交易",
+        "抢劫"
+      ]
+    },
+    {
+      "id": 2383,
+      "title": "改装武器工坊",
+      "description": "你找到一个能改装武器的地下工坊，技师能把普通枪械改成全自动杀伤利器。改装费用不菲但效果惊人，改装后的武器黑市价翻三倍。工坊最近被帮派盯上了要收保护费。技师求你帮忙摆平否则只能关门。工坊里摆满了半成品改装件，火花四溅。",
+      "type": "economy",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮技师赶走帮派保住工坊",
+          "effects": {
+            "LIFE": -5,
+            "REP": 4,
+            "MONEY": 1000,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "和帮派合作分成经营",
+          "effects": {
+            "MONEY": 1800,
+            "REP": -1,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "抢走技师自己开工坊",
+          "effects": {
+            "MONEY": 2000,
+            "REP": -4,
+            "HUMAN": -3,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {
+        "DEBT": 1
+      },
+      "tags": [
+        "武器交易",
+        "改装"
+      ]
+    },
+    {
+      "id": 2384,
+      "title": "黑客定制武器",
+      "description": "一个巫毒帮叛逃黑客向你推销一种网络战武器，能远程瘫痪目标的义体。这种武器极其危险被列为违禁品，但也意味着天价。黑客开价五千欧金且只收现金不还价。武器被封装在一个指甲盖大小的芯片里。多个帮派都在追杀这个叛逃黑客想白拿武器。",
+      "type": "economy",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买下武器芯片",
+          "effects": {
+            "MONEY": -2500,
+            "TECH": 5,
+            "REP": 2,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "抢走芯片不付钱",
+          "effects": {
+            "TECH": 4,
+            "REP": -3,
+            "DEBT": 2,
+            "HUMAN": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "举报黑客给巫毒帮换取赏金",
+          "effects": {
+            "MONEY": 1500,
+            "REP": 2,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {
+        "DEBT": 1
+      },
+      "tags": [
+        "武器交易",
+        "黑客"
+      ]
+    },
+    {
+      "id": 2385,
+      "title": "货物截获战",
+      "description": "你截获了一批运往敌对帮派的武器货物，但对方追踪到了你的位置。十几个武装人员正在包围你所在的废弃仓库。货物在手上就是筹码也是催命符。你可以交货保命也可以死守等援军。包围圈在缩小，对方给了你十分钟最后通牒。",
+      "type": "combat",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "死守仓库等援军到达",
+          "effects": {
+            "LIFE": -8,
+            "REP": 5,
+            "MONEY": 2000,
+            "TRAUMA": 4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "带着货从地下水道突围",
+          "effects": {
+            "LIFE": -5,
+            "MONEY": 2000,
+            "STYLE": 4,
+            "REP": 3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "交货投降保住性命",
+          "effects": {
+            "LIFE": -3,
+            "REP": -4,
+            "MONEY": -500,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "武器交易",
+        "截获"
+      ]
+    },
+    {
+      "id": 2386,
+      "title": "收取保护费",
+      "description": "你代表帮派去商户收取每月保护费，这条街有二十家店铺。大多数商户乖乖交钱但有一家新开的面馆拒绝缴纳。面馆老板是个倔老头说他已经交不起第二次保护费。帮派规定收不齐钱你自己贴。街坊邻居在门缝后面偷偷看着你。",
+      "type": "economy",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "砸店逼老头交钱",
+          "effects": {
+            "MONEY": 800,
+            "HUMAN": -4,
+            "REP": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自掏腰包替老头垫上",
+          "effects": {
+            "MONEY": -600,
+            "HUMAN": 4,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放老头一马回去虚报",
+          "effects": {
+            "HUMAN": 3,
+            "DEBT": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "REP": -1
+      },
+      "tags": [
+        "保护费",
+        "勒索"
+      ]
+    },
+    {
+      "id": 2387,
+      "title": "拒绝缴纳保护费",
+      "description": "你开的小店被帮派勒索保护费，每月要交八百欧金。这个月你决定不再缴纳，结果帮派派了打手来砸店。打手用棒球棍砸碎了你的柜台和全息广告屏。他们放话三天内不交钱就烧店。你的全部身家都投在这家店上。街上其他商户装作没看见。",
+      "type": "combat",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拿起武器和打手拼命",
+          "effects": {
+            "LIFE": -6,
+            "STYLE": 4,
+            "REP": 4,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "交钱保住店铺",
+          "effects": {
+            "MONEY": -800,
+            "DEBT": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "联合其他商户共同抗费",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "LIFE": -3,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "保护费",
+        "反抗"
+      ]
+    },
+    {
+      "id": 2388,
+      "title": "双重勒索陷阱",
+      "description": "两个帮派同时向你收保护费，都声称这条街归自己管。你交了一份另一份不认账，两家都威胁要砸你的店。你夹在中间两头不是人，交双份根本吃不消。两家帮派恰好在街上碰头，互相瞪眼。你的店成了两帮对峙的前线。",
+      "type": "social",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "挑拨两帮互斗坐收渔利",
+          "effects": {
+            "STYLE": 5,
+            "REP": 2,
+            "MONEY": 500,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "交双份保平安",
+          "effects": {
+            "MONEY": -1600,
+            "DEBT": 3,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "关店走人换个地方",
+          "effects": {
+            "MONEY": -500,
+            "REP": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "DEBT": 1
+      },
+      "tags": [
+        "保护费",
+        "勒索"
+      ]
+    },
+    {
+      "id": 2389,
+      "title": "商户的求助",
+      "description": "一个商户不堪保护费重负找到你求助，他知道你有帮派关系。商户说帮派最近把保护费翻了一倍，他快破产了。他愿意付报酬请你帮忙和帮派谈判减免。帮派的人不讲道理但也许你能找到他们的软肋。商户的眼圈发红手里攥着账本。",
+      "type": "social",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "出面谈判帮商户争取减免",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 3,
+            "MONEY": 500,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "趁机自己接管这条街收保护费",
+          "effects": {
+            "MONEY": 1500,
+            "REP": -3,
+            "HUMAN": -3,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝多管闲事",
+          "effects": {
+            "HUMAN": -2,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {
+        "REP": 1
+      },
+      "tags": [
+        "保护费",
+        "求助"
+      ]
+    },
+    {
+      "id": 2390,
+      "title": "保护费地盘战争",
+      "description": "两个帮派为了争夺一条商业街的保护费收缴权大打出手。商户们被夹在中间苦不堪言，店面频频被砸。你住在这条街上每天提心吊胆。两个帮派都威胁商户不得向对方交钱否则后果自负。街上的店铺已经关了一大半。",
+      "type": "combat",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮一方打赢保护费战争",
+          "effects": {
+            "LIFE": -6,
+            "REP": 4,
+            "MONEY": 1000,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "组织商户自卫队抵御两方",
+          "effects": {
+            "HUMAN": 5,
+            "REP": 4,
+            "LIFE": -4,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "趁乱搬离这条街",
+          "effects": {
+            "MONEY": -800,
+            "REP": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "保护费",
+        "地盘战"
+      ]
+    },
+    {
+      "id": 2391,
+      "title": "线人告密保护费",
+      "description": "你偷税漏税的秘密被一个线人掌握了，他要挟你每月给他封口费。线人是帮派的人，和收你保护费的是同一个帮派。等于你被同一个帮派收了两份钱。你决定除掉线人但他身边总有保镖。线人每次见面都笑得很恶心。",
+      "type": "social",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "雇杀手除掉线人",
+          "effects": {
+            "MONEY": -1500,
+            "REP": -2,
+            "HUMAN": -3,
+            "DEBT": 1,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向帮派老大告发线人吃里扒外",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 1,
+            "DEBT": 2,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "乖乖交双份钱",
+          "effects": {
+            "MONEY": -1200,
+            "DEBT": 3,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "DEBT": 1
+      },
+      "tags": [
+        "保护费",
+        "告密"
+      ]
+    },
+    {
+      "id": 2392,
+      "title": "暴力催收保护费",
+      "description": "帮派派你去暴力催收一个欠了三个月保护费的酒吧。酒吧老板是个前军人，不会轻易就范。酒吧里暗藏了武器和陷阱。帮派要你今晚把钱收回来否则拿你是问。酒吧的霓虹招牌在夜雨中闪烁着 OPEN。",
+      "type": "combat",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "强闯酒吧暴力催收",
+          "effects": {
+            "LIFE": -7,
+            "MONEY": 1500,
+            "REP": 3,
+            "HUMAN": -3,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "和老板谈判达成分期协议",
+          "effects": {
+            "STYLE": 4,
+            "REP": 2,
+            "MONEY": 500,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放老板一马回去编借口",
+          "effects": {
+            "HUMAN": 3,
+            "DEBT": 2,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "保护费",
+        "催收"
+      ]
+    },
+    {
+      "id": 2393,
+      "title": "血债血偿",
+      "description": "你的家人被敌对帮派杀害，你发誓要让凶手血债血偿。你花了三个月追踪凶手的下落终于锁定了他的位置。凶手现在是帮派的一个小头目身边常年跟着四个保镖。你只剩这一件事要做，做完就可以安心了。枪膛里压满了子弹，你的手很稳。",
+      "type": "combat",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "独自一人杀入凶手据点",
+          "effects": {
+            "LIFE": -9,
+            "REP": 5,
+            "STYLE": 5,
+            "TRAUMA": 4,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "远距离狙击一击毙命",
+          "effects": {
+            "LIFE": -2,
+            "STYLE": 4,
+            "REP": 4,
+            "TRAUMA": 3,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "设陷阱诱杀凶手",
+          "effects": {
+            "TECH": 3,
+            "STYLE": 4,
+            "REP": 4,
+            "LIFE": -3,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "帮派复仇",
+        "血债"
+      ]
+    },
+    {
+      "id": 2394,
+      "title": "复仇追杀令",
+      "description": "你背叛了帮派逃出来，老大发出全城追杀令悬赏五万欧金要你的人头。满城的赏金猎人都在找你，你的脸被贴满了大街小巷。你必须逃出这座城市但所有出口都被封锁了。一个赏金猎人已经找到了你的藏身处正在逼近。你的义体电量只剩百分之二十。",
+      "type": "combat",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "伏击赏金猎人夺其装备",
+          "effects": {
+            "LIFE": -5,
+            "STYLE": 4,
+            "REP": 3,
+            "MONEY": 800,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "黑入城市监控网隐匿行踪",
+          "effects": {
+            "TECH": 5,
+            "REP": 2,
+            "LIFE": -2,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "杀回帮派和老大同归于尽",
+          "effects": {
+            "LIFE": -10,
+            "STYLE": 6,
+            "REP": 5,
+            "TRAUMA": 5
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "帮派复仇",
+        "追杀"
+      ]
+    },
+    {
+      "id": 2395,
+      "title": "家族复仇之战",
+      "description": "你的家族世代与另一个帮派家族为仇，仇恨已经延续了两代人。最近对方又杀了你堂弟，家族长老命令你发动复仇之战。你必须召集所有族人攻击对方的老巢。这是一场不死不休的战争，没有投降的余地。家族祠堂里摆满了历代死者的牌位。",
+      "type": "combat",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "率族人全面进攻仇家老巢",
+          "effects": {
+            "LIFE": -8,
+            "REP": 6,
+            "STYLE": 4,
+            "HUMAN": 2,
+            "TRAUMA": 4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "暗杀对方长老瓦解其势力",
+          "effects": {
+            "LIFE": -4,
+            "STYLE": 5,
+            "REP": 5,
+            "TRAUMA": 3,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "提议和谈终结世代仇恨",
+          "effects": {
+            "HUMAN": 5,
+            "REP": 3,
+            "STYLE": 3,
+            "DEBT": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "帮派复仇",
+        "家族"
+      ]
+    },
+    {
+      "id": 2396,
+      "title": "复仇陷阱",
+      "description": "你以为自己在追杀仇人，实际上走进了一个精心设计的复仇陷阱。仇人故意泄露假情报引你上钩，现在你被困在一个密闭仓库里。仓库四面都是自动炮塔，出口被焊死了。仇人通过广播嘲笑你，说你要为过去的罪付出代价。炮塔的红外线已经锁定了你的身体。",
+      "type": "combat",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "硬冲炮塔阵杀出仓库",
+          "effects": {
+            "LIFE": -9,
+            "CHROME": -1,
+            "STYLE": 5,
+            "REP": 4,
+            "TRAUMA": 4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "黑入炮塔系统反控射击",
+          "effects": {
+            "TECH": 5,
+            "LIFE": -3,
+            "REP": 4,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "引爆随身炸药炸开墙壁",
+          "effects": {
+            "LIFE": -7,
+            "STYLE": 4,
+            "REP": 3,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "帮派复仇",
+        "陷阱"
+      ]
+    },
+    {
+      "id": 2397,
+      "title": "复仇成功之后",
+      "description": "你终于杀了仇人完成了复仇，但并没有想象中的解脱感。仇人的儿子目睹了一切发誓要找你报仇。你陷入了一个复仇的循环，杀了一个人又多了一个仇人。仇人的儿子只有十六岁但眼神里全是恨意。你拿着仇人的遗物站在雨中不知道该何去何从。",
+      "type": "social",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "斩草除根杀掉仇人之子",
+          "effects": {
+            "HUMAN": -5,
+            "REP": -2,
+            "TRAUMA": 4,
+            "LIFE": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "收养仇人之子终结仇恨循环",
+          "effects": {
+            "HUMAN": 5,
+            "REP": 3,
+            "DEBT": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "远走他乡逃避一切",
+          "effects": {
+            "MONEY": -500,
+            "REP": -2,
+            "TRAUMA": 2,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "帮派复仇",
+        "循环"
+      ]
+    },
+    {
+      "id": 2398,
+      "title": "复仇失败的代价",
+      "description": "你的复仇行动失败了，仇人把你抓住正在慢慢折磨你。他用电钻一个一个卸你的义体部件，边卸边笑。你被绑在椅子上动弹不得，血从断口处涌出。仇人说要把你的零件一件件卖掉最后只留一个脑袋。你的意识在痛苦中忽明忽暗，必须找到逃脱的机会。",
+      "type": "combat",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "咬牙断臂挣脱束缚反杀",
+          "effects": {
+            "LIFE": -10,
+            "CHROME": -3,
+            "STYLE": 5,
+            "REP": 4,
+            "TRAUMA": 5
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用隐藏的应急芯片黑入仇人义体",
+          "effects": {
+            "TECH": 5,
+            "LIFE": -6,
+            "CHROME": -2,
+            "REP": 3,
+            "TRAUMA": 4
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "求饶投降乞求活命",
+          "effects": {
+            "LIFE": -5,
+            "CHROME": -2,
+            "REP": -4,
+            "TRAUMA": 3,
+            "DEBT": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "帮派复仇",
+        "失败"
+      ]
+    },
+    {
+      "id": 2399,
+      "title": "终极清算之夜",
+      "description": "所有仇恨都将在今夜了结，你带着最后的武器走向仇人的总部。这座堡垒里有三十个武装人员和一个你恨之入骨的仇人。你没有后援没有退路只有一颗要复仇到底的心。雨夜中的堡垒灯火通明像一头蛰伏的巨兽。你深吸一口气推开了那扇铁门，终结一切的时刻到了。",
+      "type": "combat",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "一个人杀穿整座堡垒",
+          "effects": {
+            "LIFE": -10,
+            "STYLE": 8,
+            "REP": 8,
+            "TRAUMA": 5,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "炸毁堡垒与仇人同归于尽",
+          "effects": {
+            "LIFE": -10,
+            "STYLE": 6,
+            "REP": 6,
+            "TRAUMA": 5,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "智取潜入只杀仇人一人",
+          "effects": {
+            "LIFE": -5,
+            "STYLE": 6,
+            "REP": 7,
+            "TECH": 4,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "帮派复仇",
+        "清算"
+      ]
+    }
+  ]
+}

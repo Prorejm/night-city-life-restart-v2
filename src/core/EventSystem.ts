@@ -20,6 +20,13 @@ import eventsDrug from '../../data/events/events-drug.json';
 import eventsHousing from '../../data/events/events-housing.json';
 import eventsMedical from '../../data/events/events-medical.json';
 import eventsDeath from '../../data/events/events-death.json';
+import eventsCorp from '../../data/events/events-corp.json';
+import eventsCyber from '../../data/events/events-cyber.json';
+import eventsSocial from '../../data/events/events-social.json';
+import eventsDrugEx from '../../data/events/events-drug-expanded.json';
+import eventsElder from '../../data/events/events-elder.json';
+import eventsNature from '../../data/events/events-nature.json';
+import eventsCulture from '../../data/events/events-culture.json';
 
 /** 全局事件列表 */
 let _allEvents: GameEvent[] = [];
@@ -52,6 +59,9 @@ function ensureLoaded(): void {
     eventsBirth, eventsTeen, eventsAdult,
     eventsStreet, eventsDrug, eventsHousing,
     eventsMedical, eventsDeath,
+    eventsCorp, eventsCyber, eventsSocial,
+    eventsDrugEx, eventsElder, eventsNature,
+    eventsCulture,
   ];
 
   const loadedIds = new Set<number>();

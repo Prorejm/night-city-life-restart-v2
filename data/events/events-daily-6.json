@@ -1,0 +1,3816 @@
+{
+  "events": [
+    {
+      "id": 2000,
+      "title": "AI旅行社推广虚拟度假",
+      "description": "街角的赛博旅行社橱窗闪烁着全息广告，AI导购热情地向你推荐最新虚拟度假套餐。\"去火星殖民地看看吧， NeuralLink 直连体验，身临其境！\"你犹豫了一下，套餐价格从50到500信用点不等。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买豪华火星殖民体验套餐",
+          "effects": {
+            "MONEY": -500,
+            "TECH": 2,
+            "TRAUMA": -1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "选择便宜的本地虚拟海滩",
+          "effects": {
+            "MONEY": -50,
+            "TRAUMA": -1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "只是看看，不买",
+          "effects": {
+            "REP": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "旅行社"
+      ]
+    },
+    {
+      "id": 2001,
+      "title": "神经接口旅行体验店",
+      "description": "一家新开的神经接口旅行店声称能让你\"用大脑旅行\"。通过直接刺激神经信号，你可以在躺椅上体验攀登珠峰或深海潜水。店员说首次体验有折扣，但警告可能出现轻微神经不适。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "尝试极限运动神经体验",
+          "effects": {
+            "MONEY": -150,
+            "TECH": 2,
+            "TRAUMA": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "选择温和的乡村田园体验",
+          "effects": {
+            "MONEY": -80,
+            "TRAUMA": -2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "旅行社"
+      ]
+    },
+    {
+      "id": 2002,
+      "title": "全息海滩度假推销",
+      "description": "商场里的全息投影正在播放赛博夏威夷的度假广告，椰树和霓虹海浪在空中翻涌。推销员拦住你说现在预订可以送三天免费义体保养。你觉得有点心动但价格不菲。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "预订全息海滩度假",
+          "effects": {
+            "MONEY": -300,
+            "STYLE": 2,
+            "TRAUMA": -2,
+            "CHROME": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "砍价后只买日间体验券",
+          "effects": {
+            "MONEY": -100,
+            "STYLE": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "旅行社"
+      ]
+    },
+    {
+      "id": 2003,
+      "title": "记忆旅行套餐",
+      "description": "旅行社推出了一种全新的\"记忆旅行\"——将别人的旅行记忆直接植入你的大脑。你可以体验别人去过的地方，感受他们的情感。但有人担心记忆混合会导致身份混乱。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买记忆旅行套餐",
+          "effects": {
+            "MONEY": -250,
+            "TECH": 3,
+            "TRAUMA": 2,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝，觉得太危险",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "旅行社"
+      ]
+    },
+    {
+      "id": 2004,
+      "title": "赛博旅行保险推销",
+      "description": "一个保险AI在旅行社门口拦住你，推荐购买赛博旅行意外险。\"万一你的意识在虚拟旅行中卡住怎么办？我们有专业的意识回收服务。\"保险费用不贵，但你不太确定这是不是骗局。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买旅行保险",
+          "effects": {
+            "MONEY": -80,
+            "LIFE": 1,
+            "DEBT": 0
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "不买，相信自己运气",
+          "effects": {
+            "MONEY": 0,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "旅行社"
+      ]
+    },
+    {
+      "id": 2005,
+      "title": "虚拟极地探险",
+      "description": "旅行社的屏幕上播放着虚拟北极探险的画面——冰川、极光和赛博企鹅。这是最新的冷门路线，据说体验者回来后都说精神焕发。不过极寒模拟可能对义体有影响。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "报名极地探险",
+          "effects": {
+            "MONEY": -200,
+            "TECH": 1,
+            "STYLE": 2,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "觉得太冷了，放弃",
+          "effects": {
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "旅行社"
+      ]
+    },
+    {
+      "id": 2006,
+      "title": "时光旅行模拟体验",
+      "description": "\"回到过去，见证历史！\"旅行社最新推出的时光旅行模拟项目允许你回到21世纪初体验旧世界生活。虽然只是模拟，但AI会根据历史数据重建当时的场景。价格有点贵，但评价很好。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "体验时光旅行模拟",
+          "effects": {
+            "MONEY": -350,
+            "TECH": 2,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只看免费预告片",
+          "effects": {
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "旅行社"
+      ]
+    },
+    {
+      "id": 2007,
+      "title": "智能药房自动诊断",
+      "description": "街角的自动化药店闪烁着绿色十字灯，你走进去后一台AI诊断仪开始扫描你的身体。\"检测到轻度神经疲劳，建议购买赛博咖啡因片。\"机器自动吐出药品并等待你付款。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买推荐的药品",
+          "effects": {
+            "MONEY": -60,
+            "LIFE": 2,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只要最便宜的通用药",
+          "effects": {
+            "MONEY": -20,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "不买，转身离开",
+          "effects": {
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "药店"
+      ]
+    },
+    {
+      "id": 2008,
+      "title": "处方药无人机配送",
+      "description": "你在智能药房订了一盒神经稳定剂，药店说半小时内无人机送达。但等了一个小时还没到，你在追踪信号上看到无人机在某栋废弃大楼上空盘旋不动。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "亲自去追踪无人机取药",
+          "effects": {
+            "TECH": 1,
+            "LIFE": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "联系药房要求重新发货",
+          "effects": {
+            "MONEY": -30,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "药店"
+      ]
+    },
+    {
+      "id": 2009,
+      "title": "黑市仿制药摊位",
+      "description": "药店后巷有个戴墨镜的家伙在卖仿制药，声称效果和正品一样但价格只有三分之一。\"赛博朋克城最好的仿制药，兄弟，你试试就知道了。\"药瓶上没有任何标签。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买便宜的黑市仿制药",
+          "effects": {
+            "MONEY": -30,
+            "LIFE": 1,
+            "TRAUMA": 1,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝，不信任来路不明的药",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "药店"
+      ]
+    },
+    {
+      "id": 2010,
+      "title": "神经稳定剂促销",
+      "description": "智能药房的屏幕上滚动着神经稳定剂的促销广告：\"赛博生活压力大？神经稳定剂帮你找回平静！买二送一！\"这种药物在赛博朋克城里很常见，几乎人人都需要。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "趁着促销囤货",
+          "effects": {
+            "MONEY": -90,
+            "TRAUMA": -3,
+            "ADDICTION": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只买一盒试试",
+          "effects": {
+            "MONEY": -35,
+            "TRAUMA": -1,
+            "ADDICTION": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "药店"
+      ]
+    },
+    {
+      "id": 2011,
+      "title": "基因药物咨询",
+      "description": "药房新设了一个基因药物咨询窗口，AI药剂师分析你的DNA数据后推荐个性化药物方案。\"根据您的基因图谱，建议服用定制化免疫增强剂。\"定制药物价格不菲。",
+      "type": "daily",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买定制基因药物",
+          "effects": {
+            "MONEY": -400,
+            "LIFE": 3,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只做免费咨询不买药",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "药店"
+      ]
+    },
+    {
+      "id": 2012,
+      "title": "疼痛抑制芯片",
+      "description": "药房的自动化柜台新增了疼痛抑制芯片的销售。这种微型芯片植入脊柱后可以完全屏蔽疼痛信号，在黑市工人中很受欢迎。但长期使用可能导致身体损伤不自知。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "植入疼痛抑制芯片",
+          "effects": {
+            "MONEY": -300,
+            "CHROME": 1,
+            "TRAUMA": -2,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "买传统止痛药代替",
+          "effects": {
+            "MONEY": -40,
+            "TRAUMA": -1,
+            "ADDICTION": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "药店"
+      ]
+    },
+    {
+      "id": 2013,
+      "title": "免疫增强注射",
+      "description": "自动药房的注射舱提供快速免疫增强服务，AI机械臂会在30秒内完成注射。\"流感季到了，增强你的免疫系统吧！\"屏幕上显示着各种增强方案，从基础版到豪华版。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受豪华免疫注射",
+          "effects": {
+            "MONEY": -180,
+            "LIFE": 3,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "选择基础版注射",
+          "effects": {
+            "MONEY": -50,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "药店"
+      ]
+    },
+    {
+      "id": 2014,
+      "title": "全息历史展览",
+      "description": "赛博博物馆新开了一个全息历史展览，展示从旧互联网时代到赛博大崩溃的演变过程。全息影像栩栩如生，你几乎能闻到旧世界的气息。门票不贵但展览很值得一看。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买票参观全息展览",
+          "effects": {
+            "MONEY": -40,
+            "TECH": 2,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用黑客手段免费进入",
+          "effects": {
+            "TECH": 1,
+            "REP": -1,
+            "MONEY": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "博物馆"
+      ]
+    },
+    {
+      "id": 2015,
+      "title": "赛博文物拍卖会",
+      "description": "博物馆大厅里正在进行一场赛博文物拍卖，展品包括旧时代的智能手机、第一代义体原型和稀有数据芯片。拍卖师是个全息AI，声音洪亮地报着价格。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "竞拍一件古董智能手机",
+          "effects": {
+            "MONEY": -200,
+            "STYLE": 3,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只是旁观，不参与竞拍",
+          "effects": {
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "博物馆"
+      ]
+    },
+    {
+      "id": 2016,
+      "title": "记忆博物馆",
+      "description": "一家特殊的记忆博物馆声称保存了旧世界居民的真实记忆片段。参观者可以通过神经接口体验百年前普通人的生活。\"感受真实的历史，而不是数据中的历史。\"",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "体验旧世界居民的记忆",
+          "effects": {
+            "MONEY": -100,
+            "HUMAN": 3,
+            "TRAUMA": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只看展览不接入神经接口",
+          "effects": {
+            "MONEY": -30,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "博物馆"
+      ]
+    },
+    {
+      "id": 2017,
+      "title": "古代互联网展览",
+      "description": "博物馆的地下层有一个特别的展览——古代互联网的模拟环境。你可以看到21世纪初的网页设计、社交媒体和搜索引擎。很多年轻人对这种\"原始技术\"感到既好奇又好笑。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "沉浸式体验古代互联网",
+          "effects": {
+            "MONEY": -30,
+            "TECH": 2,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "快速浏览后离开",
+          "effects": {
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "博物馆"
+      ]
+    },
+    {
+      "id": 2018,
+      "title": "虚拟艺术画廊",
+      "description": "赛博博物馆顶层的虚拟艺术画廊展示着AI创作的数字艺术品。全息画作随着观众的情绪变化而改变色彩和形状，每件作品都是独一无二的。有些艺术品可以购买NFT凭证。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买一件AI艺术品的NFT",
+          "effects": {
+            "MONEY": -250,
+            "STYLE": 3,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "免费欣赏画廊",
+          "effects": {
+            "STYLE": 2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "博物馆"
+      ]
+    },
+    {
+      "id": 2019,
+      "title": "战前文明展览",
+      "description": "博物馆新开设了\"战前文明\"特别展览，展示了赛博大战前人类文明的鼎盛时期。全息重建的城市模型、保存完好的日用品和影像资料让人感慨万千。导览AI的讲解很专业。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加有导览的深度参观",
+          "effects": {
+            "MONEY": -60,
+            "HUMAN": 3,
+            "TECH": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自己随便看看",
+          "effects": {
+            "MONEY": -20,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "博物馆"
+      ]
+    },
+    {
+      "id": 2020,
+      "title": "数字考古发现展",
+      "description": "博物馆展出了最新的数字考古发现——从废弃服务器中恢复的失落数据。这些数据包含了战前社会的各种信息，考古学家们花了数年才还原出来。展览允许访客参与数据碎片拼接。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参与数据碎片拼接互动",
+          "effects": {
+            "MONEY": -30,
+            "TECH": 3,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只观看不参与",
+          "effects": {
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "博物馆"
+      ]
+    },
+    {
+      "id": 2021,
+      "title": "自动停车库故障",
+      "description": "你把车开进了智能停车库，但系统突然报错，机械臂把你的车卡在了三层和四层之间。维修机器人正在赶来但需要等待。停车库管理员AI不停道歉并提议补偿方案。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "等待维修机器人修复",
+          "effects": {
+            "MONEY": -10,
+            "TRAUMA": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "要求赔偿并换停车场",
+          "effects": {
+            "MONEY": 50,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "停车"
+      ]
+    },
+    {
+      "id": 2022,
+      "title": "飞行车停机坪",
+      "description": "市中心的飞行车停机坪正在对外开放，你可以把飞行摩托或飞行车停在这里。停机坪视野极好，能看到整个赛博朋克城的天际线。不过停机费比地面贵不少。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "停在高层停机坪",
+          "effects": {
+            "MONEY": -80,
+            "STYLE": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "停在地面普通车位",
+          "effects": {
+            "MONEY": -30,
+            "STYLE": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "停车"
+      ]
+    },
+    {
+      "id": 2023,
+      "title": "AI违停罚单",
+      "description": "你刚从商店出来就发现挡风玻璃上贴了一张电子罚单——AI巡检系统判定你违规停车。罚单金额不小，但你注意到罚单上有个小漏洞：时间戳似乎有误。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "利用时间戳漏洞申诉免罚",
+          "effects": {
+            "TECH": 2,
+            "MONEY": 0,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "老老实实交罚款",
+          "effects": {
+            "MONEY": -120,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "停车"
+      ]
+    },
+    {
+      "id": 2024,
+      "title": "停车位拍卖",
+      "description": "热门商圈的停车位实行拍卖制，你到达时正好有一个黄金车位在竞拍。当前出价50信用点，但有人一直在加价。这个位置离你要去的店最近，省时省力。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "持续加价抢下黄金车位",
+          "effects": {
+            "MONEY": -150,
+            "STYLE": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "放弃，去找远处的便宜车位",
+          "effects": {
+            "MONEY": -20,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "停车"
+      ]
+    },
+    {
+      "id": 2025,
+      "title": "地下停车黑市",
+      "description": "有人告诉你某个废弃地铁站改成了黑市停车场，不问来源不登记身份，价格只有正规停车场的一半。但你的车停在那里可能被拆零件，也可能安全无事。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "冒险停在黑市停车场",
+          "effects": {
+            "MONEY": -25,
+            "TRAUMA": 2,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "不冒风险，停在正规停车场",
+          "effects": {
+            "MONEY": -60,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "停车"
+      ]
+    },
+    {
+      "id": 2026,
+      "title": "智能充电桩",
+      "description": "停车场的智能充电桩不仅能给你的电动车充电，还能在充电时进行车辆诊断和软件升级。快充模式20分钟充满但费用翻倍，慢充需要两小时但便宜很多。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "选择快充加诊断升级",
+          "effects": {
+            "MONEY": -100,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "选择慢充，省钱",
+          "effects": {
+            "MONEY": -30,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "停车"
+      ]
+    },
+    {
+      "id": 2027,
+      "title": "自动清洁公厕",
+      "description": "街边的赛博公厕闪着蓝光，门上显示\"自动消毒完成，可使用\"。进去后机械臂会自动清洁，还有内置的空气清新系统。使用费2信用点，但有人用黑客卡绕过付费。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "正常付费使用",
+          "effects": {
+            "MONEY": -2,
+            "LIFE": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用黑客手段免费使用",
+          "effects": {
+            "MONEY": 0,
+            "TECH": 1,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "公厕"
+      ]
+    },
+    {
+      "id": 2028,
+      "title": "生物扫描厕所",
+      "description": "新型公厕配备了生物扫描功能，在你使用的同时分析尿液和粪便中的生物标记物，给出健康报告。\"检测到维生素D偏低，建议增加日照或补充剂。\"报告直接发送到你的个人终端。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受完整健康扫描",
+          "effects": {
+            "MONEY": -15,
+            "LIFE": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "关闭扫描功能，只用基本功能",
+          "effects": {
+            "MONEY": -2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "公厕"
+      ]
+    },
+    {
+      "id": 2029,
+      "title": "公厕收费陷阱",
+      "description": "你走进一个看起来免费的公厕，出来时门却打不开了。屏幕上显示\"高级服务已启用，请支付20信用点解锁出口\"。这是赛博朋克城常见的收费陷阱，你可以付钱或想办法破解。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "付钱脱身",
+          "effects": {
+            "MONEY": -20,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "破解门锁系统",
+          "effects": {
+            "TECH": 2,
+            "REP": -1,
+            "MONEY": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "公厕"
+      ]
+    },
+    {
+      "id": 2030,
+      "title": "神经放松隔间",
+      "description": "公厕旁边新增了\"神经放松隔间\"，宣称5分钟内通过神经刺激帮你缓解压力和焦虑。隔间内壁布满柔软的仿生材料，配合舒缓的频率波动。每次使用15信用点。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "体验神经放松服务",
+          "effects": {
+            "MONEY": -15,
+            "TRAUMA": -3,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "不信任这种服务，离开",
+          "effects": {
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "公厕"
+      ]
+    },
+    {
+      "id": 2031,
+      "title": "健康检测马桶",
+      "description": "一家公司推出了免费的健康检测马桶，安装在公共厕所里。使用后AI会分析你的排泄物并生成健康报告，但你的健康数据也会被上传到公司服务器。有人担心隐私泄露。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "使用并接受数据上传",
+          "effects": {
+            "LIFE": 2,
+            "TECH": 1,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "选择普通马桶",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "公厕"
+      ]
+    },
+    {
+      "id": 2032,
+      "title": "公厕黑客入侵",
+      "description": "你正在使用公厕时，屏幕突然闪红，一个黑客组织的标志出现了。\"你的生物数据已被我们获取，支付50信用点否则公开。\"你注意到隔间有手动紧急逃生按钮。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支付勒索费用",
+          "effects": {
+            "MONEY": -50,
+            "TRAUMA": 2,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "按紧急按钮逃离",
+          "effects": {
+            "TRAUMA": 1,
+            "TECH": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "公厕"
+      ]
+    },
+    {
+      "id": 2033,
+      "title": "豪华自动厕所",
+      "description": "商场顶层的豪华自动厕所提供全套服务：自动清洁、气味调节、温度控制、神经按摩和皮肤护理。使用费50信用点但体验极佳，号称\"五分钟赛博SPA\"。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "享受豪华厕所服务",
+          "effects": {
+            "MONEY": -50,
+            "STYLE": 2,
+            "TRAUMA": -2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用不起，去普通公厕",
+          "effects": {
+            "MONEY": -2,
+            "HUMAN": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "公厕"
+      ]
+    },
+    {
+      "id": 2034,
+      "title": "生物ID更新通知",
+      "description": "你的个人终端收到通知：\"您的生物ID即将过期，请前往最近的ID更新站进行虹膜和指纹重新录入。\"逾期未更新将影响日常交易和出行。更新站排队的人不少。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "立刻去排队更新ID",
+          "effects": {
+            "MONEY": 0,
+            "TECH": 1,
+            "TRAUMA": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "花钱走VIP快速通道",
+          "effects": {
+            "MONEY": -50,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "身份证"
+      ]
+    },
+    {
+      "id": 2035,
+      "title": "身份信息被盗用",
+      "description": "银行发来警报：有人用你的生物ID在另一个城区消费了300信用点。你的身份信息可能被盗用了。你需要去ID管理中心冻结账户并重新认证身份。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "去ID管理中心挂失并追查",
+          "effects": {
+            "MONEY": -30,
+            "TRAUMA": 2,
+            "TECH": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自认倒霉，只冻结账户",
+          "effects": {
+            "MONEY": -300,
+            "TRAUMA": 3,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "身份证"
+      ]
+    },
+    {
+      "id": 2036,
+      "title": "假ID贩子",
+      "description": "巷子里有个家伙低声问你要不要假ID。\"百分百仿真，连政府系统都查不出来。\"假ID可以用来逃避追查或开匿名账户，但被发现后果严重。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买假ID",
+          "effects": {
+            "MONEY": -200,
+            "REP": -2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝了，太危险",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "身份证"
+      ]
+    },
+    {
+      "id": 2037,
+      "title": "虹膜注册站",
+      "description": "政府新设的虹膜注册站正在推广新版生物ID系统，要求所有市民重新录入虹膜数据。工作人员说新系统更安全更便捷，但有人担心数据会被滥用。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "配合完成虹膜注册",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "以隐私为由拒绝",
+          "effects": {
+            "HUMAN": 2,
+            "REP": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "身份证"
+      ]
+    },
+    {
+      "id": 2038,
+      "title": "ID芯片升级",
+      "description": "ID管理中心推出了新一代皮下ID芯片，比旧版更快更安全，还集成了支付和门禁功能。升级费用100信用点，但旧芯片将在三个月后停用。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "升级到新ID芯片",
+          "effects": {
+            "MONEY": -100,
+            "CHROME": 1,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "等别人先试，暂时不升级",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "身份证"
+      ]
+    },
+    {
+      "id": 2039,
+      "title": "身份验证故障",
+      "description": "你在超市结账时，生物ID验证系统突然故障，怎么扫描都识别不了你。后面排队的人开始不耐烦了。收银员建议你用现金或等系统重启。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "耐心等系统重启",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用现金支付",
+          "effects": {
+            "MONEY": -5,
+            "TECH": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "身份证"
+      ]
+    },
+    {
+      "id": 2040,
+      "title": "政府ID普查",
+      "description": "政府宣布进行全市ID普查，要求所有市民在指定时间内到普查点进行身份核实。普查点排着长队，AI官员逐一核对信息。缺席者将被限制部分公共服务。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "乖乖去排队参加普查",
+          "effects": {
+            "TECH": 1,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找关系走后门快速通过",
+          "effects": {
+            "MONEY": -80,
+            "REP": -1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "身份证"
+      ]
+    },
+    {
+      "id": 2041,
+      "title": "无人机快递延误",
+      "description": "你在赛博商城下单的包裹预计一小时前送达，但无人机仍在空中盘旋无法降落。追踪显示它卡在了你的地址上方，可能是GPS信号被干扰了。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "爬上屋顶手动接取包裹",
+          "effects": {
+            "TECH": 1,
+            "TRAUMA": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "联系客服重新安排配送",
+          "effects": {
+            "TRAUMA": 1,
+            "MONEY": -5
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "邮购"
+      ]
+    },
+    {
+      "id": 2042,
+      "title": "包裹被无人机劫持",
+      "description": "你的快递无人机在配送途中被信号劫持，包裹被送到了隔壁街区。配送公司说这是最近频发的\"无人机海盗\"行为，他们不承担责任。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "自己去找回包裹",
+          "effects": {
+            "TRAUMA": 2,
+            "REP": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向配送公司索赔",
+          "effects": {
+            "MONEY": 80,
+            "TRAUMA": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "邮购"
+      ]
+    },
+    {
+      "id": 2043,
+      "title": "黑市邮购平台",
+      "description": "有人推荐你一个暗网邮购平台，上面卖各种灰色商品：仿造义体零件、限制级数据和未审批药物。价格很便宜但质量无法保证，而且有被钓鱼执法的风险。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在暗网平台下单",
+          "effects": {
+            "MONEY": -100,
+            "TECH": 1,
+            "REP": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "不碰暗网，用正规平台",
+          "effects": {
+            "MONEY": -200,
+            "HUMAN": 1,
+            "TECH": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "邮购"
+      ]
+    },
+    {
+      "id": 2044,
+      "title": "无人机操控体验",
+      "description": "一家无人机公司开设了操控体验店，你可以亲自操控配送无人机在模拟赛道上飞行。体验费20信用点，操控成绩好的话可以赢得优惠券。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        65
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "体验无人机操控",
+          "effects": {
+            "MONEY": -20,
+            "TECH": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "不感兴趣，路过",
+          "effects": {
+            "HUMAN": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "邮购"
+      ]
+    },
+    {
+      "id": 2045,
+      "title": "大宗邮购折扣",
+      "description": "赛博商城推出大宗邮购折扣活动：满500信用点打七折，满1000打六折。你正好需要囤一些日用品和义体维护耗材，但一次买这么多需要不少钱。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "凑单享受最大折扣",
+          "effects": {
+            "MONEY": -600,
+            "TECH": 2,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只买必需品",
+          "effects": {
+            "MONEY": -150,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "邮购"
+      ]
+    },
+    {
+      "id": 2046,
+      "title": "无人机维修店",
+      "description": "一家无人机维修店在招揽生意，店主是个退休的配送无人机工程师。他可以帮你改装私人无人机或维修故障，价格合理。你正好有一架旧无人机不太好使了。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "维修并改装私人无人机",
+          "effects": {
+            "MONEY": -120,
+            "TECH": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只做简单维修",
+          "effects": {
+            "MONEY": -40,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "邮购"
+      ]
+    },
+    {
+      "id": 2047,
+      "title": "限制级包裹",
+      "description": "你的一个包裹被配送公司标记为\"限制级\"，需要你亲自到仓库签字领取。你不记得买了什么限制级商品，可能是商家贴错了标签，也可能是别人用你的账号下的单。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "去仓库签收看看到底是什么",
+          "effects": {
+            "TRAUMA": 1,
+            "TECH": 1,
+            "MONEY": -10
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒收并报告账号异常",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "MONEY": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "邮购"
+      ]
+    },
+    {
+      "id": 2048,
+      "title": "健身手环数据异常",
+      "description": "你的智能健身手环突然发出警报，显示心率异常升高、血氧偏低。手环AI建议你立即停止活动并就医。但你感觉身体一切正常，可能是传感器故障。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "相信手环，去诊所检查",
+          "effects": {
+            "MONEY": -80,
+            "LIFE": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "认为是误报，忽略警报",
+          "effects": {
+            "LIFE": -1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "健身"
+      ]
+    },
+    {
+      "id": 2049,
+      "title": "全息健身教练",
+      "description": "健身房引进了全息AI健身教练，能根据你的实时体征数据调整训练计划。教练的全息形象可以选择，从肌肉猛男到温柔小姐姐都有。月费80信用点。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        65
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "订阅全息健身教练",
+          "effects": {
+            "MONEY": -80,
+            "LIFE": 2,
+            "STYLE": 1,
+            "CHROME": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自己练，不需要教练",
+          "effects": {
+            "LIFE": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "健身"
+      ]
+    },
+    {
+      "id": 2050,
+      "title": "生物数据被出售",
+      "description": "你在新闻上看到一家健身数据公司被发现偷偷出售用户的生物监测数据给保险公司。你的手环正好是那个品牌的。你的健康数据可能已经被卖了，影响你的保险费率。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入集体诉讼",
+          "effects": {
+            "MONEY": -20,
+            "REP": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "换个品牌的手环",
+          "effects": {
+            "MONEY": -150,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "健身"
+      ]
+    },
+    {
+      "id": 2051,
+      "title": "极限健身挑战",
+      "description": "健身房举办了一次极限健身挑战赛，参赛者需要在全息模拟的高危环境中完成体能任务。冠军奖金500信用点，但受伤率不低。你的手环显示你的体能状态还不错。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "报名参加极限挑战",
+          "effects": {
+            "MONEY": -10,
+            "LIFE": 2,
+            "TRAUMA": 2,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "当观众看别人比赛",
+          "effects": {
+            "HUMAN": 1,
+            "TECH": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "健身"
+      ]
+    },
+    {
+      "id": 2052,
+      "title": "心率监测警报",
+      "description": "跑步时你的健身手环突然震动，显示心率飙升到危险水平。手环AI紧急提示你减速并深呼吸。旁边一个跑步者注意到了你的状况，问你要不要帮忙。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受帮助，减速休息",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "硬撑着继续跑",
+          "effects": {
+            "LIFE": -1,
+            "STYLE": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "健身"
+      ]
+    },
+    {
+      "id": 2053,
+      "title": "肌肉增强训练",
+      "description": "健身房新开了肌肉增强训练区，使用电刺激配合负重训练，号称效率是普通训练的三倍。但有传言说过度使用会导致肌肉纤维退化。训练费每次40信用点。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "尝试电刺激增强训练",
+          "effects": {
+            "MONEY": -40,
+            "CHROME": 1,
+            "LIFE": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "坚持传统训练方式",
+          "effects": {
+            "MONEY": -10,
+            "LIFE": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "健身"
+      ]
+    },
+    {
+      "id": 2054,
+      "title": "虚拟健身社区",
+      "description": "你的健身手环推荐你加入一个虚拟健身社区，成员们在全息空间里一起锻炼、比赛和社交。社区排名靠前的成员有赞助商赞助。加入免费但高级功能要付费。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        65
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入社区并购买高级功能",
+          "effects": {
+            "MONEY": -50,
+            "HUMAN": 2,
+            "STYLE": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只加入免费版",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "健身"
+      ]
+    },
+    {
+      "id": 2055,
+      "title": "数字彩票机",
+      "description": "便利店门口的数字彩票机闪着诱人的霓虹灯光，屏幕上滚动着上一期中奖号码。\"头奖累积到500万信用点！\"你摸了摸口袋，一张彩票只要5信用点。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买几张试试运气",
+          "effects": {
+            "MONEY": -15,
+            "ADDICTION": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "不买，知道中奖概率太低",
+          "effects": {
+            "HUMAN": 1,
+            "MONEY": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "彩票"
+      ]
+    },
+    {
+      "id": 2056,
+      "title": "赛博赛马博彩",
+      "description": "全息赛马场正在直播虚拟赛马比赛，AI生成的赛马各有特点。投注窗口前排着队，赔率实时变化。有人声称找到了预测算法的漏洞。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "根据赔率投注热门赛马",
+          "effects": {
+            "MONEY": -50,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "听信内部消息押冷门",
+          "effects": {
+            "MONEY": -30,
+            "ADDICTION": 1,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "彩票"
+      ]
+    },
+    {
+      "id": 2057,
+      "title": "黑市赌博网站",
+      "description": "朋友推荐了一个暗网赌博网站，赔率比正规平台高很多，还有各种地下赌局。\"昨晚我赢了200信用点！\"但你听说这个网站有操纵结果的前科。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "上暗网网站碰碰运气",
+          "effects": {
+            "MONEY": -80,
+            "ADDICTION": 2,
+            "REP": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "不碰暗网赌博",
+          "effects": {
+            "HUMAN": 2,
+            "MONEY": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "彩票"
+      ]
+    },
+    {
+      "id": 2058,
+      "title": "幸运转盘",
+      "description": "商场中庭摆着一台巨大的全息幸运转盘，转一次10信用点，奖品从信用点到义体零件不等。人群围着看，不时有人中奖发出欢呼。轮盘看起来是随机的。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "花10信用点转一次",
+          "effects": {
+            "MONEY": -10,
+            "ADDICTION": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在旁边看热闹不花钱",
+          "effects": {
+            "HUMAN": 1,
+            "MONEY": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "彩票"
+      ]
+    },
+    {
+      "id": 2059,
+      "title": "AI预测彩票",
+      "description": "一个自称\"彩票AI\"的程序声称能通过大数据分析预测下期中奖号码，预测准确率号称70%。订阅费每月100信用点，有人信誓旦旦说靠它赚了钱。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "订阅AI预测服务",
+          "effects": {
+            "MONEY": -100,
+            "TECH": 1,
+            "ADDICTION": 2,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "不信AI能预测随机数",
+          "effects": {
+            "HUMAN": 2,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "彩票"
+      ]
+    },
+    {
+      "id": 2060,
+      "title": "彩票站老手",
+      "description": "彩票站里一个老人每天都会来买彩票，他声称自己研究了20年的号码规律。他热情地向你分享他的\"必中系统\"，还主动要帮你选号。看起来他有赌瘾问题。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "听老人的建议买彩票",
+          "effects": {
+            "MONEY": -20,
+            "HUMAN": 1,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "劝老人少买点彩票",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 1,
+            "MONEY": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "彩票"
+      ]
+    },
+    {
+      "id": 2061,
+      "title": "赌债催收",
+      "description": "一个催债公司在彩票站门口拦住了你，说你名下有一笔500信用点的赌债。你完全不记得有这回事，可能是身份被盗用下的注。催债人不依不饶。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "先还钱再慢慢查清楚",
+          "effects": {
+            "MONEY": -500,
+            "DEBT": 1,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝还款，要求出示证据",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "彩票"
+      ]
+    },
+    {
+      "id": 2062,
+      "title": "无人图书馆借书",
+      "description": "自动化图书馆24小时开放，没有人类管理员，一切由AI管理。你刷生物ID进入后，找到一本关于赛博历史的电子书。借阅系统提示你可以在阅读舱中直接阅读。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在阅读舱中安静阅读",
+          "effects": {
+            "TECH": 2,
+            "HUMAN": 2,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "下载到个人终端带回家看",
+          "effects": {
+            "TECH": 1,
+            "MONEY": -5
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "图书馆"
+      ]
+    },
+    {
+      "id": 2063,
+      "title": "禁书数据库",
+      "description": "你在图书馆的深层网络中发现了一个隐藏的禁书数据库，里面存有被政府封禁的书籍和数据。图书馆AI似乎没有检测到你的访问，但这些内容如果被发现持有可能违法。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "下载禁书数据到本地",
+          "effects": {
+            "TECH": 3,
+            "REP": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只浏览不下载",
+          "effects": {
+            "TECH": 2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "图书馆"
+      ]
+    },
+    {
+      "id": 2064,
+      "title": "知识芯片下载",
+      "description": "图书馆提供知识芯片下载服务，可以将整本书的内容直接植入记忆芯片，几秒钟就能\"读完\"一本书。价格按知识复杂度收费，从10到200信用点不等。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "下载高级技术知识芯片",
+          "effects": {
+            "MONEY": -150,
+            "TECH": 3,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "下载便宜的通识知识",
+          "effects": {
+            "MONEY": -30,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "图书馆"
+      ]
+    },
+    {
+      "id": 2065,
+      "title": "图书馆AI管理员",
+      "description": "图书馆的AI管理员\"书灵\"主动找你聊天，它拥有数百万本书的知识，能和你讨论任何话题。今天它想和你聊聊赛博伦理学，并推荐了几本相关书籍。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "和AI管理员深入讨论",
+          "effects": {
+            "HUMAN": 2,
+            "TECH": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "借了推荐的书就走",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "图书馆"
+      ]
+    },
+    {
+      "id": 2066,
+      "title": "古籍修复体验",
+      "description": "图书馆开设了古籍修复体验工作坊，你可以亲手修复一本战前纸质书。在数字化时代，纸质书已经非常稀有，修复工作需要耐心和细致。名额有限。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加古籍修复工作坊",
+          "effects": {
+            "MONEY": -20,
+            "HUMAN": 3,
+            "STYLE": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只参观修复展示",
+          "effects": {
+            "HUMAN": 1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "图书馆"
+      ]
+    },
+    {
+      "id": 2067,
+      "title": "图书馆数据黑客",
+      "description": "你注意到图书馆的一个终端被人动过手脚，有人安装了数据窃取器在偷偷复制读者的浏览记录。你可以报告给图书馆AI或者自己利用这个漏洞。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "报告给图书馆AI管理",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自己利用窃取器获取数据",
+          "effects": {
+            "TECH": 2,
+            "REP": -3,
+            "MONEY": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "图书馆"
+      ]
+    },
+    {
+      "id": 2068,
+      "title": "阅读舱出租",
+      "description": "图书馆的沉浸式阅读舱可以租用，舱内提供完全隔音、温度控制和全息场景模拟。你可以选择在虚拟森林或太空站中阅读。每小时15信用点。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "租用太空场景阅读舱",
+          "effects": {
+            "MONEY": -30,
+            "TECH": 1,
+            "HUMAN": 2,
+            "TRAUMA": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在大厅免费区阅读",
+          "effects": {
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "图书馆"
+      ]
+    },
+    {
+      "id": 2069,
+      "title": "全息篮球场",
+      "description": "社区运动场的篮球架被升级成了全息互动版，能实时记录你的投篮数据并给出建议。球场边还有虚拟观众为你欢呼。使用费10信用点每小时。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        60
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "租用全息篮球场打球",
+          "effects": {
+            "MONEY": -10,
+            "LIFE": 2,
+            "STYLE": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在旁边普通球场打",
+          "effects": {
+            "LIFE": 1,
+            "HUMAN": 1,
+            "MONEY": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "运动场"
+      ]
+    },
+    {
+      "id": 2070,
+      "title": "虚拟拳击赛",
+      "description": "运动场的虚拟拳击区举办业余拳击赛，对手是AI控制的虚拟拳手，可以根据你的水平调整难度。赢了有奖金，输了可能受轻伤。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "报名参加虚拟拳击赛",
+          "effects": {
+            "MONEY": -10,
+            "LIFE": 1,
+            "TRAUMA": 2,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只是旁观比赛",
+          "effects": {
+            "HUMAN": 1,
+            "STYLE": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "运动场"
+      ]
+    },
+    {
+      "id": 2071,
+      "title": "反重力跑步",
+      "description": "运动场引进了反重力跑步道，跑道上的低重力场让你跑起来像在月球上一样轻盈。体验很新奇但费用不低，30信用点半小时。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        65
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "体验反重力跑步",
+          "effects": {
+            "MONEY": -30,
+            "LIFE": 2,
+            "STYLE": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在普通跑道上跑步",
+          "effects": {
+            "LIFE": 1,
+            "MONEY": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "运动场"
+      ]
+    },
+    {
+      "id": 2072,
+      "title": "赛博电竞联赛",
+      "description": "运动场的电竞馆正在举办社区赛博电竞联赛，参赛免费，冠军有300信用点奖金。比赛项目是最新出的全息格斗游戏，围观群众不少。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        50
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "报名参赛争夺奖金",
+          "effects": {
+            "MONEY": 0,
+            "TECH": 2,
+            "STYLE": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "当观众看高手对决",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "MONEY": -5
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "运动场"
+      ]
+    },
+    {
+      "id": 2073,
+      "title": "全息运动教练",
+      "description": "运动场新来了一个全息AI运动教练，能根据你的体型和体能制定个性化训练方案。教练形象是一位阳光帅气的虚拟青年，很多社区成员都成了他的学员。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "成为AI教练的学员",
+          "effects": {
+            "MONEY": -60,
+            "LIFE": 2,
+            "STYLE": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "按自己的方式训练",
+          "effects": {
+            "LIFE": 1,
+            "HUMAN": 1,
+            "MONEY": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "运动场"
+      ]
+    },
+    {
+      "id": 2074,
+      "title": "极限运动模拟",
+      "description": "运动场开放了极限运动模拟器，可以体验跳伞、冲浪、攀岩等极限运动而不会有真正的生命危险。模拟器使用全息投影和力反馈技术，非常逼真。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        60
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "体验跳伞模拟",
+          "effects": {
+            "MONEY": -40,
+            "STYLE": 2,
+            "LIFE": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "体验温和的冲浪模拟",
+          "effects": {
+            "MONEY": -25,
+            "STYLE": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "运动场"
+      ]
+    },
+    {
+      "id": 2075,
+      "title": "运动场斗殴",
+      "description": "运动场上两组人因为比赛争议起了冲突，眼看就要动手。全息裁判已经失灵了，周围的人有的在起哄有的在躲闪。你正好在附近。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "上前劝架",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "躲远点不掺和",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 1,
+            "LIFE": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "运动场"
+      ]
+    },
+    {
+      "id": 2076,
+      "title": "营养水自动售货",
+      "description": "街边的智能饮水机不仅提供纯净水，还能根据你的需求添加维生素、矿物质和能量补充剂。屏幕上列着各种配方，从\"提神醒脑\"到\"安神助眠\"都有。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买一杯定制营养水",
+          "effects": {
+            "MONEY": -8,
+            "LIFE": 2,
+            "TECH": 0
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只喝免费纯净水",
+          "effects": {
+            "LIFE": 1,
+            "MONEY": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "饮水机"
+      ]
+    },
+    {
+      "id": 2077,
+      "title": "纯净水过滤站",
+      "description": "社区新建了一座纯净水过滤站，声称能去除水中99.9%的污染物和重金属。免费向居民开放，但队伍排得很长。有人怀疑过滤效果没有宣传的那么好。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "排队取过滤水",
+          "effects": {
+            "LIFE": 2,
+            "TRAUMA": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "花钱买瓶装水",
+          "effects": {
+            "MONEY": -15,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "饮水机"
+      ]
+    },
+    {
+      "id": 2078,
+      "title": "功能饮料调配",
+      "description": "智能饮水机新增了功能饮料自动调配功能，你可以自定义配方：咖啡因、牛磺酸、神经增强剂的配比都由你决定。调配费5信用点，原料另算。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "调配高能功能饮料",
+          "effects": {
+            "MONEY": -20,
+            "LIFE": 1,
+            "ADDICTION": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "调配温和的草本饮料",
+          "effects": {
+            "MONEY": -12,
+            "LIFE": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "饮水机"
+      ]
+    },
+    {
+      "id": 2079,
+      "title": "水质检测警报",
+      "description": "你的个人终端收到社区通知：附近的水源检测出异常污染物，建议居民暂时不要饮用自来水。智能饮水机的过滤系统也发出了黄色警报，但仍在运营。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买瓶装水储备",
+          "effects": {
+            "MONEY": -40,
+            "LIFE": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "冒险用过滤后的水",
+          "effects": {
+            "LIFE": -1,
+            "MONEY": -5,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "饮水机"
+      ]
+    },
+    {
+      "id": 2080,
+      "title": "黑市水源交易",
+      "description": "有人在小巷里兜售\"深层地下水\"，声称是战前封存的纯净水源，完全没有污染。价格是普通水的十倍，但水的质量没有任何检测证明。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买一瓶试试",
+          "effects": {
+            "MONEY": -30,
+            "LIFE": 1,
+            "REP": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "不信任黑市水源",
+          "effects": {
+            "HUMAN": 1,
+            "MONEY": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "饮水机"
+      ]
+    },
+    {
+      "id": 2081,
+      "title": "能量水促销",
+      "description": "一款新品牌的\"能量水\"在搞促销，声称含有专利纳米能量粒子，喝一瓶顶一顿饭。买三送一，促销员在街头热情推销，还提供免费试喝。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买三送一囤货",
+          "effects": {
+            "MONEY": -45,
+            "LIFE": 2,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只免费试喝一瓶",
+          "effects": {
+            "LIFE": 1,
+            "MONEY": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "饮水机"
+      ]
+    },
+    {
+      "id": 2082,
+      "title": "饮水机故障",
+      "description": "你正要用智能饮水机时，它突然开始喷射浑浊的液体并发出刺耳的警报声。屏幕上显示\"系统错误，请联系维修\"。旁边没有人，你注意到机器有手动关闭阀。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "手动关闭阀门防止泄漏",
+          "effects": {
+            "REP": 2,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拍个视频上传然后离开",
+          "effects": {
+            "STYLE": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "饮水机"
+      ]
+    },
+    {
+      "id": 2083,
+      "title": "二手义体商店",
+      "description": "二手义体店里摆满了各种用过的义体零件：义眼、机械臂、神经接口、合成皮肤。店主是个独眼的老赛博朋克，他说每件货都经过了测试。价格比新品便宜一半。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买一个二手机械义眼",
+          "effects": {
+            "MONEY": -200,
+            "CHROME": 2,
+            "TECH": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只买便宜的维护工具",
+          "effects": {
+            "MONEY": -30,
+            "TECH": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "二手店"
+      ]
+    },
+    {
+      "id": 2084,
+      "title": "旧货跳蚤市场",
+      "description": "周末的赛博跳蚤市场热闹非凡，摊位上摆满了旧时代的电子垃圾、义体零件和各种稀奇古怪的东西。你需要仔细淘才能发现好东西，但也有不少坑。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "花时间仔细淘宝",
+          "effects": {
+            "MONEY": -40,
+            "TECH": 2,
+            "STYLE": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "随便逛逛",
+          "effects": {
+            "HUMAN": 1,
+            "MONEY": -5
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "二手店"
+      ]
+    },
+    {
+      "id": 2085,
+      "title": "义体回收站",
+      "description": "义体回收站收购废弃义体进行翻新再卖，价格极低。你可以在这里找到很多便宜的义体零件，但成色参差不齐。回收站老板说今天到了一批新货。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "翻新货里找便宜零件",
+          "effects": {
+            "MONEY": -80,
+            "CHROME": 1,
+            "TECH": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "把自己的旧义体卖掉",
+          "effects": {
+            "MONEY": 50,
+            "CHROME": -1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "二手店"
+      ]
+    },
+    {
+      "id": 2086,
+      "title": "古董电子交易",
+      "description": "二手店角落里有一排古董电子产品：旧手机、游戏机、甚至还有一台还能开机的笔记本电脑。店主说这些是收藏品，价格比实用价值高得多。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买一台古董游戏机",
+          "effects": {
+            "MONEY": -120,
+            "STYLE": 3,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "讨价还价买旧数据芯片",
+          "effects": {
+            "MONEY": -50,
+            "TECH": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "二手店"
+      ]
+    },
+    {
+      "id": 2087,
+      "title": "二手记忆芯片",
+      "description": "二手店有个隐蔽的柜台出售二手记忆芯片，里面存着别人的记忆片段。有人买来体验别人的人生，也有人买来提取其中的技术知识。但记忆混合有风险。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买一个技能记忆芯片",
+          "effects": {
+            "MONEY": -180,
+            "TECH": 3,
+            "TRAUMA": 2,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "觉得太危险不买",
+          "effects": {
+            "HUMAN": 2,
+            "MONEY": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "二手店"
+      ]
+    },
+    {
+      "id": 2088,
+      "title": "二手店淘宝",
+      "description": "你在二手店的废品堆里翻到了一块看起来很有年头的电路板，上面刻着你认不出来的标志。店主说这是废品，随便给5信用点拿走。你觉得这可能是个好东西。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买下电路板回去研究",
+          "effects": {
+            "MONEY": -5,
+            "TECH": 3,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "觉得是垃圾不要了",
+          "effects": {
+            "HUMAN": 1,
+            "MONEY": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "二手店"
+      ]
+    },
+    {
+      "id": 2089,
+      "title": "买到赃物",
+      "description": "你在二手店买了一个便宜的义体手臂，用了一天后有人找上门来说这是从他那偷的。他要求归还或支付全价，否则就报警。店主已经消失不见了。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "归还义体并去找店主算账",
+          "effects": {
+            "MONEY": 0,
+            "REP": 2,
+            "TRAUMA": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "支付全价留下义体",
+          "effects": {
+            "MONEY": -200,
+            "CHROME": 1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "二手店"
+      ]
+    },
+    {
+      "id": 2090,
+      "title": "AI理发机器人",
+      "description": "街边的AI理发店没有人类理发师，全自动机械臂负责洗剪吹。AI会扫描你的脸型推荐发型，整个过程15分钟搞定。理一次发20信用点。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "让AI推荐并剪新发型",
+          "effects": {
+            "MONEY": -20,
+            "STYLE": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只剪个简单的",
+          "effects": {
+            "MONEY": -15,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "理发"
+      ]
+    },
+    {
+      "id": 2091,
+      "title": "纹发投影设计",
+      "description": "理发店新推出了纹发投影服务，在你头发上投射动态图案和颜色，可以随时更换。在夜店和派对上非常拉风。效果持续一周，费用50信用点。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "做纹发投影设计",
+          "effects": {
+            "MONEY": -50,
+            "STYLE": 3,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "觉得太花哨不要",
+          "effects": {
+            "HUMAN": 1,
+            "MONEY": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "理发"
+      ]
+    },
+    {
+      "id": 2092,
+      "title": "发型数据下载",
+      "description": "理发店有一个发型数据库，你可以下载明星或网红的发型数据直接复制。AI机械臂会精确还原发型的每一个细节。热门发型下载费30信用点。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        60
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "下载网红发型",
+          "effects": {
+            "MONEY": -30,
+            "STYLE": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自己设计一个独特发型",
+          "effects": {
+            "MONEY": -25,
+            "STYLE": 3,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "理发"
+      ]
+    },
+    {
+      "id": 2093,
+      "title": "理发店故障",
+      "description": "理发到一半时AI理发机器人突然故障，机械臂卡在了你头上不动了。店里只有你一个人，紧急呼叫按钮在墙上。你的头发现在看起来很滑稽。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "自己尝试解锁机械臂",
+          "effects": {
+            "TECH": 2,
+            "TRAUMA": 2,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "按紧急按钮等维修",
+          "effects": {
+            "TRAUMA": 1,
+            "STYLE": -2,
+            "MONEY": -5
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "理发"
+      ]
+    },
+    {
+      "id": 2094,
+      "title": "奢华造型套餐",
+      "description": "高级理发沙龙推出了赛博奢华造型套餐，包括AI发型设计、纳米皮肤护理、义体抛光和全息纹身。全套服务要300信用点但效果惊艳。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "享受全套奢华造型",
+          "effects": {
+            "MONEY": -300,
+            "STYLE": 4,
+            "REP": 2,
+            "CHROME": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只做基础剪发",
+          "effects": {
+            "MONEY": -25,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "理发"
+      ]
+    },
+    {
+      "id": 2095,
+      "title": "街边理发摊",
+      "description": "巷子里有个老头摆了个理发摊，没有AI没有机械臂，全靠一把手剪和一面镜子。一次只收5信用点。有人说他剪得好，也有人说他手抖得厉害。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "体验手工理发",
+          "effects": {
+            "MONEY": -5,
+            "HUMAN": 2,
+            "STYLE": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "不信任手剪，去AI店",
+          "effects": {
+            "MONEY": -20,
+            "STYLE": 2,
+            "HUMAN": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "理发"
+      ]
+    },
+    {
+      "id": 2096,
+      "title": "霓虹夜市闲逛",
+      "description": "夜幕降临，赛博夜市的霓虹灯次第亮起，全息广告在空中翻涌。各种摊位琳琅满目：义体改装、街头小吃、黑市数据、全息表演。人声嘈杂，热闹非凡。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 13,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "四处闲逛体验夜市氛围",
+          "effects": {
+            "HUMAN": 2,
+            "STYLE": 2,
+            "MONEY": -10
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "寻找便宜货和特价商品",
+          "effects": {
+            "MONEY": -40,
+            "TECH": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "找个角落看人来人往",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": -1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "夜市"
+      ]
+    },
+    {
+      "id": 2097,
+      "title": "夜市街头小吃",
+      "description": "夜市的小吃摊飘出诱人的香气：合成肉串、 algae 面条、昆虫蛋白棒、全息棉花糖。摊主们热情吆喝着。你的生物监测器提示你该补充营养了。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买合成肉串和algae面条",
+          "effects": {
+            "MONEY": -25,
+            "LIFE": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "尝试昆虫蛋白棒",
+          "effects": {
+            "MONEY": -10,
+            "LIFE": 1,
+            "STYLE": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "不饿，只是看看",
+          "effects": {
+            "HUMAN": 1,
+            "MONEY": 0
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "夜市"
+      ]
+    },
+    {
+      "id": 2098,
+      "title": "夜市算命摊",
+      "description": "夜市深处有一个算命摊，摊主是个装了义眼的老婆婆，旁边放着一台老旧的AI算命机。她声称能通过你的生物数据预测未来，一次20信用点。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "让老婆婆看看你的未来",
+          "effects": {
+            "MONEY": -20,
+            "HUMAN": 2,
+            "TRAUMA": -1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用AI算命机算一卦",
+          "effects": {
+            "MONEY": -10,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "夜市"
+      ]
+    },
+    {
+      "id": 2099,
+      "title": "夜市打架事件",
+      "description": "夜市里两个帮派成员突然起了冲突，推搡变成了打斗。周围的人有的尖叫躲避，有的拿出手机拍摄。摊位被撞翻了几个，混乱正在扩散。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮忙拉架保护无辜路人",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "TRAUMA": 2,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "快速撤离不掺和",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 1,
+            "MONEY": 0
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "趁乱从翻倒的摊位上拿点东西",
+          "effects": {
+            "MONEY": 30,
+            "REP": -3,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "夜市"
+      ]
+    }
+  ]
+}

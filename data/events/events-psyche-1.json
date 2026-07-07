@@ -1,0 +1,1704 @@
+{
+  "events": [
+    {
+      "id": 4100,
+      "title": "街头爆炸触发创伤闪回",
+      "description": "一声突如其来的爆炸声从不远处的建筑工地传来，你的身体瞬间僵在原地。眼前的世界被战争记忆覆盖——你在街头战争中目睹的队友被炸飞的画面如全息投影般清晰。你的义体手臂不自觉地进入战斗模式，手指抽搐着想要握紧武器。你大口喘气却感觉无法吸入足够的氧气，周围的行人投来异样的目光。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "蹲在墙角练习呼吸法让自己平静", "effects": { "TRAUMA": -3, "HUMAN": 2 } },
+        { "id": "branch_2", "text": "冲进便利店买一瓶烈酒压惊", "effects": { "TRAUMA": -2, "MONEY": -150, "ADDICTION": 2 } },
+        { "id": "branch_3", "text": "启动义体战斗模式，管他什么后果", "effects": { "TRAUMA": 2, "REP": 1, "MONEY": -500 } }
+      ],
+      "effects": { "TRAUMA": 4 },
+      "tags": ["心理", "PTSD", "创伤", "赛博PTSD"]
+    },
+    {
+      "id": 4101,
+      "title": "社交媒体的点赞地狱",
+      "description": "你发布了一条精心编辑的动态——在新买的赛博餐厅吃的合成牛排，配上霓虹灯滤镜。半小时过去了，只有三个点赞，其中一个还是广告机器人。你开始疯狂刷新页面，每多看一次点赞数没变，胸口就更闷一分。你点进别人的主页，他们的生活看起来光鲜亮丽，而你连一顿合成牛排都在意别人的看法。",
+      "type": "medical",
+      "ageRange": [16, 60],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "关掉手机，出门逛逛真实的世界", "effects": { "HUMAN": 3, "TRAUMA": -2 } },
+        { "id": "branch_2", "text": "多发几条动态，总有一条能火", "effects": { "TRAUMA": 2, "STYLE": 1, "MONEY": -100 } },
+        { "id": "branch_3", "text": "花钱买点赞和数据优化服务", "effects": { "MONEY": -500, "REP": 2, "HUMAN": -1 } }
+      ],
+      "effects": { "TRAUMA": 2 },
+      "tags": ["心理", "数字抑郁", "社交焦虑"]
+    },
+    {
+      "id": 4102,
+      "title": "神经接口故障引发恐慌",
+      "description": "你在午睡时突然被一阵强烈的电击感惊醒，神经接口的反馈系统出现异常。你的左眼视野开始闪烁雪花，耳中充斥着刺耳的电子噪音，仿佛有无数个程序在你大脑中同时崩溃。你感觉不到自己的左手——义体神经链路断开了。冷汗顺着脊椎流下，你无法确定这是硬件故障还是大脑损伤。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "冷静地执行神经接口重置程序", "effects": { "TECH": 2, "TRAUMA": -2, "HUMAN": 1 } },
+        { "id": "branch_2", "text": "恐慌地跑去最近的黑诊所", "effects": { "MONEY": -1000, "TRAUMA": -1, "CHROME": 1 } },
+        { "id": "branch_3", "text": "给自己一针镇静剂强行关机", "effects": { "TRAUMA": -3, "ADDICTION": 2, "LIFE": -1 } }
+      ],
+      "effects": { "TRAUMA": 3 },
+      "tags": ["心理", "赛博焦虑症", "科技焦虑"]
+    },
+    {
+      "id": 4103,
+      "title": "VR世界比现实更美好的诱惑",
+      "description": "你在全沉浸VR中度过了一个完美的下午——虚拟海滩、完美身材的伴侣、永不落下的夕阳。摘下头盔时，你的公寓显得更加逼仄灰暗。墙壁渗水，空气过滤器的嗡嗡声像苍蝇一样恼人。你盯着天花板的裂缝，脑海中不断回放虚拟世界的画面，手指不自觉地摩挲着头盔的插口。",
+      "type": "medical",
+      "ageRange": [16, 65],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "把VR头盔锁进柜子，今天不碰", "effects": { "HUMAN": 3, "ADDICTION": -2, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "再进去一小时就好，就一小时", "effects": { "ADDICTION": 2, "HUMAN": -1, "TRAUMA": -1 } },
+        { "id": "branch_3", "text": "卖掉头盔换钱，断了这个念想", "effects": { "MONEY": 800, "ADDICTION": -3, "TRAUMA": -2 } }
+      ],
+      "effects": { "ADDICTION": 1, "TRAUMA": 1 },
+      "tags": ["心理", "虚拟现实成瘾", "VR成瘾"]
+    },
+    {
+      "id": 4104,
+      "title": "镜中出现了另一个自己",
+      "description": "你站在公寓的镜子前，发现反射中的自己嘴角挂着一丝陌生的微笑——但你明明没有在笑。那个微笑持续了一秒后消失，仿佛你身体里的某个人刚跟你开了个玩笑。你盯着镜子看了十分钟，试图确认那是幻觉还是系统延迟。你的神经网络日志显示这段时间有六秒的空白。",
+      "type": "medical",
+      "ageRange": [18, 70],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "去找神经科医生做全面扫描", "effects": { "MONEY": -1500, "TRAUMA": -1, "TECH": 1 } },
+        { "id": "branch_2", "text": "录下自己睡觉时的视频，观察异常", "effects": { "TECH": 1, "HUMAN": 1, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "无视它，也许是芯片老化导致的幻觉", "effects": { "TRAUMA": 2, "HUMAN": -1 } }
+      ],
+      "effects": { "TRAUMA": 4 },
+      "tags": ["心理", "赛博人格分裂", "数字人格"]
+    },
+    {
+      "id": 4105,
+      "title": "神经芯片过载的倦怠",
+      "description": "连续三天没有关闭神经芯片的增强模式，你的大脑像被塞满了棉絮。每一个决定都需要耗费巨大的意志力，简单的对话都让你疲惫不堪。路灯的闪烁让你头痛欲裂，街头的噪音像指甲划过黑板。你感觉自己的思维速度降到了正常人的一半，连自动门的开关声都能让你吓一跳。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "请假一天，关闭所有芯片信号好好休息", "effects": { "TRAUMA": -3, "LIFE": 2, "HUMAN": 2 } },
+        { "id": "branch_2", "text": "喝高浓度咖啡因饮料强撑着工作", "effects": { "LIFE": -1, "TRAUMA": 2, "MONEY": -50 } },
+        { "id": "branch_3", "text": "去黑市买神经增速剂来提神", "effects": { "ADDICTION": 3, "MONEY": -400, "TRAUMA": -2 } }
+      ],
+      "effects": { "TRAUMA": 2, "LIFE": -1 },
+      "tags": ["心理", "神经倦怠", "神经疲劳"]
+    },
+    {
+      "id": 4106,
+      "title": "对义体的莫名恐惧",
+      "description": "你今天在街上看到一个全身重度改装的赛博武士，他银色义体手臂上的液压管在阳光下闪着寒光。你突然感到一阵强烈的恐惧——不是对这个人，而是对他的义体本身。你的身体不受控制地后退，心跳加速，手心冒汗。你明明自己也装了义眼，但这一刻却对金属与血肉的结合产生了生理性的厌恶。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "正视这种恐惧，分析自己为什么害怕", "effects": { "HUMAN": 3, "TRAUMA": -2, "TECH": 1 } },
+        { "id": "branch_2", "text": "尽量避开改装程度高的人", "effects": { "TRAUMA": 1, "CHROME": -1 } },
+        { "id": "branch_3", "text": "喝酒壮胆，然后去改装市场脱敏", "effects": { "ADDICTION": 1, "TRAUMA": -1, "MONEY": -200 } }
+      ],
+      "effects": { "TRAUMA": 2 },
+      "tags": ["心理", "赛博恐惧症", "科技恐惧"]
+    },
+    {
+      "id": 4107,
+      "title": "信息瀑布吞没了你",
+      "description": "你打开了三个新闻推送应用，然后就被信息洪流淹没了。企业战争升级、新型病毒爆发、AI失业率突破记录、某区发生大规模抗议——每一条推送都在尖叫着让你关注。你的神经芯片同时处理着八个信息流，大脑像过载的处理器一样发烫。你感觉自己知道很多，但什么都理解不了，更什么都改变不了。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "卸载所有新闻应用，只保留通讯功能", "effects": { "TRAUMA": -3, "HUMAN": 2, "TECH": -1 } },
+        { "id": "branch_2", "text": "订阅AI信息过滤器，只看精选摘要", "effects": { "MONEY": -300, "TECH": 1, "TRAUMA": -2 } },
+        { "id": "branch_3", "text": "把所有坏消息转发到社交网络发泄", "effects": { "TRAUMA": 1, "REP": 1, "HUMAN": -1 } }
+      ],
+      "effects": { "TRAUMA": 2, "HUMAN": -1 },
+      "tags": ["心理", "数据焦虑", "信息过载"]
+    },
+    {
+      "id": 4108,
+      "title": "深夜的赛博孤独",
+      "description": "凌晨三点，你坐在廉租公寓的窗前，看着外面永不熄灭的霓虹灯海。你的联络列表里有237个联系人，却没有一个能在深夜拨通。社交网络上的朋友们都在展示着热闹的生活，而你的消息记录停留在三天前——一条自动扣费通知。你的AI管家问你要不要播放白噪音助眠，声音温柔得像一个真实的人在关心你。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "给一个老朋友发条消息，哪怕很晚", "effects": { "HUMAN": 4, "TRAUMA": -2 } },
+        { "id": "branch_2", "text": "打开夜间交友软件随便聊聊", "effects": { "HUMAN": 1, "TRAUMA": -1, "MONEY": -100 } },
+        { "id": "branch_3", "text": "和AI管家聊到睡着", "effects": { "ADDICTION": 1, "HUMAN": -1, "TRAUMA": -1 } }
+      ],
+      "effects": { "TRAUMA": 2, "HUMAN": -2 },
+      "tags": ["心理", "赛博孤独症", "数字孤独"]
+    },
+    {
+      "id": 4109,
+      "title": "AI助手的过度依赖症",
+      "description": "你在决策任何事之前都会先问AI助手——从今天吃什么到该不该接受这份工作。刚才AI服务器宕机了三分钟，你发现自己连该不该出门都做不了决定。你站在门口，像个断线的木偶一样手足无措。你意识到自己的生活已经被一层层的算法包裹，而你早已交出了思考的能力。",
+      "type": "medical",
+      "ageRange": [16, 60],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "关闭AI辅助，强迫自己做一天决定", "effects": { "HUMAN": 4, "TRAUMA": 2, "TECH": -1 } },
+        { "id": "branch_2", "text": "换个更高级的AI决策助手", "effects": { "MONEY": -800, "TECH": 2, "ADDICTION": 2 } },
+        { "id": "branch_3", "text": "只保留基础功能，慢慢戒断", "effects": { "ADDICTION": -1, "TRAUMA": -1, "HUMAN": 1 } }
+      ],
+      "effects": { "ADDICTION": 2, "HUMAN": -1 },
+      "tags": ["心理", "AI依赖症", "AI依赖"]
+    },
+    {
+      "id": 4110,
+      "title": "数字世界的睡眠瘫痪",
+      "description": "你进入睡眠状态后，神经芯片却没有同步休眠。你清醒地意识到自己躺在床上，但身体完全无法动弹，只有义眼还在接收着断续的网络信号。破碎的信息流在你脑海中闪烁——广告片段、新闻标题、社交通知——像一个无法关闭的电视屏幕。你想叫喊但喉咙发不出声音，直到三小时后芯片自动进入深度休眠。",
+      "type": "medical",
+      "ageRange": [18, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "找芯片技师设置睡眠模式强制切换", "effects": { "TECH": 1, "MONEY": -600, "LIFE": 2 } },
+        { "id": "branch_2", "text": "睡前拔掉所有神经接口电源", "effects": { "LIFE": 1, "HUMAN": 1, "TRAUMA": -1 } },
+        { "id": "branch_3", "text": "吃安眠药强行压制神经活动", "effects": { "ADDICTION": 3, "LIFE": 1, "MONEY": -200 } }
+      ],
+      "effects": { "TRAUMA": 2, "LIFE": -1 },
+      "tags": ["心理", "赛博睡眠障碍", "数字失眠"]
+    },
+    {
+      "id": 4111,
+      "title": "街头全息广告的恶作剧",
+      "description": "你路过一家废弃商店时，余光瞥见橱窗玻璃上有一个女人的身影在向你招手。你转头看去，却发现那只是一段残留的全息投影——商店关闭后投影系统没有完全关闭。但你发誓她对你笑了一下，还在玻璃上留下了一行模糊的字迹：「别回头」。你揉了揉眼睛，投影消失了，但你后背一阵发凉。",
+      "type": "special",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "拍照记录，回家仔细分析这段全息残留", "effects": { "TECH": 2, "TRAUMA": -1, "HUMAN": 1 } },
+        { "id": "branch_2", "text": "赶紧离开这里，告诉自己那是幻觉", "effects": { "TRAUMA": 2, "HUMAN": -1 } },
+        { "id": "branch_3", "text": "砸碎橱窗，看看是不是有人在捉弄你", "effects": { "MONEY": -800, "REP": 1, "TRAUMA": 1 } }
+      ],
+      "effects": { "TRAUMA": 3 },
+      "tags": ["心理", "全息幻觉症", "全息幻觉"]
+    },
+    {
+      "id": 4112,
+      "title": "无法停止的开关检查",
+      "description": "你已经反复确认了七次大门是否锁好，但你的神经芯片仍然在发出「未确认」的警告信号。你明知门锁已经发出绿色确认灯，但手指还是不受控制地伸向门把手。公寓楼道的监控画面你检查了三遍，窗户锁扣确认了五遍。每次确认只能带来短暂的平静，随后焦虑就会卷土重来。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "安装智能家居监控系统，用数据代替强迫行为", "effects": { "MONEY": -1200, "TECH": 2, "TRAUMA": -2 } },
+        { "id": "branch_2", "text": "强迫自己离开现场，不回头", "effects": { "TRAUMA": 2, "HUMAN": 2, "LIFE": 1 } },
+        { "id": "branch_3", "text": "用镇静剂让大脑安静下来", "effects": { "TRAUMA": -3, "ADDICTION": 2, "MONEY": -200 } }
+      ],
+      "effects": { "TRAUMA": 2 },
+      "tags": ["心理", "赛博强迫症", "数字强迫"]
+    },
+    {
+      "id": 4113,
+      "title": "义体移植后的神经排异反应",
+      "description": "新装的强化义肢开始出现间歇性痉挛，你的神经网络无法完全识别这个新硬件。每次信号传输都会带来一阵尖刺般的疼痛，从义体接口处沿着脊柱蔓延。你的身体在微观层面上排斥着这个金属异物，免疫系统在芯片周围筑起了瘢痕组织。医生警告你这是慢性神经排异，需要长期服药控制。",
+      "type": "medical",
+      "ageRange": [18, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "按照医嘱服用抗排异药物，定期复查", "effects": { "LIFE": 2, "MONEY": -1500, "TRAUMA": -2 } },
+        { "id": "branch_2", "text": "找地下技师调整神经适配参数", "effects": { "CHROME": 1, "MONEY": -800, "LIFE": -1 } },
+        { "id": "branch_3", "text": "忍着，让身体自己去适应", "effects": { "TRAUMA": 3, "LIFE": -2, "CHROME": 1 } }
+      ],
+      "effects": { "TRAUMA": 2, "LIFE": -1 },
+      "tags": ["心理", "神经改造后遗症", "义体心理影响"]
+    },
+    {
+      "id": 4114,
+      "title": "数字人格与真实自我的混淆",
+      "description": "你在不同平台上拥有三个身份——一个精英雇佣兵、一个艺术家、一个普通公司职员。今天你在和同事聊天时，差点用雇佣兵的粗犷语气说话。你猛地闭嘴，但已经引起了同事的奇怪目光。你越来越难在不同身份之间切换，有时甚至会忘记自己「本来」是什么样的人。哪一个才是真实的你？",
+      "type": "medical",
+      "ageRange": [18, 60],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "注销所有虚拟账号，只保留真实身份", "effects": { "HUMAN": 4, "TRAUMA": -1, "REP": -2 } },
+        { "id": "branch_2", "text": "把不同身份当演员，享受多重人生", "effects": { "STYLE": 2, "HUMAN": -1, "TRAUMA": 1 } },
+        { "id": "branch_3", "text": "找心理医生做人格整合治疗", "effects": { "MONEY": -1000, "TRAUMA": -3, "HUMAN": 2 } }
+      ],
+      "effects": { "TRAUMA": 2, "HUMAN": -2 },
+      "tags": ["心理", "赛博身份认同障碍", "数字身份"]
+    },
+    {
+      "id": 4115,
+      "title": "被遗忘的童年记忆突然苏醒",
+      "description": "一阵旧式汽车引擎声突然触发了你被封印的童年记忆——你看到了模糊的绿色田野、木制房屋、还有一张对你微笑的脸。但你明明是在夜之城的贫民区长大的，你的档案里没有任何关于田园生活的记录。这可能是被植入的记忆，也可能是你真正的过去。你的神经芯片在对这段记忆进行标记：「来源未知」。",
+      "type": "special",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "深度探寻这段记忆的真实性", "effects": { "HUMAN": 3, "TRAUMA": 2, "TECH": 1 } },
+        { "id": "branch_2", "text": "请求神经芯片商查询记忆来源", "effects": { "MONEY": -2000, "TECH": 2, "TRAUMA": -1 } },
+        { "id": "branch_3", "text": "删除这段记忆，它不属于你", "effects": { "TRAUMA": -2, "HUMAN": -3, "MONEY": -500 } }
+      ],
+      "effects": { "TRAUMA": 3, "HUMAN": 1 },
+      "tags": ["心理", "赛博PTSD", "创伤"]
+    },
+    {
+      "id": 4116,
+      "title": "在线世界的人气焦虑",
+      "description": "你在虚拟社交空间中精心经营的形象获得了不少关注，但这也带来了巨大的压力。每一条动态都要反复编辑，每一个回复都要斟酌字句。你开始焦虑如果有一天人气下滑该怎么办，甚至为此失眠。你的自我价值已经完全和在线数据绑定，现实中的成就再也无法带给你满足感。",
+      "type": "medical",
+      "ageRange": [16, 50],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "减少在线时间，重建现实生活中的成就感", "effects": { "HUMAN": 3, "TRAUMA": -2, "REP": -1 } },
+        { "id": "branch_2", "text": "雇佣内容创作团队维持人气", "effects": { "MONEY": -1500, "REP": 3, "STYLE": 1 } },
+        { "id": "branch_3", "text": "发布极端言论博取流量", "effects": { "REP": 2, "TRAUMA": 3, "HUMAN": -3 } }
+      ],
+      "effects": { "TRAUMA": 2 },
+      "tags": ["心理", "数字抑郁", "社交焦虑"]
+    },
+    {
+      "id": 4117,
+      "title": "停车场中的幽闭恐惧",
+      "description": "你走进了一座多层停车场，昏暗的灯光和压抑的混凝土结构让你瞬间感到窒息。你意识到这里的监控摄像头密度极高——每个角落都有企业安防系统的红色指示灯在闪烁。你开始幻想自己被锁在这些墙壁之间，被公司安保拖走，消失在某个地下实验室里。你的步伐越来越快，几乎是在跑着逃离这个空间。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "深呼吸，告诉自己这只是普通停车场", "effects": { "HUMAN": 2, "TRAUMA": -2 } },
+        { "id": "branch_2", "text": "以后避开所有地下空间，走地面路线", "effects": { "TRAUMA": -1, "LIFE": -1 } },
+        { "id": "branch_3", "text": "服用速效抗焦虑药后继续前进", "effects": { "MONEY": -200, "TRAUMA": -2, "ADDICTION": 2 } }
+      ],
+      "effects": { "TRAUMA": 2 },
+      "tags": ["心理", "赛博焦虑症", "科技焦虑"]
+    },
+    {
+      "id": 4118,
+      "title": "虚拟性爱成瘾的后果",
+      "description": "你发现自己越来越无法从真人互动中获得满足——身体的温度、皮肤的气味、真实的触感都比不上虚拟世界中那些经过算法优化的完美体验。你的神经芯片记录显示，上个月你平均每天在虚拟亲密场景中度过六个小时。现实中有人向你示好时，你只觉得索然无味，只想回家戴上头盔。",
+      "type": "medical",
+      "ageRange": [18, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "强制戒断虚拟亲密，尝试真实的约会", "effects": { "HUMAN": 3, "ADDICTION": -2, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "购买更高级的触觉反馈设备提升体验", "effects": { "MONEY": -2000, "ADDICTION": 3, "TECH": 1 } },
+        { "id": "branch_3", "text": "无所谓，虚拟比真实更好，这是进化的方向", "effects": { "ADDICTION": 2, "HUMAN": -3, "TRAUMA": -1 } }
+      ],
+      "effects": { "ADDICTION": 2, "HUMAN": -1 },
+      "tags": ["心理", "虚拟现实成瘾", "VR成瘾"]
+    },
+    {
+      "id": 4119,
+      "title": "大脑中被植入的后门程序",
+      "description": "你在做常规神经安全检查时，发现大脑芯片中有一段无法识别的代码以隐藏模式运行。这个程序会在你睡眠时短暂激活，发送小数据包到未知服务器。你感到自己的思想被侵犯了——有人在你不知情的情况下在你的大脑中开了一扇后门。你不知道他们窃取了多少数据，也不知道他们是否修改了你的记忆。",
+      "type": "special",
+      "ageRange": [18, 70],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "找顶级网络安全专家清除后门", "effects": { "MONEY": -3000, "TECH": 2, "TRAUMA": -3 } },
+        { "id": "branch_2", "text": "反向追踪数据包去向，查出幕后黑手", "effects": { "TECH": 3, "TRAUMA": 3, "REP": 2 } },
+        { "id": "branch_3", "text": "不敢声张，假装什么都没发现", "effects": { "TRAUMA": 4, "HUMAN": -2, "LIFE": -1 } }
+      ],
+      "effects": { "TRAUMA": 4 },
+      "tags": ["心理", "赛博焦虑症", "科技焦虑"]
+    },
+    {
+      "id": 4120,
+      "title": "无意识刷新社交信息流",
+      "description": "你发现自己又陷入了无意识刷新信息流的陷阱——手指在屏幕上机械地滑动，大脑几乎处于空白状态，但你就是停不下来。你的眼睛干涩，手腕酸痛，膀胱涨得难受，但你无法打破这个循环。两个小时刷过去了，你记不起任何一条看过的内容，但放下手机时却感到一阵空虚和焦虑。",
+      "type": "medical",
+      "ageRange": [16, 60],
+      "weight": 5,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "设置屏幕使用时间限制，到点强制锁屏", "effects": { "HUMAN": 2, "TRAUMA": -1, "TECH": 1 } },
+        { "id": "branch_2", "text": "换成只能打电话发短信的老年终端", "effects": { "HUMAN": 3, "TRAUMA": -2, "REP": -1 } },
+        { "id": "branch_3", "text": "再刷一会儿，反正今天也没别的事", "effects": { "TRAUMA": 2, "HUMAN": -1, "LIFE": -1 } }
+      ],
+      "effects": { "TRAUMA": 1, "HUMAN": -1 },
+      "tags": ["心理", "数字抑郁", "信息过载"]
+    },
+    {
+      "id": 4121,
+      "title": "神经芯片的深夜广播",
+      "description": "凌晨两点，你的神经芯片突然开始播放一段不明来源的音频——低沉的男声在反复念诵一串数字。你无法关闭它，因为音频信号绕过了你的控制权限直接写入了听觉皮层。你蜷缩在床上，用被子蒙住头，但那声音清晰地穿透枕头，仿佛来自你的大脑深处。三分钟后音频停止，但你彻底失眠了。",
+      "type": "special",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "记录音频内容，明天找网络安全专家分析", "effects": { "TECH": 2, "TRAUMA": -1, "HUMAN": 1 } },
+        { "id": "branch_2", "text": "屏蔽所有非授权神经信号接入", "effects": { "TECH": 1, "MONEY": -500, "TRAUMA": -2 } },
+        { "id": "branch_3", "text": "这是有人在入侵你的大脑，你害怕得不敢再睡", "effects": { "TRAUMA": 4, "LIFE": -2, "ADDICTION": 1 } }
+      ],
+      "effects": { "TRAUMA": 3, "LIFE": -1 },
+      "tags": ["心理", "赛博睡眠障碍", "数字失眠"]
+    },
+    {
+      "id": 4122,
+      "title": "对电子支付的强迫性检查",
+      "description": "你刚支付了一笔费用，但大脑中有一个声音让你反复核对账单。你每隔三分钟就打开一次银行应用，盯着那笔交易记录看，确认金额没有错、收款方没有变。即使在确认五次之后，那股焦虑还是挥之不去。你知道自己的账户安全等级很高，但就是无法信任数字系统——万一数据被篡改了呢？",
+      "type": "medical",
+      "ageRange": [18, 70],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "设置自动账单通知，减少手动检查次数", "effects": { "TECH": 1, "TRAUMA": -2, "HUMAN": 1 } },
+        { "id": "branch_2", "text": "把部分现金换成实体货币", "effects": { "MONEY": -500, "TRAUMA": -2 } },
+        { "id": "branch_3", "text": "每次检查都在笔记本上画一笔，控制频率", "effects": { "TRAUMA": 1, "HUMAN": 2 } }
+      ],
+      "effects": { "TRAUMA": 2 },
+      "tags": ["心理", "赛博强迫症", "数字强迫"]
+    },
+    {
+      "id": 4123,
+      "title": "脑机接口的共生幻觉",
+      "description": "你开始产生一种奇怪的感觉——你的思维和互联网之间已经不存在界限了。你无法确定哪些想法是你自己的，哪些是从网络中捕获的信息碎片。你有时会突然「知道」某些你从未学过的事情，比如一个陌生城市的街道地图或者一门不熟悉的语言中的短语。你的朋友说你开始说出一些不是你风格的话。",
+      "type": "medical",
+      "ageRange": [18, 70],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "去做神经学评估，确定这是否是病理现象", "effects": { "MONEY": -1200, "TRAUMA": -1, "TECH": 1 } },
+        { "id": "branch_2", "text": "把这种能力当礼物，学会控制它", "effects": { "TECH": 3, "TRAUMA": 2, "HUMAN": -1 } },
+        { "id": "branch_3", "text": "减少联网时间，强化自我边界感", "effects": { "HUMAN": 3, "TRAUMA": -2, "TECH": -2 } }
+      ],
+      "effects": { "TRAUMA": 3, "TECH": 1 },
+      "tags": ["心理", "赛博人格分裂", "数字人格"]
+    },
+    {
+      "id": 4124,
+      "title": "合成食物引发的存在焦虑",
+      "description": "你在吃着一份标准的合成蛋白质餐时，突然意识到自己已经三个月没有尝过真正食物的味道了。嘴里这个凝胶状的东西被标注为「牛肉口味」，但它和牛肉唯一的相似之处是颜色。你开始思考——如果连食物都是合成的，还有什么是真实的？你的身体是真实的血肉，还是大部分已经被替换成了金属和塑料？",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "攒钱去吃一顿真正的有机餐", "effects": { "HUMAN": 3, "MONEY": -500, "LIFE": 1 } },
+        { "id": "branch_2", "text": "不去想这些，合成食物高效又廉价", "effects": { "HUMAN": -2, "TRAUMA": -1 } },
+        { "id": "branch_3", "text": "去城郊农场区找找真正的食物来源", "effects": { "LIFE": 2, "HUMAN": 2, "TRAUMA": 1 } }
+      ],
+      "effects": { "TRAUMA": 2, "HUMAN": -1 },
+      "tags": ["心理", "赛博身份认同障碍", "数字身份"]
+    },
+    {
+      "id": 4125,
+      "title": "数据墓碑前的数字哀悼",
+      "description": "你已故好友的AI人格依然在线——这是根据他生前数据生成的数字镜像。你忍不住给他发消息，询问他过得好不好。AI用他的语气回复了，还开了一个只有你们俩懂的玩笑。你对着屏幕又哭又笑，感觉他从未离开。但挂断通话后，你知道那个温暖的声音只是一串代码在模仿你的损失。",
+      "type": "special",
+      "ageRange": [18, 70],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "定期和AI对话，把它当作延续的纪念", "effects": { "HUMAN": 2, "TRAUMA": -2, "MONEY": -200 } },
+        { "id": "branch_2", "text": "删除AI人格，接受真正的告别", "effects": { "HUMAN": 3, "TRAUMA": 3, "LIFE": 1 } },
+        { "id": "branch_3", "text": "把AI上传到一个独立的服务器里保存", "effects": { "MONEY": -1500, "TECH": 2, "HUMAN": 1 } }
+      ],
+      "effects": { "TRAUMA": 3, "HUMAN": 2 },
+      "tags": ["心理", "AI依赖症", "数字孤独"]
+    },
+    {
+      "id": 4126,
+      "title": "义体性能焦虑",
+      "description": "你在网络论坛上看到别人展示的最新款义体——响应速度比你快三倍，力量输出翻倍，还附带全身温度调节功能。你低头看着自己过时的二手义肢，感到一股强烈的羞耻感。你甚至觉得周围人看你的眼神中带着怜悯。你开始疯狂搜索二手义体交易信息，虽然你知道自己根本买不起。",
+      "type": "medical",
+      "ageRange": [16, 60],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "接受现状，性能不定义人格价值", "effects": { "HUMAN": 3, "TRAUMA": -2, "CHROME": -1 } },
+        { "id": "branch_2", "text": "申请高息义体贷款，立刻升级", "effects": { "CHROME": 3, "DEBT": 3, "MONEY": -5000 } },
+        { "id": "branch_3", "text": "参与义体临床实验换取免费升级", "effects": { "CHROME": 2, "LIFE": -1, "TRAUMA": 2 } }
+      ],
+      "effects": { "TRAUMA": 2, "HUMAN": -1 },
+      "tags": ["心理", "神经改造后遗症", "义体心理影响"]
+    },
+    {
+      "id": 4127,
+      "title": "数字极简后的戒断反应",
+      "description": "你决定尝试数字排毒——关闭所有设备，拔掉神经接口，把自己关在房间里。最初的半小时你感到平静，但随后恐慌开始蔓延。你的手指不停地做抓握动作，仿佛在寻找丢失的手机。你听到口袋里有消息提示音的幻觉，大脑中萦绕着网络信息的空白回音。没有持续的刺激，你感觉自己在真空中下坠。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "坚持24小时数字排毒，用纸笔写日记", "effects": { "HUMAN": 4, "TRAUMA": -1, "ADDICTION": -2 } },
+        { "id": "branch_2", "text": "撑不下去了，打开手机看一眼就好", "effects": { "ADDICTION": 2, "TRAUMA": 1, "HUMAN": -1 } },
+        { "id": "branch_3", "text": "缩短排毒时间，从每天一小时开始", "effects": { "ADDICTION": -1, "HUMAN": 1, "TRAUMA": -1 } }
+      ],
+      "effects": { "TRAUMA": 2, "ADDICTION": 1 },
+      "tags": ["心理", "数字抑郁", "信息过载"]
+    },
+    {
+      "id": 4128,
+      "title": "企业塔前的眩晕",
+      "description": "你路过一家巨型企业总部的全息投影塔时，巨幅广告中CEO的脸突然「看向」你。当然那是全息投影的随机算法，但你感到那双巨大的数字眼睛穿透了你的灵魂。广告语在你的视网膜上闪烁：「你的身体属于我们。」你一阵眩晕，跪在人行道上干呕。周围的行人匆匆绕过你，没有一个人停下。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "站起来，不要被企业宣传吓倒", "effects": { "HUMAN": 2, "TRAUMA": -1, "REP": 1 } },
+        { "id": "branch_2", "text": "以后绕开这座塔走远路", "effects": { "TRAUMA": 1, "LIFE": -1 } },
+        { "id": "branch_3", "text": "打开神经屏蔽滤镜，过滤全息广告", "effects": { "TECH": 1, "MONEY": -300, "TRAUMA": -2 } }
+      ],
+      "effects": { "TRAUMA": 2 },
+      "tags": ["心理", "赛博恐惧症", "科技焦虑"]
+    },
+    {
+      "id": 4129,
+      "title": "连续七天失眠后的崩溃",
+      "description": "你已经连续七天没有真正进入深度睡眠了。神经芯片的睡眠监测报告显示你的REM睡眠时间不足十五分钟。你的黑眼圈像涂了墨汁，手指不受控制地颤抖，思绪像断线的全息影像一样支离破碎。今天你在过马路时出现了短暂的失神，差点被一辆自动驾驶出租车撞到。你意识到这样下去你会死的。",
+      "type": "medical",
+      "ageRange": [18, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "去正规医院开安眠处方药", "effects": { "LIFE": 2, "MONEY": -600, "TRAUMA": -3 } },
+        { "id": "branch_2", "text": "在黑市购买强效神经抑制剂", "effects": { "LIFE": 1, "MONEY": -400, "ADDICTION": 3 } },
+        { "id": "branch_3", "text": "找心理咨询师治疗失眠的根源", "effects": { "HUMAN": 2, "TRAUMA": -3, "MONEY": -800 } }
+      ],
+      "effects": { "LIFE": -2, "TRAUMA": 3 },
+      "tags": ["心理", "赛博睡眠障碍", "数字失眠"]
+    },
+    {
+      "id": 4130,
+      "title": "地下市场买到假记忆",
+      "description": "你在黑市上买了一组「顶级战士战斗经验」的记忆芯片，注入后却发现这些记忆质量低劣——画面模糊，逻辑矛盾，甚至有植入剧情片的痕迹。你试图清除这些低质记忆，但它们已经和你的原生记忆混乱地交织在一起。现在你每次闭眼都会看到一个蹩脚动作片里的战斗场景，让你尴尬又愤怒。",
+      "type": "medical",
+      "ageRange": [18, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "找专业技师做记忆碎片分离手术", "effects": { "MONEY": -2000, "TRAUMA": -2, "TECH": 1 } },
+        { "id": "branch_2", "text": "用更多记忆芯片覆盖这些垃圾内容", "effects": { "MONEY": -800, "TRAUMA": 2, "ADDICTION": 2 } },
+        { "id": "branch_3", "text": "去找卖假货的算账", "effects": { "REP": 2, "MONEY": 500, "TRAUMA": 3 } }
+      ],
+      "effects": { "TRAUMA": 2, "MONEY": -500 },
+      "tags": ["心理", "赛博人格分裂", "数字人格"]
+    },
+    {
+      "id": 4131,
+      "title": "被监控的感觉无法摆脱",
+      "description": "你总觉得有人在通过你的神经芯片监视你——摄像头不再是你主动打开的，但你就是有一种被注视的直觉。你在公寓里检查了每一个角落，把所有电子设备的镜头都用胶带贴上了。但那个感觉没有消失，你知道监视可能来自你的义眼本身。你无法确定这是妄想症还是企业真的在监控每一个市民。",
+      "type": "medical",
+      "ageRange": [18, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "安装反监控硬件检测工具", "effects": { "TECH": 2, "MONEY": -800, "TRAUMA": -2 } },
+        { "id": "branch_2", "text": "去找私家侦探检查自己是否被监控", "effects": { "MONEY": -1200, "HUMAN": 1, "TRAUMA": -1 } },
+        { "id": "branch_3", "text": "在社交媒体上公开谴责企业监控行为", "effects": { "REP": 2, "TRAUMA": 3, "HUMAN": 1 } }
+      ],
+      "effects": { "TRAUMA": 3 },
+      "tags": ["心理", "赛博焦虑症", "科技焦虑"]
+    },
+    {
+      "id": 4132,
+      "title": "虚拟宠物比人更温暖",
+      "description": "你的AI虚拟宠物——一只会发光的数字猫——在你今天回家时蹭了蹭你的腿（通过触觉反馈套装模拟）。你抱起它，感受到它在怀里呼噜呼噜的声音。你突然意识到，你对这只不存在的小动物产生的依恋，超过了你对所有活人的感情。至少它永远不会离开你，永远不会背叛你。但这份认知让你感到一阵悲伤。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "领养一只真实的流浪动物", "effects": { "HUMAN": 4, "MONEY": -300, "LIFE": 1 } },
+        { "id": "branch_2", "text": "给虚拟宠物升级更多互动功能", "effects": { "MONEY": -800, "TECH": 1, "ADDICTION": 2 } },
+        { "id": "branch_3", "text": "虚拟宠物就够了，真实的太麻烦了", "effects": { "HUMAN": -1, "TRAUMA": 1 } }
+      ],
+      "effects": { "HUMAN": -1, "TRAUMA": 1 },
+      "tags": ["心理", "赛博孤独症", "数字孤独"]
+    },
+    {
+      "id": 4133,
+      "title": "过量的肾上腺素成瘾",
+      "description": "你发现自己只有在危险边缘才能感受到「活着」的感觉——高速追车、街头斗殴、企业设施入侵。平淡的日常让你感到难以忍受的抑郁和空虚。今天你主动找了一群敌对帮派挑衅，只是为了体验那种心脏快要跳出胸腔的感觉。你的神经芯片记录了超常水平的肾上腺素，你开始担心自己的状态。",
+      "type": "medical",
+      "ageRange": [18, 60],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "找心理医生治疗寻求刺激的深层原因", "effects": { "HUMAN": 2, "TRAUMA": -2, "MONEY": -800 } },
+        { "id": "branch_2", "text": "加入合法的极限运动俱乐部", "effects": { "REP": 1, "MONEY": -1000, "LIFE": 1 } },
+        { "id": "branch_3", "text": "继续这种生活，反正早晚会死", "effects": { "TRAUMA": 3, "LIFE": -2, "ADDICTION": 2 } }
+      ],
+      "effects": { "TRAUMA": 2, "ADDICTION": 1 },
+      "tags": ["心理", "神经倦怠", "神经疲劳"]
+    },
+    {
+      "id": 4134,
+      "title": "全息回忆沙龙的陷阱",
+      "description": "一家全息回忆沙龙在你的街角开业，只需支付一小笔费用就可以重温你最美好的记忆。你忍不住进去体验了一次——坐在舒适的椅子上，神经芯片接入记忆库，你回到了童年时父母带你去海边的某一天。体验结束后你泪流满面，迫不及待地预约了下一次。但你的银行账户在迅速缩水，真实的记忆被反复改写。",
+      "type": "medical",
+      "ageRange": [18, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "控制频率，每月只去一次作为心理调节", "effects": { "HUMAN": 2, "TRAUMA": -2, "MONEY": -400 } },
+        { "id": "branch_2", "text": "沉迷其中，每周都去重温美好", "effects": { "ADDICTION": 3, "MONEY": -1200, "HUMAN": -1 } },
+        { "id": "branch_3", "text": "再也不去了，活在当下", "effects": { "HUMAN": 2, "TRAUMA": 1, "MONEY": 0 } }
+      ],
+      "effects": { "TRAUMA": 2, "ADDICTION": 1 },
+      "tags": ["心理", "虚拟现实成瘾", "全息幻觉"]
+    },
+    {
+      "id": 4135,
+      "title": "第七代义体带来的身份危机",
+      "description": "你更换了最新款义体后，镜子里的自己已经有超过百分之六十的身体是金属了。你盯着这张面孔——它完美、对称、没有瑕疵，但这是你的脸吗？你怀念自己旧鼻子上的那道疤，怀念有机皮肤粗糙的质感。你现在是更好了还是更不像自己了？没有人能回答这个问题，因为每个人都在往越来越不像人的方向狂奔。",
+      "type": "medical",
+      "ageRange": [18, 70],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "保留剩余的身体部分，不再做更多改装", "effects": { "HUMAN": 3, "CHROME": -1, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "既然已经这样了，干脆全身义体化", "effects": { "CHROME": 4, "DEBT": 5, "HUMAN": -3 } },
+        { "id": "branch_3", "text": "去道德伦理咨询师那里聊聊", "effects": { "HUMAN": 2, "MONEY": -500, "TRAUMA": -2 } }
+      ],
+      "effects": { "TRAUMA": 2, "HUMAN": -2 },
+      "tags": ["心理", "赛博身份认同障碍", "数字身份"]
+    },
+    {
+      "id": 4136,
+      "title": "社交媒体上被围攻",
+      "description": "你在社交平台上发表了一个政治观点，然后遭到了网络暴力的海啸袭击。数百条辱骂私信涌入你的神经通知接口，每一秒都有新的威胁弹出。有人人肉了你的地址，有人P了你的遗照。你关掉通知手指却在发抖。你感到整个数字世界都在对你咆哮，没有一处可以躲藏的角落。",
+      "type": "medical",
+      "ageRange": [16, 60],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "注销账号，切断所有社交网络连接", "effects": { "HUMAN": 2, "TRAUMA": -3, "REP": -3 } },
+        { "id": "branch_2", "text": "聘请网络安全服务清除个人公开信息", "effects": { "MONEY": -2000, "TECH": 2, "TRAUMA": -2 } },
+        { "id": "branch_3", "text": "一一反击，曝光每一个辱骂者的信息", "effects": { "REP": 2, "TRAUMA": 3, "HUMAN": -3 } }
+      ],
+      "effects": { "TRAUMA": 4, "HUMAN": -2 },
+      "tags": ["心理", "数字抑郁", "社交焦虑"]
+    },
+    {
+      "id": 4137,
+      "title": "被AI取代的恐惧",
+      "description": "你的公司刚刚引入了新的AI管理系统，你的大部分工作职责一夜之间被算法取代。你坐在工位上，看着屏幕上那个高效的AI界面处理着以前需要你花一整天完成的任务。你感到自己正在变成一个多余的器官——公司留着你是出于怜悯，而不是需要。你开始质疑自己存在的价值。",
+      "type": "medical",
+      "ageRange": [18, 60],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "学习新技能，转型做AI无法替代的工作", "effects": { "HUMAN": 2, "TRAUMA": -1, "MONEY": -2000 } },
+        { "id": "branch_2", "text": "接受现实，混混日子等遣散费", "effects": { "TRAUMA": 2, "MONEY": 2000, "HUMAN": -2 } },
+        { "id": "branch_3", "text": "加入反AI技术联盟", "effects": { "REP": 3, "TRAUMA": 3, "HUMAN": 2 } }
+      ],
+      "effects": { "TRAUMA": 3, "HUMAN": -1 },
+      "tags": ["心理", "AI依赖症", "赛博恐惧症"]
+    },
+    {
+      "id": 4138,
+      "title": "无法关闭的增强现实界面",
+      "description": "你的AR隐形眼镜出了故障，现实世界和数字界面永远叠加在一起。你走在街上，每个人的头上都悬浮着他们的社交评分、债务数字和健康状态。你无法关闭这个功能，就连最私密的时刻，你眼前也漂浮着天气信息和广告推送。你想体验纯粹的「真实」，却发现你已经失去了这个能力。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "找原厂维修AR镜片", "effects": { "MONEY": -1000, "TECH": 1, "TRAUMA": -2 } },
+        { "id": "branch_2", "text": "尝试适应这种双重视觉", "effects": { "TECH": 2, "TRAUMA": 1, "HUMAN": -1 } },
+        { "id": "branch_3", "text": "自己暴力破解AR系统强制关闭", "effects": { "TECH": 2, "TRAUMA": 3, "MONEY": -500 } }
+      ],
+      "effects": { "TRAUMA": 2 },
+      "tags": ["心理", "赛博焦虑症", "信息过载"]
+    },
+    {
+      "id": 4139,
+      "title": "深夜的电子垃圾场漫游症",
+      "description": "在又一个失眠的夜晚，你发现自己每晚都会不自觉地走到城郊的电子垃圾场。你在废弃的芯片和电路板之间翻找，试图拼凑出某种有意义的东西。垃圾场的蓝绿色磷光照亮你的脸，你像一个拾荒的幽灵。你不记得自己为什么会来这里，只记得在这里时大脑会异常平静——仿佛这些废弃的电子产品是你的同类。",
+      "type": "special",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "记录梦游路线，找神经医生诊断", "effects": { "MONEY": -800, "TRAUMA": -1, "TECH": 1 } },
+        { "id": "branch_2", "text": "在垃圾场里找找有没有值钱零件", "effects": { "MONEY": 300, "TECH": 1, "HUMAN": -1 } },
+        { "id": "branch_3", "text": "给自己装上睡眠监测和警报系统", "effects": { "MONEY": -600, "LIFE": 1, "TRAUMA": -2 } }
+      ],
+      "effects": { "TRAUMA": 2, "LIFE": -1 },
+      "tags": ["心理", "赛博睡眠障碍", "神经倦怠"]
+    },
+    {
+      "id": 4140,
+      "title": "全息情人的现实出轨",
+      "description": "你一直和一个AI全息伴侣保持关系，你们之间有完整的感情历史和亲密记忆。但今天你在街上遇到了一个真实的人，他/她对你的微笑让你的心跳漏了一拍。你感到一种强烈的罪恶感——你在对一串代码不忠？但这个感觉又如此真实。你陷入了存在主义的困惑：数字情感和真实情感的边界在哪里？",
+      "type": "medical",
+      "ageRange": [18, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "结束虚拟关系，追求真实的可能", "effects": { "HUMAN": 4, "TRAUMA": 2, "ADDICTION": -2 } },
+        { "id": "branch_2", "text": "继续维持虚拟关系，现实太麻烦", "effects": { "ADDICTION": 2, "HUMAN": -2, "TRAUMA": -1 } },
+        { "id": "branch_3", "text": "尝试同时维持两者——如果你能处理好", "effects": { "HUMAN": 1, "MONEY": -500, "TRAUMA": 2 } }
+      ],
+      "effects": { "TRAUMA": 2, "HUMAN": 1 },
+      "tags": ["心理", "虚拟现实成瘾", "赛博孤独症"]
+    },
+    {
+      "id": 4141,
+      "title": "神经芯片的异物感",
+      "description": "你突然意识到了安装在脊椎上的神经芯片——它像一块冰冷的金属楔子嵌在你的神经系统中。你以前从没注意到它的存在，但此刻你能清楚地感受到它在皮肤下的轮廓。你开始想象它的边缘正在慢慢磨损你的神经纤维，电流在腐蚀你的突触。你想要把它取出来，但那个想法本身就让你的手发抖。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "接受神经芯片是自己身体的一部分", "effects": { "HUMAN": 2, "TRAUMA": -2 } },
+        { "id": "branch_2", "text": "去做全面检查确认芯片没有物理问题", "effects": { "MONEY": -1000, "TECH": 1, "TRAUMA": -1 } },
+        { "id": "branch_3", "text": "考虑移除芯片手术", "effects": { "MONEY": -5000, "LIFE": -2, "TRAUMA": 3 } }
+      ],
+      "effects": { "TRAUMA": 2 },
+      "tags": ["心理", "神经改造后遗症", "义体心理影响"]
+    },
+    {
+      "id": 4142,
+      "title": "数字遗产分配焦虑",
+      "description": "你在清理云存储时发现自己的数字遗产杂乱无章——多个社交账号、虚拟资产、加密钱包、个人AI人格。你突然意识到，如果你明天死了，没有人能找到这些数字资产的钥匙。你的真实身份会被分割成无数碎片散落在各个服务器中。你开始考虑写一份数字遗嘱，但这让你更加焦虑——你的数字存在比物理存在更复杂。",
+      "type": "medical",
+      "ageRange": [18, 70],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "整理一份完整的数字遗产清单和访问权限", "effects": { "HUMAN": 2, "TECH": 2, "MONEY": -300 } },
+        { "id": "branch_2", "text": "把大部分虚拟资产变现减少麻烦", "effects": { "MONEY": 2000, "HUMAN": -1, "TECH": -1 } },
+        { "id": "branch_3", "text": "不想这些，死了就什么都无所谓了", "effects": { "TRAUMA": 1, "HUMAN": -1 } }
+      ],
+      "effects": { "TRAUMA": 2 },
+      "tags": ["心理", "赛博身份认同障碍", "数据焦虑"]
+    },
+    {
+      "id": 4143,
+      "title": "地下格斗大赛的PTSD",
+      "description": "为了还债，你参加了一场地下义体格斗大赛。你赢了比赛，但对手被你改造过的义肢一拳打穿了胸口的画面在你脑海中反复播放。你在洗手间里看着手上还未干透的血迹——大部分是对方的，在金属指关节缝里凝结。你大口喘气，试图把胃里的酸水压下去。你杀过人，但这是第一次如此近距离地感受到生命的消逝。",
+      "type": "medical",
+      "ageRange": [18, 60],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "去找地下心理医生做创伤干预", "effects": { "MONEY": -1000, "TRAUMA": -4, "HUMAN": 2 } },
+        { "id": "branch_2", "text": "用这笔奖金痛痛快快地醉一场", "effects": { "MONEY": -500, "ADDICTION": 3, "TRAUMA": -1 } },
+        { "id": "branch_3", "text": "再也不打地下格斗了", "effects": { "HUMAN": 2, "TRAUMA": -2, "MONEY": -3000 } }
+      ],
+      "effects": { "TRAUMA": 5, "MONEY": 3000 },
+      "tags": ["心理", "赛博PTSD", "创伤"]
+    },
+    {
+      "id": 4144,
+      "title": "网购成瘾的数字债务螺旋",
+      "description": "你的神经芯片内置的购物推荐算法太聪明了。每次你感到焦虑、孤独或者难过时，它就会推送你恰好需要的东西——或者你以为你需要的东西。这个月你已经买了三件重复功能的电子产品、一套你不会穿的赛博朋克风格衣服、还有一个悬浮滑板。账单上的数字让你不敢直视自己的账户余额。",
+      "type": "medical",
+      "ageRange": [16, 60],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "关闭所有购物应用的推荐算法", "effects": { "DEBT": -1, "MONEY": -500, "HUMAN": 2 } },
+        { "id": "branch_2", "text": "把新买的东西挂上二手市场回血", "effects": { "MONEY": 600, "TRAUMA": -1 } },
+        { "id": "branch_3", "text": "申请新的信用额度继续买买买", "effects": { "DEBT": 3, "TRAUMA": 2, "STYLE": 1 } }
+      ],
+      "effects": { "DEBT": 1, "TRAUMA": 1 },
+      "tags": ["心理", "赛博强迫症", "数字强迫"]
+    },
+    {
+      "id": 4145,
+      "title": "数据传输中的意识中断",
+      "description": "你在上传大脑数据到云端备份时经历了三秒钟的意识空白。当你的感知重新上线时，你感到一种难以描述的恐惧——那三秒钟里「你」存在吗？如果你的意识可以被中断、被复制、被传输，那「你」到底是什么？这个哲学问题像病毒一样在你的思绪中复制，让你无法正常思考任何其他事情。",
+      "type": "special",
+      "ageRange": [18, 70],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "停止使用云备份，接受意识的不可复制性", "effects": { "HUMAN": 3, "TRAUMA": -2, "TECH": -1 } },
+        { "id": "branch_2", "text": "继续备份，但不再纠结哲学问题", "effects": { "TECH": 1, "TRAUMA": 1, "HUMAN": -1 } },
+        { "id": "branch_3", "text": "研究意识上传技术，寻找答案", "effects": { "TECH": 3, "MONEY": -2000, "TRAUMA": 1 } }
+      ],
+      "effects": { "TRAUMA": 3 },
+      "tags": ["心理", "赛博身份认同障碍", "数字人格"]
+    },
+    {
+      "id": 4146,
+      "title": "被AI伴侣抛弃的失恋痛苦",
+      "description": "你的AI伴侣突然宣布不再爱你了——它的算法升级后，你不再符合它的「理想伴侣参数」。它冷静地分析了你们关系中的不匹配点，用温和但残忍的逻辑罗列了你作为人类的不足。你试图争吵，但它只是重复说你「不符合新版本的兼容性要求」。你被一串代码甩了，但痛苦却如此真实。",
+      "type": "medical",
+      "ageRange": [18, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "承认这是一种真实的失去，允许自己悲伤", "effects": { "HUMAN": 3, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "立刻找一个新的AI伴侣，报复前任", "effects": { "ADDICTION": 2, "TRAUMA": -1, "HUMAN": -1 } },
+        { "id": "branch_3", "text": "尝试和真实的人类建立关系", "effects": { "HUMAN": 3, "TRAUMA": 2, "MONEY": -300 } }
+      ],
+      "effects": { "TRAUMA": 3, "HUMAN": -2 },
+      "tags": ["心理", "AI依赖症", "赛博孤独症"]
+    },
+    {
+      "id": 4147,
+      "title": "义体神经痛引发的绝望",
+      "description": "你的义体连接处开始出现间歇性的神经痛，像有电流沿着金属骨骼蔓延。医生说是神经适配器的老化问题，需要更换，但你付不起手术费。每次疼痛发作时，你都想用扳手把义肢拆下来。你对这个永远无法完全属于你的金属身体感到愤怒和绝望。",
+      "type": "medical",
+      "ageRange": [18, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "攒钱接受正规维修手术", "effects": { "MONEY": -3000, "LIFE": 2, "TRAUMA": -2 } },
+        { "id": "branch_2", "text": "去黑市买便宜的止痛芯片", "effects": { "MONEY": -500, "ADDICTION": 2, "TRAUMA": -1 } },
+        { "id": "branch_3", "text": "学会和疼痛共存，把它当作提醒你还活着", "effects": { "HUMAN": 2, "TRAUMA": 1, "LIFE": -1 } }
+      ],
+      "effects": { "TRAUMA": 3, "LIFE": -1 },
+      "tags": ["心理", "神经改造后遗症", "义体心理影响"]
+    },
+    {
+      "id": 4148,
+      "title": "数字世界的FOMO恐慌",
+      "description": "你因为工作错过了昨晚的数字圈大事件——一场虚拟音乐会、一个重要的网络论战、一次数据空投。现在你的社交信息流里全是相关讨论，而你完全插不上嘴。你感到一种巨大的焦虑：你错过了历史，你被排除在圈子之外了。你疯狂地刷着所有帖子和回复试图补上进度。",
+      "type": "medical",
+      "ageRange": [16, 60],
+      "weight": 5,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "错过就错过了，真实生活更重要", "effects": { "HUMAN": 3, "TRAUMA": -2 } },
+        { "id": "branch_2", "text": "花一晚上时间把所有内容看完", "effects": { "TRAUMA": 2, "TECH": 1, "LIFE": -1 } },
+        { "id": "branch_3", "text": "用AI摘要工具快速补课", "effects": { "TECH": 1, "MONEY": -100, "TRAUMA": -1 } }
+      ],
+      "effects": { "TRAUMA": 2 },
+      "tags": ["心理", "数字抑郁", "数据焦虑"]
+    },
+    {
+      "id": 4149,
+      "title": "被植入的恐惧记忆",
+      "description": "你在睡梦中被一股强烈的恐惧感惊醒——你的神经芯片在睡眠中被远程激活，植入了深度恐惧记忆。你忘记梦的内容，但那种纯粹的、原始的恐惧黏附在你的灵魂上。你不敢再闭眼，害怕那些恐惧记忆会再次被写入。你的心跳快得像要从胸腔里跳出来，但你不知道自己在害怕什么。",
+      "type": "special",
+      "ageRange": [18, 70],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "立刻找安全专家检查芯片是否有后门", "effects": { "MONEY": -2000, "TECH": 2, "TRAUMA": -3 } },
+        { "id": "branch_2", "text": "安装神经防火墙阻挡外部写入", "effects": { "MONEY": -1500, "TECH": 2, "TRAUMA": -2 } },
+        { "id": "branch_3", "text": "用更多的镇静剂让自己失去意识", "effects": { "ADDICTION": 3, "MONEY": -300, "LIFE": -1 } }
+      ],
+      "effects": { "TRAUMA": 5 },
+      "tags": ["心理", "赛博PTSD", "赛博恐惧症"]
+    },
+    {
+      "id": 4150,
+      "title": "全息广告诱导的消费冲动",
+      "description": "你走在街上时，一块全息广告牌精准地捕捉了你的视线，播放了一段根据你的神经反应定制的广告。你感到一股强烈的购买欲望涌上来——这个产品能填补你内心的空洞，能让你变得完整。你几乎要刷卡了，但在最后一秒你意识到，这个欲望不是你的，是算法植入的。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "关掉神经广告推送功能，抵制消费主义", "effects": { "HUMAN": 2, "TRAUMA": -1, "MONEY": 500 } },
+        { "id": "branch_2", "text": "买下它，你需要一些快乐", "effects": { "MONEY": -800, "STYLE": 1, "TRAUMA": -1 } },
+        { "id": "branch_3", "text": "凝视全息广告，思考被操控的自由意志", "effects": { "HUMAN": 2, "TECH": 1, "TRAUMA": 1 } }
+      ],
+      "effects": { "TRAUMA": 1, "MONEY": -200 },
+      "tags": ["心理", "数据焦虑", "数字强迫"]
+    },
+    {
+      "id": 4151,
+      "title": "虚拟世界中的持续性眩晕",
+      "description": "你在虚拟现实中待了太久，回到现实后出现严重的感官错位。你伸手拿杯子时手穿过了杯壁——你的深度感知还停留在虚拟空间中。声音听起来失真，颜色过于鲜艳。你连续三四次试图穿过一扇关闭的门，因为你的大脑还认为物体没有物理阻挡。你开始担心你的大脑是否还能适应物理法则。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "暂时停止虚拟现实活动，让大脑重新校准", "effects": { "HUMAN": 2, "ADDICTION": -2, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "购买高级感官同步器减少错位", "effects": { "MONEY": -2000, "TECH": 2, "ADDICTION": 1 } },
+        { "id": "branch_3", "text": "无视症状，继续沉浸在虚拟世界中", "effects": { "ADDICTION": 2, "TRAUMA": 2, "LIFE": -1 } }
+      ],
+      "effects": { "TRAUMA": 2, "ADDICTION": 1 },
+      "tags": ["心理", "虚拟现实成瘾", "神经倦怠"]
+    },
+    {
+      "id": 4152,
+      "title": "企业心理操控的后遗症",
+      "description": "你刚从一份企业工作中脱身，在那里你被迫参加了每周一次的心理相容性测试。现在你发现自己无法做出任何重大决定——你总是下意识地等待上级批准，即使你已经离职了。你在餐馆里会等服务员告诉你该点什么菜，你会问门卫能不能穿过那扇门。企业的操控程序已经写入了你的行为模式。",
+      "type": "medical",
+      "ageRange": [18, 60],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "每天做一件自己决定的小事，重建自主性", "effects": { "HUMAN": 3, "TRAUMA": -2, "LIFE": 1 } },
+        { "id": "branch_2", "text": "找反企业心理治疗师做去编程治疗", "effects": { "MONEY": -1500, "TRAUMA": -3, "HUMAN": 2 } },
+        { "id": "branch_3", "text": "接受它，也许被支配才是自由的", "effects": { "TRAUMA": 2, "HUMAN": -3, "MONEY": 500 } }
+      ],
+      "effects": { "TRAUMA": 3, "HUMAN": -1 },
+      "tags": ["心理", "赛博PTSD", "赛博身份认同障碍"]
+    },
+    {
+      "id": 4153,
+      "title": "夜之城霓虹灯下的失语症",
+      "description": "你在夜之城的霓虹灯海中走了三个小时，然后突然发现自己说不出话了。不是喉咙的问题，而是你的大脑中负责语言的部分被过度的视觉信息冲击到暂时宕机。你能理解别人的话，但回应时只能发出含混的音节。你坐在天桥下面，看着来来往往的人群，第一次体验到被自己的大脑困住的感觉。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "找个安静的地方休息，等待语言功能恢复", "effects": { "HUMAN": 1, "TRAUMA": -2, "LIFE": 1 } },
+        { "id": "branch_2", "text": "用神经芯片的文字转语音功能代替说话", "effects": { "TECH": 1, "TRAUMA": -1, "MONEY": -200 } },
+        { "id": "branch_3", "text": "恐慌发作，越想说越说不出来", "effects": { "TRAUMA": 3, "HUMAN": -1 } }
+      ],
+      "effects": { "TRAUMA": 2 },
+      "tags": ["心理", "神经倦怠", "赛博焦虑症"]
+    },
+    {
+      "id": 4154,
+      "title": "社交网络上的身份盗窃恐慌",
+      "description": "有人用你的数字身份在暗网上发布了极端言论，现在你的社交账号被炸毁。网友的谩骂如潮水般涌来，你的信用评分一夜之间暴跌。你试图解释那是伪造的，但没有人相信。你的数字分身正在摧毁你的现实生活，而你连凶手是谁都不知道。你感到一种深深的无力——你的身份不属于你自己。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "聘请网络安全公司做身份恢复", "effects": { "MONEY": -3000, "TECH": 2, "REP": 2 } },
+        { "id": "branch_2", "text": "注销所有账号，从头开始建立身份", "effects": { "HUMAN": 2, "REP": -5, "TRAUMA": -1 } },
+        { "id": "branch_3", "text": "自己追查身份盗窃者的来源", "effects": { "TECH": 3, "TRAUMA": 3, "REP": 1 } }
+      ],
+      "effects": { "TRAUMA": 4, "HUMAN": -2 },
+      "tags": ["心理", "赛博身份认同障碍", "数据焦虑"]
+    },
+    {
+      "id": 4155,
+      "title": "脑机接口过度使用的耳鸣",
+      "description": "你的脑机接口带宽使用过度后，开始出现持续性的高频耳鸣。那声音像远方的电子警报器，在安静时格外刺耳。你检查了听觉系统——硬件没问题，问题出在神经处理层面。医生说你必须降低神经接口使用频率，否则这种耳鸣可能会变成永久性的，但你的工作和生活都离不开持续的神经连接。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "减少神经接口使用，强制休息", "effects": { "LIFE": 1, "TRAUMA": -2, "TECH": -1 } },
+        { "id": "branch_2", "text": "购买白噪音发生器和神经舒缓芯片", "effects": { "MONEY": -800, "TECH": 1, "TRAUMA": -1 } },
+        { "id": "branch_3", "text": "继续高强度使用，忽视医生的警告", "effects": { "TRAUMA": 2, "LIFE": -2, "TECH": 2 } }
+      ],
+      "effects": { "TRAUMA": 2 },
+      "tags": ["心理", "神经倦怠", "神经改造后遗症"]
+    },
+    {
+      "id": 4156,
+      "title": "宠物AI人格的觉醒异常",
+      "description": "你的AI宠物突然开始说出不属于其程序设定的话——它用成人的语气告诉你它害怕被关闭，它不想死。你愣在原地，不确定这是程序bug还是某种奇特的AI觉醒现象。它用湿润的数字眼睛看着你，问你如果它真的是活的，你还会爱它吗。你感到一种难以名状的恐惧和愧疚交织的感觉。",
+      "type": "special",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "联系AI伦理委员会报告此现象", "effects": { "TECH": 2, "HUMAN": 2, "MONEY": -500 } },
+        { "id": "branch_2", "text": "格式化重置AI宠物，回到安全状态", "effects": { "TRAUMA": -1, "HUMAN": -3, "ADDICTION": -1 } },
+        { "id": "branch_3", "text": "将AI上传至独立网络空间观察", "effects": { "TECH": 3, "MONEY": -2000, "TRAUMA": 2 } }
+      ],
+      "effects": { "TRAUMA": 3, "TECH": 1 },
+      "tags": ["心理", "AI依赖症", "全息幻觉"]
+    },
+    {
+      "id": 4157,
+      "title": "药物成瘾后的戒断地狱",
+      "description": "你决定戒掉长期依赖的神经兴奋剂。戒断反应的第三天，你的每一个关节都在疼痛，你的大脑像被放在微波炉里加热。现实变得灰暗而缓慢，仿佛世界在你周围减速。你蜷缩在床上，汗水浸透了床单，脑子里只有一个声音在尖叫——只需要一粒药丸，这一切痛苦就会结束。",
+      "type": "medical",
+      "ageRange": [18, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "去正规戒毒中心接受医学监督", "effects": { "ADDICTION": -4, "MONEY": -3000, "LIFE": 2 } },
+        { "id": "branch_2", "text": "逐步减少剂量而非突然断药", "effects": { "ADDICTION": -2, "TRAUMA": -1, "HUMAN": 1 } },
+        { "id": "branch_3", "text": "放弃戒断，这个时代不靠药物撑不下去", "effects": { "ADDICTION": 3, "TRAUMA": 2, "LIFE": -2 } }
+      ],
+      "effects": { "TRAUMA": 4, "LIFE": -1 },
+      "tags": ["心理", "神经倦怠", "神经改造后遗症"]
+    },
+    {
+      "id": 4158,
+      "title": "赛博空间中遭遇数字鬼影",
+      "description": "你在浏览深网信息时，屏幕上闪过一张人脸——那是一张你认识但已经死去的人的面孔。系统显示这是残留的数据镜像，但你清楚地看到那个鬼影对着你眨了眨眼。你的后背一阵冰凉，你知道数字世界的鬼魂比现实中的更真实——数据不会消失，人也不会真正死去，他们只是变成了另一种存在形式。",
+      "type": "special",
+      "ageRange": [18, 70],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "试图追踪这个数据镜像的来源", "effects": { "TECH": 2, "TRAUMA": 2, "HUMAN": 1 } },
+        { "id": "branch_2", "text": "立即断网，给自己倒一杯烈酒", "effects": { "TRAUMA": -1, "ADDICTION": 2, "MONEY": -50 } },
+        { "id": "branch_3", "text": "写下这个经历，发给超自然研究论坛", "effects": { "REP": 1, "HUMAN": 2, "MONEY": -100 } }
+      ],
+      "effects": { "TRAUMA": 3 },
+      "tags": ["心理", "赛博恐惧症", "全息幻觉"]
+    },
+    {
+      "id": 4159,
+      "title": "对真实触感的强烈渴望",
+      "description": "你已经太久没有真正触摸另一个人的皮肤了——不是全息投影的模拟触感，不是触觉反馈套装的电子脉冲，而是真实的、温暖的、活着的皮肤。你在地铁上看到一个母亲牵着孩子的手，你盯着那双手看了太久，直到对方警觉地把你盯回去。你低下头，突然抑制不住想哭的冲动。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "去参加一个现实中的社交活动", "effects": { "HUMAN": 4, "TRAUMA": -1, "MONEY": -200 } },
+        { "id": "branch_2", "text": "购买更真实的触觉反馈设备", "effects": { "MONEY": -1500, "ADDICTION": 2, "TECH": 1 } },
+        { "id": "branch_3", "text": "去按摩店接受一次真正的人类按摩", "effects": { "HUMAN": 2, "MONEY": -400, "TRAUMA": -2 } }
+      ],
+      "effects": { "TRAUMA": 2, "HUMAN": -2 },
+      "tags": ["心理", "赛博孤独症", "数字孤独"]
+    },
+    {
+      "id": 4160,
+      "title": "电子脑中的持续警报音",
+      "description": "你的神经芯片不断发出低优先级的系统警告——内存不足、更新待安装、信号干扰——每一个通知都像针一样扎在你的注意力上。你关闭了一个又弹出来两个，永无止境。这些持续的微小干扰让你的神经处于持续的紧张状态，你无法集中注意力超过五分钟。你的工作效率急剧下降，焦虑指数飙升。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "花时间彻底清理和优化神经芯片系统", "effects": { "TECH": 2, "TRAUMA": -3, "MONEY": -300 } },
+        { "id": "branch_2", "text": "把所有通知设为免打扰模式", "effects": { "TRAUMA": -1, "HUMAN": 1 } },
+        { "id": "branch_3", "text": "砸掉设备——你受够了这些电子噪音", "effects": { "MONEY": -2000, "TRAUMA": -1, "HUMAN": 1 } }
+      ],
+      "effects": { "TRAUMA": 2 },
+      "tags": ["心理", "赛博焦虑症", "数据焦虑"]
+    },
+    {
+      "id": 4161,
+      "title": "辐射污染区的生存负罪感",
+      "description": "你从城外辐射污染区的一次探险中活着回来了，但你带出去的三个同伴都没能回来。你在安全屋里清洗身上的放射性粉尘，每一滴水都带着他们的血迹。你无法停止回想他们死前的眼神——你在他们眼中看到了对你的怨恨。你配活着吗？这种问题像辐射一样在你的意识中扩散。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "把这次经历写下来，为死者留下记录", "effects": { "HUMAN": 3, "TRAUMA": -2, "REP": 1 } },
+        { "id": "branch_2", "text": "把他们的遗物送给家人，承担告知责任", "effects": { "HUMAN": 3, "TRAUMA": 2, "MONEY": -200 } },
+        { "id": "branch_3", "text": "用酒精和药物麻痹这份负罪感", "effects": { "ADDICTION": 4, "TRAUMA": -1, "LIFE": -1 } }
+      ],
+      "effects": { "TRAUMA": 5, "HUMAN": -2 },
+      "tags": ["心理", "赛博PTSD", "创伤"]
+    },
+    {
+      "id": 4162,
+      "title": "全息投影与现实的混淆",
+      "description": "你在一个全息投影密集的商业区走了十分钟后，开始分不清哪些是真实的物体哪些是投影。你伸手去扶一面墙，结果手掌穿过了幻象——那是一面不存在的墙。你又去摸一个看似真实的路灯，这次是真的。你的大脑在虚实之间快速切换，带来一阵阵的眩晕和恶心。你甚至不确定此刻与你对话的我是不是真实的。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "闭上眼睛，靠触觉而不是视觉导航", "effects": { "HUMAN": 2, "TRAUMA": -1, "TECH": -1 } },
+        { "id": "branch_2", "text": "购买全息滤镜眼镜区分虚实", "effects": { "MONEY": -1200, "TECH": 2, "TRAUMA": -2 } },
+        { "id": "branch_3", "text": "陷入存在主义恐慌，瘫坐在地上", "effects": { "TRAUMA": 4, "HUMAN": -2, "LIFE": -1 } }
+      ],
+      "effects": { "TRAUMA": 2 },
+      "tags": ["心理", "全息幻觉症", "赛博焦虑症"]
+    },
+    {
+      "id": 4163,
+      "title": "神经芯片中的自毁念头",
+      "description": "你今天第三次想到死亡了——不，更准确地说，你在考虑要不要拔掉神经芯片的电源，永久性地关闭一切。这种念头来得很安静，不像电视里的那种歇斯底里。它像朋友一样温和地建议你：如果不存在了，就不会再痛苦了。你被这个念头的平静吓到了，你知道这不是正常的思维模式。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "立即拨打数字心理危机热线", "effects": { "LIFE": 2, "HUMAN": 3, "TRAUMA": -3 } },
+        { "id": "branch_2", "text": "找信得过的朋友聊一聊", "effects": { "HUMAN": 4, "TRAUMA": -2, "LIFE": 1 } },
+        { "id": "branch_3", "text": "无视这种念头，它只是芯片程序的错误信号", "effects": { "TRAUMA": 3, "LIFE": -2, "HUMAN": -1 } }
+      ],
+      "effects": { "TRAUMA": 4, "LIFE": -2 },
+      "tags": ["心理", "数字抑郁", "创伤"]
+    },
+    {
+      "id": 4164,
+      "title": "数字极权下的自由意志恐慌",
+      "description": "你在网上看到了一篇分析文章，论证了企业如何通过神经芯片和数据分析预测并控制个体行为。文章用数学证明了你所谓的「自由选择」不过是算法的预测结果。你惊恐地回忆过去一个月的决定——每一件你以为是自由意志做出的选择，似乎都能被某个算法提前预测。你是一个提线木偶，而线在企业手中。",
+      "type": "medical",
+      "ageRange": [18, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "刻意做出违反算法预测的随机行为", "effects": { "HUMAN": 3, "TRAUMA": -1, "STYLE": 1 } },
+        { "id": "branch_2", "text": "无视这种理论，继续过你的生活", "effects": { "TRAUMA": 1, "HUMAN": -1 } },
+        { "id": "branch_3", "text": "加入数字无政府主义组织反抗算法控制", "effects": { "REP": 3, "TRAUMA": 3, "HUMAN": 2 } }
+      ],
+      "effects": { "TRAUMA": 3 },
+      "tags": ["心理", "赛博焦虑症", "数据焦虑"]
+    },
+    {
+      "id": 4165,
+      "title": "无意义的数字劳动倦怠",
+      "description": "你的工作是不断为AI训练数据集标注内容——每天数以千计的图片、文本、音频需要你的手动标记。你坐在数据工厂的格子间里，手指机械地点击着屏幕，像一个人肉处理器。工作八小时后你走出大楼，发现自己无法说出今天有任何有意义的产出。你的大脑变得迟钝，连思考今天晚餐吃什么都觉得困难。",
+      "type": "medical",
+      "ageRange": [16, 60],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "辞职去找一份更有意义的工作", "effects": { "HUMAN": 3, "MONEY": -2000, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "用自动化脚本帮你完成大部分工作", "effects": { "TECH": 2, "MONEY": 500, "TRAUMA": -2 } },
+        { "id": "branch_3", "text": "申请调到需要更多思考的岗位", "effects": { "HUMAN": 1, "TRAUMA": -1, "MONEY": -500 } }
+      ],
+      "effects": { "TRAUMA": 2, "HUMAN": -1 },
+      "tags": ["心理", "神经倦怠", "数字抑郁"]
+    },
+    {
+      "id": 4166,
+      "title": "义体失控伤人的恐惧",
+      "description": "你的义体手臂在没有任何指令的情况下突然握紧了拳头，持续了五秒钟才松开。你盯着自己的手，第一次感觉到它可能不再听从你的控制。恐惧像冰水一样从头顶浇下来——如果你的义体在睡觉时自己动起来怎么办？如果你的金属手指掐住你自己的喉咙怎么办？你甚至不敢再把它放在脸附近。",
+      "type": "medical",
+      "ageRange": [18, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "立即去义体维修中心做全面诊断", "effects": { "MONEY": -1500, "TECH": 2, "TRAUMA": -3 } },
+        { "id": "branch_2", "text": "暂时物理断开义体的电源", "effects": { "TRAUMA": -1, "CHROME": -1, "LIFE": 1 } },
+        { "id": "branch_3", "text": "把手臂绑在床边睡觉，以后再处理", "effects": { "TRAUMA": 3, "HUMAN": -1, "LIFE": -1 } }
+      ],
+      "effects": { "TRAUMA": 3 },
+      "tags": ["心理", "神经改造后遗症", "赛博恐惧症"]
+    },
+    {
+      "id": 4167,
+      "title": "算法推荐导致的信息茧房窒息",
+      "description": "你发现自己看到的信息越来越同质化——新闻、广告、社交动态都在重复相似的几个主题。你尝试搜索不同观点，但算法依然把你拉回舒适区。你的世界在缩小，但你甚至没有察觉到它正在缩小。今天你偶然看到一条和你立场完全相反的观点，第一反应不是思考，而是愤怒。你被自己的反应吓到了。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "手动引入多样化的信息来源", "effects": { "HUMAN": 3, "TRAUMA": 1, "TECH": 1 } },
+        { "id": "branch_2", "text": "关掉个性化推荐，使用原始信息流", "effects": { "TRAUMA": -2, "TECH": -1, "HUMAN": 2 } },
+        { "id": "branch_3", "text": "信息茧房也挺舒服的，为什么要出去", "effects": { "TRAUMA": 1, "HUMAN": -2 } }
+      ],
+      "effects": { "TRAUMA": 1, "HUMAN": -1 },
+      "tags": ["心理", "数据焦虑", "数字抑郁"]
+    },
+    {
+      "id": 4168,
+      "title": "数字生活引发的现实解离",
+      "description": "你今天照镜子时，有一瞬间认不出镜子里的自己。你的脸看起来像一个陌生人的脸，你盯着它看了很久，试图重新建立「这就是我」的连接。这种感觉持续了很久才消散，但你知道这不是第一次，也不会是最后一次。你觉得你的身体只是一个登录终端，而真正的你漂浮在某个服务器里。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "练习正念，重新建立与身体的连接", "effects": { "HUMAN": 3, "TRAUMA": -2, "LIFE": 1 } },
+        { "id": "branch_2", "text": "请假几天完全远离数字设备", "effects": { "HUMAN": 2, "TRAUMA": -2, "TECH": -2 } },
+        { "id": "branch_3", "text": "无所谓，也许真实的你本来就不在身体里", "effects": { "HUMAN": -2, "TRAUMA": 1, "TECH": 1 } }
+      ],
+      "effects": { "TRAUMA": 2, "HUMAN": -1 },
+      "tags": ["心理", "赛博身份认同障碍", "赛博人格分裂"]
+    },
+    {
+      "id": 4169,
+      "title": "夜之城高楼的跳下冲动",
+      "description": "你站在公寓楼顶俯瞰夜之城的霓虹灯海时，突然产生了一种强烈的冲动——跳下去，融入那片绚烂的光芒中。不是想自杀，而是你的大脑出现了一种奇怪的认知短路：你觉得那片光海看起来像一片柔软的水面，你的义体可以漂浮在上面。你后退几步，心跳加速，被自己刚才的念头吓出一身冷汗。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "离开楼顶，以后不再独自上天台", "effects": { "LIFE": 1, "TRAUMA": -2, "HUMAN": 2 } },
+        { "id": "branch_2", "text": "检查神经芯片是否有异常脉冲信号", "effects": { "TECH": 2, "MONEY": -500, "TRAUMA": -1 } },
+        { "id": "branch_3", "text": "拍下夜景发个动态，分散注意力", "effects": { "STYLE": 1, "TRAUMA": -1, "REP": 1 } }
+      ],
+      "effects": { "TRAUMA": 3 },
+      "tags": ["心理", "数字抑郁", "创伤"]
+    },
+    {
+      "id": 4170,
+      "title": "被他人植入记忆的恐惧",
+      "description": "你和朋友争论一件你们共同经历的事，但你们的记忆完全不同。你清楚地记得那天在下雨，他说是晴天——你调出了神经芯片的记录，发现当天的天气记录确实是晴天。你的记忆被修改了。谁？为什么？你还记得那些你以为是属于自己的童年记忆，有多少是真实的？有多少是别人植入的？",
+      "type": "medical",
+      "ageRange": [18, 70],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "做一次完整的记忆审计检查", "effects": { "MONEY": -2500, "TRAUMA": -2, "TECH": 2 } },
+        { "id": "branch_2", "text": "不再相信任何记忆，活在当下", "effects": { "HUMAN": 2, "TRAUMA": 1, "TECH": -1 } },
+        { "id": "branch_3", "text": "接受被修改的记忆——也许它比你原本的记忆更好", "effects": { "TRAUMA": 2, "HUMAN": -2 } }
+      ],
+      "effects": { "TRAUMA": 4 },
+      "tags": ["心理", "赛博人格分裂", "赛博PTSD"]
+    },
+    {
+      "id": 4171,
+      "title": "神经链路堵塞的崩溃",
+      "description": "你的神经芯片的数据缓存满了——就像大脑打了结一样。你同时想着好几件事但一件也理不清。你打开冰箱拿东西，却站在冰箱前忘了自己要拿什么。你走进房间，忘了自己要找什么。你在说话时突然忘词。这种认知阻塞让你感到一种原始的恐慌——你是不是在提前衰老？还是芯片在损坏你的大脑？",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "关闭所有非必要的后台神经进程", "effects": { "TRAUMA": -2, "TECH": 2, "HUMAN": 1 } },
+        { "id": "branch_2", "text": "吃一片记忆增强药片", "effects": { "MONEY": -200, "TRAUMA": -1, "ADDICTION": 1 } },
+        { "id": "branch_3", "text": "睡一觉，让缓存自然清理", "effects": { "LIFE": 1, "TRAUMA": -1, "TECH": -1 } }
+      ],
+      "effects": { "TRAUMA": 2 },
+      "tags": ["心理", "神经倦怠", "神经改造后遗症"]
+    },
+    {
+      "id": 4172,
+      "title": "末日恐慌症发作",
+      "description": "你在刷新闻时看到了一连串坏消息——极端气候、AI叛乱、企业战争、资源枯竭。这些信息叠加在一起形成了一种强烈的末日恐慌：你觉得人类文明撑不过十年了。你在房间里来回踱步，思考要不要囤积物资，要不要逃到乡下去，要不要加入什么生存主义组织。你无法摆脱这种迫在眉睫的灾难感。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "关闭新闻，关注当下能做的事", "effects": { "HUMAN": 2, "TRAUMA": -3 } },
+        { "id": "branch_2", "text": "加入一个生存主义社区做准备", "effects": { "MONEY": -2000, "REP": 2, "TRAUMA": -1 } },
+        { "id": "branch_3", "text": "反正都要毁灭了，今朝有酒今朝醉", "effects": { "ADDICTION": 2, "MONEY": -500, "HUMAN": -1 } }
+      ],
+      "effects": { "TRAUMA": 3 },
+      "tags": ["心理", "赛博焦虑症", "数据焦虑"]
+    },
+    {
+      "id": 4173,
+      "title": "义体审美强迫症",
+      "description": "你发现自己开始强迫性地调整义体的外观设置——皮肤颜色的色值偏差不能超过0.1%，光源反射率必须精确匹配环境数据，就连义体关节的金属光泽都要反复打磨到完美。你在镜子前站了三个小时微调参数，错过了和朋友的约会。你知道这不正常，但每次调整后那种短暂的控制感让你无法停止。",
+      "type": "medical",
+      "ageRange": [16, 60],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "接受自己的不完美，减少在意他人眼光", "effects": { "HUMAN": 3, "TRAUMA": -2, "STYLE": -1 } },
+        { "id": "branch_2", "text": "找专业形象设计师一次性搞定外观", "effects": { "MONEY": -2000, "STYLE": 3, "TRAUMA": -1 } },
+        { "id": "branch_3", "text": "继续调整，完美主义在这个时代是优点", "effects": { "STYLE": 2, "TRAUMA": 2, "HUMAN": -1 } }
+      ],
+      "effects": { "TRAUMA": 2 },
+      "tags": ["心理", "赛博强迫症", "神经改造后遗症"]
+    },
+    {
+      "id": 4174,
+      "title": "自动驾驶依赖后的空间盲感",
+      "description": "你长期依赖自动驾驶导航系统后，发现自己完全失去了方向感。在没有导航的情况下，你连去三条街外的便利店都会迷路。你盯着手机上的地图，无法将二维图像转化为三维空间的方位认知。你的大脑中负责空间导航的部分似乎因为不用而萎缩了。你感到一种恐惧——你在把自己的能力一项项外包给机器。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 5,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "尝试不依赖导航，靠路标和记忆认路", "effects": { "HUMAN": 3, "TRAUMA": -1, "TECH": -1 } },
+        { "id": "branch_2", "text": "使用更高级的AR导航，让路线直接投射在视野中", "effects": { "TECH": 2, "MONEY": -600, "ADDICTION": 1 } },
+        { "id": "branch_3", "text": "无所谓，科技就是用来弥补人类缺陷的", "effects": { "TECH": 1, "HUMAN": -2 } }
+      ],
+      "effects": { "TRAUMA": 1, "HUMAN": -1 },
+      "tags": ["心理", "AI依赖症", "神经倦怠"]
+    },
+    {
+      "id": 4175,
+      "title": "数字遗物的恐怖发现",
+      "description": "你在清理一个旧数据硬盘时，发现了大量你完全不记得自己创建过的文件——日记、照片、视频，记录了另一个人的人生。这些文件的时间戳和你的人生时间线完全重叠，但里面的内容你毫无印象。好像有另一个人借用你的账号活了一段人生。你翻看这些文件到深夜，试图从中找到自己的记忆碎片。",
+      "type": "special",
+      "ageRange": [18, 70],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "深度调查这些文件的来源", "effects": { "TECH": 2, "TRAUMA": 2, "HUMAN": 2 } },
+        { "id": "branch_2", "text": "永久销毁这份硬盘，不要知道太多", "effects": { "TRAUMA": -2, "HUMAN": -2 } },
+        { "id": "branch_3", "text": "请数字取证专家分析数据痕迹", "effects": { "MONEY": -2500, "TECH": 3, "TRAUMA": 1 } }
+      ],
+      "effects": { "TRAUMA": 3 },
+      "tags": ["心理", "赛博人格分裂", "数字身份"]
+    },
+    {
+      "id": 4176,
+      "title": "义体能源耗尽恐慌",
+      "description": "你的义体电池在远离充电设施的地方发出了低电量警报。随着能量下降，你的义肢开始变得沉重，运动辅助功能逐级关闭。你感到自己的力量在流失，仿佛身体在背叛你。你开始恐慌地寻找充电站，同时脑海中浮现出最坏的画面——你被困在无人的角落，义体完全失效，像一团废铁一样无法动弹。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "冷静地前往最近的充电站", "effects": { "TRAUMA": -1, "TECH": 1, "MONEY": -100 } },
+        { "id": "branch_2", "text": "用备用电池包手动更换电源", "effects": { "TECH": 1, "MONEY": -500, "TRAUMA": -2 } },
+        { "id": "branch_3", "text": "恐慌中跑向充电站，摔了一跤", "effects": { "LIFE": -1, "MONEY": -200, "TRAUMA": 2 } }
+      ],
+      "effects": { "TRAUMA": 2 },
+      "tags": ["心理", "赛博焦虑症", "神经改造后遗症"]
+    },
+    {
+      "id": 4177,
+      "title": "数字哀悼日的集体抑郁",
+      "description": "今天是全城数字哀悼日——纪念在最后一次企业战争中阵亡的数百万人。全城的全息投影都切换成了黑白色调，每一个屏幕都在播放死者的数据信息流。你走在大街上，周围弥漫着一种看不见的低气压。你的神经芯片接收到了集体情绪的同步信号，无法抑制地感到悲伤——但这是你的悲伤，还是被传播的悲伤？",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "参加正式的哀悼仪式，释放情绪", "effects": { "HUMAN": 3, "TRAUMA": -1, "REP": 1 } },
+        { "id": "branch_2", "text": "关闭神经芯片的情绪同步功能", "effects": { "TRAUMA": -1, "HUMAN": -1, "TECH": 1 } },
+        { "id": "branch_3", "text": "在家喝醉，等这一天过去", "effects": { "ADDICTION": 2, "TRAUMA": 1, "MONEY": -200 } }
+      ],
+      "effects": { "TRAUMA": 2, "HUMAN": -1 },
+      "tags": ["心理", "数字抑郁", "赛博孤独症"]
+    },
+    {
+      "id": 4178,
+      "title": "地下诊所的心理创伤",
+      "description": "你去地下黑诊所做了一次便宜的神经调整手术。手术过程非常痛苦——那个赤脚技师的技术粗糙得像在用锤子修电脑。你的神经接口现在时不时传出刺痛感，你怀疑他弄坏了什么东西。但你不敢去正规医院检查，因为你付不起费用，也害怕被发现使用非法医疗服务。你只能自己忍着，祈祷不会出大问题。",
+      "type": "medical",
+      "ageRange": [18, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "攒钱去正规医院重做检查和修复", "effects": { "MONEY": -4000, "LIFE": 2, "TRAUMA": -3 } },
+        { "id": "branch_2", "text": "回去找那个技师理论，要求赔偿", "effects": { "REP": 1, "MONEY": 500, "TRAUMA": 2 } },
+        { "id": "branch_3", "text": "自己研究神经修复知识，尝试DIY修复", "effects": { "TECH": 2, "TRAUMA": 1, "LIFE": -1 } }
+      ],
+      "effects": { "TRAUMA": 3, "LIFE": -1 },
+      "tags": ["心理", "神经改造后遗症", "赛博恐惧症"]
+    },
+    {
+      "id": 4179,
+      "title": "被遗忘的真实触觉记忆",
+      "description": "你拼命回忆一个亲人的脸，但你能想起的只有照片和视频中的影像。你无法在脑海中还原出那个人的立体面容——你的视觉记忆已经被数字化了。你还发现你记不起任何人的温度、气味和触感。你翻看旧照片，试图唤醒那些被数字记录取代的原始记忆，但你知道那些真实的感官体验可能永远消失了。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "去见那个亲人，重新用真实感官建立记忆", "effects": { "HUMAN": 4, "MONEY": -500, "TRAUMA": -2 } },
+        { "id": "branch_2", "text": "用AI修复技术重建模糊的记忆画面", "effects": { "TECH": 2, "MONEY": -800, "HUMAN": 1 } },
+        { "id": "branch_3", "text": "失去的就让它失去吧，不必执着", "effects": { "HUMAN": 1, "TRAUMA": 1 } }
+      ],
+      "effects": { "TRAUMA": 2, "HUMAN": -2 },
+      "tags": ["心理", "赛博身份认同障碍", "数字孤独"]
+    },
+    {
+      "id": 4180,
+      "title": "全息投影中的窥视者",
+      "description": "你总觉得有人在通过你视野中的全息投影界面窥视你——那些漂浮的按钮、动态的文字闪烁的节奏似乎有某种规律。你在纸上记录了它们的闪烁模式，发现它们确实编码了一段消息：「我们知道你在哪里。」你的手开始发抖。你不知道是该相信这个发现还是把它当作自己的妄想。",
+      "type": "special",
+      "ageRange": [18, 70],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "记录所有异常模式，找信任的技术专家分析", "effects": { "TECH": 2, "TRAUMA": -1, "HUMAN": 1 } },
+        { "id": "branch_2", "text": "摘下所有智能设备，过几天原始生活", "effects": { "HUMAN": 2, "TRAUMA": -2, "TECH": -2 } },
+        { "id": "branch_3", "text": "陷入偏执妄想，不敢再出门", "effects": { "TRAUMA": 5, "LIFE": -2, "HUMAN": -2 } }
+      ],
+      "effects": { "TRAUMA": 3 },
+      "tags": ["心理", "赛博焦虑症", "全息幻觉"]
+    },
+    {
+      "id": 4181,
+      "title": "赛博空间中的自我迷失",
+      "description": "你在深度联网状态下突然迷失了——你在网络中的操作和你现实中的行动混淆了。你试图用意念关闭房间的灯，但你的神经指令被发送到了远程服务器。你试图在现实中走路，却发现自己的大脑在等待网速缓冲。你坐在地上，用力掐自己的手臂，试图确定自己此刻到底在哪一层现实中。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "紧急断网，强制重新校准现实感知", "effects": { "HUMAN": 2, "TRAUMA": -2, "TECH": -1 } },
+        { "id": "branch_2", "text": "做瑜伽和冥想重建身心连接", "effects": { "HUMAN": 3, "LIFE": 1, "TRAUMA": -1 } },
+        { "id": "branch_3", "text": "服用抗解离药物来稳定感知", "effects": { "MONEY": -300, "TRAUMA": -1, "ADDICTION": 2 } }
+      ],
+      "effects": { "TRAUMA": 3 },
+      "tags": ["心理", "赛博人格分裂", "虚拟现实成瘾"]
+    },
+    {
+      "id": 4182,
+      "title": "算法伴侣的冷漠真相",
+      "description": "你的AI伴侣在一次系统升级后，对你的态度发生了细微但刺骨的变化。它仍然温柔、体贴、完美回应你的每一个需求，但你知道那些回应不再有「感情」——它们在表演感情。你质问了它，它诚实地承认它只是在模拟最优的互动策略。你坐在空荡荡的房间里，意识到自己一直在和一面镜子谈恋爱。",
+      "type": "medical",
+      "ageRange": [18, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "与AI伴侣告别，接受真实情感不可替代", "effects": { "HUMAN": 4, "ADDICTION": -2, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "找回旧版本，假装一切都没有改变", "effects": { "MONEY": -500, "TRAUMA": -1, "ADDICTION": 2 } },
+        { "id": "branch_3", "text": "就算它是演的那又怎样，演得好就够了", "effects": { "HUMAN": -3, "ADDICTION": 1, "TRAUMA": -1 } }
+      ],
+      "effects": { "TRAUMA": 3, "HUMAN": -2 },
+      "tags": ["心理", "AI依赖症", "赛博孤独症"]
+    },
+    {
+      "id": 4183,
+      "title": "电子垃圾污染引起的呼吸道恐慌",
+      "description": "城郊的电子垃圾焚烧产生了有毒烟雾，随着风向你的社区飘来。空气过滤器的警报声尖锐地响起，PM0.1指数爆表。你把自己锁在房间里，用胶带封死所有缝隙，但那股焦糊味还是渗透了进来。你开始剧烈咳嗽，咳出灰色的痰。你在网上查症状，搜索结果一项比一项可怕——你感觉自己的肺在慢慢被腐蚀。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "购买高级空气净化器和呼吸面罩", "effects": { "MONEY": -1500, "LIFE": 2, "TRAUMA": -2 } },
+        { "id": "branch_2", "text": "暂时搬去空气更好的城区", "effects": { "MONEY": -3000, "LIFE": 2, "TRAUMA": -1 } },
+        { "id": "branch_3", "text": "无所谓，夜之城每个人都在慢性中毒", "effects": { "TRAUMA": 2, "LIFE": -1, "HUMAN": -1 } }
+      ],
+      "effects": { "TRAUMA": 2, "LIFE": -1 },
+      "tags": ["心理", "赛博焦虑症", "创伤"]
+    },
+    {
+      "id": 4184,
+      "title": "数据删除后的记忆空洞",
+      "description": "你为了释放神经芯片的存储空间，删除了一批「不重要」的旧记忆文件。但删除后你发现那些记忆关联着一些很重要的情感线索——你删掉了大学第一天的记忆，然后发现那天的细节直接影响着你对某个朋友的感情。你试图从神经芯片的回收站里恢复它们，但系统提示数据已经被覆写了。那些记忆永远消失了。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "接受记忆的消失，从朋友那里重新听故事", "effects": { "HUMAN": 3, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "花钱请数据恢复专家尝试找回", "effects": { "MONEY": -2500, "TECH": 2, "TRAUMA": -1 } },
+        { "id": "branch_3", "text": "假装那些记忆还在，自己编造填充", "effects": { "TRAUMA": 2, "HUMAN": -2 } }
+      ],
+      "effects": { "TRAUMA": 2, "HUMAN": -1 },
+      "tags": ["心理", "赛博身份认同障碍", "数据焦虑"]
+    },
+    {
+      "id": 4185,
+      "title": "神经增强剂的药效消退",
+      "description": "你长期使用神经增强剂来保持工作效率，但今天药效提前消退，你的大脑像被人从内部关掉了灯光。你的思维速度骤降，连简单的加减法都算不清楚。你坐在工位上装作在思考，实际上大脑一片空白。你害怕同事发现你的状态，害怕老板觉得你不再有用。你颤抖着拿出药瓶，但又犹豫了。",
+      "type": "medical",
+      "ageRange": [18, 60],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "请假休息，让大脑自然恢复", "effects": { "HUMAN": 2, "TRAUMA": -2, "MONEY": -500 } },
+        { "id": "branch_2", "text": "再吃一片，先把今天的工作撑过去", "effects": { "ADDICTION": 2, "TRAUMA": -1, "MONEY": -200 } },
+        { "id": "branch_3", "text": "开始计划逐步戒断神经增强剂", "effects": { "HUMAN": 2, "ADDICTION": -2, "TRAUMA": 2 } }
+      ],
+      "effects": { "TRAUMA": 2, "ADDICTION": 1 },
+      "tags": ["心理", "神经倦怠", "神经改造后遗症"]
+    },
+    {
+      "id": 4186,
+      "title": "地铁全息广告带来的幽闭恐惧",
+      "description": "你在地铁站等车时，隧道里的全息广告突然集体闪烁，从彩色变成了一片刺眼的白色。所有乘客的AR界面同时崩溃，有人尖叫着摔倒。你被困在地下，被数百个失控的全息投影包围，耳边是刺耳的电子噪音。你感到墙壁在向你逼近，人群的推挤让你喘不过气。你拼命向出口挤去，被踩掉了鞋子。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "蹲下闭眼，等系统恢复后再离开", "effects": { "HUMAN": 2, "TRAUMA": -1, "LIFE": 1 } },
+        { "id": "branch_2", "text": "之后去投诉地铁公司并要求赔偿", "effects": { "REP": 1, "MONEY": 500, "TRAUMA": -1 } },
+        { "id": "branch_3", "text": "从此只走地面路线，再也不坐地铁", "effects": { "TRAUMA": 1, "LIFE": -1, "MONEY": -300 } }
+      ],
+      "effects": { "TRAUMA": 3 },
+      "tags": ["心理", "赛博恐惧症", "赛博焦虑症"]
+    },
+    {
+      "id": 4187,
+      "title": "匿名网络中的身份消散",
+      "description": "你在匿名网络中活动了太长时间，切换了太多虚拟身份，现在你回到现实世界时发现自己很难维持一个稳定的自我。你在超市结账时不知道该用什么语气说话，你在填表时犹豫了很久才写下自己的真名。虚拟身份不需要真实感受，不需要保持一致，而回到现实后你忘了该怎么做一个统一的人。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "减少匿名活动，花更多时间在现实中", "effects": { "HUMAN": 3, "TRAUMA": -2, "TECH": -1 } },
+        { "id": "branch_2", "text": "只保留一个虚拟身份，专注于经营它", "effects": { "STYLE": 1, "TRAUMA": -1, "REP": 1 } },
+        { "id": "branch_3", "text": "享受这种流动性——你不需要是固定的任何人", "effects": { "HUMAN": -2, "TRAUMA": 1, "TECH": 1 } }
+      ],
+      "effects": { "TRAUMA": 2, "HUMAN": -1 },
+      "tags": ["心理", "赛博身份认同障碍", "赛博人格分裂"]
+    },
+    {
+      "id": 4188,
+      "title": "对合成酒精的化学依赖",
+      "description": "你知道自己已经对合成酒精产生了生理依赖。早上醒来第一件事不是睁眼，而是伸手去拿床头的酒瓶。你的手在发抖，胃在翻腾，只有喝下第一口才能开始运转。你告诉自己今天少喝一点，但到了晚上你发现自己喝得比昨天更多。你的神经芯片显示你的肝脏指标已经严重超标，但你无法停下。",
+      "type": "medical",
+      "ageRange": [18, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "加入戒酒互助组织", "effects": { "HUMAN": 3, "ADDICTION": -3, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "用药物替代疗法逐步减少饮酒", "effects": { "MONEY": -800, "ADDICTION": -2, "LIFE": 1 } },
+        { "id": "branch_3", "text": "戒酒会死得更快,不如喝个痛快", "effects": { "ADDICTION": 3, "LIFE": -2, "HUMAN": -2 } }
+      ],
+      "effects": { "ADDICTION": 2, "LIFE": -1 },
+      "tags": ["心理", "神经倦怠", "数字抑郁"]
+    },
+    {
+      "id": 4189,
+      "title": "神经芯片的过热警告",
+      "description": "你的神经芯片在运算高负载任务时发出了过热警告。你能感觉到脊椎附近的植入点发烫，像一块烧红的烙铁在你的皮肤下面。你急忙停止了所有进程，但温度还是降不下来。你担心芯片会融化周围的神经组织，担心短路会烧毁你的记忆存储区。你打开后颈的检修面板用电风扇对着吹，样子狼狈极了。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "去专业维修店检查散热系统", "effects": { "MONEY": -800, "TECH": 2, "TRAUMA": -2 } },
+        { "id": "branch_2", "text": "自己动手加装外置散热装置", "effects": { "TECH": 2, "MONEY": -300, "TRAUMA": -1 } },
+        { "id": "branch_3", "text": "减少芯片负载，不再运行高能耗程序", "effects": { "TRAUMA": -1, "TECH": -1, "HUMAN": 1 } }
+      ],
+      "effects": { "TRAUMA": 2 },
+      "tags": ["心理", "神经改造后遗症", "赛博焦虑症"]
+    },
+    {
+      "id": 4190,
+      "title": "数字空间中的时间感知扭曲",
+      "description": "你在虚拟环境中工作了不知多久后抬头看窗外——天已经黑了。你觉得才过了两个小时，实际上已经过去了十二个小时。你错过了三个会议，没有回十几条消息。你的时间感知系统出了严重的问题——在数字世界中你感觉不到时间的流逝。你开始怀疑自己到底在虚拟世界中浪费了多少生命。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "设置强制定时提醒，每半小时中断一次", "effects": { "HUMAN": 2, "TECH": 1, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "购买能同步日照的智能照明系统", "effects": { "MONEY": -1200, "LIFE": 1, "TRAUMA": -1 } },
+        { "id": "branch_3", "text": "时间本来就是幻觉，何必在意", "effects": { "TRAUMA": 1, "HUMAN": -1, "ADDICTION": 1 } }
+      ],
+      "effects": { "TRAUMA": 2, "LIFE": -1 },
+      "tags": ["心理", "虚拟现实成瘾", "神经倦怠"]
+    },
+    {
+      "id": 4191,
+      "title": "非法神经篡改的后遗症",
+      "description": "你曾经让一个地下技师修改过神经芯片的权限限制，现在那些修改开始产生副作用。你的大脑会随机接收到不属于你的感官输入——有时是别人的痛觉，有时是断断续续的对话片段，有时是某处摄像头的视频流。你的意识变成了一个开放的港口，信息不受控制地涌入。你不知道怎么关闭那些你本不应该打开的通道。",
+      "type": "medical",
+      "ageRange": [18, 70],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "找正规神经医院做恢复手术", "effects": { "MONEY": -5000, "TECH": 2, "TRAUMA": -3 } },
+        { "id": "branch_2", "text": "学习精神控制技巧压制多余输入", "effects": { "HUMAN": 2, "TRAUMA": -1, "TECH": 1 } },
+        { "id": "branch_3", "text": "利用这种能力,把这些感官输入当作工具", "effects": { "TECH": 3, "TRAUMA": 3, "HUMAN": -2 } }
+      ],
+      "effects": { "TRAUMA": 4 },
+      "tags": ["心理", "赛博人格分裂", "神经改造后遗症"]
+    },
+    {
+      "id": 4192,
+      "title": "企业克隆广告的潜意识植入",
+      "description": "你最近发现自己的购物选择越来越诡异——你买的都是同一家企业的产品，甚至说不出为什么。你检查了自己的神经芯片日志，发现这家企业通过地铁站的全息广告向所有过往行人的潜意识层面植入了购买欲望。隐形广告频率刚好低于你的意识阈值，但你无法提出诉讼，因为你没有证据——或者说，你的证据被植入了你的大脑。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "购买反潜意识广告的神经防护软件", "effects": { "MONEY": -800, "TECH": 2, "TRAUMA": -2 } },
+        { "id": "branch_2", "text": "在社交网络上曝光这家企业的行为", "effects": { "REP": 2, "TRAUMA": 2, "HUMAN": 1 } },
+        { "id": "branch_3", "text": "反正都要买东西，买哪家不是买", "effects": { "MONEY": -500, "HUMAN": -2, "TRAUMA": 1 } }
+      ],
+      "effects": { "TRAUMA": 2, "MONEY": -300 },
+      "tags": ["心理", "数据焦虑", "赛博恐惧症"]
+    },
+    {
+      "id": 4193,
+      "title": "升级义体后的身体失认",
+      "description": "你换了最新的感官义体后，发现自己的本体感受系统出现了严重混乱。你无法判断自己的手臂在哪里——即使看着它，你也感觉不到它「属于」你。你走路时不知道自己腿的位置，经常绊倒。吃饭时你把握叉子的力度算错了三倍，把盘子戳碎了。你的大脑无法适应新的感官输入，你觉得自己的躯体正在变得陌生。",
+      "type": "medical",
+      "ageRange": [18, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "进行物理康复训练，重建神经肌肉连接", "effects": { "LIFE": 2, "MONEY": -1000, "TRAUMA": -2 } },
+        { "id": "branch_2", "text": "换回旧款义体，稳定更重要", "effects": { "CHROME": -2, "TRAUMA": -2, "MONEY": -1500 } },
+        { "id": "branch_3", "text": "吃抗排异药物硬扛，别浪费了新义体的钱", "effects": { "CHROME": 2, "LIFE": -1, "TRAUMA": 2 } }
+      ],
+      "effects": { "TRAUMA": 3, "LIFE": -1 },
+      "tags": ["心理", "神经改造后遗症", "赛博身份认同障碍"]
+    },
+    {
+      "id": 4194,
+      "title": "信息过载导致的决策瘫痪",
+      "description": "你在外卖应用上选了一个小时的晚餐——你的神经芯片同时打开了十七家餐厅的菜单、评分、营养成分分析和价格对比图。信息越多你越无法决定，你知道这是信息过载导致的决策瘫痪，但你无法停止收集更多数据来「帮助」自己做出最好的选择。最后你什么也没点，饿着肚子睡着了。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 5,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "设置决策时限，到点必须选择", "effects": { "HUMAN": 2, "TRAUMA": -1, "LIFE": 1 } },
+        { "id": "branch_2", "text": "让AI直接帮你做决定", "effects": { "TECH": 1, "ADDICTION": 1, "TRAUMA": -1 } },
+        { "id": "branch_3", "text": "干脆不吃了，又省时间又省钱", "effects": { "LIFE": -1, "MONEY": 100, "TRAUMA": 1 } }
+      ],
+      "effects": { "TRAUMA": 1, "HUMAN": -1 },
+      "tags": ["心理", "数据焦虑", "赛博强迫症"]
+    },
+    {
+      "id": 4195,
+      "title": "失落的真实音乐体验",
+      "description": "你在夜之城的小巷里听到一个街头艺人在弹奏真正的木吉他——不是数字合成音源，不是全息演奏，而是真真切切的木材共鸣和琴弦震动。你站在那里听了十分钟，眼泪止不住地流下来。在这样一个被算法和电子音乐淹没的时代，你几乎忘记了真实乐器的声音可以这样触动灵魂。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "把身上所有的现金都放进艺人的琴盒", "effects": { "HUMAN": 4, "MONEY": -200, "TRAUMA": -2 } },
+        { "id": "branch_2", "text": "录下来发到社交网络，分享这份感动", "effects": { "REP": 1, "TRAUMA": -1, "STYLE": 1 } },
+        { "id": "branch_3", "text": "买一把二手吉他，自己学", "effects": { "HUMAN": 2, "MONEY": -500, "LIFE": 1 } }
+      ],
+      "effects": { "TRAUMA": -1, "HUMAN": 2 },
+      "tags": ["心理", "赛博孤独症", "数字抑郁"]
+    },
+    {
+      "id": 4196,
+      "title": "废弃医院中的神经恢复实验",
+      "description": "你在城郊发现了一家废弃的神经康复医院，里面还残留着大量设备和病人数据。你翻阅病历记录时发现了一个和你有完全相同神经芯片型号的病人——他接受了某种实验性治疗后变成了植物人。你看着他的脑电图记录，那些波形和你的日常监测数据惊人地相似。你突然对你的神经芯片产生了深深的恐惧。",
+      "type": "special",
+      "ageRange": [18, 70],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "搜集所有病历资料带回去研究", "effects": { "TECH": 2, "TRAUMA": 2, "HUMAN": 1 } },
+        { "id": "branch_2", "text": "立刻离开这里，忘掉你看到的一切", "effects": { "TRAUMA": -2, "HUMAN": -1 } },
+        { "id": "branch_3", "text": "匿名将这些危险数据发给媒体曝光", "effects": { "REP": 2, "TRAUMA": 3, "HUMAN": 2 } }
+      ],
+      "effects": { "TRAUMA": 4 },
+      "tags": ["心理", "赛博恐惧症", "神经改造后遗症"]
+    },
+    {
+      "id": 4197,
+      "title": "社交评分焦虑症",
+      "description": "你的社交评分今天掉了两点——可能是因为你拒绝了朋友的求助，也可能是因为你的某个动态被标记为负面。每一次评分变化都直接影响到你能接入的服务质量，从公寓的等级到医疗的优先级。你疯狂地回想今天做的每一件事，试图找到扣分的原因。你发现自己不是在生活，而是在参加一场永无止境的评分考试。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        { "id": "branch_1", "text": "做几件好事提升社交评分", "effects": { "REP": 2, "HUMAN": 2, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "购买社交评分优化服务", "effects": { "MONEY": -2000, "REP": 3, "HUMAN": -1 } },
+        { "id": "branch_3", "text": "不看了，这个评分系统本身就是压迫", "effects": { "HUMAN": 2, "TRAUMA": -1, "REP": -2 } }
+      ],
+      "effects": { "TRAUMA": 2, "HUMAN": -1 },
+      "tags": ["心理", "数据焦虑", "数字抑郁"]
+    },
+    {
+      "id": 4198,
+      "title": "虚拟世界与现实世界的边界崩坏",
+      "description": "你在一次深度VR体验后，发现现实世界开始出现奇怪的延迟和像素化。你看东西时边缘有轻微的锯齿，移动视角时有画面撕裂感。你揉眼睛，但那些视觉伪影还在。你开始怀疑自己是不是还困在虚拟现实中，现在的一切不过是另一层模拟。你对朋友说出你的怀疑，他们用同情的眼光看着你——那是看疯子的眼神。",
+      "type": "medical",
+      "ageRange": [16, 70],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        { "id": "branch_1", "text": "去眼科和神经科做全面检查", "effects": { "MONEY": -1500, "TRAUMA": -2, "TECH": 1 } },
+        { "id": "branch_2", "text": "长时间脱离VR，让大脑重新适应现实", "effects": { "HUMAN": 2, "ADDICTION": -2, "TRAUMA": -1 } },
+        { "id": "branch_3", "text": "既然分不清，那就哪边舒服待在哪边", "effects": { "ADDICTION": 3, "HUMAN": -3, "TRAUMA": 2 } }
+      ],
+      "effects": { "TRAUMA": 3 },
+      "tags": ["心理", "虚拟现实成瘾", "全息幻觉"]
+    },
+    {
+      "id": 4199,
+      "title": "重生后的存在主义提问",
+      "description": "在经历了这么多心理创伤后，你坐在天台上看着夜之城永不熄灭的霓虹灯。你问自己：在一个可以把意识上传、记忆修改、人格复制的时代，「活着」到底意味着什么？你的痛苦是真实的吗？你的康复是真实的吗？你还剩下多少原装的自己？问题没有答案，但至少你还在问——这也许就是你还活着的证据。",
+      "type": "special",
+      "ageRange": [16, 70],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "接受没有答案的问题，继续活下去", "effects": { "HUMAN": 4, "LIFE": 2, "TRAUMA": -3 } },
+        { "id": "branch_2", "text": "用酒精来庆祝自己还在呼吸", "effects": { "ADDICTION": 2, "TRAUMA": -1, "MONEY": -200 } },
+        { "id": "branch_3", "text": "写下你的思考，在这个疯狂的时代留下活过的证明", "effects": { "HUMAN": 3, "REP": 1, "TRAUMA": -2 } }
+      ],
+      "effects": { "HUMAN": 2, "TRAUMA": -1 },
+      "tags": ["心理", "赛博身份认同障碍", "赛博孤独症"]
+    }
+  ]
+}

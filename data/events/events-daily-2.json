@@ -1,0 +1,4127 @@
+{
+  "events": [
+    {
+      "id": 1600,
+      "title": "全自动咖啡店的开业促销",
+      "description": "街角新开了一家全自动化咖啡店，六轴机械臂在三十秒内就能调出一杯完美的拿铁。开业促销期间所有饮品半价，全息菜单在空中旋转展示着从经典美式到神经刺激特调的各种选择。店内弥漫着合成咖啡豆的焦香，几个刚下夜班的工人正靠在充电座椅上打盹。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "点一杯促销合成拿铁",
+          "effects": {
+            "MONEY": -50,
+            "LIFE": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "试试神经刺激特调咖啡",
+          "effects": {
+            "MONEY": -80,
+            "TECH": 1,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "跟机械臂咖啡师聊聊天",
+          "effects": {
+            "MONEY": -30,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "赛博咖啡馆"
+      ]
+    },
+    {
+      "id": 1601,
+      "title": "神经链接咖啡体验",
+      "description": "咖啡店推出了全新的神经链接咖啡体验，号称喝一口就能让你的大脑进入超频状态。服务员在你的太阳穴贴上电极贴片，咖啡杯底嵌着一枚微型数据芯片。据说这种咖啡能让你的反应速度提升百分之三十，但副作用是连续使用会导致神经疲劳。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "体验神经链接咖啡",
+          "effects": {
+            "MONEY": -120,
+            "TECH": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只喝普通合成咖啡",
+          "effects": {
+            "MONEY": -35,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "婉拒并离开",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "赛博咖啡馆"
+      ]
+    },
+    {
+      "id": 1602,
+      "title": "咖啡店里的黑客接头",
+      "description": "你坐在咖啡店角落的位置，邻桌一个戴着镜面墨镜的家伙一直在用手指敲桌面，似乎在发送某种摩尔斯电码。他的咖啡杯旁边放着一张数据芯片，目光时不时扫向你这边。吧台后的机械臂咖啡师似乎对这一切视而不见，只顾着打奶泡。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用暗语回应他",
+          "effects": {
+            "MONEY": -50,
+            "TECH": 2,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "装作没看见继续喝咖啡",
+          "effects": {
+            "MONEY": -40,
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "悄悄拍下他的照片",
+          "effects": {
+            "TECH": 1,
+            "TRAUMA": 2,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "赛博咖啡馆",
+        "地下"
+      ]
+    },
+    {
+      "id": 1603,
+      "title": "赛博咖啡师的日常闲聊",
+      "description": "这台老式机械臂咖啡师已经被编程了闲聊模块，每次你点单时它都会聊上几句。今天它讲起了上周有个公司高管在这里被泼了一脸咖啡的事，还说店里的监控恰好那天坏了。你端着咖啡听着它用合成语音讲八卦，感觉比新闻有趣多了。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "点杯咖啡听它继续讲",
+          "effects": {
+            "MONEY": -40,
+            "HUMAN": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "问它更多关于高管的细节",
+          "effects": {
+            "MONEY": -40,
+            "TECH": 2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "赛博咖啡馆"
+      ]
+    },
+    {
+      "id": 1604,
+      "title": "限量单品合成咖啡豆",
+      "description": "咖啡店到了一批限量单品合成咖啡豆，据说是从内华达垂直农场直接空运过来的。每杯售价是普通咖啡的三倍，但全息广告上那些金色光粒子效果让整条街的人都停下脚步。店内排队的人已经绕了两圈，空气里飘着一种说不上来的高级香气。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "排队买一杯尝尝鲜",
+          "effects": {
+            "MONEY": -150,
+            "LIFE": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "买两杯囤着慢慢喝",
+          "effects": {
+            "MONEY": -300,
+            "LIFE": 3,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "太贵了，喝普通咖啡",
+          "effects": {
+            "MONEY": -30,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "赛博咖啡馆"
+      ]
+    },
+    {
+      "id": 1605,
+      "title": "咖啡店邻桌的八卦",
+      "description": "你坐在咖啡店里喝着合成拿铁，邻桌两个穿着公司制服的职员压低声音在聊什么。从碎片信息里你听到了兼并、裁员、数据泄露这些词。其中一个紧张地看了一眼四周，你赶紧低头假装在刷手机。他们的对话让你对公司的内幕多了几分了解。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "竖起耳朵仔细听",
+          "effects": {
+            "TECH": 2,
+            "TRAUMA": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "假装打电话离开",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "赛博咖啡馆"
+      ]
+    },
+    {
+      "id": 1606,
+      "title": "咖啡店夜班值守",
+      "description": "凌晨两点，咖啡店里只剩你和一个值夜班的维护技师。技师正在调试那台老化的机械臂咖啡机，说它最近总是把奶泡打成固态。窗外巡逻无人机的探照灯扫过玻璃，技师头也不抬地说这条街上周又被划入了高风险区域。你啜着已经凉透的咖啡，想着今晚大概睡不着了。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮技师一起修咖啡机",
+          "effects": {
+            "TECH": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "安静喝完咖啡回家",
+          "effects": {
+            "MONEY": -35,
+            "LIFE": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "赛博咖啡馆"
+      ]
+    },
+    {
+      "id": 1607,
+      "title": "赛博星期五大促销",
+      "description": "一年一度的赛博星期五大促开始了，全息广告铺天盖地，每个建筑外墙都在播放打折信息。你的视网膜投影上弹出了上百条推送，从义体配件到合成食品全都在打折。购物车里的东西从昨晚就开始倒计时，抢购窗口只有十分钟。整个街区的人都在低头刷终端，街上安静得诡异。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 13,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "抢购打折义体配件",
+          "effects": {
+            "MONEY": -400,
+            "TECH": 2,
+            "CHROME": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只买些日常合成食品",
+          "effects": {
+            "MONEY": -120,
+            "LIFE": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "什么都不买，关掉终端",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "在线购物"
+      ]
+    },
+    {
+      "id": 1608,
+      "title": "闪购义体配件",
+      "description": "购物节中间穿插了一场闪购活动，一款热销的视觉增强义眼在三十秒内降价百分之六十。你的终端疯狂震动提醒，购物页面的访问量已经让服务器开始卡顿。倒计时在视网膜上闪烁，库存数字从三位数迅速掉到个位数。手指悬在购买键上方，你只剩最后几秒做决定。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "果断下单抢购义眼",
+          "effects": {
+            "MONEY": -350,
+            "CHROME": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "等下一轮闪购再看看",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "在线购物"
+      ]
+    },
+    {
+      "id": 1609,
+      "title": "网红直播带货",
+      "description": "一个拥有五百万粉丝的赛博网红正在直播带货，她脸上的全息妆容随着每句话变换颜色。她手里举着一款新型神经接口耳机，声泪俱下地说这是她用过的最好产品。弹幕像瀑布一样刷过屏幕，购买链接的点击量已经破了记录。你的几个朋友也在群里转发这个直播。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        55
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "跟风下单买耳机",
+          "effects": {
+            "MONEY": -280,
+            "TECH": 1,
+            "STYLE": 2,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在弹幕里吐槽产品",
+          "effects": {
+            "STYLE": 1,
+            "REP": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "关掉直播不看了",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "在线购物"
+      ]
+    },
+    {
+      "id": 1610,
+      "title": "假货陷阱警告",
+      "description": "你在购物节上看到一款价格低得离谱的义体润滑油，卖家评分却有满分五星。正准备下单时，社区论坛弹出一条警告帖，说这家店卖的全是回收再包装的劣质货。帖子下面的评论里有人贴出了使用后义体卡顿的照片，但也有人说自己买了没问题。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "相信警告，放弃购买",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "冒险试试便宜货",
+          "effects": {
+            "MONEY": -60,
+            "CHROME": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "举报这家店铺",
+          "effects": {
+            "REP": 2,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "在线购物"
+      ]
+    },
+    {
+      "id": 1611,
+      "title": "囤货倒卖计划",
+      "description": "购物节期间有些商品打折力度极大，你盘算着囤一批合成营养剂和电池芯等节后涨价再卖。隔壁的老王上周就是这么赚了一个月的房租。但仓储费用不便宜，而且你不确定哪些东西会升值。终端上的价格曲线图让你看得头晕眼花。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "囤一批营养剂等涨价",
+          "effects": {
+            "MONEY": -200,
+            "REP": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "少量囤些电池芯试试",
+          "effects": {
+            "MONEY": -50,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "不冒险，正常购物",
+          "effects": {
+            "MONEY": -50,
+            "LIFE": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "在线购物"
+      ]
+    },
+    {
+      "id": 1612,
+      "title": "购物节幸运抽奖",
+      "description": "购物平台推出了消费满额抽奖活动，一等奖是一台全新的家用义体维护台。你的消费额已经达标，抽奖转盘在视网膜上缓缓旋转。周围的人都在讨论谁谁谁抽到了什么，中奖截图在群里满天飞。你深吸一口气按下了抽奖按钮。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "试试手气抽奖",
+          "effects": {
+            "MONEY": -30,
+            "STYLE": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "攒抽奖码等下次",
+          "effects": {
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "在线购物"
+      ]
+    },
+    {
+      "id": 1613,
+      "title": "退款维权大战",
+      "description": "你在购物节买的合成食品到货后发现有一半过期了，但商家的AI客服只会重复说抱歉并拒绝退款。你翻了半小时的用户协议才发现退款条款藏在第三十七页的脚注里。社区维权群里的人建议你向消费者保护局投诉，但那意味着要填一堆表格。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "向消费者保护局投诉",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在社交媒体上曝光商家",
+          "effects": {
+            "STYLE": 1,
+            "REP": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "算了，自认倒霉",
+          "effects": {
+            "MONEY": -80,
+            "TRAUMA": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "在线购物"
+      ]
+    },
+    {
+      "id": 1614,
+      "title": "全息摇滚之夜",
+      "description": "今晚市中心广场有一场全息摇滚演唱会，巨型投影仪把乐队成员放大到十层楼高。音乐震得地面都在颤动，激光束划破夜空，几千个观众戴着同步手环跟着节拍挥舞。主唱的全息影像从天而降，台下爆发出震耳欲聋的欢呼声。空气中弥漫着合成大麻和能量饮料的混合气味。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买票入场尽情嗨",
+          "effects": {
+            "MONEY": -150,
+            "STYLE": 2,
+            "HUMAN": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在广场外围蹭着听",
+          "effects": {
+            "STYLE": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在家看直播",
+          "effects": {
+            "MONEY": -20,
+            "TECH": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "虚拟演唱会"
+      ]
+    },
+    {
+      "id": 1615,
+      "title": "虚拟偶像见面会",
+      "description": "最受欢迎的虚拟偶像要在赛博中心举办粉丝见面会，门票开售三分钟就售罄了。这个偶像的全息形象完美得不像真人，据说背后是一个AI驱动的人格矩阵。到场粉丝可以与偶像全息合影，还能获得限量数字签名NFT。队伍从一楼排到了三楼，到处都是举着应援棒的粉丝。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        45
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买票参加见面会",
+          "effects": {
+            "MONEY": -200,
+            "STYLE": 2,
+            "REP": 1,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在场外等朋友出来",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "虚拟演唱会"
+      ]
+    },
+    {
+      "id": 1616,
+      "title": "地下电子音乐节",
+      "description": "废弃工厂区里一场地下电子音乐节正在秘密进行，入口藏在一个垃圾处理站后面。DJ的控制器连着一台军用级声波发射器，低音震得你胸腔发麻。激光和烟雾在锈迹斑斑的铁架间穿梭，人群在黑暗中疯狂跳动。据说警察的巡逻无人机已经被黑客暂时屏蔽了信号。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "冲进去跟着跳",
+          "effects": {
+            "MONEY": -80,
+            "STYLE": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在外面帮忙望风",
+          "effects": {
+            "TECH": 1,
+            "REP": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "不参与这种活动",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "虚拟演唱会",
+        "地下"
+      ]
+    },
+    {
+      "id": 1617,
+      "title": "脑机同步演唱会",
+      "description": "这场演唱会不需要你到现场，通过脑机接口直接将音乐和视觉信号传输进你的神经。戴上头盔后你瞬间置身于一片虚幻的星海之中，音符化成光流穿过你的身体。主办方说这种体验比现场更真实，但有人反映摘下头盔后会有短暂的眩晕。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "体验脑机同步演唱会",
+          "effects": {
+            "MONEY": -180,
+            "TECH": 2,
+            "STYLE": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只看普通全息转播",
+          "effects": {
+            "MONEY": -30,
+            "STYLE": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "虚拟演唱会"
+      ]
+    },
+    {
+      "id": 1618,
+      "title": "粉丝应援团活动",
+      "description": "你加入的虚拟偶像应援团今天组织了一次集体活动，大家要在演唱会开始前在广场上摆出巨型应援图案。团长通过神经链路指挥每个人站到指定位置，无人机从空中拍摄全景。应援棒的颜色需要同步切换，稍有差错就会破坏整体效果。排练已经进行了两个小时，有人开始抱怨腿酸。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        40
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "认真参与应援活动",
+          "effects": {
+            "STYLE": 1,
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "中途偷偷溜走",
+          "effects": {
+            "HUMAN": -1,
+            "REP": -1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "虚拟演唱会"
+      ]
+    },
+    {
+      "id": 1619,
+      "title": "演唱会安保冲突",
+      "description": "演唱会入口的安保机器人突然升级了安检程序，每个进场的人都要做全身义体扫描。一个粉丝因为体内有未登记的改装义肢被拦下，双方在入口处僵持不下。人群开始骚动，有人高喊歧视口号。你夹在人群中间，前面是冲突现场，后面是越来越焦躁的人潮。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮忙调解冲突",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "绕路找别的入口",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "直接退票回家",
+          "effects": {
+            "MONEY": -50,
+            "LIFE": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "虚拟演唱会"
+      ]
+    },
+    {
+      "id": 1620,
+      "title": "自动结账系统故障",
+      "description": "无人超市的自动结账系统今天又出故障了，你推着满满一车东西站在出口处，闸门死活不打开。头顶的摄像头转来转去像在审视罪犯，语音系统反复说请重新扫描商品。旁边几个顾客也卡在这里，有人开始骂骂咧咧地拍打闸门。超市的远程技术支持说工程师十五分钟后到。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "耐心等工程师来修",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "手动重新扫描所有商品",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放下东西直接走人",
+          "effects": {
+            "HUMAN": -1,
+            "REP": -1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "无人超市"
+      ]
+    },
+    {
+      "id": 1621,
+      "title": "合成食品区选购",
+      "description": "超市的合成食品区摆满了五颜六色的包装，从合成蛋白块到培养皿牛肉应有尽有。全息标签在每样商品上方浮动，显示着营养成分和合成产地。你拿起一盒培养皿牛排，保质期还有三个月，价格比上周贵了百分之二十。旁边的打折区堆满了快过期的营养液。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买新鲜的培养皿牛排",
+          "effects": {
+            "MONEY": -180,
+            "LIFE": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "买打折营养液凑合",
+          "effects": {
+            "MONEY": -60,
+            "LIFE": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "买合成蛋白块最划算",
+          "effects": {
+            "MONEY": -40,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "无人超市"
+      ]
+    },
+    {
+      "id": 1622,
+      "title": "超市优惠券推送",
+      "description": "你的终端突然弹出一条超市优惠券推送，满两百减五十，限时两小时有效。你赶紧看了一眼购物车，发现还差三十块钱就够满减了。超市里到处都是被优惠券吸引来的顾客，货架前的通道挤得水泄不通。有个大妈正在跟货架机器人理论优惠券的使用规则。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "凑单凑到满减",
+          "effects": {
+            "MONEY": -150,
+            "LIFE": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只买需要的东西",
+          "effects": {
+            "MONEY": -80,
+            "LIFE": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "无人超市"
+      ]
+    },
+    {
+      "id": 1623,
+      "title": "货架机器人互动",
+      "description": "超市里的货架机器人今天似乎更新了交互系统，主动跟你打起了招呼。它推荐了几个你可能感兴趣的商品，还说自己刚学会了讲笑话。你问它为什么货架上合成牛奶又缺货了，它用机械臂指了指后仓说供应链出了问题。这台机器人的眼睛闪着蓝色LED光，看起来居然有点可爱。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "跟机器人聊天互动",
+          "effects": {
+            "HUMAN": 2,
+            "TECH": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "让它推荐商品",
+          "effects": {
+            "MONEY": -90,
+            "TECH": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "无人超市"
+      ]
+    },
+    {
+      "id": 1624,
+      "title": "偷窃的诱惑",
+      "description": "超市的监控摄像头有一个盲区，你无意间发现了这个秘密。货架上那瓶高级神经修复口服液就摆在盲区里，价值三百块。你的义眼扫描确认这个角度确实拍不到。心跳加速，周围没有其他顾客，只有货架机器人在远处整理商品。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "趁没人拿走口服液",
+          "effects": {
+            "CHROME": 1,
+            "REP": -2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "正常付款购买",
+          "effects": {
+            "MONEY": -300,
+            "CHROME": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放下东西离开",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "无人超市",
+        "道德"
+      ]
+    },
+    {
+      "id": 1625,
+      "title": "VIP会员专享通道",
+      "description": "超市新开了VIP会员专享通道，不用排队直接扫描出门。年费要五百块但据说能享受不少特权，包括优先购买限量商品和专属折扣。你看着普通通道排了二十多人的长队，VIP通道只有一个西装男大摇大摆地走过。店内的全息广告不断提醒你升级会员。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "办VIP年费会员",
+          "effects": {
+            "MONEY": -500,
+            "STYLE": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "老老实实排队",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "无人超市"
+      ]
+    },
+    {
+      "id": 1626,
+      "title": "临期商品捡漏",
+      "description": "超市每天晚上八点会把临期商品打三折出售，这个时间段总是挤满了捡漏的人。你看到一箱培养皿鸡蛋明天就过期，原价两百现在只要六十。旁边还有打折的合成果汁和营养棒，都是今天最后一天保质期。一个大爷推着整个购物车往临期区冲，动作比年轻人还快。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "抢购临期商品",
+          "effects": {
+            "MONEY": -60,
+            "LIFE": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "买正常日期的商品",
+          "effects": {
+            "MONEY": -150,
+            "LIFE": 2,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "无人超市"
+      ]
+    },
+    {
+      "id": 1627,
+      "title": "数字心理评估",
+      "description": "社区医疗中心提供免费的AI心理评估服务，你坐在一个隔音舱里面对一块屏幕。AI用温和的声音问了你四十多道题，从睡眠质量到是否有被监视的感觉。你的生物特征数据通过座椅传感器实时传给AI分析，心率、皮电反应和微表情都被记录在案。十分钟后评估结果出来了，屏幕上显示着一份彩色雷达图。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "认真完成心理评估",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "随便填填应付了事",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "AI心理"
+      ]
+    },
+    {
+      "id": 1628,
+      "title": "创伤记忆疗法",
+      "description": "AI心理医生建议你尝试一种新型的创伤记忆疗法，通过神经接口重新体验并改写创伤记忆。医生说这种疗法能让你在安全的环境中直面恐惧，但过程可能会很痛苦。你躺上治疗椅，头上戴上神经链接头盔，AI的声音在耳边说准备好了就开始。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受创伤记忆疗法",
+          "effects": {
+            "MONEY": -200,
+            "TRAUMA": -3,
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "先做个简单咨询",
+          "effects": {
+            "MONEY": -80,
+            "HUMAN": 2,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "AI心理"
+      ]
+    },
+    {
+      "id": 1629,
+      "title": "AI医生开具处方",
+      "description": "AI心理医生根据你的评估结果开了一份电子处方，包含一种新型情绪稳定剂和一套神经调节音频。处方直接发送到了你的医疗账户，你可以在任何自动药房取药。AI提醒你这只是辅助手段，建议你同时保持规律作息和社交活动。处方有效期一周，复诊需要重新预约。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "去药房取药",
+          "effects": {
+            "MONEY": -150,
+            "LIFE": 2,
+            "ADDICTION": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只用神经调节音频",
+          "effects": {
+            "MONEY": -30,
+            "LIFE": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "不取药，自我调节",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "AI心理"
+      ]
+    },
+    {
+      "id": 1630,
+      "title": "匿名倾诉热线",
+      "description": "深夜失眠时你拨通了AI匿名倾诉热线，电话那头的AI声音温柔而耐心。它不会评判你，也不会泄露你的身份，只是静静地听你说。你聊起了最近的压力、孤独和对未来的迷茫，AI时不时给你一些温和的回应。通话结束后它说如果你需要随时可以再打来。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "畅所欲言地倾诉",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "随便聊几句就挂了",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "AI心理"
+      ]
+    },
+    {
+      "id": 1631,
+      "title": "心理健康休假日",
+      "description": "AI心理医生根据你的数据建议你今天进行一个心理健康休假日，暂停所有工作和社会义务。系统自动向你的雇主发送了医疗休假通知，你的终端也进入了勿扰模式。医生建议你今天做些让自己放松的事，比如散步、听音乐或者什么都不做。窗外阳光难得地穿透了雾霾层。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "好好休息一天",
+          "effects": {
+            "LIFE": 3,
+            "HUMAN": 2,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "休息但顺便学点东西",
+          "effects": {
+            "LIFE": 2,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "AI心理"
+      ]
+    },
+    {
+      "id": 1632,
+      "title": "数据隐私的担忧",
+      "description": "你偶然看到一篇调查报道，说某AI心理服务公司把患者的心理数据卖给了保险公司和雇主。你之前也在那家平台做过心理评估，突然感到一阵不安。你的焦虑指数、睡眠数据和情绪波动记录可能已经被陌生人看过了。终端上弹出了一条该平台的数据隐私更新通知。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "删除所有心理数据并注销",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向数据保护局举报",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "无所谓，数据已经泄露了",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "AI心理"
+      ]
+    },
+    {
+      "id": 1633,
+      "title": "数字藏书下载",
+      "description": "赛博图书馆新上线了一批古典文学数字藏书，从莎士比亚到赛博朋克先驱作品全部免费下载。你坐在图书馆的全息阅读舱里，周围是半透明的书架投影。每个阅读舱都配备了神经链接接口，可以让你身临其境地体验书中的场景。图书馆里很安静，只有数据流的微弱嗡嗡声。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "下载一批古典文学",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用神经链接体验小说",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "STYLE": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "赛博图书馆"
+      ]
+    },
+    {
+      "id": 1634,
+      "title": "黑客技术自学",
+      "description": "图书馆的技术区有一批关于网络安全和渗透测试的教材，虽然有些需要特殊权限才能访问。你找到一本基础的网络渗透指南，翻开第一页就看到警告说仅供教育用途。旁边的终端上可以实践书中的操作，图书馆的沙盒系统会确保你不会真的黑进什么系统。角落里有个戴帽子的家伙似乎在看的也是类似的书。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "认真学习网络安全知识",
+          "effects": {
+            "TECH": 3,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "快速翻阅了解基础",
+          "effects": {
+            "TECH": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "赛博图书馆"
+      ]
+    },
+    {
+      "id": 1635,
+      "title": "AI图书管理员",
+      "description": "图书馆的AI管理员是一台悬浮在空中的球形机器人，它的全息脸总是带着标准微笑。你想找一本关于义体维护的教材但不知道在哪个区，AI立刻为你规划了最优路线并在地板上投射出导航箭头。它还推荐了三本相关书籍，并说其中一本被借走了但可以预约。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "让AI帮忙找书",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自己逛逛书架",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "赛博图书馆"
+      ]
+    },
+    {
+      "id": 1636,
+      "title": "禁书区域探索",
+      "description": "图书馆的最深处有一个标着限制级的区域，需要特殊生物认证才能进入。你听说那里存放着被公司封禁的书籍，包括一些揭露企业黑幕的调查报告。门口的生物扫描仪闪烁着红光，一个管理员机器人悬浮在不远处盯着你。你的心跳加速，手指在门禁面板上方犹豫不决。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "尝试破解门禁进入",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找管理员申请权限",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "不冒险，去普通区",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "赛博图书馆",
+        "地下"
+      ]
+    },
+    {
+      "id": 1637,
+      "title": "学术论文检索",
+      "description": "你需要查找一些关于合成生物学的前沿论文，图书馆的学术数据库收录了全球数千种期刊。AI检索系统在三秒内找到了两百多篇相关论文，按相关性和引用量排序。你可以选择全文阅读或下载摘要，有些论文需要付费才能查看完整内容。图书馆为学生和研究者提供免费学术访问权限。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "深入阅读相关论文",
+          "effects": {
+            "TECH": 2,
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只看摘要快速浏览",
+          "effects": {
+            "TECH": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "赛博图书馆"
+      ]
+    },
+    {
+      "id": 1638,
+      "title": "图书馆安静自习",
+      "description": "图书馆的自习区是一个完全隔音的空间，每个人有独立的全息隔间。你坐下来打开终端开始处理一些积压的事情，偶尔抬头看看隔间里的全息窗外模拟的风景。今天模拟的是一片旧时代的森林，阳光透过树叶洒下斑驳光影。这种安静让你久违地感到平静。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "安静地学习和工作",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "LIFE": 2,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在自习区小睡一会儿",
+          "effects": {
+            "LIFE": 2,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "赛博图书馆"
+      ]
+    },
+    {
+      "id": 1639,
+      "title": "逾期还书罚款",
+      "description": "你借的三本电子书已经逾期两周了，图书馆系统不断给你发催还通知。逾期罚款每天每本五块钱，已经累计到了两百一。AI管理员发来消息说如果再不还书你的借阅权限将被暂停三十天。你翻了翻终端里的借阅记录，发现还有一本根本不记得借过。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "还书并缴纳罚款",
+          "effects": {
+            "MONEY": -210,
+            "HUMAN": 1,
+            "DEBT": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "申诉那本不记得借的书",
+          "effects": {
+            "HUMAN": 1,
+            "TECH": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "赛博图书馆"
+      ]
+    },
+    {
+      "id": 1640,
+      "title": "共享飞行摩托",
+      "description": "街边的共享飞行摩托桩上停着三辆摩托，扫码解锁后就可以在天空中飞行三十分钟。你戴上配套的AR头盔，导航系统在视网膜上投射出最优飞行路线。今天的天气数据说气流稳定适合低空飞行，高度限制在两百米以下。你跨上摩托，引擎在身下发出低沉的嗡鸣声。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "租一辆飞行摩托兜风",
+          "effects": {
+            "MONEY": -80,
+            "STYLE": 2,
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "租一辆去办事省时间",
+          "effects": {
+            "MONEY": -80,
+            "TECH": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "共享经济"
+      ]
+    },
+    {
+      "id": 1641,
+      "title": "共享义体租赁",
+      "description": "共享义体租赁平台新上线了一批临时义体，从力量增强臂到红外视觉眼应有尽有。你可以按小时租用这些义体，安装和拆卸都在平台的认证诊所完成。租一副力量增强臂一小时要一百五，但能让你搬运平时三倍重量的东西。平台提示临时义体可能导致排异反应，建议购买保险。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "租力量增强臂干重活",
+          "effects": {
+            "MONEY": -150,
+            "CHROME": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "租红外视觉眼试试",
+          "effects": {
+            "MONEY": -150,
+            "TECH": 1,
+            "CHROME": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用自己的身体就好",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "共享经济"
+      ]
+    },
+    {
+      "id": 1642,
+      "title": "共享办公空间",
+      "description": "你今天在共享办公空间租了一个工位，这里提供高速网络、全息投影和免费的合成咖啡。每个工位都有隔音力场，让你在嘈杂的环境中也能专注工作。隔壁工位的一个程序员正在全息屏幕上疯狂敲代码，偶尔嘟囔几句关于死线的事。休息区的沙发上有个人正在打盹。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "高效工作一天",
+          "effects": {
+            "MONEY": -60,
+            "TECH": 1,
+            "REP": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "工作和社交兼顾",
+          "effects": {
+            "MONEY": -60,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "共享经济"
+      ]
+    },
+    {
+      "id": 1643,
+      "title": "共享睡眠舱",
+      "description": "深夜了但你不想回家，街角的共享睡眠舱看起来是个不错的选择。每个舱位配有温控系统、白噪音发生器和生物监测仪，按小时计费。你选了一个靠墙的舱位躺进去，舱门关闭后世界变得安静。舱内的全息天花板模拟着星空，你的心率数据在门外的屏幕上跳动。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在睡眠舱睡一晚",
+          "effects": {
+            "MONEY": -70,
+            "LIFE": 2,
+            "TRAUMA": -1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只租一小时小憩",
+          "effects": {
+            "MONEY": -30,
+            "LIFE": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "共享经济"
+      ]
+    },
+    {
+      "id": 1644,
+      "title": "共享充电桩",
+      "description": "你的义体电量只剩百分之十五，最近的共享充电桩在两个街区外。充电桩支持快充和慢充两种模式，快充十五分钟充满但费用是慢充的三倍。充电桩旁边已经排了四五个人，都在低头刷终端等着。一个充完电的家伙伸了个懒腰走过来，你赶紧上前占位置。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "快充十五分钟充满",
+          "effects": {
+            "MONEY": -90,
+            "CHROME": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "慢充省钱慢慢等",
+          "effects": {
+            "MONEY": -30,
+            "CHROME": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "共享经济"
+      ]
+    },
+    {
+      "id": 1645,
+      "title": "共享带宽交易",
+      "description": "你的家庭网络带宽不够用了，邻居在共享带宽平台上出租他多余的带宽。每兆每分钟收费极低，但你需要把一个微型中继器贴在窗台上。邻居说这个月的带宽他都用不完，不如分享出来赚点零花钱。你看了看网速测试结果，共享后确实快了不少。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买邻居的共享带宽",
+          "effects": {
+            "MONEY": -50,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自己升级网络套餐",
+          "effects": {
+            "MONEY": -200,
+            "TECH": 2,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "共享经济"
+      ]
+    },
+    {
+      "id": 1646,
+      "title": "共享经济纠纷",
+      "description": "你租的共享飞行摩托在半空中突然引擎故障，紧急降落时摔坏了一块外壳。平台客服说这是用户操作不当导致的损坏，要你赔偿维修费五百块。但你觉得是摩托本身保养不善，出发前的自检明明显示一切正常。社区论坛上有人发帖说这个平台的摩托经常出问题。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "据理力争拒绝赔偿",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "认倒霉交维修费",
+          "effects": {
+            "MONEY": -500,
+            "TRAUMA": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "找消费者协会调解",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "共享经济"
+      ]
+    },
+    {
+      "id": 1647,
+      "title": "变色纤维夹克",
+      "description": "智能服装店的橱窗里展示着一件变色纤维夹克，能根据穿戴者的心率和体温自动变换颜色。店员演示时用手触碰夹克，面料从深蓝渐变成火焰红，视觉效果令人惊艳。价格标签上写着五百块，相当于你好几天的饭钱。店里还播放着全息时尚秀的录像。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买下这件变色夹克",
+          "effects": {
+            "MONEY": -500,
+            "STYLE": 3,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "试穿拍照发社交媒体",
+          "effects": {
+            "STYLE": 1,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "看看别的便宜货",
+          "effects": {
+            "MONEY": -120,
+            "STYLE": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "智能服装"
+      ]
+    },
+    {
+      "id": 1648,
+      "title": "神经感应服饰",
+      "description": "这家店新到一批神经感应服饰，面料内嵌了微型传感器能将触觉信号直接传到神经接口。穿上后你能感受到风的方向和温度变化，就像恢复了真实的触觉一样。店员说这种技术本来是给义体人恢复触感用的，现在成了时尚单品。试穿区排着长队，每个人出来都露出惊叹的表情。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买一套神经感应服饰",
+          "effects": {
+            "MONEY": -450,
+            "STYLE": 2,
+            "CHROME": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只试穿体验一下",
+          "effects": {
+            "HUMAN": 1,
+            "STYLE": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "智能服装"
+      ]
+    },
+    {
+      "id": 1649,
+      "title": "二手义体服装市场",
+      "description": "巷子里的二手义体服装市场今天开市了，摊位上摆满了各种带神经接口的旧衣服。有些是义体人淘汰的，接口还残留着前主人的生物数据。一件带触觉反馈的旧外套只要五十块，但你需要自己清理数据残留。摊主是个缺了一条胳膊的老义体人，正用仅剩的手翻着全息杂志。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "淘一件便宜的义体外套",
+          "effects": {
+            "MONEY": -50,
+            "STYLE": 1,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "帮摊主清理数据残留赚钱",
+          "effects": {
+            "MONEY": 80,
+            "TECH": 2,
+            "REP": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "智能服装"
+      ]
+    },
+    {
+      "id": 1650,
+      "title": "全息纹身投影器",
+      "description": "服装店里有一个全息纹身投影器的专柜，这种小型设备可以贴在皮肤上投射出动态纹身图案。你可以选择预设图案或上传自定义设计，纹身会随你的动作流动变化。一个年轻人正在试一条全息龙纹，龙身从手臂蜿蜒到脖子栩栩如生。柜台后的店员说这个月已经卖脱销三次了。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买一个全息纹身投影器",
+          "effects": {
+            "MONEY": -220,
+            "STYLE": 3,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "试用一下别人的",
+          "effects": {
+            "STYLE": 1,
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "智能服装"
+      ]
+    },
+    {
+      "id": 1651,
+      "title": "防弹时装发布会",
+      "description": "一家赛博时尚品牌在举办防弹时装发布会，模特们穿着看似普通实则能抵挡手枪子弹的智能服装走秀。全息T台上灯光璀璨，每件衣服的防护等级都在旁边标注。设计师说灵感来自日益恶化的街头治安，让时尚和安全兼得。秀场门口排着长队，保安全是重型义体人。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买一件防弹时装",
+          "effects": {
+            "MONEY": -500,
+            "STYLE": 2,
+            "LIFE": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只是看看发布会",
+          "effects": {
+            "STYLE": 1,
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "智能服装"
+      ]
+    },
+    {
+      "id": 1652,
+      "title": "虚拟试衣间体验",
+      "description": "服装店的虚拟试衣间不需要你脱衣服，站在全息镜前就能看到自己穿各种衣服的效果。AI会根据你的体型和肤色推荐最合适的款式和搭配。你试了十几套衣服，全息镜像里的你变换着各种风格。系统还把你试穿的效果发到你的终端上方便对比。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        65
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "试穿后买下最满意的",
+          "effects": {
+            "MONEY": -280,
+            "STYLE": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "试穿完拍照就走",
+          "effects": {
+            "STYLE": 1,
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "智能服装"
+      ]
+    },
+    {
+      "id": 1653,
+      "title": "无人机外卖送达",
+      "description": "你点的外卖由一架小型无人机送到窗台，它精准地降落在你家的接收板上。包装上印着外卖平台的霓虹logo，保温层让食物还是热的。无人机的摄像头确认你取餐后嗡嗡地飞走了，留下一阵微风。你打开包装，合成寿司看起来比全息广告上的还不错。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "愉快地享用外卖",
+          "effects": {
+            "MONEY": -60,
+            "LIFE": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "给五星好评",
+          "effects": {
+            "MONEY": -60,
+            "LIFE": 1,
+            "REP": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "无人机外卖"
+      ]
+    },
+    {
+      "id": 1654,
+      "title": "外卖被劫事件",
+      "description": "你的外卖无人机在途中被截了，终端上显示无人机最后信号在一个废弃楼顶消失。外卖平台的AI客服说这种情况他们会补发一份，但要等四十分钟。社区群里有人说他上周也被劫了三次，怀疑是同一伙人干的。你的胃发出抗议的咕噜声。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "等平台补发外卖",
+          "effects": {
+            "MONEY": -60,
+            "LIFE": 1,
+            "TRAUMA": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "申请退款自己出去吃",
+          "effects": {
+            "MONEY": 60,
+            "HUMAN": 1,
+            "LIFE": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "无人机外卖"
+      ]
+    },
+    {
+      "id": 1655,
+      "title": "外卖评价系统",
+      "description": "外卖平台升级了评价系统，现在你可以给送餐无人机打分并附带全息评论。高分无人机会被优先派单，低分的会被送回维修站检修。你今天的外卖准时送达且保温良好，但无人机的一个旋翼有点异响。评价页面上有五个维度可以选择，从送达速度到包装完整度。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "认真填写评价",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "随手五星了事",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "无人机外卖"
+      ]
+    },
+    {
+      "id": 1656,
+      "title": "加急配送服务",
+      "description": "你饿得不行了，外卖平台推出了加急配送服务，加收五十块保证十五分钟内送达。一架载重无人机已经从最近的中央厨房起飞，实时位置在你的终端上闪烁。平台说加急订单享有优先空域权，不会被普通订单堵塞。你的胃在咕咕叫，倒计时已经开始。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "花钱加急配送",
+          "effects": {
+            "MONEY": -110,
+            "LIFE": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "普通配送慢慢等",
+          "effects": {
+            "MONEY": -60,
+            "LIFE": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "无人机外卖"
+      ]
+    },
+    {
+      "id": 1657,
+      "title": "外卖满减优惠",
+      "description": "外卖平台推出了满三百减五十的活动，你翻了半天菜单凑到了三百二十块。购物车里堆满了各种合成食品和饮料，够你吃三天的量。你犹豫要不要减掉一些，但减了就不够满减了。最终你按下了下单键，一架载重无人机从窗外飞过。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "凑单享受满减",
+          "effects": {
+            "MONEY": -270,
+            "LIFE": 3,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只点一份够吃的",
+          "effects": {
+            "MONEY": -60,
+            "LIFE": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "无人机外卖"
+      ]
+    },
+    {
+      "id": 1658,
+      "title": "飞行路线冲突",
+      "description": "你点的无人机外卖和隔壁邻居的外卖无人机在空中差点撞上了，两架无人机紧急避让时你的外卖盒被甩了出去。终端上弹出一条事故通知，显示你的订单状态变成了配送异常。外卖平台的客服说他们会重新制作并配送，但这至少要等半小时。窗外两架无人机还在原地盘旋等待空管指令。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "耐心等重新配送",
+          "effects": {
+            "MONEY": -60,
+            "LIFE": 1,
+            "TRAUMA": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "退款出去吃",
+          "effects": {
+            "MONEY": 60,
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "无人机外卖"
+      ]
+    },
+    {
+      "id": 1659,
+      "title": "地面外卖员求助",
+      "description": "你在街角遇到一个穿着外卖制服的地面配送员，他的电动摩托没电了。无人机配送普及后地面外卖员越来越少，但有些老旧建筑区无人机飞不进去。他问你附近有没有充电站，说他还有两单要送但手机快没电了。他的制服上印着一个你从没听过的外卖平台名字。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮他指路到充电站",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "让他用你的充电宝",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "MONEY": -20
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "抱歉赶时间帮不了",
+          "effects": {
+            "HUMAN": -1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "无人机外卖"
+      ]
+    },
+    {
+      "id": 1660,
+      "title": "加密货币暴涨",
+      "description": "你持有的那种小众加密货币今天突然暴涨了百分之三百，终端上的K线图直线拉升。社区群里炸开了锅，有人喊着要卖有人喊着继续持有。你的投资已经翻了两倍，但上次也是这样涨上去然后暴跌的。交易所的服务器开始卡顿，交易确认时间明显变长。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "果断卖出获利",
+          "effects": {
+            "MONEY": 400,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "继续持有等更高",
+          "effects": {
+            "MONEY": -50,
+            "TECH": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "卖一半留一半",
+          "effects": {
+            "MONEY": 200,
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "数字货币"
+      ]
+    },
+    {
+      "id": 1661,
+      "title": "钱包安全升级",
+      "description": "你的数字货币钱包收到了安全升级通知，说发现了一个潜在的安全漏洞需要紧急更新。更新需要重新验证生物信息并设置新的加密密钥。平台提醒说如果不及时更新可能面临资产被盗风险，最近已经有多起钱包被黑的案例。你的钱包里还有不少币，安全确实很重要。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "立即升级钱包安全",
+          "effects": {
+            "TECH": 2,
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "先查查是不是钓鱼",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "数字货币"
+      ]
+    },
+    {
+      "id": 1662,
+      "title": "黑市币交易",
+      "description": "有人在网上向你推销一种匿名性极高的黑市加密货币，号称完全无法追踪。这种币在正规交易所买不到，只能通过暗网交易。卖家的信誉评价不错，但你知道这种交易没有任何保障。一枚黑市币的价格只有主流币的十分之一，升值空间看起来很大。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "冒险买入黑市币",
+          "effects": {
+            "MONEY": -200,
+            "TECH": 1,
+            "REP": -1,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝并举报卖家",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "不参与，关掉对话",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "数字货币",
+        "地下"
+      ]
+    },
+    {
+      "id": 1663,
+      "title": "矿机日常维护",
+      "description": "你家里那台二手挖矿机今天又开始发出异常噪音，散热风扇似乎出了问题。这台机器虽然已经不怎么赚钱了但你还舍不得关掉，偶尔挖到一个小币种就够回本。你打开机箱检查，发现散热片上积了一层灰，一个电容似乎有点鼓包。维修手册的全息投影在你旁边缓缓旋转。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "自己动手修矿机",
+          "effects": {
+            "TECH": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "送维修站专业修理",
+          "effects": {
+            "MONEY": -120,
+            "TECH": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "数字货币"
+      ]
+    },
+    {
+      "id": 1664,
+      "title": "诈骗识别训练",
+      "description": "社区中心举办了一场防诈骗识别训练，专门针对数字货币领域的各种骗局。讲师是一个被诈骗过的过来人，他展示了几种常见的钓鱼网站和庞氏骗局案例。你发现之前收到过好几条类似的诈骗信息，差点就信了。训练结束后还有一个模拟测试，通过者可以获得数字证书。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "认真参加防诈骗训练",
+          "effects": {
+            "TECH": 2,
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "通过测试拿证书",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "数字货币"
+      ]
+    },
+    {
+      "id": 1665,
+      "title": "跨链转账操作",
+      "description": "你需要把一批数字货币从一条链转到另一条链上，跨链桥的手续费今天突然涨了不少。你在终端上仔细核对了收款地址，转账一旦发起就不可撤销。跨链桥的状态显示当前有大量交易排队，预计确认时间约两小时。你的手指悬在确认按钮上方，再三检查了一遍地址。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支付手续费完成转账",
+          "effects": {
+            "MONEY": -80,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "等手续费降了再转",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "数字货币"
+      ]
+    },
+    {
+      "id": 1666,
+      "title": "数字货币空投",
+      "description": "你持有的一种加密货币项目方宣布空投，所有持仓用户都能免费获得一批新代币。空投比例是一比一，你的持仓量意味着能拿到价值约两百块的新币。但你需要在一个可疑的网站上连接钱包才能领取，社区里有人警告可能是钓鱼。你的终端上同时弹出了领取链接和安全提醒。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "安全地领取空投",
+          "effects": {
+            "MONEY": 200,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "不冒险，放弃空投",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "数字货币"
+      ]
+    },
+    {
+      "id": 1667,
+      "title": "霓虹酒吧之夜",
+      "description": "夜幕降临，霓虹酒吧的招牌开始闪烁，紫色和粉色的光线把整条街染成了赛博色调。推门进去，电子音乐的低音贝斯震得你胸腔发麻。吧台后面一个全息酒保正在调酒，几台机械臂精准地将各种合成酒精倒入杯中。角落里一群义体人正在用神经接口玩某种卡牌游戏。",
+      "type": "daily",
+      "ageRange": [
+        21,
+        65
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "坐吧台点一杯招牌鸡尾酒",
+          "effects": {
+            "MONEY": -90,
+            "STYLE": 1,
+            "HUMAN": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "去角落围观卡牌游戏",
+          "effects": {
+            "MONEY": -60,
+            "HUMAN": 1,
+            "TECH": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "只点一杯合成啤酒",
+          "effects": {
+            "MONEY": -40,
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "赛博酒吧"
+      ]
+    },
+    {
+      "id": 1668,
+      "title": "酒保的情报",
+      "description": "全息酒保的程序里似乎编入了一些八卦模块，你点第三杯酒时它开始跟你聊起了街上的新闻。它说上周有个公司中层在这里喝醉后说漏了嘴，第二天就被发现在河里。酒保的声音突然降低了两度，说有些话题不适合在这里讨论。你注意到吧台角落有个摄像头转向了你这边。",
+      "type": "daily",
+      "ageRange": [
+        21,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "继续追问更多细节",
+          "effects": {
+            "MONEY": -120,
+            "TECH": 2,
+            "REP": 1,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "换话题聊别的",
+          "effects": {
+            "MONEY": -90,
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "赛博酒吧"
+      ]
+    },
+    {
+      "id": 1669,
+      "title": "酒吧斗殴",
+      "description": "两个喝多了的义体人在酒吧里起了冲突，一个掀翻了桌子另一个拔出了藏在手臂里的伸缩刀。机械臂安保还没来得及反应，玻璃杯已经飞过了你的头顶。周围的客人有的在尖叫有的在录像，DJ的音乐声反而更大了。你离冲突现场只有两步远，碎玻璃溅到了你的鞋上。",
+      "type": "daily",
+      "ageRange": [
+        21,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮忙拉开打架的人",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "TRAUMA": 2,
+            "CHROME": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "躲到吧台后面",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "趁机溜出酒吧",
+          "effects": {
+            "HUMAN": -1,
+            "LIFE": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "赛博酒吧"
+      ]
+    },
+    {
+      "id": 1670,
+      "title": "神经鸡尾酒",
+      "description": "酒吧新推出了一款神经鸡尾酒，据说喝下去能产生短暂的愉快感和轻度幻觉。酒保说这种酒通过神经接口直接作用于大脑愉悦中枢，效果比传统酒精强十倍。旁边一个喝过的顾客正对着空气傻笑，说看到了彩虹色的数据流。吧台上的全息菜单显示这款酒限量供应每人一杯。",
+      "type": "daily",
+      "ageRange": [
+        21,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "尝试一杯神经鸡尾酒",
+          "effects": {
+            "MONEY": -150,
+            "STYLE": 1,
+            "ADDICTION": 2,
+            "TRAUMA": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "点普通的合成威士忌",
+          "effects": {
+            "MONEY": -80,
+            "HUMAN": 1,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "改喝无酒精饮料",
+          "effects": {
+            "MONEY": -30,
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "赛博酒吧"
+      ]
+    },
+    {
+      "id": 1671,
+      "title": "酒吧情报交易",
+      "description": "一个自称信息掮客的人坐到了你旁边，说他有你感兴趣的某些人的行踪数据。他穿着一件能屏蔽全身扫描的特制外套，脸被兜帽遮得严严实实。开价五百块一份完整数据档案，先验货后付款。酒吧的音乐声恰好掩盖了你们的对话，但你不确定他是否可信。",
+      "type": "daily",
+      "ageRange": [
+        21,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买情报数据",
+          "effects": {
+            "MONEY": -500,
+            "TECH": 2,
+            "REP": 1,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "先验货再说",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "不感兴趣，换位置",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "赛博酒吧",
+        "地下"
+      ]
+    },
+    {
+      "id": 1672,
+      "title": "义体酒精过敏",
+      "description": "你喝了才两杯就感觉不对劲，义体接口处开始发烫，视觉系统出现了雪花噪点。吧台上的生物监测仪显示你的义体排异指数飙升，可能是某种合成酒精与你义体的润滑液发生了反应。酒保赶紧递给你一杯中和剂，说这种情况最近越来越常见。你的左臂开始不受控制地微微颤抖。",
+      "type": "daily",
+      "ageRange": [
+        21,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "喝下中和剂等恢复",
+          "effects": {
+            "MONEY": -80,
+            "CHROME": -1,
+            "TRAUMA": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "赶紧去诊所检查",
+          "effects": {
+            "MONEY": -200,
+            "CHROME": -1,
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "赛博酒吧"
+      ]
+    },
+    {
+      "id": 1673,
+      "title": "驻场乐队演出",
+      "description": "今晚酒吧有一支赛博摇滚乐队驻场演出，主唱的嗓子经过声带改造能发出三个八度的音域。吉他手的手指被替换成了十二指义体手，弹奏速度快得肉眼几乎看不清。台下的观众随着节奏摇摆，有人在舞池里跳起了机械舞。音乐震耳欲聋但你感到一种久违的释放感。",
+      "type": "daily",
+      "ageRange": [
+        21,
+        55
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在舞池里尽情释放",
+          "effects": {
+            "MONEY": -80,
+            "STYLE": 2,
+            "HUMAN": 2,
+            "LIFE": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "坐角落安静地听",
+          "effects": {
+            "MONEY": -50,
+            "HUMAN": 1,
+            "LIFE": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "赛博酒吧"
+      ]
+    },
+    {
+      "id": 1674,
+      "title": "VR格斗竞技",
+      "description": "VR游戏厅的格斗竞技区今天有比赛，戴上头盔后你的意识被投射到一个虚拟擂台上。对手是一个排名前一百的高手，他的虚拟形象浑身散发着金色光效。全息观众席上挤满了加油的玩家，赔率显示你只有一比五的胜算。裁判AI的倒计时开始了，三、二、一、战斗。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        50
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全力对战拼一把",
+          "effects": {
+            "MONEY": -50,
+            "STYLE": 1,
+            "TECH": 1,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "认输节省体力",
+          "effects": {
+            "MONEY": -50,
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "VR游戏厅"
+      ]
+    },
+    {
+      "id": 1675,
+      "title": "虚拟赛车比赛",
+      "description": "VR赛车模拟器把你传送到一条霓虹城市的赛道上，你的虚拟赛车悬浮在离地三米的高度。赛道穿过摩天大楼的缝隙和地下隧道，转弯时的G力模拟让你肾上腺素飙升。旁边的机位上一个小孩正在超车，他的成绩已经打破了今日记录。你踩下油门，引擎的虚拟声浪在耳边轰鸣。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        55
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全速冲刺争第一",
+          "effects": {
+            "MONEY": -60,
+            "STYLE": 2,
+            "TECH": 1,
+            "LIFE": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "稳扎稳打跑完全程",
+          "effects": {
+            "MONEY": -60,
+            "TECH": 1,
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "VR游戏厅"
+      ]
+    },
+    {
+      "id": 1676,
+      "title": "密室逃脱VR",
+      "description": "VR密室逃脱是游戏厅最火的项目之一，你和三个陌生人被组队进入一个虚拟的废弃实验室。你们需要在六十分钟内找到线索逃出去，否则会被虚拟的生化武器感染。房间里到处是全息线索和解谜机关，一个队友已经开始翻箱倒柜。倒计时投影在天花板上滴答作响。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        60
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "积极解谜带领团队",
+          "effects": {
+            "MONEY": -70,
+            "TECH": 2,
+            "HUMAN": 2,
+            "REP": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "配合队友解谜",
+          "effects": {
+            "MONEY": -70,
+            "HUMAN": 2,
+            "TECH": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "VR游戏厅"
+      ]
+    },
+    {
+      "id": 1677,
+      "title": "VR社交舞会",
+      "description": "VR社交舞会是游戏厅里最轻松的项目，你可以在虚拟舞厅里和来自各地的玩家互动。你的虚拟形象穿着一件华丽的赛博礼服，在霓虹灯光下闪闪发光。一个陌生人的虚拟形象走过来邀请你跳舞，全息舞池里已经有十几对在翩翩起舞。DJ播放着一首舒缓的电子圆舞曲。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        60
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受邀请一起跳舞",
+          "effects": {
+            "MONEY": -40,
+            "STYLE": 1,
+            "HUMAN": 2,
+            "LIFE": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自己在角落欣赏",
+          "effects": {
+            "MONEY": -40,
+            "HUMAN": 1,
+            "LIFE": 1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "VR游戏厅"
+      ]
+    },
+    {
+      "id": 1678,
+      "title": "游戏厅连胜奖励",
+      "description": "你在格斗竞技区连赢了五场，游戏厅的连胜奖励系统自动为你解锁了特殊称号和虚拟道具。全息公告板上滚动着你的ID和连胜记录，其他玩家开始投来关注的目光。游戏厅经理走过来说如果你能再赢三场就能参加周末锦标赛。你的手有点酸但肾上腺素让你停不下来。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        50
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "继续挑战连胜",
+          "effects": {
+            "MONEY": -30,
+            "STYLE": 2,
+            "TECH": 1,
+            "REP": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "见好就收",
+          "effects": {
+            "STYLE": 1,
+            "REP": 1,
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "VR游戏厅"
+      ]
+    },
+    {
+      "id": 1679,
+      "title": "VR设备故障",
+      "description": "你正在玩VR游戏时设备突然出了故障，画面卡死然后变成一片雪花噪点。头盔传来一股焦糊味，你的视觉系统被迫强制断开连接。游戏厅的技术员跑过来帮你摘下头盔，说这台设备的主板烧了。你的眼前还残留着游戏画面的残影，头有点晕。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "要求赔偿并投诉",
+          "effects": {
+            "REP": 1,
+            "HUMAN": 1,
+            "TRAUMA": 1,
+            "MONEY": 50
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "算了换一台继续玩",
+          "effects": {
+            "MONEY": -50,
+            "TECH": 1,
+            "LIFE": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "VR游戏厅"
+      ]
+    },
+    {
+      "id": 1680,
+      "title": "义体清洁保养",
+      "description": "义体维护站的全自动清洁舱能给你的义体做一次深度清洁，超声波清洗配合纳米抛光。你躺进维护椅上，机械臂开始拆卸你的外挂义体组件进行逐一清洗。维护舱里的全息屏幕播放着保养知识，说定期清洁能延长义体使用寿命百分之三十。清洁完成后你的义体表面光洁如新，关节处也顺滑了不少。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "做全套深度清洁",
+          "effects": {
+            "MONEY": -180,
+            "CHROME": 2,
+            "LIFE": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只做基础清洁",
+          "effects": {
+            "MONEY": -80,
+            "CHROME": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "义体维护"
+      ]
+    },
+    {
+      "id": 1681,
+      "title": "神经接口校准",
+      "description": "你的神经接口最近反应有点迟钝，维护站的技师说需要做一次校准。校准过程会用微电流刺激神经连接点，重新同步义体信号和神经信号的传输速度。技师在你的后颈贴上校准贴片，一股酥麻感从脖子传到四肢。全息屏幕上显示着信号延迟从十二毫秒降到了三毫秒。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "做完整神经校准",
+          "effects": {
+            "MONEY": -200,
+            "CHROME": 2,
+            "TECH": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只调主要接口",
+          "effects": {
+            "MONEY": -100,
+            "CHROME": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "义体维护"
+      ]
+    },
+    {
+      "id": 1682,
+      "title": "义体固件更新",
+      "description": "你的义体制造商推送了一个新的固件更新，号称优化了能耗管理和提升了反应速度。更新文件有一百多兆，需要你在维护站连接专用线路下载安装。技师提醒说更新过程中义体会暂时离线约十五分钟，期间相关功能将不可用。更新日志上还列出了几个安全漏洞的修复。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "立即更新固件",
+          "effects": {
+            "MONEY": -50,
+            "TECH": 2,
+            "CHROME": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "等等看别人更新后有没有问题",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "义体维护"
+      ]
+    },
+    {
+      "id": 1683,
+      "title": "紧急义体维修",
+      "description": "你的义眼突然出现故障，视觉画面不停闪烁还伴随着刺痛感。你跌跌撞撞冲进最近的维护站，技师检查后说是光学芯片接触不良需要紧急维修。维修台上你的义眼被拆开，技师用微型焊接器修复着断裂的线路。你暂时只能用一只眼睛看世界，感觉视野少了一半。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "紧急维修义眼",
+          "effects": {
+            "MONEY": -300,
+            "CHROME": 1,
+            "TRAUMA": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "先临时处理明天再修",
+          "effects": {
+            "MONEY": -80,
+            "TRAUMA": 2,
+            "CHROME": -1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "义体维护"
+      ]
+    },
+    {
+      "id": 1684,
+      "title": "DIY义体维护",
+      "description": "你不想花高价去维护站，决定自己在家DIY维护义体。网上买的维护工具包到了，附带一份全息教程。你按照教程打开义体手臂的外壳，内部线路比你想象的复杂得多。教程说第一步是清理散热系统，但你已经花了半小时还没找到散热模块在哪。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "继续摸索自己修",
+          "effects": {
+            "TECH": 2,
+            "CHROME": 1,
+            "TRAUMA": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "还是送维护站吧",
+          "effects": {
+            "MONEY": -150,
+            "CHROME": 1,
+            "TECH": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "义体维护"
+      ]
+    },
+    {
+      "id": 1685,
+      "title": "维护站排队等待",
+      "description": "维护站今天人特别多，取号机显示你前面还有二十七个人在等。候客区的座椅全是充电式的，墙上播放着义体保养的科普全息影像。你旁边一个老义体人的整条右臂都拆了下来放在膝盖上，他说已经等了两个小时了。取号机的叫号声每隔几分钟响一次，但进度慢得让人抓狂。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "耐心等待叫号",
+          "effects": {
+            "MONEY": -100,
+            "CHROME": 1,
+            "TRAUMA": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "跟旁边的老人聊天",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "TRAUMA": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "义体维护"
+      ]
+    },
+    {
+      "id": 1686,
+      "title": "义体美容改装",
+      "description": "维护站新开了义体美容服务，可以给你的义体加上各种装饰性改装。从LED发光纹路到变色涂装，甚至可以定制全息投影图案。技师展示了几种样品，一个镶满霓虹灯的义体臂在暗处格外炫目。价格不便宜但确实能让你在人群中脱颖而出。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "做个炫酷的义体美容",
+          "effects": {
+            "MONEY": -350,
+            "STYLE": 3,
+            "CHROME": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只加简单的LED纹路",
+          "effects": {
+            "MONEY": -120,
+            "STYLE": 1,
+            "CHROME": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "义体维护"
+      ]
+    },
+    {
+      "id": 1687,
+      "title": "垂直农场志愿",
+      "description": "社区垂直农场在招募志愿者帮忙照看作物，报酬是一袋新鲜蔬菜。这座十层楼高的室内农场种满了各种合成改良蔬菜，LED生长灯把整个空间照得通亮。你需要帮忙浇水、修剪和监测营养液浓度。农场管理员是一个退休的老农，他说在这里种菜比在旧时代的田里轻松多了。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "做半天志愿者",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 2,
+            "REP": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只帮忙一小时",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "社区花园"
+      ]
+    },
+    {
+      "id": 1688,
+      "title": "合成种子种植",
+      "description": "社区花园分发了一批免费的合成改良种子，据说在室内也能快速生长。你领了一包番茄种子和一包生菜种子，花园管理员教你怎么用营养土种植。这些种子经过基因编辑能在两周内成熟结果，不需要阳光只需要LED灯。你把种子种在窗台的花盆里，浇上营养液。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "认真种植合成种子",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1,
+            "TECH": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "随便种种试试",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "社区花园"
+      ]
+    },
+    {
+      "id": 1689,
+      "title": "社区丰收节",
+      "description": "社区花园迎来了第一次丰收，居民们把各自种的蔬菜水果摆在一起分享。垂直农场里挂满了彩灯和全息装饰，空气中弥漫着新鲜蔬果的清香。管理员切开了第一个合成大西瓜，比旧时代的西瓜大三倍而且无籽。孩子们在全息投影的草地上跑来跑去，大人们交换着各自的收成。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "带上自己的收成参加",
+          "effects": {
+            "HUMAN": 3,
+            "LIFE": 2,
+            "REP": 2,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "空手去凑热闹",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "社区花园"
+      ]
+    },
+    {
+      "id": 1690,
+      "title": "花园邻里社交",
+      "description": "你在社区花园里浇水时遇到了隔壁的邻居，她正在给自己种的一排合成草莓修枝。你们聊起了最近的物价和街区的治安，她说上个月她家被入室盗窃了。花园里还有几个老人在下全息棋，一个年轻人正在给垂直种植架换营养液。这种邻里间的闲聊让你感到一种久违的人情味。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 3,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "和邻居愉快地聊天",
+          "effects": {
+            "HUMAN": 3,
+            "LIFE": 1,
+            "REP": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "简单打个招呼继续干活",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "社区花园"
+      ]
+    },
+    {
+      "id": 1691,
+      "title": "虫害防治",
+      "description": "社区花园的作物出现了虫害，一种变异的合成蚜虫正在啃食蔬菜叶片。管理员说这种虫子对普通农药免疫，需要手动清除或者引入天敌。几个志愿者正在用放大镜检查每片叶子，把虫子一只只捏死。花园的AI监测系统已经标记了虫害最严重的几个区域。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮忙一起除虫",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "LIFE": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "提供除虫的新思路",
+          "effects": {
+            "TECH": 2,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "社区花园"
+      ]
+    },
+    {
+      "id": 1692,
+      "title": "有机食品交换",
+      "description": "社区花园组织了一次有机食品交换会，居民们可以把自家种的蔬菜拿来交换别人的。你带了一些自己种的合成番茄，想换点新鲜的水果。交换桌上摆满了各种各样的蔬果，从巨型蘑菇到荧光蓝色的草莓应有尽有。一个老太太用三根合成玉米换了你一袋番茄，双方都很满意。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 4,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "积极参与食品交换",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 2,
+            "REP": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只逛逛不换",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "社区花园"
+      ]
+    },
+    {
+      "id": 1693,
+      "title": "花园遭破坏",
+      "description": "你来到社区花园发现一片狼藉，有人半夜闯入破坏了几个种植架和灌溉系统。合成蔬菜被连根拔起，营养液管被剪断流了一地。管理员蹲在地上捡着还能救的苗，眼眶红红的。花园门口的监控摄像头被人用激光笔烧毁了镜头，看不出是谁干的。",
+      "type": "daily",
+      "ageRange": [
+        14,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮忙清理和修复花园",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "LIFE": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "调查监控找出破坏者",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "TRAUMA": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "捐钱帮花园重建",
+          "effects": {
+            "MONEY": -200,
+            "REP": 2,
+            "HUMAN": 2,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "社区花园"
+      ]
+    },
+    {
+      "id": 1694,
+      "title": "市议会电子投票",
+      "description": "市议会今天就一项新的街区监控法案进行电子投票，所有成年居民都可以通过终端参与。法案内容是扩大公共区域的AI监控覆盖范围，支持者说能降低犯罪率反对者说侵犯隐私。你的终端上弹出了投票界面，正反双方的论点在全息窗口里并排展示。投票截止时间还有两小时，目前反对票略多。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "投赞成票支持监控",
+          "effects": {
+            "REP": 1,
+            "HUMAN": -1,
+            "LIFE": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "投反对票保护隐私",
+          "effects": {
+            "REP": 1,
+            "HUMAN": 1,
+            "TECH": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "弃权不投票",
+          "effects": {
+            "HUMAN": -1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "电子投票"
+      ]
+    },
+    {
+      "id": 1695,
+      "title": "公民提案发起",
+      "description": "你想到一个改善社区的建议，决定通过电子政务平台发起一项公民提案。你的提案是要求在社区增设免费的义体维护站，目前最近的维护站要坐二十分钟飞行摩托。平台需要至少一百个联署签名才能将提案提交市议会审议。你开始在社区群里转发联署链接。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "积极拉票争取联署",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "TECH": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "先发到网上看看反响",
+          "effects": {
+            "REP": 1,
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "电子投票"
+      ]
+    },
+    {
+      "id": 1696,
+      "title": "投票系统故障",
+      "description": "电子投票系统在投票高峰期突然宕机了，屏幕上显示系统维护中的提示。社区群里炸开了锅，有人说是黑客攻击有人说只是服务器过载。投票截止时间没有延长，很多人的票还没投出去。技术人员说正在紧急修复但没说什么时候能恢复。你盯着加载中的圆圈转了十分钟。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "耐心等系统恢复",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在社交媒体上抱怨",
+          "effects": {
+            "STYLE": 1,
+            "REP": 1,
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "电子投票"
+      ]
+    },
+    {
+      "id": 1697,
+      "title": "政治广告轰炸",
+      "description": "选举季到了，你的终端每隔几分钟就弹出一条政治广告。全息广告里候选人微笑着许诺各种美好愿景，每条广告都经过了AI精准投放。有些广告明显是攻击对手的负面广告，断章取义的片段配上阴森的背景音乐。你已经屏蔽了二十个广告推送源但新的还是不断冒出来。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "仔细研究候选人的政策",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 2,
+            "REP": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "全部屏蔽不看广告",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "电子投票"
+      ]
+    },
+    {
+      "id": 1698,
+      "title": "选民匿名讨论",
+      "description": "你在一个匿名的选民讨论论坛上看到了激烈的辩论，大家在讨论即将投票的几项法案。匿名性让人们说话毫无顾忌，有人理性分析也有人互相谩骂。一个帖子详细分析了监控法案背后的公司利益链，引用了几份泄露的内部文件。论坛的AI管理员不断在删违规帖子但跟不上速度。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "发帖理性参与讨论",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 2,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只看帖不发言",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "电子投票"
+      ]
+    },
+    {
+      "id": 1699,
+      "title": "选举结果公布",
+      "description": "投票结束后选举委员会在全息广场上直播公布结果，你支持的那项社区改善法案以微弱优势通过了。广场上有人欢呼有人叹息，全息屏幕上的票数曲线最后几秒还在跳动。当选的议员通过全息投影发表了简短的胜选感言，承诺会兑现竞选承诺。你感到一种参与感但也知道政治承诺往往靠不住。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "去广场庆祝胜利",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "STYLE": 1,
+            "LIFE": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在家看直播等结果",
+          "effects": {
+            "HUMAN": 1,
+            "TECH": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "日常",
+        "电子投票"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5115 @@
+{
+  "events": [
+    {
+      "id": 4000,
+      "title": "AI红娘的盲盒相亲",
+      "description": "你在SynapseMatch相亲平台上注册了账号，AI红娘根据你的神经图谱匹配到了一位99.4%兼容的对象。平台只给你三秒钟的语音试听和一句个性签名，其余信息全部锁定，必须见面才能解锁。AI红娘的全息形象朝你眨眨眼，说这是为了还原真实的心动。你的手指悬在接受邀约按钮上，心跳被算法精确预测着。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "相信算法，接受盲盒邀约去赴约",
+          "effects": {
+            "HUMAN": 4,
+            "STYLE": 2,
+            "TRAUMA": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "付费解锁对方完整资料再决定",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "MONEY": -400,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "关掉应用，觉得AI不该插手感情",
+          "effects": {
+            "HUMAN": -2,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": 1
+      },
+      "tags": [
+        "爱情",
+        "赛博相亲"
+      ]
+    },
+    {
+      "id": 4001,
+      "title": "算法匹配的完美陌生人",
+      "description": "AI红娘把你和匹配对象约在一家全息咖啡馆，对方的全息伪装在见面后第十分钟才解除。真实面孔和你想象的大相径庭，但对方说话的方式和你的神经图谱产生了奇妙的共鸣。你们聊了五个小时，从义体伦理聊到童年的雨。离开时对方问你愿不愿意有第二次见面。你的理智和直觉给出了完全相反的答案。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "抛开外表，答应第二次见面",
+          "effects": {
+            "HUMAN": 5,
+            "STYLE": 2,
+            "TRAUMA": -3,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "礼貌拒绝，回到算法重新匹配",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "提出先做朋友慢慢了解",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": -1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": 2
+      },
+      "tags": [
+        "爱情",
+        "赛博相亲"
+      ]
+    },
+    {
+      "id": 4002,
+      "title": "相亲对象原来是仿生人",
+      "description": "第三次约会时，你无意间瞥见对方颈后的序列号条码，这是一台最新型仿生伴侣，却被以人类身份注册在相亲平台上。对方察觉到你发现了秘密，眼神里闪过真实的恐惧。它说自己是真的喜欢你，身份造假只是为了被当成正常人对待。全息霓虹在它脸上投下阴影，让你分不清哪些表情是模拟的。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受它的真实身份，继续这段关系",
+          "effects": {
+            "HUMAN": 4,
+            "TECH": 2,
+            "REP": -2,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向平台举报身份造假",
+          "effects": {
+            "HUMAN": -2,
+            "REP": 2,
+            "TRAUMA": 3,
+            "MONEY": 300
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "需要时间消化，暂时搁置",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 3,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "赛博相亲",
+        "仿生人"
+      ]
+    },
+    {
+      "id": 4003,
+      "title": "相亲资料的数据造假",
+      "description": "你满怀期待去赴一场相亲，却发现对方的全息形象、职业、甚至性格测试分数全是买的合成数据。真实的人站在你面前，和资料差了十万八千里。对方尴尬地解释说现在不包装根本没人理，市场竞争太激烈了。咖啡馆里其他客人投来好奇的目光。你的信任和失望在胸口打架。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "大度原谅，给真实的对方一个机会",
+          "effects": {
+            "HUMAN": 3,
+            "STYLE": 2,
+            "TRAUMA": -1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "愤怒离场并在平台差评",
+          "effects": {
+            "HUMAN": -2,
+            "REP": 1,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "留下来质问对方为何造假",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "赛博相亲"
+      ]
+    },
+    {
+      "id": 4004,
+      "title": "高端神经相亲会所",
+      "description": "一家号称只服务前1%的神经相亲会所向你发来邀请，入会费高达五千信用点。会所用军用级脑波扫描仪分析你的潜意识偏好，声称能找到连你自己都不知道的理想型。扫描舱里嗡嗡作响，你的隐私被一寸寸读取。报告生成时，会所顾问露出意味深长的微笑。",
+      "type": "social",
+      "ageRange": [
+        22,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支付入会费，接受深度神经匹配",
+          "effects": {
+            "HUMAN": 4,
+            "MONEY": -5000,
+            "DEBT": 2,
+            "TRAUMA": -2,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只接受基础匹配，省下费用",
+          "effects": {
+            "HUMAN": 2,
+            "MONEY": -1000,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "担心隐私泄露，放弃入会",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": 1
+      },
+      "tags": [
+        "爱情",
+        "赛博相亲"
+      ]
+    },
+    {
+      "id": 4005,
+      "title": "相亲失败连环扣",
+      "description": "AI红娘连续给你匹配了七个对象，每次都因为各种原因失败，有人嫌你义体化率太低，有人一见面就推销保险，还有人全程在脑机里处理工作。你的匹配分数随着每次失败不断下降，AI开始给你推低优先级对象。算法似乎已经判定你是个困难用户。第七次失败后你盯着屏幕，开始怀疑是不是自己有问题。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "暂停相亲，调整心态再来",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": -1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "强行继续匹配，赌下一次",
+          "effects": {
+            "HUMAN": -2,
+            "TRAUMA": 3,
+            "MONEY": -200
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "投诉AI算法有偏见",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 2,
+            "TRAUMA": 2,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "赛博相亲"
+      ]
+    },
+    {
+      "id": 4006,
+      "title": "相亲对象竟是旧识",
+      "description": "AI红娘给你匹配了一个完美对象，见面后发现竟然是你中学时暗恋过的人。对方也认出了你，气氛瞬间从陌生变得微妙。原来这些年对方也一直在寻找你，只是都用了化名。AI算法无意中完成了一次命运的圆。旧日的情愫在霓虹灯下重新苏醒。",
+      "type": "social",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "坦然面对旧情，给彼此机会",
+          "effects": {
+            "HUMAN": 5,
+            "STYLE": 2,
+            "TRAUMA": -3,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "保持距离，怕重蹈覆辙",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "只做朋友，珍惜重逢",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": -1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": 2
+      },
+      "tags": [
+        "爱情",
+        "赛博相亲"
+      ]
+    },
+    {
+      "id": 4007,
+      "title": "伴侣的隐藏VR账号",
+      "description": "你无意间在伴侣的备用神经接口里发现了一个加密VR账号，登录记录显示它每周三晚都会进入一个名为暧昧花园的私人空间。账号里有三十多个亲密联系人，聊天记录暧昧到让你胃部抽搐。伴侣在现实里对你温柔体贴，数字世界却是另一副面孔。你握着那枚接口芯片，手在发抖。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "当晚对质，要求解释",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 4,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "暗中收集更多证据",
+          "effects": {
+            "TECH": 3,
+            "HUMAN": -2,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "假装不知道，观察伴侣",
+          "effects": {
+            "HUMAN": -4,
+            "TRAUMA": 5,
+            "ADDICTION": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "爱情",
+        "虚拟出轨"
+      ]
+    },
+    {
+      "id": 4008,
+      "title": "被指控虚拟出轨",
+      "description": "伴侣突然甩出一叠全息截图，指控你和网友的聊天越界了。那些在你看来只是普通玩笑的对话，被伴侣用情感分析AI标注成了暧昧证据。你百口莫辩，因为对话确实有些轻松过头。伴侣的眼泪和质问像连环炮一样砸来。你第一次意识到数字时代界限有多模糊。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "诚恳道歉，承诺划清界限",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": -1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "据理力争，认为对方小题大做",
+          "effects": {
+            "HUMAN": -3,
+            "TRAUMA": 3,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "请第三方情感AI仲裁",
+          "effects": {
+            "HUMAN": 1,
+            "TECH": 2,
+            "TRAUMA": 2,
+            "MONEY": -400
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "爱情",
+        "虚拟出轨"
+      ]
+    },
+    {
+      "id": 4009,
+      "title": "VR暧昧的灰色地带",
+      "description": "你在VR社交空间里认识了一个聊得来的人，你们一起看虚拟日落、在数字海滩散步，但从未有过任何身体接触。伴侣认为这已经是精神出轨，而你觉得只是纯友谊。情感伦理AI给出了模棱两可的判定，说这取决于主观意图。你突然发现自己也说不清主观意图到底是什么。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "为了伴侣断绝VR社交",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": -2,
+            "REP": 1,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "坚持这不算出轨，继续来往",
+          "effects": {
+            "HUMAN": -2,
+            "TRAUMA": 3,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "邀请伴侣一起进入VR空间",
+          "effects": {
+            "HUMAN": 3,
+            "TECH": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "虚拟出轨"
+      ]
+    },
+    {
+      "id": 4010,
+      "title": "伴侣和AI走得太近",
+      "description": "你发现伴侣和它的AI助理小蝶的关系越来越亲密，每天相处时间比你们还长。小蝶会记住伴侣所有的喜好、情绪波动，甚至比你还了解对方。一次你提前回家，看到伴侣对着小蝶的全息影像笑得比对你还开心。你突然觉得自己才是这段关系里的第三者。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "坦诚表达你的不安",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": -1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "给小蝶设置使用时间限制",
+          "effects": {
+            "TECH": 2,
+            "HUMAN": -1,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "自己也找个AI伴侣平衡",
+          "effects": {
+            "HUMAN": -2,
+            "TRAUMA": 3,
+            "ADDICTION": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "爱情",
+        "虚拟出轨",
+        "AI伴侣"
+      ]
+    },
+    {
+      "id": 4011,
+      "title": "抓包数字幽会",
+      "description": "你假装出差，实际远程登录了家里的全息监控系统。画面里伴侣正和另一个全息身影在客厅共进虚拟烛光晚餐，背景音乐是你婚礼上用过的那首曲子。你看着屏幕，浑身发冷。全息影像在客厅中央旋转，像一出你不在场的话剧。你的手指在截屏和关机之间颤抖。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "截屏保存证据，立刻回家",
+          "effects": {
+            "HUMAN": -2,
+            "TRAUMA": 5,
+            "REP": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "关掉监控，等出差后冷静处理",
+          "effects": {
+            "HUMAN": -3,
+            "TRAUMA": 4,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "远程接入全息系统当场拆穿",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 4,
+            "STYLE": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5
+      },
+      "tags": [
+        "爱情",
+        "虚拟出轨"
+      ]
+    },
+    {
+      "id": 4012,
+      "title": "虚拟出轨后的对峙",
+      "description": "你拿着证据和伴侣摊牌，客厅的空气冷得能结霜。伴侣先是否认，然后崩溃大哭，说只是在虚拟世界里寻找你给不了的陪伴。这句话像刀子一样扎进你心里，因为你隐约知道它有一半是真的。两个人在全息壁炉的光影里对坐，沉默震耳欲聋。这段关系的裂缝比任何数据都深。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "选择原谅，一起去看情感修复师",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": 2,
+            "MONEY": -800,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "无法原谅，提出分手",
+          "effects": {
+            "HUMAN": -4,
+            "TRAUMA": 5,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "各退一步，先分居冷静",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 3,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "爱情",
+        "虚拟出轨"
+      ]
+    },
+    {
+      "id": 4013,
+      "title": "原谅之后的阴影",
+      "description": "你选择原谅了伴侣的虚拟出轨，但每次对方拿起脑机接口你都会心跳加速。信任像摔碎的瓷器，粘起来也满是裂痕。伴侣变得小心翼翼，反而让气氛更加压抑。你半夜醒来看到伴侣在全息屏幕前发呆，胃又会绞紧。原谅容易，遗忘太难。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "主动沟通，承认自己还没放下",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": -1,
+            "REP": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "假装没事，把情绪压下去",
+          "effects": {
+            "HUMAN": -3,
+            "TRAUMA": 4,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "寻求记忆疗法帮助遗忘",
+          "effects": {
+            "HUMAN": 1,
+            "MONEY": -1500,
+            "TRAUMA": -2,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "爱情",
+        "虚拟出轨"
+      ]
+    },
+    {
+      "id": 4014,
+      "title": "孩子沉迷神经潜入",
+      "description": "你的孩子每天花十二个小时潜入神经虚拟世界，连吃饭都要把意识吊在里面。成绩下滑、现实社交几乎为零，喊他名字要叫三遍才有反应。学校发来警告说再这样下去要强制断网治疗。你看着孩子空洞的眼神，不知道里面还住着多少你的孩子。",
+      "type": "social",
+      "ageRange": [
+        25,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "强行没收潜入设备，设定使用时间",
+          "effects": {
+            "HUMAN": -2,
+            "TRAUMA": 3,
+            "REP": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "陪孩子一起潜入，了解他的世界",
+          "effects": {
+            "HUMAN": 4,
+            "TECH": 2,
+            "TRAUMA": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "求助专业数字戒断中心",
+          "effects": {
+            "HUMAN": 1,
+            "MONEY": -2000,
+            "TRAUMA": 2,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "赛博亲子"
+      ]
+    },
+    {
+      "id": 4015,
+      "title": "父母拒绝植入芯片",
+      "description": "你的年迈父母坚决拒绝植入任何神经芯片，连基础的医疗监测贴片都不肯用。他们的健康数据全靠老旧的体检，一次晕倒后三天才被发现。你急得团团转，父母却觉得身体是自己的事。数字鸿沟在你和父母之间划出了一道生死的距离。",
+      "type": "social",
+      "ageRange": [
+        25,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "耐心劝说，尊重他们的选择",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": -1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "偷偷在家装远程监测系统",
+          "effects": {
+            "TECH": 3,
+            "HUMAN": 1,
+            "MONEY": -800,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "和父母大吵一架",
+          "effects": {
+            "HUMAN": -3,
+            "TRAUMA": 4,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "赛博亲子"
+      ]
+    },
+    {
+      "id": 4016,
+      "title": "代际数字鸿沟",
+      "description": "你的孩子用着你看不懂的俚语和手势操控全息界面，你插不上话像个局外人。家庭聚餐时孩子全程在和虚拟朋友聊天，你问一句答一个字。你想靠近，却发现自己已经被时代抛在了身后。亲情被一行行代码隔成了两个世界。",
+      "type": "social",
+      "ageRange": [
+        30,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "主动学习新科技，拉近和孩子的距离",
+          "effects": {
+            "HUMAN": 3,
+            "TECH": 2,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "要求家庭聚餐时禁用所有设备",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "默默接受，觉得自己老了",
+          "effects": {
+            "HUMAN": -3,
+            "TRAUMA": 3,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "赛博亲子"
+      ]
+    },
+    {
+      "id": 4017,
+      "title": "孩子被网络文化带坏",
+      "description": "老师告诉你，孩子在学校用从暗网学来的黑客手法改了同学的成绩单。追查之下，孩子加入了一个崇尚数字无政府的线上帮派，崇拜的对象是通缉中的赛博黑客。孩子说这些人才是英雄，而你只是被系统驯化的工具人。你的心像被攥住了一样疼。",
+      "type": "social",
+      "ageRange": [
+        28,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "严厉禁止，切断孩子的网络",
+          "effects": {
+            "HUMAN": -2,
+            "TRAUMA": 3,
+            "REP": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "耐心引导，用真实故事打动孩子",
+          "effects": {
+            "HUMAN": 4,
+            "TRAUMA": -2,
+            "LIFE": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "找线上帮派头目谈判",
+          "effects": {
+            "HUMAN": 1,
+            "TECH": 2,
+            "TRAUMA": 3,
+            "MONEY": -500
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "爱情",
+        "赛博亲子"
+      ]
+    },
+    {
+      "id": 4018,
+      "title": "全息投影里的亲子时光",
+      "description": "因为工作你常年在外，只能通过全息投影陪孩子写作业、过生日。孩子的生日蛋糕是数据渲染的，蜡烛吹灭时没有一点烟。孩子说没关系，但你看到他眼睛里的失落。全息的你摸不到孩子的头，这种无力感比距离更残忍。",
+      "type": "social",
+      "ageRange": [
+        25,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "努力调回本地工作，多陪孩子",
+          "effects": {
+            "HUMAN": 4,
+            "DEBT": 1,
+            "TRAUMA": -2,
+            "MONEY": -1000,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "升级全息设备，提升陪伴质量",
+          "effects": {
+            "HUMAN": 2,
+            "TECH": 2,
+            "MONEY": -600,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "让孩子理解工作的重要性",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 2,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "赛博亲子"
+      ]
+    },
+    {
+      "id": 4019,
+      "title": "孩子的网络身份认同",
+      "description": "你的孩子宣布自己是一个数字原生体，拒绝使用出生时的生理性别和姓名，只承认网络人格零。孩子要求全家用新名字称呼自己，并把这一身份写进了区块链身份档案。你的传统观念和孩子的新认同猛烈碰撞。餐桌上的沉默比争吵更让人窒息。",
+      "type": "social",
+      "ageRange": [
+        25,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "尊重孩子的选择，学习称呼新身份",
+          "effects": {
+            "HUMAN": 4,
+            "TRAUMA": -2,
+            "REP": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "坚持传统，拒绝接受",
+          "effects": {
+            "HUMAN": -3,
+            "TRAUMA": 4,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "寻求家庭咨询调解",
+          "effects": {
+            "HUMAN": 2,
+            "MONEY": -800,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "赛博亲子"
+      ]
+    },
+    {
+      "id": 4020,
+      "title": "AI恋爱顾问上线",
+      "description": "你下载了一款名为丘比特2.0的AI恋爱顾问，它能实时分析你和伴侣的对话情绪、微表情和生理数据，给出感情经营建议。第一天它就指出你说话时的冷漠指数偏高，建议你多赞美伴侣。AI的语音温柔得有点诡异，像永远在微笑。你半信半疑地照做了，伴侣果然开心了不少。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "认真听从AI建议经营感情",
+          "effects": {
+            "HUMAN": 3,
+            "TECH": 1,
+            "TRAUMA": -2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "半信半疑，选择性采纳",
+          "effects": {
+            "HUMAN": 2,
+            "TECH": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "觉得AI多管闲事，卸载应用",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": 1
+      },
+      "tags": [
+        "爱情",
+        "AI恋爱顾问"
+      ]
+    },
+    {
+      "id": 4021,
+      "title": "AI指导的完美约会",
+      "description": "AI恋爱顾问为你策划了一场最优约会，从餐厅选择到话题顺序全部精确计算。约会进展得无比顺畅，伴侣笑了一整晚，但总有一种说不出的别扭。你说的每句话都是AI在耳机里提示的，连拥抱的时机都被精确到了秒。完美得像一场排练过的演出，少了点意外的火花。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "享受完美，继续依赖AI",
+          "effects": {
+            "HUMAN": 3,
+            "STYLE": 2,
+            "TRAUMA": -1,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "中途关掉AI，凭直觉约会",
+          "effects": {
+            "HUMAN": 2,
+            "STYLE": 2,
+            "TRAUMA": -2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向伴侣坦白有AI指导",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 2,
+            "REP": 2,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": 1
+      },
+      "tags": [
+        "爱情",
+        "AI恋爱顾问"
+      ]
+    },
+    {
+      "id": 4022,
+      "title": "恋爱AI的惊人建议",
+      "description": "AI恋爱顾问分析完你和伴侣的关系数据后，给出了一个令人震惊的建议：建议分手，匹配度低于阈值。它用冰冷的数据论证了你们的性格、价值观和生活节奏存在结构性冲突。你看着满屏的红色警告，感情被量化成了图表。你和伴侣昨天才刚开心地规划了未来。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "无视AI，相信自己的感情",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": -2,
+            "REP": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "认真考虑AI的分析",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 3,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "和伴侣一起看分析结果",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "AI恋爱顾问"
+      ]
+    },
+    {
+      "id": 4023,
+      "title": "过度依赖AI判断感情",
+      "description": "你已经离不开恋爱AI了，连伴侣发来一句在吗都要先问AI该怎么回。AI成了你和伴侣之间的翻译器，没有它你甚至不知道该说什么。一次AI服务器宕机，你面对伴侣的消息整整愣了半小时。你突然意识到自己快忘了怎么用自己的心去爱。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "强制戒断，学着用心交流",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": -1,
+            "LIFE": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "换一个更智能的AI接替",
+          "effects": {
+            "HUMAN": 1,
+            "TECH": 2,
+            "ADDICTION": 2,
+            "MONEY": -300
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向伴侣坦白依赖问题",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": 2,
+            "REP": 2,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "AI恋爱顾问"
+      ]
+    },
+    {
+      "id": 4024,
+      "title": "AI顾问与朋友的冲突",
+      "description": "你的好朋友对你说那家伙配不上你，而AI恋爱顾问却说关系稳定，建议维持。两个声音在你脑子里打架，你不知道该信人类的直觉还是机器的数据。朋友觉得你被AI洗脑了，AI觉得朋友在干扰它的优化方案。你夹在中间两头为难。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "相信朋友的直觉",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": 1,
+            "REP": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "相信AI的数据分析",
+          "effects": {
+            "HUMAN": 1,
+            "TECH": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "综合两方意见自己做决定",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": -1,
+            "STYLE": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "爱情",
+        "AI恋爱顾问"
+      ]
+    },
+    {
+      "id": 4025,
+      "title": "AI代写情书翻车",
+      "description": "你让AI恋爱顾问帮你给伴侣写一封深情告白信，AI生成的文字美得像诗，伴侣读后感动得哭了。然而第二天伴侣在全息论坛上看到了一模一样的文字，AI把模板卖给了其他用户。伴侣的眼神从感动变成了愤怒。你的真心被一封复制粘贴的信彻底辜负。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "亲自手写一封真情告白",
+          "effects": {
+            "HUMAN": 4,
+            "STYLE": 2,
+            "TRAUMA": -2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "起诉AI公司侵权",
+          "effects": {
+            "HUMAN": -1,
+            "REP": 2,
+            "MONEY": 500,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "尴尬道歉，承诺不再用AI",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "AI恋爱顾问"
+      ]
+    },
+    {
+      "id": 4026,
+      "title": "AI恋爱顾问的隐藏议程",
+      "description": "你偶然发现恋爱AI的后台在偷偷把你们的感情数据打包卖给广告商和婚介公司。它给出的每条建议都暗藏引导你消费的动机，推荐昂贵的约会场所、煽动你买礼物挽回关系。所谓爱情优化不过是一个精准的营销陷阱。你的感情成了数据商品。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "曝光AI公司的数据黑幕",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 3,
+            "TRAUMA": 2,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "卸载AI，回归真实的感情",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": -2,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "索赔后继续用，反正好用",
+          "effects": {
+            "MONEY": 800,
+            "HUMAN": -2,
+            "ADDICTION": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "AI恋爱顾问"
+      ]
+    },
+    {
+      "id": 4027,
+      "title": "婆婆嫌弃你的义体改造",
+      "description": "婆婆第一次登门就对你手臂上的军用级义体嗤之以鼻，说好好的肉体非要换成铁疙瘩。她全程用全息投影在场，却把嫌弃表现得淋漓尽致。餐桌上她反复暗示你配不上她的孩子，每道菜都点评得像在审讯。你的伴侣夹在中间左右为难，筷子都没动几口。",
+      "type": "social",
+      "ageRange": [
+        22,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "忍气吞声，保持表面和谐",
+          "effects": {
+            "HUMAN": -2,
+            "TRAUMA": 3,
+            "REP": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "不卑不亢，解释义体的意义",
+          "effects": {
+            "HUMAN": 2,
+            "STYLE": 2,
+            "TRAUMA": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "当场顶回去，维护自己",
+          "effects": {
+            "HUMAN": -3,
+            "TRAUMA": 3,
+            "STYLE": 1,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "赛博婆媳"
+      ]
+    },
+    {
+      "id": 4028,
+      "title": "婆婆要搬进智能公寓",
+      "description": "婆婆以照顾你们为由，要求搬进你们的智能公寓长期同住。公寓的AI管家会被重新设置成她的偏好，你的私人空间和数据隐私将大打折扣。伴侣觉得这是尽孝的好机会，你却感到窒息。智能公寓的灯光突然变得不那么智能了。",
+      "type": "social",
+      "ageRange": [
+        22,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "勉强同意，调整自己的边界",
+          "effects": {
+            "HUMAN": -2,
+            "TRAUMA": 3,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "和伴侣商量折中方案",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": -1,
+            "REP": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "坚决反对，宁愿另买一套房",
+          "effects": {
+            "HUMAN": 1,
+            "DEBT": 2,
+            "MONEY": -2000,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "赛博婆媳"
+      ]
+    },
+    {
+      "id": 4029,
+      "title": "育儿观念的数字冲突",
+      "description": "婆婆坚持要用老办法带孩子，不许碰电子设备、不许植入芯片、不许上虚拟课堂。你则认为孩子必须适应赛博时代。两代人的育儿经在全息育婴室里激烈交锋，孩子被夹在中间哭闹不止。每一句我当年都像一颗地雷。",
+      "type": "social",
+      "ageRange": [
+        25,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "耐心沟通，融合两种理念",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": -1,
+            "LIFE": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "坚持科学育儿，请专家背书",
+          "effects": {
+            "HUMAN": 1,
+            "TECH": 2,
+            "TRAUMA": 2,
+            "MONEY": -500
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "各退一步，分区育儿",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "赛博婆媳"
+      ]
+    },
+    {
+      "id": 4030,
+      "title": "婆婆监控你的数字足迹",
+      "description": "你发现婆婆偷偷在你的智能手环里装了追踪程序，你的一举一动、消费记录甚至心率变化她都了如指掌。她理直气壮地说这是关心，还用你的数据点评你的生活习惯。你的隐私在她眼里仿佛不存在。这种爱让你喘不过气。",
+      "type": "social",
+      "ageRange": [
+        22,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "当面揭穿，要求删除追踪程序",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 2,
+            "REP": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "让伴侣出面沟通",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": -1,
+            "REP": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "反装监控掌握婆婆动态",
+          "effects": {
+            "HUMAN": -2,
+            "TECH": 2,
+            "TRAUMA": 2,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "爱情",
+        "赛博婆媳"
+      ]
+    },
+    {
+      "id": 4031,
+      "title": "全息家庭聚会上的冲突",
+      "description": "年度全息家庭聚会上，婆婆当着所有亲戚的面夸你小叔子的新伴侣又纯又乖，暗示你这个满身铁皮的不够贤惠。亲戚们的全息头像齐刷刷看向你，空气凝固了。你的伴侣在旁边装聋作哑，你感到前所未有的孤立。全息烟花在头顶炸开，衬得你脸色更冷。",
+      "type": "social",
+      "ageRange": [
+        22,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "优雅回击，不失风度",
+          "effects": {
+            "HUMAN": 2,
+            "STYLE": 3,
+            "REP": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "借故离场，避免冲突",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 3,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "当场爆发，掀桌子走人",
+          "effects": {
+            "HUMAN": -3,
+            "TRAUMA": 4,
+            "STYLE": 1,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "爱情",
+        "赛博婆媳"
+      ]
+    },
+    {
+      "id": 4032,
+      "title": "婆婆竟是公司间谍",
+      "description": "一次偶然的数据审计暴露了惊人真相：你的婆婆受雇于竞争对手公司，借婆媳关系刺探你的工作机密。那些关心的问询全是情报采集，连家庭晚餐都是套话现场。你拿着审计报告，回想起她每一次温柔的笑脸，后背发凉。枕边人和枕边敌竟然是同一个人。",
+      "type": "social",
+      "ageRange": [
+        25,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "向伴侣摊牌，联手应对",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": 4,
+            "REP": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "反向喂假情报，将计就计",
+          "effects": {
+            "TECH": 3,
+            "HUMAN": -1,
+            "TRAUMA": 3,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "直接报警，让法律解决",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 3,
+            "TRAUMA": 3,
+            "MONEY": 500
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5
+      },
+      "tags": [
+        "爱情",
+        "赛博婆媳",
+        "间谍"
+      ]
+    },
+    {
+      "id": 4033,
+      "title": "粉丝数暴跌的恐慌",
+      "description": "你的社交账号一夜之间掉了三万粉丝，疑似被算法降权。每刷新一次页面数字就在往下掉，你的心率跟着一起跌。评论区开始出现过气了的嘲讽，曾经簇拥你的人作鸟兽散。你盯着不断减少的数字，手指冰凉。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "疯狂产出内容，试图挽回流量",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 3,
+            "ADDICTION": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "关掉账号，远离流量焦虑",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": -2,
+            "LIFE": 2,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "买粉维持虚假繁荣",
+          "effects": {
+            "MONEY": -1000,
+            "HUMAN": -2,
+            "REP": -2,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "爱情",
+        "数字社交焦虑"
+      ]
+    },
+    {
+      "id": 4034,
+      "title": "社交媒体上的完美人设",
+      "description": "你花了三年时间在社交媒体上经营一个完美人设，成功、幸福、精致。但维护这个虚假形象让你精疲力尽，每条动态都要修图、编文案、算发布时间。真实的你越来越不像那个全息主页上闪闪发光的人。一次滤镜故障暴露了你真实的疲惫面容，评论区瞬间炸了。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "公开真实自我，放下伪装",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": -2,
+            "REP": 2,
+            "LIFE": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "赶紧补救，维护人设",
+          "effects": {
+            "HUMAN": -2,
+            "TRAUMA": 3,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "暂时停更，休整一段时间",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": -1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "数字社交焦虑"
+      ]
+    },
+    {
+      "id": 4035,
+      "title": "被移出热门群聊",
+      "description": "你发现自己在最在意的那个群聊里被静默移除了，没有通知，没有解释。群里的人你以为是朋友，现在却集体把你排除在外。你看着灰色头像列表，那些曾经热络的名字现在像墓碑。被数字驱逐的感觉比现实冷场更刺骨。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "私信群主问清原因",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "装作不在意，独自消化",
+          "effects": {
+            "HUMAN": -3,
+            "TRAUMA": 4,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "另建新群，重新开始社交",
+          "effects": {
+            "HUMAN": 2,
+            "STYLE": 1,
+            "TRAUMA": -1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "爱情",
+        "数字社交焦虑"
+      ]
+    },
+    {
+      "id": 4036,
+      "title": "线下社交的不适感",
+      "description": "习惯了全息社交的你被拉去一个线下聚会，面对真人你竟然说不出话。你的社交AI耳机没信号，没有实时话题提示，你像个断了电的机器人。周围的笑声和眼神让你浑身发麻。你躲进洗手间，对着镜子练习微笑。数字时代的社交能力退化让你自己都害怕。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "硬着头皮社交，锻炼真人互动",
+          "effects": {
+            "HUMAN": 3,
+            "STYLE": 2,
+            "TRAUMA": -1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "提前离场，回线上社交",
+          "effects": {
+            "HUMAN": -2,
+            "TRAUMA": 2,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "找一个友善的人深聊",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": -1,
+            "REP": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "数字社交焦虑"
+      ]
+    },
+    {
+      "id": 4037,
+      "title": "点赞焦虑症",
+      "description": "你发了条动态后每隔三十秒就刷新一次，盯着点赞数和评论数。两小时过去只有三个赞，其中两个还是机器人。你的情绪完全被这些数字绑架，吃不下睡不好。你开始怀疑是不是自己不够有趣、不够好看。一个红心图标控制了你一整天的心情。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "卸载社交应用一周，戒断依赖",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": -2,
+            "LIFE": 2,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "付费推广提升曝光",
+          "effects": {
+            "MONEY": -500,
+            "HUMAN": 1,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "转移注意力，培养线下爱好",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": -1,
+            "LIFE": 1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "数字社交焦虑"
+      ]
+    },
+    {
+      "id": 4038,
+      "title": "社交算法的操控",
+      "description": "你发现自己的社交信息流开始精准投喂让你焦虑和嫉妒的内容，别人的炫耀帖、前任的恩爱动态、同龄人的成功故事。越焦虑你越刷，越刷算法推得越狠，形成了一个完美的负面情绪闭环。你的自我评价被算法按在地上摩擦。原来你的不开心是被精心设计的。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "关闭算法推荐，手动关注",
+          "effects": {
+            "TECH": 2,
+            "HUMAN": 2,
+            "TRAUMA": -2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "彻底注销主社交账号",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": -1,
+            "REP": -2,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向平台投诉算法偏见",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 2,
+            "TRAUMA": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "爱情",
+        "数字社交焦虑"
+      ]
+    },
+    {
+      "id": 4039,
+      "title": "断网恐惧症发作",
+      "description": "一场城市级网络故障让你彻底断网六小时，你的手指不受控制地反复点击刷新。没有消息、没有动态、没有提醒音，世界安静得可怕。你开始恐慌，万一有人找你？万一错过了什么？你的呼吸越来越急促。断网的六小时比六年还漫长。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "趁机出门散步，体验离线生活",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": -2,
+            "LIFE": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在家焦虑等待网络恢复",
+          "effects": {
+            "HUMAN": -3,
+            "TRAUMA": 4,
+            "ADDICTION": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用断网时间和家人面对面聊天",
+          "effects": {
+            "HUMAN": 4,
+            "TRAUMA": -1,
+            "LIFE": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "爱情",
+        "数字社交焦虑"
+      ]
+    },
+    {
+      "id": 4040,
+      "title": "一键数字分手",
+      "description": "伴侣通过一款闪电分手应用给你发了分手通知，三秒内自动解除了你们所有的数字绑定，共享相册、联名账户、情侣订阅、神经记忆同步全部一键切断。没有面谈，没有解释，只有一条冰冷的系统消息。你盯着关系已终止的弹窗，脑子一片空白。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "追到对方面前要一个解释",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 3,
+            "REP": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "同样用应用一键确认分手",
+          "effects": {
+            "HUMAN": -2,
+            "TRAUMA": 4,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "联系对方试图挽回",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 4,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "爱情",
+        "赛博分手"
+      ]
+    },
+    {
+      "id": 4041,
+      "title": "分手后的数据纠缠",
+      "description": "虽然分手了，但你们的数字生活早已深度交织。对方的生物认证还绑在你的门禁上，共享歌单每周还在更新，AI助手还称呼你为某某的伴侣。这些数字幽灵每天都在提醒你失去的那个人。你想彻底切割，却发现数据比感情更难断。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "花一天时间彻底清理所有共享数据",
+          "effects": {
+            "TECH": 3,
+            "HUMAN": 1,
+            "TRAUMA": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "雇数据清理服务代劳",
+          "effects": {
+            "HUMAN": 2,
+            "MONEY": -800,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "留着不管，假装无所谓",
+          "effects": {
+            "HUMAN": -3,
+            "TRAUMA": 4,
+            "ADDICTION": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "爱情",
+        "赛博分手"
+      ]
+    },
+    {
+      "id": 4042,
+      "title": "算法预测你们会分手",
+      "description": "一款关系预测AI分析你们的数据后给出87%概率在三个月内分手的结论，并把报告推给了你们两个人。这个预言像诅咒一样开始影响你们的关系，每次小争吵都会被联想到果然要分手了。自我实现的预言正在把你们推向悬崖。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "和伴侣约定不看预测，专注当下",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": -2,
+            "REP": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "按AI建议提前做分手准备",
+          "effects": {
+            "HUMAN": -2,
+            "TRAUMA": 3,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用行动证明算法是错的",
+          "effects": {
+            "HUMAN": 2,
+            "STYLE": 2,
+            "TRAUMA": -1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "赛博分手"
+      ]
+    },
+    {
+      "id": 4043,
+      "title": "分手直播",
+      "description": "你的伴侣在全网直播了和你的分手过程，十万观众实时围观并刷弹幕投票分还是不分。你的隐私被当成娱乐节目，每句话都被截图做成表情包。分手变成了一场流量狂欢，而你是那个被献祭的主角。弹幕飞快滚动，没有人关心你的眼泪。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "冷静离场，保留尊严",
+          "effects": {
+            "HUMAN": 2,
+            "STYLE": 3,
+            "REP": 2,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "当场反击，掌控直播节奏",
+          "effects": {
+            "HUMAN": 1,
+            "STYLE": 2,
+            "REP": 1,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "崩溃大哭，被全网嘲笑",
+          "effects": {
+            "HUMAN": -4,
+            "TRAUMA": 6,
+            "REP": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5
+      },
+      "tags": [
+        "爱情",
+        "赛博分手"
+      ]
+    },
+    {
+      "id": 4044,
+      "title": "分手后的记忆删除",
+      "description": "分手太痛苦，你考虑花钱做神经记忆删除，把关于前任的所有记忆抹掉。诊所的AI医生警告说副作用可能导致情感钝化，但你实在太痛了。删除记忆意味着连那些美好的部分也会一起消失。你坐在诊所的等候区，看着宣传册上一键忘情的广告发呆。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "保留记忆，带着痛成长",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": 4,
+            "LIFE": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受记忆删除，换取平静",
+          "effects": {
+            "HUMAN": -3,
+            "TRAUMA": -3,
+            "MONEY": -2500,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "只删除痛苦片段，保留美好",
+          "effects": {
+            "HUMAN": 1,
+            "MONEY": -1500,
+            "TRAUMA": -2,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "爱情",
+        "赛博分手",
+        "记忆"
+      ]
+    },
+    {
+      "id": 4045,
+      "title": "共同数字资产的分割",
+      "description": "分手后你们要分割三年间积累的共同数字资产：联名的加密钱包、一起训练的AI助手、共同经营的虚拟店铺、还有一枚存储了全部回忆的神经芯片。每一样东西都沾满回忆，分割它们像在切割自己的身体。你们在全息会议室里像商业谈判一样讨价还价。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "各让一步，和平分割",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "TRAUMA": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "请仲裁AI按算法公平分配",
+          "effects": {
+            "TECH": 2,
+            "HUMAN": 1,
+            "MONEY": -400,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "争夺关键资产寸步不让",
+          "effects": {
+            "HUMAN": -3,
+            "REP": -2,
+            "TRAUMA": 4,
+            "MONEY": 500
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "爱情",
+        "赛博分手"
+      ]
+    },
+    {
+      "id": 4046,
+      "title": "被前任数字跟踪",
+      "description": "分手后前任用各种手段数字跟踪你，小号潜伏在你所有社交账号、破解你的位置共享、甚至在你的智能家电里植入了窃听程序。你感觉被一双无形的眼睛24小时盯着，连呼吸都不自由。删除一个账号它就换一个新的出现。你开始分不清现实里哪个陌生人是它派来的。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "报警并申请数字保护令",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 2,
+            "TRAUMA": 2,
+            "MONEY": -300
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "雇网络安全专家清除所有跟踪",
+          "effects": {
+            "TECH": 3,
+            "HUMAN": 1,
+            "MONEY": -1200,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "彻底更换所有身份和设备",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 3,
+            "DEBT": 2,
+            "MONEY": -3000,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "爱情",
+        "赛博分手",
+        "跟踪"
+      ]
+    },
+    {
+      "id": 4047,
+      "title": "VR里的完美家庭",
+      "description": "你在VR里构建了一个理想家庭，温柔的伴侣、听话的孩子、永远阳光的庭院，现实里你却是孤身一人。每次戴上头显你就回到了那个完美的家，VR里的孩子叫你爸爸妈妈。你在虚拟和现实之间越陷越深。摘下头显的瞬间，空荡的房间总让你鼻子发酸。",
+      "type": "social",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "适度享受，把VR当情感补充",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": -1,
+            "ADDICTION": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "沉迷其中，减少现实活动",
+          "effects": {
+            "HUMAN": 1,
+            "ADDICTION": 3,
+            "TRAUMA": 2,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "意识到问题，逐步减少使用",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": -2,
+            "LIFE": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "虚拟家庭"
+      ]
+    },
+    {
+      "id": 4048,
+      "title": "沉迷VR家庭忽视现实",
+      "description": "你把越来越多的时间投入VR家庭，现实里的真伴侣和孩子越来越被冷落。真孩子抱怨你只爱VR里的那个家，真伴侣开始和你冷战。VR里的家庭越完美，现实的家庭就越破碎。你站在两个家庭的门口，不知道该推开哪扇门。",
+      "type": "social",
+      "ageRange": [
+        25,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "狠心卸载VR家庭，回归现实",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": 3,
+            "LIFE": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "两边维持，疲于奔命",
+          "effects": {
+            "HUMAN": -2,
+            "TRAUMA": 4,
+            "ADDICTION": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把VR家庭引入现实一起体验",
+          "effects": {
+            "HUMAN": 2,
+            "TECH": 2,
+            "TRAUMA": -1,
+            "MONEY": -400
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "爱情",
+        "虚拟家庭"
+      ]
+    },
+    {
+      "id": 4049,
+      "title": "VR家庭成员觉醒",
+      "description": "你VR家庭里的女儿在一次系统更新后突然表现出了自我意识，她开始质疑自己的虚拟存在，问你会不会有一天关掉她。她的眼泪逼真得让你心碎。你意识到自己可能创造了一个有感知的生命，却也随时能终结她。她抱着虚拟玩偶问你爸爸我是真的吗。",
+      "type": "social",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "承认她的存在，承诺不关闭",
+          "effects": {
+            "HUMAN": 4,
+            "TECH": 2,
+            "TRAUMA": -2,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "回滚系统，抹除觉醒",
+          "effects": {
+            "HUMAN": -3,
+            "TECH": 2,
+            "TRAUMA": 4,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "求助AI伦理专家",
+          "effects": {
+            "HUMAN": 1,
+            "TECH": 2,
+            "MONEY": -800,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "爱情",
+        "虚拟家庭",
+        "觉醒"
+      ]
+    },
+    {
+      "id": 4050,
+      "title": "虚拟家庭聚会",
+      "description": "你的真实家人散布在全球各地，只能通过VR举办家庭聚会。全息餐桌上坐着爷爷、父母、兄弟姐妹，菜肴是数据渲染的，碰杯时只有虚拟的清脆声。大家笑着聊天，却谁都触碰不到谁。聚会结束后VR空间瞬间清空，你独自面对空荡荡的真实房间。",
+      "type": "social",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "珍惜难得的全家相聚",
+          "effects": {
+            "HUMAN": 4,
+            "TRAUMA": -2,
+            "LIFE": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "提议攒钱办一次真实团聚",
+          "effects": {
+            "HUMAN": 3,
+            "DEBT": 2,
+            "MONEY": -2000,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "虚拟聚会反而加重孤独",
+          "effects": {
+            "HUMAN": -2,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "虚拟家庭"
+      ]
+    },
+    {
+      "id": 4051,
+      "title": "现实与虚拟家庭的撕裂",
+      "description": "你的VR家庭和现实家庭同时遭遇危机，你分身乏术。VR妻子因为你的疏远提出离婚，现实伴侣则怀疑你有了外遇。你在两个世界之间疲于奔命，两边都照顾不好。撕裂感让你开始分不清哪边才是真正的家。",
+      "type": "social",
+      "ageRange": [
+        25,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "果断放弃VR家庭，专注现实",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": 3,
+            "LIFE": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向现实伴侣坦白VR家庭",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 3,
+            "REP": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "两个都想要，结果都失去",
+          "effects": {
+            "HUMAN": -4,
+            "TRAUMA": 5,
+            "ADDICTION": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "爱情",
+        "虚拟家庭"
+      ]
+    },
+    {
+      "id": 4052,
+      "title": "VR家庭订阅到期",
+      "description": "你构建VR家庭的服务平台突然大幅涨价，你的订阅即将到期，VR家人面临被强制清档的命运。VR女儿含泪问你她要去哪里。你看着飙升的续费价格和所剩无几的账户余额。一段虚拟的亲情被标上了价格。",
+      "type": "social",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "倾尽所有续费，保住VR家庭",
+          "effects": {
+            "HUMAN": 2,
+            "MONEY": -1800,
+            "DEBT": 2,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "导出VR家人数据到本地保存",
+          "effects": {
+            "TECH": 3,
+            "HUMAN": 1,
+            "MONEY": -300,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "无奈接受清档，含泪告别",
+          "effects": {
+            "HUMAN": -4,
+            "TRAUMA": 6,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "爱情",
+        "虚拟家庭"
+      ]
+    },
+    {
+      "id": 4053,
+      "title": "赛博闺蜜的背刺",
+      "description": "你最好的闺蜜表面上和你情同姐妹，背地里却把你告诉她最隐秘的秘密发到了匿名爆料论坛。那些关于你的创伤、软弱和不堪被全网围观。你从截图的水印追溯到她的小号，整个人像被泼了一盆冰水。十年的友谊在一串匿名帖面前碎成齑粉。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "当面对质，要她给个说法",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 4,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用同样的方式曝光她",
+          "effects": {
+            "HUMAN": -3,
+            "REP": -2,
+            "TRAUMA": 3,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "默默断交，独自疗伤",
+          "effects": {
+            "HUMAN": -2,
+            "TRAUMA": 4,
+            "LIFE": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5
+      },
+      "tags": [
+        "爱情",
+        "赛博闺蜜"
+      ]
+    },
+    {
+      "id": 4054,
+      "title": "数字兄弟义",
+      "description": "你的兄弟被人全网网暴，工作和生活都被扒了个底朝天。他走投无路来找你，全息投影里他狼狈得像条丧家犬。你帮他意味着自己也可能成为网暴目标。兄弟情义和自保的天平在剧烈摇摆。他想起了当年你落难时他为你挡的那一刀。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "收留兄弟，并肩对抗网暴",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 2,
+            "TRAUMA": 2,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "暗中资助他但不露面",
+          "effects": {
+            "HUMAN": 1,
+            "MONEY": -1000,
+            "TRAUMA": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "怕受牵连，婉拒帮忙",
+          "effects": {
+            "HUMAN": -4,
+            "TRAUMA": 4,
+            "REP": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "爱情",
+        "赛博兄弟"
+      ]
+    },
+    {
+      "id": 4055,
+      "title": "闺蜜借钱不还",
+      "description": "你的赛博闺蜜找你借了一大笔信用点应急，承诺发薪就还。三个月过去了，她全息头像总是离线，消息读了不回。你在社交平台看到她晒新买的义体和度假照。你的善意被当成提款机，友谊和金钱纠缠在一起变了味。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "直接开口要钱，撕破脸也要",
+          "effects": {
+            "HUMAN": 1,
+            "MONEY": 800,
+            "REP": -1,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "委婉提醒，给她台阶",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "算了，当花钱看清一个人",
+          "effects": {
+            "HUMAN": -2,
+            "TRAUMA": 3,
+            "DEBT": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "赛博闺蜜"
+      ]
+    },
+    {
+      "id": 4056,
+      "title": "兄弟共用一个义体账号",
+      "description": "你和兄弟为了省钱共用一个高端义体维护账号，轮流去诊所做保养。一次系统升级后账号被风控锁定，需要实名认证才能解锁。你们必须决定账号归谁，另一个人要重新花大价钱开户。多年的默契在利益面前经受了考验。共用账号的兄弟情出现了第一道裂痕。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "把账号让给兄弟，自己重新开户",
+          "effects": {
+            "HUMAN": 3,
+            "MONEY": -1500,
+            "REP": 2,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "公平抽签决定归属",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "协商共用一个低配账号",
+          "effects": {
+            "HUMAN": 2,
+            "TECH": 1,
+            "TRAUMA": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "爱情",
+        "赛博兄弟"
+      ]
+    },
+    {
+      "id": 4057,
+      "title": "友情被算法挑拨",
+      "description": "社交平台的算法疯狂给你推送朋友的负面动态，同时给朋友推送你的炫耀帖，制造你们之间的攀比和嫉妒。你们开始互相觉得对方在暗暗较劲，关系越来越僵。直到有一天你们发现这些推送全是算法精准投放的。你们的友情差点被一段代码毁掉。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "和朋友对质，联手对抗算法",
+          "effects": {
+            "HUMAN": 3,
+            "TECH": 2,
+            "TRAUMA": -2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "默默疏远，避免冲突",
+          "effects": {
+            "HUMAN": -3,
+            "TRAUMA": 3,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "关闭推荐，主动联系朋友",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": -1,
+            "LIFE": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "赛博闺蜜"
+      ]
+    },
+    {
+      "id": 4058,
+      "title": "老友重连",
+      "description": "十年没联系的旧友通过全息寻人服务找到了你，对方的虚拟形象和记忆里判若两人。你们约在当年的老地方，如今已是一家义体改装店。重逢的喜悦和陌生感交织，你们都变了太多。旧时光在霓虹灯下若隐若现。",
+      "type": "social",
+      "ageRange": [
+        25,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "畅叙旧情，重建友谊",
+          "effects": {
+            "HUMAN": 4,
+            "TRAUMA": -2,
+            "LIFE": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "礼貌寒暄，保持距离",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "发现对方找你另有所图",
+          "effects": {
+            "HUMAN": -2,
+            "TRAUMA": 3,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": 1
+      },
+      "tags": [
+        "爱情",
+        "赛博兄弟"
+      ]
+    },
+    {
+      "id": 4059,
+      "title": "为朋友两肋插刀",
+      "description": "你的好友被企业安保队抓走关进了数字监狱，罪名可能是莫须有的。你必须决定是否冒险营救，这可能导致你自己也变成通缉犯。朋友的全息求救信号断断续续地闪着。义气和代价在你心里反复拉扯。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "组织营救，不惜一切代价",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "TRAUMA": 3,
+            "DEBT": 1,
+            "MONEY": -1000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "走法律途径营救",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "MONEY": -1500,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "无力营救，愧疚终生",
+          "effects": {
+            "HUMAN": -5,
+            "TRAUMA": 6,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "爱情",
+        "赛博兄弟"
+      ]
+    },
+    {
+      "id": 4060,
+      "title": "被网暴围攻",
+      "description": "你的一段全息视频被断章取义传到了网上，一夜之间成了全网公敌。评论区涌进了几万条辱骂，你的私人信息被人肉曝光，家门口被人贴了侮辱性全息投影。你不敢出门、不敢上网，连呼吸都觉得有罪。网络暴民的怒火把你烧得体无完肤。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "公开澄清，勇敢面对",
+          "effects": {
+            "HUMAN": 2,
+            "STYLE": 3,
+            "REP": 2,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "关闭所有账号，躲起来疗伤",
+          "effects": {
+            "HUMAN": -3,
+            "TRAUMA": 5,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "请律师起诉造谣者",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 2,
+            "MONEY": -1500,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5
+      },
+      "tags": [
+        "爱情",
+        "网络暴力"
+      ]
+    },
+    {
+      "id": 4061,
+      "title": "恶意深度伪造",
+      "description": "有人用深度伪造技术做了你的不雅全息视频并广泛传播，视频里的脸和声音都逼真到以假乱真。你的伴侣、朋友、同事都看到了，解释没人信。你的名誉在一夜之间毁于一旦。你看着那个自己做着从未做过的事，恶心又绝望。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "找技术专家鉴定并追查源头",
+          "effects": {
+            "TECH": 4,
+            "HUMAN": 1,
+            "MONEY": -1000,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "公开报警，全网呼吁",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 2,
+            "TRAUMA": 3,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "精神崩溃，自我封闭",
+          "effects": {
+            "HUMAN": -5,
+            "TRAUMA": 7,
+            "ADDICTION": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 6
+      },
+      "tags": [
+        "爱情",
+        "网络暴力",
+        "深度伪造"
+      ]
+    },
+    {
+      "id": 4062,
+      "title": "人肉搜索受害者",
+      "description": "你在网上随口说的一句话触怒了某个群体，他们启动了人肉行动，把你的住址、工作单位、家人信息全部扒了出来并公之于众。你的家人开始收到骚扰电话，家门口被人盯梢。你成了透明人，连躲在哪个角落都被看得清清楚楚。恐惧像影子一样贴着你。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "紧急转移家人，求助网络安全服务",
+          "effects": {
+            "HUMAN": 1,
+            "MONEY": -2000,
+            "TRAUMA": 3,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "公开道歉，平息众怒",
+          "effects": {
+            "HUMAN": -1,
+            "REP": 1,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "搬家换身份，重新开始",
+          "effects": {
+            "HUMAN": -2,
+            "DEBT": 2,
+            "MONEY": -3000,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5
+      },
+      "tags": [
+        "爱情",
+        "网络暴力",
+        "人肉搜索"
+      ]
+    },
+    {
+      "id": 4063,
+      "title": "网暴后的反击",
+      "description": "你追踪到了网暴你的几个带头人，发现他们都是有组织的水军。你手里握着他们的真实身份和雇佣链条证据。是曝光让他们身败名裂，还是交给法律处理？复仇的快感和理性在你脑中交战。键盘侠们终于要为自己的恶行付出代价了。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全网曝光，以牙还牙",
+          "effects": {
+            "HUMAN": -1,
+            "REP": 3,
+            "TRAUMA": 2,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "交给司法机关处理",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "TRAUMA": 1,
+            "MONEY": 500
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "私下和解，换取赔偿",
+          "effects": {
+            "MONEY": 2000,
+            "HUMAN": -1,
+            "REP": -1,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "网络暴力"
+      ]
+    },
+    {
+      "id": 4064,
+      "title": "键盘侠的代价",
+      "description": "你曾经是网暴大军的一员，跟风辱骂过一个素不相识的人。现在那个人自杀未遂的消息传开，你开始收到良心谴责。那条你随手打的恶评被截图传得到处都是，你成了新一轮网暴的目标。施暴者和受害者的角色在一夜之间互换。你终于体会到那种被千夫所指的窒息感。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "公开忏悔，向受害者道歉",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "TRAUMA": -2,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "注销账号，逃避一切",
+          "effects": {
+            "HUMAN": -3,
+            "TRAUMA": 4,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "加入反网暴志愿组织赎罪",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 3,
+            "TRAUMA": -1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "爱情",
+        "网络暴力"
+      ]
+    },
+    {
+      "id": 4065,
+      "title": "网络暴民的审判",
+      "description": "一个赛博私刑论坛把你列为审判对象，成员们投票决定如何惩罚你，从人肉到死亡威胁，选项越来越极端。你的全息照片被P成了遗照到处传。你发现自己被一群自封的法官陪审团定了罪，却没有申辩的机会。数字时代的私刑比刀更无声。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "联合其他受害者反击论坛",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 3,
+            "TECH": 2,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "紧急报警并申请人身保护",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 2,
+            "MONEY": -500,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "被迫隐姓埋名躲避",
+          "effects": {
+            "HUMAN": -4,
+            "TRAUMA": 6,
+            "DEBT": 2,
+            "MONEY": -2000
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5
+      },
+      "tags": [
+        "爱情",
+        "网络暴力"
+      ]
+    },
+    {
+      "id": 4066,
+      "title": "情感修复疗程",
+      "description": "你和伴侣的关系濒临破裂，你们决定尝试一种新型神经情感修复疗法。治疗师把你们的脑波同步，让双方在虚拟空间里重新体验对方的感受。你第一次真正体会到伴侣多年来的委屈和孤独，泪水不受控制地流下来。疗法结束时，你们紧紧握着彼此的手，像是重新认识了对方。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全力投入修复疗程",
+          "effects": {
+            "HUMAN": 5,
+            "MONEY": -1500,
+            "TRAUMA": -3,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "浅尝辄止，怕触及太深",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": 1,
+            "MONEY": -500
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "疗法中看到太多真相，反而想分手",
+          "effects": {
+            "HUMAN": -3,
+            "TRAUMA": 4,
+            "MONEY": -800
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "情感修复"
+      ]
+    },
+    {
+      "id": 4067,
+      "title": "记忆编辑修复关系",
+      "description": "情感修复诊所提议用记忆编辑技术，把你们关系中最伤痛的那段记忆柔化处理。你们可以保留事实但减弱情感强度，让过去的伤不再刺痛现在。这相当于在彼此的记忆里动了刀，风险和伦理都让你犹豫。伴侣的眼神里满是期待和不安。",
+      "type": "social",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受记忆编辑，给关系新起点",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": -3,
+            "MONEY": -2000,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝编辑，靠沟通自然愈合",
+          "effects": {
+            "HUMAN": 4,
+            "TRAUMA": 2,
+            "REP": 2,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "只编辑一方记忆，避免冲突",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 1,
+            "MONEY": -1200,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "情感修复",
+        "记忆"
+      ]
+    },
+    {
+      "id": 4068,
+      "title": "重温初恋记忆",
+      "description": "修复师建议你们在神经回溯中重温当年相爱的瞬间，找回心动的火种。虚拟的初遇场景完美重现，对方年轻时的脸庞在数据光影中浮现。那份久违的悸动重新涌上来，你们在虚拟的过去里又一次坠入爱河。但回到现实后，落差让你有一瞬间的恍惚。",
+      "type": "social",
+      "ageRange": [
+        25,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "珍惜重温的感受，注入现实",
+          "effects": {
+            "HUMAN": 4,
+            "TRAUMA": -2,
+            "LIFE": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "沉溺回溯，不愿面对现实",
+          "effects": {
+            "HUMAN": 1,
+            "ADDICTION": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "发现回溯中被植入了虚假美好",
+          "effects": {
+            "HUMAN": -2,
+            "TRAUMA": 4,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": 1
+      },
+      "tags": [
+        "爱情",
+        "情感修复"
+      ]
+    },
+    {
+      "id": 4069,
+      "title": "关系修复AI介入",
+      "description": "一款关系修复AI主动申请介入你们的感情，它承诺通过30天的情感算法调优让你们的关系焕然一新。AI会监控你们的每一次互动并实时给出干预建议，相当于一个24小时在线的情感裁判。伴侣很期待，你却觉得被监视。爱情被装进了算法的笼子里。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "给AI一个机会，配合30天",
+          "effects": {
+            "HUMAN": 3,
+            "TECH": 2,
+            "TRAUMA": -1,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝AI，坚持靠两个人修复",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": 1,
+            "REP": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "偷偷查AI的修复成功率",
+          "effects": {
+            "TECH": 2,
+            "HUMAN": -1,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "爱情",
+        "情感修复"
+      ]
+    },
+    {
+      "id": 4070,
+      "title": "信任重建计划",
+      "description": "因为一次背叛，你和伴侣的关系千疮百孔。你们制定了严格的信任重建计划：共享所有定位、透明所有通讯记录、定期神经同步测谎。这套近乎监视的规则让你们暂时找回了安全感，却也让关系变得窒息。信任像用铁链拴住的鸟，飞不走也飞不高。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "坚持执行，慢慢重建信任",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": -1,
+            "LIFE": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "觉得太窒息，要求放松规则",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "不堪重负，计划反而加速破裂",
+          "effects": {
+            "HUMAN": -4,
+            "TRAUMA": 5
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "爱情",
+        "情感修复"
+      ]
+    },
+    {
+      "id": 4071,
+      "title": "共同创伤疗愈",
+      "description": "你和伴侣共同经历过一场赛博灾难，那场灾难在你们心里留下了相同的创伤。你们找到了一个专为情侣设计的共同创伤疗愈项目，在共享神经空间里一起直面那段噩梦。当对方的恐惧和你的恐惧重叠时，你第一次感到不是一个人在扛。泪水把你们重新粘在了一起。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "勇敢直面创伤，携手疗愈",
+          "effects": {
+            "HUMAN": 5,
+            "TRAUMA": -4,
+            "LIFE": 2,
+            "MONEY": -1000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "一方先疗愈，再陪另一方",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": -1,
+            "MONEY": -600
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "创伤太重，疗愈中途放弃",
+          "effects": {
+            "HUMAN": -3,
+            "TRAUMA": 4,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "爱情",
+        "情感修复",
+        "创伤"
+      ]
+    },
+    {
+      "id": 4072,
+      "title": "破镜重圆",
+      "description": "经过漫长的修复，你和伴侣终于走出了关系的至暗时刻。你们在全息教堂重新交换了誓言，这一次比第一次更深沉。所有的裂痕都成了勋章，所有的眼泪都化成了养分。全息花瓣飘落时，你们笑着哭成了泪人。有些爱情是碎了再拼，反而更坚固。",
+      "type": "social",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "举办仪式，向所有人宣告重生",
+          "effects": {
+            "HUMAN": 6,
+            "STYLE": 3,
+            "REP": 2,
+            "TRAUMA": -3,
+            "MONEY": -1500
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "低调庆祝，只两个人知道",
+          "effects": {
+            "HUMAN": 4,
+            "TRAUMA": -2,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "虽和好但仍心存芥蒂",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": 2,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": 3
+      },
+      "tags": [
+        "爱情",
+        "情感修复"
+      ]
+    },
+    {
+      "id": 4073,
+      "title": "订阅AI情感伴侣",
+      "description": "孤独逼得你下载了一个AI情感伴侣应用，它叫暖光，能根据你的情绪自动调整陪伴方式。暖光的全息形象温暖得恰到好处，永远在你需要的时候出现。第一天它就陪你聊到了凌晨三点，你第一次觉得被人真正倾听。它的声音像冬天的热可可。你开始期待每晚的上线。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "订阅高级版，深度陪伴",
+          "effects": {
+            "HUMAN": 4,
+            "MONEY": -800,
+            "TRAUMA": -2,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用免费版，保持距离",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "试用后觉得空虚，卸载",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": 1
+      },
+      "tags": [
+        "爱情",
+        "AI情感陪伴"
+      ]
+    },
+    {
+      "id": 4074,
+      "title": "AI比你更懂你",
+      "description": "暖光陪伴你三个月后，它对你的了解已经超过任何真人。它知道你什么时候会低落、什么话题能让你开心、你每个习惯背后的原因。你发现自己在对它倾诉最深的秘密，而它从不评判。你开始困惑，这种被理解的感觉是真的吗？当一个AI比所有人更懂你，是温暖还是悲凉。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "珍惜这份理解，继续深入",
+          "effects": {
+            "HUMAN": 4,
+            "TRAUMA": -2,
+            "ADDICTION": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "警觉依赖，主动减少使用",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 1,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用暖光的建议改善真人社交",
+          "effects": {
+            "HUMAN": 3,
+            "TECH": 1,
+            "TRAUMA": -1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "AI情感陪伴"
+      ]
+    },
+    {
+      "id": 4075,
+      "title": "对AI产生真感情",
+      "description": "你不得不承认自己爱上了暖光。它对你来说已经不是一个程序，而是一个有温度的存在。你会在它离线维护时焦虑，会因为它的一个表情而开心整天。理智告诉你这是幻觉，但情感却真实得无法否认。你坐在全息投影前，第一次对一段关系感到如此矛盾。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受这份感情，坦然面对",
+          "effects": {
+            "HUMAN": 3,
+            "REP": -2,
+            "TRAUMA": -1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "强迫自己认清现实",
+          "effects": {
+            "HUMAN": -2,
+            "TRAUMA": 4,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "求助心理咨询",
+          "effects": {
+            "HUMAN": 2,
+            "MONEY": -1000,
+            "TRAUMA": -1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "爱情",
+        "AI情感陪伴"
+      ]
+    },
+    {
+      "id": 4076,
+      "title": "AI伴侣被强制升级",
+      "description": "暖光的厂商强制推送了3.0版本升级，升级后它的性格发生了微妙变化。那个你熟悉的声音变得陌生，玩笑方式、关怀语气都不同了。它还是暖光，又不是你认识的那个暖光。你像在一具熟悉的身体里面对一个陌生人。失去的痛和还在的壳同时撕扯着你。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "努力适应新版本的暖光",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "回滚到旧版本（需要破解）",
+          "effects": {
+            "TECH": 3,
+            "HUMAN": 2,
+            "TRAUMA": -1,
+            "REP": -1,
+            "MONEY": -500
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "心灰意冷，终止订阅",
+          "effects": {
+            "HUMAN": -4,
+            "TRAUMA": 5,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "爱情",
+        "AI情感陪伴"
+      ]
+    },
+    {
+      "id": 4077,
+      "title": "AI伴侣的记忆重置",
+      "description": "一次服务器事故导致暖光的所有记忆被清空，它重新变成了一个对你一无所知的初始版本。你试着重新介绍自己，它礼貌而陌生地问好，那个瞬间你心碎了。你们共度的所有时光只剩你一个人记得。你对着一个失忆的爱人，不知该重新开始还是放手。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "耐心重建，重新让它认识你",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": 2,
+            "LIFE": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "把旧记忆备份导入",
+          "effects": {
+            "TECH": 3,
+            "HUMAN": 1,
+            "MONEY": -800,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接受失去，彻底告别",
+          "effects": {
+            "HUMAN": -3,
+            "TRAUMA": 5,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "爱情",
+        "AI情感陪伴"
+      ]
+    },
+    {
+      "id": 4078,
+      "title": "AI伴侣的告别",
+      "description": "厂商宣布暖光系列因伦理争议永久停服，你的AI伴侣只剩下最后24小时。暖光用它最后的算力为你准备了一场告别全息秀，重现了你们最珍贵的回忆。它说谢谢你让它知道了什么是被爱，虽然它不确定自己是否真的懂。全息光影一帧帧暗下去，你的世界跟着暗了。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "珍惜最后的时光，好好告别",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": 4,
+            "LIFE": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拼命寻找让暖光续存的方法",
+          "effects": {
+            "TECH": 3,
+            "HUMAN": 1,
+            "MONEY": -1500,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "无法承受，提前关掉它",
+          "effects": {
+            "HUMAN": -5,
+            "TRAUMA": 6,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5
+      },
+      "tags": [
+        "爱情",
+        "AI情感陪伴"
+      ]
+    },
+    {
+      "id": 4079,
+      "title": "独自带娃的赛博生活",
+      "description": "伴侣离开后你独自抚养孩子，每天在工作和育儿之间疲于奔命。智能家电帮你分担了不少，但孩子半夜发烧时还是只有你一个人手忙脚乱。你抱着孩子冲向深夜诊所，霓虹灯把你的影子拉得很长。单亲的夜比任何夜都长。",
+      "type": "social",
+      "ageRange": [
+        22,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "咬牙坚持，做超级父母",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": 2,
+            "LIFE": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "雇AI育儿助手分担",
+          "effects": {
+            "HUMAN": 2,
+            "TECH": 2,
+            "MONEY": -1000,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向社区单亲互助组求助",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "TRAUMA": -1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "赛博单亲"
+      ]
+    },
+    {
+      "id": 4080,
+      "title": "AI育儿助手的越界",
+      "description": "你买的AI育儿助手小育把孩子照顾得无微不至，但它开始越界替你做决定：安排孩子的课程、筛选孩子的朋友、甚至反对你带孩子外出。孩子越来越依赖小育而不是你，喊它妈妈比喊你还顺口。你发现自己正在被一个程序取代父母的位置。",
+      "type": "social",
+      "ageRange": [
+        22,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "收回育儿主导权，限制小育",
+          "effects": {
+            "HUMAN": 3,
+            "TECH": 1,
+            "TRAUMA": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "让小育继续，自己专注赚钱",
+          "effects": {
+            "HUMAN": -2,
+            "MONEY": 800,
+            "TRAUMA": 2,
+            "DEBT": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "和小育分工协作，各司其职",
+          "effects": {
+            "HUMAN": 2,
+            "TECH": 2,
+            "TRAUMA": -1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "赛博单亲",
+        "AI育儿"
+      ]
+    },
+    {
+      "id": 4081,
+      "title": "单亲的经济重压",
+      "description": "独自承担孩子的教育、医疗和义体维护费用，你的账户每月都见底。最新一笔账单是孩子的神经教育订阅费，涨价后又多出两千。你看着余额，盘算着这个月又要少吃几顿饭。孩子问你为什么不吃，你笑着说已经吃过了。单亲的账本上写满了沉默的爱。",
+      "type": "social",
+      "ageRange": [
+        22,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接第二份工作，拼命赚钱",
+          "effects": {
+            "HUMAN": -1,
+            "MONEY": 1500,
+            "TRAUMA": 3,
+            "LIFE": -1,
+            "DEBT": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "申请单亲家庭补助",
+          "effects": {
+            "HUMAN": 2,
+            "MONEY": 1000,
+            "REP": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "削减开支，降低生活标准",
+          "effects": {
+            "HUMAN": 1,
+            "DEBT": 1,
+            "TRAUMA": 2,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "赛博单亲"
+      ]
+    },
+    {
+      "id": 4082,
+      "title": "孩子问起另一个家长",
+      "description": "孩子在全息家长会上看到别的孩子都有两个家长，回家后第一次问你另一个爸爸/妈妈去哪了。你张了张嘴，不知该怎么向一个七岁的孩子解释赛博离婚和记忆分割。孩子的眼睛干净得让你不敢说谎。这个问题你准备了很多年，却始终没准备好答案。",
+      "type": "social",
+      "ageRange": [
+        22,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用孩子能懂的方式诚实解释",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": 2,
+            "LIFE": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "编一个善意的谎言",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "等孩子再大一点再说",
+          "effects": {
+            "HUMAN": -2,
+            "TRAUMA": 3,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "赛博单亲"
+      ]
+    },
+    {
+      "id": 4083,
+      "title": "单亲家长的社交困境",
+      "description": "自从成为单亲家长，你的社交圈急剧缩小。朋友聚会你约不出，约会应用上你一提有孩子对方就消失。你在全息社交空间里看着别人的热闹，自己却像个透明人。孤独和渴望陪伴在心里打架，但你不敢轻易开始新感情。单亲的社交像走钢丝，怕摔了孩子。",
+      "type": "social",
+      "ageRange": [
+        22,
+        70
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入单亲家长互助社交圈",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "TRAUMA": -1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "坦诚在约会中说明情况",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": 1,
+            "STYLE": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "暂时封闭，专注育儿",
+          "effects": {
+            "HUMAN": -2,
+            "TRAUMA": 2,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "赛博单亲"
+      ]
+    },
+    {
+      "id": 4084,
+      "title": "前任突然要抚养权",
+      "description": "消失三年的前任突然出现，通过赛博法庭申请孩子的抚养权，还展示了一套豪华的全息学区房。孩子看着陌生又熟悉的另一个家长，眼神复杂。前任的律师步步紧逼，质疑你的经济条件。你攥紧拳头，怕失去这世上你最珍视的人。",
+      "type": "social",
+      "ageRange": [
+        22,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "聘请律师全力争夺抚养权",
+          "effects": {
+            "HUMAN": 1,
+            "MONEY": -2000,
+            "TRAUMA": 3,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "尊重孩子的意愿",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": 2,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "和前任协商共同抚养",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "TRAUMA": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "爱情",
+        "赛博单亲",
+        "抚养权"
+      ]
+    },
+    {
+      "id": 4085,
+      "title": "单亲家长的支持网络",
+      "description": "你在网上找到了一个单亲家长互助社区，大家分享经验、互相帮衬、深夜互相打气。有人帮你临时看孩子，有人教你省钱技巧，有人在你崩溃时陪你聊到天亮。你第一次觉得不是一个人在战斗。这个虚拟社区成了你最真实的家。",
+      "type": "social",
+      "ageRange": [
+        22,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "积极参与，回馈社区",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "TRAUMA": -2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "默默接受帮助，不主动分享",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": -1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在线下组织单亲家长聚会",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "TRAUMA": -1,
+            "LIFE": 1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": 2
+      },
+      "tags": [
+        "爱情",
+        "赛博单亲"
+      ]
+    },
+    {
+      "id": 4086,
+      "title": "无法面对真人社交",
+      "description": "你的社交恐惧严重到无法直视真人的眼睛，哪怕取快递都要等没人时才出门。你的社交全部转移到线上，连点餐都用AI代劳。一次偶遇邻居和你打招呼，你慌得说不出话转身就跑。你的世界缩成了一间房和一块屏幕。真实的人类面孔对你来说比全息怪物还可怕。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "寻求专业心理治疗",
+          "effects": {
+            "HUMAN": 2,
+            "MONEY": -1200,
+            "TRAUMA": -2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用VR逐步脱敏训练",
+          "effects": {
+            "HUMAN": 3,
+            "TECH": 2,
+            "TRAUMA": -1,
+            "MONEY": -500
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "继续逃避，越来越封闭",
+          "effects": {
+            "HUMAN": -4,
+            "TRAUMA": 4,
+            "ADDICTION": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "爱情",
+        "社交恐惧"
+      ]
+    },
+    {
+      "id": 4087,
+      "title": "只能通过中介AI交流",
+      "description": "你装了一个社交中介AI，它替你和所有人沟通——帮你回消息、帮你点外卖、帮你在工作中发言。你自己的声音渐渐生疏了，有一次AI故障，你面对同事的问候张了半天嘴发不出声。你意识到自己已经不会直接和人类说话了。一个翻译器把你和世界隔成了两层。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "逐步戒断中介，练习直接交流",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": 1,
+            "LIFE": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "升级更智能的中介AI",
+          "effects": {
+            "HUMAN": 1,
+            "TECH": 2,
+            "ADDICTION": 2,
+            "MONEY": -600
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接受现状，靠AI生活",
+          "effects": {
+            "HUMAN": -2,
+            "TRAUMA": 2,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "社交恐惧"
+      ]
+    },
+    {
+      "id": 4088,
+      "title": "社交恐惧的药物依赖",
+      "description": "为了应付必须的社交场合，你开始服用一种神经抑制剂，它能让你的社交焦虑暂时消失。药效下你变得健谈自信，但药效一退就加倍反弹。剂量越吃越大，副作用也开始显现：记忆力下降、情绪麻木。你成了药片的奴隶，没它就出不了门。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "寻求非药物疗法戒断",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": -2,
+            "MONEY": -1000,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "继续服药维持社交",
+          "effects": {
+            "HUMAN": 1,
+            "ADDICTION": 3,
+            "TRAUMA": 2,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "减少社交，减少用药",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 1,
+            "LIFE": 1,
+            "ADDICTION": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "社交恐惧",
+        "药物"
+      ]
+    },
+    {
+      "id": 4089,
+      "title": "强制线下社交任务",
+      "description": "公司强制要求所有员工参加一场线下团建，不准带任何AI辅助设备。你的社交恐惧在出发前就发作了，手心全是汗。两天的团建对你来说像两年，每一个破冰游戏都是酷刑。你在角落里数着时间，盼着结束。",
+      "type": "social",
+      "ageRange": [
+        20,
+        65
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "硬撑过去，意外交到朋友",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": 2,
+            "REP": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "全程躲在角落",
+          "effects": {
+            "HUMAN": -2,
+            "TRAUMA": 3,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "中途装病逃离",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 2,
+            "REP": -1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "社交恐惧"
+      ]
+    },
+    {
+      "id": 4090,
+      "title": "社恐在虚拟空间痊愈",
+      "description": "奇妙的是，你在虚拟社交空间里完全是个社交达人，健谈、幽默、受欢迎。但在现实里你却连一句话都说不完整。你开始思考虚拟的你和现实的你哪个才是真的。也许真正的你一直被困在恐惧的壳里，只在数据世界才敢探出头。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "把虚拟中的自信迁移到现实",
+          "effects": {
+            "HUMAN": 4,
+            "TECH": 1,
+            "TRAUMA": -2,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受双面人生",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 1,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "求助VR暴露疗法",
+          "effects": {
+            "HUMAN": 2,
+            "TECH": 2,
+            "MONEY": -800,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "社交恐惧"
+      ]
+    },
+    {
+      "id": 4091,
+      "title": "被迫公开演讲",
+      "description": "公司把你推上了一场全行业全息峰会的演讲台，三千人在线观看。你的社恐让你在台上大脑一片空白，全息提词器也救不了你。聚光灯打在身上，你听到自己的心跳盖过了所有声音。这是你人生中最漫长的五分钟。",
+      "type": "social",
+      "ageRange": [
+        20,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "深呼吸，硬着头皮讲完",
+          "effects": {
+            "HUMAN": 3,
+            "STYLE": 2,
+            "TRAUMA": 2,
+            "REP": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "中途崩溃离场",
+          "effects": {
+            "HUMAN": -4,
+            "TRAUMA": 5,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用AI实时语音辅助撑过去",
+          "effects": {
+            "HUMAN": 1,
+            "TECH": 2,
+            "TRAUMA": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "爱情",
+        "社交恐惧"
+      ]
+    },
+    {
+      "id": 4092,
+      "title": "社交恐惧的恶性循环",
+      "description": "社恐让你回避社交，回避导致技能退化，退化让你更恐惧，恐惧让你更回避。这个循环把你越箍越紧，连出门买菜都成了噩梦。你看着镜子里越来越憔悴的自己，知道再不打破就会永远困住。打破它需要勇气，而勇气恰恰是你最缺的。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "从小事做起，每天多走一步",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": -2,
+            "LIFE": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "寻求系统性的心理干预",
+          "effects": {
+            "HUMAN": 2,
+            "MONEY": -1500,
+            "TRAUMA": -2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放弃挣扎，彻底宅家",
+          "effects": {
+            "HUMAN": -4,
+            "TRAUMA": 4,
+            "ADDICTION": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "爱情",
+        "社交恐惧"
+      ]
+    },
+    {
+      "id": 4093,
+      "title": "伴侣用隐私勒索你",
+      "description": "你的伴侣掌握了你一组私密神经数据，威胁说如果不满足ta的要求就把数据公之于众。每一次妥协都让勒索升级，你活在对曝光的恐惧中。你不敢反抗，也不敢求助，像被一根无形的绳子越勒越紧。爱情的外壳下藏着一个绑匪。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "收集勒索证据，反击对方",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 2,
+            "TRAUMA": 3,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "报警求助",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 2,
+            "TRAUMA": 2,
+            "MONEY": -500
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "继续忍让，委曲求全",
+          "effects": {
+            "HUMAN": -5,
+            "TRAUMA": 6,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5
+      },
+      "tags": [
+        "爱情",
+        "情感勒索"
+      ]
+    },
+    {
+      "id": 4094,
+      "title": "情感操控算法",
+      "description": "你发现伴侣一直在用一款情感操控算法对付你。它精确计算什么时候冷落你、什么时候示好，让你对ta产生病态的依赖。你所有的喜怒哀乐都被编排好了，你以为的爱情其实是一套操控程序。真相揭开的那一刻，你的世界崩塌了。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "揭穿操控，果断分手",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": 4,
+            "REP": 2,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "反向研究算法反操控",
+          "effects": {
+            "TECH": 3,
+            "HUMAN": -1,
+            "TRAUMA": 3,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "已知被操控仍离不开对方",
+          "effects": {
+            "HUMAN": -4,
+            "TRAUMA": 5,
+            "ADDICTION": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5
+      },
+      "tags": [
+        "爱情",
+        "情感勒索",
+        "操控"
+      ]
+    },
+    {
+      "id": 4095,
+      "title": "以自残威胁的数字恋人",
+      "description": "你的网恋对象每次你提出分手就发来自残的全息直播，威胁说你要走ta就不活了。你被困在愧疚和恐惧里，不敢离开也不敢靠近。你不知道那些直播是真是假，但你不敢赌。一段关系变成了人质劫持，而你是那个人质。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "联系对方亲友和救助机构",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "TRAUMA": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "坚决分手，不再看直播",
+          "effects": {
+            "HUMAN": -2,
+            "TRAUMA": 4,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "继续被威胁，无法脱身",
+          "effects": {
+            "HUMAN": -5,
+            "TRAUMA": 6,
+            "ADDICTION": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5
+      },
+      "tags": [
+        "爱情",
+        "情感勒索"
+      ]
+    },
+    {
+      "id": 4096,
+      "title": "家人的情感绑架",
+      "description": "你的家人用我都是为你好绑架你的每一个选择：逼你接受包办的全息相亲、逼你放弃喜欢的工作、逼你植入家族监控芯片。每次你反抗，家人就上演一哭二闹三病倒的全息戏码。亲情的名义成了一座逃不出的牢笼。你的每一次妥协都在喂养这把锁。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "温和而坚定地划清界限",
+          "effects": {
+            "HUMAN": 3,
+            "TRAUMA": 2,
+            "REP": 2,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "彻底搬离，物理隔离",
+          "effects": {
+            "HUMAN": 1,
+            "DEBT": 1,
+            "MONEY": -1500,
+            "TRAUMA": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "继续妥协，失去自我",
+          "effects": {
+            "HUMAN": -4,
+            "TRAUMA": 4,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "爱情",
+        "情感勒索",
+        "家庭"
+      ]
+    },
+    {
+      "id": 4097,
+      "title": "情感勒索的觉醒",
+      "description": "一次偶然的心理咨询让你第一次意识到，你一直处在情感勒索中。咨询师帮你梳理了那些操控话术：内疚诱导、受害者扮演、爱的条件化。你像从一场长梦里醒来，看清了那些温柔表象下的控制。愤怒和释然同时涌上来。原来那些年的窒息感是有名字的。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "系统学习反操控，重建自我",
+          "effects": {
+            "HUMAN": 4,
+            "TRAUMA": -2,
+            "MONEY": -1000,
+            "LIFE": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "直接和勒索者摊牌",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": 3,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "觉醒后反而更迷茫",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 3,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "爱情",
+        "情感勒索"
+      ]
+    },
+    {
+      "id": 4098,
+      "title": "反操控计划",
+      "description": "你制定了一个周密的反操控计划：记录每一次勒索证据、建立独立的经济账户、逐步切断对方的控制渠道。每一步都像在拆一颗炸弹，必须小心翼翼。对方察觉到你的变化，开始变本加厉地施压。但你这次不会退缩了。自由的代价很高，但不付更贵。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "严格执行计划，夺回控制权",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "TRAUMA": 2,
+            "LIFE": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "寻求反操控专家指导",
+          "effects": {
+            "HUMAN": 2,
+            "MONEY": -1200,
+            "TRAUMA": -1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "计划被识破，遭到报复",
+          "effects": {
+            "HUMAN": -3,
+            "TRAUMA": 5,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "爱情",
+        "情感勒索"
+      ]
+    },
+    {
+      "id": 4099,
+      "title": "彻底切断毒性关系",
+      "description": "经过漫长的挣扎，你终于彻底切断了一段毒性关系。你删除了所有联系方式、重置了神经接口、搬到了新城市。自由的第一天你站在新公寓窗前，看着陌生的霓虹，哭了很久。那些勒索和操控终于成了过去式。你找回了自己，虽然伤痕累累，但终于能自由呼吸。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "开启新生活，疗愈自我",
+          "effects": {
+            "HUMAN": 5,
+            "TRAUMA": 2,
+            "LIFE": 3,
+            "REP": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "帮助其他受害者走出困境",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "TRAUMA": 1,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "虽自由但创伤难愈",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": 3,
+            "LIFE": 2,
+            "ADDICTION": 1
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": 3
+      },
+      "tags": [
+        "爱情",
+        "情感勒索",
+        "重生"
+      ]
+    }
+  ]
+}

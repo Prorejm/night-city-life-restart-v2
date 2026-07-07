@@ -1,0 +1,684 @@
+{
+  "events": [
+    {
+      "id": 800,
+      "title": "荒坂安全部门路检",
+      "description": "你在回公寓的路上遇到了荒坂安保的临时检查站。两个穿着黑色战术服、脸戴光学增强目镜的警卫拦住了所有行人，要求扫描个人信息芯片。他们正在搜查一名涉嫌窃取公司数据的逃犯，但你知道，这只是荒坂展示力量的手段之一。前面有个流浪汉因为证件过期被拖进了路边的装甲车。轮到你了。",
+      "type": "daily",
+      "ageRange": [16, 60],
+      "weight": 16,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "恭敬配合，递上身份芯片接受扫描", "effects": { "REP": -1, "TECH": 1 } },
+        { "id": "branch_2", "text": "绕路避开检查站，走下水道", "effects": { "TRAUMA": 1, "MONEY": -50 } }
+      ],
+      "effects": { "HUMAN": -1, "CHROME": 1 },
+      "tags": ["荒坂", "检查站", "安保", "身份扫描"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 801,
+      "title": "荒坂大厦保安的日常",
+      "description": "你在荒坂大厦当了一周的夜班保安。表面上这是个安稳的工作——站岗、巡逻、检查进出人员证件。但实际上，你每天都能看到不该看的东西：深夜被押送进地下室的人、凌晨从货运电梯运出的密封货柜、高管们包裹在反光学迷彩里的神秘访客。交班时，你的前任告诉你一条规矩：「在这栋楼里，眼睛看到的都不存在。」",
+      "type": "daily",
+      "ageRange": [20, 50],
+      "weight": 14,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "遵守规矩，做好本职工作", "effects": { "MONEY": 800, "REP": 1, "TECH": 1 } },
+        { "id": "branch_2", "text": "暗中记录所见所闻，留作筹码", "effects": { "TECH": 2, "TRAUMA": 2, "REP": 2 } }
+      ],
+      "effects": { "MONEY": 500, "HUMAN": -1 },
+      "tags": ["荒坂", "保安", "工作", "秘密"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 802,
+      "title": "荒坂档案部门的数据处理",
+      "description": "荒坂档案部的一个中层主管找到了你，希望你能帮忙处理一批「敏感数据」。这批数据涉及前员工的个人记录，需要人工筛选出「有价值的部分」再提交给安全部门。主管暗示报酬丰厚，但工作内容明显越过了道德边界。你面前堆满了数据板，屏幕上的蓝光照亮了你不安的脸。",
+      "type": "cyber",
+      "ageRange": [22, 55],
+      "weight": 13,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "接活，按需求处理数据", "effects": { "MONEY": 2000, "TECH": 2, "HUMAN": -2 } },
+        { "id": "branch_2", "text": "拒绝，不想触碰这条底线", "effects": { "HUMAN": 2, "REP": 1, "MONEY": -200 } }
+      ],
+      "effects": { "TECH": 1, "TRAUMA": 1 },
+      "tags": ["荒坂", "数据", "档案", "隐私"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 803,
+      "title": "荒坂内部派系斗争",
+      "description": "你无意间卷入了荒坂公司内部的派系斗争。两个部门的总监正在争夺一个亚太区副总裁的空缺，而你恰好在项目中同时接触到了两边的核心信息。一方许诺升职加薪，另一方暗示不合作会有「后果」。在荒坂这种等级森严的企业里，站错队意味着职业生涯的终结，甚至更糟——你的办公室已经被安装了窃听器。",
+      "type": "social",
+      "ageRange": [25, 55],
+      "weight": 12,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "投靠更有权势的一方", "effects": { "MONEY": 3000, "REP": 3, "HUMAN": -2 } },
+        { "id": "branch_2", "text": "保持中立，两边都不得罪", "effects": { "TECH": 1, "TRAUMA": 2, "MONEY": 500 } }
+      ],
+      "effects": { "TRAUMA": 2, "REP": 1 },
+      "tags": ["荒坂", "派系斗争", "办公室政治", "站队"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 804,
+      "title": "荒坂的退休计划",
+      "description": "人力资源部发来了一封精美的邮件——「荒坂金退休计划：为您的银色年华保驾护航」。附件的合同小字密密麻麻：只要你签署同意在退休后继续作为「顾问」为公司服务，就能获得一笔丰厚的退休金。但你听说，所谓的「顾问」实际上是被封存到公司的数字监狱中，你的意识将被上传到荒坂的服务器，永远为公司分析数据。这看起来是恩赐，其实是陷阱。",
+      "type": "special",
+      "ageRange": [45, 60],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "拒绝签署，保持自己的自由意志", "effects": { "HUMAN": 3, "REP": 1, "MONEY": -1000 } },
+        { "id": "branch_2", "text": "签署合同换取丰厚退休金", "effects": { "MONEY": 5000, "HUMAN": -4, "TECH": -2 } }
+      ],
+      "effects": { "TRAUMA": 2, "HUMAN": -1 },
+      "tags": ["荒坂", "退休", "合同", "数字监狱"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 805,
+      "title": "荒坂后裔争权波及底层",
+      "description": "荒坂家族的内斗升级了。三少爷和四小姐为了争夺北美分部的控制权，各自清洗对方的亲信。虽然你只是外包公司的派遣工，但也受到了波及——你的项目被无限期冻结，工资停发。更糟糕的是，两个派系都派人来「了解情况」，想从你这里套取另一方的信息。你一个小小的派遣工，夹在巨人之间瑟瑟发抖。",
+      "type": "social",
+      "ageRange": [20, 50],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "向两方都提供假信息，趁机脱身", "effects": { "TECH": 2, "MONEY": 1000, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "辞职跑路，远离这场斗争", "effects": { "MONEY": -500, "HUMAN": 1, "REP": -1 } }
+      ],
+      "effects": { "TRAUMA": 3, "MONEY": -500 },
+      "tags": ["荒坂", "家族斗争", "波及", "权力"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 806,
+      "title": "荒坂实验室泄漏事故",
+      "description": "你居住的街区在半夜被刺耳的警报声惊醒。荒坂生物实验室发生了一起泄漏事故——具体是什么物质泄漏，官方语焉不详，只通知居民待在室内紧闭门窗。但你看到荒坂的清理队穿着全封闭防护服在街道上喷洒某种白色粉末。空气中弥漫着一股金属般的甜味。邻居家的狗开始呕吐，你感到自己的喉咙也在发紧。",
+      "type": "medical",
+      "ageRange": [16, 60],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 30,
+      "branches": [
+        { "id": "branch_1", "text": "立即撤离这个区域，去安全的地方", "effects": { "LIFE": -1, "MONEY": -1000, "HUMAN": 2 } },
+        { "id": "branch_2", "text": "录制现场视频留作证据，高价卖给媒体", "effects": { "MONEY": 2000, "TECH": 2, "LIFE": -3 } }
+      ],
+      "effects": { "LIFE": -2, "TRAUMA": 2 },
+      "tags": ["荒坂", "泄漏", "生物实验室", "污染"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 807,
+      "title": "荒坂慈善晚宴邀请函",
+      "description": "你收到了一封制作精美的电子邀请函——荒坂集团年度慈善晚宴。烫金的虚拟全息文字在数据板上闪烁：「诚邀各界精英共襄善举，筹款用于夜之城公共教育。」但所有人都知道，这不过是荒坂洗白形象的手段。入场券售价五千欧元，每一道菜都够普通人吃一个月。但你听说，真正有价值的交易都在宴会后的私密房间里进行。",
+      "type": "social",
+      "ageRange": [25, 60],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "花重金赴宴，拓展人脉", "effects": { "MONEY": -5000, "REP": 4, "STYLE": 2 } },
+        { "id": "branch_2", "text": "嗤之以鼻，拒绝这种虚伪的场合", "effects": { "HUMAN": 2, "REP": -1, "MONEY": 500 } }
+      ],
+      "effects": { "STYLE": 1, "MONEY": -500 },
+      "tags": ["荒坂", "慈善晚宴", "社交", "精英"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 808,
+      "title": "荒坂人事部门背景调查",
+      "description": "荒坂人事部门突然约谈你进行背景调查。一个穿着死板套装的女人坐在你对面试，面前的屏幕滚动着你的人生轨迹——从出生记录到每一次就医、每一笔消费、甚至你最近搜索过的网络关键词。大部分信息准确得可怕，但也有一些被扭曲的数据。「我们只是例行核实。」她说，但你注意到她的手指在桌子下按住了某个按钮。",
+      "type": "daily",
+      "ageRange": [22, 55],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "诚实回答，据实交代", "effects": { "MONEY": 0, "HUMAN": 1, "REP": 1 } },
+        { "id": "branch_2", "text": "掩盖部分真相，修改自己的记录", "effects": { "TECH": 2, "TRAUMA": 1, "REP": -1 } }
+      ],
+      "effects": { "TRAUMA": 1, "TECH": 1 },
+      "tags": ["荒坂", "人事", "背景调查", "隐私"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 809,
+      "title": "岗位被AI自动化取代",
+      "description": "今天你照常刷卡上班，数据板却弹出通知：「您的岗位已被Automated Workforce Solution v4.2优化升级。请于今日内完成工作交接，人力资源部将联系您商讨离职补偿方案。」你的工位旁边，一台崭新的机器人已经开始接手你的工作。它的效率是你的三倍，从不出错，不要工资，不需要睡觉。你看着它流畅的动作，感到一阵刺骨的寒意。",
+      "type": "economy",
+      "ageRange": [22, 55],
+      "weight": 14,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "branch_1", "text": "接受离职补偿，寻找新工作", "effects": { "MONEY": 2000, "TECH": 1, "REP": -1 } },
+        { "id": "branch_2", "text": "学习新技能转岗到其他部门", "effects": { "TECH": 3, "MONEY": -1000, "TRAUMA": 1 } }
+      ],
+      "effects": { "MONEY": -1500, "TRAUMA": 2 },
+      "tags": ["荒坂", "AI", "失业", "自动化"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 810,
+      "title": "军用科技招募前军人",
+      "description": "军用科技的招募官在退伍军人事务中心设了一个摊位。一个剃着板寸、浑身肌肉的男人热情地和你握手：「兄弟，我看得出来你上过战场。军用科技需要你这样的人——更高的薪水、更好的装备、更明确的目标。」但你知道，所谓「私人军事承包商」就是换个雇主继续卖命。他的合同上写着：海外部署、高风险区域、生死自负。",
+      "type": "combat",
+      "ageRange": [25, 50],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "签约成为雇佣兵", "effects": { "MONEY": 3000, "CHROME": 2, "LIFE": -2, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "婉拒，过上平静的生活", "effects": { "HUMAN": 2, "LIFE": 1, "MONEY": -200 } }
+      ],
+      "effects": { "REP": 1, "MONEY": 500 },
+      "tags": ["军用科技", "招募", "军人", "雇佣兵"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 811,
+      "title": "测试新式武器平台",
+      "description": "军用科技的武器测试场发来了一份邀请——他们需要「实战经验丰富的人员」来测试一款新型动力装甲平台。广告上说报酬丰厚，但没提风险。你在NDA上签了字，然后被带进一个布满传感器的房间。一套流线型的装甲骨架立在中央，手臂上集成了多管机枪和导弹发射器。技术人员微笑着递给你一份免责声明：「死了的话，抚恤金还是很可观的。」",
+      "type": "combat",
+      "ageRange": [22, 55],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "参与测试，赚取高额报酬", "effects": { "MONEY": 4000, "CHROME": 2, "TECH": 2, "LIFE": -3 } },
+        { "id": "branch_2", "text": "拒绝，风险太高不值得", "effects": { "HUMAN": 1, "MONEY": -500 } }
+      ],
+      "effects": { "TECH": 1, "LIFE": -1 },
+      "tags": ["军用科技", "武器测试", "动力装甲", "高风险"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 812,
+      "title": "军用科技的安保承包项目",
+      "description": "军用科技公开招标夜之城北区工业园的安保承包项目。你决定投标——要么自己单干，要么拉上一个团队。项目内容包括：巡逻、门禁管理、入侵响应。看起来是常规安保，但工业园里实际上存放着军用科技的前沿武器原型。一旦中标，你将获得可观的收入，但也会成为敌对势力关注的目标。竞标对手名单里赫然出现了荒坂安全部门的子公司。",
+      "type": "economy",
+      "ageRange": [25, 55],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "branch_1", "text": "独自竞标，赢者通吃", "effects": { "MONEY": 5000, "REP": 3, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "组织团队联合竞标", "effects": { "REP": 2, "MONEY": 3000, "TECH": 2 } }
+      ],
+      "effects": { "MONEY": 1000, "CHROME": 1 },
+      "tags": ["军用科技", "安保", "承包", "竞标"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 813,
+      "title": "军用科技与荒坂的代理人冲突",
+      "description": "你在酒吧喝酒时听到隔壁桌的争吵——两个穿着不同制服的人正在压低声音激烈争论。一个是军用科技的现场协调员，一个是荒坂的项目经理。他们的手都按在腰间的枪上，主题是「南区地下管网的控制权」。这不是两个大公司在正面冲突，而是通过代理人（也就是你们这些底层员工）在互掐。整间酒吧的顾客都在悄悄向外移动。",
+      "type": "combat",
+      "ageRange": [20, 55],
+      "weight": 14,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "趁乱快速离开冲突现场", "effects": { "LIFE": 1, "MONEY": -100 } },
+        { "id": "branch_2", "text": "看热闹不嫌事大，暗中录像", "effects": { "TECH": 2, "REP": 1, "TRAUMA": 1 } }
+      ],
+      "effects": { "TRAUMA": 2, "REP": -1 },
+      "tags": ["军用科技", "荒坂", "冲突", "代理人"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 814,
+      "title": "军用科技义体人体试验",
+      "description": "军用科技的生物工程部门正在招募志愿者进行新型战斗义体的临床测试。广告上说得很诱人：「增强您的战力，改变您的命运。」但知情人士透露，这批试验品的失败率高达三成——轻则义体排斥终身卧床，重则神经系统永久损伤甚至死亡。然而，成功的案例确实惊人——参与者的战斗力提升了数倍。你在夜之城没有别的出路。",
+      "type": "medical",
+      "ageRange": [20, 45],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 30,
+      "branches": [
+        { "id": "branch_1", "text": "报名参加试验", "effects": { "CHROME": 4, "LIFE": -2, "TRAUMA": 2, "MONEY": 3000 } },
+        { "id": "branch_2", "text": "拒绝，这不是人干的事", "effects": { "HUMAN": 3, "LIFE": 1 } }
+      ],
+      "effects": { "TRAUMA": 1, "CHROME": 1 },
+      "tags": ["军用科技", "义体", "人体试验", "高风险"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 815,
+      "title": "军用科技内部调查间谍",
+      "description": "军用科技安全部宣布在研发部门发现了一名商业间谍。整个办公区被封锁，所有员工被要求在会议室中接受测谎芯片扫描。两个穿着黑西装的特工在走廊里来回走动，审视着每一个人的表情。你的工位就在那个被捕间谍的旁边——你们上周还一起吃了午饭。现在你也被列为「需进一步观察」的对象。",
+      "type": "daily",
+      "ageRange": [24, 55],
+      "weight": 11,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "主动配合调查，提供信息", "effects": { "MONEY": 500, "REP": 1, "HUMAN": -1 } },
+        { "id": "branch_2", "text": "保持沉默，低调行事", "effects": { "TRAUMA": 2, "HUMAN": 1 } }
+      ],
+      "effects": { "TRAUMA": 2, "REP": -1 },
+      "tags": ["军用科技", "调查", "间谍", "安全"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 816,
+      "title": "康陶的生物监视计划",
+      "description": "康陶的市政合作项目「智慧城市安防系统」实际上是一张覆盖全城的生物监视网。你在康陶工作的朋友偷偷告诉你：街上的每一个所谓「公共安全摄像头」都搭载了心率、体温和步态识别模块。康陶正在收集每一个市民的生物特征数据。「他们说只是为了反恐，」朋友压低声音说，「但你觉得他们会把数据用在什么地方？」远处一个摄像头正在缓缓转动。",
+      "type": "cyber",
+      "ageRange": [18, 60],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "帮助朋友曝光这个监视计划", "effects": { "HUMAN": 3, "REP": 3, "TECH": 2, "MONEY": -1000 } },
+        { "id": "branch_2", "text": "事不关己，保持沉默", "effects": { "MONEY": 500, "HUMAN": -2, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 1, "TRAUMA": 1 },
+      "tags": ["康陶", "监视", "生物特征", "隐私"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 817,
+      "title": "康陶AI研发部门招聘",
+      "description": "康陶的人工智能研发部门正在招聘「数据标注员」——说是AI训练，实际上是给康陶的新一代战争AI做人工反馈。招聘海报上写着「零基础可培训」「高薪」「弹性工作制」。但面试官不经意间透露了一个细节：你需要签署一份保密协议，承诺「不向外透露训练内容」。而训练内容，是让AI识别「需要清除的目标」——包括人脸和赛博签名。",
+      "type": "economy",
+      "ageRange": [22, 50],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "branch_1", "text": "接受这份高薪工作", "effects": { "MONEY": 3000, "TECH": 3, "HUMAN": -2 } },
+        { "id": "branch_2", "text": "拒绝，不想参与战争AI训练", "effects": { "HUMAN": 2, "REP": 1, "MONEY": -500 } }
+      ],
+      "effects": { "TECH": 1, "MONEY": 500 },
+      "tags": ["康陶", "AI", "招聘", "战争"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 818,
+      "title": "康陶量子加密数据运输",
+      "description": "一个穿着康陶制服的神秘人找到你，希望能雇佣你运送一批「量子加密数据载体」。任务很简单：从一个地点取货，送到另一个地点的指定接收人手中。报酬异常丰厚——相当于你半年的收入。但神秘人提醒你：「绝对不要打开数据载体，也不要试图解码。」你看着那个只有指甲盖大小的银色芯片，知道这里面装着的很可能是能让人消失的秘密。",
+      "type": "economy",
+      "ageRange": [20, 55],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 18,
+      "branches": [
+        { "id": "branch_1", "text": "接下运送任务，赚钱要紧", "effects": { "MONEY": 4000, "TECH": 1, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "拒绝，太危险了", "effects": { "HUMAN": 1, "MONEY": -200 } }
+      ],
+      "effects": { "TECH": 1, "MONEY": 500 },
+      "tags": ["康陶", "加密", "运输", "神秘"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 819,
+      "title": "康陶上海总部外调机会",
+      "description": "康陶的内部系统弹出了一条调职通知——你被选中参加上海总部的「员工交流计划」。为期一年，薪资翻倍，上海总部提供公寓。看起来是千载难逢的机会。但你在夜之城的朋友低声告诉你：前几批「交流」过去的员工，大部分都没有回来——他们被安排在了「不能离职」的岗位上，护照和身份证都被「统一保管」。",
+      "type": "social",
+      "ageRange": [25, 50],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "接受外调，拥抱新机会", "effects": { "MONEY": 5000, "TECH": 3, "REP": 2 } },
+        { "id": "branch_2", "text": "拒绝调职，留在夜之城", "effects": { "HUMAN": 2, "REP": -1, "MONEY": -500 } }
+      ],
+      "effects": { "STYLE": 1, "REP": 1 },
+      "tags": ["康陶", "外调", "上海", "机会"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 820,
+      "title": "康陶基因数据采集伦理争议",
+      "description": "康陶的「全民健康计划」在社区里设立了基因数据采集点。他们声称这能帮助「提前预测疾病风险、个性化医疗方案」。采集点前排起了长队——因为每位参与者能领到两百欧元和一张免费体检券。但你注意到，采集协议的小字里写着：参与者同意康陶「永久持有并使用其基因序列数据用于研究」。研究什么？谁来监督？没有人说得清。",
+      "type": "medical",
+      "ageRange": [18, 60],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "参与采集拿到钱和体检", "effects": { "MONEY": 200, "LIFE": 1, "HUMAN": -1 } },
+        { "id": "branch_2", "text": "抵制采集，发起联名抗议", "effects": { "HUMAN": 3, "REP": 2, "MONEY": -300 } }
+      ],
+      "effects": { "TECH": 1, "MONEY": 100 },
+      "tags": ["康陶", "基因", "数据", "伦理"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 821,
+      "title": "生物科技公司的农场实验",
+      "description": "生物科技公司(Biotechnica)在城郊经营着一座巨大的农业综合体。你被雇佣去做临时工，任务是给一种转基因作物喷洒生长促进剂。穿着防护服的技术员告诉你这些作物能「在贫瘠土壤中高产，解决粮食短缺」。但你在田埂边看到了不该看到的东西——粉红色的溪水从农场流向了下游的居民区，而溪水边的野草正在疯狂地、不受控制地生长。",
+      "type": "daily",
+      "ageRange": [20, 55],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "完成工作，拿钱走人", "effects": { "MONEY": 600, "REP": -1, "HUMAN": -1 } },
+        { "id": "branch_2", "text": "偷偷收集样本，找媒体曝光", "effects": { "TECH": 2, "REP": 2, "HUMAN": 2, "MONEY": -500 } }
+      ],
+      "effects": { "MONEY": 300, "TRAUMA": 1 },
+      "tags": ["生物科技", "农场", "转基因", "污染"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 822,
+      "title": "N54新闻的报道邀约",
+      "description": "你接到了N54新闻台的电话——他们想就你最近的「经历」做一个采访。N54是夜之城最大的媒体帝国，他们的报道能把你变成网红，也能把你描绘成恶棍。记者在电话里的声音甜得像糖：「我们相信你的故事会让很多人感同身受。」但你知道，N54的背后是某家企业的资金。所有人的故事都是他们操控舆论的工具。",
+      "type": "social",
+      "ageRange": [20, 55],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "接受采访，借机表达自己的观点", "effects": { "REP": 3, "STYLE": 2, "MONEY": 1000 } },
+        { "id": "branch_2", "text": "拒绝，不想成为被操控的棋子", "effects": { "HUMAN": 2, "REP": -1 } }
+      ],
+      "effects": { "REP": 1, "MONEY": 500 },
+      "tags": ["媒体", "N54", "采访", "舆论"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 823,
+      "title": "创伤小组保险推销",
+      "description": "一个穿着整洁制服、神情倨傲的销售代表拦住了你。他是创伤小组国际(Trauma Team)的保险经纪人——在夜之城，这意味着你离「VIP待遇」只差一份合同。他的推销词充满了诱惑：「只要您购买白金套餐，任何地点、任何时间，我们都会在七分钟内到达。」他展示了全息投影——武装医疗AV从天而降，将垂死的客户从鬼门关拉回来。但月费高得离谱。",
+      "type": "economy",
+      "ageRange": [22, 60],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "购买创伤小组白金保险", "effects": { "MONEY": -3000, "LIFE": 3, "REP": 2 } },
+        { "id": "branch_2", "text": "买不起，继续靠自己的命硬扛", "effects": { "LIFE": -1, "REP": -1, "HUMAN": 1 } }
+      ],
+      "effects": { "MONEY": -500, "LIFE": 1 },
+      "tags": ["创伤小组", "保险", "推销", "医疗"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 824,
+      "title": "Zetatech新型义体发布会",
+      "description": "Zetatech在日本街举办了一场盛大的新型义体发布会。巨大的全息广告悬浮在建筑之间，展示着一款名为「幻影链接」的神经接口——据称能让人的反应速度提升百分之三百。主持人请观众上台体验，你被抽中了。在聚光灯下，一个技术人员将一束细如发丝的光纤接入你颈后的接口。一瞬间，世界慢了下来——你能看到飘浮在空气中的每一粒灰尘。",
+      "type": "cyber",
+      "ageRange": [20, 50],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "现场下单购买幻影链接", "effects": { "CHROME": 3, "TECH": 2, "MONEY": -5000 } },
+        { "id": "branch_2", "text": "只是体验一下，不买", "effects": { "TECH": 1, "HUMAN": 1 } }
+      ],
+      "effects": { "STYLE": 1, "REP": 1 },
+      "tags": ["Zetatech", "义体", "发布会", "新科技"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 825,
+      "title": "克莱恩赛博美容广告",
+      "description": "街边的全息广告牌上，克莱恩(Kren)赛博美容的最新广告正在循环播放。一个完美的——过于完美的——人脸微笑着展示着他们的服务：皮下LED植入、虹膜变色、骨骼重塑、数字皮肤。「美丽，从这里开始。」广告说得好像美丽只是价格标签上的数字。你注意到广告角落的免责声明小到几乎看不见：「部分手术可能导致不可逆的神经损伤。」",
+      "type": "daily",
+      "ageRange": [18, 50],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "预约一次赛博美容手术", "effects": { "STYLE": 3, "MONEY": -2000, "CHROME": 1 } },
+        { "id": "branch_2", "text": "对这种虚假宣传嗤之以鼻", "effects": { "HUMAN": 2, "REP": 1 } }
+      ],
+      "effects": { "STYLE": 1, "MONEY": -200 },
+      "tags": ["克莱恩", "赛博美容", "整形", "广告"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 826,
+      "title": "通信巨头的屋顶信号塔",
+      "description": "一家通信巨头在你居住的公寓楼顶上架设了新的信号塔。工人们只用了半天就完成了安装，效率高得可疑。但从那天起，住在六楼以下的居民开始出现奇怪的症状——失眠、头痛、电子设备无故失灵。邻居们怀疑是信号塔的辐射在作祟，但物业公司拿着通信公司给的封口费，要求所有人都保持沉默。你躺在床上，感觉脑袋里有一种细微的嗡嗡声。",
+      "type": "daily",
+      "ageRange": [16, 60],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "联合邻居向市政投诉", "effects": { "HUMAN": 2, "REP": 2, "LIFE": 1, "MONEY": -500 } },
+        { "id": "branch_2", "text": "只能自己搬家避开辐射", "effects": { "LIFE": 1, "MONEY": -2000, "TRAUMA": 1 } }
+      ],
+      "effects": { "TRAUMA": 1, "LIFE": -1 },
+      "tags": ["通信", "信号塔", "辐射", "健康"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 827,
+      "title": "行业会议被骗入传销",
+      "description": "你参加了一个所谓的「未来科技行业峰会」。会场租在豪华酒店宴会厅里，看起来相当正规。台上穿着闪亮西装的演讲者正激情澎湃地讲述着「下一个万亿级市场」。但你越听越不对劲——他口中的「去中心化共生经济模式」，分明就是传销的经典话术。他要求每位与会者「预缴两千欧元会员费」，承诺「一个月回本，三个月财富自由」。会场里有人已经开始掏钱了。",
+      "type": "economy",
+      "ageRange": [22, 55],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "识破骗局，悄悄离场", "effects": { "TECH": 1, "HUMAN": 1, "MONEY": -100 } },
+        { "id": "branch_2", "text": "当场揭穿，提醒其他人", "effects": { "REP": 3, "HUMAN": 2, "TRAUMA": 1 } }
+      ],
+      "effects": { "MONEY": -200, "TRAUMA": 1 },
+      "tags": ["传销", "行业会议", "骗局", "经济"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 828,
+      "title": "企业内部社交派对",
+      "description": "公司举办了季度社交派对，地点在一间高层景观酒吧。酒水免费，音乐震耳欲聋，同事们在舞池里——或者更准确地说，在老板的视线里——尽情狂欢。但你知道，这种派对的真正目的是观察——谁在喝酒误事、谁在结交不该结交的人、谁在发酒疯。角落里人事部的经理正端着酒杯微笑，眼神却像摄像头一样扫过每一个人。",
+      "type": "social",
+      "ageRange": [22, 55],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "尽情享受派对，搞好同事关系", "effects": { "REP": 2, "STYLE": 1, "MONEY": -500 } },
+        { "id": "branch_2", "text": "保持清醒低调，观察其他人", "effects": { "TECH": 2, "TRAUMA": 1, "HUMAN": -1 } }
+      ],
+      "effects": { "MONEY": -300, "REP": 1 },
+      "tags": ["社交", "派对", "企业", "办公室文化"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 829,
+      "title": "企业体能测试被淘汰",
+      "description": "公司突然组织了全员体能测试——跑步、举重、反应速度检测。表面上说是「关注员工健康」，实际上是为了筛选出不适合高强度工作的人。你在耐力跑环节中落在了最后，负责记录的HR在你名字后面标注了一个红色的记号。测试结束后，主管把你叫到一边：「你的合同还有三个月到期，到时候我们再看。」你明白这是什么意思。",
+      "type": "daily",
+      "ageRange": [25, 55],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 30,
+      "branches": [
+        { "id": "branch_1", "text": "加强锻炼提升体能", "effects": { "LIFE": 2, "MONEY": -500, "CHROME": 1 } },
+        { "id": "branch_2", "text": "找门路走后门保住工作", "effects": { "MONEY": -2000, "REP": -1, "TECH": 1 } }
+      ],
+      "effects": { "TRAUMA": 2, "LIFE": -1 },
+      "tags": ["企业", "体能测试", "淘汰", "工作"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 830,
+      "title": "发现同事是商业间谍",
+      "description": "你无意中发现了同事的秘密——他是竞争对手公司安插的商业间谍。那天你加班到深夜，路过他的工位时，看到他的个人屏幕上正显示着不属于公司系统的数据传输界面。他察觉到你在身后，迅速关闭了屏幕。那一瞬间，你们四目相对。你从他的眼神中读到了慌乱，也读到了一丝威胁——「你什么都没看到，对吗？」",
+      "type": "social",
+      "ageRange": [24, 55],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "向公司安全部门举报", "effects": { "MONEY": 2000, "REP": 2, "HUMAN": -1, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "假装没看见，但暗中留证据", "effects": { "TECH": 2, "REP": 1, "TRAUMA": 2 } }
+      ],
+      "effects": { "TRAUMA": 2, "TECH": 1 },
+      "tags": ["商业间谍", "企业", "秘密", "威胁"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 831,
+      "title": "企业要求安装监控软件",
+      "description": "IT部门发了一封全员邮件：所有员工必须在个人终端上安装「企业安全管理软件」。邮件强调这是「出于数据安全考虑」，但所有人都心知肚明——这个软件能监控你的一切操作：浏览记录、聊天内容、甚至摄像头和麦克风。不安装的话，门禁卡会在明天早上失效。你看着安装协议上长长的权限列表，感到自己的隐私被一寸寸剥夺。",
+      "type": "cyber",
+      "ageRange": [22, 55],
+      "weight": 13,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "安装软件，保住工作", "effects": { "MONEY": 0, "HUMAN": -2, "TECH": -1 } },
+        { "id": "branch_2", "text": "找技术手段绕过监控", "effects": { "TECH": 3, "TRAUMA": 1, "REP": 1 } }
+      ],
+      "effects": { "HUMAN": -1, "TRAUMA": 1 },
+      "tags": ["企业", "监控", "隐私", "IT"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 832,
+      "title": "年度绩效评估决定去留",
+      "description": "又到了年度绩效评估的时候。你的主管坐在办公桌对面，面前摊着你这一年的全部工作数据——完成的项目、出勤率、同事评价、甚至你在茶水间闲聊被AI捕捉到的「消极言论」关键词。他推了推眼镜，用公事公办的语气说：「我很遗憾地通知你，你的绩效评级是C。这意味着今年没有奖金，而且……」他停顿了一下，看着你，「下个季度的裁员名单里，你的名字排在前面。」",
+      "type": "daily",
+      "ageRange": [24, 55],
+      "weight": 14,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "据理力争，要求重新评估", "effects": { "REP": 2, "MONEY": 500, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "默默接受，开始找下家", "effects": { "TECH": 1, "MONEY": -1000, "HUMAN": -1 } }
+      ],
+      "effects": { "MONEY": -1000, "TRAUMA": 2 },
+      "tags": ["企业", "绩效", "评估", "裁员"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 833,
+      "title": "食堂食物中毒集体诉讼",
+      "description": "公司食堂午餐供应的咖喱鸡肉出了问题。下午两点，先是市场部三人开始呕吐，然后是客服部一片哀嚎。到下午四点，已经有三十多人被送到医院。你也是其中之一——你的胃像被刀绞一样痛。后来调查发现，食堂承包商为了省钱使用了过期四个月的冷冻鸡肉。有人提议集体诉讼，但法务部发来通知：「建议内部和解，否则涉事员工可能面临纪律处分。」",
+      "type": "medical",
+      "ageRange": [20, 55],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "branch_1", "text": "加入集体诉讼维权", "effects": { "MONEY": 3000, "REP": 2, "LIFE": -2, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "接受公司和解方案", "effects": { "MONEY": 1000, "LIFE": -1, "HUMAN": -1 } }
+      ],
+      "effects": { "LIFE": -2, "TRAUMA": 1 },
+      "tags": ["食物中毒", "诉讼", "企业", "健康"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 834,
+      "title": "公司团建意外事故",
+      "description": "公司把今年的团建活动定在了城郊的「极限拓展基地」。活动项目包括：高空断桥、信任背摔和实弹彩弹对抗。午餐时，HR总监为了活跃气氛端出了自酿的烈酒。下午的彩弹对抗中，有人喝多了把彩弹枪当成了真家伙——结果不小心打中了安全员的要害。场面一片混乱，救护车来了，警察也来了。HR总监的脸白得像纸。",
+      "type": "combat",
+      "ageRange": [22, 50],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "协助急救，帮忙处理混乱", "effects": { "REP": 2, "HUMAN": 2, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "趁乱离开，别惹麻烦上身", "effects": { "LIFE": 1, "REP": -1, "MONEY": -200 } }
+      ],
+      "effects": { "TRAUMA": 3, "REP": -1 },
+      "tags": ["团建", "事故", "企业", "意外"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 835,
+      "title": "高管的秘密派对邀请",
+      "description": "你被选中参加COO的私人派对——这在整个公司里被视为一种「荣誉」。派对在一艘豪华游艇上举行，出席者都是公司的核心人物。酒过三巡，气氛变得诡异起来。有人拿出了非法超梦芯片，有人叫来了「特殊服务」。COO醉醺醺地搂着你的肩膀说：「在我们这个圈子里，有共同的秘密才会成为真正的自己人。」",
+      "type": "special",
+      "ageRange": [25, 55],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "参与狂欢，成为「自己人」", "effects": { "MONEY": 5000, "REP": 3, "HUMAN": -3, "ADDICTION": 2 } },
+        { "id": "branch_2", "text": "找借口提前离场", "effects": { "HUMAN": 2, "REP": -2, "TRAUMA": 1 } }
+      ],
+      "effects": { "TRAUMA": 2, "HUMAN": -1 },
+      "tags": ["企业", "秘密派对", "高管", "腐败"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 836,
+      "title": "企业的裁员风暴",
+      "description": "裁员风暴终于来了。早上九点，全公司的门禁系统统一锁死，安全部的人开始按名单「请人离开」。被裁的员工连收拾工位的机会都没有——他们的个人物品被装进纸箱，由保安直接送到门卫处。走廊里有人在哭，有人在骂，有人沉默地收拾着东西。你的邮箱里收到了一封新邮件，标题是「关于组织架构调整的通知」。你的手在鼠标上颤抖着，不敢点开。",
+      "type": "economy",
+      "ageRange": [22, 55],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 30,
+      "branches": [
+        { "id": "branch_1", "text": "主动找HR谈离职补偿", "effects": { "MONEY": 3000, "REP": -1, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "争取留任，愿意降薪", "effects": { "MONEY": -2000, "TECH": 1, "HUMAN": -1 } }
+      ],
+      "effects": { "MONEY": -1500, "TRAUMA": 3 },
+      "tags": ["裁员", "企业", "失业", "经济"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 837,
+      "title": "内部晋升机会的激烈竞争",
+      "description": "部门主管的职位空出来了，你和你的一位同事是最有力的竞争者。表面上你们还是客客气气的合作伙伴，背地里已经开始互相使绊子——他在老板面前说你的项目延误，你在会议上质疑他的数据真实性。这场晋升之战不仅关乎更高的薪水和职位，更关乎你在公司里的生存空间。输了的人不仅得不到晋升，还会成为赢家的第一个清洗对象。",
+      "type": "social",
+      "ageRange": [26, 50],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "公平竞争，用实力说话", "effects": { "REP": 2, "MONEY": 2000, "TECH": 2, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "不择手段，一定要赢", "effects": { "MONEY": 3000, "REP": 1, "HUMAN": -3 } }
+      ],
+      "effects": { "TRAUMA": 2, "REP": 1 },
+      "tags": ["晋升", "竞争", "企业", "办公室政治"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 838,
+      "title": "公司年会上的尴尬表演",
+      "description": "公司年会要求每个部门出一个节目。你们部门让你上台表演——因为你「看起来最不怯场」。你被逼着穿上了一身亮片紧身衣，在全公司五百人面前唱一首改编版的流行歌曲，歌词被改成了赞美公司业绩的马屁内容。聚光灯打在你脸上，你看到台下的同事们在憋笑，老板在鼓掌，而你想找个地缝钻进去。全息摄像机正在全程录制。",
+      "type": "daily",
+      "ageRange": [22, 50],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "硬着头皮上台，完成表演", "effects": { "REP": 1, "STYLE": 1, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "临阵脱逃，丢脸就丢脸吧", "effects": { "REP": -2, "HUMAN": 1, "MONEY": -500 } }
+      ],
+      "effects": { "STYLE": -1, "TRAUMA": 1 },
+      "tags": ["年会", "表演", "尴尬", "企业"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 839,
+      "title": "被调派到偏远分公司",
+      "description": "一纸调令从天而降——你被「光荣地」选派到公司在阿拉斯加的分公司支援工作。名义上是「支援偏远地区业务开拓」，实则是让你主动辞职的变相手段。阿拉斯加分公司的条件极其艰苦：极寒天气、半年极夜、和当地一家矿产公司的利益纠纷经常演变成武装冲突。上一个被调去的人，半年后因「心理问题」被送了回来，整个人瘦了三十斤，眼神空洞得像变了个人。",
+      "type": "daily",
+      "ageRange": [25, 50],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "服从调令，去阿拉斯加报到", "effects": { "MONEY": 4000, "CHROME": 1, "LIFE": -3, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "拒绝调令，辞职不干了", "effects": { "MONEY": -1000, "HUMAN": 2, "REP": -1 } }
+      ],
+      "effects": { "MONEY": -500, "TRAUMA": 2 },
+      "tags": ["企业", "调派", "偏远", "惩罚"],
+      "deathChainEntry": false
+    }
+  ]
+}

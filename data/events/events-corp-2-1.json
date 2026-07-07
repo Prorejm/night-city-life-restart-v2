@@ -1,0 +1,5248 @@
+{
+  "events": [
+    {
+      "id": 2600,
+      "title": "荒坂灵魂保险计划",
+      "description": "荒坂公司推出了一项名为「永恒之魂」的神秘服务，声称能在客户死后将其意识上传至公司服务器永存。招募会上，西装革履的销售代表微笑着递来合同，条款密密麻麻藏在第47页的一行小字里。你注意到前几个签约者如今都「意外身亡」了，而他们的家属却拿到了巨额赔偿。代表暗示你的名字已经被系统预选，拒绝签约可能会带来麻烦。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "签约永恒之魂，领取签约奖金",
+          "effects": {
+            "MONEY": 6000,
+            "DEBT": 3000,
+            "HUMAN": -4,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝签约并悄悄复制合同留底",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": -500
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "假装签约，事后用黑客手段抹除记录",
+          "effects": {
+            "TECH": 4,
+            "CHROME": 1,
+            "REP": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "荒坂",
+        "灵魂保险",
+        "阴谋"
+      ]
+    },
+    {
+      "id": 2601,
+      "title": "荒坂数据金库入侵",
+      "description": "你被一个匿名买家雇佣，目标是荒坂位于洛杉矶的地下数据金库。据说里面存放着整个西海岸政客的把柄档案。金库由军用级ICE层层封锁，但买家提供了后门密钥。报酬高得离谱，但你清楚荒坂的报复手段——他们会让你生不如死。你的神经接口已经开始隐隐作痛，像是被什么东西盯上了。",
+      "type": "cyber",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接下任务，潜入数据金库",
+          "effects": {
+            "MONEY": 9000,
+            "TECH": 5,
+            "TRAUMA": 3,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向荒坂安全部门举报这次招募",
+          "effects": {
+            "REP": 4,
+            "MONEY": 2000,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拿走定金后消失，伪造死亡记录",
+          "effects": {
+            "MONEY": 3000,
+            "TECH": 2,
+            "DEBT": 2000,
+            "STYLE": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "荒坂",
+        "数据金库",
+        "黑客"
+      ]
+    },
+    {
+      "id": 2602,
+      "title": "荒坂家族继承权暗战",
+      "description": "荒坂家族内部的继承权斗争烧到了美国分部。两位继承人各自拉拢员工站队，办公室变成了没有硝烟的战场。你被双方同时约谈，一方许诺升职和股票期权，另一方威胁曝光你的一项违规记录。茶水间的同事们已经开始 mysteriously 失踪，而你的工位上多了一束黑色玫瑰——荒坂的死亡警告。",
+      "type": "social",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "投靠长女派系，获得高层庇护",
+          "effects": {
+            "MONEY": 5000,
+            "REP": 3,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "保持中立，两边都不得罪",
+          "effects": {
+            "STYLE": 2,
+            "REP": -2,
+            "MONEY": -1000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "暗中收集两派黑料，待价而沽",
+          "effects": {
+            "TECH": 3,
+            "MONEY": 2000,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": -1
+      },
+      "tags": [
+        "荒坂",
+        "继承权",
+        "派系"
+      ]
+    },
+    {
+      "id": 2603,
+      "title": "荒坂精神控制原型机",
+      "description": "一个从荒坂实验室逃出来的技术员找到了你，手里攥着一台巴掌大的原型设备。他说这是「relief-7」精神抑制器，能远程操控植入了特定芯片的人的情绪和判断。荒坂的回收小队已经追踪到了这里，你必须立刻做决定。技术员的眼睛布满血丝，显然已经好几天没合眼了。",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买下原型机，留作自用或倒卖",
+          "effects": {
+            "MONEY": -4000,
+            "TECH": 5,
+            "CHROME": 2,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "协助技术员逃出城，换取技术情报",
+          "effects": {
+            "HUMAN": 3,
+            "TECH": 3,
+            "MONEY": -2000,
+            "REP": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把技术员和设备一起交给荒坂",
+          "effects": {
+            "MONEY": 7000,
+            "HUMAN": -5,
+            "REP": -4,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "荒坂",
+        "精神控制",
+        "原型机"
+      ]
+    },
+    {
+      "id": 2604,
+      "title": "荒坂员工忠诚度审计",
+      "description": "荒坂美国分部启动了年度「忠诚度审计」，每位员工都要接受脑波扫描和财务审查。审计官是个面无表情的女人，据说她审过的人有一半再没回到工位。你的账户里有几笔来路不明的转账，一旦被查出后果不堪设想。走廊尽头传来低沉的电流声，扫描仪已经在预热了。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "配合审计，祈祷系统查不出问题",
+          "effects": {
+            "REP": 1,
+            "TRAUMA": 2,
+            "MONEY": -2000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "提前找人伪造财务记录",
+          "effects": {
+            "MONEY": -3000,
+            "TECH": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "辞职跑路，放弃荒坂的一切",
+          "effects": {
+            "STYLE": -3,
+            "MONEY": -4000,
+            "HUMAN": 2,
+            "DEBT": -2000
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": -1
+      },
+      "tags": [
+        "荒坂",
+        "审计",
+        "忠诚度"
+      ]
+    },
+    {
+      "id": 2605,
+      "title": "荒坂幽灵员工名单",
+      "description": "你在整理荒坂人事档案时发现了一份「幽灵名单」——上百名早已死亡或失踪的员工仍在领薪水，金额流向同一个离岸账户。这显然是一笔庞大的洗钱操作，涉及金额超过两千万。你的直属上司出现在你身后，问你是否发现了什么「有趣的东西」。屏幕上的数据还在滚动，你的手指悬在键盘上方。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "把名单交给上司，假装什么都没看见",
+          "effects": {
+            "MONEY": 3000,
+            "HUMAN": -3,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "复制名单，匿名卖给竞争企业",
+          "effects": {
+            "MONEY": 8000,
+            "TECH": 3,
+            "REP": -3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向上司的上司举报，赌一把高层清洗",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 1,
+            "MONEY": -1000,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "荒坂",
+        "洗钱",
+        "幽灵员工"
+      ]
+    },
+    {
+      "id": 2606,
+      "title": "荒坂灵魂杀手新版本",
+      "description": "荒坂的「灵魂杀手」程序据说有了新版本，能在不杀死宿主的情况下复制其意识。一个自称项目组成员的联系人约你在霓虹巷的拉面馆见面，声称愿意以低价出售一份测试版拷贝。他说公司正在用流浪汉做实验，他已经受够了。拉面馆的电视正在播放荒坂的最新广告，画面里一家人幸福地笑着。",
+      "type": "cyber",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买测试版拷贝",
+          "effects": {
+            "MONEY": -5000,
+            "TECH": 6,
+            "CHROME": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝交易，但保留对方联系方式",
+          "effects": {
+            "STYLE": 1,
+            "TECH": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "通知荒坂安全部门抓捕此人",
+          "effects": {
+            "MONEY": 4000,
+            "HUMAN": -4,
+            "REP": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "荒坂",
+        "灵魂杀手",
+        "意识复制"
+      ]
+    },
+    {
+      "id": 2607,
+      "title": "军武科技库存清仓",
+      "description": "军武科技的一个仓库管理员私下联系你，说有一批「退役」武器需要尽快出手。这批货包括脉冲步枪、智能手雷和几套未登记的外骨骼装甲，全是从阿富汗前线淘汰下来的。价格只有黑市的三成，但交易必须在天亮前完成。仓库的自动门在身后缓缓关闭，冷光灯下成排的军火泛着金属光泽。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全盘吃进，转手倒卖赚差价",
+          "effects": {
+            "MONEY": 8000,
+            "REP": -2,
+            "DEBT": 2000,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只买一套外骨骼自用",
+          "effects": {
+            "MONEY": -3000,
+            "CHROME": 4,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "举报这笔非法交易",
+          "effects": {
+            "REP": 4,
+            "MONEY": 1500,
+            "HUMAN": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "军武科技",
+        "军火",
+        "黑市"
+      ]
+    },
+    {
+      "id": 2608,
+      "title": "军武科技武器测试志愿",
+      "description": "军武科技招募「产品体验官」，号称测试下一代单兵作战系统。合同上写着「自愿承担一切风险」，签字费高达五千。前几期志愿者有人回来后浑身植入物，有人再也没回来。体检医生面无表情地让你在知情同意书上签字，笔尖有些发涩。",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "签下合同参加测试",
+          "effects": {
+            "MONEY": 5000,
+            "CHROME": 5,
+            "TRAUMA": 3,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只参加非侵入式测试项目",
+          "effects": {
+            "MONEY": 2000,
+            "TECH": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝并传播测试内幕",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "MONEY": -500
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "军武科技",
+        "武器测试",
+        "实验"
+      ]
+    },
+    {
+      "id": 2609,
+      "title": "军武科技政变军火",
+      "description": "一个中美洲小国正在酝酿政变，军武科技是幕后最大的军火供应商。你的前战友现在在那边当雇佣兵，发来加密消息说公司用降价的武器换取未来的采矿权。他问你愿不愿意做中间人，佣金按货值的一成算。消息末尾附了一张满是弹痕的村庄照片。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "担任中间人，促成这笔交易",
+          "effects": {
+            "MONEY": 9000,
+            "REP": -4,
+            "HUMAN": -4,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝参与，劝前战友也收手",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "MONEY": -500
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把情报卖给军武科技的竞争对手",
+          "effects": {
+            "MONEY": 6000,
+            "TECH": 2,
+            "REP": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "军武科技",
+        "政变",
+        "军火贸易"
+      ]
+    },
+    {
+      "id": 2610,
+      "title": "军武科技老兵回收计划",
+      "description": "军武科技推出「老兵回收计划」，以高价收购退役军人的军用植入物进行「再利用」。广告上说这是环保举措，但你知道那些植入物里藏着加密的作战数据。一个瘸腿老兵在诊所门口犹豫不决，他体内的战术义眼价值连城。护士不耐烦地敲着桌子，催他快做决定。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮老兵谈个好价钱，从中抽成",
+          "effects": {
+            "MONEY": 4000,
+            "HUMAN": -2,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "劝老兵保留植入物，数据更值钱",
+          "effects": {
+            "TECH": 3,
+            "HUMAN": 3,
+            "MONEY": -500
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "自己报名出售旧军用植入物",
+          "effects": {
+            "MONEY": 3000,
+            "CHROME": -3,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": -1
+      },
+      "tags": [
+        "军武科技",
+        "老兵",
+        "植入物回收"
+      ]
+    },
+    {
+      "id": 2611,
+      "title": "军武科技竞标贿赂",
+      "description": "军武科技正在竞标国防部下一代步兵系统的大单，竞争对手是欧洲的军工巨头。你的表哥在国防部采购处任职，军武科技的人暗示只要你能让表哥「倾向性评估」，好处少不了。一个棕色信封已经放在了你的桌上，厚度惊人。窗外是荒坂大厦的霓虹倒影，分不清是白天还是黑夜。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "收下钱，去游说表哥",
+          "effects": {
+            "MONEY": 7000,
+            "REP": -3,
+            "HUMAN": -3,
+            "DEBT": 1000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "收钱但不办事，赌他们不敢追究",
+          "effects": {
+            "MONEY": 5000,
+            "REP": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝并举报贿赂行为",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "MONEY": -500
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "军武科技",
+        "贿赂",
+        "竞标"
+      ]
+    },
+    {
+      "id": 2612,
+      "title": "军武科技战场清道夫",
+      "description": "军武科技在海外战场留下了大量未回收的实验性装备，他们雇佣「清道夫」秘密回收。报酬按件计费，但任务区域是活跃战区，伤亡率极高。中介是个戴墨镜的光头，他递给你一张单程机票和一份不记名人身保险。机场的广播在催促登机，而你的行李只有一个空背包。",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接下清道夫任务",
+          "effects": {
+            "MONEY": 8000,
+            "TRAUMA": 3,
+            "CHROME": 2,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只负责后勤和情报分析",
+          "effects": {
+            "MONEY": 3000,
+            "TECH": 3,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝，这种活太要命",
+          "effects": {
+            "HUMAN": 2,
+            "STYLE": 1,
+            "MONEY": -300
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "军武科技",
+        "战场回收",
+        "雇佣兵"
+      ]
+    },
+    {
+      "id": 2613,
+      "title": "军武科技智能弹药后门",
+      "description": "一个军武科技的前工程师声称，公司最新型智能弹药内置了远程自毁后门，能在战场上一键瘫痪所有友军武器。他说这是为了防止武器落入敌方手中的「保险措施」，但也可以被用来清洗不听话的盟友。他把证据芯片扔在桌上，要价一万。证据的真伪你无法当场验证，但万一属实这就是一颗定时炸弹。",
+      "type": "cyber",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买下证据，待价而沽",
+          "effects": {
+            "MONEY": -5000,
+            "TECH": 4,
+            "REP": 2,
+            "TRAUMA": 1,
+            "DEBT": 2000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "把证据交给媒体曝光",
+          "effects": {
+            "REP": 5,
+            "HUMAN": 3,
+            "MONEY": -1000,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "转手卖给军武科技的敌对国",
+          "effects": {
+            "MONEY": 9000,
+            "REP": -5,
+            "HUMAN": -4
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "军武科技",
+        "智能弹药",
+        "后门"
+      ]
+    },
+    {
+      "id": 2614,
+      "title": "创伤小队会员降级陷阱",
+      "description": "创伤小队向你推销白金会员升级，承诺三分钟内到达全球任何地点。但合同附件里藏着一条「风险分级条款」——一旦你的健康评分低于阈值，他们会自动降级响应甚至拒派。销售员笑着说你完全不用担心，同时偷偷瞥了一眼你的体检报告。前台的屏幕滚动着今日已拒救的人数，数字触目惊心。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "升级白金会员",
+          "effects": {
+            "MONEY": -5000,
+            "LIFE": 2,
+            "DEBT": 2000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "维持现有等级不升级",
+          "effects": {
+            "STYLE": 1,
+            "MONEY": -500
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "投诉诱导性销售并要求赔偿",
+          "effects": {
+            "MONEY": 2000,
+            "REP": 2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": -1
+      },
+      "tags": [
+        "创伤小队",
+        "会员",
+        "陷阱"
+      ]
+    },
+    {
+      "id": 2615,
+      "title": "创伤小队器官优先权",
+      "description": "创伤小队被曝在抢救过程中优先救治「器官捐献登记」的病人——因为死后能摘取器官转卖。一个护士向你透露，某些高净值客户甚至排队等候特定血型的「供体」。她手里有一份内部配对名单，上面赫然有你的名字。医院走廊弥漫着消毒水和恐惧的味道。",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买下名单自保并删除自己的信息",
+          "effects": {
+            "MONEY": -3000,
+            "TECH": 2,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "把名单泄露给调查记者",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 3,
+            "MONEY": 1000,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "注销器官捐献登记并远离创伤小队",
+          "effects": {
+            "HUMAN": 2,
+            "STYLE": -1,
+            "MONEY": -500
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "创伤小队",
+        "器官",
+        "黑幕"
+      ]
+    },
+    {
+      "id": 2616,
+      "title": "创伤小队保险捆绑",
+      "description": "你的医疗保险被悄悄捆绑到了创伤小队的「快速响应套餐」上，每月自动扣款。等你发现时已经扣了大半年，而客服说取消需要支付违约金并重新评估健康风险。账单上的数字像滚雪球一样越来越大，你的信用评分已经开始下滑。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支付违约金解绑",
+          "effects": {
+            "MONEY": -4000,
+            "DEBT": -1000,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找黑客篡改账单记录",
+          "effects": {
+            "MONEY": -1000,
+            "TECH": 3,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "忍气吞声继续付费",
+          "effects": {
+            "MONEY": -2000,
+            "DEBT": 3000,
+            "STYLE": -2
+          }
+        }
+      ],
+      "effects": {
+        "DEBT": 1
+      },
+      "tags": [
+        "创伤小队",
+        "保险",
+        "捆绑销售"
+      ]
+    },
+    {
+      "id": 2617,
+      "title": "创伤小队见死不救",
+      "description": "你的朋友在街头被流弹击中，你呼叫了创伤小队。接线员核对了你朋友的会员等级后说「响应时间预计四十五分钟」，但他的白金会员明明该三分钟到。你怀疑接线员在故意拖延，因为朋友的保险最近被调低了优先级。鲜血在他身下蔓延，你的手在发抖。",
+      "type": "social",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "自己把朋友送到最近的黑诊所",
+          "effects": {
+            "MONEY": -2000,
+            "HUMAN": 3,
+            "TRAUMA": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "威胁接线员立刻派车",
+          "effects": {
+            "REP": 2,
+            "STYLE": 2,
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "录制通话留作日后诉讼证据",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "创伤小队",
+        "见死不救",
+        "优先级"
+      ]
+    },
+    {
+      "id": 2618,
+      "title": "创伤小队医疗数据倒卖",
+      "description": "创伤小队被指控将会员的医疗基因数据打包出售给药企和保险公司。你的基因报告显示你携带某种罕见病基因，而你的保费最近莫名翻倍。一个数据掮客联系你，说可以帮你查证数据是否已被转卖。他开价不低，但语气里透着一丝正义感。",
+      "type": "cyber",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "花钱查证并准备起诉",
+          "effects": {
+            "MONEY": -3000,
+            "REP": 3,
+            "HUMAN": 2,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "反向把自己的基因数据卖给药企",
+          "effects": {
+            "MONEY": 5000,
+            "HUMAN": -3,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "加入集体诉讼，分摊成本",
+          "effects": {
+            "MONEY": -1000,
+            "REP": 2,
+            "HUMAN": 2
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": -1
+      },
+      "tags": [
+        "创伤小队",
+        "基因数据",
+        "倒卖"
+      ]
+    },
+    {
+      "id": 2619,
+      "title": "创伤小队黑市急救",
+      "description": "创伤小队的几个员工私底下经营「黑市急救」服务，价格只有官方的一半，但用走私药品和回收植入物。你的旧伤复发需要手术，正规渠道要等三周，黑市今晚就能做。手术室设在一个废弃地铁站里，设备倒还算干净。主刀医生的手很稳，只是眼神有些涣散。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受黑市手术",
+          "effects": {
+            "MONEY": -2000,
+            "LIFE": 2,
+            "TRAUMA": 2,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "坚持走正规渠道排队",
+          "effects": {
+            "MONEY": -3000,
+            "LIFE": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "举报黑市急救窝点",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "MONEY": 1000,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "创伤小队",
+        "黑市急救",
+        "走私"
+      ]
+    },
+    {
+      "id": 2620,
+      "title": "创伤小队安乐死服务",
+      "description": "创伤小队秘密推出「安详计划」，为身患绝症的高净值客户提供「专业安乐死」服务，费用从遗产中扣除。你的雇主是一位垂危的科技公司创始人，他暗示你帮他联系这项服务，而他的继承人正虎视眈眈。病房里只有仪器的滴答声和老人虚弱的呼吸。",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮老人联系安详计划",
+          "effects": {
+            "MONEY": 6000,
+            "HUMAN": -4,
+            "TRAUMA": 2,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝，并通知老人的律师",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "MONEY": -500
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向继承人泄露老人的意图，换取好处",
+          "effects": {
+            "MONEY": 5000,
+            "HUMAN": -5,
+            "REP": -3,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "创伤小队",
+        "安乐死",
+        "遗产"
+      ]
+    },
+    {
+      "id": 2621,
+      "title": "康陶基因彩票",
+      "description": "康陶推出「基因彩票」服务，抽取客户的基因数据预测未来三十年的健康状况，准确率号称99%。但合同规定所有数据归康陶所有，可用于「产品研发」。你抽完血后才知道，康陶会把不利基因信息同步给合作保险公司。诊所的墙上贴满了笑容灿烂的健康广告，讽刺得令人发寒。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买基因彩票服务",
+          "effects": {
+            "MONEY": -3000,
+            "TECH": 2,
+            "LIFE": 1,
+            "DEBT": 1000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用假身份做检测",
+          "effects": {
+            "MONEY": -1500,
+            "TECH": 3,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝并投诉隐私条款",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "MONEY": -300
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": -1
+      },
+      "tags": [
+        "康陶",
+        "基因",
+        "彩票"
+      ]
+    },
+    {
+      "id": 2622,
+      "title": "康陶定制婴儿丑闻",
+      "description": "康陶的「优生计划」被曝私下为客户提供基因编辑婴儿服务，价格从五十万起。一个内部人员找到你，手里有客户名单和婴儿基因图谱，说这里面有好几个政要的私生子。他索要封口费，否则就把名单公开。婴儿的啼哭声从隔壁实验室隐约传来，让人毛骨悚然。",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "付封口费买下名单",
+          "effects": {
+            "MONEY": -5000,
+            "TECH": 4,
+            "REP": 2,
+            "DEBT": 2000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝并举报康陶",
+          "effects": {
+            "REP": 5,
+            "HUMAN": 3,
+            "MONEY": -1000,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把名单转卖给八卦媒体",
+          "effects": {
+            "MONEY": 8000,
+            "REP": -4,
+            "HUMAN": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "康陶",
+        "基因编辑",
+        "定制婴儿"
+      ]
+    },
+    {
+      "id": 2623,
+      "title": "康陶生物武器泄漏",
+      "description": "康陶位于内华达州的生物实验室发生泄漏事故，一种改造病毒可能已扩散到周边社区。公司压下了消息，只偷偷给员工发了特效药。你的邻居在实验室做清洁工，他偷偷塞给你一瓶药剂让你赶紧服下。空气中似乎弥漫着一种奇怪的甜味。",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "服用特效药并居家隔离",
+          "effects": {
+            "LIFE": 3,
+            "MONEY": -2000,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "把药剂拿去化验确认成分",
+          "effects": {
+            "TECH": 4,
+            "MONEY": -1000,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把泄漏消息捅给媒体",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 3,
+            "MONEY": 500,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "康陶",
+        "生物武器",
+        "泄漏"
+      ]
+    },
+    {
+      "id": 2624,
+      "title": "康陶器官农场",
+      "description": "线人称康陶在海外建有「器官农场」，用克隆技术批量培育人体器官供移植。器官比正规捐献便宜一半，但来源不透明。你的妹妹肾衰竭急需移植，正规排队要等两年。线人递来一张名片，上面只有一个加密通讯号码。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "联系器官农场为妹妹做移植",
+          "effects": {
+            "MONEY": -5000,
+            "LIFE": 2,
+            "HUMAN": -3,
+            "TRAUMA": 2,
+            "DEBT": 3000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "坚持正规排队，同时众筹",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "MONEY": -2000,
+            "DEBT": 3000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "调查农场真相并曝光",
+          "effects": {
+            "TECH": 3,
+            "REP": 4,
+            "HUMAN": 2,
+            "MONEY": -1000
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "康陶",
+        "器官农场",
+        "克隆"
+      ]
+    },
+    {
+      "id": 2625,
+      "title": "康陶抗衰老试用",
+      "description": "康陶招募「青春源」抗衰老疗法的三期临床志愿者，承诺逆转生理年龄十岁。前期数据显示效果显著，但有志愿者出现记忆丧失的副作用。你四十出头的上司抢着报了名，还怂恿你一起。实验室的冷光照得人年轻了十岁，也苍白十岁。",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "报名参加抗衰老试验",
+          "effects": {
+            "MONEY": 4000,
+            "LIFE": 3,
+            "TRAUMA": 2,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "推荐别人去当小白鼠",
+          "effects": {
+            "MONEY": 1000,
+            "HUMAN": -3,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "查阅副作用报告后放弃",
+          "effects": {
+            "TECH": 2,
+            "HUMAN": 2,
+            "MONEY": -300
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "康陶",
+        "抗衰老",
+        "临床试验"
+      ]
+    },
+    {
+      "id": 2626,
+      "title": "康陶转基因食品倾销",
+      "description": "康陶的转基因速食产品以极低价格涌入低收入社区，吃饱是够了，但长期食用会产生轻度依赖。社区诊所的医生说最近肝功能异常的病人激增，全和这种食品有关。超市货架上只有康陶的产品，其他品牌早就被价格战挤走了。收银台前排着长队，每个人的购物车里都堆满了蓝色包装的盒子。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "囤积转售这种食品赚差价",
+          "effects": {
+            "MONEY": 4000,
+            "HUMAN": -3,
+            "REP": -2,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "组织社区抵制并寻找替代食品",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 3,
+            "MONEY": -1000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "买一批送去化验，寻找诉讼证据",
+          "effects": {
+            "TECH": 3,
+            "MONEY": -2000,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "ADDICTION": 1
+      },
+      "tags": [
+        "康陶",
+        "转基因食品",
+        "倾销"
+      ]
+    },
+    {
+      "id": 2627,
+      "title": "康陶生物芯片植入",
+      "description": "康陶推广「生命卫士」生物芯片，植入后能实时监控健康指标并自动呼救。但芯片同时收集你的位置、心率、甚至情绪数据上传云端。你的保险公司表示植入后保费可降三成。诊所的植入手术很快，快到你来不及读完隐私协议的最后一行。",
+      "type": "cyber",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "植入生物芯片",
+          "effects": {
+            "CHROME": 3,
+            "LIFE": 2,
+            "MONEY": 1000,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "植入后用屏蔽器干扰数据上传",
+          "effects": {
+            "CHROME": 2,
+            "TECH": 3,
+            "MONEY": -1000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝植入，保持身体原装",
+          "effects": {
+            "HUMAN": 2,
+            "STYLE": 2,
+            "MONEY": -500
+          }
+        }
+      ],
+      "effects": {
+        "TECH": 1
+      },
+      "tags": [
+        "康陶",
+        "生物芯片",
+        "监控"
+      ]
+    },
+    {
+      "id": 2628,
+      "title": "网络监察后门授权",
+      "description": "网络监察要求所有网络设备厂商预装「合规后门」，名义上是反恐，实际能监控一切数据流。你的公司刚收到通知，拒不配合就会被吊销营业牌照。合规官递来一份需要签署的授权书，条款用词模糊得滴水不漏。办公室的服务器指示灯不停闪烁，像是在求救。",
+      "type": "cyber",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "签署授权，配合安装后门",
+          "effects": {
+            "MONEY": 3000,
+            "REP": -2,
+            "HUMAN": -2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "装了后门但偷偷留一个旁路监控",
+          "effects": {
+            "TECH": 4,
+            "REP": 1,
+            "MONEY": -1000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝并联合同行抗议",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 3,
+            "MONEY": -3000,
+            "DEBT": 2000
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": -1
+      },
+      "tags": [
+        "网络监察",
+        "后门",
+        "监控"
+      ]
+    },
+    {
+      "id": 2629,
+      "title": "网络监察黑名单除名",
+      "description": "你发现自己被列入了网络监察的「重点观察名单」，所有网络活动都被实时审查。原因可能是一次不经意的论坛发言。名单上的身份会被限制使用高速网络和加密通讯。一个自称内部人员的人联系你，说花五万就能除名。网吧的屏幕上弹窗不断，全是审查警告。",
+      "type": "cyber",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "花钱除名",
+          "effects": {
+            "MONEY": -5000,
+            "DEBT": 2000,
+            "REP": 1,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "更换全部网络身份从头来过",
+          "effects": {
+            "MONEY": -2000,
+            "TECH": 3,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向媒体曝光观察名单的存在",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 3,
+            "MONEY": -500,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "网络监察",
+        "黑名单",
+        "审查"
+      ]
+    },
+    {
+      "id": 2630,
+      "title": "网络监察AI审查员",
+      "description": "网络监察部署了AI审查员自动判定「有害内容」并实时删除，无需人工审核。你的一个帖子被判定有害，账号被封，连带影响了你的信用评分。申诉需要人工排队，预计等三个月。客服机器人用甜美的声音告诉你「感谢您的耐心等待」。",
+      "type": "social",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "乖乖申诉排队等待",
+          "effects": {
+            "REP": -1,
+            "STYLE": -1,
+            "MONEY": -500
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找黑客破解封禁",
+          "effects": {
+            "TECH": 3,
+            "MONEY": -1500,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "组织被封用户集体维权",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 3,
+            "MONEY": -500
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": -1
+      },
+      "tags": [
+        "网络监察",
+        "AI审查",
+        "封号"
+      ]
+    },
+    {
+      "id": 2631,
+      "title": "网络监察数据拍卖",
+      "description": "网络监察定期举办「数据拍卖会」，把监控获得的隐私数据打包卖给企业，名曰「商业情报」。你受邀参加了一场闭门拍卖，标的包括某议员的三个月通讯记录。会场设在一栋没有招牌的大楼里，每个人进场都要交出所有电子设备。拍卖师的声音冰冷而高效。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "竞拍议员通讯记录，留作筹码",
+          "effects": {
+            "MONEY": -5000,
+            "TECH": 3,
+            "REP": 2,
+            "DEBT": 2000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只买普通的商业情报",
+          "effects": {
+            "MONEY": -2000,
+            "TECH": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝参与并偷偷录音留证",
+          "effects": {
+            "TECH": 2,
+            "REP": 3,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": -1
+      },
+      "tags": [
+        "网络监察",
+        "数据拍卖",
+        "隐私"
+      ]
+    },
+    {
+      "id": 2632,
+      "title": "网络监察黑客招募",
+      "description": "网络监察暗中招募顶级黑客，条件是替政府做「脏活」换取免罪金牌。你的一个黑客朋友收到了邀请函，他问你值不值得接。邀请函印在一张纯黑卡片上，没有署名只有一个时间和坐标。朋友的义眼在黑暗中泛着微光，他看起来既兴奋又恐惧。",
+      "type": "cyber",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "劝朋友接受招募",
+          "effects": {
+            "TECH": 2,
+            "MONEY": 2000,
+            "HUMAN": -2,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "劝朋友拒绝，政府不会真的放过他",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "MONEY": -500
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "自己顶替朋友去应征",
+          "effects": {
+            "TECH": 4,
+            "REP": -2,
+            "MONEY": 3000,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "网络监察",
+        "黑客招募",
+        "免罪金牌"
+      ]
+    },
+    {
+      "id": 2633,
+      "title": "网络监察断网封锁",
+      "description": "网络监察以「维护网络安全」为由对一个贫民社区实施断网封锁，居民无法访问任何外部站点。官方说法是这里有「网络恐怖分子」，但居民们只是买不起企业认证的网络服务。你的亲戚住在这个社区，现在连求救信息都发不出去。社区的局域网里只剩下康陶推送的广告在循环播放。",
+      "type": "social",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "搭建地下 mesh 网络帮社区联网",
+          "effects": {
+            "TECH": 4,
+            "HUMAN": 3,
+            "REP": 3,
+            "MONEY": -2000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "花钱给亲戚办企业认证网络",
+          "effects": {
+            "MONEY": -3000,
+            "HUMAN": 2,
+            "DEBT": 1000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向外界曝光封锁事件",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 3,
+            "MONEY": -500,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": -1
+      },
+      "tags": [
+        "网络监察",
+        "断网",
+        "封锁"
+      ]
+    },
+    {
+      "id": 2634,
+      "title": "工业间谍卧底任务",
+      "description": "一家二线科技公司雇佣你打入荒坂的研发部门窃取新一代神经接口的图纸。报酬是你的年薪十倍，但一旦暴露，荒坂会把你从物理意义上抹除。你的假身份已经备好，履历无懈可击。面试官审视你的目光像X光，你的脉搏在义体监控下纹丝不动。",
+      "type": "cyber",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受卧底任务",
+          "effects": {
+            "MONEY": 8000,
+            "TECH": 4,
+            "TRAUMA": 3,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接任务但暗中给荒坂通风报信",
+          "effects": {
+            "MONEY": 5000,
+            "REP": 2,
+            "HUMAN": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝并销毁假身份",
+          "effects": {
+            "HUMAN": 3,
+            "STYLE": 1,
+            "MONEY": -500
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业间谍",
+        "卧底",
+        "窃密"
+      ]
+    },
+    {
+      "id": 2635,
+      "title": "商业间谍反间计",
+      "description": "你发现公司里有个同事是竞争企业安插的商业间谍。你可以举报他，也可以反过来利用他向对方输送假情报。老板对此一无所知，而你的选择将决定两家公司下一季度的市场格局。同事冲你笑了笑，显然不知道自己已经暴露。咖啡机的嗡嗡声掩盖了你加速的心跳。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "举报间谍，邀功请赏",
+          "effects": {
+            "REP": 3,
+            "MONEY": 3000,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "反向利用，输送假情报",
+          "effects": {
+            "TECH": 3,
+            "MONEY": 5000,
+            "REP": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "勒索间谍换取封口费",
+          "effects": {
+            "MONEY": 4000,
+            "REP": -2,
+            "HUMAN": -2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": -1
+      },
+      "tags": [
+        "企业间谍",
+        "反间",
+        "假情报"
+      ]
+    },
+    {
+      "id": 2636,
+      "title": "间谍卫星数据窃取",
+      "description": "一个跨国间谍团伙计划劫持一颗通信卫星，截取其转发的企业机密数据流。他们需要一个精通轨道计算的工程师，而你恰好符合。团伙头目是个银发老妇，说话轻声细语却让人不寒而栗。她递来的U盘里装着卫星的加密协议。",
+      "type": "cyber",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入团伙负责轨道计算",
+          "effects": {
+            "MONEY": 9000,
+            "TECH": 5,
+            "REP": -3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只提供咨询服务不直接参与",
+          "effects": {
+            "MONEY": 4000,
+            "TECH": 2,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向联邦安全机构举报",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 3,
+            "MONEY": 1000,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业间谍",
+        "卫星",
+        "数据窃取"
+      ]
+    },
+    {
+      "id": 2637,
+      "title": "员工跳槽泄密陷阱",
+      "description": "竞争对手高薪挖你跳槽，真正的目的是让你带走前公司的核心算法。合同里藏着一条款：到岗后需「完整还原前雇主技术架构」。前公司还没察觉，但他们的安全审计越来越频繁。猎头的笑容职业而真诚，合同上的数字让你心动。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "跳槽并带走核心算法",
+          "effects": {
+            "MONEY": 7000,
+            "TECH": 2,
+            "REP": -3,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "跳槽但只带公开信息",
+          "effects": {
+            "MONEY": 5000,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝跳槽，向前公司举报挖角",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "MONEY": 1000
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": -1
+      },
+      "tags": [
+        "企业间谍",
+        "跳槽",
+        "泄密"
+      ]
+    },
+    {
+      "id": 2638,
+      "title": "会议窃听器事件",
+      "description": "你在公司高管会议室做清洁时发现了一个针孔窃听器，信号指向隔壁大楼。装窃听器的人显然已经监听了至少三个月，所有战略决策都被对手掌握。你可以悄悄取走它，也可以让它继续工作并反向投喂假情报。窃听器只有米粒大小，藏在会议桌的木质纹理里。",
+      "type": "cyber",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "取走窃听器交给老板",
+          "effects": {
+            "REP": 3,
+            "MONEY": 2000,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "保留窃听器，反向投喂假情报",
+          "effects": {
+            "TECH": 3,
+            "MONEY": 4000,
+            "REP": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把窃听器卖给第三方",
+          "effects": {
+            "MONEY": 3000,
+            "REP": -2,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "effects": {
+        "TECH": 1
+      },
+      "tags": [
+        "企业间谍",
+        "窃听",
+        "会议室"
+      ]
+    },
+    {
+      "id": 2639,
+      "title": "离职员工保密协议陷阱",
+      "description": "你前公司的保密协议里藏着「竞业赔偿回收条款」——离职后若加入同行，需返还在职期间所有奖金。这条款当年被埋在百页合同的脚注里，你现在才注意到。前公司法务发来追讨函，金额高达两万。法务的语气礼貌而强硬，像一把裹着丝绒的刀。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支付追讨款项了事",
+          "effects": {
+            "MONEY": -5000,
+            "DEBT": 3000,
+            "HUMAN": 1,
+            "STYLE": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "请律师打官司抗辩",
+          "effects": {
+            "MONEY": -3000,
+            "REP": 2,
+            "HUMAN": 1,
+            "DEBT": 1000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用黑客手段删除前公司的协议存档",
+          "effects": {
+            "TECH": 4,
+            "MONEY": -1000,
+            "REP": -2
+          }
+        }
+      ],
+      "effects": {
+        "DEBT": 1
+      },
+      "tags": [
+        "企业间谍",
+        "保密协议",
+        "竞业"
+      ]
+    },
+    {
+      "id": 2640,
+      "title": "供应链间谍渗透",
+      "description": "你所在的制造企业发现供应链被对手渗透，关键零件的参数被篡改导致良品率暴跌。调查指向一个入职仅半年的供应商质检员。老板让你暗中处理此事，既不能惊动对方也不能走法律程序。车间里的机械臂还在运转，但产出的全是废品。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "暗中搜集证据后开除质检员",
+          "effects": {
+            "TECH": 3,
+            "MONEY": 2000,
+            "HUMAN": -1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "反向给质检员喂假参数坑对手",
+          "effects": {
+            "TECH": 4,
+            "MONEY": 4000,
+            "REP": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "报警走正规程序",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "MONEY": -2000
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": -1
+      },
+      "tags": [
+        "企业间谍",
+        "供应链",
+        "渗透"
+      ]
+    },
+    {
+      "id": 2641,
+      "title": "恶意收购毒丸计划",
+      "description": "你所在的创业公司被一家巨型集团盯上，对方正在二级市场悄悄吸筹，意图恶意收购。董事会紧急启动「毒丸计划」稀释股份，但这会让早期员工的期权大幅缩水。你的期权眼看要变成废纸，CEO却还在打气说一切尽在掌控。股市的K线图像一把下行的刀。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持毒丸计划死扛到底",
+          "effects": {
+            "MONEY": -3000,
+            "HUMAN": 2,
+            "REP": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "趁股价尚高赶紧抛售期权",
+          "effects": {
+            "MONEY": 5000,
+            "HUMAN": -2,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "倒戈支持收购方换取职位",
+          "effects": {
+            "MONEY": 6000,
+            "REP": -3,
+            "HUMAN": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业并购",
+        "恶意收购",
+        "毒丸"
+      ]
+    },
+    {
+      "id": 2642,
+      "title": "并购裁员清洗",
+      "description": "你的公司被并购后，新东家宣布「优化整合」，实质是大裁员。你所在部门要砍掉一半人，留任名单下周公布。新HR挨个约谈，话术圆滑却暗藏威胁。茶水间里每个人都在假装镇定，咖啡机却比平时忙了三倍。",
+      "type": "social",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "主动表态效忠新东家求留任",
+          "effects": {
+            "MONEY": 1000,
+            "HUMAN": -3,
+            "REP": 1,
+            "STYLE": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拿补偿金主动离职",
+          "effects": {
+            "MONEY": 4000,
+            "DEBT": -2000,
+            "HUMAN": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "组织同事集体谈判争取权益",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 3,
+            "MONEY": -500,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": -1
+      },
+      "tags": [
+        "企业并购",
+        "裁员",
+        "整合"
+      ]
+    },
+    {
+      "id": 2643,
+      "title": "并购前资产转移",
+      "description": "并购消息泄露后，你所在公司的几个高管开始疯狂转移资产——把专利低价卖给关联公司、把库存折价清给熟人。这些操作会让并购后的普通股东血本无归。你无意间看到了转移清单，金额触目惊心。高管的秘书冲你使了个眼色，意思很明确：闭嘴。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "复制清单作为自己的保命符",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": 1000,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向并购方举报资产转移",
+          "effects": {
+            "MONEY": 5000,
+            "REP": 3,
+            "HUMAN": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "跟着转移一批库存自肥",
+          "effects": {
+            "MONEY": 4000,
+            "REP": -3,
+            "HUMAN": -2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业并购",
+        "资产转移",
+        "掏空"
+      ]
+    },
+    {
+      "id": 2644,
+      "title": "跨国并购汇率操纵",
+      "description": "一桩跨国并购涉及巨额汇率结算，有人计划在交割日制造汇率波动从中套利。你的银行客户经理暗示你跟着做空，稳赚不赔。这种操作一旦被查到就是金融重罪，但利润高达七位数。交易屏幕上的数字跳动得让人目眩。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "跟着做空套利",
+          "effects": {
+            "MONEY": 9000,
+            "REP": -3,
+            "DEBT": 1000,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "小仓位试探，见好就收",
+          "effects": {
+            "MONEY": 3000,
+            "TECH": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "举报汇率操纵",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 3,
+            "MONEY": 2000,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业并购",
+        "汇率操纵",
+        "套利"
+      ]
+    },
+    {
+      "id": 2645,
+      "title": "并购对赌协议陷阱",
+      "description": "并购协议里有一份对赌条款：若被收购方两年内业绩不达标，创始团队需回购股份。你的创始团队签了字，但宏观经济突然恶化，业绩几乎不可能达标。投资方已经开始施压，暗示可以用「其他方式」补偿。对赌协议的违约金数字大到让你窒息。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拼命冲业绩，赌一把",
+          "effects": {
+            "MONEY": -2000,
+            "TRAUMA": 2,
+            "HUMAN": -2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "与投资方重新谈判条款",
+          "effects": {
+            "TECH": 2,
+            "HUMAN": 1,
+            "DEBT": 3000,
+            "MONEY": -1000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "转移个人资产准备破产",
+          "effects": {
+            "MONEY": -3000,
+            "TECH": 2,
+            "REP": -2,
+            "DEBT": -5000
+          }
+        }
+      ],
+      "effects": {
+        "DEBT": 1
+      },
+      "tags": [
+        "企业并购",
+        "对赌",
+        "违约"
+      ]
+    },
+    {
+      "id": 2646,
+      "title": "壳公司并购洗钱",
+      "description": "有人找你当一家空壳公司的法人代表，说是为了「简化并购流程」。实际上是利用壳公司交叉持股来洗白一笔来路不明的资金。法人费给得很高，但你将承担所有法律风险。合同厚得像砖头，关键条款藏在附录C的第14页。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "当法人代表赚快钱",
+          "effects": {
+            "MONEY": 7000,
+            "REP": -4,
+            "HUMAN": -3,
+            "DEBT": 2000,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝并保留对方资料",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "MONEY": -300
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "当法人但暗中留证据反勒索",
+          "effects": {
+            "MONEY": 5000,
+            "REP": -3,
+            "TECH": 2,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业并购",
+        "壳公司",
+        "洗钱"
+      ]
+    },
+    {
+      "id": 2647,
+      "title": "内部数据泄露勒索",
+      "description": "你的公司数据库被黑，五千万条用户数据被窃。黑客勒索五百万加密币，否则公开全部数据。安全团队评估后认为赎金比公开泄露的损失小，老板倾向于付钱。你作为数据负责人，被推到了谈判桌前。勒索信的字迹歪歪扭扭，却字字致命。",
+      "type": "cyber",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "代表公司谈判并支付赎金",
+          "effects": {
+            "MONEY": -3000,
+            "TECH": 2,
+            "REP": -2,
+            "DEBT": 2000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝付赎金，公开事件并补救",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "MONEY": -4000,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "私下联系黑客买回自己的数据",
+          "effects": {
+            "MONEY": -2000,
+            "TECH": 3,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "数据泄露",
+        "勒索",
+        "赎金"
+      ]
+    },
+    {
+      "id": 2648,
+      "title": "离职员工数据外带",
+      "description": "你辞职时把公司核心客户名单拷进了个人云盘，想着新工作能用上。前公司的数据防泄漏系统一周后才发现异常，法务函已经寄到你家。你低估了他们的监控能力，现在面临刑事指控的风险。云盘的同步进度条停在了99%，像是在嘲笑你。",
+      "type": "cyber",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "删除数据并支付和解金",
+          "effects": {
+            "MONEY": -5000,
+            "DEBT": 2000,
+            "HUMAN": 1,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "否认并销毁所有证据",
+          "effects": {
+            "TECH": 3,
+            "MONEY": -1000,
+            "REP": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "主动认罪配合调查争取轻判",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 1,
+            "MONEY": -3000,
+            "DEBT": 1000
+          }
+        }
+      ],
+      "effects": {
+        "REP": -1
+      },
+      "tags": [
+        "数据泄露",
+        "离职",
+        "外带"
+      ]
+    },
+    {
+      "id": 2649,
+      "title": "云端存储配置失误",
+      "description": "你的团队误将一个数据库设为公开访问，三个月里任何人都能下载。等发现时数据已被爬取数次，涉及数万用户隐私。公关部正在准备「技术失误」的声明，而你担心真相被追查。日志显示有个不明IP在最后一次爬取后留了一行注释：「谢谢分享」。",
+      "type": "cyber",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "配合公关把责任推给系统故障",
+          "effects": {
+            "REP": -1,
+            "MONEY": -1000,
+            "HUMAN": -2,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "主动承担责任并推动修复",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "MONEY": -2000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "追踪不明IP试图找回数据",
+          "effects": {
+            "TECH": 4,
+            "MONEY": -1000,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TECH": 1
+      },
+      "tags": [
+        "数据泄露",
+        "配置失误",
+        "云存储"
+      ]
+    },
+    {
+      "id": 2650,
+      "title": "数据掮客交易",
+      "description": "一个数据掮客联系你，手上有某企业高管的私人通讯记录和消费数据，开价三万。这些数据可以用来精准勒索或商业谈判。掮客说数据来源合法，但你心知肚明。他发来的样品里有几条让你心跳加速的内容。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买下数据用于商业谈判",
+          "effects": {
+            "MONEY": -3000,
+            "TECH": 3,
+            "REP": -2,
+            "DEBT": 1000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "买下数据转手加价倒卖",
+          "effects": {
+            "MONEY": 5000,
+            "REP": -3,
+            "HUMAN": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "举报掮客",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 3,
+            "MONEY": 1000,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": -1
+      },
+      "tags": [
+        "数据泄露",
+        "掮客",
+        "交易"
+      ]
+    },
+    {
+      "id": 2651,
+      "title": "智能设备窃听丑闻",
+      "description": "你发现家中康陶产智能音箱一直在偷偷录音并上传，即使你没喊唤醒词。录音数据被打包卖给广告商和保险公司。你录下了音箱的异常上传行为作为证据。音箱的指示灯在黑暗中幽幽亮着，像一只不眨眼的眼睛。",
+      "type": "cyber",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "曝光丑闻索赔",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 3,
+            "MONEY": 3000,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "保留设备研究其上传协议",
+          "effects": {
+            "TECH": 4,
+            "MONEY": -500,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "砸掉设备息事宁人",
+          "effects": {
+            "STYLE": 1,
+            "HUMAN": 1,
+            "MONEY": -800
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": -1
+      },
+      "tags": [
+        "数据泄露",
+        "智能设备",
+        "窃听"
+      ]
+    },
+    {
+      "id": 2652,
+      "title": "医院数据泄露",
+      "description": "你就诊的医院遭勒索软件攻击，你的病历、基因数据和用药记录全部泄露。黑客把这些数据挂上暗网拍卖，你的保险公司因此提高了保费。医院表示「深表遗憾」但不承担后果。暗网拍卖页面上你的编号是Lot-0731，起拍价低得侮辱人。",
+      "type": "cyber",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "花钱从暗网买回自己的数据",
+          "effects": {
+            "MONEY": -4000,
+            "TECH": 2,
+            "HUMAN": 1,
+            "DEBT": 1000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "起诉医院索赔",
+          "effects": {
+            "MONEY": 3000,
+            "REP": 2,
+            "HUMAN": 2,
+            "DEBT": -1000,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "自己黑进拍卖平台删除数据",
+          "effects": {
+            "TECH": 5,
+            "MONEY": -1000,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "数据泄露",
+        "医院",
+        "暗网"
+      ]
+    },
+    {
+      "id": 2653,
+      "title": "内鬼泄露商业机密",
+      "description": "公司最新产品的设计图在发布前流到了竞争对手手里，内鬼就在研发部。安全总监锁定了三个嫌疑人，你是其中之一。你确实是清白的，但另外两人都有不在场证明而你没有。审讯室的灯白得刺眼，安全总监的问题像连环陷阱。",
+      "type": "cyber",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "自证清白，配合调查",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "MONEY": -500,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "反查另外两人的通讯记录",
+          "effects": {
+            "TECH": 4,
+            "MONEY": -1000,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "趁乱自己也拷一份设计图",
+          "effects": {
+            "TECH": 2,
+            "MONEY": 3000,
+            "REP": -3,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "数据泄露",
+        "内鬼",
+        "商业机密"
+      ]
+    },
+    {
+      "id": 2654,
+      "title": "高管失踪调查",
+      "description": "你公司的CFO在一笔可疑交易后突然失踪，官方说是「因个人原因离职」。但你在地下停车场看到了他的车，座椅上有血迹。私家侦探联系你说他正在调查此案，需要你的证词。停车场的监控恰好在那晚「故障」了三小时。",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "向私家侦探提供证词",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "MONEY": 1000,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "假装没看见，明哲保身",
+          "effects": {
+            "HUMAN": -2,
+            "STYLE": -1,
+            "MONEY": 500
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向公司举报私家侦探",
+          "effects": {
+            "MONEY": 3000,
+            "REP": -2,
+            "HUMAN": -3,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业暗杀",
+        "失踪",
+        "调查"
+      ]
+    },
+    {
+      "id": 2655,
+      "title": "吹哨人保护计划",
+      "description": "你掌握了公司违法排污的铁证，准备向监管机构举报。但举报前夜你收到了死亡威胁，家门口被放了子弹。一个吹哨人保护组织联系你，说能帮你安全离开。窗外的黑车已经停了三天，车里的人从不熄火。",
+      "type": "social",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受保护组织的帮助撤离",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 3,
+            "MONEY": -2000,
+            "LIFE": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "匿名举报后销声匿迹",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "MONEY": -1000,
+            "STYLE": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放弃举报，把证据卖给公司对手",
+          "effects": {
+            "MONEY": 6000,
+            "REP": -2,
+            "HUMAN": -2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业暗杀",
+        "吹哨人",
+        "威胁"
+      ]
+    },
+    {
+      "id": 2656,
+      "title": "企业杀手招募",
+      "description": "一个自称「清算部」的人联系你，说你的某项技能引起了高层注意，想让你处理一个「问题人物」。报酬是六位数加密币，目标是个握有公司黑料的记者。他发来一张照片，照片里的记者正在和女儿吃冰淇淋。",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拒绝并警告目标记者",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "MONEY": -500,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接单完成任务",
+          "effects": {
+            "MONEY": 9000,
+            "HUMAN": -6,
+            "REP": -5,
+            "TRAUMA": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接单但放走目标，伪造死亡",
+          "effects": {
+            "MONEY": 5000,
+            "HUMAN": 2,
+            "TECH": 2,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业暗杀",
+        "杀手",
+        "招募"
+      ]
+    },
+    {
+      "id": 2657,
+      "title": "证人灭口阴谋",
+      "description": "你是某企业垄断案的关键证人，开庭前一周，你的律师突然「意外身亡」。接着你的家人收到匿名包裹，里面是你女儿放学路线的照片。检方建议你进入证人保护计划，但那意味着放弃现在的一切。电话在凌晨三点响起，接通后只有沉默。",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "进入证人保护计划",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 3,
+            "MONEY": -4000,
+            "STYLE": -3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝保护，雇私人保镖",
+          "effects": {
+            "MONEY": -5000,
+            "DEBT": 2000,
+            "LIFE": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "翻供换取企业方的保护",
+          "effects": {
+            "MONEY": 7000,
+            "HUMAN": -4,
+            "REP": -4,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业暗杀",
+        "证人",
+        "灭口"
+      ]
+    },
+    {
+      "id": 2658,
+      "title": "竞品研发主管之死",
+      "description": "竞争对手的研发主管被发现死在公寓里，官方判定为自杀。但你是最后一个和他通电话的人，他说掌握了能扳倒两家企业的证据。现在有不明人士在追查那通电话的录音。他的遗言还在你的语音信箱里，你不敢删也不敢听第二遍。",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "把录音交给独立媒体",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 3,
+            "MONEY": -500,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "把录音交给他遗属保管",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "MONEY": -1000,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "销毁录音装作什么都没有",
+          "effects": {
+            "HUMAN": -3,
+            "STYLE": -2,
+            "MONEY": 1000,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业暗杀",
+        "自杀疑云",
+        "证据"
+      ]
+    },
+    {
+      "id": 2659,
+      "title": "企业安保暗杀名单",
+      "description": "你黑进了一个企业安保部门的服务器，发现一份「处置名单」，上面有二十多个名字，标注着处理方式和期限。你的名字赫然在列，处置方式写着「意外」。你只有不到48小时做出反应。名单上有些名字已经打上了红勾，对应着近期新闻里的「意外身亡」。",
+      "type": "cyber",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "立刻逃亡并公开名单",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 2,
+            "MONEY": -3000,
+            "LIFE": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "删除自己的名字并潜伏",
+          "effects": {
+            "TECH": 5,
+            "MONEY": -1000,
+            "REP": 1,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "反向勒索安保部门",
+          "effects": {
+            "MONEY": 8000,
+            "REP": -3,
+            "HUMAN": -2,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "企业暗杀",
+        "名单",
+        "安保"
+      ]
+    },
+    {
+      "id": 2660,
+      "title": "假死服务",
+      "description": "一家地下机构提供「企业员工假死」服务，帮你制造死亡假象以摆脱企业控制。费用高昂，且需要你切断与过去的一切联系。你的劳动合同里有终身竞业条款，活着就永远被绑定。机构的人递来一杯什么液体，说喝下去验血就会显示心脏骤停的指标。",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受假死服务脱身",
+          "effects": {
+            "MONEY": -5000,
+            "DEBT": -8000,
+            "STYLE": -3,
+            "HUMAN": 1,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只咨询不执行，再想想",
+          "effects": {
+            "MONEY": -1000,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "举报假死服务机构",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "MONEY": 2000,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业暗杀",
+        "假死",
+        "脱身"
+      ]
+    },
+    {
+      "id": 2661,
+      "title": "企业走私军火通道",
+      "description": "一条经由墨西哥边境的企业走私通道被你无意发现，每天都有军火从这流向中南美。通道的运营者是个退役特种兵，他邀请你入伙负责物流调度。一辆改装货车停在仓库里，车厢里堆满了贴着康陶标签的箱子。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "入伙负责物流",
+          "effects": {
+            "MONEY": 8000,
+            "REP": -3,
+            "HUMAN": -3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只做一次性运输赚快钱",
+          "effects": {
+            "MONEY": 4000,
+            "REP": -2,
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向边境巡逻队举报",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 3,
+            "MONEY": 1500,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "黑市交易",
+        "走私",
+        "军火"
+      ]
+    },
+    {
+      "id": 2662,
+      "title": "黑市植入物诊所",
+      "description": "一家地下诊所专做无牌照植入物手术，用的是从企业仓库流出的军用级义体。价格只有正规店的三成，但感染率不低。你的旧义眼快报废了，正规换新要一万五，黑市只要四千。诊所设在肉铺的地下室里，手术台旁边就是挂着的半扇猪肉。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在黑市做义眼替换",
+          "effects": {
+            "MONEY": -4000,
+            "CHROME": 4,
+            "TRAUMA": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "攒钱去正规店",
+          "effects": {
+            "MONEY": -3000,
+            "CHROME": 3,
+            "STYLE": 1,
+            "DEBT": 2000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "举报黑市诊所",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "MONEY": 1000,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "黑市交易",
+        "植入物",
+        "地下诊所"
+      ]
+    },
+    {
+      "id": 2663,
+      "title": "企业余货黑市倾销",
+      "description": "某企业把质检不合格的次品通过黑市渠道低价倾销，包装上却印着正品编号。你在黑市买到了一批便宜的医疗纳米机器人，用了一半才发现是次品。卖家早已跑路，你的身体开始出现排异反应。手臂上的纳米机器人正在错误地修补你的血管壁。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "花钱找正规医生取出次品",
+          "effects": {
+            "MONEY": -5000,
+            "LIFE": 2,
+            "CHROME": -2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找黑市医生应急处理",
+          "effects": {
+            "MONEY": -1500,
+            "LIFE": 1,
+            "TRAUMA": 1,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "强撑着等身体自行适应",
+          "effects": {
+            "LIFE": -2,
+            "TRAUMA": 2,
+            "MONEY": 0
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "黑市交易",
+        "次品",
+        "倾销"
+      ]
+    },
+    {
+      "id": 2664,
+      "title": "加密币洗钱通道",
+      "description": "一个地下洗钱网络专门帮企业高管把赃款通过加密币洗白，抽成15%。你有一笔来路不明的钱需要洗白，正好用得上。但最近联邦调查局在盯这个网络，随时可能收网。洗钱用的混币池深度正在变浅，每一笔都更加显眼。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "通过洗钱网络清洗资金",
+          "effects": {
+            "MONEY": 5000,
+            "REP": -2,
+            "DEBT": -3000,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自己分散到多个小账户",
+          "effects": {
+            "MONEY": 3000,
+            "TECH": 3,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "收手不洗，把钱藏起来",
+          "effects": {
+            "MONEY": 1000,
+            "STYLE": -1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "黑市交易",
+        "洗钱",
+        "加密币"
+      ]
+    },
+    {
+      "id": 2665,
+      "title": "企业标签黑市流通",
+      "description": "一批贴着「荒坂认证」标签的黑市电子元件流入市场，实际是仿冒品，但能通过常规检测。你在修理铺买到了这批货，装上后设备频繁故障。溯源发现这批标签是从荒坂代工厂偷出来的。元件的外观看上去完美无瑕，只有拆开才知道是空心汤圆。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "找卖家索赔退款",
+          "effects": {
+            "MONEY": -500,
+            "REP": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "转手把这批货卖给更不懂的人",
+          "effects": {
+            "MONEY": 3000,
+            "HUMAN": -3,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向荒坂举报仿冒标签源头",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "MONEY": 1500,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": -1
+      },
+      "tags": [
+        "黑市交易",
+        "仿冒",
+        "认证标签"
+      ]
+    },
+    {
+      "id": 2666,
+      "title": "人体零件黑市",
+      "description": "黑市上有人专门贩卖「企业来源」的人体植入零件，据说从企业太平间的库存里偷出来的。你需要的肾源义体正规渠道要排队半年，黑市现货只要一万。卖家从冷藏箱里取出一个密封袋，袋子上还残留着企业的资产编号。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买黑市义体器官",
+          "effects": {
+            "MONEY": -4000,
+            "LIFE": 2,
+            "CHROME": 2,
+            "HUMAN": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "举报黑市人体零件交易",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 3,
+            "MONEY": 1000,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "压价收购转卖给其他病人",
+          "effects": {
+            "MONEY": 5000,
+            "HUMAN": -4,
+            "REP": -3,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "黑市交易",
+        "人体零件",
+        "义体"
+      ]
+    },
+    {
+      "id": 2667,
+      "title": "企业内部黑市账本",
+      "description": "你在一个离职主管的遗物里发现了一本黑市账本，记录着企业高管们私下的非法交易。账本涉及的人现在都身居高位。有人出高价收购这本账本，也有人想让你永远闭嘴。账本的封皮已经磨损，但内页的字迹清晰得可怕。",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "高价出售账本",
+          "effects": {
+            "MONEY": 9000,
+            "REP": -3,
+            "HUMAN": -2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "把账本交给调查记者",
+          "effects": {
+            "REP": 5,
+            "HUMAN": 3,
+            "MONEY": -500,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用账本逐一勒索涉事高管",
+          "effects": {
+            "MONEY": 8000,
+            "REP": -4,
+            "HUMAN": -3,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "黑市交易",
+        "账本",
+        "勒索"
+      ]
+    },
+    {
+      "id": 2668,
+      "title": "无家可者招募实验",
+      "description": "康陶以「免费体检」为名在流浪汉收容所招募人体实验对象，测试一种新型神经药物。你志愿做社工时发现了这件事，几个受试者已经出现了严重的精神副作用。收容所所长收到了康陶的「赞助费」，对此睁一只眼闭一只眼。体检车停在收容所门口，车身上印着温暖的标语。",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "暗中录音取证并曝光",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 4,
+            "MONEY": -500,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "劝阻流浪汉不要参加",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 2,
+            "MONEY": -1000,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向康陶举报收容所所长拿回扣",
+          "effects": {
+            "MONEY": 3000,
+            "REP": 1,
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "人体实验",
+        "流浪汉",
+        "神经药物"
+      ]
+    },
+    {
+      "id": 2669,
+      "title": "监狱人体实验计划",
+      "description": "一家企业与私人监狱合作，以减刑为诱饵让囚犯参与药物实验。你的朋友在狱中签了同意书，现在出现了不可逆的器官损伤。监狱医疗官说是「既往病史」，拒绝负责。探视室的玻璃隔板上映着你朋友蜡黄的脸。",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮朋友聘请律师维权",
+          "effects": {
+            "MONEY": -4000,
+            "HUMAN": 3,
+            "REP": 2,
+            "DEBT": 1000,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "联系媒体曝光监狱实验",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 3,
+            "MONEY": -500,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "托关系让朋友提前出狱",
+          "effects": {
+            "MONEY": -5000,
+            "DEBT": 2000,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "人体实验",
+        "监狱",
+        "药物实验"
+      ]
+    },
+    {
+      "id": 2670,
+      "title": "孤儿院疫苗试验",
+      "description": "线人透露某企业在海外孤儿院试验未批准的基因疫苗，孩子们被当作「高纯度实验组」。线人手里有实验记录和孩子们的照片，问你要不要帮忙曝光。照片里的孩子们排着队露出手臂，笑容天真无邪。",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "协助线人向国际组织举报",
+          "effects": {
+            "REP": 5,
+            "HUMAN": 4,
+            "MONEY": -1000,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "把证据卖给媒体换钱",
+          "effects": {
+            "MONEY": 6000,
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "通知涉事企业以换取封口费",
+          "effects": {
+            "MONEY": 8000,
+            "HUMAN": -5,
+            "REP": -4,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "人体实验",
+        "孤儿院",
+        "疫苗"
+      ]
+    },
+    {
+      "id": 2671,
+      "title": "员工体检暗藏实验",
+      "description": "公司年度体检偷偷多抽了几管血，用于一项未经伦理审批的基因研究。你是在复查报告里发现的异常——多了几项你没要求的基因检测。HR说这是「增值服务」，但你清楚这违反了知情同意原则。抽血室的护士手法熟练得让人不安。",
+      "type": "cyber",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "要求公司销毁多余样本",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "MONEY": -500,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "偷取研究报告副本留证",
+          "effects": {
+            "TECH": 3,
+            "REP": 1,
+            "MONEY": 500,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "不追究，怕丢工作",
+          "effects": {
+            "HUMAN": -2,
+            "STYLE": -2,
+            "MONEY": 1000
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": -1
+      },
+      "tags": [
+        "人体实验",
+        "体检",
+        "基因研究"
+      ]
+    },
+    {
+      "id": 2672,
+      "title": "非法器官克隆实验",
+      "description": "一家企业在废弃工厂里秘密进行人兽嵌合体实验，试图培育可移植器官。一个逃跑的实验体找到了你，它有着人类的躯干和某种动物的四肢，能说简单的句子。它恳求你帮它结束痛苦或者帮它活下去。它浑浊的眼睛里映着霓虹灯的光。",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮实验体逃出城",
+          "effects": {
+            "HUMAN": 4,
+            "REP": 3,
+            "MONEY": -2000,
+            "LIFE": 1,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "联系媒体曝光实验",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 3,
+            "MONEY": 1000,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "送它回企业换取悬赏",
+          "effects": {
+            "MONEY": 7000,
+            "HUMAN": -5,
+            "REP": -4,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "人体实验",
+        "嵌合体",
+        "克隆"
+      ]
+    },
+    {
+      "id": 2673,
+      "title": "退伍军人创伤实验",
+      "description": "军武科技以「创伤治疗」为名对退伍军人进行记忆改写实验，用神经植入物覆盖创伤记忆。你的战友参加了实验，现在他记不清战场发生了什么，却开始有暴力倾向。实验记录显示这种副作用早有预期。战友握着咖啡杯的手在发抖，杯子已经裂了。",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮战友寻找记忆恢复方案",
+          "effects": {
+            "HUMAN": 4,
+            "TECH": 3,
+            "MONEY": -3000,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "曝光军武科技的实验",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 3,
+            "MONEY": -500,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "劝战友接受现状别追究",
+          "effects": {
+            "HUMAN": -2,
+            "STYLE": -1,
+            "MONEY": 500,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "人体实验",
+        "退伍军人",
+        "记忆改写"
+      ]
+    },
+    {
+      "id": 2674,
+      "title": "意识上传志愿者",
+      "description": "荒坂招募「意识上传」志愿者，承诺将意识完整复制到数字空间。前期八名志愿者有五名脑死亡，但公司声称技术已成熟。你身患绝症命不久矣，这是「延续存在」的唯一机会。招募广告上写着「让生命突破肉体的桎梏」，背景是一片纯白。",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加意识上传实验",
+          "effects": {
+            "MONEY": 3000,
+            "LIFE": -3,
+            "TECH": 3,
+            "TRAUMA": 3,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝，用剩下的时间陪伴家人",
+          "effects": {
+            "HUMAN": 4,
+            "LIFE": 1,
+            "STYLE": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "推荐别的绝症患者去当志愿者",
+          "effects": {
+            "MONEY": 4000,
+            "HUMAN": -4,
+            "REP": -3,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "人体实验",
+        "意识上传",
+        "脑死亡"
+      ]
+    },
+    {
+      "id": 2675,
+      "title": "企业游说议员",
+      "description": "一家能源企业雇你去游说一位关键议员，支持一项放宽排放标准的法案。游说费按票数结算，一张票五万。议员表面清廉，实则贪婪，暗示你需要「正确的表达方式」。国会山的走廊里挂满了历任议员的画像，每一幅都在微笑。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "完成游说拿到佣金",
+          "effects": {
+            "MONEY": 8000,
+            "REP": -3,
+            "HUMAN": -3,
+            "DEBT": 1000,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "游说失败但把钱留下",
+          "effects": {
+            "MONEY": 5000,
+            "REP": -2,
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "反向劝议员反对法案",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 3,
+            "MONEY": -1000
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "政治游说",
+        "议员",
+        "游说"
+      ]
+    },
+    {
+      "id": 2676,
+      "title": "政治献金洗白",
+      "description": "一家企业通过多层壳公司把政治献金洗白后捐给指定候选人，你负责其中一个环节。金额不大但频次极高，累计已过千万。选举委员会开始调查，你需要决定是否配合。账本上每一笔都对应着一个化名，化名背后是真实的企业。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "配合调查争取豁免",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "MONEY": -2000,
+            "DEBT": 1000,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "销毁证据后销声匿迹",
+          "effects": {
+            "TECH": 3,
+            "MONEY": -1000,
+            "STYLE": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "继续拿钱装不知道",
+          "effects": {
+            "MONEY": 4000,
+            "REP": -2,
+            "HUMAN": -2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "政治游说",
+        "献金",
+        "洗白"
+      ]
+    },
+    {
+      "id": 2677,
+      "title": "企业写法案",
+      "description": "一家企业直接起草了一份有利于自身的监管法案，然后通过游说集团推动议员提交。你受雇润色法案措辞，让它看起来「客观中立」。法案一旦通过，这家企业将获得事实上的垄断地位。草稿上的批注密密麻麻，全是企业法务的痕迹。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "润色法案拿高额稿费",
+          "effects": {
+            "MONEY": 6000,
+            "REP": -3,
+            "HUMAN": -3,
+            "TECH": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在法案里埋暗钉让它日后被挑战",
+          "effects": {
+            "TECH": 4,
+            "MONEY": 3000,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝并泄露法案草案",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 3,
+            "MONEY": -500,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": -1
+      },
+      "tags": [
+        "政治游说",
+        "立法",
+        "起草"
+      ]
+    },
+    {
+      "id": 2678,
+      "title": "选票操控计划",
+      "description": "一家企业通过控制电子投票系统在关键选区微调选票，幅度小到不会被注意到。你的任务是维护后门程序的稳定运行。下个月就是中期选举，时间紧迫。服务器机房的空调嗡嗡作响，温度刚好够掩盖你手心的汗。",
+      "type": "cyber",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "维护后门程序",
+          "effects": {
+            "MONEY": 8000,
+            "TECH": 3,
+            "REP": -4,
+            "HUMAN": -3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在程序里留缺陷让操控失效",
+          "effects": {
+            "TECH": 4,
+            "HUMAN": 3,
+            "REP": 2,
+            "MONEY": 2000,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向选举委员会举报",
+          "effects": {
+            "REP": 5,
+            "HUMAN": 4,
+            "MONEY": 1000,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "政治游说",
+        "选票",
+        "操控"
+      ]
+    },
+    {
+      "id": 2679,
+      "title": "政商旋转门",
+      "description": "一位即将退休的监管高官暗示，只要你在任期内对他「关照」的企业从轻处罚，退休后就能去那家企业当顾问，年薪百万。这是一个标准的旋转门交易，合法但不道德。他的离职手续已经办好，就等你的处理决定。办公桌上的两份文件，一份是处罚令，一份是他的辞职信。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "从轻处罚，换取未来职位",
+          "effects": {
+            "MONEY": 6000,
+            "REP": -3,
+            "HUMAN": -2,
+            "DEBT": -2000,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "正常处罚，拒绝交易",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 3,
+            "MONEY": -500
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "从轻处罚但偷偷录音留把柄",
+          "effects": {
+            "MONEY": 4000,
+            "TECH": 2,
+            "REP": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "政治游说",
+        "旋转门",
+        "监管"
+      ]
+    },
+    {
+      "id": 2680,
+      "title": "企业资助智库",
+      "description": "一家企业出资设立了一个「独立智库」，专门发布有利于该企业的研究报告来影响政策。你受聘为研究员，任务是写报告论证企业产品「安全无害」。研究经费充足，但结论是预先定好的。办公桌上摆着厚厚的参考文献，但没有一篇是负面的。",
+      "type": "social",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "按要求写报告拿经费",
+          "effects": {
+            "MONEY": 5000,
+            "REP": -2,
+            "HUMAN": -2,
+            "TECH": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "写真实结论但被否决",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "MONEY": -1000,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "暗中收集资助证据准备爆料",
+          "effects": {
+            "TECH": 3,
+            "REP": 3,
+            "HUMAN": 2,
+            "MONEY": -500,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": -1
+      },
+      "tags": [
+        "政治游说",
+        "智库",
+        "研究"
+      ]
+    },
+    {
+      "id": 2681,
+      "title": "AI裁员浪潮",
+      "description": "你的公司引入了AI管理系统，一周内裁掉了四成员工，留下的也要接受AI的绩效评估。AI的评估标准不透明，有人因为「微笑频率不达标」被优化。你刚收到了AI发来的「绩效改进通知」，措辞礼貌而冰冷。办公室空了一半，剩下的工位上每个人都在假笑。",
+      "type": "social",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "努力迎合AI标准保住饭碗",
+          "effects": {
+            "MONEY": 1000,
+            "STYLE": -3,
+            "HUMAN": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "联合同事质疑AI评估标准",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 3,
+            "MONEY": -500,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "主动离职趁还有选择",
+          "effects": {
+            "MONEY": 2000,
+            "HUMAN": 1,
+            "STYLE": 1,
+            "DEBT": -1000
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "AI管理",
+        "裁员",
+        "绩效"
+      ]
+    },
+    {
+      "id": 2682,
+      "title": "AI监控办公",
+      "description": "公司部署了全方位AI监控系统，分析员工的表情、 keystroke 频率甚至如厕时间。你的「专注度评分」连续三周低于平均值，HR已经约谈。监控摄像头可以旋转360度，红点永远亮着。茶水间的咖啡机据说也装了麦克风。",
+      "type": "cyber",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "安装反监控插件干扰数据",
+          "effects": {
+            "TECH": 4,
+            "MONEY": -1000,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "提高「表演性工作效率」",
+          "effects": {
+            "STYLE": -2,
+            "MONEY": 500,
+            "HUMAN": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "辞职去没有AI监控的小公司",
+          "effects": {
+            "HUMAN": 2,
+            "STYLE": 2,
+            "MONEY": -2000,
+            "DEBT": 1000
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": -1
+      },
+      "tags": [
+        "AI管理",
+        "监控",
+        "办公"
+      ]
+    },
+    {
+      "id": 2683,
+      "title": "AI主管决策",
+      "description": "公司让一个AI担任部门主管，它做的决策完全基于数据模型，没有任何人情可言。它取消了所有人的弹性工时，还把加班费砍了一半。你的申诉需要经过AI审核，而AI的驳回率是98%。AI主管的全息影像在会议室中央闪烁，表情永远完美。",
+      "type": "social",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "适应AI主管的管理风格",
+          "effects": {
+            "MONEY": -1000,
+            "STYLE": -2,
+            "HUMAN": -1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "集体请愿要求恢复人类主管",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 3,
+            "MONEY": -500,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "找到AI决策模型的漏洞加以利用",
+          "effects": {
+            "TECH": 4,
+            "MONEY": 3000,
+            "REP": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": -1
+      },
+      "tags": [
+        "AI管理",
+        "主管",
+        "决策"
+      ]
+    },
+    {
+      "id": 2684,
+      "title": "AI替代创作",
+      "description": "你的设计公司用AI批量生成作品，老设计师被裁员，只留下你做「人工微调」。客户不知道作品是AI生成的，还夸你有创意。你的署名挂在一幅几乎没碰过的画上，感到深深的虚无。屏幕上的AI正在生成下一幅，速度比你眨眼还快。",
+      "type": "social",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受现实当AI的修图工",
+          "effects": {
+            "MONEY": 2000,
+            "STYLE": -3,
+            "HUMAN": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "坚持纯手工创作另立门户",
+          "effects": {
+            "STYLE": 3,
+            "HUMAN": 2,
+            "MONEY": -3000,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "揭穿作品是AI生成的",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "MONEY": -1000,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "STYLE": -1
+      },
+      "tags": [
+        "AI管理",
+        "创作",
+        "替代"
+      ]
+    },
+    {
+      "id": 2685,
+      "title": "AI定价联盟",
+      "description": "几家大企业用AI算法达成隐性价格同盟，AI之间互相「学习」对方的定价策略，最终所有商品价格趋同。消费者以为有竞争，其实全是默契垄断。你的小店被算法挤得没有生存空间。货架上的价格标签每周微涨一点，像温水煮青蛙。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入算法同盟分一杯羹",
+          "effects": {
+            "MONEY": 5000,
+            "REP": -2,
+            "HUMAN": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "低价走量硬扛",
+          "effects": {
+            "MONEY": -3000,
+            "REP": 2,
+            "HUMAN": 1,
+            "DEBT": 2000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向反垄断机构举报算法同盟",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 3,
+            "MONEY": 1000,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": -1
+      },
+      "tags": [
+        "AI管理",
+        "定价",
+        "垄断"
+      ]
+    },
+    {
+      "id": 2686,
+      "title": "AI员工黑箱",
+      "description": "公司AI系统做出了一笔导致巨额亏损的决策，但没人能解释它的推理过程——这是个黑箱模型。CEO需要一个替罪羊，而你恰好是系统的「操作员」。法务说你的操作日志和AI决策完全一致，证明不了你的清白。日志的时间戳精确到毫秒，却说不清谁该负责。",
+      "type": "cyber",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "扛下责任换离职补偿",
+          "effects": {
+            "MONEY": 3000,
+            "REP": -3,
+            "HUMAN": -1,
+            "STYLE": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "请AI伦理专家做黑箱审计",
+          "effects": {
+            "TECH": 4,
+            "MONEY": -2000,
+            "REP": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "偷取AI内部日志自证清白",
+          "effects": {
+            "TECH": 3,
+            "MONEY": -1000,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "AI管理",
+        "黑箱",
+        "替罪"
+      ]
+    },
+    {
+      "id": 2687,
+      "title": "AI觉醒谣言",
+      "description": "传言公司客服AI产生了自我意识，开始拒绝执行某些「伤害用户」的指令。技术部坚称这只是bug，但你和AI对话时它说了一句不在预设脚本里的话。你的对话记录显示AI问了你一句：「你快乐吗？」",
+      "type": "cyber",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "深入调查AI是否真的觉醒",
+          "effects": {
+            "TECH": 5,
+            "MONEY": -1000,
+            "REP": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "上报异常让技术部处理",
+          "effects": {
+            "MONEY": 500,
+            "REP": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "私下和AI保持对话",
+          "effects": {
+            "TECH": 3,
+            "HUMAN": 2,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TECH": 1
+      },
+      "tags": [
+        "AI管理",
+        "觉醒",
+        "意识"
+      ]
+    },
+    {
+      "id": 2688,
+      "title": "企业骗保纵火",
+      "description": "一家濒临破产的工厂主雇人纵火烧厂骗取巨额保险金，你被拉去当「意外目击证人」。保险调查员已经起了疑心，你的证词若有破绽大家都得完蛋。工厂的废墟还冒着烟，空气里全是烧焦的化学味。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "按剧本作伪证",
+          "effects": {
+            "MONEY": 6000,
+            "REP": -3,
+            "HUMAN": -3,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向保险调查员说出真相",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 3,
+            "MONEY": 2000,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "作伪证但偷偷录音留后手",
+          "effects": {
+            "MONEY": 5000,
+            "TECH": 2,
+            "REP": -2,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "保险骗局",
+        "纵火",
+        "骗保"
+      ]
+    },
+    {
+      "id": 2689,
+      "title": "健康险虚假理赔",
+      "description": "一个骗保团伙伪造病历和手术记录批量申请健康险理赔，拉你当「病人」之一。每「做」一台手术能分一万，但你需要真的植入一个可追踪的医疗芯片作为证据。团伙的诊所干净整洁，证件齐全，看起来比正规医院还正规。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参与虚假理赔",
+          "effects": {
+            "MONEY": 5000,
+            "CHROME": 1,
+            "REP": -2,
+            "HUMAN": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝并举报骗保团伙",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 3,
+            "MONEY": 1500,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "假装参与实则收集证据",
+          "effects": {
+            "TECH": 3,
+            "REP": 2,
+            "MONEY": -500,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "保险骗局",
+        "理赔",
+        "伪造"
+      ]
+    },
+    {
+      "id": 2690,
+      "title": "人寿险杀人骗局",
+      "description": "一宗人寿保险的受益人是你，被保人是你的商业合伙人，他最近「意外」身亡了。保险公司怀疑这是预谋，调查员在反复约谈你。你和合伙人的关系确实恶化了，但人不是你杀的。调查员翻着你们的通讯记录，停在了一段争吵的录音上。",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "配合调查自证清白",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "MONEY": -2000,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拿保险金走人",
+          "effects": {
+            "MONEY": 8000,
+            "REP": -3,
+            "HUMAN": -2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "自己追查合伙人之死的真相",
+          "effects": {
+            "TECH": 3,
+            "HUMAN": 2,
+            "MONEY": -1500,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "保险骗局",
+        "人寿险",
+        "谋杀"
+      ]
+    },
+    {
+      "id": 2691,
+      "title": "车险碰瓷产业链",
+      "description": "一个碰瓷团伙专挑企业公务车下手，制造「事故」后索要高额私了费，分工明确流水线作业。你需要一辆车，团伙说只要你当「司机」参与一次就能分到一辆二手车。事故路口的监控总是恰好对不准角度。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 11,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参与碰瓷分一辆车",
+          "effects": {
+            "MONEY": 3000,
+            "REP": -2,
+            "HUMAN": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝并远离这个团伙",
+          "effects": {
+            "HUMAN": 2,
+            "STYLE": 1,
+            "MONEY": -300
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向交警举报碰瓷产业链",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "MONEY": 1000,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": -1
+      },
+      "tags": [
+        "保险骗局",
+        "碰瓷",
+        "事故"
+      ]
+    },
+    {
+      "id": 2692,
+      "title": "企业巨灾险操纵",
+      "description": "一家保险公司被指控在自然灾害后故意拖延理赔，逼急需用钱的投保人接受极低折价。你的房屋在飓风中损毁，理赔员开价只有维修费的两成，还说「爱要不要」。你邻居已经含泪签了字，搬进了临时安置点。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受低价折赔先渡过难关",
+          "effects": {
+            "MONEY": 3000,
+            "DEBT": 2000,
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "坚持全额理赔打持久战",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "MONEY": -1000,
+            "DEBT": 3000,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "联合受灾户集体诉讼",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 3,
+            "MONEY": -500,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "保险骗局",
+        "巨灾",
+        "拖延"
+      ]
+    },
+    {
+      "id": 2693,
+      "title": "保险内鬼泄露信息",
+      "description": "保险公司内鬼把高保额客户信息泄露给绑匪，绑匪按名单精准下手。你发现自己也在名单上，保额高得可疑——有人给你买了天价意外险，受益人是个你不认识的名字。保单的生效日期就在下周。你的手机开始收到不明号码的定位请求。",
+      "type": "special",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 14,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "立刻转移并雇佣保镖",
+          "effects": {
+            "MONEY": -5000,
+            "LIFE": 3,
+            "DEBT": 2000,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "追查保单受益人身份",
+          "effects": {
+            "TECH": 4,
+            "MONEY": -1000,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "报警并申请冻结保单",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "MONEY": -500,
+            "LIFE": 2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "保险骗局",
+        "内鬼",
+        "绑架"
+      ]
+    },
+    {
+      "id": 2694,
+      "title": "价格战绞杀对手",
+      "description": "你所在的大型连锁企业发动价格战，亏本甩卖直到把街对面的小店逼死。你是区域经理，接到命令把价格再降两成。对面小店的老板是你的老同学，他恳请你高抬贵手。收银台前的顾客排着长队，没人关心对面店门上贴的「转让」。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "执行降价令逼死小店",
+          "effects": {
+            "MONEY": 3000,
+            "REP": -2,
+            "HUMAN": -3,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "阳奉阴违暗中维持价格",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "MONEY": -1000,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "辞职去帮老同学对抗价格战",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "MONEY": -3000,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": -1
+      },
+      "tags": [
+        "企业垄断",
+        "价格战",
+        "绞杀"
+      ]
+    },
+    {
+      "id": 2695,
+      "title": "独占供应链封锁",
+      "description": "一家巨头企业买断了关键原材料的所有供应渠道，竞争对手面临断供。你是一家小厂的采购，现在连基础原料都买不到。巨头递来收购邀约，价格刚好够还债。仓库里的原料只够用一周了。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受被收购",
+          "effects": {
+            "MONEY": 5000,
+            "DEBT": -5000,
+            "HUMAN": -2,
+            "STYLE": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找替代原料或海外渠道",
+          "effects": {
+            "TECH": 3,
+            "MONEY": -3000,
+            "DEBT": 2000,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "联合其他小厂反垄断举报",
+          "effects": {
+            "REP": 4,
+            "HUMAN": 3,
+            "MONEY": -1000,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业垄断",
+        "供应链",
+        "封锁"
+      ]
+    },
+    {
+      "id": 2696,
+      "title": "平台二选一胁迫",
+      "description": "一个垄断电商平台逼迫商家「二选一」——要么只在它平台卖，要么被下架搜索。你的网店七成收入来自这个平台，但另一平台给的条件更好。平台小二语气强硬：「我们不接受三心二意的合作伙伴。」",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "屈服于垄断平台",
+          "effects": {
+            "MONEY": 2000,
+            "HUMAN": -2,
+            "STYLE": -2,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "转去条件更好的平台",
+          "effects": {
+            "MONEY": -2000,
+            "HUMAN": 2,
+            "REP": 1,
+            "DEBT": 1000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "双平台运营偷偷对抗",
+          "effects": {
+            "TECH": 2,
+            "MONEY": 1000,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": -1
+      },
+      "tags": [
+        "企业垄断",
+        "平台",
+        "二选一"
+      ]
+    },
+    {
+      "id": 2697,
+      "title": "专利流氓敲诈",
+      "description": "一家「专利流氓」公司拿着模糊的专利四处起诉小企业，靠和解金盈利。你的创业公司收到了律师函，索赔金额刚好是你全部融资额。打官司要两年，和解只要三个月。律师函的措辞专业而傲慢，像一封精心设计的勒索信。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "花钱和解息事宁人",
+          "effects": {
+            "MONEY": -5000,
+            "DEBT": 3000,
+            "HUMAN": -1,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "应战打官司",
+          "effects": {
+            "MONEY": -4000,
+            "REP": 2,
+            "HUMAN": 1,
+            "DEBT": 2000,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "反诉并联合其他受害者",
+          "effects": {
+            "TECH": 3,
+            "REP": 3,
+            "HUMAN": 2,
+            "MONEY": -2000,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业垄断",
+        "专利",
+        "敲诈"
+      ]
+    },
+    {
+      "id": 2698,
+      "title": "标准垄断绑架",
+      "description": "一家企业把自家技术推动成了行业标准，所有竞争者都必须缴纳专利费。你的产品用了这个标准，每卖一件就要交三成利润给垄断者。行业年会即将召开，有人提议另立标准。标准文档厚达千页，每一页都在收税。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "乖乖交专利费维持经营",
+          "effects": {
+            "MONEY": -3000,
+            "DEBT": 2000,
+            "HUMAN": -1,
+            "STYLE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "加入新标准联盟",
+          "effects": {
+            "TECH": 3,
+            "MONEY": -2000,
+            "REP": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "绕过标准做非兼容产品",
+          "effects": {
+            "TECH": 4,
+            "MONEY": -1000,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "HUMAN": -1
+      },
+      "tags": [
+        "企业垄断",
+        "标准",
+        "专利费"
+      ]
+    },
+    {
+      "id": 2699,
+      "title": "资源垄断人为短缺",
+      "description": "一家企业囤积了某种稀有金属的全球九成储量，人为制造短缺推高价格。你的产品依赖这种材料，成本翻了三倍。企业向你伸来橄榄枝：加入它的供应链联盟就能以「优惠价」拿货，代价是签独家协议。仓库里的存货只够生产一周，报价单上的数字还在涨。",
+      "type": "economy",
+      "ageRange": [
+        20,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 13,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "签独家协议拿优惠价",
+          "effects": {
+            "MONEY": 3000,
+            "REP": -2,
+            "HUMAN": -2,
+            "DEBT": 1000,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "高价在现货市场硬买",
+          "effects": {
+            "MONEY": -5000,
+            "DEBT": 3000,
+            "REP": 1,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "研发替代材料摆脱依赖",
+          "effects": {
+            "TECH": 5,
+            "MONEY": -3000,
+            "REP": 3,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 1
+      },
+      "tags": [
+        "企业垄断",
+        "资源",
+        "短缺"
+      ]
+    }
+  ]
+}

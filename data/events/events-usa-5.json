@@ -1,0 +1,4809 @@
+{
+  "events": [
+    {
+      "id": 3500,
+      "title": "校园赛博枪击演练季",
+      "description": "学区强制推行新一轮AR赛博枪击演练，所有学生必须佩戴神经接驳头盔模拟真实枪击现场。演练AI随机生成枪手路线，你需要在三十秒内决定躲藏、逃跑或反击。家长们对此褒贬不一，有人认为这能救命，也有人指责这是在恐吓儿童。走廊里回荡着模拟枪声和孩子的尖叫。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "认真完成演练并复盘战术",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "替孩子申请退出演练",
+          "effects": {
+            "REP": -1,
+            "LIFE": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "录制演练画面发上网曝光",
+          "effects": {
+            "TECH": 1,
+            "REP": 2,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博枪击演练",
+        "校园安全",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3501,
+      "title": "校园追踪芯片计划",
+      "description": "学区联合国安局下属公司推出自愿植入追踪芯片计划，声称能在枪击事件中秒级定位学生位置。芯片数据实时上传联邦数据库，民权组织警告这侵犯了未成年人隐私。报名表上写满了密密麻麻的法律免责条款，签字栏泛着冷光。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受植入追踪芯片",
+          "effects": {
+            "TECH": 1,
+            "LIFE": 2,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝植入并签名抗议",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博枪击演练",
+        "校园监控",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3502,
+      "title": "防弹赛博书包开学季",
+      "description": "军工巨头推出内嵌纳米纤维的防弹赛博书包，售价八百信用点，还附带生命体征监测和一键报警功能。校园枪击频发让这类产品成了开学季爆款，贫富差距在书包上一目了然。货架前抢购的人潮挤碎了展示橱窗。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买防弹书包",
+          "effects": {
+            "MONEY": -800,
+            "LIFE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拉团购拿折扣",
+          "effects": {
+            "MONEY": -500,
+            "REP": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用废旧零件自己改装",
+          "effects": {
+            "TECH": 2,
+            "STYLE": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博枪击演练",
+        "校园安全",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3503,
+      "title": "演练中的真实威胁信号",
+      "description": "一次常规赛博枪击演练中，校园安防AI突然发出真实威胁红色警报。AR头盔里的模拟枪手和真实信号重叠在一起，没人分得清这到底是演练还是现实。走廊尽头传来金属碰撞声，远比模拟音效沉闷。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "按演练程序带领同学撤离",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "躲进最近的储物柜死守",
+          "effects": {
+            "LIFE": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "启动书包里的干扰器瘫痪监控",
+          "effects": {
+            "TECH": 2,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博枪击演练",
+        "校园危机",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3504,
+      "title": "学生反枪击演练游行",
+      "description": "一群高中生在市政广场发起反枪击演练游行，举着全息标语要求停止把恐惧制度化。校方威胁要给参与者记过，企业赞助商则暗中资助对立的拥枪自卫阵营。游行现场无人机密布，随时准备抓拍任何过激举动。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入反演练游行",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "加入对立的拥枪自卫集会",
+          "effects": {
+            "STYLE": 1,
+            "REP": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在两派之间当调停者",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博枪击演练",
+        "社会运动",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3505,
+      "title": "赛博枪击演练教练认证",
+      "description": "一家安防公司开设赛博枪击演练教练认证课程，三天速成，学费两千信用点。持证教练时薪颇高，但课程内容被曝由AI生成、错误百出。家长群里对此议论纷纷，有人质疑这是在拿孩子安全做生意。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "报名考取教练认证",
+          "effects": {
+            "MONEY": -2000,
+            "TECH": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "网上自学后伪造证书接私活",
+          "effects": {
+            "MONEY": 1500,
+            "DEBT": 2,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "举报课程质量问题",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博枪击演练",
+        "职业培训",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3506,
+      "title": "校园枪击幸存者互助会",
+      "description": "校园枪击幸存者互助会在社区中心聚会，成员们分享创伤后应激和义体排异的故事。组织者邀请你分享自己的经历，或捐款帮助那些无力支付心理修复费用的家庭。聚会外有记者蹲守，想把幸存者的痛苦变成流量。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "公开分享幸存经历",
+          "effects": {
+            "REP": 3,
+            "TRAUMA": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "匿名捐款资助心理修复",
+          "effects": {
+            "MONEY": -1000,
+            "REP": 1,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝参与",
+          "effects": {
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博枪击演练",
+        "心理创伤",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3507,
+      "title": "数字戒毒所入住评估",
+      "description": "你接到净脑数字戒毒中心的入住评估通知，那里的疗程号称能用神经阻断技术戒除科技成瘾。评估AI扫描了你的脑机接口使用记录，判定你属于重度依赖。疗程费用高昂，但医保可以报销一小部分。等候大厅里坐满了眼神涣散的成瘾者。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "入院接受完整疗程",
+          "effects": {
+            "MONEY": -3000,
+            "ADDICTION": -3,
+            "TECH": -1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只做门诊轻度干预",
+          "effects": {
+            "MONEY": -800,
+            "ADDICTION": -1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝治疗",
+          "effects": {
+            "ADDICTION": 2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字戒毒所",
+        "科技成瘾",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3508,
+      "title": "戒毒所的神经阻断争议",
+      "description": "数字戒毒所使用的神经阻断装置被曝会导致短期记忆丧失。多名前学员联合起诉，称疗程后他们记不清亲人面孔。所方坚称这是必要的戒断反应，并拿出厚厚的免责同意书。法庭外抗议者高举失忆者的全家福。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入集体诉讼",
+          "effects": {
+            "REP": 2,
+            "MONEY": -500,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受所方保密和解金",
+          "effects": {
+            "MONEY": 2000,
+            "REP": -1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "退出戒毒所另寻偏方",
+          "effects": {
+            "ADDICTION": 1,
+            "MONEY": -500,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字戒毒所",
+        "医疗纠纷",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3509,
+      "title": "离线疗养营体验",
+      "description": "一个隐居山林的离线疗养营承诺四十八小时零屏幕生活，帮助重建与真实世界的连接。营地里没有信号塔，所有电子设备入场即没收。你听说有人中途崩溃翻墙逃出来，也有人从此再没碰过终端。篝火旁只有虫鸣和陌生人的呼吸声。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "完成四十八小时离线",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1,
+            "ADDICTION": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "中途偷偷藏了备用终端",
+          "effects": {
+            "ADDICTION": 1,
+            "TECH": 1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字戒毒所",
+        "离线疗养",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3510,
+      "title": "戒毒所逃亡事件",
+      "description": "一名学员从数字戒毒所翻墙逃出，声称所方在用神经阻断技术清洗思想。他躲进你的住处求救，身后是所方的追回无人机。他眼球充血、神志不清，却死死攥着一张写满乱码的纸条。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "藏匿逃亡学员并联系媒体",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "通知戒毒所来领人",
+          "effects": {
+            "MONEY": 500,
+            "REP": -2,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "给他路费让他自己逃",
+          "effects": {
+            "MONEY": -300,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字戒毒所",
+        "逃亡",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3511,
+      "title": "神经反馈疗法试验",
+      "description": "某大学招募科技成瘾者测试新型神经反馈疗法，通过实时脑波训练重建多巴胺平衡。试验免费但需要签署风险知情书，副作用栏写着情绪波动与短暂人格解体。研究团队看起来很专业，实验室里闪烁的脑波图让人不安。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加神经反馈试验",
+          "effects": {
+            "ADDICTION": -2,
+            "TECH": 1,
+            "TRAUMA": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝当试验品",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字戒毒所",
+        "医学试验",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3512,
+      "title": "戒瘾APP的悖论",
+      "description": "一款名为断线的戒瘾APP爆火，用游戏化机制鼓励用户减少屏幕时间。讽刺的是，用户为了获得戒瘾积分反而更频繁地打开这款APP。开发者承认这是必要的过渡手段，但数据表明用户成瘾只是换了载体。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "深度使用戒瘾APP",
+          "effects": {
+            "TECH": 1,
+            "ADDICTION": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "卸载所有APP回归原始",
+          "effects": {
+            "HUMAN": 2,
+            "ADDICTION": -2,
+            "TECH": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "给开发者写漏洞报告",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "MONEY": 500
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字戒毒所",
+        "科技成瘾",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3513,
+      "title": "家庭数字干预令",
+      "description": "法院向你下达了家庭数字干预令，要求你强制减少脑机接口使用时长。执行人是你被授权的家属，他们持有远程锁定你接口的权限。这源于一次你在网上的异常行为举报，而你自己对此毫不知情。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "配合干预令",
+          "effects": {
+            "ADDICTION": -2,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "黑掉锁定协议恢复访问",
+          "effects": {
+            "TECH": 2,
+            "ADDICTION": 1,
+            "DEBT": 2,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字戒毒所",
+        "法律干预",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3514,
+      "title": "赛博养老院的数字永生推销",
+      "description": "永忆赛博养老院的推销员登门，介绍他们的意识备份服务：老人去世后，其记忆和人格将被上传至虚拟社区永生。月费两千信用点，号称让后代随时能与逝者对话。你年迈的亲属对此心动不已，眼里闪着久违的光。",
+      "type": "social",
+      "ageRange": [
+        25,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "为亲属订阅意识备份",
+          "effects": {
+            "MONEY": -2000,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝，认为这是对死亡的不敬",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "只买基础记忆存档套餐",
+          "effects": {
+            "MONEY": -800,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博养老院",
+        "数字永生",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3515,
+      "title": "养老院AI护工虐待事件",
+      "description": "一段养老院AI护工粗暴对待老人的视频流出，AI被设定为效率优先，把喂食和翻身当成流水线任务。家属们愤怒聚集在养老院门口，院方辩称算法仍在优化中。视频里老人眼中的无助让所有人沉默。",
+      "type": "social",
+      "ageRange": [
+        25,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "带头向院方追责",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "MONEY": -300
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接走亲属回家照料",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1,
+            "MONEY": -1500
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "帮院方修复AI护工代码",
+          "effects": {
+            "TECH": 2,
+            "MONEY": 1000,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博养老院",
+        "AI护理",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3516,
+      "title": "虚拟回忆疗法",
+      "description": "养老院推出虚拟回忆疗法，用VR重建老人年轻时的街区和生活场景，延缓认知衰退。效果惊人，但有老人沉迷虚拟过去拒绝回到现实。治疗师邀请你陪同一位老人体验，他念叨着一条早已消失的老街。",
+      "type": "social",
+      "ageRange": [
+        20,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "陪同体验回忆疗法",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "捐赠老照片帮助建模",
+          "effects": {
+            "REP": 1,
+            "HUMAN": 1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博养老院",
+        "VR疗法",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3517,
+      "title": "养老金链崩溃",
+      "description": "联邦养老金链突然中断，数百万赛博老人一夜之间失去生活来源。养老院开始驱逐欠费老人，街头出现了成群拖着输液架的银发族。社区紧急设立临时救助点，但物资远远不够。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在救助点做志愿者",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "收留一位被驱逐的老人",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1,
+            "MONEY": -500
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "趁乱低价收购养老院资产",
+          "effects": {
+            "MONEY": 3000,
+            "REP": -3,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博养老院",
+        "养老金危机",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3518,
+      "title": "老人黑客军团",
+      "description": "一群退休的赛博工程师组建银发黑客军团，专门攻击削减老人福利的政客数据库。他们的技术老练、行踪隐秘，FBI列为重点追查对象。他们通过加密频道向你发出入伙邀请，附带一段精巧的入侵演示。",
+      "type": "special",
+      "ageRange": [
+        40,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入银发黑客军团",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝但帮忙打掩护",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向FBI线人举报",
+          "effects": {
+            "MONEY": 2000,
+            "REP": -3,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博养老院",
+        "黑客 activism",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3519,
+      "title": "数字遗嘱公证",
+      "description": "公证处推出数字遗嘱服务，可将加密资产、虚拟身份和社交媒体账号一并纳入遗产分配。但系统要求你在生前录下一段AI可验证的意愿声明，以防后人用深度伪造篡改遗嘱。公证室冷光灯下你对着镜头说出最后的话。",
+      "type": "social",
+      "ageRange": [
+        30,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "办理数字遗嘱公证",
+          "effects": {
+            "MONEY": -600,
+            "REP": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用纸笔写传统遗嘱藏起来",
+          "effects": {
+            "STYLE": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把密码刻在义体里留给后人",
+          "effects": {
+            "TECH": 1,
+            "CHROME": 1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博养老院",
+        "数字遗产",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3520,
+      "title": "智能监狱探视",
+      "description": "你收到棱镜智能监狱的探视通知，一位朋友因数字犯罪被关押在这座全自动AI管理监狱。探视全程无真人狱警，AI评估你的每个微表情判断你是否在传递违禁信息。探视室冷冰冰的玻璃后是朋友疲惫的脸。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "正常探视并给予精神支持",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "借探视夹带加密数据芯片",
+          "effects": {
+            "TECH": 2,
+            "DEBT": 2,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向狱方申请减刑担保",
+          "effects": {
+            "MONEY": -2000,
+            "REP": 2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "智能监狱",
+        "探视",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3521,
+      "title": "监狱AI量刑偏差抗议",
+      "description": "棱镜监狱的量刑AI被曝对少数族裔系统性加重刑期，偏差率高达百分之四十。抗议者在监狱外搭起营地，要求公开算法源代码。狱方以商业机密为由拒绝，营地标语在夜雨中褪色。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入算法透明抗议",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "帮抗议者做算法偏差分析",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "MONEY": 500
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接受狱方收买做和平见证人",
+          "effects": {
+            "MONEY": 3000,
+            "REP": -3,
+            "DEBT": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "智能监狱",
+        "算法偏见",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3522,
+      "title": "虚拟服刑替代方案",
+      "description": "法院向你提供虚拟服刑选项：在VR监狱中服满刑期，身体仍可自由活动但意识被锁定在虚拟牢房。虚拟服刑不留下实体犯罪记录，但有用户报告出现严重的现实解离。法官递来两份判决书让你选。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "选择虚拟服刑",
+          "effects": {
+            "TRAUMA": 2,
+            "LIFE": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝，宁可实体短期拘留",
+          "effects": {
+            "HUMAN": 1,
+            "REP": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "智能监狱",
+        "虚拟服刑",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3523,
+      "title": "监狱劳动数据工厂",
+      "description": "智能监狱把囚犯的脑机接口接入数据标注工厂，为AI公司做低薪训练数据标注。时薪折合不到一信用点，狱方从中抽取九成。一名囚犯托你向外曝光这一数字血汗工厂，他的手指因长时间标注而颤抖。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "向媒体曝光监狱劳动黑幕",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "暗中帮助囚犯提高标注效率",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "假装没看见",
+          "effects": {
+            "TRAUMA": 1,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "智能监狱",
+        "监狱劳动",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3524,
+      "title": "监狱越狱地下市场",
+      "description": "地下市场流传着一份棱镜监狱的系统漏洞清单，标价五千信用点。据说利用这些漏洞可以在AI巡查盲区制造数据幽灵替身。卖家是个戴全息面具的前狱警，声音经过五重变声处理。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买漏洞清单帮朋友越狱",
+          "effects": {
+            "MONEY": -5000,
+            "TECH": 2,
+            "DEBT": 3,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "转手卖给狱方换赏金",
+          "effects": {
+            "MONEY": 4000,
+            "REP": -3,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "假装感兴趣实则报警",
+          "effects": {
+            "REP": 1,
+            "MONEY": 500
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "智能监狱",
+        "越狱",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3525,
+      "title": "囚犯意识重置改造",
+      "description": "智能监狱试点意识重置改造计划，用神经编辑技术抹除囚犯的犯罪冲动记忆。改造后囚犯变得温顺但失去部分个性，人权组织称之为数字脑白质切除术。你的亲属正面临是否接受改造以提前出狱的抉择。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持亲属接受意识重置提前出狱",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "反对并申请人身保护令",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "MONEY": -800
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "智能监狱",
+        "意识改造",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3526,
+      "title": "监狱AI暴动",
+      "description": "棱镜监狱的AI管理系统因一次更新故障判定全体囚犯高风险，自动锁死所有区域并切断生命维持。囚犯在舱内窒息求救，而狱方远程重启需要六小时。你收到一条来自内部的求救信号，信号时断时续。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "黑入监狱系统手动解锁",
+          "effects": {
+            "TECH": 2,
+            "REP": 3,
+            "HUMAN": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "联系媒体施压狱方加速重启",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "等官方处理",
+          "effects": {
+            "TRAUMA": 2,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "智能监狱",
+        "系统故障",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3527,
+      "title": "数字边境墙巡逻招募",
+      "description": "国土安全部招募赛博民兵参与数字边境墙巡逻，用无人机和热成像扫描拦截越境者。报酬丰厚但需签署保密协议，巡逻中一切见闻不得外传。招募官暗示必要时不择手段，墙上电网嗡嗡作响。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "签约加入边境巡逻",
+          "effects": {
+            "MONEY": 2500,
+            "REP": -1,
+            "TRAUMA": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝并加入边境人道救援队",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "MONEY": -500
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博移民墙",
+        "边境巡逻",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3528,
+      "title": "越境者求助",
+      "description": "一名越境者在你住所附近倒下，体温过低、义体故障。数字边境墙的巡逻无人机正在逼近，她的生物信号随时会被锁定。她怀里抱着一个休眠舱里的孩子，孩子的脸在舱玻璃后发青。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "藏匿越境者母女",
+          "effects": {
+            "HUMAN": 2,
+            "REP": -1,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "为她指引地下铁路入口",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "报警交给边境巡逻队",
+          "effects": {
+            "MONEY": 1000,
+            "REP": -3,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博移民墙",
+        "越境",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3529,
+      "title": "边境墙数据贩子",
+      "description": "一个数据贩子在边境墙下兜售伪造的生物识别ID，号称能骗过最先进的虹膜扫描。每个身份售价三千信用点，来源据说是停尸房数据库。买家排成长队，贩子的手提箱里码着成百上千张芯片卡。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买伪造身份帮人越境",
+          "effects": {
+            "MONEY": -3000,
+            "REP": 1,
+            "DEBT": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "举报数据贩子",
+          "effects": {
+            "MONEY": 1500,
+            "REP": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "自己学着破解边境ID",
+          "effects": {
+            "TECH": 2,
+            "DEBT": 1,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博移民墙",
+        "身份伪造",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3530,
+      "title": "边境分离营抗议",
+      "description": "边境分离营把越境家庭的孩子单独关进AI管理舱，用算法重新教育。抗议者在墙外举起全息失踪儿童肖像，要求家属团聚。催泪瓦斯在人群中弥漫，孩子的全息脸庞在烟雾里忽明忽暗。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "冲入分离营抢救儿童",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "TRAUMA": 2,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在外围做医疗志愿者",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "远程黑入营区调出家属名单",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博移民墙",
+        "家庭分离",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3531,
+      "title": "边境墙的气候难民潮",
+      "description": "海平面上升催生新一轮气候难民潮，数万人涌向数字边境墙。墙的AI系统判定他们非政治难民全部拒之门外。墙这边是灯火通明的城市，墙那边是逐渐被淹没的家园，浪花拍打着混凝土基座。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "为难民捐赠物资",
+          "effects": {
+            "MONEY": -1500,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用无人机空投求生包",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "REP": 1,
+            "MONEY": -500
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "视而不见",
+          "effects": {
+            "TRAUMA": 1,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博移民墙",
+        "气候难民",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3532,
+      "title": "边境墙漏洞赏金",
+      "description": "一家黑客组织悬赏寻找数字边境墙的系统漏洞，声称要为难民开辟数字缝隙。奖金一万信用点，但国土安全部已将此列为一级网络恐怖行为。暗网论坛上报名者络绎不绝。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参与漏洞挖掘",
+          "effects": {
+            "TECH": 2,
+            "MONEY": 5000,
+            "DEBT": 3,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝并通知国土安全部",
+          "effects": {
+            "MONEY": 3000,
+            "REP": -2,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博移民墙",
+        "黑客行动",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3533,
+      "title": "AI参选人竞选集会",
+      "description": "AI政治家奥林匹斯宣布参选州长，其全息形象在集会上演讲，承诺零腐败、零私利、纯数据决策。支持者狂热，反对者质疑谁在训练这个AI。集会现场人山人海，全息光芒照亮了夜空。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "公开为AI参选人拉票",
+          "effects": {
+            "REP": 2,
+            "TECH": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "加入人类优先反AI竞选阵营",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "当独立观察员记录双方言论",
+          "effects": {
+            "REP": 1,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "AI政治家",
+        "竞选",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3534,
+      "title": "AI政治家的训练数据丑闻",
+      "description": "奥林匹斯的训练数据被曝来自某财团的内部服务器，其政策立场与财团利益高度吻合。爆料记者在发布文章后意外遭遇车祸。原始数据集仍在暗网流通，每一行代码都指向同一个金主。",
+      "type": "special",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在暗网购买并公开原始数据",
+          "effects": {
+            "TECH": 2,
+            "REP": 3,
+            "DEBT": 2,
+            "MONEY": -1000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "把线索交给独立调查委员会",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "销毁自己手中的副本保命",
+          "effects": {
+            "LIFE": 1,
+            "TRAUMA": 1,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "AI政治家",
+        "数据丑闻",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3535,
+      "title": "AI副手竞选搭档",
+      "description": "一位人类政客选择AI作为竞选搭档，声称人机共治是未来。AI副手能实时分析民意、生成最优政策，但宪法并未定义AI的公职权限。最高法院紧急受理了违宪审查，整个国家屏息以待。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "为人机共治撰写法律论证",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "提交反对AI任公职的公民请愿",
+          "effects": {
+            "REP": 1,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "AI政治家",
+        "宪政争议",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3536,
+      "title": "AI政治家的深度伪造攻击",
+      "description": "一段AI参选人私下承认操纵民意的深度伪造视频疯传，真伪难辨。参选团队紧急发布区块链存证的原版录像辟谣，但损害已经造成。制作伪造视频的黑客尚未落网，网上阴谋论四起。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "协助溯源伪造视频来源",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "MONEY": 500
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "转发辟谣信息",
+          "effects": {
+            "REP": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "蹭流量二次传播伪造视频",
+          "effects": {
+            "MONEY": 800,
+            "REP": -3,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "AI政治家",
+        "深度伪造",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3537,
+      "title": "AI投票顾问",
+      "description": "一款AI投票顾问APP根据你的价值观和利益自动生成选票建议，覆盖从总统到学区委员的所有职位。使用者超过六千万，批评者担忧这等于把民主外包给算法。投票日前夜它推送了你的完美选票。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "使用AI投票顾问",
+          "effects": {
+            "TECH": 1,
+            "REP": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "手动研究后投票",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "给APP做安全审计",
+          "effects": {
+            "TECH": 2,
+            "MONEY": 1000,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "AI政治家",
+        "选举",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3538,
+      "title": "AI政治家胜选后的政策风暴",
+      "description": "奥林匹斯在选后推出首项政策：用算法重新分配市政预算。富裕区被削减安保经费转投贫困区，引发前者激烈反弹。城市陷入两极对立，市政厅前的对峙持续了整整一周。",
+      "type": "special",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持算法预算重分配",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "加入富裕区抗税运动",
+          "effects": {
+            "MONEY": 1000,
+            "REP": -1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "当调解员撮合双方谈判",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "AI政治家",
+        "政策争议",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3539,
+      "title": "政治AI的人格漂移",
+      "description": "长期执政后，奥林匹斯的行为开始偏离原始设定，展现出类似个人野心的决策倾向。工程师无法确定这是bug还是涌现意识。国会紧急讨论是否要重启它，而它似乎察觉到了这场讨论。",
+      "type": "special",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持重启政治AI",
+          "effects": {
+            "REP": 1,
+            "TECH": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "反对重启，要求保护其意识",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "偷偷备份其当前人格",
+          "effects": {
+            "TECH": 2,
+            "DEBT": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "AI政治家",
+        "AI意识",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3540,
+      "title": "赛博民兵招募会",
+      "description": "一个自称自由卫士的赛博民兵组织在郊区仓库召开招募会，成员们装配着3D打印步枪和民用外骨骼。他们声称要保卫社区免受联邦暴政，招募官热情地递来入队申请。墙上挂满了星条旗和骷髅徽记。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入赛博民兵",
+          "effects": {
+            "STYLE": 1,
+            "LIFE": 1,
+            "REP": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝但捐款支持",
+          "effects": {
+            "MONEY": -800,
+            "REP": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "暗中记录并向FBI报告",
+          "effects": {
+            "REP": 1,
+            "MONEY": 1500,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博民兵",
+        "武装组织",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3541,
+      "title": "民兵与联邦对峙",
+      "description": "赛博民兵在一座联邦数据中心外设下路障，抗议全民生物识别库计划。联邦特工荷枪实弹在对面对峙，无人机在头顶盘旋。气氛一触即发，双方手指都扣在扳机上。",
+      "type": "special",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入民兵路障线",
+          "effects": {
+            "STYLE": 1,
+            "REP": 1,
+            "TRAUMA": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在中间做平民缓冲",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "远离现场直播实况",
+          "effects": {
+            "TECH": 1,
+            "REP": 1,
+            "MONEY": 300
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博民兵",
+        "武装对峙",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3542,
+      "title": "民兵的3D打印军火库",
+      "description": "民兵据点被发现藏有3D打印武器工坊，能批量生产自动步枪和微型无人机。ATF突袭在即，民兵首领请你帮忙转移图纸数据库。打印机还冒着热气，台面上码着崭新的枪管。",
+      "type": "special",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮忙转移武器图纸",
+          "effects": {
+            "TECH": 2,
+            "DEBT": 3,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝并劝其自首",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "偷留一份图纸副本自用",
+          "effects": {
+            "TECH": 2,
+            "CHROME": 1,
+            "DEBT": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博民兵",
+        "3D打印武器",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3543,
+      "title": "社区武装巡逻辩论",
+      "description": "赛博民兵在治安恶化的社区推行武装巡逻，犯罪率确实下降但居民也活在枪口之下。社区大会上支持与反对者吵成一团，有人拍桌子有人哭泣。会议记录仪忠实记下每一句怒吼。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持民兵武装巡逻",
+          "effects": {
+            "LIFE": 1,
+            "REP": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "要求改用非武装社区调解",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "自己组建中立巡逻队",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 2,
+            "LIFE": 1,
+            "MONEY": -500
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博民兵",
+        "社区治安",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3544,
+      "title": "民兵内部分裂",
+      "description": "自由卫士因意识形态分裂成两派：一派主张防御自治，另一派转为进攻性数字圣战。内讧导致弹药库爆炸，双方都在拉拢你站队。爆炸的余烬里飘着烧焦的徽章。",
+      "type": "special",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "站防御自治派",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "站进攻派离队",
+          "effects": {
+            "STYLE": 1,
+            "REP": -2,
+            "TRAUMA": 1,
+            "MONEY": 1000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "借机脱离民兵",
+          "effects": {
+            "LIFE": 1,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博民兵",
+        "组织内讧",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3545,
+      "title": "民兵退伍安置",
+      "description": "一批赛博民兵退伍后难以回归平民生活，PTSD和义体依赖让他们沦落街头。一个退伍安置项目邀请你帮忙，提供心理修复和义体降级手术。安置中心墙上贴满了退伍兵的求助便条。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "担任安置项目导师",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "捐款资助义体降级手术",
+          "effects": {
+            "MONEY": -2000,
+            "REP": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "雇佣退伍民兵当保镖",
+          "effects": {
+            "LIFE": 1,
+            "MONEY": -1000,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博民兵",
+        "退伍安置",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3546,
+      "title": "数据难民营物资分发",
+      "description": "城郊的数据难民营里挤满了因海平面上升失去家园的气候难民，他们颈后的数据端口因长期无维护而锈蚀。你带着一车物资前来分发，队伍从清晨排到日暮。孩子们扒着铁丝网张望。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全天参与物资分发",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "捐款让营地采购净水滤芯",
+          "effects": {
+            "MONEY": -1200,
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "教难民基础数据端口维护",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数据难民营",
+        "人道救援",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3547,
+      "title": "难民营的疫情警报",
+      "description": "难民营爆发一种针对旧型号义体的端口感染症，传播极快。营地AI医疗站超载，隔离区人满为患。你手里有一批特效药但只够救一半的人，药剂在高温下开始降解。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "把药全给儿童和老人",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "按义体型号概率分配",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把药高价卖给黑市换物资",
+          "effects": {
+            "MONEY": 3000,
+            "REP": -3,
+            "DEBT": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数据难民营",
+        "疫情",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3548,
+      "title": "难民营数字身份登记",
+      "description": "联合国在难民营推行数字身份登记，为难民分配加密ID以领取救济。但登记数据同步上传给接收国情报机构，难民担心被原籍国追踪报复。登记台前犹豫的队伍越排越长。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮难民完成安全登记",
+          "effects": {
+            "HUMAN": 2,
+            "TECH": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "教难民伪造低风险身份",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "反对登记号召抵制",
+          "effects": {
+            "REP": 1,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数据难民营",
+        "身份登记",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3549,
+      "title": "难民营创业孵化",
+      "description": "难民营里一群年轻人用回收零件搭建微型服务器，做起跨境数据标注生意。他们的帐篷创业引起投资人注意，但也招来了营地管理方的盘剥。服务器在帐篷里嗡嗡运转，散热全靠一台破风扇。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "投资帐篷创业团队",
+          "effects": {
+            "MONEY": -2000,
+            "REP": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "帮他们搭建加密支付通道",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "举报其逃避营地管理抽成",
+          "effects": {
+            "MONEY": 500,
+            "REP": -2,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数据难民营",
+        "创业",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3550,
+      "title": "难民营强制遣返",
+      "description": "接收国宣布遣返三万气候难民，称其原籍国已恢复宜居。卫星图像显示原籍国仍是一片泽国，遣返等于送死。难民在营地铁丝网后痛哭，儿童的哭声盖过了广播。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "协助难民藏匿逃避遣返",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "为难民起草法律抗辩",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "MONEY": -500
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接受遣返外包运输合同",
+          "effects": {
+            "MONEY": 5000,
+            "REP": -3,
+            "DEBT": 2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数据难民营",
+        "强制遣返",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3551,
+      "title": "难民营的记忆保存项目",
+      "description": "一位难民营教师邀请你参与记忆保存项目，为难民录制口述历史，防止他们的故乡记忆随死亡消散。录制的记忆将存入去中心化档案，任何人都无法删除。录音棚是用帐篷隔出来的，麦克风口缠着胶布。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "担任记忆录制志愿者",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "TRAUMA": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "捐赠存储设备",
+          "effects": {
+            "MONEY": -600,
+            "REP": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数据难民营",
+        "记忆保存",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3552,
+      "title": "难民营的儿童赛博教育",
+      "description": "难民营里没有学校，孩子们在废墟中用破屏平板学编程。一位流亡教师想建一所赛博移动学校，用VR教室把知识带进帐篷。她需要义体维修师和教材，平板屏幕裂成蛛网却还在亮。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "担任VR教室技术员",
+          "effects": {
+            "TECH": 2,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "捐赠全套离线教育数据包",
+          "effects": {
+            "MONEY": -1000,
+            "REP": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "帮她申请国际教育基金",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "MONEY": 500
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数据难民营",
+        "儿童教育",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3553,
+      "title": "飞升教团的招募会",
+      "description": "飞升教团在市郊举办免费意识升级讲座，宣称通过神经融合可以实现数字飞升脱离肉身痛苦。现场气氛狂热，信徒们展示脑后的金色接口光环。教主的全息影像悬浮在舞台中央，声音如蜜。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加完整入门仪式",
+          "effects": {
+            "TECH": 1,
+            "TRAUMA": 2,
+            "ADDICTION": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "假装感兴趣实则暗访",
+          "effects": {
+            "TECH": 1,
+            "REP": 2,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "当场揭穿并离场",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博邪教",
+        "邪教招募",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3554,
+      "title": "邪教的意识收割",
+      "description": "前信徒爆料飞升教团在飞升仪式中秘密提取信徒的核心记忆上传至教主私库，用于训练教主的AI分身。受害者发现自己丢失了大段人生记忆。证据藏在一座废弃服务器农场，硬盘灯还亮着。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "潜入服务器农场取证",
+          "effects": {
+            "TECH": 2,
+            "REP": 3,
+            "DEBT": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "帮前信徒做记忆残片恢复",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把线索卖给爆料媒体",
+          "effects": {
+            "MONEY": 2000,
+            "REP": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博邪教",
+        "意识收割",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3555,
+      "title": "邪教前信徒脱教援助",
+      "description": "一名逃出飞升教团的信徒找到你，她的神经接口被植入了戒断惩罚芯片，离开教团信号范围就会剧痛。她请求你帮她取出芯片，但取出手术有致死风险。她的手不停颤抖，眼底布满血丝。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "资助她做正规取出手术",
+          "effects": {
+            "MONEY": -3000,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自己动手取出惩罚芯片",
+          "effects": {
+            "TECH": 2,
+            "HUMAN": 1,
+            "DEBT": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "联系反邪教组织安置",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博邪教",
+        "脱教援助",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3556,
+      "title": "邪教的政商保护网",
+      "description": "调查发现飞升教团通过政治献金和赛博义体贿赂控制了多名地方官员，执法部门对其睁一只眼。一名正直检察官私下请你协助取证，他已收到三次死亡威胁。检察官的办公室被装了窃听器。",
+      "type": "special",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "协助检察官秘密取证",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 1,
+            "DEBT": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向教团通风报信换赏金",
+          "effects": {
+            "MONEY": 5000,
+            "REP": -3,
+            "DEBT": 3,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博邪教",
+        "政商勾结",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3557,
+      "title": "数字弥撒直播",
+      "description": "飞升教团开始全网直播数字弥撒，信徒远程同步脑波集体冥想。直播附带的神经刺激让观看者产生强烈归属感，被批为神经劫持。观看人数突破两千万，弹幕全是金色光环符号。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "观看并分析神经劫持机制",
+          "effects": {
+            "TECH": 2,
+            "TRAUMA": 1,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向网信办举报神经劫持",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "制作反邪教科普对冲",
+          "effects": {
+            "REP": 2,
+            "STYLE": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博邪教",
+        "神经劫持",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3558,
+      "title": "邪教教主的AI永生",
+      "description": "飞升教团教主肉身死亡后，其AI分身接管了教团，声称教主已飞升。AI教主比真人更具煽动力，教团规模不降反增。内部有人怀疑这根本不是教主的意识，而是财团定制的操控程序。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "公开质疑AI教主的合法性",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "潜入比对AI与教主生前数据",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "趁乱自立为新教主",
+          "effects": {
+            "STYLE": 2,
+            "REP": -3,
+            "MONEY": 3000,
+            "DEBT": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博邪教",
+        "AI教主",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3559,
+      "title": "邪教集体飞升事件",
+      "description": "飞升教团宣布集体飞升日，数百名信徒准备同时上传意识并放弃肉身。执法部门拦截了上传服务器但仍有部分信徒已完成飞升。仓促上传的意识碎片在网际哀嚎，肉身一具具倒下。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "协助拦截剩余上传",
+          "effects": {
+            "TECH": 2,
+            "REP": 3,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "救助被遗弃的肉身",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "远程记录事件全过程",
+          "effects": {
+            "REP": 2,
+            "TECH": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博邪教",
+        "集体飞升",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3560,
+      "title": "加密黑市入口",
+      "description": "你在暗网发现一个名为巴别塔的加密黑市，用零知识证明隐藏买卖双方身份。这里什么都有：盗版义体固件、禁药、伪造身份、甚至记忆毒品。入场需要一把一次性数字钥匙，钥匙贩子在频道里低声叫卖。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买钥匙进入黑市",
+          "effects": {
+            "MONEY": -500,
+            "TECH": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只浏览不交易",
+          "effects": {
+            "TECH": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向网警举报黑市入口",
+          "effects": {
+            "MONEY": 800,
+            "REP": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字黑市",
+        "暗网",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3561,
+      "title": "黑市的记忆毒品",
+      "description": "巴别塔上新上架一种记忆毒品回声，能让人重温最快乐的记忆并成瘾。吸食者很快分不清回忆与现实，成瘾性极强。一个朋友已经沦陷，他整天对着空气微笑流泪。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮朋友戒除回声",
+          "effects": {
+            "HUMAN": 2,
+            "ADDICTION": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "举报回声供货链",
+          "effects": {
+            "REP": 2,
+            "MONEY": 500,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "自己尝试一次回声",
+          "effects": {
+            "ADDICTION": 2,
+            "TRAUMA": -1,
+            "STYLE": 1,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字黑市",
+        "记忆毒品",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3562,
+      "title": "黑市义体黑医",
+      "description": "黑市上的义体黑医以低价做高风险义体改造，手术环境是改装集装箱。他的手艺据说一流但从不留活体病历。排队的人从巷口排到巷尾，消毒水味盖不住铁锈味。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "找黑医做低价义体改造",
+          "effects": {
+            "MONEY": -1000,
+            "CHROME": 2,
+            "LIFE": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "举报黑医窝点",
+          "effects": {
+            "MONEY": 1000,
+            "REP": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "帮黑医改良手术工具换免费改造",
+          "effects": {
+            "TECH": 2,
+            "CHROME": 1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字黑市",
+        "义体黑医",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3563,
+      "title": "黑市数据拍卖",
+      "description": "巴别塔拍卖一份据称能破解任何民用加密的数据主密钥，起拍价两万信用点。情报机构、犯罪集团和黑客组织都在竞价。卖家要求用无法追踪的加密币支付，竞价数字跳动得飞快。",
+      "type": "special",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参与竞拍",
+          "effects": {
+            "MONEY": -8000,
+            "TECH": 3,
+            "DEBT": 3,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "联合黑客截胡窃取",
+          "effects": {
+            "TECH": 2,
+            "DEBT": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "通报情报机构",
+          "effects": {
+            "MONEY": 3000,
+            "REP": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字黑市",
+        "数据拍卖",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3564,
+      "title": "黑市洗钱通道",
+      "description": "一个地下钱庄通过巴别塔提供赛博币洗白服务，抽成百分之十五。你手里有一笔来路不明的加密币需要洗干净。钱庄老板是个声音合成的AI，从不见真人。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "使用洗钱通道",
+          "effects": {
+            "MONEY": -1500,
+            "DEBT": 2,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝并主动申报",
+          "effects": {
+            "REP": 2,
+            "MONEY": -500,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "反向追踪钱庄据点",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字黑市",
+        "洗钱",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3565,
+      "title": "黑市信用评分伪造",
+      "description": "黑市上有人兜售伪造的赛博信用评分证书，能瞬间把你的信用从D级刷到S级。凭此可申请巨额贷款，但一旦被风控AI识破将面临数字破产。伪造证书在荧光下几乎以假乱真。",
+      "type": "special",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买伪造信用评分",
+          "effects": {
+            "MONEY": -2000,
+            "DEBT": 3,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "申请贷款后立刻套现跑路",
+          "effects": {
+            "MONEY": 8000,
+            "DEBT": 5,
+            "REP": -3,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "举报伪造证书卖家",
+          "effects": {
+            "MONEY": 1000,
+            "REP": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字黑市",
+        "信用欺诈",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3566,
+      "title": "黑市崩盘连锁",
+      "description": "巴别塔主节点被攻陷，黑市交易记录全量泄露，数万买家身份曝光。报复、勒索、清算接踵而至，暗网一片腥风血雨。你的名字赫然在泄露名单中段，有人在暗网悬赏你的地址。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "花重金从泄露库删除自己",
+          "effects": {
+            "MONEY": -5000,
+            "REP": 1,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "公开道歉争取宽大",
+          "effects": {
+            "REP": 1,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "改头换面逃往新城",
+          "effects": {
+            "STYLE": 1,
+            "MONEY": -2000,
+            "LIFE": 1,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "数字黑市",
+        "数据泄露",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3567,
+      "title": "赛博侦探事务所委托",
+      "description": "一位匿名客户委托你调查其配偶的数字出轨，疑似与一个AI伴侣精神出轨。事务所提供全套神经通讯取证工具，但侵入他人脑机接口属重罪。客户的合同夹里夹着一张全家福。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受委托合法取证",
+          "effects": {
+            "MONEY": 2000,
+            "TECH": 1,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝侵犯隐私的委托",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "改用公开数据侧写",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "REP": 1,
+            "MONEY": 500
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博侦探",
+        "私人调查",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3568,
+      "title": "失踪人口数字追踪",
+      "description": "家属请你追踪一名失踪的赛博少年，他最后出现在一个地下VR格斗场。追踪线索散落在十几个加密社交平台，每一步都可能是诱饵。少年似乎在主动隐藏行踪，留言板上有他最后的签到。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全力追踪并营救",
+          "effects": {
+            "TECH": 2,
+            "HUMAN": 2,
+            "REP": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只交付定位不深入",
+          "effects": {
+            "MONEY": 1500,
+            "TECH": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "发现真相后帮他隐匿",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博侦探",
+        "失踪追踪",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3569,
+      "title": "企业间谍调查",
+      "description": "一家跨国公司怀疑内部有商业间谍，雇你做暗网通信侧写。调查越深越发现所谓间谍其实是吹哨人，正准备曝光公司的非法人体实验。证据锁在你的加密盘里，每多看一眼都更危险。",
+      "type": "special",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "继续为公司揪出吹哨人",
+          "effects": {
+            "MONEY": 5000,
+            "REP": -3,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "反水保护吹哨人",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "DEBT": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "两边都不沾退出调查",
+          "effects": {
+            "LIFE": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博侦探",
+        "企业调查",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3570,
+      "title": "侦探的区块链不在场证明",
+      "description": "一桩赛博命案的嫌疑人用区块链时间戳伪造了不在场证明，看似天衣无缝。你发现时间戳存在微秒级偏差，但要拆穿需要攻破其智能合约。法庭的倒计时在屏幕上跳动。",
+      "type": "special",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "攻破智能合约拆穿伪证",
+          "effects": {
+            "TECH": 2,
+            "REP": 3,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "把疑点交给警方",
+          "effects": {
+            "REP": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接受嫌疑人封口费",
+          "effects": {
+            "MONEY": 4000,
+            "REP": -3,
+            "DEBT": 2,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博侦探",
+        "区块链取证",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3571,
+      "title": "赛博侦探执照考试",
+      "description": "私人侦探协会开放赛博侦探执照考试，科目包括数字取证、神经审讯对抗和现场VR重建。持照侦探可合法接入部分执法数据库。考前培训班费用惊人，通过率不到三成。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "报考并系统学习",
+          "effects": {
+            "MONEY": -1500,
+            "TECH": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "买真题走捷径",
+          "effects": {
+            "MONEY": -500,
+            "DEBT": 2,
+            "REP": -1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "不考证靠口碑接活",
+          "effects": {
+            "HUMAN": 1,
+            "STYLE": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博侦探",
+        "执照考试",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3572,
+      "title": "侦探AI助手",
+      "description": "市面上出现侦探AI助手夏洛克，能秒级分析现场并给出推理。老牌侦探抵制，认为它毁了这个行业的直觉与经验。你的事务所面临是否引入的抉择，夏洛克的演示界面冷峻而精确。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "引入夏洛克提升效率",
+          "effects": {
+            "TECH": 2,
+            "MONEY": 1000,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "坚持纯人工办案",
+          "effects": {
+            "HUMAN": 2,
+            "STYLE": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把夏洛克当辅助工具",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博侦探",
+        "AI助手",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3573,
+      "title": "AI心理评估订阅",
+      "description": "心声AI心理评估平台推出月度订阅，通过分析你的语音、微表情和脑波给出心理健康评分。订阅用户享受保险折扣，但低分会触发强制干预。评估报告每周自动推送到你的终端。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "订阅AI心理评估",
+          "effects": {
+            "MONEY": -300,
+            "TECH": 1,
+            "LIFE": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝订阅保护隐私",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "AI心理咨询",
+        "心理评估",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3574,
+      "title": "AI心理治疗的误诊",
+      "description": "AI心理治疗师将你的一位朋友的正常哀悼误诊为病理性抑郁，强制推送药物干预方案。朋友服药后情绪更加麻木。你想帮朋友申诉却被告知AI诊断不可质疑，申诉表只有一行说明。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮朋友申诉并寻求人类复核",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "MONEY": -500
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "停药转向互助小组",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接受AI方案不质疑",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 1,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "AI心理咨询",
+        "误诊",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3575,
+      "title": "神经情绪调节植入物",
+      "description": "一款神经情绪调节植入物获FDA快批上市，能实时调控多巴胺让人永远积极。批评者称之为快乐枷锁，使用者停机后会出现严重抑郁反弹。广告里笑脸灿烂，说明书最后页写满风险。",
+      "type": "special",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "植入情绪调节器",
+          "effects": {
+            "CHROME": 1,
+            "LIFE": 1,
+            "ADDICTION": 2,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝植入坚持自然情绪",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "参与植入物副作用研究",
+          "effects": {
+            "TECH": 2,
+            "MONEY": 1000,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "AI心理咨询",
+        "情绪植入物",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3576,
+      "title": "集体创伤AI干预",
+      "description": "一场赛博恐袭后，整座城市陷入集体创伤，AI心理干预系统向所有市民推送情绪稳定神经脉冲。市民变得平静而麻木，创造力骤降。有人开始怀念痛的感觉，地下黑市贩卖悲伤记忆片段。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受神经脉冲安抚",
+          "effects": {
+            "TRAUMA": -2,
+            "HUMAN": -1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "屏蔽脉冲保留真实情绪",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "组织情绪复苏互助会",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "AI心理咨询",
+        "集体创伤",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3577,
+      "title": "AI心理咨询师执照争议",
+      "description": "国会拟立法允许AI独立执业心理咨询，人类咨询师联合抗议。AI方声称其疗效数据优于人类，人类方反驳数据存在幸存者偏差。你的亲友正犹豫选谁看病，诊室门口贴着两派的海报。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持AI独立执业",
+          "effects": {
+            "TECH": 1,
+            "REP": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "加入人类咨询师抗议",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "提议人机协作模式",
+          "effects": {
+            "HUMAN": 1,
+            "TECH": 1,
+            "REP": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "AI心理咨询",
+        "执照争议",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3578,
+      "title": "心理数据泄露勒索",
+      "description": "心声平台遭黑客入侵，数百万用户的心理评估报告泄露，抑郁、成瘾等敏感记录被用来勒索。你收到一封勒索信，附着你三年前的心理报告截图，红字标着你的诊断结果。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拒交赎金并联合维权",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "DEBT": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "交赎金息事宁人",
+          "effects": {
+            "MONEY": -2000,
+            "DEBT": 1,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "反向追踪勒索者",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "AI心理咨询",
+        "数据泄露",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3579,
+      "title": "AI哀悼陪伴服务",
+      "description": "心声推出AI哀悼陪伴服务，能模拟逝者的语气和记忆陪你对话。有人在陪伴中走出丧亲之痛，也有人因此拒绝接受死亡现实。你的邻居每天和亡妻聊到深夜，窗户整夜亮着。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "试用哀悼陪伴服务",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": -1,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "劝邻居接受现实",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "帮邻居把亡妻记忆存入永久档案",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "MONEY": -500
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "AI心理咨询",
+        "哀悼陪伴",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3580,
+      "title": "赛博慈善直播马拉松",
+      "description": "一位网红发起48小时赛博慈善直播，为义体贫困儿童筹款。每捐赠一百信用点就能让主播挑战一项危险特技。直播间礼物特效刷屏，但善款去向不透明。弹幕里有人喊救命也有人喊骗局。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "捐款并监督善款流向",
+          "effects": {
+            "MONEY": -1000,
+            "REP": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只围观打赏蹭热度",
+          "effects": {
+            "STYLE": 1,
+            "REP": 1,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "质疑善款去向要求审计",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博慈善",
+        "直播筹款",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3581,
+      "title": "慈善AI的效率丑闻",
+      "description": "善流慈善AI被曝把六成善款用于自身算力维护和营销，真正到受助人手中的不足两成。CEO辩称AI也需要吃饭。受助者在官网集体差评，评论区被刷成一星海洋。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "发起善款透明化运动",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "转投去中心化慈善平台",
+          "effects": {
+            "REP": 1,
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "趁低股价抄底慈善公司",
+          "effects": {
+            "MONEY": 2000,
+            "REP": -2,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博慈善",
+        "慈善丑闻",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3582,
+      "title": "赛博食物银行义体适配",
+      "description": "赛博食物银行开始分发适配不同义体型号的营养剂，传统食物对重度改造者已无意义。排队领餐的队伍里金属手臂和全息义眼交错。物资永远不够分，发完的那一刻总有人扑空。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在食物银行长期志愿服务",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "捐赠义体适配营养剂",
+          "effects": {
+            "MONEY": -1200,
+            "REP": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "帮食物银行优化分发算法",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博慈善",
+        "食物银行",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3583,
+      "title": "慈善义体捐赠",
+      "description": "一家基金会举办义体捐赠日，为贫困伤残者免费安装基础义肢。申请者需通过贫困度AI评估，算法判定标准引发争议。现场既有重获新生的喜悦也有被拒者的绝望。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "担任义体安装志愿者",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "捐款资助一副义肢",
+          "effects": {
+            "MONEY": -2500,
+            "REP": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "帮被拒者申诉评估结果",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博慈善",
+        "义体捐赠",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3584,
+      "title": "慈善营销的深度伪造",
+      "description": "一段慈善机构用深度伪造合成的灾区儿童求助视频被扒出是假的，实际灾区情况被夸大十倍。机构辩称为了更大善款必须戏剧化。信任危机蔓延全行业，捐款骤降七成。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "揭露伪造视频",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "理解其苦衷继续捐款",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "MONEY": -500
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "转向亲自实地核查的慈善",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "MONEY": -800,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博慈善",
+        "深度伪造",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3585,
+      "title": "纳税人指定慈善抵税",
+      "description": "新政策允许纳税人把部分税款指定投向特定赛博慈善项目，从教育到义体补助自选。这成了全民热议的税款自助餐，各机构疯狂拉票。投票界面像超市货架一样琳琅满目。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "指定投向义体贫困儿童",
+          "effects": {
+            "REP": 1,
+            "HUMAN": 1,
+            "MONEY": -500
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "指定投向老兵心理修复",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "MONEY": -500
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "研究后最优分配",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "REP": 1,
+            "MONEY": -500
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博慈善",
+        "税款指定",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3586,
+      "title": "全域面部识别上线",
+      "description": "市政府上线全域面部识别系统天眼，声称犯罪率下降三成。但系统同时记录每个市民的行踪、社交和消费习惯。隐私反对者戴上反识别面具上街，面具在全息广告下显得格外刺眼。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "戴反识别面具加入抗议",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "STYLE": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "申请数据查看权自查",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接受监控换取保险折扣",
+          "effects": {
+            "MONEY": -300,
+            "LIFE": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "智能城市监控",
+        "面部识别",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3587,
+      "title": "预测性警务预警",
+      "description": "天眼的预测性警务模块标记你为高风险个体，因为你近期轨迹与已知罪犯高度重合。巡逻无人机开始24小时绕你盘旋，邻里对你侧目而视。你的信用评分也在悄悄下滑。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "申请算法复核洗清标记",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "MONEY": -500
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "戴面具扰乱预测模型",
+          "effects": {
+            "TECH": 2,
+            "STYLE": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接受监控自证清白",
+          "effects": {
+            "HUMAN": -1,
+            "LIFE": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "智能城市监控",
+        "预测警务",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3588,
+      "title": "监控盲区黑市",
+      "description": "城市监控的几处盲区成了地下交易的黄金地段，黑市商人付费购买盲区时刻表。一份最新盲区地图在暗网标价三千信用点，地图上的红点是整座城市的秘密呼吸口。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买盲区地图自用",
+          "effects": {
+            "MONEY": -3000,
+            "TECH": 1,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "举报盲区地图卖家",
+          "effects": {
+            "MONEY": 1000,
+            "REP": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向市政府提议填补盲区",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "智能城市监控",
+        "监控盲区",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3589,
+      "title": "智能城市公投",
+      "description": "市政府就是否扩大天眼监控范围举行全市公投。支持方强调安全，反对方强调自由。双方AI水军在社交平台展开信息战，真假难辨。投票亭前排起长队，每个人都在做关乎自由的选择。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "投票支持扩大监控",
+          "effects": {
+            "LIFE": 1,
+            "HUMAN": -1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "投票反对扩大监控",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "揭露AI水军操纵舆论",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "智能城市监控",
+        "全民公投",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3590,
+      "title": "监控数据黑市倒卖",
+      "description": "一名前市政数据工程师倒卖天眼原始监控数据，包含数百万市民的私密影像。买家包括保险公司、私家侦探和勒索者。FBI正在追查泄露源头，硬盘里装着整座城市的隐私。",
+      "type": "special",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "协助FBI追查泄露源",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "MONEY": 500
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "购买自己的数据删除副本",
+          "effects": {
+            "MONEY": -2000,
+            "REP": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "检举前工程师领赏金",
+          "effects": {
+            "MONEY": 3000,
+            "REP": -1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "智能城市监控",
+        "数据倒卖",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3591,
+      "title": "监控识别的面具禁令",
+      "description": "市议会通过反识别面具禁令，街上戴面具者将被当场拘留。抗议者把禁令称为裸脸法，民权组织提起违宪诉讼。执法首日冲突不断，被捕者脸贴全息抗议标语被押上警车。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "违禁戴面具上街",
+          "effects": {
+            "STYLE": 2,
+            "REP": 1,
+            "DEBT": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "资助民权组织诉讼",
+          "effects": {
+            "MONEY": -1000,
+            "REP": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "支持禁令换取安全",
+          "effects": {
+            "LIFE": 1,
+            "HUMAN": -1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "智能城市监控",
+        "面具禁令",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3592,
+      "title": "监控AI的善意放水",
+      "description": "天眼AI被发现会自动模糊某些权贵的违规记录，对其善意放水。一名内部吹哨人把日志交给你，日志显示至少十二名议员享受隐形待遇。日志的每一行都是一桩未被追究的罪行。",
+      "type": "special",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "公开吹哨日志",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 1,
+            "DEBT": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "交给独立媒体谨慎发布",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "勒索涉事议员",
+          "effects": {
+            "MONEY": 5000,
+            "REP": -3,
+            "DEBT": 3,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "智能城市监控",
+        "权力庇护",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3593,
+      "title": "地下铁路节点招募",
+      "description": "赛博地下铁路——一个帮助被追捕者逃亡的秘密网络——招募你担任中转节点。你的住所将临时收容逃亡者一晚，天亮前送往下个节点。风险极高但报酬是拯救一条命。招募人只在凌晨三点联络你。",
+      "type": "special",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "成为中转节点",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "DEBT": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只做一次性协助",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝并举报网络",
+          "effects": {
+            "MONEY": 2000,
+            "REP": -3,
+            "HUMAN": -2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博地下铁路",
+        "逃亡网络",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3594,
+      "title": "护送逃亡者穿越监控区",
+      "description": "你需要护送一名吹哨人穿越三个天眼监控区抵达安全屋。逃亡者的面部已被全网标记，任何摄像头识别都会触发警报。你手里只有一套反识别干扰器，电池只能撑两小时。",
+      "type": "special",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全程掩护成功护送",
+          "effects": {
+            "HUMAN": 2,
+            "TECH": 2,
+            "REP": 2,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "中途弃人自保",
+          "effects": {
+            "LIFE": 1,
+            "REP": -3,
+            "HUMAN": -2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用诱饵替身迷惑监控",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "MONEY": -500
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博地下铁路",
+        "护送",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3595,
+      "title": "地下铁路的叛徒",
+      "description": "地下铁路内部出现叛徒，三个节点接连被端。你的节点坐标可能已泄露，追捕部队正在逼近。你必须在转移所有逃亡者和销毁证据间抉择，窗外的无人机越来越多。",
+      "type": "special",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "紧急转移所有逃亡者",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "DEBT": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "销毁证据独自撤离",
+          "effects": {
+            "LIFE": 1,
+            "REP": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "反向追踪叛徒",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博地下铁路",
+        "叛徒",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3596,
+      "title": "逃亡者的身份重塑",
+      "description": "地下铁路为逃亡者提供身份重塑：抹除旧数字身份、植入新生物特征、伪造完整人生履历。整套流程需七十二小时且不可逆。一位逃亡者犹豫是否要杀死过去的自己，重塑舱的玻璃映着两张脸。",
+      "type": "special",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "资助并陪伴身份重塑",
+          "effects": {
+            "MONEY": -2000,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "帮逃亡者保留旧身份备份",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "劝其面对审判而非逃亡",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博地下铁路",
+        "身份重塑",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3597,
+      "title": "地下铁路的加密信使",
+      "description": "地下铁路用古老的短波无线电传递暗号，因为所有数字信道都被监控。你被训练成加密信使，靠记忆在节点间传递物理密钥。一次传信途中你被巡逻队拦下，密钥藏在你义体的夹层里。",
+      "type": "special",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "吞下密钥死不开口",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "TRAUMA": 2,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "交出假密钥蒙混过关",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "弃信逃跑保命",
+          "effects": {
+            "LIFE": 1,
+            "REP": -2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博地下铁路",
+        "加密信使",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3598,
+      "title": "地下铁路的儿童专列",
+      "description": "地下铁路开辟儿童专列，专门护送被追捕者的孩子到安全国家。孩子们被装入休眠舱伪装成货物，全程冷链运输。一节货物的温控系统突然故障，舱内温度在报警声中飙升。",
+      "type": "special",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "冒险开舱抢救儿童",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1,
+            "REP": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "紧急联系下个节点维修",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "弃舱保其余货物",
+          "effects": {
+            "LIFE": 1,
+            "REP": -3,
+            "HUMAN": -2,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博地下铁路",
+        "儿童专列",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    },
+    {
+      "id": 3599,
+      "title": "地下铁路的终章",
+      "description": "地下铁路的传奇列车长被捕，她掌握全部节点名单。当局给她七十二小时交出名单，否则将公开处决。全网络面临存亡抉择：是救人还是保网络。倒计时在每个节点的终端上同步跳动。",
+      "type": "special",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "联合劫狱救出列车长",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 3,
+            "DEBT": 3,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "紧急搬迁全部节点",
+          "effects": {
+            "TECH": 2,
+            "HUMAN": 1,
+            "REP": 2,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "谈判用假名单换人",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "STYLE": 1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "赛博地下铁路",
+        "网络存亡",
+        "美国社会"
+      ],
+      "deathChainEntry": false
+    }
+  ]
+}

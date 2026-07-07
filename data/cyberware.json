@@ -2,7 +2,7 @@
   "meta": {
     "description": "义体数据 - Cyberware Database",
     "version": "1.0",
-    "totalCount": 34
+    "totalCount": 99
   },
   "categories": [
     {
@@ -73,6 +73,151 @@
             "hackResist": 10
           },
           "requirements": { "level": 8, "intelligence": 6 }
+        },
+        {
+          "id": "neural_quantum_coprocessor",
+          "name": "量子神经协处理器",
+          "type": "neural",
+          "rarity": "epic",
+          "humanityCost": 10,
+          "price": 25000,
+          "slot": "brain",
+          "description": "第二代量子神经协处理器，在民用市场流通的高端型号，数据处理能力依然远超常规芯片。",
+          "effects": {
+            "intelligence": 6,
+            "hacking": 4
+          },
+          "requirements": { "level": 8 }
+        },
+        {
+          "id": "neural_bio_monitor",
+          "name": "生物监测接口",
+          "type": "neural",
+          "rarity": "common",
+          "humanityCost": 3,
+          "price": 3000,
+          "slot": "brain",
+          "description": "实时监测身体各项生物指标，在出现异常时及时预警，帮助战斗中的自我状态管理。",
+          "effects": {
+            "endurance": 2,
+            "perception": 1
+          },
+          "requirements": { "level": 2 }
+        },
+        {
+          "id": "neural_pain_suppressor",
+          "name": "疼痛抑制器",
+          "type": "neural",
+          "rarity": "rare",
+          "humanityCost": 5,
+          "price": 8000,
+          "slot": "brain",
+          "description": "拦截脊髓疼痛信号的神经植入体，让使用者在重伤之下依然保持战斗力和冷静判断。",
+          "effects": {
+            "endurance": 4,
+            "cool": 2
+          },
+          "requirements": { "level": 5 }
+        },
+        {
+          "id": "neural_memory_enhancer",
+          "name": "记忆增强模块",
+          "type": "neural",
+          "rarity": "rare",
+          "humanityCost": 4,
+          "price": 6000,
+          "slot": "brain",
+          "description": "扩展海马体存储容量的神经芯片，大幅提升信息记忆和调用效率，技术人员的利器。",
+          "effects": {
+            "intelligence": 3,
+            "tech": 2
+          },
+          "requirements": { "level": 4 }
+        },
+        {
+          "id": "neural_parallel_processor",
+          "name": "平行思维处理器",
+          "type": "neural",
+          "rarity": "epic",
+          "humanityCost": 8,
+          "price": 18000,
+          "slot": "brain",
+          "description": "允许大脑同时处理多股信息流的顶级芯片，在复杂战斗中可同时分析多种战术方案。",
+          "effects": {
+            "intelligence": 5,
+            "reflex": 2
+          },
+          "requirements": { "level": 9 }
+        },
+        {
+          "id": "neural_dream_recorder",
+          "name": "梦境记录仪",
+          "type": "neural",
+          "rarity": "common",
+          "humanityCost": 3,
+          "price": 2500,
+          "slot": "brain",
+          "description": "记录睡眠中的梦境信号并转化为可回放的数字影像，常用于心理治疗和娱乐产业。",
+          "effects": {
+            "perception": 2
+          },
+          "requirements": { "level": 2 }
+        },
+        {
+          "id": "neural_language_chip",
+          "name": "语言中枢直译芯片",
+          "type": "neural",
+          "rarity": "common",
+          "humanityCost": 2,
+          "price": 2000,
+          "slot": "brain",
+          "description": "直接植入语言中枢的实时翻译芯片，让使用者无需学习即可理解和说出多种语言。",
+          "effects": {
+            "charisma": 2
+          },
+          "requirements": { "level": 1 }
+        },
+        {
+          "id": "neural_reflex_accelerator",
+          "name": "应急反应加速器",
+          "type": "neural",
+          "rarity": "rare",
+          "humanityCost": 6,
+          "price": 10000,
+          "slot": "brain",
+          "description": "缩短神经信号传递路径的军用级芯片，将本能反应时间压缩到极致。",
+          "effects": {
+            "reflex": 5
+          },
+          "requirements": { "level": 6 }
+        },
+        {
+          "id": "neural_fear_suppressor",
+          "name": "恐惧抑制芯片",
+          "type": "neural",
+          "rarity": "rare",
+          "humanityCost": 7,
+          "price": 12000,
+          "slot": "brain",
+          "description": "抑制杏仁核恐惧反应的神经植入体，让使用者在极端危险环境中保持绝对冷静。",
+          "effects": {
+            "cool": 6
+          },
+          "requirements": { "level": 7 }
+        },
+        {
+          "id": "neural_ethics_inhibitor",
+          "name": "伦理抑制模块",
+          "type": "neural",
+          "rarity": "legendary",
+          "humanityCost": 18,
+          "price": 50000,
+          "slot": "brain",
+          "description": "争议极大的军用芯片，暂时屏蔽大脑的道德判断区域，使操作者能执行任何命令而不受心理阻碍。对人类精神的损耗不可估量。",
+          "effects": {
+            "cool": 10
+          },
+          "requirements": { "level": 15 }
         }
       ]
     },
@@ -161,6 +306,139 @@
             "targetAnalysis": true
           },
           "requirements": { "level": 10 }
+        },
+        {
+          "id": "cybereye_tactical_marker",
+          "name": "战术标记光学镜",
+          "type": "cybereye",
+          "rarity": "rare",
+          "humanityCost": 4,
+          "price": 7000,
+          "slot": "eyes",
+          "description": "在视野中叠加战术标记系统，自动标记敌我单位和威胁等级，提升战场态势感知。",
+          "effects": {
+            "combat": 3,
+            "perception": 2
+          },
+          "requirements": { "level": 4 }
+        },
+        {
+          "id": "cybereye_dual_spectrum",
+          "name": "紫外/红外双模视觉",
+          "type": "cybereye",
+          "rarity": "rare",
+          "humanityCost": 5,
+          "price": 9000,
+          "slot": "eyes",
+          "description": "同时支持紫外和红外双光谱成像，可发现热源痕迹和紫外标记的隐藏信息。",
+          "effects": {
+            "perception": 4
+          },
+          "requirements": { "level": 5 }
+        },
+        {
+          "id": "cybereye_hologram_projector",
+          "name": "全息投影发射眼",
+          "type": "cybereye",
+          "rarity": "epic",
+          "humanityCost": 7,
+          "price": 15000,
+          "slot": "eyes",
+          "description": "眼球内置微型全息投影仪，可投射出逼真的3D影像用于欺骗、干扰或展示。",
+          "effects": {
+            "charisma": 3,
+            "tech": 2
+          },
+          "requirements": { "level": 7 }
+        },
+        {
+          "id": "cybereye_target_lock",
+          "name": "目标锁定计算器",
+          "type": "cybereye",
+          "rarity": "common",
+          "humanityCost": 3,
+          "price": 4000,
+          "slot": "eyes",
+          "description": "辅助瞄准系统，自动计算弹道修正和提前量，提升射击精准度。",
+          "effects": {
+            "combat": 2,
+            "reflex": 1
+          },
+          "requirements": { "level": 3 }
+        },
+        {
+          "id": "cybereye_face_recognition",
+          "name": "面部识别模块",
+          "type": "cybereye",
+          "rarity": "common",
+          "humanityCost": 2,
+          "price": 3000,
+          "slot": "eyes",
+          "description": "实时扫描并匹配人脸数据库，在社交场合快速获取对方身份信息。",
+          "effects": {
+            "charisma": 2,
+            "perception": 1
+          },
+          "requirements": { "level": 2 }
+        },
+        {
+          "id": "cybereye_slowmo_recorder",
+          "name": "慢动作重放记录仪",
+          "type": "cybereye",
+          "rarity": "rare",
+          "humanityCost": 5,
+          "price": 8000,
+          "slot": "eyes",
+          "description": "持续录制视神经信号，可在事后以慢动作回放关键瞬间，不遗漏任何细节。",
+          "effects": {
+            "reflex": 3,
+            "perception": 2
+          },
+          "requirements": { "level": 5 }
+        },
+        {
+          "id": "cybereye_xray",
+          "name": "X射线透视镜",
+          "type": "cybereye",
+          "rarity": "epic",
+          "humanityCost": 10,
+          "price": 20000,
+          "slot": "eyes",
+          "description": "发射低剂量X射线进行透视成像，可看穿墙壁、容器和衣物，发现隐藏的武器和物品。",
+          "effects": {
+            "perception": 6,
+            "combat": 2
+          },
+          "requirements": { "level": 10 }
+        },
+        {
+          "id": "cybereye_telephoto",
+          "name": "望远变焦镜头",
+          "type": "cybereye",
+          "rarity": "common",
+          "humanityCost": 2,
+          "price": 2500,
+          "slot": "eyes",
+          "description": "高倍率光学变焦镜头，可清晰观察数百米外的目标和细节。",
+          "effects": {
+            "perception": 3
+          },
+          "requirements": { "level": 2 }
+        },
+        {
+          "id": "cybereye_lowlight",
+          "name": "微光夜视镜",
+          "type": "cybereye",
+          "rarity": "common",
+          "humanityCost": 3,
+          "price": 3500,
+          "slot": "eyes",
+          "description": "在仅有微弱星光的夜间环境中也能获得清晰视野，同时不暴露自身位置。",
+          "effects": {
+            "perception": 3,
+            "stealth": 1
+          },
+          "requirements": { "level": 2 }
         }
       ]
     },
@@ -247,6 +525,109 @@
             "intimidation": 5
           },
           "requirements": { "level": 8, "strength": 6 }
+        },
+        {
+          "id": "cyberarm_retractable_blade",
+          "name": "可伸缩刺刀臂",
+          "type": "cyberarm",
+          "rarity": "rare",
+          "humanityCost": 5,
+          "price": 8000,
+          "slot": "arms",
+          "description": "前臂内置高强度合金刺刀，可瞬间弹出收回，在近身格斗中占尽先机。",
+          "effects": {
+            "combat": 3,
+            "strength": 1
+          },
+          "requirements": { "level": 5 }
+        },
+        {
+          "id": "cyberarm_medkit",
+          "name": "急救工具臂",
+          "type": "cyberarm",
+          "rarity": "rare",
+          "humanityCost": 4,
+          "price": 7000,
+          "slot": "arms",
+          "description": "手臂内置自动医疗套件，包含消毒喷雾、止血凝胶和伤口缝合器，可快速处理创伤。",
+          "effects": {
+            "healing": 4,
+            "tech": 1
+          },
+          "requirements": { "level": 5 }
+        },
+        {
+          "id": "cyberarm_breacher",
+          "name": "破拆工具臂",
+          "type": "cyberarm",
+          "rarity": "common",
+          "humanityCost": 3,
+          "price": 5000,
+          "slot": "arms",
+          "description": "集成了液压扩张器、破门锤和等离子切割机的重型工具臂，专为突破障碍设计。",
+          "effects": {
+            "strength": 3
+          },
+          "requirements": { "level": 4 }
+        },
+        {
+          "id": "cyberarm_monowire_whip",
+          "name": "单分子线鞭",
+          "type": "cyberarm",
+          "rarity": "epic",
+          "humanityCost": 9,
+          "price": 20000,
+          "slot": "arms",
+          "description": "指尖释放出极细的单分子丝线，可切割几乎所有物质，同时能以极隐蔽的方式使用。",
+          "effects": {
+            "combat": 5,
+            "stealth": 2
+          },
+          "requirements": { "level": 9 }
+        },
+        {
+          "id": "cyberarm_tactile_sensor",
+          "name": "触觉传感器臂",
+          "type": "cyberarm",
+          "rarity": "common",
+          "humanityCost": 2,
+          "price": 3000,
+          "slot": "arms",
+          "description": "指尖覆盖高密度触觉传感器阵列，可感知微米级的表面纹理和震动。",
+          "effects": {
+            "perception": 2,
+            "tech": 2
+          },
+          "requirements": { "level": 3 }
+        },
+        {
+          "id": "cyberarm_hydraulic_ram",
+          "name": "液压冲击臂",
+          "type": "cyberarm",
+          "rarity": "rare",
+          "humanityCost": 6,
+          "price": 12000,
+          "slot": "arms",
+          "description": "内置大功率液压冲击机构，一拳可释放数吨冲击力，专为破坏和近战格斗而生。",
+          "effects": {
+            "strength": 5,
+            "combat": 2
+          },
+          "requirements": { "level": 7 }
+        },
+        {
+          "id": "cyberarm_retractable_cable",
+          "name": "伸缩线缆臂",
+          "type": "cyberarm",
+          "rarity": "common",
+          "humanityCost": 3,
+          "price": 4500,
+          "slot": "arms",
+          "description": "前臂内置高强度绞盘和伸缩线缆，可用于攀爬、牵引和设备连接。",
+          "effects": {
+            "tech": 3
+          },
+          "requirements": { "level": 3 }
         }
       ]
     },
@@ -316,6 +697,120 @@
             "scarResist": true
           },
           "requirements": { "level": 9 }
+        },
+        {
+          "id": "skin_temp_coating",
+          "name": "温度自适应涂层",
+          "type": "skin_mod",
+          "rarity": "rare",
+          "humanityCost": 4,
+          "price": 6000,
+          "slot": "skin",
+          "description": "智能温控涂层，可根据环境温度自动调节体表温度，在极端环境中保持舒适。",
+          "effects": {
+            "endurance": 3
+          },
+          "requirements": { "level": 4 }
+        },
+        {
+          "id": "skin_emp_shield",
+          "name": "电磁脉冲护盾",
+          "type": "skin_mod",
+          "rarity": "epic",
+          "humanityCost": 10,
+          "price": 22000,
+          "slot": "skin",
+          "description": "皮下植入的电磁防护层，可抵御EMP攻击对体内义体的干扰和损坏。",
+          "effects": {
+            "endurance": 4,
+            "tech": 3
+          },
+          "requirements": { "level": 9 }
+        },
+        {
+          "id": "skin_toxin_gland",
+          "name": "毒物中和腺体",
+          "type": "skin_mod",
+          "rarity": "rare",
+          "humanityCost": 6,
+          "price": 10000,
+          "slot": "skin",
+          "description": "改造肝脏和淋巴系统，持续释放中和酶，可快速分解进入体内的多种毒素。",
+          "effects": {
+            "endurance": 5
+          },
+          "requirements": { "level": 6 }
+        },
+        {
+          "id": "skin_solar_panel",
+          "name": "微型太阳能板",
+          "type": "skin_mod",
+          "rarity": "common",
+          "humanityCost": 2,
+          "price": 2000,
+          "slot": "skin",
+          "description": "背部和肩部植入柔性光伏薄膜，在日光下可为随身电子设备补充电力。",
+          "effects": {
+            "endurance": 2
+          },
+          "requirements": { "level": 2 }
+        },
+        {
+          "id": "skin_neon_chameleon",
+          "name": "霓虹色变皮",
+          "type": "skin_mod",
+          "rarity": "common",
+          "humanityCost": 1,
+          "price": 1500,
+          "slot": "skin",
+          "description": "电子墨水皮肤，可在霓虹色系中自由切换肤色和图案，纯粹为时尚和个性表达而生。",
+          "effects": {
+            "charisma": 2
+          },
+          "requirements": { "level": 1 }
+        },
+        {
+          "id": "skin_camo_dynamic",
+          "name": "动态伪装皮肤",
+          "type": "skin_mod",
+          "rarity": "epic",
+          "humanityCost": 12,
+          "price": 25000,
+          "slot": "skin",
+          "description": "新一代光学伪装系统，实时分析周围环境并在体表再现背景图案，近乎视觉隐形。",
+          "effects": {
+            "stealth": 6
+          },
+          "requirements": { "level": 10 }
+        },
+        {
+          "id": "skin_ballistic_subdermal",
+          "name": "防弹皮下层",
+          "type": "skin_mod",
+          "rarity": "rare",
+          "humanityCost": 7,
+          "price": 14000,
+          "slot": "skin",
+          "description": "在皮下植入多层凯夫拉纤维和凝胶缓冲层，可有效吸收手枪弹和破片的冲击。",
+          "effects": {
+            "endurance": 5
+          },
+          "requirements": { "level": 6 }
+        },
+        {
+          "id": "skin_nano_repair",
+          "name": "纳米修复表皮",
+          "type": "skin_mod",
+          "rarity": "legendary",
+          "humanityCost": 15,
+          "price": 30000,
+          "slot": "skin",
+          "description": "由数百万纳米机器人在皮下构成的修复网络，持续修复组织损伤，大幅加速伤口愈合。",
+          "effects": {
+            "healing": 5,
+            "endurance": 3
+          },
+          "requirements": { "level": 12 }
         }
       ]
     },
@@ -368,6 +863,91 @@
             "intelligence": 2,
             "social": 4,
             "universalTranslator": true
+          },
+          "requirements": { "level": 2 }
+        },
+        {
+          "id": "audio_ultrasonic_detector",
+          "name": "超声波探测器",
+          "type": "audio",
+          "rarity": "rare",
+          "humanityCost": 4,
+          "price": 8000,
+          "slot": "ears",
+          "description": "发射和接收超声波信号，探测人耳无法察觉的高频声波，发现隐藏电子设备和生物。",
+          "effects": {
+            "perception": 4
+          },
+          "requirements": { "level": 5 }
+        },
+        {
+          "id": "audio_encrypted_comms",
+          "name": "加密通讯植入",
+          "type": "audio",
+          "rarity": "rare",
+          "humanityCost": 3,
+          "price": 6000,
+          "slot": "ears",
+          "description": "内置军用级加密通讯模块，可在团队间进行无法被窃听的私密语音通信。",
+          "effects": {
+            "tech": 2,
+            "charisma": 2
+          },
+          "requirements": { "level": 4 }
+        },
+        {
+          "id": "audio_omni_sonar",
+          "name": "全向声纳",
+          "type": "audio",
+          "rarity": "epic",
+          "humanityCost": 8,
+          "price": 18000,
+          "slot": "ears",
+          "description": "360度全向声纳系统，通过回声定位构建详细的环境三维地图，黑暗中亦如视物。",
+          "effects": {
+            "perception": 5
+          },
+          "requirements": { "level": 9 }
+        },
+        {
+          "id": "audio_voice_stress_analyzer",
+          "name": "语音压力分析仪",
+          "type": "audio",
+          "rarity": "common",
+          "humanityCost": 2,
+          "price": 3000,
+          "slot": "ears",
+          "description": "实时分析对方语音中的微颤抖和频率变化，判断其情绪状态和是否在说谎。",
+          "effects": {
+            "charisma": 3
+          },
+          "requirements": { "level": 2 }
+        },
+        {
+          "id": "audio_long_range_mic",
+          "name": "超远程听筒",
+          "type": "audio",
+          "rarity": "rare",
+          "humanityCost": 3,
+          "price": 5000,
+          "slot": "ears",
+          "description": "高增益定向拾音器，可清晰收听到数百米外的对话和环境声音。",
+          "effects": {
+            "perception": 3
+          },
+          "requirements": { "level": 4 }
+        },
+        {
+          "id": "audio_noise_filter",
+          "name": "噪音过滤模块",
+          "type": "audio",
+          "rarity": "common",
+          "humanityCost": 2,
+          "price": 2000,
+          "slot": "ears",
+          "description": "智能过滤环境噪音和爆炸声浪，保护听力并确保在嘈杂环境中保持沟通清晰。",
+          "effects": {
+            "endurance": 2
           },
           "requirements": { "level": 2 }
         }
@@ -454,6 +1034,177 @@
             "stamina": 2
           },
           "requirements": { "level": 3 }
+        },
+        {
+          "id": "internal_adrenaline_pump",
+          "name": "肾上腺素泵",
+          "type": "internal",
+          "rarity": "epic",
+          "humanityCost": 8,
+          "price": 20000,
+          "slot": "internal",
+          "description": "植入主动脉旁的微型化学泵，在紧急时刻释放合成肾上腺素，进入极限战斗状态。",
+          "effects": {
+            "reflex": 4,
+            "endurance": 3
+          },
+          "requirements": { "level": 9 }
+        },
+        {
+          "id": "internal_blood_filter",
+          "name": "血液过滤系统",
+          "type": "internal",
+          "rarity": "rare",
+          "humanityCost": 5,
+          "price": 10000,
+          "slot": "internal",
+          "description": "连续过滤血液中的毒素和代谢废物，大幅提升身体抵抗力和耐力。",
+          "effects": {
+            "endurance": 4
+          },
+          "requirements": { "level": 6 }
+        },
+        {
+          "id": "internal_nano_repair_bots",
+          "name": "纳米修复机器人",
+          "type": "internal",
+          "rarity": "legendary",
+          "humanityCost": 15,
+          "price": 45000,
+          "slot": "internal",
+          "description": "注入血管的纳米机器人群，持续修复组织损伤和细胞衰老，堪称不死之身的秘密。",
+          "effects": {
+            "healing": 8
+          },
+          "requirements": { "level": 14 }
+        },
+        {
+          "id": "internal_backup_battery",
+          "name": "备用电池组",
+          "type": "internal",
+          "rarity": "common",
+          "humanityCost": 2,
+          "price": 3000,
+          "slot": "internal",
+          "description": "胸腔内植入高容量储能电池，为其他义体提供紧急备用电力。",
+          "effects": {
+            "endurance": 2
+          },
+          "requirements": { "level": 2 }
+        },
+        {
+          "id": "internal_emergency_oxygen",
+          "name": "紧急供氧系统",
+          "type": "internal",
+          "rarity": "rare",
+          "humanityCost": 4,
+          "price": 8000,
+          "slot": "internal",
+          "description": "内置压缩氧仓和循环呼吸系统，可在水下或毒气环境中维持长达30分钟呼吸。",
+          "effects": {
+            "endurance": 4
+          },
+          "requirements": { "level": 5 }
+        },
+        {
+          "id": "internal_auto_injector",
+          "name": "药物自动注射器",
+          "type": "internal",
+          "rarity": "common",
+          "humanityCost": 3,
+          "price": 5000,
+          "slot": "internal",
+          "description": "预装多种急救药物的自动注射系统，在检测到特定生理指标时自动给药。",
+          "effects": {
+            "healing": 2
+          },
+          "requirements": { "level": 3 }
+        },
+        {
+          "id": "internal_thermo_regulator",
+          "name": "体温调节器",
+          "type": "internal",
+          "rarity": "common",
+          "humanityCost": 2,
+          "price": 2500,
+          "slot": "internal",
+          "description": "植入下丘脑附近的温控芯片，精确调节核心体温以适应极端环境。",
+          "effects": {
+            "endurance": 2
+          },
+          "requirements": { "level": 2 }
+        },
+        {
+          "id": "internal_metabolic_accelerator",
+          "name": "代谢加速器",
+          "type": "internal",
+          "rarity": "rare",
+          "humanityCost": 6,
+          "price": 12000,
+          "slot": "internal",
+          "description": "持续微调内分泌系统，加速新陈代谢以提升反应速度和体能恢复效率。",
+          "effects": {
+            "reflex": 2,
+            "endurance": 3
+          },
+          "requirements": { "level": 6 }
+        },
+        {
+          "id": "internal_subdermal_nutrient",
+          "name": "皮下营养仓",
+          "type": "internal",
+          "rarity": "rare",
+          "humanityCost": 4,
+          "price": 7000,
+          "slot": "internal",
+          "description": "皮下植入营养缓释仓，持续向血液中补充维生素和微量元素，延长野外生存时间。",
+          "effects": {
+            "endurance": 3
+          },
+          "requirements": { "level": 5 }
+        },
+        {
+          "id": "internal_micro_emp",
+          "name": "微型EMP发生器",
+          "type": "internal",
+          "rarity": "epic",
+          "humanityCost": 10,
+          "price": 28000,
+          "slot": "internal",
+          "description": "胸腔内置微型电磁脉冲发生器，可释放定向EMP波摧毁附近电子设备，对自身义体也有风险。",
+          "effects": {
+            "tech": 6,
+            "combat": 2
+          },
+          "requirements": { "level": 10 }
+        },
+        {
+          "id": "internal_artificial_uterus",
+          "name": "人工子宫",
+          "type": "internal",
+          "rarity": "rare",
+          "humanityCost": 4,
+          "price": 15000,
+          "slot": "internal",
+          "description": "高科技人造子宫系统，承载生命孕育功能的同时因其仿生设计反而带来精神上的平静与恢复。",
+          "effects": {
+            "humanityRecovery": true
+          },
+          "requirements": { "level": 4 }
+        },
+        {
+          "id": "internal_organ_backup",
+          "name": "器官备用系统",
+          "type": "internal",
+          "rarity": "legendary",
+          "humanityCost": 20,
+          "price": 50000,
+          "slot": "internal",
+          "description": "将重要器官替换为备份组合系统，即使一个器官被摧毁，备用系统可立即接管功能。",
+          "effects": {
+            "life": 2
+          },
+          "requirements": { "level": 16 }
         }
       ]
     },
@@ -598,6 +1349,201 @@
             "melee": 2
           },
           "requirements": { "level": 2 }
+        },
+        {
+          "id": "cyberleg_magnetic_feet",
+          "name": "磁性吸附足",
+          "type": "cyberlimb_leg",
+          "rarity": "rare",
+          "humanityCost": 4,
+          "price": 7000,
+          "slot": "legs",
+          "description": "脚底植入电磁铁阵列，可吸附在金属表面行走，在垂直墙面和天花板上如履平地。",
+          "effects": {
+            "stealth": 2
+          },
+          "requirements": { "level": 5 }
+        },
+        {
+          "id": "cyberleg_flight_propulsor",
+          "name": "短途飞行推进器",
+          "type": "cyberlimb_leg",
+          "rarity": "epic",
+          "humanityCost": 10,
+          "price": 25000,
+          "slot": "legs",
+          "description": "小腿两侧安装微型涡喷推进器，可实现短距离飞行和空中悬停，跨越地形障碍。",
+          "effects": {
+            "reflex": 4
+          },
+          "requirements": { "level": 10 }
+        },
+        {
+          "id": "cyberleg_hydraulic_jump",
+          "name": "液压跳跃腿",
+          "type": "cyberlimb_leg",
+          "rarity": "rare",
+          "humanityCost": 5,
+          "price": 9000,
+          "slot": "legs",
+          "description": "腿部液压活塞系统，蓄力后可实现惊人的弹跳力，一跃可达数层楼高。",
+          "effects": {
+            "strength": 3,
+            "reflex": 2
+          },
+          "requirements": { "level": 6 }
+        },
+        {
+          "id": "cyberleg_silent_movement",
+          "name": "无声移动改造",
+          "type": "cyberlimb_leg",
+          "rarity": "rare",
+          "humanityCost": 4,
+          "price": 8000,
+          "slot": "legs",
+          "description": "脚底减震结构和伺服电机静音改造，行走和奔跑几乎不发出任何声响。",
+          "effects": {
+            "stealth": 4
+          },
+          "requirements": { "level": 5 }
+        },
+        {
+          "id": "cyberleg_spring_sprint",
+          "name": "蓄力飞毛腿",
+          "type": "cyberlimb_leg",
+          "rarity": "common",
+          "humanityCost": 3,
+          "price": 5000,
+          "slot": "legs",
+          "description": "碳纤维肌腱蓄力系统，可在冲刺时释放储存的弹性势能，爆发速度惊人。",
+          "effects": {
+            "reflex": 2,
+            "endurance": 1
+          },
+          "requirements": { "level": 4 }
+        }
+      ]
+    },
+    {
+      "id": "arm_weapon",
+      "name": "武器系统",
+      "description": "直接植入手臂的武器模块，将身体转化为致命兵器",
+      "items": [
+        {
+          "id": "arm_weapon_smg",
+          "name": "腕部冲锋枪",
+          "type": "arm_weapon",
+          "rarity": "epic",
+          "humanityCost": 8,
+          "price": 20000,
+          "slot": "arms",
+          "description": "前臂内置微型冲锋枪和供弹系统，抬手即可倾泻弹雨，火力压制效果极佳。",
+          "effects": {
+            "combat": 5
+          },
+          "requirements": { "level": 9 }
+        },
+        {
+          "id": "arm_weapon_dart_launcher",
+          "name": "指尖飞镖发射器",
+          "type": "arm_weapon",
+          "rarity": "rare",
+          "humanityCost": 4,
+          "price": 8000,
+          "slot": "arms",
+          "description": "指尖内藏微型气动发射器，可无声射出淬毒飞镖，暗杀和隐秘行动的首选。",
+          "effects": {
+            "combat": 2,
+            "stealth": 2
+          },
+          "requirements": { "level": 6 }
+        },
+        {
+          "id": "arm_weapon_chainsaw",
+          "name": "链锯臂",
+          "type": "arm_weapon",
+          "rarity": "rare",
+          "humanityCost": 7,
+          "price": 12000,
+          "slot": "arms",
+          "description": "前臂替换为高强度动力链锯，可轻松切割金属和混凝土，近战威力惊人。",
+          "effects": {
+            "combat": 4,
+            "strength": 3
+          },
+          "requirements": { "level": 7 }
+        },
+        {
+          "id": "arm_weapon_subdermal_plate",
+          "name": "皮下装甲板",
+          "type": "arm_weapon",
+          "rarity": "common",
+          "humanityCost": 5,
+          "price": 6000,
+          "slot": "arms",
+          "description": "在双臂皮下植入复合装甲板，提供额外的防护能力而不影响灵活性。",
+          "effects": {
+            "endurance": 3
+          },
+          "requirements": { "level": 4 }
+        },
+        {
+          "id": "arm_weapon_neurotoxin",
+          "name": "神经毒素注射器",
+          "type": "arm_weapon",
+          "rarity": "rare",
+          "humanityCost": 6,
+          "price": 15000,
+          "slot": "arms",
+          "description": "指尖隐藏的微型毒素注射针，可在近身接触时将致命神经毒素注入目标体内。",
+          "effects": {
+            "combat": 3,
+            "stealth": 3
+          },
+          "requirements": { "level": 7 }
+        },
+        {
+          "id": "arm_weapon_mono_blade",
+          "name": "单分子刀片",
+          "type": "arm_weapon",
+          "rarity": "common",
+          "humanityCost": 3,
+          "price": 5000,
+          "slot": "arms",
+          "description": "沿前臂伸展出单分子厚度刀锋，削铁如泥且不影响手部正常功能。",
+          "effects": {
+            "combat": 2
+          },
+          "requirements": { "level": 4 }
+        },
+        {
+          "id": "arm_weapon_micro_missile",
+          "name": "微型火箭发射器",
+          "type": "arm_weapon",
+          "rarity": "legendary",
+          "humanityCost": 15,
+          "price": 40000,
+          "slot": "arms",
+          "description": "肩部和前臂集成四联装微型追踪火箭弹，火力覆盖范围可摧毁轻型装甲车辆。",
+          "effects": {
+            "combat": 8
+          },
+          "requirements": { "level": 14 }
+        },
+        {
+          "id": "arm_weapon_laser_cutter",
+          "name": "激光切割手指",
+          "type": "arm_weapon",
+          "rarity": "rare",
+          "humanityCost": 5,
+          "price": 10000,
+          "slot": "arms",
+          "description": "指尖内藏高能激光发射器，可用于精密切割和焊接，在战斗中也可灼伤目标。",
+          "effects": {
+            "tech": 3,
+            "combat": 2
+          },
+          "requirements": { "level": 6 }
         }
       ]
     }

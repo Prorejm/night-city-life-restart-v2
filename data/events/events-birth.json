@@ -3,171 +3,681 @@
     {
       "id": 1,
       "title": "街头孤儿",
-      "description": "你出生在夜之城最底层的贫民窟，父母在一场帮派火并中丧生。你甚至不知道他们的名字，只记得那个雨夜，义体医生把你从废墟中拉出来。从此你学会了在垃圾堆里翻找食物，在天桥下躲避暴风雨，在黑暗的巷道里躲避清道夫的追捕。",
+      "description": "你出生在夜之城最底层的贫民窟，父母在一场帮派火并中丧生。你甚至不知道他们的脸，只记得那个雨夜，一个路过的流浪汉把你从废墟中拉出来。从记事起你就在垃圾堆里翻找食物，在天桥下躲避暴风雨，学会了用瘦小的身体挤进狭窄的通风管道躲避清道夫的追捕。街头是你的学校，饥饿是你的老师。",
       "type": "special",
-      "ageRange": [0, 2],
+      "ageRange": [0, 6],
       "weight": 15,
       "repeatable": false,
       "cooldown": 0,
       "branches": [
-        { "id": "branch_1", "text": "接受命运，独自在街头挣扎求生", "effects": { "STREET_SMART": 5, "MENTAL": -3, "MONEY": -200 } },
-        { "id": "branch_2", "text": "被路过的义体医生收养，在他的诊所打杂", "effects": { "MEDICAL_KNOWLEDGE": 3, "TECH": 2, "KARMA": 2 } }
+        { "id": "branch_1", "text": "独自在街头挣扎求生，练就一身生存本能", "effects": { "LIFE": 2, "TECH": 1, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "被好心的老流浪汉收留，学到街头手艺", "effects": { "HUMAN": 2, "REP": 1, "STYLE": 1 } }
       ],
-      "effects": { "STREET_SMART": 3, "MENTAL": -2 },
-      "tags": ["出生", "贫民窟", "孤児", "街头"],
+      "effects": { "LIFE": 1, "TRAUMA": 1 },
+      "tags": ["出生", "孤儿", "街头", "贫民窟"],
       "deathChainEntry": false
     },
     {
       "id": 2,
       "title": "企业子弟",
-      "description": "你在科珀广场的豪华公寓里长大，父亲是荒坂集团的中层管理人员。你从小就读于企业专属学校，穿着制服，接受精英教育。但这座黄金牢笼里没有真正的温暖——你很清楚父亲不过是企业的棋子，随时可能被替换。生日派对上，来的都是父亲同事的孩子，没有一个是真正的朋友。",
+      "description": "你在科珀广场的豪华公寓里长大，父亲是荒坂集团的中层管理，母亲是法律事务部的精英律师。你从小就读于企业专属学校，穿着烫金边的制服，接受最高规格的精英教育。生日派对上请来的全息偶像歌手唱着欢快的歌，但你知道这些都建立在父亲签署的卖身契上——他是企业的棋子，你也是。",
       "type": "special",
-      "ageRange": [0, 5],
+      "ageRange": [0, 8],
       "weight": 12,
       "repeatable": false,
       "cooldown": 0,
       "branches": [
-        { "id": "branch_1", "text": "顺从家族期望，努力学习企业精英课程", "effects": { "EDUCATION": 5, "CORP_REP": 3, "STREET_SMART": -2 } },
-        { "id": "branch_2", "text": "叛逆反抗，偷偷溜到街头接触底层世界", "effects": { "STREET_SMART": 3, "CORP_REP": -2, "TECH": 1 } }
+        { "id": "branch_1", "text": "顺从家族期望，努力学习企业课程", "effects": { "TECH": 3, "MONEY": 2, "HUMAN": -1 } },
+        { "id": "branch_2", "text": "叛逆反抗，偷偷溜出科珀广场接触下层世界", "effects": { "STYLE": 2, "REP": 1, "MONEY": -1 } }
       ],
-      "effects": { "EDUCATION": 3, "MONEY": 500 },
+      "effects": { "TECH": 2, "MONEY": 1 },
       "tags": ["出生", "企业", "精英", "科珀广场"],
       "deathChainEntry": false
     },
     {
       "id": 3,
-      "title": "普通家庭",
-      "description": "你出生在沃森区一间逼仄的公寓里，父母都是起早贪黑的工薪阶层。父亲在工厂流水线上组装义体零件，母亲在洗衣店打工。虽然生活拮据，但餐桌上总有热饭。你记得邻里之间的温暖——楼下的王阿姨会偷偷塞给你糖果，隔壁的叔叔教你修理旧电器。这是夜之城里难得的平凡温暖。",
+      "title": "移民家庭",
+      "description": "你的父母带着你挤在集装箱改造的偷渡船里，穿越放射性海洋来到夜之城。他们在小唐人街的菜市场租下一个摊位卖手工面条，从早忙到晚。你从会走路起就在油烟缭绕的灶台间穿梭，学会了用三种语言和客人讨价还价，也学会了在移民执法局突击检查时带着现金躲进地下室。",
       "type": "special",
-      "ageRange": [0, 3],
-      "weight": 20,
+      "ageRange": [1, 7],
+      "weight": 14,
       "repeatable": false,
       "cooldown": 0,
       "branches": [
-        { "id": "branch_1", "text": "珍惜家庭温暖，努力学习想要改变命运", "effects": { "EDUCATION": 3, "KARMA": 2, "MENTAL": 2 } },
-        { "id": "branch_2", "text": "觉得这样的生活太沉闷，向往街头的刺激", "effects": { "STREET_SMART": 2, "COOL": 2, "EDUCATION": -1 } }
+        { "id": "branch_1", "text": "帮父母打理摊位，练就生意头脑", "effects": { "MONEY": 2, "STYLE": 1, "HUMAN": 1 } },
+        { "id": "branch_2", "text": "厌恶油烟和漂泊，发誓要融入这座城市", "effects": { "TECH": 2, "REP": 1, "TRAUMA": 1 } }
       ],
-      "effects": { "MENTAL": 2, "KARMA": 1 },
-      "tags": ["出生", "普通", "工薪", "沃森区"],
+      "effects": { "MONEY": 1, "HUMAN": 1 },
+      "tags": ["出生", "移民", "小唐人街", "商贩"],
       "deathChainEntry": false
     },
     {
       "id": 4,
-      "title": "移民家庭",
-      "description": "你的父母是「新美国人」，带着你穿越半个废土来到夜之城寻找机会。他们在小唐人街的美食街租下一个小摊，卖着祖传的秘制面条。你从会走路起就在油烟缭绕的摊位间穿梭，学会了用三种语言招呼客人，也学会了在卫生检查员来时快速收起违规食材。",
+      "title": "福利院长大",
+      "description": "你被送到圣多明各的州立福利院时才三个月大。这里的孩子都来自相似的背景——被遗弃、被没收、被遗忘。福利院被企业承包运营，经费层层克扣，孩子们永远吃不饱。你学会了在年长的孩子面前低头，在深夜偷溜进厨房找剩饭，在管理员醉倒后偷偷用她的终端机浏览外面的世界。",
       "type": "special",
-      "ageRange": [1, 5],
-      "weight": 15,
+      "ageRange": [0, 8],
+      "weight": 13,
       "repeatable": false,
       "cooldown": 0,
       "branches": [
-        { "id": "branch_1", "text": "帮父母经营摊位，学习做生意的手腕", "effects": { "CHARISMA": 3, "MONEY": 200, "STREET_SMART": 2 } },
-        { "id": "branch_2", "text": "厌恶油烟和琐碎，发誓要离开这里出人头地", "effects": { "AMBITION": 4, "EDUCATION": 2, "FAMILY": -2 } }
+        { "id": "branch_1", "text": "在福利院图书馆自学，靠知识寻找出路", "effects": { "TECH": 3, "HUMAN": 1, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "成为福利院孩子帮的小头目，靠拳头生存", "effects": { "LIFE": 2, "REP": 2, "HUMAN": -1 } }
       ],
-      "effects": { "CHARISMA": 2, "MONEY": 100 },
-      "tags": ["出生", "移民", "小商贩", "美食街"],
+      "effects": { "TRAUMA": 1, "TECH": 1 },
+      "tags": ["出生", "福利院", "遗弃", "圣多明各"],
       "deathChainEntry": false
     },
     {
       "id": 5,
-      "title": "福利院成长",
-      "description": "你被送到州立福利院时还在襁褓中。这里的孩子都来自相似的背景——被遗弃、被没收、被遗忘。福利院由企业承包运营，经费被层层克扣，孩子们吃不饱饭，教育和医疗更是奢望。你学会了在更强势的孩子面前低头，也学会了在深夜偷偷溜出去找吃的。",
+      "title": "流浪儿",
+      "description": "你出生在巴特那郊外的流浪者营地，母亲是流浪者车队的机械师。你最早的记忆是引擎的轰鸣声和焊接枪的蓝色火焰。车队在废土上迁徙，从一个定居点到另一个，你在改装房车的地板下学会了辨认星座和修理发电机。当车队最终在夜之城郊外的废车场扎营时，你第一次看到这座城市刺破天际的全息广告。",
       "type": "special",
-      "ageRange": [1, 5],
-      "weight": 12,
+      "ageRange": [0, 6],
+      "weight": 11,
       "repeatable": false,
       "cooldown": 0,
       "branches": [
-        { "id": "branch_1", "text": "忍受现状，在福利院图书馆自学知识", "effects": { "EDUCATION": 2, "MENTAL": -1, "TECH": 1 } },
-        { "id": "branch_2", "text": "成为福利院小团体的头目，靠拳头说话", "effects": { "STRENGTH": 3, "STREET_SMART": 3, "KARMA": -2 } }
+        { "id": "branch_1", "text": "融入城市，用游牧民族的机械本领在城市立足", "effects": { "TECH": 3, "LIFE": 2, "MONEY": 1 } },
+        { "id": "branch_2", "text": "保留流浪者的天性，不愿被钢筋水泥束缚", "effects": { "STYLE": 2, "LIFE": 2, "REP": 1 } }
       ],
-      "effects": { "MENTAL": -1, "STREET_SMART": 2 },
-      "tags": ["出生", "福利院", "遗弃", "机构"],
+      "effects": { "TECH": 2, "LIFE": 1 },
+      "tags": ["出生", "流浪者", "游牧", "废车场"],
       "deathChainEntry": false
     },
     {
       "id": 6,
-      "title": "流浪儿",
-      "description": "你跟随流浪者车队穿越荒漠来到夜之城。父母是浪迹天涯的游牧民族，在报废汽车改装成的移动家园里，你学会了修引擎、辨别方向、在荒野中生存。车队在夜之城郊外的废车场扎营，你第一次看到这座不夜城的天际线时，被那刺眼的全息广告晃得睁不开眼。",
+      "title": "贫民窟孩子",
+      "description": "你出生在沃森区深处的棚户区，这里连柏油路都没有，雨水把泥泞的小巷变成了沼泽。父亲在附近的化工厂上班，肺里吸满了有毒气体，母亲在破烂的家里照料六个孩子。你们的房子是用废弃的建筑板材和生锈的瓦楞铁皮拼凑起来的，下雨天全家要拿着盆子接漏水。邻居们虽然穷，但彼此照应。",
       "type": "special",
-      "ageRange": [2, 7],
-      "weight": 12,
+      "ageRange": [0, 8],
+      "weight": 16,
       "repeatable": false,
       "cooldown": 0,
       "branches": [
-        { "id": "branch_1", "text": "融入城市，用游牧民族的生存技能在城市立足", "effects": { "TECH": 3, "SURVIVAL": 4, "STREET_SMART": 2 } },
-        { "id": "branch_2", "text": "保留流浪者的自由天性，不愿被城市束缚", "effects": { "SURVIVAL": 3, "STRENGTH": 2, "INTELLIGENCE": -1 } }
+        { "id": "branch_1", "text": "在贫困中磨练意志，坚信知识改变命运", "effects": { "LIFE": 2, "TECH": 2, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "学会街头生存之道，用机灵弥补资源的匮乏", "effects": { "STYLE": 2, "REP": 2, "HUMAN": 1 } }
       ],
-      "effects": { "SURVIVAL": 3, "TECH": 2 },
-      "tags": ["出生", "流浪者", "游牧", "废土"],
+      "effects": { "LIFE": 1, "TRAUMA": 1 },
+      "tags": ["出生", "贫民窟", "沃森区", "贫困"],
       "deathChainEntry": false
     },
     {
       "id": 7,
-      "title": "日本街童工",
-      "description": "你被卖到日本街的一家虎爪帮控制的工厂里做童工。每天十六个小时组装盗版赛博组件，手指被焊枪烫出无数疤痕。你学会了分辨各种芯片的型号，也学会了在监工的棍棒下保持沉默。工厂对面的全息广告里，光鲜的偶像歌手唱着关于梦想的歌。",
+      "title": "红灯区出生",
+      "description": "你在日本街红灯区的阁楼里出生，母亲是虎爪帮控制下的性工作者。她一边接客一边把你养大，用身体换取奶粉和廉价的儿童营养剂。你从小在霓虹灯的闪烁中入睡，在隔壁房间的嘈杂声中醒来。妓院的老鸨对你还不错，偶尔让你在前台帮忙收钱，你因此学会了看人脸色和快速点数。",
       "type": "special",
-      "ageRange": [6, 12],
-      "weight": 10,
+      "ageRange": [0, 8],
+      "weight": 12,
       "repeatable": false,
       "cooldown": 0,
       "branches": [
-        { "id": "branch_1", "text": "默默忍耐，偷学赛博组件技术伺机逃离", "effects": { "TECH": 4, "CYBER_KNOWLEDGE": 3, "HEALTH": -2 } },
-        { "id": "branch_2", "text": "讨好监工，争取更轻松的活计", "effects": { "CHARISMA": 2, "STREET_SMART": 2, "KARMA": -1 } }
+        { "id": "branch_1", "text": "心疼母亲的付出，发誓要带她离开这里", "effects": { "HUMAN": 3, "MONEY": 1, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "在混乱中变得麻木，学会在夹缝中谋利", "effects": { "STYLE": 2, "REP": 2, "ADDICTION": 1 } }
       ],
-      "effects": { "TECH": 2, "HEALTH": -1 },
-      "tags": ["出生", "童工", "虎爪帮", "日本街"],
+      "effects": { "TRAUMA": 2, "STYLE": 1 },
+      "tags": ["出生", "红灯区", "日本街", "虎爪帮"],
       "deathChainEntry": false
     },
     {
       "id": 8,
-      "title": "旧网时代的遗民",
-      "description": "你出生在一个与世隔绝的小社区里，这里的人拒绝赛博改造，坚持使用老旧的技术。你从小接触的是实体书籍、机械工具，而不是神经接口和全息屏幕。当社区最终被企业征用拆除时，你第一次踏入夜之城的世界，对眼前的一切既恐惧又着迷。",
+      "title": "地下实验室产物",
+      "description": "你从未见过亲生父母，也不确定自己是否真有过父母。你是赛博基因公司在太平洲地下实验室的产物——一个旨在创造完美赛博士兵的非法实验项目。你的基因被编辑过，幼年时就被植入了军用级神经接口。当实验室被NCPD突袭查封时，你和其他实验体被扔进了系统，像废品一样被遗忘。",
       "type": "special",
-      "ageRange": [5, 10],
-      "weight": 8,
-      "repeatable": false,
-      "cooldown": 0,
-      "branches": [
-        { "id": "branch_1", "text": "坚持父辈的传统，拒绝赛博改造融入城市", "effects": { "MENTAL": 3, "TECH": -2, "COOL": 3 } },
-        { "id": "branch_2", "text": "拥抱新技术，疯狂学习赛博知识弥补差距", "effects": { "TECH": 4, "INTELLIGENCE": 3, "MENTAL": -1 } }
-      ],
-      "effects": { "TECH": 1, "MENTAL": 1 },
-      "tags": ["出生", "旧网", "传统", "反赛博"],
-      "deathChainEntry": false
-    },
-    {
-      "id": 9,
-      "title": "地下诊所的产物",
-      "description": "你出生在宪章山的一间地下诊所里。母亲在生产中大出血，黑市医生用劣质赛博零件紧急替换了她一半的器官。她活了下来，但欠下了天文数字的医疗债。你从小就在诊所的地下室里长大，闻着消毒水和血的味道，看着各种底层市民带着枪伤和黑市义体进进出出。",
-      "type": "special",
-      "ageRange": [0, 4],
-      "weight": 10,
-      "repeatable": false,
-      "cooldown": 0,
-      "branches": [
-        { "id": "branch_1", "text": "在诊所帮忙，耳濡目染学习黑市医术", "effects": { "MEDICAL_KNOWLEDGE": 4, "STREET_SMART": 2, "MONEY": -500 } },
-        { "id": "branch_2", "text": "厌恶这里的一切，想尽办法逃离底层", "effects": { "AMBITION": 3, "EDUCATION": 2, "FAMILY": -2 } }
-      ],
-      "effects": { "MEDICAL_KNOWLEDGE": 2, "MONEY": -300 },
-      "tags": ["出生", "诊所", "医疗债", "黑市"],
-      "deathChainEntry": false
-    },
-    {
-      "id": 10,
-      "title": "赛博实验品",
-      "description": "你是一件企业实验的产物。某个生物科技公司在福利院挑选了一批婴儿进行早期赛博融合实验。你的神经系统在幼年就被植入了实验性接口，虽然让你拥有了异于常人的数据处理能力，但也让你饱受神经性头痛的折磨。实验被政府查封后，你被扔回社会，没人教过你如何正常生活。",
-      "type": "special",
-      "ageRange": [6, 10],
+      "ageRange": [4, 10],
       "weight": 6,
       "repeatable": false,
       "cooldown": 0,
       "branches": [
-        { "id": "branch_1", "text": "利用实验赋予的能力，成为一名黑客", "effects": { "INTELLIGENCE": 5, "NETRUNNING": 5, "HEALTH": -3 } },
-        { "id": "branch_2", "text": "寻找方法移除体内实验植入物，恢复普通人生活", "effects": { "TECH": 2, "MENTAL": 2, "MONEY": -1000 } }
+        { "id": "branch_1", "text": "利用基因改造带来的天赋，成为顶级战士", "effects": { "CHROME": 3, "LIFE": 2, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "拒绝被实验定义，努力寻找自己的人性", "effects": { "HUMAN": 3, "TECH": 2, "TRAUMA": 1 } }
       ],
-      "effects": { "INTELLIGENCE": 3, "HEALTH": -2 },
-      "tags": ["出生", "实验", "赛博", "企业"],
+      "effects": { "CHROME": 2, "TRAUMA": 2 },
+      "tags": ["出生", "实验", "基因", "太平洲"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 9,
+      "title": "军用实验场孤儿",
+      "description": "你的父母是军用科技公司的低级研究员，在一场实验室事故中双双遇难。公司为了掩盖事故，把你送进了一个伪装成学校的军事化孤儿院。你在这里接受严格的体能训练和服从性教育，每天清晨五公里越野跑，用假枪学习战术动作。这里的老师实际上是退役士兵，他们在挑选最出色的孩子送去真正的军事培训。",
+      "type": "special",
+      "ageRange": [5, 12],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "在军事训练中表现出色，被选入精英少年营", "effects": { "LIFE": 3, "CHROME": 1, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "抗拒军事化管束，寻找机会逃离这个牢笼", "effects": { "STYLE": 2, "TECH": 1, "REP": 2 } }
+      ],
+      "effects": { "LIFE": 2, "TRAUMA": 1 },
+      "tags": ["出生", "军事", "实验", "孤儿院"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 10,
+      "title": "早产儿在工厂车间长大",
+      "description": "你是个早产儿，母亲在沃森区的纺织工厂流水线上工作时突然临盆。工友们用裁布剪刀剪断脐带，把你放在装棉纱的纸箱里。从那以后，你的摇篮就是机器轰鸣的车间。你闻着机油和棉絮的气味长大，工人们轮流照看你。你还没学会走路就先学会了分辨不同机器的运转声音。",
+      "type": "special",
+      "ageRange": [0, 8],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "在工厂里耳濡目染，成为一名优秀的机械师", "effects": { "TECH": 3, "LIFE": 1, "MONEY": 1 } },
+        { "id": "branch_2", "text": "厌恶机器的噪音和机油味，想逃离工厂", "effects": { "STYLE": 2, "TRAUMA": 1, "REP": 1 } }
+      ],
+      "effects": { "TECH": 2, "LIFE": 1 },
+      "tags": ["出生", "工厂", "早产", "沃森区"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 11,
+      "title": "太平洲废墟拾荒者",
+      "description": "你成长在太平洲的废弃游乐场里，这里在战争中被炸毁后一直没有重建。你和一群拾荒者住在摩天轮倒塌的骨架下，靠翻找废墟中有价值的零件和芯片为生。你熟知每一栋废弃建筑里藏着什么——第三层的保险柜里还有生锈的枪，地下停车场的旧车里可能有还能用的电池。废墟是你的家，也是你的宝藏。",
+      "type": "special",
+      "ageRange": [5, 12],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "练就一双识别废品价值的火眼金睛", "effects": { "TECH": 2, "MONEY": 2, "LIFE": 1 } },
+        { "id": "branch_2", "text": "在废墟中捡到一本旧书，从此沉迷知识", "effects": { "TECH": 3, "HUMAN": 1, "TRAUMA": 1 } }
+      ],
+      "effects": { "MONEY": 1, "TECH": 1 },
+      "tags": ["出生", "太平洲", "拾荒", "废墟"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 12,
+      "title": "歌舞伎町的小偷学徒",
+      "description": "你在歌舞伎町的霓虹小巷里被一个老扒手捡到。他教你如何用手指夹起钱包而不被察觉，如何在人群密集的地方制造混乱趁机下手，如何用一张假身份证明骗过低级安保系统。他说这一行的第一法则是「永远不要在同一块地盘上偷两次」。你跟着他学会了所有偷鸡摸狗的本事，也学会了在得手后把钱分给更穷的人。",
+      "type": "special",
+      "ageRange": [6, 12],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "青出于蓝，成为歌舞伎町最灵活的小偷", "effects": { "STYLE": 3, "MONEY": 2, "REP": 2 } },
+        { "id": "branch_2", "text": "厌倦偷窃，想用学到的本事找份正经工作", "effects": { "TECH": 2, "HUMAN": 2, "MONEY": -1 } }
+      ],
+      "effects": { "STYLE": 2, "MONEY": 1 },
+      "tags": ["出生", "歌舞伎町", "小偷", "街头"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 13,
+      "title": "科珀广场被宠坏的富家子",
+      "description": "你的父亲是荒坂集团董事会成员，母亲出身于另一个企业家族。你含着金汤匙出生，从小的玩具是限量版全息游戏机，零花钱比普通工人一年的工资还多。但你从来没有真正见过父母——他们太忙了，照顾你的是经过严格培训的仿生人管家。你在空荡荡的豪宅里奔跑，回声比你的脚步声更响亮。",
+      "type": "special",
+      "ageRange": [0, 10],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "享受特权，成为企业社交圈里的小明星", "effects": { "MONEY": 3, "STYLE": 2, "HUMAN": -2 } },
+        { "id": "branch_2", "text": "厌恶虚伪的贵族圈子，渴望真实的生活", "effects": { "HUMAN": 2, "TECH": 1, "REP": 1 } }
+      ],
+      "effects": { "MONEY": 2, "STYLE": 1 },
+      "tags": ["出生", "富家子", "企业", "科珀广场"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 14,
+      "title": "宪章山书店老板的孩子",
+      "description": "你家在宪章山开了一家小小的旧书店，店面夹在一家义体诊所和一家枪械修理铺之间。父亲是个脾气古怪的旧书收藏家，母亲是退休的大学讲师。你从小就在落满灰尘的书堆里长大，读着战前出版的纸质书——哲学、历史、文学，那些在数字时代早已被遗忘的东西。书店的常客里有黑客、作家和退休侦探。",
+      "type": "special",
+      "ageRange": [3, 12],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "沉浸在书海中，成为一个博学的智者", "effects": { "TECH": 3, "HUMAN": 2, "STYLE": 1 } },
+        { "id": "branch_2", "text": "通过书店客人接触各行各业，扩展见识", "effects": { "REP": 2, "HUMAN": 2, "MONEY": 1 } }
+      ],
+      "effects": { "TECH": 2, "HUMAN": 1 },
+      "tags": ["出生", "书店", "宪章山", "知识"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 15,
+      "title": "码头工人的儿子",
+      "description": "你的父亲是夜之城港口的装卸工，每天用改装过的机械臂搬运数吨重的集装箱。你们住在港口附近的工人社区，这里的人都说着粗话、喝劣质啤酒、在周末参加地下搏击赛。你从小就有一副好身板，父亲常让你帮他搬小件货物。在码头上你学会了如何用巧劲搬重物，也学会了在帮派抢地盘时躲进集装箱里。",
+      "type": "special",
+      "ageRange": [4, 12],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "继承父亲的力气和坚韧，成为港口小霸王", "effects": { "LIFE": 3, "REP": 2, "MONEY": 1 } },
+        { "id": "branch_2", "text": "不想一辈子做苦力，利用码头信息寻找机会", "effects": { "TECH": 2, "MONEY": 2, "STYLE": 1 } }
+      ],
+      "effects": { "LIFE": 2, "REP": 1 },
+      "tags": ["出生", "码头", "工人", "港口"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 16,
+      "title": "太平间看门人的女儿",
+      "description": "你的父亲是圣多明各市立太平间的夜班看门人。你们一家住在太平间后面的小宿舍里，走廊尽头就是停放尸体的冷藏室。你从小就不怕死人——他们比活人安静多了。你在太平间里学会了辨认各种死因：枪伤、刀伤、赛博精神病、药物过量。父亲偶尔会指着某个尸体说：「这个人活着的时候是个传奇。」",
+      "type": "special",
+      "ageRange": [4, 12],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "在太平间学到丰富的法医知识", "effects": { "TECH": 3, "LIFE": 1, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "对死亡麻木，性格变得冷酷而务实", "effects": { "STYLE": 2, "REP": 1, "HUMAN": -1 } }
+      ],
+      "effects": { "TRAUMA": 2, "TECH": 1 },
+      "tags": ["出生", "太平间", "死亡", "圣多明各"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 17,
+      "title": "屋顶农场长大的孩子",
+      "description": "你出生在海伍德区一栋公寓楼的屋顶农场里。这里的居民在楼顶种蔬菜、养鸡，在水泥森林里创造出一片绿色天地。你从小就知道如何给番茄浇水、用厨余堆肥、用网罩防止赛博鸽子啄食幼苗。楼下的街道充满帮派枪声和警笛声，但楼顶是你的秘密花园——从那里能看到整座城市最美丽的日落。",
+      "type": "special",
+      "ageRange": [0, 10],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "热爱自然，学习生态技术和可持续生活方式", "effects": { "TECH": 2, "HUMAN": 2, "LIFE": 1 } },
+        { "id": "branch_2", "text": "虽然喜欢楼顶，但更向往楼下刺激的街头生活", "effects": { "STYLE": 2, "REP": 1, "MONEY": 1 } }
+      ],
+      "effects": { "HUMAN": 2, "LIFE": 1 },
+      "tags": ["出生", "农场", "海伍德", "自然"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 18,
+      "title": "数据坞的童工",
+      "description": "你在八岁时被卖到沃森区的一个地下数据坞，坐在潮湿阴暗的隔间里，每天十六小时盯着屏幕审核内容过滤算法的训练数据。你的工作是给AI标记图片——这个是人、这个是车、这个是武器。你的视力在荧光屏前急速下降，手指因为不停点击而患上腱鞘炎。但你学会了如何绕过系统的监控，偷偷用工作终端学习编程。",
+      "type": "special",
+      "ageRange": [8, 14],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "利用工作之便自学黑客技术", "effects": { "TECH": 4, "CHROME": 1, "LIFE": -1 } },
+        { "id": "branch_2", "text": "努力工作攒钱，争取赎身离开", "effects": { "MONEY": 2, "LIFE": -1, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 2, "TRAUMA": 1 },
+      "tags": ["出生", "童工", "数据", "沃森区"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 19,
+      "title": "日本街的居酒屋小伙计",
+      "description": "你在日本街的一家居酒屋里长大，老板是个退役的虎爪帮成员，金盆洗手后开了这家小店。你从七岁开始就在店里帮忙——洗碗、端菜、打扫卫生。老板虽然面相凶恶，但对你还不错，教你认字、算账，偶尔讲起他年轻时在街头的故事。居酒屋是信息的集散地，你在这里听到无数秘密和流言。",
+      "type": "special",
+      "ageRange": [7, 14],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "在居酒屋练就待人接物和收集情报的本事", "effects": { "STYLE": 2, "REP": 2, "MONEY": 1 } },
+        { "id": "branch_2", "text": "从虎爪帮老老板那里学到一身格斗功夫", "effects": { "LIFE": 3, "TRAUMA": 1, "CHROME": 1 } }
+      ],
+      "effects": { "REP": 2, "STYLE": 1 },
+      "tags": ["出生", "居酒屋", "日本街", "虎爪帮"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 20,
+      "title": "废车场的机械少年",
+      "description": "你在海伍德郊区的一个废车场里长大，父亲是这里的老板。你的童年是在堆成山的报废飞行车和生锈的底盘之间度过的。你十岁时就能独立拆卸一台发动机，十二岁时能用废零件拼装出一辆能开的车。废车场的常客里有改车发烧友、黑市零件贩子，偶尔也有躲避追杀的佣兵来这里换车。",
+      "type": "special",
+      "ageRange": [5, 14],
+      "weight": 11,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "成为废车场的机械天才，精通各种载具", "effects": { "TECH": 4, "MONEY": 1, "REP": 1 } },
+        { "id": "branch_2", "text": "通过来往的客人接触佣兵世界，向往刺激", "effects": { "CHROME": 2, "STYLE": 1, "LIFE": 1 } }
+      ],
+      "effects": { "TECH": 3, "MONEY": 1 },
+      "tags": ["出生", "废车场", "机械", "海伍德"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 21,
+      "title": "旧网时代的遗孤",
+      "description": "你的父母是旧互联网时代的工程师，在数据崩溃事件中失踪。你被一个拒绝赛博改造的地下社区收养，这里的人用纸质地图、机械钟表和实体钥匙。你学会了修理老式收音机、用摩尔斯电码通讯、在没有神经接口的情况下理解数字世界。当社区最终被企业拆迁队铲平时，你带着一本电路手册走入夜之城。",
+      "type": "special",
+      "ageRange": [6, 14],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "坚持旧时代的传统技术，拒绝赛博改造", "effects": { "TECH": 3, "HUMAN": 2, "CHROME": -1 } },
+        { "id": "branch_2", "text": "投身新技术浪潮，疯狂补习赛博知识", "effects": { "CHROME": 2, "TECH": 3, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 2, "HUMAN": 1 },
+      "tags": ["出生", "旧网", "工程师", "技术"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 22,
+      "title": "生物科技公司的实验体幸存者",
+      "description": "你是生物科技公司一个非法基因优化项目的活证据。婴儿时期，你的DNA被编辑过，旨在创造拥有超高智商的劳动力。实验成功了——你聪明得惊人，十岁时就能看懂博士论文。但你的免疫系统被基因编辑破坏，需要长期服药来维持基本健康。当天使投资人撤资后，你被当作失败品扔出了实验室。",
+      "type": "special",
+      "ageRange": [5, 12],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "利用被改造的超凡智力成为天才黑客", "effects": { "TECH": 5, "LIFE": -2, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "寻找治疗自身免疫缺陷的方法", "effects": { "LIFE": 2, "TECH": 2, "MONEY": -2 } }
+      ],
+      "effects": { "TECH": 3, "TRAUMA": 1 },
+      "tags": ["出生", "基因", "实验", "生物科技"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 23,
+      "title": "流浪者车队的后裔",
+      "description": "你的家族是恶土上最古老的流浪者车队之一，从战前就在这片土地上迁徙。你出生在改装大巴上，第一个看到的风景是无边无际的红色沙漠。你学会了在沙暴中搭帐篷、用无线电与远方的车队通讯、识别军用地雷的埋设痕迹。当车队领袖决定在夜之城边缘定居时，你成了族里最熟悉城市——也最厌恶城市——的少年。",
+      "type": "special",
+      "ageRange": [0, 10],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "传承流浪者技艺，成为恶土上最出色的向导", "effects": { "LIFE": 3, "TECH": 2, "REP": 2 } },
+        { "id": "branch_2", "text": "脱离车队独自闯荡夜之城，拥抱城市生活", "effects": { "STYLE": 2, "MONEY": 2, "TRAUMA": 1 } }
+      ],
+      "effects": { "LIFE": 2, "TECH": 1 },
+      "tags": ["出生", "流浪者", "车队", "恶土"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 24,
+      "title": "在海伍德郊区长大的混血儿",
+      "description": "你的父亲是海伍德本地人，母亲是来自远东的难民。你的混血面孔在哪边都不受欢迎——本地孩子说你太「亚洲」，亚洲孩子说你太「街头」。你从小就在两种文化的夹缝中长大，学会了在歧视和排斥中保持沉默，也学会了用拳头回应侮辱。但你因此练就了独特的视角：你能同时理解两个世界。",
+      "type": "special",
+      "ageRange": [4, 12],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "用双重视角成为出色的沟通者和中介", "effects": { "STYLE": 2, "REP": 2, "HUMAN": 2 } },
+        { "id": "branch_2", "text": "用愤怒武装自己，成为街头最狠的斗士", "effects": { "LIFE": 3, "REP": 1, "TRAUMA": 2 } }
+      ],
+      "effects": { "TRAUMA": 1, "STYLE": 1 },
+      "tags": ["出生", "混血", "海伍德", "身份"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 25,
+      "title": "被修道院收养的战争孤儿",
+      "description": "你是在圣多明各废墟中被发现的战争孤儿。修道院的修女们收留了你和其他十几个孩子，在摇摇欲坠的教堂里给你们一个家。修女们教你读书写字，也教你信仰和宽恕。但教堂外的世界正在流血，当帮派势力渗入修道院周边时，修女们在祈祷书下藏了霰弹枪。你的童年是在唱诗班和枪声的交织中度过的。",
+      "type": "special",
+      "ageRange": [3, 12],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "在修道院找到内心的平静和信仰的力量", "effects": { "HUMAN": 4, "TRAUMA": -1, "TECH": 1 } },
+        { "id": "branch_2", "text": "修女们的战斗精神感染了你，学会保护弱者", "effects": { "LIFE": 2, "REP": 2, "HUMAN": 2 } }
+      ],
+      "effects": { "HUMAN": 2, "TRAUMA": -1 },
+      "tags": ["出生", "修道院", "战争", "圣多明各"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 26,
+      "title": "霓虹灯管作坊的童工",
+      "description": "你在日本街的一家霓虹灯作坊里做工。老板是个患有职业病的老师傅，弯曲玻璃管的双手布满烫伤疤痕。你每天的工作是把玻璃管加热、弯曲成各种字母和图案，然后注入惰性气体。你学会了制作最复杂的霓虹灯牌，也学会了在工钱被克扣时用镊子威胁老板。作坊里堆满了废弃的灯管碎片，在黑暗中散发着幽幽的余晖。",
+      "type": "special",
+      "ageRange": [8, 14],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "练就一手制作霓虹灯的精湛手艺", "effects": { "TECH": 3, "STYLE": 2, "MONEY": 1 } },
+        { "id": "branch_2", "text": "偷学老师傅的电路知识，转向电子工程", "effects": { "TECH": 3, "CHROME": 1, "TRAUMA": 1 } }
+      ],
+      "effects": { "TECH": 2, "STYLE": 1 },
+      "tags": ["出生", "霓虹灯", "手工艺", "日本街"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 27,
+      "title": "地下搏击场捡拳套的跟班",
+      "description": "你在宪章山的地下搏击场里长大，父亲是个过气的地下拳手。你的工作是在每场比赛后清理血迹、捡回被击落的牙齿、给受伤的拳手递毛巾。你看着一个个男人在铁笼里打得头破血流，观众在铁网外疯狂下注。父亲教你拳击的基本动作时说：「在这个世界上，你如果不学会怎么挨打，就永远不知道怎么打人。」",
+      "type": "special",
+      "ageRange": [6, 14],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "在搏击场耳濡目染，练就一身格斗本领", "effects": { "LIFE": 4, "REP": 2, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "见识太多暴力，决心用头脑而不是拳头生存", "effects": { "TECH": 2, "STYLE": 1, "MONEY": 1 } }
+      ],
+      "effects": { "LIFE": 2, "TRAUMA": 1 },
+      "tags": ["出生", "搏击", "地下", "宪章山"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 28,
+      "title": "在图书馆里自学长大的孩子",
+      "description": "你无家可归，发现宪章山的公立图书馆二十四小时开放，暖气充足，还有免费的公共数据终端。你于是住进了图书馆。白天躲在角落里睡觉，深夜在卫生间洗漱。管理员发现后没有赶你走，反而默许你的存在，甚至悄悄指点你该看哪些书。你在这里读完了从基础编程到高级量子计算的几百本电子书。",
+      "type": "special",
+      "ageRange": [8, 14],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "自学成才，成为知识渊博的少年天才", "effects": { "TECH": 5, "HUMAN": 1, "LIFE": -1 } },
+        { "id": "branch_2", "text": "在图书馆结识志同道合的朋友，一起学习", "effects": { "TECH": 3, "HUMAN": 2, "REP": 1 } }
+      ],
+      "effects": { "TECH": 3, "HUMAN": 1 },
+      "tags": ["出生", "图书馆", "自学", "宪章山"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 29,
+      "title": "街头跑腿信使",
+      "description": "你在十一岁时开始为沃森区的一个中间人跑腿送信。你骑着破旧的折叠自行车，在拥挤的街道和狭窄的后巷里穿行，把加密数据板和各种小包裹送到指定的人手中。你学会了辨认哪些人是NCPD的便衣，哪些路段的监控是坏的，哪个时间点哪个帮派会在哪里活动。你是整条街上跑得最快的少年。",
+      "type": "special",
+      "ageRange": [11, 14],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "跑遍全城，把每一寸地形都刻进脑子里", "effects": { "STYLE": 2, "REP": 2, "MONEY": 2 } },
+        { "id": "branch_2", "text": "在送信过程中结识各路人物，编织人脉网", "effects": { "REP": 3, "HUMAN": 2, "MONEY": 1 } }
+      ],
+      "effects": { "STYLE": 1, "REP": 1 },
+      "tags": ["出生", "信使", "跑腿", "沃森区"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 30,
+      "title": "卖假身份证的侏儒教手艺",
+      "description": "你被一个侏儒老人从街头捡回家，他是整个夜之城数一数二的假证专家。他的工作室堆满了各种身份制造设备——全息印章机、生物芯片写入器、指纹合成器。他教你如何制作从普通身份证到企业高管通行证的各种假证件。他说：「在这个城市里，身份不是天生的，是人造的。你能成为任何人——只要你付得起价钱。」",
+      "type": "special",
+      "ageRange": [8, 14],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "成为假证大师的得力助手", "effects": { "TECH": 3, "MONEY": 2, "STYLE": 1 } },
+        { "id": "branch_2", "text": "意识到假证生意的风险，寻找正当出路", "effects": { "TECH": 2, "HUMAN": 1, "REP": 1 } }
+      ],
+      "effects": { "TECH": 2, "MONEY": 1 },
+      "tags": ["出生", "假证", "手艺", "地下"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 31,
+      "title": "在天桥下拉小提琴的盲人",
+      "description": "你是个盲人女孩，被遗弃在天桥下后被一个流浪的老琴师收养。他教你拉小提琴，用琴声讲述这个世界——高音是霓虹灯的色彩，低音是远处的枪声，快板是人群的匆忙。你在天桥下拉琴乞讨，琴盒里落满了各种面值的硬币和偶尔的整钞。你的耳朵异常灵敏，能听出街对面那个人的脚步声是善意还是恶意。",
+      "type": "special",
+      "ageRange": [4, 14],
+      "weight": 5,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "用音乐天赋在街头闯出名堂", "effects": { "STYLE": 4, "REP": 2, "MONEY": 1 } },
+        { "id": "branch_2", "text": "因为失明而练就超常的听觉和第六感", "effects": { "LIFE": 2, "TECH": 2, "TRAUMA": 1 } }
+      ],
+      "effects": { "STYLE": 2, "TRAUMA": 1 },
+      "tags": ["出生", "盲人", "音乐", "街头"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 32,
+      "title": "被猫群养大的野孩子",
+      "description": "你被遗弃在太平洲的废弃动物园里，是一群野猫把你养大的。你跟着它们学会了用四肢爬行、在黑暗中视物、用气味标记领地。你不会说话，但能用喉咙发出咕噜声和嘶吼声来表达情绪。后来被救助站找到时，他们已经花了三个月才让你重新学会使用餐具和说简单的词语。但你的骨子里永远留着那份野性。",
+      "type": "special",
+      "ageRange": [0, 8],
+      "weight": 3,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "保留野兽般的直觉和敏捷", "effects": { "LIFE": 4, "STYLE": 1, "HUMAN": -2 } },
+        { "id": "branch_2", "text": "努力融入人类社会，学习文明规则", "effects": { "HUMAN": 3, "TECH": 2, "TRAUMA": 2 } }
+      ],
+      "effects": { "LIFE": 2, "TRAUMA": 2 },
+      "tags": ["出生", "野孩子", "太平洲", "遗弃"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 33,
+      "title": "用旧零件拼装玩具的发明家",
+      "description": "你住在沃森区的垃圾填埋场附近，每天从电子垃圾堆里翻捡还能用的零件。你用废旧马达做出了会走路的机器蜘蛛，用报废的光学镜头拼出了简易望远镜，用废弃的电路板焊接收音机。邻居的孩子们都来找你修玩具，你收他们几个硬币作为报酬。你是一个天生的发明家，虽然你连正规学校都没上过。",
+      "type": "special",
+      "ageRange": [7, 14],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "把发明创造的天赋磨练成真正的工程技术", "effects": { "TECH": 5, "MONEY": 1, "REP": 1 } },
+        { "id": "branch_2", "text": "用拼装玩具结交朋友，成为社区里的小名人", "effects": { "STYLE": 2, "REP": 2, "HUMAN": 1 } }
+      ],
+      "effects": { "TECH": 3, "STYLE": 1 },
+      "tags": ["出生", "发明", "零件", "沃森区"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 34,
+      "title": "在殡仪馆里长大的孩子",
+      "description": "你的家族经营着海伍德区唯一的殡仪馆，你从会走路起就在遗体化妆间里玩耍。你见过各种各样的尸体——被子弹打得千疮百孔的、被赛博植入物撑爆的、在毒品中安静死去的。你学会了给死者化妆、缝合伤口、填写死亡证明。你从不害怕死亡，反而觉得死人比活人诚实得多——他们不会再骗你了。",
+      "type": "special",
+      "ageRange": [4, 14],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "继承家族的殡葬手艺，成为专业人士", "effects": { "TECH": 2, "MONEY": 2, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "从死者身上收集情报和遗物，另辟蹊径", "effects": { "REP": 2, "MONEY": 2, "STYLE": 1 } }
+      ],
+      "effects": { "TRAUMA": -1, "MONEY": 1 },
+      "tags": ["出生", "殡仪馆", "死亡", "海伍德"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 35,
+      "title": "被赛博疯子囚禁在地下室的童年",
+      "description": "你在六岁时被一个赛博精神病患者绑架，关在废弃地铁站的地下室里。那个疯子把你当成他的「女儿」，给你装上了一些劣质的赛博植入物。你在黑暗中度过了整整三年，直到一次偶然的地铁塌方让你重见天日。那段经历在你心里留下了深深的烙印，但也让你对赛博技术有了极其深刻的理解——好的一面和坏的一面。",
+      "type": "special",
+      "ageRange": [6, 10],
+      "weight": 4,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "被囚禁的经历让你对赛博技术了如指掌", "effects": { "CHROME": 3, "TECH": 2, "TRAUMA": 4 } },
+        { "id": "branch_2", "text": "努力治愈心理创伤，选择原谅和重生", "effects": { "HUMAN": 3, "LIFE": 1, "TRAUMA": -1 } }
+      ],
+      "effects": { "TRAUMA": 3, "CHROME": 1 },
+      "tags": ["出生", "囚禁", "赛博精神病", "创伤"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 36,
+      "title": "从人口贩卖中逃脱的幸存者",
+      "description": "你被人口贩子从边境地带拐走，关在太平洲的一个仓库里等待拍卖。你和其他孩子挤在肮脏的笼子里，每天只有一顿饭。在拍卖前夜，你咬破了一个看守的手，趁乱翻窗逃进了夜色中的太平洲废墟。你在废墟里躲了三天三夜，听着搜捕队的脚步声在附近回荡。最终你逃到了莫克斯帮的地盘，她们收留了你。",
+      "type": "special",
+      "ageRange": [8, 14],
+      "weight": 5,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "加入莫克斯帮，用余生对抗人口贩卖", "effects": { "REP": 2, "LIFE": 2, "HUMAN": 2 } },
+        { "id": "branch_2", "text": "隐姓埋名，用学到的手段在黑市谋生", "effects": { "STYLE": 2, "MONEY": 2, "TRAUMA": 2 } }
+      ],
+      "effects": { "TRAUMA": 2, "LIFE": 1 },
+      "tags": ["出生", "人口贩卖", "逃亡", "太平洲"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 37,
+      "title": "利用垃圾堆里的旧数据板自学的天才",
+      "description": "你在圣多明各的垃圾填埋场里捡到一块废弃的数据板，虽然外壳已经破裂，但核心存储功能居然还能用。数据板里存着上一位主人——一个死去的程序员——的所有学习资料和项目代码。你如饥似渴地开始自学，从基础编程到高级算法，一个死去的陌生人隔着数据板成了你的老师。你可能是整个夜之城最年轻的编程天才。",
+      "type": "special",
+      "ageRange": [9, 14],
+      "weight": 5,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "自学编程，在数字世界找到自己的赛道", "effects": { "TECH": 5, "MONEY": 1, "HUMAN": 1 } },
+        { "id": "branch_2", "text": "试图寻找数据板主人的身份和故事", "effects": { "TECH": 3, "HUMAN": 2, "REP": 1 } }
+      ],
+      "effects": { "TECH": 3, "MONEY": 1 },
+      "tags": ["出生", "天才", "自学", "圣多明各"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 38,
+      "title": "在24小时便利店长大的孩子",
+      "description": "你家在沃森区开了一家二十四小时便利店，橱窗上至今留着三年前枪击案的弹孔。你从九岁起就在店里值夜班，学会了用霰弹枪对准门口的感觉，也学会了分辨哪些客人是真的来买东西、哪些是来踩点的。收银台下的紧急按钮你从来没有按过——因为你深知警察来得永远不够快。",
+      "type": "special",
+      "ageRange": [9, 14],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "在便利店磨练出察言观色的本事", "effects": { "STYLE": 2, "REP": 2, "MONEY": 2 } },
+        { "id": "branch_2", "text": "保护自家店铺，练就一身应对危险的本领", "effects": { "LIFE": 3, "TRAUMA": 1, "CHROME": 1 } }
+      ],
+      "effects": { "STYLE": 1, "MONEY": 1 },
+      "tags": ["出生", "便利店", "沃森区", "夜班"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 39,
+      "title": "通过送外卖学会城市地图的少年",
+      "description": "你从十岁起就在日本街的一家拉面馆送外卖，骑着破旧的电动滑板车穿梭在夜之城的大街小巷。你熟悉每一条捷径、每一个死胡同、每一个监控盲区。你能在五分钟内从日本街赶到沃森区的任何一个角落。你不需要导航——整座城市的地图已经刻在你的脑海里。送外卖让你学会了城市的地理，也让你学会了人心的地理。",
+      "type": "special",
+      "ageRange": [10, 14],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "成为全城最熟悉路况的快递员", "effects": { "STYLE": 2, "MONEY": 3, "REP": 1 } },
+        { "id": "branch_2", "text": "通过送外卖结识各种客户，拓展人脉", "effects": { "REP": 2, "HUMAN": 2, "MONEY": 1 } }
+      ],
+      "effects": { "STYLE": 1, "MONEY": 2 },
+      "tags": ["出生", "外卖", "城市", "日本街"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 40,
+      "title": "歌舞伎町的街头小商贩",
+      "description": "你在歌舞伎町的夜市长大，父母经营着一个卖旧全息唱片和二手数据芯片的小摊。你从会走路起就帮着吆喝，学会了如何用花言巧语把一张坏掉的芯片卖给游客。你也是街头孩子们的「情报交换中心」——谁被抓了、哪个帮派在招人、哪里有免费的午餐，所有的消息都汇聚到你的摊位上。你是歌舞伎町最小的情报贩子。",
+      "type": "special",
+      "ageRange": [8, 14],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "在夜市练就一流的销售和谈判技巧", "effects": { "MONEY": 3, "STYLE": 2, "REP": 1 } },
+        { "id": "branch_2", "text": "收集各路情报，成为少年情报贩子", "effects": { "REP": 3, "TECH": 1, "MONEY": 2 } }
+      ],
+      "effects": { "MONEY": 2, "REP": 1 },
+      "tags": ["出生", "歌舞伎町", "夜市", "情报"],
       "deathChainEntry": false
     }
   ]

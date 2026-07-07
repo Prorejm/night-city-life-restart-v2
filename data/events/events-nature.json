@@ -1,0 +1,518 @@
+{
+  "events": [
+    {
+      "id": 1230,
+      "title": "酸雨淹没街道",
+      "description": "天气预报再次失准——一场突如其来的酸雨袭击了夜之城。雨滴落在皮肤上带来灼烧感，空气中弥漫着刺鼻的化学气味。街道上的行人纷纷找地方躲避，但雨水已经在地面上积起了浅坑，腐蚀着路面的沥青和行人的鞋底。排水系统不堪重负，含有工业废水的雨水开始倒灌进地铁站和地下室。整座城市在一片灰黄色的雨幕中呻吟。",
+      "type": "daily",
+      "ageRange": [16, 90],
+      "weight": 14,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "branch_1", "text": "躲进最近的建筑里，等待酸雨过去", "effects": { "LIFE": 1, "MONEY": -100 } },
+        { "id": "branch_2", "text": "穿上防护装备，在雨中继续赶路", "effects": { "STYLE": 1, "LIFE": -1, "MONEY": -500 } }
+      ],
+      "effects": { "LIFE": -1, "TRAUMA": 1 },
+      "tags": ["自然灾害", "酸雨", "环境", "污染"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1231,
+      "title": "化学烟雾泄漏",
+      "description": "城郊的化工厂发生了泄漏事故，一团黄绿色的有毒烟雾正顺着风向市区蔓延。警报声响彻全城，广播系统反复播报紧急通知：「请居民关闭门窗，开启空气净化系统，不要外出。」街道上的人们开始恐慌奔跑，无人机在头顶盘旋喷洒中和剂。你能闻到空气中那股甜腻而危险的化学气味——那是氰化物的味道。",
+      "type": "daily",
+      "ageRange": [16, 90],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 30,
+      "branches": [
+        { "id": "branch_1", "text": "听从指示，待在家里密封门窗", "effects": { "LIFE": 1, "MONEY": -200, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "趁乱去附近的商店抢购物资和净化面罩", "effects": { "MONEY": -1000, "LIFE": 1, "TRAUMA": 2, "REP": -1 } }
+      ],
+      "effects": { "LIFE": -1, "TRAUMA": 2 },
+      "tags": ["自然灾害", "化学泄漏", "污染", "紧急"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1232,
+      "title": "夜之城大地震",
+      "description": "没有任何预警——地震来了。地面像活过来一样剧烈翻滚，高楼大厦的玻璃幕墙如瀑布般倾泻而下。你脚下的柏油路裂开了一道巨大的口子，露出下面锈迹斑斑的管道和电缆。整座城市的电力系统瞬间瘫痪，世界陷入了黑暗，只有断裂电线迸出的蓝色火花在闪烁。远处传来建筑倒塌的轰鸣声。地震持续了整整四十五秒，但感觉像过了一个世纪。",
+      "type": "daily",
+      "ageRange": [16, 90],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "寻找开阔地带避难，帮助受伤的人", "effects": { "HUMAN": 3, "LIFE": -1, "TRAUMA": 3, "REP": 2 } },
+        { "id": "branch_2", "text": "趁乱冲进废墟中搜刮财物和物资", "effects": { "MONEY": 3000, "TRAUMA": 2, "HUMAN": -3, "REP": -2 } },
+        { "id": "branch_3", "text": "全力保护自己和家人，不管其他人", "effects": { "LIFE": 1, "TRAUMA": 1 } }
+      ],
+      "effects": { "LIFE": -2, "TRAUMA": 3, "MONEY": -1000 },
+      "tags": ["自然灾害", "地震", "灾难", "破坏"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1233,
+      "title": "全城大停电",
+      "description": "夜之城的电网在超负荷运转了一百二十天后终于崩溃了。整座城市陷入前所未有的黑暗——没有全息广告，没有霓虹灯，没有路灯，连贫民窟的应急灯都熄灭了。在最初的几分钟里，城市安静得可怕。然后，黑暗中的声音开始涌现：警报声、尖叫声、玻璃破碎声、枪声。没有电力意味着生命维持系统停止运转，空气净化器失效，冷藏食物开始腐烂。夜之城露出了它最原始、最危险的面目。",
+      "type": "daily",
+      "ageRange": [16, 90],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 50,
+      "branches": [
+        { "id": "branch_1", "text": "固守家中，用手头物资度过难关", "effects": { "LIFE": 1, "MONEY": -500, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "加入街头的抢掠队伍——混乱中才有机会", "effects": { "MONEY": 2000, "TRAUMA": 2, "HUMAN": -3, "CHROME": 1 } },
+        { "id": "branch_3", "text": "利用自己的技术知识尝试修复社区供电", "effects": { "TECH": 3, "REP": 2, "HUMAN": 2, "TRAUMA": 2 } }
+      ],
+      "effects": { "LIFE": -1, "TRAUMA": 2, "TECH": -1 },
+      "tags": ["自然灾害", "停电", "电网", "混乱"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1234,
+      "title": "海平面上升淹没沿海区",
+      "description": "连续多日的风暴潮叠加海平面上升，终于冲垮了夜之城沿海区域的防洪堤。海水裹挟着垃圾、淤泥和化学废料涌入了低洼街区。一层楼被完全淹没，二层楼也进水到膝盖深。居民们惊慌失措地往高处转移，漂浮的汽车和集装箱在浑浊的水面上碰撞。水下可能藏着断裂的电线和尖锐的废墟碎片。这座建在海湾上的城市，正在被大海一寸一寸地收回。",
+      "type": "daily",
+      "ageRange": [16, 90],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "帮助邻居转移到高地，组织自救", "effects": { "HUMAN": 3, "REP": 2, "LIFE": -1, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "划着临时筏子去搜刮被淹的商店", "effects": { "MONEY": 2500, "LIFE": -2, "TRAUMA": 2, "HUMAN": -2 } }
+      ],
+      "effects": { "LIFE": -1, "TRAUMA": 2, "MONEY": -1000 },
+      "tags": ["自然灾害", "洪灾", "海平面", "环境崩溃"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1235,
+      "title": "致命热浪来袭",
+      "description": "一场史无前例的热浪笼罩了夜之城，气温飙升至摄氏四十八度。柏油路面被晒化，空气热得像烤箱里的对流。空调系统超负荷运转，不断有变压器因过热爆炸。街上不断有人中暑倒地，医院的急诊室门口排起了长队。没有钱装空调的穷人只能躺在湿毛巾上等死。连义体都开始过热报警，金属部件烫得不敢触碰。",
+      "type": "daily",
+      "ageRange": [16, 90],
+      "weight": 14,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "branch_1", "text": "花钱住进有中央空调的商场或酒店大堂", "effects": { "MONEY": -800, "LIFE": 1, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "去社区的公共避暑中心帮忙", "effects": { "HUMAN": 2, "REP": 1, "LIFE": -1 } }
+      ],
+      "effects": { "LIFE": -2, "TRAUMA": 1 },
+      "tags": ["自然灾害", "热浪", "高温", "极端天气"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1236,
+      "title": "寒潮冻裂水管",
+      "description": "极端寒潮毫无征兆地降临，气温骤降到零下二十度。夜之城的基础设施在设计时从未考虑过这样的低温——裸露的水管开始冻裂，整栋楼的自来水系统瘫痪。街道上结了一层黑色的冰，汽车失控相撞的事故频发。无家可归者蜷缩在角落里瑟瑟发抖，有些人就这样在睡梦中被冻死。你的公寓里也没有了暖气，呼出的气在空中凝结成白雾。",
+      "type": "daily",
+      "ageRange": [16, 90],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 30,
+      "branches": [
+        { "id": "branch_1", "text": "烧家具取暖，尽量撑过寒潮", "effects": { "LIFE": 1, "MONEY": -300, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "冒险去黑市买取暖器和燃料", "effects": { "MONEY": -2000, "LIFE": 2, "TRAUMA": 1, "DEBT": 1 } }
+      ],
+      "effects": { "LIFE": -1, "TRAUMA": 1 },
+      "tags": ["自然灾害", "寒潮", "寒冷", "极端天气"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1237,
+      "title": "变种鼠群泛滥",
+      "description": "城市垃圾处理系统崩溃后，地下管道里的老鼠开始疯狂繁殖。这些不是普通的老鼠——它们暴露在化学废料和放射性物质中，体型已经长到了猫那么大，眼睛在黑暗中发出红色的光。它们成群结队地涌上街道，啃咬电缆、破坏基础设施、攻击独行的行人。夜之城的卫生部门宣布进入「生物灾害」状态，但没人知道该怎么办。",
+      "type": "daily",
+      "ageRange": [16, 90],
+      "weight": 13,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "购买强效驱鼠设备和武器，保护住所", "effects": { "MONEY": -1500, "LIFE": 1, "TECH": 1, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "加入灭鼠队，按只领赏金", "effects": { "MONEY": 800, "STYLE": 2, "LIFE": -1, "TRAUMA": 2 } }
+      ],
+      "effects": { "LIFE": -1, "TRAUMA": 1 },
+      "tags": ["自然灾害", "生物灾害", "老鼠", "变异"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1238,
+      "title": "空气污染指数爆表",
+      "description": "今天的空气质量指数达到了惊人的九百八十——比「危险」级别还高出四倍。天空是深橙色的，太阳像一个模糊的红点在雾霾中若隐若现。即使戴上口罩，你仍然能闻到空气中刺鼻的硫磺和重金属味道。眼睛刺痛，喉咙发紧，每一次呼吸都像在吸入细碎的玻璃渣。街上几乎空无一人，只有自动贩卖机和送货机器人还在不知疲倦地工作。",
+      "type": "daily",
+      "ageRange": [16, 90],
+      "weight": 16,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "待在室内，开启最高级别的空气过滤系统", "effects": { "MONEY": -500, "LIFE": 1, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "冒着污染出门办事——你不能让生活停摆", "effects": { "LIFE": -2, "TRAUMA": 1, "MONEY": 500 } }
+      ],
+      "effects": { "LIFE": -1, "TRAUMA": 1 },
+      "tags": ["自然灾害", "空气污染", "环境", "健康"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1239,
+      "title": "饮用水污染危机",
+      "description": "官方发布紧急通知：城市供水系统被检测出含有高浓度工业溶剂和病原体。自来水龙头里流出来的不再是清水，而是泛着淡紫色荧光、散发怪味的液体。超市里的瓶装水在十分钟内被抢购一空，黑市上的纯净水价格翻了二十倍。脱水开始成为真正的威胁。你的喉咙干得像砂纸，但面对那些天价的水，你犹豫了。",
+      "type": "daily",
+      "ageRange": [16, 90],
+      "weight": 14,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "branch_1", "text": "花高价在黑市购买纯净水", "effects": { "MONEY": -3000, "LIFE": 2, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "煮沸自来水并用简易过滤器处理", "effects": { "LIFE": -1, "TECH": 1, "MONEY": -200 } },
+        { "id": "branch_3", "text": "组织社区居民一起打井取地下水", "effects": { "HUMAN": 3, "REP": 2, "TECH": 2, "MONEY": -1000, "TRAUMA": 1 } }
+      ],
+      "effects": { "LIFE": -1, "TRAUMA": 1 },
+      "tags": ["自然灾害", "水污染", "危机", "生存"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1240,
+      "title": "工厂连环爆炸",
+      "description": "城北的工业区发生了连环爆炸。第一声巨响让你的心脏都停跳了一拍，紧接着是第二声、第三声——像巨型烟花在近距离炸开。火光映红了半边天，冲击波震碎了数公里外的玻璃窗。有毒的黑烟柱升上天空，像一根指向天堂的黑色手指。消防车的警笛声从四面八方传来，但面对化学爆炸引发的大火，它们几乎无能为力。",
+      "type": "daily",
+      "ageRange": [16, 90],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "朝反方向撤离到安全地带", "effects": { "LIFE": 1, "TRAUMA": 2, "MONEY": -300 } },
+        { "id": "branch_2", "text": "逆流前往爆炸现场，看看能不能救人或搜刮", "effects": { "MONEY": 1500, "TRAUMA": 3, "LIFE": -2, "REP": 1, "HUMAN": -1 } }
+      ],
+      "effects": { "LIFE": -2, "TRAUMA": 2, "TRAUMA": 1 },
+      "tags": ["自然灾害", "爆炸", "工业", "火灾"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1241,
+      "title": "自动驾驶连环追尾",
+      "description": "一场针对城市交通AI的黑客攻击导致自动驾驶系统集体失灵。高速公路上，数百辆汽车在同一瞬间失去了控制，像多米诺骨牌一样连环相撞。飞车从空中轨道上坠落，在地面砸出巨大的火球。城市交通系统彻底瘫痪，被撞毁的车辆阻塞了每一条主干道。空中弥漫着汽油味和焦臭味，伤者的哀嚎和汽车警报声交织在一起。",
+      "type": "daily",
+      "ageRange": [16, 90],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "冒着风险去事故现场救人", "effects": { "HUMAN": 4, "REP": 3, "TRAUMA": 3, "LIFE": -2 } },
+        { "id": "branch_2", "text": "远离公路，徒步走小路回家", "effects": { "LIFE": 1, "TRAUMA": 2 } }
+      ],
+      "effects": { "TRAUMA": 2, "LIFE": -1 },
+      "tags": ["自然灾害", "车祸", "黑客", "自动驾驶"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1242,
+      "title": "地下城市塌陷",
+      "description": "夜之城的地下城——那些建在旧地铁隧道和废弃下水道里的非法定居点——发生了大面积塌陷。地面突然出现了一个直径几十米的巨大坑洞，吞噬了上面的街道和建筑。塌陷暴露出了地下错综复杂的管道、电缆和非法扩建的结构。尘埃落定后，你能听到从地下传来的呼救声。救援工作异常危险，因为二次塌陷随时可能发生。",
+      "type": "daily",
+      "ageRange": [16, 90],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "参与救援，下到塌陷区域寻找幸存者", "effects": { "HUMAN": 4, "REP": 2, "TRAUMA": 3, "LIFE": -2 } },
+        { "id": "branch_2", "text": "在塌陷区边缘围观，拍摄视频卖给新闻媒体", "effects": { "MONEY": 1000, "STYLE": 1, "HUMAN": -2 } }
+      ],
+      "effects": { "TRAUMA": 2, "LIFE": -1 },
+      "tags": ["自然灾害", "塌陷", "地下", "灾难"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1243,
+      "title": "核电站泄漏警报",
+      "description": "城郊的核电站发出了紧急警报——冷却系统出现故障，反应堆温度正在异常升高。虽然官方表示「局势在控制之中」，但整个城市都陷入了恐慌。辐射检测仪的读数在缓慢爬升，街上开始出现穿着防护服进行检测的人员。药店的碘片被抢购一空，人们用胶带密封门窗，往郊区方向涌去的车辆造成了严重拥堵。空气中弥漫着一种看不见的恐惧。",
+      "type": "daily",
+      "ageRange": [16, 90],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "收拾重要物品，撤离到安全距离之外", "effects": { "MONEY": -5000, "LIFE": 2, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "相信官方的说法，呆在家里减少外出", "effects": { "LIFE": -1, "TRAUMA": 2, "MONEY": -500 } }
+      ],
+      "effects": { "LIFE": -1, "TRAUMA": 3 },
+      "tags": ["自然灾害", "核泄漏", "辐射", "恐慌"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1244,
+      "title": "垃圾处理系统崩溃",
+      "description": "城市环卫AI在系统升级中崩溃了，导致整个垃圾处理系统停摆。街道上的垃圾开始以惊人的速度堆积。第一天，垃圾桶满了。第二天，人行道上堆满了黑色垃圾袋。第三天，垃圾袋破裂了，腐烂的厨余垃圾、用过的注射器、废弃的义体零件散落一地。恶臭弥漫在空气中，老鼠和蟑螂在垃圾堆中狂欢。这座曾经光鲜的赛博都市，正在被自己的废物慢慢掩埋。",
+      "type": "daily",
+      "ageRange": [16, 90],
+      "weight": 13,
+      "repeatable": true,
+      "cooldown": 35,
+      "branches": [
+        { "id": "branch_1", "text": "自己动手处理垃圾，至少保持门口干净", "effects": { "HUMAN": 1, "MONEY": -200, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "在垃圾堆中翻找可回收的废品卖钱", "effects": { "MONEY": 500, "LIFE": -1, "TRAUMA": 1 } }
+      ],
+      "effects": { "LIFE": -1, "TRAUMA": 1 },
+      "tags": ["自然灾害", "垃圾", "环境", "卫生"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1245,
+      "title": "太阳风暴来袭",
+      "description": "一场强烈的太阳风暴袭击了地球。在夜之城上空，天空呈现出诡异的紫色和绿色极光——但没有人有心情欣赏美景。电磁脉冲导致所有未加防护的电子设备失灵：义体短路、通讯中断、交通信号灯熄灭、银行系统瘫痪、甚至部分人的植入芯片开始过热。街上有人的义眼突然冒烟，有人因为心脏起搏器失效而倒地。科技在一瞬间变成了致命武器。",
+      "type": "daily",
+      "ageRange": [16, 90],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "躲进法拉第笼或地下掩体保护电子设备", "effects": { "TECH": 1, "LIFE": 1, "MONEY": -1000, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "被迫体验没有科技的生活——原始的反而安全", "effects": { "HUMAN": 2, "LIFE": -1, "TRAUMA": 2 } }
+      ],
+      "effects": { "TECH": -2, "CHROME": -1, "TRAUMA": 2 },
+      "tags": ["自然灾害", "太阳风暴", "EMP", "科技失效"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1246,
+      "title": "基因改造植物失控",
+      "description": "一家生物科技公司实验用的基因改造藤蔓逃逸出了实验室。这种被设计用来「快速净化土壤」的植物生长速度快得惊人，藤蔓一夜之间就能爬满整栋建筑。它们粗壮的根茎穿透了混凝土，缠绕住桥梁的支柱，钻进了下水道系统。城市的建筑结构开始出现裂缝。更可怕的是，这些植物会分泌一种腐蚀性的液体来「消化」障碍物。整座城市正在被绿色的入侵者慢慢勒紧。",
+      "type": "daily",
+      "ageRange": [16, 90],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "用火焰喷射器清理房屋周围的藤蔓", "effects": { "STYLE": 1, "MONEY": -2000, "LIFE": -1, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "采集藤蔓样本，卖给生物研究机构", "effects": { "MONEY": 3000, "TECH": 2, "TRAUMA": 2, "HUMAN": -1 } }
+      ],
+      "effects": { "LIFE": -1, "TRAUMA": 1 },
+      "tags": ["自然灾害", "基因改造", "植物", "生物灾害"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1247,
+      "title": "废弃工业区自燃大火",
+      "description": "城西的废弃工业区发生了自燃——几十年来堆积的化学废料和工业垃圾在高温下自行燃烧起来。大火迅速蔓延，释放出黑色的有毒浓烟和刺鼻的气体。消防队根本不敢靠近，因为不知道废弃仓库里还藏着什么危险化学品。火场中不断传来小规模的爆炸声，热浪逼得人们不断后退。整个西区都被笼罩在一片末日般的橘红色光芒中。",
+      "type": "daily",
+      "ageRange": [16, 90],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 40,
+      "branches": [
+        { "id": "branch_1", "text": "协助消防队在安全距离建立隔离带", "effects": { "HUMAN": 2, "REP": 1, "LIFE": -1, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "在火场外围捡拾被高温熔化的贵金属碎片", "effects": { "MONEY": 1200, "LIFE": -2, "TRAUMA": 2 } }
+      ],
+      "effects": { "LIFE": -1, "TRAUMA": 1, "MONEY": -500 },
+      "tags": ["自然灾害", "火灾", "工业", "污染"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1248,
+      "title": "大坝决堤预警",
+      "description": "上游那座已经使用了五十年的老水坝出现了致命裂缝。工程师在例行检查中发现了贯穿坝体的裂缝，并发出紧急预警——大坝随时可能溃堤。一旦决堤，洪水将在一小时内淹没下游的低洼城区，影响数十万居民。疏散警报响彻全城，警方用扩音器挨街挨巷地催促居民向高地转移。道路上挤满了逃难的车辆和行人，每个人的脸上都写满了惊恐。",
+      "type": "daily",
+      "ageRange": [16, 90],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "立刻收拾重要物品向高地转移", "effects": { "LIFE": 2, "MONEY": -2000, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "帮助行动不便的邻居一起撤离", "effects": { "HUMAN": 3, "REP": 2, "LIFE": 1, "TRAUMA": 2 } }
+      ],
+      "effects": { "TRAUMA": 2, "LIFE": -1 },
+      "tags": ["自然灾害", "洪水", "大坝", "撤离"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1249,
+      "title": "未知传染病爆发",
+      "description": "一种未知的传染病在夜之城的地下社区中悄然爆发。起初只是几个人发烧咳嗽，但很快病例数量呈指数级增长。感染者会先出现高烧和幻觉，随后皮肤上出现黑色的网状纹路，最终在极度痛苦中器官衰竭。医院被挤爆，街道上到处都是戴着防毒面具的人和穿着防护服的医疗队。政府发布了封锁令，整座城市进入了紧急状态。",
+      "type": "medical",
+      "ageRange": [16, 90],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "囤积物资和药品，在家严格自我隔离", "effects": { "MONEY": -5000, "LIFE": 2, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "加入医疗志愿者队伍，在一线帮助救治", "effects": { "HUMAN": 4, "REP": 3, "LIFE": -2, "TRAUMA": 3, "TECH": 1 } },
+        { "id": "branch_3", "text": "找黑市渠道搞到疫苗或特效药（如有）", "effects": { "MONEY": -8000, "LIFE": 2, "DEBT": 2, "HUMAN": -1 } }
+      ],
+      "effects": { "LIFE": -2, "TRAUMA": 2 },
+      "tags": ["自然灾害", "传染病", "疫情", "医疗危机"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1250,
+      "title": "城市供水系统腐蚀",
+      "description": "由于常年输送工业废水处理不达标的水源，城市的地下供水管道内壁被严重腐蚀。多处主管道同时爆裂，巨大的水柱冲破了柏油路面，将汽车掀翻，淹没了低洼的街区。喷涌而出的水带着铁锈色和浓烈的化学味道。抢修队估计至少需要一周才能修复。部分街区被迫断水，居民们不得不排队领取政府发放的应急饮用水。",
+      "type": "daily",
+      "ageRange": [16, 90],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 35,
+      "branches": [
+        { "id": "branch_1", "text": "排队领取应急水，耐心等待修复", "effects": { "HUMAN": 1, "TRAUMA": 1, "LIFE": 1 } },
+        { "id": "branch_2", "text": "贿赂抢修队让自己家优先恢复供水", "effects": { "MONEY": -2000, "LIFE": 2, "REP": -1 } }
+      ],
+      "effects": { "LIFE": -1, "TRAUMA": 1, "MONEY": -300 },
+      "tags": ["自然灾害", "供水", "基础设施", "腐蚀"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1251,
+      "title": "垃圾山滑坡",
+      "description": "城郊那座高达百米的垃圾山——夜之城几十年来的废物堆积地——因为雨水渗透发生了大规模滑坡。数百万吨的垃圾混合着有毒污泥倾泻而下，掩埋了山脚下的几个非法棚户区。空气中弥漫着令人窒息的恶臭。救援队在垃圾堆中搜寻幸存者，但希望渺茫。这场灾难揭示了这座光鲜赛博都市的阴暗面：它产生的废物最终会回来找它算账。",
+      "type": "daily",
+      "ageRange": [16, 90],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "前往灾区参与搜救", "effects": { "HUMAN": 3, "REP": 2, "TRAUMA": 3, "LIFE": -1 } },
+        { "id": "branch_2", "text": "捐赠物资给受灾的难民", "effects": { "HUMAN": 2, "MONEY": -1000, "TRAUMA": 1 } }
+      ],
+      "effects": { "TRAUMA": 2 },
+      "tags": ["自然灾害", "垃圾", "滑坡", "环境灾难"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1252,
+      "title": "光化学烟雾锁城",
+      "description": "汽车尾气和工业排放物在强烈日照下发生了光化学反应，生成了一层黄褐色的光化学烟雾，像锅盖一样严严实实地扣在城市上空。能见度不足五米，飞机停飞，高速公路关闭。呼吸变得困难——即使戴了口罩，喉咙和肺部依然感到灼烧般的疼痛。学校停课，公司停工，夜之城变成了一座被毒气包围的鬼城。",
+      "type": "daily",
+      "ageRange": [16, 90],
+      "weight": 13,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "囤积氧气罐和口罩，足不出户", "effects": { "MONEY": -1500, "LIFE": 2, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "戴上最厚的防毒面具外出工作——生活还要继续", "effects": { "LIFE": -1, "STYLE": 1, "MONEY": 500 } }
+      ],
+      "effects": { "LIFE": -1, "TRAUMA": 1 },
+      "tags": ["自然灾害", "光化学烟雾", "空气污染", "环境"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1253,
+      "title": "地陷形成城市天坑",
+      "description": "市中心最繁华的商业街突然出现了巨大的天坑。地面毫无预兆地塌陷，形成一个直径五十米、深达三十米的巨洞。一辆满载乘客的悬浮巴士坠入了坑中，路灯、报亭、整棵行道树都被吞没。天坑的横断面暴露出了城市几十年来层层叠叠的建设痕迹——最下面是百年前的下水道，上面是地铁隧道，再上面是各种管道和电缆，最上面才是今天的路面。这是一部垂直的城市历史。",
+      "type": "daily",
+      "ageRange": [16, 90],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "参与救援，用绳索下到坑底寻找生还者", "effects": { "HUMAN": 4, "REP": 3, "TRAUMA": 3, "LIFE": -2 } },
+        { "id": "branch_2", "text": "在警戒线外围拍摄独家画面卖给新闻平台", "effects": { "MONEY": 3000, "STYLE": 1, "HUMAN": -1 } }
+      ],
+      "effects": { "TRAUMA": 2, "LIFE": -1 },
+      "tags": ["自然灾害", "地陷", "天坑", "事故"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1254,
+      "title": "高塔倒塌危机",
+      "description": "一栋年久失修的摩天大楼在强风中出现了结构性倾斜。大楼顶部的全息广告牌已经歪向一侧，玻璃幕墙不断碎裂坠落。工程检测机器人报告楼体核心支柱出现金属疲劳裂缝，大楼随时可能倒塌。方圆五百米的居民被紧急疏散。你站在安全距离外，看着这栋曾经的「未来建筑」在风中摇摇欲坠，像一个即将倒下的钢铁巨人。",
+      "type": "daily",
+      "ageRange": [16, 90],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 50,
+      "branches": [
+        { "id": "branch_1", "text": "配合疏散，带上重要文件离开危险区域", "effects": { "LIFE": 1, "TRAUMA": 1, "MONEY": -500 } },
+        { "id": "branch_2", "text": "不顾警告冲进大楼搬运值钱物品", "effects": { "MONEY": 4000, "LIFE": -2, "TRAUMA": 2, "HUMAN": -2 } }
+      ],
+      "effects": { "TRAUMA": 1 },
+      "tags": ["自然灾害", "建筑倒塌", "危楼", "疏散"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1255,
+      "title": "超强台风登陆",
+      "description": "一个超强台风在夜之城沿海登陆，风力达到了十八级。暴雨像子弹一样横扫一切，路上的行人被风吹得站不住脚，只能趴在地上爬行。临时搭建的棚屋像纸片一样被撕碎，飞散的碎片在空中变成了致命的弹片。海水倒灌导致沿海街区水深超过三米。整座城市在风暴中颤抖，电力中断，通讯中断，每一秒都像是在和死神博弈。",
+      "type": "daily",
+      "ageRange": [16, 90],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 40,
+      "branches": [
+        { "id": "branch_1", "text": "躲进坚固的建筑物中，用家具加固门窗", "effects": { "LIFE": 2, "TRAUMA": 1, "MONEY": -800 } },
+        { "id": "branch_2", "text": "冒险去救助被困在低洼处的邻居", "effects": { "HUMAN": 3, "REP": 2, "LIFE": -1, "TRAUMA": 2 } }
+      ],
+      "effects": { "LIFE": -1, "TRAUMA": 2, "MONEY": -1000 },
+      "tags": ["自然灾害", "台风", "风暴", "极端天气"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1256,
+      "title": "数据中心火灾",
+      "description": "城市主数据中心发生了严重火灾——这座存放着全市居民身份信息、金融记录和医疗档案的建筑被大火吞噬。消防系统启动时喷出的灭火剂和高温共同作用，导致了大量数据被不可逆地损坏。这意味着身份认证系统可能崩溃、银行账户记录可能丢失、医疗历史可能被永远抹去。数百万人可能一夜之间变成「不存在的人」。",
+      "type": "daily",
+      "ageRange": [16, 90],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "立刻去银行和政府部门备份自己的身份数据", "effects": { "MONEY": -2000, "TRAUMA": 1, "TECH": 1 } },
+        { "id": "branch_2", "text": "趁身份系统混乱，制造一套全新的身份", "effects": { "TECH": 2, "REP": -2, "HUMAN": -2, "STYLE": 1 } }
+      ],
+      "effects": { "TRAUMA": 2, "TECH": -1 },
+      "tags": ["自然灾害", "火灾", "数据中心", "数据丢失"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1257,
+      "title": "城市热岛效应致死",
+      "description": "夜之城的热岛效应达到了致命程度。由于混凝土和金属吸收了全天的热量，夜间温度不仅没有下降，反而比白天更高。市中心的气温突破了五十度，建筑物在白天储存的热量像烤箱一样向室内辐射。低收入街区因为没有足够的制冷设备，出现了大规模中暑死亡事件。冷藏车的尸体已经装不下了。你能做的只有看着这座把自己烧焦的城市。",
+      "type": "daily",
+      "ageRange": [16, 90],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 30,
+      "branches": [
+        { "id": "branch_1", "text": "出城到郊区避难，等热浪过去", "effects": { "MONEY": -3000, "LIFE": 2, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "留在城里，用一切办法给住所降温", "effects": { "MONEY": -2000, "LIFE": 1, "TRAUMA": 1 } }
+      ],
+      "effects": { "LIFE": -2, "TRAUMA": 1 },
+      "tags": ["自然灾害", "热岛效应", "高温", "死亡"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1258,
+      "title": "全城通讯瘫痪",
+      "description": "城市的主通讯卫星遭到了不明来源的干扰，所有无线通讯全面中断。手机没有信号，网络无法连接，无线电只剩下静电噪音。人们突然被切断了和世界的联系，陷入了信息孤岛。街头上人们举着手机寻找信号的样子像在进行某种诡异的仪式。在通讯中断的状态下，谣言开始疯传——有人说这是恐怖袭击，有人说这是企业战争的前奏。没有信息的城市比没有电力的城市更可怕。",
+      "type": "daily",
+      "ageRange": [16, 90],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 35,
+      "branches": [
+        { "id": "branch_1", "text": "利用有线网络或短波电台获取信息", "effects": { "TECH": 2, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "出门打探消息，和邻居互相通报情况", "effects": { "HUMAN": 2, "TRAUMA": 1, "REP": 1 } }
+      ],
+      "effects": { "TRAUMA": 1, "TECH": -1 },
+      "tags": ["自然灾害", "通讯", "瘫痪", "信息孤岛"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 1259,
+      "title": "次生灾害连锁反应",
+      "description": "一场最初的地震引发了无法遏制的次生灾害链：燃气管道破裂导致多处爆炸，爆炸引发火灾，火灾蔓延到化工厂导致有毒气体泄漏，有毒云团迫使更多区域疏散，而混乱中交通事故不断。整座城市像一台失控的机器，每个齿轮的崩坏都在加速下一个齿轮的崩溃。应急服务已经完全饱和，911的等待时间超过四十分钟。你只能依靠自己了。",
+      "type": "daily",
+      "ageRange": [16, 90],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "寻找一个远离所有危险源的安全据点", "effects": { "LIFE": 1, "MONEY": -3000, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "发挥自己的综合生存技能，在混乱中生存下来", "effects": { "STYLE": 2, "TECH": 2, "LIFE": -1, "TRAUMA": 3, "REP": 2 } }
+      ],
+      "effects": { "LIFE": -2, "TRAUMA": 3 },
+      "tags": ["自然灾害", "次生灾害", "连锁反应", "末日"],
+      "deathChainEntry": true
+    }
+  ]
+}

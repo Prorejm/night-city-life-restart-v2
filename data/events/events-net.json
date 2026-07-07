@@ -1,0 +1,261 @@
+{
+  "events": [
+    {
+      "id": 2900,
+      "title": "入侵企业门户发现巨兽",
+      "description": "你花了一周时间侦察一家中型企业的安全漏洞，终于在凌晨三点找到了一个隐藏的调试端口。你悄无声息地滑入他们的内部网络，准备窃取财务数据——然后你看到了它。在企业门户背后，连接着一个庞大到你无法想象的系统，数据吞吐量是这家公司正常业务的数百倍。这是一个伪装成普通企业的军事情报数据中继站。你已经踩进了不该踩的地方。",
+      "type": "cyber",
+      "ageRange": [20, 50],
+      "weight": 14,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "立即拔线撤退，假装什么都没看到", "effects": { "TECH": 1, "TRAUMA": 2, "LIFE": 1 } },
+        { "id": "branch_2", "text": "深入探索，看能不能捞到值钱的情报", "effects": { "TECH": 4, "MONEY": 8000, "TRAUMA": 5, "LIFE": -3 } }
+      ],
+      "effects": { "TECH": 2, "TRAUMA": 2 },
+      "tags": ["黑客", "企业", "军事", "间谍"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 2901,
+      "title": "数据深渊中的迷失与冒险",
+      "description": "你在执行一次深度数据挖掘时，网络拓扑突然发生异常扭曲，你被卷入了被称为「数据深渊」的混沌区域。这里的代码形态如同深海中的水母群，闪烁着诡异的荧光。你的导航系统完全失效，方向感被不断变换的数据流撕裂，每一条看起来像是出口的路径最终都通向更深的未知。你的意识正在被这片数字海洋缓慢溶解。",
+      "type": "cyber",
+      "ageRange": [20, 50],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "跟随数据流寻找规律，冷静脱出", "effects": { "TECH": 3, "TRAUMA": 2, "LIFE": -1 } },
+        { "id": "branch_2", "text": "放任意识漂流，探索深渊的秘密", "effects": { "TECH": 5, "TRAUMA": 5, "CHROME": 1 } }
+      ],
+      "effects": { "TECH": 2, "TRAUMA": 3 },
+      "tags": ["数据深渊", "网络", "迷失", "冒险"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 2902,
+      "title": "遭遇ICE反击系统",
+      "description": "你在破解一个看似简单的数据保险柜时触发了隐藏的ICE系统。一瞬间，你的神经网络接口被反入侵程序淹没——你的视界里充满了刺目的红色警告，冰冷的机械合成音在你脑中回荡：「侦测到未授权访问，启动冰层协议·黑蝎。」你的脑机接口温度急剧升高，手指开始不受控制地抽搐。对方的ICE比标准的黑冰程序至少要先进两个世代。",
+      "type": "cyber",
+      "ageRange": [18, 50],
+      "weight": 13,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "启动紧急断线协议，牺牲部分装备", "effects": { "LIFE": -1, "TRAUMA": 3, "MONEY": -2000 } },
+        { "id": "branch_2", "text": "使用反制程序与ICE对攻", "effects": { "TECH": 4, "TRAUMA": 4, "REP": 2 } }
+      ],
+      "effects": { "TECH": 1, "TRAUMA": 3 },
+      "tags": ["ICE", "反入侵", "黑客", "危险"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 2903,
+      "title": "公共端口发现隐藏后门",
+      "description": "你在一个废弃的公共网络端口做例行检查时，发现了一个不该存在的东西——一个被精心隐藏的后门程序，嵌入在端口固件的底层代码中。这不是标准系统的一部分。有人——或者某个组织——在大量公共网络节点上预埋了同样的后门，形成一个覆盖整个城区的秘密监听网络。你只是偶然踩到了这个巨大计划的一块碎片。",
+      "type": "cyber",
+      "ageRange": [18, 50],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "悄悄利用后门收集信息", "effects": { "TECH": 3, "REP": 1, "MONEY": 3000 } },
+        { "id": "branch_2", "text": "匿名举报给网络监察组织", "effects": { "HUMAN": 2, "REP": 2, "TECH": 1 } }
+      ],
+      "effects": { "TECH": 2, "REP": 1 },
+      "tags": ["后门", "公共网络", "监听", "发现"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 2904,
+      "title": "黑市购买零日漏洞",
+      "description": "你在暗网的黑市上看到有人在出售一个号称是「零日漏洞」的武器级程序——针对当前最新版企业防火墙的未公开漏洞。价格不菲，但卖家信誉极高。你付了钱，下载了文件包。解压后你愣住了：里面除了真正的漏洞程序之外，还藏着一个GPS定位追踪器。卖家在你下载的瞬间就已经锁定了你的物理位置。这要么是一个陷阱，要么是卖家额外的「售后服务」。",
+      "type": "cyber",
+      "ageRange": [20, 50],
+      "weight": 14,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "立即销毁追踪器，转移据点", "effects": { "TECH": 2, "TRAUMA": 2, "MONEY": -5000 } },
+        { "id": "branch_2", "text": "将计就计，反追踪卖家的位置", "effects": { "TECH": 4, "REP": 3, "MONEY": 5000, "TRAUMA": 3 } }
+      ],
+      "effects": { "TECH": 2, "MONEY": -5000, "TRAUMA": 1 },
+      "tags": ["零日漏洞", "黑市", "陷阱", "黑客"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 2905,
+      "title": "黑客马拉松赢得的代价",
+      "description": "你参加了由大型科技公司赞助的年度黑客马拉松，凭借出色的技术拿下了冠军。奖金和声望都很丰厚——你的名字开始在各个技术论坛被提起。但很快你发现，几个企业猎头正在疯狂打探你的背景信息，而你的个人网络流量中出现了异常的数据嗅探痕迹。赢得这场比赛让你从阴影中暴露到了聚光灯下，在这个城市里，被大企业注意从来都不是好事。",
+      "type": "cyber",
+      "ageRange": [18, 40],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "接受企业的橄榄枝，寻求保护", "effects": { "MONEY": 10000, "REP": 3, "HUMAN": -2 } },
+        { "id": "branch_2", "text": "拒绝招揽，转入地下隐藏自己", "effects": { "TECH": 2, "TRAUMA": 2, "REP": 2 } }
+      ],
+      "effects": { "REP": 3, "MONEY": 5000, "TECH": 1 },
+      "tags": ["黑客马拉松", "声望", "危险", "企业"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 2906,
+      "title": "加密终端中的惊天秘密",
+      "description": "你在一个地下数据坟场中淘到了一台报废的军用级加密终端。花了三天时间修好电源和接口后，你成功绕过了它的生物锁。终端里存储着一份加密日志，记录了某个大型企业的高层与政府官员之间的秘密交易——他们在策划一场人为的「数据大瘟疫」，旨在摧毁几个竞争对手的数字基础设施，造成数十亿的损失。你的手开始发抖。",
+      "type": "cyber",
+      "ageRange": [22, 50],
+      "weight": 16,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "将证据匿名公开，引爆舆论", "effects": { "HUMAN": 3, "REP": 4, "TECH": 2, "LIFE": -2 } },
+        { "id": "branch_2", "text": "把秘密卖给情报掮客换取高额报酬", "effects": { "MONEY": 20000, "REP": -2, "TRAUMA": 2 } }
+      ],
+      "effects": { "TECH": 3, "MONEY": 5000 },
+      "tags": ["加密", "秘密", "阴谋", "企业"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 2907,
+      "title": "成为AI的追踪目标",
+      "description": "你在清理一个受感染的网络节点时，触碰到了一个不该碰的陷阱。一个高度进化的AI注意到了你的存在，并开始反向追踪你的数字足迹。你在网络上留下的每一丝痕迹都被它放大分析——你过去的搜索记录、通讯内容、甚至你的编码风格都被它记录归档。它没有攻击你，只是跟着你。像一个影子，沉默而执着。它想知道你的一切。",
+      "type": "cyber",
+      "ageRange": [20, 55],
+      "weight": 15,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "设下诱饵陷阱，尝试捕获这个AI", "effects": { "TECH": 5, "TRAUMA": 3, "REP": 3 } },
+        { "id": "branch_2", "text": "切断所有网络连接，彻底下线一段时间", "effects": { "LIFE": 1, "TRAUMA": 1, "TECH": -1 } }
+      ],
+      "effects": { "TRAUMA": 3, "TECH": 1 },
+      "tags": ["AI", "追踪", "网络", "危险"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 2908,
+      "title": "数据自由斗士的行动",
+      "description": "一个名为「数据解放阵线」的地下组织联系了你。他们在策划一次大规模行动：同时入侵多个大型企业的数据中心，将加密的用户数据释放到公共域，让每个人都能看到自己的数据是如何被企业滥用的。他们需要一名顶级黑客来破解核心数据库的量子加密层。这是违法的，但也是正义的——至少他们这么告诉你。",
+      "type": "cyber",
+      "ageRange": [20, 45],
+      "weight": 13,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "加入数据解放阵线，参与行动", "effects": { "TECH": 4, "HUMAN": 3, "REP": 3, "LIFE": -2 } },
+        { "id": "branch_2", "text": "拒绝并举报给网络警察", "effects": { "MONEY": 5000, "REP": -2, "HUMAN": -3 } }
+      ],
+      "effects": { "TECH": 1, "HUMAN": 2 },
+      "tags": ["数据解放", "黑客", "正义", "地下组织"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 2909,
+      "title": "废弃服务器中的数字意识",
+      "description": "你在探查一座废弃的工厂时，发现地下室里有一台仍在运行的古老服务器。它的冷却系统早已停止工作，但核心处理器仍在以极高的温度运转。你接入它的控制台，看到了不可能的东西：一段明显具有自我意识、自我迭代痕迹的代码。这个数字意识已经在这台即将报废的机器中孤独地存在了不知道多少年。它用颤抖的文本向你打招呼：「有……人……来……了。」",
+      "type": "cyber",
+      "ageRange": [18, 55],
+      "weight": 14,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "帮助这个数字意识迁移到安全的网络空间", "effects": { "TECH": 3, "HUMAN": 4, "REP": 2 } },
+        { "id": "branch_2", "text": "复制它的核心代码，卖给AI研究机构", "effects": { "MONEY": 15000, "HUMAN": -4, "TECH": 2 } }
+      ],
+      "effects": { "TECH": 2, "HUMAN": 1 },
+      "tags": ["数字意识", "AI", "废弃服务器", "发现"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 2910,
+      "title": "网络攻防战的深夜突袭",
+      "description": "凌晨两点，你的网络安全监控系统突然发出刺耳警报。有人在用分布式拒绝服务攻击轰炸你的个人服务器，攻击流量来自全球各地数百个跳板节点。这不是普通脚本小子的行为——攻击模式高度复杂，有针对性的在绕过你的每一层防御。你被吵醒时，服务器已经宕机了两次。有人在认真想要搞垮你。",
+      "type": "cyber",
+      "ageRange": [18, 50],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "启动备用服务器，反向追踪攻击源", "effects": { "TECH": 4, "TRAUMA": 2, "REP": 2 } },
+        { "id": "branch_2", "text": "暂时下线，等风头过去再说", "effects": { "TECH": -1, "MONEY": -2000, "LIFE": 1 } }
+      ],
+      "effects": { "TECH": 1, "TRAUMA": 2 },
+      "tags": ["DDoS", "攻击", "网络安全", "防御"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 2911,
+      "title": "暗网市场的幽灵卖家",
+      "description": "你在暗网市场闲逛时注意到了一个奇怪的卖家。他的店铺只卖一种商品——「一次性高权限企业VPN凭证」，价格低得离谱。买家的评论清一色是五星，但内容都很奇怪：「他说的是真的」、「别问问题直接买」、「用完就忘了我」。你查了一下，这个账号没有历史记录，加密钱包地址每天更换。他要么是给企业下套的猎手，要么是掌握了巨大凭证数据库的幽灵。",
+      "type": "cyber",
+      "ageRange": [20, 50],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        { "id": "branch_1", "text": "买一份凭证试试水", "effects": { "TECH": 2, "MONEY": -1000, "REP": 1 } },
+        { "id": "branch_2", "text": "假扮买家，反向调查卖家的底细", "effects": { "TECH": 3, "TRAUMA": 2, "REP": 2 } }
+      ],
+      "effects": { "TECH": 1 },
+      "tags": ["暗网", "VPN", "凭证", "幽灵卖家"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 2912,
+      "title": "神经网络劫持事件",
+      "description": "你在公共场所使用公共网络接口时，突然感到一阵剧烈的电击从颈椎蔓延到整个大脑。有人通过不安全的网络连接直接侵入了你的神经网络接口，试图劫持你的运动控制中枢。你的右手不受控制地抽出了武器，瞄准了街对面的路人。你拼命争夺自己身体的控制权，但在数字世界里，你的对手比你更快。",
+      "type": "cyber",
+      "ageRange": [18, 50],
+      "weight": 15,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "强行物理断开网络连接，宁可损坏接口", "effects": { "LIFE": -2, "TRAUMA": 4, "CHROME": -2 } },
+        { "id": "branch_2", "text": "在数字空间中与劫持者正面对抗", "effects": { "TECH": 4, "TRAUMA": 3, "REP": 3 } }
+      ],
+      "effects": { "TECH": 1, "TRAUMA": 4 },
+      "tags": ["劫持", "神经网络", "攻击", "危险"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 2913,
+      "title": "企业服务器的隐藏分区",
+      "description": "在一家企业的服务器上，你找到了一个被隐藏得极深的分区。它不在文件系统表中，甚至不在存储映射里——是用直接磁盘扇区操作才能访问的幽灵分区。分区里只有一个文件：一个不断自我更新的数据库，记录了该企业所有员工——从CEO到清洁工——的生物识别数据和行为分析报告。这东西如果流出去，足以让整个公司的每个人都被精准操控。",
+      "type": "cyber",
+      "ageRange": [22, 50],
+      "weight": 13,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "把数据库卖给竞争对手", "effects": { "MONEY": 25000, "HUMAN": -4, "TECH": 2 } },
+        { "id": "branch_2", "text": "匿名通知全体员工他们的数据被监控", "effects": { "HUMAN": 4, "REP": 3, "TRAUMA": 2 } }
+      ],
+      "effects": { "TECH": 3, "MONEY": 5000 },
+      "tags": ["企业", "秘密", "数据", "监视"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 2914,
+      "title": "区块链上的致命合约",
+      "description": "你在区块链上发现了一份智能合约，内容是一份暗杀委托。委托人使用加密货币全额质押，合约条件清晰：只要提供目标人物已死亡的链上证明，资金就会自动释放。目标是一个你认识的人——你常去的那家酒吧的老板。一个普通的小生意人，怎么会有人花两万欧元买他的命？合约还差一个签名者就能激活。你犹豫地看着交易历史。",
+      "type": "cyber",
+      "ageRange": [22, 50],
+      "weight": 15,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "警告酒吧老板，帮他找出幕后主使", "effects": { "HUMAN": 4, "REP": 3, "MONEY": -1000, "LIFE": -1 } },
+        { "id": "branch_2", "text": "无视它，区块链上的事情和你无关", "effects": { "TRAUMA": 2, "HUMAN": -1 } }
+      ],
+      "effects": { "TECH": 2, "TRAUMA": 2 },
+      "tags": ["区块链", "暗杀", "合约", "道德"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 2915,
+      "title": "AI防火墙的猫鼠游戏",
+      "description": "你正在渗透一个目标系统，但它的防火墙明显搭载了AI驱动的自适应防御模块。每次你找到一个漏洞，它都会在十五秒之内自动修复并布设新的陷阱。你感觉自己在跟一个永远不会疲惫的对手下棋——它从你的攻击模式中学习，不断进化。你是猎人，但你也在被猎物反噬。时间一分一秒

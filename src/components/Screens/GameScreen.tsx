@@ -146,25 +146,25 @@ interface EventCardProps {
 
 const EventCard: React.FC<EventCardProps> = ({ entry }) => {
   return (
-    <div className="event-card-enter border-l-2 border-neon-cyan/30 bg-white/[0.02] px-3 py-2">
-      <div className="mb-0.5 flex items-center justify-between">
-        <span className="font-display text-xs font-bold text-neon-cyan">
+    <div className="event-card-enter border-l-2 border-neon-cyan/30 bg-white/[0.02] px-4 py-3">
+      <div className="mb-1 flex items-center justify-between">
+        <span className="font-display text-sm font-bold text-neon-cyan">
           {entry.title}
         </span>
-        <span className="font-mono text-[9px] text-muted-foreground/60">
+        <span className="font-mono text-[11px] text-muted-foreground/60">
           T{entry.turn} Age {Math.round(entry.age * 10) / 10}
         </span>
       </div>
-      <p className="font-mono text-[11px] leading-relaxed text-muted-foreground/80">
+      <p className="font-sans text-sm leading-relaxed text-muted-foreground/90">
         {entry.description}
       </p>
       {entry.effects && Object.keys(entry.effects).length > 0 && (
-        <div className="mt-1 flex flex-wrap gap-1.5">
+        <div className="mt-2 flex flex-wrap gap-2">
           {Object.entries(entry.effects).map(([k, v]) => (
             <span
               key={k}
               className={cn(
-                'font-mono text-[9px]',
+                'font-mono text-[11px]',
                 (v ?? 0) > 0 ? 'text-green-400/70' : 'text-red-400/70'
               )}
             >

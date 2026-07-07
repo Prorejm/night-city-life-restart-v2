@@ -10,10 +10,10 @@
       "repeatable": true,
       "cooldown": 8,
       "branches": [
-        { "id": "branch_1", "text": "继续等待，直到被叫到号", "effects": { "HEALTH": -2, "MENTAL": -2, "MONEY": -500 } },
-        { "id": "branch_2", "text": "放弃公立医院，去找地下诊所", "effects": { "HEALTH": -1, "MONEY": -800, "STREET_SMART": 1 } }
+        { "id": "branch_1", "text": "继续等待，直到被叫到号", "effects": { "LIFE": -2, "TRAUMA": -2, "MONEY": -500 } },
+        { "id": "branch_2", "text": "放弃公立医院，去找地下诊所", "effects": { "LIFE": -1, "MONEY": -800 } }
       ],
-      "effects": { "HEALTH": -1, "MENTAL": -1, "MONEY": -300 },
+      "effects": { "LIFE": -1, "TRAUMA": -1, "MONEY": -300 },
       "tags": ["医疗", "急诊", "等待", "公立"],
       "deathChainEntry": false
     },
@@ -27,10 +27,10 @@
       "repeatable": true,
       "cooldown": 15,
       "branches": [
-        { "id": "branch_1", "text": "分期付款，背上长期债务", "effects": { "MONEY": -3000, "MENTAL": -3, "DEBT": 3 } },
-        { "id": "branch_2", "text": "拒绝支付，让催收公司来找我吧", "effects": { "COOL": 2, "NCPD_WANTED": 1, "KARMA": -1 } }
+        { "id": "branch_1", "text": "分期付款，背上长期债务", "effects": { "MONEY": -3000, "TRAUMA": -3, "DEBT": 3 } },
+        { "id": "branch_2", "text": "拒绝支付，让催收公司来找我吧", "effects": { "STYLE": 2, "DEBT": 1, "HUMAN": -1 } }
       ],
-      "effects": { "MONEY": -2000, "MENTAL": -2 },
+      "effects": { "MONEY": -2000, "TRAUMA": -2 },
       "tags": ["医疗", "账单", "债务", "保险"],
       "deathChainEntry": false
     },
@@ -44,10 +44,10 @@
       "repeatable": true,
       "cooldown": 6,
       "branches": [
-        { "id": "branch_1", "text": "接受地下诊所的治疗，省钱但冒险", "effects": { "HEALTH": 1, "MONEY": -500, "INFECTION_RISK": 2 } },
-        { "id": "branch_2", "text": "看到环境后转身离开", "effects": { "COOL": 1, "HEALTH": -1, "MONEY": -50 } }
+        { "id": "branch_1", "text": "接受地下诊所的治疗，省钱但冒险", "effects": { "LIFE": 1, "MONEY": -500, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "看到环境后转身离开", "effects": { "STYLE": 1, "LIFE": -1, "MONEY": -50 } }
       ],
-      "effects": { "MONEY": -400, "HEALTH": 0 },
+      "effects": { "MONEY": -400, "LIFE": 0 },
       "tags": ["医疗", "地下诊所", "黑市", "冒险"],
       "deathChainEntry": false
     },
@@ -61,10 +61,10 @@
       "repeatable": false,
       "cooldown": 0,
       "branches": [
-        { "id": "branch_1", "text": "感谢创伤小组的高效救治", "effects": { "HEALTH": 4, "MONEY": -500, "MENTAL": 2 } },
-        { "id": "branch_2", "text": "对这样阶级分明的医疗系统感到愤怒", "effects": { "COOL": 2, "KARMA": 2, "MENTAL": -1 } }
+        { "id": "branch_1", "text": "感谢创伤小组的高效救治", "effects": { "LIFE": 4, "MONEY": -500, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "对这样阶级分明的医疗系统感到愤怒", "effects": { "STYLE": 2, "HUMAN": 2, "TRAUMA": -1 } }
       ],
-      "effects": { "HEALTH": 3, "MONEY": -300 },
+      "effects": { "LIFE": 3, "MONEY": -300 },
       "tags": ["医疗", "创伤小组", "保险", "特权"],
       "deathChainEntry": false
     },
@@ -78,10 +78,10 @@
       "repeatable": true,
       "cooldown": 10,
       "branches": [
-        { "id": "branch_1", "text": "借钱买药，缓解症状", "effects": { "HEALTH": 1, "MONEY": -1500, "MENTAL": -1 } },
-        { "id": "branch_2", "text": "硬扛过去，省钱赌一把", "effects": { "HEALTH": -3, "MONEY": 0, "COOL": 1 } }
+        { "id": "branch_1", "text": "借钱买药，缓解症状", "effects": { "LIFE": 1, "MONEY": -1500, "TRAUMA": -1, "DEBT": 1 } },
+        { "id": "branch_2", "text": "硬扛过去，省钱赌一把", "effects": { "LIFE": -3, "MONEY": 0, "STYLE": 1 } }
       ],
-      "effects": { "HEALTH": -2, "MENTAL": -1 },
+      "effects": { "LIFE": -2, "TRAUMA": -1 },
       "tags": ["医疗", "慢性病", "药物", "贫困"],
       "deathChainEntry": false
     },
@@ -95,10 +95,10 @@
       "repeatable": false,
       "cooldown": 0,
       "branches": [
-        { "id": "branch_1", "text": "提起申诉，与保险公司打持久战", "effects": { "MONEY": -2000, "MENTAL": -3, "COOL": 2 } },
-        { "id": "branch_2", "text": "放弃保险，把钱留着应急", "effects": { "MONEY": 500, "MENTAL": -2, "HEALTH_RISK": 2 } }
+        { "id": "branch_1", "text": "提起申诉，与保险公司打持久战", "effects": { "MONEY": -2000, "TRAUMA": -3, "STYLE": 2 } },
+        { "id": "branch_2", "text": "放弃保险，把钱留着应急", "effects": { "MONEY": 500, "TRAUMA": -2, "LIFE": -2 } }
       ],
-      "effects": { "MENTAL": -2, "MONEY": -500 },
+      "effects": { "TRAUMA": -2, "MONEY": -500 },
       "tags": ["医疗", "保险", "拒保", "已有病症"],
       "deathChainEntry": false
     },
@@ -112,11 +112,11 @@
       "repeatable": true,
       "cooldown": 30,
       "branches": [
-        { "id": "branch_1", "text": "持续推广募捐链接，尽量多筹一些", "effects": { "MONEY": 1000, "MENTAL": -2, "NETWORK": -1 } },
-        { "id": "branch_2", "text": "放弃募捐，想办法自己赚钱", "effects": { "COOL": 2, "MENTAL": 1 } }
+        { "id": "branch_1", "text": "持续推广募捐链接，尽量多筹一些", "effects": { "MONEY": 1000, "TRAUMA": -2, "REP": -1 } },
+        { "id": "branch_2", "text": "放弃募捐，想办法自己赚钱", "effects": { "STYLE": 2, "TRAUMA": 1 } }
       ],
-      "effects": { "MONEY": 300, "MENTAL": -1 },
-      "tags": ["医疗", "募捐", "GoFundMe", "债务"],
+      "effects": { "MONEY": 300, "TRAUMA": -1 },
+      "tags": ["医疗", "募捐", "众筹", "债务"],
       "deathChainEntry": false
     },
     {
@@ -129,10 +129,10 @@
       "repeatable": true,
       "cooldown": 5,
       "branches": [
-        { "id": "branch_1", "text": "在社区诊所接受基础治疗", "effects": { "HEALTH": 2, "MONEY": -50, "MENTAL": 1 } },
-        { "id": "branch_2", "text": "留下自愿帮忙，回报社区", "effects": { "KARMA": 3, "MEDICAL_KNOWLEDGE": 1, "TIME": -1 } }
+        { "id": "branch_1", "text": "在社区诊所接受基础治疗", "effects": { "LIFE": 2, "MONEY": -50, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "留下自愿帮忙，回报社区", "effects": { "HUMAN": 3, "TECH": 1 } }
       ],
-      "effects": { "HEALTH": 1, "MONEY": -30 },
+      "effects": { "LIFE": 1, "MONEY": -30 },
       "tags": ["医疗", "社区", "慈善", "诊所"],
       "deathChainEntry": false
     },
@@ -146,10 +146,10 @@
       "repeatable": true,
       "cooldown": 20,
       "branches": [
-        { "id": "branch_1", "text": "立即进行神经调整手术", "effects": { "HEALTH": 3, "MONEY": -4000, "CYBER_LEVEL": -1, "MENTAL": 2 } },
-        { "id": "branch_2", "text": "暂时不管，等严重了再说", "effects": { "MENTAL": -2, "HEALTH": -1, "CYBERPSYCHOSIS_RISK": 3 } }
+        { "id": "branch_1", "text": "立即进行神经调整手术", "effects": { "LIFE": 3, "MONEY": -4000, "CHROME": -1, "TRAUMA": 2 } },
+        { "id": "branch_2", "text": "暂时不管，等严重了再说", "effects": { "TRAUMA": -2, "LIFE": -1, "TECH": 1 } }
       ],
-      "effects": { "MENTAL": -1, "CYBERPSYCHOSIS_RISK": 1 },
+      "effects": { "TRAUMA": -1, "CHROME": 1 },
       "tags": ["医疗", "赛博精神病", "筛查", "神经"],
       "deathChainEntry": false
     },
@@ -163,11 +163,436 @@
       "repeatable": true,
       "cooldown": 15,
       "branches": [
-        { "id": "branch_1", "text": "趴下躲避，等抢劫结束", "effects": { "COOL": 1, "MENTAL": -1 } },
-        { "id": "branch_2", "text": "趁机制服劫匪，成为英雄", "effects": { "COMBAT": 2, "KARMA": 2, "STREET_REP": 2, "HEALTH": -4 } }
+        { "id": "branch_1", "text": "趴下躲避，等抢劫结束", "effects": { "STYLE": 1, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "趁机制服劫匪，成为英雄", "effects": { "REP": 2, "HUMAN": 2, "LIFE": -4 } }
       ],
-      "effects": { "MENTAL": -1 },
+      "effects": { "TRAUMA": -1 },
       "tags": ["医疗", "药店", "抢劫", "危险"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 611,
+      "title": "被利器割伤需要缝针",
+      "description": "你在日常工作中（或者一次意外中）被利刃划出了一道深深的口子。鲜血从伤口涌出，染红了你的衣袖。你按住伤口往最近的诊所赶，但路上每个看到你流血的人都绕道走——在这个城市，流血的人意味着麻烦。急诊室的医生看了一眼伤口说需要缝八针。你说没有保险。医生叹了口气说：「先缝吧，账单的事以后再说。」",
+      "type": "medical",
+      "ageRange": [16, 60],
+      "weight": 15,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        { "id": "branch_1", "text": "接受缝合治疗", "effects": { "LIFE": 2, "MONEY": -600, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "自己买消毒水处理，省下这笔钱", "effects": { "LIFE": -1, "MONEY": -50, "TRAUMA": 1 } }
+      ],
+      "effects": { "LIFE": 1, "MONEY": -300, "TRAUMA": -1 },
+      "tags": ["医疗", "外伤", "缝针", "急诊"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 612,
+      "title": "摔断腿去医院打石膏",
+      "description": "你在一段破损的楼梯上踩空了——整条腿一阵剧痛，你听到了骨头断裂的声音。你拖着断腿爬到路边，拦了一辆出租车。在医院急诊部，X光显示你的胫骨骨折。医生说你运气好，不用手术，但需要打石膏静养八周。你看着那个白色的石膏腿发呆——八周不能工作，八周不能跑，八周里你的生活会彻底停摆。而石膏的固定费用是三千欧元。",
+      "type": "medical",
+      "ageRange": [18, 60],
+      "weight": 12,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "老老实实打石膏休养", "effects": { "LIFE": 2, "MONEY": -3000, "DEBT": 2, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "找个地下诊所打便宜的石膏", "effects": { "LIFE": 1, "MONEY": -800, "TRAUMA": 1 } }
+      ],
+      "effects": { "LIFE": -2, "MONEY": -500, "TRAUMA": -1 },
+      "tags": ["医疗", "骨折", "石膏", "外伤"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 613,
+      "title": "赛博攻击后神经疼痛",
+      "description": "你遭到了黑客的赛博攻击——你的神经接口被入侵了。攻击被阻止了，但留下了后遗症：你的神经系统像被电击过一样，一阵阵的刺痛从脊柱蔓延到四肢。医生说你这是「神经接口创伤后综合征」，需要服用高剂量的神经抑制剂才能缓解疼痛。药片是亮蓝色的，一天三片，每片能让你的世界静下来几个小时——但副作用是记忆模糊和反应变慢。",
+      "type": "medical",
+      "ageRange": [22, 55],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "按处方服药缓解神经疼痛", "effects": { "LIFE": 2, "MONEY": -800, "TRAUMA": -2, "TECH": -1 } },
+        { "id": "branch_2", "text": "硬扛疼痛，避免药物副作用", "effects": { "LIFE": -2, "TRAUMA": 2, "STYLE": 1 } }
+      ],
+      "effects": { "LIFE": -1, "TRAUMA": 2, "TECH": -1 },
+      "tags": ["医疗", "赛博", "神经", "攻击"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 614,
+      "title": "义体排斥反应发烧",
+      "description": "你新装的赛博义体开始发作了——植入体周围的皮肤变得红肿、发热，你用体温计量了一下：三十九度五。你的免疫系统正在攻击这个新植入的异物。义体医生警告过你排斥反应的风险，但你没想到会这么严重。你的手臂像被火烧一样疼，淋巴结肿得像鸡蛋。必须尽快接受免疫抑制治疗，否则排斥反应可能导致组织坏死，甚至需要截肢。",
+      "type": "medical",
+      "ageRange": [20, 55],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "立即就医进行免疫抑制治疗", "effects": { "LIFE": 3, "MONEY": -2000, "CHROME": -1, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "自己买抗生素和退烧药硬扛", "effects": { "LIFE": -1, "MONEY": -200, "CHROME": -1, "TRAUMA": 2 } }
+      ],
+      "effects": { "LIFE": -2, "TRAUMA": 2, "CHROME": -1 },
+      "tags": ["医疗", "义体", "排斥", "发烧"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 615,
+      "title": "被人下毒需要洗胃",
+      "description": "你参加了一场商务晚宴（或者帮派聚会），喝了几杯酒后突然感到剧烈的恶心和腹部绞痛。你的视线开始模糊，呼吸变得急促。你意识到自己被下毒了。你冲到洗手间试图催吐，但效果有限。一个同伴看你脸色惨白，立即把你送到了急诊室。医生说你需要洗胃——一根管子从你的喉咙伸进去，用生理盐水冲洗你的胃。整个过程痛苦而屈辱，但你活下来了。",
+      "type": "medical",
+      "ageRange": [20, 55],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "branch_1", "text": "接受洗胃治疗", "effects": { "LIFE": 3, "MONEY": -1200, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "拒绝洗胃，自己大量喝水催吐", "effects": { "LIFE": -2, "TRAUMA": 2 } }
+      ],
+      "effects": { "LIFE": -2, "TRAUMA": 2, "MONEY": -500 },
+      "tags": ["医疗", "中毒", "洗胃", "急救"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 616,
+      "title": "遭到钝器伤",
+      "description": "你在一次暴力事件中挨了一顿揍——幸运的是没有刀也没有枪，但一根铁棍在你肋骨上留下了印记。你咳嗽时感到剧痛，呼吸变得浅而急促。急诊医生判断你有两根肋骨骨折，并且有轻微的内出血。「好在没有刺穿肺叶，」医生说，一边给你绑上固定带，「但你得卧床休息至少两周。」你看着诊断单——住院观察一晚的费用就是你两个月的工资。",
+      "type": "medical",
+      "ageRange": [18, 55],
+      "weight": 13,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "住院观察确保安全", "effects": { "LIFE": 3, "MONEY": -2500, "DEBT": 2, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "签字离院，回家自己休养", "effects": { "LIFE": 0, "MONEY": -500, "TRAUMA": 1 } }
+      ],
+      "effects": { "LIFE": -2, "TRAUMA": 2, "MONEY": -500 },
+      "tags": ["医疗", "钝器", "骨折", "外伤"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 617,
+      "title": "工伤事故手指被切断",
+      "description": "你在工作时发生了一起事故——机器（或者武器）切断了你的两根手指。剧痛让你的视野发白，你看着自己残缺的手，喷射的血液染红了地面。同事用止血带绑住了你的手腕，把你送到了医院。外科医生说断指可以接上，但必须在六小时内完成手术，费用极高。如果不接，你的手将永久残疾。你必须在几分钟内做出决定——花一大笔钱保住完整的手，还是接受残缺。",
+      "type": "medical",
+      "ageRange": [20, 55],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 30,
+      "branches": [
+        { "id": "branch_1", "text": "做断指再植手术", "effects": { "LIFE": 3, "MONEY": -5000, "DEBT": 3, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "太贵了，接受手指残缺", "effects": { "LIFE": -2, "MONEY": -500, "TRAUMA": 2, "STYLE": -1 } }
+      ],
+      "effects": { "LIFE": -3, "TRAUMA": 3, "MONEY": -800 },
+      "tags": ["医疗", "工伤", "断指", "手术"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 618,
+      "title": "牙齿感染需要根管治疗",
+      "description": "你的后槽牙疼了整整一周，现在半边脸都肿了起来。你对着镜子张开嘴，看到牙龈上鼓起了一个硕大的脓包。牙医说你这是深度龋齿引发的牙髓感染，需要做根管治疗——把牙齿内部的神经和血管清理干净，然后填充封闭。治疗费要两千欧元，或者你选择直接拔掉——便宜，只要八十欧元。「留着这颗牙对你很重要，」牙医说，「但拔了也不影响吃饭。」",
+      "type": "medical",
+      "ageRange": [18, 60],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "做根管治疗保住牙齿", "effects": { "LIFE": 2, "MONEY": -2000, "TRAUMA": -1, "DEBT": 1 } },
+        { "id": "branch_2", "text": "拔掉省事又省钱", "effects": { "MONEY": -80, "LIFE": -1, "STYLE": -1 } }
+      ],
+      "effects": { "LIFE": -1, "TRAUMA": -1, "MONEY": -200 },
+      "tags": ["医疗", "牙科", "感染", "根管"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 619,
+      "title": "长期背痛确诊脊柱问题",
+      "description": "你的背痛已经持续了几个月，从最初的隐隐作痛发展到现在连弯腰系鞋带都困难。你终于攒够了钱去做了核磁共振——结果出来时，医生看着片子皱起了眉头。「你的腰椎间盘突出了，而且椎管有狭窄。这不是靠休息能解决的问题。」他建议你做微创手术，费用是八千欧元，或者长期做物理治疗，效果慢但便宜些。「不做的话，几年后你可能走不了路。」",
+      "type": "medical",
+      "ageRange": [30, 60],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "接受微创脊柱手术", "effects": { "LIFE": 3, "MONEY": -8000, "DEBT": 4, "TRAUMA": -2 } },
+        { "id": "branch_2", "text": "选择长期物理治疗", "effects": { "LIFE": 1, "MONEY": -2000, "TRAUMA": -1 } }
+      ],
+      "effects": { "LIFE": -2, "TRAUMA": -1, "MONEY": -500 },
+      "tags": ["医疗", "脊柱", "背痛", "手术"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 620,
+      "title": "高血压需要长期服药",
+      "description": "你最近总是头晕、耳鸣，爬两层楼梯就气喘吁吁。社区诊所的护士给你量了血压——收缩压一百八。医生说这是重度高血压，需要长期服药控制。「这些药你得吃一辈子，」医生给你开了一张处方，「不是说你吃几个月就能停的。一旦开始吃，就不能停。」他给你开的药是一种通用降压药，每个月一百二十欧元。你盯着那张处方，想到了未来几十年里每个月都要交的这一百二十欧元。",
+      "type": "medical",
+      "ageRange": [35, 60],
+      "weight": 12,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "按时服药控制血压", "effects": { "LIFE": 2, "MONEY": -120, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "调整饮食和运动，不吃药试试", "effects": { "LIFE": 0, "HUMAN": 1, "TRAUMA": 1 } }
+      ],
+      "effects": { "LIFE": -1, "MONEY": -100 },
+      "tags": ["医疗", "高血压", "慢性病", "药物"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 621,
+      "title": "糖尿病无法负担胰岛素",
+      "description": "你是糖尿病患者，胰岛素就是你活下去的必需品。但药厂把胰岛素的价格提高了三倍，你现在每个月的胰岛素费用超过了你一半的收入。你已经尝试过减少剂量来节省开支——但你的血糖数值像过山车一样失控，你的视力开始模糊，脚上出现了难以愈合的伤口。医生警告你这是糖尿病并发症的前兆。「你必须按时用药，」他说，「否则等待你的是截肢或者肾衰竭。」",
+      "type": "medical",
+      "ageRange": [25, 60],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 15,
+      "branches": [
+        { "id": "branch_1", "text": "想尽办法筹钱买胰岛素", "effects": { "LIFE": 2, "MONEY": -1500, "DEBT": 2, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "寻找黑市或跨境购买便宜胰岛素", "effects": { "LIFE": 0, "MONEY": -500, "TRAUMA": 1, "REP": -1 } }
+      ],
+      "effects": { "LIFE": -2, "MONEY": -800, "TRAUMA": 1 },
+      "tags": ["医疗", "糖尿病", "胰岛素", "药价"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 622,
+      "title": "精神压力导致胃溃疡",
+      "description": "你最近的上腹部总是隐隐作痛，尤其在饭后和深夜。你以为是吃坏了肚子，直到有一天你吐出了咖啡色的液体——那是胃出血。急诊医生给你做了胃镜——镜头从你的喉咙伸进去，在你的胃里看到了一个正在出血的溃疡。「压力太大了，」医生说，指着屏幕上那个红色的创口，「你的胃把自己消化了。」你得吃药、戒辛辣、戒酒精、戒咖啡——对于在夜之城讨生活的人来说，这些要求几乎等于要你的命。",
+      "type": "medical",
+      "ageRange": [22, 55],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 18,
+      "branches": [
+        { "id": "branch_1", "text": "严格遵医嘱治疗", "effects": { "LIFE": 2, "MONEY": -600, "TRAUMA": -2, "HUMAN": 1 } },
+        { "id": "branch_2", "text": "买点止痛药撑着继续工作", "effects": { "LIFE": -2, "MONEY": -100, "TRAUMA": 2 } }
+      ],
+      "effects": { "LIFE": -1, "TRAUMA": 1, "MONEY": -300 },
+      "tags": ["医疗", "胃溃疡", "压力", "消化"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 623,
+      "title": "确诊赛博精神病早期",
+      "description": "你最近越来越难以分辨真实和虚拟——有时你分不清眼前的人是真实存在的还是你赛博植入体投射出来的幻觉。你在网上匿名做了一个赛博精神病自评量表，得分高得吓人。你鼓起勇气去了专科诊所，经过一系列脑部扫描和心理评估后，医生给出了诊断：「早期赛博精神分裂倾向。你的神经接口负载过高，大脑正在试图处理超出它处理能力的信息流。」建议你减少赛博植入体使用，并进行神经调节治疗。",
+      "type": "medical",
+      "ageRange": [25, 55],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "接受神经调节治疗", "effects": { "LIFE": 2, "MONEY": -3000, "CHROME": -2, "TRAUMA": -2, "TECH": -1 } },
+        { "id": "branch_2", "text": "不信这个诊断，继续正常生活", "effects": { "LIFE": -2, "CHROME": 1, "TRAUMA": 2, "STYLE": 1 } }
+      ],
+      "effects": { "TRAUMA": 2, "CHROME": 1, "LIFE": -1 },
+      "tags": ["医疗", "赛博精神病", "诊断", "神经"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 624,
+      "title": "慢性失眠影响工作",
+      "description": "你已经连续几周每晚只能睡两三个小时了。你躺在床上，大脑像一台过热的机器一样不停地运转。白天你像行尸走肉一样工作，注意力无法集中，反应迟钝，连最简单的计算都会出错。你的老板开始注意到你的表现下滑。你试过褪黑素、酒精、冥想——都没用。最后你只能去找医生开安眠药，但医生警告说安眠药有依赖性，而且会损害你的短期记忆。",
+      "type": "medical",
+      "ageRange": [22, 55],
+      "weight": 13,
+      "repeatable": true,
+      "cooldown": 12,
+      "branches": [
+        { "id": "branch_1", "text": "接受安眠药治疗", "effects": { "LIFE": 2, "MONEY": -300, "ADDICTION": 2, "TRAUMA": -2 } },
+        { "id": "branch_2", "text": "尝试非药物的睡眠治疗方案", "effects": { "LIFE": 1, "MONEY": -500, "HUMAN": 1, "TRAUMA": -1 } }
+      ],
+      "effects": { "LIFE": -1, "TRAUMA": -1, "MONEY": -200 },
+      "tags": ["医疗", "失眠", "安眠药", "压力"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 625,
+      "title": "性传播疾病检测",
+      "description": "你在一次一夜情（或者不安全的性接触）后开始出现一些让人不安的症状——排尿灼痛、不明分泌物。你在网上查了症状，越查越害怕。你去了社区健康中心做匿名检测。护士抽了你的血，让你三天后来看结果。等待的那三天里，你每一秒都在想最坏的结果。三天后你回到诊所，护士递给你一份报告——阳性。你的心沉了下去，但护士说：「别怕，这个病能治。只是疗程有点长。」",
+      "type": "medical",
+      "ageRange": [18, 55],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 30,
+      "branches": [
+        { "id": "branch_1", "text": "接受完整的抗生素治疗", "effects": { "LIFE": 2, "MONEY": -800, "TRAUMA": -2, "HUMAN": 1 } },
+        { "id": "branch_2", "text": "买便宜的仿制药自己治疗", "effects": { "LIFE": 0, "MONEY": -200, "TRAUMA": 1 } }
+      ],
+      "effects": { "LIFE": -1, "TRAUMA": 1, "MONEY": -300 },
+      "tags": ["医疗", "性病", "检测", "治疗"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 626,
+      "title": "医疗保险续期被拒",
+      "description": "你收到了一封来自保险公司的信——你的医疗保险续期申请被拒绝了。原因是「年度索赔金额超过风险评估阈值」。翻译成人话就是：你今年看病花了太多钱，他们不想再保你了。你打电话去申诉，客服的语气礼貌而冰冷：「很抱歉，这是公司政策。您可以尝试申请我们公司的高风险计划，当然保费会贵一些——大约是目前保费的三倍。」你握着电话的手在发抖。",
+      "type": "medical",
+      "ageRange": [25, 60],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "接受高价高风险计划，保持保险覆盖", "effects": { "MONEY": -3000, "TRAUMA": -2, "DEBT": 2 } },
+        { "id": "branch_2", "text": "放弃保险，把钱存起来备用", "effects": { "MONEY": 500, "LIFE": -2, "TRAUMA": -2 } }
+      ],
+      "effects": { "TRAUMA": -2, "MONEY": -500, "DEBT": 1 },
+      "tags": ["医疗", "保险", "拒保", "续期"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 627,
+      "title": "更换家庭医生",
+      "description": "你的家庭医生突然宣布退休（或者搬走了）。你被分配了一个新的家庭医生——她看起来很年轻，刚从医学院毕业不久。你坐在她的诊室里，试图解释你复杂的病史：「我有慢性背痛，在吃奥施康定；我有高血压，在吃……」「等一下，」她打断了你，皱着眉头看着你的病历，「你的病历记录不完整。之前的医生很多记录都没有上传。」你得从头开始跟一个新医生建立信任——而在夜之城，医生和病人之间的信任是奢侈品。",
+      "type": "medical",
+      "ageRange": [22, 60],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 30,
+      "branches": [
+        { "id": "branch_1", "text": "耐心向新医生说明全部病史", "effects": { "LIFE": 2, "MONEY": -300, "HUMAN": 2, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "少说一些，不想让太多信息被记录", "effects": { "LIFE": 0, "REP": -1, "TRAUMA": 0 } }
+      ],
+      "effects": { "TRAUMA": -1, "MONEY": -200 },
+      "tags": ["医疗", "医生", "病历", "更换"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 628,
+      "title": "专科转诊等三个月",
+      "description": "你的病情需要专科医生来诊断，但你的家庭医生说转诊预约至少要等三个月。「你的情况不算紧急，」她抱歉地说，「更紧急的人排在你前面。」三个月——对于你的病情来说，三个月可能意味着从可治愈变成不可治愈。你问有没有更快的方式，她压低声音说：「如果你愿意自费去私立医院，下周就能看上。但价格大概是这样。」她写了一个数字在纸上推给你。那个数字让你整夜没睡着。",
+      "type": "medical",
+      "ageRange": [25, 60],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 20,
+      "branches": [
+        { "id": "branch_1", "text": "花钱去私立医院尽快看病", "effects": { "LIFE": 2, "MONEY": -3000, "DEBT": 2, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "排队等三个月免费转诊", "effects": { "LIFE": -2, "MONEY": 0, "TRAUMA": -2 } }
+      ],
+      "effects": { "LIFE": -1, "TRAUMA": -1, "MONEY": -500 },
+      "tags": ["医疗", "转诊", "等待", "专科"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 629,
+      "title": "医院出现超级细菌感染",
+      "description": "你住院期间听到了一个可怕的消息——医院里爆发了超级细菌感染。这是一种耐碳青霉烯类抗生素的鲍曼不动杆菌，对所有常用抗生素都有抗药性。已经有三个病人被感染，其中一人进了ICU。护士们开始穿全套防护服进出病房，走廊里弥漫着消毒水的气味。你每次呼吸都小心翼翼，害怕自己成为下一个被感染的人。住院原本是为了治病，但现在医院变成了最危险的地方。",
+      "type": "medical",
+      "ageRange": [18, 60],
+      "weight": 6,
+      "repeatable": true,
+      "cooldown": 35,
+      "branches": [
+        { "id": "branch_1", "text": "要求提前出院，避免交叉感染", "effects": { "LIFE": 1, "MONEY": -300, "TRAUMA": 1 } },
+        { "id": "branch_2", "text": "相信医院能控制住感染", "effects": { "LIFE": -1, "TRAUMA": 2 } }
+      ],
+      "effects": { "TRAUMA": 2, "LIFE": -1 },
+      "tags": ["医疗", "感染", "超级细菌", "医院"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 630,
+      "title": "医疗记录被黑客删除",
+      "description": "你去医院复诊时，医生告诉你一个噩耗——医院的服务器遭到了黑客攻击，你的所有医疗记录都被删除了。包括你的过敏史、手术记录、慢性病用药方案和影像资料。你感觉自己像一个没有历史的人站在医生面前。「你还记得你用过什么药吗？」医生问。你努力回忆，但三年的医疗数据不是靠记忆能还原的。更麻烦的是，保险公司要求医疗记录才能理赔——而你什么都没有了。",
+      "type": "cyber",
+      "ageRange": [22, 60],
+      "weight": 5,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "自费重新做所有检查获取新记录", "effects": { "MONEY": -3000, "LIFE": 1, "TECH": 1, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "尝试从其他医疗机构找回备份", "effects": { "TECH": 2, "REP": 1, "MONEY": -500 } }
+      ],
+      "effects": { "TRAUMA": -1, "MONEY": -500, "TECH": 1 },
+      "tags": ["医疗", "黑客", "记录", "数据"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 631,
+      "title": "医院要求预付才能做手术",
+      "description": "你需要做一个手术——不算紧急但也不能再拖了。医院的财务处告诉你一个让你瞠目结舌的政策：没有保险的患者必须先预付手术费用的百分之八十才能安排手术。你问能不能先做手术再分期付款，财务处的女人头也不抬地说：「这是规定。你可以去借钱，或者卖点东西。」她指了指门外走廊里那些同样在筹措医疗费的人——他们有的拿着手机焦虑地打电话，有的在翻看自己的银行卡余额。",
+      "type": "economy",
+      "ageRange": [22, 60],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 25,
+      "branches": [
+        { "id": "branch_1", "text": "想尽办法筹钱预付手术费", "effects": { "LIFE": 2, "MONEY": -5000, "DEBT": 4, "TRAUMA": -1 } },
+        { "id": "branch_2", "text": "找便宜的地下诊所冒险", "effects": { "LIFE": 0, "MONEY": -1500, "TRAUMA": 2 } }
+      ],
+      "effects": { "TRAUMA": -2, "MONEY": -1000, "DEBT": 2 },
+      "tags": ["医疗", "预付", "手术", "费用"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 632,
+      "title": "自杀倾向去看心理医生",
+      "description": "你已经连续几周觉得自己没有活下去的理由了。每天早上醒来，你都感到一种沉重的空虚——不是因为什么具体的事，而是因为一切。你终于拨通了心理咨询热线，接电话的人声音很温柔。她给了你一个地址。你坐在心理医生办公室的沙发上，花了十分钟才说出第一句话：「我觉得我不想活了。」医生没有惊讶，没有评判，只是点了点头：「谢谢你告诉我。这是最重要的一步。」",
+      "type": "medical",
+      "ageRange": [18, 60],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "接受长期心理治疗", "effects": { "LIFE": 2, "MONEY": -2000, "TRAUMA": -3, "HUMAN": 3 } },
+        { "id": "branch_2", "text": "接受短期药物干预", "effects": { "LIFE": 1, "MONEY": -500, "ADDICTION": 1, "TRAUMA": -1 } }
+      ],
+      "effects": { "TRAUMA": -2, "HUMAN": 2 },
+      "tags": ["医疗", "心理", "自杀", "抑郁"],
+      "deathChainEntry": true
+    },
+    {
+      "id": 633,
+      "title": "心理创伤互助小组",
+      "description": "你的心理医生建议你参加一个创伤后应激障碍互助小组。你推开门时看到了七八个人围坐在一起——有一个退伍军人、一个经历过严重车祸的女人、一个从小被虐待的少年、还有一个看起来和普通人没什么两样的中年男人。「我叫马克，我曾亲眼看着我的搭档死在任务中。那是七年前的事了，但我每天晚上还会梦到。」那个中年男人平静地说完，然后看向你：「你想说说你的故事吗？不用说全名，不用给细节。只说你想说的部分。」",
+      "type": "social",
+      "ageRange": [20, 60],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "分享自己的创伤经历", "effects": { "HUMAN": 3, "TRAUMA": -3, "LIFE": 2, "REP": 1 } },
+        { "id": "branch_2", "text": "安静地听别人的故事", "effects": { "HUMAN": 1, "TRAUMA": -1, "LIFE": 1 } }
+      ],
+      "effects": { "HUMAN": 2, "TRAUMA": -2, "LIFE": 1 },
+      "tags": ["医疗", "心理", "创伤", "互助"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 634,
+      "title": "诊断出PTSD",
+      "description": "你最近总是被闪回和噩梦困扰——过去经历过的那些可怕场景会毫无预警地出现在你的脑海中。一声汽车回火声会让你趴在地上，陌生人的触碰会让你暴怒。心理医生在几次访谈后给出了正式诊断：创伤后应激障碍。「你的大脑试图保护你，」医生说，「但它用错了方法。它把所有可能的威胁都标记为极度危险，结果你活在一个持续的战斗或逃跑状态中。我们可以治疗，但需要时间。」",
+      "type": "medical",
+      "ageRange": [20, 60],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "接受系统性的PTSD治疗", "effects": { "LIFE": 2, "MONEY": -3000, "TRAUMA": -4, "HUMAN": 2 } },
+        { "id": "branch_2", "text": "靠自己扛过去，不接受治疗", "effects": { "LIFE": -1, "TRAUMA": 2, "STYLE": 1 } }
+      ],
+      "effects": { "TRAUMA": 2, "LIFE": -1, "HUMAN": -1 },
+      "tags": ["医疗", "心理", "PTSD", "创伤"],
+      "deathChainEntry": false
+    },
+    {
+      "id": 635,
+      "title": "企业提供免费心理咨询",
+      "description": "你所在的公司最近推出了一项新的员工福利——免费心理咨询，每周一次，完全由公司付费。宣传册上写着「关爱员工心理健康」。你正好需要这个，于是预约了第一次咨询。咨询师很专业，你聊得很畅快。但结束时，咨询师拿出一份表格让你签字——上面写着：「本人同意心理咨询记录可用于公司员工健康管理评估。」你问他这是什么意思，他说：「就是公司会知道你的大致状况，但具体内容保密。」你看着那份表格，心里说不出的复杂。",
+      "type": "social",
+      "ageRange": [22, 50],
+      "weight": 6,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        { "id": "branch_1", "text": "接受咨询但要求严格保密", "effects": { "LIFE": 2, "TRAUMA": -2, "HUMAN": 1, "DEBT": -1 } },
+        { "id": "branch_2", "text": "拒绝咨询，不想让公司掌握自己的心理数据", "effects": { "HUMAN": 1, "REP": -1, "TRAUMA": 0 } }
+      ],
+      "effects": { "LIFE": 1, "TRAUMA": -1, "HUMAN": 1 },
+      "tags": ["医疗", "心理", "企业", "咨询"],
       "deathChainEntry": false
     }
   ]

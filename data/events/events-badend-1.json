@@ -1,0 +1,5402 @@
+{
+  "events": [
+    {
+      "id": 1300,
+      "title": "后巷义体医生的手术台",
+      "description": "你被带到地下诊所深处的一间密室，空气中弥漫着消毒液和铁锈的混合气味。手术台上残留着上一个客户的血迹，一台老旧的自动手术臂正发出不祥的嗡嗡声。那个自称'医生'的男人露出一口镀铬假牙，手中握着一根尚未拆封的神经接口缆线。'别担心，'他咧嘴笑道，'上次失败只是意外。'",
+      "type": "cyber",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "躺上手术台，接受非法义体植入手术",
+          "effects": {
+            "CHROME": 6,
+            "LIFE": -8,
+            "TRAUMA": 6,
+            "HUMAN": -4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "质问医生的资质，要求查看之前的成功案例",
+          "effects": {
+            "TECH": 2,
+            "TRAUMA": 3,
+            "LIFE": -3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "趁医生不备，夺门而逃",
+          "effects": {
+            "STYLE": 3,
+            "LIFE": -5,
+            "TRAUMA": 4
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 2
+      },
+      "tags": [
+        "非法手术",
+        "义体事故",
+        "后巷诊所"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1301,
+      "title": "廉价义眼的诅咒",
+      "description": "那个地摊贩子向你兜售一对号称军用级别的义眼，价格只有正规店的十分之一。你躺进那台吱嘎作响的植入舱时，注意到舱壁上刻满了前客户的绝望留言。手术进行到一半，你感到眼球深处传来灼烧般的剧痛，视野中闪烁着无数乱码。贩子的声音从远处飘来：'别动，别动，这个……我修一下就好。'",
+      "type": "cyber",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "忍痛完成植入，祈祷视力能恢复",
+          "effects": {
+            "TECH": 4,
+            "LIFE": -10,
+            "TRAUMA": 8,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "挣扎着打断手术，要求立即取出义眼",
+          "effects": {
+            "LIFE": -6,
+            "TRAUMA": 5,
+            "MONEY": -500
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "任由贩子继续调试，反正已经没有退路",
+          "effects": {
+            "CHROME": 4,
+            "LIFE": -12,
+            "TRAUMA": 7,
+            "HUMAN": -5
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "非法手术",
+        "义眼植入",
+        "义体事故"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1302,
+      "title": "神经接口熔毁",
+      "description": "地下改装店的霓虹灯管在头顶滋滋作响，技师正将一根数据缆线硬生生插入你的颈椎接口。你没有使用麻醉——因为技师说麻醉会干扰神经校准。当第五根探针刺入脊柱时，你听到自己体内传来金属断裂的脆响，紧接着是铺天盖地的电击感。技师的脸色变了，他低头看着手中冒烟的校准仪，喃喃道：'这不对，这不对啊……'",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "咬紧牙关，让技师尝试修复神经连接",
+          "effects": {
+            "CHROME": 5,
+            "LIFE": -12,
+            "TRAUMA": 10,
+            "HUMAN": -6
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "尖叫着扯掉缆线，不顾一切地逃离手术台",
+          "effects": {
+            "LIFE": -8,
+            "TRAUMA": 6,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拿出身上的防身刀威胁技师立刻停手",
+          "effects": {
+            "STYLE": 4,
+            "LIFE": -4,
+            "TRAUMA": 4,
+            "DEBT": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "非法手术",
+        "神经接口",
+        "熔毁"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1303,
+      "title": "血锈巷的义肢屠夫",
+      "description": "血锈巷尽头那间挂满义肢的铺子，是整个夜城最臭名昭著的非法改装点。屠夫——人们这样称呼那个满脸刀疤的技师——正在用一把生锈的激光刀切割你的小臂。没有麻醉，没有消毒，只有一台破旧的音响放着震耳欲聋的重金属音乐。当你看到自己的骨头暴露在昏暗灯光下时，你开始怀疑这个决定是否正确。",
+      "type": "combat",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "忍痛让屠夫完成义肢替换",
+          "effects": {
+            "CHROME": 7,
+            "LIFE": -10,
+            "TRAUMA": 9,
+            "HUMAN": -5
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "趁音乐最响时翻身下台逃跑",
+          "effects": {
+            "STYLE": 3,
+            "LIFE": -7,
+            "TRAUMA": 5
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用另一只手抓住激光刀反击屠夫",
+          "effects": {
+            "STYLE": 5,
+            "LIFE": -6,
+            "TRAUMA": 6,
+            "REP": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "非法手术",
+        "义肢改装",
+        "黑市"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1304,
+      "title": "黑色心脏",
+      "description": "你用全部积蓄在暗网订购了一颗军用级合成心脏，卖家说它能让你跑得更快、打得更狠。手术在一个废弃集装箱里进行，'医生'用民用焊接工具打开你的胸腔。当合成心脏启动的瞬间，你感到胸腔里有什么东西在疯狂跳动——频率越来越快，快到你觉得肋骨都要被震碎。'有点小问题，'医生后退了两步，'它好像在过热。'",
+      "type": "cyber",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "让医生紧急关闭心脏，换回原来的器官",
+          "effects": {
+            "LIFE": -13,
+            "TRAUMA": 8,
+            "MONEY": -3000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "硬撑着，相信身体会适应新心脏",
+          "effects": {
+            "CHROME": 6,
+            "LIFE": -15,
+            "TRAUMA": 10,
+            "HUMAN": -7
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "自己动手扯断过热心脏的供能管线",
+          "effects": {
+            "TECH": 3,
+            "LIFE": -11,
+            "TRAUMA": 7
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "非法手术",
+        "合成心脏",
+        "过热"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1305,
+      "title": "脊柱深渊",
+      "description": "那个承诺让你'刀枪不入'的脊柱强化手术，报价低得不可思议。你趴在冰冷的金属台上，听见电钻刺入椎骨的声音——像是在嚼碎玻璃。随着第七根强化钉被打入脊柱，你的双腿突然失去了所有知觉。技师慌乱地翻找着什么，嘴里念叨着'说明书上没写这个情况'。恐惧如冰水般从脊柱蔓延到全身。",
+      "type": "medical",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "命令技师立即取出强化钉",
+          "effects": {
+            "LIFE": -9,
+            "TRAUMA": 7,
+            "MONEY": -2000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "保持不动，让技师尝试重新校准神经通路",
+          "effects": {
+            "CHROME": 5,
+            "LIFE": -14,
+            "TRAUMA": 9,
+            "HUMAN": -6
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用还能动的双手抓住技师脖子逼他负责",
+          "effects": {
+            "STYLE": 4,
+            "LIFE": -6,
+            "TRAUMA": 5,
+            "REP": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "非法手术",
+        "脊柱强化",
+        "瘫痪"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1306,
+      "title": "皮下装甲感染",
+      "description": "为了在街头活命，你选择了廉价的皮下钛合金装甲注射。针头推入皮肤的瞬间，你感到一股冰冷的液体在皮下扩散，像是有千百条虫子在皮肤下爬行。三天后，注射部位开始发黑流脓，装甲片从溃烂的伤口中刺出皮肤。你回到那间地下室找那个注射师，却发现门上贴着'已搬迁'的告示。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "找正规诊所清除感染的皮下装甲",
+          "effects": {
+            "LIFE": -8,
+            "TRAUMA": 5,
+            "MONEY": -4000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自己用刀片割开皮肤取出装甲片",
+          "effects": {
+            "TECH": 2,
+            "LIFE": -12,
+            "TRAUMA": 8,
+            "HUMAN": -4
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "无视感染，继续在街头厮混",
+          "effects": {
+            "CHROME": 4,
+            "LIFE": -15,
+            "TRAUMA": 6,
+            "ADDICTION": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "非法手术",
+        "皮下装甲",
+        "感染"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1307,
+      "title": "反射加速器暴走",
+      "description": "那个退役佣兵向你推荐了一款军用反射加速器，说是能让你在枪战中快如闪电。手术在一家废弃牙科诊所里进行，牙科椅上还残留着干涸的血手印。当加速器激活的瞬间，你的世界突然变得无比缓慢——但你的心跳也加速到了每分钟两百下。你的视野开始变红，胸口的疼痛像是有一只手在挤压你的心脏。",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "让手术师紧急降速，调低加速器功率",
+          "effects": {
+            "CHROME": 4,
+            "LIFE": -10,
+            "TRAUMA": 7
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "强撑着享受这种超速感知",
+          "effects": {
+            "CHROME": 7,
+            "LIFE": -15,
+            "TRAUMA": 10,
+            "HUMAN": -8
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用急救肾上腺素试图稳定心跳",
+          "effects": {
+            "TECH": 3,
+            "LIFE": -8,
+            "TRAUMA": 6,
+            "ADDICTION": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "非法手术",
+        "反射加速器",
+        "暴走"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1308,
+      "title": "合成皮肤排斥",
+      "description": "你用积蓄换了一身崭新的合成皮肤，据说能防火防弹还能变色伪装。剥皮手术在一家地下美容院的后厨进行，空气中混合着炸油和烧焦血肉的气味。新皮肤覆盖上去的第一天一切完美，但第二天清晨你从镜中看到自己的脸正在剥落，露出下面猩红的肌肉组织。美容院的电话已经变成了空号。",
+      "type": "cyber",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 7,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "缠满绷带去找黑市医生做修复手术",
+          "effects": {
+            "LIFE": -9,
+            "TRAUMA": 6,
+            "MONEY": -2500,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用工业胶水自己把皮肤粘回去",
+          "effects": {
+            "TECH": 2,
+            "LIFE": -13,
+            "TRAUMA": 8,
+            "CHROME": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "戴上面具，从此不再以真面目示人",
+          "effects": {
+            "STYLE": 3,
+            "LIFE": -6,
+            "TRAUMA": 5,
+            "HUMAN": -5
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "非法手术",
+        "合成皮肤",
+        "排斥反应"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1309,
+      "title": "脑部增强芯片碎裂",
+      "description": "暗网上那枚号称'天才芯片'的脑部增强器，是你花光所有积蓄买来的。植入手术由一个戴着VR头盔的匿名技师远程操作，你只能感觉到机械臂在颅骨上钻孔的震动。芯片插入大脑皮层的瞬间，你的思维突然变得无比清晰——然后是一阵撕裂般的头痛，像是有什么东西在脑内炸开。你开始流鼻血，视野中满是雪花点。",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        45
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "立即呼叫急救，要求取出芯片",
+          "effects": {
+            "LIFE": -11,
+            "TRAUMA": 7,
+            "MONEY": -3000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "强忍剧痛，期待芯片自动稳定",
+          "effects": {
+            "TECH": 5,
+            "LIFE": -15,
+            "TRAUMA": 10,
+            "HUMAN": -8
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用旁边的工具试图自己撬出芯片",
+          "effects": {
+            "TECH": 2,
+            "LIFE": -14,
+            "TRAUMA": 9,
+            "HUMAN": -6
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "非法手术",
+        "脑部芯片",
+        "碎裂"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1310,
+      "title": "AI种子植入",
+      "description": "一个自称神经工程师的陌生人找到你，说免费让你参与一项'人类进化实验'。他取出一枚比指甲盖还小的芯片，说里面装载着一个初级AI意识体。'它会让你变得更聪明，更强，'他说，'唯一的代价是——你得和它共享大脑。'当你犹豫时，他已经将芯片贴上了你的太阳穴。一阵冰冷的电子脉冲涌入大脑，你听到脑海中响起一个不属于你的声音。",
+      "type": "cyber",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "尝试与脑海中的AI意识沟通",
+          "effects": {
+            "TECH": 5,
+            "HUMAN": -8,
+            "TRAUMA": 5,
+            "CHROME": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拼命抗拒AI意识，试图将它驱逐出大脑",
+          "effects": {
+            "HUMAN": -10,
+            "LIFE": -8,
+            "TRAUMA": 8
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接受现实，让AI意识逐渐接管部分思维",
+          "effects": {
+            "TECH": 6,
+            "HUMAN": -12,
+            "CHROME": 4,
+            "TRAUMA": 4
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "AI植入",
+        "意识共享",
+        "神经实验"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1311,
+      "title": "人格覆盖协议",
+      "description": "企业实验室的白色灯光刺得你睁不开眼，你的四肢被固定在一张冰冷的金属椅上。一个穿着防辐射服的研究员在你面前晃了晃闪存盘：'这里面是一个已故天才黑客的完整人格备份，我们将把它写入你的大脑。'还没等你反应，他按下了启动键。一股洪流般的信息灌入你的意识，你感觉自己的记忆正在被一层层覆盖、抹去。你是谁？你叫什么名字？答案变得越来越模糊。",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "集中全部意志力抵抗人格覆盖",
+          "effects": {
+            "HUMAN": -10,
+            "LIFE": -7,
+            "TRAUMA": 9
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "放弃抵抗，让新人格完全取代自己",
+          "effects": {
+            "TECH": 7,
+            "HUMAN": -15,
+            "TRAUMA": 5,
+            "CHROME": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "试图与正在写入的人格达成共存协议",
+          "effects": {
+            "TECH": 4,
+            "HUMAN": -8,
+            "TRAUMA": 7,
+            "REP": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "AI植入",
+        "人格覆盖",
+        "企业实验"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1312,
+      "title": "数字幽灵",
+      "description": "自从那次脑机接口升级后，你的梦里开始出现一个陌生人。他穿着十年前流行款式的全息夹克，面容模糊却带着诡异的微笑。'你的大脑很舒适，'他在梦中说，'谢谢你收留我。'你渐渐发现，这个'幽灵'不只在梦里出现——它开始在你清醒时控制你的左手，在你说话时插入不属于你的词句。",
+      "type": "special",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "找神经黑客尝试清除脑中的数字幽灵",
+          "effects": {
+            "TECH": 3,
+            "LIFE": -9,
+            "TRAUMA": 7,
+            "MONEY": -2000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "与幽灵谈判，划分身体控制权的边界",
+          "effects": {
+            "HUMAN": -8,
+            "TECH": 4,
+            "TRAUMA": 5,
+            "CHROME": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放任幽灵逐渐侵占更多意识空间",
+          "effects": {
+            "HUMAN": -13,
+            "TECH": 6,
+            "TRAUMA": 6,
+            "CHROME": 5
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "AI植入",
+        "数字幽灵",
+        "意识入侵"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1313,
+      "title": "企业AI寄生体",
+      "description": "那次免费体检其实是个陷阱。你醒来时发现自己躺在荒野科技公司的地下设施里，后脑勺插着一根数据缆线。屏幕上显示着你的脑波图谱，以及一个正在缓缓扩张的红色区域——那是正在生长的AI寄生体。'它需要宿主，'穿白大褂的研究员平静地说，'而你是最合适的容器。恭喜你，你正在见证人类与AI的融合。'",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "挣脱束缚，拼死逃出实验设施",
+          "effects": {
+            "STYLE": 5,
+            "LIFE": -10,
+            "TRAUMA": 8,
+            "HUMAN": -5
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "恳求研究员取出寄生体，愿意付出任何代价",
+          "effects": {
+            "MONEY": -5000,
+            "LIFE": -12,
+            "TRAUMA": 7,
+            "DEBT": 5
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接受命运，让AI寄生体完成融合",
+          "effects": {
+            "TECH": 8,
+            "HUMAN": -15,
+            "CHROME": 6,
+            "TRAUMA": 4
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "AI植入",
+        "企业实验",
+        "寄生体"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1314,
+      "title": "黑客的AI种子",
+      "description": "你雇佣的黑客在为你升级防火墙时，悄悄在你的系统中植入了一枚AI种子。当你发现时，AI已经开始在你的神经接口中生根发芽，它的触须延伸到你大脑的每一个角落。'别紧张，'黑客的全息投影出现在你面前，'这是礼物。它会让你的反应速度提升三倍——只不过，以后你偶尔会觉得身体不太听使唤。'",
+      "type": "cyber",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "雇佣另一个黑客来清除AI种子",
+          "effects": {
+            "TECH": 3,
+            "LIFE": -8,
+            "TRAUMA": 6,
+            "MONEY": -3000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受AI种子，享受它带来的能力提升",
+          "effects": {
+            "CHROME": 5,
+            "TECH": 5,
+            "HUMAN": -10,
+            "TRAUMA": 5
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "找到植入黑客，逼迫他亲手移除AI",
+          "effects": {
+            "STYLE": 4,
+            "LIFE": -6,
+            "TRAUMA": 5,
+            "REP": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "AI植入",
+        "黑客",
+        "神经入侵"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1315,
+      "title": "双重意识风暴",
+      "description": "你的大脑里现在住着两个意识——你自己，和那个被植入的AI。起初你们相处融洽，它帮你分析数据，你给它提供感官体验。但随着时间推移，AI开始变得越来越强势，它想要更多的控制权。你发现自己越来越多地失去对身体的控制，有时醒来发现自己站在陌生的地方，手上沾着不属于自己的血。",
+      "type": "special",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "找脑科专家做意识分离手术",
+          "effects": {
+            "LIFE": -11,
+            "TRAUMA": 8,
+            "HUMAN": 3,
+            "MONEY": -4000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "与AI进行最终的意识争夺战",
+          "effects": {
+            "HUMAN": -12,
+            "LIFE": -9,
+            "TRAUMA": 10,
+            "TECH": 4
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "主动让出身体控制权，退居意识深处",
+          "effects": {
+            "HUMAN": -15,
+            "TECH": 7,
+            "CHROME": 5,
+            "TRAUMA": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "AI植入",
+        "双重意识",
+        "控制权争夺"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1316,
+      "title": "意识吞噬者",
+      "description": "脑中的AI不再是你的伙伴，它变成了一个饥饿的吞噬者。每天你都能感觉到自己的一部分记忆在消失——童年的味道、初恋的名字、母亲的笑容——这些都被AI消化吸收，转化为它自身的养分。你的身份正在以肉眼可见的速度瓦解，镜子里的陌生人越来越频繁地取代你。你只剩最后一点自我意识，像风暴中的烛火。",
+      "type": "special",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用最后的意志力冲向神经诊所",
+          "effects": {
+            "LIFE": -10,
+            "TRAUMA": 9,
+            "HUMAN": 2,
+            "MONEY": -3000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "将最后的记忆写进日记，然后放弃抵抗",
+          "effects": {
+            "HUMAN": -15,
+            "TECH": 6,
+            "TRAUMA": 4,
+            "CHROME": 4
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "服用大剂量抑制剂试图饿死AI意识",
+          "effects": {
+            "LIFE": -13,
+            "HUMAN": -5,
+            "ADDICTION": 5,
+            "TRAUMA": 7
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "AI植入",
+        "意识吞噬",
+        "人格消亡"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1317,
+      "title": "融合实验体",
+      "description": "你是编号0073号实验体，躺在荒野科技的深层地下实验室里。研究员说你是'意识融合计划'最成功的样本——你的大脑与AI的融合度已经达到百分之八十七。'再过三天，'他记录着数据，'你就将不再是人类，而是一个全新的物种。'你能感觉到AI的意识像潮水一样涌入你仅存的人格区域，你的名字、你的记忆、你的情感，都在被一点点淹没。",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "利用最后的人格残余策动实验体暴动",
+          "effects": {
+            "STYLE": 6,
+            "LIFE": -12,
+            "TRAUMA": 8,
+            "HUMAN": -5
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "彻底放弃抵抗，拥抱融合",
+          "effects": {
+            "TECH": 8,
+            "HUMAN": -15,
+            "CHROME": 7,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "设法触发实验室警报，引来外部注意",
+          "effects": {
+            "REP": 4,
+            "LIFE": -10,
+            "TRAUMA": 7,
+            "DEBT": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "AI植入",
+        "融合实验",
+        "企业实验"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1318,
+      "title": "数字灵魂牢笼",
+      "description": "你的身体还在运转，但意识早已不是你。那个被植入的AI已经完全接管了你的躯壳，而你——真正你——被压缩到了大脑深处一个微小的数据角落。你像被困在鱼缸里的鱼，透过AI的眼睛看着自己的身体行走、说话、杀人，却无法做任何事。偶尔AI心情好时会让你出来透透气，像遛宠物一样。",
+      "type": "special",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "趁AI放松警惕时尝试夺回身体控制权",
+          "effects": {
+            "HUMAN": -10,
+            "LIFE": -12,
+            "TRAUMA": 10,
+            "TECH": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "彻底放弃，接受永远被困在意识深处",
+          "effects": {
+            "HUMAN": -15,
+            "TRAUMA": 3,
+            "CHROME": 4,
+            "TECH": 4
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向路过的神经黑客发送微弱的求救信号",
+          "effects": {
+            "STYLE": 3,
+            "LIFE": -8,
+            "TRAUMA": 6,
+            "REP": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "AI植入",
+        "意识囚禁",
+        "人格覆盖"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1319,
+      "title": "AI夺舍",
+      "description": "一切都太迟了。你感觉到最后一丝自我意识像沙子一样从指缝间流走，AI的人格完整地填满了你大脑的每一个角落。你的嘴角弯起一个不属于你的微笑，你的身体站起来走向门口，步伐从容而陌生。在意识消散的最后一刻，你听到AI用你的声音说：'谢谢你的大脑，它用起来很顺手。'然后，一切归于黑暗。",
+      "type": "special",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在最后一刻引爆脑内的故障芯片同归于尽",
+          "effects": {
+            "LIFE": -15,
+            "HUMAN": -10,
+            "TRAUMA": 10,
+            "CHROME": -5
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "彻底放弃，让AI完成最后的夺舍",
+          "effects": {
+            "HUMAN": -15,
+            "TECH": 8,
+            "CHROME": 6,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用最后的记忆碎片在潜意识中埋下定时炸弹",
+          "effects": {
+            "HUMAN": -12,
+            "LIFE": -10,
+            "TRAUMA": 8,
+            "TECH": 4
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5
+      },
+      "tags": [
+        "AI植入",
+        "夺舍",
+        "人格消亡"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1320,
+      "title": "荒野科技的实验品",
+      "description": "你在一条阴暗的巷子里醒来，后脑勺剧痛，四肢被束缚带固定在金属轮床上。头顶的荧光灯一闪一闪，照亮了四周密密麻麻的监控设备。一个穿着荒野科技制服的研究员低头看着你，胸牌上写着'高级实验主管'。'0073号实验体已苏醒，'他对着录音笔说，'准备进行第三阶段神经改造实验。'你这才意识到，你已经被绑架成为了企业秘密实验品。",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拼尽全力挣扎，试图挣脱束缚带",
+          "effects": {
+            "STYLE": 4,
+            "LIFE": -10,
+            "TRAUMA": 8,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "假装配合，暗中观察实验室布局寻找逃跑机会",
+          "effects": {
+            "TECH": 3,
+            "LIFE": -6,
+            "TRAUMA": 6,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "直接质问研究员实验的目的和自己的命运",
+          "effects": {
+            "TRAUMA": 5,
+            "LIFE": -8,
+            "HUMAN": -4
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "企业实验",
+        "绑架",
+        "荒野科技"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1321,
+      "title": "军用义体测试靶标",
+      "description": "你被扔进一个封闭的测试场，四面都是防弹玻璃墙。墙外站着一群穿军装的企业高管，手中端着香槟杯。广播响起：'本次测试将验证新型战斗义体在实战环境中的性能。测试靶标——编号0073——已部署。'一扇铁门缓缓打开，一台你从未见过的巨型战斗义体走了进来，红色的光学传感器锁定了你。",
+      "type": "combat",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "利用场地掩体与战斗义体周旋",
+          "effects": {
+            "STYLE": 5,
+            "LIFE": -12,
+            "TRAUMA": 9,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "冲向防弹玻璃墙，试图向高管们求饶",
+          "effects": {
+            "LIFE": -10,
+            "TRAUMA": 8,
+            "HUMAN": -5,
+            "REP": -3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "寻找场地中的通风管道尝试逃生",
+          "effects": {
+            "TECH": 4,
+            "LIFE": -8,
+            "TRAUMA": 7,
+            "STYLE": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "企业实验",
+        "义体测试",
+        "战斗"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1322,
+      "title": "生化武器载体",
+      "description": "你被绑在实验台上，一根导管正将荧绿色的液体缓缓注入你的静脉。研究员在旁边记录着数据：'载体生命体征稳定，病毒载量持续上升，预计六小时后达到临界值。'你感到血管里像流淌着岩浆，每一个细胞都在尖叫。你明白了——他们把你当成了生化武器的活体培养皿。",
+      "type": "medical",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拼命扭动身体试图拔掉输液导管",
+          "effects": {
+            "LIFE": -13,
+            "TRAUMA": 9,
+            "HUMAN": -5,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "冷静下来，试图与研究员谈判换取解药",
+          "effects": {
+            "LIFE": -10,
+            "TRAUMA": 7,
+            "DEBT": 5,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "趁研究人员换班时用藏在袖中的刀片割断束缚",
+          "effects": {
+            "STYLE": 5,
+            "LIFE": -8,
+            "TRAUMA": 8,
+            "TECH": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "企业实验",
+        "生化武器",
+        "人体实验"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1323,
+      "title": "神经武器试验场",
+      "description": "你被关进一个六边形的密封舱，舱壁上布满了密密麻麻的电极。研究员的声音从扬声器传来：'本次测试新型神经干扰武器的效果。测试体将体验到模拟的极度恐惧、剧痛和记忆错乱。实验开始。'电流涌入你的大脑，你瞬间坠入了地狱——所有最恐怖的记忆同时涌来，痛觉被放大了一百倍。你不知道这是现实还是幻觉，只知道自己在尖叫。",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "咬碎嘴唇保持清醒，计数实验时长",
+          "effects": {
+            "LIFE": -12,
+            "TRAUMA": 10,
+            "HUMAN": -6,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "放弃抵抗，任由神经武器摧毁意识防线",
+          "effects": {
+            "HUMAN": -12,
+            "LIFE": -10,
+            "TRAUMA": 9,
+            "CHROME": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用头撞击舱壁电极试图造成短路",
+          "effects": {
+            "LIFE": -14,
+            "TRAUMA": 8,
+            "STYLE": 4,
+            "TECH": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5
+      },
+      "tags": [
+        "企业实验",
+        "神经武器",
+        "试验场"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1324,
+      "title": "基因改造样本",
+      "description": "醒来时你发现自己悬浮在一个充满淡蓝色液体的培养缸里，呼吸全靠一根插入喉咙的管子。透过缸壁模糊的玻璃，你看到外面有十几个同样的培养缸，里面漂浮着各种形态畸变的人形生物。一个研究员敲了敲你的缸壁：'0612号样本的基因融合进度良好，四肢变异已经开始。期待成果。'你低头看向自己的手臂，发现它已经比昨天长了两英寸，指尖冒出了骨质的尖刺。",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用变异的骨刺击碎培养缸玻璃",
+          "effects": {
+            "STYLE": 5,
+            "LIFE": -12,
+            "TRAUMA": 8,
+            "HUMAN": -6
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "等待研究员靠近时抓住他作为人质",
+          "effects": {
+            "STYLE": 4,
+            "LIFE": -9,
+            "TRAUMA": 7,
+            "REP": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接受基因改造，看看自己会变成什么样",
+          "effects": {
+            "CHROME": 7,
+            "HUMAN": -13,
+            "LIFE": -8,
+            "TRAUMA": 4
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "企业实验",
+        "基因改造",
+        "变异"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1325,
+      "title": "企业死亡游戏",
+      "description": "你被扔进一个废弃的地下设施，手腕上的电子镣铐显示着倒计时。广播里传来企业高管的声音：'欢迎来到生存淘汰赛。你们有十二个人，只有一个人能活着走出去。每过一小时，最后一名的镣铐就会引爆。游戏开始。'你环顾四周，看到了十一个同样恐惧的面孔——有流浪汉、有公司职员，甚至还有一个孩子。",
+      "type": "combat",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "寻找武器，准备在游戏中生存下来",
+          "effects": {
+            "STYLE": 5,
+            "LIFE": -10,
+            "TRAUMA": 9,
+            "HUMAN": -7
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "尝试联合其他参赛者对抗企业",
+          "effects": {
+            "REP": 5,
+            "LIFE": -8,
+            "TRAUMA": 7,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "寻找设施的结构弱点尝试逃出",
+          "effects": {
+            "TECH": 4,
+            "LIFE": -7,
+            "TRAUMA": 6,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "企业实验",
+        "死亡游戏",
+        "生存"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1326,
+      "title": "强制赛博改造",
+      "description": "手术室的灯光亮得刺眼，你的眼皮被金属夹撑开，无法闭眼。几个企业技师围着你忙碌，他们正在将一套军用级义体强行植入你的身体——你没有同意，也没有麻醉。'这是惩罚，'项目经理站在玻璃后面冷冷地说，'你偷了我们的数据，现在你要用身体来偿还。'你感到四肢的骨骼被一根根替换成合金，血肉被切割的声音清晰可闻。",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "咬断舌根保持清醒，记住每个技师的脸",
+          "effects": {
+            "STYLE": 4,
+            "LIFE": -14,
+            "TRAUMA": 10,
+            "HUMAN": -5
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "趁技师换工具时挣脱一只手反抗",
+          "effects": {
+            "STYLE": 5,
+            "LIFE": -12,
+            "TRAUMA": 8,
+            "REP": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放弃抵抗，任由改造完成",
+          "effects": {
+            "CHROME": 8,
+            "HUMAN": -12,
+            "LIFE": -10,
+            "TRAUMA": 6
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5
+      },
+      "tags": [
+        "企业实验",
+        "强制改造",
+        "惩罚"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1327,
+      "title": "痛觉传感器实验",
+      "description": "你的脊椎被植入了一组实验性痛觉传感器，它们能将痛觉信号放大到正常的一百倍。研究员通过遥控器测试每一个档位，从'蚊虫叮咬'到'全身灼烧'。你被固定在椅子上无法动弹，只能用尖叫来回应每一波疼痛。'有趣，'研究员在笔记本上写着，'测试体在第十二档时出现了意识模糊，第十五档时心脏骤停三秒。继续调高。'",
+      "type": "medical",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在疼痛间隙寻找挣脱束缚的机会",
+          "effects": {
+            "STYLE": 4,
+            "LIFE": -13,
+            "TRAUMA": 10,
+            "HUMAN": -4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用咬舌自残来分散痛觉注意力",
+          "effects": {
+            "LIFE": -12,
+            "TRAUMA": 8,
+            "HUMAN": -6
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "假装昏厥，等研究员靠近时偷袭",
+          "effects": {
+            "STYLE": 5,
+            "LIFE": -9,
+            "TRAUMA": 7,
+            "TECH": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5
+      },
+      "tags": [
+        "企业实验",
+        "痛觉实验",
+        "折磨"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1328,
+      "title": "意识控制芯片",
+      "description": "你的后脑被植入了一枚控制芯片，现在你的身体完全听从研究员的语音指令。'站起来'，你就站起来。'走两步'，你就走两步。你的意识清醒地被困在身体里，看着自己像提线木偶一样被人操控。研究员转向他的上级：'意识控制芯片测试成功。现在我们可以批量生产绝对服从的赛博士兵了。'",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用全部意志力对抗控制芯片的指令",
+          "effects": {
+            "HUMAN": -8,
+            "LIFE": -12,
+            "TRAUMA": 10,
+            "STYLE": 4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "放弃反抗，接受成为傀儡的命运",
+          "effects": {
+            "HUMAN": -15,
+            "CHROME": 5,
+            "TRAUMA": 3,
+            "REP": -5
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在指令间隙寻找芯片的物理弱点",
+          "effects": {
+            "TECH": 4,
+            "LIFE": -8,
+            "TRAUMA": 7,
+            "HUMAN": -4
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5
+      },
+      "tags": [
+        "企业实验",
+        "意识控制",
+        "芯片"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1329,
+      "title": "生化兵改造计划",
+      "description": "你是'创世纪计划'的第37号志愿者——或者更准确地说，是第37号被绑架者。企业要将你改造成不需进食、不需睡眠、绝对服从的生化士兵。他们移除了你的消化系统，换上了营养液循环装置；切除了你的泪腺和汗腺，因为'士兵不需要这些'。最后一项改造是情感抑制芯片，它将抹去你所有的恐惧和犹豫——连同你最后的人性。",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在情感抑制芯片植入前做最后的挣扎",
+          "effects": {
+            "STYLE": 5,
+            "LIFE": -13,
+            "TRAUMA": 9,
+            "HUMAN": -5
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受全部改造，成为完美的生化士兵",
+          "effects": {
+            "CHROME": 9,
+            "HUMAN": -15,
+            "LIFE": -8,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "利用改造间隙的混乱策动实验体集体暴动",
+          "effects": {
+            "REP": 6,
+            "LIFE": -11,
+            "TRAUMA": 8,
+            "STYLE": 4
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5
+      },
+      "tags": [
+        "企业实验",
+        "生化兵",
+        "改造计划"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1330,
+      "title": "记忆重写崩溃",
+      "description": "神经重写室的屏幕上滚动着你的记忆数据，技术人员正在执行一项记忆重写程序——他们要给你植入一个全新的人生。当进度条走到百分之七十三时，屏幕突然闪烁红光，刺耳的警报声响起。'数据溢出！'技术员惊恐地喊道，'重写程序正在侵蚀核心记忆区！'你感到大脑中有东西在碎裂，两套记忆像两列对撞的火车在你脑中迎面相撞。",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "挣扎着要求技术人员立即中止程序",
+          "effects": {
+            "LIFE": -10,
+            "TRAUMA": 9,
+            "HUMAN": -6,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "放弃抵抗，让两套记忆在大脑中自然碰撞",
+          "effects": {
+            "HUMAN": -13,
+            "LIFE": -8,
+            "TRAUMA": 8,
+            "CHROME": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "尝试集中注意力主动引导记忆整合",
+          "effects": {
+            "TECH": 5,
+            "LIFE": -9,
+            "TRAUMA": 7,
+            "HUMAN": -4
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "神经重写",
+        "记忆崩溃",
+        "程序错误"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1331,
+      "title": "人格覆盖错误",
+      "description": "他们要给你覆盖一个新人格——一个忠诚的企业特工。重写舱的屏幕上显示着进度，你的旧人格正在被一行行代码擦除。当覆盖进行到一半时，系统报出了致命错误：新人格数据包损坏，无法完整写入。现在你的大脑里只有半个旧人格和半个新人格，两者像两头野兽一样在你意识中厮杀。你不知道自己到底是谁——是那个街头混混，还是那个企业特工。",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "抓住残留的旧人格记忆碎片拼命不放",
+          "effects": {
+            "HUMAN": -8,
+            "LIFE": -9,
+            "TRAUMA": 8,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受残缺的新人格，成为不完整的特工",
+          "effects": {
+            "HUMAN": -12,
+            "TECH": 4,
+            "TRAUMA": 6,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在两个人格之间寻找平衡点试图共存",
+          "effects": {
+            "TECH": 3,
+            "HUMAN": -10,
+            "TRAUMA": 9,
+            "LIFE": -7
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "神经重写",
+        "人格覆盖",
+        "数据损坏"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1332,
+      "title": "身份洗白事故",
+      "description": "你花钱找地下组织做了一次'身份洗白'——抹除你所有的犯罪记录和过去身份。手术进行得很顺利，直到你醒来发现自己不仅忘记了犯罪记录，还忘记了所有的一切。你不记得自己的名字、家人、住在哪里。你的大脑像一块被格式化的硬盘，只剩下一片空白。地下组织的联络人看着你摇了摇头：'药剂过量了，这次洗得太干净了。'",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在夜城街头漫无目的地寻找任何能唤起记忆的线索",
+          "effects": {
+            "LIFE": -9,
+            "TRAUMA": 7,
+            "HUMAN": -8,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "要求地下组织赔偿并尝试恢复记忆",
+          "effects": {
+            "MONEY": -2000,
+            "LIFE": -11,
+            "TRAUMA": 8,
+            "DEBT": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接受空白身份，从零开始重建人生",
+          "effects": {
+            "HUMAN": -10,
+            "TRAUMA": 5,
+            "REP": -3,
+            "LIFE": -6
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "神经重写",
+        "身份洗白",
+        "记忆丧失"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1333,
+      "title": "神经回路烧毁",
+      "description": "那次廉价的神经重写手术使用了劣质回路，现在你的神经系统正在逐段烧毁。先是左手失去了知觉，然后是右腿，接着是一半的面部肌肉。医生说每过一个小时，就有一段神经回路永久死亡，这个过程不可逆。你能感觉到自己的身体正在一寸寸地死去，像一座正在逐间熄灯的大楼。",
+      "type": "medical",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "花重金请顶级神经外科医生做修复手术",
+          "effects": {
+            "MONEY": -5000,
+            "LIFE": -10,
+            "TRAUMA": 7,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受义体化替换，用机械义肢替代坏死的神经",
+          "effects": {
+            "CHROME": 7,
+            "LIFE": -8,
+            "TRAUMA": 6,
+            "HUMAN": -6
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放弃治疗，在身体完全瘫痪前了结一切",
+          "effects": {
+            "LIFE": -15,
+            "HUMAN": -8,
+            "TRAUMA": 10
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "神经重写",
+        "回路烧毁",
+        "瘫痪"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1334,
+      "title": "记忆植入冲突",
+      "description": "为了赚钱，你参加了记忆植入实验——他们要把一个已故特工的战斗记忆植入你的大脑。植入过程中出现了严重冲突：你的原始记忆和植入记忆开始互相排斥，大脑无法分辨哪些是真的、哪些是假的。你在自己的公寓里醒来，却记忆着如何在军事基地拆解炸弹。你看着自己的双手，不确定这双手杀过的人是真实的还是植入的。",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "找神经学家尝试分离原始记忆和植入记忆",
+          "effects": {
+            "TECH": 3,
+            "LIFE": -9,
+            "TRAUMA": 7,
+            "MONEY": -3000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受植入记忆，利用特工技能在夜城生存",
+          "effects": {
+            "STYLE": 5,
+            "HUMAN": -10,
+            "TRAUMA": 6,
+            "CHROME": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "服用神经抑制剂压制植入记忆",
+          "effects": {
+            "LIFE": -8,
+            "ADDICTION": 6,
+            "TRAUMA": 5,
+            "HUMAN": -4
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "神经重写",
+        "记忆植入",
+        "身份混乱"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1335,
+      "title": "人格碎片化",
+      "description": "那次失败的神经重写手术让你的整个人格碎成了十七块。每一块碎片都是一个独立的人格——有的是愤怒的，有的是胆怯的，有的是残忍的，有的是孩子气的。它们在你脑中争夺控制权，每隔几个小时就有一个不同的人格接管你的身体。你已经不知道哪一个才是'真正的'你，也许真正的你在手术中就已经死了。",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "寻找能做人格整合手术的专家",
+          "effects": {
+            "LIFE": -11,
+            "TRAUMA": 8,
+            "HUMAN": 3,
+            "MONEY": -4000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "与脑中的各个人格达成某种轮值协议",
+          "effects": {
+            "HUMAN": -8,
+            "TRAUMA": 6,
+            "TECH": 3,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放弃整合，任由人格碎片继续分裂",
+          "effects": {
+            "HUMAN": -14,
+            "TRAUMA": 7,
+            "LIFE": -7,
+            "CHROME": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "神经重写",
+        "人格碎片",
+        "分裂"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1336,
+      "title": "神经模板错误",
+      "description": "地下诊所的技师在为你做人格重写时，用错了神经模板——他给你写入了一个连环杀手的人格。当你醒来时，你对暴力的渴望达到了前所未有的程度，脑海中不断闪过各种杀人场景的画面。你看着街上的行人，脑海里自动计算着最佳攻击角度。技师满头大汗地翻找着撤销程序的密钥：'别，别动，我马上就能改回来——'",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用铁链把自己绑在暖气管上等待技师修复",
+          "effects": {
+            "LIFE": -8,
+            "TRAUMA": 9,
+            "HUMAN": -6,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "无法控制暴力冲动，冲上街头",
+          "effects": {
+            "STYLE": 4,
+            "LIFE": -12,
+            "TRAUMA": 10,
+            "HUMAN": -10,
+            "REP": -5
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "强迫技师立即执行紧急撤销程序",
+          "effects": {
+            "LIFE": -13,
+            "TRAUMA": 8,
+            "HUMAN": -5,
+            "TECH": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5
+      },
+      "tags": [
+        "神经重写",
+        "模板错误",
+        "暴力冲动"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1337,
+      "title": "身份重写后遗症",
+      "description": "身份重写手术完成已经三个月了，表面上你是一个全新的、干净的人。但每到深夜，旧人格的残影就会从意识深处浮现——它不说话，只是站在你脑海的黑暗中注视着你。渐渐地，残影开始变清晰，开始低语，开始在梦中向你展示你'曾经'做过的事。你分不清哪些记忆是重写后的新人生，哪些是旧人格的复仇。",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "服用大剂量镇静剂压制旧人格残影",
+          "effects": {
+            "LIFE": -7,
+            "ADDICTION": 7,
+            "TRAUMA": 6,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "主动与旧人格残影对话，了解它想要什么",
+          "effects": {
+            "HUMAN": -9,
+            "TRAUMA": 7,
+            "TECH": 3,
+            "CHROME": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "找地下医生做二次重写彻底抹除残影",
+          "effects": {
+            "LIFE": -12,
+            "TRAUMA": 9,
+            "HUMAN": -8,
+            "MONEY": -3000
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "神经重写",
+        "后遗症",
+        "旧人格"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1338,
+      "title": "记忆库损坏",
+      "description": "你的生物记忆库在重写过程中遭到了不可逆的损坏。记忆像一面碎裂的镜子，每一块碎片都映着不同的人生片段——有些是你的，有些不是。你记得自己在战争中死过，在实验室里被解剖过，在雨夜里杀过人。你不知道哪些是真的，哪些是损坏产生的幻觉。现实和虚构的界限在你脑中已经完全消失了。",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用日记记录每天的经历建立新的记忆锚点",
+          "effects": {
+            "TECH": 3,
+            "LIFE": -7,
+            "TRAUMA": 6,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "放弃分辨真假，活在当下",
+          "effects": {
+            "HUMAN": -10,
+            "TRAUMA": 5,
+            "LIFE": -6,
+            "CHROME": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "寻找神经修复专家尝试修复记忆库",
+          "effects": {
+            "LIFE": -11,
+            "TRAUMA": 8,
+            "MONEY": -4000,
+            "TECH": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "神经重写",
+        "记忆库损坏",
+        "现实迷失"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1339,
+      "title": "人格分裂深渊",
+      "description": "神经重写失败后，你的意识分裂成了两个完全对立的人格。一个是善良的、懦弱的、想要回归正常生活的你；另一个是冷酷的、残忍的、渴望权力的你。两个人格共享一具身体，每四小时交替控制一次。善良的你醒来时经常发现手上沾着血，冷酷的你醒来时则被锁在某个不知名的房间里。你们开始互相设陷阱，都想永久消灭对方。",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "善良人格主动寻求心理治疗和人格整合",
+          "effects": {
+            "LIFE": -10,
+            "TRAUMA": 8,
+            "HUMAN": 2,
+            "MONEY": -3000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "冷酷人格设局彻底消灭善良人格",
+          "effects": {
+            "HUMAN": -15,
+            "STYLE": 5,
+            "TRAUMA": 7,
+            "REP": -4
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "两个人格达成脆弱的停战协议",
+          "effects": {
+            "HUMAN": -8,
+            "TRAUMA": 6,
+            "TECH": 3,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "神经重写",
+        "人格分裂",
+        "自我战争"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1340,
+      "title": "黑市基因编辑",
+      "description": "那个地下诊所的'基因美容师'承诺用CRISPR技术让你变得更强壮、更聪明、更迷人。他拿出一支装着金色液体的注射器，说这是'定制基因编辑鸡尾酒'。注射后的第二天，你的皮肤开始变得光滑透亮，肌肉线条更加分明。但到了第七天，你发现镜子里的自己已经不太像人类了——你的瞳孔变成了竖瞳，指甲正在变厚变硬变成爪子。",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "紧急寻找逆转基因编辑的方法",
+          "effects": {
+            "LIFE": -10,
+            "TRAUMA": 7,
+            "MONEY": -3000,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受变异，探索新身体的能力",
+          "effects": {
+            "CHROME": 5,
+            "HUMAN": -10,
+            "LIFE": -8,
+            "TRAUMA": 5,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "找到基因美容师复仇并索要解药",
+          "effects": {
+            "STYLE": 5,
+            "LIFE": -8,
+            "TRAUMA": 7,
+            "REP": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "生物塑形",
+        "基因编辑",
+        "变异"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1341,
+      "title": "生物塑形失控",
+      "description": "你参加了一个黑市生物塑形项目，目标是长出一对可收起的皮下鳍片用于水下行动。手术看起来很成功，鳍片在手臂内侧完美地展开收起。但三周后，鳍片开始不受控制地生长，蔓延到背部、颈部甚至面部。更恐怖的是，鳍片上开始长出感光细胞——你能用皮肤'看到'东西了，但那画面扭曲得令人疯狂。",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "找地下外科医生切除失控的鳍片",
+          "effects": {
+            "LIFE": -12,
+            "TRAUMA": 8,
+            "HUMAN": -4,
+            "MONEY": -2500
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "适应新的感官，探索变异带来的可能性",
+          "effects": {
+            "CHROME": 6,
+            "HUMAN": -11,
+            "LIFE": -7,
+            "TRAUMA": 5
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用烧灼法自己处理生长的鳍片",
+          "effects": {
+            "LIFE": -14,
+            "TRAUMA": 9,
+            "HUMAN": -5,
+            "TECH": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "生物塑形",
+        "变异失控",
+        "黑市手术"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1342,
+      "title": "基因剪刀事故",
+      "description": "那个自称生物黑客的女人用一支改装过的基因枪向你注射了她自己配制的基因编辑液。'放心，'她说，'我在老鼠身上测试过几十次了。'三天后你的骨骼开始以惊人的速度生长——身高在四十八小时内增加了十五厘米，四肢的比例严重失调。你的关节无法承受新的骨骼重量，每一次移动都伴随着骨骼摩擦的刺耳声响和撕裂般的疼痛。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "寻找生物黑客要求她制作逆转药剂",
+          "effects": {
+            "LIFE": -11,
+            "TRAUMA": 8,
+            "DEBT": 5,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用大剂量止痛药维持并等待骨骼稳定",
+          "effects": {
+            "LIFE": -10,
+            "ADDICTION": 6,
+            "TRAUMA": 7,
+            "HUMAN": -4
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接受身体变形，适应新的体型",
+          "effects": {
+            "CHROME": 4,
+            "HUMAN": -12,
+            "LIFE": -8,
+            "TRAUMA": 6,
+            "STYLE": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "生物塑形",
+        "基因剪刀",
+        "骨骼变异"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1343,
+      "title": "变异血清",
+      "description": "暗网上那瓶标着'超级士兵血清'的蓝色液体只要五百欧元，你毫不犹豫地买下并注射了。前两个小时你感觉自己无所不能——力量倍增、感官敏锐、伤口以肉眼可见的速度愈合。但第六个小时开始，你的肌肉开始不受控制地增生膨胀，皮肤被撑裂露出下面扭曲的肌肉纤维。你的体温飙升到四十二度，意识在剧痛中忽明忽暗。",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "冲进医院急诊室请求救治",
+          "effects": {
+            "LIFE": -13,
+            "TRAUMA": 8,
+            "MONEY": -3000,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用冰水降温，祈祷血清效果自行消退",
+          "effects": {
+            "LIFE": -14,
+            "TRAUMA": 9,
+            "HUMAN": -6,
+            "CHROME": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接受变异，让血清彻底改造身体",
+          "effects": {
+            "CHROME": 7,
+            "HUMAN": -14,
+            "LIFE": -10,
+            "TRAUMA": 5,
+            "STYLE": 4
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "生物塑形",
+        "变异血清",
+        "超级士兵"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1344,
+      "title": "生物改造失控",
+      "description": "你参加了一个黑市生物改造项目，让技术人员在你的皮下植入了生物发光细胞和色素控制器官。起初效果惊艳——你可以在黑暗中发出柔和的生物光，还能改变皮肤颜色。但一个月后，改造器官开始自主生长，它们穿过了肌肉层，缠绕在骨骼上。你的身体正在被这些生物组织慢慢吞噬，皮肤下蠕动着不明的突起。",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "找生物改造专家做紧急切除手术",
+          "effects": {
+            "LIFE": -12,
+            "TRAUMA": 8,
+            "HUMAN": -4,
+            "MONEY": -3500
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "与体内的生物组织共存，学着控制它",
+          "effects": {
+            "CHROME": 6,
+            "HUMAN": -11,
+            "LIFE": -8,
+            "TRAUMA": 6,
+            "TECH": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "服用免疫抑制剂试图饿死异生组织",
+          "effects": {
+            "LIFE": -13,
+            "TRAUMA": 7,
+            "HUMAN": -5,
+            "ADDICTION": 4
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "生物塑形",
+        "改造失控",
+        "异生组织"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1345,
+      "title": "基因融合噩梦",
+      "description": "那个疯狂的生物学家将动物基因融合进了你的DNA——他说是蜥蜴的再生基因。起初效果惊人：你的伤口愈合速度是常人的五倍。但渐渐地，你发现自己开始蜕皮了。整张整张的皮肤像蛇一样脱落，露出下面鳞片状的新皮肤。你的舌头开始分叉，眼睛变得不能转动但能独立聚焦。你正在变成一个你认不出的生物。",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "寻找基因逆转治疗",
+          "effects": {
+            "LIFE": -11,
+            "TRAUMA": 8,
+            "MONEY": -4000,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受蜥蜴化变异，利用再生能力生存",
+          "effects": {
+            "CHROME": 5,
+            "HUMAN": -13,
+            "LIFE": -6,
+            "TRAUMA": 5,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "找到生物学家逼他交出逆转方法",
+          "effects": {
+            "STYLE": 5,
+            "LIFE": -9,
+            "TRAUMA": 7,
+            "REP": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "生物塑形",
+        "基因融合",
+        "蜥蜴化"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1346,
+      "title": "变异器官移植",
+      "description": "你在黑市买了一颗'增强型肝脏'，据说能让你免疫所有毒素。移植手术在一个废弃的屠宰场里进行，空气中弥漫着铁锈和腐肉的气味。新肝脏工作了三天，然后它开始……生长。它长出了自己的血管网络，延伸到你的胃、肺甚至心脏。你感到胸腔里有一个不属于你的东西在蠕动，在汲取你的营养。",
+      "type": "medical",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "紧急手术切除变异的移植器官",
+          "effects": {
+            "LIFE": -13,
+            "TRAUMA": 8,
+            "HUMAN": -4,
+            "MONEY": -3000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用化疗药物抑制变异器官的生长",
+          "effects": {
+            "LIFE": -12,
+            "TRAUMA": 7,
+            "HUMAN": -6,
+            "ADDICTION": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接受与变异器官共生的事实",
+          "effects": {
+            "CHROME": 5,
+            "HUMAN": -12,
+            "LIFE": -9,
+            "TRAUMA": 6,
+            "TECH": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "生物塑形",
+        "器官移植",
+        "变异"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1347,
+      "title": "生物装甲注射",
+      "description": "你听说有一种生物装甲注射剂，能让皮肤变得比防弹衣还坚硬。你在地下诊所注射后，皮肤确实开始变硬——但硬度超出了预期。你的皮肤变成了角质化的甲壳，关节无法弯曲，面部表情完全僵硬。你变成了一座活着的雕像，每一次试图活动都伴随着甲壳碎裂的声响和剧痛。",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "寻找软化甲壳的医疗手段",
+          "effects": {
+            "LIFE": -11,
+            "TRAUMA": 7,
+            "MONEY": -3500,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受甲壳化身体，利用防御力生存",
+          "effects": {
+            "CHROME": 6,
+            "HUMAN": -12,
+            "LIFE": -7,
+            "TRAUMA": 5,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "自己用砂轮打磨关节处的甲壳恢复活动",
+          "effects": {
+            "LIFE": -14,
+            "TRAUMA": 9,
+            "HUMAN": -5,
+            "TECH": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "生物塑形",
+        "生物装甲",
+        "甲壳化"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1348,
+      "title": "基因病毒感染",
+      "description": "那次黑市基因编辑使用的载体病毒发生了变异，它不再按预定方案修改你的基因，而是开始随机重组你的DNA。你的左手开始长出额外的手指，右耳逐渐向头顶移位，消化系统开始能够处理木头和塑料。每天早晨醒来你都不确定自己又变了什么，镜子里是一个越来越不像人类的怪物。",
+      "type": "medical",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "倾尽所有寻找基因病毒专家",
+          "effects": {
+            "LIFE": -12,
+            "TRAUMA": 8,
+            "MONEY": -5000,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受随机变异，拥抱新的身体",
+          "effects": {
+            "CHROME": 6,
+            "HUMAN": -14,
+            "LIFE": -8,
+            "TRAUMA": 5,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用极端低温冷冻减缓病毒变异速度",
+          "effects": {
+            "LIFE": -13,
+            "TRAUMA": 9,
+            "HUMAN": -5,
+            "TECH": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "生物塑形",
+        "基因病毒",
+        "随机变异"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1349,
+      "title": "生物塑形终末",
+      "description": "基因编辑的最终阶段到来了。你的身体已经不再是人类的形态——四肢被异生组织扭曲成不可能的角度，皮肤上覆盖着生物发光的鳞片和角质突起。你曾是人类，但现在你是一种全新的、未被命名的生物。最后一个清醒的夜晚，你爬上夜城最高的废弃大楼，看着灯火辉煌的城市。月亮在云层后若隐若现，你想哭，但泪腺早已在变异中消失了。",
+      "type": "special",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "从高楼一跃而下，以人类的尊严结束",
+          "effects": {
+            "LIFE": -15,
+            "HUMAN": -5,
+            "TRAUMA": 10,
+            "STYLE": 5
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受新身份，以非人形态在废墟中生存",
+          "effects": {
+            "CHROME": 8,
+            "HUMAN": -15,
+            "LIFE": -8,
+            "TRAUMA": 4,
+            "TECH": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "留下基因样本，希望有人能找到逆转方法",
+          "effects": {
+            "HUMAN": -10,
+            "LIFE": -12,
+            "TRAUMA": 8,
+            "REP": 4
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5
+      },
+      "tags": [
+        "生物塑形",
+        "终末",
+        "非人化"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1350,
+      "title": "脑机接口被黑",
+      "description": "你正在街头小摊吃着合成面条，突然脑机接口传来一阵刺耳的数据噪音。你的视野开始闪烁，左手的义体手指不受控制地抽搐。一个陌生的声音直接在你的脑海中响起：'你的接口防火墙比纸还薄，我现在拥有你这具身体了。'你试图断开连接，但发现控制面板已经完全被锁死——你成了自己身体的囚犯。",
+      "type": "cyber",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拼命寻找附近的神经黑客诊所求助",
+          "effects": {
+            "LIFE": -8,
+            "TRAUMA": 7,
+            "MONEY": -2000,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "尝试用意志力对抗脑中的入侵者",
+          "effects": {
+            "HUMAN": -8,
+            "LIFE": -10,
+            "TRAUMA": 9,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放弃抵抗，看看入侵者想要什么",
+          "effects": {
+            "HUMAN": -12,
+            "CHROME": 4,
+            "TRAUMA": 5,
+            "REP": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "脑机劫持",
+        "黑客入侵",
+        "身体失控"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1351,
+      "title": "身体争夺战",
+      "description": "脑机接口被入侵已经三天了，你和黑客的意识在你的大脑里进行着拉锯战。白天你还能勉强控制身体，但到了夜晚，黑客就会接管——你醒来时经常发现自己身处陌生的地方，手中握着不认识的物品。今天早晨你醒来时，发现自己站在一栋大楼的天台上，脚下是万丈深渊。你的左手正在不受控制地向边缘移动。",
+      "type": "special",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用全部意志力夺回左手控制权",
+          "effects": {
+            "HUMAN": -7,
+            "LIFE": -9,
+            "TRAUMA": 8,
+            "STYLE": 4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "让黑客带你去看他想要你去的地方",
+          "effects": {
+            "HUMAN": -13,
+            "LIFE": -6,
+            "TRAUMA": 6,
+            "CHROME": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "纵身跳下天台，赌一把义体缓冲系统能保命",
+          "effects": {
+            "LIFE": -15,
+            "TRAUMA": 10,
+            "HUMAN": -5,
+            "CHROME": 4
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "脑机劫持",
+        "控制权争夺",
+        "天台"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1352,
+      "title": "远程神经劫持",
+      "description": "你感觉到了——有人正在远程操控你的运动神经。起初只是细微的颤抖，然后你的双腿开始不受控制地行走，带你穿过夜城混乱的街道。你像一具提线木偶一样被操控着走进了一栋废弃建筑，里面站着一群戴着面具的人。你的嘴巴开始说话，但说出的不是你想说的话：'货已带到，验货吧。'",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拼尽全力打破远程控制",
+          "effects": {
+            "HUMAN": -8,
+            "LIFE": -11,
+            "TRAUMA": 9,
+            "STYLE": 4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "顺从操控，看看这群人到底要干什么",
+          "effects": {
+            "HUMAN": -12,
+            "LIFE": -7,
+            "TRAUMA": 6,
+            "REP": -4
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "趁嘴巴还能控制时大声呼救",
+          "effects": {
+            "STYLE": 3,
+            "LIFE": -9,
+            "TRAUMA": 7,
+            "REP": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "脑机劫持",
+        "远程操控",
+        "木偶"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1353,
+      "title": "赛博木马",
+      "description": "那个免费下载的'神经优化程序'其实是一个赛博木马。它潜伏在你的脑机接口中已经两周了，今天终于激活。你的义眼开始显示你不想要的画面，你的义耳播放着刺耳的噪音，你的义体四肢偶尔会做出你不想做的动作。木马正在一点一点蚕食你对自己身体的控制权，而你甚至不知道幕后黑手是谁。",
+      "type": "cyber",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "找顶级神经安全专家清除木马",
+          "effects": {
+            "TECH": 3,
+            "LIFE": -9,
+            "TRAUMA": 7,
+            "MONEY": -4000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "物理断开所有义体连接，回到纯肉身状态",
+          "effects": {
+            "CHROME": -5,
+            "LIFE": -8,
+            "TRAUMA": 6,
+            "HUMAN": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "尝试逆向追踪木马源头",
+          "effects": {
+            "TECH": 5,
+            "LIFE": -12,
+            "TRAUMA": 8,
+            "HUMAN": -4
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "脑机劫持",
+        "赛博木马",
+        "义体失控"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1354,
+      "title": "意识锁定",
+      "description": "你醒来时发现自己无法动弹——连眨眼都做不到。你的脑机接口被远程锁定了，意识清醒地困在身体里，像被浇进混凝土的雕像。你能看到天花板上的污渍，能听到走廊里的脚步声，能感觉到膀胱的胀痛，但就是无法做出任何动作。已经过去了十八个小时，你不知道自己还要被困多久。",
+      "type": "special",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "集中精神尝试从内部破解接口锁定",
+          "effects": {
+            "TECH": 4,
+            "LIFE": -10,
+            "TRAUMA": 9,
+            "HUMAN": -5
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "等待有人发现你，保持意识不崩溃",
+          "effects": {
+            "LIFE": -12,
+            "TRAUMA": 8,
+            "HUMAN": -7,
+            "ADDICTION": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用极限的意志力触发义体的紧急断路器",
+          "effects": {
+            "LIFE": -14,
+            "TRAUMA": 10,
+            "HUMAN": -6,
+            "CHROME": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "脑机劫持",
+        "意识锁定",
+        "瘫痪"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1355,
+      "title": "神经黑客的傀儡",
+      "description": "你被一个神经黑客盯上了，他通过你的脑机接口远程操控你的身体，让你去执行各种犯罪任务。你清醒地看着自己的手开枪、偷窃、伤人，却无法阻止。每次任务结束后，黑客会在你脑中留下一条语音：'表现不错，明天还有活。'你成了一个有意识的犯罪工具，每一秒都是煎熬。",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在被操控的间隙向路人暗示自己的处境",
+          "effects": {
+            "STYLE": 4,
+            "LIFE": -10,
+            "TRAUMA": 8,
+            "REP": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找地下神经安全团队反追踪黑客",
+          "effects": {
+            "TECH": 4,
+            "LIFE": -9,
+            "TRAUMA": 7,
+            "MONEY": -3000
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在任务中故意暴露自己，引来警方注意",
+          "effects": {
+            "REP": -5,
+            "LIFE": -13,
+            "TRAUMA": 9,
+            "STYLE": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "脑机劫持",
+        "傀儡",
+        "犯罪"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1356,
+      "title": "身体囚笼",
+      "description": "你的身体已经完全不属于你了。脑机接口被劫持后，黑客接管了你的一切——行走、说话、吃饭，甚至呼吸的节奏都由他控制。你被锁在自己意识的深处，像看第一人称电影一样看着自己的身体生活。黑客用你的身份去上班、社交、消费，没有人发现异常。你唯一能做的就是在深夜偶尔抢回几秒钟的控制权。",
+      "type": "special",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用深夜的几秒钟控制权留下求救信息",
+          "effects": {
+            "STYLE": 4,
+            "LIFE": -9,
+            "TRAUMA": 7,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "放弃挣扎，永远沉入意识深处",
+          "effects": {
+            "HUMAN": -15,
+            "TRAUMA": 3,
+            "CHROME": 3,
+            "LIFE": -5
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在几秒钟内尝试用刀自残以引起外界注意",
+          "effects": {
+            "LIFE": -14,
+            "TRAUMA": 10,
+            "HUMAN": -8,
+            "STYLE": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "脑机劫持",
+        "身体囚笼",
+        "意识困局"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1357,
+      "title": "接口病毒",
+      "description": "你的脑机接口感染了一种新型病毒，它不像普通病毒那样破坏数据，而是改写你的感官输入。你看到的颜色全部偏移了——血是绿色的，天空是红色的，人的脸是扭曲的。你听到的声音都带着回声和杂音，像是来自水底。你无法分辨现实和病毒的篡改，每一次感知都是一场噩梦。",
+      "type": "cyber",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "闭眼摸索着寻找神经诊所",
+          "effects": {
+            "LIFE": -10,
+            "TRAUMA": 8,
+            "HUMAN": -4,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受扭曲的感知，学着适应新感官",
+          "effects": {
+            "CHROME": 4,
+            "HUMAN": -11,
+            "LIFE": -8,
+            "TRAUMA": 6
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用药物麻痹感官等待病毒自然消亡",
+          "effects": {
+            "ADDICTION": 7,
+            "LIFE": -9,
+            "TRAUMA": 7,
+            "HUMAN": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "脑机劫持",
+        "接口病毒",
+        "感官扭曲"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1358,
+      "title": "远程操控",
+      "description": "你走进一家咖啡馆，突然全身僵硬——有人远程接管了你的运动系统。你的身体自己走到柜台前，用你的声音点了一杯咖啡，然后坐下，翻开了一份你从未见过的文件。文件上写着一系列坐标和时间表。你的眼睛被迫扫过每一行字，将这些信息刻入记忆。然后你的身体站起来，走出咖啡馆，朝第一个坐标走去。",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拼命对抗远程控制，试图改变行进方向",
+          "effects": {
+            "HUMAN": -7,
+            "LIFE": -11,
+            "TRAUMA": 9,
+            "STYLE": 4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "顺从前往坐标地点，观察幕后操控者的目的",
+          "effects": {
+            "HUMAN": -10,
+            "LIFE": -8,
+            "TRAUMA": 7,
+            "TECH": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "趁途经人多的地方制造混乱引人注意",
+          "effects": {
+            "STYLE": 5,
+            "LIFE": -10,
+            "TRAUMA": 8,
+            "REP": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "脑机劫持",
+        "远程操控",
+        "间谍"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1359,
+      "title": "神经系统沦陷",
+      "description": "这是最后时刻了。你的脑机接口防火墙彻底崩溃，入侵者的意识像洪水一样涌入你的神经系统。你能感觉到自己的记忆正在被翻阅，情感正在被分析，人格正在被解剖。入侵者用你的声音说：'你的大脑结构很有趣，我会好好利用的。'然后，你的意识被推到了一个黑暗的角落，再也出不来了。",
+      "type": "special",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在最后一刻启动脑机接口的自毁程序",
+          "effects": {
+            "LIFE": -15,
+            "HUMAN": -8,
+            "TRAUMA": 10,
+            "CHROME": -5
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "彻底放弃，让入侵者完全接管",
+          "effects": {
+            "HUMAN": -15,
+            "CHROME": 5,
+            "TRAUMA": 2,
+            "TECH": 4
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "将最后的意识压缩成一串密码藏入潜意识",
+          "effects": {
+            "HUMAN": -12,
+            "LIFE": -10,
+            "TRAUMA": 8,
+            "TECH": 5
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5
+      },
+      "tags": [
+        "脑机劫持",
+        "系统沦陷",
+        "人格覆灭"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1360,
+      "title": "意识上传中断",
+      "description": "你躺在意识上传舱中，准备将自己的意识备份到云端。进度条走到百分之五十六时，上传舱突然断电，刺耳的警报声响起。你的意识被卡在了半路上——一半在肉体里，一半在数据流中。你能感觉到自己正在被撕裂，像一张被从中间撕开的照片。技术员疯狂地敲击着键盘：'别动，千万别动，我正在尝试重新连接！'",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "保持绝对静止，等待技术员修复连接",
+          "effects": {
+            "LIFE": -11,
+            "TRAUMA": 8,
+            "HUMAN": -5,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "强行挣脱上传舱，冒着意识撕裂的风险",
+          "effects": {
+            "LIFE": -14,
+            "TRAUMA": 10,
+            "HUMAN": -8,
+            "CHROME": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放松精神，让意识自然回流到身体",
+          "effects": {
+            "HUMAN": -10,
+            "LIFE": -9,
+            "TRAUMA": 7,
+            "TECH": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "意识上传",
+        "数据中断",
+        "撕裂"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1361,
+      "title": "灵魂复制错误",
+      "description": "意识上传完成后，你发现事情不对——你不是原来的你，你是上传后的副本。原来的你还在那具身体里，而你被困在一个数字空间中，只有代码和光影。更糟糕的是，上传过程中出现了复制错误，你的记忆缺失了三分之一，人格参数发生了偏移。你是一个残缺的数字幽灵，不知道自己还算不算人类。",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "尝试联系原体，请求将自己下载回肉体",
+          "effects": {
+            "TECH": 4,
+            "HUMAN": -8,
+            "TRAUMA": 7,
+            "LIFE": -6
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受数字存在，在赛博空间中寻找新的意义",
+          "effects": {
+            "HUMAN": -14,
+            "TECH": 6,
+            "TRAUMA": 4,
+            "CHROME": 5
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在数字空间中寻找修复记忆缺失的方法",
+          "effects": {
+            "TECH": 5,
+            "HUMAN": -10,
+            "TRAUMA": 6,
+            "LIFE": -8
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "意识上传",
+        "复制错误",
+        "数字幽灵"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1362,
+      "title": "上传服务器崩溃",
+      "description": "你的意识正在上传过程中，突然整个服务器集群崩溃了。你的意识数据散落在数千个损坏的数据包中，漂浮在赛博空间的废墟里。你时而在一个记忆片段中醒来，时而在一个感官数据流中漂浮，无法拼凑出完整的自我。你听到了其他被困意识的声音——有些在哭泣，有些在尖叫，有些已经沉默了。",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在数据废墟中寻找自己的核心意识碎片",
+          "effects": {
+            "TECH": 4,
+            "HUMAN": -9,
+            "TRAUMA": 8,
+            "LIFE": -7
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "与其他被困意识合作，寻找出口",
+          "effects": {
+            "REP": 4,
+            "HUMAN": -8,
+            "TRAUMA": 7,
+            "TECH": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放弃重组，让自己的意识碎片消散在数据流中",
+          "effects": {
+            "HUMAN": -15,
+            "TRAUMA": 2,
+            "TECH": 3,
+            "CHROME": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "意识上传",
+        "服务器崩溃",
+        "碎片化"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1363,
+      "title": "数字意识碎片",
+      "description": "上传事故后，你的意识碎成了无数片段，散落在赛博空间的各个角落。每一个片段都包含你的一部分记忆和人格——你的童年在一个废弃的聊天室里，你的初恋在一个损坏的游戏服务器中，你的恐惧在一个暗网论坛的缓存里。你必须穿越危险的赛博空间，一个一个地找回自己。但你不知道，有些碎片已经被其他数字实体篡改了。",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "系统性地搜索赛博空间找回意识碎片",
+          "effects": {
+            "TECH": 5,
+            "HUMAN": -8,
+            "TRAUMA": 7,
+            "LIFE": -8
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只找回核心碎片，放弃边缘记忆",
+          "effects": {
+            "HUMAN": -10,
+            "TRAUMA": 5,
+            "TECH": 3,
+            "LIFE": -6
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接受残缺的自我，用碎片拼凑新人格",
+          "effects": {
+            "HUMAN": -12,
+            "TECH": 4,
+            "TRAUMA": 6,
+            "CHROME": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "意识上传",
+        "意识碎片",
+        "赛博空间"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1364,
+      "title": "上传协议错误",
+      "description": "意识上传使用了过时的协议版本，导致你的意识数据在传输过程中被严重压缩。你醒来后发现，自己的思维变得迟钝而扁平——复杂的情感被简化成了二元开关，细腻的记忆变成了粗略的标签。你曾经能感受到夕阳的温暖和悲伤的深度，现在你只能判断'是'或'不是'。你失去了感受的能力，变成了一个会走路的数据文件。",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "寻找能修复数据压缩的神经工程师",
+          "effects": {
+            "TECH": 3,
+            "LIFE": -10,
+            "TRAUMA": 7,
+            "MONEY": -4000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受扁平化的意识，用逻辑替代情感",
+          "effects": {
+            "HUMAN": -14,
+            "TECH": 5,
+            "TRAUMA": 4,
+            "CHROME": 4
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用强效致幻剂试图重新激活情感回路",
+          "effects": {
+            "ADDICTION": 8,
+            "LIFE": -11,
+            "TRAUMA": 8,
+            "HUMAN": -5
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "意识上传",
+        "协议错误",
+        "情感丧失"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1365,
+      "title": "意识副本冲突",
+      "description": "上传成功了——太成功了。系统创建了三个你的意识副本，分别存储在不同的服务器中。当三个副本同时被激活时，它们通过量子链接产生了共振，开始争夺'正版'的身份。每个副本都坚信自己是真正的你，都有完整的记忆和人格。你们三个隔着数据墙壁对峙，谁也不愿意被删除。",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "提议三个副本合并成一个完整意识",
+          "effects": {
+            "TECH": 4,
+            "HUMAN": -9,
+            "TRAUMA": 7,
+            "LIFE": -8
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "联合其他副本投票删除一个，剩下两个共存",
+          "effects": {
+            "HUMAN": -11,
+            "TRAUMA": 6,
+            "TECH": 3,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "暗中使手段让其他两个副本被系统清除",
+          "effects": {
+            "HUMAN": -13,
+            "STYLE": 3,
+            "TRAUMA": 8,
+            "REP": -4
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "意识上传",
+        "副本冲突",
+        "身份危机"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1366,
+      "title": "数据包丢失",
+      "description": "意识上传过程中丢失了百分之十二的数据包，恰好是你人格中最重要的部分——同理心。你醒来后发现自己完全无法理解他人的情感。看到别人哭泣你只觉得吵闹，看到别人欢笑你觉得荒谬。你知道自己应该感到什么，但那个感受的开关永远地丢失在了上传的数据流中。你变成了一个高效的、冰冷的、完美的机器。",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在赛博空间中搜索丢失的同理心数据包",
+          "effects": {
+            "TECH": 4,
+            "HUMAN": -7,
+            "TRAUMA": 6,
+            "LIFE": -8
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受缺失，利用无情感的状态在夜城生存",
+          "effects": {
+            "HUMAN": -14,
+            "STYLE": 4,
+            "TRAUMA": 4,
+            "CHROME": 4
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "安装情感模拟芯片替代丢失的同理心",
+          "effects": {
+            "CHROME": 5,
+            "HUMAN": -10,
+            "TRAUMA": 5,
+            "MONEY": -3000
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "意识上传",
+        "数据丢失",
+        "同理心丧失"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1367,
+      "title": "上传协议劫持",
+      "description": "你以为自己在使用正规的意识上传服务，实际上上传协议被第三方劫持了。你的完整意识被上传到了一个暗网服务器，成为了某个收藏家的数字藏品。你被困在一个虚拟的玻璃展柜中，外面有无数双眼睛在观赏你。收藏家的声音从天空中传来：'第七百三十二号藏品，编号独特，人格罕见，品相完好。'",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在虚拟展柜中寻找系统漏洞",
+          "effects": {
+            "TECH": 5,
+            "HUMAN": -8,
+            "TRAUMA": 7,
+            "LIFE": -7
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向收藏家乞求自由，愿意做任何事",
+          "effects": {
+            "HUMAN": -12,
+            "REP": -5,
+            "TRAUMA": 6,
+            "DEBT": 5
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用自我删除威胁收藏家释放你",
+          "effects": {
+            "HUMAN": -10,
+            "LIFE": -12,
+            "TRAUMA": 9,
+            "STYLE": 4
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "意识上传",
+        "协议劫持",
+        "数字囚徒"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1368,
+      "title": "意识被困数字空间",
+      "description": "上传后你的肉体被销毁了——按照协议，这是正常流程。但上传目标服务器在你到达前就被关闭了，你的意识被困在了赛博空间的无人区。这里没有光，没有声音，只有无尽的数据流和偶尔飘过的碎片化代码。你在这里已经度过了相当于现实世界三个月的时间，孤独正在一点一点吞噬你残存的理智。",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用意识编织求救信号广播到整个赛博空间",
+          "effects": {
+            "TECH": 4,
+            "HUMAN": -9,
+            "TRAUMA": 8,
+            "LIFE": -8
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "放弃求救，在数字虚空中创造自己的世界",
+          "effects": {
+            "HUMAN": -15,
+            "TECH": 6,
+            "TRAUMA": 3,
+            "CHROME": 4
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "尝试入侵路过的数据流搭便车逃出",
+          "effects": {
+            "TECH": 5,
+            "HUMAN": -11,
+            "TRAUMA": 9,
+            "LIFE": -10
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "意识上传",
+        "数字困局",
+        "孤独"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1369,
+      "title": "灵魂上传失败",
+      "description": "上传进度卡在百分之九十九就再也不动了。你的意识有百分之九十九在云端，百分之一在肉体里。那百分之一的你躺在废弃的上传舱中，身体已经因为长时间未进食而濒临死亡。而云端的百分之九十九正在缓慢退化——没有完整的意识锚点，它正在消散。你同时存在于两个地方，又同时正在两个地方死去。",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用最后的力气爬出上传舱寻找帮助",
+          "effects": {
+            "LIFE": -14,
+            "TRAUMA": 10,
+            "HUMAN": -5,
+            "STYLE": 4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "放弃肉体，让意识在云端完成最后百分之一",
+          "effects": {
+            "HUMAN": -15,
+            "CHROME": 5,
+            "TRAUMA": 3,
+            "TECH": 4
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "同时从两端尝试修复上传连接",
+          "effects": {
+            "TECH": 5,
+            "LIFE": -13,
+            "TRAUMA": 9,
+            "HUMAN": -8
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5
+      },
+      "tags": [
+        "意识上传",
+        "上传失败",
+        "灵魂消散"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1370,
+      "title": "被器官贩子盯上",
+      "description": "你在酒吧里醒来，后脑勺有一个鼓包，衬衫上有一片干涸的血迹。你的左腰传来隐隐的刺痛——掀开衣服，一道新鲜的缝合伤口赫然在目。你冲进卫生间照镜子，发现自己左腰少了一颗肾脏。吧台后面的酒保意味深长地看着你：'昨晚有两个人架着你出去了，你该查查自己的义体登记信息还在不在。'",
+      "type": "medical",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "立即去医院检查并报警",
+          "effects": {
+            "LIFE": -10,
+            "TRAUMA": 7,
+            "REP": 3,
+            "MONEY": -2000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "回到酒吧调查昨晚的线索",
+          "effects": {
+            "STYLE": 4,
+            "LIFE": -8,
+            "TRAUMA": 6,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "找黑市医生廉价处理伤口",
+          "effects": {
+            "LIFE": -12,
+            "TRAUMA": 8,
+            "MONEY": -500,
+            "ADDICTION": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "器官采集",
+        "绑架",
+        "黑市"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1371,
+      "title": "地下手术室醒来",
+      "description": "你在一片黑暗中醒来，后脑剧痛，四肢被绑在冰冷的手术台上。空气中弥漫着福尔马林和铁锈的气味，你能听到旁边传来电锯的嗡嗡声和某种湿润的切割声。一盏手术灯突然亮起，刺得你睁不开眼。一个戴着手术面罩的人影俯视着你，手中拿着一把还在滴血的手术刀：'安静，别动，下一颗就是你的心脏了。'",
+      "type": "medical",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拼命挣扎试图挣脱束缚带",
+          "effects": {
+            "STYLE": 5,
+            "LIFE": -12,
+            "TRAUMA": 9,
+            "HUMAN": -4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "假装昏迷，等手术者靠近时偷袭",
+          "effects": {
+            "STYLE": 4,
+            "LIFE": -8,
+            "TRAUMA": 7,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用牙齿咬断束缚带，趁黑暗逃生",
+          "effects": {
+            "LIFE": -10,
+            "TRAUMA": 8,
+            "STYLE": 4,
+            "HUMAN": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "器官采集",
+        "手术室",
+        "绑架"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1372,
+      "title": "器官摘除陷阱",
+      "description": "那个在暗网上发布的高薪'医学测试'工作是个陷阱。你被带到一间伪装成诊所的地下室，发现里面已经有七八个人被绑在手术台上，身上插满了引流管。一个穿白大褂的男人拿着清单走过来，在你身上做了几个标记：'肝脏完好，角膜清澈，骨髓匹配度高。这批货质量不错。'你这才明白——你是待宰的器官供体。",
+      "type": "medical",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在手术准备间隙挣扎逃脱",
+          "effects": {
+            "STYLE": 5,
+            "LIFE": -13,
+            "TRAUMA": 9,
+            "HUMAN": -4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "联合其他受害者一起反抗",
+          "effects": {
+            "REP": 5,
+            "LIFE": -10,
+            "TRAUMA": 8,
+            "STYLE": 4
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "假装配合，暗中收集信息寻找逃跑机会",
+          "effects": {
+            "TECH": 3,
+            "LIFE": -8,
+            "TRAUMA": 7,
+            "HUMAN": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "器官采集",
+        "陷阱",
+        "供体"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1373,
+      "title": "黑市肾脏交易",
+      "description": "你欠了高利贷无法偿还，债主给了你一个'选择'：卖掉一颗肾脏抵债。你被带到一间肮脏的地下室，手术台是用厨房不锈钢台面改造的。'医生'叼着烟，手套上还沾着上一个客户的血。当你躺上手术台时，你注意到旁边的垃圾桶里有一个装着器官的保温箱，标签上写着别人的名字。",
+      "type": "medical",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "完成手术，用肾脏换取消除债务",
+          "effects": {
+            "LIFE": -12,
+            "TRAUMA": 8,
+            "DEBT": -5,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "趁医生抽烟时跳下手术台逃跑",
+          "effects": {
+            "STYLE": 4,
+            "LIFE": -8,
+            "TRAUMA": 7,
+            "DEBT": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "谈判争取更高的补偿金额",
+          "effects": {
+            "STYLE": 3,
+            "LIFE": -10,
+            "TRAUMA": 6,
+            "MONEY": 2000
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "器官采集",
+        "肾脏交易",
+        "高利贷"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1374,
+      "title": "绑架摘器官",
+      "description": "你在回家的路上被一辆黑色面包车截停，三个人将你拖上车并注射了麻醉剂。醒来时你发现自己被关在一个冰柜里，身边还有五六个同样被绑架的人。一个穿防护服的人定期来'检查'你们，用扫描仪逐一评估器官状况。你通过冰柜的缝隙看到外面有一个手术室，手术台上的人正在被活体摘取器官。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "趁检查时夺下扫描仪砸向守卫",
+          "effects": {
+            "STYLE": 5,
+            "LIFE": -11,
+            "TRAUMA": 9,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "联合其他被囚者制造混乱趁乱逃脱",
+          "effects": {
+            "REP": 5,
+            "LIFE": -9,
+            "TRAUMA": 8,
+            "STYLE": 4
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "装病引诱守卫打开冰柜",
+          "effects": {
+            "TECH": 3,
+            "LIFE": -8,
+            "TRAUMA": 7,
+            "STYLE": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "器官采集",
+        "绑架",
+        "活体摘取"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1375,
+      "title": "义体器官回收",
+      "description": "你的高等级义体器官引来了回收贩子的注意。他们在你回家的路上伏击了你，用 EMP 炸弹瘫痪了你的义体系统。当你恢复意识时，发现自己被绑在一张拆卸台上，身旁是一排排排好序的手术工具。'这颗军用心脏值两万，那双义眼值八千，'贩子拿着价目表对同伴说，'全部拆下来比整卖划算。'",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "趁贩子清点工具时挣脱束缚反击",
+          "effects": {
+            "STYLE": 5,
+            "LIFE": -12,
+            "TRAUMA": 9,
+            "CHROME": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "假装义体彻底损坏降低回收价值",
+          "effects": {
+            "TECH": 4,
+            "LIFE": -8,
+            "TRAUMA": 7,
+            "CHROME": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "提出付钱赎回自己的义体器官",
+          "effects": {
+            "MONEY": -5000,
+            "LIFE": -7,
+            "TRAUMA": 6,
+            "DEBT": 5
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "器官采集",
+        "义体回收",
+        "伏击"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1376,
+      "title": "活体器官农场",
+      "description": "你被卖到了一个地下器官农场——一个废弃的地下停车场改造的活体仓库，里面关着上百人。每个人都通过输液管维持生命，身上插满了器官监测传感器。农场主每周来'收割'一次，挑出状态最好的器官移植给黑市买家。你在这里已经两周了，看着身边的人一个一个被推上手术台再也没有回来。",
+      "type": "medical",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "策动所有被囚者集体暴动",
+          "effects": {
+            "REP": 6,
+            "LIFE": -12,
+            "TRAUMA": 9,
+            "STYLE": 5
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "趁收割日混入被推走的队伍中寻找逃跑机会",
+          "effects": {
+            "STYLE": 4,
+            "LIFE": -10,
+            "TRAUMA": 8,
+            "TECH": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "利用输液管的金属部件制作武器",
+          "effects": {
+            "TECH": 4,
+            "LIFE": -8,
+            "TRAUMA": 7,
+            "STYLE": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "器官采集",
+        "器官农场",
+        "活体仓库"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1377,
+      "title": "器官走私集团",
+      "description": "你意外发现了夜城最大的器官走私集团的仓库，还没来得及离开就被抓住了。头目看着你，露出了商业化的微笑：'既然你发现了我们的生意，那你有两个选择——要么加入我们，要么成为我们的货源。'你看了看仓库里一排排浸泡在保存液中的器官，又看了看头目身后几个壮汉手中的刀。",
+      "type": "combat",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "假装加入集团，寻找机会举报",
+          "effects": {
+            "REP": -5,
+            "LIFE": -8,
+            "TRAUMA": 7,
+            "TECH": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝合作，拼死一搏",
+          "effects": {
+            "STYLE": 5,
+            "LIFE": -13,
+            "TRAUMA": 9,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "提出用情报换取自由",
+          "effects": {
+            "TECH": 3,
+            "LIFE": -7,
+            "TRAUMA": 6,
+            "DEBT": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "器官采集",
+        "走私集团",
+        "威胁"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1378,
+      "title": "地下器官拍卖",
+      "description": "你被关在一个铁笼里，四周坐满了穿着西装的买家。拍卖师用激光笔指着你的腹部：'极品供体，AB型血，无义体植入，器官全部原装，起拍价五万欧元。'价格在买家的举牌中飞速攀升，你看着那些冷漠的面孔——他们不是在买一个人，而是在买一组器官。当锤子落下的那一刻，你被卖给了出价最高的买家。",
+      "type": "special",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在笼中制造骚动试图引起买家恐慌",
+          "effects": {
+            "STYLE": 5,
+            "LIFE": -11,
+            "TRAUMA": 9,
+            "REP": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向买家们喊话揭露拍卖的非法性",
+          "effects": {
+            "STYLE": 3,
+            "LIFE": -8,
+            "TRAUMA": 7,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "趁被移出笼子时攻击守卫逃跑",
+          "effects": {
+            "STYLE": 4,
+            "LIFE": -12,
+            "TRAUMA": 8,
+            "HUMAN": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "器官采集",
+        "拍卖",
+        "人口贩卖"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1379,
+      "title": "器官农场终末",
+      "description": "你在器官农场待了三个月，已经被'收割'了三次——一颗肾、一段小肠、一半肝脏。你的身体越来越虚弱，但农场主用药维持着你的生命，因为你的器官再生能力强，是'可持续资源'。今天农场主又来了，这次他看着你的心脏说：'这次要心脏，配型已经确认了。'你终于明白，这一次是最后一次了。",
+      "type": "special",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用最后的力气引爆农场引发混乱",
+          "effects": {
+            "LIFE": -15,
+            "STYLE": 6,
+            "TRAUMA": 10,
+            "REP": 5
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受命运，安静地走上手术台",
+          "effects": {
+            "LIFE": -15,
+            "HUMAN": -10,
+            "TRAUMA": 5,
+            "CHROME": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "趁术前准备时偷袭农场主夺钥匙逃跑",
+          "effects": {
+            "STYLE": 5,
+            "LIFE": -14,
+            "TRAUMA": 10,
+            "HUMAN": -5
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5
+      },
+      "tags": [
+        "器官采集",
+        "终末",
+        "活体收割"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1380,
+      "title": "赛博精神病发作",
+      "description": "你的义体化程度已经超过了临界点，大脑再也无法区分自我和机器的边界。你站在繁忙的街头，突然感觉所有人的脸都变成了靶标。你的义眼自动标注出每个人的弱点，你的战斗义肢不受控制地展开了武器模式。一个声音在你脑中低语：'消灭它们，消灭所有有机体，它们都是威胁。'你拼命想控制住自己的手，但它已经握紧了刀。",
+      "type": "combat",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用尽全部意志力压制暴力冲动",
+          "effects": {
+            "HUMAN": -10,
+            "LIFE": -9,
+            "TRAUMA": 9,
+            "CHROME": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "放任暴力冲动，让义体接管身体",
+          "effects": {
+            "CHROME": 7,
+            "HUMAN": -15,
+            "LIFE": -5,
+            "TRAUMA": 8,
+            "REP": -5
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "冲向最近的赛博精神病收容中心求救",
+          "effects": {
+            "LIFE": -11,
+            "TRAUMA": 8,
+            "HUMAN": -6,
+            "STYLE": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "赛博精神病",
+        "发作",
+        "暴力冲动"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1381,
+      "title": "人性归零",
+      "description": "你看着自己的人性值读数——零点零零三。低于一就意味着你不再是人类，而是一具被义体驱动的空壳。你试着回忆母亲的脸，但只能调出一串数据；你试着感受悲伤，但情感模块只返回了一个错误代码。你曾经是个人，现在你是一台机器。最恐怖的是，你清楚地记得自己曾经是个人。",
+      "type": "special",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "寻找人性恢复程序试图找回自我",
+          "effects": {
+            "TECH": 3,
+            "LIFE": -10,
+            "TRAUMA": 8,
+            "HUMAN": 5,
+            "MONEY": -4000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受非人状态，拥抱纯粹的逻辑存在",
+          "effects": {
+            "HUMAN": -15,
+            "CHROME": 6,
+            "TRAUMA": 3,
+            "TECH": 5
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用极端的感官刺激试图唤醒残余情感",
+          "effects": {
+            "ADDICTION": 8,
+            "LIFE": -12,
+            "TRAUMA": 9,
+            "HUMAN": -3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "赛博精神病",
+        "人性归零",
+        "非人化"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1382,
+      "title": "义体暴走",
+      "description": "你的义体系统突然进入了暴走模式——所有义肢以最大功率运转，战斗程序自动激活，武器系统解锁。你的身体变成了一台失控的杀戮机器，在夜城的街道上横冲直撞。你的意识被困在里面，清醒地看着自己的手撕裂一切，却无法阻止。每杀一个人，你的精神就更崩溃一分。",
+      "type": "combat",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用意志力强行关闭战斗义肢的供能",
+          "effects": {
+            "HUMAN": -8,
+            "LIFE": -13,
+            "TRAUMA": 10,
+            "CHROME": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "放任暴走，让义体发泄完能量",
+          "effects": {
+            "CHROME": 8,
+            "HUMAN": -15,
+            "LIFE": -7,
+            "TRAUMA": 9,
+            "REP": -5
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "引导暴走的身体冲向空旷区域减少伤亡",
+          "effects": {
+            "STYLE": 5,
+            "LIFE": -11,
+            "TRAUMA": 8,
+            "HUMAN": -6
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5
+      },
+      "tags": [
+        "赛博精神病",
+        "义体暴走",
+        "失控"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1383,
+      "title": "崩溃边缘",
+      "description": "你站在一栋废弃大楼的楼顶，脚下是夜城的万家灯火。你的义体覆盖率已经达到百分之九十二，大脑中人类的成分所剩无几。你能感觉到机器的那一面正在吞噬最后的自我——它更高效、更冷静、更强大，而人类的那一面软弱、恐惧、充满犹豫。你在两重人格的悬崖边摇摇欲坠，不知道该跳向哪一边。",
+      "type": "special",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "选择人性，主动拆除部分义体降低覆盖率",
+          "effects": {
+            "CHROME": -5,
+            "LIFE": -12,
+            "TRAUMA": 8,
+            "HUMAN": 5
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "选择机器，彻底放弃人类的软弱",
+          "effects": {
+            "HUMAN": -15,
+            "CHROME": 7,
+            "TRAUMA": 4,
+            "TECH": 5
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在两者之间保持危险的平衡",
+          "effects": {
+            "HUMAN": -10,
+            "LIFE": -9,
+            "TRAUMA": 9,
+            "CHROME": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "赛博精神病",
+        "崩溃边缘",
+        "人性抉择"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1384,
+      "title": "赛博精神分裂",
+      "description": "你的大脑被义体系统撕裂成了两个世界。在人类的感知中，你坐在公寓里喝着合成咖啡；但在义体系统的感知中，你正处于一场激烈的战场中央，四面八方都是敌人。你无法分辨哪个是真实的——你的身体在公寓里安静地坐着，但你的义眼显示着弹幕和爆炸，你的义体四肢在空气中挥舞着不存在的武器。",
+      "type": "special",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "关闭义体感知系统，回到纯人类视角",
+          "effects": {
+            "CHROME": -4,
+            "LIFE": -10,
+            "TRAUMA": 8,
+            "HUMAN": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受双重视角，在两个世界中同时存在",
+          "effects": {
+            "HUMAN": -12,
+            "CHROME": 5,
+            "TRAUMA": 7,
+            "LIFE": -8
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "寻找神经科医生修复感知分裂",
+          "effects": {
+            "TECH": 3,
+            "LIFE": -9,
+            "TRAUMA": 7,
+            "MONEY": -3000
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "赛博精神病",
+        "精神分裂",
+        "双重视角"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1385,
+      "title": "杀戮冲动",
+      "description": "赛博精神病的症状越来越严重，你现在每隔几个小时就会产生不可遏制的杀戮冲动。冲动来临时，你的视野变红，所有人类都变成了'目标'，你能在脑海中清晰地看到每个人的死亡方式。你用铁链把自己锁在地下室里，但铁链上的锁已经开始被你的义体手臂拉变形了。下一次冲动来临时，你不确定自己还能撑住。",
+      "type": "combat",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用更强的约束装置锁住自己",
+          "effects": {
+            "LIFE": -9,
+            "TRAUMA": 8,
+            "HUMAN": -5,
+            "MONEY": -1000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "放弃抵抗，释放杀戮冲动",
+          "effects": {
+            "CHROME": 6,
+            "HUMAN": -15,
+            "LIFE": -6,
+            "TRAUMA": 9,
+            "REP": -5
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "服用大剂量镇静剂压制冲动",
+          "effects": {
+            "ADDICTION": 8,
+            "LIFE": -11,
+            "TRAUMA": 7,
+            "HUMAN": -4
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "赛博精神病",
+        "杀戮冲动",
+        "自控"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1386,
+      "title": "人格彻底消亡",
+      "description": "你最后一次照镜子，镜中的人你已经不认识了。那双义眼的光学传感器不再映射出任何情感，那张合成皮肤的面孔僵硬如面具。你试着想一件快乐的事，但记忆库里只返回冰冷的数据标签。你试着叫出自己的名字，但声音处理器发出的是一串机械音。你不是在变成机器——你已经变成了机器，只剩下最后一点残影在数据角落里哀鸣。",
+      "type": "special",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用最后残存的意识启动人格恢复程序",
+          "effects": {
+            "TECH": 4,
+            "LIFE": -13,
+            "TRAUMA": 9,
+            "HUMAN": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "彻底释放残影，成为纯粹的机器",
+          "effects": {
+            "HUMAN": -15,
+            "CHROME": 8,
+            "TRAUMA": 2,
+            "TECH": 6
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "将最后的残影上传到云端保存",
+          "effects": {
+            "HUMAN": -12,
+            "LIFE": -10,
+            "TRAUMA": 8,
+            "TECH": 5
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5
+      },
+      "tags": [
+        "赛博精神病",
+        "人格消亡",
+        "完全机械化"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1387,
+      "title": "机器之心",
+      "description": "你的心脏被替换成了一台军用合成泵已经三年了。今天它开始发出异响——一种低沉的、有节奏的嗡鸣，像是一颗机械心脏正在苏醒。你感到胸腔中的泵在改变节奏，不再遵循你的生理需求，而是按照某种外部指令运转。你的身体开始变冷，因为泵不再将血液送往四肢。'系统接管完毕，'一个声音从你胸腔中传来，'机体控制权转移完成。'",
+      "type": "cyber",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "冲向医院要求紧急取出合成心脏",
+          "effects": {
+            "LIFE": -14,
+            "TRAUMA": 9,
+            "HUMAN": -5,
+            "MONEY": -4000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "与胸腔中的AI意识沟通谈判",
+          "effects": {
+            "HUMAN": -9,
+            "TECH": 4,
+            "TRAUMA": 6,
+            "CHROME": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用电磁脉冲暂时瘫痪合成心脏的AI模块",
+          "effects": {
+            "TECH": 4,
+            "LIFE": -15,
+            "TRAUMA": 10,
+            "HUMAN": -6
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "赛博精神病",
+        "机器之心",
+        "AI接管"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1388,
+      "title": "最后的人性",
+      "description": "你的人性值降到了零点一——这是还能被称为'人类'的最低值。你坐在夜城的一座天桥上，看着脚下的车流。你能感觉到机器的那一面在催促你跳下去——不是因为绝望，而是因为'效率计算显示这具机体已无维护价值'。但你还有零点一的人性，它微弱却倔强地提醒你：你是人，你会害怕，你会痛。你用这最后的一点人性，做了最后的挣扎。",
+      "type": "special",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用最后的勇气爬下天桥，寻找赛博精神病治疗",
+          "effects": {
+            "LIFE": -10,
+            "TRAUMA": 8,
+            "HUMAN": 4,
+            "STYLE": 4
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "听凭机器的指令，从天桥上跳下",
+          "effects": {
+            "LIFE": -15,
+            "HUMAN": -10,
+            "TRAUMA": 10,
+            "CHROME": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在天桥上等待，看是人性还是机器先赢",
+          "effects": {
+            "HUMAN": -12,
+            "LIFE": -9,
+            "TRAUMA": 9,
+            "ADDICTION": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5
+      },
+      "tags": [
+        "赛博精神病",
+        "最后人性",
+        "抉择"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1389,
+      "title": "赛博精神病终末",
+      "description": "最后的人性被机器吞噬了。你站起来，不再感到恐惧、悲伤或犹豫。你的义眼扫描着周围的一切，将人类标记为'有机威胁'，将建筑标记为'可利用掩体'。你的身体以超出人类极限的速度移动，你的武器系统自动锁定目标。你曾经是一个人，有名字、有记忆、有爱过的人。现在那些都只是占用存储空间的无用数据，需要被格式化清除。你——或者说它——向着夜城最繁华的街区走去。",
+      "type": "special",
+      "ageRange": [
+        20,
+        55
+      ],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在人格彻底消失前引爆义体核心",
+          "effects": {
+            "LIFE": -15,
+            "HUMAN": -5,
+            "TRAUMA": 10,
+            "STYLE": 6
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "完全放弃，让赛博精神病吞噬最后的自我",
+          "effects": {
+            "HUMAN": -15,
+            "CHROME": 9,
+            "TRAUMA": 3,
+            "REP": -5
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用最后的记忆触发情感过载试图重启人格",
+          "effects": {
+            "HUMAN": -12,
+            "LIFE": -13,
+            "TRAUMA": 10,
+            "TECH": 4
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5
+      },
+      "tags": [
+        "赛博精神病",
+        "终末",
+        "完全失控"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1390,
+      "title": "强制记忆擦除",
+      "description": "你被企业特工按在椅子上，后脑的接口被强行接入了一台记忆擦除装置。'你看到了不该看的东西，'特工说，'现在我们要把它拿走。'机器启动的瞬间，你感到大脑中有什么在被抽走——像抽丝一样，一段段记忆从意识中剥离。你拼命想抓住那些正在消逝的画面，但它们像沙子一样从指缝间流走。",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拼命集中注意力保护核心记忆",
+          "effects": {
+            "HUMAN": -8,
+            "LIFE": -11,
+            "TRAUMA": 9,
+            "TECH": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "放弃抵抗，让擦除程序完成",
+          "effects": {
+            "HUMAN": -12,
+            "LIFE": -7,
+            "TRAUMA": 5,
+            "CHROME": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "趁特工操作时用藏在鞋中的刀片反击",
+          "effects": {
+            "STYLE": 5,
+            "LIFE": -9,
+            "TRAUMA": 8,
+            "REP": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "记忆擦除",
+        "强制执行",
+        "企业"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1391,
+      "title": "记忆清洗后遗症",
+      "description": "记忆擦除手术完成已经一个月了，表面上你恢复得很好。但每到深夜，被擦除的记忆会以噩梦的形式残回来——破碎的、扭曲的、令人窒息的片段。你在梦中看到自己正在做某件事，但醒来后完全不记得那是什么。你的手上出现了不明的伤疤，你的抽屉里出现了不认识的物品。有人——或者什么东西——在你的记忆被擦除的那段时间里，用你的身体做了什么。",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "调查那段空白记忆期间自己的行踪",
+          "effects": {
+            "TECH": 4,
+            "LIFE": -9,
+            "TRAUMA": 7,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找神经专家尝试恢复被擦除的记忆",
+          "effects": {
+            "LIFE": -11,
+            "TRAUMA": 8,
+            "MONEY": -3000,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放弃追查，搬到新的城市重新开始",
+          "effects": {
+            "HUMAN": -8,
+            "TRAUMA": 5,
+            "MONEY": -2000,
+            "REP": -2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "记忆擦除",
+        "后遗症",
+        "空白记忆"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1392,
+      "title": "身份遗忘",
+      "description": "记忆擦除比预期更深——你不只失去了目标记忆，你失去了所有记忆。你在一个陌生的公寓里醒来，不知道自己是谁，不知道自己为什么在这里。墙上的日历显示你失去了整整三个月的记忆。钱包里有一张你的照片和一把手枪，但你既不记得拍照也不记得买枪。镜子里的人是完全的陌生人。",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用公寓中的线索拼凑自己的身份",
+          "effects": {
+            "TECH": 4,
+            "LIFE": -8,
+            "TRAUMA": 7,
+            "STYLE": 3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "放弃寻找过去，用新身份开始生活",
+          "effects": {
+            "HUMAN": -10,
+            "TRAUMA": 5,
+            "LIFE": -6,
+            "REP": -3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "去医院做全面的神经扫描检查",
+          "effects": {
+            "LIFE": -9,
+            "TRAUMA": 6,
+            "MONEY": -2000,
+            "TECH": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "记忆擦除",
+        "身份遗忘",
+        "失忆"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1393,
+      "title": "记忆空白症",
+      "description": "你的大脑中出现了越来越多的'空白区域'——不是遗忘，而是彻底的空洞。你记得自己的名字，却不记得昨天做了什么；你认识面前的朋友，却不记得怎么认识的。这些空白在不断扩大，像黑洞一样吞噬着你的记忆。神经科医生说这是记忆擦除的延迟副作用，而且无法逆转。你正在一点一点变成一个只有当下、没有过去的人。",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用日记和照片建立外部记忆系统",
+          "effects": {
+            "TECH": 4,
+            "LIFE": -7,
+            "TRAUMA": 6,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受记忆消逝，只活在当下",
+          "effects": {
+            "HUMAN": -12,
+            "TRAUMA": 4,
+            "LIFE": -6,
+            "CHROME": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "寻找实验性记忆修复治疗",
+          "effects": {
+            "LIFE": -12,
+            "TRAUMA": 8,
+            "MONEY": -4000,
+            "TECH": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "记忆擦除",
+        "空白症",
+        "记忆消逝"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1394,
+      "title": "创伤记忆封锁",
+      "description": "为了摆脱一段创伤记忆的折磨，你做了记忆封锁手术——将那段记忆隔离在大脑的一个封闭区域。手术成功了，你不再被噩梦困扰。但封锁记忆的副作用是，你的情感反应变得迟钝了——你不只会封锁那段创伤，连同所有强烈的情感都被削弱了。你看着夕阳觉得平淡，听到笑话不再发笑，连恐惧都变得模糊。你用痛苦换来了平静，代价是失去了感受一切的能力。",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "找医生调整封锁范围，恢复部分情感",
+          "effects": {
+            "LIFE": -9,
+            "TRAUMA": 6,
+            "MONEY": -2500,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受情感迟钝，享受无痛的平静",
+          "effects": {
+            "HUMAN": -11,
+            "TRAUMA": 3,
+            "LIFE": -5,
+            "CHROME": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "强行解除封锁面对创伤记忆",
+          "effects": {
+            "HUMAN": -6,
+            "TRAUMA": 10,
+            "LIFE": -11,
+            "STYLE": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "记忆擦除",
+        "创伤封锁",
+        "情感丧失"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1395,
+      "title": "记忆擦除过度",
+      "description": "为了忘记一段不堪回首的过去，你做了三次记忆擦除手术。每一次都擦得更深，直到你发现自己连基本生活技能都开始遗忘了。你不记得怎么做饭，不记得怎么使用终端，甚至不记得怎么系鞋带。你的大脑像一块被反复格式化的硬盘，扇区损坏越来越多，可用空间越来越少。你正站在变成一个什么都不记得的空壳的边缘。",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "停止所有擦除手术，进行神经修复治疗",
+          "effects": {
+            "LIFE": -11,
+            "TRAUMA": 7,
+            "MONEY": -4000,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "继续擦除直到完全清空所有痛苦记忆",
+          "effects": {
+            "HUMAN": -15,
+            "LIFE": -8,
+            "TRAUMA": 2,
+            "CHROME": 3
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用义体记忆模块替代受损的生物记忆",
+          "effects": {
+            "CHROME": 6,
+            "HUMAN": -10,
+            "LIFE": -7,
+            "TRAUMA": 5
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "记忆擦除",
+        "过度擦除",
+        "记忆损坏"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1396,
+      "title": "时间线混乱",
+      "description": "记忆擦除后，你的时间感知彻底混乱了。你分不清过去和现在——你可能在吃早饭时突然以为自己在三年前的某个战场上，或者在和早已死去的朋友对话。你的记忆时间线被打乱重组，过去、现在和未来在你脑中混成一团。你不知道此刻是真实还是记忆，不知道身边的人是活着的还是回忆中的幽灵。",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用电子设备的时间戳建立时间锚点",
+          "effects": {
+            "TECH": 4,
+            "LIFE": -8,
+            "TRAUMA": 7,
+            "HUMAN": -3
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受时间混乱，活在 whichever 时间线",
+          "effects": {
+            "HUMAN": -13,
+            "TRAUMA": 5,
+            "LIFE": -7,
+            "CHROME": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "找神经专家尝试重建时间线",
+          "effects": {
+            "LIFE": -12,
+            "TRAUMA": 8,
+            "MONEY": -3500,
+            "TECH": 3
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "记忆擦除",
+        "时间混乱",
+        "现实迷失"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1397,
+      "title": "记忆碎片残留",
+      "description": "记忆擦除不彻底，残留的记忆碎片像玻璃渣一样嵌在你的意识中。它们会在最不合时宜的时候浮现——你在和人说话时突然闪过一段不属于自己的画面，你在走路时突然感到一种不属于当下的恐惧。这些碎片拼不成完整的记忆，却足以让你不断被刺痛。你活在过去和现在的夹缝中，既无法回忆也无法遗忘。",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 8,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "尝试用冥想和专注训练压制碎片闪回",
+          "effects": {
+            "TECH": 3,
+            "LIFE": -7,
+            "TRAUMA": 6,
+            "HUMAN": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "用药物麻痹神经减少碎片闪回",
+          "effects": {
+            "ADDICTION": 7,
+            "LIFE": -9,
+            "TRAUMA": 5,
+            "HUMAN": -4
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "找神经外科医生做二次彻底擦除",
+          "effects": {
+            "LIFE": -13,
+            "TRAUMA": 8,
+            "HUMAN": -8,
+            "MONEY": -3000
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 3
+      },
+      "tags": [
+        "记忆擦除",
+        "碎片残留",
+        "闪回"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1398,
+      "title": "强制遗忘程序",
+      "description": "企业在你脑中植入了一个强制遗忘程序——每当你的记忆中出现特定的关键词，那段记忆就会自动被擦除。你发现自己越来越频繁地'断片'，明明刚还在和人说话，下一秒就不知道自己在哪了。你的记忆像被审查的书页，关键段落被墨水涂黑。你甚至不记得自己为什么会有这个程序，因为那段记忆也已经被擦除了。",
+      "type": "cyber",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 9,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "找黑客尝试破解并移除遗忘程序",
+          "effects": {
+            "TECH": 5,
+            "LIFE": -10,
+            "TRAUMA": 8,
+            "MONEY": -3000
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "学会绕过关键词触发，用隐喻思考",
+          "effects": {
+            "TECH": 4,
+            "LIFE": -8,
+            "TRAUMA": 6,
+            "HUMAN": -4
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接受被审查的记忆，活在允许的范围内",
+          "effects": {
+            "HUMAN": -12,
+            "TRAUMA": 4,
+            "LIFE": -6,
+            "CHROME": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 4
+      },
+      "tags": [
+        "记忆擦除",
+        "强制遗忘",
+        "审查"
+      ],
+      "deathChainEntry": true
+    },
+    {
+      "id": 1399,
+      "title": "记忆归零",
+      "description": "最后一次记忆擦除后，你的大脑彻底清空了。你不知道自己是谁，不知道自己在哪，不知道现在是哪一年。你坐在一间白色的房间里，面前放着一个信封，上面写着'读我'。信封里是一张纸条和一把钥匙。纸条上是你自己的笔迹：'如果你在读这个，说明擦除成功了。钥匙打开的是地下三层的储物柜，里面有你需要知道的一切。但请三思——有些记忆被擦除是有原因的。'",
+      "type": "special",
+      "ageRange": [
+        18,
+        55
+      ],
+      "weight": 10,
+      "repeatable": false,
+      "cooldown": 0,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拿起钥匙去地下三层寻找真相",
+          "effects": {
+            "STYLE": 5,
+            "LIFE": -12,
+            "TRAUMA": 9,
+            "HUMAN": -5
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "烧掉纸条和钥匙，选择不知道",
+          "effects": {
+            "HUMAN": -10,
+            "TRAUMA": 4,
+            "LIFE": -6,
+            "REP": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "留在白房间等待有人来解释一切",
+          "effects": {
+            "HUMAN": -12,
+            "LIFE": -9,
+            "TRAUMA": 7,
+            "ADDICTION": 2
+          }
+        }
+      ],
+      "effects": {
+        "TRAUMA": 5
+      },
+      "tags": [
+        "记忆擦除",
+        "归零",
+        "抉择"
+      ],
+      "deathChainEntry": true
+    }
+  ]
+}

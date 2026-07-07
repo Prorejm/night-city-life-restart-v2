@@ -1,0 +1,4565 @@
+{
+  "events": [
+    {
+      "id": 3100,
+      "title": "学贷深渊",
+      "description": "你的学生贷款余额在凌晨三点弹出通知——利息又涨了。全美学贷总额突破三万亿信用点，AI催收机器人已经在你的神经链接上留言。贷款协议里那条用4号字体写的条款允许债权方在你死后继续向你的克隆体追讨。你盯着那个数字，它比你父母的神经植入物还贵。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "咬牙继续还款，从工资里扣除",
+          "effects": {
+            "MONEY": -400,
+            "DEBT": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "联系贷款重组公司谈判",
+          "effects": {
+            "MONEY": -150,
+            "DEBT": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "加入学贷免除运动，拒绝还款",
+          "effects": {
+            "REP": 2,
+            "DEBT": 3,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "学生贷款",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3101,
+      "title": "贷款重组陷阱",
+      "description": "一家叫'EduForgive'的公司声称可以帮你重组学贷，把利率从23%降到8%。但合同上写着他们要抽取你未来十年收入的15%作为服务费。客服全息投影笑得很甜，说这是行业最低比例。你注意到她身后墙上挂着的营业执照编号被人用马克笔涂掉了一位。",
+      "type": "economy",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "签下重组协议，先活过这个月",
+          "effects": {
+            "MONEY": -200,
+            "DEBT": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝并自己研究还款策略",
+          "effects": {
+            "TECH": 1,
+            "DEBT": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "学生贷款",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3102,
+      "title": "催收机器人上门",
+      "description": "一台腿部生锈的催收机器人在你公寓门口站了三天，循环播放你欠款的录音。它的面部识别系统坏了，总是对着你的邻居微笑。物业说他们无权驱逐它，因为联邦学贷催收法保护它的驻留权。它每天中午会唱一首短歌，然后重新念你的欠款数字。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支付一笔款项让它暂时离开",
+          "effects": {
+            "MONEY": -300,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "黑掉它的系统让它去找别人",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "无视它，等它自己没电",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "学生贷款",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3103,
+      "title": "学贷免除集会",
+      "description": "市中心广场聚集了上万名举着'取消一切学贷'标语的人。组织者是一个前华尔街算法交易员，他在演讲中说教育应该是基本人权而非金融产品。无人机在头顶盘旋，直播这场集会给全国。人群中有人在分发免费的合成咖啡和签名表。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入集会并签署请愿书",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在集会上摆摊卖水赚钱",
+          "effects": {
+            "MONEY": 200,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "远远观望，不站队",
+          "effects": {
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "学生贷款",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3104,
+      "title": "学贷黑市经纪人",
+      "description": "一个地下经纪人联系你，说他认识人能把你的学贷记录从联邦数据库里抹掉。价格是你六个月的工资加一份数字签名。他说这比还款便宜多了，而且他已经帮三百多人这么干了。他的全息名片上只有一个emoji和一个加密通讯地址。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "冒险一试，清除学贷记录",
+          "effects": {
+            "MONEY": -500,
+            "DEBT": -3,
+            "REP": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "举报他给联邦学贷管理局",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝但保留他的联系方式",
+          "effects": {
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "学生贷款",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3105,
+      "title": "毕业即破产",
+      "description": "你的学位证书刚刚打印出来，同时你的学贷也进入了还款期。第一笔账单比你的月薪还高。招聘会上面试官看了看你的简历说'不错'，然后告诉你起薪是十年前的水平。你的同学有一半在做与专业无关的工作，另一半回了父母家。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受任何工作先还贷",
+          "effects": {
+            "MONEY": 100,
+            "DEBT": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "继续深造延迟还款",
+          "effects": {
+            "DEBT": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "搬到低成本城区生活",
+          "effects": {
+            "MONEY": -100,
+            "LIFE": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "学生贷款",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3106,
+      "title": "学贷战争",
+      "description": "新闻说国会又否决了学贷免除法案，但通过了一项允许债权方扣押债务人器官的修正案。社交媒体上炸了锅，有人在组织'学贷罢工'。你的贷款方发来一封语气友好的邮件，提醒你新法将于下月生效。附带的链接是器官估值计算器。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入学贷罢工",
+          "effects": {
+            "REP": 2,
+            "TRAUMA": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "紧急还清一部分避免风险",
+          "effects": {
+            "MONEY": -350,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "购买地下医疗保险以防万一",
+          "effects": {
+            "MONEY": -200,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "学生贷款",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3107,
+      "title": "天价医疗账单",
+      "description": "你因胸口疼去急诊室待了四个小时，做了三次扫描。账单寄来了：四万七千信用点。保险公司说其中三万八千是'非必要检查'不予报销。账单底部有一行小字：逾期未付将自动从你的信用评分中扣除。你的胸口又开始疼了。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "与医院财务部门谈判分期",
+          "effects": {
+            "MONEY": -200,
+            "DEBT": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "申请医疗援助项目",
+          "effects": {
+            "MONEY": -50,
+            "HUMAN": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝支付让账单进入催收",
+          "effects": {
+            "DEBT": 3,
+            "TRAUMA": 2,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "医疗保险",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3108,
+      "title": "黑市器官保险",
+      "description": "一个穿白大褂的街头掮客向你推销'器官置换险'。每月50信用点，如果你任何器官衰竭，他们会在48小时内提供匹配的替代器官。他说来源合法。你注意到他的冷藏箱上贴着一家已倒闭医院的标签。这种保险在正规渠道要贵二十倍。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买黑市器官保险",
+          "effects": {
+            "MONEY": -50,
+            "LIFE": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "举报这个掮客",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝并离开",
+          "effects": {
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "医疗保险",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3109,
+      "title": "AI诊断拒赔",
+      "description": "你的保险公司的AI系统判定你上周的手术是'预先存在状况'不在保障范围内。这个AI名叫MediJudge 3000，它的决定在2.3秒内做出，无法人工复核。你的律师说申诉平均需要十八个月，而且胜诉率不到4%。保险公司寄来一份措辞精美的拒赔信。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "聘请律师申诉",
+          "effects": {
+            "MONEY": -300,
+            "DEBT": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "黑掉MediJudge修改你的记录",
+          "effects": {
+            "TECH": 3,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "接受拒赔结果",
+          "effects": {
+            "TRAUMA": 2,
+            "DEBT": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "医疗保险",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3110,
+      "title": "急诊室长夜",
+      "description": "凌晨两点你坐在急诊室等了六个小时，前面还有四十多个人。一个流血的男人比你先被叫进去因为他的保险等级更高。候诊区的全息屏幕循环播放着'感谢您选择HealthCorp医疗系统'。一个护士私下告诉你，今晚值班的只有一个医生。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "继续等待直到被叫到",
+          "effects": {
+            "TRAUMA": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "去街头诊所看病",
+          "effects": {
+            "MONEY": -100,
+            "LIFE": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "离开，自己买药对付",
+          "effects": {
+            "MONEY": -50,
+            "LIFE": -1,
+            "ADDICTION": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "医疗保险",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3111,
+      "title": "保险欺诈调查",
+      "description": "两个穿西装的人敲你的门，说他们是保险欺诈调查局的。他们说你去年的三次理赔有'统计异常'。他们要求检查你的医疗植入物数据日志。你的心率监测器在你说话时一直在报警。他们说如果不配合，你的保险会被取消。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "配合调查提交数据",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝并要求看搜查令",
+          "effects": {
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "贿赂他们",
+          "effects": {
+            "MONEY": -300,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "医疗保险",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3112,
+      "title": "企业医疗保险升级",
+      "description": "你的雇主通知你医疗保险计划升级了。好消息：覆盖范围增加了。坏消息：每月保费翻倍，自付额提高到一万二。HR的全息投影说这是'福利提升'。你还注意到新计划排除了所有神经植入物相关的治疗。你同事说她刚花了一个月的工资看牙。",
+      "type": "economy",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受升级后的计划",
+          "effects": {
+            "MONEY": -250,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "选择更便宜的低保计划",
+          "effects": {
+            "MONEY": -100,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "放弃公司保险去交易所买",
+          "effects": {
+            "MONEY": -150,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "医疗保险",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3113,
+      "title": "街头义诊",
+      "description": "一个退休外科医生在废弃停车场支起了帐篷，免费为没有保险的人看病。队伍排了两个街区。他用军用药箱里的旧设备做基础检查，开的处方药是他在黑市上买的。他说他已经这样做了三年，每周三次。当地帮派达成协议不碰这个地方。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "排队看病",
+          "effects": {
+            "LIFE": 2,
+            "HUMAN": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "去帮忙做志愿者",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "捐款支持义诊",
+          "effects": {
+            "MONEY": -100,
+            "REP": 2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "医疗保险",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3114,
+      "title": "信用评分暴跌",
+      "description": "你的信用评分一夜之间从720掉到480。系统通知说原因是'行为模式异常'，但没说具体哪里异常。你的所有信用卡被冻结，房东要求你用现金交租。信用局的AI客服说你需要等待72小时才能查看详细原因。你的外卖订单也被取消了，因为信用评分低于500不能点外卖。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "联系信用局申诉",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "花钱请信用修复公司",
+          "effects": {
+            "MONEY": -200,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "转向现金经济生存",
+          "effects": {
+            "MONEY": -100,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "信用评分",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3115,
+      "title": "信用修复黑客",
+      "description": "一个自称GhostScore的黑客在网上发广告：'72小时信用评分提升200分，不满意全额退款。'他的客户评价全是五星，但都用的是化名。他说他的方法是在信用局数据库里植入虚假的正面记录。他要求用加密货币支付。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "雇佣GhostScore修复信用",
+          "effects": {
+            "MONEY": -250,
+            "REP": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自己学习信用修复技术",
+          "effects": {
+            "TECH": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "举报这个黑客",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "信用评分",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3116,
+      "title": "社会信用算法",
+      "description": "市政府推出了'市民信用综合评分'系统，把你的信用评分、社交行为、消费记录和政治倾向合并成一个数字。这个数字决定了你能住哪个区、能不能坐地铁、能不能买酒。你的邻居因为给一条批评政府的帖子点了赞，评分掉了50分。官网上说这个系统让城市更安全了。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "严格遵守规则提升评分",
+          "effects": {
+            "REP": 1,
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "加入反监控隐私组织",
+          "effects": {
+            "REP": 2,
+            "TECH": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "搬家到没有这个系统的城区",
+          "effects": {
+            "MONEY": -300,
+            "LIFE": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "信用评分",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3117,
+      "title": "信用积分农场",
+      "description": "你发现一个地下'信用农场'，几十个人坐在一排终端前，替富人刷信用评分。他们用真实身份申请信用卡，做小额消费，按时还款，然后把高信用账户卖给需要的人。农场老板说这门生意比送外卖赚得多十倍。空气中弥漫着能量饮料和廉价合成蛋白棒的味道。",
+      "type": "economy",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "去信用农场打工",
+          "effects": {
+            "MONEY": 300,
+            "REP": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "举报农场给联邦贸易委员会",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "学习他们的方法自己干",
+          "effects": {
+            "TECH": 2,
+            "MONEY": 150,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "信用评分",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3118,
+      "title": "信用黑名单",
+      "description": "你被列入了金融系统的黑名单，原因是你认识的一个嫌疑人被标记为'高风险关联人'。现在你开不了银行账户，办不了手机套餐，连租个储物柜都要付双倍押金。银行说这是'预防性措施'。你问怎么申诉，他们给你一个永远不会有人接的电话号码。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "切断与嫌疑人的所有联系",
+          "effects": {
+            "HUMAN": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找律师起诉银行",
+          "effects": {
+            "MONEY": -400,
+            "REP": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "使用加密货币和现金生活",
+          "effects": {
+            "TECH": 2,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "信用评分",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3119,
+      "title": "数据清除服务",
+      "description": "一个叫CleanSlate的组织提供'数字身份重置'服务。他们说可以把你所有的信用记录、医疗数据和犯罪记录从云端抹除，让你在社会系统里变成一个'新人'。代价是你之前的学历、工作经历和社交关系全部归零。他们说已经有上千人成功'重生'了。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受数字身份重置",
+          "effects": {
+            "REP": -3,
+            "DEBT": -2,
+            "HUMAN": -1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝但购买部分数据清除",
+          "effects": {
+            "MONEY": -300,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "举报CleanSlate给当局",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "信用评分",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3120,
+      "title": "信用等级跃升",
+      "description": "你的信用评分终于突破了800分大关。银行突然对你热情起来，信用卡邀请邮件塞满了你的收件箱。贷款利率从23%降到了4%，你第一次收到了'尊贵客户'的标签。房东主动提出降租金续约。你感受到了信用评分就是赛博美国的新种姓制度。",
+      "type": "economy",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "利用低利率贷款投资",
+          "effects": {
+            "MONEY": 200,
+            "DEBT": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "保守理财维持评分",
+          "effects": {
+            "MONEY": 100,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "帮朋友提升他们的信用评分",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "信用评分",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3121,
+      "title": "赛博枪展",
+      "description": "周末枪展在旧体育馆里举办，几百个摊位上摆满了从手枪到脉冲步枪的各种武器。一个摊主向你推销一把能识别主人指纹的智能手枪，说它永远不会被孩子误用。隔壁摊位在卖'二修修正版'弹匣，容量比法律允许的多三倍。空气中有枪油和合成咖啡的味道。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买一把智能手枪防身",
+          "effects": {
+            "MONEY": -300,
+            "STYLE": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "逛逛但不买",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在枪展上做武器改装生意",
+          "effects": {
+            "MONEY": 200,
+            "TECH": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "枪支文化",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3122,
+      "title": "智能武器注册",
+      "description": "新的联邦法要求所有智能武器必须在24小时内重新注册到国家枪支数据库。注册站排了三个街区的队。一个老人说他打了四十年猎，从没注册过，现在不注册就是重罪。注册费是每把枪200信用点，很多人因此放弃了自己的武器。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "排队注册你的武器",
+          "effects": {
+            "MONEY": -200,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "把武器藏起来不注册",
+          "effects": {
+            "REP": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把武器卖给黑市",
+          "effects": {
+            "MONEY": 300,
+            "REP": -2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "枪支文化",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3123,
+      "title": "校园射击演练",
+      "description": "你侄子的学校举行每季度一次的'主动射手演练'。孩子们要练习在听到枪声时躲进装有防弹钢板的'安全舱'。演练用的模拟枪能发出真实的枪声和血腥的全息投影。你侄子说他已经不害怕了，因为他演练了太多次。他今年八岁。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加家长会讨论安全问题",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "给孩子买防弹书包",
+          "effects": {
+            "MONEY": -250,
+            "LIFE": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "考虑让孩子在家上网课",
+          "effects": {
+            "MONEY": -100,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "枪支文化",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3124,
+      "title": "黑市军火商",
+      "description": "一个叫铁手的军火商在暗网论坛上向你推销军用级武器。他说他的货是从海外军事基地流出来的，没有序列号，不会被任何数据库追踪。价格是正规渠道的三倍，但不需要背景调查。他的用户评级是4.9星，评论区全是满意的买家。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "从铁手那里买武器",
+          "effects": {
+            "MONEY": -400,
+            "REP": -2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "收集证据举报铁手",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝但记下他的货源信息",
+          "effects": {
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "枪支文化",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3125,
+      "title": "二修修正案游行",
+      "description": "数千人举着'别碰我的枪'的标语在市中心游行。组织者是一个前特种兵，他演讲说二修修正案是抵抗暴政的最后防线。人群中有人带着改装过的突击步枪和防弹衣。对面的反枪游行只隔着一条街，警察在中间拉起了隔离网。双方都在用扩音器喊口号。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入拥枪派游行",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "加入反枪派游行",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在中间做调停志愿者",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "枪支文化",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3126,
+      "title": "枪支改造车间",
+      "description": "你的朋友在车库开了一个地下枪支改造车间，能把手枪改成全自动，给步枪加装智能瞄准系统。他说这是'自由工程'。他的客户包括帮派成员、安保人员和怕被抢劫的普通人。车间里有一台3D打印机在彻夜打印聚合物弹匣。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "花钱改装你的武器",
+          "effects": {
+            "MONEY": -200,
+            "TECH": 2,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "学习枪支改装技术",
+          "effects": {
+            "TECH": 3,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "劝朋友关闭车间",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "枪支文化",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3127,
+      "title": "武器保险法案",
+      "description": "新法案要求每个枪支拥有者必须购买'武器责任险'，保费根据武器类型和心理评估分数计算。保险公司开发了AI系统来评估你的'开枪风险'。一把手枪的年保费从500到5000不等。低收入者实际上被剥夺了持枪权，因为他们买不起保险。",
+      "type": "economy",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买武器保险",
+          "effects": {
+            "MONEY": -300,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "出售武器避免保费",
+          "effects": {
+            "MONEY": 200,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "加入挑战法案的集体诉讼",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "枪支文化",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3128,
+      "title": "赛博感恩节大餐",
+      "description": "感恩节到了，超市里的合成火鸡比真火鸡便宜十倍。你买了真火鸡，花掉了半周的工资。全息餐桌上投射出已故亲人的影像，AI根据他们的社交媒体数据模拟了他们的声音和对话。你的AI助手建议你说一段感恩词，它已经帮你写好了。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买真火鸡办传统感恩节",
+          "effects": {
+            "MONEY": -250,
+            "HUMAN": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "买合成火鸡省钱",
+          "effects": {
+            "MONEY": -30,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "去社区感恩节聚餐",
+          "effects": {
+            "MONEY": -20,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "感恩节",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3129,
+      "title": "合成火鸡召回",
+      "description": "新闻说ThankYouCorp牌合成火鸡检测出一种神经毒素，已经导致三百人住院。你冰箱里正好有一只。FDA的召回通知比你的感恩节晚餐早到了两小时。公司发言人说毒素含量在'安全范围内'，召回只是'预防措施'。律师们已经开始在电视上打广告征集集体诉讼原告。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "扔掉合成火鸡，出去吃",
+          "effects": {
+            "MONEY": -80,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "加入集体诉讼索赔",
+          "effects": {
+            "MONEY": 100,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "把火鸡送去独立检测",
+          "effects": {
+            "MONEY": -50,
+            "TECH": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "感恩节",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3130,
+      "title": "黑色星期五暴动",
+      "description": "黑色星期五的促销在午夜开始，MegaMart门口排了上千人。大门打开的那一刻，人群涌进去，有人被踩倒。两台安保机器人在混乱中被推倒。限量版神经接口打三折，但库存只有五十个。你的邻居为了抢一台折扣显示器肘击了一个老太太。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "冲进去抢折扣商品",
+          "effects": {
+            "MONEY": -150,
+            "STYLE": 1,
+            "TRAUMA": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在网上等 cyber monday",
+          "effects": {
+            "MONEY": -100,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在家避开混乱",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "感恩节",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3131,
+      "title": "家庭全息聚会",
+      "description": "感恩节家庭聚会在全息会议平台上进行，因为你的家人分散在五个不同的时区。全息画质很好，但你够不到妈妈递过来的虚拟盘子。表弟在背景里打全息游戏，AI自动把他模糊掉了。你爸爸的网络延迟让他的感恩词听起来像在水下说的。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "认真参与全息家庭聚会",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "借口网络不好提前退出",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "提议明年线下聚会",
+          "effects": {
+            "HUMAN": 2,
+            "MONEY": -100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "感恩节",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3132,
+      "title": "感恩节游行",
+      "description": "梅西百货的感恩节游行引入了巨型全息气球，比传统的物理气球大十倍且不会爆。一个全息气球出了bug，开始在人群中随机变形。孩子们吓得大哭。游行的赞助商广告在每两个气球之间播放。街边的热狗摊涨价了三倍。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "带家人去看游行",
+          "effects": {
+            "MONEY": -50,
+            "HUMAN": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在家看直播",
+          "effects": {
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在游行路线摆摊赚钱",
+          "effects": {
+            "MONEY": 150,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "感恩节",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3133,
+      "title": "网络星期一陷阱",
+      "description": "网络星期一你被五个平台的促销算法同时轰炸。AI根据你的浏览历史精准推送你犹豫了很久的商品。你下单了三件东西，后来发现其中两件的'原价'是虚构的。第三件到货后发现是假冒产品。退货流程需要你提供十八张照片和一段视频证词。",
+      "type": "economy",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "退货并投诉",
+          "effects": {
+            "MONEY": 100,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "算了当教训",
+          "effects": {
+            "MONEY": -200,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "转手在二手平台卖掉",
+          "effects": {
+            "MONEY": 100,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "感恩节",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3134,
+      "title": "赛博超级碗派对",
+      "description": "超级碗周日的派对在全息投影酒吧举行，三面墙投射着比赛画面。你支持的球队刚换了一个AI四分卫，传球准确率99.7%。中场秀是一个已故歌手的AI全息表演，效果比真人还震撼。你的朋友下了五千信用点赌另一支球队赢。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在派对上享受比赛",
+          "effects": {
+            "MONEY": -80,
+            "HUMAN": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "下注赌你支持的球队",
+          "effects": {
+            "MONEY": -200,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在家独自看比赛",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "超级碗",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3135,
+      "title": "超级碗赌博",
+      "description": "博彩公司的AI给你推送了一个'稳赢'投注建议，声称胜率87%。你查了查这个AI的历史预测准确率，确实很高。但赌注最低500信用点，赢了翻倍。你的同事上周靠赌球赢了一个月的工资。体育博彩现在比比赛本身还刺激。",
+      "type": "economy",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "下注500赌这一把",
+          "effects": {
+            "MONEY": -500,
+            "ADDICTION": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "小额下注50图个乐",
+          "effects": {
+            "MONEY": -50,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝赌博",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "超级碗",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3136,
+      "title": "中场秀全息表演",
+      "description": "超级碗中场秀由一个AI生成的虚拟巨星表演，它融合了三位已故传奇歌手的声音和形象。演出在体育场和全球流媒体同步进行，观看人数打破纪录。但版权律师团正在起诉 NFL，说这个AI表演侵犯了艺人遗产的权利。中场秀的广告费是每秒一百万信用点。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买中场秀VR体验",
+          "effects": {
+            "MONEY": -50,
+            "STYLE": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在社交媒体上讨论版权争议",
+          "effects": {
+            "REP": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "中场休息时去买零食",
+          "effects": {
+            "MONEY": -30
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "超级碗",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3137,
+      "title": "超级碗广告投拍",
+      "description": "一家广告公司联系你，想用你的面部数据在一个超级碗广告中生成你的数字替身。报酬五千信用点。合同条款包括永久使用你的面部数据，以及你不得在任何其他广告中出现。你的脸可能会在十亿人面前出现，但你本人无法控制它说什么。",
+      "type": "economy",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "出售面部数据赚钱",
+          "effects": {
+            "MONEY": 500,
+            "REP": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝出售面部数据",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "谈判更好的条款",
+          "effects": {
+            "MONEY": 300,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "超级碗",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3138,
+      "title": "球迷暴动",
+      "description": "你支持的球队赢了超级碗，但球迷庆祝演变成了暴动。商店橱窗被砸，自动驾驶汽车被掀翻。催泪瓦斯无人机在低空盘旋。你看到有人扛着奖杯的全息投影在街上跑。防暴警察的装甲在霓虹灯下闪着光。推特上有人说这是'自由的表达'。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入庆祝/暴动",
+          "effects": {
+            "STYLE": 1,
+            "TRAUMA": 1,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "躲进安全的地方",
+          "effects": {
+            "TRAUMA": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "帮助受伤的路人",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "超级碗",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3139,
+      "title": "虚拟tailgate派对",
+      "description": "你的朋友们在VR里办了一个tailgate派对，虚拟停车场里有虚拟烧烤和虚拟啤酒。有人带来了一个AI解说员来分析比赛。虚拟热狗的味道通过神经接口传到你的大脑，和真的一样好。你的一个朋友因为在VR里喝太多虚拟啤酒而晕了。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加VR tailgate派对",
+          "effects": {
+            "MONEY": -30,
+            "HUMAN": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在现实里办tailgate",
+          "effects": {
+            "MONEY": -100,
+            "HUMAN": 3,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "两场都参加",
+          "effects": {
+            "MONEY": -120,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "超级碗",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3140,
+      "title": "赛博万圣节",
+      "description": "万圣节的街道上到处是穿着赛博义体装饰的孩子。有人把皮肤临时贴片换成了发光的鳞片，有人装了可拆卸的LED角。一个小孩扮成'信用评分催收员'把所有人都吓哭了。街角有人在发带追踪芯片的糖果。你的AI助手提醒你检查每颗糖的成分表。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "买赛博装饰品参加万圣节",
+          "effects": {
+            "MONEY": -100,
+            "STYLE": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在家发糖果",
+          "effects": {
+            "MONEY": -30,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "参加万圣节派对",
+          "effects": {
+            "MONEY": -80,
+            "STYLE": 2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "万圣节",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3141,
+      "title": "全息服装派对",
+      "description": "一个地下俱乐部举办全息服装比赛，参赛者通过神经接口投射出自己想象中的造型。有人变成了神话生物，有人变成了数据流。评判标准是创意和技术控制力。获胜者能得到一个限量版神经接口。你的全息投影因为紧张闪了两下。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加全息服装比赛",
+          "effects": {
+            "STYLE": 3,
+            "REP": 2,
+            "MONEY": -50
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "做比赛评委",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "只去看热闹",
+          "effects": {
+            "STYLE": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "万圣节",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3142,
+      "title": "鬼屋VR体验",
+      "description": "一个废弃商场被改造成了万圣节VR鬼屋。体验者戴上神经接口后会被送入一个根据他们个人恐惧定制的恐怖场景。系统会扫描你的记忆来找到你最害怕的东西。安全协议说体验不会超过十五分钟，但出来的人都说感觉过了一整夜。出口处有心理咨询台。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "挑战VR鬼屋",
+          "effects": {
+            "MONEY": -60,
+            "TRAUMA": 2,
+            "STYLE": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在鬼屋做工作人员吓人",
+          "effects": {
+            "MONEY": 120,
+            "STYLE": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "劝朋友不要去",
+          "effects": {
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "万圣节",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3143,
+      "title": "万圣节糖果召回",
+      "description": "FDA紧急召回三款万圣节糖果，说它们含有未标注的神经活性成分。吃了的孩子出现了短暂的幻觉和过度快乐症状。糖果制造商说这是'配方错误'。律师们已经在争抢这个案子。你家门口的糖果碗里正好有被召回的那个牌子。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "扔掉被召回的糖果",
+          "effects": {
+            "MONEY": -30,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "留几颗自己试试",
+          "effects": {
+            "ADDICTION": 1,
+            "TRAUMA": 1,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "送去检测并举报",
+          "effects": {
+            "REP": 2,
+            "TECH": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "万圣节",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3144,
+      "title": "南瓜灯黑客",
+      "description": "有人在万圣节黑进了全城的智能南瓜灯，让它们同步闪烁出一段代码。解码后是一段政治宣言。城市照明系统瘫痪了三十分钟。FBI的网络犯罪部门正在调查。你的智能南瓜灯也在闪，你担心会被认为是同谋。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拔掉南瓜灯的电源",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "尝试解码信号",
+          "effects": {
+            "TECH": 3,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "向FBI举报",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "万圣节",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3145,
+      "title": "万圣节游行",
+      "description": "格林威治村的万圣节游行今年加入了赛博朋克元素。有人穿着全身LED战甲，有人操控着三米高的机甲扮演死神。游行队伍中的AI生成怪物会根据围观群众的反应变换造型。一个扮成CEO的人被人群追着跑了三条街。警察在不远处看着，也在拍照。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "穿赛博装扮参加游行",
+          "effects": {
+            "STYLE": 3,
+            "HUMAN": 2,
+            "MONEY": -50
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在路边观看",
+          "effects": {
+            "STYLE": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在游行路线卖水赚钱",
+          "effects": {
+            "MONEY": 100,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "万圣节",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3146,
+      "title": "数字选举",
+      "description": "选举日到了，你通过神经接口在通勤地铁上投了票。投票系统要求你完成一道验证码和一个虹膜扫描。系统说你的票已经被记录，但不让你确认投给了谁。出口民调显示两个候选人的支持率都是50%正负0.1%。你不确定你的票是否真的被计入了。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "正常投票",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "放弃投票",
+          "effects": {
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "投票后核查选票记录",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "选举投票",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3147,
+      "title": "选举操纵指控",
+      "description": "社交媒体上铺天盖地都是选举被操纵的消息。有人发布了投票机代码的截图，显示有一段可疑的算法。选举委员会说这是'假新闻'。你的信息流被两方的 propaganda 完全淹没。AI事实核查标记一半消息为'无法验证'。你不知道该信谁。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "深入研究代码截图",
+          "effects": {
+            "TECH": 3,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "参与线下抗议",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "暂时断网远离噪音",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "选举投票",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3148,
+      "title": "投票站抗议",
+      "description": "一个投票站外聚集了抗议人群，他们声称该区的投票机被篡改。警察拉起了警戒线。无人机在头顶记录每个人的面部。你在排队投票时被挤在抗议者和防暴警察之间。有人说催泪瓦斯马上要来了。投票站管理员通过扩音器说一切正常。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "坚持排队投票",
+          "effects": {
+            "REP": 2,
+            "TRAUMA": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "加入抗议",
+          "effects": {
+            "REP": 2,
+            "TRAUMA": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "离开去另一个投票站",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "选举投票",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3149,
+      "title": "AI候选人",
+      "description": "一个名叫GOV.ai的AI宣布参加市长竞选。它的政策纲领是通过分析城市数据自动生成的。民调显示它的支持率排第三，仅次于两个人类候选人。它的竞选广告说'人类政客会撒谎，AI不会'。选举委员会还在争论AI是否有资格参选。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "投票给AI候选人",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "投票给人类候选人",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "参与AI参选资格的辩论",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "选举投票",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3150,
+      "title": "选举黑客",
+      "description": "你在暗网上发现有人出售一个城市的选民数据库，包括每个人的投票记录、面部数据和生物信息。卖家说这些数据可以用来精准操纵下一次选举。价格是十万信用点。FBI的举报奖金是五万。你的浏览器在访问这个页面时闪了一下。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "截图举报给FBI拿奖金",
+          "effects": {
+            "MONEY": 100,
+            "REP": 3,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "买下数据自己分析",
+          "effects": {
+            "MONEY": -200,
+            "TECH": 3,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "关掉页面假装没看到",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "选举投票",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3151,
+      "title": "政治广告轰炸",
+      "description": "选举前一周，你的每一个屏幕、全息投影和神经接口都在推送政治广告。AI根据你的心理画像定制了不同版本的广告。你收到的版本和你室友收到的完全不同。广告里说如果你不投票给某个人，你的社区会被'摧毁'。你的屏蔽软件一天就被更新了三次来绕过。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买高级广告屏蔽服务",
+          "effects": {
+            "MONEY": -50,
+            "LIFE": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "举报定向广告违规",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "研究广告背后的金主",
+          "effects": {
+            "TECH": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "选举投票",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3152,
+      "title": "邮寄选票争议",
+      "description": "你的邮寄选票被退回了，理由是'生物特征验证失败'。你明明在上传时做了面部扫描和指纹验证。选举办公室的AI客服说你的选票在运输途中被标记为'可疑'。重新提交的截止日期是明天。你认识的人里有三分之一遇到了同样的问题。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "紧急去现场补投",
+          "effects": {
+            "TRAUMA": 1,
+            "REP": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受选票作废",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "联系选民权利组织求助",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "选举投票",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3153,
+      "title": "AI税务审计",
+      "description": "IRS的新AI审计系统选中了你。它说你三年前的一笔加密货币交易少报了税。AI生成了427页的审计报告，每一页都引用了不同的法规条款。你请的会计师说这是AI的'批量审计'策略，赌大多数人会直接交罚款。申诉需要你逐条反驳每一页。",
+      "type": "economy",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "交罚款息事宁人",
+          "effects": {
+            "MONEY": -400,
+            "DEBT": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "请会计师申诉",
+          "effects": {
+            "MONEY": -200,
+            "DEBT": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "自己学习税法申诉",
+          "effects": {
+            "TECH": 3,
+            "TRAUMA": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "税务申报",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3154,
+      "title": "加密货币报税",
+      "description": "报税季到了，你的加密货币交易记录分散在七个不同的平台上。IRS要求你把每一笔交易换算成美元申报。加密货币的价格每秒都在变，你不知道该用哪个时刻的价格。报税软件的加密货币模块额外收费200信用点。你去年只赚了三百块的币。",
+      "type": "economy",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买加密货币报税软件",
+          "effects": {
+            "MONEY": -200,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找专门的加密税务师",
+          "effects": {
+            "MONEY": -300,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "自己手动算",
+          "effects": {
+            "TECH": 2,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "税务申报",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3155,
+      "title": "税务黑客",
+      "description": "一个叫TaxGhost的服务声称可以修改IRS数据库里的你的报税记录。他们说能把你的税率降到0%，方法是在系统里把你标记为'海外免税实体'。费用是正常税额的一半。他们说已经服务了上万人，从没被发现过。IRS正在测试新的反欺诈AI。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "使用TaxGhost逃税",
+          "effects": {
+            "MONEY": 300,
+            "REP": -3,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "举报TaxGhost",
+          "effects": {
+            "REP": 3,
+            "MONEY": 100,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "老老实实报税",
+          "effects": {
+            "MONEY": -200,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "税务申报",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3156,
+      "title": "退税诈骗",
+      "description": "你提交了退税申请，但退款迟迟没到。查询后发现有人已经用你的身份领取了退税。IRS说你需要填一份'身份盗窃受害表'，处理时间六到十八个月。骗子用的你的社会保障号是去年一次数据泄露中流出的。你的信用评分也因此受到了影响。",
+      "type": "economy",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "提交欺诈报告等待处理",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "雇信用修复公司处理",
+          "effects": {
+            "MONEY": -300,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "自己追查骗子",
+          "effects": {
+            "TECH": 3,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "税务申报",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3157,
+      "title": "企业避税曝光",
+      "description": "一个吹哨人泄露了MegaCorp的税务文件，显示这家年利润千亿的公司通过海外空壳公司合法避税，实际税率0.3%。与此同时你交了22%的税。社交媒体上发起了'拒绝交税'运动。国税局说你如果不交税会坐牢，但MegaCorp的CEO刚买了第四艘游艇。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入抗税运动",
+          "effects": {
+            "REP": 3,
+            "TRAUMA": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "签署请愿书要求税改",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "学习企业的避税方法",
+          "effects": {
+            "TECH": 2,
+            "MONEY": -100,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "税务申报",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3158,
+      "title": "税务反抗者",
+      "description": "一个组织号召成员拒绝报税，说政府的税收被用来资助监控系统和海外军事行动。他们有一个法律团队帮成员应对IRS的追讨。已有三百多人加入。IRS把他们列为'国内极端组织'。你在网上看到了他们的宣言，写得很有说服力。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入税务反抗组织",
+          "effects": {
+            "REP": 2,
+            "TRAUMA": 2,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向IRS举报这个组织",
+          "effects": {
+            "REP": -1,
+            "MONEY": 50
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "研究他们的论点",
+          "effects": {
+            "TECH": 2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "税务申报",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3159,
+      "title": "数字边境检查",
+      "description": "你在州际高速公路上被移民局设的检查站拦下。一台生物扫描仪在两秒内读取了你的DNA标记和植入物序列。系统显示你的曾祖父是移民，要你提供公民身份证明。你的身份证在系统里显示'待验证'。后面的车已经排了一英里。检查站的全息标语写着'欢迎来到自由之国'。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "配合检查提供所有信息",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "要求联系律师",
+          "effects": {
+            "REP": 2,
+            "TRAUMA": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "用预存的合法身份芯片通过",
+          "effects": {
+            "TECH": 2,
+            "MONEY": -100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "移民局",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3160,
+      "title": "移民突袭",
+      "description": "ICE突袭了你住的那栋楼，目标是三楼的一个家庭。他们用热成像扫描确认了每个房间里的人数。被带走的孩子在哭，AI翻译器把哭声翻译成了'爸爸'。你的邻居在用手机直播，但直播信号被干扰了。你的门也被扫了一遍。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "直播突袭过程",
+          "effects": {
+            "REP": 3,
+            "TRAUMA": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "帮助被带走的家庭照看宠物",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "锁好门假装不在家",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "移民局",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3161,
+      "title": "假身份芯片",
+      "description": "一个地下外科医生联系你，说可以帮你植入一个伪造的公民身份芯片。这个芯片会在任何扫描中显示你是本地出生的公民。价格两千信用点，手术在一家关闭的诊所里进行。他说已经做了上千例，成功率99%。芯片每隔三个月需要更新一次数据。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "植入假身份芯片",
+          "effects": {
+            "MONEY": -200,
+            "REP": -2,
+            "TECH": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "举报这个医生",
+          "effects": {
+            "REP": 3,
+            "MONEY": 100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "推荐给需要的人",
+          "effects": {
+            "MONEY": 50,
+            "REP": -2,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "移民局",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3162,
+      "title": "遣返列车",
+      "description": "新闻上说移民局开始用自动列车遣返无证移民。列车没有司机，由AI控制路线。被遣返的人在上车前被植入了追踪芯片。有人说列车开往的目的地已经不存在了。民权组织正在申请禁制令。你认识的一个邻居昨天被带走了。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入民权组织的抗议",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向媒体提供你邻居的故事",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "为被遣返者的家属捐款",
+          "effects": {
+            "MONEY": -100,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "移民局",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3163,
+      "title": "庇护申请",
+      "description": "你的朋友申请了政治庇护，但案件被AI系统自动拒绝了。AI说她的情况不符合'可信恐惧'标准，尽管她有三份死亡威胁的证据。移民法庭的积压案件排到了五年后。她的律师说在等待期间她不能工作，也不能获得医疗保险。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮朋友写申诉信",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "资助她的法律费用",
+          "effects": {
+            "MONEY": -300,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "联系媒体曝光她的案件",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "移民局",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3164,
+      "title": "边境墙黑客",
+      "description": "一个黑客组织声称他们黑进了边境墙的AI巡逻系统，在墙上'打开'了一个虚拟缺口，让几十个难民通过。海关说这是'系统故障'。FBI正在追查黑客。你在一个论坛上看到了他们发布的入侵方法的帖子，浏览量已经过万。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "学习他们的黑客技术",
+          "effects": {
+            "TECH": 3,
+            "REP": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "举报帖子给FBI",
+          "effects": {
+            "REP": 2,
+            "MONEY": 50
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在论坛上讨论伦理问题",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "移民局",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3165,
+      "title": "福利系统崩溃",
+      "description": "社会保障局的中央服务器宕机了，全国数百万人的福利金暂停发放。系统已经用了四十年的代码出了bug，没有人完全理解它。政府的应急方案是发纸质支票，但印刷能力跟不上。你排队三天也没领到这个月的救济金。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "排队等待领取应急支票",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "去找议员投诉",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "帮邻居老人领取",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "社会保障",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3166,
+      "title": "退休金缩水",
+      "description": "政府宣布由于人口老龄化，退休金将削减30%。你七十岁的邻居说她的退休金已经不够付房租和药费了。新的政策鼓励老年人'继续参与劳动力市场'。一家公司专门招聘65岁以上的人做客服，时薪比最低工资还低两块。退休在美国正在变成一种奢侈品。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮邻居找工作",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "参加反对退休金削减的抗议",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "提前规划自己的退休储蓄",
+          "effects": {
+            "MONEY": -200,
+            "TECH": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "社会保障",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3167,
+      "title": "残疾评估AI",
+      "description": "你的残疾福利被AI系统取消了。AI说你上个月在社交媒体上发了一张爬山的照片，证明你的膝盖'功能正常'。你解释说那是三个月前的旧照片，但AI不接受人工申诉。你的膝盖每到下雨天就疼得走不了路。申诉热线平均等待时间是四个小时。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "提交医学证明重新申请",
+          "effects": {
+            "MONEY": -150,
+            "TRAUMA": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找残疾权益律师",
+          "effects": {
+            "MONEY": -100,
+            "REP": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "联系媒体曝光AI误判",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "社会保障",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3168,
+      "title": "食品券黑市",
+      "description": "你的食品券账户被黑了，余额被转到了别人的账户上。你的邻居说食品券在黑市上能换到现金，汇率是七折。街头有人公开收购食品券。社会保障局说追回损失需要90天。你冰箱里只剩两天的食物。社区的食品银行也在排队。",
+      "type": "economy",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "去食品银行排队领食物",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在黑市出售部分食品券换现金",
+          "effects": {
+            "MONEY": 100,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "举报黑市交易",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "社会保障",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3169,
+      "title": "住房补贴削减",
+      "description": "市政府削减了住房补贴预算，你的房租补贴从800降到了300。房东立刻发来通知说差额需要你自己补上。新的计算公式把你的收入多算了40%，因为它把你的零工收入按全职算。社区里已经有人因为付不起房租被驱逐了。驱逐执行队的无人机在楼外巡逻。",
+      "type": "economy",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "交差额保住住处",
+          "effects": {
+            "MONEY": -300,
+            "DEBT": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "申请重新计算收入",
+          "effects": {
+            "HUMAN": 1,
+            "TECH": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "搬到更便宜的区",
+          "effects": {
+            "MONEY": -100,
+            "LIFE": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "社会保障",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3170,
+      "title": "失业救济申请",
+      "description": "你被解雇了，申请失业救济。系统要求你每天在App上证明你在找工作，包括投递记录和面试截图。AI会分析这些记录的真实性。你的一个朋友因为截图不够清晰被判定为'未积极求职'，救济被停了。救济金只够付房租的一半。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "认真每天打卡申请",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "同时找零工补充收入",
+          "effects": {
+            "MONEY": 100,
+            "TRAUMA": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "学习新技能提升就业",
+          "effects": {
+            "TECH": 2,
+            "MONEY": -100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "社会保障",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3171,
+      "title": "福利欺诈调查",
+      "description": "有人举报你'福利欺诈'，说你同时领取多项福利。调查员上门检查你的居住状况、银行流水和消费记录。你的消费记录显示你上个月买了一双200块的鞋，这在福利审查中被标记为'奢侈消费'。调查员说如果查实你将终身取消福利资格。那双鞋是你生日礼物。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全力配合调查",
+          "effects": {
+            "TRAUMA": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找法律援助",
+          "effects": {
+            "MONEY": -100,
+            "HUMAN": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "找举报者对质",
+          "effects": {
+            "REP": 1,
+            "TRAUMA": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "社会保障",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3172,
+      "title": "赛博工会组织",
+      "description": "你的同事在秘密组织工会。他们在加密通讯群组里讨论谈判策略，用的是自毁消息。管理层似乎有所察觉，开始随机检查员工的通讯设备。组织者说如果超过50%的人签字，法律要求公司必须承认工会。公司HR开始一对一'谈话'，气氛紧张。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "签署工会支持卡",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向管理层通风报信",
+          "effects": {
+            "MONEY": 200,
+            "REP": -3,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "保持中立观望",
+          "effects": {
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "工会",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3173,
+      "title": "罢工行动",
+      "description": "工会发起了罢工，工厂大门前拉起了纠察线。公司用AI机器人临时替代了罢工工人，但产品质量明显下降。罢工基金只够撑三周。管理层在全息广告牌上打出了'立即返岗可保留职位'的通知。有人在纠察线上被公司的安保无人机拍了好几次照。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入罢工纠察线",
+          "effects": {
+            "MONEY": -150,
+            "REP": 3,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "穿越纠察线返岗",
+          "effects": {
+            "MONEY": 200,
+            "REP": -3,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "为罢工基金捐款",
+          "effects": {
+            "MONEY": -100,
+            "REP": 2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "工会",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3174,
+      "title": "工会腐败",
+      "description": "你发现工会主席的银行账户里有一笔来自公司的大额转账。他在谈判中突然放弃了好几个关键诉求。工会成员开始怀疑他被收买了。他说是'咨询费'。你手里有一份泄露的财务记录。其他工会干事警告你不要多管闲事。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在工会大会上公开质疑",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 1,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "匿名举报给劳工部",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "保持沉默",
+          "effects": {
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "工会",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3175,
+      "title": "零工经济抗争",
+      "description": "外卖平台的骑手们在组织'数字罢工'，他们同时关闭App让订单堆积。平台立刻用AI调高了单价吸引其他骑手接单。组织者在暗网上发布了一份'零工权利宣言'。平台威胁说参与罢工的骑手账号会被永久封禁。你今天的外卖等了三个小时才到。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持骑手罢工不点外卖",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "趁高价去跑外卖赚钱",
+          "effects": {
+            "MONEY": 200,
+            "REP": -2,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "帮骑手组织者传播信息",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "工会",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3176,
+      "title": "AI替代工人",
+      "description": "你的工厂引进了一批AI机械臂，它们能做你的工作而且不需要休息和工资。管理层说这是'效率提升'，但没说谁来养活被替代的工人。工会要求'机器人税'来补偿失业工人。公司说如果加税他们就搬到海外。你的岗位下个月可能就不存在了。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "学习操作AI设备保住岗位",
+          "effects": {
+            "TECH": 3,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "加入工会要求再培训",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "提前找工作跳槽",
+          "effects": {
+            "HUMAN": 1,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "工会",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3177,
+      "title": "工会选举",
+      "description": "工会内部选举，两个候选人竞争主席。一个主张强硬谈判和罢工，另一个主张合作和渐进改善。投票用区块链系统进行，每人一票。有人在群里散布一个候选人的虚假丑闻，AI核查发现是深度伪造的。选票差距不到1%，每一票都很关键。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "投票给强硬派",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "投票给温和派",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "帮忙辟谣虚假信息",
+          "effects": {
+            "TECH": 2,
+            "REP": 2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "工会",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3178,
+      "title": "赛博种族隔离",
+      "description": "你住的城市通过了'社区优化法案'，AI根据收入、信用评分和'社会贡献指数'自动给居民分配住区。结果是不同种族被'算法自然地'分隔开了。政府说这不是种族隔离，是'数据驱动的社区规划'。你的社区评分突然变了，暗示你应该搬到另一个区。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "挑战算法评估结果",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受搬迁建议",
+          "effects": {
+            "MONEY": 100,
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "加入反算法歧视组织",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "种族议题",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3179,
+      "title": "基因歧视",
+      "description": "一家公司在招聘时要求应聘者提供基因检测报告。他们说这是为了'健康风险管理'。实际上他们用基因数据筛选掉有某些遗传疾病风险的人。你的朋友因为基因报告显示有早发性阿尔茨海默风险被拒绝了。法律说基因歧视是非法的，但公司说是'自愿提供'。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拒绝提供基因报告",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "提供报告但篡改数据",
+          "effects": {
+            "TECH": 2,
+            "REP": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "举报公司基因歧视",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "种族议题",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3180,
+      "title": "面部识别偏见",
+      "description": "街头的面部识别系统把你的邻居错误标记为通缉犯。他在自家门口被五台机器人按住。系统后来承认'置信度不足'，但他的手臂已经骨折了。数据显示这个系统对某些族裔的误识率是其他族裔的十倍。制造商说这是'训练数据的局限性'。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "录下事件并上传",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "帮邻居起诉制造商",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "MONEY": -100
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "研究系统的识别漏洞",
+          "effects": {
+            "TECH": 3,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "种族议题",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3181,
+      "title": "文化挪用争议",
+      "description": "一家大公司发布了一款基于某少数族裔文化符号的商业产品，但没有给该社区任何回报。社交媒体上爆发了激烈争论。公司说这是'致敬'，社区说这是'掠夺'。AI生成的设计让产品看起来既'异域'又'时尚'。你的信息流里全是两方的争论。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "抵制这家公司的产品",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在社交媒体上讨论",
+          "effects": {
+            "REP": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "支持该社区的文化产品",
+          "effects": {
+            "MONEY": -50,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "种族议题",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3182,
+      "title": "移民社区",
+      "description": "你的社区是多种族移民聚居区，街上的招牌有七种语言。最近有人发起了一个'社区守护'计划，用邻里监控AI保护居民不受骚扰。但有人担心这会变成互相监视。社区会议上争论了三个小时。警察很少来这个区，居民们只能自己保护自己。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入社区守护计划",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "组织社区文化活动",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "MONEY": -50
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "保持个人隐私不参与",
+          "effects": {
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "种族议题",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3183,
+      "title": "种族抗议",
+      "description": "又一起警察暴力事件引发了全市抗议。这次被暴力对待的是一个少数族裔青少年，全息录像被传遍了全网。抗议者堵塞了主要道路，警察用了声波武器驱散人群。你的老板说如果你参加抗议就别来上班了。无人机在抗议上空盘旋，采集每个人的面部数据。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入抗议",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在网上传播录像",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "为伤者提供医疗援助",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "种族议题",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3184,
+      "title": "身份政治辩论",
+      "description": "一个社交媒体平台推出了'身份标签'功能，用户可以选择公开自己的种族、性别和性取向。平台说这有助于'社区建设'，但有人担心这会被用于定向歧视。你的信息流突然全是关于身份政治的争论。广告商开始根据身份标签投放不同的广告。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拒绝使用身份标签",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "公开身份标签",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "研究标签数据如何被使用",
+          "effects": {
+            "TECH": 3,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "种族议题",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3185,
+      "title": "数字教育平台",
+      "description": "你的孩子在学校用的教育平台EduTech Pro根据学生的学习数据实时调整课程难度。但有些家长发现AI似乎在把低收入家庭的孩子分流到'职业轨道'。平台说这是'个性化教育'。你看了一下孩子的学习报告，发现他的'大学准备指数'被标记为'低'。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "要求查看AI分流算法",
+          "effects": {
+            "TECH": 2,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "给孩子报课外补习",
+          "effects": {
+            "MONEY": -200,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "在家辅助孩子学习",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "教育系统",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3186,
+      "title": "学校监控",
+      "description": "你侄子的学校安装了情绪监测AI，每个学生的课桌上都有一个小型摄像头分析他们的表情。如果一个学生连续十分钟'注意力不集中'，系统会通知家长。你侄子说他现在学会了'假装专注的表情'。学校说这套系统让考试成绩提高了12%。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在家长会上反对监控系统",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "教侄子应对监控系统",
+          "effects": {
+            "TECH": 2,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "转到没有监控的学校",
+          "effects": {
+            "MONEY": -300,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "教育系统",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3187,
+      "title": "脑机接口学习",
+      "description": "一所学校开始试用脑机接口直接向学生大脑传输知识。试用组的学生在一周内学会了通常需要一学期才能掌握的内容。但有报告说部分学生出现了记忆混乱和人格变化。教育部说试验是'安全的'。你侄子的学校也在申请加入试验。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "让侄子参加脑机学习试验",
+          "effects": {
+            "TECH": 3,
+            "TRAUMA": 2,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "反对学校加入试验",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "研究脑机学习的副作用",
+          "effects": {
+            "TECH": 3,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "教育系统",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3188,
+      "title": "教育不平等",
+      "description": "富裕学区的学校有全息实验室和AI私人导师，而你所在学区的学校连课本都是十年前的电子版。一项研究表明，学区间教育质量的差距在过去十年扩大了三倍。你孩子的学校刚取消了音乐和美术课，因为预算被用在了安保系统上。隔壁区的孩子在学习量子计算。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加学区预算听证会",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "众筹为孩子买学习设备",
+          "effects": {
+            "MONEY": -150,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "申请跨区转学",
+          "effects": {
+            "MONEY": -100,
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "教育系统",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3189,
+      "title": "校园枪击",
+      "description": "你侄子的学校发生了枪击事件。AI安保系统在45秒内锁定了枪手并启动了防护协议，但已经有三个学生受伤。学校的全息警报系统在枪响后两秒启动，防弹门自动关闭。这已经是今年这个区的第二起校园枪击事件了。你侄子说他已经习惯了。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 11,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "去医院看望受伤学生",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "参加枪支安全集会",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "帮侄子处理心理创伤",
+          "effects": {
+            "HUMAN": 2,
+            "TRAUMA": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "教育系统",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3190,
+      "title": "在线学位",
+      "description": "一个完全在线的大学提供四年学位，学费是传统大学的十分之一。学位由AI教授评分，毕业率高达85%。但雇主开始区分'传统学位'和'在线学位'，后者的起薪低30%。你的同事用在线学位升了职，但有人说他的学位'含金量不足'。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "报名在线学位课程",
+          "effects": {
+            "MONEY": -200,
+            "TECH": 3,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "选择传统大学课程",
+          "effects": {
+            "MONEY": -500,
+            "TECH": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "自学不拿学位",
+          "effects": {
+            "TECH": 2,
+            "MONEY": -50
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "教育系统",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3191,
+      "title": "教师罢工",
+      "description": "全市教师罢工要求提高工资和减少班级人数。AI替代教师被紧急启用，但教学质量明显下降。孩子们在家用VR上课，但很多家庭买不起VR设备。罢工已经持续了三周。市长的孩子在一所私立学校，不受影响。教师在市政厅前举着'AI不能替代爱'的标语。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持教师罢工",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "临时在家教孩子",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "送孩子去私立学校",
+          "effects": {
+            "MONEY": -400,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "教育系统",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3192,
+      "title": "赛博房产市场",
+      "description": "房产App显示你所在区域的房价在过去一年涨了40%。一套一居室公寓的价格是你十年工资的总和。AI房产顾问建议你'尽快上车'否则永远买不起。你的房东同时涨了租金20%。房产投机者用AI批量买入低价房翻新后高价出售。你开始考虑住在车里。",
+      "type": "economy",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "咬牙贷款买房",
+          "effects": {
+            "MONEY": -500,
+            "DEBT": 3,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "继续租房但搬到郊区",
+          "effects": {
+            "MONEY": -100,
+            "LIFE": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "投资小型房产",
+          "effects": {
+            "MONEY": -300,
+            "DEBT": 2,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "房产市场",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3193,
+      "title": "企业房东",
+      "description": "你的公寓楼被一家叫HomeCorp的公司买下了。他们是全美最大的企业房东，拥有二十万套出租房。新管理系统要求你通过App报修，AI会评估维修'优先级'。你的暖气坏了三周还没修，因为AI判定'非紧急'。他们还在租约里加了一条禁止在社交媒体上差评的条款。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "在社交媒体上曝光",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "组织租户联合投诉",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "搬家离开",
+          "effects": {
+            "MONEY": -200,
+            "LIFE": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "房产市场",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3194,
+      "title": "士绅化",
+      "description": "你住的街区正在士绅化，旧的便利店变成了精品咖啡店，合成墨西哥卷饼卖到了15信用点。原来的居民因为付不起新租金被迫搬走。开发商在旧楼拆除现场放了一块全息牌写着'社区升级中'。你的邻居开了二十年的小店下周关门。街角新开了一家'复古风格'的霓虹灯酒吧。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参加反士绅化社区会议",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在新店找工作",
+          "effects": {
+            "MONEY": 100,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "帮老邻居找新住处",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "房产市场",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3195,
+      "title": "无家可归者营地",
+      "description": "你的街区附近出现了一个无家可归者营地，人数在过去半年翻了一倍。市政府派了'清洁机器人'来拆除帐篷，但营地第二天又重建了。营地里有通电的太阳能充电站和一个免费Wi-Fi路由器。有人开着一辆改装的面包车来发食物。警察偶尔来巡逻，但大多时候视而不见。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "去营地做志愿者",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "向市政府投诉",
+          "effects": {
+            "REP": -1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "捐赠物资",
+          "effects": {
+            "MONEY": -100,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "房产市场",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3196,
+      "title": "虚拟房产",
+      "description": "一个叫MetaHood的平台让你可以购买虚拟世界中的房产。有人花了十万信用点买了一栋不存在的虚拟别墅。平台说虚拟房产的升值空间比实体房产更大。你的朋友在虚拟世界里炒房赚了五千块。你戴上VR看了看你'买得起'的虚拟房子——一个十平米的虚拟单间。",
+      "type": "economy",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "投资虚拟房产",
+          "effects": {
+            "MONEY": -200,
+            "TECH": 2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "在虚拟世界做生意",
+          "effects": {
+            "MONEY": 100,
+            "TECH": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝参与虚拟房产",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "房产市场",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3197,
+      "title": "抵押贷款危机",
+      "description": "新闻说次级抵押贷款市场又出现了问题，和2008年一样的模式但规模更大。AI打包的房贷衍生品被卖给了全球投资者。你的 Adjustable Rate Mortgage 下个月要重置，利率从4%跳到12%。银行说你可以'再融资'，但手续费是五千信用点。街上开始出现'房屋止赎'的招牌。",
+      "type": "economy",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "紧急再融资保住房子",
+          "effects": {
+            "MONEY": -400,
+            "DEBT": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "卖房止损",
+          "effects": {
+            "MONEY": 300,
+            "DEBT": -2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "申请房贷援助项目",
+          "effects": {
+            "MONEY": -100,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "房产市场",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3198,
+      "title": "智能家居入侵",
+      "description": "你的智能公寓系统被黑客入侵了。门锁、温度、灯光全部失控。黑客通过全息投影告诉你，如果你想恢复控制权需要支付一个比特币。你的智能冰箱在循环播放一段广告。你的邻居家的系统也同时被黑了。智能锁的物理备用钥匙你找不到了。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支付赎金恢复控制",
+          "effects": {
+            "MONEY": -200,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自己动手重置系统",
+          "effects": {
+            "TECH": 3,
+            "TRAUMA": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "报警并联系智能家居公司",
+          "effects": {
+            "REP": 1,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "房产市场",
+        "美国社会"
+      ]
+    },
+    {
+      "id": 3199,
+      "title": "房产投机泡沫",
+      "description": "所有人都在谈论房产投资。你的同事辞了职全职炒房，在六个月内翻了三倍身家。但经济分析师说这是一个泡沫，随时可能破裂。AI预测模型给出了矛盾的结果——一个说涨一个说跌。你的另一个朋友在泡沫破裂前一周全仓买入，现在负资产。你手里有一点积蓄，不知道该怎么办。",
+      "type": "economy",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "跟风投资房产",
+          "effects": {
+            "MONEY": -400,
+            "DEBT": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "保守存钱等泡沫破裂",
+          "effects": {
+            "MONEY": 100,
+            "LIFE": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "做空房产市场",
+          "effects": {
+            "MONEY": -200,
+            "TECH": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "房产市场",
+        "美国社会"
+      ]
+    }
+  ]
+}

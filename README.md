@@ -106,7 +106,7 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/your-username/night-city-life-restart-v2.git
+git clone https://github.com/Prorejm/night-city-life-restart-v2.git
 cd night-city-life-restart-v2
 
 # 安装依赖

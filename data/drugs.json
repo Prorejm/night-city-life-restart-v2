@@ -2,7 +2,7 @@
   "meta": {
     "description": "药物数据 - Drug Database",
     "version": "1.0",
-    "totalCount": 15
+    "totalCount": 40
   },
   "allDrugs": [
     {
@@ -377,6 +377,645 @@
       "description": "苯二氮卓类镇静药物，用于治疗焦虑和失眠。在赛博都市中几乎人人都在服用某种镇定剂来应对高压生活。",
       "overdoseRisk": 10,
       "duration": 6
+    },
+    {
+      "id": "morphine",
+      "name": "吗啡",
+      "type": "prescription_opioid",
+      "addictionRate": 40,
+      "addictionThreshold": 5,
+      "effects": {
+        "painRelief": 50,
+        "stamina": 5,
+        "reflex": -3,
+        "social": -2,
+        "addictionRisk": 8
+      },
+      "withdrawalEffects": {
+        "stamina": -12,
+        "painRelief": -15,
+        "social": -5,
+        "mentalHealth": -8,
+        "duration": 72
+      },
+      "price": 300,
+      "legal": true,
+      "description": "经典强效阿片类止痛药，广泛用于临床剧痛管理。镇痛效果卓越但成瘾性极高，戒断过程极为痛苦。",
+      "overdoseRisk": 25,
+      "duration": 6
+    },
+    {
+      "id": "pethidine",
+      "name": "杜冷丁",
+      "type": "prescription_opioid",
+      "addictionRate": 30,
+      "addictionThreshold": 6,
+      "effects": {
+        "painRelief": 35,
+        "stamina": 3,
+        "reflex": -2,
+        "social": 1,
+        "addictionRisk": 5
+      },
+      "withdrawalEffects": {
+        "stamina": -8,
+        "painRelief": -10,
+        "social": -4,
+        "duration": 48
+      },
+      "price": 250,
+      "legal": true,
+      "description": "合成阿片类止痛药，镇痛效果约为吗啡的三分之一。曾被广泛替代吗啡使用，自身代谢产物有神经毒性。",
+      "overdoseRisk": 18,
+      "duration": 4
+    },
+    {
+      "id": "adderall",
+      "name": "安非他命",
+      "type": "stimulant",
+      "addictionRate": 25,
+      "addictionThreshold": 7,
+      "effects": {
+        "intelligence": 8,
+        "stamina": 10,
+        "reflex": 3,
+        "social": 4,
+        "perception": 5
+      },
+      "withdrawalEffects": {
+        "intelligence": -6,
+        "stamina": -10,
+        "social": -5,
+        "mentalHealth": -8,
+        "duration": 72
+      },
+      "price": 150,
+      "legal": true,
+      "description": "苯丙胺类处方兴奋剂，用于治疗ADHD。在高压职场和学术圈中被滥用为\"聪明药\"，副作用包括心悸和焦虑。",
+      "overdoseRisk": 12,
+      "duration": 8
+    },
+    {
+      "id": "ritalin",
+      "name": "利他林",
+      "type": "stimulant",
+      "addictionRate": 20,
+      "addictionThreshold": 7,
+      "effects": {
+        "intelligence": 6,
+        "reflex": 2,
+        "perception": 3,
+        "stamina": 5,
+        "social": -1
+      },
+      "withdrawalEffects": {
+        "intelligence": -5,
+        "stamina": -6,
+        "mentalHealth": -6,
+        "duration": 48
+      },
+      "price": 200,
+      "legal": true,
+      "description": "哌甲酯类中枢兴奋剂，被学生和知识分子广泛用作认知增强剂。集中注意力效果显著但可能导致失眠和食欲下降。",
+      "overdoseRisk": 8,
+      "duration": 6
+    },
+    {
+      "id": "mdma",
+      "name": "摇头丸(MDMA)",
+      "type": "hallucinogen",
+      "addictionRate": 15,
+      "addictionThreshold": 8,
+      "effects": {
+        "social": 12,
+        "perception": 8,
+        "stamina": 10,
+        "reflex": -1,
+        "cool": 5
+      },
+      "withdrawalEffects": {
+        "social": -8,
+        "stamina": -8,
+        "mentalHealth": -10,
+        "duration": 48
+      },
+      "price": 100,
+      "legal": false,
+      "description": "派对药物中的经典，带来强烈的共情和感官增强体验。夜店文化核心消费品，但脱水风险和血清素耗竭不容忽视。",
+      "overdoseRisk": 10,
+      "duration": 5
+    },
+    {
+      "id": "ghb",
+      "name": "GHB(迷奸水)",
+      "type": "depressant",
+      "addictionRate": 25,
+      "addictionThreshold": 6,
+      "effects": {
+        "social": 6,
+        "painRelief": 5,
+        "reflex": -6,
+        "stamina": -3,
+        "intelligence": -4
+      },
+      "withdrawalEffects": {
+        "social": -6,
+        "mentalHealth": -12,
+        "stamina": -5,
+        "duration": 60
+      },
+      "price": 200,
+      "legal": false,
+      "description": "无色无味的强效镇静剂，低剂量产生欣快感和社交增强，高剂量导致昏迷。因常用于性犯罪而臭名昭著。",
+      "overdoseRisk": 35,
+      "duration": 4
+    },
+    {
+      "id": "lsd_acid",
+      "name": "LSD(麦角酸)",
+      "type": "hallucinogen",
+      "addictionRate": 10,
+      "addictionThreshold": 8,
+      "effects": {
+        "perception": 12,
+        "intelligence": 6,
+        "reflex": -4,
+        "social": -2,
+        "cool": 4
+      },
+      "withdrawalEffects": {
+        "perception": -4,
+        "mentalHealth": -6,
+        "duration": 36
+      },
+      "price": 150,
+      "legal": false,
+      "description": "史上最强致幻剂之一，微克级剂量即可引发持续数小时的感官爆炸和意识扩张。心理成瘾性低但可能诱发潜在精神疾病。",
+      "overdoseRisk": 5,
+      "duration": 12
+    },
+    {
+      "id": "dmt",
+      "name": "DMT",
+      "type": "hallucinogen",
+      "addictionRate": 8,
+      "addictionThreshold": 8,
+      "effects": {
+        "perception": 15,
+        "intelligence": 5,
+        "reflex": -8,
+        "stamina": -5,
+        "cool": 6
+      },
+      "withdrawalEffects": {
+        "perception": -3,
+        "mentalHealth": -4,
+        "duration": 24
+      },
+      "price": 300,
+      "legal": false,
+      "description": "被称为\"精神分子\"的强效致幻剂，15分钟极短体验但犹如穿越了数小时平行宇宙。常用于灵性探索和仪式用途。",
+      "overdoseRisk": 7,
+      "duration": 1
+    },
+    {
+      "id": "cocaine_pure",
+      "name": "高纯度可卡因",
+      "type": "stimulant",
+      "addictionRate": 45,
+      "addictionThreshold": 4,
+      "effects": {
+        "reflex": 10,
+        "stamina": 12,
+        "social": 10,
+        "intelligence": 4,
+        "health": -5
+      },
+      "withdrawalEffects": {
+        "stamina": -14,
+        "social": -12,
+        "reflex": -6,
+        "mentalHealth": -12,
+        "duration": 84
+      },
+      "price": 500,
+      "legal": false,
+      "description": "经过精细提纯的顶级可卡因，纯度高达90%以上。在上流精英和富豪阶层中流行，带来无可比拟的自信和能量爆发。",
+      "overdoseRisk": 28,
+      "duration": 3
+    },
+    {
+      "id": "crack",
+      "name": "快克可卡因",
+      "type": "stimulant",
+      "addictionRate": 55,
+      "addictionThreshold": 3,
+      "effects": {
+        "reflex": 12,
+        "stamina": 15,
+        "combat": 4,
+        "painRelief": 5,
+        "health": -10
+      },
+      "withdrawalEffects": {
+        "stamina": -18,
+        "reflex": -8,
+        "health": -15,
+        "mentalHealth": -15,
+        "duration": 96
+      },
+      "price": 200,
+      "legal": false,
+      "description": "可卡因的廉价可吸食版本，价格便宜但成瘾性更快更强。街头上最危险的毒品之一，吸食一次即可能终生成瘾。",
+      "overdoseRisk": 35,
+      "duration": 2
+    },
+    {
+      "id": "pcp_angel",
+      "name": "PCP(天使尘)",
+      "type": "hallucinogen",
+      "addictionRate": 20,
+      "addictionThreshold": 6,
+      "effects": {
+        "painRelief": 25,
+        "combat": 10,
+        "stamina": 8,
+        "intelligence": -10,
+        "reflex": -3
+      },
+      "withdrawalEffects": {
+        "mentalHealth": -14,
+        "social": -8,
+        "intelligence": -4,
+        "duration": 60
+      },
+      "price": 100,
+      "legal": false,
+      "description": "分离性麻醉致幻剂，最初作为兽用麻醉剂开发。导致使用者产生超人体力和痛觉丧失，常伴随攻击性和精神错乱。",
+      "overdoseRisk": 22,
+      "duration": 8
+    },
+    {
+      "id": "ketamine",
+      "name": "氯胺酮(K粉)",
+      "type": "hallucinogen",
+      "addictionRate": 15,
+      "addictionThreshold": 7,
+      "effects": {
+        "painRelief": 20,
+        "perception": 8,
+        "reflex": -5,
+        "stamina": -4,
+        "cool": 3
+      },
+      "withdrawalEffects": {
+        "perception": -4,
+        "mentalHealth": -8,
+        "stamina": -5,
+        "duration": 48
+      },
+      "price": 250,
+      "legal": false,
+      "description": "医用麻醉剂被滥用的典型，产生独特的\"K洞\"分离体验。在俱乐部文化中占有一席之地，长期使用损害泌尿系统。",
+      "overdoseRisk": 15,
+      "duration": 3
+    },
+    {
+      "id": "methcathinone",
+      "name": "甲卡西酮(浴盐)",
+      "type": "stimulant",
+      "addictionRate": 60,
+      "addictionThreshold": 3,
+      "effects": {
+        "stamina": 18,
+        "combat": 8,
+        "reflex": 10,
+        "health": -10,
+        "social": -8
+      },
+      "withdrawalEffects": {
+        "stamina": -20,
+        "health": -18,
+        "mentalHealth": -20,
+        "reflex": -8,
+        "duration": 120
+      },
+      "price": 150,
+      "legal": false,
+      "description": "合成卡西酮类兴奋剂中的代表，比冰毒更具攻击性和致幻性。使用者常出现\"丧尸化\"行为和极端的暴力倾向。",
+      "overdoseRisk": 30,
+      "duration": 10
+    },
+    {
+      "id": "reflex_booster",
+      "name": "反射加速剂",
+      "type": "cyberdrug",
+      "addictionRate": 20,
+      "addictionThreshold": 6,
+      "effects": {
+        "reflex": 14,
+        "combat": 8,
+        "perception": 6,
+        "stamina": -3,
+        "addictionRisk": 4
+      },
+      "withdrawalEffects": {
+        "reflex": -10,
+        "combat": -6,
+        "perception": -4,
+        "stamina": -5,
+        "duration": 48
+      },
+      "price": 800,
+      "legal": false,
+      "description": "赛博格专用反应增强药物，临时大幅提升神经传导速度和反射弧。在街头枪战中意味着生与死的区别，但药效过后反应迟钝。",
+      "overdoseRisk": 15,
+      "duration": 1
+    },
+    {
+      "id": "neuro_enhancer_iv",
+      "name": "神经增强素IV型",
+      "type": "cyberdrug",
+      "addictionRate": 30,
+      "addictionThreshold": 5,
+      "effects": {
+        "intelligence": 14,
+        "perception": 8,
+        "reflex": 4,
+        "cool": -4,
+        "addictionRisk": 6
+      },
+      "withdrawalEffects": {
+        "intelligence": -12,
+        "perception": -6,
+        "reflex": -4,
+        "mentalHealth": -12,
+        "duration": 84
+      },
+      "price": 1200,
+      "legal": false,
+      "description": "第四代军用级神经增强药剂，将大脑处理速度推至生物极限。军方的实验项目泄露在黑市上流通，价格极其昂贵。",
+      "overdoseRisk": 20,
+      "duration": 4
+    },
+    {
+      "id": "adrenaline_extreme",
+      "name": "人工肾上腺素EXT",
+      "type": "cyberdrug",
+      "addictionRate": 15,
+      "addictionThreshold": 6,
+      "effects": {
+        "combat": 10,
+        "reflex": 8,
+        "stamina": 12,
+        "painRelief": 15,
+        "health": -6
+      },
+      "withdrawalEffects": {
+        "stamina": -12,
+        "combat": -8,
+        "reflex": -6,
+        "health": -8,
+        "duration": 48
+      },
+      "price": 600,
+      "legal": false,
+      "description": "极端条件下使用的紧急战斗兴奋剂，将肾上腺素水平推至人体安全极限。在生死关头使用最为有效，但药效消退后极度虚弱。",
+      "overdoseRisk": 28,
+      "duration": 1
+    },
+    {
+      "id": "cyber_rage",
+      "name": "赛博狂怒丸",
+      "type": "cyberdrug",
+      "addictionRate": 40,
+      "addictionThreshold": 4,
+      "effects": {
+        "combat": 14,
+        "stamina": 10,
+        "painRelief": 25,
+        "reflex": 3,
+        "intelligence": -8,
+        "cool": -10
+      },
+      "withdrawalEffects": {
+        "combat": -12,
+        "stamina": -10,
+        "mentalHealth": -16,
+        "social": -8,
+        "duration": 96
+      },
+      "price": 900,
+      "legal": false,
+      "description": "赛博朋克世界中最臭名昭著的战斗药物，彻底消除恐惧和痛觉感知。使用者变成无情战斗机器，但也极易误伤友军。",
+      "overdoseRisk": 25,
+      "duration": 2
+    },
+    {
+      "id": "ghost_mode",
+      "name": "幽灵模式抑制剂",
+      "type": "cyberdrug",
+      "addictionRate": 25,
+      "addictionThreshold": 5,
+      "effects": {
+        "cool": 14,
+        "reflex": 5,
+        "perception": -4,
+        "social": -8,
+        "painRelief": 5
+      },
+      "withdrawalEffects": {
+        "cool": -10,
+        "social": -4,
+        "mentalHealth": -6,
+        "perception": 4,
+        "duration": 60
+      },
+      "price": 1500,
+      "legal": false,
+      "description": "黑暗行动专用抑制剂，压制所有情绪波动和生理恐惧反应。特工和刺客在执行高风险任务前使用，代价是情感钝化持续数日。",
+      "overdoseRisk": 12,
+      "duration": 3
+    },
+    {
+      "id": "carfentanil",
+      "name": "卡芬太尼",
+      "type": "synthetic",
+      "addictionRate": 80,
+      "addictionThreshold": 3,
+      "effects": {
+        "painRelief": 70,
+        "stamina": -10,
+        "reflex": -8,
+        "intelligence": -6,
+        "addictionRisk": 10
+      },
+      "withdrawalEffects": {
+        "stamina": -20,
+        "painRelief": -25,
+        "health": -20,
+        "mentalHealth": -18,
+        "duration": 144
+      },
+      "price": 500,
+      "legal": false,
+      "description": "芬太尼家族中最致命的成员，药效是吗啡的一万倍。一颗盐粒大小的剂量即可致死，黑市中被称为\"丧尸药\"。",
+      "overdoseRisk": 50,
+      "duration": 8
+    },
+    {
+      "id": "synthetic_cannabinoid",
+      "name": "合成大麻素(K2)",
+      "type": "synthetic",
+      "addictionRate": 25,
+      "addictionThreshold": 6,
+      "effects": {
+        "perception": 6,
+        "social": 4,
+        "reflex": -5,
+        "intelligence": -4,
+        "stamina": -3
+      },
+      "withdrawalEffects": {
+        "mentalHealth": -10,
+        "social": -6,
+        "stamina": -4,
+        "duration": 60
+      },
+      "price": 80,
+      "legal": false,
+      "description": "喷在植物碎屑上的合成大麻素混合物，效果比天然大麻强烈数倍。与天然大麻完全不同，容易引起急性中毒和精神崩溃。",
+      "overdoseRisk": 20,
+      "duration": 4
+    },
+    {
+      "id": "flakka",
+      "name": "Flakka(合成卡西酮)",
+      "type": "synthetic",
+      "addictionRate": 50,
+      "addictionThreshold": 4,
+      "effects": {
+        "stamina": 16,
+        "combat": 8,
+        "reflex": 8,
+        "intelligence": -10,
+        "health": -12
+      },
+      "withdrawalEffects": {
+        "stamina": -18,
+        "health": -16,
+        "mentalHealth": -22,
+        "reflex": -8,
+        "duration": 120
+      },
+      "price": 100,
+      "legal": false,
+      "description": "臭名昭著的\"丧尸毒品\"，使用者会进入极端亢奋和幻觉状态。以脱衣狂奔和啃咬他人面孔的暴力行为而闻名于世。",
+      "overdoseRisk": 32,
+      "duration": 8
+    },
+    {
+      "id": "xanax",
+      "name": "安定(Xanax)",
+      "type": "depressant",
+      "addictionRate": 20,
+      "addictionThreshold": 7,
+      "effects": {
+        "cool": 6,
+        "social": 3,
+        "reflex": -4,
+        "stamina": -3,
+        "intelligence": -2
+      },
+      "withdrawalEffects": {
+        "cool": -6,
+        "mentalHealth": -14,
+        "social": -5,
+        "stamina": -4,
+        "duration": 72
+      },
+      "price": 120,
+      "legal": true,
+      "description": "苯二氮卓类抗焦虑药物，全球处方量最大的精神药物之一。在赛博都市中几乎是每个人的随身必备品，停用后焦虑反弹剧烈。",
+      "overdoseRisk": 10,
+      "duration": 6
+    },
+    {
+      "id": "blue_light",
+      "name": "蓝光(数字毒品)",
+      "type": "designer_drug",
+      "addictionRate": 30,
+      "addictionThreshold": 5,
+      "effects": {
+        "perception": 12,
+        "intelligence": 6,
+        "cool": 6,
+        "reflex": 4,
+        "social": 2
+      },
+      "withdrawalEffects": {
+        "perception": -8,
+        "intelligence": -5,
+        "mentalHealth": -10,
+        "cool": -4,
+        "duration": 60
+      },
+      "price": 500,
+      "legal": false,
+      "description": "革命性的数字毒品，通过特定频率的蓝光闪烁直接刺激视觉皮层和大脑奖赏中枢。无需摄入任何化学物质，完全通过视觉输入起效。",
+      "overdoseRisk": 8,
+      "duration": 0.5
+    },
+    {
+      "id": "mist",
+      "name": "迷雾(失忆药物)",
+      "type": "designer_drug",
+      "addictionRate": 15,
+      "addictionThreshold": 7,
+      "effects": {
+        "cool": 8,
+        "painRelief": 10,
+        "reflex": -5,
+        "social": -4,
+        "perception": -3
+      },
+      "withdrawalEffects": {
+        "cool": -6,
+        "mentalHealth": -8,
+        "perception": 3,
+        "duration": 36
+      },
+      "price": 300,
+      "legal": false,
+      "description": "专为犯罪场景设计的失忆性药物，吸入后选择性阻断短期记忆形成。受害者事后无法回忆犯罪过程，在黑市中需求极高。",
+      "overdoseRisk": 10,
+      "duration": 2
+    },
+    {
+      "id": "stamina_x",
+      "name": "耐久X(精神亢奋剂)",
+      "type": "designer_drug",
+      "addictionRate": 35,
+      "addictionThreshold": 5,
+      "effects": {
+        "stamina": 20,
+        "reflex": 5,
+        "combat": 4,
+        "health": -8,
+        "social": -3
+      },
+      "withdrawalEffects": {
+        "stamina": -22,
+        "health": -12,
+        "mentalHealth": -10,
+        "reflex": -5,
+        "duration": 120
+      },
+      "price": 400,
+      "legal": false,
+      "description": "终极耐力增强药物，让使用者连续24小时保持巅峰状态不眠不休。药效过后必须加倍补睡，身体陷入深度疲劳状态。",
+      "overdoseRisk": 22,
+      "duration": 24
     }
   ]
 }

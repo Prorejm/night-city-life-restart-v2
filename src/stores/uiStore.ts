@@ -1,6 +1,13 @@
 import { create } from 'zustand';
 import type { EventLogEntry } from '@/types';
 
+interface PendingChoice {
+  eventId: number;
+  title: string;
+  description: string;
+  branches: { id: string; text: string }[];
+}
+
 interface UIStore {
   currentScreen: string;
   setScreen: (screen: string) => void;
@@ -38,6 +45,10 @@ interface UIStore {
   animationQueue: any[];
   addAnimation: (anim: any) => void;
   clearAnimations: () => void;
+
+  // 待处理事件分支选择
+  pendingChoice: PendingChoice | null;
+  setPendingChoice: (choice: PendingChoice | null) => void;
 }
 
 const INITIAL_STATE = {
@@ -55,6 +66,7 @@ const INITIAL_STATE = {
   activeModal: null as string | null,
   modalData: null as any,
   animationQueue: [] as any[],
+  pendingChoice: null as PendingChoice | null,
 };
 
 const useUIStore = create<UIStore>()((set) => ({
@@ -118,6 +130,8 @@ const useUIStore = create<UIStore>()((set) => ({
     })),
 
   clearAnimations: () => set({ animationQueue: [] }),
+
+  setPendingChoice: (choice) => set({ pendingChoice: choice }),
 }));
 
 export default useUIStore;

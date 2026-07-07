@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useMemo } from 'react';
 import { cn } from '@/lib/utils';
 import useGameStore from '@/stores/gameStore';
 import usePlayerStore from '@/stores/playerStore';
@@ -11,6 +11,7 @@ import HousingPanel from '@/components/Panels/HousingPanel';
 import drugsData from '../../../data/drugs.json';
 import housingData from '../../../data/housing.json';
 import { STAT_NAMES } from '@/engine/GameConfig';
+import { checkCriticalThresholds } from '@/core/PropertySystem';
 import type { CoreAttribute, EventLogEntry } from '@/types';
 import './GameScreen.css';
 
@@ -157,6 +158,11 @@ const EventCard: React.FC<EventCardProps> = ({ entry }) => {
       <p className="font-sans text-sm leading-relaxed text-muted-foreground/90">
         {entry.description}
       </p>
+      {entry.choice && (
+        <p className="mt-1 font-mono text-[11px] text-neon-magenta/70 italic">
+          → {entry.choice}
+        </p>
+      )}
       {entry.effects && Object.keys(entry.effects).length > 0 && (
         <div className="mt-2 flex flex-wrap gap-2">
           {Object.entries(entry.effects).map(([k, v]) => {
@@ -182,17 +188,55 @@ const EventCard: React.FC<EventCardProps> = ({ entry }) => {
   );
 };
 
+/** CriticalAlertBar - 危险阈值告警条 */
+const CriticalAlertBar: React.FC = () => {
+  const attributes = usePlayerStore((s) => s.attributes);
+
+  const alerts = useMemo(() => {
+    return checkCriticalThresholds({ attributes } as any);
+  }, [attributes]);
+
+  if (alerts.length === 0) return null;
+
+  // 优先显示 danger 级别，最多显示 3 条
+  const visible = alerts
+    .sort((a, b) => (a.level === 'danger' ? -1 : 1) - (b.level === 'danger' ? -1 : 1))
+    .slice(0, 3);
+
+  return (
+    <div className="shrink-0 flex items-center gap-2 overflow-hidden bg-black/60 border-b border-neon-red/20 px-3 py-1">
+      <span className="shrink-0 text-[10px] font-mono font-bold text-neon-red animate-pulse">
+        ⚠ ALERT
+      </span>
+      <div className="flex gap-3 overflow-hidden">
+        {visible.map((alert, i) => (
+          <span
+            key={`${alert.type}-${i}`}
+            className={cn(
+              'text-[10px] font-mono whitespace-nowrap',
+              alert.level === 'danger' ? 'text-neon-red' : 'text-yellow-400'
+            )}
+          >
+            {alert.message}
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 /** EventLog - 终端式事件日志：column-reverse实现自然底部对齐 */
 const EventLog: React.FC = () => {
   const eventLog = useUIStore((s) => s.eventLog);
 
   return (
-    <div className="flex flex-col bg-black/20" style={{ height: '100%', minHeight: 0 }}>
+    <div className="flex h-full flex-col bg-black/20" style={{ height: '100%', minHeight: 0 }}>
       <div className="border-b border-white/5 px-3 py-1 shrink-0">
         <h3 className="font-mono text-xs uppercase tracking-widest text-muted-foreground/50">
           EVENT LOG
         </h3>
       </div>
+      <CriticalAlertBar />
       <div
         className="event-log-scroll overflow-y-auto"
         style={{
@@ -217,6 +261,42 @@ const EventLog: React.FC = () => {
             </div>
           )}
         </div>
+      </div>
+    </div>
+  );
+};
+
+/** BranchPanel - 事件分支选择面板 */
+const BranchPanel: React.FC = () => {
+  const pendingChoice = useUIStore((s) => s.pendingChoice);
+  const { handleEventChoice } = useGameEngine();
+
+  if (!pendingChoice) return null;
+
+  return (
+    <div className="absolute inset-0 z-50 flex items-center justify-center bg-black/70">
+      <div className="mx-4 w-full max-w-lg rounded-sm border border-neon-cyan/30 bg-black/90 p-5 shadow-[0_0_30px_rgba(0,212,170,0.15)]">
+        <h3 className="mb-2 font-display text-lg font-bold text-neon-cyan">
+          {pendingChoice.title}
+        </h3>
+        <p className="mb-4 font-mono text-sm leading-relaxed text-muted-foreground/80">
+          {pendingChoice.description}
+        </p>
+        <div className="space-y-2">
+          {pendingChoice.branches.map((branch, idx) => (
+            <button
+              key={branch.id}
+              onClick={() => handleEventChoice(pendingChoice.eventId, branch.id)}
+              className="w-full rounded-sm border border-white/10 bg-white/[0.03] px-4 py-3 text-left font-mono text-sm text-muted-foreground/90 transition-all hover:border-neon-cyan/30 hover:bg-neon-cyan/5 hover:text-white"
+            >
+              <span className="mr-2 text-neon-cyan/50">{idx + 1}.</span>
+              {branch.text}
+            </button>
+          ))}
+        </div>
+        <p className="mt-3 text-center font-mono text-[10px] text-muted-foreground/30">
+          数字键 1-3 快速选择
+        </p>
       </div>
     </div>
   );
@@ -264,14 +344,14 @@ const RightPanel: React.FC = () => {
             <HousingPanel
               currentLevel={housingLevel as any}
               housingDatabase={housingDb}
-              monthlyIncome={attributes.MONEY ?? 0}
+              availableFunds={attributes.MONEY ?? 0}
             />
           </div>
         )}
         {!drugPanelOpen && !housingPanelOpen && (
           <div className="flex h-full items-center justify-center">
             <p className="font-mono text-xs text-muted-foreground/20 text-center leading-relaxed">
-              按 1-5 切换面板<br />
+              按 4-5 切换面板<br />
               4:药物 5:住房
             </p>
           </div>
@@ -345,7 +425,7 @@ const Footer: React.FC<FooterProps> = ({ processTurn }) => {
       <div className="flex gap-3 font-mono text-[9px] text-muted-foreground/30">
         <span>Space:继续</span>
         <span>A:自动</span>
-        <span>1-3:选择</span>
+        <span>4:药物 5:住房</span>
       </div>
     </div>
   );
@@ -353,20 +433,34 @@ const Footer: React.FC<FooterProps> = ({ processTurn }) => {
 
 /** GameScreen 主组件 */
 const GameScreen: React.FC = () => {
-  const { processTurn } = useGameEngine();
+  const { processTurn, handleEventChoice } = useGameEngine();
+  const pendingChoice = useUIStore((s) => s.pendingChoice);
 
   // 自动播放
   useAutoPlay(processTurn);
 
   // 绑定键盘快捷键
   useKeyboard({
-    onSpace: () => processTurn(),
+    onSpace: () => {
+      // 有分支待选时，Space不处理
+      if (useUIStore.getState().pendingChoice) return;
+      processTurn();
+    },
     onAuto: () => useGameStore.getState().toggleAuto(),
     onNumber: (n) => {
-      // 数字按键映射到面板切换
-      if (n >= 1 && n <= 5) {
-        const panels = ['quest', 'inventory', 'cyberware', 'drug', 'housing'];
-        useUIStore.getState().togglePanel(panels[n - 1]);
+      // 如果有分支待选，数字键用于选择分支
+      const pc = useUIStore.getState().pendingChoice;
+      if (pc) {
+        const idx = n - 1;
+        if (idx >= 0 && idx < pc.branches.length) {
+          handleEventChoice(pc.eventId, pc.branches[idx].id);
+        }
+        return;
+      }
+      // 没有分支待选时，数字键映射到面板切换
+      if (n >= 4 && n <= 5) {
+        const panels = ['drug', 'housing'];
+        useUIStore.getState().togglePanel(panels[n - 4]);
       }
     },
   });
@@ -389,9 +483,10 @@ const GameScreen: React.FC = () => {
         <HudPanel />
       </div>
 
-      {/* 中央事件日志 */}
-      <div className="game-center">
+      {/* 中央事件日志 + 分支选择叠加层 */}
+      <div className="game-center relative">
         <EventLog />
+        {pendingChoice && <BranchPanel />}
       </div>
 
       {/* 右侧面板 */}

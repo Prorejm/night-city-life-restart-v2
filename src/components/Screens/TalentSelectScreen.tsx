@@ -34,7 +34,6 @@ interface TalentSelectScreenProps {
 
 const TalentSelectScreen: React.FC<TalentSelectScreenProps> = ({ onConfirm }) => {
   const setPhase = useGameStore((s) => s.setPhase);
-  const incrementRunCount = useGameStore((s) => s.incrementRunCount);
 
   const [talentPool, setTalentPool] = useState<Talent[]>([]);
   const [selectedIds, setSelectedIds] = useState<Set<number>>(new Set());
@@ -94,9 +93,6 @@ const TalentSelectScreen: React.FC<TalentSelectScreenProps> = ({ onConfirm }) =>
       talents: [...playerStore.talents],
     });
 
-    incrementRunCount();
-    setConfirmed(true);
-    onConfirm?.(Array.from(selectedIds));
     setPhase('ALLOCATE');
   };
 

@@ -5,7 +5,7 @@ import usePlayerStore from '@/stores/playerStore';
 import useGameEngine from '@/hooks/useGameEngine';
 import { calculateRebirthPoints, getRebirthOptions } from '@/core/RebirthSystem';
 import { getEpitaph } from '@/core/DeathSystem';
-import type { DeathType, CoreAttribute } from '@/types';
+import type { DeathType, CoreAttribute, RebirthOptions } from '@/types';
 
 const CORE_ATTRS: CoreAttribute[] = ['STYLE', 'TECH', 'CHROME', 'MONEY', 'HUMAN'];
 
@@ -93,11 +93,40 @@ const DeathScreen: React.FC<DeathScreenProps> = ({ onRestart, onBackToMenu }) =>
     };
   }, []);
 
-  const { startNewGame } = useGameEngine();
+  const { startNewGame, executeRebirth } = useGameEngine();
 
   const handleRestart = () => {
     onRestart?.();
-    startNewGame(); // 重新初始化游戏，stateMachine 从 LOADING->MENU->TALENT_SELECT 正确流转
+
+    // 收集玩家选择的继承项
+    const wantsAttr = selectedInherit.includes('boost_attr');
+    const wantsMoney = selectedInherit.includes('boost_money');
+    const selectedTalentNames = selectedInherit.filter(
+      (i) => i !== 'boost_attr' && i !== 'boost_money'
+    );
+
+    // 查找选中的天赋 ID
+    const selectedTalentIds = selectedTalentNames
+      .map((name) => talents.find((t) => t.name === name)?.id)
+      .filter((id): id is number => id !== undefined);
+
+    if (wantsAttr || wantsMoney || selectedTalentIds.length > 0) {
+      // 携带遗产重开
+      const options: RebirthOptions = {
+        canInheritTalent: selectedTalentIds.length > 0,
+        canBoostAttribute: wantsAttr && rebirthPoints >= 5,
+        canBoostMoney: wantsMoney && rebirthPoints >= 3,
+        canExtraTalent: false,
+        inheritancePoints: rebirthPoints,
+      };
+      executeRebirth(
+        options,
+        selectedTalentIds.length > 0 ? selectedTalentIds : undefined
+      );
+    } else {
+      // 无继承，全新开局
+      startNewGame();
+    }
   };
 
   const handleBackToMenu = () => {

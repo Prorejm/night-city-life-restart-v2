@@ -10,7 +10,6 @@ interface GameStore {
   turnCount: number;
   currentAge: number;
   currentYear: number;
-  advanceTurn: () => void;
 
   // 自动模式
   autoMode: boolean;
@@ -52,18 +51,6 @@ const useGameStore = create<GameStore>()((set) => ({
   ...INITIAL_STATE,
 
   setPhase: (phase) => set({ phase }),
-
-  advanceTurn: () =>
-    set((state) => {
-      const newTurnCount = state.turnCount + 1;
-      // 每 4 回合增长 1 岁
-      const ageIncrease = Math.floor(newTurnCount / 4) - Math.floor(state.turnCount / 4);
-      return {
-        turnCount: newTurnCount,
-        currentAge: state.currentAge + ageIncrease,
-        currentYear: state.currentYear + ageIncrease,
-      };
-    }),
 
   toggleAuto: () => set((state) => ({ autoMode: !state.autoMode })),
 

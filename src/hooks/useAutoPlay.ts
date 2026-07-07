@@ -25,7 +25,12 @@ function useAutoPlay(processTurn: () => void) {
   }, []);
 
   const start = useCallback(() => {
-    stop();
+    // 显式清除旧 interval，避免重叠
+    if (stopRef.current) {
+      stopRef.current();
+    }
+    stopRef.current = null;
+
     const delay = getDelay(autoSpeed);
     const id = setInterval(() => {
       // 只在 PLAYING 阶段自动执行

@@ -24,10 +24,11 @@ import {
   resolveBranch,
   checkDeathChain,
   getEventById,
+  resetCooldowns,
 } from './EventSystem';
 import { checkDeathConditions, processDeath, getDeathDescription, getDeathTitle } from './DeathSystem';
-import { processRent, getHousingEffects, getEvictionConsequences } from './HousingSystem';
-import { takeDrug, checkWithdrawal, applyWithdrawalEffects } from './DrugSystem';
+import { processRent, getHousingEffects, getEvictionConsequences, resetEvictionTracker } from './HousingSystem';
+import { takeDrug, checkWithdrawal, applyWithdrawalEffects, clearDrugState } from './DrugSystem';
 import {
   processInjury,
   checkTraumaBreakdown,
@@ -50,6 +51,7 @@ interface UIStore {
   showDeathScreen(record: DeathRecord): void;
   showRebirthOptions(options: RebirthOptions): void;
   updateUI(): void;
+  setPendingChoice(choice: any): void;
 }
 
 interface GameStores {
@@ -70,6 +72,10 @@ export class GameEngine {
   private eventHistory: number[] = [];
   private totalEarned: number = 0;
   private achievements: string[] = [];
+  /** 等待玩家选择分支的事件 */
+  private pendingEvent: GameEvent | null = null;
+  /** 上一次崩溃的回合数（冷却机制：每 3 回合最多崩溃 1 次） */
+  private lastBreakdownTurn: number = -999;
 
   constructor(stores: GameStores) {
     this.stores = stores;
@@ -83,7 +89,6 @@ export class GameEngine {
     console.log('[GameEngine] 初始化中...');
     this.stateMachine = new GameStateMachine('LOADING');
 
-    // 通知各子系统加载数据（在首次使用时延迟加载）
     console.log('[GameEngine] 数据加载完成。');
 
     this.stateMachine.transition('MENU');
@@ -96,6 +101,12 @@ export class GameEngine {
    * @param talentCount 初始可选天赋数量（默认 3）
    */
   startNewGame(talentCount: number = 3): void {
+    // 重置所有模块级状态（防止跨局污染）
+    resetCooldowns();
+    resetEvictionTracker();
+    this.pendingEvent = null;
+    this.lastBreakdownTurn = -999;
+
     // 重置游戏状态
     const gameState = this.stores.gameStore.getState();
     this.stores.gameStore.setState({
@@ -147,6 +158,20 @@ export class GameEngine {
   }
 
   /**
+   * 检查是否等待玩家选择事件分支
+   */
+  hasPendingChoice(): boolean {
+    return this.pendingEvent !== null;
+  }
+
+  /**
+   * 获取待处理事件
+   */
+  getPendingEvent(): GameEvent | null {
+    return this.pendingEvent;
+  }
+
+  /**
    * 执行一回合
    * @returns 本回合产生的事件日志，如果没有事件返回 null
    */
@@ -176,8 +201,6 @@ export class GameEngine {
       HUMAN: playerState.attributes.HUMAN ?? 0,
     };
     const derived = getDerivedAttributes(core);
-    // LIFE/REP只在不低于公式基础值时更新（避免事件效果被吞）
-    // 公式提供基础值，事件效果在此基础上累加
     if ((playerState.attributes.LIFE ?? 0) < derived.LIFE) {
       playerState.attributes.LIFE = derived.LIFE;
     }
@@ -196,24 +219,28 @@ export class GameEngine {
       applyWithdrawalEffects(playerState);
     }
 
-    // 5. 检查创伤崩溃
-    if (checkTraumaBreakdown(playerState)) {
+    // 5. 检查创伤崩溃（每 3 回合最多崩溃 1 次，崩溃后降低 5 点创伤）
+    if (checkTraumaBreakdown(playerState) && (newTurn - this.lastBreakdownTurn) >= 3) {
       processTraumaBreakdown(playerState);
-      // 创伤自动恢复一点点
-      reduceTrauma(1, playerState);
+      reduceTrauma(5, playerState);
+      this.lastBreakdownTurn = newTurn;
     }
 
-    // 6. 保存当前状态（克隆attributes触发Zustand重渲染）
+    // 6. 应用住房效果（每回合都生效，不再只作用空回合）
+    const housingEffects = getHousingEffects(playerState.housing);
+    applyAttributeEffects(housingEffects, playerState);
+
+    // 7. 保存当前状态（克隆attributes触发Zustand重渲染）
     this.stores.playerStore.setState({ ...playerState, attributes: { ...playerState.attributes } });
 
-    // 7. 检查死亡条件
+    // 8. 检查死亡条件
     const deathType = checkDeathConditions(playerState);
     if (deathType !== null) {
       this.handleDeath(deathType);
       return null;
     }
 
-    // 8. 触发随机事件
+    // 9. 触发随机事件
     const eligibleEvents = getEligibleEvents(
       playerState,
       newTurn,
@@ -229,7 +256,6 @@ export class GameEngine {
           const branchEffects = resolveBranch(selectedEvent, 'branch_1', playerState, newTurn);
           this.eventHistory.push(selectedEvent.id);
 
-          // 创建包含分支效果的日志
           const deathChainLog: EventLogEntry = {
             id: nextLogId(),
             eventId: selectedEvent.id,
@@ -244,12 +270,11 @@ export class GameEngine {
           // 再次检查死亡条件
           const deathAfterEvent = checkDeathConditions(playerState);
           if (deathAfterEvent !== null) {
-            this.stores.playerStore.setState({ ...playerState });
+            this.stores.playerStore.setState({ ...playerState, attributes: { ...playerState.attributes } });
             this.handleDeath(deathAfterEvent);
             return deathChainLog;
           }
 
-          // 死亡链事件处理完继续
           this.stores.playerStore.setState({ ...playerState, attributes: { ...playerState.attributes } });
           return deathChainLog;
         }
@@ -257,7 +282,43 @@ export class GameEngine {
         // 记录事件历史
         this.eventHistory.push(selectedEvent.id);
 
-        // 创建事件日志（使用事件级 effects）
+        // 如果事件有分支，等待玩家选择
+        if (selectedEvent.branches && selectedEvent.branches.length > 0) {
+          this.pendingEvent = selectedEvent;
+
+          // 通知 UI 有分支待选
+          this.stores.uiStore.setPendingChoice({
+            eventId: selectedEvent.id,
+            title: selectedEvent.title,
+            description: selectedEvent.description,
+            branches: selectedEvent.branches.map((b) => ({
+              id: b.id,
+              text: b.text ?? b.id,
+            })),
+          });
+
+          const logEntry: EventLogEntry = {
+            id: nextLogId(),
+            eventId: selectedEvent.id,
+            age: roundedAge,
+            turn: newTurn,
+            title: selectedEvent.title,
+            description: selectedEvent.description,
+            effects: undefined,
+            timestamp: Date.now(),
+          };
+          return logEntry;
+        }
+
+        // 无分支：直接应用事件效果
+        applyAttributeEffects(selectedEvent.effects ?? {}, playerState);
+
+        // 更新金钱追踪（用于遗产计算）
+        const moneyDelta = selectedEvent.effects?.MONEY ?? 0;
+        if (moneyDelta > 0) {
+          this.totalEarned += moneyDelta;
+        }
+
         const logEntry: EventLogEntry = {
           id: nextLogId(),
           eventId: selectedEvent.id,
@@ -269,20 +330,21 @@ export class GameEngine {
           timestamp: Date.now(),
         };
 
-        // 事件触发后保存状态
-        this.stores.playerStore.setState({ ...playerState, attributes: { ...playerState.attributes } });
+        // 再次检查死亡条件
+        const deathAfterEvent = checkDeathConditions(playerState);
+        if (deathAfterEvent !== null) {
+          this.stores.playerStore.setState({ ...playerState, attributes: { ...playerState.attributes } });
+          this.handleDeath(deathAfterEvent);
+          return logEntry;
+        }
 
+        this.stores.playerStore.setState({ ...playerState, attributes: { ...playerState.attributes } });
         return logEntry;
       }
     }
 
-    // 9. 应用住房效果（每回合）
-    const housingEffects = getHousingEffects(playerState.housing);
-    applyAttributeEffects(housingEffects, playerState);
-
-    // 保存状态
+    // 10. 无事件空回合（住房效果已在步骤6应用）
     this.stores.playerStore.setState({ ...playerState, attributes: { ...playerState.attributes } });
-
     return null;
   }
 
@@ -291,37 +353,59 @@ export class GameEngine {
    * @param eventId 事件 ID
    * @param branchId 分支 ID
    * @param playerState 当前玩家状态（可选，默认从 store 获取）
-   * @returns 应用的效果
+   * @returns 包含实际效果的事件日志，或 null
    */
-  handleEventChoice(eventId: number, branchId: string, playerState?: PlayerState): AttributeEffects {
+  handleEventChoice(eventId: number, branchId: string, playerState?: PlayerState): EventLogEntry | null {
     const state = playerState ?? this.stores.playerStore.getState();
     const gameState = this.stores.gameStore.getState();
 
     const event = getEventById(eventId);
     if (!event) {
       console.warn(`[GameEngine] 找不到事件 ID: ${eventId}`);
-      return {};
+      return null;
     }
 
+    // 清除待处理状态
+    this.pendingEvent = null;
+    this.stores.uiStore.setPendingChoice(null);
+
+    // 查找分支文本
+    const branch = event.branches?.find((b) => b.id === branchId);
+
+    // 解析分支并应用效果（resolveBranch 会应用事件+分支效果）
     const effects = resolveBranch(event, branchId, state, gameState.turnCount);
 
-    // 应用事件基础效果（resolveBranch 已处理）
     // 更新金钱追踪（用于遗产计算）
     const moneyDelta = effects.MONEY ?? 0;
     if (moneyDelta > 0) {
       this.totalEarned += moneyDelta;
     }
 
+    // 创建分支选择日志
+    const logEntry: EventLogEntry = {
+      id: nextLogId(),
+      eventId: eventId,
+      age: Math.round(gameState.currentAge * 100) / 100,
+      turn: gameState.turnCount,
+      title: event.title,
+      description: event.description,
+      effects: effects,
+      choice: branch?.text ?? branchId,
+      timestamp: Date.now(),
+    };
+
     // 检查事件后死亡
     const deathType = checkDeathConditions(state);
     if (deathType !== null) {
+      this.stores.playerStore.setState({ ...state, attributes: { ...state.attributes } });
       this.handleDeath(deathType);
+      return logEntry;
     }
 
-    this.stores.playerStore.setState({ ...state });
+    this.stores.playerStore.setState({ ...state, attributes: { ...state.attributes } });
     this.stores.uiStore.updateUI();
 
-    return effects;
+    return logEntry;
   }
 
   /**
@@ -363,8 +447,6 @@ export class GameEngine {
 
   /**
    * 设置自动模式
-   * @param enabled 是否启用
-   * @param speed 自动模式速度（1~5，默认 1）
    */
   setAutoMode(enabled: boolean, speed: number = 1): void {
     this.stores.gameStore.setState({
@@ -386,8 +468,15 @@ export class GameEngine {
   /**
    * 执行重生
    * @param options 重开选项
+   * @param specificTalentIds 玩家手动选择继承的天赋 ID 列表（可选）
    */
-  executeRebirth(options: RebirthOptions): void {
+  executeRebirth(options: RebirthOptions, specificTalentIds?: number[]): void {
+    // 重置模块级状态
+    resetCooldowns();
+    resetEvictionTracker();
+    this.pendingEvent = null;
+    this.lastBreakdownTurn = -999;
+
     const playerState = this.stores.playerStore.getState();
     const gameState = this.stores.gameStore.getState();
 
@@ -396,7 +485,21 @@ export class GameEngine {
 
     // 继承天赋
     const previousTalents = playerState.talents;
-    const inheritedTalents = getInheritedTalents(previousTalents, options.inheritancePoints);
+    let inheritedTalents: Talent[] = [];
+
+    if (specificTalentIds && specificTalentIds.length > 0) {
+      // 玩家手动选择了特定天赋
+      for (const id of specificTalentIds) {
+        const talent = previousTalents.find((t) => t.id === id);
+        if (talent && !inheritedTalents.find((t) => t.id === id)) {
+          inheritedTalents.push({ ...talent });
+        }
+      }
+    } else if (options.canInheritTalent) {
+      // 自动选择最佳可继承天赋
+      inheritedTalents = getInheritedTalents(previousTalents, options.inheritancePoints);
+    }
+
     for (const talent of inheritedTalents) {
       if (!playerState.talents.find((t) => t.id === talent.id)) {
         playerState.talents.push({ ...talent });
@@ -418,7 +521,7 @@ export class GameEngine {
     this.stores.gameStore.setState({
       phase: 'PLAYING',
       turnCount: 1,
-      currentAge: 14,
+      currentAge: 18,
       inheritedTalents: inheritedIds,
       rebirthPoints: 0,
     });
@@ -433,7 +536,6 @@ export class GameEngine {
 
   /**
    * 获取当前游戏状态
-   * @returns 合并的 GameState 对象
    */
   getState(): GameState {
     return this.stores.gameStore.getState();
@@ -462,7 +564,6 @@ export class GameEngine {
 
   /**
    * 强制状态转换（供外部使用）
-   * @param newPhase 目标阶段
    */
   transitionTo(newPhase: GamePhase): void {
     this.stateMachine.transition(newPhase);

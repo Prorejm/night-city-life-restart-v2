@@ -84,12 +84,17 @@ export function setAttribute(type: AttributeType, value: number, playerState: Pl
 }
 
 /**
- * 计算衍生属性
+ * 计算从核心属性衍生的属性值
  * LIFE = (STYLE + TECH + CHROME) / 3 * 0.5 + 30
- * REP = STYLE / 2 + 事件影响力（由调用方提供额外加成）
+ * REP = STYLE / 2 + 事件影响力加成
+ *
+ * ⚠️ TRAUMA / ADDICTION / DEBT 不由核心属性计算得出，
+ *    它们分别由事件系统、药物系统、财务系统独立积累。
+ *    调用方应从 playerState.attributes 直接读取这些值。
+ *
  * @param core 核心属性映射
  * @param eventRepBonus 事件影响力加成（可选）
- * @returns 衍生属性值
+ * @returns 仅包含 LIFE 和 REP 的衍生值；TRAUMA/ADDICTION/DEBT 恒为 0（需从状态读取）
  */
 export function getDerivedAttributes(
   core: Record<CoreAttribute, number>,
@@ -102,9 +107,9 @@ export function getDerivedAttributes(
 
   return {
     LIFE: Math.max(0, Math.min(100, life)),
-    TRAUMA: 0, // 由事件系统积累
-    ADDICTION: 0, // 由药物系统积累
-    DEBT: 0, // 由财务系统积累
+    TRAUMA: 0, /* 不由核心属性计算，由事件系统独立积累 */
+    ADDICTION: 0, /* 不由核心属性计算，由药物系统独立积累 */
+    DEBT: 0, /* 不由核心属性计算，由财务系统独立积累 */
     REP: Math.max(0, Math.min(100, rep)),
   };
 }

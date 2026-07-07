@@ -15,7 +15,8 @@ interface HousingData {
 interface HousingPanelProps {
   currentLevel: HousingLevel;
   housingDatabase: HousingData[];
-  monthlyIncome: number;
+  /** 当前可用资金（MONEY余额） */
+  availableFunds: number;
   className?: string;
 }
 
@@ -58,12 +59,12 @@ const LEVEL_LABELS: Record<HousingLevel, string> = {
 export default function HousingPanel({
   currentLevel,
   housingDatabase,
-  monthlyIncome,
+  availableFunds,
   className,
 }: HousingPanelProps) {
   const data = getHousingData(currentLevel, housingDatabase);
   const rank = LEVEL_RANK[currentLevel];
-  const canAfford = data ? monthlyIncome >= data.monthlyRent : false;
+  const canAfford = data ? availableFunds >= data.monthlyRent * 3 : false; // 至少能负担3个月房租
 
   return (
     <div className={cn('panel-card rounded-sm p-4', className)}>

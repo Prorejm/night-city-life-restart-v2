@@ -92,17 +92,21 @@ function useGameEngine() {
           },
         },
         uiStore: {
-          showEvent: (event: GameEvent, branches: string[]) => {
-            console.log('[UI] Show event:', event.title, branches);
+          showEvent: (_event: GameEvent, _branches: string[]) => {
+            /* 界面切换通过 phase 状态驱动，无需额外 UI 调用 */
           },
-          showDeathScreen: (record: DeathRecord) => {
-            console.log('[UI] Death:', record.title);
+          showDeathScreen: (_record: DeathRecord) => {
+            /* 死亡界面通过 phase:'DEATH' 触发，App.tsx 自动渲染 DeathScreen */
           },
-          showRebirthOptions: (options: RebirthOptions) => {
-            console.log('[UI] Rebirth options:', options);
+          showRebirthOptions: (_options: RebirthOptions) => {
+            /* 重生选项通过 DeathScreen 组件内部处理 */
           },
           updateUI: () => {
             /* Zustand reactive - no-op */
+          },
+          setPendingChoice: (choice: any) => {
+            const store = useUIStore.getState();
+            store.setPendingChoice(choice);
           },
         },
       };
@@ -124,7 +128,10 @@ function useGameEngine() {
   const handleEventChoice = useCallback(
     (eventId: number, branchId: string) => {
       const engine = getEngine();
-      engine.handleEventChoice(eventId, branchId);
+      const result = engine.handleEventChoice(eventId, branchId);
+      if (result) {
+        useUIStore.getState().addEventLog(result);
+      }
     },
     [getEngine]
   );
@@ -143,9 +150,9 @@ function useGameEngine() {
   }, [getEngine]);
 
   const executeRebirth = useCallback(
-    (options: RebirthOptions) => {
+    (options: RebirthOptions, specificTalentIds?: number[]) => {
       const engine = getEngine();
-      engine.executeRebirth(options);
+      engine.executeRebirth(options, specificTalentIds);
     },
     [getEngine]
   );

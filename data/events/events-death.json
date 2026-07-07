@@ -17,24 +17,24 @@
           "id": "branch_1",
           "text": "拼死一搏，能拉一个垫背是一个",
           "effects": {
-            "COMBAT": 2,
-            "STREET_REP": 3,
-            "HEALTH": -20
+            "CHROME": 2,
+            "REP": 3,
+            "LIFE": -20
           }
         },
         {
           "id": "branch_2",
           "text": "跪地求饶，愿意付出一切代价",
           "effects": {
-            "COOL": -3,
+            "STYLE": -3,
             "MONEY": -5000,
-            "STREET_REP": -5
+            "REP": -5
           }
         }
       ],
       "effects": {
-        "HEALTH": -15,
-        "STREET_REP": -2
+        "LIFE": -15,
+        "REP": -2
       },
       "tags": [
         "死亡",
@@ -61,22 +61,22 @@
           "id": "branch_1",
           "text": "用最后的意志力伤害自己来停止这一切",
           "effects": {
-            "HEALTH": -20,
-            "MENTAL": -5
+            "LIFE": -20,
+            "TRAUMA": -5
           }
         },
         {
           "id": "branch_2",
           "text": "放弃抵抗，任由赛博精神病吞噬意识",
           "effects": {
-            "HEALTH": -25,
-            "CYBER_LEVEL": -5
+            "LIFE": -25,
+            "CHROME": -5
           }
         }
       ],
       "effects": {
-        "MENTAL": -15,
-        "HEALTH": -10
+        "TRAUMA": -15,
+        "LIFE": -10
       },
       "tags": [
         "死亡",
@@ -103,7 +103,7 @@
           "id": "branch_1",
           "text": "用最后的力气给自己注射纳洛酮",
           "effects": {
-            "HEALTH": -10,
+            "LIFE": -10,
             "ADDICTION": -3,
             "MONEY": -200
           }
@@ -112,13 +112,13 @@
           "id": "branch_2",
           "text": "无法动弹，等待死亡降临",
           "effects": {
-            "HEALTH": -25,
+            "LIFE": -25,
             "ADDICTION": -5
           }
         }
       ],
       "effects": {
-        "HEALTH": -20,
+        "LIFE": -20,
         "ADDICTION": 2
       },
       "tags": [
@@ -146,22 +146,22 @@
           "id": "branch_1",
           "text": "试图谈判，用情报换命",
           "effects": {
-            "CHARISMA": 2,
+            "HUMAN": 2,
             "MONEY": -10000,
-            "STREET_REP": -3
+            "REP": -3
           }
         },
         {
           "id": "branch_2",
           "text": "从窗户跳出去，赌一把",
           "effects": {
-            "HEALTH": -20,
-            "STREET_SMART": 1
+            "LIFE": -20,
+            "HUMAN": 1
           }
         }
       ],
       "effects": {
-        "HEALTH": -15,
+        "LIFE": -15,
         "MONEY": -5000
       },
       "tags": [
@@ -189,23 +189,23 @@
           "id": "branch_1",
           "text": "强行闯入任何有暖气的建筑",
           "effects": {
-            "HEALTH": -5,
-            "NCPD_WANTED": 2,
-            "STREET_SMART": 1
+            "LIFE": -5,
+            "TRAUMA": 2,
+            "HUMAN": 1
           }
         },
         {
           "id": "branch_2",
           "text": "用最后的体力走到最近的避难所",
           "effects": {
-            "HEALTH": -15,
-            "MENTAL": -2
+            "LIFE": -15,
+            "TRAUMA": -2
           }
         }
       ],
       "effects": {
-        "HEALTH": -15,
-        "MENTAL": -3
+        "LIFE": -15,
+        "TRAUMA": -3
       },
       "tags": [
         "死亡",
@@ -232,24 +232,23 @@
           "id": "branch_1",
           "text": "用最后一颗手雷和敌人同归于尽",
           "effects": {
-            "STREET_REP": 5,
-            "KARMA": 1,
-            "HEALTH": -25
+            "REP": 6,
+            "LIFE": -25
           }
         },
         {
           "id": "branch_2",
           "text": "装死，等待救援机会",
           "effects": {
-            "COOL": 3,
-            "HEALTH": -20,
-            "STREET_SMART": 2
+            "STYLE": 3,
+            "LIFE": -20,
+            "HUMAN": 2
           }
         }
       ],
       "effects": {
-        "HEALTH": -20,
-        "COMBAT": 1
+        "LIFE": -20,
+        "CHROME": 1
       },
       "tags": [
         "死亡",
@@ -276,8 +275,8 @@
           "id": "branch_1",
           "text": "用疼痛刺激自己回到现实",
           "effects": {
-            "HEALTH": -15,
-            "MENTAL": -5,
+            "LIFE": -15,
+            "TRAUMA": -5,
             "ADDICTION": -3
           }
         },
@@ -285,14 +284,14 @@
           "id": "branch_2",
           "text": "继续沉浸，死在虚拟世界里",
           "effects": {
-            "HEALTH": -25,
-            "MENTAL": -10
+            "LIFE": -25,
+            "TRAUMA": -10
           }
         }
       ],
       "effects": {
-        "HEALTH": -20,
-        "MENTAL": -8
+        "LIFE": -20,
+        "TRAUMA": -8
       },
       "tags": [
         "死亡",
@@ -319,23 +318,23 @@
           "id": "branch_1",
           "text": "纵身一跃，结束一切",
           "effects": {
-            "HEALTH": -30,
-            "MENTAL": -20
+            "LIFE": -30,
+            "TRAUMA": -20
           }
         },
         {
           "id": "branch_2",
           "text": "在最后一刻退缩，寻求帮助",
           "effects": {
-            "COOL": 3,
-            "MENTAL": 2,
-            "HEALTH": 0
+            "STYLE": 3,
+            "TRAUMA": 2,
+            "LIFE": 0
           }
         }
       ],
       "effects": {
-        "MENTAL": -15,
-        "HEALTH": -5
+        "TRAUMA": -15,
+        "LIFE": -5
       },
       "tags": [
         "死亡",
@@ -362,8 +361,8 @@
           "id": "branch_1",
           "text": "举手投降，希望他们不开枪",
           "effects": {
-            "HEALTH": -10,
-            "NCPD_WANTED": 3,
+            "LIFE": -10,
+            "TRAUMA": 3,
             "MONEY": -2000
           }
         },
@@ -371,15 +370,15 @@
           "id": "branch_2",
           "text": "利用掩体逃跑，赌一把",
           "effects": {
-            "HEALTH": -15,
-            "STREET_SMART": 2,
-            "NCPD_WANTED": 5
+            "LIFE": -15,
+            "HUMAN": 2,
+            "TRAUMA": 5
           }
         }
       ],
       "effects": {
-        "HEALTH": -15,
-        "NCPD_WANTED": 3
+        "LIFE": -15,
+        "TRAUMA": 3
       },
       "tags": [
         "死亡",
@@ -406,23 +405,23 @@
           "id": "branch_1",
           "text": "拼命挣扎，不惜一切代价逃脱",
           "effects": {
-            "STRENGTH": 3,
-            "HEALTH": -20,
-            "STREET_SMART": 2
+            "CHROME": 3,
+            "LIFE": -20,
+            "HUMAN": 2
           }
         },
         {
           "id": "branch_2",
           "text": "用言语谈判，承诺给他们更多好处",
           "effects": {
-            "CHARISMA": 2,
+            "HUMAN": 2,
             "MONEY": -10000,
-            "HEALTH": -10
+            "LIFE": -10
           }
         }
       ],
       "effects": {
-        "HEALTH": -20,
+        "LIFE": -20,
         "MONEY": -3000
       },
       "tags": [
@@ -450,24 +449,24 @@
           "id": "branch_1",
           "text": "拼尽全力挣脱束缚，即使撕裂自己的皮肤",
           "effects": {
-            "HEALTH": -25,
-            "STRENGTH": 2,
-            "STREET_REP": 3
+            "LIFE": -25,
+            "CHROME": 2,
+            "REP": 3
           }
         },
         {
           "id": "branch_2",
           "text": "假装失去意识，等待他们松懈时反击",
           "effects": {
-            "COOL": 3,
-            "HEALTH": -20,
-            "STREET_SMART": 2
+            "STYLE": 3,
+            "LIFE": -20,
+            "HUMAN": 2
           }
         }
       ],
       "effects": {
-        "HEALTH": -20,
-        "MENTAL": -10
+        "LIFE": -20,
+        "TRAUMA": -10
       },
       "tags": [
         "死亡",
@@ -495,25 +494,24 @@
           "id": "branch_1",
           "text": "强行拔掉所有神经接口，哪怕撕扯掉部分大脑组织",
           "effects": {
-            "HEALTH": -25,
-            "MENTAL": -15,
-            "HACK": -5
+            "LIFE": -25,
+            "TRAUMA": -15,
+            "TECH": -5
           }
         },
         {
           "id": "branch_2",
           "text": "用最后的时间反向追踪对方的IP，拉他一起陪葬",
           "effects": {
-            "HEALTH": -30,
-            "STREET_REP": 5,
-            "KARMA": 1
+            "LIFE": -30,
+            "REP": 6
           }
         }
       ],
       "effects": {
-        "HEALTH": -20,
-        "MENTAL": -10,
-        "HACK": -3
+        "LIFE": -20,
+        "TRAUMA": -10,
+        "TECH": -3
       },
       "tags": [
         "死亡",
@@ -541,24 +539,23 @@
           "id": "branch_1",
           "text": "用最后的钱呼叫正规医疗急救",
           "effects": {
-            "HEALTH": -15,
+            "LIFE": -15,
             "MONEY": -15000,
-            "MENTAL": -5
+            "TRAUMA": -5
           }
         },
         {
           "id": "branch_2",
           "text": "接受命运，用剩下的时间记录下这家诊所的罪行",
           "effects": {
-            "HEALTH": -30,
-            "KARMA": 3,
-            "STREET_REP": 2
+            "LIFE": -30,
+            "REP": 5
           }
         }
       ],
       "effects": {
-        "HEALTH": -25,
-        "MENTAL": -8
+        "LIFE": -25,
+        "TRAUMA": -8
       },
       "tags": [
         "死亡",
@@ -586,23 +583,23 @@
           "id": "branch_1",
           "text": "在仓体冻结前手动开启紧急弹出",
           "effects": {
-            "HEALTH": -20,
+            "LIFE": -20,
             "MONEY": -5000,
-            "MENTAL": -10
+            "TRAUMA": -10
           }
         },
         {
           "id": "branch_2",
           "text": "紧急联系冷冻公司的售后热线——如果它存在的话",
           "effects": {
-            "HEALTH": -25,
+            "LIFE": -25,
             "MONEY": -3000,
-            "COOL": -3
+            "STYLE": -3
           }
         }
       ],
       "effects": {
-        "HEALTH": -25,
+        "LIFE": -25,
         "MONEY": -50000
       },
       "tags": [
@@ -631,22 +628,21 @@
           "id": "branch_1",
           "text": "向邻居求助，欠下一个大人情",
           "effects": {
-            "HEALTH": -15,
+            "LIFE": -15,
             "DEBT": 2000,
-            "SOCIAL": 2
+            "HUMAN": 2
           }
         },
         {
           "id": "branch_2",
           "text": "自己催吐后硬扛过去",
           "effects": {
-            "HEALTH": -20,
-            "STAMINA": -5
+            "LIFE": -25
           }
         }
       ],
       "effects": {
-        "HEALTH": -20,
+        "LIFE": -20,
         "MONEY": -500
       },
       "tags": [
@@ -661,9 +657,9 @@
         "id": "branch_survive",
         "text": "在最后一刻被好心的邻居发现送医",
         "effects": {
-          "HEALTH": -10,
+          "LIFE": -10,
           "DEBT": 3000,
-          "SOCIAL": 3
+          "HUMAN": 3
         },
         "survivalChance": 30
       }
@@ -685,22 +681,22 @@
           "id": "branch_1",
           "text": "绝望地走上天台",
           "effects": {
-            "HEALTH": -30,
-            "MENTAL": -20
+            "LIFE": -30,
+            "TRAUMA": -20
           }
         },
         {
           "id": "branch_2",
           "text": "选择和追债人面对面谈判",
           "effects": {
-            "CHARISMA": 3,
+            "HUMAN": 3,
             "MONEY": -10000,
             "DEBT": -5000
           }
         }
       ],
       "effects": {
-        "MENTAL": -20,
+        "TRAUMA": -20,
         "DEBT": 10000
       },
       "tags": [
@@ -715,9 +711,9 @@
         "id": "branch_survive",
         "text": "在最后一刻被童年好友找到并制止",
         "effects": {
-          "MENTAL": 5,
+          "TRAUMA": 5,
           "DEBT": 5000,
-          "SOCIAL": 4
+          "HUMAN": 4
         },
         "survivalChance": 25
       }
@@ -739,23 +735,23 @@
           "id": "branch_1",
           "text": "用掌握的机密数据作为谈判筹码",
           "effects": {
-            "CHARISMA": 2,
+            "HUMAN": 2,
             "MONEY": -20000,
-            "STREET_REP": 5
+            "REP": 5
           }
         },
         {
           "id": "branch_2",
           "text": "尝试从通风管道逃跑",
           "effects": {
-            "HEALTH": -15,
-            "STREET_SMART": 3,
+            "LIFE": -15,
+            "HUMAN": 3,
             "TECH": 2
           }
         }
       ],
       "effects": {
-        "HEALTH": -20,
+        "LIFE": -20,
         "MONEY": -10000
       },
       "tags": [
@@ -784,23 +780,23 @@
           "id": "branch_1",
           "text": "在EMP生效前先发制人",
           "effects": {
-            "COMBAT": 3,
-            "HEALTH": -20,
-            "STREET_REP": 3
+            "CHROME": 3,
+            "LIFE": -20,
+            "REP": 3
           }
         },
         {
           "id": "branch_2",
           "text": "大喊求救，希望引起路人注意",
           "effects": {
-            "SOCIAL": 1,
-            "HEALTH": -20,
+            "HUMAN": 1,
+            "LIFE": -20,
             "MONEY": -5000
           }
         }
       ],
       "effects": {
-        "HEALTH": -20,
+        "LIFE": -20,
         "MONEY": -8000
       },
       "tags": [
@@ -829,7 +825,7 @@
           "id": "branch_1",
           "text": "用捡来的零件换钱去正规医院治疗",
           "effects": {
-            "HEALTH": -15,
+            "LIFE": -15,
             "MONEY": -20000,
             "TECH": 3
           }
@@ -838,14 +834,14 @@
           "id": "branch_2",
           "text": "找黑市医生做骨髓移植——来源不明但便宜",
           "effects": {
-            "HEALTH": -20,
+            "LIFE": -20,
             "MONEY": -5000,
             "HUMAN": -3
           }
         }
       ],
       "effects": {
-        "HEALTH": -20,
+        "LIFE": -20,
         "MONEY": -3000
       },
       "tags": [
@@ -876,22 +872,22 @@
           "effects": {
             "TECH": 3,
             "MONEY": -10000,
-            "KARMA": 1
+            "REP": 1
           }
         },
         {
           "id": "branch_2",
           "text": "无法接受现实，陷入深度抑郁",
           "effects": {
-            "MENTAL": -15,
+            "TRAUMA": -15,
             "MONEY": -70000,
-            "HEALTH": -5
+            "LIFE": -5
           }
         }
       ],
       "effects": {
         "MONEY": -70000,
-        "MENTAL": -15
+        "TRAUMA": -15
       },
       "tags": [
         "死亡",
@@ -905,9 +901,9 @@
         "id": "branch_survive",
         "text": "在发布遗言后，被网上的陌生人组成的互助小组救下",
         "effects": {
-          "MENTAL": -5,
+          "TRAUMA": -5,
           "MONEY": -70000,
-          "SOCIAL": 5
+          "HUMAN": 5
         },
         "survivalChance": 20
       }
@@ -929,24 +925,24 @@
           "id": "branch_1",
           "text": "试图抢夺警察的武器",
           "effects": {
-            "COMBAT": 4,
-            "HEALTH": -25,
-            "NCPD_WANTED": 10
+            "CHROME": 4,
+            "LIFE": -25,
+            "TRAUMA": 10
           }
         },
         {
           "id": "branch_2",
           "text": "举起双手，期望他们按程序办事",
           "effects": {
-            "HEALTH": -15,
-            "NCPD_WANTED": 7,
+            "LIFE": -15,
+            "TRAUMA": 7,
             "MONEY": -10000
           }
         }
       ],
       "effects": {
-        "HEALTH": -20,
-        "NCPD_WANTED": 5
+        "LIFE": -20,
+        "TRAUMA": 5
       },
       "tags": [
         "死亡",
@@ -974,22 +970,22 @@
           "id": "branch_1",
           "text": "在坠落前蹲下抱头，寻找保护姿势",
           "effects": {
-            "HEALTH": -20,
-            "STREET_SMART": 2
+            "LIFE": -20,
+            "HUMAN": 2
           }
         },
         {
           "id": "branch_2",
           "text": "试图在最后一秒抓住电梯井里的什么东西",
           "effects": {
-            "HEALTH": -25,
-            "STRENGTH": 2,
+            "LIFE": -25,
+            "CHROME": 2,
             "TECH": 1
           }
         }
       ],
       "effects": {
-        "HEALTH": -25
+        "LIFE": -25
       },
       "tags": [
         "死亡",
@@ -1003,8 +999,8 @@
         "id": "branch_survive",
         "text": "电梯砸在缓冲装置上，你奇迹般地活了下来",
         "effects": {
-          "HEALTH": -15,
-          "MENTAL": -10,
+          "LIFE": -15,
+          "TRAUMA": -10,
           "MONEY": -5000
         },
         "survivalChance": 15
@@ -1027,23 +1023,23 @@
           "id": "branch_1",
           "text": "去正规医院急救，倾家荡产也认了",
           "effects": {
-            "HEALTH": -10,
+            "LIFE": -10,
             "MONEY": -30000,
-            "MENTAL": -5
+            "TRAUMA": -5
           }
         },
         {
           "id": "branch_2",
           "text": "找到那个黑市医生，让他负责",
           "effects": {
-            "COMBAT": 2,
-            "HEALTH": -20,
-            "STREET_REP": 3
+            "CHROME": 2,
+            "LIFE": -20,
+            "REP": 3
           }
         }
       ],
       "effects": {
-        "HEALTH": -25,
+        "LIFE": -25,
         "MONEY": -5000
       },
       "tags": [
@@ -1073,22 +1069,21 @@
           "text": "起诉那家化工厂，请一名愿意接案的律师",
           "effects": {
             "MONEY": -15000,
-            "KARMA": 3,
-            "STREET_REP": 2
+            "REP": 5
           }
         },
         {
           "id": "branch_2",
           "text": "卖掉所有家当换取治疗",
           "effects": {
-            "HEALTH": -15,
+            "LIFE": -15,
             "MONEY": -20000,
             "HUMAN": -2
           }
         }
       ],
       "effects": {
-        "HEALTH": -25,
+        "LIFE": -25,
         "MONEY": -5000
       },
       "tags": [
@@ -1117,23 +1112,21 @@
           "id": "branch_1",
           "text": "加入拾荒者工会，寻求集体法律援助",
           "effects": {
-            "SOCIAL": 3,
-            "MONEY": -5000,
-            "STREET_SMART": 2
+            "HUMAN": 5,
+            "MONEY": -5000
           }
         },
         {
           "id": "branch_2",
           "text": "继续硬撑，赚够钱再走",
           "effects": {
-            "HEALTH": -25,
-            "MONEY": 5000,
-            "STAMINA": -5
+            "LIFE": -30,
+            "MONEY": 5000
           }
         }
       ],
       "effects": {
-        "HEALTH": -25,
+        "LIFE": -25,
         "MONEY": -2000
       },
       "tags": [
@@ -1148,8 +1141,8 @@
         "id": "branch_survive",
         "text": "一位路过的义体医生免费为你做了血液净化",
         "effects": {
-          "HEALTH": -10,
-          "SOCIAL": 4,
+          "LIFE": -10,
+          "HUMAN": 4,
           "DEBT": 3000
         },
         "survivalChance": 20

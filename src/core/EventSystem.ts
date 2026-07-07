@@ -28,6 +28,58 @@ import eventsElder from '../../data/events/events-elder.json';
 import eventsNature from '../../data/events/events-nature.json';
 import eventsCulture from '../../data/events/events-culture.json';
 
+// 企业阴谋扩展
+import eventsCorp21 from '../../data/events/events-corp-2-1.json';
+import eventsCorp22 from '../../data/events/events-corp-2-2.json';
+import eventsCorp23 from '../../data/events/events-corp-2-3.json';
+
+// 帮派
+import eventsGang1 from '../../data/events/events-gang-1.json';
+import eventsGang2 from '../../data/events/events-gang-2.json';
+import eventsGang3 from '../../data/events/events-gang-3.json';
+
+// 坏结局
+import eventsBadend1 from '../../data/events/events-badend-1.json';
+import eventsBadend2 from '../../data/events/events-badend-2.json';
+
+// 日常生活
+import eventsDaily1 from '../../data/events/events-daily-1.json';
+import eventsDaily2 from '../../data/events/events-daily-2.json';
+import eventsDaily3 from '../../data/events/events-daily-3.json';
+import eventsDaily4 from '../../data/events/events-daily-4.json';
+import eventsDaily5 from '../../data/events/events-daily-5.json';
+import eventsDaily6 from '../../data/events/events-daily-6.json';
+import eventsDaily7 from '../../data/events/events-daily-7.json';
+import eventsDaily8 from '../../data/events/events-daily-8.json';
+
+// 美国社会
+import eventsUsa1 from '../../data/events/events-usa-1.json';
+import eventsUsa2 from '../../data/events/events-usa-2.json';
+import eventsUsa3 from '../../data/events/events-usa-3.json';
+import eventsUsa4 from '../../data/events/events-usa-4.json';
+import eventsUsa5 from '../../data/events/events-usa-5.json';
+import eventsUsa6 from '../../data/events/events-usa-6.json';
+import eventsUsa7 from '../../data/events/events-usa-7.json';
+import eventsUsa8 from '../../data/events/events-usa-8.json';
+
+// 赛博空间/网络
+import eventsNet from '../../data/events/events-net.json';
+import eventsNet2 from '../../data/events/events-net-2.json';
+
+// 人际关系
+import eventsLove1 from '../../data/events/events-love-1.json';
+import eventsLove2 from '../../data/events/events-love-2.json';
+
+// 心理健康
+import eventsPsyche1 from '../../data/events/events-psyche-1.json';
+import eventsPsyche2 from '../../data/events/events-psyche-2.json';
+
+// 旅行
+import eventsTravel from '../../data/events/events-travel.json';
+
+// 物品
+import itemsData from '../../data/items.json';
+
 /** 全局事件列表 */
 let _allEvents: GameEvent[] = [];
 
@@ -62,6 +114,26 @@ function ensureLoaded(): void {
     eventsCorp, eventsCyber, eventsSocial,
     eventsDrugEx, eventsElder, eventsNature,
     eventsCulture,
+    // 企业阴谋扩展
+    eventsCorp21, eventsCorp22, eventsCorp23,
+    // 帮派
+    eventsGang1, eventsGang2, eventsGang3,
+    // 坏结局
+    eventsBadend1, eventsBadend2,
+    // 日常生活
+    eventsDaily1, eventsDaily2, eventsDaily3, eventsDaily4,
+    eventsDaily5, eventsDaily6, eventsDaily7, eventsDaily8,
+    // 美国社会
+    eventsUsa1, eventsUsa2, eventsUsa3, eventsUsa4,
+    eventsUsa5, eventsUsa6, eventsUsa7, eventsUsa8,
+    // 赛博空间/网络
+    eventsNet, eventsNet2,
+    // 人际关系
+    eventsLove1, eventsLove2,
+    // 心理健康
+    eventsPsyche1, eventsPsyche2,
+    // 旅行
+    eventsTravel,
   ];
 
   const loadedIds = new Set<number>();

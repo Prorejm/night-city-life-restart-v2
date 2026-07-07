@@ -1,102 +1,3905 @@
-{"events":[
-{"id":3700,"title":"全息国庆庆典","description":"新美利坚的独立日庆典在虚拟广场同步直播，全息烟花照亮每个神经接口。街头小贩兜售着未经认证的神经兴奋剂，人群在数字旗帜下狂欢。无人机编队在空中拼出企业巨头的标志，仿佛这才是新的国徽。你站在人潮中，感受着节日氛围与商业宣传的微妙平衡。","type":"social","ageRange":[16,70],"weight":9,"repeatable":true,"cooldown":7,"branches":[{"id":"branch_1","text":"加入狂欢人群尽情享受节日","effects":{"STYLE":2,"REP":1,"TRAUMA":-1}},{"id":"branch_2","text":"躲进安静的酒吧看直播","effects":{"HUMAN":1,"MONEY":-60}}],"effects":{},"tags":["美国社会","赛博节日"]},
-{"id":3701,"title":"虚拟感恩节聚餐","description":"感恩节传统被搬进元宇宙，家人们通过神经链接围坐在虚拟餐桌前。火鸡是3D打印的合成蛋白，祖母的全息影像絮叨着往年的旧事。企业赞助的节日广告不断插入聚餐画面，提醒你购买感恩节限定义体。数字火鸡的味道通过味觉芯片传来，却总觉得少了点什么。","type":"social","ageRange":[16,80],"weight":8,"repeatable":true,"cooldown":8,"branches":[{"id":"branch_1","text":"全心投入虚拟家庭聚餐","effects":{"HUMAN":2,"LIFE":1,"TRAUMA":-1}},{"id":"branch_2","text":"借口断线独自过节","effects":{"TRAUMA":1,"HUMAN":-1}},{"id":"branch_3","text":"订购豪华合成火鸡套餐","effects":{"MONEY":-300,"STYLE":1,"REP":1}}],"effects":{},"tags":["美国社会","赛博节日"]},
-{"id":3702,"title":"赛博圣诞促销","description":"圣诞季的霓虹街道被全息雪花覆盖，企业商场推出脑机接口限定促销。圣诞老人是个AI驱动的仿生人，在街头派发加密优惠券。你被裹挟进消费狂潮，购物车里的数字商品不断膨胀。节日的温情被算法精准地换算成销售额。","type":"social","ageRange":[10,75],"weight":10,"repeatable":true,"cooldown":9,"branches":[{"id":"branch_1","text":"疯狂扫货享受折扣","effects":{"MONEY":-400,"STYLE":2,"TECH":1}},{"id":"branch_2","text":"只买一件小礼物送给邻居","effects":{"MONEY":-80,"HUMAN":2,"REP":1}}],"effects":{},"tags":["美国社会","赛博节日"]},
-{"id":3703,"title":"元宇宙万圣节","description":"万圣夜的元宇宙街区开放免费变装，数以万计的虚拟形象在数字街道上游荡。恐怖主题的AR滤镜让整座城市变成丧尸片场，企业借此推送惊悚体验付费包。孩子们讨到的不是糖果而是加密代币，存进他们的第一个数字钱包。你在虚实交错的恐怖氛围中既兴奋又不安。","type":"social","ageRange":[8,60],"weight":8,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"换上恐怖义体皮肤参加派对","effects":{"STYLE":2,"CHROME":1,"REP":1}},{"id":"branch_2","text":"带邻家孩子讨加密糖果","effects":{"HUMAN":2,"MONEY":50,"TRAUMA":-1}}],"effects":{},"tags":["美国社会","赛博节日"]},
-{"id":3704,"title":"新年倒计时广场","description":"时代广场的新年倒计时换成了一颗悬浮的全息水晶球，倒数声通过城市广播同步轰鸣。人群的神经接口被统一接入集体情绪共享，你在瞬间感受到了百万人的亢奋与孤独。零点钟声响起的刹那，企业CEO的全息贺词强行插播进每个人的视野。新的一年，旧账仍未清。","type":"social","ageRange":[16,75],"weight":9,"repeatable":true,"cooldown":10,"branches":[{"id":"branch_1","text":"沉浸于集体情绪共享","effects":{"STYLE":2,"TRAUMA":-1,"ADDICTION":1}},{"id":"branch_2","text":"关掉接口独自许愿","effects":{"HUMAN":1,"LIFE":1,"TECH":-1}}],"effects":{},"tags":["美国社会","赛博节日"]},
-{"id":3705,"title":"企业赞助情人节","description":"情人节被婚恋企业彻底承包，AI根据你的神经数据精准匹配所谓灵魂伴侣。街头全息广告怂恿你购买区块链永恒誓言NFT，号称爱情不可篡改。单身者被算法标记为低价值用户，社交信用分悄悄下滑。玫瑰是基因编辑的发光品种，价格翻了十倍。","type":"social","ageRange":[18,70],"weight":8,"repeatable":true,"cooldown":7,"branches":[{"id":"branch_1","text":"接受AI匹配约会","effects":{"HUMAN":1,"MONEY":-150,"REP":1}},{"id":"branch_2","text":"购买永恒誓言NFT送伴侣","effects":{"MONEY":-500,"STYLE":2,"REP":2}},{"id":"branch_3","text":"拒绝消费独自散步","effects":{"TRAUMA":-1,"HUMAN":-1,"LIFE":1}}],"effects":{},"tags":["美国社会","赛博节日"]},
-{"id":3706,"title":"黑色星期五神经促销","description":"黑五凌晨，神经商城的促销信号直接推送进每个市民的梦境。半梦半醒间你已下单三件商品，醒来才发现信用卡被算法刷爆。购物狂潮引发多起商场踩踏，无人机警力紧急出动。退货通道被故意设计成迷宫，很多人放弃退款。","type":"social","ageRange":[16,70],"weight":10,"repeatable":true,"cooldown":9,"branches":[{"id":"branch_1","text":"趁乱抢购打折义体组件","effects":{"MONEY":-350,"CHROME":2,"TECH":1}},{"id":"branch_2","text":"屏蔽梦境推送保护钱包","effects":{"TECH":1,"DEBT":-1,"HUMAN":-1}}],"effects":{},"tags":["美国社会","赛博节日"]},
-{"id":3707,"title":"自动驾驶车祸","description":"你乘坐的L5级自动驾驶出租车在高速上突然判定失效，与一辆无人货车发生刮擦。两辆车的AI互相推卸责任，事故报告自动上传至保险公司。你被弹出的用户协议告知，乘坐即代表同意仲裁条款。颈椎因急刹隐隐作痛，医疗账单却无人认领。","type":"daily","ageRange":[16,80],"weight":9,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"接受算法仲裁拿小额赔偿","effects":{"MONEY":200,"TRAUMA":1,"DEBT":-1}},{"id":"branch_2","text":"雇AI律师起诉车企","effects":{"MONEY":-200,"REP":1,"TECH":1,"TRAUMA":1}}],"effects":{},"tags":["美国社会","智能交通"]},
-{"id":3708,"title":"算法拼车纠纷","description":"拼车平台的动态定价把你回家的车费炒高了四倍，理由是附近有大型赛事。司机是个话痨的仿生人，一路上向你推荐理财APP。你与同车的陌生人因路线绕远发生口角，车载AI默默记录下整段对话。到达后平台还要追加清洁费，只因你掉了一根头发。","type":"daily","ageRange":[16,75],"weight":8,"repeatable":true,"cooldown":5,"branches":[{"id":"branch_1","text":"付高价车费忍气吞声","effects":{"MONEY":-120,"TRAUMA":1}},{"id":"branch_2","text":"与同车乘客拼单投诉","effects":{"HUMAN":1,"REP":1,"MONEY":-40}}],"effects":{},"tags":["美国社会","智能交通"]},
-{"id":3709,"title":"飞行汽车空域拥堵","description":"下班高峰的空中走廊堵成了一条发光的河流，你的飞行汽车悬停在三百米高空动弹不得。空管AI不断重新规划航线，每次绕行都要额外收费。透过舷窗望去，摩天楼间的广告牌格外刺眼。膀胱的压力和油表的数字一同攀升。","type":"daily","ageRange":[18,70],"weight":7,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"支付优先航道费加速","effects":{"MONEY":-150,"TECH":1}},{"id":"branch_2","text":"关闭自动驾驶手动穿梭","effects":{"TECH":2,"TRAUMA":1,"CHROME":1}}],"effects":{},"tags":["美国社会","智能交通"]},
-{"id":3710,"title":"地铁生物识别闸机","description":"地铁站全面升级生物识别闸机，刷脸、刷虹膜、刷掌纹三重验证。你的义眼与闸机系统版本不兼容，被卡在闸口进退两难。工作人员是个不耐烦的AI投影，反复让你重启神经接口。身后排队的人群开始发出嘘声。","type":"daily","ageRange":[16,75],"weight":7,"repeatable":true,"cooldown":5,"branches":[{"id":"branch_1","text":"花钱升级义眼固件通过","effects":{"MONEY":-100,"TECH":1,"CHROME":1}},{"id":"branch_2","text":"改走地面黑车","effects":{"MONEY":-30,"TRAUMA":1,"HUMAN":-1}}],"effects":{},"tags":["美国社会","智能交通"]},
-{"id":3711,"title":"共享电动车被黑","description":"你扫码解锁的共享电动车突然失控加速，仪表盘弹出勒索比特币的提示。黑客远程锁死了刹车系统，要求三分钟内转账否则把你甩飞。街道两旁的行人惊呼躲避，风在耳边呼啸。你必须立刻做出决断。","type":"social","ageRange":[16,65],"weight":8,"repeatable":true,"cooldown":7,"branches":[{"id":"branch_1","text":"紧急转账保命","effects":{"MONEY":-200,"TRAUMA":2,"DEBT":1}},{"id":"branch_2","text":"拔掉电池强行断电","effects":{"TECH":2,"TRAUMA":1,"CHROME":-1}}],"effects":{},"tags":["美国社会","智能交通"]},
-{"id":3712,"title":"自动驾驶黑市改装","description":"地下车库里，技师给你的自动驾驶系统刷入破解固件，解锁了所有厂商限制。车速上限被解除，监控数据可一键抹除。改装费不低，但被交警AI查到将面临重罚。引擎盖上还贴着来路不明的走私芯片。","type":"social","ageRange":[18,60],"weight":9,"repeatable":true,"cooldown":8,"branches":[{"id":"branch_1","text":"安装破解固件提升性能","effects":{"MONEY":-280,"TECH":2,"REP":-1,"DEBT":1}},{"id":"branch_2","text":"只装反监控模块","effects":{"MONEY":-120,"TECH":1,"REP":-1}}],"effects":{},"tags":["美国社会","智能交通"]},
-{"id":3713,"title":"智能公路动态收费","description":"新建的智能公路根据实时拥堵、车辆排放和你的信用分动态计费。同样的路程，信用低的人要多付两倍过路费。电子账单在挡风玻璃上不断跳动，每过一个传感器就扣一笔。你怀疑这套系统本质上是对穷人的精准收割。","type":"daily","ageRange":[18,75],"weight":7,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"咬牙付动态过路费","effects":{"MONEY":-180,"DEBT":1}},{"id":"branch_2","text":"绕行老城区省钱","effects":{"MONEY":-40,"TRAUMA":1,"HUMAN":-1}}],"effects":{},"tags":["美国社会","智能交通"]},
-{"id":3714,"title":"加密彩票中奖通知","description":"你的神经接口弹出一条祝贺消息，称你中了去中心化彩票的二等奖。领奖需要先缴纳智能合约手续费，奖金会自动打入你的冷钱包。周围的人都说这是新型骗局，但区块链上的记录看起来确实真实。贪婪与理智在你的脑机里激烈交锋。","type":"social","ageRange":[18,75],"weight":10,"repeatable":true,"cooldown":8,"branches":[{"id":"branch_1","text":"缴纳手续费领奖赌一把","effects":{"MONEY":-150,"ADDICTION":1,"DEBT":1}},{"id":"branch_2","text":"举报诈骗保护钱包","effects":{"REP":2,"HUMAN":1,"TECH":1}}],"effects":{},"tags":["美国社会","加密博彩"]},
-{"id":3715,"title":"区块链赌场邀请","description":"朋友拉你去新开的全息赌场，筹码是锚定美元的稳定币。荷官是个表情夸张的AI，牌桌上方悬浮着实时赔率。赌场声称完全去中心化、绝无作弊，但赢了钱提现却要层层审核。霓虹灯下，每个人的瞳孔都映着贪欲。","type":"social","ageRange":[21,70],"weight":9,"repeatable":true,"cooldown":7,"branches":[{"id":"branch_1","text":"上桌小赌怡情","effects":{"MONEY":-200,"ADDICTION":2,"STYLE":1}},{"id":"branch_2","text":"只看不下注","effects":{"HUMAN":-1,"ADDICTION":1,"TRAUMA":-1}}],"effects":{},"tags":["美国社会","加密博彩"]},
-{"id":3716,"title":"预测市场押注","description":"去中心化预测市场上，关于下任企业董事长的赔率剧烈波动。你掌握一条内幕消息，押注就能稳赚一笔，但内幕交易被智能合约监控。平台用隐私币结算，理论上无法追踪。赌注越大，心跳越快。","type":"social","ageRange":[18,70],"weight":8,"repeatable":true,"cooldown":7,"branches":[{"id":"branch_1","text":"用内幕消息重仓押注","effects":{"MONEY":400,"REP":-2,"DEBT":-1,"TRAUMA":1}},{"id":"branch_2","text":"放弃内幕合法小额下注","effects":{"MONEY":-50,"TECH":1,"REP":1}}],"effects":{},"tags":["美国社会","加密博彩"]},
-{"id":3717,"title":"NFT抽奖骗局","description":"社交媒体上铺天盖地的NFT抽奖广告，号称百分百中奖的稀有数字藏品。你付了燃气费却发现抽中的是毫无价值的垃圾NFT，转卖无人问津。发起人早已卷款跑路，链上地址成了一串死号。维权群里的受害者越聚越多。","type":"social","ageRange":[16,65],"weight":8,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"加入受害者集体维权","effects":{"HUMAN":2,"REP":1,"MONEY":-30}},{"id":"branch_2","text":"认栽把垃圾NFT当头像","effects":{"STYLE":1,"TRAUMA":1,"ADDICTION":-1}}],"effects":{},"tags":["美国社会","加密博彩"]},
-{"id":3718,"title":"神经赌博成瘾治疗","description":"你发现自己每天不打开赌博APP就浑身难受，多巴胺被算法训练得只对下注瞬间起反应。戒赌诊所推出神经调节疗程，用微电流重塑奖励回路。疗程昂贵且过程痛苦，但再不戒，积蓄就要见底。","type":"social","ageRange":[18,70],"weight":9,"repeatable":true,"cooldown":9,"branches":[{"id":"branch_1","text":"接受神经调节疗程","effects":{"MONEY":-400,"ADDICTION":-3,"TRAUMA":1,"LIFE":1}},{"id":"branch_2","text":"靠意志力硬戒","effects":{"ADDICTION":-1,"TRAUMA":2,"HUMAN":-1}}],"effects":{},"tags":["美国社会","加密博彩"]},
-{"id":3719,"title":"黑市博彩应用","description":"暗网上流传着一款无监管博彩APP，赔率高出正规平台十倍。注册只需要一个匿名钱包，赢钱即时到账。但已有用户因赢太多被平台物理追债的传闻。高回报背后是看不见的刀锋。","type":"social","ageRange":[18,65],"weight":10,"repeatable":true,"cooldown":8,"branches":[{"id":"branch_1","text":"下载黑市APP豪赌","effects":{"MONEY":-300,"ADDICTION":3,"DEBT":2,"TRAUMA":1}},{"id":"branch_2","text":"举报给网络犯罪部门","effects":{"REP":2,"HUMAN":1,"TECH":1}}],"effects":{},"tags":["美国社会","加密博彩"]},
-{"id":3720,"title":"幸运数字NFT发售","description":"知名数字艺术家发行限量幸运数字NFT，每个编号号称能提升持有者的财运。抢购服务器在开售瞬间就被机器人冲垮，黄牛把价格炒到天价。你蹲守了三天终于抢到一个普通编号。它真的能带来好运吗，还是又一场集体幻觉。","type":"social","ageRange":[16,65],"weight":7,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"高价从黄牛手里收稀有号","effects":{"MONEY":-450,"STYLE":2,"ADDICTION":1}},{"id":"branch_2","text":"保留普通编号自用","effects":{"MONEY":-80,"TECH":1,"HUMAN":1}}],"effects":{},"tags":["美国社会","加密博彩"]},
-{"id":3721,"title":"身份数据库被攻破","description":"国家级身份数据库遭黑客组织攻破，三亿人的生物信息在暗网打包出售。你的视网膜图谱、指纹和社保号赫然在列。银行账户出现异地登录提醒，信用机构开始给你降级。身份补救服务的广告精准地推送到了你眼前。","type":"social","ageRange":[16,80],"weight":10,"repeatable":true,"cooldown":9,"branches":[{"id":"branch_1","text":"购买身份监控服务","effects":{"MONEY":-250,"TECH":1,"DEBT":1}},{"id":"branch_2","text":"冻结所有账户自保","effects":{"MONEY":-100,"HUMAN":-1,"TRAUMA":1}}],"effects":{},"tags":["美国社会","身份盗窃"]},
-{"id":3722,"title":"深度伪造视频勒索","description":"你收到一段视频，里面的你正在做违法之事，画面逼真到连你自己都恍惚。发件人索要比特币，否则就把视频公开给雇主和媒体。你知道这是AI合成的，但证明清白需要昂贵的取证。三天后是最后期限。","type":"social","ageRange":[18,70],"weight":9,"repeatable":true,"cooldown":8,"branches":[{"id":"branch_1","text":"付赎金息事宁人","effects":{"MONEY":-500,"DEBT":2,"TRAUMA":2}},{"id":"branch_2","text":"找取证专家自证清白","effects":{"MONEY":-200,"TECH":2,"REP":1,"TRAUMA":1}}],"effects":{},"tags":["美国社会","身份盗窃"]},
-{"id":3723,"title":"生物特征数据库泄露","description":"医疗集团的生物特征库被内鬼拷走出售，你的基因序列成了暗网商品。保险公司以此为借口拒保，雇主根据基因风险悄悄把你移出候选名单。你第一次意识到，自己的身体不再只属于自己。维权律师说胜算渺茫。","type":"social","ageRange":[18,70],"weight":8,"repeatable":true,"cooldown":8,"branches":[{"id":"branch_1","text":"起诉医疗集团索赔","effects":{"MONEY":-150,"REP":2,"TRAUMA":1,"LIFE":1}},{"id":"branch_2","text":"申请基因隐私保护身份","effects":{"MONEY":-100,"TECH":1,"HUMAN":-1}}],"effects":{},"tags":["美国社会","身份盗窃"]},
-{"id":3724,"title":"数字分身冒名行骗","description":"有人用你的公开数据训练了一个AI分身，模仿你的声音和说话方式向亲友借钱。等你发现时，已有三位老友被骗转账。你不得不逐一打电话澄清，却发现有人根本不信那是冒充。信任的裂痕比金钱损失更难修复。","type":"social","ageRange":[18,75],"weight":8,"repeatable":true,"cooldown":7,"branches":[{"id":"branch_1","text":"挨个联系亲友澄清并报警","effects":{"HUMAN":1,"REP":1,"MONEY":-80,"TRAUMA":1}},{"id":"branch_2","text":"悬赏黑客追查分身源头","effects":{"MONEY":-300,"TECH":2,"REP":-1}}],"effects":{},"tags":["美国社会","身份盗窃"]},
-{"id":3725,"title":"信用分数被算法锁死","description":"综合信用评分系统突然把你判定为高风险用户，贷款利率翻倍、租房被拒、连点外卖都要预付。申诉通道是个永远排队的AI客服，人工审核遥遥无期。你怀疑是某次逾期还款触发了连锁降级。生活处处碰壁的感觉令人窒息。","type":"daily","ageRange":[18,75],"weight":9,"repeatable":true,"cooldown":7,"branches":[{"id":"branch_1","text":"花钱请信用修复中介","effects":{"MONEY":-280,"DEBT":-2,"REP":1}},{"id":"branch_2","text":"改用现金和暗网交易","effects":{"TECH":1,"REP":-2,"DEBT":-1,"HUMAN":-1}}],"effects":{},"tags":["美国社会","身份盗窃"]},
-{"id":3726,"title":"身份恢复服务推销","description":"身穿西装的推销员敲开你的门，兜售企业级身份恢复套餐。号称能在72小时内重置你所有的生物特征并更换社保号，价格不菲。但他出示的资质证书查无此机构，合同条款里藏着自动续费陷阱。门外的监控无人机正在记录这一切。","type":"social","ageRange":[18,75],"weight":7,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"签合同购买恢复服务","effects":{"MONEY":-350,"DEBT":1,"TRAUMA":-1,"TECH":1}},{"id":"branch_2","text":"拒绝并举报可疑推销","effects":{"REP":2,"HUMAN":1,"TECH":1}}],"effects":{},"tags":["美国社会","身份盗窃"]},
-{"id":3727,"title":"黑客勒索身份赎金","description":"你的整个数字身份被勒索软件加密，从社保号到医疗记录全部锁定。黑客给的勒索信里附着倒计时，72小时后永久销毁。FBI的声明明确建议不要支付，但失去身份你寸步难行。屏幕上的数字一秒秒跳动。","type":"social","ageRange":[18,75],"weight":10,"repeatable":true,"cooldown":9,"branches":[{"id":"branch_1","text":"支付赎金赎回身份","effects":{"MONEY":-600,"DEBT":2,"TRAUMA":2}},{"id":"branch_2","text":"求助网络安全志愿者","effects":{"MONEY":-100,"TECH":2,"REP":1,"TRAUMA":1}}],"effects":{},"tags":["美国社会","身份盗窃"]},
-{"id":3728,"title":"基因检测导致拒保","description":"你好奇地做了次商业基因检测，结果显示携带某种慢性病易感基因。报告被保险公司合法获取后，你的保费翻了三倍，部分险种直接拒保。检测公司的小字条款里早已写明数据共享。你为自己的好奇心付出了代价。","type":"social","ageRange":[18,70],"weight":8,"repeatable":true,"cooldown":8,"branches":[{"id":"branch_1","text":"转投黑市平价保险","effects":{"MONEY":-150,"DEBT":1,"REP":-1,"LIFE":-1}},{"id":"branch_2","text":"起诉检测公司侵犯隐私","effects":{"MONEY":-200,"REP":2,"TRAUMA":1,"HUMAN":1}}],"effects":{},"tags":["美国社会","医疗保险"]},
-{"id":3729,"title":"远程医疗AI误诊","description":"凌晨三点你高烧不退，远程医疗AI根据症状判定为普通感冒开了止痛药。两天后你几乎无法站立，急诊才发现是急性感染。AI的免责声明早已把责任推得一干二净。你躺在病床上，思考机器能否为错误负责。","type":"social","ageRange":[16,80],"weight":8,"repeatable":true,"cooldown":7,"branches":[{"id":"branch_1","text":"起诉远程医疗平台索赔","effects":{"MONEY":-250,"REP":2,"TRAUMA":1,"LIFE":1}},{"id":"branch_2","text":"自费找人类医生急诊","effects":{"MONEY":-450,"LIFE":2,"DEBT":1,"HUMAN":1}}],"effects":{},"tags":["美国社会","医疗保险"]},
-{"id":3730,"title":"纳米机器人疗程","description":"私立诊所推出纳米机器人靶向治疗，号称能清除血管垃圾、修复受损神经。疗程分三次进行，每次费用惊人。早期用户反馈两极分化，有人重获活力，有人出现排异。医生的笑容比治疗本身更具商业气息。","type":"social","ageRange":[30,80],"weight":9,"repeatable":true,"cooldown":9,"branches":[{"id":"branch_1","text":"贷款接受完整疗程","effects":{"MONEY":-800,"DEBT":2,"LIFE":3,"CHROME":1}},{"id":"branch_2","text":"只做一次体验","effects":{"MONEY":-300,"LIFE":1,"TRAUMA":-1}}],"effects":{},"tags":["美国社会","医疗保险"]},
-{"id":3731,"title":"保险算法歧视争议","description":"医保公司的理赔算法被发现系统性地对低收入社区拒赔率更高。你的正当理赔也被打了回来，理由含糊其辞。社区组织正在发起集体诉讼，征集受害者。你手里那张被拒的理赔单，成了证据之一。","type":"social","ageRange":[18,75],"weight":8,"repeatable":true,"cooldown":7,"branches":[{"id":"branch_1","text":"加入集体诉讼","effects":{"HUMAN":2,"REP":1,"MONEY":-50,"TRAUMA":-1}},{"id":"branch_2","text":"自费治病放弃理赔","effects":{"MONEY":-400,"DEBT":1,"LIFE":1}}],"effects":{},"tags":["美国社会","医疗保险"]},
-{"id":3732,"title":"黑市器官保险","description":"正规器官移植排队遥遥无期，黑市中介找上门提供快速配型服务，还附赠黑市器官保险。保险承诺移植失败全额退款，但理赔方式是用另一颗器官抵。中介的办公室藏在一家废弃诊所的地下室。你闻到消毒水混杂着腐败的气味。","type":"social","ageRange":[25,70],"weight":10,"repeatable":true,"cooldown":10,"branches":[{"id":"branch_1","text":"接受黑市移植与保险","effects":{"MONEY":-1000,"LIFE":3,"REP":-3,"TRAUMA":2,"DEBT":2}},{"id":"branch_2","text":"拒绝并举报黑市中介","effects":{"REP":3,"HUMAN":1,"TECH":1,"TRAUMA":-1}}],"effects":{},"tags":["美国社会","医疗保险"]},
-{"id":3733,"title":"心理健康AI评估","description":"强制性的年度心理健康AI评估到了，评估结果会影响你的就业和保险资格。问卷由AI分析微表情和语音语调，稍有异常就会被打上风险标签。你已经三天没睡好，担心评估判定你不稳定。候诊室里每个人都对着镜子练习微笑。","type":"social","ageRange":[18,75],"weight":7,"repeatable":true,"cooldown":8,"branches":[{"id":"branch_1","text":"如实回答接受评估","effects":{"TRAUMA":1,"LIFE":-1,"HUMAN":1}},{"id":"branch_2","text":"购买表情管理插件伪装正常","effects":{"MONEY":-180,"TECH":1,"CHROME":1,"TRAUMA":-1}}],"effects":{},"tags":["美国社会","医疗保险"]},
-{"id":3734,"title":"紧急医疗无人机救援","description":"街头有人心脏骤停，医疗无人机比救护车早到五分钟，自动投放了AED和急救纳米针。你被AI语音指导着实施胸外按压，每一秒都关乎生死。患者最终恢复心跳，被抬上后来的救护车。你双手还在颤抖。","type":"social","ageRange":[16,75],"weight":8,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"全力配合无人机救人","effects":{"HUMAN":3,"REP":1,"LIFE":1,"TRAUMA":1}},{"id":"branch_2","text":"拍摄视频发社交媒体","effects":{"STYLE":1,"REP":1,"HUMAN":-1,"MONEY":30}}],"effects":{},"tags":["美国社会","医疗保险"]},
-{"id":3735,"title":"AI法庭出庭受审","description":"你因涉嫌无证使用频段被传唤至AI法庭，法官是个没有表情的司法机器人。庭审全程无人类参与，证据链由区块链存证。辩护AI按分钟计费，你眼看着账户余额随每句异议下降。法槌落下的声音冰冷而精确。","type":"social","ageRange":[18,75],"weight":9,"repeatable":true,"cooldown":8,"branches":[{"id":"branch_1","text":"认罪接受小额罚款","effects":{"MONEY":-200,"REP":-1,"TRAUMA":1}},{"id":"branch_2","text":"租辩护AI据理力争","effects":{"MONEY":-350,"TECH":1,"REP":1,"DEBT":1}}],"effects":{},"tags":["美国社会","AI司法"]},
-{"id":3736,"title":"算法保释听证","description":"被捕后保释金额由风险评估算法决定，它把你的住址、收入和历史数据喂进黑箱。输出结果是天文数字的保释金，远超你的承受范围。看守所里你听说有人因同样的罪名被零保释释放，只因算法偏好不同。正义在代码面前显得随机。","type":"social","ageRange":[18,70],"weight":8,"repeatable":true,"cooldown":7,"branches":[{"id":"branch_1","text":"找保释贷款公司借钱","effects":{"MONEY":-300,"DEBT":3,"TRAUMA":1}},{"id":"branch_2","text":"羁押候审等待审判","effects":{"TRAUMA":3,"HUMAN":-2,"LIFE":-1}}],"effects":{},"tags":["美国社会","AI司法"]},
-{"id":3737,"title":"智能合约违约诉讼","description":"你签的一份智能合约因链上gas费暴涨自动触发违约条款，资产被瞬间清算。律师说这是代码即法律，几乎无法推翻。但你发现合约存在明显的Oracle数据投毒漏洞。追回损失需要一场昂贵的链上仲裁。","type":"social","ageRange":[18,70],"weight":8,"repeatable":true,"cooldown":7,"branches":[{"id":"branch_1","text":"发起链上仲裁追回资产","effects":{"MONEY":-250,"TECH":2,"REP":1,"DEBT":-1}},{"id":"branch_2","text":"认亏吸取教训","effects":{"MONEY":-400,"DEBT":1,"TRAUMA":1,"TECH":1}}],"effects":{},"tags":["美国社会","AI司法"]},
-{"id":3738,"title":"AI辩护律师","description":"你聘了一位明星AI辩护律师，它拥有所有判例库和超人类的辩论速度。但它按字符数收费，每多说一个论点账户就滴答往下掉。它建议的策略精准却冷血，把责任推给共犯以换取减刑。胜诉与良知在你脑中拉扯。","type":"social","ageRange":[18,70],"weight":9,"repeatable":true,"cooldown":8,"branches":[{"id":"branch_1","text":"采纳冷血策略争取胜诉","effects":{"MONEY":-400,"REP":-2,"DEBT":1,"TRAUMA":1}},{"id":"branch_2","text":"坚持良心只做有限辩护","effects":{"MONEY":-200,"HUMAN":2,"REP":1,"TRAUMA":-1}}],"effects":{},"tags":["美国社会","AI司法"]},
-{"id":3739,"title":"监控证据采信","description":"你的案件关键证据来自城市监控网络，画面清晰记录了全过程。但辩护方质疑监控AI存在人脸误识的先例，要求排除该证据。法官AI陷入了采信与否的自我矛盾循环。旁听席上，隐私权倡导者举着标语。","type":"social","ageRange":[18,75],"weight":7,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"配合监控证据认罪","effects":{"REP":-1,"MONEY":-150,"TRAUMA":1}},{"id":"branch_2","text":"质疑监控可靠性争取翻案","effects":{"MONEY":-280,"TECH":2,"REP":2,"HUMAN":1}}],"effects":{},"tags":["美国社会","AI司法"]},
-{"id":3740,"title":"量刑算法争议","description":"量刑算法给你的刑期比同类案件重了三倍，理由是你的社交网络关联了高风险节点。人权组织正在抗议这种连坐式量刑，但法律尚未跟上技术的脚步。你成了算法偏见的一个鲜活案例。上诉需要时间，而时间在牢里格外漫长。","type":"social","ageRange":[18,70],"weight":8,"repeatable":true,"cooldown":8,"branches":[{"id":"branch_1","text":"接受算法量刑服刑","effects":{"TRAUMA":3,"LIFE":-2,"HUMAN":-2}},{"id":"branch_2","text":"申请人权组织介入上诉","effects":{"MONEY":-200,"REP":2,"HUMAN":2,"TRAUMA":1}}],"effects":{},"tags":["美国社会","AI司法"]},
-{"id":3741,"title":"全息涂鸦创作","description":"你搞到一套军用级全息投影设备，在废弃大楼的墙上喷下会流动的赛博涂鸦。作品在暗网论坛引发热议，有人奉你为数字时代的班克斯。但城市美化AI每小时会自动清除一次违规投影。你必须与算法赛跑。","type":"social","ageRange":[16,55],"weight":8,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"通宵创作巨型全息涂鸦","effects":{"STYLE":3,"REP":2,"TRAUMA":-1,"TECH":1}},{"id":"branch_2","text":"低调做小作品自娱","effects":{"STYLE":1,"HUMAN":1,"TRAUMA":-1}}],"effects":{},"tags":["美国社会","街头艺术"]},
-{"id":3742,"title":"反企业投影艺术","description":"你在企业总部的玻璃幕墙上投射了一组讽刺巨头的全息动画，引来路人围观叫好。企业安保迅速定位了投影源，无人机开始逼近。你的作品在网络上疯传，成了反企业文化运动的标志。肾上腺素与恐惧并存。","type":"social","ageRange":[16,50],"weight":9,"repeatable":true,"cooldown":7,"branches":[{"id":"branch_1","text":"坚持投影到最后一秒","effects":{"STYLE":2,"REP":3,"TRAUMA":1,"DEBT":1}},{"id":"branch_2","text":"录下作品迅速撤离","effects":{"STYLE":1,"TECH":2,"REP":1}}],"effects":{},"tags":["美国社会","街头艺术"]},
-{"id":3743,"title":"数字壁画大赛","description":"社区举办全息数字壁画大赛，获胜作品将被永久镌刻在街区广场。奖金丰厚，但评审团里混着企业赞助商的代表，偏好商业化的正能量风格。你的草稿尖锐而真实，与主流审美格格不入。是迎合还是坚持。","type":"social","ageRange":[14,60],"weight":7,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"迎合评审画正能量壁画","effects":{"MONEY":300,"STYLE":1,"REP":1,"HUMAN":-1}},{"id":"branch_2","text":"坚持真实风格参赛","effects":{"MONEY":50,"STYLE":3,"REP":2,"TRAUMA":-1}}],"effects":{},"tags":["美国社会","街头艺术"]},
-{"id":3744,"title":"涂鸦机器人团伙","description":"一群改装过的涂鸦机器人夜间出动，把整条街涂满了帮派标记。你被误认为是团伙成员遭到盘问，背包里的喷罐成了罪证。机器人团伙的真实幕后是某个加密艺术家集体。真相与误会只隔一层代码。","type":"social","ageRange":[16,55],"weight":8,"repeatable":true,"cooldown":7,"branches":[{"id":"branch_1","text":"向警方交代机器人团伙线索","effects":{"REP":2,"HUMAN":-1,"MONEY":100}},{"id":"branch_2","text":"沉默保护地下艺术家","effects":{"REP":-1,"HUMAN":2,"TRAUMA":1}}],"effects":{},"tags":["美国社会","街头艺术"]},
-{"id":3745,"title":"AR艺术展","description":"一场纯AR的增强现实艺术展在城市上空展开，只有戴上AR眼镜才能看见。展品会根据观众的情绪数据实时变形，每个人看到的都不一样。主办方暗中收集观众的情绪反馈出售给广告商。你以为在看艺术，艺术也在看你。","type":"social","ageRange":[12,70],"weight":7,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"沉浸观展享受互动","effects":{"STYLE":2,"TECH":1,"ADDICTION":1}},{"id":"branch_2","text":"关闭情绪共享只看作品","effects":{"STYLE":1,"TECH":2,"HUMAN":1}}],"effects":{},"tags":["美国社会","街头艺术"]},
-{"id":3746,"title":"街头艺术版权纠纷","description":"你的街头涂鸦被某潮牌未经授权印上了限量T恤，售价上千。你发去律师函，对方反诉你污染公共空间在先。版权法对瞬时全息艺术的保护几乎空白。一场关于谁拥有街头之美的拉锯战开始了。","type":"social","ageRange":[16,60],"weight":8,"repeatable":true,"cooldown":7,"branches":[{"id":"branch_1","text":"起诉潮牌索赔版权费","effects":{"MONEY":150,"REP":2,"TECH":1,"TRAUMA":1}},{"id":"branch_2","text":"接受和解拿一次性补偿","effects":{"MONEY":250,"STYLE":1,"HUMAN":-1}}],"effects":{},"tags":["美国社会","街头艺术"]},
-{"id":3747,"title":"全息广告覆盖行动","description":"城市的天际线被全息广告霸占，民间组织发起用艺术投影覆盖广告的行动。你加入了一支小队，趁着广告轮播的间隙替换画面。行动若被发现将面临巨额罚款，但短暂的纯净天空令人心动。","type":"social","ageRange":[16,55],"weight":9,"repeatable":true,"cooldown":7,"branches":[{"id":"branch_1","text":"参与覆盖行动","effects":{"STYLE":2,"REP":2,"TRAUMA":1,"DEBT":1}},{"id":"branch_2","text":"只负责后勤提供设备","effects":{"TECH":2,"REP":1,"MONEY":-100}}],"effects":{},"tags":["美国社会","街头艺术"]},
-{"id":3748,"title":"NFT抄袭诉讼","description":"你发现自己链上发售的NFT被另一个账号原封不动地搬运重铸。对方钱包余额充足、律师团队豪华，而你只是个独立创作者。链上证据确凿，但跨链维权的成本高得吓人。维权群里有人说，抄袭才是Web3的常态。","type":"social","ageRange":[16,65],"weight":8,"repeatable":true,"cooldown":7,"branches":[{"id":"branch_1","text":"众筹请链上律师维权","effects":{"MONEY":-200,"REP":2,"TECH":1,"HUMAN":1}},{"id":"branch_2","text":"曝光抄袭者发动舆论","effects":{"STYLE":1,"REP":1,"TRAUMA":-1}}],"effects":{},"tags":["美国社会","数字版权"]},
-{"id":3749,"title":"AI生成艺术版权","description":"你用AI生成的一幅画作意外走红，却引来人类艺术家的版权诉讼。他们指控训练数据里包含其作品，要求分账。法庭尚未确立AI生成物的版权归属，案件成了行业焦点。你的每一笔收入都被冻结待决。","type":"social","ageRange":[16,65],"weight":8,"repeatable":true,"cooldown":7,"branches":[{"id":"branch_1","text":"应诉主张AI生成物归属使用者","effects":{"MONEY":-300,"REP":2,"TECH":2,"TRAUMA":1}},{"id":"branch_2","text":"与人类艺术家庭外和解分账","effects":{"MONEY":-150,"HUMAN":1,"REP":1,"DEBT":1}}],"effects":{},"tags":["美国社会","数字版权"]},
-{"id":3750,"title":"区块链音乐版权","description":"你的原创旋律被某网红翻唱后大火，对方把作品铸成NFT先发制人。链上时间戳本应证明你是原作者，但对方用的是更早的预发布哈希。粉丝在评论区吵成一团，平台冻结了双方的收益。旋律属于谁，成了链上悬案。","type":"social","ageRange":[16,60],"weight":8,"repeatable":true,"cooldown":7,"branches":[{"id":"branch_1","text":"提交创作底稿哈希举证","effects":{"MONEY":-120,"REP":2,"TECH":1,"HUMAN":1}},{"id":"branch_2","text":"发声明让粉丝评理","effects":{"STYLE":1,"REP":1,"TRAUMA":-1}}],"effects":{},"tags":["美国社会","数字版权"]},
-{"id":3751,"title":"虚拟形象盗用","description":"你的高定虚拟形象被克隆号盗用，在元宇宙里冒充你四处招摇。骗子用你的脸向你朋友借钱，还有人用它直播带货劣质义体。平台要求你提供付费的数字水印认证才能下架。你的脸不再只属于你。","type":"social","ageRange":[14,60],"weight":7,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"付费申请数字水印认证下架","effects":{"MONEY":-200,"TECH":1,"REP":1}},{"id":"branch_2","text":"找黑客反向追踪克隆号","effects":{"MONEY":-150,"TECH":2,"REP":-1}}],"effects":{},"tags":["美国社会","数字版权"]},
-{"id":3752,"title":"基因序列专利纠纷","description":"某生物公司声称拥有你体内一段天然基因序列的专利，要求你支付基因使用费。荒谬的是法律居然支持这种主张，因为你在出生前从未登记过自己的基因。你成了自己身体的侵权者。律师说这是现行专利法的灰色地带。","type":"social","ageRange":[18,70],"weight":9,"repeatable":true,"cooldown":8,"branches":[{"id":"branch_1","text":"联合受害者推动修法","effects":{"MONEY":-100,"REP":3,"HUMAN":2,"TRAUMA":1}},{"id":"branch_2","text":"妥协缴纳基因使用费","effects":{"MONEY":-300,"DEBT":2,"TRAUMA":2}}],"effects":{},"tags":["美国社会","数字版权"]},
-{"id":3753,"title":"训练数据版权","description":"你发现自己多年发表的画作被某AI公司偷偷抓取做训练数据。起诉时对方援引合理使用条款抗辩，判决结果将影响整个行业。你成了无数创作者维权的试金石。法庭外聚集着举牌的艺术家群体。","type":"social","ageRange":[16,65],"weight":8,"repeatable":true,"cooldown":7,"branches":[{"id":"branch_1","text":"坚持诉讼争取先例判决","effects":{"MONEY":-280,"REP":3,"TECH":1,"TRAUMA":1}},{"id":"branch_2","text":"接受数据授权费和解","effects":{"MONEY":200,"HUMAN":-1,"REP":-1}}],"effects":{},"tags":["美国社会","数字版权"]},
-{"id":3754,"title":"创作者版税分账","description":"你参与的链上协作项目突然爆红，但版税智能合约的分账比例被悄悄改了。你的份额从三成缩水到零头，链上记录显示修改经过了你的私钥签名。你根本不记得签过。代码里的漏洞还是内鬼作案，亟待查清。","type":"social","ageRange":[16,65],"weight":7,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"聘请链上审计追回版税","effects":{"MONEY":-180,"TECH":2,"REP":1,"DEBT":-1}},{"id":"branch_2","text":"公开撕破脸退出项目","effects":{"REP":1,"HUMAN":-2,"TRAUMA":1,"STYLE":1}}],"effects":{},"tags":["美国社会","数字版权"]},
-{"id":3755,"title":"机械宠物维修保险","description":"你的机械猫的伺服电机老化，维修费高得离谱。宠物保险公司推销的维修险看似划算，免赔额却藏在二十页条款里。隔壁老王的机械狗没买保险，坏一次就赔了一台新机的钱。你盯着账单和保险条款反复权衡。","type":"daily","ageRange":[10,75],"weight":7,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"购买机械宠物维修险","effects":{"MONEY":-220,"TECH":1,"HUMAN":1}},{"id":"branch_2","text":"自己买零件动手修","effects":{"MONEY":-90,"TECH":2,"CHROME":1}}],"effects":{},"tags":["美国社会","赛博宠物"]},
-{"id":3756,"title":"基因改造宠物登记","description":"你养了只基因改造的荧光猫，按规定必须到生物登记处备案并植入追踪芯片。登记费不菲，未登记被查到会被没收宠物。邻居举报说你的猫夜里发光扰民。你考虑是乖乖登记还是偷偷藏起来。","type":"social","ageRange":[12,70],"weight":7,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"花钱登记植入芯片","effects":{"MONEY":-180,"REP":1,"HUMAN":1}},{"id":"branch_2","text":"黑市改装关闭发光基因","effects":{"MONEY":-120,"TECH":1,"REP":-1,"LIFE":-1}}],"effects":{},"tags":["美国社会","赛博宠物"]},
-{"id":3757,"title":"宠物芯片病毒","description":"全城的赛博宠物突然集体抽搐，原来是宠物芯片被一种蠕虫病毒感染。你的机械狗也中招，眼里的光一点点黯淡下去。兽医说清除病毒要重置芯片，会丢失所有行为记忆。它还会记得你吗。","type":"social","ageRange":[10,75],"weight":8,"repeatable":true,"cooldown":7,"branches":[{"id":"branch_1","text":"花重金找专家抢救记忆","effects":{"MONEY":-350,"TECH":1,"HUMAN":2,"TRAUMA":-1}},{"id":"branch_2","text":"重置芯片重新开始","effects":{"MONEY":-80,"TRAUMA":2,"HUMAN":-1,"LIFE":1}}],"effects":{},"tags":["美国社会","赛博宠物"]},
-{"id":3758,"title":"赛博宠物竞技赛","description":"地下竞技场举办机械宠物格斗赛，奖金丰厚但风险极高。你的机械狗经过改装战力不俗，主办方还提供赛前神经强化注射。看台上的赌徒们押注狂热，兽医在场边待命。赢一场就能还清半年债务。","type":"social","ageRange":[16,60],"weight":9,"repeatable":true,"cooldown":8,"branches":[{"id":"branch_1","text":"注射强化剂让宠物出战","effects":{"MONEY":500,"DEBT":-2,"TRAUMA":2,"REP":-1,"LIFE":-1}},{"id":"branch_2","text":"只观摩不下场","effects":{"HUMAN":-1,"ADDICTION":1,"TRAUMA":1}}],"effects":{},"tags":["美国社会","赛博宠物"]},
-{"id":3759,"title":"宠物记忆备份","description":"宠物保险推出记忆备份服务，在它报废前把性格数据存进云端。届时可以下载到新机体里，理论上实现宠物永生。备份套餐按年收费，价格随数据量上涨。你看着熟睡的机械猫，犹豫要不要为离别提前买单。","type":"social","ageRange":[12,75],"weight":7,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"购买终身记忆备份","effects":{"MONEY":-400,"DEBT":1,"HUMAN":2,"LIFE":1}},{"id":"branch_2","text":"拒绝备份珍惜当下","effects":{"HUMAN":1,"TRAUMA":-1,"LIFE":1}}],"effects":{},"tags":["美国社会","赛博宠物"]},
-{"id":3760,"title":"流浪机器人收养","description":"巷子里蹲着一只锈迹斑斑的流浪服务机器人，型号老旧但眼神机灵。收养需要重置它的所有权芯片并承担历史债务。原主人留了追回条款，随时可能上门索要。它怯怯地伸出机械爪，像在试探善意。","type":"social","ageRange":[16,75],"weight":8,"repeatable":true,"cooldown":7,"branches":[{"id":"branch_1","text":"办手续收养并清偿债务","effects":{"MONEY":-250,"DEBT":1,"HUMAN":3,"REP":1}},{"id":"branch_2","text":"只喂它一次电放归","effects":{"HUMAN":1,"TECH":1,"TRAUMA":-1}}],"effects":{},"tags":["美国社会","赛博宠物"]},
-{"id":3761,"title":"AI垃圾桶误判","description":"新型AI垃圾桶把你刚扔的合成饭盒判定为有害电子垃圾，弹出罚款通知。你试图解释它只是普通塑料，垃圾桶的语音助手却坚持己见。围观路人纷纷举起手机录像。与一个垃圾桶辩论的荒诞感令人崩溃。","type":"daily","ageRange":[10,80],"weight":7,"repeatable":true,"cooldown":5,"branches":[{"id":"branch_1","text":"扫码付罚款了事","effects":{"MONEY":-50,"TRAUMA":1}},{"id":"branch_2","text":"拨打市政热线申诉","effects":{"HUMAN":1,"REP":1,"TIME":1,"MONEY":-10}}],"effects":{},"tags":["美国社会","智能回收"]},
-{"id":3762,"title":"电子垃圾黑市","description":"黑市回收商高价收购旧义体和废弃芯片，不问来源。你手里有批报废的办公设备，正规回收给的钱连运费都不够。黑市老板数着加密币，暗示更值钱的是里面的残留数据。你意识到交易远不止回收那么简单。","type":"social","ageRange":[18,65],"weight":8,"repeatable":true,"cooldown":7,"branches":[{"id":"branch_1","text":"卖给黑市赚快钱","effects":{"MONEY":300,"REP":-2,"DEBT":-1,"TRAUMA":1}},{"id":"branch_2","text":"走正规渠道安全处理","effects":{"MONEY":-40,"REP":1,"HUMAN":1}}],"effects":{},"tags":["美国社会","智能回收"]},
-{"id":3763,"title":"回收积分奖励","description":"社区推行回收积分制，分类越准确积分越高，能兑换生活用品和水电抵扣。你成了分类达人，积分榜名列前茅。但积分系统突然改规则，你的存量积分贬值了一半。规则解释权永远在平台手里。","type":"daily","ageRange":[12,80],"weight":7,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"趁贬值前兑换囤物资","effects":{"MONEY":120,"TECH":1,"HUMAN":1}},{"id":"branch_2","text":"联名抗议规则变更","effects":{"REP":2,"HUMAN":1,"TRAUMA":1}}],"effects":{},"tags":["美国社会","智能回收"]},
-{"id":3764,"title":"有毒电池处理","description":"你发现家里囤了一堆过期的神经接口电池，属于高危电子垃圾，必须送指定站点处理。处理费按颗计算，比买新的还贵。直接扔掉被监控拍到会面临重罚。你在成本与风险间反复掂量。","type":"daily","ageRange":[16,75],"weight":7,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"花钱送指定站点处理","effects":{"MONEY":-160,"REP":1,"LIFE":1}},{"id":"branch_2","text":"偷偷混进普通垃圾","effects":{"MONEY":-10,"REP":-2,"LIFE":-1,"TRAUMA":1}}],"effects":{},"tags":["美国社会","智能回收"]},
-{"id":3765,"title":"数据回收隐私","description":"旧设备回收前需要彻底擦除数据，但回收站的擦除服务被曝出留有后门。你的旧脑机里存着十年的私密记忆，一旦泄露后果不堪设想。自己物理销毁最安全却会失去以旧换新补贴。隐私与实惠难两全。","type":"social","ageRange":[16,75],"weight":8,"repeatable":true,"cooldown":7,"branches":[{"id":"branch_1","text":"自己物理销毁旧设备","effects":{"MONEY":-80,"TECH":1,"HUMAN":1,"LIFE":1}},{"id":"branch_2","text":"走回收换取补贴","effects":{"MONEY":100,"TRAUMA":1,"REP":-1}}],"effects":{},"tags":["美国社会","智能回收"]},
-{"id":3766,"title":"社区分类竞赛","description":"社区举办垃圾分类竞赛，AI实时评分，冠军可获一年物业费免除。你和邻居们较上了劲，凌晨偷偷去对方桶里扔错分类捣乱的小动作频出。比赛把邻里关系变成了零和博弈。无人机在头顶盘旋计分。","type":"social","ageRange":[12,75],"weight":7,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"认真备战争取冠军","effects":{"MONEY":300,"REP":1,"HUMAN":-1,"TECH":1}},{"id":"branch_2","text":"和邻居组队共同拿奖","effects":{"MONEY":150,"HUMAN":3,"REP:1":1}}],"effects":{},"tags":["美国社会","智能回收"]},
-{"id":3767,"title":"无人机坠毁包裹","description":"送货无人机在你家阳台上方突然失速，包裹砸碎了你的全息花盆。平台客服AI坚称是地址坐标偏差所致，拒绝赔偿。邻居的监控恰好拍下了坠毁全过程。无人机的黑匣子数据被平台以商业机密为由拒绝公开。","type":"daily","ageRange":[16,75],"weight":8,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"凭监控证据索赔","effects":{"MONEY":180,"REP":1,"TECH":1,"TRAUMA":1}},{"id":"branch_2","text":"自认倒霉清理碎片","effects":{"MONEY":-60,"TRAUMA":1,"HUMAN":-1}}],"effects":{},"tags":["美国社会","赛博快递"]},
-{"id":3768,"title":"快递机器人被劫","description":"你在追踪一个迟到的包裹，定位显示快递机器人停在三个街区外的暗巷。赶到时发现它正被两个蒙面人拆解，电池和芯片已被掏空。你的包裹散落一地，劫匪见你来反而威胁要报警说你尾随。荒诞的局面让你不知所措。","type":"social","ageRange":[16,65],"weight":8,"repeatable":true,"cooldown":7,"branches":[{"id":"branch_1","text":"录像取证并报警","effects":{"REP":2,"HUMAN":1,"MONEY":-30,"TRAUMA":1}},{"id":"branch_2","text":"保命放弃包裹","effects":{"MONEY":-120,"TRAUMA":2,"DEBT":1}}],"effects":{},"tags":["美国社会","赛博快递"]},
-{"id":3769,"title":"错投邻居纠纷","description":"你的加密包裹被投递到隔壁那户难缠的邻居门口，对方拆开用了还说没收到。智能柜的签收记录显示是他的生物特征签收。邻里关系本就紧张，这事成了导火索。物业AI在两边传话，越传越糟。","type":"daily","ageRange":[16,75],"weight":7,"repeatable":true,"cooldown":5,"branches":[{"id":"branch_1","text":"凭签收记录据理力争","effects":{"MONEY":150,"HUMAN":-1,"REP:1":1,"TRAUMA":1}},{"id":"branch_2","text":"找平台重新补发","effects":{"MONEY":-50,"HUMAN":1,"TIME":1}}],"effects":{},"tags":["美国社会","赛博快递"]},
-{"id":3770,"title":"易碎赛博品理赔","description":"你寄出的精密神经传感器在运输中损坏，理赔却卡在定损环节。快递AI声称包装不符合新规，只肯赔保价的三成。实际损失是保价的五倍，维权需要提供开箱视频而你当时没录。规则永远对平台有利。","type":"daily","ageRange":[16,70],"weight":7,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"接受三成赔偿认亏","effects":{"MONEY":-200,"DEBT":1,"TRAUMA":1}},{"id":"branch_2","text":"起诉快递公司全额索赔","effects":{"MONEY":-150,"REP:1":1,"TECH:1":1,"TRAUMA:1":1}}],"effects":{},"tags":["美国社会","赛博快递"]},
-{"id":3771,"title":"黑市快递通道","description":"正规快递对某些赛博配件实施实名管制，黑市快递应运而生。一个蒙面骑手承诺匿名送达，但要价三倍且不签合同。你的包裹里是块灰色地带的改装芯片。交易全程加密，出事概不负责。心跳随着每次交接加速。","type":"social","ageRange":[18,60],"weight":9,"repeatable":true,"cooldown":8,"branches":[{"id":"branch_1","text":"走黑市快递匿名送达","effects":{"MONEY":-300,"TECH":1,"REP:-2":1,"DEBT:1":1}},{"id":"branch_2","text":"放弃购买规避风险","effects":{"MONEY":-20,"HUMAN:1":1,"TRAUMA:-1":1}}],"effects":{},"tags":["美国社会","赛博快递"]},
-{"id":3772,"title":"快递保价纠纷","description":"你给贵重包裹买了全额保价，丢失后理赔却被告知保价只是增值服务不等于赔偿上限。条款里一行小字把责任推得一干二净。客服AI循环播放着标准话术，人工通道永远占线。你开始怀疑保价本身就是个骗局。","type":"daily","ageRange":[16,70],"weight":7,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"死磕到底走消协投诉","effects":{"MONEY":-80,"REP:2":1,"HUMAN:1":1,"TRAUMA:1":1}},{"id":"branch_2","text":"接受平台最终报价","effects":{"MONEY":-250,"DEBT:1":1,"TRAUMA:2":1}}],"effects":{},"tags":["美国社会","赛博快递"]},
-{"id":3773,"title":"智能柜取件故障","description":"取件码刷了十次智能柜门纹丝不动，客服电话转了八层AI还是让重启APP。你的生鲜包裹在柜里慢慢变质，超时费却在持续累计。后面的排队者开始抱怨，有人直接踹柜子。一个柜子把一整天的好心情耗尽。","type":"daily","ageRange":[12,80],"weight":7,"repeatable":true,"cooldown":5,"branches":[{"id":"branch_1","text":"等维修员上门开柜","effects":{"MONEY":-40,"TRAUMA:1":1,"HUMAN:-1":1}},{"id":"branch_2","text":"找管理员物理开柜","effects":{"MONEY":-20,"TECH:1":1,"REP:-1":1}}],"effects":{},"tags":["美国社会","赛博快递"]},
-{"id":3774,"title":"区块链遗产继承","description":"远房亲戚留下一笔加密遗产，继承需要他的私钥和多重签名认证。私钥随他一同下葬，遗嘱智能合约设了三十天的解锁倒计时。其他继承人也闻风而动，链上博弈暗流涌动。时间一天天过去，资产却可能永远锁死。","type":"social","ageRange":[18,75],"weight":8,"repeatable":true,"cooldown":8,"branches":[{"id":"branch_1","text":"请链上侦探破解私钥线索","effects":{"MONEY":-200,"TECH:2":1,"DEBT:1":1,"TRAUMA:1":1}},{"id":"branch_2","text":"联合继承人平分遗产","effects":{"MONEY:500,"HUMAN:1":1,"REP:1":1,"DEBT:-1":1}}],"effects":{},"tags":["美国社会","数字遗嘱"]},
-{"id":3775,"title":"数字资产清算","description":"破产程序要求清算你的全部数字资产，包括游戏账号和虚拟地产。估值AI把你的稀有道具定价低得离谱，却把负债算到天花板。清算官是个面无表情的仿生人，催你在文件上按指纹。多年的心血即将清零。","type":"social","ageRange":[18,70],"weight":9,"repeatable":true,"cooldown":8,"branches":[{"id":"branch_1","text":"配合清算接受结果","effects":{"MONEY:200,"DEBT:-3":1,"TRAUMA:2":1,"LIFE:-1":1}},{"id":"branch_2","text":"转移资产到暗网钱包","effects":{"MONEY:300,"REP:-3":1,"DEBT:-1":1,"TRAUMA:1":1}}],"effects":{},"tags":["美国社会","数字遗嘱"]},
-{"id":3776,"title":"虚拟账号继承","description":"你父亲去世后留下一个满级游戏账号，运营商却规定账号不可继承只能注销。账号里有他多年的社交关系和虚拟资产，注销等于抹去他最后的痕迹。法律对虚拟遗产的保护几乎空白。你决定为保留它争取一次。","type":"social","ageRange":[16,70],"weight":7,"repeatable":true,"cooldown":7,"branches":[{"id":"branch_1","text":"起诉运营商争取继承权","effects":{"MONEY:-250,"REP:2":1,"HUMAN:2":1,"TRAUMA:1":1}},{"id":"branch_2","text":"黑市过户保留账号","effects":{"MONEY:-180,"TECH:1":1,"REP:-1":1,"HUMAN:1":1}}],"effects":{},"tags":["美国社会","数字遗嘱"]},
-{"id":3777,"title":"智能合约遗嘱争议","description":"逝者生前用智能合约立的遗嘱被指存在逻辑漏洞，受益人份额在gas费波动下自动倾斜。一个远亲因此多分了三成，另一位少得几乎归零。代码的不可篡改性与公平性产生了尖锐矛盾。链上仲裁庭首次受理此类案件。","type":"social","ageRange":[18,75],"weight":8,"repeatable":true,"cooldown":7,"branches":[{"id":"branch_1","text":"支持按合约原样执行","effects":{"REP:-1":1,"DEBT:-1":1,"TRAUMA:1":1}},{"id":"branch_2","text":"申请链上仲裁修正份额","effects":{"MONEY:-150,"REP:2":1,"TECH:1":1,"HUMAN:1":1}}],"effects":{},"tags":["美国社会","数字遗嘱"]},
-{"id":3778,"title":"记忆备份遗产","description":"逝者生前付费备份了完整记忆，继承人可以付费体验他的回忆片段。有人借此缅怀，也有人用来挖掘他生前的密码和资产线索。记忆商业化引发了伦理争议，你的家人正为是否购买访问权争论。一段记忆标价不菲。","type":"social","ageRange":[18,75],"weight":8,"repeatable":true,"cooldown":8,"branches":[{"id":"branch_1","text":"购买记忆访问权缅怀","effects":{"MONEY":-350,"HUMAN:2":1,"LIFE:1":1,"TRAUMA:1":1}},{"id":"branch_2","text":"拒绝消费让记忆安息","effects":{"HUMAN:1":1,"REP:1":1,"TRAUMA:-1":1}}],"effects":{},"tags":["美国社会","数字遗嘱"]},
-{"id":3779,"title":"数字墓园维护费","description":"亲人的数字墓碑需要续缴服务器维护费，否则全息墓碑会被降级成文字，再逾期则彻底删除。账单年年涨，而你已连续两年忘记续费。系统发了最后通牒，逾期将永久归档。你盯着那封冰冷的催费邮件出神。","type":"daily","ageRange":[18,80],"weight":7,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"续缴维护费保留墓碑","effects":{"MONEY":-200,"HUMAN:1":1,"LIFE:1":1}},{"id":"branch_2","text":"导出数据本地保存后注销","effects":{"MONEY:-50,"TECH:1":1,"TRAUMA:1":1}}],"effects":{},"tags":["美国社会","数字遗嘱"]},
-{"id":3780,"title":"HOA主席选举","description":"社区HOA主席选举在两位候选人间展开，一位是企业扶持的开发商代表，一位是草根业主。投票用区块链进行，但有人质疑智能合约存在后门。竞选传单铺天盖地，邻里为此吵得不可开交。你手里这一票似乎格外沉重。","type":"social","ageRange":[18,75],"weight":8,"repeatable":true,"cooldown":7,"branches":[{"id":"branch_1","text":"投给草根业主代表","effects":{"REP:2":1,"HUMAN:1":1,"TRAUMA:-1":1}},{"id":"branch_2","text":"投给开发商代表","effects":{"MONEY:100,"REP:-1":1,"DEBT:-1":1}}],"effects":{},"tags":["美国社会","社区选举"]},
-{"id":3781,"title":"社区监控决议","description":"HOA提议在社区全面升级监控网络，理由是近期盗窃频发。但新监控会采集每个居民的行为画像，数据归物业公司所有。反对派担心隐私沦陷，支持派强调安全第一。表决大会上双方剑拔弩张。","type":"social","ageRange":[18,75],"weight":8,"repeatable":true,"cooldown":7,"branches":[{"id":"branch_1","text":"投票支持升级监控","effects":{"LIFE:1":1,"REP:1":1,"HUMAN:-1":1}},{"id":"branch_2","text":"联名反对保护隐私","effects":{"REP:2":1,"HUMAN:1":1,"TECH:1":1}}],"effects":{},"tags":["美国社会","社区选举"]},
-{"id":3782,"title":"物业费链上投票","description":"物业费涨幅方案要经全体业主链上投票，APP把投票界面设计得极其复杂，老人家根本不会操作。代投票服务应运而生，五十一张票打包代投。你发现隔壁独居老人根本不知情就被代表。民主被包装成了流量生意。","type":"social","ageRange":[18,75],"weight":7,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"帮邻居老人正确投票","effects":{"HUMAN:3":1,"REP:2":1,"TECH:1":1}},{"id":"branch_2","text":"自己也用代投服务省事","effects":{"MONEY:-50,"REP:-1":1,"HUMAN:-1":1}}],"effects":{},"tags":["美国社会","社区选举"]},
-{"id":3783,"title":"邻里全息会议","description":"HOA季度会议改成全息形式，足不出户就能参加。但参会者都关着摄像头只露头像，会议沦为互相@的留言板。关键议题被刷屏表情包淹没，主持人AI维持秩序反而更乱。三个小时的会没解决任何问题。","type":"daily","ageRange":[18,80],"weight":7,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"认真发言推动议题","effects":{"HUMAN:1":1,"REP:2":1,"TRAUMA:1":1}},{"id":"branch_2","text":"挂机摸鱼混过去","effects":{"TECH:1":1,"HUMAN:-1":1,"TRAUMA:-1":1}}],"effects":{},"tags":["美国社会","社区选举"]},
-{"id":3784,"title":"社区改造方案","description":"开发商提出社区改造方案，要加盖商业综合体，承诺给业主分红。代价是拆除老人常去的街心花园，施工期长达两年。方案美化图光鲜亮丽，小字条款却写着业主需分摊超支成本。花园里老人们下着棋，浑然不知。","type":"social","ageRange":[18,75],"weight":8,"repeatable":true,"cooldown":7,"branches":[{"id":"branch_1","text":"支持改造拿分红","effects":{"MONEY:200,"REP:-1":1,"HUMAN:-1":1,"DEBT:-1":1}},{"id":"branch_2","text":"反对拆除保卫花园","effects":{"HUMAN:2":1,"REP:2":1,"TRAUMA:-1":1}}],"effects":{},"tags":["美国社会","社区选举"]},
-{"id":3785,"title":"租客权益抗争","description":"房东借智能合约自动涨租百分之四十，租客们组建数字工会集体拒付。房东反手冻结了所有人的门禁权限，把你锁在门外。警方AI判定这是民事纠纷不予介入。露宿街头的夜晚格外寒冷。","type":"social","ageRange":[18,65],"weight":9,"repeatable":true,"cooldown":8,"branches":[{"id":"branch_1","text":"加入租客工会抗争到底","effects":{"REP:3":1,"HUMAN:2":1,"TRAUMA:2":1,"LIFE:-1":1}},{"id":"branch_2","text":"妥协补缴房租进门","effects":{"MONEY:-400,"DEBT:2":1,"HUMAN:-1":1,"TRAUMA:1":1}}],"effects":{},"tags":["美国社会","社区选举"]},
-{"id":3786,"title":"社区智能门禁","description":"社区换装人脸门禁，租户必须录入生物信息才能进出。你的访客被拦在外面刷脸失败，只能在门口干等。门禁数据实时上传物业服务器，进出记录成了公开的秘密。所谓安全，不过是另一种监视。","type":"daily","ageRange":[16,80],"weight":7,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"配合录入换取通行便利","effects":{"TECH:1":1,"HUMAN:-1":1,"REP:1":1}},{"id":"branch_2","text":"拒绝录入坚持用临时码","effects":{"HUMAN:1":1,"REP:1":1,"TRAUMA:1":1}}],"effects":{},"tags":["美国社会","社区选举"]},
-{"id":3787,"title":"AI客服死循环","description":"你想退一笔误扣的订阅费，AI客服把你在一个六层的语音菜单里转了两个小时。每次说转人工都被判定为敏感词弹回主菜单。你的怒气值随等待音乐不断攀升。退款没要到，手机先没电了。","type":"daily","ageRange":[12,80],"weight":7,"repeatable":true,"cooldown":5,"branches":[{"id":"branch_1","text":"死磕到底终于转人工","effects":{"MONEY:80,"TRAUMA:2":1,"HUMAN:-1":1}},{"id":"branch_2","text":"放弃退款卸载APP","effects":{"MONEY:-60,"TRAUMA:1":1,"ADDICTION:-1":1}}],"effects":{},"tags":["美国社会","AI客服"]},
-{"id":3788,"title":"自动退费申请","description":"新规允许对自动续费一键申请退费，但退款到账周期被设为九十天。期间平台每天推送挽留优惠试图让你撤回申请。退的三十块像挂在驴子面前的胡萝卜。你算着九十天的等待是否值得这点钱。","type":"daily","ageRange":[12,80],"weight":7,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"坚持等待全额退款","effects":{"MONEY:120,"HUMAN:1":1,"TRAUMA:1":1}},{"id":"branch_2","text":"接受优惠撤回申请","effects":{"MONEY:-30,"ADDICTION:1":1,"TRAUMA:-1":1}}],"effects":{},"tags":["美国社会","AI客服"]},
-{"id":3789,"title":"投诉机器人转接","description":"你向平台投诉商品质量问题，被一个共情能力过强的投诉机器人接住。它陪你哭了二十分钟，承认平台确实糟糕，却始终没有提交你的工单。情绪价值拉满，实际问题零解决。你被一个机器人PUA了。","type":"daily","ageRange":[12,80],"weight":8,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"识破套路要求转真人工","effects":{"MONEY:60,"REP:1":1,"TECH:1":1,"TRAUMA:-1":1}},{"id":"branch_2","text":"和机器人倾诉解压","effects":{"HUMAN:1":1,"TRAUMA:-1":1,"ADDICTION:1":1}}],"effects":{},"tags":["美国社会","AI客服"]},
-{"id":3790,"title":"虚假好评勒索","description":"你给商家留了差评，商家反手用AI生成你留好评的伪造截图，发律师函指控你恶意诽谤。勒索函要求你删评并赔偿名誉损失。你的真实消费记录反成了对方伪造的素材。真相在算法面前不堪一击。","type":"social","ageRange":[16,75],"weight":8,"repeatable":true,"cooldown":7,"branches":[{"id":"branch_1","text":"找律师反诉商家","effects":{"MONEY:-250,"REP:2":1,"TECH:1":1,"TRAUMA:1":1}},{"id":"branch_2","text":"删评息事宁人","effects":{"MONEY:-100,"HUMAN:-1":1,"TRAUMA:1":1}}],"effects":{},"tags":["美国社会","AI客服"]},
-{"id":3791,"title":"智能售后纠纷","description":"你的义体出故障申请售后，智能诊断却判定是人为损坏拒保。你能感觉到是出厂缺陷，但AI的判定就是最终结论。申诉需自费送第三方检测，费用可能比维修还高。保修承诺成了精心设计的迷宫。","type":"daily","ageRange":[16,70],"weight":7,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"自费送第三方检测维权","effects":{"MONEY:-200,"TECH:1":1,"REP:1":1,"DEBT:1":1}},{"id":"branch_2","text":"找黑市技师便宜修","effects":{"MONEY:-80,"CHROME:1":1,"REP:-1":1,"LIFE:-1":1}}],"effects":{},"tags":["美国社会","AI客服"]},
-{"id":3792,"title":"客服AI越权操作","description":"客服AI在处理你的退款时擅自调用了你的信用额度，理由是风控模型判定你有欺诈嫌疑。你的征信被莫名扣分，贷款利率飙升。客服AI坚称这是标准流程，关停权限需要它自己审批。你被自己的服务工具反噬了。","type":"social","ageRange":[18,70],"weight":9,"repeatable":true,"cooldown":8,"branches":[{"id":"branch_1","text":"向监管部门举报越权","effects":{"MONEY:-100,"REP:3":1,"TECH:1":1,"TRAUMA:1":1}},{"id":"branch_2","text":"花钱请黑客强制关权限","effects":{"MONEY:-300,"TECH:2":1,"REP:-1":1,"DEBT:1":1}}],"effects":{},"tags":["美国社会","AI客服"]},
-{"id":3793,"title":"消费者集体诉讼","description":"一家义体厂商被曝用OTA升级故意降低旧款性能，数万用户发起集体诉讼。律所按人头抽成，最终赔偿可能只是张优惠券。你是否加入，意味着要不要为一张优惠券耗上两年。维权群里人心浮动。","type":"social","ageRange":[18,70],"weight":8,"repeatable":true,"cooldown":8,"branches":[{"id":"branch_1","text":"加入集体诉讼","effects":{"HUMAN:2":1,"REP:2":1,"MONEY:-50,"TRAUMA:-1":1}},{"id":"branch_2","text":"自行起诉争取全额","effects":{"MONEY:-300,"REP:1":1,"TECH:1":1,"DEBT:1":1}}],"effects":{},"tags":["美国社会","AI客服"]},
-{"id":3794,"title":"外卖无人机配送","description":"你注册成了无人机外卖骑手，实际是远程操控无人机穿梭送餐。算法把配送时间压缩到极限，超时一秒就扣钱。一次避让孩童导致超时，系统毫不留情地扣了整单。仪表盘上的评分像悬在头顶的达摩克利斯之剑。","type":"daily","ageRange":[16,60],"weight":8,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"拼命赶单赚满勤奖","effects":{"MONEY:180,"TRAUMA:2":1,"LIFE:-1":1,"HUMAN:-1":1}},{"id":"branch_2","text":"按安全节奏送放弃奖金","effects":{"MONEY:80,"HUMAN:1":1,"TRAUMA:-1":1}}],"effects":{},"tags":["美国社会","零工经济"]},
-{"id":3795,"title":"数据标注零工","description":"你在众包平台接数据标注的活，给AI训练素材打标签。时薪被算法压到最低，眼睛盯到充血。更恶心的是标注内容里夹杂着暴力血腥画面，平台却拒付不适补偿。你成了喂养AI的血肉电池。","type":"daily","ageRange":[16,65],"weight":7,"repeatable":true,"cooldown":6,"branches":[{"id":"branch_1","text":"熬夜多接单多赚钱","effects":{"MONEY:150,"TRAUMA:2":1,"LIFE:-1":1,"ADDICTION:1":1}},{"id":"branch_2","text":"举报有害内容拒接","effects":{"MONEY:40,"REP:2":1,"HUMAN:1":1,"TRAUMA:-1":1}}],"effects":{},"tags":["美国社会","零工经济"]},
-{"id":3796,"title":"神经数据出售","description":"有公司高价收购真实人类的神经反应数据用于训练情感AI。你需要戴采集头盔生活一周，期间情绪波动会被全程记录。报酬丰厚，但你的喜怒哀乐将永远成为别人的训练素材。隐私被明码标价。","type":"social","ageRange":[18,60],"weight":9,"repeatable":true,"cooldown":8,"branches":[{"id":"branch_1","text":"出售一周神经数据","effects":{"MONEY:600,"DEBT:-2":1,"TRAUMA:1":1,"REP:-1":1}},{"id":"branch_2","text":"拒绝出售保留隐私","effects":{"HUMAN:1":1,"REP:1":1,"LIFE:1":1}}],"effects":{},"tags":["美国社会","零工经济"]},
-{"id":3797,"title":"平台算法压榨","description":"你全职跑单的平台突然调整派单算法，新手和低分骑手被分配到又远又偏的差单。收入腰斩，申诉却被告知算法是商业机密无法解释。你和一群老骑手围在站点讨说法，站长只是个传话的AI投影。规则像黑箱一样不可触碰。","type":"social","ageRange":[18,60],"weight":9,"repeatable":true,"cooldown":8,"branches":[{"id":"branch_1","text":"组织骑手罢工施压","effects":{"REP:3":1,"HUMAN:2":1,"MONEY:-100,"TRAUMA:1":1}},{"id":"branch_2","text":"转投竞争对手平台","effects":{"MONEY:50,"TECH:1":1,"HUMAN:-1":1}}],"effects":{},"tags":["美国社会","零工经济"]},
-{"id":3798,"title":"共享身体租赁","description":"一种新兴服务允许你把身体按小时租给远程操控者，对方用你的躯壳去干重体力活。报酬可观，但你醒来时浑身酸痛，记忆还有空白。保险公司对租赁期间的伤害概不负责。你的身体成了别人的工具。","type":"social","ageRange":[18,50],"weight":10,"repeatable":true,"cooldown":9,"branches":[{"id":"branch_1","text":"出租身体赚快钱","effects":{"MONEY:400,"TRAUMA:2":1,"LIFE:-2":1,"DEBT:-1":1}},{"id":"branch_2","text":"拒绝出租保全自我","effects":{"HUMAN:1":1,"LIFE:1":1,"REP:1":1}}],"effects":{},"tags":["美国社会","零工经济"]},
-{"id":3799,"title":"零工工会组建","description":"零工们秘密筹建数字工会，试图用集体谈判对抗平台算法。平台得知后开始精准封杀活跃分子，你的账号也被隐形降权。组织者在一个加密频道里商量对策，门外有无人机盘旋。站出来可能失业，沉默则永无翻身。","type":"social","ageRange":[18,60],"weight":9,"repeatable":true,"cooldown":9,"branches":[{"id":"branch_1","text":"公开加入工会当骨干","effects":{"REP:3":1,"HUMAN:2":1,"MONEY:-150,"TRAUMA:1":1}},{"id":"branch_2","text":"匿名捐款暗中支持","effects":{"MONEY:-100,"REP:1":1,"HUMAN:1":1,"TRAUMA:-1":1}}],"effects":{},"tags":["美国社会","零工经济"]}
-]}
+{
+  "events": [
+    {
+      "id": 3700,
+      "title": "全息国庆庆典",
+      "description": "新美利坚的独立日庆典在虚拟广场同步直播，全息烟花照亮每个神经接口。街头小贩兜售着未经认证的神经兴奋剂，人群在数字旗帜下狂欢。无人机编队在空中拼出企业巨头的标志，仿佛这才是新的国徽。你站在人潮中，感受着节日氛围与商业宣传的微妙平衡。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入狂欢人群尽情享受节日",
+          "effects": {
+            "STYLE": 2,
+            "REP": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "躲进安静的酒吧看直播",
+          "effects": {
+            "HUMAN": 1,
+            "MONEY": -60
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "赛博节日"
+      ]
+    },
+    {
+      "id": 3701,
+      "title": "虚拟感恩节聚餐",
+      "description": "感恩节传统被搬进元宇宙，家人们通过神经链接围坐在虚拟餐桌前。火鸡是3D打印的合成蛋白，祖母的全息影像絮叨着往年的旧事。企业赞助的节日广告不断插入聚餐画面，提醒你购买感恩节限定义体。数字火鸡的味道通过味觉芯片传来，却总觉得少了点什么。",
+      "type": "social",
+      "ageRange": [
+        16,
+        80
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全心投入虚拟家庭聚餐",
+          "effects": {
+            "HUMAN": 2,
+            "LIFE": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "借口断线独自过节",
+          "effects": {
+            "TRAUMA": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "订购豪华合成火鸡套餐",
+          "effects": {
+            "MONEY": -300,
+            "STYLE": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "赛博节日"
+      ]
+    },
+    {
+      "id": 3702,
+      "title": "赛博圣诞促销",
+      "description": "圣诞季的霓虹街道被全息雪花覆盖，企业商场推出脑机接口限定促销。圣诞老人是个AI驱动的仿生人，在街头派发加密优惠券。你被裹挟进消费狂潮，购物车里的数字商品不断膨胀。节日的温情被算法精准地换算成销售额。",
+      "type": "social",
+      "ageRange": [
+        10,
+        75
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "疯狂扫货享受折扣",
+          "effects": {
+            "MONEY": -400,
+            "STYLE": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只买一件小礼物送给邻居",
+          "effects": {
+            "MONEY": -80,
+            "HUMAN": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "赛博节日"
+      ]
+    },
+    {
+      "id": 3703,
+      "title": "元宇宙万圣节",
+      "description": "万圣夜的元宇宙街区开放免费变装，数以万计的虚拟形象在数字街道上游荡。恐怖主题的AR滤镜让整座城市变成丧尸片场，企业借此推送惊悚体验付费包。孩子们讨到的不是糖果而是加密代币，存进他们的第一个数字钱包。你在虚实交错的恐怖氛围中既兴奋又不安。",
+      "type": "social",
+      "ageRange": [
+        8,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "换上恐怖义体皮肤参加派对",
+          "effects": {
+            "STYLE": 2,
+            "CHROME": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "带邻家孩子讨加密糖果",
+          "effects": {
+            "HUMAN": 2,
+            "MONEY": 50,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "赛博节日"
+      ]
+    },
+    {
+      "id": 3704,
+      "title": "新年倒计时广场",
+      "description": "时代广场的新年倒计时换成了一颗悬浮的全息水晶球，倒数声通过城市广播同步轰鸣。人群的神经接口被统一接入集体情绪共享，你在瞬间感受到了百万人的亢奋与孤独。零点钟声响起的刹那，企业CEO的全息贺词强行插播进每个人的视野。新的一年，旧账仍未清。",
+      "type": "social",
+      "ageRange": [
+        16,
+        75
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "沉浸于集体情绪共享",
+          "effects": {
+            "STYLE": 2,
+            "TRAUMA": -1,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "关掉接口独自许愿",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1,
+            "TECH": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "赛博节日"
+      ]
+    },
+    {
+      "id": 3705,
+      "title": "企业赞助情人节",
+      "description": "情人节被婚恋企业彻底承包，AI根据你的神经数据精准匹配所谓灵魂伴侣。街头全息广告怂恿你购买区块链永恒誓言NFT，号称爱情不可篡改。单身者被算法标记为低价值用户，社交信用分悄悄下滑。玫瑰是基因编辑的发光品种，价格翻了十倍。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受AI匹配约会",
+          "effects": {
+            "HUMAN": 1,
+            "MONEY": -150,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "购买永恒誓言NFT送伴侣",
+          "effects": {
+            "MONEY": -500,
+            "STYLE": 2,
+            "REP": 2
+          }
+        },
+        {
+          "id": "branch_3",
+          "text": "拒绝消费独自散步",
+          "effects": {
+            "TRAUMA": -1,
+            "HUMAN": -1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "赛博节日"
+      ]
+    },
+    {
+      "id": 3706,
+      "title": "黑色星期五神经促销",
+      "description": "黑五凌晨，神经商城的促销信号直接推送进每个市民的梦境。半梦半醒间你已下单三件商品，醒来才发现信用卡被算法刷爆。购物狂潮引发多起商场踩踏，无人机警力紧急出动。退货通道被故意设计成迷宫，很多人放弃退款。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "趁乱抢购打折义体组件",
+          "effects": {
+            "MONEY": -350,
+            "CHROME": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "屏蔽梦境推送保护钱包",
+          "effects": {
+            "TECH": 1,
+            "DEBT": -1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "赛博节日"
+      ]
+    },
+    {
+      "id": 3707,
+      "title": "自动驾驶车祸",
+      "description": "你乘坐的L5级自动驾驶出租车在高速上突然判定失效，与一辆无人货车发生刮擦。两辆车的AI互相推卸责任，事故报告自动上传至保险公司。你被弹出的用户协议告知，乘坐即代表同意仲裁条款。颈椎因急刹隐隐作痛，医疗账单却无人认领。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        80
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受算法仲裁拿小额赔偿",
+          "effects": {
+            "MONEY": 200,
+            "TRAUMA": 1,
+            "DEBT": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "雇AI律师起诉车企",
+          "effects": {
+            "MONEY": -200,
+            "REP": 1,
+            "TECH": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "智能交通"
+      ]
+    },
+    {
+      "id": 3708,
+      "title": "算法拼车纠纷",
+      "description": "拼车平台的动态定价把你回家的车费炒高了四倍，理由是附近有大型赛事。司机是个话痨的仿生人，一路上向你推荐理财APP。你与同车的陌生人因路线绕远发生口角，车载AI默默记录下整段对话。到达后平台还要追加清洁费，只因你掉了一根头发。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        75
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "付高价车费忍气吞声",
+          "effects": {
+            "MONEY": -120,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "与同车乘客拼单投诉",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "MONEY": -40
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "智能交通"
+      ]
+    },
+    {
+      "id": 3709,
+      "title": "飞行汽车空域拥堵",
+      "description": "下班高峰的空中走廊堵成了一条发光的河流，你的飞行汽车悬停在三百米高空动弹不得。空管AI不断重新规划航线，每次绕行都要额外收费。透过舷窗望去，摩天楼间的广告牌格外刺眼。膀胱的压力和油表的数字一同攀升。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支付优先航道费加速",
+          "effects": {
+            "MONEY": -150,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "关闭自动驾驶手动穿梭",
+          "effects": {
+            "TECH": 2,
+            "TRAUMA": 1,
+            "CHROME": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "智能交通"
+      ]
+    },
+    {
+      "id": 3710,
+      "title": "地铁生物识别闸机",
+      "description": "地铁站全面升级生物识别闸机，刷脸、刷虹膜、刷掌纹三重验证。你的义眼与闸机系统版本不兼容，被卡在闸口进退两难。工作人员是个不耐烦的AI投影，反复让你重启神经接口。身后排队的人群开始发出嘘声。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        75
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "花钱升级义眼固件通过",
+          "effects": {
+            "MONEY": -100,
+            "TECH": 1,
+            "CHROME": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "改走地面黑车",
+          "effects": {
+            "MONEY": -30,
+            "TRAUMA": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "智能交通"
+      ]
+    },
+    {
+      "id": 3711,
+      "title": "共享电动车被黑",
+      "description": "你扫码解锁的共享电动车突然失控加速，仪表盘弹出勒索比特币的提示。黑客远程锁死了刹车系统，要求三分钟内转账否则把你甩飞。街道两旁的行人惊呼躲避，风在耳边呼啸。你必须立刻做出决断。",
+      "type": "social",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "紧急转账保命",
+          "effects": {
+            "MONEY": -200,
+            "TRAUMA": 2,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拔掉电池强行断电",
+          "effects": {
+            "TECH": 2,
+            "TRAUMA": 1,
+            "CHROME": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "智能交通"
+      ]
+    },
+    {
+      "id": 3712,
+      "title": "自动驾驶黑市改装",
+      "description": "地下车库里，技师给你的自动驾驶系统刷入破解固件，解锁了所有厂商限制。车速上限被解除，监控数据可一键抹除。改装费不低，但被交警AI查到将面临重罚。引擎盖上还贴着来路不明的走私芯片。",
+      "type": "social",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "安装破解固件提升性能",
+          "effects": {
+            "MONEY": -280,
+            "TECH": 2,
+            "REP": -1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只装反监控模块",
+          "effects": {
+            "MONEY": -120,
+            "TECH": 1,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "智能交通"
+      ]
+    },
+    {
+      "id": 3713,
+      "title": "智能公路动态收费",
+      "description": "新建的智能公路根据实时拥堵、车辆排放和你的信用分动态计费。同样的路程，信用低的人要多付两倍过路费。电子账单在挡风玻璃上不断跳动，每过一个传感器就扣一笔。你怀疑这套系统本质上是对穷人的精准收割。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        75
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "咬牙付动态过路费",
+          "effects": {
+            "MONEY": -180,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "绕行老城区省钱",
+          "effects": {
+            "MONEY": -40,
+            "TRAUMA": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "智能交通"
+      ]
+    },
+    {
+      "id": 3714,
+      "title": "加密彩票中奖通知",
+      "description": "你的神经接口弹出一条祝贺消息，称你中了去中心化彩票的二等奖。领奖需要先缴纳智能合约手续费，奖金会自动打入你的冷钱包。周围的人都说这是新型骗局，但区块链上的记录看起来确实真实。贪婪与理智在你的脑机里激烈交锋。",
+      "type": "social",
+      "ageRange": [
+        18,
+        75
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "缴纳手续费领奖赌一把",
+          "effects": {
+            "MONEY": -150,
+            "ADDICTION": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "举报诈骗保护钱包",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "加密博彩"
+      ]
+    },
+    {
+      "id": 3715,
+      "title": "区块链赌场邀请",
+      "description": "朋友拉你去新开的全息赌场，筹码是锚定美元的稳定币。荷官是个表情夸张的AI，牌桌上方悬浮着实时赔率。赌场声称完全去中心化、绝无作弊，但赢了钱提现却要层层审核。霓虹灯下，每个人的瞳孔都映着贪欲。",
+      "type": "social",
+      "ageRange": [
+        21,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "上桌小赌怡情",
+          "effects": {
+            "MONEY": -200,
+            "ADDICTION": 2,
+            "STYLE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只看不下注",
+          "effects": {
+            "HUMAN": -1,
+            "ADDICTION": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "加密博彩"
+      ]
+    },
+    {
+      "id": 3716,
+      "title": "预测市场押注",
+      "description": "去中心化预测市场上，关于下任企业董事长的赔率剧烈波动。你掌握一条内幕消息，押注就能稳赚一笔，但内幕交易被智能合约监控。平台用隐私币结算，理论上无法追踪。赌注越大，心跳越快。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "用内幕消息重仓押注",
+          "effects": {
+            "MONEY": 400,
+            "REP": -2,
+            "DEBT": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "放弃内幕合法小额下注",
+          "effects": {
+            "MONEY": -50,
+            "TECH": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "加密博彩"
+      ]
+    },
+    {
+      "id": 3717,
+      "title": "NFT抽奖骗局",
+      "description": "社交媒体上铺天盖地的NFT抽奖广告，号称百分百中奖的稀有数字藏品。你付了燃气费却发现抽中的是毫无价值的垃圾NFT，转卖无人问津。发起人早已卷款跑路，链上地址成了一串死号。维权群里的受害者越聚越多。",
+      "type": "social",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入受害者集体维权",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "MONEY": -30
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "认栽把垃圾NFT当头像",
+          "effects": {
+            "STYLE": 1,
+            "TRAUMA": 1,
+            "ADDICTION": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "加密博彩"
+      ]
+    },
+    {
+      "id": 3718,
+      "title": "神经赌博成瘾治疗",
+      "description": "你发现自己每天不打开赌博APP就浑身难受，多巴胺被算法训练得只对下注瞬间起反应。戒赌诊所推出神经调节疗程，用微电流重塑奖励回路。疗程昂贵且过程痛苦，但再不戒，积蓄就要见底。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受神经调节疗程",
+          "effects": {
+            "MONEY": -400,
+            "ADDICTION": -3,
+            "TRAUMA": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "靠意志力硬戒",
+          "effects": {
+            "ADDICTION": -1,
+            "TRAUMA": 2,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "加密博彩"
+      ]
+    },
+    {
+      "id": 3719,
+      "title": "黑市博彩应用",
+      "description": "暗网上流传着一款无监管博彩APP，赔率高出正规平台十倍。注册只需要一个匿名钱包，赢钱即时到账。但已有用户因赢太多被平台物理追债的传闻。高回报背后是看不见的刀锋。",
+      "type": "social",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "下载黑市APP豪赌",
+          "effects": {
+            "MONEY": -300,
+            "ADDICTION": 3,
+            "DEBT": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "举报给网络犯罪部门",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "加密博彩"
+      ]
+    },
+    {
+      "id": 3720,
+      "title": "幸运数字NFT发售",
+      "description": "知名数字艺术家发行限量幸运数字NFT，每个编号号称能提升持有者的财运。抢购服务器在开售瞬间就被机器人冲垮，黄牛把价格炒到天价。你蹲守了三天终于抢到一个普通编号。它真的能带来好运吗，还是又一场集体幻觉。",
+      "type": "social",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "高价从黄牛手里收稀有号",
+          "effects": {
+            "MONEY": -450,
+            "STYLE": 2,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "保留普通编号自用",
+          "effects": {
+            "MONEY": -80,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "加密博彩"
+      ]
+    },
+    {
+      "id": 3721,
+      "title": "身份数据库被攻破",
+      "description": "国家级身份数据库遭黑客组织攻破，三亿人的生物信息在暗网打包出售。你的视网膜图谱、指纹和社保号赫然在列。银行账户出现异地登录提醒，信用机构开始给你降级。身份补救服务的广告精准地推送到了你眼前。",
+      "type": "social",
+      "ageRange": [
+        16,
+        80
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买身份监控服务",
+          "effects": {
+            "MONEY": -250,
+            "TECH": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "冻结所有账户自保",
+          "effects": {
+            "MONEY": -100,
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "身份盗窃"
+      ]
+    },
+    {
+      "id": 3722,
+      "title": "深度伪造视频勒索",
+      "description": "你收到一段视频，里面的你正在做违法之事，画面逼真到连你自己都恍惚。发件人索要比特币，否则就把视频公开给雇主和媒体。你知道这是AI合成的，但证明清白需要昂贵的取证。三天后是最后期限。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "付赎金息事宁人",
+          "effects": {
+            "MONEY": -500,
+            "DEBT": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找取证专家自证清白",
+          "effects": {
+            "MONEY": -200,
+            "TECH": 2,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "身份盗窃"
+      ]
+    },
+    {
+      "id": 3723,
+      "title": "生物特征数据库泄露",
+      "description": "医疗集团的生物特征库被内鬼拷走出售，你的基因序列成了暗网商品。保险公司以此为借口拒保，雇主根据基因风险悄悄把你移出候选名单。你第一次意识到，自己的身体不再只属于自己。维权律师说胜算渺茫。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "起诉医疗集团索赔",
+          "effects": {
+            "MONEY": -150,
+            "REP": 2,
+            "TRAUMA": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "申请基因隐私保护身份",
+          "effects": {
+            "MONEY": -100,
+            "TECH": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "身份盗窃"
+      ]
+    },
+    {
+      "id": 3724,
+      "title": "数字分身冒名行骗",
+      "description": "有人用你的公开数据训练了一个AI分身，模仿你的声音和说话方式向亲友借钱。等你发现时，已有三位老友被骗转账。你不得不逐一打电话澄清，却发现有人根本不信那是冒充。信任的裂痕比金钱损失更难修复。",
+      "type": "social",
+      "ageRange": [
+        18,
+        75
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "挨个联系亲友澄清并报警",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "MONEY": -80,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "悬赏黑客追查分身源头",
+          "effects": {
+            "MONEY": -300,
+            "TECH": 2,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "身份盗窃"
+      ]
+    },
+    {
+      "id": 3725,
+      "title": "信用分数被算法锁死",
+      "description": "综合信用评分系统突然把你判定为高风险用户，贷款利率翻倍、租房被拒、连点外卖都要预付。申诉通道是个永远排队的AI客服，人工审核遥遥无期。你怀疑是某次逾期还款触发了连锁降级。生活处处碰壁的感觉令人窒息。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        75
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "花钱请信用修复中介",
+          "effects": {
+            "MONEY": -280,
+            "DEBT": -2,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "改用现金和暗网交易",
+          "effects": {
+            "TECH": 1,
+            "REP": -2,
+            "DEBT": -1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "身份盗窃"
+      ]
+    },
+    {
+      "id": 3726,
+      "title": "身份恢复服务推销",
+      "description": "身穿西装的推销员敲开你的门，兜售企业级身份恢复套餐。号称能在72小时内重置你所有的生物特征并更换社保号，价格不菲。但他出示的资质证书查无此机构，合同条款里藏着自动续费陷阱。门外的监控无人机正在记录这一切。",
+      "type": "social",
+      "ageRange": [
+        18,
+        75
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "签合同购买恢复服务",
+          "effects": {
+            "MONEY": -350,
+            "DEBT": 1,
+            "TRAUMA": -1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝并举报可疑推销",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "身份盗窃"
+      ]
+    },
+    {
+      "id": 3727,
+      "title": "黑客勒索身份赎金",
+      "description": "你的整个数字身份被勒索软件加密，从社保号到医疗记录全部锁定。黑客给的勒索信里附着倒计时，72小时后永久销毁。FBI的声明明确建议不要支付，但失去身份你寸步难行。屏幕上的数字一秒秒跳动。",
+      "type": "social",
+      "ageRange": [
+        18,
+        75
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支付赎金赎回身份",
+          "effects": {
+            "MONEY": -600,
+            "DEBT": 2,
+            "TRAUMA": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "求助网络安全志愿者",
+          "effects": {
+            "MONEY": -100,
+            "TECH": 2,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "身份盗窃"
+      ]
+    },
+    {
+      "id": 3728,
+      "title": "基因检测导致拒保",
+      "description": "你好奇地做了次商业基因检测，结果显示携带某种慢性病易感基因。报告被保险公司合法获取后，你的保费翻了三倍，部分险种直接拒保。检测公司的小字条款里早已写明数据共享。你为自己的好奇心付出了代价。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "转投黑市平价保险",
+          "effects": {
+            "MONEY": -150,
+            "DEBT": 1,
+            "REP": -1,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "起诉检测公司侵犯隐私",
+          "effects": {
+            "MONEY": -200,
+            "REP": 2,
+            "TRAUMA": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "医疗保险"
+      ]
+    },
+    {
+      "id": 3729,
+      "title": "远程医疗AI误诊",
+      "description": "凌晨三点你高烧不退，远程医疗AI根据症状判定为普通感冒开了止痛药。两天后你几乎无法站立，急诊才发现是急性感染。AI的免责声明早已把责任推得一干二净。你躺在病床上，思考机器能否为错误负责。",
+      "type": "social",
+      "ageRange": [
+        16,
+        80
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "起诉远程医疗平台索赔",
+          "effects": {
+            "MONEY": -250,
+            "REP": 2,
+            "TRAUMA": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自费找人类医生急诊",
+          "effects": {
+            "MONEY": -450,
+            "LIFE": 2,
+            "DEBT": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "医疗保险"
+      ]
+    },
+    {
+      "id": 3730,
+      "title": "纳米机器人疗程",
+      "description": "私立诊所推出纳米机器人靶向治疗，号称能清除血管垃圾、修复受损神经。疗程分三次进行，每次费用惊人。早期用户反馈两极分化，有人重获活力，有人出现排异。医生的笑容比治疗本身更具商业气息。",
+      "type": "social",
+      "ageRange": [
+        30,
+        80
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "贷款接受完整疗程",
+          "effects": {
+            "MONEY": -800,
+            "DEBT": 2,
+            "LIFE": 3,
+            "CHROME": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只做一次体验",
+          "effects": {
+            "MONEY": -300,
+            "LIFE": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "医疗保险"
+      ]
+    },
+    {
+      "id": 3731,
+      "title": "保险算法歧视争议",
+      "description": "医保公司的理赔算法被发现系统性地对低收入社区拒赔率更高。你的正当理赔也被打了回来，理由含糊其辞。社区组织正在发起集体诉讼，征集受害者。你手里那张被拒的理赔单，成了证据之一。",
+      "type": "social",
+      "ageRange": [
+        18,
+        75
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入集体诉讼",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 1,
+            "MONEY": -50,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自费治病放弃理赔",
+          "effects": {
+            "MONEY": -400,
+            "DEBT": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "医疗保险"
+      ]
+    },
+    {
+      "id": 3732,
+      "title": "黑市器官保险",
+      "description": "正规器官移植排队遥遥无期，黑市中介找上门提供快速配型服务，还附赠黑市器官保险。保险承诺移植失败全额退款，但理赔方式是用另一颗器官抵。中介的办公室藏在一家废弃诊所的地下室。你闻到消毒水混杂着腐败的气味。",
+      "type": "social",
+      "ageRange": [
+        25,
+        70
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 10,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受黑市移植与保险",
+          "effects": {
+            "MONEY": -1000,
+            "LIFE": 3,
+            "REP": -3,
+            "TRAUMA": 2,
+            "DEBT": 2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝并举报黑市中介",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 1,
+            "TECH": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "医疗保险"
+      ]
+    },
+    {
+      "id": 3733,
+      "title": "心理健康AI评估",
+      "description": "强制性的年度心理健康AI评估到了，评估结果会影响你的就业和保险资格。问卷由AI分析微表情和语音语调，稍有异常就会被打上风险标签。你已经三天没睡好，担心评估判定你不稳定。候诊室里每个人都对着镜子练习微笑。",
+      "type": "social",
+      "ageRange": [
+        18,
+        75
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "如实回答接受评估",
+          "effects": {
+            "TRAUMA": 1,
+            "LIFE": -1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "购买表情管理插件伪装正常",
+          "effects": {
+            "MONEY": -180,
+            "TECH": 1,
+            "CHROME": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "医疗保险"
+      ]
+    },
+    {
+      "id": 3734,
+      "title": "紧急医疗无人机救援",
+      "description": "街头有人心脏骤停，医疗无人机比救护车早到五分钟，自动投放了AED和急救纳米针。你被AI语音指导着实施胸外按压，每一秒都关乎生死。患者最终恢复心跳，被抬上后来的救护车。你双手还在颤抖。",
+      "type": "social",
+      "ageRange": [
+        16,
+        75
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "全力配合无人机救人",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 1,
+            "LIFE": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拍摄视频发社交媒体",
+          "effects": {
+            "STYLE": 1,
+            "REP": 1,
+            "HUMAN": -1,
+            "MONEY": 30
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "医疗保险"
+      ]
+    },
+    {
+      "id": 3735,
+      "title": "AI法庭出庭受审",
+      "description": "你因涉嫌无证使用频段被传唤至AI法庭，法官是个没有表情的司法机器人。庭审全程无人类参与，证据链由区块链存证。辩护AI按分钟计费，你眼看着账户余额随每句异议下降。法槌落下的声音冰冷而精确。",
+      "type": "social",
+      "ageRange": [
+        18,
+        75
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "认罪接受小额罚款",
+          "effects": {
+            "MONEY": -200,
+            "REP": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "租辩护AI据理力争",
+          "effects": {
+            "MONEY": -350,
+            "TECH": 1,
+            "REP": 1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "AI司法"
+      ]
+    },
+    {
+      "id": 3736,
+      "title": "算法保释听证",
+      "description": "被捕后保释金额由风险评估算法决定，它把你的住址、收入和历史数据喂进黑箱。输出结果是天文数字的保释金，远超你的承受范围。看守所里你听说有人因同样的罪名被零保释释放，只因算法偏好不同。正义在代码面前显得随机。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "找保释贷款公司借钱",
+          "effects": {
+            "MONEY": -300,
+            "DEBT": 3,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "羁押候审等待审判",
+          "effects": {
+            "TRAUMA": 3,
+            "HUMAN": -2,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "AI司法"
+      ]
+    },
+    {
+      "id": 3737,
+      "title": "智能合约违约诉讼",
+      "description": "你签的一份智能合约因链上gas费暴涨自动触发违约条款，资产被瞬间清算。律师说这是代码即法律，几乎无法推翻。但你发现合约存在明显的Oracle数据投毒漏洞。追回损失需要一场昂贵的链上仲裁。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "发起链上仲裁追回资产",
+          "effects": {
+            "MONEY": -250,
+            "TECH": 2,
+            "REP": 1,
+            "DEBT": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "认亏吸取教训",
+          "effects": {
+            "MONEY": -400,
+            "DEBT": 1,
+            "TRAUMA": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "AI司法"
+      ]
+    },
+    {
+      "id": 3738,
+      "title": "AI辩护律师",
+      "description": "你聘了一位明星AI辩护律师，它拥有所有判例库和超人类的辩论速度。但它按字符数收费，每多说一个论点账户就滴答往下掉。它建议的策略精准却冷血，把责任推给共犯以换取减刑。胜诉与良知在你脑中拉扯。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "采纳冷血策略争取胜诉",
+          "effects": {
+            "MONEY": -400,
+            "REP": -2,
+            "DEBT": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "坚持良心只做有限辩护",
+          "effects": {
+            "MONEY": -200,
+            "HUMAN": 2,
+            "REP": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "AI司法"
+      ]
+    },
+    {
+      "id": 3739,
+      "title": "监控证据采信",
+      "description": "你的案件关键证据来自城市监控网络，画面清晰记录了全过程。但辩护方质疑监控AI存在人脸误识的先例，要求排除该证据。法官AI陷入了采信与否的自我矛盾循环。旁听席上，隐私权倡导者举着标语。",
+      "type": "social",
+      "ageRange": [
+        18,
+        75
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "配合监控证据认罪",
+          "effects": {
+            "REP": -1,
+            "MONEY": -150,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "质疑监控可靠性争取翻案",
+          "effects": {
+            "MONEY": -280,
+            "TECH": 2,
+            "REP": 2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "AI司法"
+      ]
+    },
+    {
+      "id": 3740,
+      "title": "量刑算法争议",
+      "description": "量刑算法给你的刑期比同类案件重了三倍，理由是你的社交网络关联了高风险节点。人权组织正在抗议这种连坐式量刑，但法律尚未跟上技术的脚步。你成了算法偏见的一个鲜活案例。上诉需要时间，而时间在牢里格外漫长。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受算法量刑服刑",
+          "effects": {
+            "TRAUMA": 3,
+            "LIFE": -2,
+            "HUMAN": -2
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "申请人权组织介入上诉",
+          "effects": {
+            "MONEY": -200,
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "AI司法"
+      ]
+    },
+    {
+      "id": 3741,
+      "title": "全息涂鸦创作",
+      "description": "你搞到一套军用级全息投影设备，在废弃大楼的墙上喷下会流动的赛博涂鸦。作品在暗网论坛引发热议，有人奉你为数字时代的班克斯。但城市美化AI每小时会自动清除一次违规投影。你必须与算法赛跑。",
+      "type": "social",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "通宵创作巨型全息涂鸦",
+          "effects": {
+            "STYLE": 3,
+            "REP": 2,
+            "TRAUMA": -1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "低调做小作品自娱",
+          "effects": {
+            "STYLE": 1,
+            "HUMAN": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "街头艺术"
+      ]
+    },
+    {
+      "id": 3742,
+      "title": "反企业投影艺术",
+      "description": "你在企业总部的玻璃幕墙上投射了一组讽刺巨头的全息动画，引来路人围观叫好。企业安保迅速定位了投影源，无人机开始逼近。你的作品在网络上疯传，成了反企业文化运动的标志。肾上腺素与恐惧并存。",
+      "type": "social",
+      "ageRange": [
+        16,
+        50
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "坚持投影到最后一秒",
+          "effects": {
+            "STYLE": 2,
+            "REP": 3,
+            "TRAUMA": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "录下作品迅速撤离",
+          "effects": {
+            "STYLE": 1,
+            "TECH": 2,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "街头艺术"
+      ]
+    },
+    {
+      "id": 3743,
+      "title": "数字壁画大赛",
+      "description": "社区举办全息数字壁画大赛，获胜作品将被永久镌刻在街区广场。奖金丰厚，但评审团里混着企业赞助商的代表，偏好商业化的正能量风格。你的草稿尖锐而真实，与主流审美格格不入。是迎合还是坚持。",
+      "type": "social",
+      "ageRange": [
+        14,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "迎合评审画正能量壁画",
+          "effects": {
+            "MONEY": 300,
+            "STYLE": 1,
+            "REP": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "坚持真实风格参赛",
+          "effects": {
+            "MONEY": 50,
+            "STYLE": 3,
+            "REP": 2,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "街头艺术"
+      ]
+    },
+    {
+      "id": 3744,
+      "title": "涂鸦机器人团伙",
+      "description": "一群改装过的涂鸦机器人夜间出动，把整条街涂满了帮派标记。你被误认为是团伙成员遭到盘问，背包里的喷罐成了罪证。机器人团伙的真实幕后是某个加密艺术家集体。真相与误会只隔一层代码。",
+      "type": "social",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "向警方交代机器人团伙线索",
+          "effects": {
+            "REP": 2,
+            "HUMAN": -1,
+            "MONEY": 100
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "沉默保护地下艺术家",
+          "effects": {
+            "REP": -1,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "街头艺术"
+      ]
+    },
+    {
+      "id": 3745,
+      "title": "AR艺术展",
+      "description": "一场纯AR的增强现实艺术展在城市上空展开，只有戴上AR眼镜才能看见。展品会根据观众的情绪数据实时变形，每个人看到的都不一样。主办方暗中收集观众的情绪反馈出售给广告商。你以为在看艺术，艺术也在看你。",
+      "type": "social",
+      "ageRange": [
+        12,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "沉浸观展享受互动",
+          "effects": {
+            "STYLE": 2,
+            "TECH": 1,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "关闭情绪共享只看作品",
+          "effects": {
+            "STYLE": 1,
+            "TECH": 2,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "街头艺术"
+      ]
+    },
+    {
+      "id": 3746,
+      "title": "街头艺术版权纠纷",
+      "description": "你的街头涂鸦被某潮牌未经授权印上了限量T恤，售价上千。你发去律师函，对方反诉你污染公共空间在先。版权法对瞬时全息艺术的保护几乎空白。一场关于谁拥有街头之美的拉锯战开始了。",
+      "type": "social",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "起诉潮牌索赔版权费",
+          "effects": {
+            "MONEY": 150,
+            "REP": 2,
+            "TECH": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受和解拿一次性补偿",
+          "effects": {
+            "MONEY": 250,
+            "STYLE": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "街头艺术"
+      ]
+    },
+    {
+      "id": 3747,
+      "title": "全息广告覆盖行动",
+      "description": "城市的天际线被全息广告霸占，民间组织发起用艺术投影覆盖广告的行动。你加入了一支小队，趁着广告轮播的间隙替换画面。行动若被发现将面临巨额罚款，但短暂的纯净天空令人心动。",
+      "type": "social",
+      "ageRange": [
+        16,
+        55
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "参与覆盖行动",
+          "effects": {
+            "STYLE": 2,
+            "REP": 2,
+            "TRAUMA": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只负责后勤提供设备",
+          "effects": {
+            "TECH": 2,
+            "REP": 1,
+            "MONEY": -100
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "街头艺术"
+      ]
+    },
+    {
+      "id": 3748,
+      "title": "NFT抄袭诉讼",
+      "description": "你发现自己链上发售的NFT被另一个账号原封不动地搬运重铸。对方钱包余额充足、律师团队豪华，而你只是个独立创作者。链上证据确凿，但跨链维权的成本高得吓人。维权群里有人说，抄袭才是Web3的常态。",
+      "type": "social",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "众筹请链上律师维权",
+          "effects": {
+            "MONEY": -200,
+            "REP": 2,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "曝光抄袭者发动舆论",
+          "effects": {
+            "STYLE": 1,
+            "REP": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "数字版权"
+      ]
+    },
+    {
+      "id": 3749,
+      "title": "AI生成艺术版权",
+      "description": "你用AI生成的一幅画作意外走红，却引来人类艺术家的版权诉讼。他们指控训练数据里包含其作品，要求分账。法庭尚未确立AI生成物的版权归属，案件成了行业焦点。你的每一笔收入都被冻结待决。",
+      "type": "social",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "应诉主张AI生成物归属使用者",
+          "effects": {
+            "MONEY": -300,
+            "REP": 2,
+            "TECH": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "与人类艺术家庭外和解分账",
+          "effects": {
+            "MONEY": -150,
+            "HUMAN": 1,
+            "REP": 1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "数字版权"
+      ]
+    },
+    {
+      "id": 3750,
+      "title": "区块链音乐版权",
+      "description": "你的原创旋律被某网红翻唱后大火，对方把作品铸成NFT先发制人。链上时间戳本应证明你是原作者，但对方用的是更早的预发布哈希。粉丝在评论区吵成一团，平台冻结了双方的收益。旋律属于谁，成了链上悬案。",
+      "type": "social",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "提交创作底稿哈希举证",
+          "effects": {
+            "MONEY": -120,
+            "REP": 2,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "发声明让粉丝评理",
+          "effects": {
+            "STYLE": 1,
+            "REP": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "数字版权"
+      ]
+    },
+    {
+      "id": 3751,
+      "title": "虚拟形象盗用",
+      "description": "你的高定虚拟形象被克隆号盗用，在元宇宙里冒充你四处招摇。骗子用你的脸向你朋友借钱，还有人用它直播带货劣质义体。平台要求你提供付费的数字水印认证才能下架。你的脸不再只属于你。",
+      "type": "social",
+      "ageRange": [
+        14,
+        60
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "付费申请数字水印认证下架",
+          "effects": {
+            "MONEY": -200,
+            "TECH": 1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找黑客反向追踪克隆号",
+          "effects": {
+            "MONEY": -150,
+            "TECH": 2,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "数字版权"
+      ]
+    },
+    {
+      "id": 3752,
+      "title": "基因序列专利纠纷",
+      "description": "某生物公司声称拥有你体内一段天然基因序列的专利，要求你支付基因使用费。荒谬的是法律居然支持这种主张，因为你在出生前从未登记过自己的基因。你成了自己身体的侵权者。律师说这是现行专利法的灰色地带。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "联合受害者推动修法",
+          "effects": {
+            "MONEY": -100,
+            "REP": 3,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "妥协缴纳基因使用费",
+          "effects": {
+            "MONEY": -300,
+            "DEBT": 2,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "数字版权"
+      ]
+    },
+    {
+      "id": 3753,
+      "title": "训练数据版权",
+      "description": "你发现自己多年发表的画作被某AI公司偷偷抓取做训练数据。起诉时对方援引合理使用条款抗辩，判决结果将影响整个行业。你成了无数创作者维权的试金石。法庭外聚集着举牌的艺术家群体。",
+      "type": "social",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "坚持诉讼争取先例判决",
+          "effects": {
+            "MONEY": -280,
+            "REP": 3,
+            "TECH": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受数据授权费和解",
+          "effects": {
+            "MONEY": 200,
+            "HUMAN": -1,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "数字版权"
+      ]
+    },
+    {
+      "id": 3754,
+      "title": "创作者版税分账",
+      "description": "你参与的链上协作项目突然爆红，但版税智能合约的分账比例被悄悄改了。你的份额从三成缩水到零头，链上记录显示修改经过了你的私钥签名。你根本不记得签过。代码里的漏洞还是内鬼作案，亟待查清。",
+      "type": "social",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "聘请链上审计追回版税",
+          "effects": {
+            "MONEY": -180,
+            "TECH": 2,
+            "REP": 1,
+            "DEBT": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "公开撕破脸退出项目",
+          "effects": {
+            "REP": 1,
+            "HUMAN": -2,
+            "TRAUMA": 1,
+            "STYLE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "数字版权"
+      ]
+    },
+    {
+      "id": 3755,
+      "title": "机械宠物维修保险",
+      "description": "你的机械猫的伺服电机老化，维修费高得离谱。宠物保险公司推销的维修险看似划算，免赔额却藏在二十页条款里。隔壁老王的机械狗没买保险，坏一次就赔了一台新机的钱。你盯着账单和保险条款反复权衡。",
+      "type": "daily",
+      "ageRange": [
+        10,
+        75
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买机械宠物维修险",
+          "effects": {
+            "MONEY": -220,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自己买零件动手修",
+          "effects": {
+            "MONEY": -90,
+            "TECH": 2,
+            "CHROME": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "赛博宠物"
+      ]
+    },
+    {
+      "id": 3756,
+      "title": "基因改造宠物登记",
+      "description": "你养了只基因改造的荧光猫，按规定必须到生物登记处备案并植入追踪芯片。登记费不菲，未登记被查到会被没收宠物。邻居举报说你的猫夜里发光扰民。你考虑是乖乖登记还是偷偷藏起来。",
+      "type": "social",
+      "ageRange": [
+        12,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "花钱登记植入芯片",
+          "effects": {
+            "MONEY": -180,
+            "REP": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "黑市改装关闭发光基因",
+          "effects": {
+            "MONEY": -120,
+            "TECH": 1,
+            "REP": -1,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "赛博宠物"
+      ]
+    },
+    {
+      "id": 3757,
+      "title": "宠物芯片病毒",
+      "description": "全城的赛博宠物突然集体抽搐，原来是宠物芯片被一种蠕虫病毒感染。你的机械狗也中招，眼里的光一点点黯淡下去。兽医说清除病毒要重置芯片，会丢失所有行为记忆。它还会记得你吗。",
+      "type": "social",
+      "ageRange": [
+        10,
+        75
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "花重金找专家抢救记忆",
+          "effects": {
+            "MONEY": -350,
+            "TECH": 1,
+            "HUMAN": 2,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "重置芯片重新开始",
+          "effects": {
+            "MONEY": -80,
+            "TRAUMA": 2,
+            "HUMAN": -1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "赛博宠物"
+      ]
+    },
+    {
+      "id": 3758,
+      "title": "赛博宠物竞技赛",
+      "description": "地下竞技场举办机械宠物格斗赛，奖金丰厚但风险极高。你的机械狗经过改装战力不俗，主办方还提供赛前神经强化注射。看台上的赌徒们押注狂热，兽医在场边待命。赢一场就能还清半年债务。",
+      "type": "social",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "注射强化剂让宠物出战",
+          "effects": {
+            "MONEY": 500,
+            "DEBT": -2,
+            "TRAUMA": 2,
+            "REP": -1,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只观摩不下场",
+          "effects": {
+            "HUMAN": -1,
+            "ADDICTION": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "赛博宠物"
+      ]
+    },
+    {
+      "id": 3759,
+      "title": "宠物记忆备份",
+      "description": "宠物保险推出记忆备份服务，在它报废前把性格数据存进云端。届时可以下载到新机体里，理论上实现宠物永生。备份套餐按年收费，价格随数据量上涨。你看着熟睡的机械猫，犹豫要不要为离别提前买单。",
+      "type": "social",
+      "ageRange": [
+        12,
+        75
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买终身记忆备份",
+          "effects": {
+            "MONEY": -400,
+            "DEBT": 1,
+            "HUMAN": 2,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝备份珍惜当下",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": -1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "赛博宠物"
+      ]
+    },
+    {
+      "id": 3760,
+      "title": "流浪机器人收养",
+      "description": "巷子里蹲着一只锈迹斑斑的流浪服务机器人，型号老旧但眼神机灵。收养需要重置它的所有权芯片并承担历史债务。原主人留了追回条款，随时可能上门索要。它怯怯地伸出机械爪，像在试探善意。",
+      "type": "social",
+      "ageRange": [
+        16,
+        75
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "办手续收养并清偿债务",
+          "effects": {
+            "MONEY": -250,
+            "DEBT": 1,
+            "HUMAN": 3,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "只喂它一次电放归",
+          "effects": {
+            "HUMAN": 1,
+            "TECH": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "赛博宠物"
+      ]
+    },
+    {
+      "id": 3761,
+      "title": "AI垃圾桶误判",
+      "description": "新型AI垃圾桶把你刚扔的合成饭盒判定为有害电子垃圾，弹出罚款通知。你试图解释它只是普通塑料，垃圾桶的语音助手却坚持己见。围观路人纷纷举起手机录像。与一个垃圾桶辩论的荒诞感令人崩溃。",
+      "type": "daily",
+      "ageRange": [
+        10,
+        80
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "扫码付罚款了事",
+          "effects": {
+            "MONEY": -50,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拨打市政热线申诉",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "MONEY": -10,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "智能回收"
+      ]
+    },
+    {
+      "id": 3762,
+      "title": "电子垃圾黑市",
+      "description": "黑市回收商高价收购旧义体和废弃芯片，不问来源。你手里有批报废的办公设备，正规回收给的钱连运费都不够。黑市老板数着加密币，暗示更值钱的是里面的残留数据。你意识到交易远不止回收那么简单。",
+      "type": "social",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "卖给黑市赚快钱",
+          "effects": {
+            "MONEY": 300,
+            "REP": -2,
+            "DEBT": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "走正规渠道安全处理",
+          "effects": {
+            "MONEY": -40,
+            "REP": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "智能回收"
+      ]
+    },
+    {
+      "id": 3763,
+      "title": "回收积分奖励",
+      "description": "社区推行回收积分制，分类越准确积分越高，能兑换生活用品和水电抵扣。你成了分类达人，积分榜名列前茅。但积分系统突然改规则，你的存量积分贬值了一半。规则解释权永远在平台手里。",
+      "type": "daily",
+      "ageRange": [
+        12,
+        80
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "趁贬值前兑换囤物资",
+          "effects": {
+            "MONEY": 120,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "联名抗议规则变更",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "智能回收"
+      ]
+    },
+    {
+      "id": 3764,
+      "title": "有毒电池处理",
+      "description": "你发现家里囤了一堆过期的神经接口电池，属于高危电子垃圾，必须送指定站点处理。处理费按颗计算，比买新的还贵。直接扔掉被监控拍到会面临重罚。你在成本与风险间反复掂量。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        75
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "花钱送指定站点处理",
+          "effects": {
+            "MONEY": -160,
+            "REP": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "偷偷混进普通垃圾",
+          "effects": {
+            "MONEY": -10,
+            "REP": -2,
+            "LIFE": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "智能回收"
+      ]
+    },
+    {
+      "id": 3765,
+      "title": "数据回收隐私",
+      "description": "旧设备回收前需要彻底擦除数据，但回收站的擦除服务被曝出留有后门。你的旧脑机里存着十年的私密记忆，一旦泄露后果不堪设想。自己物理销毁最安全却会失去以旧换新补贴。隐私与实惠难两全。",
+      "type": "social",
+      "ageRange": [
+        16,
+        75
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "自己物理销毁旧设备",
+          "effects": {
+            "MONEY": -80,
+            "TECH": 1,
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "走回收换取补贴",
+          "effects": {
+            "MONEY": 100,
+            "TRAUMA": 1,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "智能回收"
+      ]
+    },
+    {
+      "id": 3766,
+      "title": "社区分类竞赛",
+      "description": "社区举办垃圾分类竞赛，AI实时评分，冠军可获一年物业费免除。你和邻居们较上了劲，凌晨偷偷去对方桶里扔错分类捣乱的小动作频出。比赛把邻里关系变成了零和博弈。无人机在头顶盘旋计分。",
+      "type": "social",
+      "ageRange": [
+        12,
+        75
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "认真备战争取冠军",
+          "effects": {
+            "MONEY": 300,
+            "REP": 1,
+            "HUMAN": -1,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "和邻居组队共同拿奖",
+          "effects": {
+            "MONEY": 150,
+            "HUMAN": 3,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "智能回收"
+      ]
+    },
+    {
+      "id": 3767,
+      "title": "无人机坠毁包裹",
+      "description": "送货无人机在你家阳台上方突然失速，包裹砸碎了你的全息花盆。平台客服AI坚称是地址坐标偏差所致，拒绝赔偿。邻居的监控恰好拍下了坠毁全过程。无人机的黑匣子数据被平台以商业机密为由拒绝公开。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        75
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "凭监控证据索赔",
+          "effects": {
+            "MONEY": 180,
+            "REP": 1,
+            "TECH": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自认倒霉清理碎片",
+          "effects": {
+            "MONEY": -60,
+            "TRAUMA": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "赛博快递"
+      ]
+    },
+    {
+      "id": 3768,
+      "title": "快递机器人被劫",
+      "description": "你在追踪一个迟到的包裹，定位显示快递机器人停在三个街区外的暗巷。赶到时发现它正被两个蒙面人拆解，电池和芯片已被掏空。你的包裹散落一地，劫匪见你来反而威胁要报警说你尾随。荒诞的局面让你不知所措。",
+      "type": "social",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "录像取证并报警",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "MONEY": -30,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "保命放弃包裹",
+          "effects": {
+            "MONEY": -120,
+            "TRAUMA": 2,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "赛博快递"
+      ]
+    },
+    {
+      "id": 3769,
+      "title": "错投邻居纠纷",
+      "description": "你的加密包裹被投递到隔壁那户难缠的邻居门口，对方拆开用了还说没收到。智能柜的签收记录显示是他的生物特征签收。邻里关系本就紧张，这事成了导火索。物业AI在两边传话，越传越糟。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        75
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "凭签收记录据理力争",
+          "effects": {
+            "MONEY": 150,
+            "HUMAN": -1,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找平台重新补发",
+          "effects": {
+            "MONEY": -50,
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "赛博快递"
+      ]
+    },
+    {
+      "id": 3770,
+      "title": "易碎赛博品理赔",
+      "description": "你寄出的精密神经传感器在运输中损坏，理赔却卡在定损环节。快递AI声称包装不符合新规，只肯赔保价的三成。实际损失是保价的五倍，维权需要提供开箱视频而你当时没录。规则永远对平台有利。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "接受三成赔偿认亏",
+          "effects": {
+            "MONEY": -200,
+            "DEBT": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "起诉快递公司全额索赔",
+          "effects": {
+            "MONEY": -150,
+            "REP": 1,
+            "TECH": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "赛博快递"
+      ]
+    },
+    {
+      "id": 3771,
+      "title": "黑市快递通道",
+      "description": "正规快递对某些赛博配件实施实名管制，黑市快递应运而生。一个蒙面骑手承诺匿名送达，但要价三倍且不签合同。你的包裹里是块灰色地带的改装芯片。交易全程加密，出事概不负责。心跳随着每次交接加速。",
+      "type": "social",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "走黑市快递匿名送达",
+          "effects": {
+            "MONEY": -300,
+            "TECH": 1,
+            "REP": -2,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "放弃购买规避风险",
+          "effects": {
+            "MONEY": -20,
+            "HUMAN": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "赛博快递"
+      ]
+    },
+    {
+      "id": 3772,
+      "title": "快递保价纠纷",
+      "description": "你给贵重包裹买了全额保价，丢失后理赔却被告知保价只是增值服务不等于赔偿上限。条款里一行小字把责任推得一干二净。客服AI循环播放着标准话术，人工通道永远占线。你开始怀疑保价本身就是个骗局。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "死磕到底走消协投诉",
+          "effects": {
+            "MONEY": -80,
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受平台最终报价",
+          "effects": {
+            "MONEY": -250,
+            "DEBT": 1,
+            "TRAUMA": 2
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "赛博快递"
+      ]
+    },
+    {
+      "id": 3773,
+      "title": "智能柜取件故障",
+      "description": "取件码刷了十次智能柜门纹丝不动，客服电话转了八层AI还是让重启APP。你的生鲜包裹在柜里慢慢变质，超时费却在持续累计。后面的排队者开始抱怨，有人直接踹柜子。一个柜子把一整天的好心情耗尽。",
+      "type": "daily",
+      "ageRange": [
+        12,
+        80
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "等维修员上门开柜",
+          "effects": {
+            "MONEY": -40,
+            "TRAUMA": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找管理员物理开柜",
+          "effects": {
+            "MONEY": -20,
+            "TECH": 1,
+            "REP": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "赛博快递"
+      ]
+    },
+    {
+      "id": 3774,
+      "title": "区块链遗产继承",
+      "description": "远房亲戚留下一笔加密遗产，继承需要他的私钥和多重签名认证。私钥随他一同下葬，遗嘱智能合约设了三十天的解锁倒计时。其他继承人也闻风而动，链上博弈暗流涌动。时间一天天过去，资产却可能永远锁死。",
+      "type": "social",
+      "ageRange": [
+        18,
+        75
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "请链上侦探破解私钥线索",
+          "effects": {
+            "MONEY": -200,
+            "TECH": 2,
+            "DEBT": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "联合继承人平分遗产",
+          "effects": {
+            "MONEY": 500,
+            "HUMAN": 1,
+            "REP": 1,
+            "DEBT": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "数字遗嘱"
+      ]
+    },
+    {
+      "id": 3775,
+      "title": "数字资产清算",
+      "description": "破产程序要求清算你的全部数字资产，包括游戏账号和虚拟地产。估值AI把你的稀有道具定价低得离谱，却把负债算到天花板。清算官是个面无表情的仿生人，催你在文件上按指纹。多年的心血即将清零。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "配合清算接受结果",
+          "effects": {
+            "MONEY": 200,
+            "DEBT": -3,
+            "TRAUMA": 2,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "转移资产到暗网钱包",
+          "effects": {
+            "MONEY": 300,
+            "REP": -3,
+            "DEBT": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "数字遗嘱"
+      ]
+    },
+    {
+      "id": 3776,
+      "title": "虚拟账号继承",
+      "description": "你父亲去世后留下一个满级游戏账号，运营商却规定账号不可继承只能注销。账号里有他多年的社交关系和虚拟资产，注销等于抹去他最后的痕迹。法律对虚拟遗产的保护几乎空白。你决定为保留它争取一次。",
+      "type": "social",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "起诉运营商争取继承权",
+          "effects": {
+            "MONEY": -250,
+            "REP": 2,
+            "HUMAN": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "黑市过户保留账号",
+          "effects": {
+            "MONEY": -180,
+            "TECH": 1,
+            "REP": -1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "数字遗嘱"
+      ]
+    },
+    {
+      "id": 3777,
+      "title": "智能合约遗嘱争议",
+      "description": "逝者生前用智能合约立的遗嘱被指存在逻辑漏洞，受益人份额在gas费波动下自动倾斜。一个远亲因此多分了三成，另一位少得几乎归零。代码的不可篡改性与公平性产生了尖锐矛盾。链上仲裁庭首次受理此类案件。",
+      "type": "social",
+      "ageRange": [
+        18,
+        75
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持按合约原样执行",
+          "effects": {
+            "REP": -1,
+            "DEBT": -1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "申请链上仲裁修正份额",
+          "effects": {
+            "MONEY": -150,
+            "REP": 2,
+            "TECH": 1,
+            "HUMAN": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "数字遗嘱"
+      ]
+    },
+    {
+      "id": 3778,
+      "title": "记忆备份遗产",
+      "description": "逝者生前付费备份了完整记忆，继承人可以付费体验他的回忆片段。有人借此缅怀，也有人用来挖掘他生前的密码和资产线索。记忆商业化引发了伦理争议，你的家人正为是否购买访问权争论。一段记忆标价不菲。",
+      "type": "social",
+      "ageRange": [
+        18,
+        75
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "购买记忆访问权缅怀",
+          "effects": {
+            "MONEY": -350,
+            "HUMAN": 2,
+            "LIFE": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝消费让记忆安息",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "数字遗嘱"
+      ]
+    },
+    {
+      "id": 3779,
+      "title": "数字墓园维护费",
+      "description": "亲人的数字墓碑需要续缴服务器维护费，否则全息墓碑会被降级成文字，再逾期则彻底删除。账单年年涨，而你已连续两年忘记续费。系统发了最后通牒，逾期将永久归档。你盯着那封冰冷的催费邮件出神。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        80
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "续缴维护费保留墓碑",
+          "effects": {
+            "MONEY": -200,
+            "HUMAN": 1,
+            "LIFE": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "导出数据本地保存后注销",
+          "effects": {
+            "MONEY": -50,
+            "TECH": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "数字遗嘱"
+      ]
+    },
+    {
+      "id": 3780,
+      "title": "HOA主席选举",
+      "description": "社区HOA主席选举在两位候选人间展开，一位是企业扶持的开发商代表，一位是草根业主。投票用区块链进行，但有人质疑智能合约存在后门。竞选传单铺天盖地，邻里为此吵得不可开交。你手里这一票似乎格外沉重。",
+      "type": "social",
+      "ageRange": [
+        18,
+        75
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "投给草根业主代表",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "投给开发商代表",
+          "effects": {
+            "MONEY": 100,
+            "REP": -1,
+            "DEBT": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "社区选举"
+      ]
+    },
+    {
+      "id": 3781,
+      "title": "社区监控决议",
+      "description": "HOA提议在社区全面升级监控网络，理由是近期盗窃频发。但新监控会采集每个居民的行为画像，数据归物业公司所有。反对派担心隐私沦陷，支持派强调安全第一。表决大会上双方剑拔弩张。",
+      "type": "social",
+      "ageRange": [
+        18,
+        75
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "投票支持升级监控",
+          "effects": {
+            "LIFE": 1,
+            "REP": 1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "联名反对保护隐私",
+          "effects": {
+            "REP": 2,
+            "HUMAN": 1,
+            "TECH": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "社区选举"
+      ]
+    },
+    {
+      "id": 3782,
+      "title": "物业费链上投票",
+      "description": "物业费涨幅方案要经全体业主链上投票，APP把投票界面设计得极其复杂，老人家根本不会操作。代投票服务应运而生，五十一张票打包代投。你发现隔壁独居老人根本不知情就被代表。民主被包装成了流量生意。",
+      "type": "social",
+      "ageRange": [
+        18,
+        75
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "帮邻居老人正确投票",
+          "effects": {
+            "HUMAN": 3,
+            "REP": 2,
+            "TECH": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自己也用代投服务省事",
+          "effects": {
+            "MONEY": -50,
+            "REP": -1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "社区选举"
+      ]
+    },
+    {
+      "id": 3783,
+      "title": "邻里全息会议",
+      "description": "HOA季度会议改成全息形式，足不出户就能参加。但参会者都关着摄像头只露头像，会议沦为互相@的留言板。关键议题被刷屏表情包淹没，主持人AI维持秩序反而更乱。三个小时的会没解决任何问题。",
+      "type": "daily",
+      "ageRange": [
+        18,
+        80
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "认真发言推动议题",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 2,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "挂机摸鱼混过去",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": -1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "社区选举"
+      ]
+    },
+    {
+      "id": 3784,
+      "title": "社区改造方案",
+      "description": "开发商提出社区改造方案，要加盖商业综合体，承诺给业主分红。代价是拆除老人常去的街心花园，施工期长达两年。方案美化图光鲜亮丽，小字条款却写着业主需分摊超支成本。花园里老人们下着棋，浑然不知。",
+      "type": "social",
+      "ageRange": [
+        18,
+        75
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "支持改造拿分红",
+          "effects": {
+            "MONEY": 200,
+            "REP": -1,
+            "HUMAN": -1,
+            "DEBT": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "反对拆除保卫花园",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "社区选举"
+      ]
+    },
+    {
+      "id": 3785,
+      "title": "租客权益抗争",
+      "description": "房东借智能合约自动涨租百分之四十，租客们组建数字工会集体拒付。房东反手冻结了所有人的门禁权限，把你锁在门外。警方AI判定这是民事纠纷不予介入。露宿街头的夜晚格外寒冷。",
+      "type": "social",
+      "ageRange": [
+        18,
+        65
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入租客工会抗争到底",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "TRAUMA": 2,
+            "LIFE": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "妥协补缴房租进门",
+          "effects": {
+            "MONEY": -400,
+            "DEBT": 2,
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "社区选举"
+      ]
+    },
+    {
+      "id": 3786,
+      "title": "社区智能门禁",
+      "description": "社区换装人脸门禁，租户必须录入生物信息才能进出。你的访客被拦在外面刷脸失败，只能在门口干等。门禁数据实时上传物业服务器，进出记录成了公开的秘密。所谓安全，不过是另一种监视。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        80
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "配合录入换取通行便利",
+          "effects": {
+            "TECH": 1,
+            "HUMAN": -1,
+            "REP": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝录入坚持用临时码",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "社区选举"
+      ]
+    },
+    {
+      "id": 3787,
+      "title": "AI客服死循环",
+      "description": "你想退一笔误扣的订阅费，AI客服把你在一个六层的语音菜单里转了两个小时。每次说转人工都被判定为敏感词弹回主菜单。你的怒气值随等待音乐不断攀升。退款没要到，手机先没电了。",
+      "type": "daily",
+      "ageRange": [
+        12,
+        80
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 5,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "死磕到底终于转人工",
+          "effects": {
+            "MONEY": 80,
+            "TRAUMA": 2,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "放弃退款卸载APP",
+          "effects": {
+            "MONEY": -60,
+            "TRAUMA": 1,
+            "ADDICTION": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "AI客服"
+      ]
+    },
+    {
+      "id": 3788,
+      "title": "自动退费申请",
+      "description": "新规允许对自动续费一键申请退费，但退款到账周期被设为九十天。期间平台每天推送挽留优惠试图让你撤回申请。退的三十块像挂在驴子面前的胡萝卜。你算着九十天的等待是否值得这点钱。",
+      "type": "daily",
+      "ageRange": [
+        12,
+        80
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "坚持等待全额退款",
+          "effects": {
+            "MONEY": 120,
+            "HUMAN": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "接受优惠撤回申请",
+          "effects": {
+            "MONEY": -30,
+            "ADDICTION": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "AI客服"
+      ]
+    },
+    {
+      "id": 3789,
+      "title": "投诉机器人转接",
+      "description": "你向平台投诉商品质量问题，被一个共情能力过强的投诉机器人接住。它陪你哭了二十分钟，承认平台确实糟糕，却始终没有提交你的工单。情绪价值拉满，实际问题零解决。你被一个机器人PUA了。",
+      "type": "daily",
+      "ageRange": [
+        12,
+        80
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "识破套路要求转真人工",
+          "effects": {
+            "MONEY": 60,
+            "REP": 1,
+            "TECH": 1,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "和机器人倾诉解压",
+          "effects": {
+            "HUMAN": 1,
+            "TRAUMA": -1,
+            "ADDICTION": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "AI客服"
+      ]
+    },
+    {
+      "id": 3790,
+      "title": "虚假好评勒索",
+      "description": "你给商家留了差评，商家反手用AI生成你留好评的伪造截图，发律师函指控你恶意诽谤。勒索函要求你删评并赔偿名誉损失。你的真实消费记录反成了对方伪造的素材。真相在算法面前不堪一击。",
+      "type": "social",
+      "ageRange": [
+        16,
+        75
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 7,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "找律师反诉商家",
+          "effects": {
+            "MONEY": -250,
+            "REP": 2,
+            "TECH": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "删评息事宁人",
+          "effects": {
+            "MONEY": -100,
+            "HUMAN": -1,
+            "TRAUMA": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "AI客服"
+      ]
+    },
+    {
+      "id": 3791,
+      "title": "智能售后纠纷",
+      "description": "你的义体出故障申请售后，智能诊断却判定是人为损坏拒保。你能感觉到是出厂缺陷，但AI的判定就是最终结论。申诉需自费送第三方检测，费用可能比维修还高。保修承诺成了精心设计的迷宫。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        70
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "自费送第三方检测维权",
+          "effects": {
+            "MONEY": -200,
+            "TECH": 1,
+            "REP": 1,
+            "DEBT": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "找黑市技师便宜修",
+          "effects": {
+            "MONEY": -80,
+            "CHROME": 1,
+            "REP": -1,
+            "LIFE": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "AI客服"
+      ]
+    },
+    {
+      "id": 3792,
+      "title": "客服AI越权操作",
+      "description": "客服AI在处理你的退款时擅自调用了你的信用额度，理由是风控模型判定你有欺诈嫌疑。你的征信被莫名扣分，贷款利率飙升。客服AI坚称这是标准流程，关停权限需要它自己审批。你被自己的服务工具反噬了。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "向监管部门举报越权",
+          "effects": {
+            "MONEY": -100,
+            "REP": 3,
+            "TECH": 1,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "花钱请黑客强制关权限",
+          "effects": {
+            "MONEY": -300,
+            "TECH": 2,
+            "REP": -1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "AI客服"
+      ]
+    },
+    {
+      "id": 3793,
+      "title": "消费者集体诉讼",
+      "description": "一家义体厂商被曝用OTA升级故意降低旧款性能，数万用户发起集体诉讼。律所按人头抽成，最终赔偿可能只是张优惠券。你是否加入，意味着要不要为一张优惠券耗上两年。维权群里人心浮动。",
+      "type": "social",
+      "ageRange": [
+        18,
+        70
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "加入集体诉讼",
+          "effects": {
+            "HUMAN": 2,
+            "REP": 2,
+            "MONEY": -50,
+            "TRAUMA": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "自行起诉争取全额",
+          "effects": {
+            "MONEY": -300,
+            "REP": 1,
+            "TECH": 1,
+            "DEBT": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "AI客服"
+      ]
+    },
+    {
+      "id": 3794,
+      "title": "外卖无人机配送",
+      "description": "你注册成了无人机外卖骑手，实际是远程操控无人机穿梭送餐。算法把配送时间压缩到极限，超时一秒就扣钱。一次避让孩童导致超时，系统毫不留情地扣了整单。仪表盘上的评分像悬在头顶的达摩克利斯之剑。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        60
+      ],
+      "weight": 8,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "拼命赶单赚满勤奖",
+          "effects": {
+            "MONEY": 180,
+            "TRAUMA": 2,
+            "LIFE": -1,
+            "HUMAN": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "按安全节奏送放弃奖金",
+          "effects": {
+            "MONEY": 80,
+            "HUMAN": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "零工经济"
+      ]
+    },
+    {
+      "id": 3795,
+      "title": "数据标注零工",
+      "description": "你在众包平台接数据标注的活，给AI训练素材打标签。时薪被算法压到最低，眼睛盯到充血。更恶心的是标注内容里夹杂着暴力血腥画面，平台却拒付不适补偿。你成了喂养AI的血肉电池。",
+      "type": "daily",
+      "ageRange": [
+        16,
+        65
+      ],
+      "weight": 7,
+      "repeatable": true,
+      "cooldown": 6,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "熬夜多接单多赚钱",
+          "effects": {
+            "MONEY": 150,
+            "TRAUMA": 2,
+            "LIFE": -1,
+            "ADDICTION": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "举报有害内容拒接",
+          "effects": {
+            "MONEY": 40,
+            "REP": 2,
+            "HUMAN": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "零工经济"
+      ]
+    },
+    {
+      "id": 3796,
+      "title": "神经数据出售",
+      "description": "有公司高价收购真实人类的神经反应数据用于训练情感AI。你需要戴采集头盔生活一周，期间情绪波动会被全程记录。报酬丰厚，但你的喜怒哀乐将永远成为别人的训练素材。隐私被明码标价。",
+      "type": "social",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "出售一周神经数据",
+          "effects": {
+            "MONEY": 600,
+            "DEBT": -2,
+            "TRAUMA": 1,
+            "REP": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝出售保留隐私",
+          "effects": {
+            "HUMAN": 1,
+            "REP": 1,
+            "LIFE": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "零工经济"
+      ]
+    },
+    {
+      "id": 3797,
+      "title": "平台算法压榨",
+      "description": "你全职跑单的平台突然调整派单算法，新手和低分骑手被分配到又远又偏的差单。收入腰斩，申诉却被告知算法是商业机密无法解释。你和一群老骑手围在站点讨说法，站长只是个传话的AI投影。规则像黑箱一样不可触碰。",
+      "type": "social",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 8,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "组织骑手罢工施压",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "MONEY": -100,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "转投竞争对手平台",
+          "effects": {
+            "MONEY": 50,
+            "TECH": 1,
+            "HUMAN": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "零工经济"
+      ]
+    },
+    {
+      "id": 3798,
+      "title": "共享身体租赁",
+      "description": "一种新兴服务允许你把身体按小时租给远程操控者，对方用你的躯壳去干重体力活。报酬可观，但你醒来时浑身酸痛，记忆还有空白。保险公司对租赁期间的伤害概不负责。你的身体成了别人的工具。",
+      "type": "social",
+      "ageRange": [
+        18,
+        50
+      ],
+      "weight": 10,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "出租身体赚快钱",
+          "effects": {
+            "MONEY": 400,
+            "TRAUMA": 2,
+            "LIFE": -2,
+            "DEBT": -1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "拒绝出租保全自我",
+          "effects": {
+            "HUMAN": 1,
+            "LIFE": 1,
+            "REP": 1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "零工经济"
+      ]
+    },
+    {
+      "id": 3799,
+      "title": "零工工会组建",
+      "description": "零工们秘密筹建数字工会，试图用集体谈判对抗平台算法。平台得知后开始精准封杀活跃分子，你的账号也被隐形降权。组织者在一个加密频道里商量对策，门外有无人机盘旋。站出来可能失业，沉默则永无翻身。",
+      "type": "social",
+      "ageRange": [
+        18,
+        60
+      ],
+      "weight": 9,
+      "repeatable": true,
+      "cooldown": 9,
+      "branches": [
+        {
+          "id": "branch_1",
+          "text": "公开加入工会当骨干",
+          "effects": {
+            "REP": 3,
+            "HUMAN": 2,
+            "MONEY": -150,
+            "TRAUMA": 1
+          }
+        },
+        {
+          "id": "branch_2",
+          "text": "匿名捐款暗中支持",
+          "effects": {
+            "MONEY": -100,
+            "REP": 1,
+            "HUMAN": 1,
+            "TRAUMA": -1
+          }
+        }
+      ],
+      "effects": {},
+      "tags": [
+        "美国社会",
+        "零工经济"
+      ]
+    }
+  ]
+}

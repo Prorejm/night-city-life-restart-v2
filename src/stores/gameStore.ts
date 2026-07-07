@@ -31,6 +31,10 @@ interface GameStore {
   // 重置
   resetGame: () => void;
   resetForRebirth: () => void;
+
+  // UI 模式
+  uiMode: 'reigns' | 'classic';
+  setUiMode: (mode: 'reigns' | 'classic') => void;
 }
 
 const INITIAL_STATE = {
@@ -40,6 +44,7 @@ const INITIAL_STATE = {
   currentYear: 2077,
   autoMode: false,
   autoSpeed: 1,
+  uiMode: 'reigns' as const,
   runCount: 0,
   totalDeaths: 0,
   rebirthPoints: 0,
@@ -73,6 +78,8 @@ const useGameStore = create<GameStore>()((set) => ({
     set((state) => ({ runCount: state.runCount + 1 })),
 
   resetGame: () => set({ ...INITIAL_STATE }),
+
+  setUiMode: (mode) => set({ uiMode: mode }),
 
   resetForRebirth: () =>
     set((state) => ({

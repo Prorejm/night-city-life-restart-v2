@@ -1,104 +1,344 @@
-/* ===== GameScreen Layout ===== */
+/* ===== GameScreen Layout - Reigns 式 ===== */
 
 .game-layout {
   display: grid;
-  grid-template-columns: 240px 1fr 280px;
+  grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
-    "header header header"
-    "left   center right"
-    "footer footer footer";
+    "header"
+    "center"
+    "footer";
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+  position: relative;
 }
 
 .game-header {
   grid-area: header;
 }
 
-.game-left {
-  grid-area: left;
-  min-height: 0;
-  overflow: hidden;
-}
-
 .game-center {
   grid-area: center;
   min-height: 0;
   overflow: hidden;
-}
-
-.game-right {
-  grid-area: right;
-  min-height: 0;
-  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .game-footer {
   grid-area: footer;
 }
 
-/* Event log scroll */
-.event-log-scroll {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(0, 255, 247, 0.2) transparent;
+/* ===== 四周属性条 ===== */
+
+.stat-edge-top,
+.stat-edge-bottom {
+  position: absolute;
+  left: 0; right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  z-index: 10;
+  padding: 0 60px;
 }
 
-.event-log-scroll::-webkit-scrollbar {
-  width: 4px;
+.stat-edge-top {
+  top: 0;
 }
 
-.event-log-scroll::-webkit-scrollbar-track {
-  background: transparent;
+.stat-edge-bottom {
+  bottom: 0;
 }
 
-.event-log-scroll::-webkit-scrollbar-thumb {
-  background: rgba(0, 255, 247, 0.2);
-  border-radius: 2px;
+.stat-edge-left,
+.stat-edge-right {
+  position: absolute;
+  top: 0; bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  z-index: 10;
+  padding: 60px 0;
 }
 
-/* Hud stat bar */
-.hud-stat-bar {
-  height: 6px;
-  border-radius: 0;
+.stat-edge-left {
+  left: 0;
+}
+
+.stat-edge-right {
+  right: 0;
+}
+
+/* 单个属性指示条 */
+.stat-edge-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  padding: 3px 8px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  white-space: nowrap;
+  min-width: 80px;
+}
+
+.stat-edge-bar {
+  width: 40px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.08);
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0;
+  flex-shrink: 0;
 }
 
-.hud-stat-fill {
+.stat-edge-fill {
   height: 100%;
-  transition: width 0.5s ease;
+  transition: width 0.5s ease, background-color 0.3s ease;
 }
 
-/* Event card animations */
-@keyframes event-slide-in {
+/* ===== 事件卡片 ===== */
+
+.event-card-reigns {
+  width: 100%;
+  max-width: 420px;
+  min-height: 280px;
+  background: linear-gradient(145deg, rgba(15, 15, 25, 0.95), rgba(8, 8, 16, 0.98));
+  border: 1px solid rgba(0, 212, 170, 0.15);
+  border-radius: 12px;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+  box-shadow:
+    0 0 40px rgba(0, 212, 170, 0.06),
+    0 20px 60px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.event-card-reigns::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  background: linear-gradient(145deg, rgba(0, 212, 170, 0.03), transparent 60%);
+  pointer-events: none;
+}
+
+.event-card-reigns:hover {
+  box-shadow:
+    0 0 60px rgba(0, 212, 170, 0.1),
+    0 20px 60px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.event-card-reigns.swipe-left {
+  transform: translateX(-120%) rotate(-8deg);
+  opacity: 0;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.event-card-reigns.swipe-right {
+  transform: translateX(120%) rotate(8deg);
+  opacity: 0;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.event-card-reigns.card-enter {
+  animation: card-fade-in 0.3s ease-out forwards;
+}
+
+@keyframes card-fade-in {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(30px) scale(0.95);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
 }
 
-.event-card-enter {
-  animation: event-slide-in 0.3s ease-out forwards;
+/* 卡片头部 */
+.card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 16px;
 }
 
-/* Panel slide */
-@keyframes panel-slide-in {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
+.card-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 16px;
+  font-weight: 700;
+  color: #00d4aa;
+  letter-spacing: 0.03em;
+  line-height: 1.4;
+  text-shadow: 0 0 20px rgba(0, 212, 170, 0.3);
 }
 
-.panel-slide-in {
-  animation: panel-slide-in 0.2s ease-out forwards;
+.card-meta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.25);
+  white-space: nowrap;
+  margin-top: 2px;
+}
+
+/* 卡片内容 */
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-description {
+  font-size: 14px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 16px;
+}
+
+/* 效果标签 */
+.card-effects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.card-effect-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 3px;
+  border: 1px solid;
+}
+
+.card-effect-positive {
+  color: #00d4aa;
+  background: rgba(0, 212, 170, 0.08);
+  border-color: rgba(0, 212, 170, 0.15);
+}
+
+.card-effect-negative {
+  color: #ff2d7a;
+  background: rgba(255, 45, 122, 0.08);
+  border-color: rgba(255, 45, 122, 0.15);
+}
+
+/* 分支选项 */
+.card-branches {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.card-branch-btn {
+  width: 100%;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-branch-btn:hover {
+  background: rgba(0, 212, 170, 0.05);
+  border-color: rgba(0, 212, 170, 0.2);
+  color: white;
+}
+
+.card-branch-btn .branch-key {
+  font-size: 10px;
+  color: rgba(0, 212, 170, 0.4);
+  min-width: 18px;
+}
+
+/* 卡片底部操作提示 */
+.card-hint {
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.15);
+  padding-top: 12px;
+}
+
+/* ===== 属性变化动画 ===== */
+
+@keyframes attr-flash-positive {
+  0% { background-color: rgba(0, 212, 170, 0.3); }
+  100% { background-color: transparent; }
+}
+
+@keyframes attr-flash-negative {
+  0% { background-color: rgba(255, 45, 122, 0.3); }
+  100% { background-color: transparent; }
+}
+
+.stat-flash-positive {
+  animation: attr-flash-positive 0.8s ease-out;
+}
+
+.stat-flash-negative {
+  animation: attr-flash-negative 0.8s ease-out;
+}
+
+/* ===== 告警条 ===== */
+
+.alert-bar-reigns {
+  position: absolute;
+  top: 0;
+  left: 0; right: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 6px 16px;
+  background: rgba(224, 64, 64, 0.1);
+  border-bottom: 1px solid rgba(224, 64, 64, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+/* ===== 空状态 ===== */
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  opacity: 0.15;
+}
+
+.empty-state-icon {
+  font-size: 48px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.empty-state-text {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.3);
 }

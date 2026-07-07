@@ -1,4 +1,4 @@
-import { useEffect, useRef, useMemo } from 'react';
+import { useEffect, useRef, useMemo, useState } from 'react';
 import { cn } from '@/lib/utils';
 import useGameStore from '@/stores/gameStore';
 import usePlayerStore from '@/stores/playerStore';
@@ -6,461 +6,360 @@ import useUIStore from '@/stores/uiStore';
 import useGameEngine from '@/hooks/useGameEngine';
 import useAutoPlay from '@/hooks/useAutoPlay';
 import useKeyboard from '@/hooks/useKeyboard';
-import DrugPanel from '@/components/Panels/DrugPanel';
-import HousingPanel from '@/components/Panels/HousingPanel';
-import drugsData from '../../../data/drugs.json';
-import housingData from '../../../data/housing.json';
-import { STAT_NAMES } from '@/engine/GameConfig';
 import { checkCriticalThresholds } from '@/core/PropertySystem';
-import type { CoreAttribute, EventLogEntry } from '@/types';
+import { STAT_NAMES } from '@/engine/GameConfig';
+import type { CoreAttribute } from '@/types';
 import './GameScreen.css';
 
-const CORE_ATTRS: CoreAttribute[] = ['STYLE', 'TECH', 'CHROME', 'MONEY', 'HUMAN'];
+/** 所有属性 key */
+const ALL_ATTRS = [
+  'STYLE', 'TECH', 'CHROME', 'MONEY', 'HUMAN',
+  'LIFE', 'TRAUMA', 'ADDICTION', 'DEBT', 'REP',
+] as const;
 
-const ATTR_BAR_COLORS: Record<string, string> = {
-  STYLE: 'bg-neon-magenta',
-  TECH: 'bg-neon-cyan',
-  CHROME: 'bg-neon-yellow',
-  MONEY: 'bg-neon-green',
-  HUMAN: 'bg-neon-red',
+const ATTR_COLORS: Record<string, string> = {
+  STYLE: '#ff2d7a', TECH: '#00d4aa', CHROME: '#f0a030',
+  MONEY: '#4ade80', HUMAN: '#e04040',
+  LIFE: '#4ade80', TRAUMA: '#e04040',
+  ADDICTION: '#a855f7', DEBT: '#f97316', REP: '#38bdf8',
 };
 
-/** HudHeader - 顶部信息栏 */
-const HudHeader: React.FC = () => {
-  const currentAge = useGameStore((s) => s.currentAge);
-  const currentYear = useGameStore((s) => s.currentYear);
-  const turnCount = useGameStore((s) => s.turnCount);
-
-  return (
-    <div className="flex items-center justify-between border-b border-neon-cyan/10 bg-black/40 px-4 py-1.5">
-      <div className="flex items-center gap-4 font-mono text-xs">
-        <span className="text-neon-cyan">AGE: {Math.round(currentAge * 10) / 10}</span>
-        <span className="text-muted-foreground">|</span>
-        <span className="text-neon-magenta">YR: {currentYear}</span>
-        <span className="text-muted-foreground">|</span>
-        <span className="text-muted-foreground">TURN: {turnCount}</span>
-      </div>
-      <div className="font-display text-[10px] tracking-widest text-muted-foreground/40">
-        NIGHT CITY LIFE RESTART
-      </div>
-    </div>
-  );
+const ATTR_MAX: Record<string, number> = {
+  STYLE: 100, TECH: 100, CHROME: 100, MONEY: 1000, HUMAN: 100,
+  LIFE: 100, TRAUMA: 100, ADDICTION: 100, DEBT: 100, REP: 100,
 };
 
-/** HudPanel - 左侧状态面板（加大字体版） */
-const HudPanel: React.FC = () => {
-  const attributes = usePlayerStore((s) => s.attributes);
-  const housingLevel = usePlayerStore((s) => s.housingLevel);
-  const insuranceLevel = usePlayerStore((s) => s.insuranceLevel);
+// 四周分布：顶3 + 左2 + 右2 + 底3
+const TOP_ATTRS = ['STYLE', 'TECH', 'CHROME'];
+const LEFT_ATTRS = ['LIFE', 'TRAUMA'];
+const RIGHT_ATTRS = ['HUMAN', 'REP'];
+const BOTTOM_ATTRS = ['MONEY', 'ADDICTION', 'DEBT'];
 
-  const maxValues: Record<string, number> = {
-    STYLE: 100, TECH: 100, CHROME: 100, MONEY: 1000, HUMAN: 100,
-    LIFE: 100, TRAUMA: 100,
-  };
+/* ===== 四周属性条 ===== */
 
-  return (
-    <div className="flex h-full flex-col gap-2 border-r border-neon-cyan/10 bg-black/30 p-3">
-      {/* 核心属性 */}
-      <div className="mb-1">
-        <h4 className="mb-2 font-mono text-sm uppercase tracking-widest text-muted-foreground/60">
-          CORE STATS
-        </h4>
-        <div className="space-y-2">
-          {CORE_ATTRS.map((key) => {
-            const val = attributes[key] ?? 0;
-            const max = maxValues[key] ?? 100;
-            const pct = Math.min(100, (val / max) * 100);
-            return (
-              <div key={key}>
-                <div className="mb-0.5 flex items-center justify-between font-mono text-xs">
-                  <span className="text-muted-foreground">{STAT_NAMES[key]}</span>
-                  <span className="text-white/90 font-bold text-sm">{Math.round(val)}</span>
-                </div>
-                <div className="hud-stat-bar">
-                  <div
-                    className={cn('hud-stat-fill', ATTR_BAR_COLORS[key])}
-                    style={{ width: `${pct}%` }}
-                  />
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-
-      {/* 衍生属性 */}
-      <div>
-        <h4 className="mb-2 font-mono text-sm uppercase tracking-widest text-muted-foreground/60">
-          DERIVED
-        </h4>
-        <div className="space-y-1 font-mono text-xs">
-          {(['LIFE', 'TRAUMA', 'ADDICTION', 'DEBT', 'REP'] as const).map((key) => {
-            const val = attributes[key] ?? 0;
-            const max = maxValues[key] ?? 100;
-            const pct = Math.min(100, (val / max) * 100);
-            const color =
-              key === 'LIFE'
-                ? val > 50 ? 'text-neon-green' : val > 20 ? 'text-neon-yellow' : 'text-neon-red'
-                : key === 'TRAUMA'
-                  ? val > 50 ? 'text-neon-red' : 'text-neon-yellow'
-                  : 'text-muted-foreground';
-            return (
-              <div key={key}>
-                <div className="flex items-center justify-between">
-                  <span className="text-muted-foreground">{STAT_NAMES[key]}</span>
-                  <span className={cn('font-bold text-sm', color)}>{Math.round(val)}</span>
-                </div>
-                <div className="hud-stat-bar">
-                  <div
-                    className="hud-stat-fill bg-white/20"
-                    style={{ width: `${pct}%` }}
-                  />
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-
-      {/* 状态信息 */}
-      <div className="mt-auto border-t border-white/5 pt-2">
-        <div className="space-y-1 font-mono text-xs text-muted-foreground">
-          <div className="flex justify-between">
-            <span>居住等级</span>
-            <span className="text-neon-cyan font-bold">{housingLevel}</span>
-          </div>
-          <div className="flex justify-between">
-            <span>保险</span>
-            <span className="text-neon-magenta font-bold">{insuranceLevel}</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-/** EventCard - 事件卡片 */
-interface EventCardProps {
-  entry: EventLogEntry;
+interface StatEdgeItemProps {
+  attrKey: string;
+  value: number;
+  position: 'top' | 'bottom' | 'left' | 'right';
 }
 
-const EventCard: React.FC<EventCardProps> = ({ entry }) => {
+const StatEdgeItem: React.FC<StatEdgeItemProps> = ({ attrKey, value, position }) => {
+  const max = ATTR_MAX[attrKey] ?? 100;
+  const pct = Math.min(100, (value / max) * 100);
+  const color = ATTR_COLORS[attrKey] ?? '#666';
+  const displayName = STAT_NAMES[attrKey as keyof typeof STAT_NAMES] ?? attrKey;
+
+  // 垂直方向（左右）时条横向；水平方向（顶底）时条也横向
   return (
-    <div className="event-card-enter border-l-2 border-neon-cyan/30 bg-white/[0.02] px-4 py-3">
-      <div className="mb-1 flex items-center justify-between">
-        <span className="font-display text-base font-bold text-neon-cyan">
-          {entry.title}
-        </span>
-        <span className="font-mono text-xs text-muted-foreground/60">
-          T{entry.turn} Age {Math.round(entry.age * 10) / 10}
-        </span>
+    <div className="stat-edge-item">
+      <span style={{ color: `${color}88`, fontSize: '10px' }}>{displayName}</span>
+      <div className="stat-edge-bar">
+        <div className="stat-edge-fill" style={{ width: `${pct}%`, backgroundColor: color }} />
       </div>
-      <p className="font-sans text-sm leading-relaxed text-muted-foreground/90">
-        {entry.description}
-      </p>
-      {entry.choice && (
-        <p className="mt-1 font-mono text-[11px] text-neon-magenta/70 italic">
-          → {entry.choice}
-        </p>
-      )}
-      {entry.effects && Object.keys(entry.effects).length > 0 && (
-        <div className="mt-2 flex flex-wrap gap-2">
-          {Object.entries(entry.effects).map(([k, v]) => {
-            const val = v ?? 0;
-            const isPositive = val > 0;
-            return (
-              <span
-                key={k}
-                className={cn(
-                  'font-mono text-xs px-1.5 py-0.5 rounded-sm border',
-                  isPositive
-                    ? 'text-neon-cyan bg-neon-cyan/10 border-neon-cyan/20'
-                    : 'text-neon-red bg-neon-red/10 border-neon-red/20'
-                )}
-              >
-                {k} {isPositive ? '+' : ''}{val}
-              </span>
-            );
-          })}
-        </div>
-      )}
+      <span style={{ color, fontWeight: 700, fontSize: '11px', minWidth: '24px', textAlign: 'right' }}>
+        {Math.round(value)}
+      </span>
     </div>
   );
 };
 
-/** CriticalAlertBar - 危险阈值告警条 */
-const CriticalAlertBar: React.FC = () => {
+const StatEdges: React.FC = () => {
   const attributes = usePlayerStore((s) => s.attributes);
 
-  const alerts = useMemo(() => {
-    return checkCriticalThresholds({ attributes } as any);
-  }, [attributes]);
-
-  if (alerts.length === 0) return null;
-
-  // 优先显示 danger 级别，最多显示 3 条
-  const visible = alerts
-    .sort((a, b) => (a.level === 'danger' ? -1 : 1) - (b.level === 'danger' ? -1 : 1))
-    .slice(0, 3);
-
   return (
-    <div className="shrink-0 flex items-center gap-2 overflow-hidden bg-black/60 border-b border-neon-red/20 px-3 py-1">
-      <span className="shrink-0 text-[10px] font-mono font-bold text-neon-red animate-pulse">
-        ⚠ ALERT
-      </span>
-      <div className="flex gap-3 overflow-hidden">
-        {visible.map((alert, i) => (
-          <span
-            key={`${alert.type}-${i}`}
-            className={cn(
-              'text-[10px] font-mono whitespace-nowrap',
-              alert.level === 'danger' ? 'text-neon-red' : 'text-yellow-400'
-            )}
-          >
-            {alert.message}
-          </span>
+    <>
+      <div className="stat-edge-top">
+        {TOP_ATTRS.map((k) => (
+          <StatEdgeItem key={k} attrKey={k} value={attributes[k] ?? 0} position="top" />
         ))}
       </div>
-    </div>
+      <div className="stat-edge-left">
+        {LEFT_ATTRS.map((k) => (
+          <StatEdgeItem key={k} attrKey={k} value={attributes[k] ?? 0} position="left" />
+        ))}
+      </div>
+      <div className="stat-edge-right">
+        {RIGHT_ATTRS.map((k) => (
+          <StatEdgeItem key={k} attrKey={k} value={attributes[k] ?? 0} position="right" />
+        ))}
+      </div>
+      <div className="stat-edge-bottom">
+        {BOTTOM_ATTRS.map((k) => (
+          <StatEdgeItem key={k} attrKey={k} value={attributes[k] ?? 0} position="bottom" />
+        ))}
+      </div>
+    </>
   );
 };
 
-/** EventLog - 终端式事件日志：column-reverse实现自然底部对齐 */
-const EventLog: React.FC = () => {
-  const eventLog = useUIStore((s) => s.eventLog);
+/* ===== 中央事件卡片 ===== */
 
-  return (
-    <div className="flex h-full flex-col bg-black/20" style={{ height: '100%', minHeight: 0 }}>
-      <div className="border-b border-white/5 px-3 py-1 shrink-0">
-        <h3 className="font-mono text-xs uppercase tracking-widest text-muted-foreground/50">
-          EVENT LOG
-        </h3>
-      </div>
-      <CriticalAlertBar />
-      <div
-        className="event-log-scroll overflow-y-auto"
-        style={{
-          flex: 1,
-          minHeight: 0,
-          display: 'flex',
-          flexDirection: 'column-reverse',
-        }}
-      >
-        <div className="p-2">
-          {eventLog.length === 0 ? (
-            <div className="flex items-center justify-center py-8">
-              <p className="font-mono text-sm text-muted-foreground/30">
-                等待事件到来...
-              </p>
-            </div>
-          ) : (
-            <div className="space-y-1">
-              {eventLog.map((entry) => (
-                <EventCard key={entry.id} entry={entry} />
-              ))}
-            </div>
-          )}
-        </div>
-      </div>
-    </div>
-  );
-};
-
-/** BranchPanel - 事件分支选择面板 */
-const BranchPanel: React.FC = () => {
-  const pendingChoice = useUIStore((s) => s.pendingChoice);
-  const { handleEventChoice } = useGameEngine();
-
-  if (!pendingChoice) return null;
-
-  return (
-    <div className="absolute inset-0 z-50 flex items-center justify-center bg-black/70">
-      <div className="mx-4 w-full max-w-lg rounded-sm border border-neon-cyan/30 bg-black/90 p-5 shadow-[0_0_30px_rgba(0,212,170,0.15)]">
-        <h3 className="mb-2 font-display text-lg font-bold text-neon-cyan">
-          {pendingChoice.title}
-        </h3>
-        <p className="mb-4 font-mono text-sm leading-relaxed text-muted-foreground/80">
-          {pendingChoice.description}
-        </p>
-        <div className="space-y-2">
-          {pendingChoice.branches.map((branch, idx) => (
-            <button
-              key={branch.id}
-              onClick={() => handleEventChoice(pendingChoice.eventId, branch.id)}
-              className="w-full rounded-sm border border-white/10 bg-white/[0.03] px-4 py-3 text-left font-mono text-sm text-muted-foreground/90 transition-all hover:border-neon-cyan/30 hover:bg-neon-cyan/5 hover:text-white"
-            >
-              <span className="mr-2 text-neon-cyan/50">{idx + 1}.</span>
-              {branch.text}
-            </button>
-          ))}
-        </div>
-        <p className="mt-3 text-center font-mono text-[10px] text-muted-foreground/30">
-          数字键 1-3 快速选择
-        </p>
-      </div>
-    </div>
-  );
-};
-
-/** RightPanel - 右侧面板容器 */
-const RightPanel: React.FC = () => {
-  const drugPanelOpen = useUIStore((s) => s.drugPanelOpen);
-  const housingPanelOpen = useUIStore((s) => s.housingPanelOpen);
-  const closeAllPanels = useUIStore((s) => s.closeAllPanels);
-
-  const attributes = usePlayerStore((s) => s.attributes);
-  const drugs = usePlayerStore((s) => s.currentDrugs);
-  const drugAddiction = usePlayerStore((s) => s.drugAddiction);
-  const housingLevel = usePlayerStore((s) => s.housingLevel);
-
-  const drugDb = ((drugsData as any).allDrugs ?? []) as any[];
-  const housingDb = ((housingData as any).levels ?? []) as any[];
-
-  return (
-    <div className="flex h-full flex-col border-l border-neon-cyan/10 bg-black/30 min-h-0">
-      <div className="flex items-center justify-between border-b border-white/5 px-3 py-1 shrink-0">
-        <h3 className="font-mono text-xs uppercase tracking-widest text-muted-foreground/50">
-          PANELS
-        </h3>
-        {(drugPanelOpen || housingPanelOpen) && (
-          <button onClick={closeAllPanels} className="text-[10px] font-mono text-muted-foreground/40 hover:text-neon-cyan">
-            ✕
-          </button>
-        )}
-      </div>
-      <div className="flex-1 overflow-y-auto p-2" style={{ minHeight: 0 }}>
-        {drugPanelOpen && (
-          <div className="panel-slide-in">
-            <DrugPanel
-              addictionLevel={attributes.ADDICTION ?? 0}
-              currentDrugs={drugs}
-              drugAddiction={drugAddiction}
-              drugDatabase={drugDb}
-            />
-          </div>
-        )}
-        {housingPanelOpen && (
-          <div className="panel-slide-in">
-            <HousingPanel
-              currentLevel={housingLevel as any}
-              housingDatabase={housingDb}
-              availableFunds={attributes.MONEY ?? 0}
-            />
-          </div>
-        )}
-        {!drugPanelOpen && !housingPanelOpen && (
-          <div className="flex h-full items-center justify-center">
-            <p className="font-mono text-xs text-muted-foreground/20 text-center leading-relaxed">
-              按 4-5 切换面板<br />
-              4:药物 5:住房
-            </p>
-          </div>
-        )}
-      </div>
-    </div>
-  );
-};
-
-/** Footer - 底部控制栏 */
-interface FooterProps {
-  processTurn: () => void;
+/** 当前展示的卡片数据 */
+interface CardData {
+  id: string;
+  title: string;
+  description: string;
+  effects: Record<string, number> | null | undefined;
+  turn: number;
+  age: number;
+  hasBranches: boolean;
+  branches: { id: string; text: string }[];
+  isPending: boolean; // 是否等待玩家选择
 }
 
-const Footer: React.FC<FooterProps> = ({ processTurn }) => {
-  const autoMode = useGameStore((s) => s.autoMode);
-  const autoSpeed = useGameStore((s) => s.autoSpeed);
-  const toggleAuto = useGameStore((s) => s.toggleAuto);
-  const setAutoSpeed = useGameStore((s) => s.setAutoSpeed);
+const EventCardReigns: React.FC<{
+  card: CardData | null;
+  onContinue: () => void;
+  onBranchSelect: (branchId: string) => void;
+}> = ({ card, onContinue, onBranchSelect }) => {
+  const cardRef = useRef<HTMLDivElement>(null);
 
-  const handleContinue = () => {
-    processTurn();
+  // 点击卡片 = 继续（无分支时）
+  const handleCardClick = () => {
+    if (!card || card.isPending) return;
+    onContinue();
   };
 
+  if (!card) {
+    return (
+      <div className="empty-state">
+        <div className="empty-state-icon">◇</div>
+        <div className="empty-state-text">等待事件...</div>
+      </div>
+    );
+  }
+
   return (
-    <div className="flex items-center justify-between border-t border-neon-cyan/10 bg-black/40 px-4 py-2">
-      {/* 继续按钮 */}
-      <button
-        onClick={handleContinue}
-        className="cyber-button !px-8 !py-1.5 !text-xs"
-      >
-        [ 继续 ]
-      </button>
+    <div
+      ref={cardRef}
+      className={cn('event-card-reigns', 'card-enter')}
+      onClick={handleCardClick}
+    >
+      <div className="card-header">
+        <div className="card-title">{card.title}</div>
+        <div className="card-meta">T{card.turn} · {Math.round(card.age * 10) / 10}岁</div>
+      </div>
 
-      {/* 自动模式控制 */}
-      <div className="flex items-center gap-3">
-        <button
-          onClick={() => toggleAuto()}
-          className={cn(
-            'font-mono text-xs transition-colors',
-            autoMode
-              ? 'text-neon-cyan'
-              : 'text-muted-foreground hover:text-white'
-          )}
-        >
-          [{autoMode ? 'AUTO:ON' : 'AUTO:OFF'}]
-        </button>
+      <div className="card-body">
+        <p className="card-description">{card.description}</p>
 
-        {autoMode && (
-          <div className="flex items-center gap-1.5 font-mono text-xs text-muted-foreground">
-            <span>速度</span>
-            {[1, 2, 3, 5].map((s) => (
+        {/* 效果标签 */}
+        {card.effects && Object.keys(card.effects).length > 0 && (
+          <div className="card-effects">
+            {Object.entries(card.effects).map(([k, v]) => {
+              const val = v ?? 0;
+              return (
+                <span
+                  key={k}
+                  className={cn(
+                    'card-effect-tag',
+                    val > 0 ? 'card-effect-positive' : 'card-effect-negative'
+                  )}
+                >
+                  {STAT_NAMES[k as keyof typeof STAT_NAMES] ?? k} {val > 0 ? '+' : ''}{val}
+                </span>
+              );
+            })}
+          </div>
+        )}
+
+        {/* 分支选项 */}
+        {card.isPending && card.branches.length > 0 && (
+          <div className="card-branches">
+            {card.branches.map((b, idx) => (
               <button
-                key={s}
-                onClick={() => setAutoSpeed(s)}
-                className={cn(
-                  'px-1.5 py-0.5 transition-colors',
-                  autoSpeed === s
-                    ? 'text-neon-cyan'
-                    : 'text-muted-foreground/50 hover:text-white'
-                )}
+                key={b.id}
+                className="card-branch-btn"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onBranchSelect(b.id);
+                }}
               >
-                {s}x
+                <span className="branch-key">{idx + 1}</span>
+                {b.text}
               </button>
             ))}
           </div>
         )}
       </div>
 
-      {/* 快捷键提示 */}
-      <div className="flex gap-3 font-mono text-[9px] text-muted-foreground/30">
-        <span>Space:继续</span>
-        <span>A:自动</span>
-        <span>4:药物 5:住房</span>
+      <div className="card-hint">
+        {card.isPending
+          ? `按 1-${card.branches.length} 选择分支`
+          : '点击或按 Space 继续'}
       </div>
     </div>
   );
 };
 
-/** GameScreen 主组件 */
+/* ===== 危险告警 ===== */
+
+const CriticalAlertBar: React.FC = () => {
+  const attributes = usePlayerStore((s) => s.attributes);
+  const alerts = useMemo(() => {
+    return checkCriticalThresholds({ attributes } as any);
+  }, [attributes]);
+
+  if (alerts.length === 0) return null;
+
+  const visible = alerts
+    .sort((a, b) => (a.level === 'danger' ? -1 : 1) - (b.level === 'danger' ? -1 : 1))
+    .slice(0, 3);
+
+  return (
+    <div className="alert-bar-reigns">
+      <span style={{ fontSize: '10px', fontFamily: 'monospace', fontWeight: 700, color: '#e04040', animation: 'pulse 1s infinite' }}>
+        ⚠
+      </span>
+      {visible.map((a, i) => (
+        <span
+          key={`${a.type}-${i}`}
+          style={{
+            fontSize: '10px',
+            fontFamily: 'monospace',
+            color: a.level === 'danger' ? '#e04040' : '#f0a030',
+          }}
+        >
+          {a.message}
+        </span>
+      ))}
+    </div>
+  );
+};
+
+/* ===== 顶部信息栏 ===== */
+
+const HudHeader: React.FC = () => {
+  const currentAge = useGameStore((s) => s.currentAge);
+  const currentYear = useGameStore((s) => s.currentYear);
+  const turnCount = useGameStore((s) => s.turnCount);
+  const autoMode = useGameStore((s) => s.autoMode);
+
+  return (
+    <div className="flex items-center justify-between border-b border-white/5 bg-black/60 backdrop-blur-sm px-4 py-1.5">
+      <div className="flex items-center gap-4 font-mono text-xs">
+        <span style={{ color: '#00d4aa' }}>AGE {Math.round(currentAge * 10) / 10}</span>
+        <span style={{ color: 'rgba(255,255,255,0.15)' }}>|</span>
+        <span style={{ color: '#ff2d7a' }}>2077</span>
+        <span style={{ color: 'rgba(255,255,255,0.15)' }}>|</span>
+        <span style={{ color: 'rgba(255,255,255,0.3)' }}>T{turnCount}</span>
+      </div>
+      <div style={{ fontFamily: 'monospace', fontSize: '9px', letterSpacing: '0.15em', color: 'rgba(255,255,255,0.15)' }}>
+        NIGHT CITY
+      </div>
+      {autoMode && (
+        <span style={{ fontFamily: 'monospace', fontSize: '10px', color: '#00d4aa' }}>AUTO</span>
+      )}
+    </div>
+  );
+};
+
+/* ===== 底部控制栏 ===== */
+
+interface FooterProps {
+  processTurn: () => void;
+}
+
+const Footer: React.FC<FooterProps> = ({ processTurn }) => {
+  const autoMode = useGameStore((s) => s.autoMode);
+  const uiMode = useGameStore((s) => s.uiMode);
+  const toggleAuto = useGameStore((s) => s.toggleAuto);
+  const setUiMode = useGameStore((s) => s.setUiMode);
+
+  return (
+    <div className="flex items-center justify-between border-t border-white/5 bg-black/60 backdrop-blur-sm px-4 py-1.5">
+      <button onClick={processTurn} className="font-mono text-xs text-white/40 hover:text-white/80 transition-colors">
+        [ 继续 ]
+      </button>
+      <div className="flex items-center gap-4">
+        <button onClick={() => toggleAuto()} className="font-mono text-xs text-white/30 hover:text-white/60 transition-colors">
+          {autoMode ? '[AUTO:ON]' : '[AUTO:OFF]'}
+        </button>
+        <button
+          onClick={() => setUiMode(uiMode === 'reigns' ? 'classic' : 'reigns')}
+          className="font-mono text-xs text-white/20 hover:text-white/50 transition-colors"
+        >
+          [{uiMode === 'reigns' ? 'REIGNS' : 'CLASSIC'}]
+        </button>
+      </div>
+    </div>
+  );
+};
+
+/* ===== GameScreen 主组件 ===== */
+
 const GameScreen: React.FC = () => {
   const { processTurn, handleEventChoice } = useGameEngine();
+  const eventLog = useUIStore((s) => s.eventLog);
   const pendingChoice = useUIStore((s) => s.pendingChoice);
+  const [cardAnimKey, setCardAnimKey] = useState(0);
+
+  // 当前展示的卡片：优先 pendingChoice，否则取最新日志条目
+  const currentCard: CardData | null = useMemo(() => {
+    if (pendingChoice) {
+      return {
+        id: `pending-${pendingChoice.eventId}`,
+        title: pendingChoice.title,
+        description: pendingChoice.description,
+        effects: null,
+        turn: useGameStore.getState().turnCount,
+        age: useGameStore.getState().currentAge,
+        hasBranches: true,
+        branches: pendingChoice.branches,
+        isPending: true,
+      };
+    }
+    if (eventLog.length > 0) {
+      const last = eventLog[eventLog.length - 1];
+      return {
+        id: last.id,
+        title: last.title,
+        description: last.description,
+        effects: last.effects,
+        turn: last.turn,
+        age: last.age,
+        hasBranches: false,
+        branches: [],
+        isPending: false,
+      };
+    }
+    return null;
+  }, [eventLog, pendingChoice]);
+
+  // 当 eventLog 变化时刷新卡片动画
+  useEffect(() => {
+    setCardAnimKey((k) => k + 1);
+  }, [eventLog.length, pendingChoice]);
+
+  // 继续按钮
+  const handleContinue = () => {
+    if (pendingChoice) return; // 有分支待选时不能继续
+    processTurn();
+  };
+
+  // 分支选择
+  const handleBranchSelect = (branchId: string) => {
+    if (!pendingChoice) return;
+    handleEventChoice(pendingChoice.eventId, branchId);
+  };
 
   // 自动播放
   useAutoPlay(processTurn);
 
-  // 绑定键盘快捷键
+  // 键盘快捷键
   useKeyboard({
     onSpace: () => {
-      // 有分支待选时，Space不处理
       if (useUIStore.getState().pendingChoice) return;
       processTurn();
     },
     onAuto: () => useGameStore.getState().toggleAuto(),
     onNumber: (n) => {
-      // 如果有分支待选，数字键用于选择分支
       const pc = useUIStore.getState().pendingChoice;
       if (pc) {
         const idx = n - 1;
         if (idx >= 0 && idx < pc.branches.length) {
           handleEventChoice(pc.eventId, pc.branches[idx].id);
         }
-        return;
-      }
-      // 没有分支待选时，数字键映射到面板切换
-      if (n >= 4 && n <= 5) {
-        const panels = ['drug', 'housing'];
-        useUIStore.getState().togglePanel(panels[n - 4]);
       }
     },
   });
@@ -473,28 +372,27 @@ const GameScreen: React.FC = () => {
 
   return (
     <div className="game-layout">
-      {/* 头部 */}
       <div className="game-header">
         <HudHeader />
       </div>
 
-      {/* 左侧面板 */}
-      <div className="game-left">
-        <HudPanel />
+      <div className="game-center">
+        {/* 四周属性条 */}
+        <StatEdges />
+
+        {/* 危险告警 */}
+        <CriticalAlertBar />
+
+        {/* 中央事件卡片 */}
+        <div key={cardAnimKey} style={{ zIndex: 5 }}>
+          <EventCardReigns
+            card={currentCard}
+            onContinue={handleContinue}
+            onBranchSelect={handleBranchSelect}
+          />
+        </div>
       </div>
 
-      {/* 中央事件日志 + 分支选择叠加层 */}
-      <div className="game-center relative">
-        <EventLog />
-        {pendingChoice && <BranchPanel />}
-      </div>
-
-      {/* 右侧面板 */}
-      <div className="game-right">
-        <RightPanel />
-      </div>
-
-      {/* 底部控制栏 */}
       <div className="game-footer">
         <Footer processTurn={processTurn} />
       </div>

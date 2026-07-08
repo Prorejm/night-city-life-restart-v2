@@ -122,9 +122,8 @@ export function checkWithdrawal(playerState: PlayerState): boolean {
     const lastDoseTurn = _lastDoseTracker.get(drugId)?.get('lastDoseTurn');
     if (lastDoseTurn === undefined) return true;
 
-    // 如果超过 duration*2 的回合没有服药，触发戒断
     const turnsSinceLastDose = playerState.totalPlayTime - lastDoseTurn;
-    if (turnsSinceLastDose > (drug as any).duration * 2) {
+    if (turnsSinceLastDose > drug.duration * 2) {
       return true;
     }
   }

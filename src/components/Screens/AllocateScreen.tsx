@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 import { cn } from '@/lib/utils';
-import useGameStore from '@/stores/gameStore';
 import usePlayerStore from '@/stores/playerStore';
+import useGameEngine from '@/hooks/useGameEngine';
 
 const CORE_ATTRIBUTES = ['STYLE', 'TECH', 'CHROME', 'MONEY', 'HUMAN'] as const;
 
@@ -46,7 +46,7 @@ const MAX_PER_ATTR = 30;
 const TOTAL_POINTS = 25;
 
 const AllocateScreen: React.FC<AllocateScreenProps> = ({ onConfirm }) => {
-  const setPhase = useGameStore((s) => s.setPhase);
+  const { confirmAllocation } = useGameEngine();
 
   const [attrs, setAttrs] = useState<Record<string, number>>(() => {
     const base: Record<string, number> = {};
@@ -80,13 +80,11 @@ const AllocateScreen: React.FC<AllocateScreenProps> = ({ onConfirm }) => {
   };
 
   const handleConfirm = () => {
-    // 写入 playerStore
     const playerStore = usePlayerStore.getState();
     const finalAttrs: Record<string, number> = {};
     for (const key of CORE_ATTRIBUTES) {
       finalAttrs[key] = attrs[key];
     }
-    // 保留其他属性
     usePlayerStore.setState({
       attributes: {
         ...playerStore.attributes,
@@ -95,7 +93,7 @@ const AllocateScreen: React.FC<AllocateScreenProps> = ({ onConfirm }) => {
     });
 
     onConfirm?.(finalAttrs);
-    setPhase('PLAYING');
+    confirmAllocation();
   };
 
   return (

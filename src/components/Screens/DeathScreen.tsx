@@ -37,7 +37,7 @@ const DeathScreen: React.FC<DeathScreenProps> = ({ onRestart, onBackToMenu }) =>
   const [glitchActive, setGlitchActive] = useState(false);
   const [showContent, setShowContent] = useState(false);
   const [showDetails, setShowDetails] = useState(false);
-  const [selectedInherit, setSelectedInherit] = useState<string[]>([]);
+  const [selectedInherit, setSelectedInherit] = useState<number[]>([]);
 
   // 死亡记录
   const lastDeath = useMemo(() => {
@@ -98,20 +98,11 @@ const DeathScreen: React.FC<DeathScreenProps> = ({ onRestart, onBackToMenu }) =>
   const handleRestart = () => {
     onRestart?.();
 
-    // 收集玩家选择的继承项
-    const wantsAttr = selectedInherit.includes('boost_attr');
-    const wantsMoney = selectedInherit.includes('boost_money');
-    const selectedTalentNames = selectedInherit.filter(
-      (i) => i !== 'boost_attr' && i !== 'boost_money'
-    );
-
-    // 查找选中的天赋 ID
-    const selectedTalentIds = selectedTalentNames
-      .map((name) => talents.find((t) => t.name === name)?.id)
-      .filter((id): id is number => id !== undefined);
+    const wantsAttr = selectedInherit.includes(-1);
+    const wantsMoney = selectedInherit.includes(-2);
+    const selectedTalentIds = selectedInherit.filter((id) => id > 0);
 
     if (wantsAttr || wantsMoney || selectedTalentIds.length > 0) {
-      // 携带遗产重开
       const options: RebirthOptions = {
         canInheritTalent: selectedTalentIds.length > 0,
         canBoostAttribute: wantsAttr && rebirthPoints >= 5,
@@ -124,7 +115,6 @@ const DeathScreen: React.FC<DeathScreenProps> = ({ onRestart, onBackToMenu }) =>
         selectedTalentIds.length > 0 ? selectedTalentIds : undefined
       );
     } else {
-      // 无继承，全新开局
       startNewGame();
     }
   };
@@ -135,11 +125,11 @@ const DeathScreen: React.FC<DeathScreenProps> = ({ onRestart, onBackToMenu }) =>
     setPhase('MENU');
   };
 
-  const handleInheritToggle = (item: string) => {
+  const handleInheritToggle = (id: number) => {
     setSelectedInherit((prev) =>
-      prev.includes(item)
-        ? prev.filter((i) => i !== item)
-        : [...prev, item]
+      prev.includes(id)
+        ? prev.filter((i) => i !== id)
+        : [...prev, id]
     );
   };
 
@@ -266,10 +256,10 @@ const DeathScreen: React.FC<DeathScreenProps> = ({ onRestart, onBackToMenu }) =>
                   {inheritableTalents.map((t) => (
                     <button
                       key={t.id}
-                      onClick={() => handleInheritToggle(t.name)}
+                      onClick={() => handleInheritToggle(t.id)}
                       className={cn(
                         'rounded-sm border px-2 py-0.5 text-[10px] transition-all',
-                        selectedInherit.includes(t.name)
+                        selectedInherit.includes(t.id)
                           ? 'border-neon-cyan/50 text-neon-cyan bg-neon-cyan/10'
                           : 'border-white/10 text-muted-foreground hover:border-white/30'
                       )}
@@ -281,30 +271,36 @@ const DeathScreen: React.FC<DeathScreenProps> = ({ onRestart, onBackToMenu }) =>
               </div>
             )}
             {rebirthOptions.canBoostAttribute && (
-              <div className="flex items-center justify-between">
+              <button
+                onClick={() => handleInheritToggle(-1)}
+                className="flex w-full items-center justify-between text-left"
+              >
                 <span className="text-muted-foreground">属性增强(+3)</span>
                 <span className={cn(
                   'px-1.5 py-0.5 text-[10px]',
-                  selectedInherit.includes('boost_attr')
+                  selectedInherit.includes(-1)
                     ? 'text-neon-cyan'
                     : 'text-muted-foreground/50'
                 )}>
                   {rebirthPoints >= 5 ? '[可用]' : '[点数不足]'}
                 </span>
-              </div>
+              </button>
             )}
             {rebirthOptions.canBoostMoney && (
-              <div className="flex items-center justify-between">
+              <button
+                onClick={() => handleInheritToggle(-2)}
+                className="flex w-full items-center justify-between text-left"
+              >
                 <span className="text-muted-foreground">额外资金(+1000)</span>
                 <span className={cn(
                   'px-1.5 py-0.5 text-[10px]',
-                  selectedInherit.includes('boost_money')
+                  selectedInherit.includes(-2)
                     ? 'text-neon-cyan'
                     : 'text-muted-foreground/50'
                 )}>
                   {rebirthPoints >= 3 ? '[可用]' : '[点数不足]'}
                 </span>
-              </div>
+              </button>
             )}
           </div>
         </div>

@@ -8,7 +8,7 @@ import useAutoPlay from '@/hooks/useAutoPlay';
 import useKeyboard from '@/hooks/useKeyboard';
 import { checkCriticalThresholds } from '@/core/PropertySystem';
 import { STAT_NAMES } from '@/engine/GameConfig';
-import type { CoreAttribute } from '@/types';
+import type { AttributeType } from '@/types';
 import './GameScreen.css';
 
 /** 所有属性 key */
@@ -30,10 +30,10 @@ const ATTR_MAX: Record<string, number> = {
 };
 
 // 四周分布：顶3 + 左2 + 右2 + 底3
-const TOP_ATTRS = ['STYLE', 'TECH', 'CHROME'];
-const LEFT_ATTRS = ['LIFE', 'TRAUMA'];
-const RIGHT_ATTRS = ['HUMAN', 'REP'];
-const BOTTOM_ATTRS = ['MONEY', 'ADDICTION', 'DEBT'];
+const TOP_ATTRS: AttributeType[] = ['STYLE', 'TECH', 'CHROME'];
+const LEFT_ATTRS: AttributeType[] = ['LIFE', 'TRAUMA'];
+const RIGHT_ATTRS: AttributeType[] = ['HUMAN', 'REP'];
+const BOTTOM_ATTRS: AttributeType[] = ['MONEY', 'ADDICTION', 'DEBT'];
 
 /* ===== 四周属性条 ===== */
 

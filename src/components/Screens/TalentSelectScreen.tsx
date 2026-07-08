@@ -1,8 +1,8 @@
 import { useEffect, useState, useMemo } from 'react';
 import { cn } from '@/lib/utils';
 import useGameStore from '@/stores/gameStore';
-import usePlayerStore from '@/stores/playerStore';
 import { generateTalentPool, getGradeLabel } from '@/core/TalentSystem';
+import useGameEngine from '@/hooks/useGameEngine';
 import type { Talent } from '@/types';
 
 const MAX_SELECTION = 3;
@@ -33,7 +33,7 @@ interface TalentSelectScreenProps {
 }
 
 const TalentSelectScreen: React.FC<TalentSelectScreenProps> = ({ onConfirm }) => {
-  const setPhase = useGameStore((s) => s.setPhase);
+  const { confirmTalents } = useGameEngine();
 
   const [talentPool, setTalentPool] = useState<Talent[]>([]);
   const [selectedIds, setSelectedIds] = useState<Set<number>>(new Set());
@@ -80,20 +80,11 @@ const TalentSelectScreen: React.FC<TalentSelectScreenProps> = ({ onConfirm }) =>
 
   const handleConfirm = () => {
     if (!canConfirm || confirmed) return;
+    setConfirmed(true);
 
-    const selected = talentPool.filter((t) => selectedIds.has(t.id));
-    // 将天赋写入 playerStore
-    const playerStore = usePlayerStore.getState();
-    for (const talent of selected) {
-      if (!playerStore.talents.find((t) => t.id === talent.id)) {
-        playerStore.talents.push({ ...talent });
-      }
-    }
-    usePlayerStore.setState({
-      talents: [...playerStore.talents],
-    });
-
-    setPhase('ALLOCATE');
+    const selectedIdArray = Array.from(selectedIds);
+    onConfirm?.(selectedIdArray);
+    confirmTalents(selectedIdArray);
   };
 
   const selectedList = useMemo(

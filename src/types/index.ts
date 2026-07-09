@@ -93,14 +93,16 @@ export interface Item {
 export interface Drug {
   id: string;
   name: string;
-  type: 'opioid' | 'stimulant' | 'hallucinogen' | 'cyberdrug' | 'alcohol';
+  type: string;
   addictionRate: number;
   addictionThreshold: number;
-  effects: AttributeEffects;
-  withdrawalEffects: AttributeEffects;
+  effects: Record<string, number | undefined>;
+  withdrawalEffects: Record<string, number | undefined>;
   price: number;
   legal: boolean;
   description: string;
+  duration: number;
+  overdoseRisk?: number;
 }
 
 // ========== 住房系统 ==========

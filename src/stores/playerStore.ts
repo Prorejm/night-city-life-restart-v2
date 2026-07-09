@@ -1,67 +1,53 @@
 import { create } from 'zustand';
+import { INITIAL_STATS } from '@/engine/GameConfig';
+import type { AttributeType, HousingLevel, InsuranceLevel, Talent, Buff } from '@/types';
 
 interface PlayerStore {
-  // 基础属性
-  attributes: Record<string, number>;
-
-  // 装备/状态
+  attributes: Record<AttributeType, number>;
   equippedCyberware: string[];
   inventory: string[];
-  activeBuffs: any[];
-  housingLevel: string;
-  insuranceLevel: string;
-
-  // 天赋
-  talents: any[];
-
-  // 药物状态
+  activeBuffs: Buff[];
+  housing: HousingLevel;
+  insurance: InsuranceLevel;
+  talents: Talent[];
+  exp: Partial<Record<AttributeType, number>>;
+  level: number;
   drugAddiction: Record<string, number>;
   currentDrugs: string[];
-
-  // 死亡统计
   deathCount: number;
+  totalPlayTime: number;
 
-  // 方法
-  setAttribute: (key: string, value: number) => void;
-  modifyAttribute: (key: string, delta: number) => void;
-  setAttributes: (attrs: Record<string, number>) => void;
+  setAttribute: (key: AttributeType, value: number) => void;
+  modifyAttribute: (key: AttributeType, delta: number) => void;
+  setAttributes: (attrs: Partial<Record<AttributeType, number>>) => void;
   addItem: (itemId: string) => void;
   removeItem: (itemId: string) => void;
   equipCyberware: (id: string) => void;
   removeCyberware: (id: string) => void;
-  setHousing: (level: string) => void;
-  setInsurance: (level: string) => void;
-  addBuff: (buff: any) => void;
+  setHousing: (level: HousingLevel) => void;
+  setInsurance: (level: InsuranceLevel) => void;
+  addBuff: (buff: Buff) => void;
   removeBuff: (buffId: string) => void;
   setDrugAddiction: (drugId: string, level: number) => void;
   addCurrentDrug: (drugId: string) => void;
+  setTalents: (talents: Talent[]) => void;
   resetPlayer: () => void;
 }
 
-const INITIAL_ATTRIBUTES: Record<string, number> = {
-  STYLE: 10,
-  TECH: 10,
-  CHROME: 10,
-  MONEY: 500,
-  HUMAN: 50,
-  LIFE: 80,
-  TRAUMA: 0,
-  ADDICTION: 0,
-  DEBT: 0,
-  REP: 0,
-};
-
 const INITIAL_STATE = {
-  attributes: { ...INITIAL_ATTRIBUTES },
+  attributes: { ...INITIAL_STATS },
   equippedCyberware: [] as string[],
   inventory: [] as string[],
-  activeBuffs: [] as any[],
-  housingLevel: 'F',
-  insuranceLevel: 'none',
-  talents: [] as any[],
+  activeBuffs: [] as Buff[],
+  housing: 'F' as HousingLevel,
+  insurance: 'none' as InsuranceLevel,
+  talents: [] as Talent[],
+  exp: {} as Partial<Record<AttributeType, number>>,
+  level: 1,
   drugAddiction: {} as Record<string, number>,
   currentDrugs: [] as string[],
   deathCount: 0,
+  totalPlayTime: 0,
 };
 
 const usePlayerStore = create<PlayerStore>()((set) => ({
@@ -105,9 +91,9 @@ const usePlayerStore = create<PlayerStore>()((set) => ({
       equippedCyberware: state.equippedCyberware.filter((cid) => cid !== id),
     })),
 
-  setHousing: (level) => set({ housingLevel: level }),
+  setHousing: (level) => set({ housing: level }),
 
-  setInsurance: (level) => set({ insuranceLevel: level }),
+  setInsurance: (level) => set({ insurance: level }),
 
   addBuff: (buff) =>
     set((state) => ({
@@ -116,7 +102,7 @@ const usePlayerStore = create<PlayerStore>()((set) => ({
 
   removeBuff: (buffId) =>
     set((state) => ({
-      activeBuffs: state.activeBuffs.filter((b: any) => b.id !== buffId),
+      activeBuffs: state.activeBuffs.filter((b) => b.id !== buffId),
     })),
 
   setDrugAddiction: (drugId, level) =>
@@ -129,7 +115,9 @@ const usePlayerStore = create<PlayerStore>()((set) => ({
       currentDrugs: [...state.currentDrugs, drugId],
     })),
 
-  resetPlayer: () => set({ ...INITIAL_STATE, attributes: { ...INITIAL_ATTRIBUTES } }),
+  setTalents: (talents) => set({ talents }),
+
+  resetPlayer: () => set({ ...INITIAL_STATE, attributes: { ...INITIAL_STATS } }),
 }));
 
 export default usePlayerStore;

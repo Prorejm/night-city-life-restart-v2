@@ -42,53 +42,23 @@ function useGameEngine() {
           getState: () => {
             const s = playerStore.getState();
             return {
-              attributes: s.attributes as Record<string, number>,
-              exp: {},
-              level: 1,
+              attributes: s.attributes,
+              exp: s.exp,
+              level: s.level,
               talents: s.talents,
               equippedCyberware: s.equippedCyberware,
               inventory: s.inventory,
               activeBuffs: s.activeBuffs,
-              housing: s.housingLevel as HousingLevel,
-              insurance: s.insuranceLevel as InsuranceLevel,
+              housing: s.housing,
+              insurance: s.insurance,
               drugAddiction: s.drugAddiction,
               currentDrugs: s.currentDrugs,
               deathCount: s.deathCount,
-              totalPlayTime: 0,
+              totalPlayTime: s.totalPlayTime,
             };
           },
           setState: (partial: any) => {
-            // 将 engine 的 state 映射回 playerStore
-            if (partial.attributes) {
-              playerStore.setState({ attributes: partial.attributes });
-            }
-            if (partial.talents) {
-              playerStore.setState({ talents: partial.talents });
-            }
-            if (partial.housing) {
-              playerStore.setState({ housingLevel: partial.housing });
-            }
-            if (partial.insurance) {
-              playerStore.setState({ insuranceLevel: partial.insurance });
-            }
-            if (partial.equippedCyberware) {
-              playerStore.setState({ equippedCyberware: partial.equippedCyberware });
-            }
-            if (partial.inventory) {
-              playerStore.setState({ inventory: partial.inventory });
-            }
-            if (partial.activeBuffs) {
-              playerStore.setState({ activeBuffs: partial.activeBuffs });
-            }
-            if (partial.drugAddiction) {
-              playerStore.setState({ drugAddiction: partial.drugAddiction });
-            }
-            if (partial.currentDrugs) {
-              playerStore.setState({ currentDrugs: partial.currentDrugs });
-            }
-            if (partial.deathCount !== undefined) {
-              playerStore.setState({ deathCount: partial.deathCount });
-            }
+            playerStore.setState(partial);
           },
         },
         uiStore: {
@@ -144,6 +114,19 @@ function useGameEngine() {
     [getEngine]
   );
 
+  const confirmTalents = useCallback(
+    (talentIds: number[]) => {
+      const engine = getEngine();
+      engine.confirmTalents(talentIds);
+    },
+    [getEngine]
+  );
+
+  const confirmAllocation = useCallback(() => {
+    const engine = getEngine();
+    engine.confirmAllocation();
+  }, [getEngine]);
+
   const prepareRebirth = useCallback((): RebirthOptions => {
     const engine = getEngine();
     return engine.prepareRebirth();
@@ -166,12 +149,14 @@ function useGameEngine() {
       processTurn,
       handleEventChoice,
       startNewGame,
+      confirmTalents,
+      confirmAllocation,
       prepareRebirth,
       executeRebirth,
       getPhase,
       getEngine,
     }),
-    [processTurn, handleEventChoice, startNewGame, prepareRebirth, executeRebirth, getPhase, getEngine]
+    [processTurn, handleEventChoice, startNewGame, confirmTalents, confirmAllocation, prepareRebirth, executeRebirth, getPhase, getEngine]
   );
 }
 

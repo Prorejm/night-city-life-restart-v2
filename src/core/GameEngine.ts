@@ -158,6 +158,51 @@ export class GameEngine {
   }
 
   /**
+   * 确认天赋选择并应用天赋效果，然后进入属性分配阶段
+   * @param talentIds 选中的天赋 ID 列表
+   */
+  confirmTalents(talentIds: number[]): void {
+    const playerState = this.stores.playerStore.getState();
+
+    for (const talentId of talentIds) {
+      selectTalent(talentId, playerState);
+    }
+
+    const talentEffects = getActiveEffects(playerState.talents);
+    applyAttributeEffects(talentEffects, playerState);
+
+    this.stores.playerStore.setState({ ...playerState, attributes: { ...playerState.attributes } });
+
+    this.stateMachine.transition('ALLOCATE');
+    this.stores.gameStore.setState({ phase: 'ALLOCATE' });
+    this.stores.uiStore.updateUI();
+  }
+
+  /**
+   * 确认属性分配并开始游戏
+   */
+  confirmAllocation(): void {
+    const playerState = this.stores.playerStore.getState();
+
+    const core = {
+      STYLE: playerState.attributes.STYLE ?? 0,
+      TECH: playerState.attributes.TECH ?? 0,
+      CHROME: playerState.attributes.CHROME ?? 0,
+      MONEY: playerState.attributes.MONEY ?? 0,
+      HUMAN: playerState.attributes.HUMAN ?? 0,
+    };
+    const derived = getDerivedAttributes(core);
+    playerState.attributes.LIFE = derived.LIFE;
+    playerState.attributes.REP = derived.REP;
+
+    this.stores.playerStore.setState({ ...playerState, attributes: { ...playerState.attributes } });
+
+    this.stateMachine.transition('PLAYING');
+    this.stores.gameStore.setState({ phase: 'PLAYING' });
+    this.stores.uiStore.updateUI();
+  }
+
+  /**
    * 检查是否等待玩家选择事件分支
    */
   hasPendingChoice(): boolean {
@@ -192,7 +237,7 @@ export class GameEngine {
     });
     playerState.totalPlayTime = newTurn;
 
-    // 2. 计算衍生属性（增量叠加，不覆盖）
+    // 2. 计算衍生属性（基于核心属性重新计算基准值）
     const core = {
       STYLE: playerState.attributes.STYLE ?? 0,
       TECH: playerState.attributes.TECH ?? 0,
@@ -201,11 +246,17 @@ export class GameEngine {
       HUMAN: playerState.attributes.HUMAN ?? 0,
     };
     const derived = getDerivedAttributes(core);
-    if ((playerState.attributes.LIFE ?? 0) < derived.LIFE) {
-      playerState.attributes.LIFE = derived.LIFE;
+    const lifeBase = derived.LIFE;
+    const repBase = derived.REP;
+
+    const currentLife = playerState.attributes.LIFE ?? 0;
+    const currentRep = playerState.attributes.REP ?? 0;
+
+    if (currentLife < lifeBase) {
+      playerState.attributes.LIFE = lifeBase;
     }
-    if ((playerState.attributes.REP ?? 0) < derived.REP) {
-      playerState.attributes.REP = derived.REP;
+    if (currentRep < repBase) {
+      playerState.attributes.REP = repBase;
     }
 
     // 3. 处理房租
@@ -471,24 +522,35 @@ export class GameEngine {
    * @param specificTalentIds 玩家手动选择继承的天赋 ID 列表（可选）
    */
   executeRebirth(options: RebirthOptions, specificTalentIds?: number[]): void {
-    // 重置模块级状态
     resetCooldowns();
     resetEvictionTracker();
     this.pendingEvent = null;
     this.lastBreakdownTurn = -999;
 
-    const playerState = this.stores.playerStore.getState();
     const gameState = this.stores.gameStore.getState();
+    const previousTalents = this.stores.playerStore.getState().talents;
 
-    // 应用继承
-    applyInheritance(options, playerState);
+    const newPlayer: PlayerState = {
+      attributes: { ...INITIAL_STATS },
+      exp: {},
+      level: 1,
+      talents: [],
+      equippedCyberware: [],
+      inventory: [],
+      activeBuffs: [],
+      housing: 'F',
+      insurance: 'none',
+      drugAddiction: {},
+      currentDrugs: [],
+      deathCount: gameState.runCount,
+      totalPlayTime: 0,
+    };
 
-    // 继承天赋
-    const previousTalents = playerState.talents;
+    applyInheritance(options, newPlayer);
+
     let inheritedTalents: Talent[] = [];
 
     if (specificTalentIds && specificTalentIds.length > 0) {
-      // 玩家手动选择了特定天赋
       for (const id of specificTalentIds) {
         const talent = previousTalents.find((t) => t.id === id);
         if (talent && !inheritedTalents.find((t) => t.id === id)) {
@@ -496,28 +558,32 @@ export class GameEngine {
         }
       }
     } else if (options.canInheritTalent) {
-      // 自动选择最佳可继承天赋
       inheritedTalents = getInheritedTalents(previousTalents, options.inheritancePoints);
     }
 
     for (const talent of inheritedTalents) {
-      if (!playerState.talents.find((t) => t.id === talent.id)) {
-        playerState.talents.push({ ...talent });
+      if (!newPlayer.talents.find((t) => t.id === talent.id)) {
+        newPlayer.talents.push({ ...talent });
       }
     }
 
-    // 重置状态
-    playerState.deathCount += 1;
-    playerState.totalPlayTime = 0;
-    playerState.activeBuffs = [];
-    playerState.equippedCyberware = [];
-    playerState.housing = 'F';
-    playerState.insurance = 'none';
-    playerState.level = 1;
+    const talentEffects = getActiveEffects(newPlayer.talents);
+    applyAttributeEffects(talentEffects, newPlayer);
+
+    const core = {
+      STYLE: newPlayer.attributes.STYLE ?? 0,
+      TECH: newPlayer.attributes.TECH ?? 0,
+      CHROME: newPlayer.attributes.CHROME ?? 0,
+      MONEY: newPlayer.attributes.MONEY ?? 0,
+      HUMAN: newPlayer.attributes.HUMAN ?? 0,
+    };
+    const derived = getDerivedAttributes(core);
+    newPlayer.attributes.LIFE = derived.LIFE;
+    newPlayer.attributes.REP = derived.REP;
 
     const inheritedIds = inheritedTalents.map((t) => t.id);
 
-    this.stores.playerStore.setState({ ...playerState });
+    this.stores.playerStore.setState({ ...newPlayer, attributes: { ...newPlayer.attributes } });
     this.stores.gameStore.setState({
       phase: 'PLAYING',
       turnCount: 1,
